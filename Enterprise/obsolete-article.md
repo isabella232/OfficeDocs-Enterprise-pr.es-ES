@@ -16,8 +16,8 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="obsolete-article"></a>Artículo obsoleto
+# <a name="obsolete-article"></a><span data-ttu-id="7b138-104">Artículo obsoleto</span><span class="sxs-lookup"><span data-stu-id="7b138-104">Obsolete article</span></span>
 
-Este artículo está obsoleto. Para obtener información actualizada, vea [adopción de nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md) .
+<span data-ttu-id="7b138-p102">Este artículo está obsoleto. Para obtener información actualizada, vea [adopción de nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md) .</span><span class="sxs-lookup"><span data-stu-id="7b138-p102">This article is obsolete. See [Cloud adoption and hybrid solutions](cloud-adoption-and-hybrid-solutions.md) for current information.</span></span>
   
 

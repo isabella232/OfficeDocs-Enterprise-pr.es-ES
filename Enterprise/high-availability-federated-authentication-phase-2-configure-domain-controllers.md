@@ -23,58 +23,58 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio
+# <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a><span data-ttu-id="eec29-103">Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio</span><span class="sxs-lookup"><span data-stu-id="eec29-103">High availability federated authentication Phase 2: Configure domain controllers</span></span>
 
- **Resumen:** Configurar los controladores de dominio y el servidor de sincronización de directorios para su autenticación federados de alta disponibilidad para Office 365 en Microsoft Azure.
+ <span data-ttu-id="eec29-104">**Resumen:** Configurar los controladores de dominio y el servidor de sincronización de directorios para su autenticación federados de alta disponibilidad para Office 365 en Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="eec29-104">**Summary:** Configure the domain controllers and DirSync server for your high availability federated authentication for Office 365 in Microsoft Azure.</span></span>
   
-En esta fase de la implementación de alta disponibilidad para la autenticación federada de Office 365 en servicios de infraestructura de Azure, se configuran dos controladores de dominio y el servidor de DirSync en la red virtual de Azure. Después, las solicitudes web de los clientes para la autenticación se pueden autenticar en la red virtual de Azure, en lugar de enviar ese tráfico de autenticación por la conexión VPN de sitio a sitio a la red local.
+<span data-ttu-id="eec29-p101">En esta fase de la implementación de alta disponibilidad para la autenticación federada de Office 365 en servicios de infraestructura de Azure, se configuran dos controladores de dominio y el servidor de DirSync en la red virtual de Azure. Después, las solicitudes web de los clientes para la autenticación se pueden autenticar en la red virtual de Azure, en lugar de enviar ese tráfico de autenticación por la conexión VPN de sitio a sitio a la red local.</span><span class="sxs-lookup"><span data-stu-id="eec29-p101">In this phase of deploying high availability for Office 365 federated authentication in Azure infrastructure services, you configure two domain controllers and the DirSync server in the Azure virtual network. Client web requests for authentication can then be authenticated in the Azure virtual network, rather than sending that authentication traffic across the site-to-site VPN connection to your on-premises network.</span></span>
   
 > [!NOTE]
-> Servicios de federación de Active Directory (AD FS) no puede usar Azure Active Directory Domain Services como un sustituto para los controladores de dominio de Windows Server AD. 
+> <span data-ttu-id="eec29-107">Servicios de federación de Active Directory (AD FS) no puede usar Azure Active Directory Domain Services como un sustituto para los controladores de dominio de Windows Server AD.</span><span class="sxs-lookup"><span data-stu-id="eec29-107">Active Directory Federation Services (AD FS) cannot use Azure Active Directory Domain Services as a substitute for Windows Server AD domain controllers.</span></span> 
   
-Debe completar esta fase antes de pasar a [federados de alta disponibilidad autenticación fase 3: configurar servidores AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Consulte [autenticación federados de alta disponibilidad de implementación para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) para todas las fases.
+<span data-ttu-id="eec29-p102">Debe completar esta fase antes de pasar a [federados de alta disponibilidad autenticación fase 3: configurar servidores AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Consulte [autenticación federados de alta disponibilidad de implementación para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) para todas las fases.</span><span class="sxs-lookup"><span data-stu-id="eec29-p102">You must complete this phase before moving on to [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). See [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) for all of the phases.</span></span>
   
-## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Crear las máquinas virtuales del controlador de dominio en Azure
+## <a name="create-the-domain-controller-virtual-machines-in-azure"></a><span data-ttu-id="eec29-110">Crear las máquinas virtuales del controlador de dominio en Azure</span><span class="sxs-lookup"><span data-stu-id="eec29-110">Create the domain controller virtual machines in Azure</span></span>
 
-En primer lugar, debe rellenar la columna **nombre de la máquina Virtual** de M de la tabla y modificar tamaños de máquina virtual según sea necesario en la columna **tamaño mínimo** .
+<span data-ttu-id="eec29-111">En primer lugar, debe rellenar la columna **nombre de la máquina Virtual** de M de la tabla y modificar tamaños de máquina virtual según sea necesario en la columna **tamaño mínimo** .</span><span class="sxs-lookup"><span data-stu-id="eec29-111">First, you need to fill out the **Virtual machine name** column of Table M and modify virtual machine sizes as needed in the **Minimum size** column.</span></span>
   
-|**Elemento**|**Nombre de máquina virtual**|**Imagen de la Galería**|**Tipo de almacenamiento**|**Tamaño mínimo**|
+|<span data-ttu-id="eec29-112">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="eec29-112">**Item**</span></span>|<span data-ttu-id="eec29-113">**Nombre de máquina virtual**</span><span class="sxs-lookup"><span data-stu-id="eec29-113">**Virtual machine name**</span></span>|<span data-ttu-id="eec29-114">**Imagen de la Galería**</span><span class="sxs-lookup"><span data-stu-id="eec29-114">**Gallery image**</span></span>|<span data-ttu-id="eec29-115">**Tipo de almacenamiento**</span><span class="sxs-lookup"><span data-stu-id="eec29-115">**Storage type**</span></span>|<span data-ttu-id="eec29-116">**Tamaño mínimo**</span><span class="sxs-lookup"><span data-stu-id="eec29-116">**Minimum size**</span></span>|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |______________ (primer controlador de dominio, ejemplo DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |______________ (segundo controlador de dominio, ejemplo DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |______________ (servidor de DirSync, ejemplo DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |______________ (primer servidor de AD FS, ejemplo ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |______________ (segundo servidor de AD FS, ejemplo ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |______________ (primer servidor proxy de aplicación web, ejemplo WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |______________ (segundo servidor proxy de aplicación web, ejemplo WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|<span data-ttu-id="eec29-117">1.</span><span class="sxs-lookup"><span data-stu-id="eec29-117">1.</span></span>  <br/> |<span data-ttu-id="eec29-118">______________ (primer controlador de dominio, ejemplo DC1)</span><span class="sxs-lookup"><span data-stu-id="eec29-118">______________ (first domain controller, example DC1)</span></span>  <br/> |<span data-ttu-id="eec29-119">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="eec29-119">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="eec29-120">StandardLRS</span><span class="sxs-lookup"><span data-stu-id="eec29-120">StandardLRS</span></span>  <br/> |<span data-ttu-id="eec29-121">Standard_D2</span><span class="sxs-lookup"><span data-stu-id="eec29-121">Standard_D2</span></span>  <br/> |
+|<span data-ttu-id="eec29-122">2.</span><span class="sxs-lookup"><span data-stu-id="eec29-122">2.</span></span>  <br/> |<span data-ttu-id="eec29-123">______________ (segundo controlador de dominio, ejemplo DC2)</span><span class="sxs-lookup"><span data-stu-id="eec29-123">______________ (second domain controller, example DC2)</span></span>  <br/> |<span data-ttu-id="eec29-124">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="eec29-124">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="eec29-125">StandardLRS</span><span class="sxs-lookup"><span data-stu-id="eec29-125">StandardLRS</span></span>  <br/> |<span data-ttu-id="eec29-126">Standard_D2</span><span class="sxs-lookup"><span data-stu-id="eec29-126">Standard_D2</span></span>  <br/> |
+|<span data-ttu-id="eec29-127">3.</span><span class="sxs-lookup"><span data-stu-id="eec29-127">3.</span></span>  <br/> |<span data-ttu-id="eec29-128">______________ (servidor de DirSync, ejemplo DS1)</span><span class="sxs-lookup"><span data-stu-id="eec29-128">______________ (DirSync server, example DS1)</span></span>  <br/> |<span data-ttu-id="eec29-129">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="eec29-129">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="eec29-130">StandardLRS</span><span class="sxs-lookup"><span data-stu-id="eec29-130">StandardLRS</span></span>  <br/> |<span data-ttu-id="eec29-131">Standard_D2</span><span class="sxs-lookup"><span data-stu-id="eec29-131">Standard_D2</span></span>  <br/> |
+|<span data-ttu-id="eec29-132">4.</span><span class="sxs-lookup"><span data-stu-id="eec29-132">4.</span></span>  <br/> |<span data-ttu-id="eec29-133">______________ (primer servidor de AD FS, ejemplo ADFS1)</span><span class="sxs-lookup"><span data-stu-id="eec29-133">______________ (first AD FS server, example ADFS1)</span></span>  <br/> |<span data-ttu-id="eec29-134">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="eec29-134">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="eec29-135">StandardLRS</span><span class="sxs-lookup"><span data-stu-id="eec29-135">StandardLRS</span></span>  <br/> |<span data-ttu-id="eec29-136">Standard_D2</span><span class="sxs-lookup"><span data-stu-id="eec29-136">Standard_D2</span></span>  <br/> |
+|<span data-ttu-id="eec29-137">5.</span><span class="sxs-lookup"><span data-stu-id="eec29-137">5.</span></span>  <br/> |<span data-ttu-id="eec29-138">______________ (segundo servidor de AD FS, ejemplo ADFS2)</span><span class="sxs-lookup"><span data-stu-id="eec29-138">______________ (second AD FS server, example ADFS2)</span></span>  <br/> |<span data-ttu-id="eec29-139">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="eec29-139">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="eec29-140">StandardLRS</span><span class="sxs-lookup"><span data-stu-id="eec29-140">StandardLRS</span></span>  <br/> |<span data-ttu-id="eec29-141">Standard_D2</span><span class="sxs-lookup"><span data-stu-id="eec29-141">Standard_D2</span></span>  <br/> |
+|<span data-ttu-id="eec29-142">6.</span><span class="sxs-lookup"><span data-stu-id="eec29-142">6.</span></span>  <br/> |<span data-ttu-id="eec29-143">______________ (primer servidor proxy de aplicación web, ejemplo WEB1)</span><span class="sxs-lookup"><span data-stu-id="eec29-143">______________ (first web application proxy server, example WEB1)</span></span>  <br/> |<span data-ttu-id="eec29-144">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="eec29-144">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="eec29-145">StandardLRS</span><span class="sxs-lookup"><span data-stu-id="eec29-145">StandardLRS</span></span>  <br/> |<span data-ttu-id="eec29-146">Standard_D2</span><span class="sxs-lookup"><span data-stu-id="eec29-146">Standard_D2</span></span>  <br/> |
+|<span data-ttu-id="eec29-147">7.</span><span class="sxs-lookup"><span data-stu-id="eec29-147">7.</span></span>  <br/> |<span data-ttu-id="eec29-148">______________ (segundo servidor proxy de aplicación web, ejemplo WEB2)</span><span class="sxs-lookup"><span data-stu-id="eec29-148">______________ (second web application proxy server, example WEB2)</span></span>  <br/> |<span data-ttu-id="eec29-149">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="eec29-149">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="eec29-150">StandardLRS</span><span class="sxs-lookup"><span data-stu-id="eec29-150">StandardLRS</span></span>  <br/> |<span data-ttu-id="eec29-151">Standard_D2</span><span class="sxs-lookup"><span data-stu-id="eec29-151">Standard_D2</span></span>  <br/> |
    
- **Tabla M - máquinas virtuales para la autenticación federados de alta disponibilidad para Office 365 en Azure**
+ <span data-ttu-id="eec29-152">**Tabla M - máquinas virtuales para la autenticación federados de alta disponibilidad para Office 365 en Azure**</span><span class="sxs-lookup"><span data-stu-id="eec29-152">**Table M - Virtual machines for the high availability federated authentication for Office 365 in Azure**</span></span>
   
-Para obtener una lista completa de los tamaños de máquina virtual, vea [tamaños para máquinas virtuales](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
+<span data-ttu-id="eec29-153">Para obtener una lista completa de los tamaños de máquina virtual, vea [tamaños para máquinas virtuales](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).</span><span class="sxs-lookup"><span data-stu-id="eec29-153">For the complete list of virtual machine sizes, see [Sizes for virtual machines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).</span></span>
   
-El siguiente bloque de comandos de PowerShell de Azure crea las máquinas virtuales para los dos controladores de dominio. Especificar los valores de las variables, quitar el \< y > caracteres. Tenga en cuenta que este bloque de comandos de PowerShell de Azure usa los valores de las tablas siguientes:
+<span data-ttu-id="eec29-p103">El siguiente bloque de comandos de PowerShell de Azure crea las máquinas virtuales para los dos controladores de dominio. Especificar los valores de las variables, quitar el \< y > caracteres. Tenga en cuenta que este bloque de comandos de PowerShell de Azure usa los valores de las tablas siguientes:</span><span class="sxs-lookup"><span data-stu-id="eec29-p103">The following Azure PowerShell command block creates the virtual machines for the two domain controllers. Specify the values for the variables, removing the \< and > characters. Note that this Azure PowerShell command block uses values from the following tables:</span></span>
   
-- Tabla N, para las máquinas virtuales
+- <span data-ttu-id="eec29-157">Tabla N, para las máquinas virtuales</span><span class="sxs-lookup"><span data-stu-id="eec29-157">Table M, for your virtual machines</span></span>
     
-- Tabla R, para los grupos de recursos
+- <span data-ttu-id="eec29-158">Tabla R, para los grupos de recursos</span><span class="sxs-lookup"><span data-stu-id="eec29-158">Table R, for your resource groups</span></span>
     
-- Tabla V, para la configuración de la red virtual
+- <span data-ttu-id="eec29-159">Tabla V, para la configuración de la red virtual</span><span class="sxs-lookup"><span data-stu-id="eec29-159">Table V, for your virtual network settings</span></span>
     
-- Tabla S, para las subredes
+- <span data-ttu-id="eec29-160">Tabla S, para las subredes</span><span class="sxs-lookup"><span data-stu-id="eec29-160">Table S, for your subnets</span></span>
     
-- Tabla I, para las direcciones IP estáticas
+- <span data-ttu-id="eec29-161">Tabla I, para las direcciones IP estáticas</span><span class="sxs-lookup"><span data-stu-id="eec29-161">Table I, for your static IP addresses</span></span>
     
-- Tabla A, para los conjuntos de disponibilidad
+- <span data-ttu-id="eec29-162">Tabla A, para los conjuntos de disponibilidad</span><span class="sxs-lookup"><span data-stu-id="eec29-162">Table A, for your availability sets</span></span>
     
-Recuerde que definido tablas R, V, S, I y A en [federados de alta disponibilidad autenticación de fase 1: configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+<span data-ttu-id="eec29-163">Recuerde que definido tablas R, V, S, I y A en [federados de alta disponibilidad autenticación de fase 1: configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span><span class="sxs-lookup"><span data-stu-id="eec29-163">Recall that you defined Tables R, V, S, I, and A in [High availability federated authentication Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span></span>
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilice la última versión de PowerShell de Azure. Consulte [Introducción a los cmdlets de PowerShell de Azure](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> <span data-ttu-id="eec29-p104">Los siguientes conjuntos de comandos utilice la última versión de PowerShell de Azure. Consulte [Introducción a los cmdlets de PowerShell de Azure](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span><span class="sxs-lookup"><span data-stu-id="eec29-p104">The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span></span> 
   
-Después de especificar todos los valores correctos, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en el Entorno de scripting integrado (ISE) de PowerShell en el equipo local.
+<span data-ttu-id="eec29-166">Después de especificar todos los valores correctos, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en el Entorno de scripting integrado (ISE) de PowerShell en el equipo local.</span><span class="sxs-lookup"><span data-stu-id="eec29-166">When you have supplied all the correct values, run the resulting block at the Azure PowerShell prompt or in the PowerShell Integrated Script Environment (ISE) on your local computer.</span></span>
   
 > [!TIP]
-> Para un archivo de texto que contiene todos los comandos de PowerShell en este artículo y un libro de Microsoft Excel configuración que genera bloques de comandos PowerShell listos para ejecutarse en función de la configuración personalizada, consulte el [autenticación federados para Office 365 en Kit de implementación de Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> <span data-ttu-id="eec29-167">Para un archivo de texto que contiene todos los comandos de PowerShell en este artículo y un libro de Microsoft Excel configuración que genera bloques de comandos PowerShell listos para ejecutarse en función de la configuración personalizada, consulte el [autenticación federados para Office 365 en Kit de implementación de Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664).</span><span class="sxs-lookup"><span data-stu-id="eec29-167">For a text file that contains all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664).</span></span> 
   
 ```
 # Set up variables common to both virtual machines
@@ -148,23 +148,23 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Dado que estas máquinas virtuales son para una aplicación de intranet, no se asigna una dirección IP pública o una etiqueta de nombre de dominio DNS y expuestos a Internet. Sin embargo, esto también significa que no se puede conectar a ellos desde el portal de Azure. Al ver las propiedades de la máquina virtual no está disponible la opción **Conectar** . Utilice el accesorio de conexión a Escritorio remoto u otra herramienta de escritorio remoto para conectarse a la máquina virtual usando su privado IP dirección o intranet nombre DNS.
+> <span data-ttu-id="eec29-p105">Dado que estas máquinas virtuales son para una aplicación de intranet, no se asigna una dirección IP pública o una etiqueta de nombre de dominio DNS y expuestos a Internet. Sin embargo, esto también significa que no se puede conectar a ellos desde el portal de Azure. Al ver las propiedades de la máquina virtual no está disponible la opción **Conectar** . Utilice el accesorio de conexión a Escritorio remoto u otra herramienta de escritorio remoto para conectarse a la máquina virtual usando su privado IP dirección o intranet nombre DNS.</span><span class="sxs-lookup"><span data-stu-id="eec29-p105">Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet. However, this also means that you cannot connect to them from the Azure portal. The **Connect** option is unavailable when you view the properties of the virtual machine. Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name.</span></span>
   
-## <a name="configure-the-first-domain-controller"></a>Configurar el primer controlador de dominio
+## <a name="configure-the-first-domain-controller"></a><span data-ttu-id="eec29-172">Configurar el primer controlador de dominio</span><span class="sxs-lookup"><span data-stu-id="eec29-172">Configure the first domain controller</span></span>
 
-Use el cliente de Escritorio remoto que prefiera y cree una conexión a Escritorio remoto a la máquina virtual del primer controlador de dominio. Use el nombre DNS de la intranet o el nombre de equipo y las credenciales de la cuenta de administrador local.
+<span data-ttu-id="eec29-p106">Use el cliente de Escritorio remoto que prefiera y cree una conexión a Escritorio remoto a la máquina virtual del primer controlador de dominio. Use el nombre DNS de la intranet o el nombre de equipo y las credenciales de la cuenta de administrador local.</span><span class="sxs-lookup"><span data-stu-id="eec29-p106">Use the remote desktop client of your choice and create a remote desktop connection to the first domain controller virtual machine. Use its intranet DNS or computer name and the credentials of the local administrator account.</span></span>
   
-A continuación, agregar el disco de datos adicionales para el primer controlador de dominio con este comando desde un Windows PowerShell símbolo **en la primera máquina virtual de controlador de dominio**:
+<span data-ttu-id="eec29-175">A continuación, agregar el disco de datos adicionales para el primer controlador de dominio con este comando desde un Windows PowerShell símbolo **en la primera máquina virtual de controlador de dominio**:</span><span class="sxs-lookup"><span data-stu-id="eec29-175">Next, add the extra data disk to the first domain controller with this command from a Windows PowerShell command prompt **on the first domain controller virtual machine**:</span></span>
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-A continuación, probar la conectividad del primer controlador dominio en ubicaciones de red de su organización mediante el comando **ping** para hacer ping a los nombres y direcciones IP de los recursos de la red de la organización.
+<span data-ttu-id="eec29-176">A continuación, probar la conectividad del primer controlador dominio en ubicaciones de red de su organización mediante el comando **ping** para hacer ping a los nombres y direcciones IP de los recursos de la red de la organización.</span><span class="sxs-lookup"><span data-stu-id="eec29-176">Next, test the first domain controller's connectivity to locations on your organization network by using the **ping** command to ping names and IP addresses of resources on your organization network.</span></span>
   
-Este procedimiento garantiza que la resolución de nombres DNS funciona correctamente (que la máquina virtual está configurada correctamente con los servidores DNS locales) y que se pueden enviar y recibir paquetes de la red virtual entre locales. Si esta prueba básica produce errores, póngase en contacto con el departamento de TI para solucionar los problemas de resolución de nombres DNS y de entrega de paquetes.
+<span data-ttu-id="eec29-p107">Este procedimiento garantiza que la resolución de nombres DNS funciona correctamente (que la máquina virtual está configurada correctamente con los servidores DNS locales) y que se pueden enviar y recibir paquetes de la red virtual entre locales. Si esta prueba básica produce errores, póngase en contacto con el departamento de TI para solucionar los problemas de resolución de nombres DNS y de entrega de paquetes.</span><span class="sxs-lookup"><span data-stu-id="eec29-p107">This procedure ensures that DNS name resolution is working correctly (that the virtual machine is correctly configured with on-premises DNS servers) and that packets can be sent to and from the cross-premises virtual network. If this basic test fails, contact your IT department to troubleshoot the DNS name resolution and packet delivery issues.</span></span>
   
-Después, desde el símbolo del sistema de Windows PowerShell en el primer controlador de dominio, ejecute los comandos siguientes:
+<span data-ttu-id="eec29-179">Después, desde el símbolo del sistema de Windows PowerShell en el primer controlador de dominio, ejecute los comandos siguientes:</span><span class="sxs-lookup"><span data-stu-id="eec29-179">Next, from the Windows PowerShell command prompt on the first domain controller, run the following commands:</span></span>
   
 ```
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
@@ -173,19 +173,19 @@ Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs" -Credential $cred
 ```
 
-Se le pedirá que especifique las credenciales de una cuenta de administrador de dominio. Se reiniciará el equipo.
+<span data-ttu-id="eec29-p108">Se le pedirá que especifique las credenciales de una cuenta de administrador de dominio. Se reiniciará el equipo.</span><span class="sxs-lookup"><span data-stu-id="eec29-p108">You will be prompted to supply the credentials of a domain administrator account. The computer will restart.</span></span>
   
-## <a name="configure-the-second-domain-controller"></a>Configurar el segundo controlador de dominio
+## <a name="configure-the-second-domain-controller"></a><span data-ttu-id="eec29-182">Configurar el segundo controlador de dominio</span><span class="sxs-lookup"><span data-stu-id="eec29-182">Configure the second domain controller</span></span>
 
-Use el cliente de Escritorio remoto que prefiera y cree una conexión a Escritorio remoto a la máquina virtual del segundo controlador de dominio. Use el nombre DNS de la intranet o el nombre de equipo y las credenciales de la cuenta de administrador local.
+<span data-ttu-id="eec29-p109">Use el cliente de Escritorio remoto que prefiera y cree una conexión a Escritorio remoto a la máquina virtual del segundo controlador de dominio. Use el nombre DNS de la intranet o el nombre de equipo y las credenciales de la cuenta de administrador local.</span><span class="sxs-lookup"><span data-stu-id="eec29-p109">Use the remote desktop client of your choice and create a remote desktop connection to the second domain controller virtual machine. Use its intranet DNS or computer name and the credentials of the local administrator account.</span></span>
   
-A continuación, debe agregar el disco de datos adicionales en el segundo controlador de dominio con este comando desde un Windows PowerShell símbolo **en la segunda máquina virtual de controlador de dominio**:
+<span data-ttu-id="eec29-185">A continuación, debe agregar el disco de datos adicionales en el segundo controlador de dominio con este comando desde un Windows PowerShell símbolo **en la segunda máquina virtual de controlador de dominio**:</span><span class="sxs-lookup"><span data-stu-id="eec29-185">Next, you need to add the extra data disk to the second domain controller with this command from a Windows PowerShell command prompt **on the second domain controller virtual machine**:</span></span>
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-Después, ejecute los comandos siguientes:
+<span data-ttu-id="eec29-186">Después, ejecute los comandos siguientes:</span><span class="sxs-lookup"><span data-stu-id="eec29-186">Next, run the following commands:</span></span>
   
 ```
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
@@ -195,9 +195,9 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 ```
 
-Se le pedirá que especifique las credenciales de una cuenta de administrador de dominio. Se reiniciará el equipo.
+<span data-ttu-id="eec29-p110">Se le pedirá que especifique las credenciales de una cuenta de administrador de dominio. Se reiniciará el equipo.</span><span class="sxs-lookup"><span data-stu-id="eec29-p110">You will be prompted to supply the credentials of a domain administrator account. The computer will restart.</span></span>
   
-A continuación, debe actualizar los servidores DNS de su red virtual para que ese Azure asigna a las máquinas virtuales en las direcciones IP de los dos nuevos controladores de dominio para usar como sus servidores DNS. Rellenar las variables y, a continuación, ejecutar estos comandos desde un símbolo del sistema de Windows PowerShell en el equipo local:
+<span data-ttu-id="eec29-p111">A continuación, debe actualizar los servidores DNS de su red virtual para que ese Azure asigna a las máquinas virtuales en las direcciones IP de los dos nuevos controladores de dominio para usar como sus servidores DNS. Rellenar las variables y, a continuación, ejecutar estos comandos desde un símbolo del sistema de Windows PowerShell en el equipo local:</span><span class="sxs-lookup"><span data-stu-id="eec29-p111">Next, you need to update the DNS servers for your virtual network so that Azure assigns virtual machines the IP addresses of the two new domain controllers to use as their DNS servers. Fill in the variables and then run these commands from a Windows PowerShell command prompt on your local computer:</span></span>
   
 ```
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -221,9 +221,9 @@ Restart-AzureRMVM -ResourceGroupName $adrgName -Name $firstDCName
 Restart-AzureRMVM -ResourceGroupName $adrgName -Name $secondDCName
 ```
 
-Tenga en cuenta que reiniciamos los dos controladores de dominio para que no estén configurados con los servidores DNS locales como los servidores DNS. Como ambos son servidores DNS, se configuraron automáticamente con los servidores DNS locales como reenviadores DNS cuando se promovieron a controladores de dominio.
+<span data-ttu-id="eec29-p112">Tenga en cuenta que reiniciamos los dos controladores de dominio para que no estén configurados con los servidores DNS locales como los servidores DNS. Como ambos son servidores DNS, se configuraron automáticamente con los servidores DNS locales como reenviadores DNS cuando se promovieron a controladores de dominio.</span><span class="sxs-lookup"><span data-stu-id="eec29-p112">Note that we restart the two domain controllers so that they are not configured with the on-premises DNS servers as DNS servers. Because they are both DNS servers themselves, they were automatically configured with the on-premises DNS servers as DNS forwarders when they were promoted to domain controllers.</span></span>
   
-Después, es necesario crear un sitio de replicación de Active Directory para garantizar que los servidores de la red virtual de Azure usen los controladores de dominio locales. Conéctese al controlador de dominio con una cuenta de administrador de dominio y ejecute los comandos siguientes desde un símbolo del sistema de Windows PowerShell con permisos de administrador:
+<span data-ttu-id="eec29-p113">Después, es necesario crear un sitio de replicación de Active Directory para garantizar que los servidores de la red virtual de Azure usen los controladores de dominio locales. Conéctese al controlador de dominio con una cuenta de administrador de dominio y ejecute los comandos siguientes desde un símbolo del sistema de Windows PowerShell con permisos de administrador:</span><span class="sxs-lookup"><span data-stu-id="eec29-p113">Next, we need to create an Active Directory replication site to ensure that servers in the Azure virtual network use the local domain controllers. Connect to either domain controller with a domain administrator account and run the following commands from an administrator-level Windows PowerShell prompt:</span></span>
   
 ```
 $vnet="<Table V - Item 1 - Value column>"
@@ -232,11 +232,11 @@ New-ADReplicationSite -Name $vnet
 New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 ```
 
-## <a name="configure-the-dirsync-server"></a>Configurar el servidor de DirSync
+## <a name="configure-the-dirsync-server"></a><span data-ttu-id="eec29-195">Configurar el servidor de DirSync</span><span class="sxs-lookup"><span data-stu-id="eec29-195">Configure the DirSync server</span></span>
 
-Utilizar al cliente de escritorio remoto de su elección y crear una conexión de escritorio remoto a la máquina virtual del servidor de sincronización de directorios. Utilice su intranet DNS o nombre de equipo y las credenciales de la cuenta de administrador local.
+<span data-ttu-id="eec29-p114">Utilizar al cliente de escritorio remoto de su elección y crear una conexión de escritorio remoto a la máquina virtual del servidor de sincronización de directorios. Utilice su intranet DNS o nombre de equipo y las credenciales de la cuenta de administrador local.</span><span class="sxs-lookup"><span data-stu-id="eec29-p114">Use the remote desktop client of your choice and create a remote desktop connection to the DirSync server virtual machine. Use its intranet DNS or computer name and the credentials of the local administrator account.</span></span>
   
-Después, únala al dominio de Windows Server AD adecuado con estos comandos en el símbolo del sistema de Windows PowerShell.
+<span data-ttu-id="eec29-198">Después, únala al dominio de Windows Server AD adecuado con estos comandos en el símbolo del sistema de Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="eec29-198">Next, join it to the appropriate Windows Server AD domain with these commands at the Windows PowerShell prompt.</span></span>
   
 ```
 $domName="<Windows Server AD domain name to join, such as corp.contoso.com>"
@@ -245,24 +245,24 @@ Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer
 ```
 
-Esta es la configuración completada después de la finalización correcta de esta fase, con los nombres de equipo de marcadores de posición.
+<span data-ttu-id="eec29-199">Esta es la configuración completada después de la finalización correcta de esta fase, con los nombres de equipo de marcadores de posición.</span><span class="sxs-lookup"><span data-stu-id="eec29-199">Here is the configuration resulting from the successful completion of this phase, with placeholder computer names.</span></span>
   
-**Fase 2: Los controladores de dominio y el servidor de sincronización de directorios para su infraestructura de autenticación federados de alta disponibilidad en Azure**
+<span data-ttu-id="eec29-200">**Fase 2: Los controladores de dominio y el servidor de sincronización de directorios para su infraestructura de autenticación federados de alta disponibilidad en Azure**</span><span class="sxs-lookup"><span data-stu-id="eec29-200">**Phase 2: The domain controllers and DirSync server for your high availability federated authentication infrastructure in Azure**</span></span>
 
 ![Fase 2 de la infraestructura de la autenticación federada de Office 365 con alta disponibilidad en Azure con los controladores de dominio](images/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a><span data-ttu-id="eec29-202">Siguiente paso</span><span class="sxs-lookup"><span data-stu-id="eec29-202">Next step</span></span>
 
-Uso [federados de alta disponibilidad autenticación fase 3: configurar servidores AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) para continuar configurando esta carga de trabajo.
+<span data-ttu-id="eec29-203">Uso [federados de alta disponibilidad autenticación fase 3: configurar servidores AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) para continuar configurando esta carga de trabajo.</span><span class="sxs-lookup"><span data-stu-id="eec29-203">Use [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) to continue configuring this workload.</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="eec29-204">See Also</span><span class="sxs-lookup"><span data-stu-id="eec29-204">See Also</span></span>
 
-[Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[<span data-ttu-id="eec29-205">Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure</span><span class="sxs-lookup"><span data-stu-id="eec29-205">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Identidad federada para el entorno de desarrollo y pruebas de Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="eec29-206">Identidad federada para el entorno de desarrollo y pruebas de Office 365</span><span class="sxs-lookup"><span data-stu-id="eec29-206">Federated identity for your Office 365 dev/test environment</span></span>](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="eec29-207">Adopción de la nube y soluciones híbridas</span><span class="sxs-lookup"><span data-stu-id="eec29-207">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
-[Identidad federada para Office 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[<span data-ttu-id="eec29-208">Identidad federada para Office 365</span><span class="sxs-lookup"><span data-stu-id="eec29-208">Federated identity for Office 365</span></span>](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
 
 

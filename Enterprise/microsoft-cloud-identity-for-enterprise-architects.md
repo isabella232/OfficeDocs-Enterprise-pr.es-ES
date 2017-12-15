@@ -24,350 +24,351 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Identidad de nube de Microsoft para arquitectos de empresa
+# <a name="microsoft-cloud-identity-for-enterprise-architects"></a><span data-ttu-id="35ffb-103">Identidad de nube de Microsoft para arquitectos de empresa</span><span class="sxs-lookup"><span data-stu-id="35ffb-103">Microsoft Cloud Identity for Enterprise Architects</span></span>
 
- **Resumen:** diseñar la solución de identidad para plataformas y servicios en la nube de Microsoft.
+ <span data-ttu-id="35ffb-104">**Resumen:** diseñar la solución de identidad para plataformas y servicios en la nube de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="35ffb-104">**Summary:** Design your identity solution for Microsoft cloud services and platforms.</span></span>
   
-En este artículo se describe lo que los arquitectos de TI necesitan saber sobre el diseño de la identidad para las organizaciones que usan plataformas y servicios en la nube de Microsoft. También puede ver este artículo como un póster de cinco páginas e imprimirlo en formato tabloide (también conocido como doble carta, 11 x 17 o A3).
+<span data-ttu-id="35ffb-p101">En este artículo se describe lo que los arquitectos de TI necesitan saber sobre el diseño de la identidad para las organizaciones que usan plataformas y servicios en la nube de Microsoft. También puede ver este artículo como un póster de cinco páginas e imprimirlo en formato tabloide (también conocido como doble carta, 11 x 17 o A3).</span><span class="sxs-lookup"><span data-stu-id="35ffb-p101">This article describes what IT architects need to know about designing identity for organizations using Microsoft cloud services and platforms. You can also view this article as a 5-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
   
-[![Imagen de miniatura para el modelo de identidad de nube de Microsoft](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
-](https://www.microsoft.com/download/details.aspx?id=54431)
+<span data-ttu-id="35ffb-107">[![Imagen de miniatura para el modelo de identidad de nube de Microsoft](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
+](https://www.microsoft.com/download/details.aspx?id=54431)</span><span class="sxs-lookup"><span data-stu-id="35ffb-107">[![Thumb image for Microsoft cloud identity model](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
+](https://www.microsoft.com/download/details.aspx?id=54431)</span></span>
   
-![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) | ![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54431)
+<span data-ttu-id="35ffb-108">![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) | ![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54431)</span><span class="sxs-lookup"><span data-stu-id="35ffb-108">![PDF file](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio file](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) | ![See a page with versions in additional languages](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[More languages](https://www.microsoft.com/download/details.aspx?id=54431)</span></span>
   
-También puede ver todos los modelos en los [recursos de la arquitectura de nube de Microsoft IT](microsoft-cloud-it-architecture-resources.md) y pase a través de [Enterprise Cloud Roadmap de Microsoft: recursos para la toma de decisiones de TI](https://aka.ms/cloudarchitecture).
+<span data-ttu-id="35ffb-109">También puede ver todos los modelos en los [recursos de la arquitectura de nube de Microsoft IT](microsoft-cloud-it-architecture-resources.md) y pase a través de [Enterprise Cloud Roadmap de Microsoft: recursos para la toma de decisiones de TI](https://aka.ms/cloudarchitecture).</span><span class="sxs-lookup"><span data-stu-id="35ffb-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
   
 > [!NOTE]
-> En este artículo refleja la versión de enero de 2016 del póster de **identidad de la nube de Microsoft para enterprise architects** . No contiene los cambios del año 2016 abril o versiones posteriores del póster.
+> <span data-ttu-id="35ffb-p102">En este artículo refleja la versión de enero de 2016 del póster de **identidad de la nube de Microsoft para enterprise architects** . No contiene los cambios del año 2016 abril o versiones posteriores del póster.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p102">This article reflects the January 2016 version of the **Microsoft cloud identity for enterprise architects** poster. It does not contain the changes for the April 2016 or later versions of the poster.</span></span>
   
-## <a name="designing-identity-for-the-microsoft-cloud"></a>Diseño de la identidad para la nube de Microsoft
+## <a name="designing-identity-for-the-microsoft-cloud"></a><span data-ttu-id="35ffb-112">Diseño de la identidad para la nube de Microsoft</span><span class="sxs-lookup"><span data-stu-id="35ffb-112">Designing identity for the Microsoft cloud</span></span>
 
-La integración de las identidades con la nube de Microsoft proporciona acceso a una amplia gama de servicios y opciones de plataforma en la nube. Existen dos opciones principales:
+<span data-ttu-id="35ffb-p103">La integración de las identidades con la nube de Microsoft proporciona acceso a una amplia gama de servicios y opciones de plataforma en la nube. Existen dos opciones principales:</span><span class="sxs-lookup"><span data-stu-id="35ffb-p103">Integrating your identities with the Microsoft cloud provides access to a broad range of services and cloud platform options. There are two main options:</span></span>
   
-- Puede realizar la integración con Microsoft Azure Active Directory (AD). Esto implica la sincronización de las cuentas locales con Azure AD, el proveedor de identidades para la nube de Microsoft.
+- <span data-ttu-id="35ffb-p104">Puede realizar la integración con Microsoft Azure Active Directory (AD). Esto implica la sincronización de las cuentas locales con Azure AD, el proveedor de identidades para la nube de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p104">You can integrate with Microsoft Azure Active Directory (AD). This involves synchronizing your on-premises accounts to Azure AD, the identity provider for the Microsoft cloud.</span></span>
     
-- Puede ampliar su entorno de Servicios de dominio de Active Directory (AD DS) local para las máquinas virtuales que se ejecutan en servicios de infraestructura de Microsoft Azure.
+- <span data-ttu-id="35ffb-117">Puede ampliar su entorno de Servicios de dominio de Active Directory (AD DS) local para las máquinas virtuales que se ejecutan en servicios de infraestructura de Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="35ffb-117">You can extend your on-premises Active Directory Domain Services (AD DS) environment to virtual machines running in Microsoft Azure infrastructure services.</span></span>
     
 ![Opciones para diseñar sus identidades en la nube](images/08277e96-e4d2-43cb-a56f-a11c7647881a.png)
   
- **Figura 1: Opciones para diseñar las identidades en la nube**
+ <span data-ttu-id="35ffb-119">**Figura 1: Opciones para diseñar las identidades en la nube**</span><span class="sxs-lookup"><span data-stu-id="35ffb-119">**Figure 1: Options for designing your identities in the cloud**</span></span>
   
-La figura 1 muestra que Azure AD es el proveedor de identidades de los servicios de software como servicio (SaaS) de Microsoft y de las aplicaciones de plataforma como servicio (PaaS) de Azure, y que las aplicaciones de línea de negocio pueden usar AD DS local. 
+<span data-ttu-id="35ffb-120">La figura 1 muestra que Azure AD es el proveedor de identidades de los servicios de software como servicio (SaaS) de Microsoft y de las aplicaciones de plataforma como servicio (PaaS) de Azure, y que las aplicaciones de línea de negocio pueden usar AD DS local.</span><span class="sxs-lookup"><span data-stu-id="35ffb-120">Figure 1 shows how Azure AD is the identity provider for Microsoft Software as a Service (SaaS) services and Azure Platform as a Service (PaaS) applications and how line-of-business applications can use on-premises AD DS.</span></span> 
   
-### <a name="azure-active-directory"></a>Azure Active Directory
+### <a name="azure-active-directory"></a><span data-ttu-id="35ffb-121">Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="35ffb-121">Azure Active Directory</span></span>
 
-Microsoft Azure AD es el servicio de administración de acceso e identidades hospedado en la nube de Microsoft. Es el elemento central de las plataformas y los servicios en la nube de Microsoft. La integración con Azure AD proporciona acceso a todos los servicios SaaS de Microsoft usando su conjunto actual de cuentas y contraseñas. Dicha integración también proporciona una identidad basada en la nube para las aplicaciones PaaS de Azure. 
+<span data-ttu-id="35ffb-p105">Microsoft Azure AD es el servicio de administración de acceso e identidades hospedado en la nube de Microsoft. Es el elemento central de las plataformas y los servicios en la nube de Microsoft. La integración con Azure AD proporciona acceso a todos los servicios SaaS de Microsoft usando su conjunto actual de cuentas y contraseñas. Dicha integración también proporciona una identidad basada en la nube para las aplicaciones PaaS de Azure.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p105">Microsoft Azure AD is the Microsoft cloud-hosted identity and access management service. It's at the center of Microsoft cloud services and platforms. Integrating with Azure AD provides access to all of the Microsoft SaaS services using your current set of accounts and passwords. That integration also provides cloud-based identity for Azure PaaS applications.</span></span> 
   
 > [!NOTE]
-> Azure AD no evita tener que usar AD DS local para las organizaciones empresariales o para las máquinas virtuales basadas en Windows que se ejecutan en la infraestructura como servicio (IaaS) de Azure. 
+> <span data-ttu-id="35ffb-126">Azure AD no evita tener que usar AD DS local para las organizaciones empresariales o para las máquinas virtuales basadas en Windows que se ejecutan en la infraestructura como servicio (IaaS) de Azure.</span><span class="sxs-lookup"><span data-stu-id="35ffb-126">Azure AD does not replace the need for AD DS on-premises for enterprise organizations or for Windows -based virtual machines running in Azure Infrastructure as a Service (IaaS).</span></span> 
   
-Hay tres ediciones de Azure AD: Gratuita, Basic y Premium. 
+<span data-ttu-id="35ffb-127">Hay tres ediciones de Azure AD: Gratuita, Basic y Premium.</span><span class="sxs-lookup"><span data-stu-id="35ffb-127">There are three editions of Azure AD: Free, Basic, and Premium.</span></span> 
   
 ||||
 |:-----|:-----|:-----|
-|**Gratuita** <br/> |**Basic** <br/> |**Premium** <br/> |
-| Administrar cuentas de usuario <br/>  Sincronizar con directorios locales <br/>  Inicio de sesión único en Azure, Office 365 y miles de aplicaciones SaaS populares, como Salesforce, Workday, Concur, DocuSign, Google Apps, Box, ServiceNow, Dropbox y muchas más <br/> | Incluye todas las capacidades de la edición gratuita, así como: <br/>  Personalización de marca de la empresa <br/>  Acceso a aplicaciones basadas en grupos <br/>  Restablecimiento de contraseñas de autoservicio <br/>  SLA empresarial del 99,9 % <br/> | Incluye todas las características de las ediciones gratuita y Basic, así como: <br/>  Administración de grupos de autoservicio <br/>  Alertas e informes de seguridad avanzada <br/>  Autenticación multifactor <br/>  Restablecimiento de contraseña con reescritura en AD DS local <br/>  Sincronización bidireccional de herramientas de Azure AD Connect <br/>  Proxy de aplicación de Azure AD <br/>  Microsoft Forefront Identity Manager (MIM) <br/> |
+|<span data-ttu-id="35ffb-128">**Gratuita**</span><span class="sxs-lookup"><span data-stu-id="35ffb-128">**Free**</span></span> <br/> |<span data-ttu-id="35ffb-129">**Basic**</span><span class="sxs-lookup"><span data-stu-id="35ffb-129">**Basic**</span></span> <br/> |<span data-ttu-id="35ffb-130">**Premium**</span><span class="sxs-lookup"><span data-stu-id="35ffb-130">**Premium**</span></span> <br/> |
+| <span data-ttu-id="35ffb-131">Administrar cuentas de usuario</span><span class="sxs-lookup"><span data-stu-id="35ffb-131">Manage user accounts</span></span> <br/>  <span data-ttu-id="35ffb-132">Sincronizar con directorios locales</span><span class="sxs-lookup"><span data-stu-id="35ffb-132">Synchronize with on-premises directories</span></span> <br/>  <span data-ttu-id="35ffb-133">Inicio de sesión único en Azure, Office 365 y miles de aplicaciones SaaS populares, como Salesforce, Workday, Concur, DocuSign, Google Apps, Box, ServiceNow, Dropbox y muchas más</span><span class="sxs-lookup"><span data-stu-id="35ffb-133">Single sign-on across Azure, Office 365, and thousands of other popular SaaS applications, such as Salesforce, Workday, Concur, DocuSign, Google Apps, Box, ServiceNow, Dropbox, and more</span></span> <br/> | <span data-ttu-id="35ffb-134">Incluye todas las capacidades de la edición gratuita, así como:</span><span class="sxs-lookup"><span data-stu-id="35ffb-134">Includes all of the abilities in the Free edition, plus:</span></span> <br/>  <span data-ttu-id="35ffb-135">Personalización de marca de la empresa</span><span class="sxs-lookup"><span data-stu-id="35ffb-135">Company branding</span></span> <br/>  <span data-ttu-id="35ffb-136">Acceso a aplicaciones basadas en grupos</span><span class="sxs-lookup"><span data-stu-id="35ffb-136">Group-based application access</span></span> <br/>  <span data-ttu-id="35ffb-137">Restablecimiento de contraseñas de autoservicio</span><span class="sxs-lookup"><span data-stu-id="35ffb-137">Self-service password reset</span></span> <br/>  <span data-ttu-id="35ffb-138">SLA empresarial del 99,9 %</span><span class="sxs-lookup"><span data-stu-id="35ffb-138">Enterprise SLA of 99.9%</span></span> <br/> | <span data-ttu-id="35ffb-139">Incluye todas las características de las ediciones gratuita y Basic, así como:</span><span class="sxs-lookup"><span data-stu-id="35ffb-139">Includes all of the features of the Free and Basic editions, plus:</span></span> <br/>  <span data-ttu-id="35ffb-140">Administración de grupos de autoservicio</span><span class="sxs-lookup"><span data-stu-id="35ffb-140">Self-service group management</span></span> <br/>  <span data-ttu-id="35ffb-141">Alertas e informes de seguridad avanzada</span><span class="sxs-lookup"><span data-stu-id="35ffb-141">Advanced security reports and alerts</span></span> <br/>  <span data-ttu-id="35ffb-142">Autenticación multifactor</span><span class="sxs-lookup"><span data-stu-id="35ffb-142">Multi-factor authentication</span></span> <br/>  <span data-ttu-id="35ffb-143">Restablecimiento de contraseña con reescritura en AD DS local</span><span class="sxs-lookup"><span data-stu-id="35ffb-143">Password reset with write-back to on-premises AD DS</span></span> <br/>  <span data-ttu-id="35ffb-144">Sincronización bidireccional de herramientas de Azure AD Connect</span><span class="sxs-lookup"><span data-stu-id="35ffb-144">Azure AD Connect tool bidirectional synchronization</span></span> <br/>  <span data-ttu-id="35ffb-145">Proxy de aplicación de Azure AD</span><span class="sxs-lookup"><span data-stu-id="35ffb-145">Azure AD Application Proxy</span></span> <br/>  <span data-ttu-id="35ffb-146">Microsoft Forefront Identity Manager (MIM)</span><span class="sxs-lookup"><span data-stu-id="35ffb-146">Microsoft Forefront Identity Manager (MIM)</span></span> <br/> |
    
-Para obtener más información sobre las versiones, consulte [Ediciones de Azure Active Directory ](https://go.microsoft.com/fwlink/p/?LinkId=524280).
+<span data-ttu-id="35ffb-147">Para obtener más información sobre las versiones, consulte [Ediciones de Azure Active Directory ](https://go.microsoft.com/fwlink/p/?LinkId=524280).</span><span class="sxs-lookup"><span data-stu-id="35ffb-147">For more information about versions, see [Azure Active Directory editions](https://go.microsoft.com/fwlink/p/?LinkId=524280).</span></span>
   
-### <a name="option-1-integrate-with-azure-active-directory"></a>Opción 1: Integración con Azure Active Directory
+### <a name="option-1-integrate-with-azure-active-directory"></a><span data-ttu-id="35ffb-148">Opción 1: Integración con Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="35ffb-148">Option 1: Integrate with Azure Active Directory</span></span>
 
-La mayoría de las organizaciones sincronizan un conjunto estándar de objetos y atributos con el inquilino de Azure AD. La herramienta de Azure AD Connect sincroniza las cuentas entre AD DS local y un inquilino de Azure AD.
+<span data-ttu-id="35ffb-p106">La mayoría de las organizaciones sincronizan un conjunto estándar de objetos y atributos con el inquilino de Azure AD. La herramienta de Azure AD Connect sincroniza las cuentas entre AD DS local y un inquilino de Azure AD.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p106">Most organizations synchronize a standard set of objects and attributes to their Azure AD tenant. The Azure AD Connect tool synchronizes your accounts between on-premises AD DS and an Azure AD tenant.</span></span>
   
 ![Integración con Azure AD](images/3ce05e49-2cb6-4cdc-99ab-d96c5bd12fe8.png)
   
- **Figura 2: Integración con Azure AD**
+ <span data-ttu-id="35ffb-152">**Figura 2: Integración con Azure AD**</span><span class="sxs-lookup"><span data-stu-id="35ffb-152">**Figure 2: Integrating with Azure AD**</span></span>
   
-La figura 2 muestra la manera en que la herramienta de Azure AD Connect obtiene los cambios en AD DS y los envía al inquilino de Azure AD. En este caso, el inquilino de Azure AD es un duplicado hospedado en la nube del contenido esencial del directorio local.
+<span data-ttu-id="35ffb-p107">La figura 2 muestra la manera en que la herramienta de Azure AD Connect obtiene los cambios en AD DS y los envía al inquilino de Azure AD. En este caso, el inquilino de Azure AD es un duplicado hospedado en la nube del contenido esencial del directorio local.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p107">Figure 2 shows how the Azure AD Connect tool obtains AD DS changes and sends them to your Azure AD tenant. In this case, your Azure AD tenant is a cloud-hosted duplicate of essential on-premises directory content.</span></span>
   
-Muchas organizaciones usan AD DS como proveedor de identidades local. Puede usar otro tipo de proveedor de identidades local (por ejemplo, uno que use LDAP) y sincronizarlas con Azure AD.
+<span data-ttu-id="35ffb-p108">Muchas organizaciones usan AD DS como proveedor de identidades local. Puede usar otro tipo de proveedor de identidades local (por ejemplo, uno que use LDAP) y sincronizarlas con Azure AD.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p108">Many organizations use AD DS as their on-premises identity provider. You can use a different type of identity provider on-premises (such as one that uses LDAP), and synchronize these to Azure AD.</span></span>
   
-### <a name="option-2-extend-ad-ds-to-azure"></a>Opción 2: Ampliación de AD DS a Azure
+### <a name="option-2-extend-ad-ds-to-azure"></a><span data-ttu-id="35ffb-157">Opción 2: Ampliación de AD DS a Azure</span><span class="sxs-lookup"><span data-stu-id="35ffb-157">Option 2: Extend AD DS to Azure</span></span>
 
-La ampliación de AD DS a máquinas virtuales que se ejecutan en servicios de infraestructura de Azure admite un conjunto de soluciones y aplicaciones diferente del que admite la sincronización con Azure AD. A continuación se indican dos:
+<span data-ttu-id="35ffb-p109">La ampliación de AD DS a máquinas virtuales que se ejecutan en servicios de infraestructura de Azure admite un conjunto de soluciones y aplicaciones diferente del que admite la sincronización con Azure AD. A continuación se indican dos:</span><span class="sxs-lookup"><span data-stu-id="35ffb-p109">Extending AD DS to virtual machines running in Azure infrastructure services supports a different set of solutions and applications compared to synchronization with Azure AD. Here are two:</span></span>
   
-- Admite soluciones basadas en la nube que requieren la autenticación NTLM o Kerberos, o máquinas virtuales unidas a un dominio de AD DS.
+- <span data-ttu-id="35ffb-160">Admite soluciones basadas en la nube que requieren la autenticación NTLM o Kerberos, o máquinas virtuales unidas a un dominio de AD DS.</span><span class="sxs-lookup"><span data-stu-id="35ffb-160">Supports cloud-based solutions that require NTLM or Kerberos authentication, or AD DS domain-joined virtual machines.</span></span>
     
-- Agrega la posibilidad de integración adicional para aplicaciones y servicios en la nube a través de plataformas y servicios en la nube de Microsoft.
+- <span data-ttu-id="35ffb-161">Agrega la posibilidad de integración adicional para aplicaciones y servicios en la nube a través de plataformas y servicios en la nube de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="35ffb-161">Adds additional integration potential for cloud services and applications across Microsoft cloud services and platforms.</span></span>
     
 ![Ampliación de AD DS a Azure](images/4675cf17-962c-4840-b1dc-bbd1d8894a27.png)
   
- **Figura 3: Ampliación de AD DS a Azure**
+ <span data-ttu-id="35ffb-163">**Figura 3: Ampliación de AD DS a Azure**</span><span class="sxs-lookup"><span data-stu-id="35ffb-163">**Figure 3: Extending AD DS to Azure**</span></span>
   
-La figura 3 muestra un controlador de dominio de AD DS conectado a una red virtual de Azure mediante un dispositivo VPN local y una puerta de enlace de VPN de Azure. La red virtual de Azure contiene servidores para una aplicación de línea de negocio y su propio conjunto de controladores de dominio de AD DS.
+<span data-ttu-id="35ffb-p110">La figura 3 muestra un controlador de dominio de AD DS conectado a una red virtual de Azure mediante un dispositivo VPN local y una puerta de enlace de VPN de Azure. La red virtual de Azure contiene servidores para una aplicación de línea de negocio y su propio conjunto de controladores de dominio de AD DS.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p110">Figure 3 shows an AD DS domain controller connected to an Azure virtual network through an on-premises VPN device and an Azure VPN gateway. The Azure virtual network contains servers for a line-of-business application and its own set of AD DS domain controllers.</span></span>
   
-### <a name="more-information"></a>Más información
+### <a name="more-information"></a><span data-ttu-id="35ffb-166">Más información</span><span class="sxs-lookup"><span data-stu-id="35ffb-166">More Information</span></span>
 
-- [Sincronizar el directorio con Office 365 es fácil](https://go.microsoft.com/fwlink/p/?LinkId=524281)
+- [<span data-ttu-id="35ffb-167">Sincronizar el directorio con Office 365 es fácil</span><span class="sxs-lookup"><span data-stu-id="35ffb-167">Synchronizing your directory with Office 365 is easy</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=524281)
     
-- [Infografía: Administración de acceso e identidades en la nube](https://go.microsoft.com/fwlink/p/?LinkId=524282)
+- [<span data-ttu-id="35ffb-168">Infografía: Administración de acceso e identidades en la nube</span><span class="sxs-lookup"><span data-stu-id="35ffb-168">Infographic: Cloud identity and access management</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=524282)
     
-- [Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524283)
+- [<span data-ttu-id="35ffb-169">Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="35ffb-169">Azure Active Directory</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=524283)
     
-## <a name="integrate-your-on-premises-ad-ds-accounts-with-microsoft-azure-ad"></a>Integración de las cuentas de AD DS local con Microsoft Azure AD
+## <a name="integrate-your-on-premises-ad-ds-accounts-with-microsoft-azure-ad"></a><span data-ttu-id="35ffb-170">Integración de las cuentas de AD DS local con Microsoft Azure AD</span><span class="sxs-lookup"><span data-stu-id="35ffb-170">Integrate your on-premises AD DS accounts with Microsoft Azure AD</span></span>
 
-Al sincronizar las cuentas de AD DS local con Azure AD, los usuarios pueden usar sus cuentas de AD DS local para acceder a:
+<span data-ttu-id="35ffb-171">Al sincronizar las cuentas de AD DS local con Azure AD, los usuarios pueden usar sus cuentas de AD DS local para acceder a:</span><span class="sxs-lookup"><span data-stu-id="35ffb-171">By synchronizing your on-premises AD DS accounts with Azure AD, your users can use their on-premises AD DS accounts to access:</span></span>
   
-- Todos los servicios SaaS de Microsoft (Office 365, Microsoft Intune y Dynamics CRM Online)
+- <span data-ttu-id="35ffb-172">Todos los servicios SaaS de Microsoft (Office 365, Microsoft Intune y Dynamics CRM Online)</span><span class="sxs-lookup"><span data-stu-id="35ffb-172">All of the Microsoft SaaS services (Office 365, Microsoft Intune, and Dynamics CRM Online)</span></span>
     
-- Las aplicaciones que se ejecutan en PaaS de Azure
+- <span data-ttu-id="35ffb-173">Las aplicaciones que se ejecutan en PaaS de Azure</span><span class="sxs-lookup"><span data-stu-id="35ffb-173">Your applications running in Azure PaaS</span></span>
     
-Hay dos maneras de configurar esta integración:
+<span data-ttu-id="35ffb-174">Hay dos maneras de configurar esta integración:</span><span class="sxs-lookup"><span data-stu-id="35ffb-174">There are two ways to configure this integration:</span></span>
   
-- Sincronización de directorio y contraseña
+- <span data-ttu-id="35ffb-175">Sincronización de directorio y contraseña</span><span class="sxs-lookup"><span data-stu-id="35ffb-175">Directory and password synchronization</span></span>
     
-- Federación e inicio de sesión único
+- <span data-ttu-id="35ffb-176">Federación e inicio de sesión único</span><span class="sxs-lookup"><span data-stu-id="35ffb-176">Federation and single sign-on</span></span>
     
-Comience con la opción más sencilla que satisfaga sus necesidades. Puede alternar entre estas opciones, si es necesario.
+<span data-ttu-id="35ffb-p111">Comience con la opción más sencilla que satisfaga sus necesidades. Puede alternar entre estas opciones, si es necesario.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p111">Start with the simplest option that meets your needs. You can switch between these options, if needed.</span></span>
   
 > [!NOTE]
-> No se recomienda el uso de cuentas solo en la nube (es decir, no realizar la integración con AD DS local) para organizaciones de escala empresarial. 
+> <span data-ttu-id="35ffb-179">No se recomienda el uso de cuentas solo en la nube (es decir, no realizar la integración con AD DS local) para organizaciones de escala empresarial.</span><span class="sxs-lookup"><span data-stu-id="35ffb-179">Using cloud-only accounts (not integrating with your on-premises AD DS) is not recommended for enterprise-scale organizations.</span></span> 
   
-### <a name="directory-and-password-synchronization"></a>Sincronización de directorio y contraseña
+### <a name="directory-and-password-synchronization"></a><span data-ttu-id="35ffb-180">Sincronización de directorio y contraseña</span><span class="sxs-lookup"><span data-stu-id="35ffb-180">Directory and password synchronization</span></span>
 
-Esta es la opción más sencilla y solo requiere un servidor que ejecute la herramienta de Azure AD Connect. 
+<span data-ttu-id="35ffb-181">Esta es la opción más sencilla y solo requiere un servidor que ejecute la herramienta de Azure AD Connect.</span><span class="sxs-lookup"><span data-stu-id="35ffb-181">This is the simplest option and requires only a server running the Azure AD Connect tool.</span></span> 
   
 ![Configuración de sincronización de directorio y contraseña](images/e7dcfe8f-dab5-461e-89cc-d7a48f58dc0f.png)
   
- **Figura 4: Configuración de sincronización de directorio y contraseña**
+ <span data-ttu-id="35ffb-183">**Figura 4: Configuración de sincronización de directorio y contraseña**</span><span class="sxs-lookup"><span data-stu-id="35ffb-183">**Figure 4: Directory and password synchronization configuration**</span></span>
   
-La figura 4 muestra un centro de datos en la nube privado o local con un controlador de dominio de AD DS. Un servidor que ejecuta la herramienta de Azure AD Connect sincroniza la lista de nombres de cuenta con Azure AD.
+<span data-ttu-id="35ffb-p112">La figura 4 muestra un centro de datos en la nube privado o local con un controlador de dominio de AD DS. Un servidor que ejecuta la herramienta de Azure AD Connect sincroniza la lista de nombres de cuenta con Azure AD.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p112">Figure 4 shows an on-premises or private cloud datacenter with an AD DS domain controller. A server running the Azure AD Connect tool synchronizes the list of account names with Azure AD.</span></span>
   
-Con esta opción:
+<span data-ttu-id="35ffb-186">Con esta opción:</span><span class="sxs-lookup"><span data-stu-id="35ffb-186">With this option:</span></span>
   
-- Las cuentas de usuario se sincronizan de AD DS local (u otro proveedor de identidades) con el inquilino de Azure AD. El directorio local sigue siendo el origen de autoridad de las cuentas y todos los cambios en las cuentas se administran desde allí.
+- <span data-ttu-id="35ffb-p113">Las cuentas de usuario se sincronizan de AD DS local (u otro proveedor de identidades) con el inquilino de Azure AD. El directorio local sigue siendo el origen de autoridad de las cuentas y todos los cambios en las cuentas se administran desde allí.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p113">User accounts are synchronized from your on-premises AD DS (or other identity provider) to your Azure AD tenant. The on-premises directory remains the authoritative source for accounts and you manage all account changes from there.</span></span>
     
-- Azure AD lleva a cabo la autenticación de los servicios basados en SaaS de Microsoft y las aplicaciones PaaS de Azure.
+- <span data-ttu-id="35ffb-189">Azure AD lleva a cabo la autenticación de los servicios basados en SaaS de Microsoft y las aplicaciones PaaS de Azure.</span><span class="sxs-lookup"><span data-stu-id="35ffb-189">Azure AD performs all authentication for Microsoft SaaS-based services and Azure PaaS applications.</span></span>
     
-- También puede configurar la sincronización de varios bosques de AD DS.
+- <span data-ttu-id="35ffb-190">También puede configurar la sincronización de varios bosques de AD DS.</span><span class="sxs-lookup"><span data-stu-id="35ffb-190">You can also configure synchronization for multiple AD DS forests.</span></span>
     
-Con la sincronización de contraseñas:
+<span data-ttu-id="35ffb-191">Con la sincronización de contraseñas:</span><span class="sxs-lookup"><span data-stu-id="35ffb-191">With password synchronization:</span></span>
   
-- Se pide a los usuarios que escriban una contraseña al acceder a los servicios en la nube, que es la misma contraseña que usan para los recursos locales.
+- <span data-ttu-id="35ffb-192">Se pide a los usuarios que escriban una contraseña al acceder a los servicios en la nube, que es la misma contraseña que usan para los recursos locales.</span><span class="sxs-lookup"><span data-stu-id="35ffb-192">Users are prompted to enter a password when accessing cloud services, which is the same password that they use for on-premises resources.</span></span>
     
-- Las contraseñas de usuario nunca se envían como texto no cifrado a Azure AD. En su lugar, se usa un hash de la contraseña. Es criptográficamente imposible descifrar el hash de la contraseña o usar técnicas de ingeniería inversa para obtener la contraseña como texto no cifrado. 
+- <span data-ttu-id="35ffb-p114">Las contraseñas de usuario nunca se envían como texto no cifrado a Azure AD. En su lugar, se usa un hash de la contraseña. Es criptográficamente imposible descifrar el hash de la contraseña o usar técnicas de ingeniería inversa para obtener la contraseña como texto no cifrado.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p114">User passwords are never sent as cleartext to Azure AD. Instead, a hash of the password is used. It is cryptographically impossible to decrypt or reverse-engineer the password hash and obtain the cleartext password.</span></span> 
     
-Con la autenticación multifactor (MFA):
+<span data-ttu-id="35ffb-196">Con la autenticación multifactor (MFA):</span><span class="sxs-lookup"><span data-stu-id="35ffb-196">With multi-factor authentication (MFA):</span></span>
   
-- Puede aprovechar las características básicas de MFA que se ofrecen con Office 365.
+- <span data-ttu-id="35ffb-197">Puede aprovechar las características básicas de MFA que se ofrecen con Office 365.</span><span class="sxs-lookup"><span data-stu-id="35ffb-197">You can take advantage of basic MFA features offered with Office 365.</span></span>
     
-- Los desarrolladores de aplicaciones PaaS de Azure pueden aprovechar el servicio de autenticación multifactor de Azure.
+- <span data-ttu-id="35ffb-198">Los desarrolladores de aplicaciones PaaS de Azure pueden aprovechar el servicio de autenticación multifactor de Azure.</span><span class="sxs-lookup"><span data-stu-id="35ffb-198">Azure PaaS application developers can take advantage of the Azure Multi-Factor Authentication service.</span></span>
     
-La sincronización de directorios no proporciona integración con soluciones MFA locales.
+<span data-ttu-id="35ffb-199">La sincronización de directorios no proporciona integración con soluciones MFA locales.</span><span class="sxs-lookup"><span data-stu-id="35ffb-199">Directory synchronization does not provide integration with on-premises MFA solutions.</span></span>
   
-### <a name="federation-and-single-sign-on"></a>Federación e inicio de sesión único
+### <a name="federation-and-single-sign-on"></a><span data-ttu-id="35ffb-200">Federación e inicio de sesión único</span><span class="sxs-lookup"><span data-stu-id="35ffb-200">Federation and single sign-on</span></span>
 
-Esta opción requiere una infraestructura y servidores adicionales. 
+<span data-ttu-id="35ffb-201">Esta opción requiere una infraestructura y servidores adicionales.</span><span class="sxs-lookup"><span data-stu-id="35ffb-201">This option requires additional servers and infrastructure.</span></span> 
   
 ![Servidores necesarios para la autenticación federada](images/1e54f0d2-e650-4eb5-957f-4f1d3c44da16.png)
   
- **Figura 5: Servidores necesarios para la autenticación federada**
+ <span data-ttu-id="35ffb-203">**Figura 5: Servidores necesarios para la autenticación federada**</span><span class="sxs-lookup"><span data-stu-id="35ffb-203">**Figure 5: Servers needed for federated authentication**</span></span>
   
-La figura 5 muestra el conjunto de componentes para la autenticación federada. Azure AD se pone en contacto con un proxy de aplicación web, el cual reenvía la solicitud de autenticación a un servidor de Servicios de federación de Active Directory (AD FS) que, a su vez, reenvía la solicitud a un controlador de dominio de AD DS para la evaluación y la respuesta. Un servidor que ejecuta la herramienta de Azure AD Connect sincroniza la lista de nombres de cuenta de AD DS con Azure AD.
+<span data-ttu-id="35ffb-p115">La figura 5 muestra el conjunto de componentes para la autenticación federada. Azure AD se pone en contacto con un proxy de aplicación web, el cual reenvía la solicitud de autenticación a un servidor de Servicios de federación de Active Directory (AD FS) que, a su vez, reenvía la solicitud a un controlador de dominio de AD DS para la evaluación y la respuesta. Un servidor que ejecuta la herramienta de Azure AD Connect sincroniza la lista de nombres de cuenta de AD DS con Azure AD.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p115">Figure 5 shows the set of components for federated authentication. Azure AD contacts a web application proxy, which forwards the authentication request to an Active Directory Federation Services (AD FS) server, which forwards the request to an AD DS domain controller for evaluation and response. A server running the Azure AD Connect tool synchronizes the list of account names from AD DS to Azure AD.</span></span>
   
-La federación ofrece las siguientes capacidades empresariales adicionales:
+<span data-ttu-id="35ffb-207">La federación ofrece las siguientes capacidades empresariales adicionales:</span><span class="sxs-lookup"><span data-stu-id="35ffb-207">Federation provides these additional enterprise capabilities:</span></span>
   
-- Todas las solicitudes de autenticación enviadas a Azure AD se reenvían y se llevan a cabo con el proveedor de identidades local a través de AD FS.
+- <span data-ttu-id="35ffb-208">Todas las solicitudes de autenticación enviadas a Azure AD se reenvían y se llevan a cabo con el proveedor de identidades local a través de AD FS.</span><span class="sxs-lookup"><span data-stu-id="35ffb-208">All authentication requests sent to Azure AD are forwarded to and performed against the on-premises identity provider through AD FS.</span></span>
     
-- Funciona con proveedores de identidades que no son de Microsoft.
+- <span data-ttu-id="35ffb-209">Funciona con proveedores de identidades que no son de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="35ffb-209">Works with non-Microsoft identity providers.</span></span>
     
-- La sincronización del hash de contraseña puede actuar como copia de seguridad de inicio de sesión para el inicio de sesión federado (por ejemplo, si se produce un error en la autenticación federada).
+- <span data-ttu-id="35ffb-210">La sincronización del hash de contraseña puede actuar como copia de seguridad de inicio de sesión para el inicio de sesión federado (por ejemplo, si se produce un error en la autenticación federada).</span><span class="sxs-lookup"><span data-stu-id="35ffb-210">Password hash synchronization can act as a sign-in backup for federated sign-in (for example, if the federated authentication fails).</span></span>
     
-Use la federación si:
+<span data-ttu-id="35ffb-211">Use la federación si:</span><span class="sxs-lookup"><span data-stu-id="35ffb-211">Use federation if:</span></span>
   
-- Se requiere el inicio de sesión único. Con el inicio de sesión único, no se les pide a los usuarios que especifiquen las credenciales (nombre de usuario o contraseña) al acceder a un servicio en la nube.
+- <span data-ttu-id="35ffb-p116">Se requiere el inicio de sesión único. Con el inicio de sesión único, no se les pide a los usuarios que especifiquen las credenciales (nombre de usuario o contraseña) al acceder a un servicio en la nube.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p116">Single sign-on is required. With single sign-on, users are not prompted to enter any credentials (user name or password), when accessing a cloud service.</span></span>
     
-- Ya se ha implementado AD FS.
+- <span data-ttu-id="35ffb-214">Ya se ha implementado AD FS.</span><span class="sxs-lookup"><span data-stu-id="35ffb-214">AD FS is already deployed.</span></span>
     
-- Usa un proveedor de identidades de terceros.
+- <span data-ttu-id="35ffb-215">Usa un proveedor de identidades de terceros.</span><span class="sxs-lookup"><span data-stu-id="35ffb-215">You use a third-party identity provider.</span></span>
     
-- Usa Forefront Identity Manager 2010 R2 (no admite la sincronización de hash de contraseña).
+- <span data-ttu-id="35ffb-216">Usa Forefront Identity Manager 2010 R2 (no admite la sincronización de hash de contraseña).</span><span class="sxs-lookup"><span data-stu-id="35ffb-216">You use Forefront Identity Manager 2010 R2 (does not support password hash synchronization).</span></span>
     
-- Tiene una tarjeta inteligente integrada local u otra solución MFA.
+- <span data-ttu-id="35ffb-217">Tiene una tarjeta inteligente integrada local u otra solución MFA.</span><span class="sxs-lookup"><span data-stu-id="35ffb-217">You have an on-premises integrated smart card or other MFA solution.</span></span>
     
-- Requiere la auditoría de inicio de sesión o la deshabilitación de cuentas.
+- <span data-ttu-id="35ffb-218">Requiere la auditoría de inicio de sesión o la deshabilitación de cuentas.</span><span class="sxs-lookup"><span data-stu-id="35ffb-218">You require sign-in audit and/or disablement of accounts.</span></span>
     
-- Su organización requiere restricciones en el inicio de sesión de cliente en función de la ubicación de red o las horas laborables.
+- <span data-ttu-id="35ffb-219">Su organización requiere restricciones en el inicio de sesión de cliente en función de la ubicación de red o las horas laborables.</span><span class="sxs-lookup"><span data-stu-id="35ffb-219">Your organization requires client sign-in restrictions by network location or work hours.</span></span>
     
-- Debe cumplir los Estándares federales de procesamiento de información (FIPS).
+- <span data-ttu-id="35ffb-220">Debe cumplir los Estándares federales de procesamiento de información (FIPS).</span><span class="sxs-lookup"><span data-stu-id="35ffb-220">You must comply with Federal Information Processing Standards (FIPS).</span></span>
     
-La autenticación federada requiere una mayor inversión en la infraestructura local.
+<span data-ttu-id="35ffb-221">La autenticación federada requiere una mayor inversión en la infraestructura local.</span><span class="sxs-lookup"><span data-stu-id="35ffb-221">Federated authentication requires a greater investment in infrastructure on-premises.</span></span>
   
-- Los servidores locales deben ser accesibles desde Internet a través de un firewall corporativo. Microsoft recomienda el uso de servidores proxy de aplicación web implementados en la red perimetral.
+- <span data-ttu-id="35ffb-p117">Los servidores locales deben ser accesibles desde Internet a través de un firewall corporativo. Microsoft recomienda el uso de servidores proxy de aplicación web implementados en la red perimetral.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p117">The on-premises servers must be Internet-accessible through a corporate firewall. Microsoft recommends the use of Web Application Proxy servers deployed in your perimeter network.</span></span>
     
-- Requiere hardware, licencias y operaciones para servidores de AD FS, servidores proxy de AD FS o servidores proxy de aplicación web, firewalls y equilibradores de carga. 
+- <span data-ttu-id="35ffb-224">Requiere hardware, licencias y operaciones para servidores de AD FS, servidores proxy de AD FS o servidores proxy de aplicación web, firewalls y equilibradores de carga.</span><span class="sxs-lookup"><span data-stu-id="35ffb-224">Requires hardware, licenses, and operations for AD FS servers, AD FS proxy or Web Application Proxy servers, firewalls, and load balancers.</span></span> 
     
-- La disponibilidad y el rendimiento son importantes para garantizar que los usuarios puedan acceder a Office 365 y otras aplicaciones en la nube.
+- <span data-ttu-id="35ffb-225">La disponibilidad y el rendimiento son importantes para garantizar que los usuarios puedan acceder a Office 365 y otras aplicaciones en la nube.</span><span class="sxs-lookup"><span data-stu-id="35ffb-225">Availability and performance are important to ensure users can access Office 365 and other cloud applications.</span></span>
     
-### <a name="more-information"></a>Más información
+### <a name="more-information"></a><span data-ttu-id="35ffb-226">Más información</span><span class="sxs-lookup"><span data-stu-id="35ffb-226">More Information</span></span>
 
-- [Sincronizar el directorio con Office 365 es fácil](https://go.microsoft.com/fwlink/p/?LinkId=524281)
+- [<span data-ttu-id="35ffb-227">Sincronizar el directorio con Office 365 es fácil</span><span class="sxs-lookup"><span data-stu-id="35ffb-227">Synchronizing your directory with Office 365 is easy</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=524281)
     
-- [Preparar el aprovisionamiento de usuarios a Office 365 mediante la sincronización de directorios](https://go.microsoft.com/fwlink/p/?LinkId=524284)
+- [<span data-ttu-id="35ffb-228">Preparar el aprovisionamiento de usuarios a Office 365 mediante la sincronización de directorios</span><span class="sxs-lookup"><span data-stu-id="35ffb-228">Prepare to provision users through directory synchronization to Office 365</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=524284)
     
-- [Autenticación multifactor para Office 365](https://go.microsoft.com/fwlink/p/?LinkID=392012)
+- [<span data-ttu-id="35ffb-229">Autenticación multifactor para Office 365</span><span class="sxs-lookup"><span data-stu-id="35ffb-229">Multi-Factor Authentication for Office 365</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=392012)
     
-- [Autenticación multifactor de Azure](https://go.microsoft.com/fwlink/p/?LinkId=524285)
+- [<span data-ttu-id="35ffb-230">Autenticación multifactor de Azure</span><span class="sxs-lookup"><span data-stu-id="35ffb-230">Azure Multi-Factor Authentication</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=524285)
     
-- [TechEd 2014: Integración de directorios: Crear un directorio con Active Directory y Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524286)
+- [<span data-ttu-id="35ffb-231">TechEd 2014: Integración de directorios: Crear un directorio con Active Directory y Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="35ffb-231">TechEd 2014: Directory Integration: Creating One Directory with Active Directory and Azure Active Directory</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=524286)
     
-## <a name="extend-ad-ds-to-azure"></a>Ampliación de AD DS a Azure
+## <a name="extend-ad-ds-to-azure"></a><span data-ttu-id="35ffb-232">Ampliación de AD DS a Azure</span><span class="sxs-lookup"><span data-stu-id="35ffb-232">Extend AD DS to Azure</span></span>
 
-La ampliación de AD DS a Azure es el primer paso para admitir aplicaciones de línea de negocio que se ejecutan en máquinas virtuales en servicios de infraestructura de Azure, lo que proporciona:
+<span data-ttu-id="35ffb-233">La ampliación de AD DS a Azure es el primer paso para admitir aplicaciones de línea de negocio que se ejecutan en máquinas virtuales en servicios de infraestructura de Azure, lo que proporciona:</span><span class="sxs-lookup"><span data-stu-id="35ffb-233">Extending AD DS to Azure is the first step to support line-of-business applications running on virtual machines in Azure infrastructure services, which provides:</span></span>
   
-- Compatibilidad con soluciones basadas en la nube que requieren la autenticación NTLM o Kerberos, o máquinas virtuales unidas a un dominio de AD DS.
+- <span data-ttu-id="35ffb-234">Compatibilidad con soluciones basadas en la nube que requieren la autenticación NTLM o Kerberos, o máquinas virtuales unidas a un dominio de AD DS.</span><span class="sxs-lookup"><span data-stu-id="35ffb-234">Support for cloud-based solutions that require NTLM or Kerberos authentication, or AD DS domain-joined virtual machines.</span></span>
     
-- Posibilidad de integración adicional para aplicaciones y servicios en la nube, que se pueden agregar en cualquier momento.
+- <span data-ttu-id="35ffb-235">Posibilidad de integración adicional para aplicaciones y servicios en la nube, que se pueden agregar en cualquier momento.</span><span class="sxs-lookup"><span data-stu-id="35ffb-235">Additional integration potential for cloud services and applications and can be added at any time.</span></span>
     
 ![Ampliación de AD DS a una red virtual de Azure](images/9fe2e27d-7fc8-441a-a694-1db4b9f6d03f.png)
   
- **Figura 6: Ampliación de AD DS a una red virtual de Azure**
+ <span data-ttu-id="35ffb-237">**Figura 6: Ampliación de AD DS a una red virtual de Azure**</span><span class="sxs-lookup"><span data-stu-id="35ffb-237">**Figure 6: Extending AD DS to an Azure virtual network**</span></span>
   
-La figura 6 muestra un centro de datos en la nube privado o local con AD DS conectado a una red virtual de Azure con una conexión de sitio a sitio VPN o ExpressRoute. La red virtual de Azure contiene servidores para una aplicación de línea de negocio y su propio conjunto de controladores de dominio de AD DS. Esta configuración es una implementación híbrida de AD DS local y en servicios de infraestructura de Azure. Requiere lo siguiente:
+<span data-ttu-id="35ffb-p118">La figura 6 muestra un centro de datos en la nube privado o local con AD DS conectado a una red virtual de Azure con una conexión de sitio a sitio VPN o ExpressRoute. La red virtual de Azure contiene servidores para una aplicación de línea de negocio y su propio conjunto de controladores de dominio de AD DS. Esta configuración es una implementación híbrida de AD DS local y en servicios de infraestructura de Azure. Requiere lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="35ffb-p118">Figure 6 shows an on-premises or private cloud datacenter with AD DS connected to an Azure virtual network with a site-to-site VPN or ExpressRoute connection. The Azure virtual network contains servers for a line-of-business application and its own set of AD DS domain controllers. This configuration is a hybrid deployment of AD DS on-premises and in Azure infrastructure services. It requires:</span></span>
   
-- Una red virtual de Azure.
+- <span data-ttu-id="35ffb-242">Una red virtual de Azure.</span><span class="sxs-lookup"><span data-stu-id="35ffb-242">An Azure virtual network.</span></span>
     
-- Una conexión entre un dispositivo de red privada virtual (VPN) o enrutador local y una puerta de enlace de VPN de Azure.
+- <span data-ttu-id="35ffb-243">Una conexión entre un dispositivo de red privada virtual (VPN) o enrutador local y una puerta de enlace de VPN de Azure.</span><span class="sxs-lookup"><span data-stu-id="35ffb-243">A connection between an on-premises virtual private network (VPN) device or router and an Azure VPN gateway.</span></span>
     
-- El uso de una parte del espacio local de direcciones IP para las máquinas virtuales de la red virtual.
+- <span data-ttu-id="35ffb-244">El uso de una parte del espacio local de direcciones IP para las máquinas virtuales de la red virtual.</span><span class="sxs-lookup"><span data-stu-id="35ffb-244">Using a portion of your on-premises IP address space for the virtual machines in the virtual network.</span></span>
     
-- La implementación de uno o más controladores de dominio en la red virtual designados como servidores de catálogo global (lo que reduce el tráfico de salida en la conexión VPN).
+- <span data-ttu-id="35ffb-245">La implementación de uno o más controladores de dominio en la red virtual designados como servidores de catálogo global (lo que reduce el tráfico de salida en la conexión VPN).</span><span class="sxs-lookup"><span data-stu-id="35ffb-245">Deploying one or more domain controllers in the virtual network designated as global catalog servers (reduces egress traffic across the VPN connection).</span></span>
     
-Esta arquitectura de identidad admite un conjunto de soluciones y aplicaciones diferente del que admite la sincronización con Azure AD.
+<span data-ttu-id="35ffb-246">Esta arquitectura de identidad admite un conjunto de soluciones y aplicaciones diferente del que admite la sincronización con Azure AD.</span><span class="sxs-lookup"><span data-stu-id="35ffb-246">This identity architecture supports a different set of solutions and applications compared to synchronization with Azure AD.</span></span>
   
-### <a name="on-premises-to-azure-connection-options"></a>Opciones de conexión de local a Azure
+### <a name="on-premises-to-azure-connection-options"></a><span data-ttu-id="35ffb-247">Opciones de conexión de local a Azure</span><span class="sxs-lookup"><span data-stu-id="35ffb-247">On-premises to Azure connection options</span></span>
 
-Para conectar su red local a una red virtual de Azure, puede usar lo siguiente:
+<span data-ttu-id="35ffb-248">Para conectar su red local a una red virtual de Azure, puede usar lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="35ffb-248">To connect your on-premises network to an Azure virtual network, you can use:</span></span>
   
-- Una conexión VPN de sitio a sitio, que puede conectar entre 1 y 10 sitios (incluidas otras redes virtuales de Azure) a una sola red virtual de Azure.
+- <span data-ttu-id="35ffb-249">Una conexión VPN de sitio a sitio, que puede conectar entre 1 y 10 sitios (incluidas otras redes virtuales de Azure) a una sola red virtual de Azure.</span><span class="sxs-lookup"><span data-stu-id="35ffb-249">A site-to-site VPN connection, which can connect 1-10 sites (including other Azure virtual networks) to a single Azure virtual network.</span></span>
     
-- ExpressRoute, un vínculo WAN seguro y privado a Azure a través de un proveedor de servicios de red y centro de datos asociado. Las conexiones ExpressRoute pueden ofrecer una mayor confiabilidad, un mayor ancho de banda y latencias menores.
+- <span data-ttu-id="35ffb-p119">ExpressRoute, un vínculo WAN seguro y privado a Azure a través de un proveedor de servicios de red y centro de datos asociado. Las conexiones ExpressRoute pueden ofrecer una mayor confiabilidad, un mayor ancho de banda y latencias menores.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p119">ExpressRoute, a private, secure WAN link to Azure through a partner network and datacenter services provider. ExpressRoute connections can offer increased reliability, higher bandwidth, and lower latencies.</span></span>
     
-### <a name="more-information"></a>Más información
+### <a name="more-information"></a><span data-ttu-id="35ffb-252">Más información</span><span class="sxs-lookup"><span data-stu-id="35ffb-252">More Information</span></span>
 
-- [Acerca de la conectividad segura entre locales de redes virtuales](https://go.microsoft.com/fwlink/p/?LinkId=524293)
+- [<span data-ttu-id="35ffb-253">Acerca de la conectividad segura entre locales de redes virtuales</span><span class="sxs-lookup"><span data-stu-id="35ffb-253">Cross-premises connectivity for virtual networks</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=524293)
     
-- [Información técnica de ExpressRoute](https://go.microsoft.com/fwlink/?LinkID=392081)
+- [<span data-ttu-id="35ffb-254">Información técnica de ExpressRoute</span><span class="sxs-lookup"><span data-stu-id="35ffb-254">ExpressRoute Technical Overview</span></span>](https://go.microsoft.com/fwlink/?LinkID=392081)
     
-- [Directrices para implementar Windows Server Active Directory en máquinas virtuales de Azure](https://go.microsoft.com/fwlink/p/?LinkId=524295)
+- [<span data-ttu-id="35ffb-255">Directrices para implementar Windows Server Active Directory en máquinas virtuales de Azure</span><span class="sxs-lookup"><span data-stu-id="35ffb-255">Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=524295)
     
-## <a name="integrate-your-applications-with-cloud-identities"></a>Integración de sus aplicaciones con identidades de nube
+## <a name="integrate-your-applications-with-cloud-identities"></a><span data-ttu-id="35ffb-256">Integración de sus aplicaciones con identidades de nube</span><span class="sxs-lookup"><span data-stu-id="35ffb-256">Integrate your applications with cloud identities</span></span>
 
-Al diseñar y desarrollar aplicaciones que se ejecutan en la nube, debe fijarse como objetivo la coherencia de la experiencia del usuario en el proceso de autenticación, incluido el conjunto de credenciales necesarias. Por ejemplo, si usa credenciales de Windows, tanto en Azure AD como en AD DS ampliado, asegúrese de que los usuarios pueden autenticarse y centrarse en sus tareas rápidamente.
+<span data-ttu-id="35ffb-p120">Al diseñar y desarrollar aplicaciones que se ejecutan en la nube, debe fijarse como objetivo la coherencia de la experiencia del usuario en el proceso de autenticación, incluido el conjunto de credenciales necesarias. Por ejemplo, si usa credenciales de Windows, tanto en Azure AD como en AD DS ampliado, asegúrese de que los usuarios pueden autenticarse y centrarse en sus tareas rápidamente.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p120">When designing and developing applications that run in the cloud, you should aim for consistency of the user experience for the authentication process, including the set of required credentials. For example, when using Windows credentials, whether against Azure AD or an extended AD DS, ensure that users can quickly authenticate and focus on their tasks.</span></span>
   
 ![Integración de sus aplicaciones con identidades de nube](images/1e6304b0-fa15-4f80-a3b4-7507a28808ae.png)
   
- **Figura 7: Integración de sus aplicaciones con identidades de nube**
+ <span data-ttu-id="35ffb-260">**Figura 7: Integración de sus aplicaciones con identidades de nube**</span><span class="sxs-lookup"><span data-stu-id="35ffb-260">**Figure 7: Integrate your applications with cloud identities**</span></span>
   
-La figura 7 muestra tres opciones para integrar la aplicación con identidades de nube.
+<span data-ttu-id="35ffb-261">La figura 7 muestra tres opciones para integrar la aplicación con identidades de nube.</span><span class="sxs-lookup"><span data-stu-id="35ffb-261">Figure 7 shows three options for integrating your application with cloud identities.</span></span>
   
-1. Registre las aplicaciones hospedadas en la nube con Azure AD.
+1. <span data-ttu-id="35ffb-262">Registre las aplicaciones hospedadas en la nube con Azure AD.</span><span class="sxs-lookup"><span data-stu-id="35ffb-262">Register your cloud-hosted applications with Azure AD.</span></span>
     
-    Consulte el artículo de MSDN [Integración de aplicaciones con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524303). Esto le permite usar Azure AD para autenticar el acceso a la aplicación PaaS, así como permitir que los usuarios o los administradores concedan derechos a la aplicación para que acceda a contenido en su nombre desde otros servicios en la nube, como Office 365. Encontrará más detalles y ejemplos de código en el artículo de MSDN [Escenarios de autenticación para Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524304). 
+    <span data-ttu-id="35ffb-p121">Consulte el artículo de MSDN [Integración de aplicaciones con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524303). Esto le permite usar Azure AD para autenticar el acceso a la aplicación PaaS, así como permitir que los usuarios o los administradores concedan derechos a la aplicación para que acceda a contenido en su nombre desde otros servicios en la nube, como Office 365. Encontrará más detalles y ejemplos de código en el artículo de MSDN [Escenarios de autenticación para Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524304).</span><span class="sxs-lookup"><span data-stu-id="35ffb-p121">See the MSDN article [Integrating Applications with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524303). This lets you use Azure AD to authenticate access to your PaaS application, as well as allowing users or administrators to grant rights to your application to access content on their behalf from other cloud services, such as Office 365. More details and code samples can be found in the MSDN article [Authentication Scenarios for Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524304).</span></span> 
     
-2. Las aplicaciones que requieren autenticación mediante programación para acceder a una aplicación protegida por AD SD, AD FS en Windows Server 2012 R2 o Azure AD pueden usar:
+2. <span data-ttu-id="35ffb-266">Las aplicaciones que requieren autenticación mediante programación para acceder a una aplicación protegida por AD SD, AD FS en Windows Server 2012 R2 o Azure AD pueden usar:</span><span class="sxs-lookup"><span data-stu-id="35ffb-266">Applications that require programmatic authentication to gain access to an application secured by AD SD, AD FS on Windows Server 2012 R2, or Azure AD can use:</span></span>
     
-  - La [API de Graph de Azure AD](https://go.microsoft.com/fwlink/p/?LinkId=524305)
+  - <span data-ttu-id="35ffb-267">La [API de Graph de Azure AD](https://go.microsoft.com/fwlink/p/?LinkId=524305)</span><span class="sxs-lookup"><span data-stu-id="35ffb-267">The [Azure AD Graph API](https://go.microsoft.com/fwlink/p/?LinkId=524305)</span></span>
     
-  - [Biblioteca de autenticación de Active Directory (ADAL)](https://go.microsoft.com/fwlink/p/?LinkID=524297)
+  - [<span data-ttu-id="35ffb-268">Biblioteca de autenticación de Active Directory (ADAL)</span><span class="sxs-lookup"><span data-stu-id="35ffb-268">Active Directory Authentication Library (ADAL)</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=524297)
     
-    La API de Graph de Azure AD admite OAuth y OpenID Connect. También funciona con aplicaciones PaaS.
+    <span data-ttu-id="35ffb-p122">La API de Graph de Azure AD admite OAuth y OpenID Connect. También funciona con aplicaciones PaaS.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p122">The Azure AD Graph API supports OAuth and OpenID Connect. It also works with PaaS applications.</span></span>
     
-3. Configure las aplicaciones locales o las aplicaciones de línea de negocio que se ejecutan en máquinas virtuales en una red virtual de Azure de modo que usen directamente la autenticación de Windows (NTLM o Kerberos). Esta es la mejor experiencia para los usuarios y requiere una configuración mínima para los desarrolladores de aplicaciones de servidor.
+3. <span data-ttu-id="35ffb-p123">Configure las aplicaciones locales o las aplicaciones de línea de negocio que se ejecutan en máquinas virtuales en una red virtual de Azure de modo que usen directamente la autenticación de Windows (NTLM o Kerberos). Esta es la mejor experiencia para los usuarios y requiere una configuración mínima para los desarrolladores de aplicaciones de servidor.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p123">Configure on-premises applications or line-of-business applications running on virtual machines in an Azure virtual network to use Windows authentication (NTLM or Kerberos) directly. This is the best experience for users and requires the least configuration for server application developers.</span></span>
     
-### <a name="application-integration-example"></a>Ejemplo de integración de aplicaciones
+### <a name="application-integration-example"></a><span data-ttu-id="35ffb-273">Ejemplo de integración de aplicaciones</span><span class="sxs-lookup"><span data-stu-id="35ffb-273">Application integration example</span></span>
 
-Una organización crea una aplicación ASP.NET que expone un punto de conexión REST donde otras aplicaciones pueden obtener los datos de ventas más recientes. El acceso a ese punto de conexión REST está protegido con Azure AD. Las aplicaciones deben proporcionar credenciales que puedan ser autenticadas por Azure AD antes de que la aplicación ASP.NET envíe los datos solicitados. A continuación, otros desarrolladores de la organización pueden escribir sus propias aplicaciones que usen los datos de ventas del punto de conexión REST.
+<span data-ttu-id="35ffb-p124">Una organización crea una aplicación ASP.NET que expone un punto de conexión REST donde otras aplicaciones pueden obtener los datos de ventas más recientes. El acceso a ese punto de conexión REST está protegido con Azure AD. Las aplicaciones deben proporcionar credenciales que puedan ser autenticadas por Azure AD antes de que la aplicación ASP.NET envíe los datos solicitados. A continuación, otros desarrolladores de la organización pueden escribir sus propias aplicaciones que usen los datos de ventas del punto de conexión REST.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p124">An organization builds an ASP.NET application that exposes a REST endpoint where other applications can obtain the latest sales data. Access to that REST endpoint is secured with Azure AD. Applications must provide credentials that can be authenticated by Azure AD before the ASP.NET application sends the requested data. Other developers in the organization can then write their own applications that use the sales data from the REST endpoint.</span></span>
   
-Para autenticarse en Azure AD y recuperar datos, ADAL administra el proceso de autenticación del usuario y entrega el token de acceso a la aplicación para que pueda usarse para acceder a los datos de ventas. ADAL elimina gran parte de la complejidad que conlleva la obtención y el análisis de tokens, flujos de OAuth y otros elementos. ADAL es otra solución de tecnología que está cambiando rápidamente, por lo que los desarrolladores deben buscar la versión más reciente en NuGet.
+<span data-ttu-id="35ffb-p125">Para autenticarse en Azure AD y recuperar datos, ADAL administra el proceso de autenticación del usuario y entrega el token de acceso a la aplicación para que pueda usarse para acceder a los datos de ventas. ADAL elimina gran parte de la complejidad que conlleva la obtención y el análisis de tokens, flujos de OAuth y otros elementos. ADAL es otra solución de tecnología que está cambiando rápidamente, por lo que los desarrolladores deben buscar la versión más reciente en NuGet.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p125">To authenticate to Azure AD and retrieve data, ADAL manages the user authentication process and hands the access token off to the application so it can be used to gain access to the sales data. ADAL abstracts out much of the complexity of obtaining and parsing tokens, OAuth flows, and other elements. ADAL is another technology solution that is rapidly changing so developers should look for the latest version on NuGet.</span></span>
   
-## <a name="deploying-directory-components-in-azure"></a>Implementar componentes de directorio en Azure
+## <a name="deploying-directory-components-in-azure"></a><span data-ttu-id="35ffb-281">Implementar componentes de directorio en Azure</span><span class="sxs-lookup"><span data-stu-id="35ffb-281">Deploying directory components in Azure</span></span>
 
-Puede implementar componentes de directorio, como servidores para la sincronización de contraseñas o la autenticación federada, en una red virtual de Azure en lugar de un centro de datos local. Tenga en cuenta sus ventajas, especialmente si piensa ampliar AD DS en Azure.
+<span data-ttu-id="35ffb-p126">Puede implementar componentes de directorio, como servidores para la sincronización de contraseñas o la autenticación federada, en una red virtual de Azure en lugar de un centro de datos local. Tenga en cuenta sus ventajas, especialmente si piensa ampliar AD DS en Azure.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p126">You can deploy directory components, such as servers for password synchronization or federated authentication, in an Azure virtual network rather than an on-premises datacenter. Consider its benefits, especially if you plan to extend AD DS into Azure.</span></span>
   
-Estos son los componentes de directorio que se pueden poner en una red virtual de Azure:
+<span data-ttu-id="35ffb-284">Estos son los componentes de directorio que se pueden poner en una red virtual de Azure:</span><span class="sxs-lookup"><span data-stu-id="35ffb-284">Here are the directory components that can be put in an Azure virtual network:</span></span>
   
-- Herramienta de Azure AD Connect
+- <span data-ttu-id="35ffb-285">Herramienta de Azure AD Connect</span><span class="sxs-lookup"><span data-stu-id="35ffb-285">Azure AD Connect tool</span></span>
     
-- Componentes de autenticación federada
+- <span data-ttu-id="35ffb-286">Componentes de autenticación federada</span><span class="sxs-lookup"><span data-stu-id="35ffb-286">Federated authentication components</span></span>
     
-- Entorno de AD DS independiente
+- <span data-ttu-id="35ffb-287">Entorno de AD DS independiente</span><span class="sxs-lookup"><span data-stu-id="35ffb-287">A standalone AD DS environment</span></span>
     
-### <a name="ad-connect-tool"></a>Herramienta de AD Connect
+### <a name="ad-connect-tool"></a><span data-ttu-id="35ffb-288">Herramienta de AD Connect</span><span class="sxs-lookup"><span data-stu-id="35ffb-288">AD Connect tool</span></span>
 
-La herramienta de Azure AD Connect se puede hospedar en la nube en una red virtual de Azure. Tenga en cuenta las ventajas de implementar esta carga de trabajo en Azure:
+<span data-ttu-id="35ffb-p127">La herramienta de Azure AD Connect se puede hospedar en la nube en una red virtual de Azure. Tenga en cuenta las ventajas de implementar esta carga de trabajo en Azure:</span><span class="sxs-lookup"><span data-stu-id="35ffb-p127">The Azure AD Connect tool can be hosted in the cloud on an Azure virtual network. Consider these benefits of deploying this workload to Azure:</span></span>
   
-- Aprovisionamiento potencialmente más rápido y menor costo de las operaciones
+- <span data-ttu-id="35ffb-291">Aprovisionamiento potencialmente más rápido y menor costo de las operaciones</span><span class="sxs-lookup"><span data-stu-id="35ffb-291">Potentially faster provisioning and lower cost of operations</span></span>
     
-- Mayor disponibilidad
+- <span data-ttu-id="35ffb-292">Mayor disponibilidad</span><span class="sxs-lookup"><span data-stu-id="35ffb-292">Increased availability</span></span>
     
 ![La herramienta de AD Connect se ejecuta en los servicios de infraestructura de Azure](images/97593481-e06a-4e34-b8b5-cc63acb5f9f1.png)
   
- **Figura 8: La herramienta de AD Connect en ejecución en Azure**
+ <span data-ttu-id="35ffb-294">**Figura 8: La herramienta de AD Connect en ejecución en Azure**</span><span class="sxs-lookup"><span data-stu-id="35ffb-294">**Figure 8: The AD Connect tool running in Azure**</span></span>
   
-La figura 8 muestra la herramienta de AD Connect en ejecución en una máquina virtual en una red virtual de Azure, que consulta un controlador de dominio de AD DS local para conocer los cambios en una cuenta y los envía a Office 365. Esta solución funciona con:
+<span data-ttu-id="35ffb-p128">La figura 8 muestra la herramienta de AD Connect en ejecución en una máquina virtual en una red virtual de Azure, que consulta un controlador de dominio de AD DS local para conocer los cambios en una cuenta y los envía a Office 365. Esta solución funciona con:</span><span class="sxs-lookup"><span data-stu-id="35ffb-p128">Figure 8 shows the AD Connect tool running on a virtual machine in an Azure virtual network, which queries an on-premises AD DS domain controller for account changes and then sends those changes to Office 365. This solution works with:</span></span>
   
-- Servicios de Office 365.
+- <span data-ttu-id="35ffb-297">Servicios de Office 365.</span><span class="sxs-lookup"><span data-stu-id="35ffb-297">Office 365 services.</span></span>
     
-- Aplicaciones PaaS de Azure que están disponibles a través de Internet.
+- <span data-ttu-id="35ffb-298">Aplicaciones PaaS de Azure que están disponibles a través de Internet.</span><span class="sxs-lookup"><span data-stu-id="35ffb-298">Azure PaaS applications that are available over the Internet.</span></span>
     
-- Aplicaciones de línea de negocio en Azure que están disponibles en entornos locales a través de la conexión ExpressRoute o VPN de sitio a sitio.
+- <span data-ttu-id="35ffb-299">Aplicaciones de línea de negocio en Azure que están disponibles en entornos locales a través de la conexión ExpressRoute o VPN de sitio a sitio.</span><span class="sxs-lookup"><span data-stu-id="35ffb-299">Line-of-business applications in Azure that are available from on-premises environments through the site-to-site VPN or ExpressRoute connection.</span></span>
     
-Para obtener más información, consulte [Integración de las identidades locales con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524307).
+<span data-ttu-id="35ffb-300">Para obtener más información, consulte [Integración de las identidades locales con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524307).</span><span class="sxs-lookup"><span data-stu-id="35ffb-300">For more information, see [Integrating your on-premises identities with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524307).</span></span>
   
-### <a name="federated-authentication-infrastructure"></a>Infraestructura de autenticación federada
+### <a name="federated-authentication-infrastructure"></a><span data-ttu-id="35ffb-301">Infraestructura de autenticación federada</span><span class="sxs-lookup"><span data-stu-id="35ffb-301">Federated authentication infrastructure</span></span>
 
-Si todavía no ha implementado AD FS local, tenga en cuenta las ventajas de implementar esta carga de trabajo en Azure:
+<span data-ttu-id="35ffb-302">Si todavía no ha implementado AD FS local, tenga en cuenta las ventajas de implementar esta carga de trabajo en Azure:</span><span class="sxs-lookup"><span data-stu-id="35ffb-302">If you haven't already deployed AD FS on-premises, consider these benefits of deploying this workload to Azure:</span></span>
   
-- Proporciona autonomía para la autenticación en servicios en la nube (sin dependencias locales)
+- <span data-ttu-id="35ffb-303">Proporciona autonomía para la autenticación en servicios en la nube (sin dependencias locales)</span><span class="sxs-lookup"><span data-stu-id="35ffb-303">Provides autonomy for authentication to cloud services (no on-premises dependencies)</span></span>
     
-- Reduce los servidores y las herramientas hospedados localmente
+- <span data-ttu-id="35ffb-304">Reduce los servidores y las herramientas hospedados localmente</span><span class="sxs-lookup"><span data-stu-id="35ffb-304">Reduces servers and tools hosted on-premises</span></span>
     
-- Usa una puerta de enlace de VPN de sitio a sitio en un clúster de conmutación por error de dos nodos para conectarse a Azure (nuevo)
+- <span data-ttu-id="35ffb-305">Usa una puerta de enlace de VPN de sitio a sitio en un clúster de conmutación por error de dos nodos para conectarse a Azure (nuevo)</span><span class="sxs-lookup"><span data-stu-id="35ffb-305">Uses a site-to-site VPN gateway on a two-node failover cluster to connect to Azure (new)</span></span>
     
-- Usa ACL para asegurarse de que los servidores proxy de aplicación web solo pueden comunicarse con AD FS, no con controladores de dominio u otros servidores directamente
+- <span data-ttu-id="35ffb-306">Usa ACL para asegurarse de que los servidores proxy de aplicación web solo pueden comunicarse con AD FS, no con controladores de dominio u otros servidores directamente</span><span class="sxs-lookup"><span data-stu-id="35ffb-306">Uses ACLs to ensure that Web Application Proxy servers can only communicate with AD FS, not domain controllers or other servers directly</span></span>
     
 ![Implementación de la infraestructura de autenticación federada en Azure](images/4e023dd4-b9fb-403a-a8eb-069b56d7a65e.png)
   
- **Figura 9: Implementación de la infraestructura de autenticación federada en Azure**
+ <span data-ttu-id="35ffb-308">**Figura 9: Implementación de la infraestructura de autenticación federada en Azure**</span><span class="sxs-lookup"><span data-stu-id="35ffb-308">**Figure 9: Deploying your federated authentication infrastructure in Azure**</span></span>
   
-La figura 9 muestra un conjunto de controladores de dominio locales que replican información de AD DS con un conjunto de controladores de dominio en una red virtual de Azure. La herramienta de Azure AD Connect que se ejecuta en un servidor en la red virtual de Azure consulta los controladores de dominio locales para saber qué cambios se han producido y los envía a Azure AD. Las solicitudes de autenticación que entran en Azure AD desde servicios SaaS de Microsoft, aplicaciones PaaS de Azure y otras aplicaciones en la nube se reenvían a un equilibrador de carga externo, el cual reenvía la solicitud a un conjunto de servidores proxy de aplicación web. Los servidores proxy de aplicación web reenvían la solicitud a un equilibrador de carga interno, que reenvía la solicitud a un conjunto de servidores de AD FS. A continuación, los servidores de AD FS reenvían la solicitud a un controlador de dominio para validar las credenciales de envío.
+<span data-ttu-id="35ffb-p129">La figura 9 muestra un conjunto de controladores de dominio locales que replican información de AD DS con un conjunto de controladores de dominio en una red virtual de Azure. La herramienta de Azure AD Connect que se ejecuta en un servidor en la red virtual de Azure consulta los controladores de dominio locales para saber qué cambios se han producido y los envía a Azure AD. Las solicitudes de autenticación que entran en Azure AD desde servicios SaaS de Microsoft, aplicaciones PaaS de Azure y otras aplicaciones en la nube se reenvían a un equilibrador de carga externo, el cual reenvía la solicitud a un conjunto de servidores proxy de aplicación web. Los servidores proxy de aplicación web reenvían la solicitud a un equilibrador de carga interno, que reenvía la solicitud a un conjunto de servidores de AD FS. A continuación, los servidores de AD FS reenvían la solicitud a un controlador de dominio para validar las credenciales de envío.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p129">Figure 9 shows a set of on-premises domain controllers replicating AD DS information with a set of domain controllers in an Azure virtual network. The Azure AD Connect tool running on a server in the Azure virtual network queries the local domain controllers for changes and then sends those changes to Azure AD. Incoming authentication requests to Azure AD from Microsoft SaaS services, Azure PaaS applications, and other cloud applications are forwarded to an external load balancer, which forwards the request to a set of Web Application Proxy servers. The Web Application Proxy servers forward the request to an internal load balancer, which forwards the request to a set of AD FS servers. The AD FS servers then forward the request to a domain controller to validate the send credentials.</span></span>
   
- Esta solución funciona con:
+ <span data-ttu-id="35ffb-314">Esta solución funciona con:</span><span class="sxs-lookup"><span data-stu-id="35ffb-314">This solution works with:</span></span>
   
-- Aplicaciones que requieren Kerberos
+- <span data-ttu-id="35ffb-315">Aplicaciones que requieren Kerberos</span><span class="sxs-lookup"><span data-stu-id="35ffb-315">Applications that require Kerberos</span></span>
     
-- Todos los servicios SaaS de Microsoft
+- <span data-ttu-id="35ffb-316">Todos los servicios SaaS de Microsoft</span><span class="sxs-lookup"><span data-stu-id="35ffb-316">All of Microsoft's SaaS services</span></span>
     
-- Aplicaciones de Azure accesibles desde Internet
+- <span data-ttu-id="35ffb-317">Aplicaciones de Azure accesibles desde Internet</span><span class="sxs-lookup"><span data-stu-id="35ffb-317">Applications in Azure that are Internet-facing</span></span>
     
-- Aplicaciones de IaaS o PaaS de Azure que requieren la autenticación con el conjunto de cuentas de AD DS de su organización
+- <span data-ttu-id="35ffb-318">Aplicaciones de IaaS o PaaS de Azure que requieren la autenticación con el conjunto de cuentas de AD DS de su organización</span><span class="sxs-lookup"><span data-stu-id="35ffb-318">Applications in Azure IaaS or PaaS that require authentication with the set of accounts in your organization's AD DS</span></span>
     
-Para obtener más información, consulte [Integración de las identidades locales con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524307).
+<span data-ttu-id="35ffb-319">Para obtener más información, consulte [Integración de las identidades locales con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524307).</span><span class="sxs-lookup"><span data-stu-id="35ffb-319">For more information, see [Integrating your on-premises identities with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524307).</span></span>
   
-### <a name="standalone-ad-ds-environment-in-an-azure-virtual-network"></a>Entorno de AD DS independiente en una red virtual de Azure
+### <a name="standalone-ad-ds-environment-in-an-azure-virtual-network"></a><span data-ttu-id="35ffb-320">Entorno de AD DS independiente en una red virtual de Azure</span><span class="sxs-lookup"><span data-stu-id="35ffb-320">Standalone AD DS environment in an Azure virtual network</span></span>
 
-No siempre es necesario integrar una aplicación en la nube con el entorno local. Por ejemplo, un dominio de AD DS independiente en una red virtual de Azure admite aplicaciones de acceso público, como sitios de Internet.
+<span data-ttu-id="35ffb-p130">No siempre es necesario integrar una aplicación en la nube con el entorno local. Por ejemplo, un dominio de AD DS independiente en una red virtual de Azure admite aplicaciones de acceso público, como sitios de Internet.</span><span class="sxs-lookup"><span data-stu-id="35ffb-p130">You don't always need to integrate a cloud application with your on-premises environment. For example, a standalone AD DS domain in an Azure virtual network supports applications that are public-facing, such as Internet sites.</span></span>
   
 ![Un entorno independiente de AD DS para una aplicación basada en servidor](images/98c7349f-535d-4c9b-8de4-e580f6d573d4.png)
   
- **Figura 10: Un entorno de AD DS independiente para una aplicación basada en servidor**
+ <span data-ttu-id="35ffb-324">**Figura 10: Un entorno de AD DS independiente para una aplicación basada en servidor**</span><span class="sxs-lookup"><span data-stu-id="35ffb-324">**Figure 10: A standalone AD DS environment for a server-based application**</span></span>
   
-La figura 10 muestra una red virtual Azure que hospeda un conjunto de servidores de AD DS, que ofrecen servicios de AD DS y DNS, con un conjunto de servidores que hospedan una aplicación. Esta solución funciona con:
+<span data-ttu-id="35ffb-p131">La figura 10 muestra una red virtual Azure que hospeda un conjunto de servidores de AD DS, que ofrecen servicios de AD DS y DNS, con un conjunto de servidores que hospedan una aplicación. Esta solución funciona con:</span><span class="sxs-lookup"><span data-stu-id="35ffb-p131">Figure 10 shows an Azure virtual network hosting a set of AD DS servers, providing both AD DS and DNS services, with a set of servers that host an application. This solution works with:</span></span>
   
-- Aplicaciones y sitios web accesibles desde Internet
+- <span data-ttu-id="35ffb-327">Aplicaciones y sitios web accesibles desde Internet</span><span class="sxs-lookup"><span data-stu-id="35ffb-327">Internet-facing web sites and applications</span></span>
     
-- Aplicaciones que requieren autenticación NTLM o Kerberos
+- <span data-ttu-id="35ffb-328">Aplicaciones que requieren autenticación NTLM o Kerberos</span><span class="sxs-lookup"><span data-stu-id="35ffb-328">Applications that require NTLM or Kerberos authentication</span></span>
     
-- Aplicaciones que se ejecutan en servidores basados en Windows que requieren AD DS
+- <span data-ttu-id="35ffb-329">Aplicaciones que se ejecutan en servidores basados en Windows que requieren AD DS</span><span class="sxs-lookup"><span data-stu-id="35ffb-329">Applications running on Windows-based servers that require AD DS</span></span>
     
-Para obtener más información, consulte [Integración de las identidades locales con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524307).
+<span data-ttu-id="35ffb-330">Para obtener más información, consulte [Integración de las identidades locales con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524307).</span><span class="sxs-lookup"><span data-stu-id="35ffb-330">For more information, see [Integrating your on-premises identities with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524307).</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="35ffb-331">See Also</span><span class="sxs-lookup"><span data-stu-id="35ffb-331">See Also</span></span>
 
-[Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="35ffb-332">Recursos de arquitectura de TI de la nube de Microsoft</span><span class="sxs-lookup"><span data-stu-id="35ffb-332">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="35ffb-333">Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI</span><span class="sxs-lookup"><span data-stu-id="35ffb-333">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
