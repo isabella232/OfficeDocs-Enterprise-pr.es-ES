@@ -1,0 +1,72 @@
+---
+title: Microsoft Hybrid Cloud para arquitectos profesionales
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 12/15/2017
+ms.audience: ITPro
+ms.topic: overview
+ms.service: o365-solutions
+localization_priority: Normal
+ms.collection:
+- Ent_O365
+- Ent_O365_Visuals
+ms.custom:
+- DecEntMigration
+- Strat_O365_Enterprise
+- Ent_Architecture
+ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
+description: "Resumen: Qué deben saber los arquitectos de TI sobre los escenarios híbridos al usar las plataformas y los servicios en la nube de Microsoft."
+ms.openlocfilehash: 46e9a6cead44f5392d3ae228dbb5e7f9285bf891
+ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/15/2017
+---
+# <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud para arquitectos profesionales
+
+ **Resumen:** Qué deben saber los arquitectos de TI sobre los escenarios híbridos al usar las plataformas y los servicios en la nube de Microsoft.
+  
+Este artículo contiene vínculos a un conjunto de artículos en los que se describe lo que necesitan saber los arquitectos de TI sobre la configuración y la arquitectura híbrida con plataformas y servicios en la nube de Microsoft. También puede ver este artículo como un póster de 7 páginas e imprimirlo en formato tabloide (también conocido como doble carta, 11 x 17 o A3).
+  
+[![Imagen de miniatura para el modelo de nube híbrida de Microsoft](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+)
+  
+![Archivo PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![archivo de Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![ver una página con versiones en otros idiomas](images/Common_Images/GlobeIcon.png)
+[más idiomas](https://www.microsoft.com/download/details.aspx?id=54424)
+  
+También puede ver todos los modelos en los [recursos de la arquitectura de nube de Microsoft IT](microsoft-cloud-it-architecture-resources.md) y pase a través de [Enterprise Cloud Roadmap de Microsoft: recursos para la toma de decisiones de TI](https://aka.ms/cloudarchitecture).
+  
+Vea las siguientes secciones:
+  
+- [Información general de la nube híbrida](hybrid-cloud-overview.md)
+    
+    Ofertas de la nube de Microsoft (SaaS, PaaS de Azure e IaaS de Azure) y sus elementos comunes.
+    
+- [Arquitectura de escenarios de nube híbrida de Microsoft](architecture-of-microsoft-hybrid-cloud-scenarios.md)
+    
+    Esquema de la arquitectura de la nube híbrida para ofertas de Microsoft que muestra las capas comunes de infraestructura local, redes e identidad.
+    
+- [Escenarios de nube híbrida para SaaS de Microsoft (Office 365)](hybrid-cloud-scenarios-for-microsoft-saas-office-365.md)
+    
+    Arquitectura del escenario híbrido de SaaS y descripciones de las configuraciones híbridas clave de Skype Empresarial, SharePoint Server y Exchange Server.
+    
+- [Escenarios de nube híbrida para PaaS de Azure](hybrid-cloud-scenarios-for-azure-paas.md)
+    
+    Arquitectura del escenario híbrido de PaaS de Azure, descripción de una aplicación híbrida de PaaS de Azure con un ejemplo y descripción de SQL Server 2016 Stretch Database.
+    
+- [Escenarios de nube híbrida para IaaS de Azure](hybrid-cloud-scenarios-for-azure-iaas.md)
+    
+    Arquitectura del escenario híbrido de IaaS de Azure y descripción de una aplicación de línea de negocio (LOB) hospedada en IaaS de Azure.
+    
+> [!NOTE]
+> Estos artículos reflejan la versión de **junio de 2017** del póster de Microsoft Hybrid Cloud para arquitectos profesionales.
+  
+## <a name="see-also"></a>See Also
+
+[Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
+
+[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+
+
+
