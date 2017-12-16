@@ -1,7 +1,7 @@
 ---
-title: "Guía de seguridad de Microsoft para campañas políticas, las ONG y otras organizaciones de Agile"
+title: "Protección de la información de Office 365 para GDPR"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -11,8 +11,8 @@ localization_priority: Priority
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 
 description: "Esta solución muestra cómo proteger los datos confidenciales que se almacenan en los servicios de Office 365."
-ms.openlocfilehash: ef0bfdcd27682b92dd450b424b5feee53c3344da
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 208134e78f7f5c40ee61d678b2f1b42bde738c68
+ms.sourcegitcommit: c5a12b35a475ef4a5a80085e1bb2829d115d7c4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
