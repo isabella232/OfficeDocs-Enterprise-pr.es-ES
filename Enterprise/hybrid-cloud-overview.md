@@ -18,7 +18,7 @@ ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: "Resumen: Comprenda la definición y los elementos de la nube híbrida de Microsoft."
 ms.openlocfilehash: 9ece0f2e09384c0b9e6d9042b899d782be6327b5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -58,7 +58,7 @@ Los escenarios de nube híbrida con servicios en la nube de Microsoft varían se
     
     Los servicios SaaS de Microsoft incluyen Office 365, Microsoft Intune y Microsoft Dynamics 365. Los escenarios de nube híbrida con SaaS de Microsoft combinan estos servicios con aplicaciones o servicios locales. Por ejemplo, Exchange Online en ejecución en Office 365 puede integrarse con Skype Empresarial 2015, que está implementado de forma local.
     
-- PaaS de Azure
+- Plataforma como servicio de Azure
     
     Los servicios de PaaS de Microsoft Azure le permiten crear aplicaciones basadas en la nube. Los escenarios de nube híbrida con servicios de PaaS de Azure combinan una aplicación de PaaS de Azure con recursos o aplicaciones locales. Por ejemplo, una aplicación de PaaS de Azure pudo consultar de forma segura un almacén de datos local para obtener información necesaria para mostrar a usuarios de aplicaciones móviles.
     
@@ -70,7 +70,7 @@ Los escenarios de nube híbrida con servicios en la nube de Microsoft varían se
 
 Debe tener en cuenta los siguientes elementos al planear e implementar escenarios de nube híbrida con plataformas y servicios en la nube de Microsoft.
   
-- Redes
+- Conexión de red
     
     Las redes para escenarios de nube híbrida incluyen la conectividad a plataformas y servicios en la nube de Microsoft, así como ancho de banda suficiente para mantener el rendimiento durante las cargas máximas. Para obtener más información, consulte [Microsoft Cloud Networking para arquitectos profesionales](microsoft-cloud-networking-for-enterprise-architects.md).
     
@@ -86,7 +86,7 @@ Debe tener en cuenta los siguientes elementos al planear e implementar escenario
     
     La administración de escenarios de nube híbrida incluye la capacidad para mantener opciones de configuración, datos, cuentas, directivas y permisos, así como para supervisar el estado de los elementos del escenario y su rendimiento. También puede usar el mismo conjunto de herramientas, como Systems Management Server, para administrar máquinas virtuales en IaaS de Azure.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vea también
 
 [Microsoft Hybrid Cloud para arquitectos profesionales](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

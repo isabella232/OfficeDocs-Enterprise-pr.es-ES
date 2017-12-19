@@ -16,7 +16,7 @@ ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: "Resumen: Descubra cómo ExpressRoute puede ayudarle mediante conexiones más rápidas y fiables a los servicios y las plataformas en la nube de Microsoft."
 ms.openlocfilehash: 69120d3237518be5d77716a106d2e75b64a4860e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -235,13 +235,13 @@ En el caso de una oficina regional, el tráfico adecuado de Office 365 que va a:
     
 - Centros de datos de Office 365 en otro continente viaja a través de la red intercontinental en nube de Microsoft.
     
-Para obtener más información, vea:
+Para más información, visite:
   
 - [Aprendizaje de Azure ExpressRoute para Office 365](https://channel9.msdn.com/series/aer/)
     
 - [Planear la red y ajustar el rendimiento de Office 365](https://aka.ms/tune)
     
-- [Administración del rendimiento de Office 365](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
+- [Administración del rendimiento de Office 365](https://mva.microsoft.com/es-ES/training-courses/office-365-performance-management-8416)
     
 ## <a name="expressroute-options"></a>Opciones de ExpressRoute
 
@@ -263,7 +263,7 @@ Consulte estos recursos adicionales para obtener más información:
     
 - [ExpressRoute para Azure](https://azure.microsoft.com/services/expressroute/)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vea también
 
 [Microsoft Cloud Networking para arquitectos profesionales](microsoft-cloud-networking-for-enterprise-architects.md)
   

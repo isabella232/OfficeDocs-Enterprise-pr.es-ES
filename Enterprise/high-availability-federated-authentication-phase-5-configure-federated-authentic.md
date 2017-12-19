@@ -19,7 +19,7 @@ ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "Resumen: Configure Azure AD Connect para la autenticación federada de alta disponibilidad para Office 365 en Microsoft Azure."
 ms.openlocfilehash: 8340058dc93389d4b2b1e843726bc7e8ef30cdde
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -143,7 +143,7 @@ Esta es la configuración final, con nombres de marcador de posición para los s
   
 La infraestructura de autenticación federada de alta disponibilidad para Office 365 en Azure está completada.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vea también
 
 [Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

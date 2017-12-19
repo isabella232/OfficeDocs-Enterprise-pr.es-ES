@@ -16,7 +16,7 @@ ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: "Resumen: Cómo Contoso ha implementado SQL Server Stretch Database para reducir sus necesidades de almacenamiento de datos locales y los costos de ejecución diarios."
 ms.openlocfilehash: f1a44a14da49c394974755f7c557013717c4ccef
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -42,7 +42,7 @@ Contoso ha usado estos pasos para mover sus datos históricos a la nube:
     
     Se ha realizado un análisis de las tablas de las bases de datos que pretenden moverse a la nube y se han solucionado los problemas. El nuevo Stretch Database Advisor les proporciona información general completa de lo que pueden esperar de todas las características de SQL Server 2016, incluidas las tablas que tienen datos inactivos que podrían extenderse.
     
-2. Actualizar
+2. Actualización
     
     Se han actualizado los servidores SQL Server existentes en el centro de datos de la sede central de París a SQL Server 2016.
     
@@ -69,7 +69,7 @@ Después de implementar Stretch Database, Contoso:
     
 - Ha reducido sus costos de ejecución diarios de manera significativa.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vea también
 
 [Escenarios empresariales para Contoso Corporation](enterprise-scenarios-for-the-contoso-corporation.md)
   

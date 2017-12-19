@@ -18,7 +18,7 @@ ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "Resumen: Comprenda la arquitectura de las ofertas de nube híbrida de Microsoft."
 ms.openlocfilehash: 0909964421cecec455ed3c45c965a330501d361c
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -64,7 +64,7 @@ Muchas empresas, incluida Microsoft, usan un enfoque de tres fases para la adopc
     
     Para los escenarios de elevar y desplazar y compilar en la nube, las aplicaciones basadas en servidor que se ejecutan en máquinas virtuales de Azure ofrecen aprovisionamiento y escalado sencillos.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vea también
 
 [Microsoft Hybrid Cloud para arquitectos profesionales](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

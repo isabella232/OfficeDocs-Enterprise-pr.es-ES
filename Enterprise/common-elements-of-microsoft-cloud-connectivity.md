@@ -16,7 +16,7 @@ ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Resumen: Descubra los elementos comunes de la infraestructura de red y aprenda a preparar la red.'
 ms.openlocfilehash: 27a83217e94d6a0f882825c57346b58ea1834443
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -78,7 +78,7 @@ Al adoptar cualquiera de los servicios en la nube de Microsoft, debe tener en cu
     
 - **DNS de Internet:** A, AAAA, CNAME, MX, PTR y otros registros para buscar la nube de Microsoft o los servicios hospedados en la nube. Por ejemplo, puede que necesite un registro CNAME para la aplicación hospedada en PaaS de Azure.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vea también
 
 <a name="steps"> </a>
 

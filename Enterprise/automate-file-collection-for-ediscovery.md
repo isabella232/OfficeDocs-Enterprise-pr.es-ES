@@ -14,7 +14,7 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 description: "Resumen: Aprenda a automatizar una recopilación de archivos de los equipos del usuario para la exhibición de documentos electrónicos."
 ms.openlocfilehash: 2c2a3d5d217203bb608fcb48f9cc1da8d4b49213
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -42,10 +42,10 @@ El siguiente diagrama le dirige por todos los pasos y elementos de la solución
 |****Leyenda****||
 |:-----|:-----|
 |![Llamada magenta 1](images/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Crear un objeto de directiva de grupo (GPO) y asociarlo a la recopilación de scripts de inicio de sesión  <br/> |
-|![Llamada magenta 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Configurar el filtro de seguridad GPO para aplicar el GPO solo al grupo de administradores <br/> |
+|![Llamada magenta 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)|   Configurar el filtro de seguridad GPO para aplicar el GPO solo al grupo de administradores <br/> |
 |![Llamada magenta 3](images/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Cuando un administrador inicia sesión y se ejecuta el GPO, se llama a la recopilación de scripts de inicio de sesión.  <br/> |
 |![Llamada magenta 4](images/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|La recopilación de scripts de inicio de sesión hace un inventario de todas las unidades adjuntadas de forma local del equipo de los administradores, en busca de los archivos que desea, y registra su ubicación.  <br/> |
-|![Llamada magenta 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|La recopilación de scripts de inicio de sesión copia los archivos inventariados en un recurso compartido de archivos oculto en el servidor de implementación.  <br/> |
+|![Llamada magenta 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|La recopilación de scripts de inicio de sesión copia los archivos inventariados en un recurso compartido de archivos oculto en el servidor de implementación.   <br/> |
 |![Llamada magenta 6](images/99589726-0c7e-406b-a276-44301a135768.png)| (Opción A) Ejecute manualmente el script de importación de PST para importar los archivos PST recopilados en Exchange Server 2013. <br/> |
 |![Llamada magenta 7](images/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Opción B) Mediante la herramienta de Importar y procesar de Office 365, importe los archivos PST recopilados en Exchange Online.  <br/> |
 |![Llamada magenta 8](images/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Mueva todos los archivos recopilados a un recurso compartido de archivos de Azure para un almacenamiento a largo plazo con el Runbook MoveToColdStorageSystem Center Orchestrator 2012 R2. <br/> |
@@ -270,7 +270,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 |:-----|:-----|:-----|
 |71  <br/> |Variable **$FileTypes**. Incluir todos los tipos de extensiones de archivo que desea que el script inventarie y recopile en la variable de matriz<br/> |Opcional  <br/> |
 |76 y 77  <br/> |Cambie la manera en la que la variable **$CaseNo** se genera para que se adapte a sus necesidades. El script captura la fecha y hora actuales y le anexa el nombre de usuario.<br/> |Opcional  <br/> |
-|80  <br/> |La variable **$CaseRootLocation** debe establecerse en el recurso compartido de archivos del archivo de colección de servidores de implementación. Por ejemplo, **\\\\Staging\\Cases$** <br/> |Obligatorio  <br/> |
+|80  <br/> |La variable **$CaseRootLocation** debe establecerse en el recurso compartido de archivos del archivo de colección de servidores de implementación. Por ejemplo, **\\\\Staging\\Cases$** <br/> |Necesario  <br/> |
    
 4. Coloque el archivo CollectionScript.ps1 en el recurso compartido de archivo Netlogon en un controlador de dominio. 
     
@@ -327,7 +327,7 @@ $AllFiles | ForEach-Object {
 |**Número de línea**|**Lo que es necesario cambiar**|**obligatorio/opcional**|
 |:-----|:-----|:-----|
 |12  <br/> |**$FolderIdentifier** etiqueta las carpetas del buzón en las que se importan los archivos PST. Cambie esto si es necesario.<br/> |Opcional  <br/> |
-|17  <br/> |**$ConnectionUri** tiene que estar establecido como su propio servidor. <br/> > [!IMPORTANT]> Asegúrese de que su **$ConnectionUri** indica una ubicación http://, y no a una https://. No funcionará con https://          |Obligatorio  <br/> |
+|17  <br/> |**$ConnectionUri** tiene que estar establecido como su propio servidor. <br/> > [!IMPORTANT]> Asegúrese de que su **$ConnectionUri** indica una ubicación http://, y no a una https://. No funcionará con https://          |Necesario  <br/> |
    
 4. Compruebe que la cuenta del subsistema de confianza de Exchange tiene permisos de lectura, escritura y ejecución en el recurso compartido \\\\Staging\\Cases$.
     

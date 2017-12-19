@@ -16,7 +16,7 @@ ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "Resumen: Le explicamos por qué la adopción de la nube requiere un nuevo enfoque de las inversiones en infraestructura de red."
 ms.openlocfilehash: 810640ab3b870759424af2f88392bbaf0b0e11c7
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -83,7 +83,7 @@ El ámbito de las inversiones en la red dependen de la categoría del servicio e
 |Diseñar e implementar el equilibrio de carga para cargas de trabajo de TI internas y orientadas a Internet  <br/> |||Aplicable  <br/> |
 |Solucionar problemas de conectividad a máquinas virtuales y de capacidad de proceso  <br/> |||Aplicable  <br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vea también
 
 [Microsoft Cloud Networking para arquitectos profesionales](microsoft-cloud-networking-for-enterprise-architects.md)
   
