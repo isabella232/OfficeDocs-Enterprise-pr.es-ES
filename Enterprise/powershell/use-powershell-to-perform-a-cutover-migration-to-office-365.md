@@ -14,13 +14,13 @@ ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: "Resumen: aprenda a usar Windows PowerShell para realizar una migración total a Office 365."
 ms.openlocfilehash: be5a3587538c32589c20fe6d27d69a84e0b8e7db
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Usar PowerShell para realizar una migración total a Office 365
 
- **Resumen:** Aprenda a usar Windows PowerShell para realizar una migración a Office 365 traslada.
+ **Resumen:** obtenga información sobre cómo usar Windows PowerShell para realizar una migración total a Office 365.
   
 Puede migrar el contenido de los buzones de usuario de un sistema de correo electrónico de origen a Office 365 a la vez con una migración total. Este artículo le guiará a través de las tareas para una migración total del correo electrónico con Exchange Online PowerShell. 
   
@@ -29,7 +29,7 @@ Al revisar el tema [Lo que debe saber sobre la migración total de correo electr
 > [!NOTE]
 > También puede usar el centro de administración de Exchange para realizar una migración total. Consulte [Realizar una migración total de correo electrónico a Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536689). 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué es necesario saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 Tiempo estimado para finalizar esta tarea: entre 2 y 5 minutos para crear un lote de migración. Después de que haya iniciado el lote de migración, la duración de la migración variará según la cantidad de buzones del lote, el tamaño de cada buzón y la capacidad de red disponible. Para obtener información acerca de otros factores que afectan a la duración de la migración de buzones a Office 365, consulte [Rendimiento de la migración de Exchange Online y procedimientos recomendados](https://go.microsoft.com/fwlink/p/?LinkId=275079).
   
@@ -63,7 +63,7 @@ Para obtener una lista completa de los comandos de migración, consulte [Cmdlets
     
   - Utilice Microsoft Outlook desde fuera de la red corporativa para conectarse a su buzón de Exchange local.
     
-  - Utilice el [Analizador de conectividad remota de Microsoft Exchange](https://www.testexchangeconnectivity.com/) para probar la configuración de la conexión. Utilice Outlook en cualquier lugar (RPC sobre HTTP) o las pruebas de Detección automática de Outlook.
+  - Utilice el [Analizador de conectividad remota de Microsoft Exchange]((https://www.testexchangeconnectivity.com/)) para probar la configuración de la conexión. Utilice Outlook en cualquier lugar (RPC sobre HTTP) o las pruebas de Detección automática de Outlook.
     
   - Ejecute los comandos siguientes en Exchange Online PowerShell.
     
@@ -217,7 +217,7 @@ Remove-MigrationBatch -Identity CutoverBatch
     
 - **Retire los servidores de Exchange locales.** Después de haber comprobado que todo el correo electrónico se enruta directamente a los buzones de Office 365 y cuando ya no necesite mantener la organización de correo electrónico local o no tenga pensado implementar una solución de inicio de sesión único (SSO), puede desinstalar Exchange de los servidores y quitar la organización local de Exchange.
     
-    Para obtener más información al respecto, vea lo siguiente:
+    Para obtener más información, vea los artículos siguientes:
     
   - [Modificar o quitar Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
     

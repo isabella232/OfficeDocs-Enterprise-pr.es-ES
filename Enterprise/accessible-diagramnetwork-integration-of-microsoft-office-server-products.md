@@ -1,5 +1,5 @@
 ---
-title: "Diagrama accesible Integración de redes de productos de servidores de Microsoft Office"
+title: "Diagrama accesible: Integración de redes de productos de servidores de Microsoft Office"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,13 @@ ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
 description: "Este artículo es una versión de texto accesible del diagrama con el nombre Integración de red de los productos de servidor de Microsoft Office."
 ms.openlocfilehash: 2ced3ae648d07ae00c66b8ede8562df66826e4a9
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>Diagrama accesible: Integración de redes de productos de servidores de Microsoft Office
 
-**Resumen:** Este artículo es una versión de texto accesible del diagrama con el nombre de red de Microsoft Office Server productos de integración.
+**Resumen:** este artículo es una versión de texto accesible del diagrama “Integración de red de los productos de servidor de Microsoft Office”.
   
 En este póster se describe de manera general un entorno de red que incluye Lync Server 2013, SharePoint 2013 y Exchange Server 2013. También se muestran los siguientes elementos de red comunes a dichos productos: acceso remoto e interno, autenticación, tráfico de cliente y enrutamiento de tráfico a través de dispositivos compartidos. 
   
@@ -182,7 +182,7 @@ Este nivel tiene componentes en los servidores de Exchange, SharePoint y Lync:
     
 - Servidor de buzones de Exchange. El diagrama muestra dos servidores de buzones de Exchange. 
     
-Para obtener más información sobre los componentes instalados en cada uno de los roles de servidor de SharePoint, consulte [Topologías simplificadas para SharePoint 2013](https://aka.ms/Ma5cgk). 
+Para obtener más información sobre los componentes instalados en cada uno de los roles de servidor de SharePoint, consulte [Topologías simplificadas para SharePoint 2013]((https://aka.ms/Ma5cgk)). 
   
 #### <a name="description-of-how-traffic-moves-through-the-components-to-the-different-server-tiers"></a>Descripción de cómo se mueve el tráfico a través de los componentes a los distintos niveles de servidor
 
@@ -200,7 +200,7 @@ Hay tres tipos de usuario diferentes fuera de los servicios de red y de nube, qu
     
 El proceso de autenticación y enrutamiento para cada tipo de usuario externo se describe de manera individual. 
   
-#### <a name="partner-companies-business-to-business-httpspartnerwebcontosocom"></a>Empresas asociadas (negocio a negocio) (https://partnerweb.contoso.com)
+#### <a name="partner-companies-business-to-business-httpspartnerwebcontosocom"></a>Empresas asociadas (negocio a negocio) ((https://partnerweb.contoso.com))
 
 - Lync: confianza de federación con otras organizaciones, Skype y conectividad de mensajería instantánea pública (PIC) con AOL. El tráfico de federación de Lync pasa a través del enrutador de puerta de enlace al servidor perimetral de Lync, a la dirección VIP de Lync (equilibrador de carga/servidor proxy inverso) y después al servidor de Lync. 
     
@@ -210,7 +210,7 @@ El proceso de autenticación y enrutamiento para cada tipo de usuario externo se
     
 - El tráfico de SMTP pasa a través del enrutador de puerta de enlace y de la dirección VIP de Exchange (equilibrador de carga/servidor proxy inverso) al servidor de Exchange. 
     
-#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>Asociados particulares (SharePoint) y anónimos (Lync) (https://partnerweb.contoso.com y https://meet.contoso.com)
+#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>Asociados particulares (SharePoint) y anónimos (Lync) ((https://partnerweb.contoso.com) y https://meet.contoso.com)
 
 - Lync: los usuarios anónimos solo pueden unirse a reuniones de Lync organizadas por los empleados. El tráfico de federación de Lync pasa a través del enrutador de puerta de enlace al servidor perimetral de Lync, a la dirección VIP de Lync (equilibrador de carga/servidor proxy inverso) y después al servidor de Lync. 
     
@@ -228,7 +228,7 @@ El proceso de autenticación y enrutamiento para cada tipo de usuario externo se
     
 3. https://my.contoso.com
     
-4. https://partnerweb.contoso.com 
+4. (https://partnerweb.contoso.com) 
     
 5. https://mail.contoso.com* 
     
@@ -256,7 +256,7 @@ El proceso de autenticación y enrutamiento para cada tipo de usuario externo se
     
 > https://my.contoso.com
     
-> https://partnerweb.contoso.com
+> (https://partnerweb.contoso.com)
     
 > https://mail.contoso.com* 
     
@@ -320,8 +320,8 @@ Exchange usa el puerto TCP 25 (SMTP) para las comunicaciones de servidor a servi
   
 #### <a name="more-on-lync-network-traffic"></a>¿Desea conocer más sobre el tráfico de red de Lync?
 
-Infórmese de cómo Lync Server puede ayudar a su organización a proporcionar mensajería instantánea, conferencias web, uso compartido de aplicaciones y comunicación de voz. Para obtener más información, consulte el [Póster de cargas de trabajo de protocolos de Microsoft Lync Server 2013 ](https://aka.ms/G5jzjo). 
+Infórmese de cómo Lync Server puede ayudar a su organización a proporcionar mensajería instantánea, conferencias web, uso compartido de aplicaciones y comunicación de voz. Para obtener más información, consulte el [Póster de cargas de trabajo de protocolos de Microsoft Lync Server 2013 ]((https://aka.ms/G5jzjo)). 
   
-El póster también incluye un código QR para tener acceso a esta información. 
+El póster también incluye un código QR para acceder a esta información. 
   
 

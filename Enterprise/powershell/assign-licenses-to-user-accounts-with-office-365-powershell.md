@@ -16,38 +16,38 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
-description: "Explica cómo utilizar Office 365 PowerShell asignar una licencia de Office 365 a los usuarios sin licencia."
+description: "Se explica cómo usar PowerShell de Office 365 para asignar una licencia de Office 365 a los usuarios sin licencia."
 ms.openlocfilehash: 7120b5d61b98f401f9ec1830598f20fbcbecdb66
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Asignar licencias a cuentas de usuario con PowerShell de Office 365
 
-**Resumen:**  Explica cómo utilizar Office 365 PowerShell asignar una licencia de Office 365 a los usuarios sin licencia.
+**Resumen:** se explica cómo usar PowerShell de Office 365 para asignar una licencia de Office 365 a los usuarios sin licencia.
   
-Licencias de cuentas de usuario en Office 365 es importante, porque los usuarios no pueden utilizar los servicios de Office 365 hasta que su cuenta tiene una licencia. Puede utilizar Office 365 PowerShell para asignar licencias eficazmente a cuentas sin licencia, especialmente varias cuentas. 
+Es importante asignar licencias a las cuentas de usuario de Office 365, ya que los usuarios no pueden usar ningún servicio de Office 365 hasta que su cuenta tenga una licencia. Puede usar PowerShell de Office 365 para asignar de forma eficiente licencias a cuentas sin licencia, especialmente a varias cuentas. 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 <a name="RTT"> </a>
 
 - Los procedimientos de este tema requieren conectarse a PowerShell de Office 365. Para obtener instrucciones, vea [Conectarse a PowerShell de Office 365](connect-to-office-365-powershell.md).
     
-- Utilice el cmdlet **Get-MsolAccountSku** para ver los planes de licencias disponibles y el número de licencias disponibles en cada plan de la organización. El número de licencias disponibles en cada plan es **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Para obtener más información acerca de las licencias de los planes, licencias y servicios, consulte [ver licencias y servicios con Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
+- Use el cmdlet **Get-MsolAccountSku** para ver los planes de licencias disponibles y el número de licencias disponibles en cada plan de la organización. El número de licencias disponibles en cada plan es **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Para obtener más información sobre los planes de licencias, las licencias y los servicios, vea[Ver licencias y servicios con PowerShell de Office 365](view-licenses-and-services-with-office-365-powershell.md).
     
 - Para buscar las cuentas sin licencia de la organización, ejecute el comando  `Get-MsolUser -All -UnlicensedUsersOnly`
     
-- Puede asignar licencias sólo a cuentas de usuario que tienen la propiedad **UsageLocation** establecida en un válido ISO 3166-1 alpha-2 Cód.. Por ejemplo, US para Estados Unidos y FR para Francia. Algunos servicios de Office 365 no están disponibles en determinados países. Para obtener más información, consulte [acerca de las restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730).
+- Solo puede asignar licencias a cuentas de usuario que tengan la propiedad **UsageLocation** establecida en un código de país ISO 3166-1 alpha-2 válido (por ejemplo, “US” para Estados Unidos y “FR” para Francia). Algunos servicios de Office 365 no están disponibles en determinados países. Para obtener más información, vea [Información sobre restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730).
     
     Para buscar cuentas que no tengan un valor **UsageLocation**, ejecute el comando `Get-MsolUser -All | where {$_.UsageLocation -eq $null}`. Para establecer el valor **UsageLocation** en una cuenta, utilice la sintaxis `Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>`. Por ejemplo,  `Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US`.
     
-- Si utiliza el cmdlet **Get-MsolUser** sin utilizar el `-All` parámetro, se devuelven sólo las primeras 500 cuentas.
+- Si usa el cmdlet **Get-MsolUser** sin el parámetro `-All`, solo se devuelven las 500 primeras cuentas.
     
 ## <a name="the-short-version-instructions-without-explanations"></a>Versión corta (instrucciones sin explicaciones)
 <a name="ShortVersion"> </a>
 
-Esta sección presenta los procedimientos sin explicación detallada. Si tiene preguntas o desea obtener más información, puede leer el resto del tema.
+En esta sección, se presentan los procedimientos sin explicaciones detalladas. Si tiene preguntas o quiere obtener más información, lea el resto del tema.
   
 Para asignar una licencia a un usuario, use la sintaxis siguiente en PowerShell de Office 365:
   
@@ -55,7 +55,7 @@ Para asignar una licencia a un usuario, use la sintaxis siguiente en PowerShell 
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-Este ejemplo asigna una licencia de la `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) plan licencia para el usuario sin licencia `belindan@litwareinc.com`.
+En este ejemplo, se asigna una licencia desde el plan de licencias `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) al usuario sin licencia `belindan@litwareinc.com`.
   
 ```
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -73,7 +73,7 @@ $x = Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>]; $x | forea
     
 - Si no dispone de licencias suficientes, las licencias se asignan a los usuarios en el orden en que los devuelve el cmdlet **Get-MsolUser** hasta que se agoten las licencias disponibles.
     
-Este ejemplo asigna licencias desde el `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) plan de licencias para todos los usuarios sin licencia.
+En este ejemplo, se asignan licencias desde el plan de licencias `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) a todos los usuarios sin licencia.
   
 ```
 $AllUn = Get-MsolUser -All -UnlicensedUsersOnly; $AllUn | foreach {Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"}
@@ -106,7 +106,7 @@ BelindaN@litwareinc.com     Belinda Newman                  False
 
 Como puede ver, tenemos un usuario sin licencia: Belinda Newman. ¿Cómo asignamos a Belinda una licencia de Office 365?
   
-Para empezar, vamos a ejecutar el cmdlet **Get-MsolAccountSku** descrito en el artículo [ver licencias y servicios con Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md):
+Para empezar, ejecutaremos el cmdlet **Get-MsolAccountSku**, que se describe en el artículo [Ver licencias y servicios con PowerShell de Office 365](view-licenses-and-services-with-office-365-powershell.md):
   
 ```
 Get-MsolAccountSku
@@ -204,9 +204,9 @@ Y, ya que estamos tratando este asunto, es importante resaltar algo con lo que d
 De una manera un poco indirecta, este mensaje de error indica que el usuario en cuestión no tiene asignada la propiedad **UsageLocation**. Como habrá adivinado, la propiedad **UsageLocation** (que indica la región o el país en el que el usuario suele usar Office 365) es extremadamente importante. ¿Por qué? Porque los servicios disponibles para un usuario dependen no solo del paquete de licencias que haya adquirido, sino también del lugar en el que vive el usuario: debido a reglas y normativas locales, algunos servicios tal vez no estén disponibles para algunos usuarios. Si un usuario no tiene **UsageLocation**, Office 365 no tiene manera de saber qué servicios pueden exponerse legalmente a dicho usuario. Por lo tanto, Office 365 no puede ofrecer servicios a dicho usuario, al menos no hasta que se haya especificado la propiedad **UsageLocation**.
   
 > [!NOTE]
-> Al configurar una cuenta de usuario sabrá inmediatamente si hay cualquier restricción de licencia asociados con la parte especificada del mundo. Por ejemplo, si cambia el **UsageLocation** para un usuario con licencia a irán ( `IR`), el comando fallará con este mensaje de error: `Set-MsolUser : Unable to update license for this user. One or more of the assigned service plans is not available in this user's country. Prohibited Service Plans: EXCHANGE_S_ENTERPRISE, SHAREPOINTENTERPRISE, SHAREPOINTWAC, MCOSTANDARD, OFFICESUBSCRIPTION, RMS_S_ENTERPRISE. Specific service plans can be disabled for a user by using the licenseoptions parameter.`> que es porque no está actualmente disponible para los usuarios en irán Office 365. Para obtener más información, consulte [acerca de las restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730). Por cierto, Office 365 usa los códigos de país de dos letras producidos por la organización internacional de normalización (ISO). Puede encontrar dichos códigos en el [sitio web ISO](https://go.microsoft.com/fwlink/p/?LinkId=84073). 
+> Al configurar una cuenta de usuario, sabrá inmediatamente si hay restricciones de licencia asociadas a una parte determinada del mundo. Por ejemplo, si cambia la propiedad **UsageLocation** de un usuario con licencia a Irán (`IR`), se producirá un error en el comando con este mensaje de error: `Set-MsolUser : Unable to update license for this user. One or more of the assigned service plans is not available in this user's country. Prohibited Service Plans: EXCHANGE_S_ENTERPRISE, SHAREPOINTENTERPRISE, SHAREPOINTWAC, MCOSTANDARD, OFFICESUBSCRIPTION, RMS_S_ENTERPRISE. Specific service plans can be disabled for a user by using the licenseoptions parameter.`> Esto se debe a que Office 365 no está disponible actualmente para los usuarios de Irán. Para obtener más información, vea [Información sobre restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730). Por cierto, Office 365 usa los códigos de país de dos letras producidos por la Organización internacional de normalización (ISO). Encontrará dichos códigos en el [sitio web de ISO](https://go.microsoft.com/fwlink/p/?LinkId=84073). 
   
-Si desea comprobar que un usuario determinado tiene una propiedad **UsageLocation**, puede usar un comando similar a este:
+Si quiere comprobar si un usuario determinado tiene una propiedad **UsageLocation**, puede usar un comando similar a este:
   
 ```
 Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.com" | Select-Object UsageLocation
@@ -219,15 +219,15 @@ Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
 ```
 
 > [!NOTE]
-> Al asignar una licencia a un usuario, dicho usuario, de forma predeterminada, se dará acceso a todos los servicios de Office 365 que su organización tenga acceso a. Por ejemplo, si ha adquirido licencias para Office 365 Enterprise E3, el usuario recién licenciados automáticamente se concederá acceso a servicios como Exchange Online, Skype para los negocios en línea y SharePoint Online. Si prefiere limitar el acceso de los usuarios a dichos servicios (por ejemplo, puede un usuario tener acceso a SharePoint Online pero *no* Exchange Online y Skype para los negocios en línea), a continuación, consulte el artículo [Deshabilitar el acceso a los servicios de Office 365 PowerShell](disable-access-to-services-with-office-365-powershell.md). 
+> Al asignar una licencia a un usuario, este tendrá acceso de forma predeterminada a todos los servicios de Office 365 a los que tiene acceso la organización. Por ejemplo, si compró licencias de Office 365 Enterprise E3, el usuario al que asignó una licencia tendrá acceso de forma automática a servicios como Exchange Online, Skype Empresarial Online y SharePoint Online. Si prefiere limitar el acceso de un usuario a dichos servicios (por ejemplo, que tenga acceso a SharePoint Online, pero *no* a Exchange Online ni Skype Empresarial Online), vea el artículo [Deshabilitar el acceso a servicios con PowerShell de Office 365](disable-access-to-services-with-office-365-powershell.md). 
   
 ## <a name="new-to-office-365"></a>¿Es la primera vez que usa Office 365?
 
 ||
 |:-----|
-|![El icono reducido de LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **¿Es la primera vez que usa Office 365?**         LinkedIn Learning pone a su disposición vídeos gratuitos de cursos de [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5). |
+|![El icono reducido de LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **¿Es la primera vez que usa Office 365?**         LinkedIn Learning pone a su disposición vídeos gratuitos de cursos de [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)). |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 <a name="SeeAlso"> </a>
 
 Vea los siguientes temas adicionales acerca de cómo administrar usuarios con Office 365 PowerShell:
@@ -246,7 +246,7 @@ Para obtener más información sobre los cmdlets que se usan en estos procedimie
     
 - [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
-- [Conjunto de MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
+- [Set-MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
     
 - [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
     

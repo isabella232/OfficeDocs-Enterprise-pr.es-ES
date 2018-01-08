@@ -1,5 +1,5 @@
 ---
-title: Diagrama accesible Opciones de plataformas de Microsoft Lync 2013
+title: 'Diagrama accesible: Opciones de plataformas de Microsoft Lync 2013'
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -11,13 +11,13 @@ ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: "Este artículo es una versión de texto accesible del diagrama con el nombre Opciones de plataformas de Microsoft Lync 2013, que está disponible en Diagramas técnicos."
 ms.openlocfilehash: 79342a30a0391980cf16304f3615f6a7e64d51ff
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>Diagrama accesible: Opciones de plataformas de Microsoft Lync 2013
 
-**Resumen:** Este artículo es una versión de texto accesible del diagrama denominado opciones de plataformas de Microsoft Lync 2013, que está disponible en [Diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
+**Resumen:** este artículo es una versión de texto accesible del diagrama “Opciones de plataformas de Microsoft Lync 2013”, que está disponible en [Diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
   
 Este póster describe lo que los arquitectos y responsables de decisiones empresariales (BDM) necesitan saber sobre implementaciones de Lync Online (Office 365) y Lync Server. Incluye lo siguiente:
   
@@ -213,13 +213,13 @@ Esta sección muestra las tareas de arquitectura para cada opción de implementa
     
 - Garantice la capacidad de la red y la disponibilidad a través de firewalls, servidores proxy, puertas de enlace y vínculos WAN.
     
-- Adquiera certificados SSL de terceros para proporcionar seguridad empresarial para las ofertas de servicio de Office 365.
+- Adquirir certificados SSL de terceros para proporcionar seguridad empresarial para las ofertas de servicio de Office 365.
     
 - Decida si desea conectarse a Office 365 con el protocolo de Internet versión 6 (IPv6).
     
 #### <a name="lync-onlineserver-hybrid-split-domain"></a>Implementación híbrida de Lync Online/Server (dominio dividido)
 
-Además de las tareas para entornos de Office 365 y locales:
+Además de las tareas para entornos Office 365 y locales:
   
 - Determine el grado de integración de características que quiere usar con las versiones locales y en línea de Exchange Server y SharePoint.
     
@@ -245,7 +245,7 @@ Diseñe el entorno de Lync en un entorno local existente:
     
 - Para una instalación local, determine la ubicación de los servidores de Lync del proveedor en su red.
     
-- Para ambos tipos, determine la integración con AD DS y con el equipo de PBX.
+- Para ambos tipos, determine la integración con AD DS y con el equipo de PBX.
     
 ### <a name="it-pro-responsibilities"></a>Responsabilidades del profesional de TI
 
@@ -265,7 +265,7 @@ Implemente y administre Lync Online (Office 365):
     
 #### <a name="lync-onlineserver-hybrid-split-domain"></a>Implementación híbrida de Lync Online/Server (dominio dividido)
 
-Además de las tareas para entornos de Office 365 y locales:
+Además de las tareas para entornos Office 365 y locales:
   
 - Configure el servidor proxy, si es necesario.
     
@@ -291,7 +291,7 @@ Colabore con el proveedor para:
   
 - Integrar Lync Server a su red.
     
-- Integrar Lync Server con otros productos de Microsoft o soluciones personalizadas.
+- Integre Lync Server con otros productos de Microsoft o soluciones personalizadas.
     
 - Supervisar el cumplimiento del contrato de nivel de servicio (SLA) con el proveedor.
     

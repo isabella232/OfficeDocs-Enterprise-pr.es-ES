@@ -1,5 +1,5 @@
 ---
-title: Diagrama accesible Sitios de Internet en Microsoft Azure para SharePoint 2013
+title: 'Diagrama accesible: Sitios de Internet en Microsoft Azure para SharePoint 2013'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,13 @@ ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: "Este artículo es una versión de texto accesible del diagrama con el nombre Sitios de Internet en Microsoft Azure para SharePoint 2013."
 ms.openlocfilehash: 7713d4e91f97a1b4139510f6a7c320c69ace43cf
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagrama accesible: Sitios de Internet en Microsoft Azure para SharePoint 2013
 
-**Resumen:** Este artículo es una versión de texto accesible del diagrama denominado sitios de Internet de Microsoft Azure para 2013 de SharePoint.
+**Resumen:** este artículo es una versión de texto accesible del diagrama “Sitios de Internet en Microsoft Azure para SharePoint 2013”.
   
 Este póster describe e ilustra cómo los sitios de Internet públicos se benefician de la elasticidad de la nube y de Azure AD para cuentas de clientes. Hay seis diferentes escenarios que describen las ventajas de Azure para los sitios de Internet: 
   
@@ -44,7 +44,7 @@ Asegúrese de que la granja de servidores que diseñe cumpla los objetivos de ca
 
 Esta granja ofrece una topología de granja de servidores de búsqueda de SharePoint 2013 con tolerancia a errores y optimizada para un conjunto de 3.400.000 elementos. 
   
-La granja de servidores del ejemplo procesa de 100 a 200 documentos por segundo, según el idioma, y admite 85 vistas de página por segundo y 100 consultas por segundo. 
+La granja de servidores de ejemplo procesa de 100 a 200 documentos por segundo, en función del idioma, y admite 85 visualizaciones de página por segundo y 100 consultas por segundo. 
   
 El diagrama adjunto muestra una granja de servidores de sitios de Internet de tamaño medio con tres tipos de servidores: 
   

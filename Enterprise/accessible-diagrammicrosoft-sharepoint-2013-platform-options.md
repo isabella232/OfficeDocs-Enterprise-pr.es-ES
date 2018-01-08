@@ -1,5 +1,5 @@
 ---
-title: Diagrama accesible Opciones de plataformas de Microsoft SharePoint 2013
+title: 'Diagrama accesible: Opciones de plataformas de Microsoft SharePoint 2013'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,13 @@ ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
 description: "Este artículo es una versión de texto accesible del diagrama Opciones de plataforma para Microsoft SharePoint 2013."
 ms.openlocfilehash: 9cd282cc723376f85fe2cbc5a439ee24fd2ab883
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>Diagrama accesible: Opciones de plataformas de Microsoft SharePoint 2013
 
-**Resumen:** Este artículo es una versión de texto accesible del diagrama denominado opciones de plataformas de Microsoft SharePoint de 2013.
+**Resumen:** este artículo es una versión de texto accesible del diagrama “Opciones de plataforma para Microsoft SharePoint 2013”.
   
 Todo lo que los arquitectos y los responsables de decisiones empresariales necesitan saber sobre Office 365, Microsoft Azure y las implementaciones locales. 
   
@@ -42,7 +42,7 @@ La comparación proporciona información sobre cada opción de implementación r
     
 - Responsabilidades de los profesionales de TI para la implementación 
     
-### <a name="overview"></a>Introducción
+### <a name="overview"></a>Información general
 
 #### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 en Office 365
 
@@ -52,9 +52,9 @@ El diagrama adjunto muestra SharePoint Online con un inquilino de Azure Active D
   
 Descripción de las características: 
   
-- Software como servicio (SaaS). 
+- Software como servicio (SaaS).  
     
-- Amplio conjunto de características que siempre está actualizado. 
+- El amplio conjunto de características siempre está actualizado. 
     
 - Incluye un inquilino de Azure Active Directory (se puede usar con otras aplicaciones). 
     
@@ -68,7 +68,7 @@ Descripción de las características:
     
 - Personalizaciones: Aplicaciones para Office, SharePoint y SharePoint Designer 2013. 
     
-#### <a name="hybrid-with-office-365"></a>Híbrido con Office 365
+#### <a name="hybrid-with-office-365"></a>Implementación híbrida con Office 365
 
 Combine las ventajas de Office 365 con una implementación local de SharePoint 2013. 
   
@@ -102,7 +102,7 @@ Entre las características se incluyen:
     
 - Servicios de infraestructura. 
     
-- Mejor plataforma nativa en la nube para SQL Server y SharePoint. 
+- Mejor plataforma en la nube nativa para SQL Server y SharePoint. 
     
 - Los recursos informáticos están disponibles prácticamente de inmediato, sin concesiones. 
     
@@ -130,7 +130,7 @@ Entre las características se incluyen:
     
 - Escalado horizontal, revisiones y operaciones. 
     
-- Copia de seguridad de datos. 
+- Copias de seguridad de datos. 
     
 - Mantenimiento de un entorno de recuperación ante desastres. 
     
@@ -158,7 +158,7 @@ Características adicionales con los planes de suscripción dedicada de Office 3
     
 - Planes de compatibilidad con ITAR. 
     
-#### <a name="hybrid-with-office-365"></a>Híbrido con Office 365
+#### <a name="hybrid-with-office-365"></a>Implementación híbrida con Office 365
 
 - Use Office 365 para colaboración y uso compartido con el exterior, en lugar de establecer un entorno de extranet. 
     
@@ -180,7 +180,7 @@ Características adicionales con los planes de suscripción dedicada de Office 3
     
 - Granjas que requieren auditorías o informes detallados. 
     
-- Web Analytics. 
+- Análisis web. 
     
 - Cifrado de datos en reposo (los datos se cifran en las bases de datos SQL). 
     
@@ -206,7 +206,7 @@ Características adicionales con los planes de suscripción dedicada de Office 3
 
 Modelo de suscripción. No se requieren licencias adicionales. 
   
-#### <a name="hybrid-with-office-365"></a>Híbrido con Office 365
+#### <a name="hybrid-with-office-365"></a>Implementación híbrida con Office 365
 
 - Office 365: modelo de suscripción. No se requieren licencias adicionales. 
     
@@ -238,9 +238,9 @@ Modelo de suscripción. No se requieren licencias adicionales.
 
 - Planee y diseñe la integración de directorios. Dos opciones. Cualquier de las dos opciones se puede implementar de forma local o en Azure: Sincronización de contraseñas (requiere un servidor de 64 bits). SSO (requiere AD FS y varios servidores). 
     
-- Garantice la capacidad de red y la disponibilidad mediante firewalls, servidores proxy, puertas de enlace y vínculos por WAN. 
+- Garantice la capacidad de la red y la disponibilidad a través de firewalls, servidores proxy, puertas de enlace y vínculos WAN. 
     
-- Adquiera certificados SSL de terceros para proporcionar seguridad empresarial para las ofertas de servicio de Office 365. 
+- Adquirir certificados SSL de terceros para proporcionar seguridad empresarial para las ofertas de servicio de Office 365. 
     
 - Planee el nombre del inquilino y diseñe el gobierno y la arquitectura de la colección de sitios. 
     
@@ -248,9 +248,9 @@ Modelo de suscripción. No se requieren licencias adicionales.
     
 - Decida si desea conectarse a Office 365 usando el protocolo de Internet 6 (IPv6). Esta opción es poco frecuente. 
     
-#### <a name="hybrid-with-office-365"></a>Híbrido con Office 365
+#### <a name="hybrid-with-office-365"></a>Implementación híbrida con Office 365
 
-Además de las tareas para entornos de Office 365 y locales: 
+Además de las tareas para entornos Office 365 y locales: 
   
 - Determine qué nivel de integración de características desea y elija la topología híbrida. Vea este póster modelo: ¿Qué topología híbrida debo usar? 
     
@@ -288,7 +288,7 @@ Diseñar el entorno de SharePoint en un entorno local existente:
   
 - Topología de granja de SharePoint y arquitectura lógica. 
     
-- Hardware de servidor. 
+- Hardware de servidores. 
     
 - Entorno virtual, si se usa. 
     
@@ -302,13 +302,13 @@ Diseñar el entorno de SharePoint en un entorno local existente:
 
 #### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 en Office 365
 
-- Asegúrese de que las estaciones de trabajo de los usuarios cumplen los requisitos previos del cliente de Office 365. 
+- Asegurarse de que las estaciones de trabajo de los usuarios cumplen los requisitos previos de cliente de Office 365. 
     
-- Implemente el plan de integración de directorios. 
+- Implementar el plan de integración de directorios. 
     
 - Planee e implemente enrutamiento y registros DNS internos y externos. 
     
-- Configure el servidor proxy o el firewall para los requisitos de direcciones URL e IP de Office 365. 
+- Configurar el proxy o el servidor de seguridad conforme a los requisitos de dirección IP y URL de Office 365. 
     
 - Cree y asigne permisos a colecciones de sitios. 
     
@@ -316,9 +316,9 @@ Diseñar el entorno de SharePoint en un entorno local existente:
     
 - Supervise la disponibilidad de red e identifique posibles cuellos de botella. 
     
-#### <a name="hybrid-with-office-365"></a>Híbrido con Office 365
+#### <a name="hybrid-with-office-365"></a>Implementación híbrida con Office 365
 
-Además de las tareas para entornos de Office 365 y locales: 
+Además de las tareas para entornos Office 365 y locales: 
   
 - Configure el servidor proxy, si es necesario. 
     
@@ -332,7 +332,7 @@ Implementar y administrar el entorno de Azure y SharePoint:
   
 - Implemente y administre el entorno de red de Azure. 
     
-- Implemente el entorno de SharePoint. 
+- Implementar el entorno SharePoint. 
     
 - Actualice los servidores de la granja de SharePoint. 
     
@@ -348,9 +348,9 @@ Implementar y administrar el entorno de Azure y SharePoint:
 
 Implementar y administrar el entorno SharePoint local: 
   
-- Aprovisione servidores. 
+- Aprovisionar servidores. 
     
-- Implemente el entorno de SharePoint. 
+- Implementar el entorno SharePoint. 
     
 - Actualice los servidores de la granja de SharePoint. 
     
@@ -392,7 +392,7 @@ Traiga su sitio de Internet a Azure y disfrute de la posibilidad de escalar recu
     
 - Agregue informes detallados y análisis web. 
     
-- Céntrese en desarrollar un sitio impresionante en lugar de tener que crear una infraestructura. 
+- Céntrese en desarrollar un sitio impresionante en lugar de tener que crear una infraestructura. 
     
 #### <a name="azure-ad"></a>Azure AD
 

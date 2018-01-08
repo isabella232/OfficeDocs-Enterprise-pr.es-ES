@@ -19,7 +19,7 @@ ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: "Resumen: Qué deben saber los arquitectos de TI sobre los escenarios híbridos al usar las plataformas y los servicios en la nube de Microsoft."
 ms.openlocfilehash: 46e9a6cead44f5392d3ae228dbb5e7f9285bf891
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -29,15 +29,15 @@ ms.lasthandoff: 12/15/2017
   
 Este artículo contiene vínculos a un conjunto de artículos en los que se describe lo que necesitan saber los arquitectos de TI sobre la configuración y la arquitectura híbrida con plataformas y servicios en la nube de Microsoft. También puede ver este artículo como un póster de 7 páginas e imprimirlo en formato tabloide (también conocido como doble carta, 11 x 17 o A3).
   
-[![Imagen de miniatura para el modelo de nube híbrida de Microsoft](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+[![Imagen en miniatura del modelo de nube híbrida de Microsoft](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-![Archivo PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![archivo de Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![ver una página con versiones en otros idiomas](images/Common_Images/GlobeIcon.png)
-[más idiomas](https://www.microsoft.com/download/details.aspx?id=54424)
+![Archivo PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Archivo de Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![Ver una página con versiones en otros idiomas](images/Common_Images/GlobeIcon.png)
+[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54424)
   
-También puede ver todos los modelos en los [recursos de la arquitectura de nube de Microsoft IT](microsoft-cloud-it-architecture-resources.md) y pase a través de [Enterprise Cloud Roadmap de Microsoft: recursos para la toma de decisiones de TI](https://aka.ms/cloudarchitecture).
+También puede ver todos los modelos en los [Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) y conocer el [Plan de desarrollo de la nube empresarial de Microsoft: Recursos para responsables de toma de decisiones de TI]((https://aka.ms/cloudarchitecture)).
   
-Vea las siguientes secciones:
+Vea las secciones siguientes:
   
 - [Información general de la nube híbrida](hybrid-cloud-overview.md)
     
@@ -62,11 +62,11 @@ Vea las siguientes secciones:
 > [!NOTE]
 > Estos artículos reflejan la versión de **junio de 2017** del póster de Microsoft Hybrid Cloud para arquitectos profesionales.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

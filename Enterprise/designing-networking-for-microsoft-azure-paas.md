@@ -16,7 +16,7 @@ ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: 'Resumen: aprenda a optimizar la red para obtener acceso a PaaS de Microsoft Azure.'
 ms.openlocfilehash: d63a7a20d4648b0044a24ea86ad4e9125779a027
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,9 +30,9 @@ La optimización de las redes para aplicaciones PaaS de Azure requiere un ancho 
 
 Inserte el cuerpo de la sección aquí.
   
-1. Repase la sección **pasos para preparar la red para los servicios de nube de Microsoft** en [elementos comunes de conectividad de la nube de Microsoft](common-elements-of-microsoft-cloud-connectivity.md).
+1. Vea la sección **Pasos para preparar la red para Servicios en la nube de Microsoft** en [Elementos comunes de conectividad de Microsoft Cloud](common-elements-of-microsoft-cloud-connectivity.md).
     
-2. Optimizar el ancho de banda de Internet mediante los pasos 2 a 4 de la sección de **pasos para preparar la red para los servicios de Microsoft SaaS** en el [Diseño de redes de Microsoft SaaS](designing-networking-for-microsoft-saas.md).
+2. Para optimizar el ancho de banda de Internet, siga los pasos 2 a 4 de la sección **Pasos para preparar la red para los servicios SaaS de Microsoft** del artículo [Diseño de redes para SaaS de Microsoft](designing-networking-for-microsoft-saas.md).
     
 3. Determine si necesita una conexión de ExpressRoute a Azure.
     
@@ -72,7 +72,7 @@ Actualmente, la Puerta de enlace de aplicaciones admite la entrega de aplicacion
     
 - Descarga SSL
     
-Para obtener más información, consulte [Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).
+Para obtener más información, consulte [Application Gateway]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)).
   
 ## <a name="azure-traffic-manager"></a>Administrador de tráfico de Azure
 
@@ -98,15 +98,15 @@ La figura 3 muestra el proceso básico que el Administrador de tráfico usa para
     
 2. El usuario inicia el tráfico con la aplicación web regional en Europa.
     
-Para obtener más información, vea [Administrador de tráfico](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
+Para obtener más información, vea [Traffic Manager]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Microsoft Cloud Networking para arquitectos profesionales](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de toma de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de toma de decisiones de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

@@ -21,7 +21,7 @@ ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: "Resumen: Configure la autenticación federada de alta disponibilidad para su suscripción de Office 365 en Microsoft Azure."
 ms.openlocfilehash: 6e64912d6b115e3aee179509c504f3872ecea551
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -39,7 +39,7 @@ Este artículo contiene vínculos a las instrucciones detalladas para implementa
     
 - Un servidor de sincronización de directorios (DirSync) que ejecute Azure AD Connect
     
-Esta es la configuración con nombres de marcador de posición para cada servidor:
+Esta es la configuración, con nombres de marcador de posición para cada servidor.
   
 **Una autenticación federada de alta disponibilidad para Office 365 en Azure**
 
@@ -48,12 +48,12 @@ Esta es la configuración con nombres de marcador de posición para cada servido
 Todas las máquinas virtuales forman parte de una única red virtual entre locales de Azure (VNet). 
   
 > [!NOTE]
-> La autenticación federada de los usuarios individuales no se basa en los recursos locales. Sin embargo, si la conexión entre locales está disponible, los controladores de dominio de VNet no recibirán actualizaciones de grupos y cuentas de usuario realizados en Windows Server AD en local. Para asegurarse de que esto no sucede, puede configurar la alta disponibilidad para la conexión entre locales. Para obtener más información, consulte [Conectividad de red virtual a red virtual y con alta disponibilidad entre locales](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> La autenticación federada de los usuarios individuales no se basa en los recursos locales. Sin embargo, si la conexión entre locales está disponible, los controladores de dominio de VNet no recibirán actualizaciones de grupos y cuentas de usuario realizados en Windows Server AD en local. Para asegurarse de que esto no sucede, puede configurar la alta disponibilidad para la conexión entre locales. Para obtener más información, consulte [Conectividad de red virtual a red virtual y con alta disponibilidad entre locales]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable))
   
 Cada par de máquinas virtuales asignado a un rol específico forma parte de su propia subred y de su propio conjunto de disponibilidad.
   
 > [!NOTE]
-> Debido a que esta red virtual está conectada a la red local, la configuración no incluye máquinas virtuales intermedias ni de supervisión en una subred de administración. Para obtener más información, consulte [Running Windows VMs for an N-tier architecture](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm). 
+> Debido a que esta red virtual está conectada a la red local, la configuración no incluye máquinas virtuales intermedias ni de supervisión en una subred de administración. Para obtener más información, consulte [Running Windows VMs for an N-tier architecture]((https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)). 
   
 El resultado de esta configuración es que tendrá una autenticación federada para todos los usuarios de Office 365, en la que se pueden utilizar las credenciales de Windows Server Active Directory para iniciar sesión en lugar de la cuenta de Office 365. La infraestructura de autenticación federada utiliza un conjunto redundante de servidores que se implementan más fácilmente en servicios de la infraestructura de Azure en lugar de en la red perimetral en local.
   
@@ -65,11 +65,11 @@ Esta configuración de línea base requiere el siguiente conjunto de componentes
     
 - Una red virtual entre locales con cuatro subredes
     
-- Siete cuentas de almacenamiento
-    
 - Cuatro grupos de recursos
     
 - Tres conjuntos de disponibilidad
+    
+- Una suscripción a Azure
     
 Estas son las máquinas virtuales y sus tamaños predeterminados para esta configuración.
   
@@ -83,49 +83,49 @@ Estas son las máquinas virtuales y sus tamaños predeterminados para esta confi
 |6.  <br/> |Primer servidor proxy de aplicación web  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |7.  <br/> |Segundo servidor proxy de aplicación web  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
    
-Para calcular los costos estimados para esta configuración, consulte la [Calculadora de precios de Azure](https://azure.microsoft.com/pricing/calculator/).
+Para calcular los costos estimados para esta configuración, consulte la [Calculadora de precios de Azure]((https://azure.microsoft.com/pricing/calculator/)).
   
 ## <a name="phases-of-deployment"></a>Fases de implementación
 
 Implementará esta carga de trabajo en las fases siguientes:
   
 <<<<<<< HEAD
-- [Autenticación de fase 1 de federados de alta disponibilidad: configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Crear grupos de recursos, cuentas de almacenamiento, conjuntos de disponibilidad y una red virtual entre locales.
+- [Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Cree grupos de recursos, cuentas de almacenamiento, conjuntos de disponibilidad y una red virtual entre locales.
     
-- [Autenticación de fase 2 de federados de alta disponibilidad: configurar controladores de dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Crear y configurar réplicas de controladores de dominio de Windows Server Active Directory (AD) y el servidor de sincronización de directorios.
+- [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Creación y configuración de controladores de dominio de réplica para Windows Server Active Directory (AD) y el servidor de DirSync.
     
-- [Autenticación de fase 3 de federados de alta disponibilidad: configurar servidores AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Crear y configurar los dos servidores de AD FS.
+- [Fase 3 de la autenticación federada de alta disponibilidad: Configurar servidores de AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Cree y configure los dos servidores de AD FS.
     
-- [Federados de alta disponibilidad autenticación fase 4: configurar el proxy de la aplicación web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Crear y configurar los servidores proxy de aplicación de dos web.
+- [Fase 4 de la autenticación federada de alta disponibilidad: Configurar los servidores proxy de aplicación web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Cree y configure los dos servidores proxy de aplicación web.
     
-- [Federados de alta disponibilidad autenticación fase 5: configurar la autenticación federada para Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Configurar la autenticación federada para la suscripción de Office 365. =======
-- [Autenticación de fase 1 de federados de alta disponibilidad: configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md) -crear grupos de recursos, cuentas de almacenamiento, conjuntos de disponibilidad y una red virtual entre locales.
+- [Fase 5 de la autenticación federada de alta disponibilidad: Configurar la autenticación federada para Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Configure la autenticación federada para su suscripción de Office 365. =======
+- [Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Cree grupos de recursos, cuentas de almacenamiento, conjuntos de disponibilidad y una red virtual entre locales.
     
-- [Autenticación de fase 2 de federados de alta disponibilidad: configurar controladores de dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) : crear y configurar réplicas de controladores de dominio de Windows Server Active Directory (AD) y el servidor de sincronización de directorios.
+- [Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Cree y configure los controladores de dominio de réplica para Windows Server Active Directory (AD) y el servidor de DirSync.
     
-- [Autenticación de fase 3 de federados de alta disponibilidad: configurar servidores AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) : crear y configurar los dos servidores de AD FS.
+- [Fase 3 de la autenticación federada de alta disponibilidad: Configurar servidores de AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Cree y configure los dos servidores de AD FS.
     
-- [Federados de alta disponibilidad autenticación fase 4: configurar el proxy de la aplicación web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) : crear y configurar los servidores proxy de aplicación de dos web.
+- [Fase 4 de la autenticación federada de alta disponibilidad: Configurar los servidores proxy de aplicación web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Cree y configure los dos servidores proxy de aplicación web.
     
-- [Federados de alta disponibilidad autenticación fase 5: configurar la autenticación federada para Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) -configurar autenticación federada para la suscripción de Office 365.
->>>>>>> patrón
+- [Fase 5 de la autenticación federada de alta disponibilidad: Configurar la autenticación federada para Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Configure la autenticación federada para su suscripción de Office 365.
+>>>>>>> master
     
 En estos artículos, se proporciona una guía preceptiva dividida en fases para una arquitectura predefinida. Su objetivo es crear una autenticación federada de alta disponibilidad funcional para Office 365 en servicios de infraestructura de Azure. Tenga en cuenta lo siguiente:
   
-- Si es un experimentado implementador de AD FS, no dude en adaptar las instrucciones que se detallan en las fases 3 y 4, así como en crear el conjunto de servidores que mejor se adapte a sus necesidades.
+- Si es un experimentado implementador de AD FS, no dude en adaptar las instrucciones que se detallan en las fases 3 y 4, así como en crear el conjunto de servidores que mejor se adapte a sus necesidades. 
     
 - Si ya tiene una implementación existente de nube híbrida de Azure con una red virtual entre locales existente, no dude en adaptar u omitir las instrucciones que aparecen en las fases 1 y 2 y colocar los servidores proxy de aplicación web y AD FS en las subredes adecuadas.
     
 Para crear un entorno de prueba o desarrollo o bien una prueba de concepto de esta configuración, consulte [Identidad federada para el entorno de desarrollo y pruebas de Office 365](federated-identity-for-your-office-365-dev-test-environment.md).
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Inicie la configuración de esta carga de trabajo con [Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 
   
 > [!TIP]
-> Para que un conjunto de archivos implemente más rápidamente la autenticación federada de alta disponibilidad para Office 365 en Azure, consulte [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> Para que un conjunto de archivos implemente más rápidamente la autenticación federada de alta disponibilidad para Office 365 en Azure, consulte [Federated Authentication for Office 365 in Azure Deployment Kit]((https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)). 
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Identidad federada para el entorno de desarrollo y pruebas de Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   

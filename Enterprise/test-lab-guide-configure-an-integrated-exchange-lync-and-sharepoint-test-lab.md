@@ -12,17 +12,17 @@ ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: "Resumen: obtenga información sobre cómo crear un entorno de pruebas que contenga un servidor con Exchange Server 2013, un servidor con Lync Server 2013 y un servidor con SharePoint Server 2013."
 ms.openlocfilehash: 6fc3bc05db0d28bc4de2be77671ccf5e8fc55926
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guía del laboratorio de pruebas: Configurar un laboratorio de pruebas integrado de Exchange, Lync y SharePoint
 
- **Resumen:** Aprenda a crear un laboratorio de pruebas integrado que contiene un servidor que ejecuta Exchange Server 2013, un servidor que ejecuta 2013 de Lync Server y un servidor que ejecuta SharePoint Server 2013.
+ **Resumen:** obtenga información sobre cómo crear un entorno de pruebas integrado que contenga un servidor con Exchange Server 2013, un servidor con Lync Server 2013 y un servidor con SharePoint Server 2013.
   
 El entorno de pruebas que se obtiene con esta configuración, que incluye la autenticación de servidor a servidor entre los tres tipos de servidores, puede usarse para crear los escenarios multiproducto y las soluciones que usan un servidor con Exchange Server 2013, un servidor con Lync Server 2013 y un servidor con SharePoint Server 2013, así como para mostrar su funcionamiento.
   
-Este documento ofrece instrucciones para lo siguiente:
+Este documento contiene instrucciones para lo siguiente:
   
 1. Configurar el entorno de pruebas de configuración básica de Windows Server 2012.
     
@@ -46,13 +46,13 @@ Este documento ofrece instrucciones para lo siguiente:
 
 ![Icono Vídeo (botón de reproducción)](images/mod_icon_video_M.png)
   
-Para obtener información sobre cómo configurar este entorno de pruebas en Hyper-V, consulte el tema sobre el [hospedaje del entorno de pruebas integrado de Exchange, Lync y SharePoint con Windows Server 2012 Hyper-V](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx).
+Para obtener información sobre cómo configurar este entorno de pruebas en Hyper-V, consulte el tema sobre el [hospedaje del entorno de pruebas integrado de Exchange, Lync y SharePoint con Windows Server 2012 Hyper-V]((https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx)).
   
-## <a name="download-the-test-lab-guide"></a>Descargar la guía del entorno de pruebas
+## <a name="download-the-test-lab-guide"></a>Descargar la guía de entorno de pruebas
 
 [Guía de entorno de pruebas: Configurar un entorno de pruebas integrado de Exchange, Lync y SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Guías de entorno de pruebas](https://go.microsoft.com/fwlink/p/?LinkId=202817)
 

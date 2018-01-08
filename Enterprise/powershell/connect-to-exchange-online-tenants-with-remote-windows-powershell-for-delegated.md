@@ -14,13 +14,13 @@ ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: "Resumen: Use el modo remoto de Windows PowerShell para conectarse a Exchange Online con el parámetro DelegatedOrg."
 ms.openlocfilehash: 9bb6a5a316f4bc23c6586da825b8755cf755f484
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Conectarse a los inquilinos de Exchange Online con el modo remoto de Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 
- **Resumen:** Uso remoto de Windows PowerShell para conectarse a Exchange Online mediante el parámetro _DelegatedOrg_ .
+ **Resumen:** use el modo remoto de Windows PowerShell para conectarse a Exchange Online con el parámetro _DelegatedOrg_.
   
 El modo remoto de Windows PowerShell permite administrar la configuración de Exchange Online desde la línea de comandos. Use Windows PowerShell en el equipo local para crear una sesión remota a Exchange Online. Es un proceso de tres pasos en el que se especifican las credenciales de Exchange Online, se proporciona la configuración de conexión requerida y se importan los cmdlets de Exchange Online a la sesión local de Windows PowerShell para poder usarlos.
   
@@ -36,9 +36,9 @@ El modo remoto de Windows PowerShell permite administrar la configuración de Ex
     
   - Windows Server 2012 R2 o Windows Server 2012
     
-  - Windows 7 Service Pack 1 (SP1)*
+  - Windows 7 Service Pack 1 (SP1)*
     
-  - Windows Server 2008 R2 SP1*
+  - Windows Server 2008 R2 SP1*
     
     * Es necesario instalar .NET Framework 4.5.1 o .NET Framework 4.5 y, después, Windows Management Framework 4.0 o Windows Management Framework 3.0 . Para más información, consulte los siguientes recursos:
     
@@ -55,9 +55,9 @@ El modo remoto de Windows PowerShell permite administrar la configuración de Ex
   
 Los asociados con DAP son asociados de proveedor de soluciones en la nube (CSP) y redifusión web. Generalmente son proveedores de red o de telecomunicaciones para otras compañías. Empaquetan suscripciones en sus ofertas de servicio a sus clientes. Poseen un arrendamiento de asociado al que se le conceden automáticamente permisos Administrar en nombre de (AOBO) para susarrendamientos de cliente de Office 365, de modo que pueden administrar todos sus arrendamientos de cliente e informar al respecto.
   
-## <a name="connect-to-exchange-online"></a>Conectarse a Exchange Online
+## <a name="connect-to-exchange-online"></a>Conectarse a Exchange Online
 
-1. En el equipo local, abra Windows PowerShell y ejecute el siguiente comando.
+1. En el equipo local, abra Windows PowerShell y ejecute el siguiente comando.
     
   ```
   $UserCredential = Get-Credential
@@ -88,7 +88,7 @@ Después del paso 3, los cmdlets de Exchange Online se importan a la sesión loc
   
 Si surgen errores, compruebe los siguientes requisitos:
   
-- Un problema habitual es una contraseña incorrecta. Vuelva a realizar los tres pasos y preste especial atención al nombre de usuario y contraseña que escriba en el paso 1.
+- Un problema habitual es una contraseña incorrecta. Vuelva a realizar los tres pasos y preste especial atención al nombre de usuario y contraseña que escriba en el paso 1.
     
 - Para evitar que se produzcan ataques por denegación de servicio (DoS), solo se pueden tener abiertas tres conexiones remotas de Windows PowerShell a la organización de Exchange Online.
     

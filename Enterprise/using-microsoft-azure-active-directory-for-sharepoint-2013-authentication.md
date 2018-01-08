@@ -18,7 +18,7 @@ ms.assetid: bef810a4-53f6-4962-878e-e20b5019baeb
 description: 'Resumen: aprenda a usar el Servicio de control de acceso de Azure para autenticar a los usuarios de SharePoint Server 2013 con Azure Active Directory.'
 ms.openlocfilehash: 85db8376aeb06ef6f291b563410c991ea24351d5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -123,7 +123,7 @@ Para obtener más información sobre la configuración de la aplicación de usua
   
 1. En el portal de Servicio de control de acceso de Azure, haga clic en **Aplicaciones de usuario de confianza** y, después, haga clic en **Agregar**, tal y como se muestra en esta ilustración.
     
-     ![La configuración de aplicaciones de fabricantes de confiar](images/RelyingPartyApplications.jpg)
+     ![Las opciones de configuración de la aplicación de usuario de confianza](images/RelyingPartyApplications.jpg)
   
 ## <a name="create-a-self-signed-certificate-to-use-for-ssl"></a>Crear un certificado autofirmado para usarlo con SSL
 
@@ -208,7 +208,7 @@ Siga estos pasos para configurar el certificado X.509 que va a usar para la firm
 
 Siga estos pasos para crear una asignación de notificaciones mediante Windows PowerShell.
   
-Compruebe que cumple con las siguientes pertenencias a grupos:
+Compruebe que tiene las siguientes suscripciones:
   
 1. Rol fijo de servidor **securityadmin** en la instancia de SQL Server.
     
@@ -219,7 +219,7 @@ Compruebe que cumple con las siguientes pertenencias a grupos:
 Un administrador puede usar el cmdlet **Add-SPShellAdmin** para conceder permisos para usar cmdlets de SharePoint 2013.
   
 > [!NOTE]
-> Si no tiene permisos, póngase en contacto con el administrador para la instalación o con el administrador de SQL Server para pedir los permisos. Para más información sobre los permisos de Windows PowerShell, vea [Add-SPShellAdmin](http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx). 
+> Si no tiene permisos, póngase en contacto con el administrador para la instalación o con el administrador de SQL Server para pedir los permisos. Para más información sobre los permisos de Windows PowerShell, vea [Add-SPShellAdmin]((http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx)). 
   
 1. En el menú **Inicio**, haga clic en **Todos los programas**.
     
@@ -261,7 +261,7 @@ Un administrador puede usar el cmdlet **Add-SPShellAdmin** para conceder permiso
 
 Siga estos pasos para configurar la instalación de SharePoint para el nuevo proveedor de identidad de Azure AD.
   
-1. Asegúrese de que la cuenta de usuario con la que va a realizar este procedimiento pertenezca al grupo de administradores de la granja de servidores de SharePoint.
+1. Compruebe si la cuenta de usuario que lleva a cabo este procedimiento pertenece al grupo de administradores de la granja de servidores de SharePoint.
     
 2. En Administración central, en la página de inicio, haga clic en **Administración de aplicaciones**.
     
@@ -322,7 +322,7 @@ Siga estos pasos para comprobar que el nuevo proveedor de identidad funciona. Pa
 |**Póngase en contacto con nosotros**|**Descripción**|
 |:-----|:-----|
 |**¿Qué soluciones necesita?** <br/> |Estamos creando contenido para soluciones que abarcan varios productos y servicios de Microsoft. Díganos qué piensa sobre nuestras soluciones entre servidores o solicite soluciones específicas por correo electrónico a [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Participe en la discusión sobre soluciones** <br/> |Si es un apasionado de las soluciones basadas en la nube, considere la posibilidad de unirse a la nube adopción Advisory Board (CAAB) para conectar con una comunidad vibrante, más grande de los desarrolladores de contenido de Microsoft, profesionales de la industria y los clientes de todo el mundo. Para unir, Agréguese como un miembro del [espacio CAAB (nube adopción Advisory Board)](https://aka.ms/caab) de la Comunidad de tecnología Microsoft y envíenos un correo electrónico rápido a [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Cualquier persona puede leer contenido relacionados con la Comunidad en el [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Sin embargo, los miembros CAAB obtener invitaciones para seminarios Web privada que describen las soluciones y los nuevos recursos de adopción de nube.<br/> |
-|**Obtenga los archivos de arte que ve aquí** <br/> |Si desea una copia editable del arte que vea en este artículo, le gustará lo envíe de nuevo. Correo electrónico de su solicitud, incluidas la dirección URL y el título del arte, a [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
+|**Participe en la discusión sobre soluciones** <br/> |Si es un apasionado de las soluciones basadas en la nube, puede unirse a Cloud Adoption Advisory Board (CAAB) para conectarse a una interesante comunidad de mayor tamaño formada por desarrolladores de contenido de Microsoft, profesionales del sector y clientes de todo el mundo. Para unirse, agregue a su usuario como miembro del [espacio CAAB (Cloud Adoption Advisory Board)]((https://aka.ms/caab)) de Microsoft Tech Community y envíenos un correo electrónico a [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Cualquiera puede leer contenido relacionado con la comunidad en el [blog de CAAB]((https://blogs.technet.com/b/solutions_advisory_board/)). Pero los miembros de CAAB reciben invitaciones a seminarios web privados donde se describen nuevos recursos y soluciones de adopción de la nube.  <br/> |
+|**Obtenga los archivos de arte que ve aquí** <br/> |Si quiere recibir una copia editable de las ilustraciones que se muestran en este artículo, estaremos encantados de enviárselas. Envíe su solicitud por correo electrónico, incluida la dirección URL y el título de la ilustración, a [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  <br/> |
    
 

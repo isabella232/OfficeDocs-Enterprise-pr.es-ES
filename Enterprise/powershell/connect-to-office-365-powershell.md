@@ -1,5 +1,5 @@
 ---
-title: Conectarse a PowerShell de Office 365
+title: "Conectarse a PowerShell de Office 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,25 +16,25 @@ ms.custom:
 - apr17entnews
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: "Resumen: Conectarse a su organización de Office 365 mediante Office 365 PowerShell para realizar tareas del centro de administración de Office 365 desde la línea de comandos."
+description: "Resumen: conéctese a su organización de Office 365 con PowerShell de Office 365 para realizar tareas del Centro de administración de Office 365 desde la línea de comandos."
 ms.openlocfilehash: 3ac368a3d3584c15e1d0c26104616e8258a78e7b
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="connect-to-office-365-powershell"></a>Conectarse a PowerShell de Office 365
+# <a name="connect-to-office-365-powershell"></a>Conectarse a PowerShell de Office 365
 
- **Resumen:** Conectarse a su organización de Office 365 mediante Office 365 PowerShell para realizar tareas de administración de Office 365 desde la línea de comandos.
+ **Resumen:** conéctese a su organización de Office 365 con PowerShell de Office 365 para realizar tareas de administración de Office 365 desde la línea de comandos.
   
-Office 365 PowerShell permite administrar la configuración de Office 365 desde la línea de comandos. Conectarse a Office 365 PowerShell es un proceso sencillo de tres pasos donde instalar el software necesario, ejecutar el software necesario y, a continuación, conectarse a su organización de Office 365. 
+Con PowerShell de Office 365, se puede configurar Office 365 desde la línea de comandos. Conectarse a PowerShell de Office 365 es un sencillo proceso de tres pasos con el que instalará el software, ejecutará el software necesario y, después, se conectará a la organización de Office 365. 
 
-Tenga en cuenta que estas instrucciones de conexión son las mismas que las del tema [ActiveDirectory Azure (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113).
+Tenga en cuenta que estas instrucciones de conexión son las mismas que aparecen en el tema [Azure Active Directory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113).
   
 > [!TIP]
-> **Nuevo a PowerShell?** Vea un [Vídeo de información general de PowerShell](http://technet.microsoft.com/library/https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), ofrecido por aprendizaje de LinkedIn. 
+> **¿Es la primera vez que usa PowerShell?** Vea el [vídeo de información general sobre PowerShell](http://technet.microsoft.com/library/https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx) ofrecido por LinkedIn Learning. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Tiempo estimado para finalizar: 5 minutos
     
@@ -45,15 +45,15 @@ Tenga en cuenta que estas instrucciones de conexión son las mismas que las del 
   - Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2 SP1
     
     > [!NOTE]
-    >Utilice una versión de 64 bits de Windows. Soporte para la versión de 32 bits del Microsoft Azure Active Directory módulo para Windows PowerShell se interrumpió en octubre de 2014.
+    >Use una versión de 64 bits de Windows. La compatibilidad con la versión de 32 bits de Módulo de Microsoft Azure Active Directory para Windows PowerShell se descontinuó en octubre de 2014.
     
--  El Office 365 trabajo o escuela cuenta utilizar para estos procedimientos necesidades para ser miembro de una función de administración de Office 365. Para obtener más información, consulte [las funciones de administrador acerca de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+-  La cuenta profesional o educativa de Office 365 que use para estos procedimientos tiene que ser miembro del rol de administrador de Office 365. Para obtener más información, vea [Información sobre los roles de administrador de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
     
 ## <a name="step-1-install-required-software"></a>Paso 1: instalar el software necesario
 
 Estos pasos son necesarios una sola vez en el equipo, no cada vez que se conecta. Sin embargo, probablemente necesitará instalar las versiones más recientes de software periódicamente.
   
-1.  Instalar la versión de 64 bits del Ayudante de inicio de sesión de Microsoft Online Services: [Asistente de inicio de sesión de Microsoft Online Services para RTW de profesionales de TI](https://go.microsoft.com/fwlink/p/?LinkId=286152).
+1.  Instale la versión de 64 bits de Microsoft Online Services - Ayudante para el inicio de sesión: [Asistente para el inicio de sesión de Microsoft Online Services para profesionales de TI (RTW)](https://go.microsoft.com/fwlink/p/?LinkId=286152).
     
 2. Instale la versión de 64 bits de Módulo de Microsoft Azure Active Directory para Windows PowerShell siguiendo estos pasos:
     
@@ -73,7 +73,7 @@ Estos pasos son necesarios una sola vez en el equipo, no cada vez que se conecta
     
   - En el escritorio o la pantalla Inicio, pulse la tecla Windows + Q. En el acceso Buscar, escriba Azure.
     
-  - En el escritorio o la pantalla de inicio, mueva el cursor a la esquina superior derecha, o Deslizar hacia la izquierda desde el borde derecho de la pantalla para mostrar los encantos. Seleccione los bueno de búsqueda y escriba **Azure**.
+  - En el escritorio o en la pantalla Inicio, coloque el cursor en la esquina superior derecha o deslice el dedo hacia la izquierda desde el borde derecho de la pantalla para mostrar los accesos. Seleccione el acceso a Buscar y escriba **Azure**.
     
 2. En los resultados, haga clic en **Módulo de Microsoft Azure Active Directory para Windows PowerShell**.
     
@@ -114,11 +114,11 @@ Si surgen errores, compruebe los siguientes requisitos:
     
 - **Módulo de Microsoft Azure Active Directory para Windows PowerShell requiere que la característica Microsoft .NET Framework 3.5. _x_ esté habilitada en el equipo**. Es probable que el equipo tenga instalada una versión más reciente (por ejemplo, 4 o 4.5. _x_), pero sea posible habilitar o deshabilitar la compatibilidad con versiones anteriores de .NET Framework. Para obtener más información al respecto, consulte los temas siguientes:
     
-  - Para Windows Server 2012 o 2012 R2 de Windows Server, vea [Habilitar.NET Framework 3.5 mediante el agregar funciones y características de asistente](https://go.microsoft.com/fwlink/p/?LinkId=532368)
+  - Para Windows Server 2012 o Windows Server 2012 R2, vea [Habilitar .NET Framework 3.5 con el Asistente para agregar roles y características](https://go.microsoft.com/fwlink/p/?LinkId=532368).
     
-  - Para Windows 8 o Windows 8.1, vea [instalar el 3.5 de.NET Framework en Windows 8 o 8.1](https://go.microsoft.com/fwlink/p/?LinkId=532369)
+  - Para Windows 8 o Windows 8.1, vea [Instalar .NET Framework 3.5 en Windows 8 u 8.1](https://go.microsoft.com/fwlink/p/?LinkId=532369).
     
-  - Para Windows 7 o Windows Server 2008 R2, vea [no se puede abrir Azure Active Directory módulo para Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532370)
+  - Para Windows 7 o Windows Server 2008 R2, vea [No puede abrir el Módulo de Azure Active Directory para Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532370).
     
 - **Puede que su versión de Módulo de Microsoft Azure Active Directory para Windows PowerShell esté obsoleta.** Para comprobarlo, ejecute el siguiente comando en PowerShell de Office 365 o Módulo de Microsoft Azure Active Directory para Windows PowerShell:
     
@@ -128,12 +128,12 @@ Si surgen errores, compruebe los siguientes requisitos:
 
     Si el número de versión devuelto es menor que el valor 1.0.8070.2, desinstale el Módulo de Microsoft Azure Active Directory para Windows PowerShell e instale la versión más reciente desde el vínculo en el paso 1.
     
-- **Si recibe un error de conexión, vea este tema:** ["Connect-MsolService: excepción de tipo" error](https://go.microsoft.com/fwlink/p/?LinkId=532377).
+- **Si recibe un error de conexión, vea este tema:** [Error “Connect-MsolService: Se produjo una excepción de tipo”](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
 ## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a>Conectarse con el módulo de PowerShell Azure Active Directory V2
 <a name="ConnectV2"> </a>
 
-Para los procedimientos que necesitan los nuevos cmdlets del [módulo de PowerShell Azure Active Directory V2](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory), siga estos pasos para instalar el módulo y conectarse a su suscripción a Office 365:
+Para los procedimientos que necesitan los nuevos cmdlets del [módulo de PowerShell Azure Active Directory V2]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)), siga estos pasos para instalar el módulo y conectarse a su suscripción a Office 365:
   
 1. Abra un símbolo del sistema de Windows PowerShell con privilegios elevados (ejecute Windows PowerShell como administrador).
     
@@ -166,9 +166,9 @@ En el cuadro de diálogo **Azure Active Directory PowerShell**, escriba su nombr
     
 Siga las instrucciones del cuadro de diálogo de **Azure Active Directory PowerShell** para proporcionar información de autenticación adicional, como un código de comprobación, y haga clic en **Iniciar sesión**.
     
-Después de conectarse, podrá usar los nuevos cmdlets del [módulo de PowerShell Azure Active Directory V2](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
+Después de conectarse, podrá usar los nuevos cmdlets del [módulo de PowerShell Azure Active Directory V2]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Consulte también
 
 #### 
 
@@ -181,5 +181,5 @@ Después de conectarse, podrá usar los nuevos cmdlets del [módulo de PowerShel
 
 [Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
   
-[MsolService conectar](https://go.microsoft.com/fwlink/p/?LinkId=532375)
+[Connect-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
 

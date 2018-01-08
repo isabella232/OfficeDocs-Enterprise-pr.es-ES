@@ -14,13 +14,13 @@ ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Resumen: Use Windows PowerShell para Office 365 para agregar un nombre de dominio alternativo a un inquilino de cliente existente.'
 ms.openlocfilehash: 182750a5706dbb23c6207c6bd63334cbf2a2a795
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Agregar un dominio a un arrendamiento de cliente con Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 
- **Resumen:** Uso de Windows PowerShell para Office 365 agregar un nombre de dominio alternativo a un arrendatario de cliente existente.
+ **Resumen:** use Windows PowerShell para Office 365 para agregar un nombre de dominio alternativo a un espacio empresarial de cliente existente.
   
 Puede crear y asociar nuevos dominios con el arrendamiento del cliente con Windows PowerShell para Office 365 más rápido que con el Centro de administración de Office 365.
   
@@ -112,7 +112,7 @@ Se mostrará un resultado semejante a
 | `Name` <br/> | `Status` <br/> | `Authentication` <br/> |
 | `FQDN of new domain` <br/> | `Verified` <br/> | `Managed` <br/> |
    
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Consulte también
 
 #### 
 

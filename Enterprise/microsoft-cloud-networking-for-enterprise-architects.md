@@ -19,7 +19,7 @@ ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: "Resumen: diseñe las redes para las plataformas y los servicios en la nube de Microsoft."
 ms.openlocfilehash: 304a04313eb763352f0b9e8a5b264290be6d4fd5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -29,14 +29,14 @@ ms.lasthandoff: 12/15/2017
   
 Este artículo contiene vínculos a un conjunto de artículos en los que se describe lo que necesitan saber los arquitectos de TI sobre el diseño de las redes para las organizaciones que usan plataformas y servicios en la nube de Microsoft. También puede ver esta información como un póster de 12 páginas e imprimirlo en formato tabloide (también conocido como doble carta, 11 x 17 o A3).
   
-[![Miniatura de imagen para el modelo de red de nube de Microsoft](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+[![Imagen en miniatura del modelo de redes de Microsoft Cloud](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
-![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54425)
+![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![Ver una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54425)
   
-También puede ver todos los modelos en los [recursos de la arquitectura de nube de Microsoft IT](microsoft-cloud-it-architecture-resources.md) y pase a través de [Enterprise Cloud Roadmap de Microsoft: recursos para la toma de decisiones de TI](https://aka.ms/cloudarchitecture).
+También puede ver todos los modelos en los [Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) y conocer el [Plan de desarrollo de la nube empresarial de Microsoft: Recursos para responsables de toma de decisiones de TI]((https://aka.ms/cloudarchitecture)).
   
-Vea las siguientes secciones:
+Vea las secciones siguientes:
   
 - [Desarrollo de la red para la conectividad en la nube](evolving-your-network-for-cloud-connectivity.md)
     
@@ -62,16 +62,16 @@ Vea las siguientes secciones:
     
     Siga los pasos del proceso de diseño para crear una red virtual de Azure (VNet) óptima para cargas de trabajo de TI basadas en servidores de hospedaje (subredes, espacios de direcciones, enrutamiento, DNS, equilibrio de carga y conectividad a Internet, a la red local y a otras redes virtuales).
     
-Para obtener un resumen de 30 minutos de los puntos clave de este póster, consulte el curso de Microsoft Virtual Academy de [Optimizar su red para las ofertas de nube de Microsoft](https://mva.microsoft.com/en-US/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) .
+Para obtener un resumen de 30 minutos de los puntos clave de este póster, vea el curso de Microsoft Virtual Academy [Optimizar la red para las ofertas de Microsoft Cloud]((https://mva.microsoft.com/es-ES/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)).
   
 > [!NOTE]
-> Estos artículos afectan a la versión de **junio de 2017** de Microsoft Cloud Networking para póster de Enterprise Architects.
+> Estos artículos son válidos para la versión de **junio de 2017** del póster “Redes de Microsoft Cloud para arquitectos empresariales”.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

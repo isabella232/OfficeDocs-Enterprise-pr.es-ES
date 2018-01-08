@@ -17,17 +17,17 @@ ms.assetid: 510d5528-ac00-4f54-9d38-75fa043d0a06
 description: "Resumen: use la característica de OData en Microsoft Excel para recuperar información detallada de la implementación de Office 365."
 ms.openlocfilehash: 72c0fce0a70f5cc3136ab01b48bb178d32a8f64d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="using-excel-to-retrieve-office-365-reporting-data"></a>Uso de Excel para recuperar datos de informes de Office 365
 
- **Resumen:** Utilice la característica de oData en Microsoft Excel para recuperar información detallada para la implementación de Office 365
+ **Resumen:** use la característica de OData en Microsoft Excel para recuperar información detallada para la implementación de Office 365.
   
 La creación de informes es una parte clave de la administración del sistema. El Centro de administración de Office 365 incluye varios informes predefinidos a los que puede acceder desde la sección **Informes** del panel de navegación izquierdo. Hay informes de uso e informes de seguridad y cumplimiento.
   
-Los informes disponibles dependen de la versión de Office 365 que esté utilizando y de los servicios de Office 365 que haya habilitado. Para más información, consulte la [página de informes](https://technet.microsoft.com/en-us/library/office-365-reports.aspx).
+Los informes disponibles dependen de la versión de Office 365 que esté utilizando y de los servicios de Office 365 que haya habilitado. Para más información, consulte la [página de informes]((https://technet.microsoft.com/es-ES/library/office-365-reports.aspx)).
   
 Los informes predefinidos del Centro de administración son un recurso excelente. Facilitan la comprobación de aspectos como el uso del buzón de correo o el número de minutos que los usuarios emplean en las conferencias en línea. Pero cuando se trata de un análisis detallado del dominio de Office 365, los informes tienen sus limitaciones.
   
@@ -87,7 +87,7 @@ En ese momento, Excel establecerá la conexión y recuperará los datos.
     
 Tenga en cuenta que estos archivos .ODC son archivos XML de texto sin formato. Estos archivos de texto XML sin formato contienen su nombre de usuario y contraseña de Office 365:
     
-\<ODC: ConnectionString > origen de datos = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/; Los espacios de nombres incluyen = *; Max recibido tamaño de mensaje = 4398046511104; Integrated Security = Basic; ID=admin@litwareinc.onmicrosoft.com; de usuario ** Contraseña = MYpassw0rd!**; Persist Security Info = false; Dirección Url del documento de servicio = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString >
+\<odc:ConnectionString>Data Source=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/;Namespaces to Include=*;Max Received Message Size=4398046511104;Integrated Security=Basic; **User ID=admin@litwareinc.onmicrosoft.com;Password=MYpassw0rd!**;Persist Security Info=false;Service Document Url=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString>
     
 Si no le gusta la idea de guardar su nombre de usuario y contraseña en un archivo de texto sin formato, entonces, no active la casilla **Guardar contraseña en archivo**. Sin embargo, si hace esto, tenga en cuenta que no podrá volver a usar estas conexiones de datos. Eso es porque, sin el nombre de usuario y la contraseña, Office 365 no podrá autenticar el intento de iniciar sesión en el servicio.
     
@@ -101,7 +101,7 @@ Si no le gusta la idea de guardar su nombre de usuario y contraseña en un archi
   
 Lo que haga con estos datos es una decisión exclusivamente suya. Para ver algunas sugerencias, también puede leer [Crear un panel de Excel Services con una fuente de datos OData](https://technet.microsoft.com/en-us/library/jj873965%28v=office.15%29.aspx). Aunque este artículo no usa el servicio de generación de informes de Office 365, proporciona algunos consejos útiles para tareas como añadir filtros y segmentaciones en el nuevo panel.
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Consulte también
 
 #### 
 

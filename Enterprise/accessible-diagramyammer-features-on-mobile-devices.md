@@ -1,5 +1,5 @@
 ---
-title: "Diagrama accesible Características de Yammer en dispositivos móviles"
+title: "Diagrama accesible: Características de Yammer en dispositivos móviles"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,13 @@ ms.assetid: b18f4ae4-cd83-4a66-8e33-a7d5a4c06659
 description: "Este artículo es una versión de texto accesible del diagrama Características de Yammer en dispositivos móviles."
 ms.openlocfilehash: 82b73d245264018cd4d0ce17075930682ca2effa
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---yammer-features-on-mobile-devices"></a>Diagrama accesible: Características de Yammer en dispositivos móviles
 
-**Resumen:** Este artículo es una versión de texto accesible del diagrama denominado Yammer características de dispositivos móviles.
+**Resumen:** este artículo es una versión de texto accesible del diagrama “Características de Yammer en dispositivos móviles”.
   
 Yammer ofrece una experiencia social de calidad superior en varias plataformas de dispositivos. En este diagrama se muestra una descripción general de las opciones de Yammer, Yammer para dispositivos móviles y la aplicación móvil Yammer.
   
@@ -46,7 +46,7 @@ Es posible que la interfaz de usuario de estas características tenga un aspecto
   
 En el póster se describen cinco características de Yammer, organizadas en las siguientes secciones: 
   
-1. Mensajería 
+1. Mensajería  
     
 2. Grupos 
     

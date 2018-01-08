@@ -1,5 +1,5 @@
 ---
-title: Diagrama accesible Opciones de plataformas de Microsoft Exchange 2013
+title: 'Diagrama accesible: Opciones de plataformas de Microsoft Exchange 2013'
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -11,13 +11,13 @@ ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: "Este artículo es una versión de texto accesible del diagrama con el nombre Opciones de plataforma de Microsoft Exchange 2013, que está disponible en Diagramas técnicos."
 ms.openlocfilehash: d81fe9947feee64d1dd75278738262d10c802ecc
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Diagrama accesible: Opciones de plataformas de Microsoft Exchange 2013
 
-**Resumen:** Este artículo es una versión de texto accesible del diagrama denominado opciones de plataformas de Microsoft Exchange de 2013, que está disponible en [Diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
+**Resumen:** este artículo es una versión de texto accesible del diagrama “Opciones de plataformas de Microsoft Exchange 2013”, que está disponible en [Diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
   
 Este póster describe lo que los arquitectos y responsables de decisiones empresariales (BDM) necesitan saber sobre implementaciones de Exchange Online e Exchange Server. Incluye lo siguiente: 
   
@@ -57,7 +57,7 @@ Descripción de las características y funcionalidades:
     
 - Exchange Online Protection (EOP) se incluye para la protección de correo no deseado y contra malware.
     
-- Alta disponibilidad integrada con un contrato de nivel de servicio (SLA) del 99,9 %.
+- Alta disponibilidad integrada con un contrato de nivel de servicio (SLA) del 99,9 %.
     
 - Sincronización de directorios que incluye contraseñas entre los Servicios de dominio de Active Directory (AD DS) locales y el inquilino de Azure Active Directory. Los Servicios de federación de Active Directory (AD FS) son necesarios para el inicio de sesión único.
     
@@ -254,29 +254,29 @@ Las responsabilidades del personal de TI de la organización incluyen crear y ad
 
 Para obtener más información sobre Exchange Online (Office 365), consulte:
   
-- [Descripción de servicio de Exchange Online](https://aka.ms/EXOSD)
+- [Descripción de servicio de Exchange Online](((https://aka.ms/EXO)SD))
     
-- [Biblioteca de Exchange Online en TechNet](https://aka.ms/EXOTN)
+- [Biblioteca de Exchange Online en TechNet](((https://aka.ms/EXO)TN))
     
-- [Portal de Exchange Online](https://aka.ms/EXO)
+- [Portal de Exchange Online]((https://aka.ms/EXO))
     
 Para obtener más información sobre Exchange Hybrid, consulte:
   
-- [Implementaciones híbridas de Exchange 2013 ](https://aka.ms/ExchangeHybrid). Tenga en cuenta que la licencia del servidor híbrido solo se requiere para los siguientes escenarios: organización de Exchange 2010 con servidor híbrido Exchange 2013 y organización de Exchange 2007 con servidor híbrido Exchange 2013 o Exchange 2010.
+- [Implementaciones híbridas de Exchange 2013 ]((https://aka.ms/ExchangeHybrid)). Tenga en cuenta que la licencia del servidor híbrido solo se requiere para los siguientes escenarios: organización de Exchange 2010 con servidor híbrido Exchange 2013 y organización de Exchange 2007 con servidor híbrido Exchange 2013 o Exchange 2010.
     
-- [Inicio de sesión de Office 365](https://aka.ms/HybridKey)
+- [Inicio de sesión de Office 365]((https://aka.ms/HybridKey))
     
 Para obtener más información sobre Exchange Server local, consulte:
   
-- [Biblioteca de Exchange Server 2013 en TechNet](https://aka.ms/Ex2013TN)
+- [Biblioteca de Exchange Server 2013 en TechNet]((https://aka.ms/Ex2013TN))
     
-- [Portal de Exchange Server 2013](https://aka.ms/Exchange2013)
+- [Portal de Exchange Server 2013]((https://aka.ms/Exchange2013))
     
-- [Arquitectura de Exchange Server 2013](https://aka.ms/Ex2013SP1ArchPoster)
+- [Arquitectura de Exchange Server 2013]((https://aka.ms/Ex2013SP1ArchPoster))
     
 Para obtener más información sobre Exchange hospedado por el proveedor, consulte:
   
-[Guía y soluciones de varios inquilinos y hospedaje de Exchange Server 2013](https://aka.ms/Ex2013Hosting)
+[Guía y soluciones de varios inquilinos y hospedaje de Exchange Server 2013]((https://aka.ms/Ex2013Hosting))
   
 ## <a name="descriptions-of-three-new-or-updated-features-in-exchange-2013"></a>Descripciones de tres características nuevas o actualizadas en Exchange 2013
 

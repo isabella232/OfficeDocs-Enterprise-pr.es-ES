@@ -1,5 +1,5 @@
 ---
-title: Usar Windows PowerShell para crear informes en Office 365
+title: "Usar Windows PowerShell para crear informes en Office 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,13 +16,13 @@ ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: "Resumen: use PowerShell de Office 365 para crear informes que no se pueden crear en el Centro de administración de Office 365."
 ms.openlocfilehash: b1cbbbef73a266a62a417d2714fefcd630c604c4
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Usar Windows PowerShell para crear informes en Office 365
+# <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Usar Windows PowerShell para crear informes en Office 365
 
- **Resumen:** Utilice Office 365 PowerShell para crear informes que no se producen en el centro de administración de Office 365.
+ **Resumen:** use PowerShell de Office 365 para crear informes que no se pueden crear en el Centro de administración de Office 365.
   
 Existen muchos informes diferentes disponibles en el Centro de administración de Office 365. Sin embargo, estos informes solo proporcionan demasiada información y a veces necesita más. Ahí es cuando necesita PowerShell de Office 365.
   
@@ -48,17 +48,17 @@ Estos artículos que describen cómo usar PowerShell de Office 365 para obtener 
     
 - Informes de SharePoint Online:
     
-  - [Administrar usuarios y grupos de SharePoint Online con PowerShell de Office 365](http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
+  - [Administrar usuarios y grupos de SharePoint Online con PowerShell de Office 365]((http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx))
     
-  - [Manage SharePoint Online site groups with Office 365 PowerShell](http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [Manage SharePoint Online site groups with Office 365 PowerShell]((http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx))
     
 - Informes de Exchange Online:
     
-  - [Display Exchange Online mailbox information with Office 365 PowerShell](http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [Display Exchange Online mailbox information with Office 365 PowerShell]((http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx))
     
-  - [Display Exchange Online reports with Office 365 PowerShell](http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
+  - [Display Exchange Online reports with Office 365 PowerShell]((http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx))
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Consulte también
 
 #### 
 

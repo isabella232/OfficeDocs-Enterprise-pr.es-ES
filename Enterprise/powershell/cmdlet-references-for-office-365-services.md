@@ -16,15 +16,15 @@ ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: 'Resumen: busca temas de referencia de los cmdlets PowerShell de Office 365 para Azure Active Directory, Exchange Online, SharePoint Online y Skype Empresarial Online.'
 ms.openlocfilehash: 86975e7c0729429d771a9a316dad4b8c73d28010
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Referencias de cmdlets para los servicios de Office 365
 
- **Resumen:** Buscar temas de referencia de cmdlet de PowerShell de Office 365 para Azure Active Directory, Exchange Online, SharePoint Online y Skype para los negocios en línea.
+ **Resumen:** vea temas de referencia sobre cmdlets de PowerShell de Office 365 para Azure Active Directory, Exchange Online, SharePoint Online y Skype Empresarial Online.
   
-Temas de referencia de cmdlet para los distintos servicios de Office 365 proporcionan información detallada e instrucciones sobre cómo utilizar cada cmdlet. Addiitonally, cada servicio Office 365 que tiene soporte de PowerShell requiere instrucciones de conexión diferente.
+En los temas de referencia sobre cmdlets para los distintos servicios de Office 365, se ofrece información detallada e instrucciones sobre cómo usar cada cmdlet. Además, cada servicio de Office 365 compatible con PowerShell necesita unas instrucciones de conexión distintas.
   
 > [!NOTE]
 > Para conectarse a la vez a todos los servicios, consulte [Conectarse a todos los servicios de Office 365 en una sola ventana de Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md). 
@@ -37,9 +37,9 @@ Para obtener instrucciones de conexión para PowerShell de Office 365, consulte 
   
 ## <a name="security-amp-compliance-center-powershell-cmdlets"></a>Cmdlets de PowerShell del Centro de seguridad y cumplimiento
 
-Seguridad de Office 365 &amp; temas de referencia de cmdlet de centro de cumplimiento de normas se encuentran en la seguridad &amp; área de PowerShell de centro de cumplimiento de normas de la biblioteca de TechNet. Para abrirla, haga clic en [Office 365 seguridad &amp; centro de cumplimiento cmdlets](https://go.microsoft.com/fwlink/p/?LinkId=627085).
+Los temas de referencia sobre cmdlets del Centro de seguridad y cumplimiento de Office 365 se encuentran en el área de PowerShell del Centro de seguridad de cumplimiento de la biblioteca de TechNet. Para verlos, haga clic en [Cmdlets del Centro de seguridad y cumplimiento de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=627085).
   
-Para obtener instrucciones de conexión para seguridad &amp; PowerShell de centro de cumplimiento de normas, haga clic en [Conectar con la seguridad de Office 365 &amp; centro de cumplimiento de normas mediante PowerShell remoto](https://go.microsoft.com/fwlink/p/?LinkId=627084).
+Para obtener instrucciones de conexión de PowerShell para el Centro de seguridad y cumplimiento, haga clic en [Conectar al Centro de seguridad y cumplimiento de Office 365 con PowerShell remoto](https://go.microsoft.com/fwlink/p/?LinkId=627084).
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Cmdlets de Exchange Online PowerShell
 
@@ -62,7 +62,7 @@ Los temas de referencia de los cmdlets de Skype Empresarial Online se encuentran
   
 Para obtener instrucciones de conexión para PowerShell de Skype Empresarial Online, haga clic en [Conectarse a Skype Empresarial Online mediante Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=691607).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Consulte también
 
 #### 
 

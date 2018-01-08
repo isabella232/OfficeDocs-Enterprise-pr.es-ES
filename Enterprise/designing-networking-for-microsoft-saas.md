@@ -18,7 +18,7 @@ ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: 'Resumen: Aprenda a optimizar la red para tener acceso a los servicios de SaaS de Microsoft, como Office 365, Microsoft Intune y Dynamics 365.'
 ms.openlocfilehash: 432789d03f5208a379dc2ab4f17f38f95223e10d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -32,7 +32,7 @@ La optimización de la red para los servicios SaaS de Microsoft requiere un aná
 
 Siga estos pasos para optimizar la red para los servicios SaaS de Microsoft:
   
-1. Repase la sección **pasos para preparar la red para los servicios de nube de Microsoft** en [elementos comunes de conectividad de la nube de Microsoft](common-elements-of-microsoft-cloud-connectivity.md).
+1. Vea la sección **Pasos para preparar la red para Servicios en la nube de Microsoft** en [Elementos comunes de conectividad de Microsoft Cloud](common-elements-of-microsoft-cloud-connectivity.md).
     
 2. Optimice la salida de Internet para los servicios SaaS de Microsoft siguiendo las recomendaciones del servidor proxy.
     
@@ -90,9 +90,9 @@ Estos son los puertos de salida necesarios para el tráfico de Office 365:
     
 - UDP 3478
     
-- TCP 5223
+- TCP 5223
     
-- TCP 50000-59999-59.999
+- TCP 50000-59999–59.999
     
 - UDP 50000-59999
     
@@ -128,7 +128,7 @@ En el caso de los equipos cliente, determine lo siguiente:
     
 Para cada tipo de cliente (PC, smartphone, tableta), asegúrese de que está instalada la versión actual de lo siguiente:
   
-- Sistema operativo
+- Sistema operativo 
     
 - Explorador de Internet
     
@@ -142,9 +142,9 @@ Para cada tipo de cliente (PC, smartphone, tableta), asegúrese de que está ins
     
 También puede optimizar el rendimiento de la conexión de intranet (por cable, de forma inalámbrica o por VPN).
   
-Para obtener más información, consulte [Compatibilidad de NAT con Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).
+Para obtener más información, consulte [Compatibilidad de NAT con Office 365]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)).
   
-Para conocer las recomendaciones más recientes para el uso de ExpressRoute con Office 365, consulte [Azure ExpressRoute para Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).
+Para conocer las recomendaciones más recientes para el uso de ExpressRoute con Office 365, consulte [Azure ExpressRoute para Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).
   
 Para optimizar el rendimiento de la intranet, haga lo siguiente:
   
@@ -154,7 +154,7 @@ Para optimizar el rendimiento de la intranet, haga lo siguiente:
     
 - Realice análisis de dispositivos intermedios (antigüedad, mantenimiento, etc.)
     
-Para obtener más información, consulte la [Herramienta PsPing](https://technet.microsoft.com/sysinternals/jj729731.aspx).
+Para obtener más información, consulte la [Herramienta PsPing]((https://technet.microsoft.com/sysinternals/jj729731.aspx)).
   
 ## <a name="it-operations-considerations"></a>Consideraciones sobre las operaciones de TI
 
@@ -182,21 +182,21 @@ Si quiere optimizar la red en las sincronizaciones continuas:
     
 - Use los resultados de la supervisión del ancho de banda para identificar la necesidad de cambios en la red (escalar vertical u horizontalmente, nuevos circuitos o adición de dispositivos)
     
-Para obtener más información, vea:
+Para más información, visite:
   
-- [Planeación de la migración y red para Office 365](https://aka.ms/tune)
+- [Planeación de la migración y red para Office 365]((https://aka.ms/tune))
     
-- [Curso de Microsoft Virtual Academy sobre la administración del rendimiento de Office 365](https://aka.ms/o365perf)
+- [Curso de Microsoft Virtual Academy sobre la administración del rendimiento de Office 365]((https://aka.ms/o365perf))
     
-- [ExpressRoute para Office 365](https://aka.ms/expressrouteoffice365)
+- [ExpressRoute para Office 365]((https://aka.ms/expressrouteoffice365))
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Microsoft Cloud Networking para arquitectos profesionales](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

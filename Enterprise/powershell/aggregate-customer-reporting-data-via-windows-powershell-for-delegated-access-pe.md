@@ -14,13 +14,13 @@ ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
 description: "Resumen: Use Windows PowerShell para Office 365 para recuperar informes de todos los arrendamientos de cliente y agregar los datos a una sola ubicación."
 ms.openlocfilehash: 89651971424d1b9a494335572d2654d8402ec146
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>Agregar datos de informes de clientes a través de Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 
- **Resumen:** Usar Windows PowerShell para Office 365 para recuperar informes en todos los arrendamientos de cliente y agregar los datos en una sola ubicación.
+ **Resumen:** use Windows PowerShell para Office 365 para recuperar informes de todos los espacios empresariales de cliente y agregar los datos en una sola ubicación.
   
 De forma predeterminada, Windows PowerShell para Office 365 no tiene una agregación integrada de informes de datos de varios arrendamientos de cliente. Sin embargo, puede usar este script de Windows PowerShell para Office 365 de ejemplo para recorrer en iteración todos los arrendamientos de cliente para recuperar un único informe para cada uno de los clientes y, a continuación, agregar los datos de informes a una única ubicación. El resultado es que tendrá un único informe para todos los inquilinos de cliente. 
   
@@ -137,7 +137,7 @@ foreach ($c in $contracts) {
 
 Este script de ejemplo coloca el informe agregado en el archivo ReportOutput.csv.
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Consulte también
 
 #### 
 

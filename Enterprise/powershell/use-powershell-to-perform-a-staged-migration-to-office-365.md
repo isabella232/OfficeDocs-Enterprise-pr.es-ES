@@ -14,13 +14,13 @@ ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: "Resumen: aprenda a usar Windows PowerShell para realizar una migración preconfigurada a Office 365."
 ms.openlocfilehash: 6c3ed6c0e37f7b99d3f26056dfe1b9d989388ff3
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Usar PowerShell para realizar una migración preconfigurada a Office 365
 
- **Resumen:** Aprenda a usar Windows PowerShell para realizar una migración por etapas a Office 365.
+ **Resumen:** obtenga información sobre cómo usar Windows PowerShell para realizar una migración preconfigurada a Office 365.
   
 Puede migrar el contenido de los buzones de los usuarios desde un sistema de correo electrónico de origen a Office 365 con el tiempo mediante una migración preconfigurada.
   
@@ -29,7 +29,7 @@ Este artículo le guiará a través de las tareas necesarias para realizar una m
 > [!NOTE]
 > También puede usar el centro de administración de Exchange para realizar una migración preconfigurada. Consulte [Realizar una migración preconfigurada de correo electrónico a Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536687). 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué es necesario saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 Tiempo estimado para finalizar esta tarea: entre 2 y 5 minutos para crear un lote de migración. Después de que haya iniciado el lote de migración, la duración de la migración variará según la cantidad de buzones del lote, el tamaño de cada buzón y la capacidad de red disponible. Para obtener información acerca de otros factores que afectan a la duración de la migración de buzones a Office 365, consulte [Rendimiento de la migración de Exchange Online y procedimientos recomendados](https://go.microsoft.com/fwlink/p/?LinkId=275079).
   
@@ -58,7 +58,7 @@ Antes de migrar los buzones a Office 365 con una migración preconfigurada, debe
   
 - Use Outlook desde fuera de la red corporativa para conectarse a su buzón de correo de Exchange local.
     
-- Use el [Remote Connectivity Analyzer de Microsoft Exchange](https://www.testexchangeconnectivity.com/) para probar la configuración de su conexión. Use las pruebas de Detección automática de Outlook en cualquier lugar (RPC sobre HTTP) o Outlook.
+- Use el [Remote Connectivity Analyzer de Microsoft Exchange]((https://www.testexchangeconnectivity.com/)) para probar la configuración de su conexión. Use las pruebas de Detección automática de Outlook en cualquier lugar (RPC sobre HTTP) o Outlook.
     
 - Ejecute los comandos siguientes en Exchange Online PowerShell:
     
@@ -76,11 +76,11 @@ Para migrar los buzones de correo, el administrador debe tener uno de los siguie
   
 - Forme parte del grupo de **administradores de dominio** de Active Directory de la organización local.
     
-    o
+    o bien
     
 - Reciba el permiso **FullAccess** para cada buzón local y el permiso **WriteProperty** para modificar la propiedad **TargetAddress** en las cuentas de usuario locales.
     
-    o
+    o bien
     
 - Reciba el permiso **ReceiveAs** en la base de datos de buzones local en la que se almacenan los buzones de los usuarios y el permiso **WriteProperty** para modificar la propiedad **TargetAddress** en las cuentas de usuario locales.
     
@@ -105,10 +105,10 @@ Después de identificar los usuarios cuyos buzones locales desea migrar a Office
   
 El archivo CSV para una migración preconfigurada es compatible con los tres atributos siguientes. Cada fila del archivo CSV corresponde a un buzón y debe contener un valor para cada uno de estos atributos.
   
-|**Atributo**|**Descripción**|**¿Obligatorio?**|
+|**Atributo**|**Descripción**|**Obligatorio**|
 |:-----|:-----|:-----|
-|EmailAddress  <br/> |Especifica la dirección de correo electrónico SMTP principal (por ejemplo, pilarp@contoso.com) para los buzones locales.  <br/> Use la dirección SMTP principal para los buzones locales, en lugar de los identificadores de usuario de Office 365. Por ejemplo, si el dominio local se denomina contoso.com pero el dominio de correo electrónico de Office 365 se denomina service.contoso.com, debería usar el nombre de dominio contoso.com para las direcciones de correo electrónico del archivo CSV.  <br/> |Obligatorio  <br/> |
-|Password  <br/> |La contraseña que se establecerá para el nuevo buzón de Office 365. Las restricciones de contraseña que se apliquen a la organización de Office 365 son también aplicables a las contraseñas incluidas en el archivo CSV.  <br/> |Opcional  <br/> |
+|EmailAddress  <br/> |Especifica la dirección de correo electrónico SMTP principal (por ejemplo, pilarp@contoso.com) para los buzones locales.  <br/> Use la dirección SMTP principal para los buzones locales, en lugar de los identificadores de usuario de Office 365. Por ejemplo, si el dominio local se denomina contoso.com pero el dominio de correo electrónico de Office 365 se denomina service.contoso.com, debería usar el nombre de dominio contoso.com para las direcciones de correo electrónico del archivo CSV.  <br/> |Necesario  <br/> |
+|Contraseña  <br/> |La contraseña que se establecerá para el nuevo buzón de Office 365. Las restricciones de contraseña que se apliquen a la organización de Office 365 son también aplicables a las contraseñas incluidas en el archivo CSV.  <br/> |Opcional  <br/> |
 |ForceChangePassword  <br/> |Especifica si un usuario debe cambiar la contraseña la primera vez que inicie sesión en el nuevo buzón de Office 365. Use **True** o **False** como valor de este parámetro. <br/> > [!NOTE]> Si ha implementado una solución de inicio de sesión único (SSO) implantando los servicios de federación de Active Directory (AD FS) o superior en la organización local, debe usar **False** como valor del atributo **ForceChangePassword**.          |Opcional  <br/> |
    
  **Formato del archivo CSV**
@@ -126,7 +126,7 @@ briant@contoso.com,Pa$$w0rd,False
 
 Cada fila que hay bajo la fila de encabezado representa a un usuario y proporciona la información que se usará para migrar el buzón del usuario. Los valores de atributo de cada fila deben seguir el mismo orden que los nombres de atributo de la fila de encabezado. 
   
-Use cualquier editor de texto, o bien una aplicación como Excel para crear el archivo CSV. Guarde el archivo como .csv o .txt.
+Use cualquier editor de texto, o bien una aplicación como Excel para crear el archivo CSV. Guarde el archivo como .csv o .txt.
   
 > [!NOTE]
 > Si el archivo CSV contiene caracteres especiales o que no son ASCII, guárdelo con codificación UTF-8 o con otra codificación Unicode. Según la aplicación, puede resultar más fácil guardar el archivo CSV con codificación UTF-8 u otra codificación Unicode si la configuración regional del equipo coincide con el idioma utilizado en el archivo CSV. 
@@ -252,7 +252,7 @@ Active las cuentas de usuario de Office 365 para las cuentas migradas mediante l
     
 - **Retire los servidores de Exchange locales.** Después de haber comprobado que todo el correo electrónico se enruta directamente a los buzones de Office 365 y cuando ya no necesite mantener la organización de correo electrónico local o no tenga pensado implementar una solución SSO, puede desinstalar Exchange desde los servidores y quitar la organización local de Exchange.
     
-    Para obtener más información al respecto, vea lo siguiente:
+    Para obtener más información, vea los artículos siguientes:
     
   - [Modificar o quitar Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
     

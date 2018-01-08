@@ -14,13 +14,13 @@ ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 'Resumen: Use Windows PowerShell para Office 365 para administrar los arrendamientos de cliente.'
 ms.openlocfilehash: 6001a6b40d2851d13e8fb74da615a2b8137f17ec
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Administrar inquilinos de Office 365 con Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 
- **Resumen:** Usar Windows PowerShell para Office 365 para administrar los arrendamientos de su cliente.
+ **Resumen:** use Windows PowerShell para Office 365 para administrar los espacios empresariales de cliente.
   
 Windows PowerShell permite que Socios de sindicación y proveedor de soluciones en la nube (CSP) administre fácilmente e informe sobre la configuración del inquilino del cliente que no está disponible en el Centro de administración de Office 365. Tenga en cuenta que los permisos Administrar en nombre de (AOBO) son necesarios para que la cuenta de administrador del asociado se conecte a los inquilinos del cliente.
   
@@ -92,7 +92,7 @@ Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user princi
 
 La creación, configuración y asignación de licencias en bloque de usuarios de Office 365 es especialmente eficaz con Windows PowerShell para Office 365. En este proceso de dos pasos, primero se crean entradas para todos los usuarios que desea agregar a un archivo de valores separados por comas (CSV) y, a continuación, se importa dicho archivo con Windows PowerShell para Office 365. 
   
-#### <a name="create-a-csv-file"></a>Crear un archivo CSV
+#### <a name="create-a-csv-file"></a>Crear un archivo CSV
 
 Cree un archivo CSV con este formato:
   
@@ -112,7 +112,7 @@ Una vez que el archivo CSV esté creado, ejecute este comando para crear cuentas
 Import-Csv .\\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Consulte también
 
 #### 
 

@@ -14,20 +14,20 @@ ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: "Resumen: aprenda a usar Windows PowerShell para realizar una migración IMAP a Office 365."
 ms.openlocfilehash: 6187207d57723c9c69fa6fdc7885c91de6d5080f
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Usar PowerShell para realizar una migración de IMAP a Office 365
 
- **Resumen:** Aprenda a usar Windows PowerShell para realizar una migración de IMAP a Office 365.
+ **Resumen:** obtenga información sobre cómo usar Windows PowerShell para realizar una migración IMAP a Office 365.
   
 Como parte del proceso de implementación de Office 365, puede elegir migrar el contenido de los buzones de usuario de un servicio de correo electrónico de Internet Mail Access Protocol (IMAP) a Office 365. Este artículo le guiará a través de las tareas para migrar el correo electrónico IMAP con Exchange Online PowerShell. 
   
 > [!NOTE]
 > También puede usar el centro de administración de Exchange para realizar una migración IMAP. Consulte [Migrar los buzones IMAP a Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536685). 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué es necesario saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 Tiempo estimado para finalizar esta tarea: entre 2 y 5 minutos para crear un lote de migración. Después de que haya iniciado el lote de migración, la duración de la migración variará según la cantidad de buzones del lote, el tamaño de cada buzón y la capacidad de red disponible. Para obtener información acerca de otros factores que afectan a la duración de la migración de buzones a Office 365, consulte [Rendimiento de la migración de Exchange Online y procedimientos recomendados](https://go.microsoft.com/fwlink/p/?LinkId=275079).
   
@@ -109,7 +109,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot:**
   
-Para los servidores IMAP que admiten autenticación sencilla y capa de seguridad (SASL), como un servidor IMAP de Dovecot, utilizan el formato * *User_UserName*Admin_UserName**, donde el asterisco (*) es un carácter separador configurable. Supongamos que la migración de correo electrónico de esos mismos usuarios desde un servidor IMAP de Dovecot mediante el Administrador de credenciales **mailadmin** y **P@ssw0rd**. Aquí es cuál sería el aspecto de tu archivo CSV:
+En el caso de servidores IMAP compatibles con Nivel de seguridad y autenticación simples (SASL), como el servidor IMAP Dovecot, use el formato **Usuario_NombreDeUsuario*Admin_NombreDeUsuario*, donde el asterisco (*) es un carácter separador que se puede configurar. Imagine que va a migrar el correo electrónico de esos mismos usuarios desde un servidor IMAP Dovecot con las credenciales de administrador **mailadmin** y **P@ssw0rd**. El archivo CSV sería similar a este:
   
 ```
 EmailAddress,UserName,Password
@@ -238,7 +238,7 @@ El comando devolverá el lote de migración con un estado **Quitando** o devolve
   
 Para obtener más información sobre el cmdlet **Get-MigrationBatch**, consulte[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Consulte también
 
 #### 
 

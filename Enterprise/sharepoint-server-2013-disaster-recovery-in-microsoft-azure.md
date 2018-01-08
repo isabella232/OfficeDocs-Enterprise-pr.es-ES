@@ -1,7 +1,7 @@
 ---
 title: "Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -16,11 +16,11 @@ ms.custom:
 - Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Resumen: con Azure, puede crear un entorno de recuperación ante desastres para la granja de servidores local de SharePoint. En este artículo se describe cómo diseñar e implementar esta solución."
-ms.openlocfilehash: 79469b862dbc18a34b09d638879e199869de880a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
 
@@ -360,7 +360,7 @@ En esta tabla se proporcionan vínculos a entradas de blog y artículos de refer
   
 **Tabla: Artículos de referencia de DFSR**
 
-|**Título**|**Descripción**|
+|**Title**|**Descripción**|
 |:-----|:-----|
 |[Replicación](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |Tema de TechNet sobre administración de DFS con vínculos para la replicación  <br/> |
 |[Replicación DFS: Guía de supervivencia](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Sitio wiki con vínculos a información sobre DFS  <br/> |
@@ -371,7 +371,7 @@ En esta tabla se proporcionan vínculos a entradas de blog y artículos de refer
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>Fase 6: Configurar el trasvase de registros a la granja de servidores de recuperación
 <a name="Phase6"> </a>
 
-El trasvase de registros es el componente fundamental para configurar la recuperación ante desastres en este entorno. Puede usar el trasvase de registros para enviar automáticamente los archivos de registro de transacciones desde una instancia de servidor de bases de datos principal hacia una instancia de servidor de bases de datos secundario. Para configurar el trasvase de registros, vea [Configure log shipping in SharePoint 2013](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx). 
+El trasvase de registros es el componente fundamental para configurar la recuperación ante desastres en este entorno. Puede usar el trasvase de registros para enviar automáticamente los archivos de registro de transacciones desde una instancia de servidor de bases de datos principal hacia una instancia de servidor de bases de datos secundario. Para configurar el trasvase de registros, vea [Configure log shipping in SharePoint 2013]((http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx)). 
   
 > [!IMPORTANT]
 > La compatibilidad con el trasvase de registros en SharePoint Server está limitada a determinadas bases de datos. Para obtener más información, consulte [Compatibilidad de alta disponibilidad y opciones de recuperación ante desastres para bases de datos de SharePoint (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 
@@ -527,7 +527,7 @@ En la siguiente tabla se describe la configuración de las unidades de las máqu
 |:-----|:-----|:-----|:-----|
 |C  <br/> |80  <br/> |Unidad del sistema  <br/> |<DriveLetter>:\\Archivos de programa\\Microsoft SQL Server\\  <br/> |
 |E  <br/> |80  <br/> |Unidad de registro (40 GB)  <br/> |<DriveLetter>:\\Archivos de programa\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATA  <br/> |
-|F  <br/> |80  <br/> |Página (36 GB)  <br/> |<DriveLetter>:\\Archivos de programa\\Microsoft SQL Server\\MSSQL\\datos  <br/> |
+|F  <br/> |80  <br/> |Página (36 GB)  <br/> |<DriveLetter>:\\Archivos de programa\\Microsoft SQL Server\\MSSQL\\DATA  <br/> |
    
 En esta tabla se describe la configuración de las unidades de las máquinas virtuales de Hyper-V que hemos creado y configurado para que funcionen como servidores de base de satos local. En la página **Configuración del Motor de base de datos**, seleccione la pestaña **Directorios de datos** para establecer y confirmar la configuración que se muestra en esta tabla.
   
@@ -645,7 +645,7 @@ Asegúrese de que la cuenta del grupo de aplicaciones usada por la aplicación w
   
 ### <a name="custom-term-sets-are-not-available-in-the-site-collection"></a>Los conjuntos de términos personalizados no están disponibles en la colección de sitios
 
-Verificación de una asociación de aplicación de servicio falta entre la colección de sitios de contenido y el concentrador de tipo de contenido. Además, en la **metadatos administrados - <site collection name> conexión** propiedades de pantalla, asegúrese de que esta opción está habilitada: **esta aplicación de servicio es la ubicación de almacenamiento predeterminada para conjuntos de términos específicos de columnas.**
+Compruebe si falta alguna asociación de aplicación de servicio entre la colección de sitios de contenido y el centro de tipo de contenido. Además, en la pantalla **Metadatos administrados:<site collection name> Propiedades de conexión**, asegúrese de que esté habilitada esta opción: **Esta aplicación de servicio es la ubicación de almacenamiento predeterminada para conjuntos de términos específicos de columnas**.
   
 ### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>El comando Get-ADForest de Windows PowerShell genera el error: "El término 'Get-ADForest' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable"
 
@@ -688,7 +688,7 @@ Ipconfig /flushdns
   
 [Configuración de grupos de disponibilidad AlwaysOn de SQL Server 2012 para SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 <a name="Troubleshooting"> </a>
 

@@ -16,14 +16,14 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: "Resumen: Implementar Azure Connect de AD (DirSync) en una máquina virtual en Azure permite sincronizar las cuentas entre el directorio local y el inquilino Azure AD de su suscripción de Office 365."
+description: "Resumen: Implemente Azure AD Connect (DirSync) en una máquina virtual en Azure para sincronizar las cuentas entre el directorio local y el inquilino de Azure AD con su suscripción de Office 365."
 ms.openlocfilehash: c6ee337c49092ac5d2b3d30a54fc33b3f3e2bb58
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure"></a>Implementar Sincronización de directorios (DirSync) de Office 365 en Microsoft Azure
+# <a name="deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure"></a>Implementar la sincronización de directorios (DirSync) de Office 365 en Microsoft Azure
 
  **Resumen:** Implemente Azure AD Connect (DirSync) en una máquina virtual en Azure para sincronizar las cuentas entre el directorio local y el inquilino de Azure AD con su suscripción de Office 365.
   
@@ -77,7 +77,7 @@ Existen dos pasos principales cuando implementa esta solución:
 Antes de implementar esta solución en producción, utilice las instrucciones en [Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md) para establecer esta configuración como una prueba de concepto para demostraciones, o para la experimentación.
   
 > [!IMPORTANT]
-> Cuando la configuración de Azure AD Connect se completa, no guarda las credenciales de la cuenta de administrador empresarial de Windows Server AD. 
+> Cuando la configuración de Azure AD Connect se completa, no guarda las credenciales de la cuenta de administrador de organización de Windows Server AD. 
   
 > [!NOTE]
 > Esta solución describe la sincronización de un único bosque de Windows Server AD a Office 365. La topología que se describen en este artículo representa sólo una manera de implementar esta solución. La topología de su organización puede diferir en función de sus requisitos de red únicos y consideraciones de seguridad. 
@@ -129,11 +129,11 @@ La implementación de Azure AD Connect en una máquina virtual en Azure consta d
 Después de la implementación, también debe asignar ubicaciones y licencias para las nuevas cuentas de usuario en Office 365.
   
 > [!TIP]
-> El [Kit de implementación de DirSync Server en Azure](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) contiene todos los bloques de Azure PowerShell necesarios para compilar esta solución, los diagramas en formato de Microsoft PowerPoint y Visio y un libro de configuración de Excel que genera bloques de comandos de Azure PowerShell personalizados según su configuración.
+> El [Kit de implementación de DirSync Server en Azure]((https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)) contiene todos los bloques de Azure PowerShell necesarios para compilar esta solución, los diagramas en formato de Microsoft PowerPoint y Visio y un libro de configuración de Excel que genera bloques de comandos de Azure PowerShell personalizados según su configuración.
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>Fase 1: Creación y configuración de la red virtual de Azure
 
-Para crear y configurar la red virtual de Azure, completar [fase 1: preparar la red local](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Phase1) y [fase 2: crear la red virtual entre locales en Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Phase2) en la implementación de plan de [Conectar una red local a una Red virtual Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
+Para crear y configurar la red virtual de Azure, complete la [Fase 1: Preparar la red local](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Phase1) y la [Fase 2: Crear la red virtual entre locales en Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Phase2) del plan de implementación de [Conectar una red local a Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
   
 Esta es la configuración resultante.
   
@@ -169,7 +169,7 @@ Haga lo siguiente:
   
 1. Conéctese al servidor de DirSync mediante una conexión a Escritorio remoto con una cuenta de dominio de Windows Server AD que tenga privilegios de administrador local. Consulte [Conexión a la máquina virtual e inicio de sesión](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on).
     
-2. Desde el servidor de sincronización de directorios, abra el artículo [Configurar la sincronización de directorios en Office 365](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846) y siga las instrucciones relativas a la sincronización de directorios con la sincronización de contraseñas.
+2. Desde el servidor de sincronización de directorios, abra el artículo [Configurar la sincronización de directorios en Office 365]((https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)) y siga las instrucciones relativas a la sincronización de directorios con la sincronización de contraseñas.
     
 > [!CAUTION]
 > El programa de instalación crea la cuenta **AAD_xxxxxxxxxxxx** en la unidad organizativa (UO) de usuarios locales. No mueva ni quite esta cuenta porque entonces se producirá un error de sincronización.
@@ -184,7 +184,7 @@ En esta figura se muestra el servidor de DirSync con Azure AD Connect en la red 
 
 Azure AD Connect agrega cuentas a su suscripción de Office 365 desde Windows Server AD local, pero para que los usuarios inicien sesión en Office 365 y usen sus servicios, las cuentas deben configurarse con una ubicación y licencias. Use estos pasos para agregar la ubicación y activar las licencias para las cuentas de usuario adecuadas:
   
-1. Inicie sesión en la [página del Portal de Office 365](https://portal.office.com) y, después, haga clic en **Administrador**.
+1. Inicie sesión en la [página del Portal de Office 365]((https://portal.office.com)) y, después, haga clic en **Administrador**.
     
 2. En el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
     
@@ -198,7 +198,7 @@ Azure AD Connect agrega cuentas a su suscripción de Office 365 desde Windows Se
     
 7. Vuelva al paso 3 para usuarios adicionales.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 <a name="DeploymentRoadmap"> </a>
 
@@ -208,9 +208,9 @@ Azure AD Connect agrega cuentas a su suscripción de Office 365 desde Windows Se
 
 [Descargar Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594)
   
-[Configurar la sincronización de directorios en Office 365](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)
+[Configurar la sincronización de directorios en Office 365]((https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846))
   
-[Kit de implementación de DirSync Server en Azure](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
+[Kit de implementación de DirSync Server en Azure]((https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded))
 
 
 

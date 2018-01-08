@@ -20,7 +20,7 @@ ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "Resumen: Cómo una organización global ficticia pero representativa está adoptando una infraestructura de TI de nube inclusiva con las ofertas de nube de Microsoft."
 ms.openlocfilehash: 17ee633c13f50db4c1de630a5c006506d9d79ece
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,9 +30,9 @@ ms.lasthandoff: 12/15/2017
   
 Este artículo tiene vínculos a un conjunto de artículos que describen cómo Contoso Corporation, un conglomerado global de fabricación con sede en París, está adoptando una infraestructura de TI que incluye la nube y responde a las principales decisiones de diseño para redes, identidad y seguridad, así como cuestiones de seguridad y cómo se están implementando los escenarios de nube empresarial para responder a los problemas de las empresas. También puede ver esta información como un póster de 11 páginas e imprimirlo en formato tabloide (también conocido como doble carta, 11 x 17 o A3).
   
-[![Imagen de la Contoso en el póster de Microsoft Cloud del pulgar.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
+[![Imagen en miniatura del póster “Contoso en Microsoft Cloud”.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
-![Archivo PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Archivo de Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![Vea una página con versiones en otros idiomas](images/Common_Images/GlobeIcon.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54427)
+![Archivo PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Archivo de Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![Ver una página con versiones en otros idiomas](images/Common_Images/GlobeIcon.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54427)
   
 Vea las siguientes secciones:
   
@@ -67,11 +67,11 @@ Vea las siguientes secciones:
 > [!NOTE]
 > Estos artículos reflejan la versión de **septiembre de 2017** del póster Contoso en la nube de Microsoft.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 
