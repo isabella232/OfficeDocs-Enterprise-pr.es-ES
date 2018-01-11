@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: "Resumen: El paso por el proceso de diseño de sitios de grupo de SharePoint Online aislados."
-ms.openlocfilehash: 343872ef7a41b40a87454da27ddccc4530ffe2eb
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7b2e8f0bc06a7901c52187ec6e63a056a11fa5e1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Diseñar un sitio de grupo SharePoint Online aislado
 
@@ -129,11 +125,11 @@ Aquí es un ejemplo de anuncio de Azure anidado grupos para el grupo de acceso d
   
 Porque todas las cuentas de usuario en la investigación, la ingeniería y el proyecto conduce equipos pretenden ser integrantes del sitio, es más fácil agregar sus grupos AD Azure al grupo de acceso de los miembros de ProjectX.
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Cuando esté listo para crear y configurar un sitio aislado en producción, vea [implementar un sitio de grupo SharePoint Online aislado](deploy-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Sitios de equipo de SharePoint Online aislados](isolated-sharepoint-online-team-sites.md)
   

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "Resumen: Comprender por qué necesita almacenamiento en nube y revise la lista de opciones de almacenamiento de nube de Microsoft y los escenarios de almacenamiento de claves."
-ms.openlocfilehash: 3501f6a39498276d02fe4178f701a06dfb6a3e93
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 199e385ea0238e8fb27c04153faf177df07e1025
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="designing-storage-for-the-microsoft-cloud"></a>Diseño de almacenamiento de información para la nube de Microsoft
 
@@ -154,13 +150,13 @@ Aquí están los escenarios clave que requieren almacenamiento de información b
     
     Almacenar y servir contenido de vídeo a los clientes o usuarios de la organización.
     
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Revise las opciones de almacenamiento de nube [mover en listo](move-in-ready.md) .
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
-[Almacenamiento en la nube de Microsoft para Enterprise Architects](microsoft-cloud-storage-for-enterprise-architects.md)
+[Almacenamiento de Microsoft Cloud para arquitectos empresariales](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 
