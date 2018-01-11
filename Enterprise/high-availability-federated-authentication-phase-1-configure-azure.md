@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Resumen: Configurar la infraestructura de Microsoft Azure para alta disponibilidad de host autenticación federada para Office 365."
-ms.openlocfilehash: fed6b24af2ba54bef95be22641fd140f7c1be717
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f74e91930f5aef8f10986dcf51db6066c953014d
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure
 
@@ -65,7 +60,7 @@ Consulte la [Calculadora de espacio de direcciones para las subredes de la puert
   
 Trabaje con su departamento de TI para determinar estos espacios de direcciones a partir del espacio de direcciones de la red virtual.
   
-|**Elemento**|**Nombre de la subred**|**Espacio de direcciones de la subred**|**Objetivo**|
+|**Elemento**|**Nombre de la subred**|**Espacio de direcciones de la subred**|**Finalidad**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |_______________________________  <br/> |_______________________________  <br/> |La subred que usa el controlador de dominio de Windows Server Active Directory (AD) y las máquinas virtuales (VM) del servidor de DirSync.  <br/> |
 |2.  <br/> |_______________________________  <br/> |_______________________________  <br/> |Subred usada por las máquinas virtuales de AD FS.  <br/> |
@@ -76,7 +71,7 @@ Trabaje con su departamento de TI para determinar estos espacios de direcciones 
   
 Ahora, rellene la Tabla I para las direcciones IP estáticas asignadas a las máquinas virtuales y a las instancias del equilibrador de carga.
   
-|**Elemento**|**Propósito**|**Dirección IP de la subred**|**Valor**|
+|**Elemento**|**Finalidad**|**Dirección IP de la subred**|**Valor**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Dirección IP estática del primer controlador de dominio  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |_______________________________  <br/> |
 |2.  <br/> |Dirección IP estática del segundo controlador de dominio  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |_______________________________  <br/> |
@@ -151,7 +146,7 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 Rellene la tabla siguiente para el conjunto de nombres de grupos de recursos únicos.
   
-|**Elemento**|**Nombre del grupo de recursos**|**Objetivo**|
+|**Elemento**|**Nombre del grupo de recursos**|**Finalidad**|
 |:-----|:-----|:-----|
 |1.  <br/> |_______________________________  <br/> |Controladores de dominio  <br/> |
 |2.  <br/> |_______________________________  <br/> |Servidores de AD FS  <br/> |
@@ -276,7 +271,7 @@ Después, asegúrese de que el espacio de direcciones de la red virtual sea acce
   
 Después, defina los nombres de los tres conjuntos de disponibilidad. Rellene la Tabla A.  
   
-|**Elemento**|**Propósito**|**Nombre del conjunto de disponibilidad**|
+|**Elemento**|**Finalidad**|**Nombre del conjunto de disponibilidad**|
 |:-----|:-----|:-----|
 |1.  <br/> |Controladores de dominio  <br/> |_______________________________  <br/> |
 |2.  <br/> |Servidores de AD FS  <br/> |_______________________________  <br/> |
@@ -307,11 +302,11 @@ Esta es la configuración que se muestra después de la finalización correcta d
 
 ![Fase 1 de la autenticación federada de Office 365 con alta disponibilidad en Azure con la infraestructura de Azure](images/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Uso [autenticación de fase 2 de federados de alta disponibilidad: configurar controladores de dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) para continuar con la configuración de esta carga de trabajo.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vea también
 
 [Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

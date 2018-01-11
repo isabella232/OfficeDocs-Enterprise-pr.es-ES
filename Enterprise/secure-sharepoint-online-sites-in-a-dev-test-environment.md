@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: "Resumen: Crear sitios de equipo de SharePoint Online públicos, privados, confidenciales y altamente confidenciales en un entorno de pruebas y desarrollo."
-ms.openlocfilehash: 17abee7a293996194a097693607b4b4d9c117046
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4878eb201fa32fbeb34be755a22e329fe45d5885
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Sitios de SharePoint Online seguros en un entorno de pruebas y desarrollo
 
@@ -586,11 +584,11 @@ Aquí está la configuración global para todos los sitios de equipo de SharePoi
   
 ![Los cuatro sitios de grupo del entorno de pruebas y desarrollo de SharePoint Online seguro.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Cuando esté listo para la implementación de producción de sitios de SharePoint Online seguros, vea [archivos y sitios de SharePoint Online seguro](secure-sharepoint-online-sites-and-files.md) para obtener información detallada y vínculos a artículos de implementación paso a paso.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Proteger los archivos y los sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   

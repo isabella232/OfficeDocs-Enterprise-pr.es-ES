@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
 description: "Resumen: Conozca los detalles del conjunto de opciones de almacenamiento de nube que puede utilizar para crear una solución de almacenamiento de información personalizada."
-ms.openlocfilehash: bf6f7586b3a890cd25aba314e4892d5e2ac5bb34
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: bcfc5d851a3f3b0d987214c4ea22e669db3a53ee
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="some-assembly-required"></a>Algunos ensamblados necesarios
 
@@ -156,7 +152,7 @@ Base de datos extendido es una característica de 2016 de SQL Server que permite
   
 ![Stretch Database con SQL Server 2016.](images/Storage_Poster/CloudStor-Stretch.png)
   
-Las consultas de usuario que incluyen los datos históricos se reenvían de forma transparente a Azure SQL Stretch Database. No es necesario volver a escribir las consultas, aunque la tabla esté extendida.
+Las consultas del usuario que incluyen los datos históricos se reenvían de manera transparente a Azure SQL Stretch Database. No es necesario que las consultas se vuelvan a escribir, aunque se extienda la tabla.
   
 Stretch Database proporciona una opción rentable para el almacenamiento a largo plazo y el acceso transparente a los datos históricos. También soluciona problemas de rendimiento y disponibilidad que surgen cuando las tablas son muy grandes.
   
@@ -402,13 +398,13 @@ Para obtener información adicional, haga clic en [aquí](https://azure.microsof
   
 Para obtener información de costo, haga clic en [aquí](https://azure.microsoft.com/pricing/details/data-lake-store/).
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Revise las opciones de almacenamiento de nube [crear desde cero](build-from-the-ground-up.md) .
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
-[Almacenamiento en la nube de Microsoft para Enterprise Architects](microsoft-cloud-storage-for-enterprise-architects.md)
+[Almacenamiento de Microsoft Cloud para arquitectos empresariales](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 

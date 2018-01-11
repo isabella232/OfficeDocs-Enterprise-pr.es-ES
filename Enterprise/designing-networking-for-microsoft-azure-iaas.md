@@ -5,20 +5,18 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: "Resumen: Comprender cómo diseñar redes optimizadas para cargas de trabajo en Microsoft Azure IaaS."
-ms.openlocfilehash: e4861de51f386af6e142debdafc64f655f010880
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 6f431eb2d87a4420e6e0ba7f48bfc3ef836c0cbe
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Diseño de redes para IaaS de Microsoft Azure
 
@@ -32,11 +30,11 @@ Siga estos pasos para cualquier tipo de red virtual.
   
 ### <a name="step-1-prepare-your-intranet-for-microsoft-cloud-services"></a>Paso 1: Preparar la intranet para los servicios en la nube de Microsoft.
 
-Repase la sección **pasos para preparar la red para los servicios de nube de Microsoft** en [elementos comunes de conectividad de la nube de Microsoft](common-elements-of-microsoft-cloud-connectivity.md).
+Vea la sección **Pasos para preparar la red para Servicios en la nube de Microsoft** en [Elementos comunes de conectividad de Microsoft Cloud](common-elements-of-microsoft-cloud-connectivity.md).
   
 ### <a name="step-2-optimize-your-internet-bandwidth"></a>Paso 2: Optimizar el ancho de banda de Internet.
 
-Optimizar el ancho de banda de Internet mediante los pasos 2 a 4 de la sección de **pasos para preparar la red para los servicios de Microsoft SaaS** en el [Diseño de redes de Microsoft SaaS](designing-networking-for-microsoft-saas.md).
+Para optimizar el ancho de banda de Internet, siga los pasos 2 a 4 de la sección **Pasos para preparar la red para los servicios SaaS de Microsoft** del artículo [Diseño de redes para SaaS de Microsoft](designing-networking-for-microsoft-saas.md).
   
 ### <a name="step-3-determine-the-type-of-vnet-cloud-only-or-cross-premises"></a>Paso 3: Determinar el tipo de red virtual (solo nube o entre locales).
 
@@ -122,11 +120,11 @@ Azure utiliza las primeros 3 direcciones en cada subred. Por lo tanto, el númer
   
 |**Máquinas virtuales que necesite**|**Bits de host**|**Tamaño de la subred**|
 |:-----|:-----|:-----|
-|De 1 a 3  <br/> |3  <br/> |/29  <br/> |
-|De 4 a 11  <br/> |4  <br/> |/28  <br/> |
-|De 12 a 27  <br/> |5  <br/> |/27  <br/> |
-|De 28 a 59  <br/> |6  <br/> |/26  <br/> |
-|De 60 a 123  <br/> |7  <br/> |/25  <br/> |
+|1-3  <br/> |3  <br/> |/29  <br/> |
+|4-11  <br/> |4  <br/> |/28  <br/> |
+|12-27  <br/> |5  <br/> |/27  <br/> |
+|28-59  <br/> |6  <br/> |/26  <br/> |
+|60-123  <br/> |7  <br/> |/25  <br/> |
    
  **Tabla 3: requisitos de la máquina Virtual y sus tamaños de subred**
   
@@ -261,7 +259,7 @@ Siga estos pasos para una red virtual entre locales.
 
 En la tabla 6 se recogen los distintos tipos de conexiones.
   
-|**Tipo de conexión**|**Propósito**|
+|**Tipo de conexión**|**Finalidad**|
 |:-----|:-----|
 |VPN sitio a sitio (S2S)  <br/> |Conectar sitios de 1 a 10 (incluidos otros VNets) a un VNet único.  <br/> |
 |ExpressRoute  <br/> |Un vínculo seguro y privado a Azure a través de un proveedor de intercambio de Internet (IXP) o un proveedor de servicio de red (NSP).  <br/> |
@@ -428,7 +426,7 @@ Figura 19 muestra los nueve servidores de una granja de SharePoint Server 2016 i
   
 Para obtener ejemplos adicionales de cargas de trabajo de TI implementados en máquinas virtuales en un Azure entre instalaciones virtual de red, vea [escenarios de nube híbrida de Azure IaaS](https://technet.microsoft.com/library/mt750502.aspx).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 <a name="cross_prem"> </a>
 

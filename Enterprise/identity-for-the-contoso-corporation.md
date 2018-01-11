@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "Resumen: Comprender cómo Contoso aprovecha IDaaS proporciona geográficamente distribuida y redundantes la autenticación y para sus usuarios."
-ms.openlocfilehash: a0de29ac7e73216e04fe02c680f2557e9f402883
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d9aee05d36061433398cd8ce913a03bce65cc103
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identidad para Contoso Corporation
 
@@ -126,9 +124,9 @@ Para cambiar y revertir, Contoso actualiza el perfil de Azure Traffic Manager de
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Identidad de nube de Microsoft para Enterprise Architects](http://aka.ms/cloudarchidentity)
+[Identidad de Microsoft Cloud para arquitectos empresariales](http://aka.ms/cloudarchidentity)
   
-[Identidad y protección de dispositivos para Office 365](http://aka.ms/o365protect_device)
+[Protección de identidades y dispositivos para Office 365](http://aka.ms/o365protect_device)
   
 [Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 

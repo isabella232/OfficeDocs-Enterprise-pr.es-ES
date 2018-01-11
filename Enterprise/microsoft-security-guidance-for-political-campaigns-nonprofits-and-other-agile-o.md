@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: "Resumen: Guía de planificación e implementación para el movimiento rápido las organizaciones que tengan un perfil de amenaza elevado."
-ms.openlocfilehash: 0177e91ac0cbd7ba6ce7ffe95206036036c43da4
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: 7b400a1c097bb1d3906a59dfd21461df0568c76a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Guía de seguridad de Microsoft para campañas políticas, las ONG y otras organizaciones de Agile
 
@@ -49,11 +47,11 @@ Para crear un entorno de desarrollo y prueba de esta solución, utilice las sigu
     
 Para las características de seguridad adicionales para la demostración o prueba del concepto, consulte [Guías de laboratorio de prueba de Office 365](http://aka.ms/o365tlgs).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Soluciones de seguridad](security-solutions.md)
   
-[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 

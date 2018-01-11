@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: "Resumen: Comprender los escenarios y la arquitectura híbrida de Microsoft basada en SaaS (Office 365) las ofertas de nube."
-ms.openlocfilehash: 5f50573376b70ad94b3b1cd4b86ce3ef1fdc67dd
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 63126d694817f8323494e584f1f497a1a732c678
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Escenarios de nube híbrida para SaaS de Microsoft (Office 365)
 
@@ -74,7 +70,7 @@ Skype para negocios 2015 híbrido le permite combinar una implementación local 
   
 La figura 2 muestra el Skype para configuración híbrida de negocios 2015, que consta de un Skype local para el grupo de front-end de negocios 2015 y edge server comunicarse con Skype para los negocios en línea en Office 365.
   
-Para obtener más información, vea:
+Para más información, visite:
   
 - [Plan de conectividad híbrida entre Skype para Business Server y Skype para los negocios en línea](https://technet.microsoft.com/library/jj205403.aspx)
     
@@ -162,7 +158,7 @@ También puede integrar esta configuración híbrida con otras aplicaciones de M
   
 Para obtener más información, vea [Implementación híbrida de Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) y [Exchange híbrido](http://hybrid.office.com/exchange/).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vea también
 
 [Microsoft Hybrid Cloud para arquitectos profesionales](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

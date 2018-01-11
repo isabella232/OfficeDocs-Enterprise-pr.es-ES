@@ -9,18 +9,16 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: 'Resumen: Comprender la empresa Contoso como un negocio y la estructura en niveles de sus oficinas en todo el mundo.'
-ms.openlocfilehash: 6243f6d6e5c08342cae7650d0b4e75de27ed3527
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: c00e7fd75f580b82f8f920b9f74551a5e5e1b328
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="overview-of-the-contoso-corporation"></a>Información general de Contoso Corporation
+# <a name="overview-of-the-contoso-corporation"></a>Información general sobre Contoso Corporation
 
  **Resumen:** Comprender la empresa Contoso como un negocio y la estructura en niveles de sus oficinas en todo el mundo.
   
@@ -63,7 +61,7 @@ Oficinas de Contoso en el mundo siguen un diseño de tres niveles.
 
 Contoso arquitectos de TI han identificado los siguientes elementos al planear la adopción de las ofertas de nube de Microsoft.
   
-- Redes
+- Conexión de red
     
     Red incluye la conectividad con las ofertas de nube de Microsoft y el ancho de banda suficiente para ser eficaz en las cargas máximas. Conectividad será a través de conexiones de Internet local y algunas estarán en toda la infraestructura de la red privada de Contoso.
     

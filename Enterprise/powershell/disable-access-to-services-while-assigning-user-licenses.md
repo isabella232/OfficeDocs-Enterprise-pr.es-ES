@@ -11,14 +11,13 @@ localization_priority: Normal
 ms.custom:
 - PowerShell
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: "Obtenga información sobre cómo asignar licencias a cuentas de usuario y deshabilitar planes de servicio específico al mismo tiempo el uso de PowerShell de Office 365."
-ms.openlocfilehash: 907314e13b353e5d5ddbcd8fe467db568473d0b3
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 96ce12f811ee147a92da6b6928c2f6e3391c9b1f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Deshabilitar el acceso a los servicios al asignar licencias de usuario
 
@@ -150,7 +149,7 @@ Este bloque de comandos de PowerShell:
     
 - Crea un archivo CSV con todos los usuarios que se han procesado y muestra su estado de licencia.
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Consulte también
 
 #### 
 

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
 description: "Resumen: Cómo Contoso implementa protección sensible y sitios de grupo de SharePoint Online altamente confidenciales para más fácil, aún seguro, sus centros de investigación y colaboración para los ejecutivos."
-ms.openlocfilehash: 1574babb54bfcb3fd74fb8ce4f31c364bb96b14a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 062238bd301200e388ba9d4f6d24503d33046f50
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Sitios de equipo SharePoint Online seguros de activos importantes y altamente confidenciales
 
@@ -60,7 +56,7 @@ Para obtener más información, vea [archivos y sitios de SharePoint Online segu
   
  Para utilizar esta configuración para pruebas y desarrollo, prueba de concepto o demostración, vea [sitios seguro en línea de SharePoint en un entorno de pruebas y desarrollo](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vea también
 
 [Escenarios empresariales para Contoso Corporation](enterprise-scenarios-for-the-contoso-corporation.md)
   

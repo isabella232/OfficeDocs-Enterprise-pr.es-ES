@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_TLGs
+ms.collection: Ent_O365
+ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: "Resumen: Utilice a esta guía de laboratorio de prueba para inscribir dispositivos en su entorno de pruebas y desarrollo de Microsoft 365 y administrar de forma remota."
-ms.openlocfilehash: 8ad22ed62d8e7cac8aca225af42e389dc05cb2b5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 71d04b0d2a59683ff09ad4256ed8fc82e89e876a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>Inscribir a dispositivos iOS y Android en su entorno de pruebas y desarrollo de Microsoft Enterprise 365
 
@@ -255,15 +251,15 @@ Para restablecer el código de acceso de forma remota:
 7. Para cambiar la contraseña de nuevo, vaya a **configuración**, puntee en el **dispositivo**, puntee en la **pantalla de bloqueo**, escriba la nueva contraseña, puntee en **bloqueo de pantalla**y, a continuación, su elección para el código de acceso.
     
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual para todos los artículos en la pila de una guía de laboratorio de prueba de nube de Microsoft.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [El entorno de pruebas y desarrollo empresarial de Microsoft 365](the-microsoft-365-enterprise-dev-test-environment.md)
   
 [Directivas MAM para su entorno de pruebas y desarrollo empresarial de Microsoft 365](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Movilidad en la empresa + seguridad (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 

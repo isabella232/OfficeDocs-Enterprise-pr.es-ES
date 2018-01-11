@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: "Resumen: Crear y configurar sitios de equipo de SharePoint Online para varios niveles de protección de la información."
-ms.openlocfilehash: 1023eff2542ab1bf41a8261d85d70c06718497cf
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7aa0107222454383abe0c1284b66ec0c4b808595
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Implemente sitios de SharePoint Online para tres niveles de protección
 
@@ -261,11 +258,11 @@ Esta es la configuración resultante.
   
 Los miembros del sitio, a través de la pertenencia a grupos en uno de los grupos de acceso ahora pueden colaborar de forma segura en los recursos del sitio.
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 [Proteger archivos de SharePoint Online con etiquetas de Office 365 y DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Proteger los archivos y los sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   

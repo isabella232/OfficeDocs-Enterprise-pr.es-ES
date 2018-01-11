@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
 description: "Resumen: Obtenga los detalles en el conjunto de la nube de bloques de creación de almacenamiento de información que puede utilizar para crear su propio servicio de almacenamiento o la solución."
-ms.openlocfilehash: 18aa8cb7fa0dda05302a88487dcc69bdbcb174d5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: eabf38e0ccef3335b2d198a33f5622d0d449589a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="build-from-the-ground-up"></a>Crear desde el principio
 
@@ -194,9 +190,9 @@ Al diseñar su solución de almacenamiento de información personalizada con el 
     
 - Dividir los datos en vertical (por tabla) u horizontalmente (tabla de segmentos en varios fragmentos) para repartir la carga entre varias bases de datos.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
-[Almacenamiento en la nube de Microsoft para Enterprise Architects](microsoft-cloud-storage-for-enterprise-architects.md)
+[Almacenamiento de Microsoft Cloud para arquitectos empresariales](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 

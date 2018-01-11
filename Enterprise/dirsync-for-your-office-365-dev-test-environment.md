@@ -8,22 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: "Resumen: Configurar la sincronización de directorios para el entorno de desarrollo y prueba de Office 365."
-ms.openlocfilehash: da9a0070587c50ea9fc2f33612fb4885d6eaf695
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d8a663367e61ac3f01e67f4d3731a0dccdd5a222
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="dirsync-for-your-office-365-devtest-environment"></a>Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365
 
@@ -121,7 +117,7 @@ Esta configuración se compone de:
 
 Cuando esté listo para implementar la sincronización de directorios para su organización, consulte [Implementar Office 365 sincronización de directorios (DirSync) de Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

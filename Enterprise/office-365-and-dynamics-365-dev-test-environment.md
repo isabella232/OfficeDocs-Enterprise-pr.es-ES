@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: "Resumen: Utilice a esta guía de laboratorio de pruebas para agregar Dynamics 365 a su entorno de pruebas y desarrollo de Office 365."
-ms.openlocfilehash: 49648dd357d23eaee2d08d35252e18edf6a5d2ec
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a61e831eeabc159da4774cfe730c694c383e6801
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365 y Dynamics 365
 
@@ -136,7 +132,7 @@ El entorno de desarrollo y pruebas de Office 365 y Dynamics 365 ahora tiene lo s
 
 Configurar y, a continuación, demuestre cómo Office 365 Dynamics 365 funcionan juntos y buzones de Exchange en línea con la [integración de Exchange Online para Office 365 y Dynamics 365 dev/entorno de prueba](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

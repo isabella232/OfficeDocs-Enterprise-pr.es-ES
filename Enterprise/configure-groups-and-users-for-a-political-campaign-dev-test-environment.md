@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: None
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: "Resumen: Crear suscripciones de prueba de seguridad (EMS) + Office 365 y movilidad en la empresa con usuarios y grupos para un entorno de pruebas y desarrollo de campaña política."
-ms.openlocfilehash: 7faf428fc2225d3f31297ba6bf83a10a7682009a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e876c8770651c3f23c06c9c499bdaabca52da353
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurar grupos y usuarios de un entorno de pruebas y desarrollo de campaña política
 
@@ -191,17 +189,17 @@ Registre estos valores para trabajar con el Office 365 y EMS suscripciones de pr
     
     Registre la contraseña para esta cuenta y la contraseña inicial común para las otras cuentas de usuario en una ubicación segura.
     
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Crear los cuatro tipos diferentes de sitios de SharePoint Online team en este entorno de pruebas y desarrollo con [crear sitios de equipo en un entorno de pruebas y desarrollo de campaña política](create-team-sites-in-a-political-campaign-dev-test-environment.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Guía de seguridad de Microsoft para campañas políticas, las ONG y otras organizaciones de Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Crear sitios de equipo en un entorno de pruebas y desarrollo de campaña política](create-team-sites-in-a-political-campaign-dev-test-environment.md)
   
-[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 

@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: "Resumen: Configurar los controladores de dominio y el servidor de sincronización de directorios para su autenticación federados de alta disponibilidad para Office 365 en Microsoft Azure."
-ms.openlocfilehash: 86b5630f073a1c07dc2dbf270ac7e9d2220f7503
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 609d282321296be79c20c451cca12ccf46fe036d
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio
 
@@ -251,11 +246,11 @@ Esta es la configuración completada después de la finalización correcta de es
 
 ![Fase 2 de la infraestructura de la autenticación federada de Office 365 con alta disponibilidad en Azure con los controladores de dominio](images/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Uso [federados de alta disponibilidad autenticación fase 3: configurar servidores AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) para continuar configurando esta carga de trabajo.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Vea también
 
 [Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

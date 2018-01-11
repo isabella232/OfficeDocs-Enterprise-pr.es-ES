@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: "Resumen: Comprender cómo Contoso asigna sus requisitos de seguridad a las características de las ofertas de nube de Microsoft y determina una ruta de acceso a la nube de preparación de la seguridad."
-ms.openlocfilehash: f7c6667ce96a01771ce4f18339daf4c62173e4d9
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4d38f58595f0043e1a02106b6428b92dabad2e17
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="security-for-the-contoso-corporation"></a>Seguridad para Contoso Corporation
 
@@ -120,7 +118,7 @@ Con arreglo a prácticas recomendadas de seguridad de Office 365, los administra
     
     Expertos en seguridad de Contoso utiliza protección en línea de Exchange y protección avanzada de amenaza (ATP) para proteger contra malware desconocido, virus y direcciones URL malintencionadas transmitidas a través de mensajes de correo electrónico. Contoso también ha para determinar quién ha iniciado sesión en los buzones de usuario, mensajes enviados y otras actividades realizadas por el propietario del buzón, un usuario delegado o un administrador del registro de auditoría de buzón habilitado.
     
-    Para obtener más información, vea: 
+    Para más información, visite: 
     
   - [Protección antispam de correo electrónico de Office 365](https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)
     

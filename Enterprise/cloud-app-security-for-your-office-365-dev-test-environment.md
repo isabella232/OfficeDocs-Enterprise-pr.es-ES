@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: "Resumen: Configurar y demostrar la seguridad de la aplicación de Office 365 nube en el entorno de desarrollo y prueba de Office 365."
-ms.openlocfilehash: 1fab5ebfd6e0670ba59fe34b2cca8a7282e75723
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8d398dcbf1ca5dea5ee790a64829eef55765025a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Seguridad de la aplicación de nube para su entorno de pruebas y desarrollo de Office 365
 
@@ -157,9 +154,9 @@ En este procedimiento, que demuestran cómo la seguridad de la aplicación de nu
     
 Ahora puede utilizar este entorno para crear nuevas directivas y experimentar aún más con la seguridad de la aplicación de nube de Office 365. Para obtener vínculos a artículos de configuración adicionales, consulte [Prepárese para seguridad de la aplicación de nube de Office 365](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) .
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
-[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
   

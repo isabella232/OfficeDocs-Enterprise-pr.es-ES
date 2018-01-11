@@ -5,23 +5,20 @@ author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: "Resumen: Recomendaciones de configuración para proteger los archivos en SharePoint Online y Office 365."
-ms.openlocfilehash: 336dd4114e7853319fede88f9f3ea5aa613b2081
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: a8ba632d9bc24e272a649f5790824323f889bdc0
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteger los archivos y los sitios de SharePoint Online
 
@@ -39,7 +36,7 @@ Las configuraciones en este artículo se alinean con las recomendaciones de Micr
     
 Para obtener más información acerca de estos niveles y capacidades recomendadas para cada nivel, consulte los siguientes recursos. 
   
-- [Identidad y protección de dispositivos para Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
+- [Protección de identidades y dispositivos para Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     
 - [Soluciones de protección de archivos en Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
     
@@ -185,7 +182,7 @@ Hay dos formas de conceder a los usuarios externos el acceso a archivos protegid
 
 Para que los pasos para configurar la protección de la información de Azure en esta solución, vea [proteger SharePoint Online archivos con protección de la información de Azure](protect-sharepoint-online-files-with-azure-information-protection.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Guía de seguridad de Microsoft para campañas políticas, las ONG y otras organizaciones de Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

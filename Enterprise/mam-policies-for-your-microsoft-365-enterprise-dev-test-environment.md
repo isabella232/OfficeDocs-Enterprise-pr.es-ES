@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_TLGs
+ms.collection: Ent_O365
+ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: "Resumen: Utilice a esta guía de laboratorio de prueba para agregar directivas de administración (MAM) de una aplicación móvil de EMS a su entorno de pruebas y desarrollo de Microsoft 365."
-ms.openlocfilehash: d088970dca1ec55212642f16d0519e89bd9591e5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: cd5a9801ec7cc5c8fe287fa65015fcb02dd542bf
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Directivas MAM para su entorno de pruebas y desarrollo empresarial de Microsoft 365
 
@@ -141,15 +137,15 @@ En esta fase, creará e implementará dos directivas de MAM diferentes: una para
 Ahora tiene dos directivas de MAM, una para dispositivos iOS y otra para dispositivos Android, y está preparado para experimentar con la configuración de prueba para las aplicaciones seleccionadas.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual para todos los artículos en la pila de una guía de laboratorio de prueba de nube de Microsoft.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [El entorno de pruebas y desarrollo empresarial de Microsoft 365](the-microsoft-365-enterprise-dev-test-environment.md)
   
 [Inscribir a dispositivos iOS y Android en su entorno de pruebas y desarrollo de Microsoft Enterprise 365](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
-[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Movilidad en la empresa + seguridad (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 

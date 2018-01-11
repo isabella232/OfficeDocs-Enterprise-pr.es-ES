@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: "Resumen: Uso de estos artículos para implementar soluciones de seguridad con las ofertas de nube de Microsoft."
-ms.openlocfilehash: c8046b87a1f6de94fc0036c9d83e5598bf872bc3
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 48ff69c7ae90ab429c11bfcc4407d2fcf267fc37
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="security-solutions"></a>Soluciones de seguridad
 
@@ -42,18 +38,18 @@ Aquí están las soluciones de acceso seguro, colaboración y datos con Microsof
 |**Póngase en contacto con nosotros**|**Descripción**|
 |:-----|:-----|
 |**¿Qué soluciones necesita?** <br/> |Estamos creando contenido para soluciones que abarcan varios productos y servicios de Microsoft. Díganos qué piensa sobre nuestras soluciones entre servidores o solicite soluciones específicas por correo electrónico a [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Participe en la discusión sobre soluciones** <br/> |Si es un apasionado de las soluciones basadas en la nube, considere la posibilidad de unirse a la nube adopción Advisory Board (CAAB) para conectar con una comunidad vibrante, más grande de los desarrolladores de contenido de Microsoft, profesionales de la industria y los clientes de todo el mundo. Para unir, Agréguese como un miembro del [espacio CAAB (nube adopción Advisory Board)](https://aka.ms/caab) de la Comunidad de tecnología Microsoft y envíenos un correo electrónico rápido a [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Cualquier persona puede leer contenido relacionados con la Comunidad en el [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Sin embargo, los miembros CAAB obtener invitaciones para seminarios Web privada que describen las soluciones y los nuevos recursos de adopción de nube.<br/> |
-|**Obtenga los archivos de arte que ve aquí** <br/> |Si desea una copia editable del arte que vea en este artículo, le gustará lo envíe de nuevo. Correo electrónico de su solicitud, incluidas la dirección URL y el título del arte, a [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
+|**Participe en la discusión sobre soluciones** <br/> |Si es un apasionado de las soluciones basadas en la nube, puede unirse a Cloud Adoption Advisory Board (CAAB) para conectarse a una interesante comunidad de mayor tamaño formada por desarrolladores de contenido de Microsoft, profesionales del sector y clientes de todo el mundo. Para unirse, agregue a su usuario como miembro del [espacio CAAB (Cloud Adoption Advisory Board)](https://aka.ms/caab) de Microsoft Tech Community y envíenos un correo electrónico a [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Cualquiera puede leer contenido relacionado con la comunidad en el [blog de CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Pero los miembros de CAAB reciben invitaciones a seminarios web privados donde se describen nuevos recursos y soluciones de adopción de la nube.  <br/> |
+|**Obtenga los archivos de arte que ve aquí** <br/> |Si quiere recibir una copia editable de las ilustraciones que se muestran en este artículo, estaremos encantados de enviárselas. Envíe su solicitud por correo electrónico, incluida la dirección URL y el título de la ilustración, a [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  <br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
   
-[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Modelos arquitectónicos para SharePoint, Exchange, Skype para empresas y Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
+[Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
 [Soluciones híbridas](hybrid-solutions.md)
 

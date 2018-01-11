@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: "Resumen: Aplicar Office 365 rótulos y datos pérdida prevention (DLP) directivas para sitios de equipo de SharePoint Online con varios niveles de protección de la información."
-ms.openlocfilehash: 502a899c586114644bb59a2d55ca388c819f7777
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: dd4f71d8fae458d6d20f7a5b35b46e14a72853f1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Proteger archivos de SharePoint Online con etiquetas de Office 365 y DLP
 
@@ -221,11 +218,11 @@ Aquí está la configuración resultante para sitios de equipo de SharePoint Onl
   
 ![Directiva de DLP de un sitio de grupo de SharePoint Online aislado que utiliza la etiqueta Office 365 muy confidencial.](images/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 [Proteger archivos de SharePoint Online con protección de la información de Azure](protect-sharepoint-online-files-with-azure-information-protection.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Proteger los archivos y los sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   

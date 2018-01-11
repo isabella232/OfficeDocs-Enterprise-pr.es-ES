@@ -14,14 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 - O365ITProTrain
-- DecEntMigration
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: "Explica cómo utilizar Office 365 PowerShell para quitar licencias de Office 365 que se asignaron previamente a los usuarios."
-ms.openlocfilehash: 90cae603a7a7cda0b7318571d3eb045f750fd58d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d419aab9b3287364567e03accdfb2e687eacb0de
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Eliminar licencias de cuentas de usuario con PowerShell de Office 365
 
@@ -37,7 +36,7 @@ ms.lasthandoff: 12/15/2017
     
   - [Ver los detalles del servicio y la licencia de la cuenta con PowerShell de Office 365](view-account-license-and-service-details-with-office-365-powershell.md)
     
-- Si utiliza el cmdlet **Get-MsolUser** sin utilizar el _-todos los_ parámetro, se devuelven sólo las primeras 500 cuentas.
+- Si usa el cmdlet **Get-MsolUser** sin usar el parámetro _All_, solo se devuelven las 500 primeras cuentas.
     
 ## <a name="the-short-version-instructions-without-explanations"></a>Versión corta (instrucciones sin explicaciones)
 <a name="ShortVersion"> </a>
@@ -160,7 +159,7 @@ Para obtener más información sobre los cmdlets que se usan en estos procedimie
     
 - [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
-- [Conjunto de MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
+- [Set-MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
     
 - [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
     

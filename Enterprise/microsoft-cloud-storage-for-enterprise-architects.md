@@ -1,5 +1,5 @@
 ---
-title: Almacenamiento en la nube de Microsoft para arquitectos profesionales
+title: Almacenamiento de Microsoft Cloud para arquitectos empresariales
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,22 +8,19 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
 description: "Resumen: Diseñar el almacenamiento para plataformas y servicios de nube de Microsoft."
-ms.openlocfilehash: 1222fc842d637992d14614b71a339ed98e1491d6
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 71b774192e72c4c7e961df8c9258c104e25aea4a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Almacenamiento en la nube de Microsoft para arquitectos profesionales
+# <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Almacenamiento de Microsoft Cloud para arquitectos empresariales
 
  **Resumen:** Diseñar el almacenamiento para plataformas y servicios de nube de Microsoft.
   
@@ -32,11 +29,11 @@ Este artículo proporciona vínculos a un conjunto de artículos que describen q
 [![Imagen de miniatura para el modelo de almacenamiento de nube de Microsoft](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
 ](https://www.microsoft.com/download/details.aspx?id=49552)
   
-![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=49552)
+![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![Ver una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=49552)
   
-También puede ver todos los modelos en los [recursos de la arquitectura de nube de Microsoft IT](microsoft-cloud-it-architecture-resources.md) y pase a través de [Enterprise Cloud Roadmap de Microsoft: recursos para la toma de decisiones de TI](https://aka.ms/cloudarchitecture).
+También puede ver todos los modelos en los [Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) y conocer el [Plan de desarrollo de la nube empresarial de Microsoft: Recursos para responsables de toma de decisiones de TI](https://aka.ms/cloudarchitecture).
   
-Vea las siguientes secciones:
+Vea las secciones siguientes:
   
 - [Diseño de almacenamiento de información para la nube de Microsoft](designing-storage-for-the-microsoft-cloud.md)
     
@@ -57,7 +54,7 @@ Vea las siguientes secciones:
 > [!NOTE]
 > Estos artículos reflejan la versión de **septiembre 2017** del almacenamiento de nube de Microsoft para póster de arquitectos.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Resumen: Implementar un nuevo sitio de grupo SharePoint Online aislado con estas instrucciones paso a paso.'
-ms.openlocfilehash: 9715c6168276b6ba9ffc63591cc6421708bbda27
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 31a1f588aefccd9e2cb353af86d8aa0d598696af
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Implementar un sitio de grupo SharePoint Online aislado
 
@@ -228,11 +224,11 @@ Aquí está la configuración resultante con los tres grupos de SharePoint para 
   
 Usted y los miembros del sitio, a través de la pertenencia a grupos en uno de los grupos de acceso, ahora pueden colaborar utilizando los recursos del sitio.
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Cuando necesite cambiar la pertenencia al grupo de acceso de sitio o crear una carpeta de documentos con permisos personalizados, vea [administrar un sitio de grupo SharePoint Online aislado](manage-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Sitios de equipo de SharePoint Online aislados](isolated-sharepoint-online-team-sites.md)
   
