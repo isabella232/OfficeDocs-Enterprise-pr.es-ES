@@ -39,7 +39,7 @@ ms.lasthandoff: 01/11/2018
 
 <span data-ttu-id="2db83-115">Siga estos pasos para configurar el buzón del administrador global para la integración de Dynamics 365 y Exchange Online:</span><span class="sxs-lookup"><span data-stu-id="2db83-115">Use these steps to configure the global administrator's mailbox for Dynamics 365 and Exchange Online integration:</span></span>
   
-1. <span data-ttu-id="2db83-116">Con una sesión privada del explorador, vaya a [(http://portal.office.com)]((http://portal.office.com)) e inicie sesión con su cuenta de administrador global de Office 365.</span><span class="sxs-lookup"><span data-stu-id="2db83-116">Using a private session of your browser, go to [((http://portal.office.com))]((http://portal.office.com)) and sign in using your Office 365 global administrator account.</span></span>
+1. <span data-ttu-id="2db83-116">Con una sesión privada del explorador, vaya a [(http://portal.office.com)](http://portal.office.com) e inicie sesión con su cuenta de administrador global de Office 365.</span><span class="sxs-lookup"><span data-stu-id="2db83-116">Using a private session of your browser, go to [((http://portal.office.com))](http://portal.office.com) and sign in using your Office 365 global administrator account.</span></span>
     
 2. <span data-ttu-id="2db83-117">En la **Página principal de Microsoft Office**, haga clic en el icono de **Correo**.</span><span class="sxs-lookup"><span data-stu-id="2db83-117">On the **Microsoft Office Home** page, click the **Mail** tile.</span></span>
     
@@ -98,7 +98,7 @@ ms.lasthandoff: 01/11/2018
 9. <span data-ttu-id="2db83-151">Haga clic en **Descartar**.</span><span class="sxs-lookup"><span data-stu-id="2db83-151">Click **Discard**.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="2db83-152">Haga clic [aquí]((http://aka.ms/catlgstack)) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="2db83-152">Click [here]((http://aka.ms/catlgstack)) for a visual map to all of the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="2db83-152">Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="2db83-152">Click [here](http://aka.ms/catlgstack) for a visual map to all of the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="2db83-153">Consulte también</span><span class="sxs-lookup"><span data-stu-id="2db83-153">See Also</span></span>
 
@@ -112,8 +112,8 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="2db83-158">Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365</span><span class="sxs-lookup"><span data-stu-id="2db83-158">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
 
-<span data-ttu-id="2db83-159">[Administración de suscripción para Dynamics 365 (online)]((https://technet.microsoft.com/library/jj679903.aspx))</span><span class="sxs-lookup"><span data-stu-id="2db83-159">[Subscription Management for Dynamics 365 (online)]((https://technet.microsoft.com/library/jj679903.aspx))</span></span>
+<span data-ttu-id="2db83-159">[Administración de suscripción para Dynamics 365 (online)](https://technet.microsoft.com/library/jj679903.aspx)</span><span class="sxs-lookup"><span data-stu-id="2db83-159">[Subscription Management for Dynamics 365 (online)](https://technet.microsoft.com/library/jj679903.aspx)</span></span>
   
-<span data-ttu-id="2db83-160">[Administración de Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))</span><span class="sxs-lookup"><span data-stu-id="2db83-160">[Administering Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))</span></span>
+<span data-ttu-id="2db83-160">[Administración de Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)</span><span class="sxs-lookup"><span data-stu-id="2db83-160">[Administering Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)</span></span>
 
 

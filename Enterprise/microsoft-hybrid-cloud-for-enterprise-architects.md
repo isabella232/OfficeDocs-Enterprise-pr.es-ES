@@ -34,7 +34,7 @@ ms.lasthandoff: 01/11/2018
 [Más idiomas](https://www.microsoft.com/download/details.aspx?id=54424)</span><span class="sxs-lookup"><span data-stu-id="d4446-108">![PDF file](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio file](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![See a page with versions in additional languages](images/Common_Images/GlobeIcon.png)
 [More languages](https://www.microsoft.com/download/details.aspx?id=54424)</span></span>
   
-<span data-ttu-id="d4446-109">También puede ver todos los modelos en los [Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) y conocer el [Plan de desarrollo de la nube empresarial de Microsoft: Recursos para responsables de toma de decisiones de TI]((https://aka.ms/cloudarchitecture)).</span><span class="sxs-lookup"><span data-stu-id="d4446-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://aka.ms/cloudarchitecture)).</span></span>
+<span data-ttu-id="d4446-109">También puede ver todos los modelos en los [Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) y conocer el [Plan de desarrollo de la nube empresarial de Microsoft: Recursos para responsables de toma de decisiones de TI](https://aka.ms/cloudarchitecture).</span><span class="sxs-lookup"><span data-stu-id="d4446-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
   
 <span data-ttu-id="d4446-110">Vea las secciones siguientes:</span><span class="sxs-lookup"><span data-stu-id="d4446-110">See the following sections:</span></span>
   
@@ -65,7 +65,7 @@ ms.lasthandoff: 01/11/2018
 
 [<span data-ttu-id="d4446-123">Recursos de arquitectura de TI de la nube de Microsoft</span><span class="sxs-lookup"><span data-stu-id="d4446-123">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="d4446-124">[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="d4446-124">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="d4446-124">[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="d4446-124">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

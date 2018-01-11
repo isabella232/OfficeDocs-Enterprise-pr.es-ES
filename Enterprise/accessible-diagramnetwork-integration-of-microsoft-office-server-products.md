@@ -182,7 +182,7 @@ ms.lasthandoff: 12/15/2017
     
 - <span data-ttu-id="9e207-p130">Servidor de buzones de Exchange. El diagrama muestra dos servidores de buzones de Exchange.</span><span class="sxs-lookup"><span data-stu-id="9e207-p130">Exchange Mailbox server. The diagram shows two Exchange Mailbox servers.</span></span> 
     
-<span data-ttu-id="9e207-230">Para obtener más información sobre los componentes instalados en cada uno de los roles de servidor de SharePoint, consulte [Topologías simplificadas para SharePoint 2013]((https://aka.ms/Ma5cgk)).</span><span class="sxs-lookup"><span data-stu-id="9e207-230">For more information about components installed on each of the SharePoint server roles, see [Streamlined Topologies for SharePoint 2013]((https://aka.ms/Ma5cgk)).</span></span> 
+<span data-ttu-id="9e207-230">Para obtener más información sobre los componentes instalados en cada uno de los roles de servidor de SharePoint, consulte [Topologías simplificadas para SharePoint 2013](https://aka.ms/Ma5cgk).</span><span class="sxs-lookup"><span data-stu-id="9e207-230">For more information about components installed on each of the SharePoint server roles, see [Streamlined Topologies for SharePoint 2013](https://aka.ms/Ma5cgk).</span></span> 
   
 #### <a name="description-of-how-traffic-moves-through-the-components-to-the-different-server-tiers"></a><span data-ttu-id="9e207-231">Descripción de cómo se mueve el tráfico a través de los componentes a los distintos niveles de servidor</span><span class="sxs-lookup"><span data-stu-id="9e207-231">Description of how traffic moves through the components to the different server tiers</span></span>
 
@@ -320,7 +320,7 @@ ms.lasthandoff: 12/15/2017
   
 #### <a name="more-on-lync-network-traffic"></a><span data-ttu-id="9e207-313">¿Desea conocer más sobre el tráfico de red de Lync?</span><span class="sxs-lookup"><span data-stu-id="9e207-313">More on Lync network traffic?</span></span>
 
-<span data-ttu-id="9e207-p145">Infórmese de cómo Lync Server puede ayudar a su organización a proporcionar mensajería instantánea, conferencias web, uso compartido de aplicaciones y comunicación de voz. Para obtener más información, consulte el [Póster de cargas de trabajo de protocolos de Microsoft Lync Server 2013 ]((https://aka.ms/G5jzjo)).</span><span class="sxs-lookup"><span data-stu-id="9e207-p145">Learn how Lync Server can help your organization provide instant messaging, web conferencing, application sharing, and voice communication. For more information, see [Microsoft Lync Server 2013 Protocol Workloads Poster]((https://aka.ms/G5jzjo)).</span></span> 
+<span data-ttu-id="9e207-p145">Infórmese de cómo Lync Server puede ayudar a su organización a proporcionar mensajería instantánea, conferencias web, uso compartido de aplicaciones y comunicación de voz. Para obtener más información, consulte el [Póster de cargas de trabajo de protocolos de Microsoft Lync Server 2013 ](https://aka.ms/G5jzjo).</span><span class="sxs-lookup"><span data-stu-id="9e207-p145">Learn how Lync Server can help your organization provide instant messaging, web conferencing, application sharing, and voice communication. For more information, see [Microsoft Lync Server 2013 Protocol Workloads Poster](https://aka.ms/G5jzjo).</span></span> 
   
 <span data-ttu-id="9e207-316">El póster también incluye un código QR para acceder a esta información.</span><span class="sxs-lookup"><span data-stu-id="9e207-316">The poster also includes a QR code to access this information.</span></span> 
   

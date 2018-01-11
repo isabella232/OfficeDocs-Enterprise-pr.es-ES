@@ -112,7 +112,7 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="9ca91-p108">Stretch Database proporciona una opción rentable para el almacenamiento a largo plazo y el acceso transparente a los datos históricos. También soluciona problemas de rendimiento y disponibilidad que surgen cuando las tablas son muy grandes.</span><span class="sxs-lookup"><span data-stu-id="9ca91-p108">Stretch database provides a cost-effective option for long-term storage and transparent access to historical data. It also solves performance and availability problems that arise when tables become very large.</span></span>
   
-<span data-ttu-id="9ca91-160">Para obtener más información, consulte [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx)).</span><span class="sxs-lookup"><span data-stu-id="9ca91-160">For more information, see [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx)).</span></span>
+<span data-ttu-id="9ca91-160">Para obtener más información, consulte [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).</span><span class="sxs-lookup"><span data-stu-id="9ca91-160">For more information, see [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="9ca91-161">Vea también</span><span class="sxs-lookup"><span data-stu-id="9ca91-161">See Also</span></span>
 
@@ -120,7 +120,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="9ca91-163">Recursos de arquitectura de TI de la nube de Microsoft</span><span class="sxs-lookup"><span data-stu-id="9ca91-163">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="9ca91-164">[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="9ca91-164">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="9ca91-164">[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="9ca91-164">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 
