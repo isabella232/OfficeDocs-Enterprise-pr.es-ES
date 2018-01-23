@@ -16,11 +16,11 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: "Explica cómo utilizar Office 365 PowerShell para quitar licencias de Office 365 que se asignaron previamente a los usuarios."
-ms.openlocfilehash: d419aab9b3287364567e03accdfb2e687eacb0de
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 21aed391cf0395bf51a7e99cf9f8f0e34bfd9d10
+ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Eliminar licencias de cuentas de usuario con PowerShell de Office 365
 
@@ -167,8 +167,6 @@ Para obtener más información sobre los cmdlets que se usan en estos procedimie
     
 ## <a name="new-to-office-365"></a>¿Es la primera vez que usa Office 365?
 
-||
-|:-----|
-|![El icono reducido de LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **¿Es la primera vez que usa Office 365?**         LinkedIn Learning pone a su disposición vídeos gratuitos de cursos de [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5). |
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
 
