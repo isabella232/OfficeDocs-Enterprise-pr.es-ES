@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: "Resumen: Configurar y demostrar la clasificación de datos y etiquetado utilizando al cliente de protección de información de Azure (AIP) en el entorno de desarrollo y prueba de Office 365."
-ms.openlocfilehash: a2db6817bea879caeb52ed9b11b40c6c317ea171
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 06f7ebefad8b4d622ab225298155b4f117ff2b75
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Etiquetado y clasificación de datos en el entorno de desarrollo y pruebas de Office 365
 

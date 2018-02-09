@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "Resumen: Comprender por qué necesita almacenamiento en nube y revise la lista de opciones de almacenamiento de nube de Microsoft y los escenarios de almacenamiento de claves."
-ms.openlocfilehash: 199e385ea0238e8fb27c04153faf177df07e1025
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: ed816743e2d85a622a3fbfbb129bf90a7db93881
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-storage-for-the-microsoft-cloud"></a>Diseño de almacenamiento de información para la nube de Microsoft
 

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: "Resumen: Configurar los servidores de proxy de aplicación web para la autenticación federados de alta disponibilidad para Office 365 en Microsoft Azure."
-ms.openlocfilehash: 9e7c07a659993437776a7c26e5d02498b1680699
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 3465281c6ba27c52cc7a991e400fb4f4a892b244
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 de la autenticación federada de alta disponibilidad: Configurar los proxy de aplicación web
 
@@ -63,13 +63,13 @@ Debe determinar el nombre DNS para identificar el nombre de servicio de federaci
   
 Una vez que tiene el FQDN de servicio de federación, cree un registro D de dominio DNS público para el FQDN de servicio de federación que se resuelve en la dirección IP pública del equilibrador de carga de Azure accesible desde Internet.
   
-|**Nombre**|**Tipo**|**TTL**|**Valor**|
+|**Name**|**Tipo**|**TTL**|**Valor**|
 |:-----|:-----|:-----|:-----|
 |FQDN de servicio de federación  <br/> |A  <br/> |3600  <br/> |dirección IP pública del equilibrador de carga a través de Internet de Azure (se muestra el comando **Write-Host** en la sección anterior) <br/> |
    
 Aquí le mostramos un ejemplo:
   
-|**Nombre**|**Tipo**|**TTL**|**Valor**|
+|**Name**|**Tipo**|**TTL**|**Valor**|
 |:-----|:-----|:-----|:-----|
 |FS.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    

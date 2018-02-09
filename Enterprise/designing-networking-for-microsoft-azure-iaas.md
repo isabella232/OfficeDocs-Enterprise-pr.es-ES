@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: "Resumen: Comprender cómo diseñar redes optimizadas para cargas de trabajo en Microsoft Azure IaaS."
-ms.openlocfilehash: 6f431eb2d87a4420e6e0ba7f48bfc3ef836c0cbe
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 2430b62e04392ddd4266d37797b18ae7e890c092
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Diseño de redes para IaaS de Microsoft Azure
 
@@ -196,8 +196,7 @@ La tabla 5 recoge los métodos para filtrar o inspeccionar el tráfico entrante 
 |1. Puntos de conexión y ACL configurados en los servicios en la nube  <br/> |Clásico  <br/> |
 |2. Grupos de seguridad de red  <br/> |Administrador de recursos y clásico  <br/> |
 |3. Equilibrador de carga accesible desde Internet con reglas de NAT entrantes  <br/> |Administrador de recursos  <br/> |
-|4. dispositivos de seguridad en el Azure de red 
- Mercado (no se muestra)  <br/> |Administrador de recursos y clásico  <br/> |
+|4. dispositivos de seguridad en el mercado de Azure (no se muestra) de la red  <br/> |Administrador de recursos y clásico  <br/> |
    
  **Tabla 5: Métodos de conectarse a máquinas virtuales y sus correspondientes modelos de implementación de Azure**
   
@@ -379,10 +378,8 @@ La tabla 7 muestra los pasos y prefijos resultantes que definen el espacio de di
 |**Paso**|**Resultados**|
 |:-----|:-----|
 |1. Mostrar los prefijos que no son el espacio raíz para el espacio de direcciones de red virtual.  <br/> |172.16.0.0/12 y 192.168.0.0/16  <br/> |
-|2. lista los prefijos no se superponen para octetos variable hasta, pero sin incluir el último utilizado 
- octeto en el espacio de direcciones de VNet.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16, 10.255.0.0/16 (255 prefijos, omitiendo 10.100.0.0/16)  <br/> |
-|3. la no acumulación de prefijos dentro de una lista el 
- último octeto utilizado del espacio de direcciones VNet.  <br/> | 10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24, 10.100.0.255.0/24 (255 prefijos, omitiendo 10.100.100.0/24)  <br/> |
+|2. lista de los prefijos no se superponen para variable octetos hasta, pero sin incluir el último octeto utilizado en el espacio de direcciones de VNet.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16, 10.255.0.0/16 (255 prefijos, omitiendo 10.100.0.0/16)  <br/> |
+|3. lista de los prefijos no se superponen en el último octeto utilizado del espacio de direcciones VNet.  <br/> |10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24, 10.100.0.255.0/24 (255 prefijos, omitiendo 10.100.100.0/24)  <br/> |
    
  **Tabla 7: Espacio de dirección Local del ejemplo de red**
   
@@ -413,7 +410,7 @@ La figura 18 muestra un VNet entre locales con una ruta definida por el usuario 
 ## <a name="sharepoint-server-2016-farm-in-azure"></a>Granja de servidores de SharePoint Server 2016 en Azure
 <a name="cross_prem"> </a>
 
-Un ejemplo de una carga de trabajo de TI de la intranet hospedada en IaaS de Azure es una granja de SharePoint Server 2016 de niveles múltiples y de alta disponibilidad, como se muestra en la figura 19.
+Un ejemplo de una carga de trabajo de TI alojado en Azure IaaS intranet es una granja de SharePoint Server 2016 altamente disponible y de varios niveles.
   
 **Figura 19: Una granja de SharePoint Server 2016 de intranet de gran disponibilidad en Azure IaaS**
 
@@ -426,7 +423,7 @@ Figura 19 muestra los nueve servidores de una granja de SharePoint Server 2016 i
   
 Para obtener ejemplos adicionales de cargas de trabajo de TI implementados en máquinas virtuales en un Azure entre instalaciones virtual de red, vea [escenarios de nube híbrida de Azure IaaS](https://technet.microsoft.com/library/mt750502.aspx).
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <a name="cross_prem"> </a>
 

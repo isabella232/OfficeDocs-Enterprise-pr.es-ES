@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: c27d9a45-92f4-4d14-affc-9a4c459910be
 description: "Resumen: Obtenga los detalles en el conjunto de nube opciones de almacenamiento que están integradas en las ofertas de nube de Microsoft."
-ms.openlocfilehash: 8c97742c5538acb73fe9dd6491ce85049990ecc0
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 174e5a5a9827a1f8a7f8f1640e1987ceaa965968
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="move-in-ready"></a>Mover en listo
 
