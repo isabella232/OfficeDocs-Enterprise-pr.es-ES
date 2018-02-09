@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: bef810a4-53f6-4962-878e-e20b5019baeb
 description: 'Resumen: aprenda a usar el Servicio de control de acceso de Azure para autenticar a los usuarios de SharePoint Server 2013 con Azure Active Directory.'
-ms.openlocfilehash: 9025eb53f4d8e37403c48416f41adbe35fa9fa01
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: c4c8c4a2c35018b9e4eef2ce32502c4ba67585ca
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="using-microsoft-azure-active-directory-for-sharepoint-2013-authentication"></a>Usar Active Directory de Microsoft Azure para autenticación de SharePoint 2013
 
@@ -215,7 +215,7 @@ Compruebe que tiene las siguientes suscripciones:
 Un administrador puede usar el cmdlet **Add-SPShellAdmin** para conceder permisos para usar cmdlets de SharePoint 2013.
   
 > [!NOTE]
-> Si no tiene permisos, póngase en contacto con el administrador para la instalación o con el administrador de SQL Server para pedir los permisos. Para más información sobre los permisos de Windows PowerShell, vea [Add-SPShellAdmin]((http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx)). 
+> Si no tiene permisos, póngase en contacto con el administrador para la instalación o con el administrador de SQL Server para pedir los permisos. Para más información sobre los permisos de Windows PowerShell, vea [Add-SPShellAdmin](http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx). 
   
 1. En el menú **Inicio**, haga clic en **Todos los programas**.
     
@@ -318,7 +318,7 @@ Siga estos pasos para comprobar que el nuevo proveedor de identidad funciona. Pa
 |**Póngase en contacto con nosotros**|**Descripción**|
 |:-----|:-----|
 |**¿Qué soluciones necesita?** <br/> |Estamos creando contenido para soluciones que abarcan varios productos y servicios de Microsoft. Díganos qué piensa sobre nuestras soluciones entre servidores o solicite soluciones específicas por correo electrónico a [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Participe en la discusión sobre soluciones** <br/> |Si es un apasionado de las soluciones basadas en la nube, puede unirse a Cloud Adoption Advisory Board (CAAB) para conectarse a una interesante comunidad de mayor tamaño formada por desarrolladores de contenido de Microsoft, profesionales del sector y clientes de todo el mundo. Para unirse, agregue a su usuario como miembro del [espacio CAAB (Cloud Adoption Advisory Board)]((https://aka.ms/caab)) de Microsoft Tech Community y envíenos un correo electrónico a [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Cualquiera puede leer contenido relacionado con la comunidad en el [blog de CAAB]((https://blogs.technet.com/b/solutions_advisory_board/)). Pero los miembros de CAAB reciben invitaciones a seminarios web privados donde se describen nuevos recursos y soluciones de adopción de la nube.  <br/> |
+|**Participe en la discusión sobre soluciones** <br/> |Si es un apasionado de las soluciones basadas en la nube, puede unirse a Cloud Adoption Advisory Board (CAAB) para conectarse a una interesante comunidad de mayor tamaño formada por desarrolladores de contenido de Microsoft, profesionales del sector y clientes de todo el mundo. Para unirse, agregue a su usuario como miembro del [espacio CAAB (Cloud Adoption Advisory Board)](https://aka.ms/caab) de Microsoft Tech Community y envíenos un correo electrónico a [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Cualquiera puede leer contenido relacionado con la comunidad en el [blog de CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Pero los miembros de CAAB reciben invitaciones a seminarios web privados donde se describen nuevos recursos y soluciones de adopción de la nube.  <br/> |
 |**Obtenga los archivos de arte que ve aquí** <br/> |Si quiere recibir una copia editable de las ilustraciones que se muestran en este artículo, estaremos encantados de enviárselas. Envíe su solicitud por correo electrónico, incluida la dirección URL y el título de la ilustración, a [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  <br/> |
    
 

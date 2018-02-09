@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: "Resumen: Comprenda la arquitectura y los escenarios híbridos de las ofertas de nubes basadas en Plataforma como servicio (PaaS) de Microsoft en Azure."
-ms.openlocfilehash: 304322e5ad36f0a7f385a41fc3f2e5232dcecd69
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 96548b74341474ff2bd0720f982cbdba96b06e4b
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Escenarios de nube híbrida para PaaS de Azure
 
@@ -112,7 +112,7 @@ En la figura 4, una red local hospeda un servidor que ejecuta SQL Server 2016 co
   
 Stretch Database proporciona una opción rentable para el almacenamiento a largo plazo y el acceso transparente a los datos históricos. También soluciona problemas de rendimiento y disponibilidad que surgen cuando las tablas son muy grandes.
   
-Para obtener más información, consulte [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx)).
+Para obtener más información, consulte [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).
   
 ## <a name="see-also"></a>Vea también
 
@@ -120,7 +120,7 @@ Para obtener más información, consulte [Stretch Database]((https://msdn.micros
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

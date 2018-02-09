@@ -8,18 +8,17 @@ ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection:
-- Ent_O365
+ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 description: "Resumen: Obtenga información acerca de las plataformas y los servicios en la nube de Microsoft. Revise nuestro mapa de ruta empresarial en la nube, explore nuestra serie de arquitectura y mucho más."
-ms.openlocfilehash: f39625b371290f3bb5ef68441409d436518e43f3
-ms.sourcegitcommit: ca96830b425b3ec5a6387eaae47cdc23c8384456
+ms.openlocfilehash: 94b0e732e84fe7ec47431b7521be4c21a1d858df
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitectura de TI de la nube de Microsoft
 
@@ -82,7 +81,7 @@ Lo que los arquitectos de TI necesitan saber sobre el diseño de la identidad pa
   
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![Imagen en miniatura del modelo de identidad de Microsoft Cloud](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| ![Artículo](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Artículo](https://technet.microsoft.com/library/mt613459.aspx)  <br/>![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | Este modelo contiene lo siguiente: <ul><li>Introducción a la identidad con la nube de Microsoft </li> <li>Funciones de Azure AD IDaaS </li><li>Integración de cuentas de Servicios de dominio de Active Directory local con Microsoft Azure Active Directory </li> <li>Colocar componentes de directorio en Azure </li><li>Opciones de servicios de dominio para cargas de trabajo en IaaS de Azure </li></ul> <br/>|
+|[![Imagen en miniatura del modelo de identidad de Microsoft Cloud](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| ![Artículo](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Artículo](https://technet.microsoft.com/library/mt613459.aspx)  <br/>![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | Este modelo contiene lo siguiente: <ul><li>Introducción a la identidad con la nube de Microsoft </li> <li>Capacidades de IDaaS de Azure AD </li><li>Integración de cuentas locales de Active Directory Domain Services con Microsoft Azure Active Directory </li> <li>Colocación de componentes de directorio en Azure </li><li>Opciones de servicios de dominio para cargas de trabajo en IaaS de Azure </li></ul> <br/>|
    
 <a name="security"> </a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Seguridad de Microsoft Cloud para arquitectos empresariales
@@ -91,7 +90,7 @@ Lo que los arquitectos de TI necesitan saber sobre la seguridad en las plataform
   
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![Imagen en miniatura del modelo de seguridad de Microsoft Cloud](images/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| ![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | Este modelo contiene lo siguiente: <ul><li>El rol de Microsoft en el suministro de plataformas y servicios seguros</li><li>Responsabilidades del cliente para mitigar los riesgos de seguridad</li><li>Principales certificaciones de seguridad </li><li>Ofertas de seguridad proporcionadas por los servicios de asesoramiento de Microsoft </ul></li>Realice el curso [La seguridad en un mundo habilitado para la nube](https://mva.microsoft.com/training-courses/security-in-a-cloudenabled-world-12725?l=CfLHobAcB_3904300474), un curso de Microsoft Virtual Academy basado en este póster de arquitectura. <br/>|
+|[![Imagen en miniatura del modelo de seguridad de Microsoft Cloud](images/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| ![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | Este modelo contiene lo siguiente: <ul><li>Rol de Microsoft a la hora de proporcionar servicios y plataformas seguros</li><li>Responsabilidades del cliente para mitigar los riesgos de seguridad</li><li>Principales certificaciones de seguridad </li><li>Ofertas de seguridad proporcionadas por los servicios de consultoría de Microsoft </ul></li>Realice el curso [La seguridad en un mundo habilitado para la nube](https://mva.microsoft.com/training-courses/security-in-a-cloudenabled-world-12725?l=CfLHobAcB_3904300474), un curso de Microsoft Virtual Academy basado en este póster de arquitectura. <br/>|
    
 <a name="networking"> </a>
 ### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft Cloud Networking para arquitectos profesionales
@@ -109,7 +108,7 @@ Lo que los arquitectos de TI necesitan saber sobre la movilidad con las platafor
   
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![Imagen en miniatura del póster "Information Protection para Office 365"](images/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| ![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | Este modelo contiene lo siguiente: <ul><li>Principales aplicaciones móviles para empresas </li><li>Plataforma, servicios y recursos para desarrollar aplicaciones móviles </li><li>Administrar el acceso a las aplicaciones basadas en la nube y los datos de dispositivos móviles </li><li>Comparación de funciones y compatibilidad de plataformas para Office 365 MDM, Azure Active Directory Premium e Intune </li></ul><br/> |
+|[![Imagen en miniatura del póster "Information Protection para Office 365"](images/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| ![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | Este modelo contiene lo siguiente: <ul><li>Aplicaciones para dispositivos móviles de primer nivel para empresas </li><li>Plataforma, servicios y recursos para desarrollar aplicaciones para dispositivos móviles </li><li>Administración del acceso a aplicaciones y datos basados en la nube desde dispositivos móviles </li><li>Comparación de funciones y compatibilidad de plataformas para Office 365 MDM, Azure Active Directory Premium e Intune </li></ul><br/> |
    
 <a name="storage"> </a>
 ### <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Almacenamiento de Microsoft Cloud para arquitectos empresariales
@@ -118,7 +117,7 @@ Lo que los arquitectos de TI necesitan saber sobre las opciones de almacenamient
   
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![Imagen en miniatura del modelo de almacenamiento de Microsoft Cloud](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| ![Artículo](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Artículo](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | Este modelo contiene lo siguiente: <ul><li>Razones para usar el almacenamiento en la nube y los escenarios clave </li><li>Opciones de almacenamiento en la nube que se incluyen con servicios existentes </li><li>Opciones de almacenamiento que puede usar como punto de inicio para su solución de almacenamiento </li><li>Bloques de creación de almacenamiento para crear su propia solución de almacenamiento o almacenamiento para sus aplicaciones</li></ul><br/>|
+|[![Imagen en miniatura del modelo de almacenamiento de Microsoft Cloud](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| ![Artículo](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Artículo](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | Este modelo contiene lo siguiente: <ul><li>Motivos para usar el almacenamiento en la nube y los escenarios clave </li><li>Opciones de almacenamiento en la nube que se incluyen con servicios existentes </li><li>Opciones de almacenamiento que puede usar como punto de inicio para su solución de almacenamiento </li><li>Bloques de creación de almacenamiento para crear su propia solución de almacenamiento o almacenamiento para sus aplicaciones</li></ul><br/>|
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud para arquitectos profesionales
