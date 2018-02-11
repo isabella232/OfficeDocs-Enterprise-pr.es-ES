@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: "Resumen: Uso de estos artículos para distribuir las cargas de trabajo de servidor de Office en Microsoft Azure."
-ms.openlocfilehash: 5a225acb061da961f27f05fa43317b752f6aba56
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 0bc47f8f9b10d51d801973c719625247be39fa9b
+ms.sourcegitcommit: 38001ca323a60126fcf31667393c31322044cedc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="hybrid-solutions"></a>Soluciones híbridas
 
@@ -39,8 +39,7 @@ Para cargas de trabajo de SharePoint Server 2013 en Azure:
 - [Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
 - [Sitios de Internet en Microsoft Azure con SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
-    
-- [Uso de Azure de Microsoft Active Directory para la autenticación de SharePoint 2013](using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md)
+  
     
 **Participar en la discusión**
 
