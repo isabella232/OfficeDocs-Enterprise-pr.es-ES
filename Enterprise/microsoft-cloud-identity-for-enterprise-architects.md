@@ -8,24 +8,26 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365
-ms.custom:
-- O365ITProTrain
+ms.collection:
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- O365ITProTrain
 - Ent_Architecture
 ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "Resumen: diseñar la solución de identidad para plataformas y servicios en la nube de Microsoft."
-ms.openlocfilehash: 78a975a9d4f22ce6e624983db21dae1a762a3c09
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 07a27a63972163948148da117084800171a304b7
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Identidad de nube de Microsoft para arquitectos de empresa
 
  **Resumen:** diseñar la solución de identidad para plataformas y servicios en la nube de Microsoft.
   
-En este artículo se describe lo que los arquitectos de TI necesitan saber sobre el diseño de la identidad para las organizaciones que usan plataformas y servicios en la nube de Microsoft. También puede ver este artículo como un póster de cinco páginas e imprimirlo en formato tabloide (también conocido como doble carta, 11 x 17 o A3).
+En este artículo se describe lo que los arquitectos de TI deben saber sobre el diseño de una identidad para las organizaciones que usan plataformas y servicios en la nube de Microsoft. También puede ver este artículo como un póster de 5 páginas e imprimirlo en formato tabloide (también conocido como doble carta, 11 x 17 o A3).
   
 [![Imagen en miniatura del modelo de identidad de Microsoft Cloud](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
 ](https://www.microsoft.com/download/details.aspx?id=54431)
@@ -35,15 +37,15 @@ En este artículo se describe lo que los arquitectos de TI necesitan saber sobre
 También puede ver todos los modelos en los [Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) y conocer el [Plan de desarrollo de la nube empresarial de Microsoft: Recursos para responsables de toma de decisiones de TI](https://aka.ms/cloudarchitecture).
   
 > [!NOTE]
-> En este artículo, se refleja la versión de enero de 2016 del póster de la **Identidad de Microsoft Cloud para arquitectos empresariales**. No contiene los cambios de la versión de abril de 2016 ni versiones posteriores del póster.
+> En este artículo se refleja la versión de enero de 2016 del póster de la **Identidad de Microsoft Cloud para arquitectos empresariales**. No contiene los cambios de la versión de abril de 2016 ni de las posteriores.
   
-## <a name="designing-identity-for-the-microsoft-cloud"></a>Diseño de la identidad para Microsoft Cloud
+## <a name="designing-identity-for-the-microsoft-cloud"></a>Diseño de una identidad para Microsoft Cloud
 
 La integración de las identidades con la nube de Microsoft proporciona acceso a una amplia gama de servicios y opciones de plataforma en la nube. Existen dos opciones principales:
   
 - Puede realizar la integración con Microsoft Azure Active Directory (AD). Esto implica la sincronización de las cuentas locales con Azure AD, el proveedor de identidades para la nube de Microsoft.
     
-- Puede ampliar su entorno de Servicios de dominio de Active Directory (AD DS) local para las máquinas virtuales que se ejecutan en servicios de infraestructura de Microsoft Azure.
+- Puede ampliar su entorno de la versión local de Active Directory Domain Services (AD DS) para las máquinas virtuales que se ejecutan en servicios de infraestructura de Microsoft Azure.
     
 ![Opciones para diseñar sus identidades en la nube](images/08277e96-e4d2-43cb-a56f-a11c7647881a.png)
   
@@ -172,7 +174,7 @@ La federación ofrece las siguientes capacidades empresariales adicionales:
     
 Use la federación si:
   
-- Se requiere el inicio de sesión único. Con el inicio de sesión único, no se les pide a los usuarios que especifiquen las credenciales (nombre de usuario o contraseña) al acceder a un servicio en la nube.
+- Se requiere el inicio de sesión único. Con el inicio de sesión único no se pide a los usuarios que especifiquen las credenciales (nombre de usuario o contraseña) al acceder a un servicio en la nube.
     
 - Ya se ha implementado AD FS.
     
@@ -220,7 +222,7 @@ La ampliación de AD DS a Azure es el primer paso para admitir aplicaciones de 
   
  **Figura 6: Ampliación de AD DS a una red virtual de Azure**
   
-La figura 6 muestra un centro de datos en la nube privado o local con AD DS conectado a una red virtual de Azure con una conexión de sitio a sitio VPN o ExpressRoute. La red virtual de Azure contiene servidores para una aplicación de línea de negocio y su propio conjunto de controladores de dominio de AD DS. Esta configuración es una implementación híbrida de AD DS local y en servicios de infraestructura de Azure. Requiere lo siguiente:
+La figura 6 muestra un centro de datos en la nube privado o local con AD DS conectado a una red virtual de Azure con una conexión VPN o ExpressRoute de sitio a sitio. La red virtual de Azure contiene servidores para una aplicación de línea de negocio y su propio conjunto de controladores de dominio de AD DS. Esta configuración es una implementación híbrida de AD DS local y en servicios de infraestructura de Azure. Requiere lo siguiente:
   
 - Una red virtual de Azure.
     
@@ -328,7 +330,7 @@ Si todavía no ha implementado AD FS local, tenga en cuenta las ventajas de impl
   
  **Figura 9: Implementación de la infraestructura de autenticación federada en Azure**
   
-La figura 9 muestra un conjunto de controladores de dominio locales que replican información de AD DS con un conjunto de controladores de dominio en una red virtual de Azure. La herramienta de Azure AD Connect que se ejecuta en un servidor en la red virtual de Azure consulta los controladores de dominio locales para saber qué cambios se han producido y los envía a Azure AD. Las solicitudes de autenticación que entran en Azure AD desde servicios SaaS de Microsoft, aplicaciones PaaS de Azure y otras aplicaciones en la nube se reenvían a un equilibrador de carga externo, el cual reenvía la solicitud a un conjunto de servidores proxy de aplicación web. Los servidores proxy de aplicación web reenvían la solicitud a un equilibrador de carga interno, que reenvía la solicitud a un conjunto de servidores de AD FS. A continuación, los servidores de AD FS reenvían la solicitud a un controlador de dominio para validar las credenciales de envío.
+La figura 9 muestra un conjunto de controladores de dominio locales que replican información de AD DS con un conjunto de controladores de dominio en una red virtual de Azure. La herramienta de Azure AD Connect que se ejecuta en un servidor de la red virtual de Azure consulta los controladores de dominio locales para saber qué cambios se han producido y los envía a Azure AD. Las solicitudes de autenticación que entran en Azure AD desde servicios SaaS de Microsoft, aplicaciones PaaS de Azure y otras aplicaciones en la nube se reenvían a un equilibrador de carga externo, el cual reenvía la solicitud a un conjunto de servidores proxy de aplicación web. Los servidores proxy de aplicación web reenvían la solicitud a un equilibrador de carga interno, que reenvía la solicitud a un conjunto de servidores de AD FS. A continuación, los servidores de AD FS reenvían la solicitud a un controlador de dominio para validar las credenciales de envío.
   
  Esta solución funciona con:
   
@@ -350,7 +352,7 @@ No siempre es necesario integrar una aplicación en la nube con el entorno local
   
  **Figura 10: Un entorno de AD DS independiente para una aplicación basada en servidor**
   
-La figura 10 muestra una red virtual Azure que hospeda un conjunto de servidores de AD DS, que ofrecen servicios de AD DS y DNS, con un conjunto de servidores que hospedan una aplicación. Esta solución funciona con:
+La figura 10 muestra una red virtual de Azure que hospeda un conjunto de servidores de AD DS, que ofrecen servicios de AD DS y DNS, con un conjunto de servidores que hospedan una aplicación. Esta solución funciona con:
   
 - Aplicaciones y sitios web accesibles desde Internet
     
