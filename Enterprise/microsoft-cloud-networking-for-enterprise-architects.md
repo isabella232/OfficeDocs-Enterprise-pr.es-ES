@@ -8,23 +8,25 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
 ms.custom:
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: "Resumen: diseñe las redes para las plataformas y los servicios en la nube de Microsoft."
-ms.openlocfilehash: 7fe7fc71825ddbdf485fedece890c87be914d4fc
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 3ad510ff63ec861976804ab62c85213652415bee
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft Cloud Networking para arquitectos profesionales
 
  **Resumen:** diseñe las redes para las plataformas y los servicios en la nube de Microsoft.
   
-Este artículo contiene vínculos a un conjunto de artículos en los que se describe lo que necesitan saber los arquitectos de TI sobre el diseño de las redes para las organizaciones que usan plataformas y servicios en la nube de Microsoft. También puede ver esta información como un póster de 12 páginas e imprimirlo en formato tabloide (también conocido como doble carta, 11 x 17 o A3).
+Este artículo contiene vínculos a un conjunto de artículos en los que se describe lo que deben saber los arquitectos de TI sobre el diseño de redes para las organizaciones que usan plataformas y servicios en la nube de Microsoft. También puede ver esta información como un póster de 12 páginas e imprimirlo en formato tabloide (también conocido como doble carta, 11 x 17 o A3).
   
 [![Imagen en miniatura del modelo de redes de Microsoft Cloud](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
@@ -37,7 +39,7 @@ Vea las secciones siguientes:
   
 - [Desarrollo de la red para la conectividad en la nube](evolving-your-network-for-cloud-connectivity.md)
     
-    La migración a nube cambia el volumen y el carácter de los flujos de tráfico dentro y fuera de una red corporativa. También afecta a los métodos para mitigar los riesgos de seguridad.
+    La migración a nube cambia el volumen y la naturaleza de los flujos de tráfico dentro y fuera de una red corporativa. También afecta a los enfoques destinados a mitigar los riesgos de seguridad.
     
 - [Elementos comunes de la conectividad de la nube de Microsoft](common-elements-of-microsoft-cloud-connectivity.md)
     

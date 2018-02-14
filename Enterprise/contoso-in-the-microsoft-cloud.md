@@ -8,23 +8,25 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
 ms.custom:
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "Resumen: Cómo una organización global ficticia pero representativa está adoptando una infraestructura de TI de nube inclusiva con las ofertas de nube de Microsoft."
-ms.openlocfilehash: d1d17a307f7f13668897343b69dcaebbedb4a7a4
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 314fc872e1c5d555b3e412b3ce709d70595aa23b
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Contoso en la nube de Microsoft
 
  **Resumen:** Cómo una organización global ficticia pero representativa está adoptando una infraestructura de TI de nube inclusiva con las ofertas de nube de Microsoft.
   
-Este artículo tiene vínculos a un conjunto de artículos que describen cómo Contoso Corporation, un conglomerado global de fabricación con sede en París, está adoptando una infraestructura de TI que incluye la nube y responde a las principales decisiones de diseño para redes, identidad y seguridad, así como cuestiones de seguridad y cómo se están implementando los escenarios de nube empresarial para responder a los problemas de las empresas. También puede ver esta información como un póster de 11 páginas e imprimirlo en formato tabloide (también conocido como doble carta, 11 x 17 o A3).
+Este artículo tiene vínculos a un conjunto de artículos que describen cómo Contoso Corporation, un conglomerado global de fabricación con sede en París, está adoptando una infraestructura de TI que incluye la nube y responde a las principales decisiones de diseño para redes, identidad y seguridad, así como cuestiones de seguridad, y cómo se están implementando los escenarios de nube empresarial para responder a los problemas de las empresas. También puede ver esta información como un póster de 11 páginas e imprimirlo en formato tabloide (también conocido como doble carta, 11 x 17 o A3).
   
 [![Imagen en miniatura del póster “Contoso en Microsoft Cloud”.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
