@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: 'Resumen: Aprenda a optimizar la red para tener acceso a los servicios de SaaS de Microsoft, como Office 365, Microsoft Intune y Dynamics 365.'
-ms.openlocfilehash: 970d27e50e06f4d872de67589295c490aaa6e0e7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e4d83f9ab88408b3eb5ca98379bbc709ec8f31a7
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Diseño de redes para SaaS de Microsoft
 
@@ -138,9 +138,9 @@ Para cada tipo de cliente (PC, smartphone, tableta), asegúrese de que está ins
     
 También puede optimizar el rendimiento de la conexión de intranet (por cable, de forma inalámbrica o por VPN).
   
-Para obtener más información, consulte [Compatibilidad de NAT con Office 365]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)).
+Para obtener más información, consulte [Compatibilidad de NAT con Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).
   
-Para conocer las recomendaciones más recientes para el uso de ExpressRoute con Office 365, consulte [Azure ExpressRoute para Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).
+Para conocer las recomendaciones más recientes para el uso de ExpressRoute con Office 365, consulte [Azure ExpressRoute para Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).
   
 Para optimizar el rendimiento de la intranet, haga lo siguiente:
   
@@ -150,7 +150,7 @@ Para optimizar el rendimiento de la intranet, haga lo siguiente:
     
 - Realice análisis de dispositivos intermedios (antigüedad, mantenimiento, etc.)
     
-Para obtener más información, consulte la [Herramienta PsPing]((https://technet.microsoft.com/sysinternals/jj729731.aspx)).
+Para obtener más información, consulte la [Herramienta PsPing](https://technet.microsoft.com/sysinternals/jj729731.aspx).
   
 ## <a name="it-operations-considerations"></a>Consideraciones sobre las operaciones de TI
 
@@ -180,19 +180,23 @@ Si quiere optimizar la red en las sincronizaciones continuas:
     
 Para más información, visite:
   
-- [Planeación de la migración y red para Office 365]((https://aka.ms/tune))
+- [Planeación de la migración y red para Office 365](https://aka.ms/tune)
     
-- [Curso de Microsoft Virtual Academy sobre la administración del rendimiento de Office 365]((https://aka.ms/o365perf))
+- [Curso de Microsoft Virtual Academy sobre la administración del rendimiento de Office 365](https://aka.ms/o365perf)
     
-- [ExpressRoute para Office 365]((https://aka.ms/expressrouteoffice365))
+- [ExpressRoute para Office 365](https://aka.ms/expressrouteoffice365)
+
+## <a name="next-step"></a>Paso siguiente
+
+[Diseño de redes para PaaS de Microsoft Azure](designing-networking-for-microsoft-azure-paas.md)
     
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Microsoft Cloud Networking para arquitectos profesionales](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

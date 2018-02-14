@@ -3,7 +3,7 @@ title: "Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azur
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 2/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Resumen: con Azure, puede crear un entorno de recuperación ante desastres para la granja de servidores local de SharePoint. En este artículo se describe cómo diseñar e implementar esta solución."
-ms.openlocfilehash: e949d2cc88e576993a357007c2a600b55c259009
-ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
+ms.openlocfilehash: 4c1a5d92445dfa89dce4c87216922282d29f075c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
 
@@ -89,7 +89,7 @@ Es importante evaluar los objetivos de tiempo de recuperación y los objetivos d
   
 En este artículo se explica cómo implementar un entorno de espera semiactiva. También puede adaptarlo a un entorno de espera pasiva, pero tendrá que realizar otros procedimientos adicionales para admitir este tipo de entorno. En este artículo no se describe cómo implementar un entorno de espera activa.
   
-Para obtener más información sobre las soluciones de recuperación ante desastres, consulte [Conceptos de alta disponibilidad y recuperación ante desastres en SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) y[Elegir una estrategia de recuperación ante desastres para SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
+Para obtener más información sobre las soluciones de recuperación ante desastres, consulte [High availability and disaster recovery concepts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) y [Choose a disaster recovery strategy for SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
   
 ## <a name="solution-description"></a>Descripción de la solución
 <a name="SOL"> </a>
@@ -106,7 +106,7 @@ En esta ilustración se muestran estos tres elementos.
   
 **Ilustración: Elementos de una solución en estado de espera semiactiva en Azure**
 
-![Elementos de una solución de espera semiactiva de SharePoint en Azure](images/AZarch_AZWarmStndby.gif)
+![Elementos de una solución de espera semiactiva de SharePoint en Azure](images/AZarch_AZWarmStndby.png)
   
 El trasvase de registros de SQL Server con la Replicación del sistema de archivos distribuido (DFSR) se usa para copiar las copias de seguridad de bases de datos y los registros de transacciones en la granja de servidores de recuperación en Azure: 
   
@@ -181,7 +181,7 @@ En la siguiente ilustración se muestra una solución de recuperación ante desa
   
 **Ilustración: Topología y elementos clave de una granja de producción y una granja de servidores de recuperación en espera semiactiva.**
 
-![Muestra elementos clave y de topología de una granja de servidores de producción de SharePoint y una granja de servidores de recuperación con espera semiactiva.](images/AZarchWarmStndby.gif)
+![Topología de una granja de servidores de SharePoint y una granja de servidores de recuperación con espera semiactiva](images/AZarch_AZWarmStndby.png)
   
 En este diagrama:
   

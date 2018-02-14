@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: 'Resumen: obtenga ayuda para PowerShell de Office 365 de estos lugares de la comunidad.'
-ms.openlocfilehash: ab6eb810e856d1d9219e06def078e36074646ce3
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9348c824e34baba4d4d1a12da7910fc3cfe81a30
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="office-365-powershell-community-resources"></a>Recursos de la comunidad de PowerShell de Office 365
 
@@ -26,13 +26,13 @@ Use estas redes de Yammer, estos foros de la comunidad y wikis para conectarse c
   
 - [Grupo de PowerShell para Office 365 de la red Yammer de Office 365](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
     
-- [Foro de la comunidad Administrar Office 365]((https://community.office365.com/es-ES/f/148.aspx))
+- [Foro de la comunidad Administrar Office 365](https://community.office365.com/es-ES/f/148.aspx)
     
 - [Foro de la comunidad TechCenter de Exchange](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
-- [Blogs de Office]((https://blogs.office.com/))
+- [Blogs de Office](https://blogs.office.com/)
     
-- [Wiki de Administrar Office 365]((https://community.office365.com/es-ES/w/manage/default.aspx))
+- [Wiki de Administrar Office 365](https://community.office365.com/es-ES/w/manage/default.aspx)
     
 ## <a name="see-also"></a>Consulte también
 

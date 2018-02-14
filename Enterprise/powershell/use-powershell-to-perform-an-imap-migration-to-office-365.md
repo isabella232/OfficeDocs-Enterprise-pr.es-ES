@@ -1,8 +1,8 @@
 ---
 title: "Usar PowerShell para realizar una migración de IMAP a Office 365"
-ms.author: sirkkuw
-author: sirkkuw
-manager: scotv
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
 ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: 
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: "Resumen: aprenda a usar Windows PowerShell para realizar una migración IMAP a Office 365."
-ms.openlocfilehash: 2c4d54f02a885e7ee5e18bed715c30e9090610df
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 50f97d858b7e7f00ac3cb1e0a239928badca215a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Usar PowerShell para realizar una migración de IMAP a Office 365
 
@@ -109,7 +109,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot:**
   
-En el caso de servidores IMAP compatibles con Nivel de seguridad y autenticación simples (SASL), como el servidor IMAP Dovecot, use el formato **Usuario_NombreDeUsuario*Admin_NombreDeUsuario*, donde el asterisco (*) es un carácter separador que se puede configurar. Imagine que va a migrar el correo electrónico de esos mismos usuarios desde un servidor IMAP Dovecot con las credenciales de administrador **mailadmin** y **P@ssw0rd**. El archivo CSV sería similar a este:
+En el caso de servidores IMAP compatibles con Nivel de seguridad y autenticación simples (SASL), como el servidor IMAP Dovecot, use el formato **User_UserName*Admin_UserName**, donde el asterisco (*) es un carácter separador que se puede configurar. Imaginemos ahora que va a migrar el correo electrónico de esos mismos usuarios desde un servidor IMAP Dovecot con las credenciales de administrador **mailadmin** y **P@ssw0rd**. Este es el aspecto que tendría el archivo CSV:
   
 ```
 EmailAddress,UserName,Password
