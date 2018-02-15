@@ -8,17 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Solutions
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: "Resumen: Implemente Azure AD Connect (DirSync) en una máquina virtual en Azure para sincronizar las cuentas entre el directorio local y el inquilino de Azure AD con su suscripción de Office 365."
-ms.openlocfilehash: 496dca01d8478c693cb983adefe9e663d2285279
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 3bfcf11ed59ca355f661434fcb171835aae2c80b
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure"></a>Implementar la sincronización de directorios (DirSync) de Office 365 en Microsoft Azure
 
@@ -26,14 +24,14 @@ ms.lasthandoff: 02/09/2018
   
 Azure Active Directory (AD) Connect (antes conocida como herramienta de sincronización de directorios, herramienta de DirSync o herramienta DirSync.exe) es una aplicación basada en servidor que se instala en un servidor unido a un dominio para sincronizar a los usuarios de Windows Server Active Directory local con el inquilino de Azure Active Directory de su suscripción a Office 365. Puede instalar Azure AD Connect en un servidor local, pero también puede instalarlo en una máquina virtual en Azure por los siguientes motivos:
   
-- Puede aprovisionar y configurar los servidores basados en la nube con mayor rapidez, y conseguir así que los servicios estén disponibles para los usuarios mucho antes.
+- Puede aprovisionar y configurar los servidores basados en la nube con mayor rapidez y conseguir así que los servicios estén disponibles para los usuarios mucho antes.
     
 - Azure ofrece mejor disponibilidad de sitios con menos esfuerzo.
     
 - Puede reducir el número de servidores locales de su organización.
     
 > [!IMPORTANT]
-> Esta solución requiere conectividad entre la red local y la red virtual de Azure. Para más información, vea [Conectar una red local con una red virtual de Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
+> Esta solución requiere conectividad entre la red local y la red virtual de Azure. Para obtener más información, vea [Conectar una red local con una red virtual de Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
   
 > [!IMPORTANT]
 > En este artículo se describe la sincronización de un único dominio en un único bosque. Azure AD Connect sincroniza todos los dominios de Windows Server AD en el bosque de Active Directory con Office 365. Si tiene varios bosques de Active Directory para sincronizar con Office 365, consulte el tema [Integración de las identidades locales con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=393091). 
@@ -44,15 +42,15 @@ Azure Active Directory (AD) Connect (antes conocida como herramienta de sincroni
 ## <a name="overview-of-deploying-office-365-directory-synchronization-in-azure"></a>Introducción a la implementación de sincronización de directorios de Office 365 en Azure
 <a name="Overview"> </a>
 
-El siguiente diagrama muestra Azure Connect de AD se ejecuta en una máquina virtual en Azure (el servidor de sincronización de directorios) que sincroniza un bosque de Windows Server AD local a una suscripción deOffice 365.
+El siguiente diagrama muestra Azure Connect de AD se ejecuta en una máquina virtual en Azure (el servidor de sincronización de directorios) que sincroniza un bosque de Windows Server AD local a una suscripción a Office 365.
   
 ![Herramienta Azure AD Connect en una máquina virtual en Azure durante la sincronización de cuentas locales con el inquilino de Azure AD de una suscripción a Office 365 con flujo de tráfico.](images/CP_DirSyncOverview.png)
   
-En el diagrama, hay dos redes conectadas por una conexión de sitio a sitio VPN o ExpressRoute. Hay una red local donde se encuentran los controladores de dominio de AD de Windows Server, y hay una red virtual de Azure con un servidor de sincronización de directorios, que es una máquina virtual ejecuta [Azure Connect AD](https://www.microsoft.com/download/details.aspx?id=47594). Hay dos flujos de tráfico principal original desde el servidor de sincronización de directorios:
+En el diagrama hay dos redes conectadas por una conexión de sitio a sitio VPN o ExpressRoute. Hay una red local donde se encuentran los controladores de dominio de AD de Windows Server y hay una red virtual de Azure con un servidor DirSync, que es una máquina virtual ejecuta [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). Hay dos flujos de tráfico principal original desde el servidor DirSync:
   
 -  Azure AD Connect consulta un controlador de dominio en la red local para conocer los cambios de cuentas y contraseñas.
     
--  Azure AD Connect envía los cambios de cuentas y contraseñas a la instancia de Azure AD de su suscripción de Office 365. Como el servidor de DirSync se encuentra en una parte extendida de la red local, estos cambios se envían a través del servidor proxy de la red local.
+-  Azure AD Connect envía los cambios de cuentas y contraseñas a la instancia de Azure AD de su suscripción de Office 365. Como el servidor DirSync se encuentra en una parte extendida de la red local, estos cambios se envían a través del servidor proxy de la red local.
     
 > [!NOTE]
 > En esta solución se describe la sincronización de un único dominio de Active Directory en un único bosque de Active Directory. Azure AD Connect sincroniza todos los dominios de Active Directory en el bosque de Active Directory con Office 365. Si tiene varios bosques de Active Directory para sincronizar con Office 365, consulte [Integración de las identidades locales con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=393091). 
@@ -146,11 +144,11 @@ Cree la máquina virtual en Azure con las instrucciones [Creación de la primera
     
 - En el panel **Elija un tamaño**, seleccione el tamaño **A2 estándar**.
     
-- En el panel **Configuración**, en la sección **Almacenamiento**, seleccione el tipo de almacenamiento **Estándar**. En la sección **Red**, seleccione el nombre de la red virtual y la subred que van a hospedar el servidor de DirSync (no la subred de puerta de enlace). Deje todas las demás opciones con sus valores predeterminados.
+- En el panel **Configuración**, en la sección **Almacenamiento**, seleccione el tipo de almacenamiento **Estándar**. En la sección **Red**, seleccione el nombre de la red virtual y la subred que van a hospedar el servidor DirSync (no la subred de puerta de enlace). Deje todas las demás opciones con sus valores predeterminados.
     
-Compruebe que el servidor de DirSync use DNS correctamente. Para ello, compruebe su DNS interno para asegurarse de que se ha agregado un registro de dirección (A) para la máquina virtual con su dirección IP. 
+Compruebe que el servidor DirSync use DNS correctamente. Para ello, compruebe su DNS interno para asegurarse de que se ha agregado un registro de dirección (A) para la máquina virtual con su dirección IP. 
   
-Use las instrucciones de [Conexión a la máquina virtual e inicio de sesión](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on) para conectarse al servidor de DirSync con una conexión a Escritorio remoto. Después de iniciar sesión, una la máquina virtual al dominio de Windows Server AD local.
+Use las instrucciones de [Conexión a la máquina virtual e inicio de sesión](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on) para conectarse al servidor DirSync con una conexión a Escritorio remoto. Después de iniciar sesión, una la máquina virtual al dominio de Windows Server AD local.
   
 Para que Azure AD Connect obtenga acceso a recursos de Internet, debe configurar el servidor DirSync de modo que use el servidor proxy de la red local. Póngase en contacto con su administrador de red para conocer los pasos de configuración adicionales que debe realizar.
   
@@ -164,9 +162,9 @@ En esta figura se muestra la máquina virtual del servidor de DirSync en la red 
 
 Haga lo siguiente:
   
-1. Conéctese al servidor de DirSync mediante una conexión a Escritorio remoto con una cuenta de dominio de Windows Server AD que tenga privilegios de administrador local. Consulte [Conexión a la máquina virtual e inicio de sesión](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on).
+1. Conéctese al servidor DirSync mediante una conexión a Escritorio remoto con una cuenta de dominio de Windows Server AD que tenga privilegios de administrador local. Consulte [Conexión a la máquina virtual e inicio de sesión](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on).
     
-2. Desde el servidor de sincronización de directorios, abra el artículo [Configurar la sincronización de directorios en Office 365](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846) y siga las instrucciones relativas a la sincronización de directorios con la sincronización de contraseñas.
+2. Desde el servidor DirSync, abra el artículo [Configurar la sincronización de directorios en Office 365](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846) y siga las instrucciones relativas a la sincronización de directorios con la sincronización de contraseñas.
     
 > [!CAUTION]
 > El programa de instalación crea la cuenta **AAD_xxxxxxxxxxxx** en la unidad organizativa (UO) de usuarios locales. No mueva ni quite esta cuenta porque entonces se producirá un error de sincronización.
