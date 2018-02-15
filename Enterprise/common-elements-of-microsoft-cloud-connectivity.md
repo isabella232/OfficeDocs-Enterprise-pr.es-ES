@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Resumen: Descubra los elementos comunes de la infraestructura de red y aprenda a preparar la red.'
-ms.openlocfilehash: 9dffcae28283c9f8b8c219284554225645435e0a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementos comunes de la conectividad de la nube de Microsoft
 
@@ -61,7 +61,7 @@ La figura 1 muestra cómo se puede conectar una red local con las ofertas en la 
     
 - **Firewall externo:** permite el tráfico saliente y el tráfico entrante especificado. Puede traducir direcciones.
     
-- **Conexión WAN a ISP:** conexión a un ISP (basada en proveedor) que se comunica con Internet para conseguir la conectividad y el enrutamiento.
+- **Conexión WAN a ISP:** conexión a un ISP basada en proveedor que se comunica con Internet para conseguir la conectividad y el enrutamiento.
     
 ## <a name="areas-of-networking-common-to-all-microsoft-cloud-services"></a>Áreas de redes comunes a todos los servicios en la nube de Microsoft
 <a name="steps"> </a>
@@ -76,14 +76,17 @@ Al adoptar cualquiera de los servicios en la nube de Microsoft, debe tener en cu
     
 - **DNS de Internet:** A, AAAA, CNAME, MX, PTR y otros registros para buscar la nube de Microsoft o los servicios hospedados en la nube. Por ejemplo, puede que necesite un registro CNAME para la aplicación hospedada en PaaS de Azure.
     
-## <a name="see-also"></a>Vea también
+
+## <a name="next-step"></a>Paso siguiente
+
+[ExpressRoute para la conectividad en la nube de Microsoft](expressroute-for-microsoft-cloud-connectivity.md)
+
+## <a name="see-also"></a>Ver también
 
 <a name="steps"> </a>
 
 [Microsoft Cloud Networking para arquitectos profesionales](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 

@@ -12,21 +12,21 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: "Resumen: los sitios de Internet que usan SharePoint Server 2013 tienen la ventaja de que se hospedan en Servicios de infraestructura de Azure. En este artículo se ofrecen recursos para diseñar e implementar esta solución."
-ms.openlocfilehash: d822d957f4eb5937ce4b109dff58684ea3d83afa
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 52af2dfe250007156848d1892fbee6bca89ab708
+ms.sourcegitcommit: 38001ca323a60126fcf31667393c31322044cedc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Sitios de Internet en Microsoft Azure con SharePoint Server 2013
 
  **Resumen:** los sitios de Internet que usan SharePoint Server 2013 tienen la ventaja de que se hospedan en Servicios de infraestructura de Azure. En este artículo se ofrecen recursos para diseñar e implementar esta solución.
   
-## <a name="using-azure-infrastructure-services-for-internet-sites"></a>Usar los servicios de infraestructura de Azure para sitios de Internet
+## <a name="using-azure-infrastructure-services-for-internet-sites"></a>Usar los Servicios de infraestructura de Azure para sitios de Internet
 
 Microsoft Azure ofrece una opción atractiva para hospedar sitios de Internet basados en SharePoint Server 2013. Estas son algunas de las ventajas que ofrece:
   
-- Centrarse en desarrollar un sitio impresionante en lugar de crear la infraestructura.
+- Centrarse en desarrollar un sitio excelente en lugar de crear la infraestructura.
     
 - Flexibilidad para escalar y reducir horizontalmente la solución según la demanda.
     
@@ -43,19 +43,19 @@ Los artículos e ilustraciones técnicas que detallamos a continuación ofrecen 
 |**Recurso**|**Más información**|
 |:-----|:-----|
 |Sitios de Internet de **SharePoint Server 2013 en Azure** <br/> [![Imagen de sitios de Internet en Azure usando SharePoint](images/MS_AZ_SPInternetSites.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392551)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551) <br/> |En este modelo de arquitectura se describen las principales actividades de diseño y las opciones de arquitectura recomendadas para sitios de Internet en Azure.  <br/> |
-|**Ejemplo de diseño: sitios de Internet en Azure para SharePoint Server 2013** <br/> [![Imagen de la muestra de diseño: sitios de Internet en Microsoft Azure para SharePoint 2013](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) <br/> |Use este ejemplo de diseño como punto de partida para su propia arquitectura.  <br/> |
+|**Ejemplo de diseño: sitios de Internet en Azure para SharePoint Server 2013** <br/> [![Imagen del ejemplo de diseño: sitios de Internet en Azure para SharePoint Server 2013](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) <br/> |Use este ejemplo de diseño como punto de partida para su propia arquitectura.  <br/> |
 |**[Arquitecturas de Microsoft Azure para SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |En este artículo se describe cómo diseñar arquitecturas de Azure para hospedar soluciones de SharePoint.  <br/> |
-|**[Usar Active Directory de Microsoft Azure para autenticación de SharePoint 2013](using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md)** <br/> |Instrucciones detalladas para configurar Azure AD con una granja de servidores de SharePoint 2013.  <br/> |
+
    
-**Participar en la discusión**
+**Participar en el debate**
 
 |**Póngase en contacto con nosotros**|**Descripción**|
 |:-----|:-----|
-|**¿Qué soluciones necesita?** <br/> |Estamos creando contenido para soluciones que abarcan varios productos y servicios de Microsoft. Díganos qué piensa sobre nuestras soluciones entre servidores o solicite soluciones específicas por correo electrónico a [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Participe en la discusión sobre soluciones** <br/> |Si es un apasionado de las soluciones basadas en la nube, puede unirse a Cloud Adoption Advisory Board (CAAB) para conectarse a una interesante comunidad de mayor tamaño formada por desarrolladores de contenido de Microsoft, profesionales del sector y clientes de todo el mundo. Para unirse, agregue a su usuario como miembro del [espacio CAAB (Cloud Adoption Advisory Board)](https://aka.ms/caab) de Microsoft Tech Community y envíenos un correo electrónico a [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Cualquiera puede leer contenido relacionado con la comunidad en el [blog de CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Pero los miembros de CAAB reciben invitaciones a seminarios web privados donde se describen nuevos recursos y soluciones de adopción de la nube.  <br/> |
+|**¿Qué soluciones necesita?** <br/> |Estamos creando contenido para la adopción en la nube que abarca varios servicios y plataformas en la nube de Microsoft. Díganos qué opina sobre nuestro contenido de adopción en la nube o solicite contenido específico enviando un correo electrónico a [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).  <br/> |
+|**Participe en el debate sobre la adopción en la nube** <br/> |Si le apasionan las soluciones basadas en la nube, puede unirse a Cloud Adoption Advisory Board (CAAB) para conectar con una interesante comunidad de mayor tamaño formada por desarrolladores de contenido de Microsoft, profesionales del sector y clientes de todo el mundo. Para unirse, agregue a su usuario como miembro del [espacio CAAB (Cloud Adoption Advisory Board)](https://aka.ms/caab) de Microsoft Tech Community y envíenos un correo electrónico a [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Cualquiera puede leer contenido relacionado con la comunidad en el [blog de CAAB](https://blogs.technet.com/b/solutions_advisory_board/). No obstante, los miembros de CAAB reciben invitaciones a seminarios web privados en los que se describen nuevos recursos y soluciones de adopción de la nube.  <br/> |
 |**Obtenga los archivos de arte que ve aquí** <br/> |Si quiere recibir una copia editable de las ilustraciones que se muestran en este artículo, estaremos encantados de enviárselas. Envíe su solicitud por correo electrónico, incluida la dirección URL y el título de la ilustración, a [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  <br/> |
    
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 
