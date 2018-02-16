@@ -9,14 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: O365ITProTrain, Ent_Office_Other, PowerShell
+ms.custom:
+- O365ITProTrain
+- Ent_Office_Other
+- PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: "Se explica cómo usar PowerShell de Office 365 para ver las cuentas de usuario con licencia y sin licencia."
-ms.openlocfilehash: e691ba7db96b34166f03ccd90d87fee0d2ee09f8
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: b26c98c1c294e2f1369d4368d0b1415702580a83
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Ver los usuarios con licencia y sin licencia con PowerShell de Office 365
 
