@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Resumen: conéctese a su organización de Office 365 con PowerShell de Office 365 para realizar tareas del Centro de administración de Office 365 desde la línea de comandos."
-ms.openlocfilehash: 9aa3fe8bc0f7debd01e3a3e5f91ca8403e696f56
-ms.sourcegitcommit: 5045bd498a9a531f34ac9db742e5cd9f15126bcc
+ms.openlocfilehash: 2f51c68acf55239c7d47f9b617a8a72965ead79d
+ms.sourcegitcommit: 7ed9108846227ca883cb5113543a165704d9bbc8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectarse a PowerShell de Office 365
 
@@ -32,7 +32,7 @@ Tenga en cuenta que estas instrucciones de conexión son las mismas que aparecen
 > [!TIP]
 > **¿Es la primera vez que usa PowerShell?** Vea el [vídeo de información general sobre PowerShell](http://technet.microsoft.com/library/https://support.office.com/es-ES/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx) ofrecido por LinkedIn Learning. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Tiempo estimado para finalizar: 5 minutos
     
@@ -43,7 +43,7 @@ Tenga en cuenta que estas instrucciones de conexión son las mismas que aparecen
   - Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2 SP1
     
     > [!NOTE]
-    >Use una versión de 64 bits de Windows. La compatibilidad con la versión de 32 bits de Módulo de Microsoft Azure Active Directory para Windows PowerShell se descontinuó en octubre de 2014.
+    >Use una versión de 64 bits de Windows. La compatibilidad con la versión de 32 bits de Módulo de Microsoft Azure Active Directory para Windows PowerShell se interrumpió en octubre de 2014.
     
 -  La cuenta profesional o educativa de Office 365 que use para estos procedimientos tiene que ser miembro del rol de administrador de Office 365. Para obtener más información, vea [Información sobre los roles de administrador de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
 
@@ -123,7 +123,7 @@ Si surgen errores, compruebe los siguientes requisitos:
 ## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a>Conectarse con el módulo de PowerShell Azure Active Directory V2
 <a name="ConnectV2"> </a>
 
-Los comandos del Módulo Microsoft Azure Active Directory para Windows PowerShell tienen “AzureAD” en el nombre de su cmdlet.
+Los comandos del PowerShell Azure Active Directory V2 tienen "AzureAD" en su nombre de cmdlet.
 
 Para los procedimientos que necesitan los nuevos cmdlets del [módulo de PowerShell Azure Active Directory V2](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory), siga estos pasos para instalar el módulo y conectarse a su suscripción a Office 365.
 
