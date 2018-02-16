@@ -9,23 +9,20 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- O365ITProTrain
-- Ent_Office_Other
-- PowerShell
+ms.custom: O365ITProTrain, Ent_Office_Other, PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: "Se explica cómo usar PowerShell de Office 365 para ver las cuentas de usuario con licencia y sin licencia."
-ms.openlocfilehash: fe4f75d9d8dbc85efbc71856192dbaece3e84fbc
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e691ba7db96b34166f03ccd90d87fee0d2ee09f8
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Ver los usuarios con licencia y sin licencia con PowerShell de Office 365
 
 **Resumen:** se explica cómo usar PowerShell de Office 365 para ver las cuentas de usuario con licencia y sin licencia.
   
-Las cuentas de usuario de la organización de su Office 365 pueden tener algunas, todas o ninguna de las licencias disponibles asignadas a ellas desde los planes de licencias que están disponibles en su organización. Puede usar PowerShell de Office 365 para encontrar rápidamente los usuarios con licencia y sin licencia de la organización.
+Las cuentas de usuario de la organización de Office 365 pueden tener algunas, todas o ninguna de las licencias disponibles asignadas a ellas desde los planes de licencias que están disponibles en su organización. Puede usar PowerShell de Office 365 para encontrar rápidamente los usuarios con licencia y sin licencia de la organización.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -57,7 +54,7 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>Versión larga (instrucciones con explicaciones detalladas)
 
-Las cuentas de usuario de Office 365 y las licencias de Office 365 no necesitan tener una correspondencia de uno a uno: se pueden tener usuarios de Office 365 sin una licencia de Office 365 y, además, tener licencias de Office 365 que no estén asignadas a usuarios (de hecho, una sola cuenta de usuario puede, incluso, tener *varias* licencias de Office 365). Al crear una cuenta de usuario de Office 365 (para obtener más información, vea el artículo[Asignar licencias a usuarios de Office 365 con Windows PowerShell]((http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx))), no es necesario asignar una licencia a ese usuario: el nuevo usuario tendrá una cuenta válida, pero no podrá iniciar sesión en Office 365. Si intenta iniciar sesión, verá algo parecido a esto:
+Las cuentas de usuario de Office 365 y las licencias de Office 365 no necesitan tener una correspondencia de uno a uno: se pueden tener usuarios de Office 365 sin una licencia de Office 365 y, además, tener licencias de Office 365 que no estén asignadas a usuarios (de hecho, una sola cuenta de usuario puede, incluso, tener *varias* licencias de Office 365). Al crear una cuenta de usuario de Office 365 (para obtener más información, vea el artículo [Asignar licencias a usuarios de Office 365 con Windows PowerShell](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx)), no es necesario asignar una licencia a ese usuario: el nuevo usuario tendrá una cuenta válida, pero no podrá iniciar sesión en Office 365. Si intenta iniciar sesión, verá algo parecido a esto:
   
 ![Usuario sin una licencia válida de Office 365.](images/o365_powershell_no_license.png)
   
@@ -104,7 +101,7 @@ UserPrincipalName           DisplayName                     isLicensed
 BelindaN@litwareinc.com     Belinda Newman                  False
 ```
 
-Como puede ver, tenemos un usuario sin licencia. ¿Y si solo queremos una lista de los usuarios  *con licencia*  ? Eso es un poco más complicado, pero solo un poco:
+Como puede ver, tenemos un usuario sin licencia. ¿Y si solo queremos una lista de los usuarios *con licencia*? Eso es un poco más complicado, pero solo un poco:
   
 ```
 Get-MsolUser | Where-Object {$_.isLicensed -eq $true}
@@ -124,7 +121,7 @@ AlexD@litwareinc.com        Alex Darrow                     True
 
 Como puede ver, no se devuelve ninguna información sobre Belinda Newman. ¿Por qué no? Acertó: porque la propiedad **isLicensed** para la cuenta de Belinda no está establecida en `True`.
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 <a name="SeeAlso"> </a>
 
 Para obtener más información sobre los cmdlets que se usan en estos procedimientos, consulte los siguientes temas:

@@ -8,17 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Solutions
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Resumen: Aprenda a configurar una red virtual de Azure entre locales para las cargas de trabajo de servidor de Office.'
-ms.openlocfilehash: d4d810ca0e53f1e890b922b18033ecb0a89a3c18
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: c071806bda74f9ecb4669b0cd6bc91704cf3182a
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Conectar una red local con una red virtual de Microsoft Azure
 
@@ -40,7 +38,7 @@ Para configurar la conexión VPN entre la red virtual de Azure y su red local, h
     
 2. **Microsoft Azure:** cree una red virtual de Azure con una conexión VPN de sitio a sitio. En este artículo no se describe el uso de [ExpressRoute](https://azure.microsoft.com/services/expressroute/).
     
-3. **Local:** Configure el dispositivo de VPN de hardware o software local para finalizar la conexión de VPN, que usa el Protocolo de seguridad de Internet (IPsec).
+3. **Local:** configure el dispositivo de VPN de hardware o software local para finalizar la conexión de VPN, que usa el Protocolo de seguridad de Internet (IPsec).
     
 Después de establecer la conexión VPN de sitio a sitio, agregue máquinas virtuales de Azure a las subredes de la red virtual.
   
@@ -239,7 +237,7 @@ Las máquinas virtuales basadas en el Administrador de recursos requieren una cu
 Get-AzureRMStorageAccount | Sort Name | Select Name
 ```
 
-Use este comando para comprobar si los nombres de las cuenta de almacenamiento de información que se propongan son únicos.
+Use este comando para comprobar si los nombres de las cuentas de almacenamiento de información que se propongan son únicos.
   
 ```
 Get-AzureRmStorageAccountNameAvailability "<proposed name>"
@@ -327,7 +325,7 @@ Esta es la configuración resultante.
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>Fase 3 (opcional): Agregue máquinas virtuales.
 
-Cree las máquinas virtuales que necesite en Azure. Para obtener más información, v[Creación de la primera máquina virtual de Windows en Azure Portal](https://go.microsoft.com/fwlink/p/?LinkId=393098).
+Cree las máquinas virtuales que necesite en Azure. Para obtener más información, vea [Creación de la primera máquina virtual de Windows en Azure Portal](https://go.microsoft.com/fwlink/p/?LinkId=393098).
   
 Use la configuración siguiente:
   
