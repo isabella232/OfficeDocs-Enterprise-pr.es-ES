@@ -13,14 +13,13 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - LIL_Placement
-- DecEntMigration
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: "Explica cómo utilizar Office 365 PowerShell para determinar los servicios de Office 365 que se han asignado a los usuarios."
-ms.openlocfilehash: 59a6444e0f6618fd837e8eae567661499e795c69
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 69784b43e6e2b24f776d07a937877e5ae0c74888
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Ver los detalles del servicio y la licencia de la cuenta con PowerShell de Office 365
 
@@ -128,7 +127,7 @@ Y, a continuación, expandiendo la propiedad **ServiceStatus** , podemos obtener
 |****Plan de servicio****|****Descripción****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Administración de dispositivos móviles para Office 365  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
@@ -166,7 +165,7 @@ Y también Echemos un vistazo a una tabla que explica lo que representan realmen
 |****Plan de servicio****|****Descripción****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Administración de dispositivos móviles para Office 365  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
@@ -194,7 +193,7 @@ Esperamos que alguien pediría. Para poder responder a esa pregunta, vamos a rev
 |****Plan de servicio****|****Descripción****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Administración de dispositivos móviles para Office 365  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
@@ -292,7 +291,7 @@ Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[
 Y Sí, es un comando muy raros. Pero se crea un archivo CSV que muestra todos los usuarios y sus Estados de servicio.
 
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Ver también
 <a name="SeeAlso"> </a>
 
 Vea los siguientes temas adicionales acerca de cómo administrar usuarios con Office 365 PowerShell:
@@ -324,8 +323,4 @@ Para obtener más información sobre los cmdlets que se usan en estos procedimie
 ## <a name="new-to-office-365"></a>¿Es la primera vez que usa Office 365?
 
 
-||
-|:-----|
-|![El icono reducido de LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **¿Es la primera vez que usa Office 365?**         LinkedIn Learning pone a su disposición vídeos gratuitos de cursos de [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5). |
-   
-
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]

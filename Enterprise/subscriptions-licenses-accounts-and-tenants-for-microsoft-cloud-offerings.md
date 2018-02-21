@@ -10,18 +10,17 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Visuals
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumen: Comprender las relaciones de las organizaciones, suscripciones, licencias, cuentas de usuario y los inquilinos en las ofertas de nube de Microsoft.'
-ms.openlocfilehash: 0c416efe1bfff6a3e6c979af165df8eb951b879c
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a1bcc040d046e4e5674f16432aeffb0a34b9031b
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, las cuentas y los inquilinos para las ofertas de nube de Microsoft
 
@@ -169,13 +168,13 @@ Para agregar una suscripción a Azure con la misma organización e inquilino de 
     
 Si adquirió las suscripciones de Azure y Office 365 y desea tener acceso a los inquilinos de Azure AD Office 365 desde su suscripción de Azure, consulte las instrucciones de [asociar a un arrendatario Office 365 con una suscripción de Azure](https://channel9.msdn.com/Series/Microsoft-Azure-Tutorials/Associate-an-Office-365-tenant-with-an-Azure-subscription).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Consulte también
 
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
   
-[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Modelos arquitectónicos para SharePoint, Exchange, Skype para empresas y Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
+[Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
 [Soluciones híbridas](hybrid-solutions.md)
   
