@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: 
 description: "Resumen: Conozca cómo omitir el servicio de Control de acceso de Azure y utilizar SAML 1.1 para autenticar a los usuarios de SharePoint Server con Active Directory de Azure."
-ms.openlocfilehash: e346a79fae32c19e14ce852257d5643041faf5d4
-ms.sourcegitcommit: b1cb876c8a8fca1c2d67b2bc8282f1361066962c
+ms.openlocfilehash: 1e8ce1aad43e110311c1f5fcceca816871c07e9e
+ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Utiliza AD Azure para autenticación de servidor de SharePoint
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/05/2018
 > En este artículo se basa en el trabajo de Kirk Evans, un administrador Principal de programas de Microsoft. 
 
 <blockquote>
-<p>En este artículo se refiere a los ejemplos de código para interactuar con el gráfico de Azure Active Directory. Puede descargar los ejemplos de código [aquí](https://1drv.ms/u/s!AuAlJmH2xI6Kg3ItzF78krMFxJu3).</p>
+<p>En este artículo se refiere a los ejemplos de código para interactuar con el gráfico de Azure Active Directory. Puede descargar los ejemplos de código [aquí](https://github.com/kaevans/spsaml11/tree/master/scripts).</p>
 </blockquote>
 
 SharePoint Server 2016 proporciona la capacidad para autenticar a los usuarios mediante la autenticación basada en notificaciones, facilitando la tarea de administrar los usuarios mediante la autenticación de con proveedores de identidades diferentes que confía pero otra persona administra. Por ejemplo, en lugar de administrar la autenticación del usuario a través de los servicios de dominio de Active Directory (AD DS), podría permitir a los usuarios autenticarse con Active Directory (AD Azure) de Azure. Esto permite la autenticación de los usuarios sólo nube con el sufijo onmicrosoft.com en su nombre de usuario, los usuarios sincronizan con un directorio local, invitó a los usuarios invitados desde otros directorios. También permite aprovechar las características de AD Azure como una autenticación multifactor y capacidades de reporting avanzadas.
@@ -131,13 +131,12 @@ Iniciar sesión en el servidor de SharePoint Server 2016 y abra el Shell de admi
 $realm = "<Realm from Table 1>"
 $wsfedurl="<SAML single sign-on service URL from Table 1>"
 $filepath="<Full path to SAML signing certificate file from Table 1>"
-$cert = New-Object 
-System.Security.Cryptography.X509Certificates.X509Certificate2($filepath)
+$cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($filepath)
 New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 $map = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" -IncomingClaimTypeDisplayName "name" -LocalClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"
 $map2 = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" -IncomingClaimTypeDisplayName "GivenName" -SameAsIncoming
 $map3 = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" -IncomingClaimTypeDisplayName "SurName" -SameAsIncoming
-$ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint secured by Azure AD" -realm $realm -ImportTrustCertificate $cert -ClaimsMappings $map,$map2,$map3 -SignInUrl $wsfedurl -IdentifierClaim “http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name”
+$ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint secured by Azure AD" -realm $realm -ImportTrustCertificate $cert -ClaimsMappings $map,$map2,$map3 -SignInUrl $wsfedurl -IdentifierClaim "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
 ```
 
 A continuación, siga estos pasos para habilitar al proveedor de identidad de confianza para la aplicación:
@@ -173,7 +172,8 @@ El usuario tiene permiso de Azure AD, pero también debe tener permiso en ShareP
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>Paso 6: Agregar una directiva de emisión de token SAML 1.1 en Azure AD
 
-Cuando se crea la aplicación AD Azure en el portal, el valor predeterminado es mediante SAML 2.0. SharePoint Server 2016 requiere el formato de token SAML 1.1. La siguiente secuencia de comandos se quite la directiva predeterminada de SAML 2.0 y agregar una nueva directiva a tokens SAML 1.1 del problema.
+Cuando se crea la aplicación AD Azure en el portal, el valor predeterminado es mediante SAML 2.0. SharePoint Server 2016 requiere el formato de token SAML 1.1. La siguiente secuencia de comandos se quite la directiva predeterminada de SAML 2.0 y agregar una nueva directiva a tokens SAML 1.1 del problema. Este código requiere la descarga de la que se incluyen [ejemplos que muestran la interacción con Active Directory gráfico de Azure](https://github.com/kaevans/spsaml11/tree/master/scripts).
+
 
 ```
 Import-Module <file path of Initialize.ps1> 
@@ -183,6 +183,8 @@ Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $
 $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
 Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
 ```
+
+Para obtener más información sobre directivas de emisión de Token con AD Azure, consulte la [referencia de la API de gráfico para operaciones de directiva](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy).
 
 ## <a name="step-7-verify-the-new-provider"></a>Paso 7: Compruebe el nuevo proveedor
 
@@ -197,6 +199,17 @@ Le pregunta si desea permanecer conectado.
 Por último, puede tener acceso el sitio iniciado sesión como un usuario de su arrendatario Azure Active Directory.
 
 ![Usuario que ha iniciado sesión en SharePoint](images/SAML11/fig15-signedinsharepoint.png)
+
+## <a name="managing-certificates"></a>Administración de certificados
+Es importante comprender que el certificado de firma que se ha configurado para el proveedor de identidad de confianza en el paso 4 anterior tiene una fecha de vencimiento y debe renovarse. Vea el artículo [Administrar certificados para federados, single sign-on en Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-sso-certs) para obtener información sobre la renovación de certificados. Una vez que se ha renovado el certificado en Active Directory de Azure, descarga en un archivo local y utilizar la siguiente secuencia de comandos para configurar el proveedor de identidad de confianza con el certificado de firma renovado. 
+
+```
+$filepath="<Full path to renewed SAML signing certificate file>"
+$cert= New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($filePath)
+New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
+Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
+```
+
 
 
 ## <a name="additional-resources"></a>Recursos adicionales
