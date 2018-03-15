@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: 
 description: "Resumen: Conozca cómo omitir el servicio de Control de acceso de Azure y utilizar SAML 1.1 para autenticar a los usuarios de SharePoint Server con Active Directory de Azure."
-ms.openlocfilehash: 1e8ce1aad43e110311c1f5fcceca816871c07e9e
-ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
+ms.openlocfilehash: e57414c3ed5af5c02b719d0c3639542e154be5bf
+ms.sourcegitcommit: fbf33e74fd74c4ad6d60b2214329a3bbbdb3cc7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Utiliza AD Azure para autenticación de servidor de SharePoint
 
@@ -159,7 +159,7 @@ Los usuarios que van a iniciar sesión en Azure AD y tener acceso a SharePoint d
  
 El usuario tiene permiso de Azure AD, pero también debe tener permiso en SharePoint. Utilice los pasos siguientes para establecer los permisos para tener acceso a la aplicación web.
 
-1. En Administración Central, haga clic en **Administración de aplicaciones**.
+1. En Administración central, haga clic en **Administración de aplicaciones**.
 2. En la sección **Aplicaciones web** de la página **Administración de aplicaciones**, haga clic en **Administrar aplicaciones web**.
 3. Haga clic en la aplicación web adecuada y, a continuación, haga clic en **Directiva de usuario**.
 4. En directiva de aplicación Web, haga clic en **Agregar usuarios**.</br>![Buscar un usuario por su notificación de nombre](images/SAML11/fig11-searchbynameclaim.png)</br>
@@ -172,7 +172,7 @@ El usuario tiene permiso de Azure AD, pero también debe tener permiso en ShareP
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>Paso 6: Agregar una directiva de emisión de token SAML 1.1 en Azure AD
 
-Cuando se crea la aplicación AD Azure en el portal, el valor predeterminado es mediante SAML 2.0. SharePoint Server 2016 requiere el formato de token SAML 1.1. La siguiente secuencia de comandos se quite la directiva predeterminada de SAML 2.0 y agregar una nueva directiva a tokens SAML 1.1 del problema. Este código requiere la descarga de la que se incluyen [ejemplos que muestran la interacción con Active Directory gráfico de Azure](https://github.com/kaevans/spsaml11/tree/master/scripts).
+Cuando se crea la aplicación AD Azure en el portal, el valor predeterminado es mediante SAML 2.0. SharePoint Server 2016 requiere el formato de token SAML 1.1. La siguiente secuencia de comandos se quite la directiva predeterminada de SAML 2.0 y agregar una nueva directiva a tokens SAML 1.1 del problema. Este código requiere la descarga de la que se incluyen [ejemplos que muestran la interacción con Active Directory gráfico de Azure](https://github.com/kaevans/spsaml11/tree/master/scripts). 
 
 
 ```
@@ -183,8 +183,9 @@ Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $
 $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
 Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
 ```
+> Tenga en cuenta que es importante ejecutar el `Import-Module` comando tal como se muestra en este ejemplo. Esto cargará un módulo dependiente que contiene los comandos que se muestra. Debe abrir un símbolo del sistema con privilegios elevados para ejecutar correctamente estos comandos.
 
-Para obtener más información sobre directivas de emisión de Token con AD Azure, consulte la [referencia de la API de gráfico para operaciones de directiva](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy).
+Estos ejemplos de comandos de PowerShell son ejemplos de cómo ejecutar consultas en la API de gráfico. Para obtener más información sobre directivas de emisión de Token con AD Azure, consulte la [referencia de la API de gráfico para operaciones de directiva](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy).
 
 ## <a name="step-7-verify-the-new-provider"></a>Paso 7: Compruebe el nuevo proveedor
 
@@ -210,7 +211,14 @@ New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
 ```
 
+## <a name="fixing-people-picker"></a>Fijación de selector de personas
+Los usuarios ahora pueden iniciar en 2016 de SharePoint utilizando identidades de AD de Azure, pero aún hay oportunidades de mejora de la experiencia del usuario. Por ejemplo, buscar un usuario presenta varios resultados de búsqueda en el selector de personas. Hay un resultado de búsqueda para cada uno de los tipos de notificación de 3 que se crearon en la asignación de notificaciones. Para elegir un usuario utilizando el selector de personas, debe escribir exactamente su nombre de usuario y elegir el **nombre** reclamar el resultado.
 
+![Resultados de la búsqueda de notificaciones](images/SAML11/fig16-claimssearchresults.png)
+
+No hay ninguna validación en los valores que busca, lo que puede conducir a errores ortográficos o reclamación los usuarios accidentalmente elegir incorrecto reclamar tipo asignar como el **apellido** . Esto puede impedir que los usuarios acceso a los recursos correctamente.
+
+Para ayudar con este escenario, hay una fuente abierta solución llamado [AzureCP](https://yvand.github.io/AzureCP/) que proporciona un proveedor de notificaciones personalizadas para SharePoint 2016. Utilizará el gráfico de AD de Azure para resolver lo que los usuarios escribir y realizan validación. Obtenga más información en [AzureCP](https://yvand.github.io/AzureCP/). 
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
