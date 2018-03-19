@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Resumen: conéctese a su organización de Office 365 con PowerShell de Office 365 para realizar tareas del Centro de administración de Office 365 desde la línea de comandos."
-ms.openlocfilehash: 9c653b2cbe5cd05ee8b0ae23ce84c2805d82e6f2
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: a13fcc401a4d00f49dcc4eec2a5acba36075233f
+ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectarse a PowerShell de Office 365
 
@@ -32,7 +32,7 @@ Tenga en cuenta que estas instrucciones de conexión son las mismas que aparecen
 > [!TIP]
 > **¿Es la primera vez que usa PowerShell?** Vea el [vídeo de información general sobre PowerShell](http://technet.microsoft.com/library/https://support.office.com/es-ES/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx) ofrecido por LinkedIn Learning. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Tiempo estimado para finalizar: 5 minutos
     
@@ -43,7 +43,7 @@ Tenga en cuenta que estas instrucciones de conexión son las mismas que aparecen
   - Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2 SP1
     
     > [!NOTE]
-    >Use una versión de 64 bits de Windows. La compatibilidad con la versión de 32 bits de Módulo de Microsoft Azure Active Directory para Windows PowerShell se interrumpió en octubre de 2014.
+    >Use una versión de 64 bits de Windows. La compatibilidad con la versión de 32 bits de Módulo de Microsoft Azure Active Directory para Windows PowerShell se descontinuó en octubre de 2014.
     
 -  La cuenta profesional o educativa de Office 365 que use para estos procedimientos tiene que ser miembro del rol de administrador de Office 365. Para obtener más información, vea [Información sobre los roles de administrador de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
 
