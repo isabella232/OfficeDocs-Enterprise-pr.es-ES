@@ -1,5 +1,5 @@
 ---
-title: "Usar PowerShell para la migración de correo electrónico a Office 365"
+title: Usar PowerShell para la migración de correo electrónico a Office 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -9,9 +9,9 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: "Resumen: obtenga información sobre cómo migrar el correo electrónico Office 365 con Windows PowerShell."
+description: 'Resumen: obtenga información sobre cómo migrar el correo electrónico Office 365 con Windows PowerShell.'
 ms.openlocfilehash: 5c982e795a39faed1c3837f86c74413a3413d59e
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
@@ -47,9 +47,9 @@ ms.lasthandoff: 01/11/2018
 [<span data-ttu-id="bcd7f-117">Usar Windows PowerShell para crear informes en Office 365</span><span class="sxs-lookup"><span data-stu-id="bcd7f-117">Use Windows PowerShell to create reports in Office 365</span></span>](use-windows-powershell-to-create-reports-in-office-365.md)
 #### 
 
-<span data-ttu-id="bcd7f-118">[Ventajas del uso de Windows Powershell para administrar Office 365](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)</span><span class="sxs-lookup"><span data-stu-id="bcd7f-118">[Advantages of using Windows PowerShell to manage Office 365](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)</span></span>
+<span data-ttu-id="bcd7f-118">[Ventajas del uso de Windows Powershell para administrar Office 365]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))</span><span class="sxs-lookup"><span data-stu-id="bcd7f-118">[Advantages of using Windows PowerShell to manage Office 365]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))</span></span>
   
-<span data-ttu-id="bcd7f-119">[Referencia técnica de Windows PowerShell en Office 365](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)</span><span class="sxs-lookup"><span data-stu-id="bcd7f-119">[Windows PowerShell in Office 365 technical reference](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)</span></span>
+<span data-ttu-id="bcd7f-119">[Referencia técnica de Windows PowerShell en Office 365]((http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx))</span><span class="sxs-lookup"><span data-stu-id="bcd7f-119">[Windows PowerShell in Office 365 technical reference]((http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx))</span></span>
   
-<span data-ttu-id="bcd7f-120">[Licencias de Office 365 y Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)</span><span class="sxs-lookup"><span data-stu-id="bcd7f-120">[Office 365 Licensing and Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)</span></span>
+<span data-ttu-id="bcd7f-120">[Licencias de Office 365 y Windows PowerShell]((http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx))</span><span class="sxs-lookup"><span data-stu-id="bcd7f-120">[Office 365 Licensing and Windows PowerShell]((http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx))</span></span>
 

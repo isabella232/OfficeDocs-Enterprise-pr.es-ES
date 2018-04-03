@@ -1,11 +1,11 @@
 ---
 title: Soluciones de Enterprise Cloud
-description: "Resuelva problemas empresariales mediante Microsoft Cloud. Obtenga información sobre las últimas soluciones híbridas y de seguridad en la nube, la adopción de la nube y más."
+description: Resuelva problemas empresariales mediante Microsoft Cloud. Obtenga información sobre las últimas soluciones híbridas y de seguridad en la nube, la adopción de la nube y más.
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 layout: LandingPage
-ms.assetid: 
+ms.assetid: ''
 ms.service: o365-solutions
 ms.topic: hub-page
 localization_priority: Normal
