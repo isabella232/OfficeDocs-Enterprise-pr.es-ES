@@ -3,7 +3,7 @@ title: Entorno de desarrollo y pruebas de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.custom: Strat_O365_Enterprise, Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
-description: "Resumen: Utilice a esta guía de laboratorio de prueba para crear una suscripción de prueba de Office 365 para pruebas y desarrollo o de evaluación."
-ms.openlocfilehash: b3c9e83dfab3aaf02ad598021e11965657e877bb
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 'Resumen: Utilice a esta guía de laboratorio de prueba para crear una suscripción de prueba de Office 365 para pruebas y desarrollo o de evaluación.'
+ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="office-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365
 
@@ -56,11 +56,11 @@ Esta configuración básica se compone de las máquinas virtuales DC1, APP1 y CL
 
 Para iniciar la suscripción de prueba a Office 365 E5, primero necesita el nombre de una compañía ficticia y una nueva cuenta de Microsoft.
   
-1. Se recomienda que utilice una variante del nombre de la compañía Contoso para el nombre de su compañía, que es una empresa ficticia utilizada en contenido de ejemplo de Microsoft, pero no es imprescindible. Registrar el nombre de su compañía ficticia: ___
+1. Se recomienda que utilice una variante del nombre de la compañía Contoso para el nombre de su compañía, que es una empresa ficticia utilizada en contenido de ejemplo de Microsoft, pero no es imprescindible. Registrar el nombre de su compañía ficticia: ___.
     
-2. Para obtener una nueva cuenta de Microsoft, vaya a [https://outlook.com](https://outlook.com) y cree una cuenta con una nueva cuenta de correo electrónico y dirección. Utilizará esta cuenta para suscribirse a Office 365.
+2. Para obtener una nueva cuenta de Microsoft, vaya a [https://outlook.com](https://outlook.com) y cree una cuenta con una nueva cuenta de correo electrónico y la dirección. Utilizará esta cuenta para suscribirse a Office 365.
     
-  - Anote aquí el nombre y apellidos de su nueva cuenta: _______________________________
+  - Registrar el nombre y apellidos de su nueva cuenta: ___.
     
   - Anote aquí la dirección de la nueva cuenta de correo: _____________________________@outlook.com
     
@@ -105,7 +105,7 @@ Stop-Process -Name Explorer -Force
     
     Anote en un lugar seguro la contraseña que ha escrito.
     
-    Registre el nombre de su compañía ficticia, que se conoce como el **nombre de la organización**, aquí: ___
+    Registre el nombre de su compañía ficticia, que se conoce como el **nombre de la organización**, aquí: ___.
     
 5. Haga clic en **Crear mi cuenta**.
     
@@ -113,7 +113,7 @@ Stop-Process -Name Explorer -Force
     
 7. Escriba el código de verificación del mensaje de texto recibido y, a continuación, haga clic en **siguiente**.
     
-8. Anote aquí la URL de la página de inicio de sesión (seleccionar y copiar): ___________________________________________
+8. Registrar la página de inicio de sesión URL aquí (seleccionar y copiar): ___.
     
 9. Anote aquí el id. de usuario (seleccionar y copiar): __________________________________.onmicrosoft.com
     
@@ -259,17 +259,17 @@ Anote estos valores para trabajar con o implementar guías del laboratorio de pr
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - Dirección URL del sitio de producción: https://___.sharepoint.com/sites/production
+  - Dirección URL del sitio de producción:https://______________________________________________.sharepoint.com/sites/production
     
-  - Dirección URL del sitio de ventas: https://______________________________________________.sharepoint.com/sites/sales
+  - Dirección URL del sitio de ventas:https://______________________________________________.sharepoint.com/sites/sales
     
-  - Dirección URL del sitio de soporte técnico: https://______________________________________________.sharepoint.com/sites/support
+  - Dirección URL del sitio de soporte técnico:https://______________________________________________.sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>Pasos siguientes
 
 Use estos artículos adicionales en el entorno de desarrollo y pruebas de Office 365:
   
-- [Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [Sincronización de directorios para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
     
 - [Autenticación con varios factores para el entorno de desarrollo y prueba de Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
