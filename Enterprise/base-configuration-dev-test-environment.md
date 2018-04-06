@@ -1,9 +1,9 @@
 ---
-title: "Entorno de desarrollo y pruebas de la configuración básica"
+title: Entorno de desarrollo y pruebas de la configuración básica
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,11 +16,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Resumen: Crear una intranet simplificada como un entorno de pruebas y desarrollo de Microsoft Azure.'
-ms.openlocfilehash: 04da1037dbebed9f9a5d2aa2fb37b03b88218839
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: b2bd1c7bb2b0cd100326867fc3603b6afb6cd8db
+ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>Entorno de desarrollo y pruebas de la configuración básica
 
@@ -32,7 +32,7 @@ Este artículo contiene las instrucciones paso a paso para crear el siguiente en
 
 ![Fase 4 de la configuración base en Azure con la red virtual CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-El entorno de desarrollo y pruebas de la configuración básica de la figura 1 consta de la subred de la red corporativa en una red virtual de Azure solo de nube denominada TestLab que simula una intranet simplificada y privada conectada a Internet. Contiene tres máquinas virtuales de Azure que ejecutan Windows Server 2016:
+El entorno de desarrollo/pruebas de configuración Base en la figura 1 se compone de la subred de la red corporativa en una red virtual Azure sólo nube denominada práctica de prueba que simula una intranet simplificada y privada conectada a Internet. Contiene tres máquinas virtuales Azure:
   
 - DC1 está configurada como un controlador de dominio de intranet y un servidor de Sistema de nombres de dominio (DNS)
     
@@ -50,7 +50,7 @@ Puede usar el entorno de pruebas resultante:
   
 - Para desarrollar y probar aplicaciones.
     
-- Como la configuración inicial de un entorno de pruebas ampliadas de su propio diseño que incluye máquinas virtuales adicionales, servicios de Azure u otras ofertas de nube de Microsoft, como Office 365 + movilidad y seguridad empresarial.
+- Como la configuración inicial de un entorno de pruebas ampliadas de su propio diseño que incluye máquinas virtuales adicionales, servicios de Azure u otras ofertas de nube de Microsoft, como Office 365 + movilidad (EMS) y seguridad de la empresa.
     
 Existen cuatro fases para configurar el entorno de pruebas de configuración de base en Azure:
   
@@ -163,7 +163,7 @@ Después conéctese a la máquina virtual DC1.
   
 ### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>Conectarse a DC1 usando las credenciales de la cuenta de administrador local
 
-1. En el [portal de Azure](https://portal.azure.com), haga clic en **grupos de recursos >** <the name of your new resource group> **> DC1 > conectar**.
+1. En el [portal de Azure](https://portal.azure.com), haga clic en **grupos de recursos >** [nombre de su nuevo grupo de recursos] **> DC1 > conectar**.
     
 2. Abra el archivo DC1.rdp que se descarga y, a continuación, haga clic en **Conectar**.
     
@@ -191,7 +191,7 @@ A continuación, configure DC1 como controlador de dominio y servidor DNS para e
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs"
+Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
 ```
 
 Debe especificar una contraseña de administrador de modo seguro. Guarde esta contraseña en un lugar seguro.
@@ -202,7 +202,7 @@ Después de que DC1 se reinicie, vuelva a conectarse a la máquina virtual de DC
   
 ### <a name="connect-to-dc1-using-domain-credentials"></a>Conectarse a DC1 usando las credenciales de dominio
 
-1. En el [portal de Azure](https://portal.azure.com), haga clic en **grupos de recursos >** <your resource group name> **> DC1 > conectar**.
+1. En el [portal de Azure](https://portal.azure.com), haga clic en **grupos de recursos >** [nombre de grupo de los recursos] **> DC1 > conectar**.
     
 2. Ejecute el archivo DC1.rdp que se descarga y, a continuación, haga clic en **Conectar**.
     
@@ -242,7 +242,7 @@ Esta es su configuración actual.
 
 App1 proporciona servicios de uso compartido de archivos y web.
   
-Para crear una máquina virtual de Azure para APP1, indique el nombre de su grupo de recursos, ubicación de Azure y nombre de la cuenta de almacenamiento, y ejecute estos comandos en el símbolo del sistema de Azure PowerShell en el equipo local.
+Para crear una máquina Virtual de Azure para APP1, proporcione el nombre de su grupo de recursos y ejecutar estos comandos en el símbolo del sistema de PowerShell de Azure en el equipo local.
   
 ```
 $rgName="<resource group name>"
@@ -283,9 +283,9 @@ Install-WindowsFeature Web-WebServer -IncludeManagementTools
 Por último, cree una carpeta compartida y un archivo de texto dentro de la carpeta en APP1 con estos comandos de PowerShell.
   
 ```
-New-Item -path c:\\files -type directory
-Write-Output "This is a shared file." | out-file c:\\files\\example.txt
-New-SmbShare -name files -path c:\\files -changeaccess CORP\\User1
+New-Item -path c:\files -type directory
+Write-Output "This is a shared file." | out-file c:\files\example.txt
+New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 ```
 
 Esta es su configuración actual.
@@ -296,10 +296,7 @@ Esta es su configuración actual.
 
 CLIENT1 sirve de portátil, tableta o equipo de escritorio común en la intranet de Contoso.
   
-> [!NOTE]
-> El siguiente conjunto de comandos crea CLIENTE1 ejecuta Windows Server 2016 Datacenter, lo que puede realizar para todos los tipos de suscripciones de Azure. Si tiene una suscripción de Azure basada en Visual Studio, puede crear CLIENTE1 ejecutando Windows 10, Windows 8 o Windows 7 con el [portal de Azure](https://portal.azure.com). 
-  
-Para crear una máquina virtual de Azure para CLIENT1, indique el nombre de su grupo de recursos, ubicación de Azure y nombre de la cuenta de almacenamiento, y ejecute estos comandos en el símbolo del sistema de Azure PowerShell en el equipo local.
+Para crear una máquina Virtual de Azure para CLIENTE1, proporcione el nombre de su grupo de recursos y ejecutar estos comandos en el símbolo del sistema de PowerShell de Azure en el equipo local.
   
 ```
 $rgName="<resource group name>"
@@ -310,7 +307,7 @@ $nic=New-AzureRMNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -L
 $vm=New-AzureRMVMConfig -VMName CLIENT1 -VMSize Standard_A1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
 $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
@@ -343,7 +340,7 @@ Después, compruebe que puede tener acceso a recursos compartidos de web y archi
     
 4. Desde la pantalla de inicio, haga clic en **Internet Explorer**y, a continuación, haga clic en **Aceptar**.
     
-5. En la barra Dirección, escriba **http://app1.corp.contoso.com/**y, a continuación, presione ENTRAR. Debe ver la página web de servicios de Internet Information Server de forma predeterminada para APP1.
+5. En la barra Dirección, escriba **http://app1.corp.contoso.com/**, y, a continuación, presione ENTRAR. Debe ver la página web de servicios de Internet Information Server de forma predeterminada para APP1.
     
 6. En la barra de tareas de escritorio, haga clic en el icono del Explorador de archivos.
     
@@ -362,8 +359,8 @@ La configuración básica de Azure está preparada para desarrollar y probar apl
 > [!TIP]
 > Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
   
-## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Minimizar los costos del entorno de pruebas de máquinas virtuales en Azure
 <a name="mincost"> </a>
+## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Minimizar los costos del entorno de pruebas de máquinas virtuales en Azure
 
 Para minimizar el costo de ejecutar máquinas virtuales de entorno de pruebas, puede realizar una de las siguientes acciones:
   
@@ -383,9 +380,7 @@ Stop-AzureRMVM -ResourceGroupName $rgName -Name "DC1" -Force
 Para asegurarse de que las máquinas virtuales funcionan correctamente al iniciarlas todas desde el estado Detenido (Desasignado), debe iniciarlas en el orden siguiente:
   
 1. DC1
-    
 2. APP1
-    
 3. CLIENTE1
     
 Para iniciar las máquinas virtuales en orden con Azure PowerShell, rellene el nombre del grupo de recursos y ejecute estos comandos.
@@ -399,16 +394,8 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 
 ## <a name="see-also"></a>Consulte también
 
-<a name="mincost"> </a>
-
-[Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
-  
-[Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Seguridad de la aplicación de nube para su entorno de pruebas y desarrollo de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-  
-[Una protección avanzada para su entorno de pruebas y desarrollo de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-  
-[Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
-
-
+- [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
+- [Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [Seguridad de la aplicación de nube para su entorno de pruebas y desarrollo de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Una protección avanzada para su entorno de pruebas y desarrollo de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
