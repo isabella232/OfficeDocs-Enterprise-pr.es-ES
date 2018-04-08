@@ -3,7 +3,7 @@ title: Identidad federada para el entorno de desarrollo y pruebas de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
-description: "Resumen: Configurar la autenticación federada para su entorno de pruebas y desarrollo de Office 365."
-ms.openlocfilehash: 8458e8e11547c14e479a64d037707d5292afcc02
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumen: Configurar la autenticación federada para su entorno de pruebas y desarrollo de Office 365.'
+ms.openlocfilehash: 8841e203587f4582396db172ff5f4626eacbcdc7
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identidad federada para el entorno de desarrollo y pruebas de Office 365
 
@@ -63,7 +63,7 @@ Para avanzar en la implementación de producción de autenticación federada par
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>Fase 1: Crear el entorno de desarrollo y pruebas de una empresa simulada de Office 365 con DirSync
 
-Siga las instrucciones de [sincronización de directorios para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md) para crear el entorno de desarrollo/pruebas simuladas enterprise Office 365 con APP1 como el servidor de sincronización de directorios y la identidad sincronizada entre Office 365 y el anuncio de Windows Server cuentas en DC1.
+Siga las instrucciones de [sincronización de directorios para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md) para crear el entorno de desarrollo/pruebas simuladas enterprise Office 365 con APP1 como el servidor de sincronización de directorios y sincronizar identidades entre Office 365 y el Cuentas de Windows Server AD en DC1.
   
 A continuación, crear un nuevo nombre de dominio DNS público basado en su nombre de dominio actual y agregarlo a su suscripción de Office 365. Se recomienda utilizar el nombre **práctica de prueba.** \<el dominio público >. Por ejemplo, si el nombre de dominio público es contoso.com, agregue el testlab.contoso.com de nombre de dominio público.
   
@@ -73,9 +73,9 @@ Esta es la configuración resultante.
   
 **Figura 2: Sincronización de directorios para el entorno de desarrollo y prueba de Office 365**
 
-![El entorno de desarrollo y prueba de Office 365 con DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![El entorno de desarrollo y prueba de Office 365 con la sincronización de directorios](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-En la figura 2, se muestra DirSync para el entorno de desarrollo y pruebas de Office 365, que incluye Office 365 y las máquinas virtuales CLIENT1, APP1 y DC1 en una red virtual de Azure.
+La figura 2 muestra la synchronizationc de directorio para el entorno de desarrollo y prueba de Office 365, que incluye Office 365 y CLIENTE1, APP1 y DC1 máquinas virtuales en una red virtual de Azure.
   
 ## <a name="phase-2-create-the-ad-fs-server"></a>Fase 2: Crear el servidor de AD FS
 
@@ -103,7 +103,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!TIP]
-> Haga clic [aquí](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) para obtener un archivo de texto que contiene todos los comandos de PowerShell en este artículo.
+> Haga clic [aquí](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) para un archivo de texto que contiene todos los comandos de PowerShell en este artículo.
   
 A continuación, utilizar el [portal de Azure](http://portal.azure.com) para conectarse a la máquina virtual de ADFS1 con el nombre de la cuenta Administrador local ADFS1 y la contraseña y, a continuación, abra un símbolo del sistema de Windows PowerShell.
   
@@ -112,7 +112,7 @@ Para comprobar la comunicación de red y de resolución de nombre entre ADFS1 y 
 A continuación, una la máquina virtual de ADFS1 al dominio CORP con estos comandos en un símbolo del sistema de Windows PowerShell en ADFS1.
   
 ```
-$cred=Get-Credential -UserName "CORP\\User1" -Message "Type the User1 account password."
+$cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
 Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
@@ -164,7 +164,7 @@ Para comprobar la comunicación de red y de resolución de nombre entre PROXY1 y
 A continuación, una la máquina virtual de PROXY1 al dominio CORP con estos comandos en un símbolo del sistema de Windows PowerShell en PROXY1.
   
 ```
-$cred=Get-Credential -UserName "CORP\\User1" -Message "Type the User1 account password."
+$cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
 Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
@@ -214,9 +214,9 @@ Utilice el [portal de Azure](http://portal.azure.com) para conectarse a la máqu
   
 ```
 $fedServiceFQDN="<federation service FQDN>"
-New-SelfSignedCertificate -DnsName $fedServiceFQDN -CertStoreLocation "cert:\\LocalMachine\\My"
-New-Item -path c:\\Certs -type directory
-New-SmbShare -name Certs -path c:\\Certs -changeaccess CORP\\User1
+New-SelfSignedCertificate -DnsName $fedServiceFQDN -CertStoreLocation "cert:\LocalMachine\My"
+New-Item -path c:\Certs -type directory
+New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
 ```
 
 Después, use estos pasos para guardar el nuevo certificado autofirmado como un archivo.

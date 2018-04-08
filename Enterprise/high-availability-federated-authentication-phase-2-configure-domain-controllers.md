@@ -1,9 +1,9 @@
 ---
-title: "Controladores de dominio de fase 2 Configurar autenticación de federados de alta disponibilidad"
+title: Controladores de dominio de fase 2 Configurar autenticación de federados de alta disponibilidad
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: "Resumen: Configurar los controladores de dominio y el servidor de sincronización de directorios para su autenticación federados de alta disponibilidad para Office 365 en Microsoft Azure."
-ms.openlocfilehash: 5e2cc8b5c750b5b2cf48ff0c594a5bd716d5bcf2
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumen: Configurar los controladores de dominio y el servidor de sincronización de directorios para su autenticación federados de alta disponibilidad para Office 365 en Microsoft Azure.'
+ms.openlocfilehash: 80846025af82810f63087aafd1a3b3a1213212d1
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio
 
@@ -35,13 +35,13 @@ En primer lugar, debe rellenar la columna **nombre de la máquina Virtual** de M
   
 |**Elemento**|**Nombre de máquina virtual**|**Imagen de la Galería**|**Tipo de almacenamiento**|**Tamaño mínimo**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |______________ (primer controlador de dominio, ejemplo DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |______________ (segundo controlador de dominio, ejemplo DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |______________ (servidor de DirSync, ejemplo DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |______________ (primer servidor de AD FS, ejemplo ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |______________ (segundo servidor de AD FS, ejemplo ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |______________ (primer servidor proxy de aplicación web, ejemplo WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |______________ (segundo servidor proxy de aplicación web, ejemplo WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./images/Common_Images/TableLine.png)(primer controlador de dominio, ejemplo DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./images/Common_Images/TableLine.png)(segundo controlador de dominio, ejemplo DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./images/Common_Images/TableLine.png)(Servidor de sincronización de directorios, ejemplo DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./images/Common_Images/TableLine.png)(primer servidor AD FS, ejemplo ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./images/Common_Images/TableLine.png)(segundo servidor AD FS, ejemplo ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./images/Common_Images/TableLine.png)(primera aplicación servidor proxy web, ejemplo WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./images/Common_Images/TableLine.png)(segunda aplicación servidor proxy web, ejemplo WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
    
  **Tabla M - máquinas virtuales para la autenticación federados de alta disponibilidad para Office 365 en Azure**
   
