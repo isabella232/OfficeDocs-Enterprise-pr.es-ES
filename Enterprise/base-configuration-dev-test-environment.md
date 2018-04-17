@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Resumen: Crear una intranet simplificada como un entorno de pruebas y desarrollo de Microsoft Azure.'
-ms.openlocfilehash: b2bd1c7bb2b0cd100326867fc3603b6afb6cd8db
-ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
+ms.openlocfilehash: a874260510b2825fae0f0fd9154912d35e555d19
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>Entorno de desarrollo y pruebas de la configuración básica
 
@@ -32,7 +31,7 @@ Este artículo contiene las instrucciones paso a paso para crear el siguiente en
 
 ![Fase 4 de la configuración base en Azure con la red virtual CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-El entorno de desarrollo/pruebas de configuración Base en la figura 1 se compone de la subred de la red corporativa en una red virtual Azure sólo nube denominada práctica de prueba que simula una intranet simplificada y privada conectada a Internet. Contiene tres máquinas virtuales Azure:
+El entorno de desarrollo/pruebas de configuración Base en la figura 1 se compone de la subred de la red corporativa en una red virtual Azure sólo nube denominada práctica de prueba que simula una intranet simplificada y privada conectada a Internet. Contiene tres máquinas virtuales Azure ejecutan WIndows Server 2016:
   
 - DC1 está configurada como un controlador de dominio de intranet y un servidor de Sistema de nombres de dominio (DNS)
     
@@ -241,7 +240,10 @@ Esta es su configuración actual.
 ## <a name="phase-3-configure-app1"></a>Fase 3: Configurar APP1
 
 App1 proporciona servicios de uso compartido de archivos y web.
-  
+
+-> [!NOTE]  
+-> El siguiente conjunto de comandos crea CLIENTE1 ejecuta Windows Server 2016 Datacenter, lo que puede realizar para todos los tipos de suscripciones de Azure. Si tiene una suscripción de Azure basada en Visual Studio, puede crear CLIENTE1 ejecutando Windows 10 con el [portal de Azure](https://portal.azure.com). 
+
 Para crear una máquina Virtual de Azure para APP1, proporcione el nombre de su grupo de recursos y ejecutar estos comandos en el símbolo del sistema de PowerShell de Azure en el equipo local.
   
 ```
@@ -307,7 +309,7 @@ $nic=New-AzureRMNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -L
 $vm=New-AzureRMVMConfig -VMName CLIENT1 -VMSize Standard_A1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
 $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm

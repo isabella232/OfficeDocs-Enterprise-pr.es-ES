@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Resumen: Utilice a esta guía de laboratorio de prueba para crear una suscripción de prueba de Office 365 para pruebas y desarrollo o de evaluación.'
-ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365
 
@@ -26,7 +29,7 @@ Puede usar una suscripción de prueba de Office 365 y crear un entorno de desarr
   
 - El entorno de desarrollo y pruebas ligero de Office 365 consiste en una suscripción de prueba de Office 365 a la que puede tener acceso desde su equipo principal.
     
-    Use este entorno cuando quiera demostrar rápidamente una característica. Para el entorno de desarrollo y pruebas ligero de Office 365, complete las fases 2 y 3 de este artículo.
+    Utilice este entorno cuando desee demostrar rápidamente una característica. Para el entorno de desarrollo y prueba ligero de Office 365, complete solamente las fases 2 y 3 del presente artículo.
     
 - El entorno de desarrollo y pruebas de una empresa simulada de Office 365 consiste en una suscripción de prueba a Office 365 y una intranet simplificada de una organización conectada a Internet, que se hospeda en los servicios de infraestructura de Microsoft Azure. Puede crear esta configuración completamente en la nube de Microsoft.
     
@@ -56,13 +59,13 @@ Esta configuración básica se compone de las máquinas virtuales DC1, APP1 y CL
 
 Para iniciar la suscripción de prueba a Office 365 E5, primero necesita el nombre de una compañía ficticia y una nueva cuenta de Microsoft.
   
-1. Se recomienda que utilice una variante del nombre de la compañía Contoso para el nombre de su compañía, que es una empresa ficticia utilizada en contenido de ejemplo de Microsoft, pero no es imprescindible. Registrar el nombre de su compañía ficticia: ___.
+1. Se recomienda que utilice una variante del nombre de la compañía Contoso para el nombre de su compañía, que es una empresa ficticia utilizada en contenido de ejemplo de Microsoft, pero no es imprescindible. Registre el nombre de la organización ficticia:![](./images/Common_Images/TableLine.png)
     
 2. Para obtener una nueva cuenta de Microsoft, vaya a [https://outlook.com](https://outlook.com) y cree una cuenta con una nueva cuenta de correo electrónico y la dirección. Utilizará esta cuenta para suscribirse a Office 365.
     
-  - Registrar el nombre y apellidos de su nueva cuenta: ___.
+  - Registre el nombre y apellidos de su nueva cuenta:![](./images/Common_Images/TableLine.png)
     
-  - Anote aquí la dirección de la nueva cuenta de correo: _____________________________@outlook.com
+  - Registrar la nueva cuenta dirección de correo electrónico aquí: ![](./images/Common_Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrarse para una suscripción de prueba a Office 365 E5
 
@@ -105,7 +108,7 @@ Stop-Process -Name Explorer -Force
     
     Anote en un lugar seguro la contraseña que ha escrito.
     
-    Registre el nombre de su compañía ficticia, que se conoce como el **nombre de la organización**, aquí: ___.
+    Registre el nombre de su compañía ficticia, que se conoce como el **nombre de la organización**, aquí:![](./images/Common_Images/TableLine.png)
     
 5. Haga clic en **Crear mi cuenta**.
     
@@ -113,9 +116,9 @@ Stop-Process -Name Explorer -Force
     
 7. Escriba el código de verificación del mensaje de texto recibido y, a continuación, haga clic en **siguiente**.
     
-8. Registrar la página de inicio de sesión URL aquí (seleccionar y copiar): ___.
+8. Registrar la página de inicio de sesión URL aquí (seleccionar y copiar):![](./images/Common_Images/TableLine.png)
     
-9. Anote aquí el id. de usuario (seleccionar y copiar): __________________________________.onmicrosoft.com
+9. Registrar el identificador de usuario aquí (seleccionar y copiar): ![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
     Este valor se denomina el **nombre de administrador global de Office 365**.
     
@@ -229,11 +232,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 Anote estos valores para trabajar con o implementar guías del laboratorio de pruebas adicionales en este entorno de pruebas:
   
-- Nombre del administrador global de Office 365: ____________________________________.onmicrosoft.com (del paso 9 de la fase 2)
+- Nombre del administrador global de Office 365: ![](./images/Common_Images/TableLine.png). onmicrosoft.com (desde el paso 9 de la fase 2)
     
     Guarde también la contraseña de esta cuenta en una ubicación segura.
     
-- Nombre de la organización de la suscripción de prueba: _______________________________________________ (del paso 4 de la fase 2)
+- Nombre de la organización de su suscripción de prueba: ![](./images/Common_Images/TableLine.png) (desde el paso 4 de la fase 2)
     
 - Para mostrar las cuentas de los usuarios 2, 3, 4 y 5, ejecute los siguientes comandos desde el símbolo del sistema del Módulo de Windows Azure Active Directory para Windows PowerShell.
     
@@ -243,13 +246,13 @@ Anote estos valores para trabajar con o implementar guías del laboratorio de pr
 
     Anote aquí los nombres de las cuentas:
     
-  - Nombre de la cuenta de usuario 2: usuario2@_______________________________________________.onmicrosoft.com
+  - Nombre de la cuenta de usuario 2: usuario2 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - Nombre de la cuenta de usuario 3: usuario3@_______________________________________________.onmicrosoft.com
+  - Nombre de la cuenta de usuario 3: usuario3 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - Nombre de la cuenta de usuario 4: usuario4@_______________________________________________.onmicrosoft.com
+  - Nombre de la cuenta de usuario 4: user4 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - Nombre de la cuenta de usuario 5: usuario5@_______________________________________________.onmicrosoft.com
+  - Nombre de la cuenta de usuario 5: usuario5 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
     Guarde también las contraseñas de estas cuentas en una ubicación segura.
     
@@ -259,11 +262,11 @@ Anote estos valores para trabajar con o implementar guías del laboratorio de pr
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - Dirección URL del sitio de producción:https://______________________________________________.sharepoint.com/sites/production
+  - Dirección URL del sitio de producción: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
     
-  - Dirección URL del sitio de ventas:https://______________________________________________.sharepoint.com/sites/sales
+  - Dirección URL del sitio de ventas: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
     
-  - Dirección URL del sitio de soporte técnico:https://______________________________________________.sharepoint.com/sites/support
+  - Dirección URL del sitio de soporte: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -295,10 +298,10 @@ Extienda el entorno de desarrollo y pruebas de Office 365 para incluir ofertas a
     
 ## <a name="see-also"></a>Consulte también
 
-[Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+- [Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Entorno de desarrollo y pruebas de Office 365 y Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+- [Entorno de desarrollo y pruebas de Office 365 y Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
   
-[Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
+ - [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 

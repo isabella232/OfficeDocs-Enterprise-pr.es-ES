@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumen: Comprender las relaciones de las organizaciones, suscripciones, licencias, cuentas de usuario y los inquilinos en las ofertas de nube de Microsoft.'
-ms.openlocfilehash: a1bcc040d046e4e5674f16432aeffb0a34b9031b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: ff4854bc66f9a500715bbcd2da696b9a4519aa82
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, las cuentas y los inquilinos para las ofertas de nube de Microsoft
 
@@ -150,7 +149,7 @@ En la siguiente tabla se describe cómo combinar varias ofertas de la nube de Mi
    
 Una forma fácil de agregar suscripciones a su organización para los servicios basados en SaaS de Microsoft es a través del centro de administración de Office 365:
   
-1. Iniciar sesión en el portal de Office 365 ([https://portal.office.com](https://portal.office.com)) con la cuenta de administrador global y, a continuación, haga clic en **Admin**.
+1. Iniciar sesión en el portal de Office 365 ([https://portal.office.com](https://portal.office.com)) con el administrador global de cuenta y, a continuación, haga clic en **Admin**.
     
 2. En la barra de navegación izquierda de la página principal de **Administración central** , haga clic en **facturación**y, a continuación, en **Servicios de compra**.
     

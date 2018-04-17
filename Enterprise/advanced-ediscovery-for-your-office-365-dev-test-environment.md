@@ -1,5 +1,5 @@
 ---
-title: "Exhibición avanzada de documentos electrónicos para el entorno de desarrollo y pruebas de Office 365"
+title: Exhibición avanzada de documentos electrónicos para el entorno de desarrollo y pruebas de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,15 +10,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- TLG-
+- TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Resumen: Configurar y demostrar eDiscovery avanzada de Office 365 con datos de ejemplo en el entorno de desarrollo y prueba de Office 365.'
-ms.openlocfilehash: a118ec2753d04afb60d13890b7d5da8c07701721
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: e850cf7ebab806d8ff51176a3e88077a692c41ef
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Exhibición avanzada de documentos electrónicos para el entorno de desarrollo y pruebas de Office 365
 
@@ -44,7 +44,7 @@ Si desea probar eDiscovery avanzada en una empresa simulada, siga las instruccio
 
 En este procedimiento, se crean mensajes de correo electrónico que posteriormente podrá analizar en un caso de exhibición avanzada de documentos electrónicos.
   
-1. Abra Internet Explorer e inicie sesión en [https://outlook.com](https://outlook.com) a la cuenta de Outlook que creó en la fase 2 del[entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md).
+1. Abra Internet Explorer e iniciar sesión en [https://outlook.com](https://outlook.com) a la cuenta de Outlook que creó en la fase 2 del[entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md).
     
   - Si usa el entorno de desarrollo y pruebas ligero, abra una sesión privada con Internet Explorer e inicie sesión desde el equipo local.
     

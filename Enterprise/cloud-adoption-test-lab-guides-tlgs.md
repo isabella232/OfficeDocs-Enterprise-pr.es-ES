@@ -1,5 +1,5 @@
 ---
-title: "Guías del laboratorio de pruebas de adopción de la nube (TLG)"
+title: Guías del laboratorio de pruebas de adopción de la nube (TLG)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: "Resumen: Utilice estas guías de laboratorio de prueba (TLGs) de adopción de nube para configurar demostración, prueba de concepto o entornos de prueba/desarrollo para Office 365, movilidad en la empresa + seguridad (EMS), Dynamics 365 y productos de servidor de Office."
-ms.openlocfilehash: 3172b6033fbb7dd79b8eb786d92a4f58886a8fd5
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumen: Utilice estas guías de laboratorio de prueba (TLGs) de adopción de nube para configurar demostración, prueba de concepto o entornos de prueba/desarrollo para Office 365, movilidad en la empresa + seguridad (EMS), Dynamics 365 y productos de servidor de Office.'
+ms.openlocfilehash: 1597bcefbcfa578e74d96676b3ea446c72a080bc
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Guías del laboratorio de pruebas de adopción de la nube (TLG)
 
@@ -142,7 +141,7 @@ Puede crear un entorno de pruebas y desarrollo simulado de varias ubicaciones qu
 
 Estos son entornos adicionales de desarrollo y pruebas basados en la nube que puede crear en los servicios de infraestructura de Azure:
   
-- [Entorno de desarrollo y prueba de 2016 de SharePoint Server en Azure](https://technet.microsoft.com/library/mt723354.aspx)
+- [Entorno de desarrollo y pruebas de SharePoint Server 2016 en Azure](https://technet.microsoft.com/library/mt723354.aspx)
     
     Cree una granja de un solo servidor de SharePoint Server 2016 en los servicios de infraestructura de Azure.
     
@@ -154,7 +153,7 @@ Estos son entornos adicionales de desarrollo y pruebas basados en la nube que pu
     
     Cree granjas de servidores básicas y de alta disponibilidad de SharePoint Server 2013 en los servicios de infraestructura de Azure.
     
-**Participar en la discusión**
+**Participar en el debate**
 
 |**Póngase en contacto con nosotros**|**Descripción**|
 |:-----|:-----|

@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 'Resumen: Utilice a esta guía de laboratorio de prueba para crear un entorno de pruebas y desarrollo que incluye Office 365 E5, movilidad en la empresa + E5 de seguridad (EMS) y un equipo que ejecuta Windows 10 Enterprise.'
-ms.openlocfilehash: f4100a870191f03f82e7af5e79e710ee1403e8c7
-ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
+ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>El entorno de pruebas y desarrollo empresarial de Microsoft 365
 
@@ -90,10 +89,10 @@ Crear una máquina virtual utilizando el hipervisor de su elección e instale Wi
   
 ### <a name="virtual-machine-in-azure"></a>Máquina virtual en Azure
 
-Crear una máquina virtual de Windows 10 en Azure de Microsoft utilizando la imagen de la Galería de Azure.
+Para crear una máquina virtual de Windows 10 en Azure de Microsoft, ***debe tener una suscripción basada en Visual Studio***, que tiene acceso a la imagen de Windows 10 Enterprise. Otros tipos de suscripciones de Azure, como suscripciones de prueba y de pagadas, no tienen acceso a esta imagen.
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilizan la versión más reciente te de PowerShell de Azure. Consulte [Introducción a los cmdlets de PowerShell de Azure](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Estos generación de conjuntos de una máquina virtual de Windows 10 Enterprise de comando denominado WIN10 y todos su infraestructura necesaria, incluyendo una red virtual, una cuenta de almacenamiento y un grupo de recursos. Si ya está familiarizado con los servicios de infraestructura de Azure, por favor adaptar estas instrucciones para adaptarse a la infraestructura implementada actualmente. 
+> Los siguientes conjuntos de comandos utilice la última versión de PowerShell de Azure. Consulte [Introducción a los cmdlets de PowerShell de Azure](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Estos generación de conjuntos de una máquina virtual de Windows 10 Enterprise de comando denominado WIN10 y todos su infraestructura necesaria, incluyendo una red virtual, una cuenta de almacenamiento y un grupo de recursos. Si ya está familiarizado con los servicios de infraestructura de Azure, por favor adaptar estas instrucciones para adaptarse a la infraestructura implementada actualmente. 
   
 En primer lugar, inicie un símbolo del sistema de Microsoft PowerShell.
   
@@ -205,7 +204,5 @@ Uso de estos artículos adicionales para explorar las características de empres
 ## <a name="see-also"></a>Consulte también
 
 - [Documentación de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
-
- - [Implementar Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
-
+- [Implementar Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [El entorno de desarrollo y prueba de una nube de Microsoft](the-one-microsoft-cloud-dev-test-environment.md)

@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
-description: "Resumen: Utilice a esta guía de laboratorio de prueba para crear un entorno de pruebas y desarrollo que incluye todas las ofertas de nube de Microsoft."
-ms.openlocfilehash: 90f93b1050ec0c2b82f4ed42c76413d68b314b7c
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumen: Utilice a esta guía de laboratorio de prueba para crear un entorno de pruebas y desarrollo que incluye todas las ofertas de nube de Microsoft.'
+ms.openlocfilehash: c1d0e190e6d7e3871cf4289729b53cc0b4b5d04d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>El entorno de desarrollo y prueba de una nube de Microsoft
 
@@ -59,22 +58,22 @@ En esta fase, se inscribirá en la suscripción de prueba de EMS y la agregará 
   
 1. Con un explorador ya sea el equipo de escritorio o desde CLIENTE1, iniciar sesión en el portal de Office 365 en [https://portal.office.com](https://portal.office.com) con las credenciales de la cuenta de administrador global.
     
-2. Haga clic en el mosaico de **Admin** .
+2. Haga clic en el icono **Administración**.
     
-3. En la ficha del **Centro de administración de Office** en el explorador, en la exploración de la izquierda, haga clic en **de facturación > adquirir servicios**.
+3. En la pestaña **Centro de administración de Office** del explorador, en el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
     
 4. En la página **Servicios de compra** , busque el elemento de **seguridad E5 + de movilidad en la empresa** . Sitúe el puntero del mouse sobre él y haga clic en **iniciar la versión de prueba gratuita**.
     
-5. En la página **confirmar su pedido** , haga clic en **Probar ahora**.
+5. En la página **Confirmar pedido**, haga clic en **Probar ahora**.
     
-6. En la página de **confirmación del pedido** , haga clic en **continuar**.
+6. En la página **Recibo del pedido**, haga clic en **Continuar**.
     
 > [!NOTE]
 > La suscripción de prueba a Enterprise Mobility + Security E5 tiene una duración de 90 días. Si quiere usar un entorno de pruebas y desarrollo permanente, cree una nueva suscripción de pago con un número reducido de licencias. 
   
 A continuación, habilitar la movilidad en la empresa + licencia E5 de seguridad para todas las cuentas de usuario.
   
-1. En la ficha del **Centro de administración de Office 365** en el explorador, en la exploración de la izquierda, haga clic en **los usuarios > usuarios activos**.
+1. En la pestaña **Centro de administración de Office 365** del explorador, en el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
     
 2. Haga clic en la cuenta de administrador global y, a continuación, haga clic en **Editar** para **licencias de producto**.
     
@@ -102,15 +101,15 @@ En esta fase, Inscríbase en la suscripción de prueba de Dynamics 365 y agregar
   
 1. Con un navegador desde ya sea el equipo de escritorio o desde CLIENTE1, iniciar sesión en el portal de Office 365 en [https://portal.office.com](https://portal.office.com) con las credenciales de la cuenta de administrador global.
     
-2. Haga clic en el mosaico de **Admin** .
+2. Haga clic en el icono **Administración**.
     
 3. En la ficha del **Centro de administración de Office** , en la exploración de la izquierda, haga clic en **de facturación > adquirir servicios**.
     
 4. En la página **Servicios de compra** , busque el elemento **Dynamics 365 Plan 1 Enterprise Edition** . Sitúe el puntero del mouse sobre él y haga clic en **iniciar la versión de prueba gratuita**.
     
-5. En la página **confirmar su pedido** , haga clic en **Probar ahora**.
+5. En la página **Confirmar pedido**, haga clic en **Probar ahora**.
     
-6. En la página de **confirmación del pedido** , haga clic en **continuar**.
+6. En la página **Recibo del pedido**, haga clic en **Continuar**.
     
 > [!NOTE]
 > La suscripción de prueba de Dynamics 365 Plan 1 Enterprise Edition es de 30 días. Puede extender fácilmente la suscripción de prueba otros 30 días. Para un entorno de pruebas y desarrollo permanente, cree una nueva suscripción de pago con un número reducido de licencias. 

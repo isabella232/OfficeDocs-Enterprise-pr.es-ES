@@ -1,5 +1,5 @@
 ---
-title: Proteger los archivos y los sitios de SharePoint Online
+title: Protección de archivos y sitios de SharePoint Online
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -12,121 +12,120 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
-description: "Resumen: Recomendaciones de configuración para proteger los archivos en SharePoint Online y Office 365."
-ms.openlocfilehash: 035c3e69a430269b382ab032387a44cc3cbbbfd6
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumen: Recomendaciones de configuración para proteger los archivos en SharePoint Online y Office 365.'
+ms.openlocfilehash: 800d81d657164b2a936b95764d57fd092cfa21cc
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="secure-sharepoint-online-sites-and-files"></a>Proteger los archivos y los sitios de SharePoint Online
+# <a name="secure-sharepoint-online-sites-and-files"></a>Protección de archivos y sitios de SharePoint Online
 
  **Resumen:** Recomendaciones de configuración para proteger los archivos en SharePoint Online y Office 365.
   
 En este artículo se ofrece recomendaciones para configurar sitios de equipo de SharePoint Online y protección de archivos que equilibra la seguridad con la facilidad de colaboración. Este artículo define cuatro configuraciones distintas, a partir de un sitio público dentro de su organización con las directivas de uso compartidas más abiertas. Cada configuración adicional representa un paso significativo de protección, pero se reduce la capacidad de acceso y colaborar en los recursos para el conjunto pertinente de los usuarios. Utilice estas recomendaciones como punto de partida y ajustar las configuraciones para satisfacer las necesidades de su organización. 
   
-Las configuraciones en este artículo se alinean con las recomendaciones de Microsoft para tres niveles de protección de datos, identidades y dispositivos:
+Las configuraciones que se explican en este artículo concuerdan con las recomendaciones de Microsoft para los tres niveles de protección de datos, identidades y dispositivos:
   
-- Protección básica
+- Protección de base de referencia
     
 - Protección confidencial
     
-- Protección altamente confidencial
+- Protección extremadamente confidencial
     
-Para obtener más información acerca de estos niveles y capacidades recomendadas para cada nivel, consulte los siguientes recursos. 
+Para más información sobre estos niveles y capacidades recomendadas para cada nivel, vea los siguientes recursos. 
   
 - [Protección de identidades y dispositivos para Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     
 - [Soluciones de protección de archivos en Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
     
-## <a name="capability-overview"></a>Resumen de la capacidad
+## <a name="capability-overview"></a>Introducción a las capacidades
 
-Recomendaciones para los sitios de SharePoint Online equipo dibujar en una variedad de capacidades de Office 365. Sitios altamente confidencial, se recomienda la protección de la información de Azure. Esto se incluye en la movilidad en la empresa + seguridad (EMS). 
+Las recomendaciones para sitios de grupo de SharePoint Online abarcan toda una variedad de capacidades de Office 365. Para sitios extremadamente confidenciales, se recomienda Azure Information Protection. Está incluido en Enterprise Mobility + Security (EMS). 
   
 La ilustración siguiente muestra las configuraciones recomendadas para cuatro sitios de equipo de SharePoint Online.
   
 ![Configuración recomendada para sitios de SharePoint](images/ad0dcd70-f6f5-465c-8d16-1889481ca07a.png)
   
-Tal como se muestra:
+Como se muestra:
   
-- Protección básica incluye dos opciones para sitios de equipo de SharePoint Online: un sitio público y sitio privado. Sitios públicos pueden ser detectados y acceso a alguien de la organización. Sitios privados sólo pueden ser detectados y tener acceso a los miembros del sitio. Ambas de estas configuraciones de sitio permiten compartir fuera del grupo. 
+- La protección de base de referencia incluye dos opciones para los sitios de grupo de SharePoint Online: un sitio público y un sitio privado. Los sitios públicos son aquellos visibles y accesibles por cualquier persona de la organización. Los sitios privados solo pueden detectarlos y acceder a ellos los miembros del sitio. Estas dos configuraciones de sitio permiten compartir fuera del grupo. 
     
-- Protección altamente confidencial y sensible en los sitios son sitios privados con acceso limitado sólo a los miembros de grupos específicos.
+- Los sitios para protección confidencial y extremadamente confidencial son sitios privados con acceso limitado solamente a los miembros de grupos específicos.
     
-- Etiquetas de Office 365 proporcionan una manera de clasificar los datos con un nivel de protección necesaria. Cada uno de los sitios de equipo de SharePoint Online se configuran automáticamente archivos de etiqueta en bibliotecas de documentos con una etiqueta predeterminada para el sitio. Correspondientes a las configuraciones de cuatro sitios, las etiquetas en este ejemplo son internos Public, Private, sensible y altamente confidencial. Los usuarios pueden cambiar las etiquetas, pero esta configuración asegura que todos los archivos reciban una etiqueta default.
+- Con las etiquetas de Office 365, se pueden clasificar los datos con un nivel de protección necesario. Cada sitio de grupo de SharePoint Online está configurado para etiquetar automáticamente los archivos de bibliotecas de documentos con una etiqueta predeterminada para el sitio. Las etiquetas de este ejemplo son Interno público, Privado, Confidencial y Extremadamente confidencial, que se corresponden con las cuatro configuraciones de sitio. Los usuarios pueden cambiar las etiquetas, pero esta configuración garantiza que todos los archivos reciben una etiqueta predeterminada.
     
-- Las políticas de prevención (DLP) de pérdida de datos se configuran para que las etiquetas altamente confidencial Office 365 y sensibles a advertir o impedir que los usuarios cuando intentan enviar estos tipos de archivos fuera de la organización.
+- Las directivas de prevención de pérdida de datos (DLP) se configuran para que las etiquetas Confidencial y Extremadamente confidencial de Office 365 puedan advertir o prevenir a los usuarios cuando intentan enviar estos tipos de archivo fuera de la organización.
     
-- Para los sitios configurados con protección altamente confidencial, protección de la información de Azure cifra y concede permisos para los archivos.
+- Para los sitios configurados con protección extremadamente confidencial, Azure Information Protection cifra y concede permisos para los archivos.
     
-## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Configuración de inquilinos todo para SharePoint Online y OneDrive para el negocio
+## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Configuración de todos los inquilinos para SharePoint Online y OneDrive para la Empresa
 
-SharePoint Online y OneDrive para los negocios incluyen la configuración de todo el inquilino que afectan a todos los sitios y los usuarios. Algunas de estas opciones pueden ajustarse en el nivel del sitio para que sea más restrictivo (pero no inferior). Esta sección trata la configuración inquilinos que afectan a la seguridad y la colaboración. 
+SharePoint Online y OneDrive para la Empresa incluyen opciones de configuración de todos los inquilinos que afectan a todos los sitios y usuarios. Algunas de estas opciones también se pueden ajustar en el nivel de sitio para que sea más restrictivo (pero no para que lo sea menos). En esta sección se describe la configuración de todos los inquilinos que afecta a la seguridad y la colaboración. 
   
 ### <a name="sharing"></a>Uso compartido
 
-Para esta solución, se recomienda la siguiente configuración de inquilinos:
+Para esta solución, se recomienda la siguiente configuración de todos los inquilinos:
   
-- Mantenga la predeterminada compartir directiva que permita el uso compartido con todos los tipos de cuenta, incluido el uso compartido de anónimo.
+- Mantenga la directiva de uso compartido predeterminada, que permite compartir con todos los tipos de cuenta, incluso de forma anónima.
     
-- Establecer vínculos anónimos caduque, si lo desea.
+- Establezca la expiración de los vínculos anónimos, si así lo quiere.
     
-- Cambiar el tipo de vínculo predeterminado para compartir como interna. Esto ayuda a prevenir la pérdida accidental de datos fuera de la organización.
+- Establezca en Interno el tipo de vínculo predeterminado para el uso compartido. De esta manera se previene la pérdida accidental de datos fuera de la organización.
     
-Aunque pueda parecer poco intuitiva para permitir el uso compartido externo, este enfoque proporciona más control sobre comparado con el envío de archivos por correo electrónico el uso compartido de archivos. SharePoint Online y Outlook colaboran para proporcionar colaboración segura de archivos. 
+Aunque pueda parecer contradictorio permitir el uso compartido externo, este enfoque proporciona más control sobre el uso compartido de archivos en comparación con el envío de archivos por correo electrónico. SharePoint Online y Outlook funcionan conjuntamente para proporcionar una colaboración segura en los archivos. 
   
-- De forma predeterminada, Outlook comparte un vínculo a un archivo en lugar de enviar el archivo por correo electrónico. 
+- De manera predeterminada, Outlook comparte un vínculo a un archivo en lugar de enviar el archivo por correo electrónico. 
     
 - SharePoint Online y OneDrive para el negocio facilitan compartir vínculos a archivos con colaboradores que están tanto dentro como fuera de la organización
     
-También tiene los controles y regulan el intercambio externo. Por ejemplo, puede:
+También tiene controles que ayudan a regir el uso compartido externo. Por ejemplo, puede:
   
 - Deshabilitar un vínculo de invitado anónimo.
     
 - Revocar el acceso de usuario a un sitio.
     
-- Vea quién tiene acceso a un sitio específico o un documento.
+- Ver quién tiene acceso a un sitio o documento específico.
     
-- Establecer vínculos para compartir anónimo a punto de caducar (establecer el arrendatario).
+- Establecer la expiración de vínculos anónimos de uso compartido (configuración de inquilino).
     
-- Limitar quién puede compartir fuera de su organización (establecer el arrendatario).
+- Limitar quién puede compartir fuera de la organización (configuración de inquilino).
     
-### <a name="use-external-sharing-together-with-data-loss-prevention-dlp"></a>Uso externo compartiendo junto con la prevención de pérdidas de datos (DLP)
+### <a name="use-external-sharing-together-with-data-loss-prevention-dlp"></a>Combinar el uso compartido externo con la prevención de pérdida de datos (DLP)
 
 Si no desea permitir compartir externos, los usuarios con una empresa necesitan encontrará métodos y herramientas alternativas. Microsoft recomienda que combinar compartir externo con las directivas de DLP para proteger los archivos confidenciales y altamente confidenciales.
   
-### <a name="device-access-settings"></a>Configuración de acceso de dispositivo
+### <a name="device-access-settings"></a>Configuración de acceso a dispositivos
 
 Configuración de acceso de dispositivo para SharePoint Online y OneDrive para el negocio permite determinar si el acceso está limitado a sólo explorador (no se pueden descargar archivos) o si se bloquea el acceso. Estos valores están actualmente en la primera versión y aplican todo el arrendatario. Próximamente es la capacidad de configurar las directivas de acceso de dispositivo en el nivel de sitio. Para esta solución, se recomienda no utilizar configuración de acceso de dispositivo que se aplican a todo el arrendatario.
   
-Para utilizar la configuración de acceso de dispositivo mientras se encuentran en la primera versión: [Configurar el estándar o las primeras opciones liberar en Office 365](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47).
+Para usar la configuración de acceso a dispositivos mientras se encuentra en First Release: [Configurar las opciones de los programas Estándar o First Release de Office 365](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47).
   
 ### <a name="onedrive-for-business"></a>OneDrive para la Empresa
 
-Visite estos valores para decidir si desea cambiar la configuración predeterminada para la OneDrive de los sitios comerciales. Actualmente, la configuración de acceso de uso compartido y el dispositivo se duplica desde el centro de administración de SharePoint Online y se aplica a ambos entornos.
+Revise esta configuración para decidir si quiere cambiar la configuración predeterminada para los sitios de OneDrive para la Empresa. Actualmente, las configuraciones de acceso a dispositivos y de uso compartido están duplicadas desde el centro de administración de SharePoint Online y se aplican a ambos entornos.
   
-## <a name="sharepoint-team-site-configuration"></a>Configuración de sitio de SharePoint team
+## <a name="sharepoint-team-site-configuration"></a>Configuración del sitio de grupo de SharePoint
 
-La tabla siguiente resume la configuración para cada uno de los sitios de equipo descritos anteriormente en este artículo. Utilice estas configuraciones como recomendaciones de punto de partida y ajustar los tipos de sitio y configuraciones para satisfacer las necesidades de su organización. No todas las organizaciones deben cada tipo de sitio. Sólo un pequeño número de organizaciones requiere protección altamente confidencial.
+En la tabla siguiente se resume la configuración para cada uno de los sitios de grupo que se han descrito en este artículo. Use estas configuraciones como punto de partida y ajuste los tipos de sitio y las configuraciones para satisfacer las necesidades de la organización. No todas las organizaciones necesitan todos los tipos de sitio. El número de organizaciones que necesita una protección extremadamente confidencial es muy reducido.
   
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-||**Protección básica #1** <br/> |**Protección básica #2** <br/> |**Protección confidencial** <br/> |**Altamente confidencial** <br/> |
-|Descripción  <br/> |Abra el descubrimiento y la colaboración dentro de la organización.  <br/> |Sitio privado y grupo con uso compartido permitido fuera del grupo.  <br/> |Sitio aislado, en el que se definen los niveles de acceso por la pertenencia a grupos específicos. Sólo se permite el uso compartido a los miembros del sitio. DLP advierte a los usuarios al intentar enviar archivos fuera de la organización.  <br/> |Sitio aislado + cifrado de archivos y permisos con protección de la información de Azure. DLP impide que los usuarios envíen archivos fuera de la organización.  <br/> |
-|Sitio de grupo privado o público  <br/> |Público  <br/> |Privada  <br/> |Privada  <br/> |Privada  <br/> |
-|¿Quién tiene acceso?  <br/> |Todos los miembros de la organización, incluidos los usuarios de B2B y los invitados.  <br/> |Miembros del sitio sólo. Otros usuarios pueden solicitar el acceso.  <br/> |Miembros del sitio sólo. Otros usuarios pueden solicitar el acceso.  <br/> |Sólo los miembros. Otros usuarios no pueden solicitar el acceso.  <br/> |
-|Controles de nivel de sitio para compartir  <br/> |Compartir permitidos con nadie. La configuración predeterminada.  <br/> |Compartir permitidos con nadie. La configuración predeterminada.  <br/> |Los miembros no pueden compartir el acceso al sitio.  <br/> Que no sean miembros pueden solicitar acceso al sitio, pero estas solicitudes deben solucionarse por un administrador del sitio.  <br/> |Los miembros no pueden compartir el acceso al sitio.  <br/> Que no sean miembros no pueden solicitar acceso al sitio o al contenido.  <br/> |
-|Controles de acceso de dispositivo de nivel de sitio  <br/> |No hay controles adicionales.  <br/> |No hay controles adicionales.  <br/> |Controles de nivel de sitio son muy pronto, lo que impide que los usuarios descargar archivos en dispositivos combinados no conformes o no sea de dominio. Esto permite el acceso sólo mediante navegador de todos los demás dispositivos.  <br/> |Controles de nivel de sitio son muy pronto, que bloquea la descarga de archivos a dispositivos combinados no conformes o no sea de dominio.  <br/> |
-|Etiquetas de Office 365  <br/> |Público interno  <br/> |Privada  <br/> |Confidencial  <br/> |Altamente confidencial  <br/> |
-|Directivas de DLP  <br/> |||Advertir a los usuarios enviar archivos etiquetados como delicada fuera de la organización.  <br/> Para bloquear el intercambio externo de tipos de datos confidenciales, como números de tarjetas de crédito u otros datos personales, puede configurar directivas DLP adicionales para estos tipos de datos (incluidos los tipos de datos personalizados que configura).  <br/> |Impedir que los usuarios envíen archivos etiquetados como altamente confidenciales fuera de la organización. Permitir a los usuarios reemplazar esto proporcionando justificación, incluidos los que están compartiendo el archivo con.  <br/> |
+||**Protección de base de referencia n.º 1** <br/> |**Protección de base de referencia n.º 2** <br/> |**Protección confidencial** <br/> |**Extremadamente confidencial** <br/> |
+|Descripción  <br/> |Colaboración y detección abierta dentro de la organización.  <br/> |Grupo y sitio privado con uso compartido permitido fuera del grupo.  <br/> |Sitio aislado, en el que se definen niveles de acceso según la pertenencia a grupos específicos. Solo se permite el uso compartido a los miembros del sitio. DLP avisa a los usuarios cuando intentan enviar archivos fuera de la organización.  <br/> |Sitio aislado + cifrado de archivos y permisos con Azure Information Protection. DLP impide a los usuarios enviar archivos fuera de la organización.  <br/> |
+|Sitio de grupo público o privado  <br/> |Público  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
+|¿Quién tiene acceso?  <br/> |Todos los usuarios de la organización, incluidos los usuarios B2B y usuarios invitados.  <br/> |Solo los miembros del sitio. Otros usuarios pueden pedir acceso.  <br/> |Solo los miembros del sitio. Otros usuarios pueden pedir acceso.  <br/> |Solo los miembros. Otros usuarios no pueden pedir acceso.  <br/> |
+|Controles de uso compartido en el nivel de sitio  <br/> |Uso compartido permitido con cualquier usuario. Configuración predeterminada.  <br/> |Uso compartido permitido con cualquier usuario. Configuración predeterminada.  <br/> |Los miembros no pueden compartir el acceso al sitio.  <br/> Los usuarios que no son miembros pueden pedir acceso al sitio, pero estas solicitudes deben ser supervisadas por un administrador del sitio.  <br/> |Los miembros no pueden compartir el acceso al sitio.  <br/> Los usuarios que no son miembros no pueden pedir acceso al sitio o al contenido.  <br/> |
+|Controles de acceso a dispositivos en el nivel de sitio  <br/> |Sin controles adicionales.  <br/> |Sin controles adicionales.  <br/> |Pronto se incorporarán controles de nivel de sitio, que impiden a los usuarios descargar archivos en dispositivos no compatibles o que no están unidos a ningún dispositivo. Esto permite solamente el acceso de explorador desde los demás dispositivos.  <br/> |Pronto se incorporarán controles de nivel de sitio, que bloquean la descarga de archivos en dispositivos no compatibles o que no están unidos a ningún dominio.  <br/> |
+|Etiquetas de Office 365  <br/> |Interno público  <br/> |Private  <br/> |Confidencial  <br/> |Extremadamente confidencial  <br/> |
+|Directivas DLP  <br/> |||Advierten a los usuarios cuando se envían archivos etiquetados como Confidenciales fuera de la organización.  <br/> Para bloquear el uso compartido externo de tipos de datos confidenciales, como números de tarjeta de crédito u otros datos personales, puede configurar directivas DLP adicionales para estos tipos de datos (incluidos los tipos de datos personalizados que configure).  <br/> |Impiden a los usuarios enviar archivos etiquetados como Extremadamente confidencial fuera de la organización. Permiten a los usuarios anular esto si proporcionan una justificación que incluya el nombre del usuario con el que van a compartir el archivo.  <br/> |
 |Azure Information Protection  <br/> ||||Utilice la protección de la información de Azure para cifrar automáticamente y conceder permisos a los archivos. Esta protección se desplaza con los archivos en caso de se produzca la pérdida.  <br/> Office 365 no puede leer los archivos cifrados con protección de la información de Azure. Además, las directivas de DLP sólo pueden trabajar con los metadatos (incluidas etiquetas), pero no el contenido de estos archivos (como números de tarjeta de crédito dentro de los archivos).  <br/> |
    
 Para que los pasos para implementar los cuatro tipos diferentes de sitios de SharePoint Online team en esta solución, vea [implementar SharePoint Online sitios para tres niveles de protección](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md). Para que los pasos para crear un entorno de pruebas y desarrollo, consulte [sitios seguro en línea de SharePoint en un entorno de pruebas y desarrollo](secure-sharepoint-online-sites-in-a-dev-test-environment.md). 
   
-## <a name="office-365-classification-and-labels"></a>Las etiquetas y la clasificación de office 365
+## <a name="office-365-classification-and-labels"></a>Clasificación y etiquetas de Office 365
 
 Con las etiquetas de Office 365 se recomienda para entornos con datos confidenciales. Después de configurar y publicar Office 365 etiquetas:
   
@@ -140,35 +139,35 @@ Con las etiquetas de Office 365 se recomienda para entornos con datos confidenci
     
 ![Configuración recomendada para sitios de SharePoint](images/7fed0126-ab4a-4480-922c-681970642339.png)
   
-Como se muestra, esta solución incluye la creación de las etiquetas siguientes:
+Como se muestra, esta solución incluye la creación de las siguientes etiquetas:
   
-- Altamente confidencial
+- Extremadamente confidencial
     
 - Confidencial
     
-- Privada
+- Private
     
-- Público interno
+- Interno público
     
 Estas etiquetas se asignan a los sitios recomendados en las ilustraciones y los gráficos anteriormente en este artículo. Esta solución recomienda la configuración de directivas DLP para ayudar a evitar la pérdida de archivos etiquetados como altamente confidenciales y sensibles.
   
-Para que los pasos para configurar las etiquetas de Office 365 y las directivas de DLP en esta solución, vea [proteger SharePoint Online archivos con etiquetas de Office 365 y DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md).
+Para consultar los pasos necesarios para configurar etiquetas de Office 365 y directivas DLP en esta solución, consulte [Protect SharePoint Online files with Office 365 labels and DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md) (Protección de archivos de SharePoint Online con etiquetas y directivas DLP de Office 365).
   
 ## <a name="azure-information-protection"></a>Azure Information Protection
 
-Utilizar protección de la información de Azure para aplicar las etiquetas y las protecciones que siguen los archivos dondequiera que vayan. Para esta solución, se recomienda que utilizar una directiva de protección de la información de Azure con ámbito y una etiqueta dentro de la etiqueta altamente confidencial para cifrar y conceder permisos a los archivos que necesitan ser protegidos con el mayor nivel de seguridad. 
+Con Azure Information Protection, puede aplicar etiquetas y protecciones a los archivos para que acompañen a los archivos allá donde vayan. Para esta solución, se recomienda usar una directiva con ámbito de Azure Information Protection y una subetiqueta de la etiqueta Extremadamente confidencial para conceder permisos y cifrar los archivos que deben protegerse con el máximo nivel de seguridad. 
   
-Tenga en cuenta que cuando se aplica el cifrado de protección de la información de Azure a archivos almacenados en Office 365, el servicio no puede procesar el contenido de estos archivos. Co-autoría, eDiscovery, búsqueda, Delve y otras características de colaboración no funcionan. Las directivas de DLP sólo pueden trabajar con los metadatos (incluidos los rótulos de Office 365), pero no el contenido de estos archivos (como números de tarjeta de crédito dentro de los archivos).
+Tenga en cuenta que, cuando se aplica el cifrado de Azure Information Protection a los archivos almacenados en Office 365, el servicio no puede procesar el contenido de estos archivos. No funcionan algunas características de colaboración, como la coautoría, eDiscovery, la búsqueda y Delve. Las directivas DLP solo pueden trabajar con los metadatos (incluidas las etiquetas de Office 365), pero no con el contenido de estos archivos (por ejemplo, números de tarjeta de crédito incluidos en los archivos).
   
 ![Azure Information Protection está configurada en Azure y las etiquetas aparecen en la barra de herramientas de cliente](images/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
   
-Tal como se muestra:
+Como se muestra:
   
 - Configurar las directivas de protección de la información de Azure y etiquetas en el portal de Microsoft Azure. Se recomienda configurar una etiqueta dentro de una política de protección de la información de Azure con ámbito.
     
 - Protección de la información de Azure etiquetas mostrar encima como una barra de **protección de la información** en las aplicaciones de Office.
     
-### <a name="adding-permissions-for-external-users"></a>Agregar permisos para usuarios externos
+### <a name="adding-permissions-for-external-users"></a>Agregar permisos a usuarios externos
 
 Hay dos formas de conceder a los usuarios externos el acceso a archivos protegidos con protección de la información de Azure. En ambos casos, los usuarios externos deben tener una cuenta de Azure AD. Si los usuarios externos no son miembros de una organización que utiliza AD Azure, pueden obtener una cuenta de Azure AD como individuo mediante el uso de esta página: [https://aka.ms/aip-signup](https://aka.ms/aip-signup).
   
@@ -180,19 +179,19 @@ Hay dos formas de conceder a los usuarios externos el acceso a archivos protegid
     
      Puede agregar todos los usuarios de una organización (por ejemplo, Fabrikam.com), un grupo de AD Azure (por ejemplo, un grupo de finanzas dentro de una organización) o un usuario individual. Por ejemplo, puede agregar un equipo externo de los reguladores para la protección de una etiqueta. Con este método, los permisos se conceden sólo para archivos protegidos con la etiqueta después de agrega la entidad externa a la protección.
     
-### <a name="deploying-and-using-azure-information-protection"></a>Implementar y utilizar la protección de la información de Azure
+### <a name="deploying-and-using-azure-information-protection"></a>Implementación y uso de Azure Information Protection
 
-Para que los pasos para configurar la protección de la información de Azure en esta solución, vea [proteger SharePoint Online archivos con protección de la información de Azure](protect-sharepoint-online-files-with-azure-information-protection.md).
+Para consultar los pasos necesarios para configurar Azure Information Protection en esta solución, consulte [Protección de archivos de SharePoint Online con Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md).
   
 ## <a name="see-also"></a>Consulte también
 
-[Guía de seguridad de Microsoft para campañas políticas, las ONG y otras organizaciones de Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Soluciones de seguridad](security-solutions.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
   
-[Sitios de SharePoint Online seguros en un entorno de pruebas y desarrollo](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
+[Protección de sitios de SharePoint Online en un entorno de prueba y desarrollo](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
 
 
 

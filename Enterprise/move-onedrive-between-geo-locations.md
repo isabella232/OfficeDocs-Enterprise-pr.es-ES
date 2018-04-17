@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Obtenga información sobre cómo mover un sitio de OneDrive a una ubicación geográfica diferente.
-ms.openlocfilehash: a31f683170fdb83dac90e9d09884c3020d1a47b1
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 7ce9106fa7d8d144f0f8935713b4df926a73fb6b
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Moverlo a una ubicación geográfica diferente OneDrive 
 
@@ -76,9 +77,9 @@ Por ejemplo, para mover el OneDrive de matt@contosoenergy.onmicrosoft.com de eur
 
 Para programar un traslado geográfico para un momento posterior, utilice uno de los siguientes parámetros:
 
--   _PreferredMoveBeginDate_ : el movimiento lo probable es que empiece a esa hora especificada.
+-   _PreferredMoveBeginDate_ : el movimiento lo probable es que empiece a esa hora especificada. Tiempo debe especificarse en la hora Universal coordinada (UTC).
 
--   _PreferredMoveEndDate_ – el probable desplazamiento completarse hasta el momento especificado, en función del mejor esfuerzo.
+-   _PreferredMoveEndDate_ – el probable desplazamiento completarse hasta el momento especificado, en función del mejor esfuerzo. Tiempo debe especificarse en la hora Universal coordinada (UTC). 
 
 ## <a name="cancel-a-onedrive-geo-move"></a>Cancelar un desplazamiento de geo OneDrive 
 
@@ -97,7 +98,7 @@ Los Estados de movimiento se describen en la tabla siguiente.
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Status</strong></th>
+<th align="left"><strong>Estado</strong></th>
 <th align="left"><strong>Descripción</strong></th>
 </tr>
 </thead>
@@ -135,7 +136,7 @@ También puede agregar el `-Verbose` parámetro para obtener una descripción m�
 
 Los usuarios de OneDrive deben observar una interrupción mínima si su OneDrive se mueve a una ubicación geográfica diferente. Aparte de un estado de sólo lectura breve durante el traslado, permisos y vínculos existentes seguirán funcionando como se esperaba una vez completado el movimiento.
 
-### <a name="onedrive-for-business"></a>OneDrive para la Empresa
+### <a name="onedrive-for-business"></a>OneDrive for Business
 
 Mientras se realiza el traslado OneDrive del usuario se establece en sólo lectura. Una vez completado el movimiento, el usuario se dirige a su OneDrive en la nueva ubicación geográfica cuando navegan a OneDrive el iniciador de la aplicación de Office 365 o un explorador web.
 

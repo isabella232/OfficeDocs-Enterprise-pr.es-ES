@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
-description: "Resumen: Utilice a esta guía de laboratorio de pruebas para agregar Dynamics 365 a su entorno de pruebas y desarrollo de Office 365."
-ms.openlocfilehash: f13cf81f989867e543439e1ccb6ecd7f8ba55cb6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 'Resumen: Utilice a esta guía de laboratorio de pruebas para agregar Dynamics 365 a su entorno de pruebas y desarrollo de Office 365.'
+ms.openlocfilehash: 24f121c9e5f8a25bae61ce4a59b42d528ffbda17
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365 y Dynamics 365
 
@@ -58,15 +60,15 @@ En esta fase, se registrará en la suscripción de prueba a Dynamics 365 y la ag
 
 1. Con un navegador desde ya sea el equipo de escritorio (ligero) o desde CLIENTE1 (simulada enterprise), inicie sesión en el portal de Office 365 en [https://portal.office.com](https://portal.office.com) con las credenciales de la cuenta de administrador global.
     
-2. Haga clic en el mosaico de **Admin** .
+2. Haga clic en el icono **Administración**.
     
 3. En la ficha del **Centro de administración de Office** , en la exploración de la izquierda, haga clic en **de facturación > adquirir servicios**.
     
 4. En la página **Servicios de compra** , busque el elemento **Dynamics 365 Plan 1 Enterprise Edition** . Sitúe el puntero del mouse sobre él y haga clic en **iniciar la versión de prueba gratuita**.
     
-5. En la página **confirmar su pedido** , haga clic en **Probar ahora**.
+5. En la página **Confirmar pedido**, haga clic en **Probar ahora**.
     
-6. En la página de **confirmación del pedido** , haga clic en **continuar**.
+6. En la página **Recibo del pedido**, haga clic en **Continuar**.
     
 > [!NOTE]
 > La suscripción de prueba de Dynamics 365 Plan 1 Enterprise Edition es de 30 días. Puede extender fácilmente la suscripción de prueba otros 30 días. Para un entorno de pruebas y desarrollo permanente, cree una nueva suscripción de pago con un número reducido de licencias. 

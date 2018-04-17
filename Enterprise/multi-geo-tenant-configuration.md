@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Aprenda a configurar OneDrive para negocios Multi-Geo.
-ms.openlocfilehash: 4ef31df802eeaedf2eecbdd295d2e359816e4909
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 56268acd319684ecb713e674b8accbe311d08dce
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive para configuración de inquilinos de negocios Multi-Geo
 
@@ -23,7 +24,7 @@ Antes de configurar a su arrendatario para OneDrive de negocios Multi-Geo, aseg�
 
 Para utilizar OneDrive para negocios Multi-Geo, necesita el plan _Multi-Geo capacidades de Office 365_ . Trabaje con su equipo de cuenta para agregar este plan a los inquilinos. Su equipo de cuentas se conectará con el especialista de licencia apropiado y obtener al inquilino configurado.
 
-Tenga en cuenta que el plan de _Capacidades de Multi-Geo en Office 365_ es un servicio de nivel de usuario. Necesita una licencia para cada usuario que desee alojar en una ubicación de setellite. Puede agregar más licencias con el tiempo a medida que agrega los usuarios en ubicaciones de satélite.
+Tenga en cuenta que el plan de _Capacidades de Multi-Geo en Office 365_ es un servicio de nivel de usuario. Necesita una licencia para cada usuario que desee alojar en una ubicación de satélite. Puede agregar más licencias con el tiempo a medida que agrega los usuarios en ubicaciones de satélite.
 
 Una vez que el arrendatario se haya aprovisionado con el plan de _Capacidades de Multi-Geo en Office 365_ , la ficha **ubicaciones Geo** estará disponible en el [Centro de administración de OneDrive](https://admin.onedrive.com).
 
@@ -88,7 +89,7 @@ Para agregar una ubicación de satélite geo
 
 6. Haga clic en **Cerrar**.
 
-Una vez que haya completado el aprovisionamiento de una ubicación de satélite, recibirá una confirmación por correo electrónico. Cuando la nueva ubicación geográfica aparece en azul en el mapa en la ficha **ubicaciones de Geo** en el centro de administración de OneDrive, puede continuar para establecer la ubicación de datos preferido de los usuarios a esa ubicación geográfica. 
+Provisioning puede tardar de unas pocas horas a 72 horas, dependiendo del tamaño de los inquilinos. Una vez que haya completado el aprovisionamiento de una ubicación de satélite, recibirá una confirmación por correo electrónico. Cuando la nueva ubicación geográfica aparece en azul en el mapa en la ficha **ubicaciones de Geo** en el centro de administración de OneDrive, puede continuar para establecer la ubicación de datos preferido de los usuarios a esa ubicación geográfica. 
 
 > [!IMPORTANT]
 > La nueva ubicación del satélite geo se configurará con la configuración predeterminada. Esto le permitirá configurar esa ubicación geográfica según sus necesidades de cumplimiento de normas locales.
