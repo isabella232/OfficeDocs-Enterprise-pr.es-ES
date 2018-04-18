@@ -11,11 +11,11 @@ ms.custom: Strat_SP_gtc
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Expandir su presencia en Office 365 para varias regiones geográficas con capacidades de multi-geo en OneDrive y SharePoint Online.
-ms.openlocfilehash: 3f72158fe05aadfe8a08a5520bf65cd2d0aaa1c6
-ms.sourcegitcommit: a81d08c7e8771cb2c232435971e3169d4f7428dc
+ms.openlocfilehash: edcd8895c4a6e57ae1124ad15a9c5cc2b6bf94ca
+ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Capacidades de Multi-Geo en OneDrive y SharePoint Online en Office 365
 
@@ -42,12 +42,10 @@ Le mostramos cómo características multi-geo pueden beneficiar a su organizaci�
 - Consolidar los datos de instalaciones regionales a los inquilinos de multi-geo Office 365.
     
 En una configuración multi-geo, el arrendatario Office 365 consiste en una ubicación central (también conocida como la ubicación predeterminada) y una o más ubicaciones de geo de satélite. El concepto clave de multi-geo es que un único contrato de arrendamiento abarcar uno varias ubicaciones geo. En un arrendatario multi-geo, la información acerca de la información de usuario, grupos y ubicaciones geo se domina en Azure Active Directory (DAA). Porque la información del arrendatario es domina centralmente y sincronizado en cada ubicación geográfica, compartir y experiencias que implican cualquier persona de la compañía contienen conocimiento global.
-  
-## <a name="sample-multi-geo-tenant-configuration"></a>Ejemplo de configuración de inquilinos multi-geo
 
-Utilizando un arrendatario multi-geo, Contoso, con una ubicación central de América del Norte, puede expandir a satélite geo ubicaciones en Europa y Australia bajo el paraguas de organización único de Contoso.com. Los usuarios con su ubicación preferida de datos establecido en Europa tendrán su OneDrive en Europa mientras que los usuarios con su ubicación de datos preferido en América del Norte tendrá su OneDrive en los Estados Unidos.
-  
-![Mapa del mundo, mostrando geo ubicaciones de Contoso y otras ubicaciones disponibles geo](images/df317ccc-2e53-411d-9211-a5aee63ca1e5.png)
+## <a name="video-introducing-office-365-multi-geo"></a>Vídeo: Introducción a Office 365 Multi-Geo
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
   
 ## <a name="get-multi-geo-features-in-three-simple-steps"></a>Obtener características de multi-geo en tres sencillos pasos
 
