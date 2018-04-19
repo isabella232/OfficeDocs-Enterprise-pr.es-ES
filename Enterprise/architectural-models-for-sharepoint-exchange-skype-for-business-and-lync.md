@@ -3,7 +3,7 @@ title: Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Ly
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/11/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: 'Resumen: Obtener los pósteres de TI que describen los modelos arquitectónicos, implementación y opciones de plataforma para SharePoint, Exchange, Skype para empresas y Lync.'
-ms.openlocfilehash: be889a6d16dbe9c7ac4efb21174ee720bf200714
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: ac3ba3f8a0786ec28c9aa6099f288811802bd92d
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Lync
 
@@ -98,7 +98,7 @@ En estos nuevos pósteres de TI de SharePoint 2016 y Skype Empresarial 2015, se 
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![OneDrive Multi-Geo en modelo de Office 365](images/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.vsdx) <br/> | Este modelo es un resumen de una página de OneDrive Multi-Geo en Office 365, que se encuentra actualmente en vista previa privada. Este modelo incluye:<br/><br/> -Beneficios <br/> -Pasos para la implementación <br/> -Un ejemplo de configuración <br/><br/>  Para obtener más información acerca de la vista previa de Multi-Geo para OneDrive en Office 365, haga clic en [aquí](https://aka.ms/onedrivemultigeo).  <br/> |
+|[![OneDrive Multi-Geo en modelo de Office 365](images/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.vsdx) <br/> | Este póster es un resumen de una página de OneDrive Multi-Geo en Office 365, que se encuentra actualmente en la vista previa. Este modelo incluye:<br/><br/> -Beneficios <br/> -Pasos para la implementación <br/> -Un ejemplo de configuración <br/><br/>  Para obtener más información acerca de la vista previa de Multi-Geo para OneDrive en Office 365, haga clic en [aquí](https://aka.ms/onedrivemultigeo).  <br/> |
    
 ### <a name="sharepoint-server-2016-databases"></a>Bases de datos de SharePoint Server 2016
 <a name="SP2016_Databases"> </a>
@@ -187,7 +187,7 @@ Estos pósteres de TI mostrar soluciones basadas en Azure mediante SharePoint Se
 |:-----|:-----|
 |[![Proceso de recuperación ante desastres de SharePoint en Azure](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |Este póster de TI ilustra los principios de la arquitectura de un entorno de recuperación ante desastres en Azure. Para una versión de texto accesible de este póster, consulte el [diagrama accesible - recuperación ante desastres de SharePoint para Microsoft Azure](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md).<br/><br/> Para obtener más información, vea los siguientes artículos:  <br/><br/> - [Recuperación de desastres de 2013 de SharePoint Server en Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Arquitecturas de Microsoft Azure para SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Concepts
 
 <a name="Lync2013_Options"> </a>
 

@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Resumen: Implemente Azure AD Connect en una máquina virtual de Azure para sincronizar las cuentas entre el directorio local y el espacio empresarial de Azure AD de su suscripción a Office 365.'
-ms.openlocfilehash: af0c837ead0ddfce31d7f3635f3283f118d26dca
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 31a72d027acd274c9908a7e63e83843bce9cec71
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Implementar la sincronización de directorios de Office 365 en Microsoft Azure
 
@@ -105,7 +105,7 @@ En la siguiente lista se describen las elecciones de diseño que se han tomado p
     
 - En la red local, hay un controlador de dominio y servidores DNS.
     
-- Azure AD Connect realiza la sincronización de hash de contraseñas en lugar del inicio de sesión único. No es necesario implementar una infraestructura de Servicios de federación de Active Directory (AD FS). Para obtener más información sobre las opciones de sincronización de hash de contraseñas y de inicio de sesión único, vea [Determine qué escenario de integración de directorios se debe usar](https://go.microsoft.com/fwlink/p/?LinkId=393094).
+- Azure Connect AD realiza la sincronización de contraseñas de hash en lugar de un inicio de sesión único. No es necesario implementar una infraestructura de servicios de federación de Active Directory (AD FS). Para obtener más información acerca de la sincronización de hash de contraseña y opciones de inicio de sesión único, vea [Elegir el método de autenticación adecuado para su solución de identidad híbrida de Azure de Active Directory](http://aka.ms/auth-options).
     
 Hay otras opciones de diseño adicionales que puede tener en cuenta cuando implementa esta solución en su entorno. Se incluyen las siguientes:
   

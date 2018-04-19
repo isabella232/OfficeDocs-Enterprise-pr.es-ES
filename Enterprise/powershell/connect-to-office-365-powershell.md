@@ -3,7 +3,7 @@ title: Conectarse a PowerShell de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/12/2018
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumen: conéctese a su organización de Office 365 con PowerShell de Office 365 para realizar tareas del Centro de administración de Office 365 desde la línea de comandos.'
-ms.openlocfilehash: 95d1e5717d3fec7f0d3102beb65eebaef28bd6cf
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 71b8c8d61a914fa7fd036fadb7e17ca3f66cd639
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectarse a PowerShell de Office 365
 
@@ -27,7 +27,6 @@ ms.lasthandoff: 04/16/2018
   
 Con PowerShell de Office 365, se puede configurar Office 365 desde la línea de comandos. Conectarse a PowerShell de Office 365 es un sencillo proceso de tres pasos con el que instalará el software, ejecutará el software necesario y, después, se conectará a la organización de Office 365. 
 
-Tenga en cuenta que estas instrucciones de conexión son las mismas que aparecen en el tema [Azure Active Directory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113).
   
 > [!TIP]
 > **¿Es la primera vez que usa PowerShell?** Vea el [vídeo de información general sobre PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx) ofrecido por LinkedIn Learning. 
@@ -120,15 +119,15 @@ Si surgen errores, compruebe los siguientes requisitos:
     
 - **Si recibe un error de conexión, vea este tema:** [Error “Connect-MsolService: Se produjo una excepción de tipo”](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a>Conectarse con el módulo de PowerShell Azure Active Directory V2
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Conectar con el PowerShell de Azure Active Directory para el módulo de gráfico
 <a name="ConnectV2"> </a>
 
-Los comandos del módulo de PowerShell Azure Active Directory V2 incluyen "AzureAD" en su nombre de cmdlet.
+Comandos en el PowerShell de Azure Active Directory para el módulo de gráfico tienen "AzureAD" en el nombre de cmdlet.
 
-Para los procedimientos que necesitan los nuevos cmdlets del módulo de PowerShell Azure Active Directory V2, siga estos pasos para instalar el módulo y conectarse a su suscripción a Office 365.
+Procedimientos que requieren los nuevos cmdlets en el PowerShell de Azure Active Directory para el módulo de gráfico, siga estos pasos para instalar el módulo y conectar a su suscripción de Office 365.
 
 >[!Note]
->Vea [Módulo de PowerShell Azure Active Directory V2](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) para obtener información sobre la compatibilidad con diferentes versiones de Microsoft Windows.
+>Para obtener información acerca de la compatibilidad con diferentes versiones de Microsoft Windows, consulte [Azure Active Directory PowerShell para módulo de gráfico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) .
 >
 
 ### <a name="step-1-install-required-software"></a>Paso 1: Instalar el software necesario
@@ -168,7 +167,7 @@ En el cuadro de diálogo **Azure Active Directory PowerShell**, escriba su nombr
     
 Siga las instrucciones del cuadro de diálogo de **Azure Active Directory PowerShell** para proporcionar información de autenticación adicional, como un código de comprobación, y haga clic en **Iniciar sesión**.
     
-Después de conectarse, podrá usar los nuevos cmdlets del [módulo de PowerShell Azure Active Directory V2](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
+Después de conectarse, puede usar los cmdlets de nuevo para el [Azure Active Directory PowerShell para módulo de gráfico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
 ## <a name="see-also"></a>Consulte también
 

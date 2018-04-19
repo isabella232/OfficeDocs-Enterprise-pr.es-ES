@@ -3,7 +3,7 @@ title: El entorno de pruebas y desarrollo empresarial de Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 'Resumen: Utilice a esta guía de laboratorio de prueba para crear un entorno de pruebas y desarrollo que incluye Office 365 E5, movilidad en la empresa + E5 de seguridad (EMS) y un equipo que ejecuta Windows 10 Enterprise.'
-ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 9ef1c13d7ae194ff4ba31abaf379529220ffa14f
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>El entorno de pruebas y desarrollo empresarial de Microsoft 365
 
@@ -34,6 +34,9 @@ Siga los pasos de la fase 2 y 3 de la fase del [entorno de desarrollo y prueba d
 **Figura 1: La suscripción a Office 365 E5 con sus cuentas de usuario y de los inquilinos de Azure de Active Directory (AD)**
 
 ![Fase 1 del entorno de pruebas y desarrollo empresarial de Microsoft 3656](images/65bb027b-fb59-46eb-aec2-38c0af425168.png)
+
+> [!NOTE]
+> La suscripción de prueba de Office 365 E5 es 30 días, que se puede ampliar fácilmente a 60 días. Para un entorno de pruebas y desarrollo permanente, crear una nueva de pago con un número pequeño de licencias. 
   
 ## <a name="phase-2-add-ems"></a>Fase 2: Agregar EMS
 
@@ -66,7 +69,7 @@ En primer lugar, agregue la suscripción de prueba de EMS E5 y asignar una licen
   
 Ahora tiene su entorno de pruebas y desarrollo:
   
-- Suscripciones de prueba de Office 365 E5 Enterprise y EMS que comparten la misma organización y el mismo inquilino de AD Azure con la lista de cuentas de usuario.
+- Office 365 E5 Enterprise y E5 EMS suscripciones de prueba compartiendo al mismo inquilino AD Azure con la lista de cuentas de usuario.
 - Todas las cuentas de usuario adecuado (sólo el administrador global o todas las cinco cuentas de usuario) están habilitadas para utilizar Office 365 E5 y E5 EMS.
     
 La figura 2 muestra la configuración resultante, que agrega EMS.
@@ -201,8 +204,9 @@ Uso de estos artículos adicionales para explorar las características de empres
     
 - [Configurar y probar la avanzada protección frente a amenazas](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Concepts
 
 - [Documentación de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
 - [Implementar Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [El entorno de desarrollo y prueba de una nube de Microsoft](the-one-microsoft-cloud-dev-test-environment.md)
+- [Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
