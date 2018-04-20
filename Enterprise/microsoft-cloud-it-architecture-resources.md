@@ -12,21 +12,20 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
-description: 'Resumen: obtenga información sobre las plataformas y los servicios en la nube de Microsoft. Revise nuestro mapa de ruta empresarial en la nube, explore nuestra serie de arquitectura y mucho más.'
-ms.openlocfilehash: bf8015d1a3876276a5a7f15be7e289d1984e9193
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumen: Obtenga información acerca de las plataformas y los servicios en la nube de Microsoft. Revise nuestro mapa de ruta empresarial en la nube, explore nuestra serie de arquitectura y mucho más.'
+ms.openlocfilehash: ccc10e2ba369d711c26936a88385fdb3c1cae3ac
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitectura de TI de la nube de Microsoft
 
- **Resumen:** obtenga información sobre las plataformas y los servicios en la nube de Microsoft. Revise nuestro mapa de ruta empresarial en la nube, explore nuestra serie de arquitectura y mucho más.
+ **Resumen:** Obtenga información acerca de las plataformas y los servicios en la nube de Microsoft. Revise nuestro mapa de ruta empresarial en la nube, explore nuestra serie de arquitectura y mucho más.
   
-Estos pósteres y herramientas de arquitectura le ofrecen información sobre las plataformas y los servicios en la nube de Microsoft, como Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics 365, el centro de datos de nube privada y las soluciones híbridas locales y en la nube. Los arquitectos y responsables de decisiones de TI pueden usar estos recursos para determinar las soluciones ideales para sus cargas de trabajo y para tomar decisiones sobre los componentes de la infraestructura central, como la identidad y la seguridad. 
+Estos pósteres y herramientas de arquitectura ofrecen información sobre las plataformas y los servicios en la nube de Microsoft, como Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics 365, el centro de datos de nube privada y las soluciones híbridas locales y en la nube. Los arquitectos y responsables de decisiones de TI pueden usar estos recursos para determinar las soluciones ideales para sus cargas de trabajo y para tomar decisiones sobre los componentes de la infraestructura central, como la identidad y la seguridad. 
   
 - **[Mapa de ruta de Enterprise Cloud de Microsoft](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway)
     
@@ -60,17 +59,17 @@ Vea los pósteres, los conjuntos de iconos, las ubicaciones de la comunidad y ot
   
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![Miniatura del mapa de ruta de Enterprise Cloud](images/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft's Enterprise Cloud Roadmap](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |Vea esta experiencia de Sway para conocer los recursos que describen la solución en la nube más completa del sector.  <br/> |
+|[![Miniatura del mapa de ruta de Enterprise Cloud](images/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Plan de desarrollo de la nube empresarial de Microsoft](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |Vea esta experiencia de Sway para conocer los recursos que describen la solución en la nube más completa del sector.  <br/> |
    
 <a name="cloudarch"> </a>
 ## <a name="microsoft-cloud-for-enterprise-architects-series"></a>Serie de Microsoft Cloud para arquitectos empresariales
 
-Estos pósteres de arquitectura en la nube le ofrecen información sobre las plataformas y los servicios en la nube de Microsoft, como Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics CRM Online, el centro de datos en la nube privada y las soluciones híbridas locales y en la nube. Los arquitectos y los responsables de la toma de decisiones de TI pueden usar estos recursos para determinar las soluciones ideales para sus cargas de trabajo y para tomar decisiones sobre los componentes de la infraestructura básica, como la identidad y la seguridad.
+Estos pósteres de arquitectura en la nube le ofrecen información acerca de las plataformas y los servicios en la nube de Microsoft, como Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics CRM Online, el centro de datos en la nube privada y las soluciones híbridas locales y en la nube. Los arquitectos y los responsables de la toma de decisiones de TI pueden usar estos recursos para determinar las soluciones ideales para sus cargas de trabajo y para tomar decisiones acerca de los componentes de la infraestructura básica, como la identidad y la seguridad.
   
 <a name="platformoptions"> </a>
 ### <a name="microsoft-cloud-services-and-platform-options"></a>Opciones de plataforma y servicios en la nube de Microsoft
 
-Descubra las principales diferencias entre las ofertas de plataforma y los servicios en la nube de Microsoft. Encuentre la opción que mejor se ajuste a su solución.
+Descubra las principales diferencias entre las ofertas de plataforma y servicios en la nube de Microsoft. Encuentre la opción que mejor se ajuste a su solución.
   
 |**Elemento**|**Descripción**|
 |:-----|:-----|
@@ -101,7 +100,7 @@ Lo que los arquitectos de TI necesitan saber sobre las redes para las plataforma
   
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![Imagen en miniatura del modelo de redes de Microsoft Cloud](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| ![Artículo](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Artículo](https://technet.microsoft.com/library/mt733214.aspx) <br/>![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Este modelo contiene las páginas siguientes: <ul><li> **Desarrollo de la red para la conectividad en la nube** La migración a nube cambia el volumen y el carácter de los flujos de tráfico dentro y fuera de una red corporativa. También afecta a los métodos destinados a mitigar los riesgos de seguridad.</li><li> **Elementos comunes de la conectividad en la nube de Microsoft** La integración de las redes con la nube de Microsoft proporciona un acceso óptimo a una amplia gama de servicios. </li><li> **ExpressRoute para la conectividad en la nube de Microsoft** ExpressRoute proporciona una conexión de red privada, dedicada y de alto rendimiento para la nube de Microsoft. </li><li> **Diseño de redes para SaaS de Microsoft (Office 365, Microsoft Intune y Dynamics CRM Online)** La optimización de la red para los servicios SaaS de Microsoft requiere un análisis cuidadoso de su perímetro de Internet, los dispositivos cliente y las operaciones de TI típicas. </li><li> **Diseño de redes para PaaS de Azure** La optimización de las redes para aplicaciones PaaS de Azure requiere suficiente ancho de banda de Internet y puede requerir la distribución del tráfico de red por varios sitios o aplicaciones. </li><li> **Diseño de redes para la IaaS de Azure** Siga los pasos del proceso de diseño para crear una red virtual de Azure óptima para cargas de trabajo de TI basadas en servidores de hospedaje (subredes, espacios de direcciones, enrutamiento, DNS, equilibrio de carga y conectividad a Internet, a la red local y a otras redes virtuales). </li></ul><br/>  Realice el curso [Optimizar la red para las ofertas de Microsoft Cloud](https://aka.ms/optimizecloudnetworkingmva), un curso de Microsoft Virtual Academy basado en este póster de arquitectura.  <br/>|
+|[![Imagen en miniatura del modelo de redes de Microsoft Cloud](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> ![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| ![Artículo](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Artículo](https://technet.microsoft.com/library/mt733214.aspx) <br/>![Vea una página con versiones en otros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Este modelo contiene las páginas siguientes: <ul><li> **Desarrollo de la red para la conectividad en la nube** La migración a nube cambia el volumen y el carácter de los flujos de tráfico dentro y fuera de una red corporativa. También afecta a los métodos para mitigar los riesgos de seguridad.</li><li> **Elementos comunes de la conectividad en la nube de Microsoft** La integración de las redes con la nube de Microsoft proporciona un acceso óptimo a una amplia gama de servicios. </li><li> **ExpressRoute para la conectividad en la nube de Microsoft** ExpressRoute proporciona una conexión de red privada, dedicada y de alto rendimiento para la nube de Microsoft. </li><li> **Diseño de redes para SaaS de Microsoft (Office 365, Microsoft Intune y Dynamics CRM Online)** La optimización de la red para los servicios SaaS de Microsoft requiere un análisis cuidadoso de su perímetro de Internet, los dispositivos cliente y las operaciones de TI típicas. </li><li> **Diseño de redes para PaaS de Azure** La optimización de las redes para aplicaciones PaaS de Azure requiere suficiente ancho de banda de Internet y puede requerir la distribución del tráfico de red por varios sitios o aplicaciones. </li><li> **Diseño de redes para la IaaS de Azure** Siga los pasos del proceso de diseño para crear una red virtual de Azure óptima para cargas de trabajo de TI basadas en servidores de hospedaje (subredes, espacios de direcciones, enrutamiento, DNS, equilibrio de carga y conectividad a Internet, a la red local y a otras redes virtuales). </li></ul><br/>  Realice el curso [Optimizar la red para las ofertas de Microsoft Cloud](https://aka.ms/optimizecloudnetworkingmva), un curso de Microsoft Virtual Academy basado en este póster de arquitectura.  <br/>|
    
 <a name="mobility"> </a>
 ### <a name="microsoft-mobility-and-security-for-enterprise-architects"></a>Movilidad y seguridad de Microsoft para arquitectos empresariales

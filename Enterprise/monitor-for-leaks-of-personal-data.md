@@ -1,5 +1,5 @@
 ---
-title: "Supervisar pérdidas de datos personales"
+title: Supervisar pérdidas de datos personales
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -9,18 +9,17 @@ ms.topic: overview
 ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- Strat_O365_Enterprise
-- GDPR
-ms.assetid: 
-description: "Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales."
-ms.openlocfilehash: 04f5346a9c6554b75e9f360233c942907b826447
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.custom: ''
+ms.assetid: ''
+description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
+ms.openlocfilehash: 4f7e9b35f7e2da5254e98a9f1cf97d6a5e9e1a73
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -86,7 +85,8 @@ Más información sobre las directivas de alerta y buscar en el registro de audi
 
 -   [Activar o desactivar la búsqueda de registros de auditoría de Office 365](https://support.office.com/es-ES/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   
+  [Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   
   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 
@@ -117,7 +117,7 @@ Estos tipos de atributo estarán pronto disponibles en Cloud App Security:
 
 ### <a name="cloud-app-security-dashboard"></a>Panel de Cloud App Security
 
-Si aún no ha comenzado a usar Cloud App Security, empiece por abrirlo. Para acceder a Cloud App Security: <https://portal.cloudappsecurity.com>.
+Si aún no empezó a usar Cloud App Security, inícielo. Para obtener acceso a Cloud App Security: <https://portal.cloudappsecurity.com>.
 
 Nota: No olvide habilitar "Analizar automáticamente archivos de etiquetas de clasificación de Azure Information Protection" (en la configuración General) al comenzar a usar Cloud App Security o antes de asignar etiquetas. Tras la configuración, Cloud App Security no vuelve a examinar los archivos existentes hasta que se modifican.
 
