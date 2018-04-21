@@ -1,5 +1,5 @@
 ---
-title: "Agregar datos de informes de clientes a través de Windows PowerShell para asociados con permiso de acceso delegado (DAP)"
+title: Agregar datos de informes de clientes a través de Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
-description: "Resumen: Use Windows PowerShell para Office 365 para recuperar informes de todos los arrendamientos de cliente y agregar los datos a una sola ubicación."
-ms.openlocfilehash: 825f0519b97522f664c34462c441d190cac4bb8e
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
-ms.translationtype: HT
+description: 'Resumen: Use Windows PowerShell para Office 365 para recuperar informes de todos los arrendamientos de cliente y agregar los datos a una sola ubicación.'
+ms.openlocfilehash: eba2c3be848b878670321485718317b5552b2db3
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>Agregar datos de informes de clientes a través de Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 
@@ -54,9 +54,9 @@ $UserName = "admin@contoso.onmicrosoft.com"
 
 # These are the locations for the report output and error log.
 
-$OutputFile = ".\\ReportOutput.csv"
+$OutputFile = ".\ReportOutput.csv"
 
-$ErrorFile = ".\\Errors.txt"
+$ErrorFile = ".\Errors.txt"
 
 # This is the report to run and all the necessary parameters.
 
@@ -132,7 +132,7 @@ foreach ($c in $contracts) {
 3. Ejecute el script en modo remoto de Windows PowerShell siguiendo esta sintaxis.
     
   ```
-  &amp; "C:\\O365 Scripts\\GetMailboxActivityReport.ps1"
+  &amp; "C:\O365 Scripts\GetMailboxActivityReport.ps1"
   ```
 
 Este script de ejemplo coloca el informe agregado en el archivo ReportOutput.csv.
