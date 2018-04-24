@@ -20,7 +20,7 @@ ms.lasthandoff: 03/05/2018
 ---
 # <a name="hybrid-solutions"></a><span data-ttu-id="69605-103">Soluciones híbridas</span><span class="sxs-lookup"><span data-stu-id="69605-103">Hybrid solutions</span></span>
 
- <span data-ttu-id="69605-104">**Resumen:** Use estos artículos para implementar cargas de trabajo de Office Server en Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="69605-104">**Summary: ** Use these articles to deploy Office Server workloads in Microsoft Azure.</span></span>
+ <span data-ttu-id="69605-104">**Resumen:**  Use estos artículos para implementar cargas de trabajo de Office Server en Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="69605-104">**Summary: ** Use these articles to deploy Office Server workloads in Microsoft Azure.</span></span>
   
 <span data-ttu-id="69605-105">Con Microsoft Azure, ahora puede implementar algunas cargas de trabajo de Office Server que, normalmente, se implementaban de forma local en servicios de infraestructura de Azure.</span><span class="sxs-lookup"><span data-stu-id="69605-105">With Microsoft Azure, you can now deploy some Office Server workloads that were typically deployed on-premises to Azure infrastructure services. Here are a list of articles that describe recommended configurations for SharePoint Server 2013:</span></span>
   
