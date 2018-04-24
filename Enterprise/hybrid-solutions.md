@@ -20,7 +20,7 @@ ms.lasthandoff: 03/05/2018
 ---
 # <a name="hybrid-solutions"></a>Soluciones híbridas
 
- **Resumen:** Use estos artículos para implementar cargas de trabajo de Office Server en Microsoft Azure.
+ **Resumen:**  Use estos artículos para implementar cargas de trabajo de Office Server en Microsoft Azure.
   
 Con Microsoft Azure, ahora puede implementar algunas cargas de trabajo de Office Server que, normalmente, se implementaban de forma local en servicios de infraestructura de Azure.
   
