@@ -1,9 +1,9 @@
 ---
-title: "Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure"
+title: Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/5/2018
+ms.date: 04/17/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,28 +11,28 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: "Resumen: con Azure, puede crear un entorno de recuperación ante desastres para la granja de servidores local de SharePoint. En este artículo se describe cómo diseñar e implementar esta solución."
-ms.openlocfilehash: 4c1a5d92445dfa89dce4c87216922282d29f075c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumen: con Azure, puede crear un entorno de recuperación ante desastres para la granja de servidores local de SharePoint. En este artículo se describe cómo diseñar e implementar esta solución.'
+ms.openlocfilehash: 1e8f067954de19c374688220be439fe1a56089f7
+ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
 
  **Resumen:** con Azure, puede crear un entorno de recuperación ante desastres para la granja de servidores local de SharePoint. En este artículo se describe cómo diseñar e implementar esta solución.
+
+ **Ver el vídeo de información general sobre la recuperación ante desastres de SharePoint Server 2013**
+<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=1b73ec8f-29bd-44eb-aa3a-f7932784bfd9&AutoPlayVideo=false&height=415&width=740" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" style="width: 740px; height: 415px;"></iframe>
+
   
  Cuando se produce un desastre en el entorno local de SharePoint, la prioridad es que el sistema vuelva a funcionar lo antes posible. La recuperación ante desastres con SharePoint es más fácil y rápida cuando ya tiene un entorno de copia de seguridad que ya se está ejecutando en Microsoft Azure. En este vídeo se explican los conceptos principales de un entorno de conmutación por error activo de SharePoint y complementa los detalles que se ofrecen en este artículo.
   
-![Icono Vídeo (botón de reproducción)](images/mod_icon_video_M.png)
-  
 Use este artículo con el modelo de solución: **recuperación ante desastres de SharePoint en Microsoft Azure**.
   
-[![Proceso de recuperación ante desastres de SharePoint en Azure](images/SP_DR_Azure.png)
+[![Proceso de recuperación ante desastres de SharePoint a Azure](images/SP_DR_Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
-](https://go.microsoft.com/fwlink/p/?LinkId=392555)
-  
-![Archivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
+![Archivo PDF](images/ITPro_Other_PDFicon.png) [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) | ![Archivo de Visio](images/ITPro_Other_VisioIcon.jpg) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
 En este artículo:
   
@@ -487,7 +487,7 @@ En la mayoría de los casos donde tiene varios servidores front-end web, tiene s
   
 Normalmente, al configurar el equilibrio de carga de red, el clúster se asigna una dirección IP única. A continuación, crea un registro de host DNS en el proveedor DNS para la red que apunta al clúster. (Para este proyecto, se coloca un servidor DNS en Azure para resistir en caso de un error en el centro de datos local). Por ejemplo, puede crear un registro DNS, en el Administrador de DNS en Active Directory, por ejemplo, denominado  `http://sharepoint.contoso.com`, que señale a la dirección IP para el clúster de equilibrio de carga.
   
-Para obtener acceso externo a la granja de servidores de SharePoint, puede crear un registro de host en un servidor DNS externo con la misma dirección URL que usan los clientes de la intranet (por ejemplo, http://sharepoint.contoso.com), que señale a una dirección IP externa del firewall. (Si usa este ejemplo, se recomienda configurar el DNS dividido para que el servidor DNS interno sea autoritativo para contoso.com y enrute las solicitudes directamente al clúster de la granja de servidores de SharePoint, en lugar de enrutar las solicitudes de DNS al servidor DNS externo). Después puede asignar la dirección IP externa a la dirección IP interna del clúster local para que los clientes encuentren los recursos que están buscando.
+Para obtener acceso externo a la granja de servidores de SharePoint, puede crear un registro de host en un servidor DNS externo con la misma dirección URL que usan los clientes de la intranet (por ejemplo, http://sharepoint.contoso.com)) que apunte a una dirección IP externa del firewall. (Si usa este ejemplo, se recomienda configurar el DNS dividido para que el servidor DNS interno sea autoritativo para contoso.com y enrute las solicitudes directamente al clúster de la granja de servidores de SharePoint, en lugar de enrutar las solicitudes de DNS al servidor DNS externo). Después puede asignar la dirección IP externa a la dirección IP interna del clúster local para que los clientes encuentren los recursos que están buscando.
   
 A partir de aquí, puede que se encuentre con un par de escenarios de recuperación ante desastres diferentes:
   
@@ -495,7 +495,7 @@ A partir de aquí, puede que se encuentre con un par de escenarios de recuperaci
   
  **Escenario de ejemplo: el centro de datos local se pierde por completo.** Esta situación puede deberse a un desastre natural, como un incendio o una inundación. En este caso, si esto ocurriera en una empresa es probable que tuviera un centro de datos secundario hospedado en otra región, además de la subred de Azure que tiene sus propios servicios de directorio y DNS. Al igual que ocurre en el escenario de desastres anterior, puede redirigir los registros DNS internos y externos para que apunten a la granja de servidores de SharePoint en Azure. De nuevo, tenga en cuenta que la propagación del registro DNS puede tardar bastante.
   
-Si usa colecciones de sitios con nombre de host, como se recomienda en [Arquitectura e implementación de colecciones de sitios con nombre de host (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393120), puede tener varias colecciones de sitios hospedadas por la misma aplicación web en la granja de servidores de SharePoint, con nombres DNS únicos (por ejemplo, http://sales.contoso.com y http://marketing.contoso.com). En este caso, puede crear registros DNS para cada colección de sitios que señalen la dirección IP del clúster. En cuanto una solicitud llega a los servidores front-end web de SharePoint, estos se encargan de enrutar cada solicitud a la colección de sitios adecuada.
+Si usa colecciones de sitios con nombre de host, como se recomienda en [Arquitectura e implementación de colecciones de sitios con nombre de host (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393120), puede tener varias colecciones de sitios hospedadas por la misma aplicación web en la granja de servidores de SharePoint, con nombres DNS únicos (por ejemplo, http://sales.contoso.com y http://marketing.contoso.com)). En este caso, puede crear registros DNS para cada colección de sitios que apunten a la dirección IP del clúster. En cuanto una solicitud llega a los servidores front-end web de SharePoint, estos se encargan de enrutar cada solicitud a la colección de sitios adecuada.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Entorno de prueba de concepto de Microsoft
 <a name="POC"> </a>
