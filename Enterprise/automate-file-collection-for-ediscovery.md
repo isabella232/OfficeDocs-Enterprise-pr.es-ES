@@ -1,5 +1,5 @@
 ---
-title: "Automatizar la recopilación de archivos para la exhibición de documentos electrónicos"
+title: Automatizar la recopilación de archivos para la exhibición de documentos electrónicos
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
-description: "Resumen: Aprenda a automatizar una recopilación de archivos de los equipos del usuario para la exhibición de documentos electrónicos."
-ms.openlocfilehash: bb93bed80ec95511c6bbf4307d1f0c9e1d4f82cb
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+description: 'Resumen: Aprenda a automatizar una recopilación de archivos de los equipos del usuario para la exhibición de documentos electrónicos.'
+ms.openlocfilehash: 0a09eb8ec997f62e0f8c3149d35422b0ee0e4a98
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizar la recopilación de archivos para la exhibición de documentos electrónicos
 
@@ -163,7 +163,7 @@ catch [System.Exception] {
 Function CopyFileToCaseFolder($SourcePath, $TargetPath, $FileName) {
     
     # Check to see if the file already exists
-    $TargetFileCheck = Test-Path $TargetPath\\$FileName
+    $TargetFileCheck = Test-Path $TargetPath\$FileName
 
 try {
 
@@ -202,18 +202,18 @@ $CaseNo = get-date -Format yyyyMMddHHmm
 $CaseNo = $CaseNo + "_" + [Environment]::UserName
 
 # Target location to copy case files
-$CaseRootLocation = "\\\\staging\\Cases$" 
+$CaseRootLocation = "\\staging\Cases$" 
 
 # File copy location, log file location, PST file location and temporary log file location
-$CaseLocation = $CaseRootLocation + "\\" + $CaseNo
-$CaseLogLocation = $CaseRootLocation + "\\" + $CaseNo + "\\_Log"
-$CasePSTLocation = $CaseRootLocation + "\\" + $CaseNo + "\\_PSTs"
-$TemporaryLogLocation = [Environment]::getfolderpath('ApplicationData') + "\\" + $CaseNo
+$CaseLocation = $CaseRootLocation + "\" + $CaseNo
+$CaseLogLocation = $CaseRootLocation + "\" + $CaseNo + "\_Log"
+$CasePSTLocation = $CaseRootLocation + "\" + $CaseNo + "\_PSTs"
+$TemporaryLogLocation = [Environment]::getfolderpath('ApplicationData') + "\" + $CaseNo
 
 # Inventory of local drives
 $LocalDrives = Get-PSDrive -PSProvider FileSystem -Scope Global
 
-$LoggingFile = "$CaseLogLocation\\FileCopyErrors.log"
+$LoggingFile = "$CaseLogLocation\FileCopyErrors.log"
 
 # Main script
 
@@ -221,12 +221,12 @@ $LoggingFile = "$CaseLogLocation\\FileCopyErrors.log"
 CreateCaseFolder
 
 # Create the list of files to be copied
-# First create the temporary directory in the AppData\\Roaming folder
+# First create the temporary directory in the AppData\Roaming folder
 New-Item "$TemporaryLogLocation" -ItemType Directory -Force -ErrorAction SilentlyContinue
 $LocalDrives | foreach {
 
     # Write-Host -ForeGroundColor Cyan "Collecting Files for Drive: " $_
-    Get-ChildItem -Path $_.Root -Recurse -Include $FileTypes -ErrorAction SilentlyContinue -ErrorVariable +Loggederrors | Export-Clixml $TemporaryLogLocation\\\\$_.xml -Force
+    Get-ChildItem -Path $_.Root -Recurse -Include $FileTypes -ErrorAction SilentlyContinue -ErrorVariable +Loggederrors | Export-Clixml $TemporaryLogLocation\$_.xml -Force
     # Needs try catch and logged collection error file
 }
 
@@ -290,7 +290,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 # This is for on-prem Exchange only
 # Input parameters
 # When you run the script, you call it with two parameters, PST source path and target mailbox alias
-# For example:  .\\PSTImport.ps1 \\\\FileShare\\PSTFiles jdoe
+# For example:  .\PSTImport.ps1 \\FileShare\PSTFiles jdoe
 
 param ([String]$SourcePath,[String]$MailboxAlias)
 
@@ -337,7 +337,7 @@ $AllFiles | ForEach-Object {
     
   - **$MailboxAlias** el alias del buzón de destino que va a recibir los elementos de correo electrónico importados
     
-6. Por ejemplo, si desea importar todos los archivos PST de la ruta de acceso \\\\Staging\\Cases$ en un buzón con el alias eDiscoveryMailbox, debería ejecutar el script de la siguiente manera `\\\\staging\\AFCscripts\\PSTImportScript.ps1 \\\\Staging\\cases$ eDiscoveryMailbox`.
+6. Por ejemplo, si desea importar todos los archivos PST de la ruta de acceso \\Staging\Cases$ en un buzón con el alias eDiscoveryMailbox, ha de ejecutar el script de la siguiente manera `\\staging\AFCscripts\PSTImportScript.ps1 \\Staging\cases$ eDiscoveryMailbox`.
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>Opción B de importación de PST, para Exchange Online
 
