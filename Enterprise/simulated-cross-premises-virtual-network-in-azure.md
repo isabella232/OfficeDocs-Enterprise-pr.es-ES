@@ -7,23 +7,23 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
-description: 'Resumen: Crear una red virtual simulado entre locales en Microsoft Azure como un entorno de pruebas y desarrollo.'
-ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+description: 'Resumen: Cree una red virtual simulado entre locales en Microsoft Azure como un entorno de desarrollo o prueba.'
+ms.openlocfilehash: 4a34126bba4561da621dc3faf37dd30d4dcc9ff3
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Red virtual entre locales simulada en Azure
 
- **Resumen:** Crear una red virtual simulado entre locales en Microsoft Azure como un entorno de pruebas y desarrollo.
+ **Resumen:** Crear una red virtual simulado entre locales en Microsoft Azure como un entorno de desarrollo o prueba.
   
 En este artículo se le indicará el proceso de creación de un entorno de nube híbrida simulado con Microsoft Azure mediante dos redes virtuales de Azure. Esta es la configuración resultante.   
   
@@ -59,11 +59,11 @@ Existen tres fases principales para configurar el entorno de desarrollo y prueba
 ![Guías de laboratorio de prueba en Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual para todos los artículos de la pila de una guía de laboratorio de prueba de nube de Microsoft.
+> Haga clic [aquí](http://aka.ms/catlgstack) para un mapa visual a todos los artículos de la pila de una guía de laboratorio de prueba de nube de Microsoft.
   
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Fase 1: Configurar la red virtual TestLab
 
-Utilice las instrucciones en el [entorno de desarrollo y prueba de configuración de Base](base-configuration-dev-test-environment.md) para configurar los equipos de DC1, APP1 y CLIENTE1 de la red virtual Azure denominada práctica de prueba.
+Use las instrucciones en el [entorno de desarrollo y prueba de configuración básica](base-configuration-dev-test-environment.md) para configurar los equipos DC1, APP1 y CLIENT1 en la red virtual de Azure con nombre de laboratorio de pruebas.
   
 Esta es su configuración actual. 
   
@@ -93,7 +93,7 @@ Obtenga su nombre de suscripción mediante el comando siguiente.
 Get-AzureRMSubscription | Sort Name | Select Name
 ```
 
-Establecer su suscripción de Azure. Reemplace todo el contenido de las ofertas, incluyendo el \< y > caracteres, con los nombres correctos.
+Establecer su suscripción de Azure. Reemplace todo el contenido de las comillas, incluido el \< y > caracteres, con los nombres correctos.
   
 ```
 $subscrName="<subscription name>"
@@ -152,7 +152,7 @@ $vm=Add-AzureRmVMDataDisk -VM $vm -Name "DC2-DataDisk1" -CreateOption Attach -Ma
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-A continuación, conectarse a la nueva máquina virtual de DC2 desde el [portal de Azure](https://portal.azure.com) utilizando su nombre de cuenta de administrador local y la contraseña.
+A continuación, conectarse a la nueva máquina virtual de DC2 desde el [portal de Azure](https://portal.azure.com) con su nombre de cuenta de administrador local y la contraseña.
   
 Después, configure una regla de Firewall de Windows para permitir el tráfico durante la prueba de conectividad básica. Desde un símbolo del sistema de Windows PowerShell con el nivel de administrador en DC2, ejecute estos comandos:  
   
@@ -163,7 +163,7 @@ ping dc1.corp.contoso.com
 
 El comando ping debería devolver cuatro respuestas correctas de la dirección IP 10.0.0.4. Esta prueba para comprobar el tráfico de la relación de emparejamiento de VNet.  
   
-A continuación, agregar el disco de datos adicionales como un nuevo volumen con la letra de unidad F: con este comando desde el símbolo del sistema de Windows PowerShell en DC2.
+A continuación, agregue el disco de datos adicionales como un volumen nuevo con la letra de unidad F: con este comando desde el símbolo del sistema de Windows PowerShell en DC2.
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -176,7 +176,7 @@ Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
-Tenga en cuenta que deberá proporcionar tanto la CORP\\Usuario1 contraseña y una contraseña de modo de restauración de servicios de directorio (DSRM) y reinicie DC2. 
+Tenga en cuenta que se le pide que proporcione tanto el CORP\\User1 contraseña y una contraseña de modo de restauración de servicios de directorio (DSRM) y para reiniciar DC2. 
   
 Una vez que la red virtual XPrem tenga su propio servidor DNS (DC2), deberá configurarla para que utilice este servidor DNS. Ejecute estos comandos desde el símbolo del sistema de Azure PowerShell en el equipo local.
   
@@ -187,7 +187,7 @@ Set-AzureRmVirtualNetwork -VirtualNetwork $vnet
 Restart-AzureRmVM -ResourceGroupName $rgName -Name "DC2"
 ```
 
-Desde el portal de Azure en el equipo local, se conecta a DC1 con el CORP\\credenciales de Usuario1. Para configurar el dominio CORP para que usuarios y equipos de utilizan el controlador de dominio local para la autenticación, ejecutar estos comandos desde un símbolo de Windows PowerShell de nivel de administrador en DC1.
+Desde el portal de Azure en el equipo local, conectar a DC1 con la CORP\\las credenciales de Usuario1. Para configurar el dominio corporativo para que los usuarios y equipos de usan su controlador de dominio local para la autenticación, ejecute estos comandos desde un símbolo de Windows PowerShell de nivel de administrador en DC1.
   
 ```
 New-ADReplicationSite -Name "TestLab" 
@@ -204,7 +204,7 @@ Ya puede probar el entorno simulado de nube híbrida de Azure.
   
 ## <a name="next-step"></a>Paso siguiente
 
-Utilice este entorno de prueba/desarrollo para simular una [granja de SharePoint Server 2016 intranet alojado en Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).
+Use este entorno de desarrollo y prueba para simular una [granja de servidores de intranet de SharePoint Server 2016 hospedado en Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).
   
 ## <a name="see-also"></a>Consulte también
 
@@ -214,9 +214,9 @@ Utilice este entorno de prueba/desarrollo para simular una [granja de SharePoint
   
 [Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
-[Seguridad de la aplicación de nube para su entorno de pruebas y desarrollo de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Seguridad de la aplicación en la nube para el entorno de desarrollo y prueba de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
-[Una protección avanzada para su entorno de pruebas y desarrollo de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[Una protección avanzada para el entorno de desarrollo y prueba de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 
