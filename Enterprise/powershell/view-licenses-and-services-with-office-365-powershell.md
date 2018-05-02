@@ -3,7 +3,7 @@ title: Ver las licencias y los servicios con PowerShell de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,34 +15,34 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: "Explica cómo usar PowerShell de Office 365 para ver información sobre los planes de licencias, los servicios y las licencias disponibles en su organización de Office 365."
-ms.openlocfilehash: 718b26c7afb978384918b2de8ea37d01638d3e16
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Explica cómo usar PowerShell de Office 365 para ver información sobre los planes de licencias, los servicios y las licencias disponibles en su organización de Office 365.
+ms.openlocfilehash: 400af224f7c74d72a173fa4ea45ede4d6057bbf7
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Ver licencias y servicios con PowerShell de Office 365
 
 **Resumen:** se explica cómo usar PowerShell de Office 365 para ver información sobre los planes de licencias, los servicios y las licencias disponibles en su organización de Office 365.
   
 Todas las suscripciones de Office 365 se componen de estos elementos:
-- **Planes de licencias** También se conocen como planes de licencia o planes de Office 365. Los planes de licencias determinan los servicios de Office 365 que están disponibles para los usuarios. Su suscripción a Office 365 puede contener varios planes de licencias. Un plan de licencias de ejemplo sería Office 365 Enterprise E3.
+
+- **Planes de licencias** También se conocen comoplanes de licencia o planes de Office 365. Los planes de licencias determinan los servicios de Office 365 que están disponibles para los usuarios. Su suscripción a Office 365 puede contener varios planes de licencias. Un plan de licencias de ejemplo sería Office 365 Enterprise E3.
     
-- **Servicios** También se conocen como planes de servicio. Los servicios son los productos, las características y las capacidades de Office 365 disponibles en cada plan de licencias, por ejemplo, Exchange Online y Office Professional Plus. Los usuarios pueden tener varias licencias asignadas que provengan de diferentes planes de licencias, y les permitan obtener acceso a diferentes servicios.
+- **Servicios** También se conocen comoplanes de servicio. Los servicios son los productos, las características y las capacidades de Office 365 disponibles en cada plan de licencias, por ejemplo, Exchange Online y Office Professional Plus. Los usuarios pueden tener varias licencias asignadas que provengan de diferentes planes de licencias, y les permitan obtener acceso a diferentes servicios.
     
 - **Licencias** Los planes de licencias contienen el número de licencias que haya adquirido. Puede asignar licencias a los usuarios para que estos puedan usar los servicios de Office 365 definidos por el plan de licencias. Cada cuenta de usuario necesita como mínimo una licencia del plan de licencias para que el usuario correspondiente pueda iniciar sesión en Office 365 y usar los servicios.
     
 Puede usar PowerShell de Office 365 para ver información detallada sobre los planes de licencias, las licencias y los servicios disponibles en su organización de Office 365. Para obtener más información sobre los productos, las características y los servicios disponibles en las diferentes suscripciones de Office 365, consulte [Opciones de planes de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691147).
+
 ## <a name="before-you-begin"></a>Antes de empezar
-<a name="RTT"> </a>
 
 - Los procedimientos de este tema requieren conectarse a PowerShell de Office 365. Para obtener instrucciones, vea [Conectarse a PowerShell de Office 365](connect-to-office-365-powershell.md).
     
 - Hay un script de PowerShell que automatiza los procedimientos descritos en este tema. En concreto, el script le permite ver y deshabilitar servicios de la organización de Office 365, incluido Sway. Para obtener más información, consulte [Deshabilitar el acceso a Sway con Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
     
 ## <a name="view-information-about-licensing-plans-and-the-available-licenses"></a>Ver información sobre los planes de licencias y las licencias disponibles
-<a name="ShortVersion"> </a>
 
 Para obtener información resumida sobre los planes de licencias actuales y las licencias disponibles en cada plan, ejecute el siguiente comando en PowerShell de Office 365:
   
@@ -68,7 +68,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 En la tabla siguiente, se muestran los planes de servicio de Office 365, junto con sus nombres descriptivos, para los servicios más comunes. Su lista de planes de servicio puede ser diferente. Para obtener una lista completa de los planes de servicio y sus nombres descriptivos, póngase en contacto con el [soporte técnico de Office ](https://support.office.com/home/contact).
   
-|****Plan de servicio****|****Descripción****|
+|**Plan de servicio**|**Descripción**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
@@ -83,7 +83,7 @@ En la tabla siguiente, se muestran los planes de servicio de Office 365, junto c
 Para obtener información detallada sobre los servicios de Office 365 disponibles en un plan de licencias en concreto, use la sintaxis siguiente.
   
 ```
-(Get-MsolAccountSku | where {$_.AccountSkuId -eq " <AccountSkuId>"}).ServiceStatus
+(Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
 
 En este ejemplo, se muestran los servicios de Office 365 disponibles en el plan de licencias de litwareinc:ENTERPRISEPACK (Office 365 Enterprise E3).
@@ -93,19 +93,12 @@ En este ejemplo, se muestran los servicios de Office 365 disponibles en el plan 
 ```
 
 ## <a name="new-to-office-365"></a>¿Es la primera vez que usa Office 365?
-<a name="ShortVersion"> </a>
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
-## <a name="see-also"></a>Vea también
-<a name="ShortVersion"> </a>
+## <a name="see-also"></a>Consulte también
 
-#### 
-
-[Ver los usuarios con licencia y sin licencia con PowerShell de Office 365](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
-  
-[Ver los detalles del servicio y la licencia de la cuenta con PowerShell de Office 365](view-account-license-and-service-details-with-office-365-powershell.md)
-#### 
-
-[Get-MsolAccountSku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
+- [Ver los usuarios con licencia y sin licencia con PowerShell de Office 365](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+- [Ver los detalles del servicio y la licencia de la cuenta con PowerShell de Office 365](view-account-license-and-service-details-with-office-365-powershell.md)
+- [Get-MsolAccountSku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
 
