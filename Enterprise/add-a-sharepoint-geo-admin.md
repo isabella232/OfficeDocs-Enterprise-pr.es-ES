@@ -8,11 +8,11 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: Obtenga información sobre cómo agregar o quitar un administrador ubican en OneDrive para profesionales Multi-ubican.
-ms.openlocfilehash: 7630597654df9ad78619b94fedc9e18d5b0b721e
-ms.sourcegitcommit: 886b23f590f6187f7a98c1083a3b49359ec2a5c3
+ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Agregar o quitar un administrador ubican en OneDrive para Busniess Multi-Geo
 
@@ -49,6 +49,14 @@ Tenga en cuenta que no todos los grupos de seguridad tienen un alias de grupo. S
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
 Para quitar un grupo mediante el uso de ObjectID, ejecute`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
+
+### <a name="accessing-the-admin-center-for-a-specific-geo-location"></a>Obtener acceso a una ubicación geográfica específica en el centro de administración
+
+Para administrar la configuración de OneDrive para su ubicación geográfica, los administradores deben tener acceso el centro de administración de OneDrive directamente con el formato de dirección URL siguiente:
+
+https://admin.onedrive.com/?geo=<*geo*>
+
+Por ejemplo, se encuentra en el centro de administración de OneDrive para Canadá: https://admin.onedrive.com/?geo=CAN.
 
 ## <a name="see-also"></a>Consulte también
 

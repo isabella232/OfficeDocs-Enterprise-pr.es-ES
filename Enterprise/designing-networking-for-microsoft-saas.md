@@ -1,5 +1,5 @@
 ---
-title: "Diseño de redes para SaaS de Microsoft"
+title: Diseño de redes para SaaS de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: 'Resumen: Aprenda a optimizar la red para tener acceso a los servicios de SaaS de Microsoft, como Office 365, Microsoft Intune y Dynamics 365.'
-ms.openlocfilehash: e4d83f9ab88408b3eb5ca98379bbc709ec8f31a7
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.openlocfilehash: 4cfbeab3d90703e17c86e707988a8a62c937df9a
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Diseño de redes para SaaS de Microsoft
 
@@ -181,8 +181,6 @@ Si quiere optimizar la red en las sincronizaciones continuas:
 Para más información, visite:
   
 - [Planeación de la migración y red para Office 365](https://aka.ms/tune)
-    
-- [Curso de Microsoft Virtual Academy sobre la administración del rendimiento de Office 365](https://aka.ms/o365perf)
     
 - [ExpressRoute para Office 365](https://aka.ms/expressrouteoffice365)
 
