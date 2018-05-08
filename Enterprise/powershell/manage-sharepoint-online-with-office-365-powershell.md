@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: use PowerShell de Office 365 para administrar usuarios, grupos y grupos de sitios de SharePoint Online.'
-ms.openlocfilehash: 752c7d24ee6d0e77ee1cc4a65322957324767531
-ms.sourcegitcommit: 74cdb2534bce376abc9cf4fef85ff039c46ee790
+ms.openlocfilehash: 77b589ea036ecb7d7a47b7ba6c442047529c19cf
+ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Administrar SharePoint Online con PowerShell de Office 365
 
@@ -36,9 +36,7 @@ Una de las tareas principales de cualquier administrador de SharePoint Online es
     
 ## <a name="see-also"></a>Consulte también
 
-#### 
+- [Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
 
-[Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
-  
-[Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
+- [Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
 
