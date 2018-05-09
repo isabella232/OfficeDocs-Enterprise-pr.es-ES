@@ -4,21 +4,24 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 ms.date: 5/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: ''
-ms.custom: ''
-ms.assetid: ''
+ms.service: Office 365 Administration
+localization_priority: None
+ms.collection: Strat_O365_Enterprise
 description: 'Resumen: Conozca las directivas de cliente de Office 365 que son compatibles con los exploradores, Android, iOS, Mac OS X, Windows y Windows Mobile.'
-ms.openlocfilehash: 1da917ec40fb40d7a13dc5fb426f640b178877f4
-ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
+ms.openlocfilehash: 663d2e2a127b03524f7f402acee3d6249870321a
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="office-365-client-policies---client-and-app-view"></a>Directivas de cliente de Office 365 - cliente y vista de la aplicación
+**¿Desea cambiar la vista de esta información? Seleccione una vista distinta que aparece a continuación:**
+> [!div class="op_single_selector"] 
+> - [Cliente & vista de aplicación](office-365-client-policies-app-view.md)
+> - [Vista de directiva](office-365-client-policies-policy-view.md)
+
 Use las listas siguientes para determinar qué directivas de cliente de Office 365 se admiten para distintas aplicaciones de cliente de Microsoft.
 
 ## <a name="delve"></a>Delve
