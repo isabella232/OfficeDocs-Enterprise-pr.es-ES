@@ -10,26 +10,26 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
-description: Expandir su presencia en Office 365 para varias regiones geográficas con capacidades de multi-geo en Exchange Online.
-ms.openlocfilehash: 6378f8a010b790674f07150aa39cbbc38c60b7fe
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+description: Expanda su información de presencia de Office 365 a varias regiones geográficas con multi-ubican las capacidades de Exchange Online.
+ms.openlocfilehash: ea00ab52142e92e122273ab4ba718e98bd94b572
+ms.sourcegitcommit: 12d3223cc2d6bf39a8960409a923254e1790fd2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Capacidades de Multi-Geo en Exchange Online
 
-Capacidades de Multi-Geo en Office 365 permiten un único arrendatario abarcar varias ubicaciones geográficas (Geos). Cuando Multi-Geo está habilitada, los clientes pueden seleccionar la ubicación del contenido del buzón de Exchange en línea (datos en reposo) en cada usuario.
+Capacidades de Multi-ubican en Office 365 habilitar un inquilino único abarcar varias ubicaciones geográficas (zonas). Al Multi-ubican está habilitada, los clientes pueden seleccionar la ubicación del contenido del buzón Exchange Online (datos en reposo) por usuario.
 
-La ubicación inicial del inquilino (denominada el "default" o "central" ubicación) se determina basándose en su dirección de facturación. Cuando Multi-Geo está habilitada, se pueden colocar buzones en ubicaciones adicionales "satélite" por:
+La ubicación inicial de inquilinos (denominada el "default" o "central" ubicación) se determina en función de su dirección de facturación. Cuando está habilitada la Multi-ubican, puede poner los buzones de correo en ubicaciones adicionales "satélite" por:
 
-- Crear un nuevo buzón de Exchange Online directamente en un satélite.
+- Creación de un nuevo buzón de Exchange Online directamente en un satélite.
 
-- Mover un buzón de Exchange en línea existente a un satélite.
+- Mover un buzón de Exchange Online existente en un satélite.
 
 - Incorporación de un buzón de correo desde una organización de Exchange local directamente en un satélite.
 
-Las zonas siguientes están disponibles para su uso en una configuración Multi-Geo:
+Las zonas siguientes están disponibles para su uso en una configuración de Multi-Geo:
 
 - Asia Pacífico
 
@@ -39,7 +39,7 @@ Las zonas siguientes están disponibles para su uso en una configuración Multi-
 
 - Unión Europea
 
-- India (actualmente sólo está disponible para clientes con direcciones de facturación en la India)
+- India (actualmente sólo está disponible para clientes con direcciones de facturación en India)
 
 - Japón
 
@@ -50,62 +50,62 @@ Las zonas siguientes están disponibles para su uso en una configuración Multi-
 - Estados Unidos
 
 ## <a name="prerequisite-configuration"></a>Configuración de requisitos previos
-Antes de empezar a utilizar capacidades de Multi-Geo en Exchange Online, Microsoft tiene que configurar a su arrendatario Exchange Online para soporte de Multi-Geo. Este proceso de configuración inicial se desencadena al solicitar licencias del Multi-Geo y normalmente debe tener menos de 30 días para completar.
+Antes de empezar a usar las capacidades de Multi-Geo en Exchange Online, Microsoft tiene que configurar a su inquilino de Exchange Online para ofrecer compatibilidad con Multi-ubican. Este proceso de configuración de una sola vez se desencadena cuando pedir licencias Multi-Geo y normalmente debe tardar menos de 30 días en completarse.
 
-Recibirá notificaciones en el [Centro de mensajes de Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) cuando se ha iniciado y finalizado la configuración. Configuración se activa automáticamente al adquirir licencias del Multi-Geo.
+Recibirá notificaciones en el [Centro de mensajes de Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) cuando la configuración se ha iniciado y completado. Configuración se desencadena automáticamente cuando comprar licencias de Multi-ubican.
 
-## <a name="mailbox-placement-and-moves"></a>Los movimientos y colocación de buzón
-Tras completa los pasos previos de configuración Multi-Geo, a Microsoft Exchange Online respeta el atributo **PreferredDataLocation** en objetos de usuario en AD de Azure.
+## <a name="mailbox-placement-and-moves"></a>Se desplaza y colocación de buzón de correo
+Después de que Microsoft lleva a cabo los pasos de configuración de Multi-ubican necesario como requisito previos, Exchange Online respeta el atributo **PreferredDataLocation** en objetos de usuario en Azure AD.
 
-Exchange Online sincroniza la propiedad **PreferredDataLocation** de Azure AD en la propiedad **MailboxRegion** en el servicio de directorio de Exchange en línea. El valor de **MailboxRegion** determina el Geo donde se colocarán los buzones de usuario y cualquier archivo asociado. No es posible configurar los buzones principales de buzón y archiving de un usuario para que residan en zonas distintas. Solo Geo puede configurarse por cada objeto de usuario.
+Exchange Online se sincroniza la propiedad **PreferredDataLocation** de Azure AD en la propiedad **MailboxRegion** en el servicio de directorio Exchange Online. El valor de **MailboxRegion** determina el ubican donde se colocará los buzones de usuario y cualquier archivo asociado. No es posible configurar los buzones principales de buzón de correo y de archivo de un usuario para que residan en diferentes zonas. Se puede configurar ubican sólo una por cada objeto de usuario.
 
-- Cuando **PreferredDataLocation** está configurado en un usuario con un buzón existente, el buzón se moverán automáticamente a la Geo especificado. 
+- Cuando **PreferredDataLocation** está configurado en un usuario con un buzón existente, el buzón de correo se moverán automáticamente a la ubican especificado. 
 
-- Cuando **PreferredDataLocation** está configurado en un usuario sin un buzón existente, el buzón se aprovisionará en el Geo especificado. 
+- Cuando **PreferredDataLocation** está configurado en un usuario sin un buzón existente, el buzón de correo se aprovisionará en el ubican especificado. 
 
-- Si no se especifica ningún Geo, el buzón se colocará en el valor predeterminado de Geo.
+- Si no se especifica ningún ubican, el buzón de correo se colocará en el valor predeterminado ubican.
 
-**Nota**: capacidades de Multi-Geo y Skype para reuniones de negocios en línea alojado regionalmente ambos utilizan la propiedad **PreferredDataLocation** en objetos de usuario para buscar servicios. Si configura los valores de **PreferredDataLocation** en objetos de usuario para reuniones regionalmente hospedados, el buzón y OneDrive para los usuarios se moverá automáticamente a la Geo especificado después de habilita Multi-Geo en el inquilino de Office 365.
+**Nota**: Multi-ubican capacidades y Skype para profesionales reuniones en línea hospedado regional ambos usan la propiedad **PreferredDataLocation** en objetos de usuario para localizan los servicios. Si configura los valores de **PreferredDataLocation** en objetos de usuario para las reuniones de ámbito regional hospedados, el buzón de correo para esos usuarios se moverá automáticamente a la ubican especificado después de habilita Multi-ubican en el inquilino de Office 365.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitaciones de características para Multi-Geo en Exchange Online
-1. Sólo los buzones de usuario, buzones de recursos (buzones de sala y equipo) y buzones compartidos admiten características de Multi-Geo. Sólo puede colocar buzones de carpetas públicas y grupos de Office 365 en Geo principal del cliente.
+1. Sólo buzones de usuario, buzones de recursos (buzones de correo de sala y equipamiento) y buzones compartidos admiten características de Multi-ubican. Sólo puede colocar buzones de carpetas públicas y grupos de Office 365 en ubican principal del cliente.
  
-2. Seguridad y cumplimiento de normas características (por ejemplo, auditoría y eDiscovery) que están disponibles en el centro de administración de Exchange (EAF) no están disponibles en las organizaciones Multi-Geo. En su lugar, debe utilizar el [Centro de cumplimiento de normas y seguridad de Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar características de seguridad y cumplimiento de normas.
+2. Seguridad y cumplimiento de normas características (por ejemplo, auditoría y exhibición de documentos electrónicos) que están disponibles en el centro de administración de Exchange (EAC) no están disponibles en las organizaciones Multi-ubican. En su lugar, debe usar el [Centro de cumplimiento y seguridad de Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar las características de seguridad y cumplimiento de normas.
 
-3. Outlook para usuarios de Mac puede experimentar una pérdida temporal de acceso a su carpeta de archiving en línea mientras mueve su buzón a un nuevo Geo. Esta condición se produce cuando del usuario principal y archive los buzones están en diferentes zonas, debido a movimientos de buzones entre Geo pueden completar en diferentes momentos.
+3. Outlook para los usuarios de Mac puede experimentar una pérdida temporal de acceso a su carpeta de archivo en línea mientras mover sus buzones de correo a un nuevo ubican. Esta condición se produce cuando la principal del usuario y buzones de archivo se encuentran en diferentes zonas, debido a que los movimientos de buzones entre ubican pueden completar en momentos diferentes.
 
-4. Los usuarios no pueden compartir *carpetas del buzón* a través de zonas en Outlook en el web (anteriormente conocido como Outlook Web App u OWA). Por ejemplo, un usuario de la Unión Europea no puede utilizar Outlook en el web para abrir una carpeta compartida en un buzón que se encuentra en los Estados Unidos. Sin embargo, Outlook de los usuarios de web puede abrir *otros buzones* en distintas zonas utilizando una ventana de explorador independiente como se describe en [Abrir el buzón de otra persona en una ventana de explorador independiente en Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
+4. Los usuarios no pueden compartir *las carpetas de buzón de correo* entre zonas en Outlook, en la web (anteriormente conocido como Outlook Web App u OWA). Por ejemplo, un usuario en la Unión Europea no puede usar Outlook en la web para abrir una carpeta compartida en un buzón que se encuentra en los Estados Unidos. Sin embargo, Outlook en los usuarios de web puede abrir *otros buzones de correo* en diferentes zonas mediante el uso de una ventana del explorador independiente como se describe en [Abra el buzón de otra persona en una ventana del explorador independiente en Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
 
-    **Nota**: compartir una carpeta buzón entre Geo es compatible con Outlook en Windows.
+    **Nota**: compartir una carpeta buzón entre Geo se admite en Outlook en Windows.
 
-5. Actualmente, no es compatible entre Geo delegación de calendario en Outlook en el web. Delegación de calendario entre Geo es compatible con Outlook en Windows.
+5. Actualmente, no es compatible entre ubican delegación de calendario en Outlook en el web. Delegación de calendario entre Geo se admite en Outlook en Windows.
 
 ## <a name="administration"></a>Administración 
-PowerShell remoto es requerido para ver y configurar propiedades de Geo en el entorno de Office 365. Para obtener información sobre los distintos módulos de PowerShell utilizados para administrar Office 365, vea [administración de Office 365 y Exchange Online con Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6).
+PowerShell remoto es necesario para ver y configurar las propiedades relacionadas con ubican en el entorno de Office 365. Para obtener información sobre los distintos módulos de PowerShell que se utiliza para Office 365, vea [administración de Office 365 y Exchange Online con Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6).
 
-- Necesita el [Módulo de PowerShell de Active Directory de Microsoft Azure](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 o posterior de v1.x para ver la propiedad **PreferredDataLocation** en objetos de usuario. Para conectarse a Azure AD PowerShell, vea [conectarse a Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell). 
+- Necesitará el [Módulo de PowerShell de Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 o más adelante en v1.x para ver la propiedad **PreferredDataLocation** en objetos de usuario. Para conectarse a AD de Windows Azure PowerShell, vea [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell). 
 
-- Para conectarse a Exchange Online PowerShell, vea [conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). 
+- Para conectarse a Exchange Online PowerShell, vea [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). 
 
-### <a name="connect-directly-to-a-specific-geo-using-exchange-online-powershell"></a>Conectar directamente a un Geo específico usando PowerShell en línea de Exchange
-Normalmente, Exchange Online PowerShell se conectará con el valor predeterminado de Geo. Sin embargo, también puede conectar directamente a zonas no predeterminada. Debido a las mejoras de rendimiento, le recomendamos conectarse directamente a la Geo no predeterminada cuando sólo administra los usuarios en ese Geo.
+### <a name="connect-directly-to-a-specific-geo-using-exchange-online-powershell"></a>Conectar directamente a un ubican específica con Exchange Online PowerShell
+Normalmente, Exchange Online PowerShell se conectará a la predeterminada ubican. Sin embargo, también puede conectarse directamente a zonas no predeterminado. Debido a las mejoras de rendimiento, se recomienda conectarse directamente a la ubican no predeterminado al administrar sólo los usuarios de ese ubican.
 
-Para conectarse a un Geo específica, el parámetro *ConnectionUri* es diferente de las instrucciones de conexión normales. El resto de los comandos y los valores son los mismos. Los pasos son:
+Para conectarse a un ubican específica, el parámetro *ConnectionUri* es diferente de las instrucciones de conexión regular. El resto de los comandos y los valores son los mismos. Los pasos son:
 
 1. En el equipo local, abra Windows PowerShell y ejecute el siguiente comando:
     
     ```
     $UserCredential = Get-Credential
     ```
-   En el cuadro de diálogo **Solicitud de credencial de Windows PowerShell** , escriba la contraseña o cuenta de escuela y trabajo y, a continuación, haga clic en **Aceptar**.
+   En el cuadro de diálogo **Solicitud de credenciales de Windows PowerShell** , escriba su trabajo o escuela cuenta y su contraseña y, a continuación, haga clic en **Aceptar**.
     
-2. Reemplazar `<emailaddress>` con la dirección de correo electrónico de **cualquier** buzón del destino geográfico y ejecute el siguiente comando. Sus permisos en el buzón y la relación con sus credenciales en el paso 1 no son un factor; la dirección de correo electrónico simplemente indica a Exchange Online dónde conectar.
+2. Reemplace `<emailaddress>` con la dirección de correo electrónico de **cualquier** buzón de correo en el destino Geo y ejecute el comando siguiente. Los permisos en el buzón de correo y la relación con sus credenciales en el paso 1 no son un factor; la dirección de correo electrónico simplemente indica a Exchange Online dónde debe conectarse.
   
    ```
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
    ```
 
-   Por ejemplo, si olga@contoso.onmicrosoft.com es la dirección de correo electrónico de un buzón válido en el Geo que desea conectarse, ejecute el siguiente comando:
+   Por ejemplo, si olga@contoso.onmicrosoft.com es la dirección de correo electrónico de un buzón de correo válido en el Geo va a conectar, ejecute el siguiente comando:
 
    ```
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
@@ -117,24 +117,24 @@ Para conectarse a un Geo específica, el parámetro *ConnectionUri* es diferente
     ```
 
 ### <a name="azure-ad-connect-version-requirements"></a>Requisitos de versión de Azure Connect de AD
-Conectar DAA versión 1.1.524.0 o posterior es el único método admitido para establecer la propiedad **PreferredDataLocation** en objetos de usuario que se sincronizan desde local de Active Directory. Para obtener instrucciones detalladas, consulte [sincronización de directorio activo Azure Connect: configurar ubicación de datos preferido de recursos de Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+Conectar AAD versión 1.1.524.0 o posterior es el único método admitido para establecer la propiedad **PreferredDataLocation** en los objetos de usuario que se sincronizan desde Active Directory local. Para obtener instrucciones detalladas, consulte [sincronización de Azure Active Directory Connect: configurar la ubicación de datos preferido para recursos de Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 ### <a name="geo-codes"></a>Códigos de geo
-Utilice códigos de tres letras para especificar el Geo en la propiedad **PreferredDataLocation** . En la siguiente tabla enumera los códigos para las zonas disponibles:
+Use los códigos de tres letras para especificar el ubican en la propiedad **PreferredDataLocation** . En la siguiente tabla se enumera los códigos de las zonas disponibles:
 
 |Geo |Código |
 |---------|---------|
-|Asia y Pacífico |APC |
+|Asia Pacífico |APC |
 |Australia |AUSTRALIA |
 |Canadá |PUEDE |
 |Unión Europea |EUROS |
 |India |IND |
-|Japón |JPN |
-|Corea |KOR |
+|Japón |JAPONÉS |
+|Corea |COREANO |
 |Reino Unido |GBR |
-|Estados Unidos |NAM |
+|Estados Unidos |NOMBRE |
 
-**Nota**: las propiedades **PreferredDataLocation** y **MailboxRegion** son cadenas con ninguna comprobación de errores. Si escribe un valor no válido (por ejemplo, NAN) el buzón se colocará en el valor predeterminado de Geo.
+**Nota**: las propiedades **PreferredDataLocation** y **MailboxRegion** son cadenas con ninguna comprobación de errores. Si escribe un valor no válido (por ejemplo, NAN) el buzón de correo se colocará en el valor predeterminado ubican.
 
 ### <a name="view-the-available-geos-that-are-configured-in-your-exchange-online-organization"></a>Ver las zonas disponibles que están configurados en la organización de Exchange Online
 Para ver la lista de zonas configuradas en la organización de Exchange Online, ejecute el siguiente comando en Exchange Online PowerShell:
@@ -158,22 +158,22 @@ KOR
 NAM
 ```
 
-### <a name="find-the-geo-location-of-a-mailbox"></a>Buscar la ubicación geográfica de un buzón
-El cmdlet **Get-Mailbox** en Exchange Online PowerShell muestra las propiedades siguientes relacionadas con el Geo en buzones:
+### <a name="find-the-geo-location-of-a-mailbox"></a>Busque la ubicación geográfica de un buzón de correo
+El cmdlet **Get-Mailbox** en Exchange Online PowerShell muestra las siguientes propiedades relacionadas con ubican en los buzones de correo:
 
-- **Base de datos**: las 3 primeras letras del nombre de la base de datos corresponden al código geográfico, que indica dónde se encuentra el buzón.
+- **Base de datos**: el primero 3 letras del nombre de base de datos se corresponden con el código ubican, que indica donde se encuentra actualmente el buzón de correo.
 
-- **MailboxRegion**: especifica el código geográfico establecido por el administrador (sincronizado desde **PreferredDataLocation** en Azure AD).
+- **MailboxRegion**: especifica el código ubican establecido por el administrador (sincronizado desde **PreferredDataLocation** en Azure AD).
 
-- **MailboxRegionLastUpdateTime**: indica MailboxRegion se actualizaron por última vez (automática o manualmente).
+- **MailboxRegionLastUpdateTime**: indica cuándo se actualizó por última vez las MailboxRegion (automático o manual).
 
-Para ver las propiedades de un buzón, utilice la sintaxis siguiente:
+Para ver estas propiedades para un buzón de correo, use la siguiente sintaxis:
 
 ```
 Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
 ```
 
-Por ejemplo, para ver la información geográfica para el buzón de chris@contoso.onmicrosoft.com, ejecute el siguiente comando:
+Por ejemplo, para ver la información de Geo para el buzón de correo chris@contoso.onmicrosoft.com, ejecute el siguiente comando:
 
 ```
 Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
@@ -188,18 +188,18 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
 > [!NOTE]
-> Si el código geográfico en el nombre de la base de datos no coincide con el valor de **MailboxRegion** , el buzón se moverá automáticamente a la Geo especificado por el valor de **MailboxRegion** (Exchange Online busca una falta de coincidencia entre estos valores de propiedad).
+> Si el código ubican en el nombre de la base de datos no coincide con el valor de **MailboxRegion** , el buzón de correo se moverán automáticamente a la ubican especificado por el valor de **MailboxRegion** (Exchange Online tiene el mismo aspecto para un error de coincidencia entre estos valores de propiedad).
 
-### <a name="move-an-existing-cloud-mailbox-to-a-specific-geo"></a>Mover un buzón existente de nube para un específico Geo
-Use los cmdlets **Get-MsolUser** y **MsolUser del conjunto** del módulo de AD de Azure para Windows PowerShell para ver o especificar el Geo donde se almacenará el buzón de un usuario.
+### <a name="move-an-existing-cloud-mailbox-to-a-specific-geo"></a>Mover un buzón de la nube existente a un ubican específico
+Use los cmdlets **Get-MsolUser** y **Set-MsolUser** en el módulo de AD de Azure para Windows PowerShell para ver o especificar la ubican donde se almacenará el buzón de un usuario.
 
-Para ver el valor de **PreferredDataLocation** para un usuario, utilice esta sintaxis en Azure AD PowerShell:
+Para ver el valor de **PreferredDataLocation** para un usuario, use esta sintaxis en Azure AD PowerShell:
 
 ```
 Get-MsolUser -UserPrincipalName <UserPrincipalName> | Format-List UserPrincipalName,PreferredDataLocation
 ```
 
-Por ejemplo, para ver el valor de **PreferredDataLocation** de la michelle@contoso.onmicrosoft.com usuario, ejecute el siguiente comando:
+Por ejemplo, para ver el valor de **PreferredDataLocation** para el usuario michelle@contoso.onmicrosoft.com, ejecute el siguiente comando:
 
 ```
 Get-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com | Format-List
@@ -212,13 +212,13 @@ UserPrincipalName     : michelle@contoso.onmicrosoft.com
 PreferredDataLocation : EUR
 ```
 
-Para modificar el valor de **PreferredDataLocation** para un objeto de usuario sólo nube, utilice la siguiente sintaxis en Azure AD PowerShell:
+Para modificar el valor de **PreferredDataLocation** para un objeto de usuario sólo en la nube, use la siguiente sintaxis en Azure AD PowerShell:
 
 ``` 
 Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoCode>
 ```
 
-Por ejemplo, para establecer el valor de **PreferredDataLocation** a la Unión Europea (en euros) para la michelle@contoso.onmicrosoft.com usuario, ejecute el comando siguiente:
+Por ejemplo, para establecer el valor de **PreferredDataLocation** a la Unión Europea (EUR) para el usuario michelle@contoso.onmicrosoft.com, ejecute el siguiente comando:
 
 ``` 
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
@@ -226,38 +226,38 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 **Notas**:
 
-- Como se mencionó anteriormente sincronizado para objetos de usuario de Active Directory de local, no puede utilizar este procedimiento. Debe cambiar el valor de **PreferredDataLocation** con conexión DAA. Para obtener más información, consulte [sincronización de directorio activo Azure Connect: configurar ubicación de datos preferido de recursos de Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation). 
+- Como se mencionó anteriormente sincronizada para objetos de usuario de Active Directory local, no puede usar este procedimiento. Debe cambiar el valor de **PreferredDataLocation** mediante AAD conectar. Para obtener más información, vea [sincronización de Azure Active Directory Connect: configurar la ubicación de datos preferido para recursos de Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation). 
 
-- ¿Cuánto tiempo tarda en mover un buzón depende de varios factores:
+- Cuánto tiempo tarda para mover un buzón de correo depende de varios factores:
  
-  - El tamaño y el tipo de buzón.
+  - El tamaño y el tipo de buzón de correo.
  
-  - El número de buzones que se mueve.
+  - El número de buzones que se va a mover.
  
-  - La disponibilidad de los recursos de movimiento.
+  - La disponibilidad de recursos de movimiento.
 
-#### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Deshabilitado de mover los buzones que están en retención para litigios
-Deshabilitado buzones en retención para litigios que se conservan para propósitos no se pueden mover cambiando su valor de **PreferredDataLocation** en su estado deshabilitado de eDiscovery. Para mover un buzón deshabilitado en retención para litigios:
+#### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Move deshabilita los buzones de correo que se encuentran en suspensión por litigio
+Deshabilita los buzones en suspensión por litigio que se conservan para exhibición de documentos electrónicos con fines no se puede mover mediante la modificación de su valor de **PreferredDataLocation** en su estado deshabilitado. Para mover un buzón deshabilitado en juicio:
 
-1. Asignar temporalmente una licencia en el buzón.
+1. Asignar temporalmente una licencia para el buzón de correo.
 
 2. Cambiar el **PreferredDataLocation**.
 
-3. Eliminar la licencia del buzón de correo después de que se ha movido a la Geo seleccionada para volver a colocarla en el estado deshabilitado.
+3. Quitar la licencia el buzón de correo después de se ha movido a la ubican seleccionado para volver a colocarla en el estado deshabilitado.
 
-### <a name="create-new-cloud-mailboxes-in-a-specific-geo"></a>Crear nuevos buzones de nube en un geográfico específico 
-Para crear un nuevo buzón en un geográfico específico, que debe hacer cualquiera de estos pasos:
+### <a name="create-new-cloud-mailboxes-in-a-specific-geo"></a>Crear nuevos buzones de correo en la nube en un ubican específico 
+Para crear un nuevo buzón de correo en un ubican específico, necesita realizar cualquiera de estos pasos:
 
-- Configurar el valor de **PreferredDataLocation** como se describe en la anterior sección *antes de* crear el buzón de Exchange en línea (por ejemplo, al configurar el valor de **PreferredDataLocation** en un usuario antes de asignar una licencia). 
+- Configure el valor de **PreferredDataLocation** como se describe en la anterior sección *antes de* crear el buzón en Exchange Online (por ejemplo, configurando el valor de **PreferredDataLocation** en un usuario antes de asignar una licencia). 
 
-- Asignar una licencia a la vez que se establece el valor de **PreferredDataLocation** .
+- Asignar una licencia al mismo tiempo, que se establece el valor de **PreferredDataLocation** .
 
-Para crear un nuevo sólo nube con licencia usuario (DAA conectar sincronizado) en un geográfico específico, utilice la siguiente sintaxis en Azure AD PowerShell:
+Para crear un nuevo solo en nube con licencia usuario (no AAD conectarse sincronizado) en un ubican específica, use la siguiente sintaxis en Azure AD PowerShell:
 
 ```
 New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>" [-FirstName <FirstName>] [-LastName <LastName>] [-Password <Password>] [-LicenseAssignment <AccountSkuId>] -PreferredDataLocation <GeoCode> 
 ```
-Este ejemplo crea una nueva cuenta de usuario para Elizabeth Brunner con los siguientes valores:
+En este ejemplo se crea una nueva cuenta de usuario para Elizabeth Brunner con los siguientes valores:
 
 - Nombre principal de usuario: ebrunner@contoso.onmicrosoft.com
 
@@ -265,50 +265,50 @@ Este ejemplo crea una nueva cuenta de usuario para Elizabeth Brunner con los sig
 
 - Apellido: Arturo López
 
-- Mostrar nombre Elizabeth Brunner
+- Nombre para mostrar Elizabeth Brunner
 
-- Contraseña: genera de forma aleatoria y se muestra en los resultados del comando (ya no estamos utilizando el parámetro de *contraseña* )
+- Contraseña: genera de forma aleatoria y se muestra en los resultados del comando (debido a que no estamos utilizando el parámetro *Password* )
 
 - Licencia: contoso:ENTERPRISEPREMIUM (E5)
 
-3-ubicación: Australia (AUS)
+Ubicación de 3: Australia (Australia)
 
 ```
 New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "Elizabeth Brunner" -FirstName Elizabeth -LastName Brunner -LicenseAssignment contoso:ENTERPRISEPREMIUM -PreferredDataLocation AUS
 ```
 
-Para obtener más información sobre cómo crear nuevas cuentas de usuario y buscar valores LicenseAssignment en Azure AD PowerShell, consulte [crear cuentas de usuario con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell) y [ver licencias y servicios con PowerShell de Office 365](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell).
+Para obtener más información sobre cómo crear nuevas cuentas de usuario y búsqueda de valores de LicenseAssignment en Azure AD PowerShell, vea [crear cuentas de usuario con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell) y [ver licencias y servicios con PowerShell de Office 365](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell).
 
 > [!NOTE]
-> Si está utilizando Exchange PowerShell para habilitar un buzón y necesita el buzón que se creen directamente en el Geo que se especifica en **PreferredDataLocation**, necesitará utilizar un cmdlet Exchange Online como **Enable-Mailbox** o **New-Mailbox** directamente con el servicio de nube. Si utiliza el cmdlet de Exchange local **Enable-RemoteMailbox** , se creará el buzón en el valor predeterminado de Geo.
+> Si usa Exchange PowerShell para habilitar un buzón de correo y necesita el buzón de correo que se creará directamente en el ubican que se especifica en **PreferredDataLocation**, debe usar un cmdlet de Exchange Online como **Enable-Mailbox** o **New-Mailbox** directamente en el servicio de nube. Si usa el cmdlet de Exchange local **Enable-RemoteMailbox** , se creará el buzón de correo en el valor predeterminado ubican.
 
-### <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo"></a>Existente incorporado local buzones en un geográfico específico
-Puede utilizar las herramientas estándar de incorporación y procesos para migrar un buzón desde una organización de Exchange local para Exchange Online, que incluye el [panel de la migración en el CEF](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331)y el cmdlet [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch) en Exchange Online PowerShell.
+### <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo"></a>Incorporado existentes buzones locales en un ubican específico
+Puede usar las herramientas de incorporación estándar y procesos para migrar un buzón de correo de una organización de Exchange local a Exchange Online, incluido el [panel de la migración en el EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331)y el cmdlet [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch) en Exchange Online PowerShell.
 
-El primer paso es comprobar que existe un objeto de usuario para que cada buzón onboarded y compruebe que el valor correcto de la **PreferredDataLocation** está configurado en Azure AD. Las herramientas de incorporación respetarán el valor **PreferredDataLocation** y migrarán los buzones directamente a la Geo especificado.
+El primer paso es comprobar que existe un objeto de usuario para que cada buzón de correo ser onboarded y compruebe que el valor correcto de **PreferredDataLocation** está configurado en Azure AD. Las herramientas de incorporación respetarán el valor **PreferredDataLocation** y migrarán los buzones de correo directamente a la ubican especificado.
 
-O bien, puede utilizar los pasos siguientes para buzones incorporados directamente en un geográfico específico mediante el cmdlet [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest) de PowerShell en línea de Exchange.
+O bien, puede usar los siguientes pasos para los buzones de correo incorporados directamente en un ubican específico mediante el cmdlet [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest) en Exchange Online PowerShell.
 
-1. Compruebe que existe el objeto de usuario para que cada buzón sea onboarded y que **PreferredDataLocation** se establece en el valor deseado en Azure AD. El valor de **PreferredDataLocation** se sincronizarán con el atributo **MailboxRegion** del objeto de usuario de correo correspondiente de Exchange en línea.
+1. Compruebe si que existe el objeto de usuario para que cada buzón de correo ser onboarded y que **PreferredDataLocation** está establecida en el valor deseado de Azure AD. El valor de **PreferredDataLocation** se sincronizarán con el atributo **MailboxRegion** del objeto de usuario correspondiente de correo en Exchange Online.
 
-2. Conectar directamente con el satélite específico Geo mediante las instrucciones de conexión del anteriormente en este tema.
+2. Conectarse directamente al satélite específico ubican siguiendo las instrucciones de conexión desde anteriormente en este tema.
 
-3. En PowerShell de Exchange Online, almacenar las credenciales de administrador local que se utiliza para realizar una migración de buzones en una variable ejecutando el comando siguiente:
+3. En Exchange Online PowerShell, almacenar las credenciales de administrador local que se utiliza para realizar una migración de buzones de correo en una variable, ejecute el comando siguiente:
 
     ```
     $RC = Get-Credential
     ```
 
-4. En PowerShell en línea de Exchange, cree un nuevo **MoveRequest de nuevo** similar al ejemplo siguiente: 
+4. En Exchange Online PowerShell, cree un nuevo **New-MoveRequest** similar al siguiente ejemplo: 
 
     ```
     New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
     ```
 
-5. Repita el paso 4 # para cada buzón que necesita para migrar desde Exchange local al satélite Geo actualmente está conectado a.
+5. Repita el paso 4 # para cada buzón de correo que necesita para migrar desde Exchange local al satélite ubican está actualmente conectado.
 
-6. Si necesita migrar buzones adicionales a un satélite diferente Geo, repita los pasos 2 a 4 para cada satélite específico geográfico.
+6. Si necesita migrar buzones de correo adicionales a un satélite diferente ubican, repita los pasos del 2 al 4 para cada satélite específico ubican.
 
-### <a name="multi-geo-reporting"></a>Reporting de Multi-Geo
-**Informes de uso de Multi-Geo** en el centro de administración de Office 365 se muestra el número de usuarios por Geo. El informe muestra la distribución de usuario para el mes actual y proporciona datos históricos de los últimos 6 meses.
+### <a name="multi-geo-reporting"></a>Multi-ubican informes
+**Multi-ubican los informes de uso** en el centro de administración de Office 365 muestra el recuento de usuarios por ubican. El informe muestra la distribución de usuario para el mes actual y proporciona datos históricos de los últimos 6 meses.
  
