@@ -1,5 +1,5 @@
 ---
-title: Sincronización de directorios para el entorno de desarrollo y prueba de Office 365
+title: Configurar la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,22 +15,22 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
-description: 'Resumen: Configurar la sincronización de directorios para el entorno de desarrollo y prueba de Office 365.'
-ms.openlocfilehash: 2fd4a9e6ea009e28ce95ff69e5ab03043ed18706
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Resumen: configure la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365.'
+ms.openlocfilehash: 209b41e4d695a753867d989b8f27b96618a81303
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Sincronización de directorios para el entorno de desarrollo y prueba de Office 365
+# <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Configurar la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365
 
- **Resumen:** Configurar la sincronización de directorios para el entorno de desarrollo y prueba de Office 365.
+ **Resumen:** configure la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365.
   
-Muchas organizaciones uso Azure Connect de AD y sincronización de directorios para sincronizar el conjunto de cuentas de su bosque de Windows Server Active Directory (AD) local para el conjunto de cuentas de Office 365. Este artículo describe cómo agregar la sincronización de directorios con la sincronización de contraseñas hash para el entorno de desarrollo y prueba de Office 365, dando como resultado la siguiente configuración.
+Muchas organizaciones usan Azure AD Connect y la sincronización de directorios para sincronizar el conjunto de cuentas de su bosque de Windows Server Active Directory (AD) local para el conjunto de cuentas de Office 365. En este artículo, se describe cómo agregar la sincronización de directorios con la sincronización de hash de contraseña al entorno de desarrollo y pruebas de Office 365, lo que da como resultado la siguiente configuración.
   
-![El entorno de desarrollo y prueba de Office 365 con la sincronización de directorios](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Entorno de desarrollo y pruebas de Office 365 con sincronización de directorios](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-Esta configuración se compone de:  
+Esta configuración se compone de: 
   
 - Una suscripción de prueba a Office 365 E5, que expira a los 30 días de su creación.
 - La intranet de una organización simplificada conectada a Internet, que consta de tres máquinas virtuales en una subred de una red virtual de Azure (DC1, APP1 y CLIENTE1). Azure Connect de AD se ejecuta en APP1 para sincronizar el dominio de Windows Server AD con Office 365.
@@ -41,15 +41,15 @@ Existen dos fases para configurar el entorno de desarrollo y pruebas:
 2. Instalar y configurar Azure AD Connect en APP1.
     
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual para todos los artículos de la pila de una guía de laboratorio de prueba de nube de Microsoft.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
   
 ## <a name="phase-1-create-an-office-365-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y pruebas de Office 365
 
-Siga las instrucciones en las fases 1, 2 y 3 del artículo del [entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md) . Aquí está la configuración resultante.
+Siga las instrucciones de las fases 1, 2 y 3 del artículo [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md). Esta es la configuración resultante.
   
-![El entorno de desarrollo y prueba de Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![El entorno de desarrollo y pruebas de Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
-Esta configuración se compone de:  
+Esta configuración se compone de: 
   
 - Una suscripción de prueba a Office 365 E5.
 - La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure.
@@ -58,70 +58,70 @@ Esta configuración se compone de:
 
 Una vez instalado y configurado, Azure Connect AD sincroniza el conjunto de cuentas del dominio CORP Windows Server AD con el conjunto de cuentas de su suscripción de prueba a Office 365. El siguiente procedimiento le guía a través de la instalación de Azure Connect AD en APP1 y la comprobación de que funciona.
   
-### <a name="install-and-configure-azure-ad-connect-on-app1"></a>Instalar y configurar Azure Connect de AD en APP1
+### <a name="install-and-configure-azure-ad-connect-on-app1"></a>Instalar y configurar Azure AD Connect en APP1
 
-1. Desde el [portal de Azure](https://portal.azure.com), conéctese a APP1 con el CORP\\cuenta de Usuario1.
+1. En [Azure Portal](https://portal.azure.com), conéctese a APP1 con la cuenta CORP\\Usuario1.
     
 2. Desde APP1, abra un símbolo del sistema de Windows PowerShell con el nivel de administrador y ejecute estos comandos:
     
   ```
-  Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
+  Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
 Stop-Process -Name Explorer -Force
 
   ```
 
-3. Desde la barra de tareas, haga clic en **Internet Explorer** y vaya a [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
+3. En la barra de tareas, haga clic en **Internet Explorer** y vaya a [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
     
-4. En la página Microsoft Azure Active Directory Connect, haga clic en **Descargar**y, a continuación, haga clic en **Ejecutar**.
+4. En la página de Microsoft Azure Active Directory Connect, haga clic en **Descargar** y, después, en **Ejecutar**.
     
-5. En la página **Bienvenido a Azure Connect de AD** , haga clic en **Acepto**y, a continuación, haga clic en **continuar**.
+5. En la página **Bienvenido a Azure AD Connect**, haga clic en **Acepto** y, después, en **Continuar**.
     
-6. En la página **Configuración de Express** , haga clic en **Usar configuración express**.
+6. En la página **Configuración rápida**, haga clic en **Usar configuración rápida**.
     
-7. En la página **Conectar a Azure AD** , escriba su nombre de cuenta de administrador global en **nombre de usuario,** escriba su contraseña en **contraseña**y, a continuación, haga clic en **siguiente**.
+7. En la página **Conectar a Azure AD**, escriba el nombre de la cuenta de administrador global en **Nombre de usuario**, escriba la contraseña en **Contraseña** y, después, haga clic en **Siguiente**.
     
-8. En la página **Conectar con AD DS** , escriba **CORP\\Usuario1** en **nombre de usuario,** escriba su contraseña en **contraseña**y, a continuación, haga clic en **siguiente**.
+8. En la página **Conectarse a AD DS**, escriba **CORP\\Usuario1** en **Nombre de usuario**, escriba la contraseña en **Contraseña** y, después, haga clic en **Siguiente**.
     
-9. En la página de **configuración de inicio de sesión de anuncio de Azure** , haga clic en **continuar sin ningún verificados dominios**y, a continuación, haga clic en **siguiente**.
+9. En la página **Configuración de inicio de sesión de Azure AD**, haga clic en **Continuar sin dominios comprobados** y después en **Siguiente**.
     
 10. En la página **Listo para configurar**, haga clic en **Instalar**.
     
-11. En la página **Configuración finalizada** , haga clic en **Salir**.
+11. En la página **Configuración completada** de página, haga clic en **Salir**.
     
-12. En Internet Explorer, vaya al portal de Office 365 ([https://portal.office.com](https://portal.office.com)) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
+12. En Internet Explorer, vaya al portal de Office 365 ([https://portal.office.com](https://portal.office.com)) e inicie sesión en la suscripción de prueba de Office 365 con la cuenta de administrador global.
     
-13. Desde la página principal del portal, haga clic en **Admin**.
+13. En la página principal del portal, haga clic en **Administración**.
     
 14. En el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
     
-    Nota la cuenta denominada **Usuario1**. Esta cuenta es desde el dominio CORP Windows Server AD y es la prueba de que ha trabajado la sincronización de directorios.
+    Observe la cuenta llamada **Usuario1**. Esta cuenta pertenece al dominio CORP de Windows Server AD y es una prueba de que la sincronización de directorios funcionó correctamente.
     
-15. Haga clic en la cuenta de **Usuario1** . Licencias de producto, haga clic en **Editar**.
+15. Haga clic en la cuenta **Usuario1**. Para licencias de productos, haga clic en **Editar**.
     
-16. En las **licencias de producto**, seleccione su país y haga clic en el control de **apagado** para **Office 365 Enterprise E5** (conmutación en **On**). Haga clic en **Guardar** en la parte inferior de la página y, a continuación, haga clic en **Cerrar**.
+16. En **Licencias de productos**, seleccione su país y, después, haga clic en el control **Desactivado** de **Office 365 Enterprise E5** (para cambiarlo a **Activado**). Haga clic en **Guardar** en la parte inferior de la página y, después, en **Cerrar**.
     
 Esta es la configuración resultante.
   
-![El entorno de desarrollo y prueba de Office 365 con la sincronización de directorios](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Entorno de desarrollo y pruebas de Office 365 con sincronización de directorios](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-Esta configuración se compone de:  
+Esta configuración se compone de: 
   
 - Una suscripción de prueba a Office 365 E5.
 - La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. Azure Connect de AD se ejecuta en APP1 para sincronizar el dominio de Windows Server AD de CORP con Office 365 cada 30 minutos.
     
 ## <a name="next-step"></a>Paso siguiente
 
-Cuando esté listo para implementar la sincronización de directorios para su organización, consulte [sincronización de directorios de implementar Office 365 en Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
+Cuando esté preparado para implementar la sincronización de directorios para su organización, vea [Implementar la sincronización de directorios de Office 365 en Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-[La nube adopción guías de laboratorio de prueba (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
-[entorno de desarrollo y prueba de configuración de Base](base-configuration-dev-test-environment.md)
-[entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
-[Nube seguridad de la aplicación para el entorno de desarrollo y prueba de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md) 
- [ Una protección avanzada para su entorno de pruebas y desarrollo de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-[adopción de nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Guías del entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Configuración básica del entorno de desarrollo y pruebas](base-configuration-dev-test-environment.md)
+[Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
+[Cloud App Security para el entorno de desarrollo y pruebas de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Protección contra amenazas avanzada en el entorno de desarrollo y pruebas de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 
 

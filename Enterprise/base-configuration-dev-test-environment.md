@@ -1,5 +1,5 @@
 ---
-title: Entorno de desarrollo y pruebas de la configuración básica
+title: Entorno de desarrollo y prueba de la configuración básica
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,76 +7,76 @@ ms.date: 04/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
-description: 'Resumen: Crear una intranet simplificada como un entorno de pruebas y desarrollo de Microsoft Azure.'
-ms.openlocfilehash: a874260510b2825fae0f0fd9154912d35e555d19
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Resumen: Cree una intranet simplificada como entorno de desarrollo y prueba en Microsoft Azure.'
+ms.openlocfilehash: a6c0610531482d5d264b582f7a3550b57f21841d
+ms.sourcegitcommit: ac7a37049e3c96e32ea91a4d97105028b0dbb2c5
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="base-configuration-devtest-environment"></a>Entorno de desarrollo y pruebas de la configuración básica
+# <a name="base-configuration-devtest-environment"></a>Entorno de desarrollo y prueba de la configuración básica
 
- **Resumen:** Crear una intranet simplificada como un entorno de pruebas y desarrollo de Microsoft Azure.
+ **Resumen:** Cree una intranet simplificada como entorno de desarrollo y prueba en Microsoft Azure.
   
-Este artículo contiene las instrucciones paso a paso para crear el siguiente entorno de desarrollo y pruebas de la configuración básica en Azure:
+En este artículo se ofrecen instrucciones paso a paso para crear el siguiente entorno de desarrollo y prueba de la configuración básica en Azure:
   
-**Figura 1: El entorno de desarrollo y prueba de configuración básica**
+**Figura 1: Entorno de desarrollo y prueba de la configuración básica**
 
-![Fase 4 de la configuración base en Azure con la red virtual CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Fase 4 de la configuración básica en Azure con la máquina virtual CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-El entorno de desarrollo/pruebas de configuración Base en la figura 1 se compone de la subred de la red corporativa en una red virtual Azure sólo nube denominada práctica de prueba que simula una intranet simplificada y privada conectada a Internet. Contiene tres máquinas virtuales Azure ejecutan WIndows Server 2016:
+El entorno de desarrollo y prueba de la configuración básica de la figura 1 consta de la subred de la red corporativa en una red virtual de Azure solo de nube denominada TestLab que simula una intranet simplificada y privada conectada a Internet. Contiene tres máquinas virtuales de Azure con Windows Server 2016:
   
-- DC1 está configurada como un controlador de dominio de intranet y un servidor de Sistema de nombres de dominio (DNS)
+- DC1 está configurado como controlador de dominio de intranet y servidor del Sistema de nombres de dominio (DNS)
     
 - App1 está configurada como servidor web y de aplicación general
     
-- 	CLIENT1 actúa como cliente de intranet
+- CLIENT1 actúa como cliente de intranet
     
-Esta configuración permite que DC1, APP1, CLIENT1 y otros equipos de la subred de red corporativa:  
+Con esta configuración, DC1, APP1, CLIENT1 y otros equipos de la subred de red corporativa pueden: 
   
-- Conectado a Internet para instalar las actualizaciones, obtener acceso a recursos de Internet en tiempo real y participar en las tecnologías de nube pública como Microsoft Office 365 y otros servicios de Azure.
+- Conectarse a Internet para instalar actualizaciones, obtener acceso a recursos de Internet en tiempo real y participar en tecnologías de nube pública como Office 365 y otros servicios de Azure.
     
-- 	Se administren de manera remota mediante conexiones a Escritorio remoto desde el equipo que está conectado a Internet o la red de su organización.
+- Administrarse de manera remota con conexiones a Escritorio remoto desde el equipo que está conectado a Internet o la red de su organización.
     
 Puede usar el entorno de pruebas resultante:
   
 - Para desarrollar y probar aplicaciones.
     
-- Como la configuración inicial de un entorno de pruebas ampliadas de su propio diseño que incluye máquinas virtuales adicionales, servicios de Azure u otras ofertas de nube de Microsoft, como Office 365 + movilidad (EMS) y seguridad de la empresa.
+- Como configuración inicial de un entorno de pruebas ampliado que haya diseñado usted mismo y que incluya máquinas virtuales adicionales, servicios de Azure u otras ofertas de nube de Microsoft tales como Office 365 y Enterprise Security + Mobility (EMS).
     
-Existen cuatro fases para configurar el entorno de pruebas de configuración de base en Azure:
+Existen cuatro fases para configurar el entorno de pruebas de configuración básica en Azure:
   
-1. 	Crear la red virtual.
+1. Crear la red virtual.
     
-2. 	Configurar DC1.
+2. Configurar DC1.
     
-3. 	Configurar APP1.
+3. Configurar APP1.
     
-4. 	Configurar CLIENT1.
+4. Configurar CLIENT1.
     
-Si no dispone de una suscripción de Azure, puede suscribirse para una prueba gratuita en [Tratar de Azure](https://azure.microsoft.com/pricing/free-trial/). Si tiene una suscripción a MSDN o Visual Studio, vea [crédito Azure mensual para los suscriptores de Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
+Si no dispone de una suscripción de Azure, puede registrarse para obtener una evaluación gratuita en [Cree su cuenta gratuita de Azure hoy mismo](https://azure.microsoft.com/pricing/free-trial/). Si tiene una suscripción a MSDN o a Visual Studio, vea [Crédito mensual de Azure para suscriptores de Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/). 
   
 > [!NOTE]
-> Máquinas virtuales en Azure incurre en un costo económico constante cuando se están ejecutando. Este costo se facturó contra su suscripción de MSDN de prueba, libre o de pago. Para obtener más información acerca de los costos de Azure máquinas virtuales en ejecución, ver [Detalles de precios de máquinas virtuales](https://azure.microsoft.com/pricing/details/virtual-machines/) y [Calculadora de precios de Azure](https://azure.microsoft.com/pricing/calculator/). Para mantener los costos bajos, consulte [minimizar los costos de máquinas de prueba entorno virtual en Azure](base-configuration-dev-test-environment.md#mincost). 
+> Las máquinas virtuales de Azure implican un costo económico constante cuando se ejecutan. Este costo se factura a la evaluación gratuita, la suscripción a MSDN o la suscripción de pago. Para obtener más información sobre los costos de las máquinas virtuales de Azure en ejecución, vea [Máquinas virtuales Precios](https://azure.microsoft.com/pricing/details/virtual-machines/) y [Calculadora de precios de Azure](https://azure.microsoft.com/pricing/calculator/). Para mantener los costos bajos, consulte [Minimizar los costos del entorno de pruebas de máquinas virtuales en Azure](base-configuration-dev-test-environment.md#mincost). 
   
-![Guías de laboratorio de prueba en Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guías del laboratorio de pruebas de Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual para todos los artículos de la pila de una guía de laboratorio de prueba de nube de Microsoft.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
   
-## <a name="phase-1-create-the-virtual-network"></a>Fase 1: Crear la red virtual
+## <a name="phase-1-create-the-virtual-network"></a>Fase 1: Crear la red virtual
 
 En primer lugar, abra un símbolo del sistema de Azure PowerShell.
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilice la última versión de PowerShell de Azure. Consulte [Introducción a los cmdlets de PowerShell de Azure](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Vea [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/es-ES/powershell/azureps-cmdlets-docs/) (Introducción a los cmdlets de Azure PowerShell). 
   
 Inicie sesión en su cuenta de Azure con el siguiente comando.
   
@@ -85,7 +85,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> Haga clic [aquí](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d) para obtener un archivo de texto que contiene todos los comandos de PowerShell en este artículo.
+> Para obtener un archivo de texto que contenga todos los comandos de PowerShell de este artículo, haga clic [aquí](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d).
   
 Obtenga su nombre de suscripción mediante el comando siguiente.
   
@@ -130,13 +130,13 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 
 Esta es su configuración actual.
   
-![Fase 1 de la configuración base en Azure con la red virtual y la subred](images/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
+![Fase 1 de la configuración básica en Azure con la red virtual y la subred](images/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
   
-## <a name="phase-2-configure-dc1"></a>Fase 2: Configurar DC1
+## <a name="phase-2-configure-dc1"></a>Fase 2: Configurar DC1
 
 A continuación, creamos la máquina virtual DC1 y la configuramos como controlador de dominio para el dominio corp.contoso.com de Windows Server Active Directory (AD) y como servidor DNS para las máquinas virtuales de la red virtual TestLab.
   
-Para crear una máquina virtual Azure para DC1, proporcione el nombre de su grupo de recursos y ejecutar estos comandos en el símbolo del sistema de PowerShell de Azure en el equipo local.
+Para crear una máquina virtual de Azure para DC1, indique el nombre de su grupo de recursos y ejecute estos comandos desde el símbolo del sistema de Azure PowerShell en su equipo local.
   
 ```
 $rgName="<resource group name>"
@@ -149,8 +149,8 @@ $cred=Get-Credential -Message "Type the name and password of the local administr
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName DC1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "DC1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
-$diskConfig=New-AzureRmDiskConfig -AccountType "StandardLRS" -Location $locName -CreateOption Empty -DiskSizeGB 20
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name "DC1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType StandardLRS
+$diskConfig=New-AzureRmDiskConfig -AccountType StandardLRS -Location $locName -CreateOption Empty -DiskSizeGB 20
 $dataDisk1=New-AzureRmDisk -DiskName "DC1-DataDisk1" -Disk $diskConfig -ResourceGroupName $rgName
 $vm=Add-AzureRmVMDataDisk -VM $vm -Name "DC1-DataDisk1" -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
@@ -160,27 +160,27 @@ Se le pedirá un nombre de usuario y una contraseña para la cuenta de administr
   
 Después conéctese a la máquina virtual DC1.
   
-### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>Conectarse a DC1 usando las credenciales de la cuenta de administrador local
+### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>Conectarse a DC1 con las credenciales de la cuenta de administrador local
 
-1. En el [portal de Azure](https://portal.azure.com), haga clic en **grupos de recursos >** [nombre de su nuevo grupo de recursos] **> DC1 > conectar**.
+1. En el [Azure Portal](https://portal.azure.com), haga clic en **Grupos de recursos** [nombre del nuevo grupo de recursos nuevo] **> DC1 > Conectar**.
     
-2. Abra el archivo DC1.rdp que se descarga y, a continuación, haga clic en **Conectar**.
+2. Abra el archivo DC1.rdp que se descarga y luego haga clic en **Conectar**.
     
 3. Especifique el nombre de cuenta de administrador local de DC1:
     
   - Para Windows 7:
     
-    En el cuadro de diálogo **Seguridad de Windows** , haga clic en **usar otra cuenta**. En **nombre de usuario**, escriba **DC1\\**[nombre de la cuenta de administrador Local].
+    En el cuadro de diálogo **Seguridad de Windows**, haga clic en **Usar otra cuenta**. En **Nombre de usuario**, escriba **DC1\\**[nombre de la cuenta de administrador local].
     
   - Para Windows 8 o Windows 10:
     
-    En el cuadro de diálogo **Seguridad de Windows** , haga clic en **más opciones**y, a continuación, haga clic en **utilizar una cuenta diferente**. En **nombre de usuario**, escriba **DC1\\**[nombre de la cuenta de administrador Local].
+    En el cuadro de diálogo **Seguridad de Windows**, haga clic en **Más opciones** y luego en **Usar una cuenta diferente**. En **Nombre de usuario**, escriba **DC1\\**[nombre de la cuenta de administrador local]
     
-4. En **contraseña**, escriba la contraseña de la cuenta de administrador local y, a continuación, haga clic en **Aceptar**.
+4. En **Contraseña**, escriba la contraseña de la cuenta de administrador local y luego haga clic en **Aceptar**.
     
-5. Cuando se le pida, haga clic en **Sí**.
+5. Cuando se le solicite, haga clic en **Sí**.
     
-A continuación, agregue un disco de datos adicionales como un nuevo volumen con la letra de unidad F: con este comando en un símbolo de Windows PowerShell de nivel de administrador en DC1.
+Después, agregue otro disco de datos como nuevo volumen con la letra de unidad F: con este comando en un símbolo del sistema de Windows PowerShell con nivel de administrador en DC1.
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -199,17 +199,17 @@ Tenga en cuenta que estos comandos pueden tardan unos minutos en completarse.
   
 Después de que DC1 se reinicie, vuelva a conectarse a la máquina virtual de DC1.
   
-### <a name="connect-to-dc1-using-domain-credentials"></a>Conectarse a DC1 usando las credenciales de dominio
+### <a name="connect-to-dc1-using-domain-credentials"></a>Conectarse a DC1 con credenciales de dominio
 
-1. En el [portal de Azure](https://portal.azure.com), haga clic en **grupos de recursos >** [nombre de grupo de los recursos] **> DC1 > conectar**.
+1. En [Azure Portal](https://portal.azure.com), haga clic en **Grupos de recursos >** [nombre del grupo de recursos] **> DC1 > Conectar**.
     
-2. Ejecute el archivo DC1.rdp que se descarga y, a continuación, haga clic en **Conectar**.
+2. Ejecute el archivo DC1.rdp que se descarga y luego haga clic en **Conectar**.
     
-3. En la **Seguridad de Windows**, haga clic en **usar otra cuenta**. En **nombre de usuario**, escriba **CORP\\**[nombre de la cuenta de administrador Local].
+3. En **Seguridad de Windows**, haga clic en **Usar otra cuenta**. En **Nombre de usuario**, escriba **CORP\\**[nombre de la cuenta de administrador local].
     
-4. En **contraseña**, escriba la contraseña de la cuenta de administrador local y, a continuación, haga clic en **Aceptar**.
+4. En **Contraseña**, escriba la contraseña de la cuenta de administrador local y luego haga clic en **Aceptar**.
     
-5. Cuando se le pida, haga clic en **Sí**.
+5. Cuando se le solicite, haga clic en **Sí**.
     
 A continuación, cree una cuenta de usuario en Active Directory que se usará al iniciar sesión en equipos de miembros del dominio CORP. En un símbolo del sistema de Windows PowerShell con un nivel de administrador, ejecute este comando:
   
@@ -219,15 +219,15 @@ New-ADUser -SamAccountName User1 -AccountPassword (read-host "Set user password"
 
 Tenga en cuenta que este comando le solicita que proporcione la contraseña de la cuenta User1. Dado que esta cuenta se usará para las conexiones de Escritorio remoto en todos los equipos miembros del dominio CORP, elija una contraseña segura. Anote la contraseña de la cuenta User1 y almacénela en una ubicación segura.
   
-Después, configure la nueva cuenta User1 como administrador de organización. En un símbolo del sistema de Windows PowerShell con el nivel de administrador, ejecute este comando:
+Después, configure la nueva cuenta User1 como administrador de empresa. En un símbolo del sistema de Windows PowerShell con nivel de administrador, ejecute este comando.
   
 ```
 Add-ADPrincipalGroupMembership -Identity "CN=User1,CN=Users,DC=corp,DC=contoso,DC=com" -MemberOf "CN=Enterprise Admins,CN=Users,DC=corp,DC=contoso,DC=com","CN=Domain Admins,CN=Users,DC=corp,DC=contoso,DC=com","CN=Schema Admins,CN=Users,DC=corp,DC=contoso,DC=com"
 ```
 
-Cerrar la sesión de escritorio remoto con DC1 y, a continuación, volver a conectar mediante el CORP\\cuenta de Usuario1.
+Cierre la sesión de Escritorio remoto con DC1 y vuelva a conectarse con la cuenta CORP\\User1.
   
-Después, para permitir el tráfico desde la herramienta Ping, ejecute este comando desde un símbolo del sistema de Windows PowerShell con el nivel de administrador:
+Después, para permitir el tráfico desde la herramienta Ping, ejecute este comando desde un símbolo del sistema de Windows PowerShell con nivel de administrador:
   
 ```
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
@@ -235,16 +235,16 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 Esta es su configuración actual.
   
-![Fase 2 de la configuración base en Azure con la máquina virtual DC1](images/49069908-29c3-4d73-87f7-debbea067261.png)
+![Fase 2 de la configuración básica en Azure con la máquina virtual DC1](images/49069908-29c3-4d73-87f7-debbea067261.png)
   
-## <a name="phase-3-configure-app1"></a>Fase 3: Configurar APP1
+## <a name="phase-3-configure-app1"></a>Fase 3: Configurar APP1
 
-App1 proporciona servicios de uso compartido de archivos y web.
+APP1 ofrece servicios de uso compartido de archivos y web.
 
 -> [!NOTE]  
--> El siguiente conjunto de comandos crea CLIENTE1 ejecuta Windows Server 2016 Datacenter, lo que puede realizar para todos los tipos de suscripciones de Azure. Si tiene una suscripción de Azure basada en Visual Studio, puede crear CLIENTE1 ejecutando Windows 10 con el [portal de Azure](https://portal.azure.com). 
+-> El siguiente conjunto de comandos crea CLIENT1 con Windows Server 2016 Datacenter, lo que se puede realizar en todos los tipos de suscripciones de Azure. Si tiene una suscripción de Azure basada en Visual Studio, puede crear CLIENT1 con Windows 10 en [Azure Portal](https://portal.azure.com). 
 
-Para crear una máquina Virtual de Azure para APP1, proporcione el nombre de su grupo de recursos y ejecutar estos comandos en el símbolo del sistema de PowerShell de Azure en el equipo local.
+Para crear una máquina virtual de Azure para APP1, indique el nombre de su grupo de recursos y ejecute estos comandos desde el símbolo del sistema de Azure PowerShell en su equipo local.
   
 ```
 $rgName="<resource group name>"
@@ -263,7 +263,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 Después, conéctese a la máquina virtual de APP1 usando el nombre y la contraseña de la cuenta de administrador local de APP1 y abra un símbolo del sistema de Windows PowerShell.
   
-Para comprobar la comunicación de red y de resolución de nombre entre APP1 y DC1, ejecute el comando **ping dc1.corp.contoso.com** y compruebe que hay cuatro respuestas.
+Para comprobar la comunicación de red y la resolución de nombres entre APP1 y DC1, ejecute el comando **ping dc1.corp.contoso.com** y compruebe que hay cuatro respuestas.
   
 Después, una la máquina virtual de APP1 al dominio CORP con estos comandos en un símbolo del sistema de Windows PowerShell.
   
@@ -272,9 +272,9 @@ Add-Computer -DomainName corp.contoso.com
 Restart-Computer
 ```
 
-Nota que debe proporcionar el CORP\\Usuario1 credenciales de cuenta de dominio después de ejecutar el comando **Agregar equipo** .
+Recuerde que debe indicar las credenciales de la cuenta de dominio CORP\\User1 después de ejecutar el comando **Add-Computer**.
   
-Una vez reiniciado APP1, conectarse a ella mediante el CORP\\cuenta usuario1 y una de Windows PowerShell de nivel de administrador abra símbolo del sistema.
+Una vez reiniciado APP1, conéctese a él con la cuenta CORP\\User1 y luego abra un símbolo del sistema de Windows PowerShell con nivel de administrador.
   
 Después, convierta a APP1 en un servidor web con este comando en el símbolo del sistema de Windows PowerShell en APP1.
   
@@ -292,13 +292,13 @@ New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 
 Esta es su configuración actual.
   
-![Fase 3 de la configuración base en Azure con la máquina virtual APP1](images/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
+![Fase 3 de la configuración básica en Azure con la máquina virtual APP1](images/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
   
-## <a name="phase-4-configure-client1"></a>Fase 4: Configurar CLIENT1
+## <a name="phase-4-configure-client1"></a>Fase 4: Configurar CLIENT1
 
 CLIENT1 sirve de portátil, tableta o equipo de escritorio común en la intranet de Contoso.
   
-Para crear una máquina Virtual de Azure para CLIENTE1, proporcione el nombre de su grupo de recursos y ejecutar estos comandos en el símbolo del sistema de PowerShell de Azure en el equipo local.
+Para crear una máquina virtual de Azure para CLIENT1, indique el nombre de su grupo de recursos y ejecute estos comandos desde el símbolo del sistema de Azure PowerShell en su equipo local.
   
 ```
 $rgName="<resource group name>"
@@ -317,7 +317,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 Después, conéctese a la máquina virtual de CLIENT1 usando el nombre y la contraseña de la cuenta de administrador local de CLIENT1, y abra un símbolo del sistema de nivel de administrador de Windows PowerShell.
   
-Para comprobar la comunicación de red y de resolución de nombre entre CLIENTE1 y DC1, ejecute el comando **ping dc1.corp.contoso.com** en un símbolo del sistema de Windows PowerShell y compruebe que hay cuatro respuestas.
+Para comprobar la comunicación de red y la resolución de nombres entre CLIENT1 y DC1, ejecute el comando **ping dc1.corp.contoso.com** en un símbolo del sistema de Windows PowerShell y compruebe que hay cuatro respuestas.
   
 Después, una la máquina virtual de CLIENT1 al dominio CORP con estos comandos en un símbolo del sistema de Windows PowerShell.
   
@@ -326,40 +326,40 @@ Add-Computer -DomainName corp.contoso.com
 Restart-Computer
 ```
 
-Nota que debe proporcionar el CORP\\Usuario1 credenciales de cuenta de dominio después de ejecutar el comando **Agregar equipo** .
+Recuerde que debe indicar las credenciales de la cuenta de dominio CORP\\User1 después de ejecutar el comando **Add-Computer**.
   
-Cuando se reinicie CLIENTE1, conectarse a ella mediante el CORP\\Usuario1 nombre de cuenta y contraseña y, a continuación, abra un símbolo del sistema de nivel de administrador de Windows PowerShell.
+Una vez reiniciado CLIENT1, conéctese a él con el nombre y contraseña de la cuenta CORP\\User1 y luego abra un símbolo del sistema de nivel de administrador de Windows PowerShell.
   
-Después, compruebe que puede tener acceso a recursos compartidos de web y archivos en APP1 desde CLIENT1.
+Después, compruebe que tiene acceso a recursos compartidos de archivos y web en APP1 desde CLIENT1.
   
 ### <a name="verify-client-access-to-app1"></a>Comprobar el acceso de CLIENT a APP1
 
-1. En el administrador del servidor, en el panel de árbol, haga clic en **Servidor Local**.
+1. En el panel de árbol del Administrador del servidor, haga clic en **Servidor Local**.
     
-2. En **Propiedades de CLIENTE1**, haga clic **en** junto a la **Configuración de seguridad mejorada de Internet Explorer**.
+2. En **Propiedades de CLIENT1**, haga clic en la opción **Activada** al lado de **Configuración de seguridad mejorada de IE**.
     
-3. En **La configuración de seguridad mejorada de Internet Explorer**, haga clic en **desactivado** para **los administradores** y **los usuarios**y, a continuación, haga clic en **Aceptar**.
+3. En **Configuración de seguridad mejorada de Internet Explorer**, haga clic en **Desactivada** para **Administradores** y **Usuarios** y luego, en **Aceptar**.
     
-4. Desde la pantalla de inicio, haga clic en **Internet Explorer**y, a continuación, haga clic en **Aceptar**.
+4. En la pantalla Inicio, haga clic en **Internet Explorer** y luego en **Aceptar**.
     
-5. En la barra Dirección, escriba **http://app1.corp.contoso.com/**, y, a continuación, presione ENTRAR. Debe ver la página web de servicios de Internet Information Server de forma predeterminada para APP1.
+5. En la barra de direcciones, escriba **http://app1.corp.contoso.com/** y luego presione ENTRAR. Debería ver la página web predeterminada de Internet Information Services para APP1.
     
 6. En la barra de tareas de escritorio, haga clic en el icono del Explorador de archivos.
     
-7. En la barra Dirección, escriba ** \\ \\app1\\archivos**, y, a continuación, presione ENTRAR. Debería ver una ventana de carpeta con el contenido de la carpeta compartida de archivos.
+7. En la barra de direcciones, escriba **\\\\app1\\Files** y luego presione ENTRAR. Debería ver una ventana de carpeta con el contenido de la carpeta compartida Archivos.
     
-8. En la ventana de carpeta compartida de **archivos** , haga doble clic en el archivo **ejemplo.txt** . Debería ver el contenido del archivo ejemplo.txt.
+8. En la ventana de la carpeta compartida **Archivos**, haga doble clic en el archivo **Example.txt**. Debería ver el contenido del archivo Example.txt.
     
-9. Cierre el **ejemplo.txt - Bloc de notas** y las ventanas de carpeta de **archivos** compartidos.
+9. Cierre las ventanas de **Example.txt: Bloc de notas** y de la carpeta compartida **Archivos**.
     
-Esta es su configuración final.
+Esta es la configuración final.
   
-![Fase 4 de la configuración base en Azure con la red virtual CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Fase 4 de la configuración básica en Azure con la máquina virtual CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 La configuración básica de Azure está preparada para desarrollar y probar aplicaciones o para crear entornos de prueba adicionales. 
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila de la guía del entorno de pruebas de One Microsoft Cloud.
   
 <a name="mincost"> </a>
 ## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Minimizar los costos del entorno de pruebas de máquinas virtuales en Azure
@@ -368,7 +368,7 @@ Para minimizar el costo de ejecutar máquinas virtuales de entorno de pruebas, p
   
 - Crear el entorno de pruebas y realizar las pruebas necesarias y la demostración lo más rápidamente posible. Cuando haya terminado, elimine el grupo de recursos del entorno de pruebas.
     
-- 	Ponga las máquinas virtuales del entorno de pruebas virtual en un estado desasignado.
+- Ponga las máquinas virtuales del entorno de pruebas virtual en un estado desasignado.
     
 Para apagar las máquinas virtuales con Azure PowerShell, rellene el nombre del grupo de recursos y ejecute estos comandos.
   
@@ -383,9 +383,9 @@ Para asegurarse de que las máquinas virtuales funcionan correctamente al inicia
   
 1. DC1
 2. APP1
-3. CLIENTE1
+3. CLIENT1
     
-Para iniciar las máquinas virtuales en orden con Azure PowerShell, rellene el nombre del grupo de recursos y ejecute estos comandos.
+Para iniciar las máquinas virtuales en orden con Azure PowerShell, indique el nombre del grupo de recursos y ejecute estos comandos.
   
 ```
 $rgName="<your resource group name>"
@@ -394,10 +394,10 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "APP1"
 Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-- [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
-- [Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-- [Seguridad de la aplicación de nube para su entorno de pruebas y desarrollo de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-- [Una protección avanzada para su entorno de pruebas y desarrollo de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
+- [Sincronización de directorios (DirSync) para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [Seguridad de Cloud App para su entorno de desarrollo y prueba de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Protección contra amenazas avanzada en el entorno de desarrollo y prueba de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 - [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
