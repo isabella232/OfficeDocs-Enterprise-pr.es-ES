@@ -16,7 +16,7 @@ ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumen: Cree sitios de grupo de SharePoint Online públicos, privados, confidenciales y altamente confidenciales en un entorno de desarrollo o prueba.'
 ms.openlocfilehash: 004a1614330f220b31be640cd822d9fdcbb49b99
 ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/16/2018
 ---

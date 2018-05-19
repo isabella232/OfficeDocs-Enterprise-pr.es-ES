@@ -1,5 +1,5 @@
 ---
-title: Configurar búsqueda de OneDrive de negocios Multi-Geo
+title: Configurar la búsqueda en OneDrive para la Empresa multigeográfico
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
@@ -7,251 +7,252 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: Obtenga información acerca de cómo configurar la búsqueda en un entorno multi-geo.
-ms.openlocfilehash: 5cf155c2c5bd2e27a54d84c4d5411e5b1afce568
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico.
+ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="configure-search-for-onedrive-for-business-multi-geo"></a><span data-ttu-id="db6fc-103">Configurar búsqueda de OneDrive de negocios Multi-Geo</span><span class="sxs-lookup"><span data-stu-id="db6fc-103">Configure Search for OneDrive for Business Multi-Geo</span></span>
+# <a name="configure-search-for-onedrive-for-business-multi-geo"></a><span data-ttu-id="6ae14-103">Configurar la búsqueda en OneDrive para la Empresa multigeográfico</span><span class="sxs-lookup"><span data-stu-id="6ae14-103">Configure Search for OneDrive for Business Multi-Geo</span></span>
 
-<span data-ttu-id="db6fc-104">En un entorno Multi-Geo SharePoint Online (SPO), una organización puede tener un arrendatario de Office 365, pero almacenar su contenido de SharePoint en varias ubicaciones geográficas - una ubicación central y una o más ubicaciones geo de satélite.</span><span class="sxs-lookup"><span data-stu-id="db6fc-104">In a Multi-Geo SharePoint Online (SPO) environment, an organization can have one Office 365 tenant, but store their SharePoint content in multiple geographical locations - one central location and one or more satellite geo locations.</span></span>
+<span data-ttu-id="6ae14-104">En un entorno de SharePoint Online (SPO) multigeográfico, una organización puede tener un espacio empresarial de Office 365, pero almacenar el contenido de SharePoint en varias ubicaciones geográficas: una ubicación central y una o varias ubicaciones geográficas por satélite.</span><span class="sxs-lookup"><span data-stu-id="6ae14-104">In a Multi-Geo SharePoint Online (SPO) environment, an organization can have one Office 365 tenant, but store their SharePoint content in multiple geographical locations - one central location and one or more satellite geo locations.</span></span>
 
-<span data-ttu-id="db6fc-p101">Cada ubicación geográfica tiene su propio centro de búsqueda e índices de búsqueda. Cuando un usuario realiza una búsqueda, la consulta se colocadas en abanico para todos los índices y se combinan los resultados devueltos.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p101">Each geographical location has its own search index and Search Center. When a user searches, the query is fanned out to all the indexes, and the returned results are merged.</span></span>
+<span data-ttu-id="6ae14-p101">Cada ubicación geográfica tiene su propio índice de búsqueda y Centro de búsqueda. Cuando un usuario realiza una búsqueda, se efectúa una distribución ramificada de la consulta a todos los índices y los resultados devueltos se combinan.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p101">Each geographical location has its own search index and Search Center. When a user searches, the query is fanned out to all the indexes, and the returned results are merged.</span></span>
 
-<span data-ttu-id="db6fc-p102">Por ejemplo, puede buscar un usuario en una ubicación geográfica para el contenido almacenado en otra ubicación geográfica, o contenido en un sitio de SharePoint que está restringido a una ubicación geográfica diferente. Si el usuario tiene acceso a este contenido, la búsqueda mostrará el resultado.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p102">For example, a user in one geo location can search for content stored in another geo location, or for content on a SharePoint site that’s restricted to a different geo location. If the user has access to this content, search will show the result.</span></span>
+<span data-ttu-id="6ae14-p102">Por ejemplo, un usuario de una ubicación geográfica puede realizar búsquedas de contenido almacenado en otra ubicación geográfica o contenido de un sitio de SharePoint que está restringido a otra ubicación geográfica. Si el usuario tiene acceso a este contenido, la búsqueda mostrará el resultado.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p102">For example, a user in one geo location can search for content stored in another geo location, or for content on a SharePoint site that’s restricted to a different geo location. If the user has access to this content, search will show the result.</span></span>
 
-## <a name="which-search-clients-work-in-a-multi-geo-environment"></a><span data-ttu-id="db6fc-109">¿En un entorno Multi-Geo que buscar trabajo de los clientes?</span><span class="sxs-lookup"><span data-stu-id="db6fc-109">Which search clients work in a Multi-Geo environment?</span></span>
+## <a name="which-search-clients-work-in-a-multi-geo-environment"></a><span data-ttu-id="6ae14-109">¿Qué clientes de búsqueda trabajan en un entorno multigeográfico?</span><span class="sxs-lookup"><span data-stu-id="6ae14-109">Which search clients work in a Multi-Geo environment?</span></span>
 
-<span data-ttu-id="db6fc-110">Estos clientes pueden devolver resultados desde todas las ubicaciones de geo:</span><span class="sxs-lookup"><span data-stu-id="db6fc-110">These clients can return results from all geo locations:</span></span>
+<span data-ttu-id="6ae14-110">Estos clientes pueden devolver resultados de todas las ubicaciones geográficas:</span><span class="sxs-lookup"><span data-stu-id="6ae14-110">These clients can return results from all geo locations:</span></span>
 
--   <span data-ttu-id="db6fc-111">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="db6fc-111">OneDrive for Business</span></span>
+-   <span data-ttu-id="6ae14-111">OneDrive para la Empresa</span><span class="sxs-lookup"><span data-stu-id="6ae14-111">OneDrive for Business</span></span>
 
--   <span data-ttu-id="db6fc-112">Delve</span><span class="sxs-lookup"><span data-stu-id="db6fc-112">Delve</span></span>
+-   <span data-ttu-id="6ae14-112">Delve</span><span class="sxs-lookup"><span data-stu-id="6ae14-112">Delve</span></span>
 
--   <span data-ttu-id="db6fc-113">La página principal de SharePoint</span><span class="sxs-lookup"><span data-stu-id="db6fc-113">The SharePoint home page</span></span>
+-   <span data-ttu-id="6ae14-113">Página principal de SharePoint</span><span class="sxs-lookup"><span data-stu-id="6ae14-113">The SharePoint Central Administration Web site home page opens.</span></span>
 
--   <span data-ttu-id="db6fc-114">El centro de búsqueda</span><span class="sxs-lookup"><span data-stu-id="db6fc-114">The Search Center</span></span>
+-   <span data-ttu-id="6ae14-114">Centro de búsqueda</span><span class="sxs-lookup"><span data-stu-id="6ae14-114">The Search Center</span></span>
 
--   <span data-ttu-id="db6fc-115">Aplicaciones de búsqueda personalizadas que utilizan la API de búsqueda de SharePoint</span><span class="sxs-lookup"><span data-stu-id="db6fc-115">Custom search applications that use the SharePoint Search API</span></span>
+-   <span data-ttu-id="6ae14-115">Aplicaciones de búsqueda personalizada que usan la API de SharePoint Search</span><span class="sxs-lookup"><span data-stu-id="6ae14-115">Custom search applications that use the SharePoint Search API</span></span>
 
-### <a name="onedrive-for-business"></a><span data-ttu-id="db6fc-116">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="db6fc-116">OneDrive for Business</span></span>
+### <a name="onedrive-for-business"></a><span data-ttu-id="6ae14-116">OneDrive para la Empresa</span><span class="sxs-lookup"><span data-stu-id="6ae14-116">OneDrive for Business</span></span>
 
-<span data-ttu-id="db6fc-117">Tan pronto como se ha configurado el entorno Multi-Geo, los usuarios que busque en OneDrive Obtén resultados de todas las ubicaciones de geo.</span><span class="sxs-lookup"><span data-stu-id="db6fc-117">As soon as the Multi-Geo environment has been set up, users that search in OneDrive get results from all geo locations.</span></span>
+<span data-ttu-id="6ae14-117">En cuanto se haya configurado el entorno multigeográfico, los usuarios que busquen en OneDrive obtendrán resultados de todas las ubicaciones geográficas.</span><span class="sxs-lookup"><span data-stu-id="6ae14-117">As soon as the Multi-Geo environment has been set up, users that search in OneDrive get results from all geo locations.</span></span>
 
-### <a name="delve"></a><span data-ttu-id="db6fc-118">Delve</span><span class="sxs-lookup"><span data-stu-id="db6fc-118">Delve</span></span>
+### <a name="delve"></a><span data-ttu-id="6ae14-118">Delve</span><span class="sxs-lookup"><span data-stu-id="6ae14-118">Delve</span></span>
 
-<span data-ttu-id="db6fc-119">Tan pronto como se ha configurado el entorno Multi-Geo, los usuarios que buscar en Delve Obtén resultados de todas las ubicaciones de geo.</span><span class="sxs-lookup"><span data-stu-id="db6fc-119">As soon as the Multi-Geo environment has been set up, users that search in Delve get results from all geo locations.</span></span>
+<span data-ttu-id="6ae14-119">En cuanto se haya configurado el entorno multigeográfico, los usuarios que busquen en Delve obtendrán resultados de todas las ubicaciones geográficas.</span><span class="sxs-lookup"><span data-stu-id="6ae14-119">As soon as the Multi-Geo environment has been set up, users that search in Delve get results from all geo locations.</span></span>
 
-<span data-ttu-id="db6fc-p103">La fuente de Delve y la tarjeta de perfil sólo mostrar vistas previas de archivos que se almacenan en la ubicación **central** . Para los archivos que se almacenan en ubicaciones de satélite geo, el icono del tipo de archivo se muestra en su lugar.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p103">The Delve feed and the profile card only show previews of files that are stored in the **central** location. For files that are stored in satellite geo locations, the icon for the file type is shown instead.</span></span>
+<span data-ttu-id="6ae14-p103">La fuente de Delve y la tarjeta de perfil solo muestran vistas previas de los archivos almacenados en la ubicación **central**. Para los archivos que se almacenan en ubicaciones geográficas por satélite, se muestra el icono del tipo de archivo en su lugar.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p103">The Delve feed and the profile card only show previews of files that are stored in the **central** location. For files that are stored in satellite geo locations, the icon for the file type is shown instead.</span></span>
 
-### <a name="the-sharepoint-home-page"></a><span data-ttu-id="db6fc-122">La página principal de SharePoint</span><span class="sxs-lookup"><span data-stu-id="db6fc-122">The SharePoint home page</span></span>
+### <a name="the-sharepoint-home-page"></a><span data-ttu-id="6ae14-122">Página principal de SharePoint</span><span class="sxs-lookup"><span data-stu-id="6ae14-122">The SharePoint Central Administration Web site home page opens.</span></span>
 
-<span data-ttu-id="db6fc-p104">Tan pronto como se ha configurado el entorno Multi-Geo, los usuarios verán noticias, sitios recientes y seguidos desde varias ubicaciones geo en su página de inicio de SharePoint. Si utiliza el cuadro de búsqueda en la página principal de SharePoint, obtendrán resultados combinados desde varias ubicaciones geo.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p104">As soon as the Multi-Geo environment has been set up, users will see news, recent and followed sites from multiple geo locations on their SharePoint home page. If they use the search box on the SharePoint home page, they'll get merged results from multiple geo locations.</span></span>
+<span data-ttu-id="6ae14-p104">En cuanto se haya configurado el entorno multigeográfico, los usuarios verán noticias, sitios seguidos y recientes desde varias ubicaciones geográficas en su página principal de SharePoint. Si usan el cuadro de búsqueda en la página principal de SharePoint, obtendrán resultados combinados desde varias ubicaciones geográficas.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p104">As soon as the Multi-Geo environment has been set up, users will see news, recent and followed sites from multiple geo locations on their SharePoint home page. If they use the search box on the SharePoint home page, they'll get merged results from multiple geo locations.</span></span>
 
-### <a name="the-search-center"></a><span data-ttu-id="db6fc-125">El centro de búsqueda</span><span class="sxs-lookup"><span data-stu-id="db6fc-125">The Search Center</span></span>
+### <a name="the-search-center"></a><span data-ttu-id="6ae14-125">Centro de búsqueda</span><span class="sxs-lookup"><span data-stu-id="6ae14-125">The Search Center</span></span>
 
-<span data-ttu-id="db6fc-p105">Después el Multi-Geo entorno se ha configurado, cada centro de búsqueda continúa para mostrar únicamente los resultados de su propia ubicación geográfica. Administradores deben [cambiar la configuración de cada centro de búsqueda](#_Set_up_a_1) para obtener resultados de todas las ubicaciones de geo. Posteriormente, los usuarios que en el centro de búsqueda de búsqueda Obtén resultados desde todas las ubicaciones de geo.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p105">After the Multi-Geo environment has been set up, each Search Center continues to only show results from their own geo location. Admins must [change the settings of each Search Center](#_Set_up_a_1) to get results from all geo locations. Afterwards, users that search in the Search Center get results from all geo locations.</span></span>
+<span data-ttu-id="6ae14-p105">Cuando se haya configurado el entorno multigeográfico, cada Centro de búsqueda sigue mostrando solo los resultados de su propia ubicación geográfica. Los administradores deben [cambiar la configuración de cada Centro de búsqueda](#_Set_up_a_1) para obtener resultados de todas las ubicaciones geográficas. Después, los usuarios que realicen búsquedas en el Centro de búsqueda obtendrán resultados de todas las ubicaciones geográficas.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p105">After the Multi-Geo environment has been set up, each Search Center continues to only show results from their own geo location. Admins must [change the settings of each Search Center](#_Set_up_a_1) to get results from all geo locations. Afterwards, users that search in the Search Center get results from all geo locations.</span></span>
 
-### <a name="custom-search-applications"></a><span data-ttu-id="db6fc-129">Aplicaciones de búsqueda personalizadas</span><span class="sxs-lookup"><span data-stu-id="db6fc-129">Custom search applications</span></span>
+### <a name="custom-search-applications"></a><span data-ttu-id="6ae14-129">Aplicaciones de búsqueda personalizada</span><span class="sxs-lookup"><span data-stu-id="6ae14-129">Custom search applications</span></span>
 
-<span data-ttu-id="db6fc-p106">Como de costumbre, aplicaciones de búsqueda personalizadas interactúan con los índices de búsqueda utilizando las API existentes de resto de búsqueda de SharePoint. Para obtener resultados de todas o algunas ubicaciones geo, la aplicación debe [llamar a la API e incluir los nuevos parámetros de consulta de Multi-Geo](#_Get_custom_search) en la solicitud. Esto desencadena un ventilador fuera de la consulta a todas las ubicaciones de geo.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p106">As usual, custom search applications interact with the search indexes by using the existing SharePoint Search REST APIs. To get results from all, or some geo locations, the application must [call the API and include the new Multi-Geo query parameters](#_Get_custom_search) in the request. This triggers a fan out of the query to all geo locations.</span></span>
+<span data-ttu-id="6ae14-p106">Como de costumbre, las aplicaciones de búsqueda personalizada interactúan con los índices de búsqueda mediante las API REST de SharePoint Search existentes. Para obtener resultados de todas o algunas de las ubicaciones geográficas, la aplicación tiene que [llamar a la API e incluir los nuevos parámetros de consulta multigeográfica](#_Get_custom_search) en la solicitud. Esto desencadena la distribución ramificada de la consulta a todas las ubicaciones geográficas.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p106">As usual, custom search applications interact with the search indexes by using the existing SharePoint Search REST APIs. To get results from all, or some geo locations, the application must [call the API and include the new Multi-Geo query parameters](#_Get_custom_search) in the request. This triggers a fan out of the query to all geo locations.</span></span>
 
-## <a name="whats-different-about-search-in-a-multi-geo-environment"></a><span data-ttu-id="db6fc-133">¿Qué es diferente acerca de búsqueda en un entorno Multi-Geo?</span><span class="sxs-lookup"><span data-stu-id="db6fc-133">What’s different about search in a Multi-Geo environment?</span></span>
+## <a name="whats-different-about-search-in-a-multi-geo-environment"></a><span data-ttu-id="6ae14-133">¿En qué se diferencia la búsqueda en un entorno multigeográfico?</span><span class="sxs-lookup"><span data-stu-id="6ae14-133">What’s different about search in a Multi-Geo environment?</span></span>
 
-<span data-ttu-id="db6fc-134">Algunas características de búsqueda, es posible que esté familiarizado con, funcionan de forma diferente en un entorno Multi-Geo.</span><span class="sxs-lookup"><span data-stu-id="db6fc-134">Some search features you might be familiar with, work differently in a Multi-Geo environment.</span></span>
+<span data-ttu-id="6ae14-134">Algunas características de búsqueda con las que tal vez esté familiarizado, funcionan de forma distinta en un entorno multigeográfico.</span><span class="sxs-lookup"><span data-stu-id="6ae14-134">Some search features you might be familiar with, work differently in a Multi-Geo environment.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="db6fc-135"><strong>Característica</strong></span><span class="sxs-lookup"><span data-stu-id="db6fc-135"><strong>Feature</strong></span></span></th>
-<th align="left"><span data-ttu-id="db6fc-136"><strong>¿Cómo funciona</strong></span><span class="sxs-lookup"><span data-stu-id="db6fc-136"><strong>How does it work</strong></span></span></th>
-<th align="left"><span data-ttu-id="db6fc-137"><strong>Solución alternativa</strong></span><span class="sxs-lookup"><span data-stu-id="db6fc-137"><strong>Workaround</strong></span></span></th>
+<th align="left"><span data-ttu-id="6ae14-135"><strong>Característica</strong></span><span class="sxs-lookup"><span data-stu-id="6ae14-135"><strong>Feature</strong></span></span></th>
+<th align="left"><span data-ttu-id="6ae14-136"><strong>¿Cómo funciona?</strong></span><span class="sxs-lookup"><span data-stu-id="6ae14-136"><strong>How does it work?</strong></span></span></th>
+<th align="left"><span data-ttu-id="6ae14-137"><strong>Solución alternativa</strong></span><span class="sxs-lookup"><span data-stu-id="6ae14-137"><strong>Workaround</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="db6fc-138">Resultados de la promoción</span><span class="sxs-lookup"><span data-stu-id="db6fc-138">Promoted results</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-p107">Puede crear reglas de consulta con resultados promocionadas en distintos niveles: para el inquilino todo, para una colección de sitios o para un sitio. En un entorno Multi-Geo, definir resultados promovidos en el nivel de <strong>inquilinos</strong> si desea promover los resultados a los centros de búsqueda en <strong>todas las</strong> ubicaciones de geo. Si usted <strong>sólo</strong> desea promover los resultados en el centro de búsqueda que está en la ubicación geográfica de la colección de sitios o el sitio, definir los resultados en el nivel de <strong>colección de sitios</strong> o <strong>sitio</strong> .</span><span class="sxs-lookup"><span data-stu-id="db6fc-p107">You can create query rules with promoted results at different levels: for the whole tenant, for a site collection, or for a site. In a Multi-Geo environment, define promoted results at the <strong>tenant</strong> level if you want to promote the results to the Search Centers in <strong>all</strong> geo locations. If you <strong>only</strong> want to promote results in the Search Center that’s in the geo location of the site collection or site, define the results at the <strong>site collection</strong> or <strong>site</strong> level.</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-142">Si no necesita diferentes resultados promovidos por ubicación geográfica, por ejemplo diferentes reglas para viajar, recomendamos definir promover los resultados en el nivel de inquilinos.</span><span class="sxs-lookup"><span data-stu-id="db6fc-142">If you don’t need different promoted results per geo location, for example different rules for traveling, we recommend defining promoted results at the tenant level.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-138">Resultados promocionados</span><span class="sxs-lookup"><span data-stu-id="6ae14-138">Promoted results</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-p107">Puede crear reglas de consulta con los resultados promocionados en distintos niveles: para todo el espacio empresarial, para una colección de sitios o para un sitio. En un entorno multigeográfico, defina los resultados promocionados en el nivel de <strong>espacio empresarial</strong> si quiere promover los resultados a los centros de búsqueda de <strong>todas</strong> las ubicaciones geográficas. Si <strong>solo</strong> quiere promover los resultados del Centro de búsqueda que se encuentra en la ubicación geográfica del sitio o la colección de sitios, defina los resultados en el nivel de <strong>colección de sitios</strong> o de <strong>sitio</strong>.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p107">You can create query rules with promoted results at different levels: for the whole tenant, for a site collection, or for a site. In a Multi-Geo environment, define promoted results at the <strong>tenant</strong> level if you want to promote the results to the Search Centers in <strong>all</strong> geo locations. If you <strong>only</strong> want to promote results in the Search Center that’s in the geo location of the site collection or site, define the results at the <strong>site collection</strong> or <strong>site</strong> level.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-142">Si no necesita resultados promocionados distintos por ubicación geográfica, por ejemplo, diferentes reglas de viaje, se recomienda definir los resultados promocionados en el nivel de espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="6ae14-142">If you don’t need different promoted results per geo location, for example different rules for traveling, we recommend defining promoted results at the tenant level.</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="db6fc-143">Refinadores de búsqueda</span><span class="sxs-lookup"><span data-stu-id="db6fc-143">Search refiners</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-p108">La búsqueda devuelve los refinadores de todas las ubicaciones geo de un arrendatario y luego los agrega. La agregación es un mayor esfuerzo, lo que significa que los recuentos de refinador podrían no ser exactos al 100%. Para la mayoría de los escenarios controlados por la búsqueda de esta precisión es suficiente.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p108">Search returns refiners from all the geo locations of a tenant and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-147">Para aplicaciones orientadas a la búsqueda que dependen de su integridad refinador, consultar cada ubicación geográfica independientemente sin necesidad de utilizar múltiples Geo fan-out.</span><span class="sxs-lookup"><span data-stu-id="db6fc-147">For search-driven applications that depend on refiner completeness, query each geo location independently without using Multi-Geo fan-out.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-143">Refinadores de búsquedas</span><span class="sxs-lookup"><span data-stu-id="6ae14-143">Search refiners</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-p108">La búsqueda devuelve refinadores de todas las ubicaciones geográficas de un espacio empresarial y luego los agrega. La agregación es la mejor posible, lo que significa que puede que los recuentos de refinadores no sean exactos al 100%. Para la mayoría de los escenarios basado en búsquedas esta precisión es suficiente.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p108">Search returns refiners from all the geo locations of a tenant and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-147">En aplicaciones basadas en búsquedas que dependen de la exhaustividad del refinador, consulte cada ubicación geográfica por separado sin usar la distribución ramificada multigeográfica.</span><span class="sxs-lookup"><span data-stu-id="6ae14-147">For search-driven applications that depend on refiner completeness, query each geo location independently without using Multi-Geo fan-out.</span></span></td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left"><span data-ttu-id="db6fc-148">Multi-Geo búsqueda no es compatible con la creación de depósitos dinámico para los refinadores numéricos.</span><span class="sxs-lookup"><span data-stu-id="db6fc-148">Multi-Geo search doesn’t support dynamic bucketing for numerical refiners.</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-149">Utilice el <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">parámetro "Discretize"</a> para los refinadores numéricos.</span><span class="sxs-lookup"><span data-stu-id="db6fc-149">Use the <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize” parameter</a> for numerical refiners.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-148">La búsqueda multigeográfica no admite la creación dinámica de cubos para refinadores numéricos.</span><span class="sxs-lookup"><span data-stu-id="6ae14-148">Multi-Geo search doesn’t support dynamic bucketing for numerical refiners.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-149">Use el parámetro <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize”</a> para refinadores numéricos.</span><span class="sxs-lookup"><span data-stu-id="6ae14-149">Use the <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize” parameter</a> for numerical refiners.</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="db6fc-150">Identificadores de documento</span><span class="sxs-lookup"><span data-stu-id="db6fc-150">Document IDs</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-151">Si está desarrollando una aplicación controlada por búsqueda que depende de ID documento, observe que identificadores de documento en un entorno Multi-Geo no son únicos en todas las ubicaciones de geo, son únicas para cada ubicación geográfica.</span><span class="sxs-lookup"><span data-stu-id="db6fc-151">If you’re developing a search-driven application that depends on document IDs, note that document IDs in a Multi-Geo environment aren’t unique across geo locations, they are unique per geo location.</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-p109">Hemos agregado una columna que identifica la ubicación geográfica. Utilice esta columna para lograr la unicidad. Esta columna se denomina "GeoLocationSource".</span><span class="sxs-lookup"><span data-stu-id="db6fc-p109">We’ve added a column that identifies the geo location. Use this column to achieve uniqueness. This column is named “GeoLocationSource”.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-150">Identificadores de documento</span><span class="sxs-lookup"><span data-stu-id="6ae14-150">Unique Document IDs</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-151">Si está desarrollando una aplicación basada en búsquedas que depende de los identificadores de documento, tenga en cuenta que los identificadores de documento en un entorno multigeográfico no son únicos en todas las ubicaciones geográficas, son únicos por ubicación geográfica.</span><span class="sxs-lookup"><span data-stu-id="6ae14-151">If you’re developing a search-driven application that depends on document IDs, note that document IDs in a Multi-Geo environment aren’t unique across geo locations, they are unique per geo location.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-p109">Hemos agregado una columna que identifica la ubicación geográfica. Utilice esta columna para lograr unicidad. Esta columna se denomina "GeoLocationSource".</span><span class="sxs-lookup"><span data-stu-id="6ae14-p109">We’ve added a column that identifies the geo location. Use this column to achieve uniqueness. This column is named “GeoLocationSource”.</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="db6fc-155">Número de resultados</span><span class="sxs-lookup"><span data-stu-id="db6fc-155">Number of results</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-156">La página de resultados de búsqueda muestra resultados combinados de las ubicaciones de geo, pero no es posible más allá de 500 resultados de página.</span><span class="sxs-lookup"><span data-stu-id="db6fc-156">The search results page shows combined results from the geo locations, but it’s not possible to page beyond 500 results.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-155">Número de resultados</span><span class="sxs-lookup"><span data-stu-id="6ae14-155">Number of results</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-156">La página de resultados de búsqueda muestra los resultados combinados de las ubicaciones geográficas, pero no es posible ver más allá de 500 resultados.</span><span class="sxs-lookup"><span data-stu-id="6ae14-156">The search results page shows combined results from the geo locations, but it’s not possible to page beyond 500 results.</span></span></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="whats-not-supported-for-search-in-a-multi-geo-environment"></a><span data-ttu-id="db6fc-157">¿Qué no se admite para la búsqueda en un entorno Multi-Geo?</span><span class="sxs-lookup"><span data-stu-id="db6fc-157">What’s not supported for search in a Multi-Geo environment?</span></span>
+## <a name="whats-not-supported-for-search-in-a-multi-geo-environment"></a><span data-ttu-id="6ae14-157">¿Qué no es compatible con la búsqueda en un entorno multigeográfico?</span><span class="sxs-lookup"><span data-stu-id="6ae14-157">What’s not supported for search in a Multi-Geo environment?</span></span>
 
-<span data-ttu-id="db6fc-158">Algunas de las características de búsqueda, es posible que esté familiarizado con, no se admiten en un entorno Multi-Geo.</span><span class="sxs-lookup"><span data-stu-id="db6fc-158">Some of the search features you might be familiar with, aren’t supported in a Multi-Geo environment.</span></span>
+<span data-ttu-id="6ae14-158">Algunas características de búsqueda con las que tal vez esté familiarizado, no se admiten en un entorno multigeográfico.</span><span class="sxs-lookup"><span data-stu-id="6ae14-158">Some of the search features you might be familiar with, aren’t supported in a Multi-Geo environment.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="db6fc-159"><strong>Función de búsqueda</strong></span><span class="sxs-lookup"><span data-stu-id="db6fc-159"><strong>Search feature</strong></span></span></th>
-<th align="left"><span data-ttu-id="db6fc-160"><strong>Nota</strong></span><span class="sxs-lookup"><span data-stu-id="db6fc-160"><strong>Note</strong></span></span></th>
+<th align="left"><span data-ttu-id="6ae14-159"><strong>Característica de búsqueda</strong></span><span class="sxs-lookup"><span data-stu-id="6ae14-159"><strong>Search feature</strong></span></span></th>
+<th align="left"><span data-ttu-id="6ae14-160"><strong>Nota</strong></span><span class="sxs-lookup"><span data-stu-id="6ae14-160"><strong>Note</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="db6fc-161">Autenticación sólo de la aplicación</span><span class="sxs-lookup"><span data-stu-id="db6fc-161">App-only authentication</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-162">La autenticación sólo de la aplicación (acceso privilegiado de servicios) no es compatible con Multi-Geo búsqueda.</span><span class="sxs-lookup"><span data-stu-id="db6fc-162">App-only authentication (privileged access from services) isn’t supported in Multi-Geo search.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-161">Autenticación solo de aplicación</span><span class="sxs-lookup"><span data-stu-id="6ae14-161">App-only authentication</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-162">La autenticación solo de aplicación (acceso con privilegios desde servicios) no se admite en la búsqueda multigeográfica.</span><span class="sxs-lookup"><span data-stu-id="6ae14-162">App-only authentication (privileged access from services) isn’t supported in Multi-Geo search.</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="db6fc-163">Usuarios invitados</span><span class="sxs-lookup"><span data-stu-id="db6fc-163">Guest users</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-164">Sólo los usuarios invitados Obtén resultados desde la ubicación geográfica que está buscando desde.</span><span class="sxs-lookup"><span data-stu-id="db6fc-164">Guest users only get results from the geo location that they’re searching from.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-163">Usuarios invitados</span><span class="sxs-lookup"><span data-stu-id="6ae14-163">Guest users</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-164">Los usuarios invitados solo obtienen resultados de la ubicación geográfica desde la que buscan.</span><span class="sxs-lookup"><span data-stu-id="6ae14-164">Guest users only get results from the geo location that they’re searching from.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="how-does-search-work-in-a-multi-geo-environment"></a><span data-ttu-id="db6fc-165">¿Cómo funciona la búsqueda de hace en un entorno Multi-Geo?</span><span class="sxs-lookup"><span data-stu-id="db6fc-165">How does search work in a Multi-Geo environment?</span></span>
+## <a name="how-does-search-work-in-a-multi-geo-environment"></a><span data-ttu-id="6ae14-165">¿Cómo funciona la búsqueda en un entorno multigeográfico?</span><span class="sxs-lookup"><span data-stu-id="6ae14-165">How does search work in a Multi-Geo environment?</span></span>
 
-<span data-ttu-id="db6fc-166">**Todos** los clientes de búsqueda utilizan las API existentes de resto de búsqueda de SharePoint para interactuar con los índices de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="db6fc-166">**All** the search clients use the existing SharePoint Search REST APIs to interact with the search indexes.</span></span>
+<span data-ttu-id="6ae14-166">**Todos** los clientes de búsqueda usan la API REST de SharePoint Search existente para interactuar con los índices de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="6ae14-166">**All** the search clients use the existing SharePoint Search REST APIs to interact with the search indexes.</span></span>
 <img src="media/configure-search-for-multi-geo_image1-1.png" />
 
-1. <span data-ttu-id="db6fc-167">Un cliente de búsqueda llama el extremo del resto de búsqueda con la propiedad de consulta EnableMultiGeoSearch = true.</span><span class="sxs-lookup"><span data-stu-id="db6fc-167">A search client calls the Search REST endpoint with the query property EnableMultiGeoSearch= true.</span></span>
-2. <span data-ttu-id="db6fc-168">La consulta se envía a todas las ubicaciones de geo de los inquilinos.</span><span class="sxs-lookup"><span data-stu-id="db6fc-168">The query is sent to all geo locations in the tenant.</span></span>
-3. <span data-ttu-id="db6fc-169">Resultados de la búsqueda de cada ubicación geográfica se combinan y clasificados.</span><span class="sxs-lookup"><span data-stu-id="db6fc-169">Search results from each geo location are merged and ranked.</span></span>
-4. <span data-ttu-id="db6fc-170">El cliente obtiene los resultados de la búsqueda unificada.</span><span class="sxs-lookup"><span data-stu-id="db6fc-170">The client gets unified search results.</span></span>
+1. <span data-ttu-id="6ae14-167">Un cliente de búsqueda llama al punto de conexión de REST de búsqueda con la propiedad EnableMultiGeoSearch= true.</span><span class="sxs-lookup"><span data-stu-id="6ae14-167">A search client calls the Search REST endpoint with the query property EnableMultiGeoSearch= true.</span></span>
+2. <span data-ttu-id="6ae14-168">La consulta se envía a todas las ubicaciones geográficas del espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="6ae14-168">The query is sent to all geo locations in the tenant.</span></span>
+3. <span data-ttu-id="6ae14-169">Los resultados de búsqueda de cada ubicación geográfica se combinan y clasifican.</span><span class="sxs-lookup"><span data-stu-id="6ae14-169">Search results from each geo location are merged and ranked.</span></span>
+4. <span data-ttu-id="6ae14-170">El cliente obtiene resultados unificados.</span><span class="sxs-lookup"><span data-stu-id="6ae14-170">The client gets unified search results.</span></span>
 
 
 
-<span data-ttu-id="db6fc-p110"><span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Observe que no combinar los resultados de búsqueda hasta que hemos recibido resultados de todas las ubicaciones de geo. Esto significa que las búsquedas Multi-Geo tienen latencia adicional en comparación con las búsquedas en un entorno con geo sólo una ubicación.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p110"><span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Notice that we don’t merge the search results until we’ve received results from all the geo locations. This means that Multi-Geo searches have additional latency compared to searches in an environment with only one geo location.</span></span>
+<span data-ttu-id="6ae14-p110"><span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Observe que no combinamos los resultados de búsqueda hasta que hemos recibido los resultados de todas las ubicaciones geográficas. Esto significa que las búsquedas multigeográficas tienen latencia adicional con respecto a las búsquedas en un entorno de una sola ubicación geográfica.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p110"><span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Notice that we don’t merge the search results until we’ve received results from all the geo locations. This means that Multi-Geo searches have additional latency compared to searches in an environment with only one geo location.</span></span>
 
 <span id="_Set_up_a_1" class="anchor"><span id="_Ref505252370" class="anchor"></span></span>
-## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a><span data-ttu-id="db6fc-173">Obtener un centro de búsqueda para mostrar los resultados de todas las ubicaciones de geo</span><span class="sxs-lookup"><span data-stu-id="db6fc-173">Get a Search Center to show results from all geo locations</span></span>
+## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a><span data-ttu-id="6ae14-173">Obtener un Centro de búsqueda que muestre los resultados de todas las ubicaciones geográficas</span><span class="sxs-lookup"><span data-stu-id="6ae14-173">Get a Search Center to show results from all geo locations</span></span>
 
-<span data-ttu-id="db6fc-174">Cada centro de búsqueda tiene varias líneas verticales y tendrá que configurar individualmente cada vertical.</span><span class="sxs-lookup"><span data-stu-id="db6fc-174">Each Search Center has several verticals and you have to set up each vertical individually.</span></span>
+<span data-ttu-id="6ae14-174">Cada Centro de búsqueda tiene varios sectores verticales y hay que configurar individualmente cada sector vertical.</span><span class="sxs-lookup"><span data-stu-id="6ae14-174">Each Search Center has several verticals and you have to set up each vertical individually.</span></span>
 
-1.  <span data-ttu-id="db6fc-175">Asegúrese de que realiza estos pasos con una cuenta que tenga permiso para editar la página de resultados de la búsqueda y el elemento Web de resultados de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="db6fc-175">Ensure that you perform these steps with an account that has permission to edit the search results page and the Search Result Web Part.</span></span>
+1.  <span data-ttu-id="6ae14-175">Asegúrese de realizar estos pasos con una cuenta que tenga permiso para editar la página de resultados de búsqueda y el elemento web de resultados de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="6ae14-175">Ensure that you perform these steps with an account that has permission to edit the search results page and the Search Result Web Part.</span></span>
 
-2.  <span data-ttu-id="db6fc-176">Desplácese a la página de resultados de la búsqueda (consulte las páginas de resultados de la [lista](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) de búsqueda)</span><span class="sxs-lookup"><span data-stu-id="db6fc-176">Navigate to the search results page (see the [list](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) of search results pages)</span></span>
+2.  <span data-ttu-id="6ae14-176">Navegue a la página de resultados de búsqueda (vea la [lista](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) de páginas de resultados de búsqueda).</span><span class="sxs-lookup"><span data-stu-id="6ae14-176">Navigate to the search results page (see the [list](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) of search results pages)</span></span>
 
-3.  <span data-ttu-id="db6fc-p111">Seleccione vertical para configurar, haga clic en el icono de engranaje de **configuración** en la esquina superior derecha y, a continuación, haga clic en **Editar página**. La página de resultados de búsqueda se abre en modo de edición.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p111">Select the vertical to set up, click **Settings** gear icon in the upper, right corner, and then click **Edit Page**. The search results page opens in Edit mode.</span></span>
+3.  <span data-ttu-id="6ae14-p111">Seleccione el sector vertical que quiere configurar, haga clic en el icono de engranaje **Configuración** de la esquina superior derecha y luego en **Editar página**. La página de resultados de búsqueda se abre en modo de edición.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p111">Select the vertical to set up, click **Settings** gear icon in the upper, right corner, and then click **Edit Page**. The search results page opens in Edit mode.</span></span>
 
      ![](media/configure-search-for-multi-geo_image2.png)
-1.  <span data-ttu-id="db6fc-p112">En el elemento Web de resultados de búsqueda, mueva el puntero a la parte superior, la esquina derecha del elemento Web, haga clic en la flecha y, a continuación, haga clic en **Modificar elemento Web** en el menú. Se abre el panel de herramientas elemento Web resultados de la búsqueda en la cinta de opciones en la parte superior derecha de la página.![](media/configure-search-for-multi-geo_image3.png)</span><span class="sxs-lookup"><span data-stu-id="db6fc-p112">In the Search Results Web Part, move the pointer to the upper, right corner of the Web Part, click the arrow, and then click **Edit Web Part** on the menu. The Search Results Web Part tool pane opens under the ribbon in the top right of the page. ![](media/configure-search-for-multi-geo_image3.png)</span></span>
+1.  <span data-ttu-id="6ae14-p112">En el elemento web de resultados de búsqueda, mueva el puntero a la esquina superior derecha del elemento web, haga clic en la flecha y luego en **Editar elemento Web** en el menú. El panel de herramientas del elemento web de resultados de búsqueda se abrirá en la cinta de la parte superior derecha de la página. ![](media/configure-search-for-multi-geo_image3.png)</span><span class="sxs-lookup"><span data-stu-id="6ae14-p112">In the Search Results Web Part, move the pointer to the upper, right corner of the Web Part, click the arrow, and then click **Edit Web Part** on the menu. The Search Results Web Part tool pane opens under the ribbon in the top right of the page. ![](media/configure-search-for-multi-geo_image3.png)</span></span>
 
-1.  <span data-ttu-id="db6fc-181">En el panel de herramientas elemento Web, en la sección de **configuración** , en **configuración de control de resultados**, seleccione **Multi-Geo mostrar resultados** para obtener el elemento de Web de resultados de búsqueda para mostrar los resultados de todas las ubicaciones de geo.</span><span class="sxs-lookup"><span data-stu-id="db6fc-181">In the Web Part tool pane, in the **Settings** section, under **Results control settings**, select **Show Multi-Geo results** to get the Search Results Web Part to show results from all geo locations.</span></span>
+1.  <span data-ttu-id="6ae14-181">En la sección **Configuración** del panel de herramientas del elemento web de resultados de búsqueda, en **Configuración de control de resultados**, seleccione **Show Multi-Geo results** (Mostrar resultados multigeográficos) para que el elemento web de resultados de la búsqueda muestre los resultados de todas las ubicaciones geográficas.</span><span class="sxs-lookup"><span data-stu-id="6ae14-181">In the Web Part tool pane, in the **Settings** section, under **Results control settings**, select **Show Multi-Geo results** to get the Search Results Web Part to show results from all geo locations.</span></span>
 
-2.  <span data-ttu-id="db6fc-182">Haga clic en **Aceptar** para guardar los cambios y cerrar el panel de herramientas elemento Web.</span><span class="sxs-lookup"><span data-stu-id="db6fc-182">Click **OK** to save your change and close the Web Part tool pane.</span></span>
+2.  <span data-ttu-id="6ae14-182">Haga clic en **Aceptar** para guardar los cambios y cierre el panel de herramientas del elemento web.</span><span class="sxs-lookup"><span data-stu-id="6ae14-182">Click **OK** to save your change and close the Web Part tool pane.</span></span>
 
-3.  <span data-ttu-id="db6fc-183">Compruebe los cambios realizados en el elemento Web de resultados de la búsqueda haciendo clic **En verificación** en la ficha de página del menú principal.</span><span class="sxs-lookup"><span data-stu-id="db6fc-183">Check your changes to the Search Results Web Part by clicking **Check-In** on the Page tab of the main menu.</span></span>
+3.  <span data-ttu-id="6ae14-183">Para comprobar los cambios realizados en el elemento web de resultados de búsqueda, haga clic en **Proteger** en la pestaña de página del menú principal.</span><span class="sxs-lookup"><span data-stu-id="6ae14-183">Check your changes to the Search Results Web Part by clicking **Check-In** on the Page tab of the main menu.</span></span>
 
-4.  <span data-ttu-id="db6fc-184">Publicar los cambios mediante el vínculo proporcionado en la nota en la parte superior de la página.</span><span class="sxs-lookup"><span data-stu-id="db6fc-184">Publish the changes by using the link provided in the note at the top of the page.</span></span>
+4.  <span data-ttu-id="6ae14-184">Publique los cambios mediante el vínculo incluido en la nota de la parte superior de la página.</span><span class="sxs-lookup"><span data-stu-id="6ae14-184">Publish the changes by using the link provided in the note at the top of the page.</span></span>
 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
-## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a><span data-ttu-id="db6fc-185">Obtener aplicaciones de búsqueda personalizadas para mostrar los resultados de todas o algunas ubicaciones geo</span><span class="sxs-lookup"><span data-stu-id="db6fc-185">Get custom search applications to show results from all or some geo locations</span></span>
+## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a><span data-ttu-id="6ae14-185">Obtener aplicaciones de búsqueda personalizada que muestren los resultados de todas o algunas de las ubicaciones geográficas</span><span class="sxs-lookup"><span data-stu-id="6ae14-185">Get custom search applications to show results from all or some geo locations</span></span>
 
-<span data-ttu-id="db6fc-p113">Aplicaciones de búsqueda personalizadas Obtén resultados de ubicaciones geo todas o algunas, especificando parámetros de consulta con la solicitud de la API de REST de búsqueda de SharePoint. Dependiendo de los parámetros de la consulta, la consulta se abanico a todas las ubicaciones de geo o en algunas ubicaciones geo. Por ejemplo, si sólo necesita un subconjunto de ubicaciones geo para buscar la información pertinente de la consulta, puede controlar el fan-out a éstas. Si la solicitud es correcta, la API de REST de SharePoint Search devuelve datos de respuesta.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p113">Custom search applications get results from all, or some, geo locations by specifying query parameters with the request to the SharePoint Search REST API. Depending on the query parameters, the query is fanned out to all geo locations, or to some geo locations. For example, if you only need to query a subset of geo locations to find relevant information, you can control the fan out to only these. If the request succeeds, the SharePoint Search REST API returns response data.</span></span>
+<span data-ttu-id="6ae14-p113">Las aplicaciones de búsqueda personalizada obtienen resultados de todas o algunas de las ubicaciones geográficas especificando parámetros de consulta con la solicitud a la API REST de SharePoint Search. En función de los parámetros de consulta, se efectúa una distribución ramificada de la consulta a todas o a algunas de las ubicaciones geográficas. Por ejemplo, si solo tiene que consultar un subconjunto de las ubicaciones geográficas para encontrar información relevante, puede controlar la distribución ramificada a solo estas. Si la solicitud se realiza correctamente, la API REST de SharePoint Search devuelve datos de respuesta.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p113">Custom search applications get results from all, or some, geo locations by specifying query parameters with the request to the SharePoint Search REST API. Depending on the query parameters, the query is fanned out to all geo locations, or to some geo locations. For example, if you only need to query a subset of geo locations to find relevant information, you can control the fan out to only these. If the request succeeds, the SharePoint Search REST API returns response data.</span></span>
 
-### <a name="query-parameters"></a><span data-ttu-id="db6fc-190">Parámetros de consulta</span><span class="sxs-lookup"><span data-stu-id="db6fc-190">Query parameters</span></span>
+### <a name="query-parameters"></a><span data-ttu-id="6ae14-190">Parámetros de consulta</span><span class="sxs-lookup"><span data-stu-id="6ae14-190">Query parameters</span></span>
 
-<span data-ttu-id="db6fc-p114">EnableMultiGeoSearch - esto es un valor booleano que especifica si la consulta será abanico a los índices de otras ubicaciones geo del inquilino Multi-Geo. Se establece en **true** para fan-out de la consulta; **false** para no fan-out de la consulta. El valor predeterminado es **false**. Si no incluye este parámetro, la consulta es **no** abanico a otras ubicaciones geo. Si utiliza el parámetro en un entorno que no sea Multi-Geo, se omite el parámetro.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p114">EnableMultiGeoSearch - This is a Boolean value that specifies whether the query shall be fanned out to the indexes of other geo locations of the Multi-Geo tenant. Set it to **true** to fan out the query; **false** to not fan out the query. The default value is **false**. If you don’t include this parameter, the query is **not** fanned out to other geo locations. If you use the parameter in an environment that isn’t Multi-Geo, the parameter is ignored.</span></span>
+<span data-ttu-id="6ae14-p114">EnableMultiGeoSearch: valor booleano que especifica si se efectuará una distribución ramificada de la consulta a los índices de otras ubicaciones geográficas del inquilino multigeográfico. Establézcalo en **true** para efectuar una distribución ramificada de la consulta; en **false** para no efectuar una distribución ramificada de la consulta. El valor predeterminado es **false**. Si no incluye este parámetro, **no** se efectúa una distribución ramificada de la consulta a otras ubicaciones geográficas. Si usa el parámetro en un entorno que no es multigeográfico, se ignorará el parámetro.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p114">EnableMultiGeoSearch - This is a Boolean value that specifies whether the query shall be fanned out to the indexes of other geo locations of the Multi-Geo tenant. Set it to **true** to fan out the query; **false** to not fan out the query. The default value is **false**. If you don’t include this parameter, the query is **not** fanned out to other geo locations. If you use the parameter in an environment that isn’t Multi-Geo, the parameter is ignored.</span></span>
 
-<span data-ttu-id="db6fc-p115">TipoCliente - se trata de una cadena. Escriba un nombre de cliente única para cada aplicación de búsqueda. Si no incluye este parámetro, la consulta es **no** abanico a otras ubicaciones geo.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p115">ClientType - This is a string. Enter a unique client name for each search application. If you don’t include this parameter, the query is **not** fanned out to other geo locations.</span></span>
+<span data-ttu-id="6ae14-p115">ClientType: se trata de una cadena. Escriba un nombre de cliente único para cada aplicación de búsqueda. Si no incluye este parámetro, **no** se efectúa una distribución ramificada de la consulta a otra ubicación geográfica.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p115">ClientType - This is a string. Enter a unique client name for each search application. If you don’t include this parameter, the query is **not** fanned out to other geo locations.</span></span>
 
-<span data-ttu-id="db6fc-p116">MultiGeoSearchConfiguration: ésta es una lista opcional de qué geo ubicaciones en el Multi-Geo inquilinos para la consulta abanico para cuando **EnableMultiGeoSearch** es **true**. Si no incluye este parámetro, o déjelo en blanco, la consulta se abanico a todas las ubicaciones de geo. Para cada ubicación geográfica, escriba lo siguiente en formato JSON:</span><span class="sxs-lookup"><span data-stu-id="db6fc-p116">MultiGeoSearchConfiguration - This is an optional list of which geo locations in the Multi-Geo tenant to fan the query out to when **EnableMultiGeoSearch** is **true**. If you don’t include this parameter, or leave it blank, the query is fanned out to all geo locations. For each geo location, enter the following items, in JSON format:</span></span>
+<span data-ttu-id="6ae14-p116">MultiGeoSearchConfiguration: lista opcional de las ubicaciones geográficas del inquilino multigeográfico que se distribuyen cuando **EnableMultiGeoSearch** es **true**. Si no incluye este parámetro o lo deja en blanco, se efectúa una distribución ramificada de la consulta a todas las ubicaciones geográficas. Para cada ubicación geográfica, escriba los elementos siguientes, con formato JSON:</span><span class="sxs-lookup"><span data-stu-id="6ae14-p116">MultiGeoSearchConfiguration - This is an optional list of which geo locations in the Multi-Geo tenant to fan the query out to when **EnableMultiGeoSearch** is **true**. If you don’t include this parameter, or leave it blank, the query is fanned out to all geo locations. For each geo location, enter the following items, in JSON format:</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="db6fc-202">Elemento</span><span class="sxs-lookup"><span data-stu-id="db6fc-202">Item</span></span></th>
-<th align="left"><span data-ttu-id="db6fc-203">Descripción</span><span class="sxs-lookup"><span data-stu-id="db6fc-203">Description</span></span></th>
+<th align="left"><span data-ttu-id="6ae14-202">Elemento</span><span class="sxs-lookup"><span data-stu-id="6ae14-202">Item</span></span></th>
+<th align="left"><span data-ttu-id="6ae14-203">Descripción</span><span class="sxs-lookup"><span data-stu-id="6ae14-203">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="db6fc-204">Ubicación_datos</span><span class="sxs-lookup"><span data-stu-id="db6fc-204">DataLocation</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-205">La ubicación geográfica, por ejemplo NAM.</span><span class="sxs-lookup"><span data-stu-id="db6fc-205">The geo location, for example NAM.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-204">DataLocation</span><span class="sxs-lookup"><span data-stu-id="6ae14-204">DataLocation</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-205">Ubicación geográfica, por ejemplo, NAM.</span><span class="sxs-lookup"><span data-stu-id="6ae14-205">The geo location, for example NAM.</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="db6fc-206">Extremo</span><span class="sxs-lookup"><span data-stu-id="db6fc-206">EndPoint</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-207">El extremo al que conectarse, por ejemplohttps://contoso.sharepoint.com</span><span class="sxs-lookup"><span data-stu-id="db6fc-207">The endpoint to connect to, for example https://contoso.sharepoint.com</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-206">EndPoint</span><span class="sxs-lookup"><span data-stu-id="6ae14-206">endpoint</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-207">Punto de conexión al que conectarse; por ejemplo, https://contoso.sharepoint.com</span><span class="sxs-lookup"><span data-stu-id="6ae14-207">The endpoint to connect to, for example https://contoso.sharepoint.com</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="db6fc-208">SourceId</span><span class="sxs-lookup"><span data-stu-id="db6fc-208">SourceId</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-209">El GUID del origen del resultado, por ejemplo B81EAB55-3140-4312-B0F4-9459D1B4FFEE.</span><span class="sxs-lookup"><span data-stu-id="db6fc-209">The GUID of the result source, for example B81EAB55-3140-4312-B0F4-9459D1B4FFEE.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-208">SourceId</span><span class="sxs-lookup"><span data-stu-id="6ae14-208">SourceId</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-209">GUID del origen de resultados, por ejemplo, B81EAB55-3140-4312-B0F4-9459D1B4FFEE.</span><span class="sxs-lookup"><span data-stu-id="6ae14-209">The GUID of the result source, for example B81EAB55-3140-4312-B0F4-9459D1B4FFEE.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="db6fc-p117">Si se omite Ubicación_datos o extremo o un Ubicación_datos está duplicado, se produce un error en la solicitud. [Puede obtener información acerca del extremo de ubicaciones de geo de los inquilinos mediante Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).</span><span class="sxs-lookup"><span data-stu-id="db6fc-p117">If you omit DataLocation or EndPoint, or if a DataLocation is duplicated, the request fails. [You can get information about the endpoint of a tenant's geo locations by using Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).</span></span>
+<span data-ttu-id="6ae14-p117">Si omite DataLocation o EndPoint, o si una DataLocation se duplica, la solicitud no se realiza. [Puede obtener información sobre el punto de conexión de las ubicaciones geográficas de un espacio empresarial con Microsoft Graph](https://docs.microsoft.com/es-ES/sharepoint/dev/solution-guidance/multigeo-discovery).</span><span class="sxs-lookup"><span data-stu-id="6ae14-p117">If you omit DataLocation or EndPoint, or if a DataLocation is duplicated, the request fails. [You can get information about the endpoint of a tenant's geo locations by using Microsoft Graph](https://docs.microsoft.com/es-ES/sharepoint/dev/solution-guidance/multigeo-discovery).</span></span>
 
-### <a name="response-data"></a><span data-ttu-id="db6fc-212">Datos de respuesta</span><span class="sxs-lookup"><span data-stu-id="db6fc-212">Response data</span></span>
+### <a name="response-data"></a><span data-ttu-id="6ae14-212">Datos de respuesta</span><span class="sxs-lookup"><span data-stu-id="6ae14-212">Response data</span></span>
 
-<span data-ttu-id="db6fc-p118">MultiGeoSearchStatus: se trata de una propiedad que devuelve la API de búsqueda de SharePoint en respuesta a una solicitud. El valor de la propiedad es una cadena y proporciona la siguiente información acerca de los resultados que devuelve la API de búsqueda de SharePoint:</span><span class="sxs-lookup"><span data-stu-id="db6fc-p118">MultiGeoSearchStatus – This is a property that the SharePoint Search API returns in response to a request. The value of the property is a string and gives the following information about the results that the SharePoint Search API returns:</span></span>
+<span data-ttu-id="6ae14-p118">MultiGeoSearchStatus: se trata de una propiedad que devuelve la API de SharePoint Search en respuesta a una solicitud. El valor de la propiedad es una cadena y proporciona la información siguiente sobre los resultados que devuelve la API de SharePoint Search:</span><span class="sxs-lookup"><span data-stu-id="6ae14-p118">MultiGeoSearchStatus – This is a property that the SharePoint Search API returns in response to a request. The value of the property is a string and gives the following information about the results that the SharePoint Search API returns:</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="db6fc-215">Valor</span><span class="sxs-lookup"><span data-stu-id="db6fc-215">Value</span></span></th>
-<th align="left"><span data-ttu-id="db6fc-216">Descripción</span><span class="sxs-lookup"><span data-stu-id="db6fc-216">Description</span></span></th>
+<th align="left"><span data-ttu-id="6ae14-215">Valor</span><span class="sxs-lookup"><span data-stu-id="6ae14-215">Value</span></span></th>
+<th align="left"><span data-ttu-id="6ae14-216">Descripción</span><span class="sxs-lookup"><span data-stu-id="6ae14-216">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="db6fc-217">Total</span><span class="sxs-lookup"><span data-stu-id="db6fc-217">Full</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-218">Resultados completos de <strong>todas</strong> las ubicaciones de geo.</span><span class="sxs-lookup"><span data-stu-id="db6fc-218">Full results from <strong>all</strong> the geo locations.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-217">Full</span><span class="sxs-lookup"><span data-stu-id="6ae14-217">Full</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-218">Resultados completos de <strong>todas</strong> ubicaciones geográficas.</span><span class="sxs-lookup"><span data-stu-id="6ae14-218">Full results from <strong>all</strong> the geo locations.</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="db6fc-219">Parcial</span><span class="sxs-lookup"><span data-stu-id="db6fc-219">Partial</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-p119">Resultados parciales de una o más ubicaciones de geo. Los resultados son incompletos debido a un error transitorio.</span><span class="sxs-lookup"><span data-stu-id="db6fc-p119">Partial results from one or more geo locations. The results are incomplete due to a transient error.</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-219">Partial</span><span class="sxs-lookup"><span data-stu-id="6ae14-219">Partial</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-p119">Resultados parciales de una o varias ubicaciones geográficas. Los resultados están incompletos debido a un error transitorio.</span><span class="sxs-lookup"><span data-stu-id="6ae14-p119">Partial results from one or more geo locations. The results are incomplete due to a transient error.</span></span></td>
 </tr>
 
 </tbody>
 </table>
 
-### <a name="query-using-the-rest-service"></a><span data-ttu-id="db6fc-222">Consulta con el servicio REST</span><span class="sxs-lookup"><span data-stu-id="db6fc-222">Query using the REST service</span></span>
+### <a name="query-using-the-rest-service"></a><span data-ttu-id="6ae14-222">Consultar con el servicio REST</span><span class="sxs-lookup"><span data-stu-id="6ae14-222">Query using the REST service</span></span>
 
-<span data-ttu-id="db6fc-p120">Una solicitud GET, especifica los parámetros de consulta en la dirección URL. Con una solicitud POST, pase los parámetros de consulta en el cuerpo en formato JavaScript Object Notation (JSON).</span><span class="sxs-lookup"><span data-stu-id="db6fc-p120">With a GET request, you specify the query parameters in the URL. With a POST request, you pass the query parameters in the body in JavaScript Object Notation (JSON) format.</span></span>
+<span data-ttu-id="6ae14-p120">Con una solicitud GET, especifica los parámetros de consulta en la dirección URL. Con una solicitud de POST, pasa los parámetros de consulta del cuerpo en el formato de notación de objetos JavaScript (JSON).</span><span class="sxs-lookup"><span data-stu-id="6ae14-p120">With a GET request, you specify the query parameters in the URL. With a POST request, you pass the query parameters in the body in JavaScript Object Notation (JSON) format.</span></span>
 
-#### <a name="request-headers"></a><span data-ttu-id="db6fc-225">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="db6fc-225">Request headers</span></span>
+#### <a name="request-headers"></a><span data-ttu-id="6ae14-225">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="6ae14-225">Request headers</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="db6fc-226">Nombre</span><span class="sxs-lookup"><span data-stu-id="db6fc-226">Name</span></span></th>
-<th align="left"><span data-ttu-id="db6fc-227">Valor</span><span class="sxs-lookup"><span data-stu-id="db6fc-227">Value</span></span></th>
+<th align="left"><span data-ttu-id="6ae14-226">Nombre</span><span class="sxs-lookup"><span data-stu-id="6ae14-226">Name</span></span></th>
+<th align="left"><span data-ttu-id="6ae14-227">Valor</span><span class="sxs-lookup"><span data-stu-id="6ae14-227">Value</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="db6fc-228">Tipo de contenido</span><span class="sxs-lookup"><span data-stu-id="db6fc-228">Content-Type</span></span></td>
-<td align="left"><span data-ttu-id="db6fc-229">Application/json; odata = verbose</span><span class="sxs-lookup"><span data-stu-id="db6fc-229">application/json;odata=verbose</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-228">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6ae14-228">Content-Type</span></span></td>
+<td align="left"><span data-ttu-id="6ae14-229">application/json;odata=verbose</span><span class="sxs-lookup"><span data-stu-id="6ae14-229">application/json;odata=verbose</span></span></td>
 </tr>
 </tbody>
 </table>
 
-#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a><span data-ttu-id="db6fc-230">Ejemplo de solicitud GET que es abanico a **todas las** ubicaciones de geo</span><span class="sxs-lookup"><span data-stu-id="db6fc-230">Sample GET request that’s fanned out to **all** geo locations</span></span>
+#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a><span data-ttu-id="6ae14-230">Ejemplo de distribución ramificada de una solicitud GET a **todas** las ubicaciones geográficas</span><span class="sxs-lookup"><span data-stu-id="6ae14-230">Sample GET request that’s fanned out to **all** geo locations</span></span>
 
-<span data-ttu-id="db6fc-231">https:// \<inquilinos\>/\_api, búsqueda/query?querytext = 'sharepoint' & Propiedades = 'EnableMultiGeoSearch:true' & TipoCliente =' Mi\_cliente\_id'</span><span class="sxs-lookup"><span data-stu-id="db6fc-231">https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'</span></span>
+<span data-ttu-id="6ae14-231">https:// \<espacio empresarial\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'</span><span class="sxs-lookup"><span data-stu-id="6ae14-231">https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'</span></span>
 
-#### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a><span data-ttu-id="db6fc-232">Ejemplo de solicitud GET para fan-out en **algunas** ubicaciones geo</span><span class="sxs-lookup"><span data-stu-id="db6fc-232">Sample GET request to fan out to **some** geo locations</span></span>
+#### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a><span data-ttu-id="6ae14-232">Ejemplo de solicitud GET para efectuar una distribución ramificada en **algunas** ubicaciones geográficas</span><span class="sxs-lookup"><span data-stu-id="6ae14-232">Sample GET request to fan out to **some** geo locations</span></span>
 
-<span data-ttu-id="db6fc-233">https:// <tenant>/_api/search/query?querytext = 'sitio' & TipoCliente = & Propiedades de 'my_client_id' ='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration: [{Ubicación_datos\:"NAM"\,extremo\:"https\: contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{Ubicación_datos\:"Puede"\,extremo\:" https\://contosoCAN.sharepoint-df.com "}]'</span><span class="sxs-lookup"><span data-stu-id="db6fc-233">https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'</span></span>
+<span data-ttu-id="6ae14-233">https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'</span><span class="sxs-lookup"><span data-stu-id="6ae14-233">https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'</span></span>
 
-#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a><span data-ttu-id="db6fc-234">Ejemplo de solicitud POST que es abanico a **todas las** ubicaciones de geo</span><span class="sxs-lookup"><span data-stu-id="db6fc-234">Sample POST request that’s fanned out to **all** geo locations</span></span>
+#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a><span data-ttu-id="6ae14-234">Ejemplo de distribución ramificada de una solicitud POST a **todas** las ubicaciones geográficas</span><span class="sxs-lookup"><span data-stu-id="6ae14-234">Sample POST request that’s fanned out to **all** geo locations</span></span>
 
     {
         "request": {
@@ -275,7 +276,7 @@ ms.lasthandoff: 04/16/2018
     }
 
 
-#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a><span data-ttu-id="db6fc-235">Ejemplo de solicitud POST que es abanico a **algunas** ubicaciones de geo</span><span class="sxs-lookup"><span data-stu-id="db6fc-235">Sample POST request that’s fanned out to **some** geo locations</span></span>
+#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a><span data-ttu-id="6ae14-235">Ejemplo de distribución ramificada de una solicitud POST a **algunas** ubicaciones geográficas</span><span class="sxs-lookup"><span data-stu-id="6ae14-235">Sample POST request that’s fanned out to **some** geo locations</span></span>
 
 
     {
@@ -303,9 +304,9 @@ ms.lasthandoff: 04/16/2018
         }
     }
 
-### <a name="query-using-csom"></a><span data-ttu-id="db6fc-236">Consulta con OMSC</span><span class="sxs-lookup"><span data-stu-id="db6fc-236">Query using CSOM</span></span>
+### <a name="query-using-csom"></a><span data-ttu-id="6ae14-236">Consultar con CSOM</span><span class="sxs-lookup"><span data-stu-id="6ae14-236">Query using CSOM</span></span>
 
-<span data-ttu-id="db6fc-237">Ésta es una consulta de OMSC de muestra es abanico a **todas las** ubicaciones de geo:</span><span class="sxs-lookup"><span data-stu-id="db6fc-237">Here’s a sample CSOM query that’s fanned out to **all** geo locations:</span></span>
+<span data-ttu-id="6ae14-237">Ejemplo de distribución ramificada de una consulta CSOM a **todas** las ubicaciones geográficas</span><span class="sxs-lookup"><span data-stu-id="6ae14-237">Here’s a sample CSOM query that’s fanned out to **all** geo locations:</span></span>
 
     var keywordQuery = new KeywordQuery(ctx);
     keywordQuery.QueryText = query.SearchQueryText;
