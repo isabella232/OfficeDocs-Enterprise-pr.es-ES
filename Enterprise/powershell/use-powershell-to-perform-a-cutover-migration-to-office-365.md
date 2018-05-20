@@ -1,22 +1,21 @@
 ---
-title: "Usar PowerShell para realizar una migración total a Office 365"
+title: Usar PowerShell para realizar una migración total a Office 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: "Resumen: aprenda a usar Windows PowerShell para realizar una migración total a Office 365."
-ms.openlocfilehash: 8181d59f53464034a584724dcb53956976c917dd
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Resumen: aprenda a usar Windows PowerShell para realizar una migración total a Office 365.'
+ms.openlocfilehash: db2782faac86e53ffd4d2794ee77d53605c9484e
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Usar PowerShell para realizar una migración total a Office 365
 
@@ -75,7 +74,7 @@ Para obtener una lista completa de los comandos de migración, consulte [Cmdlets
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **Asigne a una cuenta de usuario local los permisos necesarios para obtener acceso a los buzones de la organización de Exchange.** La cuenta de usuario local que utiliza para conectarse a su organización de Exchange local (también denominadaadministrador de migración) debe contar con los permisos necesarios para tener acceso a los buzones locales que desea migrar a Office 365. Esta cuenta de usuario se utiliza para crear un extremo de migración para la organización local.
+- **Asignar una cuenta de usuario local de los permisos necesarios para tener acceso a los buzones de correo en la organización de Exchange.** La cuenta de usuario local que usa para conectarse a su organización de Exchange local (también denominada el Administrador de la migración) debe tener los permisos necesarios para tener acceso a los buzones de correo local que se va a migrar a Office 365. Esta cuenta de usuario se usa para crear un extremo de migración a la organización local.
     
     En la lista siguiente, se muestran los privilegios administrativos necesarios para migrar buzones con una migración total. Hay tres opciones posibles.
     
@@ -200,7 +199,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="step-8-complete-post-migration-tasks"></a>Paso 8: Finalizar las tareas posteriores a la migración
 <a name="BK_Step8"> </a>
 
-- **Cree un registro DNS de Detección automática para que los usuarios puedan acceder fácilmente a sus buzones.**Después de haber migrado todos los correos locales a Office 365, puede configurar un registro DNS de Detección automática para su organización Office 365 con el fin de permitir a los usuarios conectarse fácilmente a sus nuevos buzones de Office 365 con Outlook y los clientes móviles. Este nuevo registro DNS de Detección automática debe utilizar el mismo espacio de nombres que se utiliza para la organización de Office 365. Por ejemplo, si el espacio de nombres basado en la nube es cloud.contoso.com, el registro DNS de Detección automática que se debe crear es autodiscover.cloud.contoso.com.
+- **Cree un registro DNS de Detección automática para que los usuarios puedan acceder fácilmente a sus buzones.** Después de haber migrado todos los correos locales a Office 365, puede configurar un registro DNS de Detección automática para su organización Office 365 con el fin de permitir a los usuarios conectarse fácilmente a sus nuevos buzones de Office 365 con Outlook y los clientes móviles. Este nuevo registro DNS de Detección automática debe utilizar el mismo espacio de nombres que se utiliza para la organización de Office 365. Por ejemplo, si el espacio de nombres basado en la nube es cloud.contoso.com, el registro DNS de Detección automática que se debe crear es autodiscover.cloud.contoso.com.
     
     Tras la migración, si mantiene su servidor Exchange, también debe asegurarse de que el registro DNS CNAME de Detección automática apunte a Office 365 tanto en el DNS interno como en el externo de modo que el cliente de Outlook se conecte al buzón correcto.
     

@@ -1,5 +1,5 @@
 ---
-title: "Información general de la nube híbrida"
+title: Información general de la nube híbrida
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
-description: "Resumen: Comprenda la definición y los elementos de la nube híbrida de Microsoft."
-ms.openlocfilehash: 3cf828b8411605a9d0bdd338c3b6c16a5892f6b7
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Resumen: Comprenda la definición y los elementos de la nube híbrida de Microsoft.'
+ms.openlocfilehash: 6d23f4f759e882ed925bd8bcb4c21ee365b231a0
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="hybrid-cloud-overview"></a>Información general de la nube híbrida
 
@@ -72,7 +72,7 @@ Debe tener en cuenta los siguientes elementos al planear e implementar escenario
     
 - Identidad
     
-    La identidad de los escenarios híbridos SaaS y PaaS de Azure puede incluir Azure AD como proveedor de identidades común, que se puede sincronizar con Windows Server AD local, o bien federarse con Windows Server AD u otros proveedores de identidades. También puede ampliar su infraestructura de identidad local a IaaS de Azure. Para obtener más información, consulte [Identidad de nube de Microsoft para arquitectos de empresa](microsoft-cloud-identity-for-enterprise-architects.md).
+    La identidad de los escenarios híbridos SaaS y PaaS de Azure puede incluir Azure AD como proveedor de identidades común, que se puede sincronizar con Windows Server AD local, o bien federarse con Windows Server AD u otros proveedores de identidades. También puede ampliar su infraestructura de identidad local a IaaS de Azure. Para obtener más información, consulte [Identidad de nube de Microsoft para arquitectos de empresa](microsoft-cloud-it-architecture-resources.md#identity).
     
 - Seguridad
     
