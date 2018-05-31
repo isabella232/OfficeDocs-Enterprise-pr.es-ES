@@ -17,6 +17,7 @@ ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "19168534"
 ---
 # <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a><span data-ttu-id="05490-103">Directivas de MAM para el entorno de desarrollo y prueba de Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="05490-103">MAM policies for your Microsoft 365 Enterprise dev/test environment</span></span>
 

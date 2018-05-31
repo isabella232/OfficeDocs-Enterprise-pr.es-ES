@@ -17,6 +17,7 @@ ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "19168554"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a><span data-ttu-id="e499e-103">Implementar un sitio de grupo de SharePoint Online aislado</span><span class="sxs-lookup"><span data-stu-id="e499e-103">Deploy an isolated SharePoint Online team site</span></span>
 
