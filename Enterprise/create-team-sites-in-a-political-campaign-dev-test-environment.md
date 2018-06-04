@@ -14,11 +14,12 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Resumen: Cree sitios de grupo de SharePoint Online públicos, privados, confidenciales o extremadamente confidenciales en el entorno de desarrollo y prueba de una campaña política.'
-ms.openlocfilehash: 146632ede567be4bf412304960605e6d87de7657
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 1651d89a1c17dfa5af592727bb534717763288e0
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
+ms.locfileid: "19168494"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política
 

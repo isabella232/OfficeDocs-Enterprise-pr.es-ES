@@ -3,7 +3,6 @@ title: Mover un sitio de OneDrive a otra ubicación geográfica
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,11 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Aprenda a mover un sitio de OneDrive a otra ubicación geográfica
-ms.openlocfilehash: 6bac98cc0707f977b7b585e8ae0a570f4b9662ee
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 80768d0838d1d5d072d3e221c4c2b4b1af78dae6
+ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "19174906"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover un sitio de OneDrive a otra ubicación geográfica 
 
@@ -25,7 +25,19 @@ El servicio de OneDrive usa Azure Blob Storage para almacenar contenido. El blob
 
 Durante el período de transferencia geográfica de OneDrive (de 2 a 6 horas), el usuario de OneDrive se establece en solo lectura. Todavía tiene acceso a sus archivos mediante el cliente de sincronización de OneDrive o en su sitio de OneDrive en SharePoint Online. Al finalizar la transferencia geográfica de OneDrive, el usuario se conectará automáticamente a su OneDrive en la ubicación geográfica de destino cuando navegue a OneDrive en el iniciador de aplicaciones de Office 365. El cliente de sincronización iniciará automáticamente la sincronización desde la nueva ubicación.
 
-Los procedimientos descritos en este artículo requieren el [Módulo Microsoft Office SharePoint Online PowerShell](https://www.microsoft.com/en-us/download/details.aspx?id=35588).
+Los procedimientos descritos en este artículo necesitan el [Módulo de PowerShell de Microsoft SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=35588).
+
+## <a name="communicating-to-your-users"></a>Comunicación con los usuarios
+
+Al mover sitios de OneDrive entre ubicaciones geográficas, es importante comunicar a los usuarios lo que pueden esperar que ocurra. Esto permitirá reducir la confusión de los usuarios y las llamadas al departamento de soporte técnico. Envíe un correo electrónico a los usuarios antes de la migración y proporcióneles la información siguiente:
+
+- Cuándo se espera que se inicie la migración y cuánto tiempo se espera que tarde en completarse.
+- La ubicación geográfica de destino para su cuenta de OneDrive y la dirección URL para obtener acceso a la nueva ubicación.
+- Necesitan cerrar sus archivos y no realizar ediciones durante la migración.
+- El uso compartido de los permisos de archivos no cambiará como resultado de la migración.
+- Acciones previstas de la [experiencia del usuario en un entorno multigeográfico](multi-geo-user-experience.md)
+
+Asegúrese de enviar a los usuarios un correo electrónico cuando se complete correctamente la migración para informarles de que pueden reanudar su trabajo en OneDrive.
 
 ## <a name="moving-a-onedrive-site"></a>Mover un sitio de OneDrive
 
@@ -147,9 +159,9 @@ Los usuarios con permisos de contenido de OneDrive seguirán teniendo acceso al 
 
 ### <a name="onedrive-sync-client"></a>Cliente de sincronización de OneDrive 
 
-El cliente de sincronización de OneDrive detectará automáticamente la sincronización y la transferirá perfectamente a la nueva ubicación de OneDrive cuando se haya completado la transferencia geográfica de OneDrive. El usuario no tiene que volver a iniciar sesión ni realizar ninguna otra acción.
+El cliente de sincronización de OneDrive detectará automáticamente la sincronización y la transferirá de forma fluida a la nueva ubicación de OneDrive cuando se haya completado el movimiento geográfico de OneDrive. El usuario no tiene que volver a iniciar la sesión ni realizar ninguna otra acción. (Se necesita la versión 17.3.6943.0625 o posteriores del cliente de sincronización).
 
-Si un usuario actualiza un archivo mientras la transferencia geográfica de OneDrive está en curso, el cliente de sincronización le notificará que hay cargas de archivos pendientes mientras el movimiento está en curso.
+Si un usuario actualiza un archivo mientras el movimiento geográfico de OneDrive está en curso, el cliente de sincronización le notificará que hay cargas de archivos pendientes mientras el movimiento está en curso.
 
 ### <a name="sharing-links"></a>Vínculos de uso compartido 
 

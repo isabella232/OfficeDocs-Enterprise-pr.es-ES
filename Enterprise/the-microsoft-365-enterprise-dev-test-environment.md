@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 'Resumen: Use esta guía del laboratorio de pruebas para crear un entorno de desarrollo y prueba que incluya Office 365 E5, Enterprise Mobility + Security (EMS) E5 y un equipo con Windows 10 Enterprise.'
-ms.openlocfilehash: 5a4c23b3bde309a75a61e574e91823ecdd4629fe
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 03fa8e0a4e8d90fcb834eeb2491d3dd39b67ff05
+ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "19178652"
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Entorno de desarrollo y prueba de Microsoft 365 Enterprise
 
@@ -48,7 +49,7 @@ En primer lugar, agregue la suscripción de evaluación de EMS E5 y asigne una l
     
 2. Haga clic en el icono **Administrador**.
     
-3. En el panel de navegación izquierdo de la pestaña **Centro de administración de Office** del explorador, haga clic en **Facturación > Servicios de compra**.
+3. En la pestaña **Centro de administración de Office** del explorador, en el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
     
 4. En la página **Servicios de compra**, busque el elemento **Enterprise Mobility + Security E5**. Mantenga el puntero del mouse sobre ese elemento y haga clic en **Iniciar prueba gratuita**.
     
@@ -58,7 +59,7 @@ En primer lugar, agregue la suscripción de evaluación de EMS E5 y asigne una l
     
 7. En el panel de navegación izquierdo de la pestaña **Centro de administración de Office 365** del explorador, haga clic en **Usuarios > Usuarios activos**.
     
-8. Haga clic en la cuenta de administrador global y luego en **Editar** para **Licencias de productos**.
+8. Haga clic en la cuenta de administrador global y, después, en **Editar** para **Licencias de productos**.
     
 9. En el panel **Licencias de productos**, cambie la licencia del producto de **Enterprise Mobility + Security E5** a **Activada**, seleccione **Guardar** y, después, haga clic en **Cerrar** dos veces.
     
@@ -92,10 +93,10 @@ Cree una máquina virtual con el hipervisor que prefiera e instale Windows 10 En
   
 ### <a name="virtual-machine-in-azure"></a>Máquina virtual de Azure
 
-Para crear una máquina virtual con Windows 10 en Microsoft Azure ***debe tener una suscripción basada en Visual Studio***, que tiene acceso a la imagen de Windows 10 Enterprise. Otros tipos de suscripciones de Azure, como las suscripciones de evaluación y suscripciones de pago, no tienen acceso a esta imagen.
+Para crear una máquina virtual con Windows 10 en Microsoft Azure ***necesita tener una suscripción basada en Visual Studio***, que tiene acceso a la imagen de Windows 10 Enterprise. Otros tipos de suscripciones de Azure, como las suscripciones de prueba y suscripciones de pago, no tienen acceso a esta imagen. Para obtener la información más reciente, vea [Usar el cliente de Windows en Azure para escenarios de desarrollo y pruebas](https://docs.microsoft.com/azure/virtual-machines/windows/client-images).
   
 > [!NOTE]
-> Los siguientes grupos de comandos usan la versión más reciente de Azure PowerShell. Vea [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/) (Introducción a los cmdlets de Azure PowerShell). Estos conjuntos de comandos compilan una máquina virtual con Windows 10 Enterprise llamada WIN10 y toda la infraestructura necesaria, que incluye un grupo de recursos, una cuenta de almacenamiento y una red virtual. Si ya está familiarizado con los servicios de infraestructura de Azure, adapte estas instrucciones para que se ajusten a la infraestructura implementada actualmente. 
+> Los siguientes conjuntos de comandos usan la versión más reciente de Azure PowerShell. Vea [Introducción a los cmdlets de Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Estos conjuntos de comandos compilan una máquina virtual con Windows 10 Enterprise llamada WIN10 y toda la infraestructura necesaria, que incluye un grupo de recursos, una cuenta de almacenamiento y una red virtual. Si ya está familiarizado con los servicios de infraestructura de Azure, adapte estas instrucciones para que se ajusten a la infraestructura implementada actualmente. 
   
 En primer lugar, abra un símbolo del sistema de Microsoft PowerShell.
   
@@ -174,21 +175,25 @@ Después, una el equipo WIN10 al espacio empresarial de Azure AD de las suscripc
     
 6. Cierre la ventana de configuración.
     
-Después, instale Office 2016 en el equipo WIN10.
+Después, instale Office 365 ProPlus en el equipo con Windows 10.
   
-1. Abra el explorador de Microsoft Edge e inicie sesión en el portal de Office 365 con las credenciales de la cuenta de administrador global. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Abra el explorador Microsoft Edge e inicie sesión en el portal de Office 365 con las credenciales de la cuenta de administrador global. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. En la pestaña **Inicio de Microsoft Office**, haga clic en **Instalar Office 2016**.
     
 3. Cuando se le pregunte qué hacer, haga clic en **Ejecutar** y luego en **Sí** para **Control de cuentas de usuario**.
     
-4. Espere a que se complete la instalación de Office. Cuando vea **You're all set!** (¡Ya está listo!), haga clic en **Cerrar** dos veces.
+4. Espere hasta que se complete la instalación de Office. Cuando vea **Ya está listo**, haga clic en **Cerrar** dos veces.
     
-La figura 3 muestra el entorno resultante, que incluye el equipo WIN10 que se ha unido al espacio empresarial de Azure AD de las suscripciones de Office 365 y EMS.
-  
-**Figura 3: Adición de la cuenta del equipo WIN10 al espacio empresarial de Azure AD**
+En la ilustración 3, se muestra el entorno resultante con el equipo con Windows 10 que:
 
-![Fase 4 del entorno de desarrollo y prueba Microsoft 3656 Enterprise](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
+- Se unió al espacio empresarial de Azure AD de sus suscripciones de Office 365 y EMS.
+- Se inscribió como un dispositivo de Azure AD en Intune (EMS).
+- Tiene instalado Office 365 ProPlus.
+  
+**Ilustración 3: La configuración final del entorno de desarrollo y pruebas de Microsoft 365**
+
+![Fase 4 del entorno de desarrollo y pruebas de Microsoft 365 Enterprise](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
   
 Ahora está preparado para experimentar con otras características de [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   
@@ -202,7 +207,7 @@ Use estos artículos adicionales para explorar las características de Microsoft
     
 - [Configure and test Advanced Security Management](https://technet.microsoft.com/library/mt757250.aspx) (Configurar y probar la administración de seguridad avanzada)
     
-- [Configure and test Advanced Threat Protection](https://technet.microsoft.com/library/mt490479.aspx) (Configurar y probar la protección contra amenazas avanzada)
+- [Configurar y probar Protección contra amenazas avanzada](https://technet.microsoft.com/library/mt490479.aspx)
     
 ## <a name="see-also"></a>Vea también
 

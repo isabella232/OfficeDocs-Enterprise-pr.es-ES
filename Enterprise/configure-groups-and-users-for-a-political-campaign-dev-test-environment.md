@@ -14,11 +14,12 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Resumen: Cree suscripciones de evaluación de Office 365 y Enterprise Mobility + Security (EMS) que incluyan usuarios y grupos en un entorno de desarrollo y prueba para una campaña política.'
-ms.openlocfilehash: 8556040a648937d4c1bc338292be121e5d290dd9
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: df737e3f745ba0fa4ab4752609e09e8af64ce6b0
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
+ms.locfileid: "19168514"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política
 
@@ -38,7 +39,7 @@ Después, inscríbase en la suscripción de evaluación de EMS E5 y la agregará
     
 2. Haga clic en el icono **Administrador**.
     
-3. En el panel de navegación izquierdo de la pestaña **Centro de administración de Office** del explorador, haga clic en **Facturación > Servicios de compra**.
+3. En la pestaña **Centro de administración de Office** del explorador, en el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
     
 4. En la página **Servicios de compra**, busque el elemento **Enterprise Mobility + Security E5**. Mantenga el puntero del mouse sobre ese elemento y haga clic en **Iniciar prueba gratuita**.
     
@@ -50,7 +51,7 @@ Después, habilite la licencia de EMS E5 para la cuenta de administrador global.
   
 1. En el panel de navegación izquierdo de la pestaña **Centro de administración de Office 365** del explorador, haga clic en **Usuarios > Usuarios activos**.
     
-2. Haga clic en la cuenta de administrador global y luego en **Editar** para **Licencias de productos**.
+2. Haga clic en la cuenta de administrador global y, después, en **Editar** para **Licencias de productos**.
     
 3. En el panel **Licencias de productos**, cambie la licencia del producto de **Enterprise Mobility + Security E5** a **Activada**, seleccione **Guardar** y, después, haga clic en **Cerrar** dos veces.
     
@@ -182,23 +183,23 @@ Siga estos pasos para comprobar que las licencias basadas en grupos y la pertene
     
 ## <a name="record-values-for-future-reference"></a>Registrar valores para referencia futura
 
-Registre estos valores para trabajar con las suscripciones de evaluación de Office 365 y EMS en este entorno de desarrollo y prueba:
+Registre estos valores para trabajar con las suscripciones de prueba de Office 365 y EMS en este entorno de desarrollo y pruebas:
   
-- Nombre de la organización de la suscripción de evaluación: _______________________________________________ 
+- Nombre de la organización de la suscripción de prueba: ![](./images/Common_Images/TableLine.png) 
     
-    Por ejemplo, en el nombre de dominio de la suscripción de evaluación de contoso.onmicrosoft.com, el nombre de la organización es "contoso".
+    Por ejemplo, en el nombre de dominio de la suscripción de prueba de contoso.onmicrosoft.com, el nombre de la organización es “contoso”.
     
-- Nombre del administrador global de Office 365: ____________________________________.onmicrosoft.com
+- Nombre del administrador global de Office 365: ![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
     Registre la contraseña de esta cuenta y la contraseña inicial común de las demás cuentas de usuario en una ubicación segura.
     
 ## <a name="next-step"></a>Paso siguiente
 
-Cree los cuatro tipos distintos de sitios de grupo de SharePoint Online en este entorno de desarrollo y prueba con [Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política](create-team-sites-in-a-political-campaign-dev-test-environment.md).
+Cree los cuatro tipos distintos de sitios de grupo de SharePoint Online en este entorno de desarrollo y pruebas con [Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política](create-team-sites-in-a-political-campaign-dev-test-environment.md).
   
 ## <a name="see-also"></a>Vea también
 
-[Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política](create-team-sites-in-a-political-campaign-dev-test-environment.md)
   

@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: Con estas Guías del laboratorio de pruebas (TLG) para la adopción de la nube, podrá configurar entornos de demostración o de desarrollo y pruebas para los productos Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 y Office Server.'
-ms.openlocfilehash: 87e9be912b7e53dea07915ae236b057273285718
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193680"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Guías del laboratorio de pruebas de adopción de la nube (TLG)
 
@@ -38,7 +39,6 @@ Vea estos recursos adicionales antes de lanzarse:
 - Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
     
 ## <a name="office-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365
-<a name="O365"> </a>
 
 Use estos artículos para crear su entorno de desarrollo y pruebas de Office 365:
   
@@ -88,10 +88,9 @@ Para el entorno de desarrollo y pruebas de Office 365, use estos artículos para
     
     Mostrar cómo crear un sitio de grupo de SharePoint Online aislado del resto de la organización para los recursos privados o muy confidenciales.
     
-## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Entorno de pruebas y desarrollo de Microsoft 365 Enterprise
-<a name="O365"> </a>
+## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Entorno de desarrollo y pruebas de Microsoft 365 Enterprise
 
-Crear un entorno de pruebas y desarrollo para los escenarios de [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) con estos artículos:
+Cree un entorno de desarrollo y pruebas para los escenarios de [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) con estos artículos:
   
 - [Entorno de pruebas y desarrollo de Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
     
@@ -106,7 +105,6 @@ Crear un entorno de pruebas y desarrollo para los escenarios de [Microsoft 365 E
     Inscriba dispositivos Android o iOS y adminístrelos de forma remota.
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365 y Dynamics 365
-<a name="O365_D365"> </a>
 
 Agregue una suscripción de prueba a Dynamics 365 y pruebe las características y los escenarios integrados de Office 365 y Dynamics 365 con estos artículos:
   
@@ -118,13 +116,11 @@ Agregue una suscripción de prueba a Dynamics 365 y pruebe las características 
     
     Configure y muestre cómo Office 365 y Dynamics 365 colaboran en los buzones de Exchange Online.
     
-## <a name="the-one-microsoft-cloud-devtest-environment"></a>El entorno de desarrollo y prueba de One Microsoft Cloud
-<a name="O365_D365"> </a>
+## <a name="the-one-microsoft-cloud-devtest-environment"></a>El entorno de desarrollo y pruebas de One Microsoft Cloud
 
 Crear un entorno de desarrollo y prueba que incluya todas las ofertas de la nube Microsoft: Office 365, Azure, EMS y Dynamics 365. Vea [el entorno de desarrollo y prueba de One Microsoft Cloud](the-one-microsoft-cloud-dev-test-environment.md) para las instrucciones paso a paso.
   
 ## <a name="simulated-cross-premises-devtest-environments"></a>Entornos de pruebas y desarrollo simulado de varias ubicaciones
-<a name="O365_D365"> </a>
 
 Puede crear un entorno de pruebas y desarrollo simulado de varias ubicaciones que incluya una red virtual Azure y una red local simulada con estos artículos:
   
@@ -137,7 +133,6 @@ Puede crear un entorno de pruebas y desarrollo simulado de varias ubicaciones qu
     Cree una granja de un solo servidor de SharePoint Server 2016 en la red virtual de Azure y pruebe la conectividad y administración desde la red local.
     
 ## <a name="additional-cloud-based-devtest-environments"></a>Entornos adicionales de desarrollo y pruebas basados en la nube
-<a name="ADD_TLGs"> </a>
 
 Estos son entornos adicionales de desarrollo y pruebas basados en la nube que puede crear en los servicios de infraestructura de Azure:
   

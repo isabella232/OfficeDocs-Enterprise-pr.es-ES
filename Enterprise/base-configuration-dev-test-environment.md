@@ -3,7 +3,7 @@ title: Entorno de desarrollo y prueba de la configuración básica
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/05/2018
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Resumen: Cree una intranet simplificada como entorno de desarrollo y prueba en Microsoft Azure.'
-ms.openlocfilehash: a6c0610531482d5d264b582f7a3550b57f21841d
-ms.sourcegitcommit: ac7a37049e3c96e32ea91a4d97105028b0dbb2c5
+ms.openlocfilehash: 6d53bb61ea7d325b15590c8aabe0740df3b92750
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193760"
 ---
 # <a name="base-configuration-devtest-environment"></a>Entorno de desarrollo y prueba de la configuración básica
 
@@ -164,9 +165,9 @@ Después conéctese a la máquina virtual DC1.
 
 1. En el [Azure Portal](https://portal.azure.com), haga clic en **Grupos de recursos** [nombre del nuevo grupo de recursos nuevo] **> DC1 > Conectar**.
     
-2. Abra el archivo DC1.rdp que se descarga y luego haga clic en **Conectar**.
+2. En el panel abierto, haga clic en **Descargar archivo RDP**. Abra el archivo DC1.rdp descargado y, después, haga clic en **Conectar**.
     
-3. Especifique el nombre de cuenta de administrador local de DC1:
+3. Especifique el nombre de la cuenta del administrador local de DC1:
     
   - Para Windows 7:
     
@@ -192,7 +193,6 @@ A continuación, configure DC1 como controlador de dominio y servidor DNS para e
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
 ```
-
 Debe especificar una contraseña de administrador de modo seguro. Guarde esta contraseña en un lugar seguro.
   
 Tenga en cuenta que estos comandos pueden tardan unos minutos en completarse.
@@ -257,7 +257,7 @@ $cred=Get-Credential -Message "Type the name and password of the local administr
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName APP1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "APP1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name "APP1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType StandardLRS
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
@@ -311,7 +311,7 @@ $cred=Get-Credential -Message "Type the name and password of the local administr
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType StandardLRS
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
@@ -340,11 +340,11 @@ Después, compruebe que tiene acceso a recursos compartidos de archivos y web en
     
 3. En **Configuración de seguridad mejorada de Internet Explorer**, haga clic en **Desactivada** para **Administradores** y **Usuarios** y luego, en **Aceptar**.
     
-4. En la pantalla Inicio, haga clic en **Internet Explorer** y luego en **Aceptar**.
+4. En la pantalla Inicio, haga clic en **Internet Explorer** y, después, en **Aceptar**.
     
-5. En la barra de direcciones, escriba **http://app1.corp.contoso.com/** y luego presione ENTRAR. Debería ver la página web predeterminada de Internet Information Services para APP1.
+5. En la barra de direcciones, escriba **http:\//app1.corp.contoso.com/** y, después, presione ENTRAR. Verá la página web predeterminada de Internet Information Services para APP1.
     
-6. En la barra de tareas de escritorio, haga clic en el icono del Explorador de archivos.
+6. En la barra de tareas del escritorio, haga clic en el icono del Explorador de archivos.
     
 7. En la barra de direcciones, escriba **\\\\app1\\Files** y luego presione ENTRAR. Debería ver una ventana de carpeta con el contenido de la carpeta compartida Archivos.
     
