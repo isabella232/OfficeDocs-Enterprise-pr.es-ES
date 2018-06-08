@@ -3,7 +3,7 @@ title: Crear sitios de grupo en un entorno de desarrollo y prueba de campaña po
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/21/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -14,12 +14,12 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Resumen: Cree sitios de grupo de SharePoint Online públicos, privados, confidenciales o extremadamente confidenciales en el entorno de desarrollo y prueba de una campaña política.'
-ms.openlocfilehash: 1651d89a1c17dfa5af592727bb534717763288e0
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 452e504a8d5fe0cb53fde2e4bb11aa8510f247fc
+ms.sourcegitcommit: 0d92efcb24a388c6fc5c3e333bc5714f43dbf4a7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "19168494"
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "19339161"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política
 
@@ -372,40 +372,42 @@ Después, siga estos pasos para configurar Azure Information Protection con una 
 3. Si es la primera vez que configura Azure Information Protection, vea [estas instrucciones](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
 4. En el panel de lista, haga clic en **Más servicios**, escriba **information** y haga clic en **Azure Information Protection**.
+
+5. Haga clic en **Etiquetas**.
     
-5. En la hoja **Azure Information Protection**, haga clic en **Directivas con ámbito > + Agregar una directiva**.
+6. Haga clic con el botón derecho en la etiqueta **Extremadamente confidencial** y después seleccione **Agregar una subetiqueta**.
     
-6. Escriba **Estrategia de la campaña** en **Nombre de la directiva** y **Etiqueta para los documentos del sitio de grupo Estrategia de la campaña** en **Descripción**.
+7. Escriba **Estrategia de la campaña** en **Nombre** y **Etiqueta para los documentos del sitio de grupo de estrategia de la campaña** en **Descripción**.
     
-7. Haga clic en **Seleccionar a qué usuarios o grupos se aplica esta directiva > Usuarios o grupos** y seleccione **Personal directivo y estratégico**.
+8. En **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**, haga clic en **Proteger**.
     
-8. Haga clic en **Seleccionar > Aceptar**.
+9. En la sección **Protección**, haga clic en **Azure (clave de nube)**.
     
-9. Para la etiqueta **Extremadamente confidencial**, haga clic en el botón de puntos suspensivos (...) y, luego, en **Agregar una subetiqueta**.
+10. En la hoja **Protección**, en **Configuración de protección**, haga clic en **+ Agregar permisos**.
     
-10. Escriba un nombre para la subetiqueta en **Nombre** y una descripción en **Descripción**.
+11. En la hoja **Agregar permisos**, en **Especificar usuarios y grupos**, haga clic en **+ Examinar directorio**.
     
-11. En **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**, haga clic en **Proteger**.
+12. En el panel **Usuarios y grupos de AAD**, seleccione **Personal directivo y estratégico** y haga clic en **Seleccionar**.
     
-12. En la sección **Protección**, haga clic en **Azure (clave de nube)**.
+13. En **Seleccionar permisos del conjunto predefinido o personalizado**, haga clic en **Personalizar** y después active las casillas **Ver derechos**, **Editar contenido**, **Guardar**, **Responder** y **Responder a todos**.
     
-13. En la hoja **Protección**, en **Configuración de protección**, haga clic en **+ Agregar permisos**.
+14. Haga clic en **Aceptar** dos veces.
     
-14. En la hoja **Agregar permisos**, en **Especificar usuarios y grupos**, haga clic en **+ Examinar directorio**.
+15. En la hoja **Subetiqueta**, haga clic en **Guardar** y, después, seleccione **Aceptar**.
+
+16. En la hoja **Azure Information Protection**, haga clic en **Directivas > + Agregar una directiva**.
     
-15. En el panel **Usuarios y grupos de AAD**, seleccione **Personal directivo y estratégico** y haga clic en **Seleccionar**.
+17. Escriba **Estrategia de la campaña** en **Nombre** y **Documentos del sitio de grupo de estrategia de la campaña** en **Descripción**.
     
-16. En **Elección de permisos a partir de valores predeterminados**, desactive las casillas **Imprimir**, **Copiar y extraer contenido** y **Reenviar**.
+18. Haga clic en **Seleccionar a qué usuarios o grupos se aplica esta directiva > Usuarios o grupos** y seleccione **Personal directivo y estratégico**.
     
-17. Haga clic en **Aceptar** dos veces.
-    
-18. En la hoja **Subetiqueta**, haga clic en **Guardar**.
-    
-19. Cierre la hoja de la nueva directiva con ámbito.
-    
-20. En la hoja **Azure Information Protection: directivas con ámbito**, haga clic en **Publicar** y luego en **Sí**.
-    
-Ahora está listo para crear documentos en estos cuatro sitios y probar el acceso a ellos con diferentes cuentas de usuario de la suscripción de evaluación. 
+19. Haga clic en **Seleccionar > Aceptar**.
+
+20. Haga clic en **Agregar o quitar etiquetas**. En el panel **Directiva: Agregar o quitar etiquetas**, seleccione **Estrategia de la campaña** y después haga clic en **Aceptar**.   
+
+21. Haga clic en **Guardar**y después en **Aceptar**.
+  
+Ahora ya puede crear documentos en estos cuatro sitios y probar el acceso a ellos con diferentes cuentas de usuario. 
   
 Para proteger un documento con Azure Information Protection y esta nueva etiqueta, debe [instalar el cliente de Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) en un equipo de prueba, instalar Office desde el portal de Office 365 y luego iniciar sesión desde Microsoft Word con una cuenta del grupo **Personal directivo y estratégico** de la suscripción de evaluación.
   
