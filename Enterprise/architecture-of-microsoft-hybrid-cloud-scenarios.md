@@ -1,5 +1,5 @@
 ---
-title: "Arquitectura de escenarios de nube híbrida de Microsoft"
+title: Arquitectura de escenarios de nube híbrida de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
-description: "Resumen: Comprenda la arquitectura de las ofertas de nube híbrida de Microsoft."
-ms.openlocfilehash: 33d98d88a10b18cdd357250f46c5414f1c1b6a75
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+description: 'Resumen: Comprenda la arquitectura de las ofertas de nube híbrida de Microsoft.'
+ms.openlocfilehash: bb5f72ee8fe6f1d5ffd81822edbf0e9f931b70dd
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631391"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Arquitectura de escenarios de nube híbrida de Microsoft
 
@@ -38,7 +39,7 @@ La capa de aplicaciones y escenarios contiene los escenarios de nube híbrida es
     
 - Red
     
-    Hay dos opciones de conectividad con plataformas y servicios de nube de Microsoft: la canalización de Internet existente y ExpressRoute. Use una conexión de ExpressRoute si es importante el rendimiento predecible. Puede usar una conexión de ExpressRoute para conectarse directamente con los servicios de SaaS de Microsoft (Office 365 y Dynamics 365) y los servicios de PaaS de Azure.
+    Hay dos opciones para la conectividad con plataformas de nube de Microsoft y servicios: la canalización de Internet existente y ExpressRoute. Usar una conexión de ExpressRoute si el rendimiento predecible es importante. Puede usar una conexión de ExpressRoute para conectarse directamente a los servicios de Microsoft SaaS (Office 365 y Dynamics 365), los servicios de Azure PaaS y servicios de Azure IaaS.
     
 - Identidad
     
