@@ -3,7 +3,7 @@ title: Implementar sitios de SharePoint Online con tres niveles de protección
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 06/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Resumen: Cree y configure sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: 7349616f130c5fc01108fb85ed172e9bc6bba05e
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 84b455809e210fb40d4a92396b2d8c4eb18245b1
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631401"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Implementar sitios de SharePoint Online con tres niveles de protección
 
@@ -141,9 +142,9 @@ Luego cree el sitio de grupo de SharePoint Online con estos pasos.
     
 Después, desde el nuevo sitio de grupo de SharePoint Online, configure los permisos con estos pasos.
   
-1. Determine el nombre principal de usuario (UPN) del administrador de TI o de otra persona que vaya a ser responsable de responder a las solicitudes de acceso al sitio y de dirigirlas (belindan@contoso.com es un ejemplo de UPN). Escriba ese UPN aquí.
+1. Determine el nombre principal de usuario (UPN) del administrador de TI o de otra persona que vaya a ser responsable de responder a las solicitudes de acceso al sitio y de dirigirlas (belindan@contoso.com es un ejemplo de UPN). Escriba ese UPN aquí: ![](./images/Common_Images/TableLine.png).
     
-2. En la barra de herramientas, haga clic en el icono de configuración y luego en **Permisos del sitio**.
+2. En la barra de herramientas, haga clic en el icono de configuración y, luego, en **Permisos del sitio**.
     
 3. En el panel **Permisos del sitio**, haga clic en **Advanced permissions settings** (Configuración de permisos avanzada).
     
@@ -263,13 +264,13 @@ Los miembros del sitio, a través de la pertenencia a grupos en uno de los grupo
 
 [Proteger archivos de SharePoint Online con DLP y etiquetas de Office 365](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
-[Proteger archivos y sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Protección de archivos y sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Proteger sitios de SharePoint Online en un entorno de desarrollo y prueba](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
+[Proteger sitios de SharePoint Online en un entorno de desarrollo y pruebas](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
-[Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 
