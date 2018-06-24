@@ -3,7 +3,6 @@ title: Deshabilitar el acceso a los servicios durante la asignación de licencia
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/07/2018
 ms.audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -14,11 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Obtenga información sobre cómo asignar licencias a cuentas de usuario y deshabilitar planes de servicio específico al mismo tiempo mediante PowerShell de Office 365.
-ms.openlocfilehash: 7567d84490cdb3db7c149a51c4f2f04d39cad9ce
-ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
+ms.openlocfilehash: 40abaa37b5a88eb69b01779894e851068a6454ee
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "20017406"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Deshabilitar el acceso a los servicios durante la asignación de licencias de usuario
 
@@ -131,7 +131,7 @@ ForEach ($user in $users)
 $user.Userprincipalname
 $upn=$user.UserPrincipalName
 $usageLocation=$user.UsageLocation
-Set-MsolUserLicense -UserPrincipalName $upn -AddLicenses $AccountSkuId -ErrorAction SilentlyContinue
+Set-MsolUserLicense -UserPrincipalName $upn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $upn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
 Set-MsolUser -UserPrincipalName $upn -UsageLocation $usageLocation
@@ -147,7 +147,7 @@ En este bloque de comandos de PowerShell:
     
 - Crea un archivo CSV con todos los usuarios que se han procesado y muestra su estado de licencia.
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Deshabilitar el acceso a servicios con PowerShell de Office 365](disable-access-to-services-with-office-365-powershell.md)
   
