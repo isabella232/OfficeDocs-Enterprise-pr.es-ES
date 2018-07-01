@@ -1,5 +1,5 @@
 ---
-title: Con Azure AD para la autenticación de SharePoint Server
+title: Uso de Azure AD para la autenticación de SharePoint Server
 ms.author: tracyp
 author: MSFTTracyP
 ms.reviewer:
@@ -18,13 +18,13 @@ ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 'Resumen: Obtenga información sobre cómo el desvío de Azure Access Control Service y usar SAML 1.1 para autenticar a los usuarios de SharePoint Server con Azure Active Directory.'
 ms.openlocfilehash: dfaede331233444413d82b500e14fc68195eaca1
-ms.sourcegitcommit: b6c8b044963d8df24ea7d63917e0203ba40fb822
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19702990"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "19856275"
 ---
-# <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Con Azure AD para la autenticación de SharePoint Server
+# <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Uso de Azure AD para la autenticación de SharePoint Server
 
  **Resumen:** Obtenga información sobre cómo autenticar los usuarios de SharePoint Server 2016 con Azure Active Directory. 
 
@@ -78,7 +78,7 @@ Uso de SAML requiere la aplicación estén configurados para usar SSL. Si la apl
 
 1. Vaya a **Administración Central** > **Administración de aplicaciones** > **Administrar aplicaciones Web**y elija la aplicación web que necesita para poder ampliarse y para usar SSL. Seleccione la aplicación web y haga clic en el botón de **la cinta de opciones Extend** . Extender la aplicación web para usar la misma dirección URL, pero use SSL con el puerto 443.</br>![Ampliación de la aplicación web a otro sitio IIS](images/SAML11/fig3-extendwebapptoiis.png)</br>
 2. En Administrador de IIS, haga doble clic en **Certificados de servidor**.
-3. En el panel **acciones** , haga clic en **Crear certificado autofirmado**. Escriba un nombre descriptivo para el certificado en la especifique un nombre descriptivo para el cuadro de certificado y, a continuación, haga clic en **Aceptar**.
+3. En el panel **Acciones**, haga clic en **Crear certificado autofirmado**. Escriba un nombre descriptivo para el certificado en el cuadro Especifique un nombre descriptivo para el certificado y haga clic en **Aceptar**.
 4. En el cuadro de diálogo **Modificar enlace de sitio** , asegúrese del nombre de host es el mismo que el nombre descriptivo, como se muestra en la siguiente imagen.</br>![Edición de enlace del sitio en IIS](images/SAML11/fig4-editsitebinding.png)</br>
 
 Cada uno de los servidores front-end web en la granja de servidores de SharePoint requiere configurar el certificado para el enlace del sitio en IIS.
@@ -94,7 +94,7 @@ Cada uno de los servidores front-end web en la granja de servidores de SharePoin
     - Identificador de usuario:`user.userprincipalname`</br>
     - Nota: No olvide cambiar las direcciones URL mediante el reemplazo de *portal.contoso.local* con la dirección URL del sitio de SharePoint que desea proteger.</br>
 3. Configurar una tabla (similar a la tabla 1) incluye las filas siguientes:</br> 
-    - Dominio Kerberos
+    - Realm
     - Ruta de acceso completa al archivo de certificado de firma de SAML
     - SAML Single Sign-On dirección URL del servicio (sustituyendo */saml2* por */wsfed*)
     - Identificador de objeto de aplicación. </br>
@@ -109,7 +109,7 @@ Copie el valor de *identificador* en la propiedad de *dominio Kerberos* en una t
 
 | La tabla 1: Los valores capturados  |  |
 |---------|---------|
-|Dominio Kerberos | `urn:sharepoint:portal.contoso.local` |
+|Realm | `urn:sharepoint:portal.contoso.local` |
 |Ruta de acceso completa al archivo de certificado de firma de SAML | `C:/temp/SharePoint SAML Integration.cer`  |
 |Dirección URL del servicio de inicio de sesión único de SAML (reemplace /saml2 por /wsfed) | `https://login.microsoftonline.com/b1726649-b616-460d-8d20-defab80d476c/wsfed` |
 |Identificador del objeto de aplicación | `a812f48b-d1e4-4c8e-93be-e4808c8ca3ac` |
