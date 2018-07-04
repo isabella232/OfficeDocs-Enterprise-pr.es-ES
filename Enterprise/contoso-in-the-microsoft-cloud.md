@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: 'Resumen: Cómo una organización global ficticia pero representativa está adoptando una infraestructura de TI de nube inclusiva con las ofertas de nube de Microsoft.'
-ms.openlocfilehash: 0a332883fef3291e133998ecd1bbfa53e7282ec0
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: d548301fdbd3b26d3de5ea0e279a379b7eea269f
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161783"
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Contoso en la nube de Microsoft
 
@@ -29,9 +30,9 @@ Este artículo tiene vínculos a un conjunto de artículos que describen cómo C
   
 [![Imagen en miniatura del póster “Contoso en Microsoft Cloud”.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
-![Archivo PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Archivo de Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![Ver una página con versiones en otros idiomas](images/Common_Images/GlobeIcon.png)[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54427)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | [Más idiomas](https://www.microsoft.com/download/details.aspx?id=54427)
   
-Vea las siguientes secciones:
+Vea las secciones siguientes:
   
 - [Información general sobre Contoso Corporation](overview-of-the-contoso-corporation.md)
     
