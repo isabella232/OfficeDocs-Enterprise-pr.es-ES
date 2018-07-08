@@ -1,5 +1,5 @@
 ---
-title: Inscribirse iOS y Android dispositivos en su entorno de desarrollo y prueba de Microsoft Enterprise 365
+title: Inscriba los dispositivos iOS y Android en el entorno de desarrollo y prueba de Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 'Resumen: Use esta guía de laboratorio de prueba para inscribirse dispositivos en su entorno de desarrollo y prueba de Microsoft 365 y administrar de forma remota.'
-ms.openlocfilehash: 8765a7ffb1bff1f257d7cd1ce5181561c2cf0080
-ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
+ms.openlocfilehash: a5d43a0ef3ed090f84c8415de3ac26f53fdafe0a
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188108"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>Inscribirse iOS y Android dispositivos en su entorno de desarrollo y prueba de Microsoft Enterprise 365
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-devtest-environment"></a>Inscriba los dispositivos iOS y Android en el entorno de desarrollo y prueba de Microsoft 365 Enterprise
 
  **Resumen:** Use esta guía de laboratorio de prueba para inscribirse dispositivos en su entorno de desarrollo y prueba de Microsoft 365 y administrar de forma remota.
   
@@ -50,37 +51,37 @@ Para bloquear de forma remota un dispositivo iOS:
 
 2.  Desde la consola de administración de Microsoft Intune del explorador, haga clic en **grupos** en el panel de navegación izquierdo.
 
-3. En el panel **grupos** , abra **todos los dispositivos > dispositivos móviles todos > todos los dispositivos directa administrado**.
+3. En el panel **Grupos**, abra **Todos los dispositivos > Todos los dispositivos móviles > Todos los dispositivos administrados directamente**.
     
-4. En el panel de **Todos los dispositivos administrados de directa** , haga clic en la ficha **dispositivos** .
+4. En el panel **Todos los dispositivos administrados directamente**, haga clic en la pestaña **Dispositivos**.
     
 5. En la lista de dispositivos, haga clic en su dispositivo iOS.  
     
 6. En su dispositivo iOS, asegúrese de que está en la pantalla principal.  
     
-7. Desde el equipo de administración, en la barra de tareas, haga clic en **tareas remotas > bloqueo remoto**. Vea su dispositivo iOS tal y como lo pasa a la pantalla de bloqueo.
+7. En el equipo de administración, en la barra de tareas, haga clic en **Tareas remotas > Bloqueo remoto**. Observe su dispositivo iOS mientras cambia a la pantalla de bloqueo.
     
 Para eliminar el código de acceso:
   
-1. Desde el equipo de administración, en el panel de **Todos los dispositivos administrados de directa** , haga clic en la ficha **dispositivos** .
+1. En el equipo de administración, en el panel **Todos los dispositivos administrados directamente**, haga clic en la pestaña **Dispositivos**.
     
-2. En la lista, haga clic en el dispositivo iOS. En la barra de tareas, haga clic en **tareas remotas > Restablecer el código de acceso**. Espere un minuto.
+2. En la lista, haga clic en su dispositivo iOS. En la barra de tareas, haga clic en **Tareas remotas > Restablecimiento de código de acceso**. Espere un minuto.
     
-3. Desde su dispositivo iOS, desbloquearlo y observe que ya no es un código de acceso. Para cambiar la copia el código de acceso, vaya a **configuración**y, a continuación, **el código de acceso**.
+3. En su dispositivo iOS, desbloquéelo y observe que ya no hay código de acceso. Para volver a cambiar el código de acceso, vaya a **Configuración** y luego **Código de acceso**.
     
 Para bloquear de forma remota un dispositivo Android:
   
 1. Desde la consola de administración de Microsoft Intune del explorador, haga clic en **grupos** en el panel de navegación izquierdo.
     
-2. En el panel **grupos** , abra **todos los dispositivos > dispositivos móviles todos > todos los dispositivos directa administrado**.
+2. En el panel **Grupos**, abra **Todos los dispositivos > Todos los dispositivos móviles > Todos los dispositivos administrados directamente**.
     
-3. En el panel de **Todos los dispositivos administrados de directa** , haga clic en la ficha **dispositivos** .
+3. En el panel **Todos los dispositivos administrados directamente**, haga clic en la pestaña **Dispositivos**.
     
 4. En la lista de dispositivos, haga clic en su dispositivo Android.  
     
 5. En su dispositivo Android, asegúrese de que está en la pantalla principal.  
     
-6. Desde el equipo de administración, en la barra de tareas, haga clic en **tareas remotas > bloqueo remoto**. Cuando se le solicite, haga clic en **Sí**.
+6. En el equipo de administración, en la barra de tareas, haga clic en **Tareas remotas > Bloqueo remoto**. Cuando se le solicite, haga clic en **Sí**.
     
 7. Observe su dispositivo Android mientras cambia a la pantalla de bloqueo.
     
@@ -88,19 +89,19 @@ Cuando se restablece el código de acceso para dispositivos Android, el portal d
   
 Para restablecer el código de acceso de forma remota:
   
-1. Desde el equipo de administración, en la ficha de consola de administración de Microsoft Intune del explorador, en el panel de **Todos los dispositivos administrados de directa** , haga clic en su dispositivo Android.
+1. En el equipo de administración, en la pestaña de la consola de administración de Microsoft Intune del explorador, en el panel **Todos los dispositivos administrados directamente**, haga clic en su dispositivo Android.
     
-2. En la barra de tareas, haga clic en **tareas remotas > Restablecer el código de acceso**.
+2. En la barra de tareas, haga clic en **Tareas remotas > Restablecimiento de código de acceso**.
     
-3. En la **tarea remota: restablecer el código de acceso** el mensaje, haga clic en **Sí**. Espere un minuto.
+3. En el aviso **Tarea remota: Restablecimiento de código de acceso**, haga clic en **Sí**. Espere un minuto.
     
-4. En el panel de **Todos los dispositivos administrados de directa** , haga clic en **Ver propiedades**.
+4. En el panel **Todos los dispositivos administrados directamente**, haga clic en **Ver propiedades**.
     
-5. Bajo **Restablecer el código de acceso**, tenga en cuenta la nueva contraseña.
+5. En **Restablecimiento de código de acceso**, anote el nuevo código de acceso.
     
 6. En su dispositivo Android, introduzca el nuevo código de acceso en la pantalla de bloqueo.  
     
-7. Para cambiar el código de acceso atrás, vaya a **configuración**, puntee en el **dispositivo**, puntee en la **pantalla de bloqueo**, escriba la nueva contraseña, puntee en **bloqueo de pantalla**y, a continuación, en su elección para el código de acceso.
+7. Para volver a cambiar el código de acceso, vaya a **Configuración**, pulse **Dispositivo**, pulse **Pantalla de bloqueo**, escriba el nuevo código de acceso, pulse **Bloqueo de pantalla** y luego su elección de código de acceso.
     
 
 > [!TIP]
@@ -110,7 +111,7 @@ Para restablecer el código de acceso de forma remota:
 
 [Entorno de pruebas y desarrollo de Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
   
-[Directivas MAM para sus entornos de desarrollo y prueba de Microsoft 365](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Directivas MAM para sus entornos de desarrollo y prueba de Microsoft 365 Enterprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
 [Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
 

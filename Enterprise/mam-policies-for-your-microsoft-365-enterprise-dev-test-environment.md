@@ -1,5 +1,5 @@
 ---
-title: Directivas de MAM para el entorno de desarrollo y prueba de Microsoft 365 Enterprise
+title: Directivas MAM para sus entornos de desarrollo y prueba de Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,14 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 'Resumen: Use esta guía de laboratorio de prueba para agregar las directivas de administración (MAM) de una aplicación móvil de EMS a su entorno de desarrollo y prueba de Microsoft 365.'
-ms.openlocfilehash: 1d4ede9b5757d4adce8909586790bcad51f7433f
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 0a5c81665edf06631b8cebc57c9e715c78d3d85e
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "19168534"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188158"
 ---
-# <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Directivas de MAM para el entorno de desarrollo y prueba de Microsoft 365 Enterprise
+# <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Directivas MAM para sus entornos de desarrollo y prueba de Microsoft 365 Enterprise
 
  **Resumen:** Use esta guía de laboratorio de prueba para agregar las directivas de administración (MAM) de una aplicación móvil de EMS a su entorno de desarrollo y prueba de Microsoft 365.
   
@@ -47,7 +47,7 @@ En esta fase, creará e implementará dos directivas de MAM diferentes: una para
     
 6. En el servidor blade de **grupo** , seleccione **Office 365** para **tipo de grupo?**, escriba **administrado a los usuarios de dispositivos iOS** en **nombre**, seleccione **asignado** en **tipo de pertenencia**y, a continuación, haga clic en **crear**. 
     
-7. Cierre el servidor blade de **grupo** .
+7. Cierre la hoja **Grupo**.
     
 8. En el servidor blade de **grupos a todos los grupos** , haga clic en **Agregar**.
     
@@ -55,41 +55,41 @@ En esta fase, creará e implementará dos directivas de MAM diferentes: una para
     
 10. Cierre el servidor blade de **grupos a todos los grupos** .
     
-11. En el servidor blade **Intune** , en la lista de **tareas rápidas** , haga clic en **crear una directiva de cumplimiento**.
+11. En la hoja **Intune**, en la lista **Tareas rápidas**, haga clic en **Crear una directiva de cumplimiento**.
     
-12. En el servidor blade de **Perfiles de directivas de cumplimiento** , haga clic en **Crear directiva**.
+12. En la hoja **Perfiles de directiva de cumplimiento**, haga clic en **Crear directiva**.
     
-13. En el módulo de **Directiva de crear** , en **nombre**, escriba **iOS**. En la **plataforma**, seleccione **iOS**, haga clic en **Aceptar** en el servidor blade de la **Directiva de cumplimiento de iOS** y, a continuación, haga clic en **crear**.
+13. En la hoja **Crear directiva**, en **Nombre**, escriba **iOS**. En **Plataforma**, seleccione **iOS**, haga clic en **Aceptar** en la hoja **Directiva de cumplimiento de iOS** y, a continuación, haga clic en **Crear**.
     
-14. En el servidor blade de **Perfiles de directivas de cumplimiento** , haga clic en **Crear directiva**.
+14. En la hoja **Perfiles de directiva de cumplimiento**, haga clic en **Crear directiva**.
     
-15. En el módulo de **Directiva de crear** , en **nombre**, escriba **Android**. En la **plataforma**, seleccione **Android**, haga clic en **Aceptar** en la **Directiva de cumplimiento Android** blade y, a continuación, haga clic en **crear**.
+15. En la hoja **Crear directiva**, en **Nombre**, escriba **Android**. En **Plataforma**, seleccione **Android**, haga clic en **Aceptar** en la hoja **Directiva de cumplimiento de Android** y, a continuación, haga clic en **Crear**.
     
-16. En el servidor blade de **Perfiles de directivas de cumplimiento** , haga clic en el nombre de directiva **para Android** .
+16. En la hoja **Perfiles de directiva de cumplimiento**, haga clic en el nombre de directiva **Android**.
     
-17. En la izquierda el blade **Android - propiedades** , haga clic en **asignaciones**y, a continuación, haga clic en **Seleccionar grupos**.
+17. En el panel de navegación izquierdo de la hoja **Android - Propiedades**, haga clic en **Tareas** y, a continuación, en **Seleccionar grupos**.
     
-18. En el servidor blade **Seleccionar grupos** , haga clic en el grupo de **usuarios de dispositivos Android administrados** y, a continuación, haga clic en **Seleccionar**.
+18. En la hoja **Seleccionar grupos**, haga clic en **Usuarios de dispositivos Android administrados** y después haga clic en **Seleccionar**.
     
 19. Haga clic en **Guardar**y, a continuación, cierre el blade **Android - las asignaciones** .
     
-20. En el servidor blade de **Perfiles de directivas de cumplimiento** , haga clic en el nombre de la directiva de **iOS** .
+20. En la hoja **Perfiles de directiva de cumplimiento**, haga clic en el nombre de directiva **iOS**.
     
-21. En la izquierda el blade **iOS - propiedades** , haga clic en **asignaciones**y, a continuación, haga clic en **Seleccionar grupos**.
+21. En el panel de navegación izquierdo de la hoja **iOS - Propiedades**, haga clic en **Tareas** y, a continuación, en **Seleccionar grupos**.
     
-22. En el servidor blade **Seleccionar grupos** , haga clic en el grupo de **usuarios de dispositivos de Managed iOS** y, a continuación, haga clic en **Seleccionar**.
+22. En la hoja **Seleccionar grupos**, haga clic en el grupo **Usuarios de dispositivos iOS administrados** y después haga clic en **Seleccionar**.
     
 23. Haga clic en **Guardar**y, a continuación, cierre el blade **iOS - las asignaciones** .
     
-24. Cierre el servidor blade de **Perfiles de directivas de cumplimiento de normas** .
+24. Cierre la hoja **Perfiles de directiva de cumplimiento**.
     
-25. En el servidor blade **Intune** , haga clic en **Administrar aplicaciones** en el panel de navegación izquierdo.
+25. En la hoja **Intune**, haga clic en **Administrar aplicaciones** en el panel de navegación izquierdo.
     
-26. En el módulo de **Aplicaciones de Mobile** , haga clic en **aplicaciones**.
+26. En la hoja **Aplicaciones móviles**, haga clic en **Aplicaciones**.
     
-27. En la lista de aplicaciones, haga clic en **PowerPoint**, 
+27. En la lista de aplicaciones, haga clic en **PowerPoint**,  
     
-28. En el servidor blade de **Introducción a PowerPoint** , haga clic en **asignaciones > seleccione grupos > administrados dispositivos iOS > seleccione**. En **tipo**, seleccione **disponible**y, a continuación, haga clic en **Guardar**.
+28. En la hoja **Información general sobre PowerPoint**, haga clic en **Tareas > Seleccionar grupos > Dispositivos iOS administrados > Seleccionar**. En **Tipo**, seleccione **Disponible** y, a continuación, haga clic en **Guardar**.
     
 29. Repita el paso 28 para las aplicaciones siguientes:
     
@@ -115,25 +115,25 @@ En esta fase, creará e implementará dos directivas de MAM diferentes: una para
     
   - OneNote para iOS
     
-30. Cierre el blade **Mobile aplicaciones - aplicaciones** .
+30. Cierre la hoja **Aplicaciones móviles - Aplicaciones**.
     
-31. En el módulo de **Aplicaciones de Mobile** , haga clic en **Directivas de protección de aplicaciones**.
+31. En la hoja **Aplicaciones móviles**, haga clic en **Directivas de protección de aplicaciones**.
     
-32. En el módulo de **Directivas de protección de aplicaciones** , haga clic en **Agregar una directiva**.
+32. En la hoja **Directivas de protección de aplicaciones**, haga clic en **Agregar directiva**.
     
-33. En el servidor blade de **Agregar una directiva** , escriba **iOS**y, a continuación, haga clic en **seleccionar aplicaciones necesarias**.
+33. En la hoja **Agregar directiva**, escriba **iOS** y, a continuación, haga clic en **Elegir aplicaciones obligatorias**.
     
-34. En el servidor blade de **aplicaciones** , haga clic en **PowerPoint**, **Microsoft Dynamics CRM en iPhone**, **Excel**, **Microsoft Dynamics CRM en iPhone**, **Word**, **OneNote**y **Outlook**y, a continuación, haga clic en **Seleccionar**.
+34. En la hoja **Aplicaciones**, haga clic en **PowerPoint**, **Microsoft Dynamics CRM en iPhone**, **Excel**, **Microsoft Dynamics CRM en iPhone**, **Word**, **OneNote** y **Outlook**, y, a continuación, en **Seleccionar**.
     
-35. En el servidor blade de **Agregar una directiva** , haga clic en **crear**.
+35. En la hoja **Agregar una directiva**, haga clic en **Crear**.
     
-36. En el módulo de **Directivas de protección de aplicaciones** , haga clic en **Agregar una directiva**.
+36. En la hoja **Directivas de protección de aplicaciones**, haga clic en **Agregar directiva**.
     
-37. En el servidor blade de **Agregar una directiva** , escriba **Android**, seleccione **Android** en la **plataforma**y, a continuación, haga clic en **seleccionar aplicaciones necesarias**.
+37. En la hoja **Agregar una directiva**, escriba **Android**, seleccione **Android** en **Plataforma** y, a continuación, haga clic en **Elegir aplicaciones obligatorias**.
     
-38. En el servidor blade de **aplicaciones** , haga clic en **PowerPoint**, **Dynamics CRM para tabletas**, **Excel**, **Word**, **Outlook**y **Dynamics CRM para teléfonos**y, a continuación, haga clic en **Seleccionar**.
+38. En la hoja **Aplicaciones**, haga clic en **PowerPoint**, **Dynamics CRM para tabletas**, **Excel**, **Word**, **Outlook** y **Dynamics CRM para teléfonos** y, a continuación, en **Seleccionar**.
     
-39. En el servidor blade de **Agregar una directiva** , haga clic en **crear**.
+39. En la hoja **Agregar una directiva**, haga clic en **Crear**.
     
 Ahora tiene dos directivas de MAM, una para dispositivos iOS y otra para dispositivos Android, y está preparado para experimentar con la configuración de prueba para las aplicaciones seleccionadas.
   
@@ -144,7 +144,7 @@ Ahora tiene dos directivas de MAM, una para dispositivos iOS y otra para disposi
 
 [Entorno de pruebas y desarrollo de Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
   
-[Inscriba sus dispositvos iOS y Android en su entorno de desarrollo y prueba de Microsoft Enterprise 365](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[Inscriba los dispositivos iOS y Android en el entorno de desarrollo y prueba de Microsoft 365 Enterprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
 [Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
 

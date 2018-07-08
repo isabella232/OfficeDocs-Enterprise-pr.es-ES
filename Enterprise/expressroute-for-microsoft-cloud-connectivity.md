@@ -3,7 +3,7 @@ title: ExpressRoute para la conectividad en la nube de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/03/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
-description: "Resumen: Descubra cómo ExpressRoute puede ayudarle mediante conexiones más rápidas y fiables a los servicios y las plataformas en la nube de Microsoft."
-ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Resumen: Descubra cómo ExpressRoute puede ayudarle mediante conexiones más rápidas y fiables a los servicios y las plataformas en la nube de Microsoft.'
+ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188118"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute para la conectividad en la nube de Microsoft
 
@@ -48,7 +49,7 @@ Estas son las rutas de acceso de red a la nube de Microsoft con una conexión de
   
 La figura 2 muestra dos rutas de acceso de red. El tráfico a Microsoft Intune viaja por la misma ruta que el tráfico normal de Internet. El tráfico que va a Office 365, Microsoft Azure y Dynamics 365 viaja a través de la conexión de ExpressRoute, una ruta dedicada que está entre el perímetro de la red local y el perímetro de la nube de Microsoft.
   
-Ahora, con una conexión de ExpressRoute, puede tener control, a través de una relación con su proveedor de servicios, sobre toda la ruta de tráfico desde su perímetro hasta el perímetro de la nube de Microsoft. Esta conexión puede ofrecer un rendimiento predecible y un contrato de nivel de servicio con un tiempo de actividad del 99,9%.
+Con una conexión ExpressRoute, ahora dispone de control a través de una relación con su proveedor de servicios, a través de la ruta de acceso completa del tráfico desde el borde de Microsoft en la nube perimetral. Esta conexión puede ofrecer performance predecible y un [tiempo de actividad de 99,95% SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/).
   
 Ahora podrá disfrutar de un rendimiento y una latencia predecibles, según la conexión de su proveedor de servicios, en los servicios de Office 365, Azure y Dynamics 365. En este momento no se admiten las Conexiones de ExpressRoute a Microsoft Intune.
   
@@ -239,7 +240,7 @@ Para más información, visite:
     
 - [Planear la red y ajustar el rendimiento de Office 365](https://aka.ms/tune)
     
-- [Administración del rendimiento de Office 365](https://mva.microsoft.com/es-ES/training-courses/office-365-performance-management-8416)
+- [Administración del rendimiento de Office 365](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
     
 ## <a name="expressroute-options"></a>Opciones de ExpressRoute
 
