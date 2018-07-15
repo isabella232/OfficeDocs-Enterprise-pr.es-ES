@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumen: Conéctese a la organización de Office 365 con Office 365 PowerShell para realizar tareas de centro de administración de la línea de comandos.'
-ms.openlocfilehash: eac56ae28ab48bb53842725d703bf81fb37d31eb
-ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
+ms.openlocfilehash: b603e019564f85d490dd560bda9967c9bb164d4b
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319251"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectarse a PowerShell de Office 365
 
@@ -71,10 +72,11 @@ Para conectarse solo con el *nombre de cuenta y la contraseña*:
 1. Ejecute un símbolo del sistema de Windows PowerShell.
 2. En la ventana de comandos de **Windows PowerShell**, ejecute los comandos siguientes:
     
-```
-$UserCredential = Get-Credential
-Connect-MsolService -Credential $UserCredential
-```
+  ```
+  $UserCredential = Get-Credential
+  Connect-MsolService -Credential $UserCredential
+
+  ```
 
 3. En el cuadro de diálogo **Solicitud de credenciales para Windows PowerShell**, escriba su nombre de usuario y contraseña de Office 365cuenta profesional o educativa y, luego, haga clic en **Aceptar**.
     
@@ -83,9 +85,9 @@ Para conectarse mediante la *autenticación multifactor (MFA)*:
 1. Ejecute un símbolo del sistema de Windows PowerShell.
 2. Ejecute el comando siguiente en la ventana de comandos del **Módulo Microsoft Azure Active Directory para Windows PowerShell**.
     
-```
-Connect-MsolService
-```
+  ```
+  Connect-MsolService
+  ```
 
 3. En el cuadro de diálogo **Azure Active Directory PowerShell**, escriba su nombre de usuario y contraseña de Office 365cuenta profesional o educativa y, a continuación, haga clic en **Iniciar sesión**.
     
@@ -151,6 +153,7 @@ Para conectarse a su suscripción de Office 365 mediante el *nombre de cuenta y 
 ```
 $UserCredential = Get-Credential
 Connect-AzureAD -Credential $UserCredential
+
 ```
 
 En el cuadro de diálogo **Solicitud de credenciales para Windows PowerShell**, escriba su nombre de usuario y contraseña de Office 365cuenta profesional o educativa y, luego, haga clic en **Aceptar**.
