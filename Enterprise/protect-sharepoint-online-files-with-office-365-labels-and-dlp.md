@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumen: Aplique directivas de etiquetas y prevención de pérdida de datos (DLP) de Office 365 a sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: 52617e43f5c1bcb2ab958e751734a2f948ceba37
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 439f59f683090d39ea98730854aa1ca5dc8db482
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319271"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Proteger archivos de SharePoint Online con DLP y etiquetas de Office 365
 
@@ -27,6 +28,13 @@ ms.lasthandoff: 04/27/2018
   
 Siga los pasos de este artículo para diseñar e implementar directivas de etiquetas y de prevención de pérdida de datos (DLP) de Office 365 para sitios de grupo de línea base, confidenciales y extremadamente confidenciales de SharePoint Online. Para más información sobre estos tres niveles de protección, vea [Proteger archivos y sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md).
   
+## <a name="how-this-works"></a>Cómo funciona
+1. Crear las etiquetas deseadas y publicarlas. Pueden tardar hasta 12 horas en publicarse.
+2. Para los sitios de SharePoint deseados, edite la configuración de la biblioteca de documentos para aplicar una etiqueta a los elementos de la biblioteca.
+3. Crear directivas DLP que actúen en función de las etiquetas.
+
+Cuando los usuarios agregan un documento a la biblioteca, este recibirá la etiqueta asignada de forma predeterminada. Si es necesario, los usuarios pueden cambiar la etiqueta. Cuando un usuario comparte un documento fuera de la organización, DLP comprobará si tiene asignada una etiqueta y tomará medidas si una directiva DLP coincide con ella. DLP buscará otras coincidencias de directivas, como la protección de archivos con números de tarjeta de crédito si se configura este tipo de directiva. 
+
 ## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>Etiquetas de Office 365 para los sitios de SharePoint Online
 
 Hay tres fases para crear y luego asignar etiquetas de Office 365 a sitios de grupo de SharePoint Online.
@@ -54,7 +62,7 @@ Para crear las etiquetas, puede usar el Centro de administración de Office 365 
     
 2. En la pestaña **Inicio de Microsoft Office**, haga clic en el icono **Administrador**.
     
-3. En la nueva pestaña **Centro de administración de Office** del explorador, haga clic en **Centros de administración Seguridad &amp; cumplimiento**.
+3. En la nueva pestaña **Centro de administración de Office** del explorador, haga clic en **Centros de administración Seguridad &amp; Cumplimiento**.
     
 4. En la nueva pestaña **Inicio - Seguridad y cumplimiento** del explorador, haga clic en **Clasificaciones > Etiquetas**.
     
@@ -151,13 +159,14 @@ Siga estos pasos para configurar una directiva de DLP que notifique a los usuari
     
 13. En el panel **What do you want to do if we detect sensitive info?** (¿Qué quiere hacer si se detecta información confidencial?), haga clic en **Customize the tip and email** (Personalizar la sugerencia y el correo electrónico).
     
-14. En el panel **Customize policy tips and email notifications** (Personalizar sugerencias de directiva y notificaciones de correo electrónico), haga clic en **Customize the policy tip text** (Personalizar el texto de la sugerencia de directiva).
+14. En el panel **Personalizar sugerencias de directiva y notificaciones de correo electrónico**, haga clic en **Personalizar el texto de la sugerencia de directiva**.
     
-15. En el cuadro de texto, escriba o pegue lo siguiente:
+15. En el cuadro de texto, escriba o pegue una de las siguientes sugerencias, dependiendo de si ha implementado Azure Information Protection para proteger los archivos más confidenciales:
     
   - Para compartir con un usuario de fuera de la organización, descargue el archivo y luego ábralo. Haga clic en Archivo, Proteger documento y Cifrar con contraseña y, luego, especifique una contraseña segura. Envíe la contraseña en un correo electrónico diferente u otro medio de comunicación.
+  - Los archivos extremadamente confidenciales están protegidos con cifrado. Solo pueden leerlos aquellos usuarios externos a los que su departamento de TI les ha concedido permiso para acceder a los archivos.
     
-    O bien escriba o pegue una sugerencia de directiva propia que indique a los usuarios cómo compartir un archivo fuera de la organización.
+    También puede escribir o pegar su propia sugerencia de directiva que explique a los usuarios cómo compartir un archivo fuera de su organización. Para obtener más información sobre cómo conceder permisos de usuarios externos a los archivos protegidos con Azure Information Protection, consulte Agregar permisos para usuarios externos.
     
 16. Haga clic en **Aceptar**.
     
@@ -225,11 +234,11 @@ Esta es la configuración resultante para los sitios de grupo extremadamente con
     
 ## <a name="see-also"></a>Vea también
 
-[Proteger archivos y sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Protección de archivos y sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Proteger sitios de SharePoint Online en un entorno de desarrollo y prueba](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
+[Proteger sitios de SharePoint Online en un entorno de desarrollo y pruebas](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
-[Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 

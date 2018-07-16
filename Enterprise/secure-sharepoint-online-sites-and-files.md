@@ -15,15 +15,16 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Resumen: recomendaciones de configuración para proteger archivos en SharePoint Online y Office 365.'
-ms.openlocfilehash: 88ad010e10949c9ef4e761dbca95b7afd0e1f901
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319231"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Protección de archivos y sitios de SharePoint Online
 
- **Resumen:** recomendaciones de configuración para proteger archivos en SharePoint Online y Office 365.
+ **Resumen:** Recomendaciones de configuración para proteger archivos en SharePoint Online y Office 365.
   
 En este artículo, se ofrecen recomendaciones para configurar la protección de archivos y sitios de grupo de SharePoint Online de manera que se equilibre la seguridad con la facilidad de colaboración. En este artículo, se definen cuatro configuraciones distintas, empezando por un sitio público dentro de la organización con las directivas de uso compartido más abiertas. Cada configuración adicional representa un paso significativo para la protección, pero a costa de que el conjunto de usuarios relevante pierda capacidad de obtener acceso a los recursos y colaborar en ellos. Siga estas recomendaciones como punto inicial, y ajuste las configuraciones para adaptarse a las necesidades de su organización. 
   
@@ -46,9 +47,9 @@ Para más información sobre estos niveles y capacidades recomendadas para cada 
 Las recomendaciones para sitios de grupo de SharePoint Online abarcan toda una variedad de capacidades de Office 365. Para sitios extremadamente confidenciales, se recomienda Azure Information Protection. Está incluido en Enterprise Mobility + Security (EMS). 
   
 En la ilustración siguiente, se muestran las configuraciones recomendadas para cuatro sitios de grupo de SharePoint Online.
-  
-![Configuración recomendada para sitios de SharePoint](images/ad0dcd70-f6f5-465c-8d16-1889481ca07a.png)
-  
+
+![Configuración recomendada para sitios de SharePoint](Media/SharePoint-site-configuration-v2.png)
+
 Como se muestra:
   
 - La protección de base de referencia incluye dos opciones para los sitios de grupo de SharePoint Online: un sitio público y un sitio privado. Los sitios públicos son aquellos visibles y accesibles por cualquier persona de la organización. Los sitios privados solo pueden detectarlos y acceder a ellos los miembros del sitio. Estas dos configuraciones de sitio permiten compartir fuera del grupo. 
@@ -59,7 +60,7 @@ Como se muestra:
     
 - Las directivas de prevención de pérdida de datos (DLP) se configuran para que las etiquetas Confidencial y Extremadamente confidencial de Office 365 puedan advertir o prevenir a los usuarios cuando intentan enviar estos tipos de archivo fuera de la organización.
     
-- Para los sitios configurados con protección extremadamente confidencial, Azure Information Protection cifra y concede permisos para los archivos.
+- Si resulta necesario en su caso particular, puede usar Azure Information Protection para cifrar y conceder permisos a los archivos extremadamente confidenciales. Esto no se recomienda para todos los clientes.
     
 ## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Configuración de todos los inquilinos para SharePoint Online y OneDrive para la Empresa
 
@@ -155,7 +156,7 @@ Para consultar los pasos necesarios para configurar etiquetas de Office 365 y di
   
 ## <a name="azure-information-protection"></a>Azure Information Protection
 
-Con Azure Information Protection, puede aplicar etiquetas y protecciones a los archivos para que acompañen a los archivos allá donde vayan. Para esta solución, se recomienda usar una directiva con ámbito de Azure Information Protection y una subetiqueta de la etiqueta Extremadamente confidencial para conceder permisos y cifrar los archivos que deben protegerse con el máximo nivel de seguridad. 
+Si su caso lo justifica, con Azure Information Protection puede aplicar etiquetas y protecciones a los archivos para que acompañen a los archivos a todas partes. Las etiquetas de Azure Information Protection son distintas a las de Office 365. Para esta solución, se recomienda usar una directiva con ámbito de Azure Information Protection y una subetiqueta de la etiqueta Extremadamente confidencial para cifrar los archivos que deben protegerse con el máximo nivel de seguridad y para conceder permisos para acceder a ellos. 
   
 Tenga en cuenta que, cuando se aplica el cifrado de Azure Information Protection a los archivos almacenados en Office 365, el servicio no puede procesar el contenido de estos archivos. No funcionan algunas características de colaboración, como la coautoría, eDiscovery, la búsqueda y Delve. Las directivas DLP solo pueden trabajar con los metadatos (incluidas las etiquetas de Office 365), pero no con el contenido de estos archivos (por ejemplo, números de tarjeta de crédito incluidos en los archivos).
   
