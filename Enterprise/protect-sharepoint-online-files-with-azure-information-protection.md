@@ -15,22 +15,28 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Resumen: aplique Azure Information Protection para proteger los archivos en un sitio de grupo de SharePoint Online altamente confidencial.'
-ms.openlocfilehash: bab799a784cac579c92fb06ea17592d85fd59af2
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 2c4776f5795a5a0b07be0f04b4872abadb4d31ca
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "19168504"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319291"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Protección de archivos de SharePoint Online con Azure Information Protection
 
- **Resumen:** aplique Azure Information Protection para proteger los archivos en un sitio de grupo de SharePoint Online altamente confidencial.
+ **Resumen:** Aplique Azure Information Protection para proteger los archivos en un sitio de grupo de SharePoint Online altamente confidencial.
   
-Siga los pasos que se indican en este artículo para configurar Azure Information Protection para ofrecer cifrado y permisos para archivos en un sitio de grupo de SharePoint Online altamente confidencial. La protección del cifrado y los permisos viaja con los archivos, incluso cuando se descarguen del sitio. Para obtener más información sobre los sitios de grupo de SharePoint Online altamente confidenciales, vea [Proteger archivos y sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md).
-  
-> [!NOTE]
-> Cuando se aplica el cifrado de Azure Information Protection a los archivos almacenados en Office 365, el servicio no puede procesar el contenido de estos archivos. No funcionan algunas características de colaboración, como la coautoría, eDiscovery, la búsqueda y Delve. Las directivas de prevención de pérdida de datos (DLP) solo pueden trabajar con los metadatos (incluidas las etiquetas de Office 365), pero no con el contenido de estos archivos (por ejemplo, números de tarjeta de crédito incluidos en los archivos). 
-  
+Siga los pasos de este artículo para configurar Azure Information Protection para proporcionar cifrado y permisos para archivos. Estos archivos pueden agregarse a una biblioteca de SharePoint configurada para protección altamente confidencial. O bien, puede abrir un archivo directamente desde el sitio y usar al cliente de Azure Information Protection para agregar el cifrado. La protección mediante cifrado y permisos viaja con un archivo, incluso cuando se descarga desde el sitio. 
+
+Estos pasos son parte de una solución más grande para la configuración de protección confidencial para sitios de SharePoint y los archivos de estos sitios. Para obtener más información, consulte [Protección de archivos y sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md). 
+
+Usar Azure Information Protection para los archivos de SharePoint Online no es recomendable para todos los clientes, pero es una opción para aquellos que necesitan este nivel de protección de un subconjunto de archivos.
+
+Algunas notas importantes sobre esta solución:
+- Cuando se aplica el cifrado de Azure Information Protection a los archivos almacenados en Office 365, el servicio no puede procesar el contenido de estos archivos. No funcionan algunas características de colaboración, como la coautoría, eDiscovery, la búsqueda y Delve. Las directivas de prevención de pérdida de datos (DLP) solo pueden trabajar con los metadatos (incluidas las etiquetas de Office 365), pero no con el contenido de estos archivos (por ejemplo, números de tarjeta de crédito incluidos en los archivos).
+- Esta solución requiere que un usuario seleccione la etiqueta que aplica la protección de Azure Information Protection. Si necesita cifrado automático y que SharePoint sea capaz de indexar y comprobar los archivos, puede usar Information Rights Management (IRM) en SharePoint Online. Al configurar una biblioteca de SharePoint para IRM, los archivos se cifrarán automáticamente cuando se descarguen para su edición. IRM de SharePoint incluye limitaciones que podrían influir en su decisión. Para obtener más información, consulte [Configurar Information Rights Management (IRM) en el Centro de administración de SharePoint](https://support.office.com/es-ES/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C).
+
+##<a name="admin-setup"></a>Configuración de administración
 Primero, siga las instrucciones que se indican en [Activar Azure RMS desde el Centro de administración de Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) para su suscripción de Office 365.
   
 Después, siga estos pasos para configurar Azure Information Protection con una nueva directiva con ámbito y una subetiqueta para la protección y los permisos relacionados con el sitio de grupo de SharePoint Online altamente confidencial.
@@ -75,10 +81,8 @@ Después, siga estos pasos para configurar Azure Information Protection con una 
     
 20. En la hoja **Azure Information Protection: Directivas con ámbito**, haga clic en **Publicar**.
     
-Esta es la configuración resultante del sitio de grupo de SharePoint Online altamente confidencial.
-  
-![Etiqueta de Azure Information Protection de un sitio de grupo de SharePoint Online aislado.](images/8cc92aa4-e7bc-4c2f-a4a4-3b034b21aebf.png)
-  
+ 
+##<a name="client-setup"></a>Instalación del cliente
 Ya está listo para empezar a crear documentos y protegerlos con Azure Information Protection y su nueva etiqueta.
   
 Necesita [instalar el cliente de Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) en el dispositivo o equipo basado en Windows. Puede generar scripts y automatizar la instalación, o bien los usuarios pueden instalar el cliente de forma manual. Vea los recursos siguientes:
@@ -94,7 +98,13 @@ Cuando se complete la instalación, los usuarios ejecutarán y, después, inicia
 > [!NOTE]
 > Si tiene varios sitios de grupo de SharePoint Online extremadamente confidenciales, deberá crear varias directivas con ámbito de Azure Information Protection que contengan subetiquetas con la configuración anterior, con los permisos de cada subetiqueta establecidos en el grupo de acceso de miembros de sitio de un equipo de grupo concreto de SharePoint Online. 
   
-## <a name="see-also"></a>Vea también
+##<a name="adding-permissions-for-external-users"></a>Agregar permisos para usuarios externos
+Hay dos maneras de conceder a los usuarios externos el acceso a archivos protegidos con Azure Information Protection. En ambos casos, los usuarios externos necesitan tener una cuenta de Azure AD. Si los usuarios externos no son miembros de una organización que usa Azure AD, pueden obtener una cuenta de Azure AD como usuario individual a través de esta página de suscripción: [https://aka.ms/aip-signup](https://aka.ms/aip-signup).
+
+ - Agregar usuarios externos a un grupo de Azure AD que se usa para configurar la protección para una etiqueta. Primero, tendrá que agregar la cuenta como usuario B2B en el directorio. Puede tardar un par de horas con [Caché de pertenencia al grupo por Azure Rights Management](https://docs.microsoft.com/es-ES/azure/information-protection/plan-design/prepare#group-membership-caching-by-azure-information-protection).  
+ - Agregar usuarios externos directamente a la protección de etiqueta. Puede agregar todos los usuarios de una organización (por ejemplo, Fabrikam.com), un usuario o un grupo de Azure AD (como un grupo de finanzas dentro de una organización). Puede agregar, por ejemplo, un grupo de reguladores externo para la protección de una etiqueta.
+
+## <a name="see-also"></a>Consulte también
 
 [Protección de archivos y sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
