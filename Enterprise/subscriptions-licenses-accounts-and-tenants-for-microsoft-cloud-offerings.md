@@ -3,7 +3,7 @@ title: Suscripciones, licencias, cuentas y espacios empresariales para las ofert
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/12/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumen: comprenda las relaciones de las organizaciones, las suscripciones, las licencias, las cuentas de usuario y los espacios empresariales en las ofertas de la nube de Microsoft.'
-ms.openlocfilehash: 889dbc376d3eb90af46bb281715ba391d7ee7712
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 53d2f7f32402d8c05d22c0661a0f625c756da6d4
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319221"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, cuentas y espacios empresariales para las ofertas de la nube de Microsoft
 
@@ -49,7 +50,7 @@ Estos son los elementos de la jerarquía:
   
 ### <a name="organization"></a>Organización
 
-Una organización representa una entidad empresarial que usa ofertas de la nube de Microsoft, normalmente identificadas por un sistema de nombres de dominio (DNS) público, como contoso.com. La organización es un contenedor para las suscripciones.
+Una organización representa una entidad empresarial que usa ofertas de la nube de Microsoft, normalmente identificadas por uno o más sistemas de nombres de dominio (DNS) público, como contoso.com. La organización es un contenedor para las suscripciones.
   
 ### <a name="subscriptions"></a>Suscripciones
 
