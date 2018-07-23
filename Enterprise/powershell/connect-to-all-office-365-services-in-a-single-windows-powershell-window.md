@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumen: Conectar Windows PowerShell a todos los servicios de Office 365 en una sola ventana de Windows PowerShell.'
-ms.openlocfilehash: ba23dde0fd79d13274244b52c5914d9249640570
-ms.sourcegitcommit: f496a401245240ec01754edcd4d44e7a0194d068
+ms.openlocfilehash: bf5e81012eaa3e7e200f9b1984b3d3fe01c30799
+ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "19907191"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "20720376"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Conectarse a todos los servicios de Office 365 en una sola ventana de Windows PowerShell
 
@@ -60,8 +60,8 @@ Antes de poder administrar todo Office 365 desde una sola instancia de Windows P
     
 - Debe instalar los módulos que son necesarios para Azure AD, SharePoint Online y Skype para empresarial en línea:
     
-   - [V2 de Azure Active Directory](connect-to-office-365-powershell.md#ConnectV2)
-   - [Consola de administración en línea de SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=255251)
+   - [V2 de Azure Active Directory](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
+   - [Shell de administración en línea de SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype para la empresa en línea, el módulo de Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
 -  Windows PowerShell debe configurarse para ejecutar secuencias de comandos firmadas de Skype para profesionales Online, Exchange Online y la seguridad &amp; centro de cumplimiento. Para ello, ejecute el siguiente comando en una sesión de Windows PowerShell con privilegios elevados (una ventana de Windows PowerShell que abra seleccionando **Ejecutar como administrador**).
@@ -197,7 +197,7 @@ Import-PSSession $sfboSession
 
 Para Exchange Online y la seguridad &amp; centro de cumplimiento, consulte los siguientes temas para conectar con la autenticación multifactor:
 
-- [Conectarse a Exchange Online PowerShell con autenticación multifactor](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
+- [Conectarse a PowerShell para Exchange Online con Multi-Factor Authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
 - [Conectarse a Office 365 seguridad & PowerShell de centro de cumplimiento de normas mediante la autenticación multifactor](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
  
 Tenga en cuenta que en ambos casos, debe conectarse con sesiones separadas de Exchange Online remoto PowerShell del módulo de.
