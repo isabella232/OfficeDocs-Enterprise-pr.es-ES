@@ -9,16 +9,17 @@ ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Obtenga información cómo administrar los servicios de SharePoint y OneDrive en un entorno multigeográfico.
-ms.openlocfilehash: 596db0e2cffedc74a4840ae4427a3350ba1e27d8
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+description: Obtenga información sobre cómo administrar los servicios de SharePoint y OneDrive en un entorno multigeográfico.
+ms.openlocfilehash: 12da695b44c5102c985a8d64960b1d20e092c8cd
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21550063"
 ---
-# <a name="administering-a-multi-geo-environment"></a>Administración de un entorno de multigeográfico
+# <a name="administering-a-multi-geo-environment"></a>Administración de un entorno multigeográfico
 
-Vea cómo funcionan los servicios de OneDrive y SharePoint en un entorno de multigeográfico.
+Vea cómo funcionan los servicios de OneDrive y SharePoint en un entorno multigeográfico.
 
 #### <a name="onedrive-administrator-experience"></a>Experiencia del administrador de OneDrive
 
@@ -76,36 +77,40 @@ Cuando se establece el rol Administrador o Supervisor de eDiscovery para una ubi
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><strong>NAM</strong></td>
-<td align="left">Centros de datos de EE. UU.</td>
+<td align="left"><strong>APC</strong></td>
+<td align="left">Centros de datos de Asia oriental o Asia sudoriental</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>AUS</strong></td>
+<td align="left">Centros de datos de Asia oriental o Asia sudoriental</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>CAN</strong></td>
+<td align="left">Centros de datos de Estados Unidos</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>EUR</strong></td>
 <td align="left">Centros de datos de Europa</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>APC</strong></td>
-<td align="left">Centros de datos de Asia oriental o Asia Suroriental</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>CAN</strong></td>
-<td align="left">Centros de datos de EE. UU.</td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>AUS</strong></td>
-<td align="left">Centros de datos de Asia oriental o Asia Suroriental</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>KOR</strong></td>
-<td align="left">Ubicación de datos predeterminada del espacio empresarial</td>
+<td align="left"><strong>FRA</strong></td>
+<td align="left">Centros de datos de Europa</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>GBR</strong></td>
 <td align="left">Centros de datos de Europa</td>
 </tr>
 <tr class="even">
+<td align="left"><strong>KOR</strong></td>
+<td align="left">Centros de datos de Asia oriental o Asia sudoriental</td>
+</tr>
+<tr class="even">
 <td align="left"><strong>JPN </strong></td>
-<td align="left">Centros de datos de Asia oriental o Asia Suroriental</td>
+<td align="left">Centros de datos de Asia oriental o Asia sudoriental</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>NAM</strong></td>
+<td align="left">Centros de datos de Estados Unidos</td>
 </tr>
 </tbody>
 </table>
