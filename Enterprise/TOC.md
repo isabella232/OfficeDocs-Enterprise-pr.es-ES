@@ -1,6 +1,3 @@
-
-  
-
 # [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 ## [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
 ### [Redes de Microsoft Cloud para arquitectos empresariales](microsoft-cloud-networking-for-enterprise-architects.md)
@@ -44,9 +41,6 @@
 #### [eDiscovery avanzado para el entorno de desarrollo y pruebas de Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
 #### [Protección de archivos confidenciales en el entorno de desarrollo y pruebas de Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
 #### [Etiquetado y clasificación de datos en el entorno de desarrollo y pruebas de Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
-### [Entorno de pruebas y desarrollo de Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
-#### [Directivas MAM para sus entornos de desarrollo y prueba de Microsoft 365 Enterprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-#### [Inscriba los dispositivos iOS y Android en el entorno de desarrollo y prueba de Microsoft 365 Enterprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
 ### [Entorno de desarrollo y pruebas de Office 365 y Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
 #### [Integración de Exchange Online para su entorno de desarrollo y pruebas y de Office 365 y 365 de Dynamics](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
 ### [Entorno de desarrollo y prueba de One Microsoft Cloud](the-one-microsoft-cloud-dev-test-environment.md)
@@ -112,5 +106,19 @@
 #### [Implementar un sitio de grupo de SharePoint Online aislado](deploy-an-isolated-sharepoint-online-team-site.md)
 #### [Administrar un sitio de grupo de SharePoint Online aislado](manage-an-isolated-sharepoint-online-team-site.md)
 #### [Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas](isolated-sharepoint-online-team-site-dev-test-environment.md)
+## [Actualizar desde Office 2007 o 2010 productos](plan-upgrade-previous-versions-office.md)
+### [Office 2010](upgrade-from-office-2010-servers-and-products.md)
+#### [Escritorio de Office 2010](/DeployOffice/office-2010-end-support-roadmap.md)
+#### [Exchange 2010](exchange-2010-end-of-support.md)
+#### [SharePoint 2010](upgrade-from-sharepoint-2010.md)
+#### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+#### [Project Server 2010](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers)
+### [Office 2007](upgrade-from-office-2007-servers-and-products.md)
+#### [Escritorio de Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap)
+#### [Exchange 2007](exchange-2007-end-of-support.md)
+#### [SharePoint 2007](sharepoint-2007-end-of-support.md)
+#### [Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+#### [PerformancePoint Server 2007](pps-2007-end-of-support.md)
+#### [Project Server 2007](project-server-2007-end-of-support.md)
 ## [Administrar Office 365 con PowerShell de Office 365](powershell/manage-office-365-with-office-365-powershell.md)
 
