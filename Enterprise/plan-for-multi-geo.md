@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Obtenga información sobre OneDrive para la Empresa con capacidades multigeográficas, cómo funcionan las Capacidades multigeográficas y qué ubicaciones geográficas están disponibles para el almacenamiento de datos.
-ms.openlocfilehash: 54efc6092338e505ef44344f9c3d3a7efe9ae498
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 26dc9d1b0f0f78e1740088036be4b77bea3ce176
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549991"
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a>Planear OneDrive para la Empresa con capacidades multigeográficas
 
@@ -63,20 +64,20 @@ Puede configurar cualquiera de las ubicaciones siguientes para que sean ubicacio
 <td align="left">APC</td>
 </tr>
 <tr class="even">
-<td align="left">Europa, Oriente medio y África</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="odd">
-<td align="left">Norteamérica</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="even">
 <td align="left">Australia</td>
 <td align="left">AUS</td>
 </tr>
 <tr class="odd">
 <td align="left">Canadá</td>
 <td align="left">CAN</td>
+</tr>
+<tr class="even">
+<td align="left">Europa, Oriente medio y África</td>
+<td align="left">EUR</td>
+</tr>
+<tr class="odd">
+<td align="left">Francia</td>
+<td align="left">FRA</td>
 </tr>
 <tr class="odd">
 <td align="left">Japón</td>
@@ -87,6 +88,10 @@ Puede configurar cualquiera de las ubicaciones siguientes para que sean ubicacio
 <td align="left">KOR</td>
 </tr>
 <tr class="odd">
+<td align="left">Norteamérica</td>
+<td align="left">NAM</td>
+</tr>
+<tr class="odd">
 <td align="left">Reino Unido</td>
 <td align="left">GBR</td>
 </tr>
@@ -95,7 +100,6 @@ Puede configurar cualquiera de las ubicaciones siguientes para que sean ubicacio
 
 Próximas ubicaciones geográficas:
   
-- Francia
 - India
 
 Al configurar Capacidades multigeográficas, podrá consolidar su infraestructura local al migrar a Office 365. Por ejemplo, si tiene granjas de servidores locales en Singapur y Malasia, puede consolidarlas en la ubicación satelital de APC, siempre que los requisitos de residencia de datos le permitan hacerlo.

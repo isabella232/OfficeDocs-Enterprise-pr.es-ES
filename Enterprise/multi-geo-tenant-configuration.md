@@ -11,11 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Aprenda a configurar OneDrive para la Empresa multigeográfico.
-ms.openlocfilehash: 29e69fa6e5a9715360b61024ee41dee4cd4b95b1
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549971"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configuración de espacios empresariales en OneDrive para la Empresa multigeográfico
 
@@ -42,14 +43,6 @@ Debe establecer una ubicación de datos permitida para SharePoint en cada ubicac
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Norteamérica</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="even">
-<td align="left">Europa, Oriente medio y África</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="odd">
 <td align="left">Asia-Pacífico</td>
 <td align="left">APC</td>
 </tr>
@@ -57,21 +50,33 @@ Debe establecer una ubicación de datos permitida para SharePoint en cada ubicac
 <td align="left">Australia</td>
 <td align="left">AUS</td>
 </tr>
+<tr class="even">
+<td align="left">Canadá</td>
+<td align="left">CAN</td>
+</tr>
+<tr class="even">
+<td align="left">Europa, Oriente medio y África</td>
+<td align="left">EUR</td>
+</tr>
+<tr class="even">
+<td align="left">Francia</td>
+<td align="left">FRA</td>
+</tr>
 <tr class="odd">
 <td align="left">Japón</td>
 <td align="left">JPN</td>
 </tr>
 <tr class="even">
-<td align="left">Canadá</td>
-<td align="left">CAN</td>
+<td align="left">Corea</td>
+<td align="left">KOR</td>
+</tr>
+<tr class="odd">
+<td align="left">Norteamérica</td>
+<td align="left">NAM</td>
 </tr>
 <tr class="odd">
 <td align="left">Reino Unido</td>
 <td align="left">GBR</td>
-</tr>
-<tr class="even">
-<td align="left">Corea</td>
-<td align="left">KOR</td>
 </tr>
 </tbody>
 </table>
