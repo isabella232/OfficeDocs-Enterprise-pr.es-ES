@@ -47,7 +47,7 @@ ms.lasthandoff: 01/11/2018
 [<span data-ttu-id="bcd7f-117">Usar Windows PowerShell para crear informes en Office 365</span><span class="sxs-lookup"><span data-stu-id="bcd7f-117">Use Windows PowerShell to create reports in Office 365</span></span>](use-windows-powershell-to-create-reports-in-office-365.md)
 #### 
 
-<span data-ttu-id="bcd7f-118">[Ventajas del uso de Windows Powershell para administrar Office 365]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))</span><span class="sxs-lookup"><span data-stu-id="bcd7f-118">[Advantages of using Windows PowerShell to manage Office 365]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))</span></span>
+<span data-ttu-id="bcd7f-118">[Ventajas del uso de Windows Powershell para administrar Office 365](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)</span><span class="sxs-lookup"><span data-stu-id="bcd7f-118">[Advantages of using Windows PowerShell to manage Office 365]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))</span></span>
   
 <span data-ttu-id="bcd7f-119">[Referencia técnica de Windows PowerShell en Office 365](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)</span><span class="sxs-lookup"><span data-stu-id="bcd7f-119">[Windows PowerShell in Office 365 technical reference](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)</span></span>
   
