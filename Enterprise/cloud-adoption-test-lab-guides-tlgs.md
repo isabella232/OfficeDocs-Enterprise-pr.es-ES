@@ -1,36 +1,38 @@
 ---
-title: Guías del laboratorio de pruebas de adopción de la nube (TLG)
+title: Probar Office 365 con guías de entorno de pruebas de adopción de la nube (TLG)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 08/23/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Resumen: Con estas Guías del laboratorio de pruebas (TLG) para la adopción de la nube, podrá configurar entornos de demostración o de desarrollo y pruebas para los productos Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 y Office Server.'
-ms.openlocfilehash: ac48a9d3d0941b1152aa2bc22a8d9aa5dde7ad77
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+description: 'Resumen: Con estas Guías del laboratorio de pruebas (TLG) para la adopción de la nube, podrá configurar entornos de demostración o de desarrollo y pruebas para los productos Office 365, Dynamics 365 y Office Server.'
+ms.openlocfilehash: 796d34294ef92702214df30ca5553759554996d3
+ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188168"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "23041504"
 ---
-# <a name="cloud-adoption-test-lab-guides-tlgs"></a>Guías del laboratorio de pruebas de adopción de la nube (TLG)
+# <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Probar Office 365 con guías de entorno de pruebas de adopción de la nube (TLG)
 
- **Resumen:** Con estas Guías del laboratorio de pruebas (TLG) para la adopción de la nube, podrá configurar entornos de demostración o de desarrollo y pruebas para los productos Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 y Office Server.
+ **Resumen:** Con estas Guías del laboratorio de pruebas (TLG) para la adopción de la nube, podrá configurar entornos de demostración o de desarrollo y pruebas para los productos Office 365, Dynamics 365 y Office Server.
   
 Las guías del laboratorio de pruebas le permiten conocer los productos Microsoft de manera rápida. Son ideales para las situaciones en las que necesita evaluar una tecnología o configuración antes de decidir si es adecuada o antes de implementarla en los equipos de los usuarios. Esta experiencia práctica de "yo la compilo y me funciona" le permitirá entender los requisitos de implementación de un nuevo producto o solución, de modo que pueda planear mejor el hospedaje en la producción.
   
 Las guías del laboratorio de pruebas también crean entornos representativos para desarrollo y pruebas de aplicaciones, también conocidos como entornos de desarrollo y pruebas.
   
-![Guías de laboratorio de prueba en Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guías de laboratorio de prueba en Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 Vea estos recursos adicionales antes de lanzarse:
   
@@ -88,21 +90,10 @@ Para el entorno de desarrollo y pruebas de Office 365, use estos artículos para
     
     Mostrar cómo crear un sitio de grupo de SharePoint Online aislado del resto de la organización para los recursos privados o muy confidenciales.
     
-## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Entorno de desarrollo y pruebas de Microsoft 365 Enterprise
+## <a name="the-microsoft-365-enterprise-test-environment"></a>El entorno de pruebas de Microsoft 365 Enterprise
 
-Cree un entorno de desarrollo y pruebas para los escenarios de [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) con estos artículos:
-  
-- [Entorno de pruebas y desarrollo de Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
-    
-    Crear el entorno inicial que incluye Office 365 E5, EMS E5 y un Windows 10 Enterprise de ordenador.
-    
-- [Directivas MAM para sus entornos de desarrollo y prueba de Microsoft 365](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-    
-    Cree grupos de usuarios y directivas de administración de aplicaciones móviles (MAM) para dispositivos iOS y Android.
-    
-- [Inscriba los dispositivos iOS y Android en el entorno de desarrollo y prueba de Microsoft 365 Enterprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
-    
-    Inscriba los dispositivos Android o iOS y adminístrelos de forma remota.
+Cree un entorno de pruebas para [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) con [estos artículos](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).
+ 
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365 y Dynamics 365
 
@@ -148,17 +139,7 @@ Estos son entornos adicionales de desarrollo y pruebas basados en la nube que pu
     
     Cree granjas de servidores básicas y de alta disponibilidad de SharePoint Server 2013 en los servicios de infraestructura de Azure.
     
-**Participar en el debate**
-
-|**Póngase en contacto con nosotros**|**Descripción**|
-|:-----|:-----|
-|**¿Qué soluciones necesita?** <br/> |Estamos creando contenido para soluciones que abarcan varios productos y servicios de Microsoft. Díganos qué piensa sobre nuestras soluciones entre servidores o solicite soluciones específicas por correo electrónico a [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Participe en la discusión sobre soluciones** <br/> |Si es un apasionado de las soluciones basadas en la nube, puede unirse a Cloud Adoption Advisory Board (CAAB) para conectarse a una interesante comunidad de mayor tamaño formada por desarrolladores de contenido de Microsoft, profesionales del sector y clientes de todo el mundo. Para unirse, agregue a su usuario como miembro del [espacio CAAB (Cloud Adoption Advisory Board)](https://aka.ms/caab) de Microsoft Tech Community y envíenos un correo electrónico a [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Cualquiera puede leer contenido relacionado con la comunidad en el [blog de CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Pero los miembros de CAAB reciben invitaciones a seminarios web privados donde se describen nuevos recursos y soluciones de adopción de la nube.  <br/> |
-|**Obtenga los archivos de arte que ve aquí** <br/> |Si quiere recibir una copia editable de las ilustraciones que se muestran en este artículo, estaremos encantados de enviárselas. Envíe su solicitud por correo electrónico, incluida la dirección URL y el título de la ilustración, a [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  <br/> |
-   
-## <a name="see-also"></a>Consulte también
-
-<a name="ADD_TLGs"> </a>
+## <a name="see-also"></a>Vea también
 
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
   
