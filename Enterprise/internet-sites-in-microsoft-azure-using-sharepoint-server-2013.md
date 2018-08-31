@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: 'Resumen: los sitios de Internet que usan SharePoint Server 2013 tienen la ventaja de que se hospedan en Servicios de infraestructura de Azure. En este artículo se ofrecen recursos para diseñar e implementar esta solución.'
-ms.openlocfilehash: a2444cdf98e861530131d55ae80fc661f730ba57
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: 26578133709959964e2f8ab1d01b562a526febcb
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161793"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914895"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Sitios de Internet en Microsoft Azure con SharePoint Server 2013
 
@@ -43,8 +43,8 @@ Los artículos e ilustraciones técnicas que detallamos a continuación ofrecen 
   
 |**Recurso**|**Más información**|
 |:-----|:-----|
-|Sitios de Internet de **SharePoint Server 2013 en Azure** <br/> [![Imagen de sitios de Internet en Azure usando SharePoint](images/MS_AZ_SPInternetSites.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [           ](https://go.microsoft.com/fwlink/p/?LinkId=392551) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)   <br/> |En este modelo de arquitectura se describen las principales actividades de diseño y las opciones de arquitectura recomendadas para sitios de Internet en Azure.  <br/> |
-|**Ejemplo de diseño: sitios de Internet en Azure para SharePoint Server 2013** <br/> [![Imagen del ejemplo de diseño: sitios de Internet en Azure para SharePoint Server 2013](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) <br/> |Use este ejemplo de diseño como punto de partida para su propia arquitectura.  <br/> |
+|Sitios de Internet de **SharePoint Server 2013 en Azure** <br/> [![Imagen de sitios de Internet en Azure usando SharePoint](media/MS-AZ-SPInternetSites.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [           ](https://go.microsoft.com/fwlink/p/?LinkId=392551) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)   <br/> |En este modelo de arquitectura se describen las principales actividades de diseño y las opciones de arquitectura recomendadas para sitios de Internet en Azure.  <br/> |
+|**Ejemplo de diseño: sitios de Internet en Azure para SharePoint Server 2013** <br/> [![Imagen del ejemplo de diseño: sitios de Internet en Azure para SharePoint Server 2013](media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) <br/> |Use este ejemplo de diseño como punto de partida para su propia arquitectura.  <br/> |
 |**[Arquitecturas de Microsoft Azure para SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |En este artículo se describe cómo diseñar arquitecturas de Azure para hospedar soluciones de SharePoint.  <br/> |
 
    

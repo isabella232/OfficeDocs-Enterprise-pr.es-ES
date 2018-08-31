@@ -13,28 +13,29 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: "Explica cómo utilizar Office 365 PowerShell para bloquear y desbloquear el acceso a cuentas de Office 365."
-ms.openlocfilehash: 34d144c982210ddc9d557b6094f71706f8edbb7f
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Se explica cómo usar PowerShell de Office 365 para bloquear y desbloquear el acceso a cuentas de Office 365.
+ms.openlocfilehash: 748d24f95f9dca651158dae2fe15e9c655eb021e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915415"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Bloquear cuentas de usuario con PowerShell de Office 365
 
-**Resumen:**  Explica cómo utilizar Office 365 PowerShell para bloquear y desbloquear el acceso a cuentas de Office 365.
+**Resumen:**  Se explica cómo usar PowerShell de Office 365 para bloquear y desbloquear el acceso a cuentas de Office 365.
   
-Bloquea el acceso a una cuenta de Office 365 impide que alguien pueda usar la cuenta para iniciar sesión y tener acceso a los servicios y los datos de la organización de Office 365. Cuando se bloquea el acceso a la cuenta, el usuario recibe el siguiente mensaje de error cuando intentan iniciar sesión en:
+Bloquear el acceso a una cuenta de Office 365 impide que alguien pueda usar la cuenta para iniciar sesión y tener acceso a los servicios y los datos de la organización de Office 365. Cuando se bloquea el acceso a la cuenta, el usuario recibe el siguiente mensaje de error cuando intenten iniciar sesión en:
   
-![Cuenta de Office 365 bloqueada.](images/o365_powershell_account_blocked.png)
+![Cuenta de Office 365 bloqueada.](media/o365-powershell-account-blocked.png)
   
-Puede utilizar Office 365 PowerShell para bloquear el acceso a una persona y varias cuentas de usuario.
+Puede usar PowerShell de Office 365 para bloquear el acceso a una persona y varias cuentas de usuario.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
 - Los procedimientos de este tema requieren conectarse a PowerShell de Office 365. Para obtener instrucciones, vea [Conectarse a PowerShell de Office 365](connect-to-office-365-powershell.md).
     
-- Cuando se bloquea una cuenta de usuario, puede demorar hasta 24 horas a partir de dispositivos y clientes de todos los usuarios.
+- Cuando se bloquea una cuenta de usuario, puede tardar hasta 24 horas para que surtan efecto en los clientes y dispositivos de todos los usuarios.
     
 ## <a name="use-office-365-powershell-to-block-access-to-individual-user-accounts"></a>Usar PowerShell de Office 365 para bloquear el acceso a cuentas de usuario individuales
 
@@ -56,15 +57,15 @@ Para desbloquear la cuenta de usuario, ejecute el siguiente comando:
 Set-MsolUser -UserPrincipalName <UPN of user account>  -BlockCredential $false
 ```
 
-En cualquier momento, puede comprobar el estado de bloqueo de cuenta de usuario con el siguiente comando:
+En cualquier momento, puede comprobar el estado de bloqueo de una cuenta de usuario con el siguiente comando:
   
 ```
 Get-MolUser -UserPrincipalName <UPN of user account> | Select DisplayName,BlockCredential
 ```
 
-## <a name="use-office-365-powershell-to-block-access-to-multiple-user-accounts"></a>Utilice Office 365 PowerShell para bloquear el acceso a varias cuentas de usuario
+## <a name="use-office-365-powershell-to-block-access-to-multiple-user-accounts"></a>Usar PowerShell de Office 365 para bloquear el acceso a varias cuentas de usuario
 
-En primer lugar, cree un archivo de texto que contiene una cuenta en cada línea como esta:
+En primer lugar, cree un archivo de texto que contiene una cuenta en cada línea como la siguiente:
     
   ```
 akol@contoso.com
@@ -109,7 +110,7 @@ Para desbloquear esta cuenta de usuario, ejecute el siguiente comando:
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $true
 ```
 
-Para mostrar la cuenta de usuario que UPN se basa en el nombre para mostrar del usuario, utilice los siguientes comandos:
+Para mostrar la cuenta de usuario que UPN basado en nombre para mostrar del usuario, use los siguientes comandos:
   
 ```
 $userName="<user account display name>"
@@ -117,7 +118,7 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-En este ejemplo se muestra la cuenta de usuario UPN del usuario llamado Caleb Sills.
+En este ejemplo se muestra la cuenta de usuario UPN para el usuario llamado Caleb Sills.
   
 ```
 $userName="Caleb Sills"
@@ -132,13 +133,13 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 
 ```
 
-En cualquier momento, puede comprobar el estado de bloqueo de cuenta de usuario con el siguiente comando:
+En cualquier momento, puede comprobar el estado de bloqueo de una cuenta de usuario con el siguiente comando:
   
 ```
 Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
-Para bloquear el acceso a varias cuentas de usuario, cree un archivo de texto que contiene un nombre de cuenta en cada línea como esta:
+Para bloquear el acceso a varias cuentas de usuario, cree un archivo de texto que contiene un nombre de cuenta en cada línea como la siguiente:
     
   ```
 akol@contoso.com
@@ -161,7 +162,6 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 ```
 
 ## <a name="see-also"></a>Consulte también
-<a name="SeeAlso"> </a>
 
 Vea los siguientes temas adicionales acerca de cómo administrar usuarios con Office 365 PowerShell:
   
@@ -177,7 +177,7 @@ Para obtener más información sobre los cmdlets que se usan en estos procedimie
   
 - [Get-Content](https://go.microsoft.com/fwlink/p/?LinkId=113310)
     
-- [Conjunto de MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691644)
+- [Set-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691644)
     
 - [New-AzureADUsuario](https://docs.microsoft.com/powershell/module/azuread/new-azureaduser?view=azureadps-2.0)
     
