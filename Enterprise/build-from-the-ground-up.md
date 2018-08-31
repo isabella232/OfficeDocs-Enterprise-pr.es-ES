@@ -1,5 +1,5 @@
 ---
-title: Crear desde el principio
+title: Crear desde cero
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,53 +8,56 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
-description: "Resumen: Obtenga los detalles en el conjunto de la nube de bloques de creación de almacenamiento de información que puede utilizar para crear su propio servicio de almacenamiento o la solución."
-ms.openlocfilehash: be7ea3e7526115f1a983ec89f2afeb5d130daee1
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumen: Para obtener información sobre el conjunto de nube de bloques de creación de almacenamiento que puede usar para crear su propio servicio de almacenamiento o la solución.'
+ms.openlocfilehash: 8ef5d7a99c4e82d9a4fc3eb281a4af505887b792
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915685"
 ---
-# <a name="build-from-the-ground-up"></a>Crear desde el principio
+# <a name="build-from-the-ground-up"></a>Crear desde cero
 
- **Resumen:** Obtenga los detalles en el conjunto de la nube de bloques de creación de almacenamiento de información que puede utilizar para crear su propio servicio de almacenamiento o la solución.
+ **Resumen:** Para obtener información sobre el conjunto de nube de bloques de creación de almacenamiento que puede usar para crear su propio servicio de almacenamiento o la solución.
   
 "Generarlo desde el principio" soluciones de almacenamiento de información:
   
-- Le permiten crear su propia solución de almacenamiento de información desde el principio. 
+- Permiten crear su propia solución de almacenamiento de información desde el principio. 
     
-- Requiere una programación mediante las API del resto.
+- Requiere que la programación con las API de REST.
     
 - Proporcionar lo último en flexibilidad y personalización.
     
-Las secciones siguientes describen los detalles de cada opción de almacenamiento "Crear desde cero".
+En las secciones siguientes se describen los detalles de cada opción de almacenamiento "Generarlo desde el principio".
   
 ## <a name="azure-storage-files"></a>Almacenamiento de Azure (archivos)
 
 ### <a name="features"></a>Características
 
-- Resulta más fácil mover aplicaciones heredadas a la nube
+- Resulta más sencillo mover aplicaciones heredadas a la nube
     
 - Almacenamiento de blobs preferido para nuevas aplicaciones
     
-- Puede montar desde una máquina virtual Azure
+- Puede montar desde una máquina virtual de Azure
     
-- Puede montar locales con SMB 3.0
+- Puede montar local con SMB 3.0
     
-- Funciona con Linux y Windows
+- Funciona con Windows y Linux
     
-- No admite autenticación AD Azure o ACL (claves de almacenamiento de Azure cuenta proporcionan autenticación y autorización para obtener acceso al recurso compartido de archivo)
+- No es compatible con la autenticación basada en AD Azure o ACL (claves de la cuenta de almacenamiento de Azure proporcionan autenticación y autorización para obtener acceso al recurso compartido de archivo)
     
 ### <a name="common-uses"></a>Usos comunes
 
-- Migrar aplicaciones heredadas a la nube que se basan en recursos compartidos de archivos
+- Migración de aplicaciones heredadas a la nube que se basan en recursos compartidos de archivos
     
 - Compartir herramientas de desarrollo y pruebas
     
-- Aplicaciones distribuidas pueden almacenar registros de datos de diagnóstico y volcados de sucesos
+- Pueden almacenar los registros de datos de diagnóstico y volcados de sucesos aplicaciones distribuidas
     
 ### <a name="key-storage-scenarios"></a>Escenarios de almacenamiento de claves
 
@@ -70,27 +73,27 @@ Para obtener información de costo, haga clic en [aquí](http://azure.microsoft.
 
 ### <a name="features"></a>Características
 
-- Cada cuenta de almacenamiento puede contener hasta 500 TB (una suscripción puede tener varias cuentas de almacenamiento)
+- Cada cuenta de almacenamiento puede contener hasta 500 TB (una sola suscripción puede tener varias cuentas de almacenamiento)
     
-- Cuentas de almacenamiento se organizan en contenedores, que pueden tener la seguridad aplicada a ellos y pueden contener objetos binarios
+- Cuentas de almacenamiento se organizan en contenedores, que pueden tener la seguridad que se aplican a ellos y pueden contener BLOB
     
-- BLOB de bloque está optimizado para la transmisión y almacenamiento de nube objetos hasta 200 GB de tamaño
+- BLOB de bloque está optimizado para la transmisión por secuencias y objetos de almacenar en la nube, hasta 200 GB de tamaño
     
-- Blobs de página están optimizados para que representan discos PaaS y escribe apoyando aleatorio, tamaño de hasta 1 TB
+- BLOB de página está optimizado para representar PaaS discos y admitir aleatorio escribe un tamaño de hasta 1 TB
     
-- Anexar objetos binarios están optimizados para anexar las operaciones, 195 GB
+- Anexar BLOB está optimizado para anexar las operaciones, 195 GB
     
-- Almacenamiento de Premium proporciona más rápidos IOPS a través del almacenamiento SSD
+- Almacenamiento de Premium proporciona más rápidas IOPS a través de almacenamiento SSD
     
 ### <a name="common-uses"></a>Usos comunes
 
-- Copias de seguridad de archivos, equipos, bases de datos y dispositivos de imágenes y texto para aplicaciones web
+- Copias de seguridad de los archivos, equipos, las bases de datos y dispositivos de imágenes y texto para las aplicaciones web
     
 - Datos de configuración de aplicaciones de nube
     
-- Datos grandes, como los registros y otros conjuntos de datos grandes
+- Datos grandes, como los registros y otros grandes conjuntos de datos
     
-- Blob de Azure utiliza almacenamiento de información para sus propios servicios, como los discos de máquinas virtuales y HDInsight
+- Usos de Azure blob almacenamiento para sus propios servicios, como los discos HDInsight y una máquina virtual
     
 ### <a name="key-storage-scenarios"></a>Escenarios de almacenamiento de claves
 
@@ -110,19 +113,19 @@ Para obtener información de costo, haga clic en [aquí](http://azure.microsoft.
     
 - Cola puede contener cualquier número de mensajes (hasta que la cuenta de almacenamiento está lleno)
     
-- La cola de mensajes automáticamente se eliminan transcurridos siete días si no recuperada y eliminada por una aplicación
+- La cola de mensajes automáticamente se eliminan después de siete días si no se recuperan o elimina una aplicación
     
-- Mensajes pueden ser de hasta 64 KB de tamaño
+- Los mensajes pueden tener hasta 64 KB de tamaño
     
-- Protegidos a nivel de cuenta de almacenamiento
+- Proteger a nivel de la cuenta de almacenamiento
     
-- Las colas se van a pasar mensajes de control, los datos sin procesar no
+- Las colas están diseñadas para pasar mensajes de control, los datos sin procesar no
     
 ### <a name="common-uses"></a>Usos comunes
 
-- Crear un registro de trabajo para procesar de forma asincrónica
+- Crear un trabajo pendiente para procesar de forma asincrónica
     
-- Procesamiento de mensajes de registro
+- Procesamiento de los mensajes de registro
     
 - Desacoplar aplicaciones
     
@@ -140,17 +143,17 @@ Para obtener información de costo, haga clic en [aquí](http://azure.microsoft.
 
 ### <a name="features"></a>Características
 
-- Mejor los conjuntos de datos semiestructurados
+- Mejor para conjuntos de datos semiestructurados
     
-- Normalmente un coste menor que SQL tradicional
+- Normalmente, un costo menor que SQL tradicional
     
-- Muy rápida si la consulta de clave, lento si la consulta de valor
+- Es muy rápida si la consulta de clave, lento si la consulta de valor
     
 - Escalable masivamente; cualquier cantidad de tablas hasta los límites de la cuenta de almacenamiento
     
 - Accesible a través de la API de REST, protocolo oData limitado, .NET
     
-- Los valores deben serializarse.
+- Deben ser serializados valores
     
 ### <a name="common-uses"></a>Usos comunes
 
@@ -170,27 +173,27 @@ Para obtener información adicional, haga clic en [aquí](https://msdn.microsoft
   
 Para obtener información de costo, haga clic en [aquí](http://azure.microsoft.com/pricing/details/storage/).
   
-## <a name="microsoft-azure-storage-recommendations"></a>Recomendaciones de almacenamiento de Azure de Microsoft
+## <a name="microsoft-azure-storage-recommendations"></a>Recomendaciones de almacenamiento de información de Microsoft Azure
 
-Al diseñar su solución de almacenamiento de información personalizada con el almacenamiento de Azure, tenga en cuenta lo siguiente:
+Al diseñar la solución de almacenamiento de información personalizada con el almacenamiento de Azure, tenga en cuenta lo siguiente:
   
-- Aproveche varias cuentas de almacenamiento de información para una mayor escalabilidad, para el aumento de tamaño (> 100 TB) o para un mayor rendimiento (> 5.000 operaciones por segundo).
+- Sacar provecho de varias cuentas de almacenamiento para una mayor escalabilidad, ya sea de mayor tamaño (> 100 TB) o para un mayor rendimiento (5.000 > operaciones por segundo).
     
 - Diseño de la capacidad para agregar cuentas de almacenamiento adicionales como un cambio de configuración, no como un cambio de código.
     
-- Elija cuidadosamente las funciones de partición para el almacenamiento de la tabla habilitar la escala deseada en términos de rendimiento de inserción y consulta.
+- Seleccione detenidamente partición funciones para el almacenamiento de la tabla habilitar la escala deseada en términos de rendimiento de insertar y consulta.
     
-- Elija nombres de columna cortos para propiedades como los metadatos (nombres de propiedad) de la tabla están almacenado dentro de banda (los nombres de columna también cuentan para el tamaño máximo de fila de 1 MB).
+- Elija los nombres de columna corto para las propiedades de la tabla como los metadatos (los nombres de propiedades) son almacenado dentro de banda (los nombres de columna también cuentan para el tamaño máximo de fila de 1 MB).
     
-- Cuando sea posible, las operaciones en el almacenamiento de información de lote.
+- Cuando sea posible, las operaciones en almacenamiento de información de lote.
     
-- Agresivamente caché la información de la base de datos de configuración en una memoria caché distribuida.
+- Forma agresiva información de caché en la base de datos de configuración en una memoria caché distribuida.
     
-- Si depende de tener un cierto segmento de datos disponibles en la caché de aplicación rendimiento o la confiabilidad, la aplicación debe rechazar las solicitudes entrantes hasta que la memoria caché ha sido rellenada.
+- Si depende de tener un segmento de algunos de los datos disponibles en la memoria caché de rendimiento de la aplicación o la confiabilidad, la aplicación debe rechazar las solicitudes entrantes hasta que se rellenan previamente la memoria caché.
     
-- Dividir los datos en vertical (por tabla) u horizontalmente (tabla de segmentos en varios fragmentos) para repartir la carga entre varias bases de datos.
+- Particiones de los datos en verticalmente (por tabla) u horizontalmente (tabla de segmento a través de varios shards) para repartir la carga entre varias bases de datos.
     
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Almacenamiento de Microsoft Cloud para arquitectos empresariales](microsoft-cloud-storage-for-enterprise-architects.md)
   

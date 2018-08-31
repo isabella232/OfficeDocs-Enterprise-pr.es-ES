@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: 'Resumen: Conozca la Contoso Corporation como una empresa y la estructura en niveles de sus oficinas de todo el mundo.'
-ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 66171ee872f9b526860ae1436b0e8cb51de119de
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915865"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Información general sobre Contoso Corporation
 
@@ -30,7 +31,7 @@ Organización en todo el mundo de Contoso tiene oficinas en las siguientes ubica
   
 **En la figura 1: Oficinas de Contoso todo el mundo**
 
-![Oficinas de la empresa Contoso en todo el mundo](images/Contoso_Poster/Contoso_WW_Org.png)
+![Oficinas de la empresa Contoso en todo el mundo](media/Contoso-Poster/Contoso-WW-Org.png)
 
   
 En la figura 1, se muestran la sede central en París, las oficinas de los centros regionales y las oficinas satélite en varios continentes.
@@ -51,7 +52,9 @@ Las oficinas de Contoso todo el mundo siguen un diseño de tres niveles.
     
 - Oficinas satélite
     
-    Oficinas satélites contienen 80% ventas y personal de soporte técnico y proporcionan una presencia física y en el sitio para los clientes de Contoso en claves ciudades o regiones subcaracterística. Cada oficina satélite está conectado a un concentrador regional con un vínculo WAN de ancho de banda alto.
+    Las oficinas satélite hospedan un 80 % del personal de ventas y soporte técnico, y proporcionan presencia física e in situ para los clientes de Contoso en ciudades importantes o subregiones. Cada oficina satélite está conectada a un centro regional con un vínculo WAN de ancho de banda alto.
+
+
     
     Cada oficina satélite tiene un promedio de 250 trabajadores.
     
@@ -61,17 +64,17 @@ Las oficinas de Contoso todo el mundo siguen un diseño de tres niveles.
 
 Contoso arquitectos de TI han identificado los siguientes elementos al planear la adopción de las ofertas de nube de Microsoft.
   
-- Redes
+- Conexión de red
     
     Redes incluyen la conectividad con las ofertas de nube de Microsoft y ancho de banda suficiente para ser eficaz en las cargas máximas. Algunos conectividad será a través de conexiones de Internet locales y algunas estará en toda la infraestructura de red privada de Contoso.
     
-    Para obtener más información, vea el póster de [Microsoft en la nube de la red para arquitectos de la empresa](microsoft-cloud-networking-for-enterprise-architects.md) .
+    Para más información, vea el póster [Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md).
    
 - Identidad
     
     Contoso utiliza un bosque de Windows Server AD para su proveedor de identidad interna y también permite la federación con proveedores de terceros para clientes y socios. Contoso debe aprovechar el conjunto interno de cuentas para las ofertas de nube de Microsoft. Acceso a aplicaciones basadas en la nube para los clientes y socios debe aprovechar así como los proveedores de identidad de terceros.
     
-    Para obtener más información, vea el póster de [Identidad de nube de Microsoft para arquitectos de la empresa](microsoft-cloud-it-architecture-resources.md#identity) .
+    Para más información, vea el póster [Microsoft Cloud Identity for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#identity).
     
 - Seguridad
     

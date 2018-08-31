@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Resumen: recomendaciones de configuración para proteger archivos en SharePoint Online y Office 365.'
-ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 5ee7ce0f5d52076ec27a3478a39b998a96e0e270
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319231"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915085"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Protección de archivos y sitios de SharePoint Online
 
@@ -138,7 +140,7 @@ Le recomendamos usar etiquetas de Office 365 para entornos con información conf
     
 - Permitir que las personas de la organización apliquen manualmente una etiqueta al contenido de grupos de Outlook en la Web, Outlook 2010 y versiones posteriores, OneDrive para la Empresa, SharePoint Online y Office 365. A menudo, los usuarios son los que mejor saben con qué tipo de contenido están trabajando, por lo que pueden clasificarlo y aplicar la directiva DLP adecuada.
     
-![Configuración recomendada para sitios de SharePoint](images/7fed0126-ab4a-4480-922c-681970642339.png)
+![Configuración recomendada para sitios de SharePoint](media/7fed0126-ab4a-4480-922c-681970642339.png)
   
 Como se muestra, esta solución incluye la creación de las siguientes etiquetas:
   
@@ -160,7 +162,7 @@ Si su caso lo justifica, con Azure Information Protection puede aplicar etiqueta
   
 Tenga en cuenta que, cuando se aplica el cifrado de Azure Information Protection a los archivos almacenados en Office 365, el servicio no puede procesar el contenido de estos archivos. No funcionan algunas características de colaboración, como la coautoría, eDiscovery, la búsqueda y Delve. Las directivas DLP solo pueden trabajar con los metadatos (incluidas las etiquetas de Office 365), pero no con el contenido de estos archivos (por ejemplo, números de tarjeta de crédito incluidos en los archivos).
   
-![Azure Information Protection se configura en Azure y las etiquetas aparecen en la barra de herramientas del cliente.](images/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
+![Azure Information Protection se configura en Azure y las etiquetas aparecen en la barra de herramientas del cliente.](media/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
   
 Como se muestra:
   

@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: En el 11 de abril de 2017, Exchange Server 2007 había alcanzado el final de soporte técnico. Si aún no ha empezado la migración de Exchange 2007 a Office 365 o Exchange 2016, ahora es el momento de empezar la planificación.
-ms.openlocfilehash: 4bb8933977c280b4bfaa686e858fc818a1dc4ace
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: 674de8904d03e024a8a75b945b5ef94319214f92
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169812"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915575"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de Exchange 2007
 
@@ -191,9 +191,9 @@ Si un sonidos de migración híbrida completa adecuada para usted, eche un vista
     
 - [Asistente de configuración híbrida](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
     
-- [Preguntas más frecuentes del asistente de configuración híbrida](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
+- [Preguntas más frecuentes acerca del asistente de configuración híbrida](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
     
-- [Requisitos previos de implementación híbrida](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
+- [Requisitos previos para la implementación híbrida](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
     
 ### <a name="migrate-to-a-newer-version-of-exchange-server"></a>Migrar a una versión más reciente de Exchange Server
 

@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Resumen: Descubra cómo ExpressRoute puede ayudarle mediante conexiones más rápidas y fiables a los servicios y las plataformas en la nube de Microsoft.'
-ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188118"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915495"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute para la conectividad en la nube de Microsoft
 
@@ -31,7 +33,7 @@ Esta es la ruta de acceso de red a la nube de Microsoft sin una conexión de Exp
   
 **Figura 1: La ruta de acceso de red sin ExpressRoute**
 
-![Figura 1: La ruta de acceso de red sin ExpressRoute](images/Network_Poster/ExpressRoute.png)
+![Figura 1: La ruta de acceso de red sin ExpressRoute](media/Network-Poster/ExpressRoute.png)
   
 La figura 1 muestra la ruta de acceso típica entre una red local y la nube de Microsoft. El perímetro de red local se conecta a Internet a través de un vínculo WAN a un ISP. Después el tráfico viaja por Internet hasta el perímetro de la nube de Microsoft. Las ofertas de la nube de Microsoft incluyen Office 365, Microsoft Azure, Microsoft Intune y Dynamics 365. Los usuarios de una organización pueden encontrarse en la red local o en Internet.
   
@@ -45,7 +47,7 @@ Estas son las rutas de acceso de red a la nube de Microsoft con una conexión de
   
 **Figura 2: Las rutas de acceso de red con ExpressRoute**
 
-![Figura 2: La ruta de acceso de red con ExpressRoute](images/Network_Poster/ExpressRoute_post.png)
+![Figura 2: La ruta de acceso de red con ExpressRoute](media/Network-Poster/ExpressRoute-post.png)
   
 La figura 2 muestra dos rutas de acceso de red. El tráfico a Microsoft Intune viaja por la misma ruta que el tráfico normal de Internet. El tráfico que va a Office 365, Microsoft Azure y Dynamics 365 viaja a través de la conexión de ExpressRoute, una ruta dedicada que está entre el perímetro de la red local y el perímetro de la nube de Microsoft.
   
@@ -87,7 +89,7 @@ La tabla 1 muestra los tres modelos de conectividad principales para las conexio
   
 |**Colocalizado en un intercambio de nube**|**Ethernet de punto a punto**|**Conexión (IP VPN) universal**|
 |:-----|:-----|:-----|
-|![Modelo de conectividad de ExpressRoute: Colocalizado en un intercambio de nube](images/Network_Poster/ER_Conn1.png)|![Modelo de conectividad de ExpressRoute: Ethernet de punto a punto](images/Network_Poster/ER_Conn2.png)|![Modelo de conectividad de ExpressRoute: Conexión (IP VPN) universal](images/Network_Poster/ER_Conn3.png)|
+|![Modelo de conectividad de ExpressRoute: Colocalizado en un intercambio de nube](media/Network-Poster/ER-Conn1.png)|![Modelo de conectividad de ExpressRoute: Ethernet de punto a punto](media/Network-Poster/ER-Conn2.png)|![Modelo de conectividad de ExpressRoute: Conexión (IP VPN) universal](media/Network-Poster/ER-Conn3.png)|
 |Si el centro de datos se encuentra colocalizado en instalaciones con un intercambio de nube, puede solicitar una conexión cruzada virtual a la nube de Microsoft a través del intercambio de Ethernet del proveedor de colocalización.  <br/> |Si el centro de datos se encuentra en sus instalaciones, puede usar un vínculo punto a punto de Ethernet para conectarse a la nube de Microsoft.  <br/> |Si ya usa un proveedor de IP VPN (MPLS) para conectar los sitios de la organización, una conexión de ExpressRoute a la nube de Microsoft actúa como otra ubicación en su WAN privada.  <br/> |
    
  **Tabla 1: Modelos de conectividad de ExpressRoute**
@@ -98,7 +100,7 @@ Una única conexión de ExpressRoute admite hasta tres relaciones diferentes de 
   
 **Figura 3: Las tres relaciones BGP en una sola conexión de ExpressRoute**
 
-![Figura 3: Las tres relaciones BGP en una sola conexión de ExpressRoute](images/Network_Poster/ERPeering.png)
+![Figura 3: Las tres relaciones BGP en una sola conexión de ExpressRoute](media/Network-Poster/ERPeering.png)
   
 La figura 3 muestra una conexión de ExpressRoute desde una red local. La conexión de ExpressRoute contiene tres relaciones lógicas de emparejamiento. Una relación de emparejamiento de Microsoft va a los servicios SaaS Microsoft, incluidos Office 365 y Dynamcs CRM Online. Una relación de emparejamiento pública va a los servicios de PaaS de Azure. Una relación de emparejamiento privada va a IaaS de Azure y a una puerta de enlace de red virtual que hospeda máquinas virtuales.
   
@@ -128,7 +130,7 @@ El modo en que el tráfico viaja a través de las conexiones de ExpressRoute y d
   
 **Figura 4: Una aplicación de una máquina virtual de Azure que obtiene acceso a una granja de SharePoint local**
 
-![Figura 4: Una aplicación de una máquina virtual de Azure que obtiene acceso a una granja de SharePoint local](images/Network_Poster/ER_App_Flow1.png)
+![Figura 4: Una aplicación de una máquina virtual de Azure que obtiene acceso a una granja de SharePoint local](media/Network-Poster/ER-App-Flow1.png)
 
   
 La figura 4 muestra una granja de SharePoint local, una conexión VPN de sitio a sitio entre la red local y una red virtual en IaaS de Azure, un servidor de aplicaciones que se ejecuta como una máquina virtual de IaaS de Azure y el flujo de tráfico entre el servidor de aplicaciones y la granja de SharePoint.
@@ -139,7 +141,7 @@ Esta organización migró su granja de SharePoint local a SharePoint Online en O
   
 **Figura 5: Traslado de la granja de SharePoint local a SharePoint Online**
 
-![Figura 5: Traslado de la granja de SharePoint local a SharePoint Online](images/Network_Poster/Hairpin1.png)
+![Figura 5: Traslado de la granja de SharePoint local a SharePoint Online](media/Network-Poster/Hairpin1.png)
   
 La figura 5 muestra la adición de una conexión de ExpressRoute con relaciones de emparejamiento a los servicios SaaS de Microsoft, a Office 365 y a los servicios IaaS de Azure que contienen el servidor de aplicaciones en una red virtual. La granja local de SharePoint se migró a Office 365.
   
@@ -157,7 +159,7 @@ Cuando el servidor proxy busca la dirección IP de SharePoint Online, reenvía e
   
 **Figura 6: Flujo de tráfico cuando se migra la granja de SharePoint a SharePoint Online en Office 365**
 
-![Figura 6: Flujo de tráfico cuando se migra la granja de SharePoint a SharePoint Online en Office 365](images/Network_Poster/Hairpin2.png)
+![Figura 6: Flujo de tráfico cuando se migra la granja de SharePoint a SharePoint Online en Office 365](media/Network-Poster/Hairpin2.png)
 
   
 La figura 6 muestra cómo fluye el tráfico entre el servidor de aplicaciones y SharePoint Online en Office 365 a través de la relación de emparejamiento privada del servidor de aplicaciones al perímetro de la red local y después del perímetro a Office 365 a través de la relación de emparejamiento de Microsoft.
@@ -186,7 +188,7 @@ Esto puede hacer que la entrega en los centros de datos locales de Microsoft no 
   
 **Figura 7: Ejemplo de una organización distribuida geográficamente que usa una sola conexión de ExpressRoute**
 
-![Figura 7: Ejemplo de una organización distribuida geográficamente que usa una sola conexión de ExpressRoute](images/Network_Poster/MSNet1.png)
+![Figura 7: Ejemplo de una organización distribuida geográficamente que usa una sola conexión de ExpressRoute](media/Network-Poster/MSNet1.png)
   
 La figura 7 muestra una organización con dos ubicaciones, la ubicación 1 en el noroeste de Estados Unidos y la ubicación 2 en el noreste. Están conectados por un proveedor WAN universal. Esta organización tiene también una conexión de ExpressRoute a una ubicación de emparejamiento de Microsoft de la costa oeste. El tráfico de la ubicación 2 en el noreste destinado a un centro de datos de la costa este debe atravesar toda la red WAN de la organización hasta llegar a la costa oeste, a la ubicación de emparejamiento de Microsoft, y luego volver a recorrer todo el país por la red en la nube de Microsoft hasta llegar al centro de datos de la costa este.
   
@@ -194,7 +196,7 @@ Para lograr una entrega óptima, use varias conexiones de ExpressRoute a ubicaci
   
 **Figura 8: El uso de varias conexiones de ExpressRoute para la entrega óptima en centros de datos regionales**
 
-![Figura 8: El uso de varias conexiones de ExpressRoute para la entrega óptima en centros de datos regionales](images/Network_Poster/MSNet2.png)
+![Figura 8: El uso de varias conexiones de ExpressRoute para la entrega óptima en centros de datos regionales](media/Network-Poster/MSNet2.png)
   
 La figura 8 muestra la misma organización con dos conexiones de ExpressRoute, una para cada ubicación, a ubicaciones de emparejamiento de Microsoft locales de una región. En esta configuración, el tráfico de la ubicación 2 en el noreste destinado a un centro de datos de la costa este va directamente a una ubicación de emparejamiento de la costa este, a la red en la nube de Microsoft, y luego al centro de datos de la costa este.
   
@@ -224,7 +226,7 @@ ExpressRoute Premium es necesario para las conexiones de ExpressRoute basadas en
   
 **Figura 9: La red mundial en la nube de Microsoft**
 
-![Figura 9: La red mundial en la nube de Microsoft](images/Network_Poster/MSNet3.png)
+![Figura 9: La red mundial en la nube de Microsoft](media/Network-Poster/MSNet3.png)
   
 La figura 9 muestra un diagrama lógico de la red mundial en la nube de Microsoft, con redes que abarcan los continentes y las regiones del mundo y sus interconexiones. Cuando cada parte de la red en la nube de Microsoft está en un continente, una empresa global crea conexiones de ExpressRoute Premium desde sus oficinas concentradoras regionales a ubicaciones de emparejamiento de Microsoft locales.
   

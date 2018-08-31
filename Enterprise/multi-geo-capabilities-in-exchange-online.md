@@ -3,7 +3,6 @@ title: Capacidades de Multi-Geo en Exchange Online
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 4/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,11 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Expanda su información de presencia de Office 365 a varias regiones geográficas con multi-ubican las capacidades de Exchange Online.
-ms.openlocfilehash: ea00ab52142e92e122273ab4ba718e98bd94b572
-ms.sourcegitcommit: 12d3223cc2d6bf39a8960409a923254e1790fd2f
+ms.openlocfilehash: 9834b102365f11623a1decc00460f85f36552ccb
+ms.sourcegitcommit: d88307a32fd3439a09a87b260e0c0cf9074ebeb0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "22914785"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Capacidades de Multi-Geo en Exchange Online
 
@@ -39,6 +39,8 @@ Las zonas siguientes están disponibles para su uso en una configuración de Mul
 
 - Unión Europea
 
+- Francia
+
 - India (actualmente sólo está disponible para clientes con direcciones de facturación en India)
 
 - Japón
@@ -50,40 +52,40 @@ Las zonas siguientes están disponibles para su uso en una configuración de Mul
 - Estados Unidos
 
 ## <a name="prerequisite-configuration"></a>Configuración de requisitos previos
-Antes de empezar a usar las capacidades de Multi-Geo en Exchange Online, Microsoft tiene que configurar a su inquilino de Exchange Online para ofrecer compatibilidad con Multi-ubican. Este proceso de configuración de una sola vez se desencadena cuando pedir licencias Multi-Geo y normalmente debe tardar menos de 30 días en completarse.
+Antes de empezar a usar las capacidades de Multi-Geo en Exchange Online, Microsoft tiene que configurar a su inquilino de Exchange Online para ofrecer compatibilidad con Multi-ubican. Este proceso de configuración de una sola vez se desencadena después de haber ordenado que Multi-Geo y las licencias se muestran en nuestro inquilino. Este proceso de configuración única normalmente debe tardar menos de 30 días en completarse.
 
-Recibirá notificaciones en el [Centro de mensajes de Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) cuando la configuración se ha iniciado y completado. Configuración se desencadena automáticamente cuando comprar licencias de Multi-ubican.
+Recibirá notificaciones en el [Centro de mensajes de Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) cuando haya finalizado la configuración. Configuración se activa automáticamente una vez que las licencias de Multi-ubican aparezcan en el inquilino.
 
 ## <a name="mailbox-placement-and-moves"></a>Se desplaza y colocación de buzón de correo
 Después de que Microsoft lleva a cabo los pasos de configuración de Multi-ubican necesario como requisito previos, Exchange Online respeta el atributo **PreferredDataLocation** en objetos de usuario en Azure AD.
 
 Exchange Online se sincroniza la propiedad **PreferredDataLocation** de Azure AD en la propiedad **MailboxRegion** en el servicio de directorio Exchange Online. El valor de **MailboxRegion** determina el ubican donde se colocará los buzones de usuario y cualquier archivo asociado. No es posible configurar los buzones principales de buzón de correo y de archivo de un usuario para que residan en diferentes zonas. Se puede configurar ubican sólo una por cada objeto de usuario.
 
-- Cuando **PreferredDataLocation** está configurado en un usuario con un buzón existente, el buzón de correo se moverán automáticamente a la ubican especificado. 
+- Cuando **PreferredDataLocation** está configurado en un usuario con un buzón existente, el buzón de correo se coloque en una cola de reubicación y se mueve automáticamente a la ubican especificado. 
 
 - Cuando **PreferredDataLocation** está configurado en un usuario sin un buzón existente, el buzón de correo se aprovisionará en el ubican especificado. 
 
-- Si no se especifica ningún ubican, el buzón de correo se colocará en el valor predeterminado ubican.
+- Cuando no se especifica **PreferredDataLocation** en un usuario, el buzón de correo se colocará en el valor predeterminado ubican.
+
+- Si el código de **PreferredDataLocation** es incorrecto (por ejemplo, un tipo de NAN en lugar del nombre), el buzón de correo se colocará en el valor predeterminado ubican.
 
 **Nota**: Multi-ubican capacidades y Skype para profesionales reuniones en línea hospedado regional ambos usan la propiedad **PreferredDataLocation** en objetos de usuario para localizan los servicios. Si configura los valores de **PreferredDataLocation** en objetos de usuario para las reuniones de ámbito regional hospedados, el buzón de correo para esos usuarios se moverá automáticamente a la ubican especificado después de habilita Multi-ubican en el inquilino de Office 365.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitaciones de características para Multi-Geo en Exchange Online
-1. Sólo buzones de usuario, buzones de recursos (buzones de correo de sala y equipamiento) y buzones compartidos admiten características de Multi-ubican. Sólo puede colocar buzones de carpetas públicas y grupos de Office 365 en ubican principal del cliente.
+1. Sólo buzones de usuario, buzones de recursos (buzones de correo de sala y equipamiento) y buzones compartidos admiten características de Multi-ubican. Públicas buzones de carpetas y grupos de Office 365 permanecen en ubican principal del cliente.
  
 2. Seguridad y cumplimiento de normas características (por ejemplo, auditoría y exhibición de documentos electrónicos) que están disponibles en el centro de administración de Exchange (EAC) no están disponibles en las organizaciones Multi-ubican. En su lugar, debe usar el [Centro de cumplimiento y seguridad de Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar las características de seguridad y cumplimiento de normas.
 
 3. Outlook para los usuarios de Mac puede experimentar una pérdida temporal de acceso a su carpeta de archivo en línea mientras mover sus buzones de correo a un nuevo ubican. Esta condición se produce cuando la principal del usuario y buzones de archivo se encuentran en diferentes zonas, debido a que los movimientos de buzones entre ubican pueden completar en momentos diferentes.
 
-4. Los usuarios no pueden compartir *las carpetas de buzón de correo* entre zonas en Outlook, en la web (anteriormente conocido como Outlook Web App u OWA). Por ejemplo, un usuario en la Unión Europea no puede usar Outlook en la web para abrir una carpeta compartida en un buzón que se encuentra en los Estados Unidos. Sin embargo, Outlook en los usuarios de web puede abrir *otros buzones de correo* en diferentes zonas mediante el uso de una ventana del explorador independiente como se describe en [Abra el buzón de otra persona en una ventana del explorador independiente en Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
+4. Los usuarios no pueden compartir *las carpetas de buzón de correo* entre zonas en Outlook, en la web (anteriormente conocido como Outlook Web App u OWA). Por ejemplo, un usuario en la Unión Europea no puede usar Outlook en la web para abrir una carpeta compartida en un buzón que se encuentra en los Estados Unidos. Sin embargo, Outlook en los usuarios de Web puede abrir *otros buzones de correo* en diferentes zonas mediante el uso de una ventana del explorador independiente como se describe en [Abra el buzón de otra persona en una ventana del explorador independiente en Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
 
     **Nota**: compartir una carpeta buzón entre Geo se admite en Outlook en Windows.
-
-5. Actualmente, no es compatible entre ubican delegación de calendario en Outlook en el web. Delegación de calendario entre Geo se admite en Outlook en Windows.
 
 ## <a name="administration"></a>Administración 
 PowerShell remoto es necesario para ver y configurar las propiedades relacionadas con ubican en el entorno de Office 365. Para obtener información sobre los distintos módulos de PowerShell que se utiliza para Office 365, vea [administración de Office 365 y Exchange Online con Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6).
 
-- Necesitará el [Módulo de PowerShell de Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 o más adelante en v1.x para ver la propiedad **PreferredDataLocation** en objetos de usuario. Para conectarse a AD de Windows Azure PowerShell, vea [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell). 
+- Necesitará el [Módulo de PowerShell de Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 o más adelante en v1.x para ver la propiedad **PreferredDataLocation** en objetos de usuario. Objetos de usuario sincronizados a través de AAD conectar en AAD no pueden tener su valor **PreferredDataLocation** modificar directamente a través de PowerShell AAD. Objetos de usuario solo en nube pueden modificarse a través de PowerShell AAD. Para conectarse a AD de Windows Azure PowerShell, vea [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell). 
 
 - Para conectarse a Exchange Online PowerShell, vea [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). 
 
@@ -110,14 +112,14 @@ Para conectarse a un ubican específica, el parámetro *ConnectionUri* es difere
    ```
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
    ```
-3. Ejecute el siguiente comando:
+3. Ejecute el comando siguiente:
     
     ```
     Import-PSSession $Session
     ```
 
 ### <a name="azure-ad-connect-version-requirements"></a>Requisitos de versión de Azure Connect de AD
-Conectar AAD versión 1.1.524.0 o posterior es el único método admitido para establecer la propiedad **PreferredDataLocation** en los objetos de usuario que se sincronizan desde Active Directory local. Para obtener instrucciones detalladas, consulte [sincronización de Azure Active Directory Connect: configurar la ubicación de datos preferido para recursos de Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+Conectar AAD versión 1.1.524.0 o posterior es el único método admitido para establecer la propiedad **PreferredDataLocation** en los objetos de usuario que se sincronizan desde Active Directory local. Objetos de usuario sincronizados a través de AAD conectar en AAD no pueden tener su valor **PreferredDataLocation** modificar directamente a través de PowerShell AAD. Objetos de usuario solo en nube pueden modificarse a través de PowerShell AAD. Para obtener instrucciones detalladas, consulte [sincronización de Azure Active Directory Connect: configurar la ubicación de datos preferido para recursos de Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 ### <a name="geo-codes"></a>Códigos de geo
 Use los códigos de tres letras para especificar el ubican en la propiedad **PreferredDataLocation** . En la siguiente tabla se enumera los códigos de las zonas disponibles:
@@ -125,14 +127,15 @@ Use los códigos de tres letras para especificar el ubican en la propiedad **Pre
 |Geo |Código |
 |---------|---------|
 |Asia Pacífico |APC |
-|Australia |AUSTRALIA |
-|Canadá |PUEDE |
-|Unión Europea |EUROS |
+|Australia |AUS |
+|Canadá |CAN |
+|Unión Europea |EUR |
+|Francia |FRA|
 |India |IND |
-|Japón |JAPONÉS |
-|Corea |COREANO |
+|Japón |JPN |
+|Corea |KOR |
 |Reino Unido |GBR |
-|Estados Unidos |NOMBRE |
+|Estados Unidos |NAM |
 
 **Nota**: las propiedades **PreferredDataLocation** y **MailboxRegion** son cadenas con ninguna comprobación de errores. Si escribe un valor no válido (por ejemplo, NAN) el buzón de correo se colocará en el valor predeterminado ubican.
 
@@ -140,28 +143,43 @@ Use los códigos de tres letras para especificar el ubican en la propiedad **Pre
 Para ver la lista de zonas configuradas en la organización de Exchange Online, ejecute el siguiente comando en Exchange Online PowerShell:
 
 ```
-Get-OrganizationConfig | Select -ExpandProperty AllowedMailboxRegions | Format-Table Region
+Get-OrganizationConfig | Select -ExpandProperty AllowedMailboxRegions | Format-Table
 ```
 
 El resultado del comando tiene este aspecto:
 
 ```
-Region
-------
 APC
 AUS
 CAN
 EUR
+FRA
 GBR
 JPN
 KOR
 NAM
 ```
 
+### <a name="view-the-default-geo-for-your-exchange-online-organization"></a>Ver el valor predeterminado Geo para la organización de Exchange Online
+Para ver la ubican predeterminada de la organización de Exchange Online, ejecute el siguiente comando en Exchange Online PowerShell:
+
+```
+Get-OrganizationConfig | Select DefaultMailboxRegion
+```
+
+El resultado del comando tiene este aspecto:
+
+```
+DefaultMailboxRegion
+--------------------
+NAM
+```
+
+
 ### <a name="find-the-geo-location-of-a-mailbox"></a>Busque la ubicación geográfica de un buzón de correo
 El cmdlet **Get-Mailbox** en Exchange Online PowerShell muestra las siguientes propiedades relacionadas con ubican en los buzones de correo:
 
-- **Base de datos**: el primero 3 letras del nombre de base de datos se corresponden con el código ubican, que indica donde se encuentra actualmente el buzón de correo.
+- **Base de datos**: el primero 3 letras del nombre de base de datos se corresponden con el código ubican, que indica donde se encuentra actualmente el buzón de correo. Propiedad debe utilizarse para buzones de archivo en línea la **ArchiveDatabase** .
 
 - **MailboxRegion**: especifica el código ubican establecido por el administrador (sincronizado desde **PreferredDataLocation** en Azure AD).
 
@@ -187,11 +205,10 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM 
 ```
 
-> [!NOTE]
-> Si el código ubican en el nombre de la base de datos no coincide con el valor de **MailboxRegion** , el buzón de correo se moverán automáticamente a la ubican especificado por el valor de **MailboxRegion** (Exchange Online tiene el mismo aspecto para un error de coincidencia entre estos valores de propiedad).
+> **Nota:** Si el código ubican en el nombre de la base de datos no coincide con el valor de **MailboxRegion** , el buzón de correo será automáticamente pueden colocarse en una cola de reubicación y se mueve a la ubican especificado por el valor de **MailboxRegion** (Exchange Online tiene el mismo aspecto para un error de coincidencia entre estos valores de propiedad).
 
-### <a name="move-an-existing-cloud-mailbox-to-a-specific-geo"></a>Mover un buzón de la nube existente a un ubican específico
-Use los cmdlets **Get-MsolUser** y **Set-MsolUser** en el módulo de AD de Azure para Windows PowerShell para ver o especificar la ubican donde se almacenará el buzón de un usuario.
+### <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo"></a>Mover un buzón de nube existente a un ubican específico
+Un usuario sólo en la nube es un usuario no sincronizar en el inquilino a través de AAD conectar. Este usuario se creó directamente en Azure AD. Use los cmdlets **Get-MsolUser** y **Set-MsolUser** en el módulo de AD de Azure para Windows PowerShell para ver o especificar la ubican donde se almacenará el buzón de un usuario sólo en la nube.
 
 Para ver el valor de **PreferredDataLocation** para un usuario, use esta sintaxis en Azure AD PowerShell:
 
@@ -218,7 +235,7 @@ Para modificar el valor de **PreferredDataLocation** para un objeto de usuario s
 Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoCode>
 ```
 
-Por ejemplo, para establecer el valor de **PreferredDataLocation** a la Unión Europea (EUR) para el usuario michelle@contoso.onmicrosoft.com, ejecute el siguiente comando:
+Por ejemplo, para establecer el valor de **PreferredDataLocation** en el ubican Unión Europea (EUR) para el usuario michelle@contoso.onmicrosoft.com, ejecute el siguiente comando:
 
 ``` 
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
@@ -226,9 +243,9 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 **Notas**:
 
-- Como se mencionó anteriormente sincronizada para objetos de usuario de Active Directory local, no puede usar este procedimiento. Debe cambiar el valor de **PreferredDataLocation** mediante AAD conectar. Para obtener más información, vea [sincronización de Azure Active Directory Connect: configurar la ubicación de datos preferido para recursos de Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation). 
+- Como se ha mencionado anteriormente no puede usar este procedimiento sincronizada para objetos de usuario de Active Directory local. Debe cambiar el valor de **PreferredDataLocation** mediante AAD conectar. Para obtener más información, vea [sincronización de Azure Active Directory Connect: configurar la ubicación de datos preferido para recursos de Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation). 
 
-- Cuánto tiempo tarda para mover un buzón de correo depende de varios factores:
+- Cuánto tiempo tarda para reubicar un mailboxfrom que su ubican actual a la nueva ubican deseada depende de varios factores:
  
   - El tamaño y el tipo de buzón de correo.
  
@@ -248,7 +265,7 @@ Deshabilita los buzones en suspensión por litigio que se conservan para exhibic
 ### <a name="create-new-cloud-mailboxes-in-a-specific-geo"></a>Crear nuevos buzones de correo en la nube en un ubican específico 
 Para crear un nuevo buzón de correo en un ubican específico, necesita realizar cualquiera de estos pasos:
 
-- Configure el valor de **PreferredDataLocation** como se describe en la anterior sección *antes de* crear el buzón en Exchange Online (por ejemplo, configurando el valor de **PreferredDataLocation** en un usuario antes de asignar una licencia). 
+- Configure el valor de **PreferredDataLocation** como se describe en la anterior sección *antes de* que crear el buzón en Exchange Online. Por ejemplo, configure el valor de **PreferredDataLocation** en un usuario antes de asignar una licencia. 
 
 - Asignar una licencia al mismo tiempo, que se establece el valor de **PreferredDataLocation** .
 
@@ -271,7 +288,7 @@ En este ejemplo se crea una nueva cuenta de usuario para Elizabeth Brunner con l
 
 - Licencia: contoso:ENTERPRISEPREMIUM (E5)
 
-Ubicación de 3: Australia (Australia)
+- Ubicación: Australia (Australia)
 
 ```
 New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "Elizabeth Brunner" -FirstName Elizabeth -LastName Brunner -LicenseAssignment contoso:ENTERPRISEPREMIUM -PreferredDataLocation AUS
@@ -279,8 +296,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 
 Para obtener más información sobre cómo crear nuevas cuentas de usuario y búsqueda de valores de LicenseAssignment en Azure AD PowerShell, vea [crear cuentas de usuario con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell) y [ver licencias y servicios con PowerShell de Office 365](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell).
 
-> [!NOTE]
-> Si usa Exchange PowerShell para habilitar un buzón de correo y necesita el buzón de correo que se creará directamente en el ubican que se especifica en **PreferredDataLocation**, debe usar un cmdlet de Exchange Online como **Enable-Mailbox** o **New-Mailbox** directamente en el servicio de nube. Si usa el cmdlet de Exchange local **Enable-RemoteMailbox** , se creará el buzón de correo en el valor predeterminado ubican.
+> **Nota:** Si usa Exchange Online PowerShell para habilitar un buzón de correo y necesita el buzón de correo que se creará directamente en el ubican que se especifica en **PreferredDataLocation**, debe usar un cmdlet de Exchange Online como **Enable-Mailbox** o **New-Mailbox **directamente en el servicio de nube. Si usa el cmdlet de Exchange local **Enable-RemoteMailbox** , se creará el buzón de correo en el valor predeterminado ubican.
 
 ### <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo"></a>Incorporado existentes buzones locales en un ubican específico
 Puede usar las herramientas de incorporación estándar y procesos para migrar un buzón de correo de una organización de Exchange local a Exchange Online, incluido el [panel de la migración en el EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331)y el cmdlet [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch) en Exchange Online PowerShell.
@@ -311,4 +327,3 @@ O bien, puede usar los siguientes pasos para los buzones de correo incorporados 
 
 ### <a name="multi-geo-reporting"></a>Multi-ubican informes
 **Multi-ubican los informes de uso** en el centro de administración de Office 365 muestra el recuento de usuarios por ubican. El informe muestra la distribución de usuario para el mes actual y proporciona datos históricos de los últimos 6 meses.
- 

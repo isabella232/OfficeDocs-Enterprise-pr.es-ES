@@ -3,11 +3,13 @@ title: Red virtual simulada entre locales en Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/18/2018
+ms.date: 07/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Resumen: cree una red virtual simulada entre locales en Microsoft Azure como un entorno de desarrollo y pruebas.'
-ms.openlocfilehash: 42ef04a92794c8df53d3de32970db78d4dcf3119
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 0aee14af136e0874c259faac26d83d85b188a7c7
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193670"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915345"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Red virtual simulada entre locales en Azure
 
@@ -28,7 +30,7 @@ ms.locfileid: "19193670"
   
 En este artículo se le indicará el proceso de creación de un entorno de nube híbrida simulado con Microsoft Azure mediante dos redes virtuales de Azure. Esta es la configuración resultante. 
   
-![Fase 3 del entorno de desarrollo y pruebas de la red virtual simulada entre locales, con la máquina virtual DC2 en la VNet XPrem](images/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Fase 3 del entorno de desarrollo y pruebas de la red virtual simulada entre locales, con la máquina virtual DC2 en la VNet XPrem](media/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 Esta configuración simula un entorno de producción de nube híbrida de IaaS de Azure y está formada por:
   
@@ -57,7 +59,7 @@ Existen tres fases principales para configurar el entorno de desarrollo y prueba
 > [!NOTE]
 > Esta configuración necesita una suscripción de pago de Azure. 
   
-![Guías del entorno de pruebas en Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guías del entorno de pruebas en Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
@@ -68,7 +70,7 @@ Siga las instrucciones que aparecen en [Configuración básica del entorno de de
   
 Esta es su configuración actual. 
   
-![Fase 4 de la configuración básica en Azure con la máquina virtual CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Fase 4 de la configuración básica en Azure con la máquina virtual CLIENT1](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 ## <a name="phase-2-create-the-xprem-virtual-network"></a>Fase 2: Crear la red virtual XPrem
 
@@ -127,7 +129,7 @@ Add-AzureRmVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -Rem
 
 Esta es su configuración actual. 
   
-![Fase 2 del entorno de desarrollo y pruebas de la red virtual simulada entre locales, con la relación de emparejamiento de VNet y la VNet XPrem](images/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
+![Fase 2 del entorno de desarrollo y pruebas de la red virtual simulada entre locales, con la relación de emparejamiento de VNet y la VNet XPrem](media/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
 ## <a name="phase-3-configure-dc2"></a>Fase 3: Configurar DC2
 
@@ -146,8 +148,8 @@ $cred=Get-Credential -Message "Type the name and password of the local administr
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName DC2 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "DC2-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
-$diskConfig=New-AzureRmDiskConfig -AccountType "StandardLRS" -Location $locName -CreateOption Empty -DiskSizeGB 20
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name "DC2-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "Standard_LRS"
+$diskConfig=New-AzureRmDiskConfig -AccountType "Standard_LRS" -Location $locName -CreateOption Empty -DiskSizeGB 20
 $dataDisk1=New-AzureRmDisk -DiskName "DC2-DataDisk1" -Disk $diskConfig -ResourceGroupName $rgName
 $vm=Add-AzureRmVMDataDisk -VM $vm -Name "DC2-DataDisk1" -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
@@ -199,7 +201,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 Esta es su configuración actual. 
   
-![Fase 3 del entorno de desarrollo y pruebas de la red virtual simulada entre locales, con la máquina virtual DC2 en la VNet XPrem](images/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Fase 3 del entorno de desarrollo y pruebas de la red virtual simulada entre locales, con la máquina virtual DC2 en la VNet XPrem](media/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 Ya puede probar el entorno simulado de nube híbrida de Azure.
   

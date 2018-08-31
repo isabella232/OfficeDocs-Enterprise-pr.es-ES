@@ -1,5 +1,5 @@
 ---
-title: "Diseño de redes para PaaS de Microsoft Azure"
+title: Diseño de redes para PaaS de Microsoft Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: 'Resumen: aprenda a optimizar la red para obtener acceso a PaaS de Microsoft Azure.'
-ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.openlocfilehash: d20bb5adb46592363926a2926752ed345823c26e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915115"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Diseño de redes para PaaS de Microsoft Azure
 
@@ -46,7 +49,7 @@ Las aplicaciones de la organización hospedadas en PaaS de Azure requieren ancho
     
 **Figura 1: Opciones de conexión para conectarse a los servicios PaaS de Azure**
 
-![Figura 1: Opciones de conexión de los servicios PaaS de Azure](images/Network_Poster/PaaS1.png)
+![Figura 1: Opciones de conexión de los servicios PaaS de Azure](media/Network-Poster/PaaS1.png)
   
 La figura 1 muestra una red local que se conecta a los servicios PaaS de Azure a través de una canalización de Internet o ExpressRoute.
   
@@ -56,7 +59,7 @@ Enrutamiento de nivel de aplicación y servicios de equilibrio de carga que perm
   
 **Figura 2: Puerta de enlace de aplicaciones de Azure**
 
-![Figura 2: Servicio de puerta de enlace de aplicaciones de Azure](images/Network_Poster/PaaS2.png)
+![Figura 2: Servicio de puerta de enlace de aplicaciones de Azure](media/Network-Poster/PaaS2.png)
   
 La figura 2 muestra la Puerta de enlace de aplicaciones de Azure y cómo las solicitudes de usuario que proceden de Internet pueden enrutarse hacia las aplicaciones web de Azure, los servicios en la nube o las máquinas virtuales.
   
@@ -86,7 +89,7 @@ Este es un ejemplo de tres aplicaciones web distribuidas geográficamente.
   
 **Figura 3: Administrador de tráfico de Azure**
 
-![Figura 3: Administrador de tráfico de Azure](images/Network_Poster/PaaS3.png)
+![Figura 3: Administrador de tráfico de Azure](media/Network-Poster/PaaS3.png)
   
 La figura 3 muestra el proceso básico que el Administrador de tráfico usa para enrutar las solicitudes hacia tres aplicaciones web de Azure diferentes en Estados Unidos, Europa y Asia. En el ejemplo:
   

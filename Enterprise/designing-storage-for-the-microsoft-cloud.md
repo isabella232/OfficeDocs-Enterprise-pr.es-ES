@@ -1,5 +1,5 @@
 ---
-title: "Diseño de almacenamiento de información para la nube de Microsoft"
+title: Diseño del almacenamiento para la nube de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,55 +8,58 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
-description: "Resumen: Comprender por qué necesita almacenamiento en nube y revise la lista de opciones de almacenamiento de nube de Microsoft y los escenarios de almacenamiento de claves."
-ms.openlocfilehash: ed816743e2d85a622a3fbfbb129bf90a7db93881
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumen: Comprender por qué necesita almacenamiento en la nube y revise la lista de opciones de almacenamiento en la nube de Microsoft y los escenarios de almacenamiento de claves.'
+ms.openlocfilehash: d96992d63115095dd6a1b7277886d0a4bb2bc02f
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915235"
 ---
-# <a name="designing-storage-for-the-microsoft-cloud"></a>Diseño de almacenamiento de información para la nube de Microsoft
+# <a name="designing-storage-for-the-microsoft-cloud"></a>Diseño del almacenamiento para la nube de Microsoft
 
- **Resumen:** Comprender por qué necesita almacenamiento en nube y revise la lista de opciones de almacenamiento de nube de Microsoft y los escenarios de almacenamiento de claves.
+ **Resumen:** Comprender por qué necesita almacenamiento en la nube y revise la lista de opciones de almacenamiento en la nube de Microsoft y los escenarios de almacenamiento de claves.
   
-Integración de su almacenamiento de información con servicios de nube de Microsoft proporciona acceso a una amplia gama de opciones de plataformas de nube y los servicios.
+Integración de su almacenamiento de información con los servicios de nube de Microsoft le proporciona acceso a una amplia gama de opciones de plataforma de servicios y en la nube.
   
 ## <a name="why-cloud-storage"></a>¿Por qué almacenamiento en nube?
 
-Existen dos razones fundamentales para utilizar el almacenamiento en la nube.
+Hay dos motivos principales para usar el almacenamiento en la nube.
   
-1. Velocidad de salida al mercado:
+1. Velocidad de mercado:
     
-  - Configuración más rápida para alta disponibilidad y recuperación ante desastres
+  - Configuración más rápido para alta disponibilidad y recuperación ante desastres
     
   - No hay hardware de almacenamiento para comprar
     
-  - Fontanería integrado proporcionado por las ofertas de nube de Microsoft
+  - Instalaciones sanitarias integrados proporcionados por las ofertas de nube de Microsoft
     
-  - Disponible desde cualquier lugar del mundo
+  - Disponible en cualquier lugar del mundo
     
 2. Disminuir los costos para mantener:
     
-  - Elasticidad para escalar y bajar sus exigencias de almacenamiento de información
+  - Elasticidad para escalar hacia arriba y abajo sus exigencias de almacenamiento de información
     
   - No hay hardware de almacenamiento de información para mantener o migrar
     
-  - Microsoft es su fontanero integrado para mantener y mejorar la infraestructura
+  - Microsoft es su fontanero integrada para mantener y mejorar la infraestructura
     
   - Mejor seguridad de almacenamiento de información en el mercado con mejoras continuas
     
-## <a name="microsoft-cloud-storage-options"></a>Opciones de almacenamiento de nube de Microsoft
+## <a name="microsoft-cloud-storage-options"></a>Opciones de almacenamiento en la nube de Microsoft
 
-Para ayudarle a comprender la amplia variedad de opciones de almacenamiento de nube, utilizamos una analogía de construcción.
+Para ayudarle a comprender la amplia variedad de opciones de almacenamiento en la nube, usamos una analogía de construcción.
   
-### <a name="move-in-ready"></a>Mover en listo
+### <a name="move-in-ready"></a>Listo para la instalación
 
-Utilice estas soluciones ya preparadas que se incluyen con servicios existentes. Utilizar inmediatamente y con una configuración mínima.
+Use estas soluciones ya preparadas que se empaquetan con servicios existentes. Utilizar inmediatamente y con la configuración mínima.
   
-- Office 365
+- Creación de inquilino
     
 - Microsoft Intune
     
@@ -66,43 +69,43 @@ Utilice estas soluciones ya preparadas que se incluyen con servicios existentes.
     
 - Visual Studio Team Services
     
-- Recuperación de sitio de Azure
+- Azure Site Recovery
     
-- Yammer sitio compartir
+- Sitio de uso compartido de yammer
     
 - Copia de seguridad de Azure
     
-Para los detalles de cada una de estas opciones de almacenamiento en nube, consulte [mover en listo](move-in-ready.md).
+Para los detalles de cada una de estas opciones de almacenamiento en nube, consulte [Move en listo](move-in-ready.md).
   
-### <a name="some-assembly-required"></a>Algunos ensamblados necesarios
+### <a name="some-assembly-required"></a>Se necesitan algunos ensamblados
 
-Utilice estos servicios existentes como punto de partida para la solución de almacenamiento con una configuración adicional o de codificación para un ajuste personalizado.
+Utilice estos servicios existentes como un punto de partida para su solución de almacenamiento con una configuración adicional o codificación para que se ajusten personalizado.
   
 - Red de entrega de contenido de Azure
     
-- Servicios de Azure Media
+- Servicios de multimedia de Azure
     
 - HdInsight
     
-- Caché de Azure Redis
+- Memoria caché Redis Azure
     
 - Base de datos SQL de Azure
     
 - SQL Server en una máquina virtual de Azure
     
-- Azure Cosmos DB
+- DB Cosmos Azure
     
 - StorSimple
     
 - Almacén de datos SQL Azure
     
-- Lago de Azure Data Store
+- Almacén de lago de datos de Azure
     
-Para los detalles de cada una de estas opciones de almacenamiento de nube, vea [necesario algún ensamblado](some-assembly-required.md).
+Para obtener detalles de cada una de estas opciones de almacenamiento en la nube, vea [algunos ensamblado necesarios](some-assembly-required.md).
   
-### <a name="build-from-the-ground-up"></a>Crear desde el principio
+### <a name="build-from-the-ground-up"></a>Crear desde cero
 
-Utilice estos pilares de almacenamiento de información, junto con la codificación, para crear su propia solución de almacenamiento de información o aplicaciones desde cero.
+Use estos bloques de creación de almacenamiento, junto con codificación, para crear su propia solución de almacenamiento o aplicaciones desde el principio.
   
 - Almacenamiento de Azure (archivos)
     
@@ -112,49 +115,49 @@ Utilice estos pilares de almacenamiento de información, junto con la codificaci
     
 - Almacenamiento de Azure (tablas)
     
-Para los detalles de cada una de estas opciones de almacenamiento de nube, vea [Generar desde la base](build-from-the-ground-up.md).
+Para obtener detalles de cada una de estas opciones de almacenamiento en la nube, vea [crear desde cero](build-from-the-ground-up.md).
   
 ## <a name="key-storage-scenarios"></a>Escenarios de almacenamiento de claves
 
-Aquí están los escenarios clave que requieren almacenamiento de información basados en cloud:
+Estos son los principales escenarios que requieren almacenamiento de información basada en la nube:
   
-- Datos de la caché
+- Datos de la memoria caché
     
-    Acelerar el acceso a datos utilizados habitualmente almacenándola en una memoria caché de alta velocidad.
+    Acelerar el acceso a los datos usados con más frecuencia mediante el almacenamiento en una memoria caché de alta velocidad.
     
 - Colaborar con los miembros del equipo
     
-    Conceder permiso a varios usuarios para permitir el acceso a los datos en el almacenamiento en la nube.
+    Conceder permisos a varios usuarios para permitir el acceso a datos en el almacenamiento en la nube.
     
 - Administrar datos
     
-    Almacenar, mover o eliminar datos de forma masiva interna o externa.
+    Almacenar, mover o eliminar datos de forma masiva interno o externo.
     
 - Administrar el código fuente
     
-    Cargar, colaborar y ejecutar archivos de código de la aplicación en la nube.
+    Cargar, colaborar y archivos de código de aplicaciones se ejecutan en la nube.
     
 - Archivos de copia de seguridad
     
-    Almacenar copias de los datos internos o externos fuera del sitio en varias ubicaciones de la nube.
+    Almacenar copias de los datos internos o externos fuera del sitio en varias ubicaciones en la nube.
     
-- Publicar las comunicaciones de la empresa
+- Publicación de comunicaciones de la empresa
     
-    Crear un único punto de publicación de mensajes internos o externos.
+    Crear un único punto de publicación para los mensajes internos o externos.
     
 - Distribuir millones de eventos
     
-    Crear almacenamiento para la ingestión de telemetría de sitios Web, aplicaciones y dispositivos.
+    Crear almacenamiento para ingesta de telemetría de sitios Web, aplicaciones y dispositivos.
     
-- Administrar y servir vídeos
+- Administrar/serve vídeos
     
-    Almacenar y servir contenido de vídeo a los clientes o usuarios de la organización.
+    Almacenar y atender a contenido de vídeo a los clientes o usuarios de la organización.
     
 ## <a name="next-step"></a>Paso siguiente
 
-Revise las opciones de almacenamiento de nube [mover en listo](move-in-ready.md) .
+Revise las opciones de almacenamiento en la nube de [movimiento en listo](move-in-ready.md) .
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Almacenamiento de Microsoft Cloud para arquitectos empresariales](microsoft-cloud-storage-for-enterprise-architects.md)
   

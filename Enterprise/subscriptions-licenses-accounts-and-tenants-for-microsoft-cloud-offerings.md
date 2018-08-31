@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumen: comprenda las relaciones de las organizaciones, las suscripciones, las licencias, las cuentas de usuario y los espacios empresariales en las ofertas de la nube de Microsoft.'
-ms.openlocfilehash: 53d2f7f32402d8c05d22c0661a0f625c756da6d4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: ebddd97afb2c45821cd25eae5e8124459720df0b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319221"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915205"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, cuentas y espacios empresariales para las ofertas de la nube de Microsoft
 
@@ -62,7 +64,7 @@ Las organizaciones pueden tener varias suscripciones para las ofertas de la nube
   
 **Ilustración 1: Ejemplo de varias suscripciones para una organización**
 
-![Una organización de ejemplo con varias suscripciones para las ofertas de la nube de Microsoft.](images/Subscriptions/Subscriptions_Fig1.png)
+![Una organización de ejemplo con varias suscripciones para las ofertas de la nube de Microsoft.](media/Subscriptions/Subscriptions-Fig1.png)
 
   
 En la ilustración 1, se muestra una sola organización con varias suscripciones de Office 365, una suscripción de Intune, una suscripción de Dynamics 365 y varias suscripciones de Azure.
@@ -73,7 +75,7 @@ Para las ofertas de la nube de SaaS de Microsoft, una licencia permite a una cue
   
 **Ilustración 2: Licencias en las suscripciones basadas en SaaS para una organización**
 
-![Un ejemplo de varias licencias de suscripciones para las ofertas de la nube de Microsoft basadas en SaaS.](images/Subscriptions/Subscriptions_Fig2.png)
+![Un ejemplo de varias licencias de suscripciones para las ofertas de la nube de Microsoft basadas en SaaS.](media/Subscriptions/Subscriptions-Fig2.png)
   
 Para los servicios en la nube basados en PaaS de Azure, las licencias de software están integradas en los precios del servicio.
   
@@ -89,7 +91,7 @@ En la ilustración 3, se muestra un ejemplo de varias suscripciones de una organ
   
 **Ilustración 3: Varias suscripciones de una organización que usan el mismo espacio empresarial de Azure AD**
 
-![Una organización de ejemplo con varias suscripciones que usan el mismo espacio empresarial de Azure AD.](images/Subscriptions/Subscriptions_Fig3.png)
+![Una organización de ejemplo con varias suscripciones que usan el mismo espacio empresarial de Azure AD.](media/Subscriptions/Subscriptions-Fig3.png)
   
 ### <a name="tenants"></a>Espacios empresariales
 
@@ -131,7 +133,7 @@ Varias suscripciones de la oferta de la nube de Microsoft pueden usar el mismo i
   
 **Ilustración 4: Cuentas locales sincronizadas e IDaaS para una organización**
 
-![IDaaS de identidad como servicio (IaaS) para su organización.](images/Subscriptions/Subscriptions_Fig4.png)
+![IDaaS de identidad como servicio (IaaS) para su organización.](media/Subscriptions/Subscriptions-Fig4.png)
   
 En la figura 4, se muestra cómo las ofertas de la nube de SaaS de Microsoft, las aplicaciones de PaaS de Azure y las máquinas virtuales de IaaS de Azure que usan Azure AD Domain Services usan un inquilino común de Azure AD. Azure AD Connect sincroniza el bosque de Windows Server AD local con el inquilino de Azure AD.
   

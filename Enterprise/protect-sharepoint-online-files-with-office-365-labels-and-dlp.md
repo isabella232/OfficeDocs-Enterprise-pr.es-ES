@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumen: Aplique directivas de etiquetas y prevención de pérdida de datos (DLP) de Office 365 a sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: 439f59f683090d39ea98730854aa1ca5dc8db482
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 1e83f8c08dde55c22b7b9e8e6f9fe966c9fe9c02
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319271"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915785"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Proteger archivos de SharePoint Online con DLP y etiquetas de Office 365
 
@@ -127,7 +129,7 @@ Siga estos pasos para aplicar las etiquetas de Office 365 a las carpetas de docu
     
 Esta es la configuración resultante.
   
-![Etiquetas de Office 365 para los cuatro tipos de sitios de grupo de SharePoint Online.](images/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
+![Etiquetas de Office 365 para los cuatro tipos de sitios de grupo de SharePoint Online.](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>Directivas de DLP para los sitios de SharePoint Online
 
@@ -178,7 +180,7 @@ Siga estos pasos para configurar una directiva de DLP que notifique a los usuari
     
 Esta es la configuración resultante para los sitios de grupo confidenciales de SharePoint Online.
   
-![Directiva de DLP de un sitio de grupo aislado de SharePoint Online que utiliza la etiqueta Confidencial de Office 365.](images/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![Directiva de DLP de un sitio de grupo aislado de SharePoint Online que utiliza la etiqueta Confidencial de Office 365.](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 Ahora siga estos pasos para configurar una directiva de DLP que impida a los usuarios compartir un documento en un sitio de grupo extremadamente confidencial de SharePoint Online de fuera de la organización.
   
@@ -226,7 +228,7 @@ Ahora siga estos pasos para configurar una directiva de DLP que impida a los usu
     
 Esta es la configuración resultante para los sitios de grupo extremadamente confidenciales de SharePoint Online.
   
-![Directiva de DLP de un sitio de grupo aislado de SharePoint Online que utiliza la etiqueta Extremadamente confidencial de Office 365.](images/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![Directiva de DLP de un sitio de grupo aislado de SharePoint Online que utiliza la etiqueta Extremadamente confidencial de Office 365.](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>Paso siguiente
 

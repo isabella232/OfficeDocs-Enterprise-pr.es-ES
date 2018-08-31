@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilice este tema para obtener más información acerca de la característica de administración de acceso con privilegios en Office 365
-ms.openlocfilehash: b2db3e16e53cca7deb2bf8fbff61b5b981f42fa6
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 22286d4f91ffa0bd3c49f028681d20e36d14283d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319211"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915395"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Con privilegios de acceso a la administración de Office 365
 
@@ -46,7 +48,7 @@ Siga los pasos descritos en [conectarse a Exchange Online PowerShell mediante au
 ### <a name="step-1---create-an-approvers-group"></a>Paso 1: crear el grupo del aprobador
 En el Portal de administración de Office 365, seleccione **grupos** > **Agregar un grupo**, a continuación, cree un grupo de seguridad habilitado para correo para los aprobadores de acceso predeterminada con privilegios. Cuando haya terminado, seleccione **Agregar** para crear y guardar el grupo de aprobadores.
 
-![Pantalla de aprobadores con privilegios de acceso en el portal de administración de Office 365](images/privileged-access-approvers-ui.png)
+![Pantalla de aprobadores con privilegios de acceso en el portal de administración de Office 365](media/privileged-access-approvers-ui.png)
 
 > [!NOTE] 
 > En este momento, sólo los usuarios con acceso administrativo pueden aprobar las solicitudes de acceso de Office 365 privilegiada. En el futuro, cualquier usuario que forma parte del grupo de los aprobadores podrán aprobar las solicitudes de acceso.
@@ -140,7 +142,7 @@ Disable-ElevatedAccessControl
 ## <a name="managed-access-to-microsoft-graph-in-microsoft-azure"></a>Acceso a administrada para Microsoft Graph en Microsoft Azure
 
 > [!IMPORTANT]
-> En esta sección se describe cómo instrucciones de implementación y configuración para una característica de Microsoft Graph versión beta pública sólo está disponible actualmente en Office 365 E5 y avanzada SKU de cumplimiento.
+> En esta sección se describe cómo obtener información detallada acerca de una característica que sólo está disponible en vista previa.
 
 Acceso administrado para Microsoft Graph en Microsoft Azure es un servicio que ayuda a las organizaciones a ejercer un nivel de control sobre sus datos de Office 365 específico. Este sistema permite que los desarrolladores de aplicaciones seguir entendimiento con los datos. 
 

@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Resumen: use esta guía del entorno de pruebas para crear un entorno de desarrollo y pruebas donde se incluyan todas las ofertas de la nube de Microsoft.'
-ms.openlocfilehash: 29fcb1108ceac6aa488ca71d723789a7a2e6c409
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915635"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>El entorno de desarrollo y pruebas de One Microsoft Cloud
 
@@ -27,7 +30,7 @@ ms.lasthandoff: 04/27/2018
   
 Con las instrucciones que aparecen en este artículo, creará una intranet simulada en los servicios de infraestructura de Microsoft Azure y, después, agregará suscripciones de Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS) y Microsoft Dynamics 365. El resultado es una organización simplificada que usa todas las ofertas de la nube de Microsoft al mismo tiempo en un único entorno de desarrollo y pruebas. 
   
-![Fase 3 del entorno de desarrollo y pruebas de One Microsoft Cloud con Azure, Office 365, EMS y Dynamics 365](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Fase 3 del entorno de desarrollo y pruebas de One Microsoft Cloud con Azure, Office 365, EMS y Dynamics 365](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 Puede usar la configuración resultante para:
   
@@ -47,7 +50,7 @@ En la ilustración 1, se muestra la configuración resultante, donde se incluye 
   
 **Ilustración 1: La intranet simulada en Azure con Office 365**
 
-![El entorno de desarrollo y pruebas de Office 365 con DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![El entorno de desarrollo y pruebas de Office 365 con DirSync](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 > [!NOTE]
 > La prueba de Azure dura 30 días. La suscripción de prueba de Office 365 Enterprise E5 dura 30 días y se puede ampliar fácilmente durante otros 30 días. Para obtener un entorno de desarrollo y pruebas permanente, cree una suscripción de Azure de pago y una suscripción de Office 365 Enterprise E5 con un número reducido de licencias. 
@@ -93,7 +96,7 @@ En la ilustración 2, se muestra la configuración resultante, que agrega EMS.
   
 **Ilustración 2: La intranet simulada en Azure con Office 365 y EMS**
 
-![Fase 2 del entorno de desarrollo y pruebas de One Microsoft Cloud con Azure, Office 365 y EMS](images/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
+![Fase 2 del entorno de desarrollo y pruebas de One Microsoft Cloud con Azure, Office 365 y EMS](media/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
   
 ## <a name="phase-3-add-dynamics-365"></a>Fase 3: Agregar Dynamics 365
 
@@ -171,7 +174,7 @@ En la ilustración 3, se muestra la configuración resultante.
   
 **Ilustración 3: La intranet simulada en Azure con Office 365, EMS y Dynamics 365**
 
-![Fase 3 del entorno de desarrollo y pruebas de One Microsoft Cloud con Azure, Office 365, EMS y Dynamics 365](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Fase 3 del entorno de desarrollo y pruebas de One Microsoft Cloud con Azure, Office 365, EMS y Dynamics 365](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 ## <a name="next-steps"></a>Pasos siguientes
 

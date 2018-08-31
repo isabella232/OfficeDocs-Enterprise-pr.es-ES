@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
-description: 'Resumen: Comprender los escenarios y la arquitectura híbrida para infraestructura de Microsoft como servicio (IaaS)-según las ofertas de nube en Azure.'
-ms.openlocfilehash: e64d20987946e05afa7afc4d64e071112ef58d10
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+description: 'Resumen: Conozca la arquitectura híbrida y los escenarios para la infraestructura de Microsoft como un servicio (IaaS)-en función de las ofertas de nube en Azure.'
+ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915035"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Escenarios de nube híbrida para Azure IaaS
 
- **Resumen:** Comprender los escenarios y la arquitectura híbrida para infraestructura de Microsoft como servicio (IaaS)-según las ofertas de nube en Azure.
+ **Resumen:** Comprender la arquitectura híbrida y los escenarios para la infraestructura de Microsoft como un servicio (IaaS)-en función de las ofertas de nube en Azure.
   
 Extienda su infraestructura informática y de identidad local a la nube mediante el hospedaje de las cargas de trabajo de TI que se ejecutan en redes virtuales (VNet) de Azure entre locales.  
   
@@ -28,9 +29,9 @@ Extienda su infraestructura informática y de identidad local a la nube mediante
 
 En la figura 1, se muestra la arquitectura de escenarios híbridos basados en IaaS de Microsoft en Azure.
   
-**Figura 1: Escenarios de híbrida basada en IaaS Microsoft en Azure**
+**Figura 1: Escenarios híbridos basados en IaaS de Microsoft en Azure**
 
-![Escenarios híbridos basados en IaaS de Microsoft en Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS.png)
+![Escenarios híbridos basados en IaaS de Microsoft en Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS.png)
   
 Para cada capa de la arquitectura:
   
@@ -54,11 +55,11 @@ Para cada capa de la arquitectura:
 
 Ejecutar el servidor de sincronización de directorios (DirSync) desde una red virtual de Azure, como se muestra en la Figura 2, es un ejemplo de la ampliación de la infraestructura informática y de identidad a la nube.
   
-**Figura 2: Servidor de sincronización de directorios para Office 365 en Azure IaaS**
+**Figura 2: Servidor de sincronización de directorios para Office 365 en IaaS de Azure**
 
-![Servidor de sincronización de directorios para Office 365 en IaaS de Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_DirSync.png)
+![Servidor de sincronización de directorios para Office 365 en IaaS de Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-En la figura 2, una red local aloja una infraestructura Windows Server AD, con un servidor proxy y un enrutador en su borde. El enrutador se conecta a una puerta de enlace de Azure en el borde de un VNet de Azure con una conexión de sitio a sitio VPN o ExpressRoute. Dentro de la VNet, un servidor de sincronización de directorios ejecuta en Azure Connect de AD.
+En la figura 2, una red local hospeda una infraestructura de Windows Server AD, con un servidor proxy y un enrutador en su borde. El enrutador se conecta a una puerta de enlace de Azure en el borde de un VNet de Azure con una conexión de sitio a sitio VPN o ExpressRoute. Dentro de la VNet, un servidor de sincronización de directorios ejecuta en Azure Connect de AD.
   
 Un servidor de sincronización de directorios para Office 365 sincroniza la lista de cuentas en Windows Server AD con el inquilino de Azure AD de una suscripción de Office 365.
   
@@ -66,19 +67,22 @@ Un servidor de sincronización de directorios es un servidor basado en Windows q
   
 El servidor de sincronización de directorios sondea Windows Server AD para obtener los cambios y, después, los sincroniza con la suscripción de Office 365.
   
-Para obtener más información, vea [Implementar Office 365 DirSync en Azure](https://technet.microsoft.com/library/dn635310.aspx).
+Para obtener más información, vea [Configurar la sincronización de Active directory para Office 365](set-up-directory-synchronization.md).
   
 ## <a name="line-of-business-lob-application"></a>Aplicación de línea de negocio (LOB)
 
 En la figura 3 se muestra la configuración de una aplicación LOB basada en servidor que se ejecuta en IaaS de Azure.
   
-**Figura 3: Aplicación de LOB en Azure IaaS**
+**Figura 3: Aplicación LOB en IaaS de Azure**
 
-![Aplicación de LOB basada en servidor en IaaS de Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_Ex.png)
+![Aplicación de LOB basada en servidor en IaaS de Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-Ex.png)
   
 En la figura 3, una red local hospeda usuarios y una infraestructura de identidad. Está conectada a una puerta de enlace de IaaS de Azure con una VPN de sitio a sitio o con una conexión ExpressRoute. IaaS de Azure hospeda una red virtual que contiene los servidores de la aplicación LOB.
   
-Puede crear aplicaciones de LOB ejecuta en Azure VM, que residen en las subredes de un VNet de Azure en un centro de datos de Azure (también conocido como una ubicación).
+Puede crear aplicaciones LOB que se ejecuten en máquinas virtuales de Azure, que residen en subredes de una red virtual de Azure en un centro de datos de Azure (también conocido como una ubicación). 
+
+
+
   
 Dado que básicamente está extendiendo su infraestructura local a Azure, debe asignar espacio de direcciones privadas únicas a su redes virtuales y actualizar sus tablas de enrutamiento locales para garantizar la accesibilidad a cada red virtual.
   
@@ -86,7 +90,7 @@ Una vez conectadas, estas máquinas virtuales pueden administrarse con conexione
   
 Al configurar puertos expuestos de forma pública, los usuarios móviles o remotos también pueden tener acceso a estas máquinas virtuales desde Internet.
   
-Para una configuración de prueba de concepto, vea [simulada entre local red virtual en Azure](simulated-cross-premises-virtual-network-in-azure.md).
+Para obtener una configuración de prueba de concepto, consulte [Simulated cross-premises virtual network in Azure](simulated-cross-premises-virtual-network-in-azure.md).
   
 Los siguientes son atributos de las aplicaciones LOB hospedadas en máquinas virtuales de Azure:
   
@@ -110,9 +114,9 @@ Los siguientes son atributos de las aplicaciones LOB hospedadas en máquinas vir
 
 Un ejemplo de una aplicación LOB de niveles múltiples y de alta disponibilidad en Azure es una granja de servidores de SharePoint Server 2016, como se muestra en la figura 4.
   
-**Figura 4: Una granja de alta disponibilidad 2016 de SharePoint Server en Azure IaaS**
+**Figura 4: Una granja de servidores de SharePoint Server 2016 de alta disponibilidad en laaS de Azure**
 
-![Una granja de servidores de SharePoint Server 2016 de alta disponibilidad en laaS de Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_SP2016.png)
+![Una granja de servidores de SharePoint Server 2016 de alta disponibilidad en laaS de Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-SP2016.png)
   
 En la figura 4, una red local hospeda usuarios y una infraestructura de identidad. Está conectada a una puerta de enlace de IaaS de Azure con una VPN de sitio a sitio o con una conexión ExpressRoute. La red virtual de Azure contiene los servidores de la granja de SharePoint Server 2016, que incluye niveles independientes para los servidores de front-end, los servidores de aplicaciones, el clúster de SQL Server y los controladores de dominio.
   
@@ -120,7 +124,8 @@ Esta configuración tiene los siguientes atributos de aplicaciones LOB en Azure:
   
 - Niveles
     
-    Ejecutan funciones diferentes dentro de la granja de servidores crean los niveles y cada nivel tiene su propia subred.
+    Los servidores que ejecutan diferentes roles dentro de la granja crean los niveles, y cada nivel tiene su propia subred.
+
     
 - Alta disponibilidad
     
@@ -138,27 +143,27 @@ Siga esta ruta de acceso para realizar una adopción correcta:
   
 1. Evaluar y experimentar
     
-    Consulte [SharePoint Server 2016 en Azure de Microsoft](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx) a comprender las ventajas de ejecutar SharePoint Server 2016 en Azure.
+    Vea [2016 de servidor de SharePoint en Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) para comprender las ventajas de ejecutar SharePoint Server 2016 en Azure.
     
-    Ver [Intranet 2016 de servidor de SharePoint en el entorno de pruebas y desarrollo de Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx) para crear un entorno de desarrollo/pruebas simuladas
+    Vea [2016 de servidor de SharePoint de Intranet en el entorno de desarrollo o prueba Azure](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment) para crear un entorno de desarrollo o prueba simulado
     
 2. Diseño
     
-    Vea el [Diseño de una granja de SharePoint Server 2016 en Azure](https://technet.microsoft.com/library/mt779108%28v=office.16%29.aspx) paso a paso a través de un proceso para determinar el conjunto de redes de IaaS Azure compute y elementos de almacenamiento para alojar el conjunto de servidores y su configuración.
+    Vea el [Diseño de una granja de servidores de SharePoint Server 2016 en Azure](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure) paso a paso a través de un proceso para determinar el conjunto de redes de Azure IaaS, compute y elementos de almacenamiento para hospedar la granja de servidores y su configuración.
     
 3. Implementar
     
-    Vea [implementar SharePoint Server 2016 con grupos de disponibilidad de SQL Server AlwaysOn en Azure](https://technet.microsoft.com/library/mt793552%28v=office.16%29.aspx) paso a paso a través de la configuración de end-to-end de la granja de servidores de alta disponibilidad en cinco fases.
+    Vea la [implementación de SharePoint Server 2016 con grupos de disponibilidad de SQL Server AlwaysOn en Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) paso a paso a través de la configuración de end-to-end de la granja de servidores de alta disponibilidad en cinco fases.
     
 ## <a name="federated-identity-for-office-365-in-azure"></a>Identidad federada para Office 365 en Azure
 
-Otro ejemplo de una aplicación empresarial de varios niveles y altamente disponible en Azure es identidad federada para Office 365.
+Otro ejemplo de una aplicación de línea de negocio de varios nivel y de alta disponibilidad en Azure es la identidad federada para Office 365.
   
-**Figura 5: Una infraestructura de alta disponibilidad de identidad federada para Office 365 en Azure IaaS**
+**La figura 5: Una infraestructura de identidad federada de alta disponibilidad para Office 365 en IaaS de Azure**
 
-![La configuración final de la infraestructura de la autenticación federada de Office 365 con alta disponibilidad en Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_ADFS.png)
+![La configuración final de la infraestructura de la autenticación federada de Office 365 con alta disponibilidad en Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
-En la figura 5, una red local aloja usuarios y una infraestructura de identidad. Está conectado a una puerta de enlace de Azure IaaS con una conexión de sitio a sitio VPN o ExpressRoute. El VNet de Azure contiene controladores de dominio de Windows Server Active Directory (AD), servidores de servicios de federación de Active Directory (AD FS) y servidores proxy web.
+En la figura 5, una red local hospeda una infraestructura de identidad y a los usuarios. Se conecta a una puerta de enlace de IaaS de Azure con una conexión de sitio a sitio VPN o ExpressRoute. El VNet de Azure contiene controladores de dominio de Windows Server Active Directory (AD), los servidores de servicios de federación de Active Directory (AD FS) y servidores proxy web.
   
 Esta configuración tiene los siguientes atributos de aplicaciones LOB en Azure: 
   
@@ -170,17 +175,17 @@ Siga esta ruta de acceso para realizar una adopción correcta:
   
 1. Evaluar y experimentar
     
-    Vea la [identidad federada para su entorno de pruebas y desarrollo de Office 365](federated-identity-for-your-office-365-dev-test-environment.md) para crear un entorno de desarrollo/pruebas simuladas para autenticación federados con Office 365.
+    Vea la [identidad federada para el entorno de desarrollo y prueba de Office 365](federated-identity-for-your-office-365-dev-test-environment.md) para crear un entorno de desarrollo o prueba simulado para autenticación federada con Office 365.
     
 2. Implementar
     
-    Vea [autenticación federados de alta disponibilidad de implementación para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) paso a paso a través de la configuración de end-to-end de la infraestructura de AD FS de alta disponibilidad en cinco fases.
+    Vea [autenticación federada de alta disponibilidad de implementación para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) paso a paso a través de la configuración de extremo a otro de la infraestructura de AD FS de alta disponibilidad en cinco fases.
     
 Consulte estos recursos adicionales:
   
-- [Diseñar entornos de nube híbrida](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
+- [Diseñar la arquitectura de entornos híbridos de nube](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
     
-- [Diseñar y construir una aplicación LOB en Azure](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
+- [Diseño y creación de una aplicación de LOB en Azure](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
 ## <a name="see-also"></a>Vea también
 

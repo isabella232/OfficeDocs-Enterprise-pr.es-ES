@@ -1,5 +1,5 @@
 ---
-title: "Escenarios de nube híbrida para PaaS de Azure"
+title: Escenarios de nube híbrida para PaaS de Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
-description: "Resumen: Comprenda la arquitectura y los escenarios híbridos de las ofertas de nubes basadas en Plataforma como servicio (PaaS) de Microsoft en Azure."
-ms.openlocfilehash: 96548b74341474ff2bd0720f982cbdba96b06e4b
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Resumen: Comprenda la arquitectura y los escenarios híbridos de las ofertas de nubes basadas en Plataforma como servicio (PaaS) de Microsoft en Azure.'
+ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915015"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Escenarios de nube híbrida para PaaS de Azure
 
@@ -30,7 +31,7 @@ En la figura 1, se muestra la arquitectura de escenarios híbridos basados en Pa
   
 **Figura 1: Escenarios híbridos basados en PaaS de Microsoft en Azure**
 
-![Escenarios híbridos basados en PaaS de Microsoft en Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS.png)
+![Escenarios híbridos basados en PaaS de Microsoft en Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
   
 Para cada capa de la arquitectura:
   
@@ -56,7 +57,7 @@ En la figura 2, se muestra la configuración de una aplicación híbrida que se 
   
 **Figura 2: Aplicación híbrida basada en PaaS de Azure**
 
-![Aplicación híbrida basada en PaaS de Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps.png)
+![Aplicación híbrida basada en PaaS de Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
 En la figura 2, una red local hospeda almacenamiento o aplicaciones en servidores y una red perimetral que contiene un servidor proxy. Está conectada a los servicios de PaaS de Azure en Internet o con una conexión de ExpressRoute.
   
@@ -78,7 +79,7 @@ En la figura 3, se muestra un ejemplo de aplicación híbrida que se ejecuta en 
   
 **Figura 3: Un ejemplo de aplicación híbrida basada en PaaS de Azure**
 
-![Un ejemplo de aplicación híbrida basada en PaaS de Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_Ex.png)
+![Un ejemplo de aplicación híbrida basada en PaaS de Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
   
 En la figura 3, una red local hospeda una aplicación LOB. PaaS de Azure hospeda una aplicación móvil personalizada. Un smartphone en Internet tiene acceso a la aplicación móvil personalizada en Azure, que envía solicitudes de datos a la aplicación LOB local.
   
@@ -104,7 +105,7 @@ En la figura 4, se muestra Stretch Database con SQL Server 2016.
   
 **Figura 4: Stretch Database con SQL Server 2016**
 
-![Stretch Database con SQL Server 2016](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_SQL.png)
+![Stretch Database con SQL Server 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
   
 En la figura 4, una red local hospeda un servidor que ejecuta SQL Server 2016 con una pequeña base de datos local. PaaS de Azure hospeda una instancia de Azure SQL Server Stretch Database con la parte extendida de la base de datos. Las consultas de T-SQL de un usuario local enviadas al servidor SQL local se reenvían de forma segura a Azure SQL Stretch Database, que devuelve los resultados al usuario que envía la solicitud.
   

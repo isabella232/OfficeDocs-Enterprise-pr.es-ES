@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 se está acercando a fin de soporte. Use esta guía de planeación como una guía para preparar la actualización a Exchange Online o una versión más reciente de Exchange Server local.
-ms.openlocfilehash: 240f93bfe27e3d564514626fc1d0f51ddeb7802d
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: e655edcc38723acd622fc6abc62a00d3f3e36738
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169892"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915195"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Final de Exchange 2010 de guía básica de soporte técnico
 
@@ -180,9 +180,9 @@ Si un sonidos de migración híbrida completa adecuada para usted, eche un vista
     
 - [Asistente de configuración híbrida](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
     
-- [Preguntas más frecuentes del asistente de configuración híbrida](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
+- [Preguntas más frecuentes acerca del asistente de configuración híbrida](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
     
-- [Requisitos previos de implementación híbrida](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
+- [Requisitos previos para la implementación híbrida](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
     
 ### <a name="migrate-to-a-newer-version-of-exchange-server"></a>Migrar a una versión más reciente de Exchange Server
 

@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumen: Conectar Windows PowerShell a todos los servicios de Office 365 en una sola ventana de Windows PowerShell.'
-ms.openlocfilehash: bf5e81012eaa3e7e200f9b1984b3d3fe01c30799
-ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
+ms.openlocfilehash: b4d7b163bfba433196f46046030078c5559c4459
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "20720376"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915835"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Conectarse a todos los servicios de Office 365 en una sola ventana de Windows PowerShell
 
@@ -29,12 +29,11 @@ ms.locfileid: "20720376"
   
 Al usar PowerShell para administrar Office 365, es posible tener hasta cinco sesiones diferentes de Windows PowerShell abierto al mismo tiempo correspondiente al centro de administración de Office 365, SharePoint Online, Exchange Online, Skype para profesionales en línea y la seguridad &amp;Centro de cumplimiento. Con cinco métodos de conexión diferentes en las sesiones de Windows PowerShell independientes, su escritorio podría tener este aspecto:
   
-![Cinco consolas de Windows PowerShell en ejecución al mismo tiempo](images/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
+![Cinco consolas de Windows PowerShell en ejecución al mismo tiempo](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
 Esto no es óptima para la administración de Office 365 debido a que no se puede intercambiar datos entre esos cinco windows para la administración de entre-service. En este tema se describe el uso de una sola instancia de Windows PowerShell desde la que puede administrar la seguridad, Skype de negocio en línea, Exchange Online, SharePoint Online y Office 365 &amp; centro de cumplimiento.
 
 ## <a name="before-you-begin"></a>Antes de empezar
-<a name="BeforeYouBegin"> </a>
 
 Antes de poder administrar todo Office 365 desde una sola instancia de Windows PowerShell, tenga en cuenta los siguientes requisitos previos:
   
@@ -71,7 +70,6 @@ Antes de poder administrar todo Office 365 desde una sola instancia de Windows P
   ```
 
 ## <a name="connection-steps-when-using-a-password"></a>Pasos de conexión cuando se usa una contraseña
-<a name="ConnStepsPassword"> </a>
 
 Estos son los pasos para conectarse a todos los servicios en una sola ventana de PowerShell.
   
@@ -165,7 +163,6 @@ Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSes
 ```
 
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>Pasos de conexión cuando se usa la autenticación multifactor
-<a name="ConnStepsMFA"> </a>
 
 Aquí están todos los comandos en un bloque único para conectarse a Azure AD, SharePoint Online y Skype para negocios con autenticación multifactor en una sola ventana. Especifique el nombre de usuario (UPN) de nombre principal de una cuenta de administrador global y el nombre de host de su dominio y, a continuación, ejecute todas ellas a la vez.
 
@@ -203,11 +200,7 @@ Para Exchange Online y la seguridad &amp; centro de cumplimiento, consulte los s
 Tenga en cuenta que en ambos casos, debe conectarse con sesiones separadas de Exchange Online remoto PowerShell del módulo de.
 
 
-## <a name="new-to-office-365"></a>¿Es la primera vez que usa Office 365?
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Conectarse a PowerShell de Office 365](connect-to-office-365-powershell.md)
 - [Administrar SharePoint Online con PowerShell de Office 365](manage-sharepoint-online-with-office-365-powershell.md)

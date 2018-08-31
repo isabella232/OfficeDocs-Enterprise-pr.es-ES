@@ -1,5 +1,5 @@
 ---
-title: Seguridad de Could App para su entorno de desarrollo y pruebas de Office 365
+title: Cloud App Security para el entorno de desarrollo y pruebas de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,20 +8,22 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Resumen: Configurar y demostrar la seguridad de la aplicación de Office 365 en la nube en el entorno de desarrollo y prueba de Office 365.'
-ms.openlocfilehash: d62524b6c4373c851a67b4039146ad8b6a610790
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: 089b9771d0600f8c74bc7b4c30ff2a4931c93ae6
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215882"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915765"
 ---
-# <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Seguridad de Could App para su entorno de desarrollo y pruebas de Office 365
+# <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security para el entorno de desarrollo y pruebas de Office 365
 
  **Resumen:** Configurar y demostrar la seguridad de la aplicación de Office 365 en la nube en el entorno de desarrollo y prueba de Office 365.
   

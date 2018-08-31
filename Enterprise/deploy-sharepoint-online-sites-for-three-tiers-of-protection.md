@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Resumen: Cree y configure sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: 84b455809e210fb40d4a92396b2d8c4eb18245b1
-ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.openlocfilehash: 6103675941802fcdee50c06ac3212d90f95c6d35
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19631401"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915625"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Implementar sitios de SharePoint Online con tres niveles de protección
 
@@ -54,7 +56,7 @@ Para crear un sitio de grupo de SharePoint Online de línea base con acceso y pe
     
 Esta es la configuración resultante.
   
-![Protección de nivel de línea base de un sitio de grupo de SharePoint Online público.](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![Protección de nivel de línea base de un sitio de grupo de SharePoint Online público.](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### <a name="private"></a>Privado
 
@@ -80,7 +82,7 @@ Para crear un sitio de grupo de SharePoint Online de línea base con acceso y pe
     
 Esta es la configuración resultante.
   
-![Protección de nivel de línea base de un sitio de grupo de SharePoint Online privado.](images/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![Protección de nivel de línea base de un sitio de grupo de SharePoint Online privado.](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## <a name="sensitive-sharepoint-online-team-sites"></a>Sitios de grupo confidenciales de SharePoint Online
 
@@ -142,7 +144,7 @@ Luego cree el sitio de grupo de SharePoint Online con estos pasos.
     
 Después, desde el nuevo sitio de grupo de SharePoint Online, configure los permisos con estos pasos.
   
-1. Determine el nombre principal de usuario (UPN) del administrador de TI o de otra persona que vaya a ser responsable de responder a las solicitudes de acceso al sitio y de dirigirlas (belindan@contoso.com es un ejemplo de UPN). Escriba ese UPN aquí: ![](./images/Common_Images/TableLine.png).
+1. Determine el nombre principal de usuario (UPN) del administrador de TI o de otra persona que vaya a ser responsable de responder a las solicitudes de acceso al sitio y de dirigirlas (belindan@contoso.com es un ejemplo de UPN). Escriba ese UPN aquí: ![](./media/Common-Images/TableLine.png).
     
 2. En la barra de herramientas, haga clic en el icono de configuración y, luego, en **Permisos del sitio**.
     
@@ -196,7 +198,7 @@ Los resultados de esta configuración de permisos son los siguientes:
     
 Esta es la configuración resultante.
   
-![Protección de nivel confidencial de un sitio de grupo aislado de SharePoint Online.](images/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![Protección de nivel confidencial de un sitio de grupo aislado de SharePoint Online.](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 Los miembros del sitio, a través de la pertenencia a grupos en uno de los grupos de acceso, ahora pueden colaborar de forma segura en los recursos del sitio.
   
@@ -256,7 +258,7 @@ Los resultados de la configuración de permisos son los siguientes:
     
 Esta es la configuración resultante.
   
-![Protección de nivel Extremadamente confidencial de un sitio de grupo aislado de SharePoint Online.](images/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![Protección de nivel Extremadamente confidencial de un sitio de grupo aislado de SharePoint Online.](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 Los miembros del sitio, a través de la pertenencia a grupos en uno de los grupos de acceso, ahora pueden colaborar de forma segura en los recursos del sitio.
   

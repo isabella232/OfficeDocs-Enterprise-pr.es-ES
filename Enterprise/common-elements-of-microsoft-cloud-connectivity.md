@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Resumen: Descubra los elementos comunes de la infraestructura de red y aprenda a preparar la red.'
-ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915655"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementos comunes de la conectividad de la nube de Microsoft
 
@@ -48,7 +51,7 @@ Use la canalización de Internet existente o una conexión de ExpressRoute para 
   
 **Figura 1: Opciones para la conectividad en la nube de Microsoft**
 
-![Figura 1:  Opciones para la conectividad en la nube de Microsoft](images/Network_Poster/CommonElements.png)
+![Figura 1:  Opciones para la conectividad en la nube de Microsoft](media/Network-Poster/CommonElements.png)
 
   
 La figura 1 muestra cómo se puede conectar una red local con las ofertas en la nube de Microsoft usando la canalización de Internet existente o ExpressRoute. La canalización de Internet representa una red perimetral y puede tener los siguientes componentes:

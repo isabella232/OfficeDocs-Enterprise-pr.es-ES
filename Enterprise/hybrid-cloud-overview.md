@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Resumen: Comprenda la definición y los elementos de la nube híbrida de Microsoft.'
-ms.openlocfilehash: 6d23f4f759e882ed925bd8bcb4c21ee365b231a0
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915825"
 ---
 # <a name="hybrid-cloud-overview"></a>Información general de la nube híbrida
 
@@ -36,7 +39,7 @@ La nube híbrida de Microsoft es un conjunto de escenarios empresariales que com
     
 **Figura 1: Componentes de la nube híbrida de Microsoft**
 
-![Componentes de la nube híbrida de Microsoft](images/Hybrid_Poster/MS_Hybrid_Cloud.png)
+![Componentes de la nube híbrida de Microsoft](media/Hybrid-Poster/MS-Hybrid-Cloud.png)
   
 En la figura 1, se muestran los componentes de la nube híbrida de Microsoft, desde una red local al conjunto de servicios de Office 365, de la plataforma como servicio (PaaS) de Azure y de la infraestructura como servicio (IaaS) de Azure disponibles a través de Internet o una conexión de ExpressRoute.
   

@@ -3,7 +3,7 @@ title: Planear la actualización de los servidores y clientes de Office 2007 o 2
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 7/30/2018
+ms.date: 8/8/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,30 +13,81 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Es el momento de planear la actualización de versiones anteriores de productos de Office y los servidores. Use estos recursos para empezar a trabajar con el plan.
-ms.openlocfilehash: fd1cb7932b07ddeb41bbd8a0ab8b4f5da38155b0
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: ea5af6a91a0977016eb9c90f7b1acb2def1dbd2f
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21560166"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915165"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planear la actualización de los clientes y servidores de Office 2007 u Office 2010
 
-Si está utilizando las versiones anteriores de productos de Office y servidores, como Office 2007 u Office 2010, este es un buen momento para empezar a planear la actualización.
+Si su organización usa las versiones anteriores de productos de Office y los servidores, este es un buen momento para empezar a planear la actualización. Servicios y productos de 2007 office han alcanzado su fin de soporte y servicios y productos de Office 2010 se está acercando a su fin del soporte. 
 
-¡Estamos aquí para ayudarle! Utilice los recursos de esta sección para empezar a trabajar.
+Utilice los recursos de esta sección para empezar a trabajar.
 
-- [Planear la actualización de los clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)
+- [Actualización de los clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)
 
-- [Planear la actualización de los clientes y servidores de Office 2007](upgrade-from-office-2007-servers-and-products.md)
-      
+- [Actualización de los clientes y servidores de Office 2007](upgrade-from-office-2007-servers-and-products.md)
+
+## <a name="what-upgrade-options-are-available"></a>¿Qué opciones de actualización están disponibles?      
+
+Las organizaciones tienen varias opciones que se deben considerar:
+
+- **Mover a 365 de Microsoft**: para muchos clientes, moverse a la nube es una solución rentable y eficiente. El programa de instalación y mantenimiento son más fáciles, y obtener todas las características más recientes y actualizaciones de seguridad. Para obtener más información, vea la [¿Qué es Microsoft 365?](#what-is-microsoft-365) sección de este artículo.
+    
+- **Actualizar los servidores locales y las aplicaciones.** Vea el [Office](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap), [Exchange](exchange-2010-end-of-support.md), [SharePoint](upgrade-from-sharepoint-2010.md), [Project Server y Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers)y planeación de contenido de [Skype para la empresa](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) . 
+    
+- **Implementar una solución híbrida, incluidos Office 365** y los servidores locales y las aplicaciones. Vea [Introducción a las soluciones de Office 365 híbrida en la nube.](https://support.office.com/article/59616fab-acdb-40e9-b414-cf0c965c80b7.aspx)
+    
+### <a name="help-is-available-for-your-organization"></a>La Ayuda está disponible para su organización
+
+Se recomienda obtener ayuda para planear la actualización.
+
+- Considere la posibilidad de trabajar con un especialista de licencias socio o volumen. **[Busque su Office 365 o un revendedor](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**. 
+
+- Si su organización adquiere un cierto número de licencias de Microsoft en la nube, nuestro equipo FastTrack puede ayudarle a través del proceso de instalación. Para obtener más información, visite [FastTrack](https://www.microsoft.com/fasttrack).
+
+- Si es parte de una organización de tamaño reducido o se desea controlar personalmente la actualización, vea [administradores: actualizar a sus usuarios para el cliente más reciente de Office con Office 365 para profesionales](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb.aspx). 
+  
+## <a name="im-a-home-user-what-do-i-do"></a>Soy un usuario particular. ¿Qué hacer?
+
+Si usa Office 2007 u Office 2010 en casa, tenga en cuenta las siguientes opciones:
+
+- **Pruebe Office 365 para uso doméstico**. Elegir entre una suscripción a [Office 365 hogar](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) o [Personal de Office 365](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf) . y suscribirse a una versión de prueba. Registrarse e instalar la versión más reciente de Office en su Windows o Mac equipo, su iOS o Android smartphone y su iOS o Android tableta. Con Office 365, podrán disfrutar de almacenamiento en la nube con OneDrive, obtendrá 60 minutos de llamadas de Skype para móviles y los números de teléfono fijo cada mes y obtendrá muchas otras características satisfactorias. [Planes de vea Office 365 y los precios para principal](https://products.office.com/explore-office-for-home).
+    
+- **Página principal de Office de compra &amp; 2016 estudiantes**. Si elige esta opción, podrá realizar una compra única y, a continuación, instalar Office 2016 en su [PC de Windows](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) o [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac). 
+
+
+## <a name="what-happens-if-i-dont-upgrade"></a>¿Qué sucede si no actualizo?
+
+Puede elegir no actualizar en este momento. Los servidores locales y aplicaciones continuará ejecutándose. Sin embargo, cuando ya no recibe actualizaciones de seguridad u opciones de soporte técnico, usted o su organización podría ser vulnerable a infracciones de seguridad. Se recomienda encarecidamente planear la actualización tan pronto como sea posible, si a Office 365 o a las versiones más recientes de las aplicaciones y los servidores locales.
+   
+## <a name="what-is-microsoft-365"></a>¿Qué es Microsoft 365?
+
+Microsoft 365 es la combinación de Office 365, 10 de Windows y movilidad en la empresa + seguridad (EMS) que proporciona una solución completa e inteligente para permitir que todos los usuarios a ser creativo y trabajar juntos, de forma segura. 
+  
+Aunque puede migrar los servidores de Office 2007 u Office 2010 y clientes a Office 365, Microsoft 365 incluye las licencias y capacidades para asegurarse de que su organización está trabajando en el sistema operativo de Windows más reciente y que los dispositivos, incluidos Windows, iOS y Android — se inscriben y mantenerse seguro con las directivas que requieren autenticación y protección de datos. Además, 10 de Windows y el software de cliente de Office 365 se actualiza de forma continua para incluir las últimas características y actualizaciones de seguridad.
+  
+Microsoft 365 es la forma digitalmente transformar su negocio con dispositivos mejorar constantemente y experiencias de productividad, habilitado y protegido por la nube de Microsoft.
+  
+|**Recurso**|**Descripción**|
+|:-----|:-----|
+|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |Obtenga información sobre las diferentes versiones de Microsoft 365.  <br/> |
+|[Documentación de Microsoft 365 empresarial](https://docs.microsoft.com/microsoft-365/business/) <br/> |Para obtener información detallada sobre la versión de Microsoft 365 para pequeñas y medianas empresas.  <br/> |
+|[Documentación de Microsoft 365 educación](https://docs.microsoft.com/microsoft-365/education/) <br/> |Para obtener información detallada sobre la versión de Microsoft 365 para las organizaciones educativas.  <br/> |
+|[Documentación y recursos de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |Para obtener información detallada sobre la versión de Microsoft 365 para las organizaciones empresariales.  <br/> |
+
    
 ## <a name="related-topics"></a>Temas relacionados
-
-[Grupo de retirada de Office (Microsoft Tech Comunidad)](https://go.microsoft.com/fwlink/?linkid=842065)
-  
-[Vídeo: ¿Qué es Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Directiva de ciclo de vida de Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+
+[Grupo de retirada de Office (Microsoft Tech Comunidad)](https://go.microsoft.com/fwlink/?linkid=842065)
+
+[Actualización de los clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)
+
+[Actualización de los clientes y servidores de Office 2007](upgrade-from-office-2007-servers-and-products.md)
+
 
 

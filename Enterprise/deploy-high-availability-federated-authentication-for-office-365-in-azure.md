@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150s
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 'Resumen: Configure la autenticación federada de alta disponibilidad para su suscripción de Office 365 en Microsoft Azure.'
-ms.openlocfilehash: a95a079c8bdee6d36769461666769f9a75ea9f40
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c72090638bcdcb580353baa7a733051971598e66
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914905"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure
 
@@ -39,7 +42,7 @@ Esta es la configuración, con nombres de marcador de posición para cada servid
   
 **Una autenticación federada de alta disponibilidad para Office 365 en Azure**
 
-![La configuración final de la infraestructura de la autenticación federada de Office 365 con alta disponibilidad en Azure](images/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![La configuración final de la infraestructura de la autenticación federada de Office 365 con alta disponibilidad en Azure](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Todas las máquinas virtuales forman parte de una única red virtual entre locales de Azure (VNet). 
   
