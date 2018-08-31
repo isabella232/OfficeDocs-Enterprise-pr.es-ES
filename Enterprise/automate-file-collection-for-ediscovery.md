@@ -11,12 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
+search.appverid:
+- MET150
 description: 'Resumen: Aprenda a automatizar una recopilación de archivos de los equipos del usuario para la exhibición de documentos electrónicos.'
-ms.openlocfilehash: 0a09eb8ec997f62e0f8c3149d35422b0ee0e4a98
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
-ms.translationtype: HT
+ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915755"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizar la recopilación de archivos para la exhibición de documentos electrónicos
 
@@ -37,21 +40,21 @@ Esta solución usa un grupo de seguridad global, una directiva de grupo y un scr
   
 El siguiente diagrama le dirige por todos los pasos y elementos de la solución
   
-![Introducción a la solución de recopilación automatizada de archivos](images/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
+![Introducción a la solución de recopilación automatizada de archivos](media/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
   
 |****Leyenda****||
 |:-----|:-----|
-|![Llamada magenta 1](images/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Crear un objeto de directiva de grupo (GPO) y asociarlo a la recopilación de scripts de inicio de sesión  <br/> |
-|![Llamada magenta 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)|   Configurar el filtro de seguridad GPO para aplicar el GPO solo al grupo de administradores <br/> |
-|![Llamada magenta 3](images/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Cuando un administrador inicia sesión y se ejecuta el GPO, se llama a la recopilación de scripts de inicio de sesión.  <br/> |
-|![Llamada magenta 4](images/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|La recopilación de scripts de inicio de sesión hace un inventario de todas las unidades adjuntadas de forma local del equipo de los administradores, en busca de los archivos que desea, y registra su ubicación.  <br/> |
-|![Llamada magenta 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|La recopilación de scripts de inicio de sesión copia los archivos inventariados en un recurso compartido de archivos oculto en el servidor de implementación.   <br/> |
-|![Llamada magenta 6](images/99589726-0c7e-406b-a276-44301a135768.png)| (Opción A) Ejecute manualmente el script de importación de PST para importar los archivos PST recopilados en Exchange Server 2013. <br/> |
-|![Llamada magenta 7](images/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Opción B) Mediante la herramienta de Importar y procesar de Office 365, importe los archivos PST recopilados en Exchange Online.  <br/> |
-|![Llamada magenta 8](images/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Mueva todos los archivos recopilados a un recurso compartido de archivos de Azure para un almacenamiento a largo plazo con el Runbook MoveToColdStorageSystem Center Orchestrator 2012 R2. <br/> |
-|![Llamada magenta 9](images/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indexe los archivos en el recurso compartido de archivos de almacenamiento en frío con SharePoint 2013.  <br/> |
-|![Llamada magenta 10](images/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Realice eDiscovery en el contenido del almacenamiento en frío y en el Exchange Server 2013 local.  <br/> |
-|![Llamada magenta 11](images/e59ab403-2f19-497a-92a5-549846dded66.png)|Realice eDiscovery en el contenido del Office 365.  <br/> |
+|![Llamada magenta 1](media/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Crear un objeto de directiva de grupo (GPO) y asociarlo a la recopilación de scripts de inicio de sesión  <br/> |
+|![Llamada magenta 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)|   Configurar el filtro de seguridad GPO para aplicar el GPO solo al grupo de administradores <br/> |
+|![Llamada magenta 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Cuando un administrador inicia sesión y se ejecuta el GPO, se llama a la recopilación de scripts de inicio de sesión.  <br/> |
+|![Llamada magenta 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|La recopilación de scripts de inicio de sesión hace un inventario de todas las unidades adjuntadas de forma local del equipo de los administradores, en busca de los archivos que desea, y registra su ubicación.  <br/> |
+|![Llamada magenta 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|La recopilación de scripts de inicio de sesión copia los archivos inventariados en un recurso compartido de archivos oculto en el servidor de implementación.   <br/> |
+|![Llamada magenta 6](media/99589726-0c7e-406b-a276-44301a135768.png)| (Opción A) Ejecute manualmente el script de importación de PST para importar los archivos PST recopilados en Exchange Server 2013. <br/> |
+|![Llamada magenta 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Opción B) Mediante la herramienta de Importar y procesar de Office 365, importe los archivos PST recopilados en Exchange Online.  <br/> |
+|![Llamada magenta 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Mueva todos los archivos recopilados a un recurso compartido de archivos de Azure para un almacenamiento a largo plazo con el Runbook MoveToColdStorageSystem Center Orchestrator 2012 R2. <br/> |
+|![Llamada magenta 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indexe los archivos en el recurso compartido de archivos de almacenamiento en frío con SharePoint 2013.  <br/> |
+|![Llamada magenta 10](media/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Realice eDiscovery en el contenido del almacenamiento en frío y en el Exchange Server 2013 local.  <br/> |
+|![Llamada magenta 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|Realice eDiscovery en el contenido del Office 365.  <br/> |
    
 ## <a name="prerequisites"></a>Requisitos previos
 

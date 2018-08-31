@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
-description: "Resumen: Comprender la estructura básica de la infraestructura de TI local de Contoso y cómo sus necesidades de negocio pueden cumplirse mediante ofertas de nube de Microsoft."
-ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumen: Comprender la estructura básica de la infraestructura de TI local de Contoso y cómo sus necesidades de negocio pueden cumplirse mediante ofertas de nube de Microsoft.'
+ms.openlocfilehash: e500aa1f3105c1e605d0d3c1d5f66651acb82b34
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915735"
 ---
 # <a name="contosos-it-infrastructure-and-needs"></a>Infraestructura y necesidades de TI de Contoso
 
@@ -30,7 +31,7 @@ Contoso usa una infraestructura de TI local mayoritariamente centralizada, con c
   
 **Figura 1: Infraestructura de TI existente de Contoso**
 
-![Infraestructura de TI existente de Contoso](images/Contoso_Poster/Existing_IT.png)
+![Infraestructura de TI existente de Contoso](media/Contoso-Poster/Existing-IT.png)
   
 La figura 1 muestra una oficina central con centros de datos de aplicaciones, una red perimetral e Internet.
   
