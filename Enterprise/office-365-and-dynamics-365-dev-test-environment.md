@@ -8,51 +8,54 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
-description: 'Resumen: Use esta guía de laboratorio de prueba para agregar Dynamics 365 a su entorno de desarrollo y prueba de Office 365.'
-ms.openlocfilehash: 00d5cc0fd347aff7e201056f6af9ca271008d285
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
-ms.translationtype: MT
+description: 'Resumen: Use esta Guía del laboratorio de pruebas para agregar Dynamics 365 al entorno de desarrollo y pruebas de Office 365.'
+ms.openlocfilehash: 195e5ab4fd96d1f238c96d47cc7406a45e0e02b1
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915215"
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365 y Dynamics 365
 
- **Resumen:** Use esta guía de laboratorio de prueba para agregar Dynamics 365 a su entorno de desarrollo y prueba de Office 365.
+ **Resumen:** Use esta Guía del laboratorio de pruebas para agregar Dynamics 365 al entorno de desarrollo y pruebas de Office 365.
   
 Con las instrucciones de este artículo, agregará una suscripción de prueba a Dynamics 365 en la misma organización que su entorno de desarrollo y pruebas de Office 365 y creará un entorno de pruebas y desarrollo de Office 365 y Dynamics 365.
 
-![Entorno de desarrollo y pruebas de Office 365 y Dynamics 365](images/o365-dynamics365-dev-test.png)
+![Entorno de desarrollo y pruebas de Office 365 y Dynamics 365](media/o365-dynamics365-dev-test.png)
   
   
 Puede usar una suscripción de prueba a Dynamics 365 para probar las características y funcionalidades de Dynamics 365. Las siguientes soluciones se incluyen con la prueba de Dynamics 365 Plan 1, Enterprise Edition:
   
-- [Microsoft Dynamics 365 para ventas](https://www.microsoft.com/dynamics365/sales). Aumentar las ventas con automatización e inteligencia digital ayudar a los vendedores centrarse y trabajar de manera más eficaz.
+- [Microsoft Dynamics 365 for Sales](https://www.microsoft.com/dynamics365/sales). Aumente sus ventas con la inteligencia de automatización y digital, lo que ayudará a los vendedores a concentrarse más y a trabajar mejor.
     
-- [Microsoft Dynamics 365 para el servicio al cliente](https://www.microsoft.com/dynamics365/customer-service). Ganar fidelidad proporcionando a los agentes de la información completa e inteligencia digital que necesitan para proporcionar un servicio sin problemas.
+- [Microsoft Dynamics 365 for Customer Service](https://www.microsoft.com/dynamics365/customer-service). Gane fidelidad proporcionando a sus agentes la información completa y la inteligencia digital que necesitan para proporcionar el servicio sin problemas.
     
-- [Microsoft Dynamics 365 para el servicio de campo](https://www.microsoft.com/dynamics365/field-service). Maestro de la llamada de servicio por optimizar sus programaciones, equipamiento de sus empleados y uso de herramientas predictivas para aumentar las ganancias.
+- [Microsoft Dynamics 365 for Field Service](https://www.microsoft.com/dynamics365/field-service). Domine las llamadas del servicio optimizando sus programaciones, equipando a sus recursos y usando herramientas predictivas para aumentar las ganancias.
     
-- [Microsoft Dynamics 365 para la automatización de servicio de Project](https://www.microsoft.com/en-us/dynamics365/project-service-automation). Completar correctamente los proyectos y crear relaciones rentables con los empleados a ser productivos y herramientas inteligentes.
+- [Microsoft Dynamics 365 for Project Service Automation](https://www.microsoft.com/es-ES/dynamics365/project-service-automation). Complete con éxito sus proyectos y cree relaciones beneficiosas con empleados productivos y herramientas inteligentes.
     
 Puede explorar uno o más de los servicios anteriores para usar en su suscripción de prueba a Dynamics 365.
   
-![Guías del laboratorio de pruebas de Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guías del laboratorio de pruebas de Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de One Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y pruebas ligero o de una empresa simulada de Office 365
 
-Si desea probar Office 365 y Dynamics 365 en una forma sencilla con los requisitos mínimos, siga las instrucciones que aparecen en las fases 2 y 3 del [entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md).
+Si solo quiere probar Office 365 y Dynamics 365 de forma general y con los requisitos mínimos, siga las instrucciones indicadas en las fases 2 y 3 del [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md).
   
-Si desea probar Office 365 y Dynamics 365 para una empresa simulada, siga las instrucciones que aparecen en la [sincronización de directorios para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md).
+Si quiere probar Office 365 y Dynamics 365 para una empresa simulada, siga las instrucciones indicadas en [Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md).
 
-![El entorno de desarrollo y pruebas de Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![El entorno de desarrollo y pruebas de Office 365](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 > [!NOTE]
 > La configuración recogida en este artículo no requiere el entorno de desarrollo y pruebas de una empresa simulada, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Windows Server AD. Aquí se ofrece como opción para que pueda experimentar con Office 365 y Dynamics 365 en un entorno que representa una organización típica. 
@@ -63,9 +66,9 @@ En esta fase, se registrará en la suscripción de prueba a Dynamics 365 y la ag
   
 ### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Registrarse para obtener una suscripción de prueba a Dynamics 365
 
-1. Mediante un explorador en cualquiera de su equipo de escritorio (ligero) o desde CLIENT1 (simulado enterprise), inicie sesión el portal de Office 365 en [https://portal.office.com](https://portal.office.com) con las credenciales de su cuenta de administrador global.
+1. Con un explorador con un equipo de escritorio (ligero) o desde CLIENTE1 (empresa simulada), inicie sesión en el portal de Office 365 en [https://portal.office.com](https://portal.office.com) con las credenciales de la cuenta de administrador global.
     
-2. Haga clic en el icono **Administración**.
+2. Haga clic en el icono **Administrador**.
     
 3. En la pestaña **Centro de administración de Office**, en el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
     
@@ -75,7 +78,7 @@ En esta fase, se registrará en la suscripción de prueba a Dynamics 365 y la ag
     
 6. En la página **Recibo del pedido**, haga clic en **Continuar**.
 
-![Entorno de desarrollo y pruebas de Office 365 y Dynamics 365](images/o365-dynamics365-dev-test.png)
+![Entorno de desarrollo y pruebas de Office 365 y Dynamics 365](media/o365-dynamics365-dev-test.png)
     
 > [!NOTE]
 > La suscripción de prueba de Dynamics 365 Plan 1 Enterprise Edition es de 30 días. Puede extender fácilmente la suscripción de prueba otros 30 días. Para un entorno de pruebas y desarrollo permanente, cree una nueva suscripción de pago con un número reducido de licencias. 
@@ -98,9 +101,9 @@ Siga estos pasos para asignar licencias de Dynamics 365.
     
 Siga estos pasos para configurar las cuentas Usuario 2 y Usuario 3 como administradores del sistema de Dynamics 365.
   
-1. En la ficha **Página principal de Microsoft Office** , haga clic en **Admin**.
+1. En la pestaña **Página principal de Microsoft Office**, haga clic en **Administración**.
     
-2. En la ficha del **Centro de administración de Office** , en el panel de navegación izquierdo, haga clic en **centros de administración**y, a continuación, haga clic en **Dynamics 365**.
+2. En la pestaña **Centro de administración de Office**, en el panel de navegación izquierdo, haga clic en **Centros de administración** y, después, seleccione **Dynamics 365**.
     
     Es posible que tenga que esperar hasta que finalice el aprovisionamiento de Dynamics 365 para que este aparezca en el menú.
     
@@ -137,7 +140,7 @@ El entorno de desarrollo y pruebas de Office 365 y Dynamics 365 ahora tiene lo s
     
 ## <a name="next-step"></a>Paso siguiente
 
-Configurar y, a continuación, demuestre cómo Office 365 y Dynamics 365 funcionan conjuntamente los buzones de correo de Exchange Online con la [integración de Exchange Online para el entorno de desarrollo y prueba de Office 365 y Dynamics 365](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md).
+Configure y muestre cómo Office 365 y Dynamics 365 colaboran en los buzones de Exchange Online con la [Integración de Exchange Online para su entorno de desarrollo y pruebas de Office 365 y Dynamics 365](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md).
   
 ## <a name="see-also"></a>Vea también
 
@@ -145,7 +148,7 @@ Configurar y, a continuación, demuestre cómo Office 365 y Dynamics 365 funcion
   
 [Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
   
-[Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
+[Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
   
 [Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 
