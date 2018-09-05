@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Resumen: Implemente Azure AD Connect en una máquina virtual de Azure para sincronizar las cuentas entre el directorio local y el espacio empresarial de Azure AD de su suscripción a Office 365.'
-ms.openlocfilehash: c37fd1e31684590b0b564b3fed402b5c33c062a3
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 01dede756142c08722e3cf21d91a0028eb815051
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915645"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Implementar la sincronización de directorios de Office 365 en Microsoft Azure
 
@@ -43,11 +46,10 @@ Azure Active Directory (AD) Connect (antes conocida como herramienta de sincroni
 > Office 365 usa Azure Active Directory (Azure AD) para su servicio de directorio. La suscripción a Office 365 incluye un inquilino de Azure AD. Este inquilino también puede usarse para la administración de identidades de la organización con otras cargas de trabajo en la nube, incluidas otras aplicaciones SaaS y aplicaciones de Azure. 
   
 ## <a name="overview-of-deploying-office-365-directory-synchronization-in-azure"></a>Introducción a la implementación de sincronización de directorios de Office 365 en Azure
-<a name="Overview"> </a>
 
 El siguiente diagrama muestra Azure AD Connect en ejecución en una máquina virtual de Azure (el servidor de sincronización de directorios) que sincroniza un bosque de Windows Server AD local con una suscripción a Office 365.
   
-![Herramienta Azure AD Connect en una máquina virtual en Azure durante la sincronización de cuentas locales con el inquilino de Azure AD de una suscripción a Office 365 con flujo de tráfico.](images/CP_DirSyncOverview.png)
+![Herramienta Azure AD Connect en una máquina virtual en Azure durante la sincronización de cuentas locales con el inquilino de Azure AD de una suscripción a Office 365 con flujo de tráfico.](media/CP-DirSyncOverview.png)
   
 En el diagrama hay dos redes conectadas por una conexión VPN de sitio a sitio o ExpressRoute. Hay una red local donde se encuentran los controladores de dominio de Windows Server AD y una red virtual de Azure con un servidor de sincronización de directorios, que es una máquina virtual en ejecución en [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). Hay dos flujos de tráfico principal que se originan en el servidor de sincronización de directorios:
   
@@ -87,11 +89,11 @@ Antes de implementar esta solución en producción, siga las instrucciones de [S
 
 Antes de comenzar, revise los siguientes requisitos previos para esta solución:
   
-- Revise el contenido de planeación relacionado en el tema sobre la [Planear la red virtual de Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#PlanningVirtual).
+- Revise el contenido de planeación relacionado en [Planear la red virtual de Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#plan-your-azure-virtual-network).
     
-- Asegúrese de que cumple todos los [requisitos previos](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Prerequisites) para configurar la red virtual de Azure.
+- Asegúrese de que cumple todos los [requisitos previos](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#prerequisites) para configurar la red virtual de Azure.
     
-- Consiga una suscripción a Office 365 que incluya la característica de integración de Active Directory. Para obtener más información sobre las suscripciones de Office 365, vaya a la [página de suscripción de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=394278).
+- Consiga una suscripción a Office 365 que incluya la característica de integración de Active Directory. Para obtener más información sobre las suscripciones de Office 365, vaya a la [página de suscripción de Office 365](https://products.office.com/compare-all-microsoft-office-products?tab=2).
     
 - Aprovisione una Máquina virtual de Azure que ejecute Azure AD Connect para sincronizar el bosque de Windows Server AD local con Office 365.
     
@@ -114,7 +116,6 @@ Hay otras opciones de diseño adicionales que puede tener en cuenta cuando imple
 - Si hay controladores de dominio en una red virtual existente de Azure, determine si la configuración de Sitios y servicios de Active Directory puede suponer una mejor opción. El servidor de sincronización de directorios puede consultar los controladores de dominio de la red virtual de Azure para buscar cambios en las cuentas y las contraseñas, en lugar de usar los controladores de dominio de la red local.
     
 ## <a name="deployment-roadmap"></a>Guía de implementación
-<a name="DeploymentRoadmap"> </a>
 
 La implementación de Azure AD Connect en una máquina virtual en Azure consta de tres fases:
   
@@ -131,11 +132,11 @@ Después de la implementación, también debe asignar ubicaciones y licencias pa
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>Fase 1: Creación y configuración de la red virtual de Azure
 
-Para crear y configurar la red virtual de Azure, complete la [Fase 1: Preparar la red local](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Phase1) y la [Fase 2: Crear la red virtual entre locales en Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Phase2) del plan de implementación de [Conectar una red local a Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
+Para crear y configurar la red virtual de Azure, complete la [Fase 1: Preparar la red local](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-1-prepare-your-on-premises-network) y la [Fase 2: Crear la red virtual entre locales en Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-2-create-the-cross-premises-virtual-network-in-azure) del plan de implementación de [Conectar una red local a Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
   
 Esta es la configuración resultante.
   
-![Fase 1 del servidor de sincronización de directorios de Office 365 hospedado en Azure](images/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Fase 1 del servidor de sincronización de directorios de Office 365 hospedado en Azure](media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 En esta figura se muestra una red local conectada a una red virtual de Azure mediante una conexión de ExpressRoute o VPN de sitio a sitio.
   
@@ -157,7 +158,7 @@ Para que Azure AD Connect obtenga acceso a recursos de Internet, hay que configu
   
 Esta es la configuración resultante.
   
-![Fase 2 del servidor de sincronización de directorios de Office 365 hospedado en Azure](images/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Fase 2 del servidor de sincronización de directorios de Office 365 hospedado en Azure](media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
 En esta figura se muestra la máquina virtual del servidor de sincronización de directorios en la red virtual de Azure entre locales.
   
@@ -167,14 +168,14 @@ Haga lo siguiente:
   
 1. Conéctese al servidor de sincronización de directorios mediante una conexión a Escritorio remoto con una cuenta de dominio de Windows Server AD que tenga privilegios de administrador local. Vea [Connect to the virtual machine and sign on](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on) (Conectarse a la máquina virtual e iniciar sesión).
     
-2. Desde el servidor de sincronización de directorios, abra el artículo [Configurar la sincronización de directorios en Office 365](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846) y siga las instrucciones relativas a la sincronización de directorios con la sincronización de hash de contraseñas.
+2. Desde el servidor de sincronización de directorios, abra el artículo [Configurar la sincronización de directorios para Office 365](set-up-directory-synchronization.md) y siga las instrucciones relativas a la sincronización de directorios con la sincronización de hash de contraseñas.
     
 > [!CAUTION]
 > El programa de instalación crea la cuenta **AAD_xxxxxxxxxxxx** en la unidad organizativa (UO) de usuarios locales. No mueva ni quite esta cuenta porque entonces se producirá un error de sincronización.
   
 Esta es la configuración resultante.
   
-![Fase 3 del servidor de sincronización de directorios de Office 365 hospedado en Azure](images/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Fase 3 del servidor de sincronización de directorios de Office 365 hospedado en Azure](media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 En esta figura se muestra el servidor de sincronización de directorios con Azure AD Connect en la red virtual de Azure entre locales.
   
@@ -196,9 +197,7 @@ Azure AD Connect agrega cuentas a su suscripción de Office 365 desde Windows Se
     
 7. Vuelva al paso 3 para usuarios adicionales.
     
-## <a name="see-also"></a>Consulte también
-
-<a name="DeploymentRoadmap"> </a>
+## <a name="see-also"></a>Vea también
 
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
   
@@ -206,7 +205,7 @@ Azure AD Connect agrega cuentas a su suscripción de Office 365 desde Windows Se
 
 [Descargar Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594)
   
-[Configurar la sincronización de directorios en Office 365](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)
+[Configuración de la sincronización del directorio para Office 365](set-up-directory-synchronization.md)
   
 [Directory Synchronization server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) (Kit de implementación del servidor de sincronización de directorios en Azure)
 

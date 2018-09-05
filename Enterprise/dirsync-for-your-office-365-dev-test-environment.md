@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Resumen: configure la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 106e902c9da46c7c3c0fc6eb8af96d6695c7bdce
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193540"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915845"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Configurar la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365
 
@@ -29,7 +31,7 @@ ms.locfileid: "19193540"
   
 Muchas organizaciones usan Azure AD Connect y la sincronización de directorios para sincronizar el conjunto de cuentas de su bosque de Windows Server Active Directory (AD) local para el conjunto de cuentas de Office 365. En este artículo, se describe cómo agregar la sincronización de directorios con la sincronización de hash de contraseña al entorno de desarrollo y pruebas de Office 365, lo que da como resultado la siguiente configuración.
   
-![Entorno de desarrollo y pruebas de Office 365 con sincronización de directorios](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Entorno de desarrollo y pruebas de Office 365 con sincronización de directorios](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Esta configuración se compone de: 
   
@@ -48,7 +50,7 @@ Existen dos fases para configurar el entorno de desarrollo y pruebas:
 
 Siga las instrucciones de las fases 1, 2 y 3 del artículo [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md). Esta es la configuración resultante.
   
-![El entorno de desarrollo y pruebas de Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![El entorno de desarrollo y pruebas de Office 365](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 Esta configuración se compone de: 
   
@@ -104,7 +106,7 @@ Stop-Process -Name Explorer -Force
     
 Esta es la configuración resultante.
   
-![Entorno de desarrollo y pruebas de Office 365 con sincronización de directorios](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Entorno de desarrollo y pruebas de Office 365 con sincronización de directorios](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Esta configuración se compone de: 
   

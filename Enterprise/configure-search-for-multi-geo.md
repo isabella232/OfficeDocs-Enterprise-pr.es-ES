@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico.
-ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915065"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurar la búsqueda en OneDrive para la Empresa multigeográfico
 
@@ -81,7 +82,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 </tr>
 <tr class="even">
 <td align="left">Refinadores de búsquedas</td>
-<td align="left">La búsqueda devuelve refinadores de todas las ubicaciones geográficas de un espacio empresarial y luego los agrega. La agregación es la mejor posible, lo que significa que puede que los recuentos de refinadores no sean exactos al 100%. Para la mayoría de los escenarios basado en búsquedas esta precisión es suficiente.</td>
+<td align="left">La búsqueda devuelve refinadores de todas las ubicaciones geográficas de un espacio empresarial y luego los agrega. La agregación es la mejor posible, lo que significa que puede que los recuentos de refinadores no sean exactos al 100%. Para la mayoría de los escenarios basado en búsquedas esta precisión es suficiente. </td>
 <td align="left">En aplicaciones basadas en búsquedas que dependen de la exhaustividad del refinador, consulte cada ubicación geográfica por separado sin usar la distribución ramificada multigeográfica.</td>
 </tr>
 <tr class="odd">
@@ -128,7 +129,8 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, n
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>¿Cómo funciona la búsqueda en un entorno multigeográfico?
 
 **Todos** los clientes de búsqueda usan la API REST de SharePoint Search existente para interactuar con los índices de búsqueda.
-<img src="media/configure-search-for-multi-geo_image1-1.png" />
+
+<img src="media/configure-search-for-multi-geo-image1-1.png" />
 
 1. Un cliente de búsqueda llama al punto de conexión de REST de búsqueda con la propiedad EnableMultiGeoSearch= true.
 2. La consulta se envía a todas las ubicaciones geográficas del espacio empresarial.
@@ -150,8 +152,8 @@ Cada Centro de búsqueda tiene varios sectores verticales y hay que configurar i
 
 3.  Seleccione el sector vertical que quiere configurar, haga clic en el icono de engranaje **Configuración** de la esquina superior derecha y luego en **Editar página**. La página de resultados de búsqueda se abre en modo de edición.
 
-     ![](media/configure-search-for-multi-geo_image2.png)
-1.  En el elemento web de resultados de búsqueda, mueva el puntero a la esquina superior derecha del elemento web, haga clic en la flecha y luego en **Editar elemento Web** en el menú. El panel de herramientas del elemento web de resultados de búsqueda se abrirá en la cinta de la parte superior derecha de la página. ![](media/configure-search-for-multi-geo_image3.png)
+     ![](media/configure-search-for-multi-geo-image2.png)
+1.  En el elemento web de resultados de búsqueda, mueva el puntero a la esquina superior derecha del elemento web, haga clic en la flecha y luego en **Editar elemento Web** en el menú. El panel de herramientas del elemento web de resultados de búsqueda se abrirá en la cinta de la parte superior derecha de la página. ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  En la sección **Configuración** del panel de herramientas del elemento web de resultados de búsqueda, en **Configuración de control de resultados**, seleccione **Show Multi-Geo results** (Mostrar resultados multigeográficos) para que el elemento web de resultados de la búsqueda muestre los resultados de todas las ubicaciones geográficas.
 
@@ -227,6 +229,7 @@ MultiGeoSearchStatus: se trata de una propiedad que devuelve la API de SharePoin
 
 Con una solicitud GET, especifica los parámetros de consulta en la dirección URL. Con una solicitud de POST, pasa los parámetros de consulta del cuerpo en el formato de notación de objetos JavaScript (JSON).
 
+
 #### <a name="request-headers"></a>Encabezados de solicitud
 
 <table>
@@ -250,7 +253,10 @@ https:// \<espacio empresarial\>/\_api/search/query?querytext='sharepoint'&Prope
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Ejemplo de solicitud GET para efectuar una distribución ramificada en **algunas** ubicaciones geográficas
 
-https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+
+> [!NOTE]
+> Las comas y los dos puntos de la lista de ubicaciones geográficas de la propiedad MultiGeoSearchConfiguration van precedidas por el carácter **barra diagonal inversa**. Esto es debido a que las solicitudes GET usan dos puntos para separar las propiedades, y comas para separar los argumentos de las propiedades. Sin la barra diagonal inversa como carácter de escape, la propiedad MultiGeoSearchConfiguration se interpreta de forma errónea.
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Ejemplo de distribución ramificada de una solicitud POST a **todas** las ubicaciones geográficas
 
