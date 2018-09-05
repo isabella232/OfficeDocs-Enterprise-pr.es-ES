@@ -1,0 +1,73 @@
+---
+title: Direcciones IP y URL adicionales de Office 365 no incluidas en los servicios web
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 8/22/2018
+ms.audience: Admin
+ms.topic: conceptual
+ms.service: o365-administration
+localization_priority: Priority
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: Adm_O365
+search.appverid:
+- MET150
+- MOE150
+- MED150
+- MBS150
+- MOM160
+- BCS160
+ms.assetid: ''
+description: 'Resumen: los nuevos servicios web de puntos de conexión no incluyen un número reducido de escenarios específicos opuestos de puntos de conexión.'
+hideEdit: true
+ms.openlocfilehash: b40fb1a40d2a815bfc6e02fa11204d10dde2af73
+ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22600514"
+---
+# <a name="additional-office-365-ip-addresses-and-urls-not-included-in-the-web-services"></a>Direcciones IP y URL adicionales de Office 365 no incluidas en los servicios web
+
+Algunos puntos de conexión de red se han publicado anteriormente y no se han incluido en los servicios web. El ámbito de los servicios web son los puntos de conexión de red necesarios para la conectividad de un usuario final de Office 365 en una red perimetral empresarial. Actualmente no se incluyen:
+
+1. Conectividad de red que pueda ser requerida por un centro de datos de Microsoft a una red de cliente (tráfico de red de servidor de entrada híbrido)
+2. Conectividad de red desde servidores en una red de cliente en todo el perímetro de la empresa (tráfico de red de servidor saliente)
+3. Escenarios poco comunes para requisitos de conectividad de red de un usuario
+4. Requisito de conectividad de resolución DNS (no se muestra a continuación)
+5. Sitios de confianza de Internet Explorer o Microsoft Edge
+
+Aparte de DNS, estos son opcionales para la mayor parte de los clientes, salvo que necesite el escenario específico que se describe.
+
+|||||
+|:-----|:-----|:-----|:-----|
+| **Fila** | **Finalidad** | **Destino** | **Tipo** |
+| 1  | [Servicio de importación](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) para la ingesta de PST y de archivos | Consulte el [Servicio de importación](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) para ver los requisitos adicionales. | Escenario de salida poco común |
+| 2  | [Asistente para soporte y recuperación de Office 365](https://diagnostics.office.com/#/): validar credenciales de usuario de inicio de sesión único. Origen: <br> ```o365diagnosticsbasic-eus.cloudapp.net (104.211.54.99)``` <br> ```o365diagnosticworker-eus.cloudapp.net (104.211.54.134)```  | Servicio de token de seguridad local | Tráfico de servidor entrante |
+| 3  | Azure AD Connect (con SSO opcional): WinRM y PowerShell remoto | Entorno de STS de cliente (servidor AD FS y Proxy AD FS) \| Puertos TCP 80 y 443 | Tráfico de servidor entrante |
+| 4  | STS como servidores proxy de AD FS (solo para clientes federados) | STS de cliente (como proxy de AD FS) \| Puertos TCP 443 o TCP 49443 con TLS de cliente | Tráfico de servidor entrante |
+| 5  | [Mensajería unificada de Exchange Online/Integración de SBC](https://technet.microsoft.com/library/jj673565.aspx) | Bidireccional entre el controlador de borde de sesión local y *.um.outlook.com | Solo tráfico de servidor saliente |
+| 6  | Funciones de coexistencia de [Exchange híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), como el uso compartido de disponibilidad. | Servidor de Exchange local de cliente | Tráfico de servidor entrante |
+| 7  | Autenticación de proxy de [Exchange híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) | STS local de cliente | Tráfico de servidor entrante |
+| 8  | Se usa para configurar[Exchange híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) mediante el Asistente de configuración híbrida de Exchange. <br> Nota: Estos puntos de conexión solo son necesarios para configurar la implementación híbrida de Exchange  | ```domains.live.com``` en los puertos TCP 80 y 443, solo son necesarios para el Asistente de configuración híbrida de Exchange 2010 SP3. | Solo tráfico de servidor saliente |
+| 9  | **FQDN de autenticación e identidad** <br> Para que funcione, el FQDN ```secure.aadcdn.microsoftonline-p.com``` debe estar en el Internet Explorer (IE) del cliente o en su zona de sitios de confianza de Edge. |  | Sitios de confianza |
+| 10  |  **FQDN de Microsoft Teams** <br> Si usa Internet Explorer o Microsoft Edge, debe habilitar las cookies propias y de terceros y agregar los FQDN para Teams a los sitios de confianza. Esto es complementario a los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados anteriormente. Para obtener más información, consulte [Problemas conocidos de Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Sitios de confianza |
+| 11  |  **FQDN de SharePoint Online y OneDrive para la Empresa** <br> Todos los FQDN ". sharepoint.com" con "\<inquilino >" en el FQDN tienen que estar en el Internet Explorer del cliente o en su zona de sitios de confianza de Edge para que funcionen. Además de los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados anteriormente, necesitará agregar estos puntos de conexión. |  | Sitios de confianza |
+| 12  | **Yammer**  <br> Yammer solo está disponible en el explorador y requiere que el usuario autenticado pase por un proxy. Para que funcionen, todos los FQDN de Yammer deben estar en el Internet Explorer del cliente o en su zona de sitios de confianza de Edge. |  | Sitios de confianza |
+
+## <a name="related-topics"></a>Temas relacionados
+
+[Administrar puntos de conexión de Office 365](managing-office-365-endpoints.md)
+  
+[Solución de problemas de conectividad de Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d.aspx)
+  
+[Conectividad de clientes](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)
+  
+[Redes de entrega de contenido](https://support.office.com/article/content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f)
+  
+[Intervalos IP del centro de datos de Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653)
+  
+[Espacio IP público de Microsoft](https://www.microsoft.com/download/details.aspx?id=53602)
+
