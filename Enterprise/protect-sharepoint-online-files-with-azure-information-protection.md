@@ -3,11 +3,13 @@ title: Protección de archivos de SharePoint Online con Azure Information Protec
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 08/08/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Resumen: aplique Azure Information Protection para proteger los archivos en un sitio de grupo de SharePoint Online altamente confidencial.'
-ms.openlocfilehash: 2c4776f5795a5a0b07be0f04b4872abadb4d31ca
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 4ea6c1da8b39f22a56ba4f4d555518b671f07b70
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319291"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915315"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Protección de archivos de SharePoint Online con Azure Information Protection
 
@@ -46,41 +48,42 @@ Después, siga estos pasos para configurar Azure Information Protection con una 
 2. En una pestaña independiente del explorador, vaya a Azure Portal ([https://portal.azure.com](https://portal.azure.com)).
     
 3. Si es la primera vez que configura Azure Information Protection, vea [estas instrucciones](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
-    
+
 4. En el panel de lista, haga clic en **Más servicios**, escriba **information** y haga clic en **Azure Information Protection**.
+
+5. Haga clic en **Etiquetas**.
     
-5. En la hoja **Azure Information Protection**, haga clic en **Directivas con ámbito > + Agregar una directiva**.
+6. Haga clic con el botón derecho en la etiqueta **Extremadamente confidencial** y después seleccione **Agregar una subetiqueta**.
     
-6. Escriba un nombre de la nueva directiva en **Nombre de la directiva** y una descripción en **Descripción**.
+7. Escriba un nombre para la subetiqueta en **Nombre** y una descripción de la subetiqueta en **Descripción**.
     
-7. Haga clic en **Seleccionar a qué usuarios o grupos se aplica esta directiva > Usuarios o grupos** y, luego, seleccione el grupo de acceso de los miembros del sitio para su sitio de grupo de SharePoint Online extremadamente confidencial. 
+8. En **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**, haga clic en **Proteger**.
     
-8. Haga clic en **Seleccionar > Aceptar**.
+9. En la sección **Protección**, haga clic en **Azure (clave de nube)**.
     
-9. Para la etiqueta **Extremadamente confidencial**, haga clic en el botón de puntos suspensivos (...) y, luego, en **Agregar una subetiqueta**.
+10. En la hoja **Protección**, en **Configuración de protección**, haga clic en **Agregar permisos**.
     
-10. Escriba un nombre para la subetiqueta en **Nombre** y una descripción en **Descripción**.
+11. En la hoja **Agregar permisos**, en **Especificar usuarios y grupos**, haga clic en **Examinar directorio**.
     
-11. En **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**, haga clic en **Proteger**.
+12. En el panel **Usuarios y grupos de AAD**, seleccione el grupo de acceso de miembros del sitio para el sitio de grupo de SharePoint Online extremadamente confidencial y haga clic en **Seleccionar**.
     
-12. En la sección **Protección**, haga clic en **Azure (clave de nube)**.
+13. En **Seleccionar permisos del conjunto predefinido o personalizado**, haga clic en **Personalizar** y después active las casillas **Ver derechos**, **Editar contenido**, **Guardar**, **Responder** y **Responder a todos**.
     
-13. En la hoja **Protección**, en **Configuración de protección**, haga clic en **+ Agregar permisos**.
+14. Haga clic en **Aceptar** dos veces.
     
-14. En la hoja **Agregar permisos**, en **Especificar usuarios y grupos**, haga clic en **+ Examinar directorio**.
+15. En la hoja **Subetiqueta**, haga clic en **Guardar** y, después, seleccione **Aceptar**.
+
+16. En la hoja **Azure Information Protection**, haga clic en **Directivas > + Agregar una directiva**.
     
-15. En el panel **Usuarios y grupos de AAD**, seleccione el grupo de acceso de miembros del sitio para el sitio de grupo de SharePoint Online extremadamente confidencial y haga clic en **Seleccionar**.
+17. Escriba un nombre de la nueva directiva en **Nombre de la directiva** y una descripción en **Descripción**.
     
-16. En **Elegir permisos entre los preestablecidos**, desactive las casillas **Imprimir**, **Copiar y extraer contenido** y **Reenviar**.
+18. Haga clic en **Seleccionar a qué usuarios o grupos se aplica esta directiva > Usuarios o grupos** y, luego, seleccione el grupo de acceso de los miembros del sitio para su sitio de grupo de SharePoint Online extremadamente confidencial.
     
-17. Haga clic en **Aceptar** dos veces.
-    
-18. En la hoja **Subetiqueta**, haga clic en **Guardar**.
-    
-19. Cierre la nueva hoja de directiva con ámbito.
-    
-20. En la hoja **Azure Information Protection: Directivas con ámbito**, haga clic en **Publicar**.
-    
+19. Haga clic en **Seleccionar > Aceptar**.
+
+20. Haga clic en **Agregar o quitar etiquetas**. En el panel **Directiva: Agregar o quitar etiquetas**, haga clic en el nombre de la nueva subetiqueta y, después, haga clic en **Aceptar**.   
+
+21. Haga clic en **Guardar**y después en **Aceptar**.
  
 ##<a name="client-setup"></a>Instalación del cliente
 Ya está listo para empezar a crear documentos y protegerlos con Azure Information Protection y su nueva etiqueta.

@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumen: cree sitios de grupo de SharePoint Online en un entorno de desarrollo y pruebas, que pueden ser públicos, privados, confidenciales o extremadamente confidenciales.'
-ms.openlocfilehash: fecb725999c7958dca1278c1236fcf251adc33cd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 49153a5c4256e7aa0e5ba5f6d2ac53c4e56b5bdc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193730"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915775"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Protección de sitios de SharePoint Online en un entorno de desarrollo y pruebas
 
@@ -27,7 +29,7 @@ ms.locfileid: "19193730"
   
 En este artículo, se ofrecen instrucciones paso a paso para crear un entorno de desarrollo y pruebas donde se incluyan los cuatro tipos de sitios de grupo de SharePoint Online para la solución [Protección de archivos y sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md).
   
-![Los cuatro sitios de grupo del entorno de desarrollo y pruebas de SharePoint Online seguro.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![Los cuatro sitios de grupo del entorno de desarrollo y pruebas de SharePoint Online seguro.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 Con este entorno de prueba y desarrollo podrá experimentar con los comportamientos de protección de la información y ajustar la configuración a sus necesidades concretas antes de implementar sitios de grupo de SharePoint Online en producción.
   
@@ -198,7 +200,7 @@ En esta fase, se crean las etiquetas para los diferentes niveles de seguridad de
     
 2. En la pestaña **Inicio de Microsoft Office**, haga clic en el icono **Administrador**.
     
-3. En la nueva pestaña **Centro de administración de Office** del explorador, haga clic en **Centros de administración Seguridad &amp; cumplimiento**.
+3. En la nueva pestaña **Centro de administración de Office** del explorador, haga clic en **Centros de administración Seguridad &amp; Cumplimiento**.
     
 4. En la nueva pestaña **Inicio - Seguridad y cumplimiento** del explorador, haga clic en **Clasificaciones > Etiquetas**.
     
@@ -270,7 +272,7 @@ Después configure la carpeta de documentos del sitio de grupo en toda la organi
     
 Esta es el resultado de la configuración.
   
-![Protección de nivel de línea base del sitio de grupo de SharePoint Online público de toda la organización.](images/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
+![Protección de nivel de línea base del sitio de grupo de SharePoint Online público de toda la organización.](media/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
   
 ### <a name="project-1-team-site"></a>Sitio de grupo Proyecto 1
 
@@ -304,7 +306,7 @@ Después, configure la carpeta de documentos del sitio de grupo Proyecto 1 para 
     
 Esta es el resultado de la configuración.
   
-![Protección de nivel de línea base del sitio de grupo de SharePoint Online privado Proyecto1.](images/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
+![Protección de nivel de línea base del sitio de grupo de SharePoint Online privado Proyecto1.](media/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
   
 ### <a name="marketing-campaigns-team-site"></a>Sitio de grupo Campañas de marketing
 
@@ -420,7 +422,7 @@ Luego configure una directiva de prevención de pérdida de datos (DLP) que noti
     
 Esta es el resultado de la configuración.
   
-![Protección de nivel confidencial del sitio de grupo de SharePoint Online aislado Campañas de marketing.](images/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
+![Protección de nivel confidencial del sitio de grupo de SharePoint Online aislado Campañas de marketing.](media/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
 ### <a name="company-strategy-team-site"></a>Sitio de grupo Estrategia de la compañía
 
@@ -568,7 +570,7 @@ Después, siga estos pasos para configurar Azure Information Protection con una 
 
 16. En la hoja **Azure Information Protection**, haga clic en **Directivas > + Agregar una directiva**.
     
-17. Escriba **EstrategiaEmpresa** en **Nombre de la directiva**, y **Etiqueta para los documentos del sitio de grupo Estrategia de la compañía** en **Descripción**.
+17. Escriba **EstrategiaEmpresa** en **Nombre de la directiva**, y **Documentos del sitio de grupo Estrategia de la compañía** en **Descripción**.
     
 18. Haga clic en **Seleccionar a qué usuarios o grupos se aplica esta directiva > Usuarios o grupos** y seleccione **C-Suite**.
     
@@ -582,13 +584,13 @@ Para proteger un documento con Azure Information Protection y la nueva etiqueta,
   
 Esta es el resultado de la configuración.
   
-![Protección de nivel extremadamente confidencial de un sitio de grupo de SharePoint Online aislado de Estrategia de la compañía.](images/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
+![Protección de nivel extremadamente confidencial de un sitio de grupo de SharePoint Online aislado de Estrategia de la compañía.](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
   
 Ahora está listo para crear documentos en estos cuatro sitios y probar el acceso a ellos con diferentes cuentas de usuario de la suscripción de evaluación.
   
 Esta es la configuración general de los cuatro sitios de grupo de SharePoint Online.
   
-![Los cuatro sitios de grupo del entorno de desarrollo y pruebas de SharePoint Online seguro.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![Los cuatro sitios de grupo del entorno de desarrollo y pruebas de SharePoint Online seguro.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 ## <a name="next-step"></a>Paso siguiente
 
