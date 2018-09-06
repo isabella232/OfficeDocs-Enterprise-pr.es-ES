@@ -3,7 +3,7 @@ title: Mover datos principales a nuevas zonas del centro de datos de Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Zonas de centro de datos nuevo agregar capacidad y de compute recursos para admitir el crecimiento de propuestas y uso de nuestros continuo al cliente. Además, las nuevas zonas de centro de datos ofrecen en ubican residencia de datos para los datos de cliente principal. Los datos de cliente principal están un término que hace referencia a un subconjunto de datos de cliente definidos en los términos de Microsoft Online Services: contenido y los archivos del sitio contenido del buzón Exchange Online (cuerpo del correo electrónico, las entradas de calendario y el contenido de los datos adjuntos de correo electrónico) y SharePoint Online almacena dentro de ese sitio y los archivos cargan en OneDrive para la empresa.'
-ms.openlocfilehash: 1f3af15852b1221daf2e2d994653c8bb9cf697e4
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 362cb257f2098c1acaf08541f34278ed9b4987d2
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542953"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839588"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Mover datos principales a nuevas zonas del centro de datos de Office 365
 

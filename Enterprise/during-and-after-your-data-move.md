@@ -3,7 +3,7 @@ title: Durante y después del movimiento de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Movimientos de datos son una operación de back-end con una repercusión mínima para los usuarios finales. Se requiere ninguna acción mientras Microsoft mueve cada servicio y los datos asociados para el inquilino a un nuevo ubican de centro de datos. Transferencia de datos y la validación se producen en segundo plano de antemano con un impacto mínimo en los usuarios.
-ms.openlocfilehash: 8813e73dcbce7b6ea24e497929ca6b8e0928e4e7
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542857"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839608"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -165,4 +165,13 @@ Todos los usuarios se cerrará desde el Skype para software de cliente de negoci
 
 Sólo se mover los datos de cliente de Exchange Online, SharePoint Online y Skype para la empresa. No se mover datos para otros servicios. No hay ningún cambio o impacto a usted como un cliente o un usuario de estos otros servicios. No influyen en el proceso de mover, y la ubicación de sus datos de clientes permanece inalterada.
   
+## <a name="related-topics"></a>Temas relacionados 
+ 
+[Cómo solicitar el movimiento de datos](request-your-data-move.md)
+    
+[Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.md)
+  
+[Nuevas zonas de centro de datos de Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Servicios de Azure por región](https://azure.microsoft.com/en-us/regions/)
 

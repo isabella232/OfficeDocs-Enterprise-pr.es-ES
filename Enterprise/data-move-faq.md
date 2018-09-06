@@ -3,7 +3,7 @@ title: Preguntas más frecuentes sobre el movimiento de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Aquí encontrará respuestas a preguntas generales sobre cómo mover datos principales a un nuevo ubican de centro de datos.
-ms.openlocfilehash: 40f83ee94aaa7c919f08d91d888ff131da02df67
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: fe2399afa81a189416c41e3acba67e53eb99c674
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542868"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839598"
 ---
 # <a name="data-move-general-faq"></a>Preguntas más frecuentes sobre el movimiento de datos
 
@@ -149,4 +149,12 @@ R. Sí.
   
 R. Sí. Microsoft mantiene una red global de gran tamaño con conexiones a Internet públicas en más de 50 ubicaciones en 23 países todo el mundo con acuerdos de interconexión con más de 1.500 proveedores de servicios de Internet (ISP). Los usuarios podrán tener acceso a los centros de datos desde cualquier lugar y en Internet.
   
+## <a name="related-topics"></a>Temas relacionados
 
+[Mover datos principales a nuevas zonas del centro de datos de Office 365](moving-data-to-new-datacenter-geos.md)
+
+[Cómo solicitar el movimiento de datos](request-your-data-move.md)
+
+[Nuevas zonas de centro de datos de Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Servicios de Azure por región](https://azure.microsoft.com/en-us/regions/)

@@ -3,7 +3,7 @@ title: Cómo solicitar el movimiento de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Los clientes existentes de Office 365 será necesario enviar una solicitud antes de la fecha límite para su país para que los datos de cliente de sus servicios de Office 365 colaboradores movidos a su ubican nuevo.
-ms.openlocfilehash: 850a3a81b7e0405d47e36726e328ea078ae3f55c
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23222982"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839578"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -109,5 +109,15 @@ No se puede combinar el inquilino de prueba con el inquilino de existente:
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notificar a los usuarios actualizar la configuración de Exchange obsoletas en dispositivos móviles
 
 Si los usuarios tienen un dispositivo móvil con el servidor de Exchange que se establece en **m.outlook.com** o **podxxxxx.outlook.com**, se recomienda que cambie a **outlook.office365.com**, siga las instrucciones de [conjunto de seguridad de un dispositivo móvil para sincronizar con su cuenta](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+
+## <a name="related-topics"></a>Temas relacionados
+
+[Mover datos principales a nuevas zonas del centro de datos de Office 365](moving-data-to-new-datacenter-geos.md)
+
+[Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.md)
+
+[Nuevas zonas de centro de datos de Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Servicios de Azure por región](https://azure.microsoft.com/en-us/regions/)
   
 
