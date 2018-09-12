@@ -92,7 +92,7 @@
 ### [Cómo preparar un dominio no enrutable para la sincronización de directorios](prepare-a-non-routable-domain-for-directory-synchronization.md)
 ### [Planeamiento de red con ExpressRoute para Office 365](network-planning-with-expressroute.md)
 ### [Enrutamiento con ExpressRoute para Office 365](routing-with-expressroute.md)
-### [Principios de conectividad de red de Office 365](network-connectivity.md)
+### [Principios de conectividad de red de Office 365](office-365-network-connectivity-principles.md)
 ### Puntos de conexión de Office 365
 #### [Puntos de conexión mundiales](urls-and-ip-address-ranges.md)
 #### [Puntos de conexión de DoD de Estados Unidos](office-365-u-s-government-dod-endpoints.md)
