@@ -1,5 +1,5 @@
-# Modelos de arquitectura de la nube
-## [Redes de Microsoft Cloud para arquitectos profesionales](microsoft-cloud-networking-for-enterprise-architects.md)
+# [Modelos de arquitectura de la nube](microsoft-cloud-it-architecture-resources.md)
+## [Redes de Microsoft Cloud para arquitectos empresariales](microsoft-cloud-networking-for-enterprise-architects.md)
 ### [Desarrollo de la red para la conectividad en la nube](evolving-your-network-for-cloud-connectivity.md)
 ### [Elementos comunes de la conectividad de la nube de Microsoft](common-elements-of-microsoft-cloud-connectivity.md)
 ### [ExpressRoute para la conectividad en la nube de Microsoft](expressroute-for-microsoft-cloud-connectivity.md)
