@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Para ayudarle a identificar y diferenciar el tráfico de red de Office 365, un nuevo servicio web publica puntos de conexión de Office 365, con lo cual le resultará más fácil evaluar, configurar y mantenerse al día con los cambios. Este nuevo servicio web reemplaza los archivos XML descargables que están disponibles actualmente.
-ms.openlocfilehash: 3abd6a0692ae4d66c76f8c0d65653b83646c6e23
-ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23830898"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831905"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Dirección IP de Office 365 y servicio web de URL**
 
@@ -66,13 +66,15 @@ Hay un parámetro para el método web de versión:
 
 - **AllVersions=true**: parámetro de cadena de consulta. De forma predeterminada, la versión devuelta es la más reciente. Incluya este parámetro opcional para solicitar todas las versiones publicadas.
 - **Format=JSON** | **CSV** | **RSS**. Además de los formatos JSON y CSV, el método web de versión también es compatible con RSS. Puede usarlo junto con el parámetro allVersions=true para solicitar una fuente RSS, que se puede usar con Outlook y otros lectores RSS.
-- **Instance**: parámetro de ruta. Este parámetro opcional especifica la instancia para la que se devolverá la versión. Si se omite, se devolverán todas las instancias. Las instancias válidas son: Worldwide, China, Germany, USGovDoD, USGovGCCHigh
+- **Instance**: parámetro de ruta. Este parámetro opcional especifica la instancia para la que se devolverá la versión. Si se omite, se devolverán todas las instancias. Las instancias válidas son: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
 
 El resultado del método web de versión puede ser un registro único o una matriz de registros. Los elementos de cada registro son:
 
 - instance: el nombre corto de la instancia de servicio de Office 365.
 - latest: la versión más reciente de los extremos de la instancia especificada.
 - versions: una lista de todas las versiones anteriores de la instancia especificada. Este elemento solo se incluye si el parámetro AllVersions es true.
+
+Puede usar Microsoft Flow para recibir notificaciones de correo electrónico sobre los cambios realizados en las direcciones IP y URL. Consulte [Usar Microsoft Flow para recibir un correo electrónico de los cambios en las direcciones IP y URL de Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 
 ### <a name="examples"></a>**Ejemplos:**
 
@@ -487,24 +489,10 @@ Las actualizaciones de los parámetros o los resultados de estos métodos de ser
 
 [Conectividad de red a Office 365](network-connectivity.md)
   
-[Azure ExpressRoute para Office 365](azure-expressroute.md)
-  
-[Administrar ExpressRoute para la conectividad de Office 365](managing-expressroute-for-connectivity.md)
-  
-[Enrutamiento con ExpressRoute para Office 365](routing-with-expressroute.md)
-  
-[Implementación de ExpressRoute para Office 365](implementing-expressroute.md)
-  
-[Uso de comunidades BGP en ExpressRoute para escenarios de Office 365 (versión preliminar)](bgp-communities-in-expressroute.md)
-  
 [Calidad de medios y rendimiento de conectividad de red en Skype Empresarial Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
 [Optimización de la red para Skype Empresarial Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
-  
-[ExpressRoute y QoS en Skype Empresarial Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
-  
-[Flujo de llamadas con ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
-  
+
 [Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento](performance-tuning-using-baselines-and-history.md)
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
