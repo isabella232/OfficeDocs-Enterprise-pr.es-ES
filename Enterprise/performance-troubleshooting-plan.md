@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 description: ¿Necesita conocer los pasos a seguir para la identificación y corrección de rendimiento lento entre SharePoint Online, OneDrive para el negocio, Exchange Online o Skype para profesionales en línea y el equipo cliente, se bloquea e intervalos? Antes de llamar a soporte técnico, este artículo puede ayudarle a solucionar problemas de rendimiento de Office 365 e incluso solucionar algunos de los problemas más comunes.
-ms.openlocfilehash: 629e65fe6d35237f33ae06fdeec380c670cd5e62
-ms.sourcegitcommit: 0466a88133a42e2db4245f972cecb371721c9b5d
+ms.openlocfilehash: 0e588d35ff6caaa0796092bb2f964bced15f4e47
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23849373"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975188"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plan de solución de problemas de rendimiento para Office 365
 
@@ -120,14 +120,14 @@ Después de instalar Netmon 3.4, abra la herramienta y lleve a cabo estos pasos:
   
  **Ejecute HTTPWatch y reproduzca el problema**
   
-1. HTTPWatch es un explorador Plug-in, por lo que la exposición de la herramienta en el explorador es ligeramente diferente para cada versión de Internet Explorer. Normalmente, puede encontrar HTTPWatch en la barra de comandos en el Explorador de Internet Explorer.</br>Si no ve el complemento HTTPWatch en la ventana del explorador, compruebe la versión del explorador por haga clic en Ayuda \> acerca de, o en versiones posteriores de Internet Explorer, haga clic en el símbolo de engranaje y acerca de Internet Explorer. Para iniciar la barra de **comandos** , haga clic en la barra de menús en el Explorador de Internet y haga clic en la **barra de comandos**. En el pasado, HTTPWatch se ha asociado con los comandos y las barras del explorador, por lo que una vez instale, si no ve inmediatamente el icono (incluso después de reiniciar) compruebe **las herramientas**y las barras de herramientas para el icono. Recuerde que se pueden personalizar las barras de herramientas y opciones que pueden agregarse a ellos.</br>
+1. HTTPWatch es un explorador Plug-in, por lo que la exposición de la herramienta en el explorador es ligeramente diferente para cada versión de Internet Explorer. Normalmente, puede encontrar HTTPWatch en la barra de comandos en el Explorador de Internet Explorer.<br/>Si no ve el complemento HTTPWatch en la ventana del explorador, compruebe la versión del explorador por haga clic en Ayuda \> acerca de, o en versiones posteriores de Internet Explorer, haga clic en el símbolo de engranaje y acerca de Internet Explorer. Para iniciar la barra de **comandos** , haga clic en la barra de menús en el Explorador de Internet y haga clic en la **barra de comandos**. En el pasado, HTTPWatch se ha asociado con los comandos y las barras del explorador, por lo que una vez instale, si no ve inmediatamente el icono (incluso después de reiniciar) compruebe **las herramientas**y las barras de herramientas para el icono. Recuerde que se pueden personalizar las barras de herramientas y opciones que pueden agregarse a ellos.<br/>
     ![Barra de herramientas de comando de Internet Explorer con el icono de HTTPWatch que se muestra.](media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
   
 2. Inicie HTTPWatch en una ventana del explorador Internet Explorer. Aparecerá acoplada en el explorador en la parte inferior de esa ventana. Haga clic en **registro**.
     
 3. Reproducir los pasos exactos implicados en el problema de rendimiento. Haga clic en el botón **Detener** en HTTPWatch. 
     
-4. **Guardar** el HTTPWatch o **Enviar por correo electrónico**. Recuerde que un nombre al archivo para que incluya información de fecha y hora y una indicación de si la inspección contiene una demostración de rendimiento correcto o incorrecto.</br>![HTTPWatch que muestra la ficha de red para una carga de página de la página de inicio de Office 365.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br>
+4. **Guardar** el HTTPWatch o **Enviar por correo electrónico**. Recuerde que un nombre al archivo para que incluya información de fecha y hora y una indicación de si la inspección contiene una demostración de rendimiento correcto o incorrecto.<br/>![HTTPWatch que muestra la ficha de red para una carga de página de la página de inicio de Office 365.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)<br/>
     Esta captura de pantalla es desde la versión de HTTPWatch Professional. Puede abrir seguimientos realizados en la versión básica en un equipo con una versión Professional y leerlo allí. Información adicional puede estar disponible desde el seguimiento a través de este método.
     
 ## <a name="problem-steps-recorder"></a>Grabación de acciones
@@ -279,11 +279,11 @@ Estos son los pasos a seguir para filtrar su Netmon para obtener la dirección I
 
 1. Haga ping a la dirección URL `ping outlook.office365.com` y, en los resultados, anote el nombre y la dirección IP del servidor DNS que se envió la solicitud de ping a. 
 2. Red abrir la página de seguimiento o realiza la acción que proporciona el problema de rendimiento o, si ve una latencia alta en el comando ping, propiamente dicha, seguimiento de red se. 
-3. Abrir el seguimiento de Netmon y filtro para DNS (este filtro también funciona en Wireshark, pero minúsculas `-- dns`). Dado que conoce el nombre del servidor DNS desde el comando ping también puede filtrar más rápidamente en Netmon similar: `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")` , que tiene este aspecto en Wireshark dns y marco contiene "namnorthwest".</br>Abra el paquete de respuesta y, en la ventana de detalles de las tramas de Netmon, haga clic en DNS para expandir para obtener más información. En la información de DNS que encontrará la dirección IP del servidor DNS que la solicitud ha producido un problema en Office 365--que necesitará esta dirección IP para el siguiente paso (la herramienta de PsPing). Quitar el filtro, haga clic en la respuesta de DNS en resumen de marco de Netmon \> buscar conversaciones \> DNS para ver la consulta DNS y respuesta--paralelo. 
+3. Abrir el seguimiento de Netmon y filtro para DNS (este filtro también funciona en Wireshark, pero minúsculas `-- dns`). Dado que conoce el nombre del servidor DNS desde el comando ping también puede filtrar más rápidamente en Netmon similar: `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")` , que tiene este aspecto en Wireshark dns y marco contiene "namnorthwest".<br/>Abra el paquete de respuesta y, en la ventana de detalles de las tramas de Netmon, haga clic en DNS para expandir para obtener más información. En la información de DNS que encontrará la dirección IP del servidor DNS que la solicitud ha producido un problema en Office 365--que necesitará esta dirección IP para el siguiente paso (la herramienta de PsPing). Quitar el filtro, haga clic en la respuesta de DNS en resumen de marco de Netmon \> buscar conversaciones \> DNS para ver la consulta DNS y respuesta--paralelo. 
 4. En Netmon, tenga en cuenta también la columna de desplazamiento de tiempo entre la solicitud de DNS y la respuesta. En el siguiente paso, fácil de instalar y usar [PsPing](https://technet.microsoft.com/en-us/sysinternals/jj729731.aspx) herramienta resulta muy práctica, porque a menudo está bloqueado ICMP en los Firewalls y debido a que PsPing elegante realiza un seguimiento de latencia en milisegundos. PsPing finalice una conexión TCP con una dirección y el puerto (en nuestro caso abra el puerto 443). 
 5. Instalar PsPing. 
 6. Abra un símbolo del sistema (iniciar \> ejecutar \> escriba cmd o clave de Windows \> escriba cmd) y cambie el directorio al directorio donde ha instalado PsPing para ejecutar el comando PsPing. En mis ejemplos se puede ver que se ha realizado una carpeta 'Rendimiento' en la raíz de C. Puede hacer lo mismo con acceso rápido. 
-7. Escriba el comando para que está realizando la PsPing según la dirección IP del servidor DNS de Office 365 desde su seguimiento Netmon anterior, no olvide agregar el número de puerto. </br>En otras palabras, `psping -n 20 132.245.24.82:445`. Esto podrá un muestreo de llamadas 20 ping y promedio de la latencia cuando deja de PsPing. 
+7. Escriba el comando para que está realizando la PsPing según la dirección IP del servidor DNS de Office 365 desde su seguimiento Netmon anterior, no olvide agregar el número de puerto. <br/>En otras palabras, `psping -n 20 132.245.24.82:445`. Esto podrá un muestreo de llamadas 20 ping y promedio de la latencia cuando deja de PsPing. 
 
 Si va a Office 365 a través de un servidor proxy, los pasos son un poco diferentes. Lo haría PsPing primero el servidor proxy para obtener un valor promedio de latencia en milisegundos para proxy/salida y back y, a continuación, ejecute PsPing en el servidor proxy, o en un equipo con una conexión directa a Internet para obtener el valor que falta (uno a Office 365 y back).  
 
@@ -490,6 +490,6 @@ No tratamos las herramientas usadas para solucionar problemas específicos de la
 
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Preguntas más frecuentes de los extremos de Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Preguntas frecuentes sobre extremos de Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
   
 

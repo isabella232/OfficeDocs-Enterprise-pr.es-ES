@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Movimientos de datos son una operación de back-end con una repercusión mínima para los usuarios finales. Se requiere ninguna acción mientras Microsoft mueve cada servicio y los datos asociados para el inquilino a un nuevo ubican de centro de datos. Transferencia de datos y la validación se producen en segundo plano de antemano con un impacto mínimo en los usuarios.
-ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839608"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975178"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -96,8 +96,8 @@ En la tabla siguiente se muestra cómo obtener acceso a la exhibición de docume
   
 ||**Centro de administración de Exchange**|**Seguridad &amp; centro de cumplimiento**|
 |:-----|:-----|:-----|
-|eDiscovery  <br/> | Vaya a https://portal.office.comy, a continuación, haga clic en el icono de **administración** . </br> Haga clic en **centros de administración** \> **Exchange**. </br> Seleccione **administración de cumplimiento de normas** \> **exhibición de documentos electrónicos en contexto &amp; suspensión**. | Vaya a https://portal.office.comy, a continuación, haga clic en el icono de administración. </br> Haga clic en **centros de administración** \> **seguridad &amp; cumplimiento**. </br> Seleccione **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos**.|
-|Auditoría  <br/> | Vaya a https://portal.office.comy, a continuación, haga clic en el icono de **administración** . </br> Haga clic en **centros de administración** \> **Exchange**. Seleccione **administración de cumplimiento de normas** \> **auditoría**. | Vaya a https://portal.office.comy, a continuación, haga clic en el icono de administración. </br> Haga clic en **centros de administración** \> **seguridad &amp; cumplimiento**. </br> Seleccione **búsqueda &amp; investigación** \> **búsqueda de registro de auditoría**. |
+|eDiscovery  <br/> | Vaya a https://portal.office.comy, a continuación, haga clic en el icono de **administración** . <br/> Haga clic en **centros de administración** \> **Exchange**. <br/> Seleccione **administración de cumplimiento de normas** \> **exhibición de documentos electrónicos en contexto &amp; suspensión**. | Vaya a https://portal.office.comy, a continuación, haga clic en el icono de administración. <br/> Haga clic en **centros de administración** \> **seguridad &amp; cumplimiento**. <br/> Seleccione **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos**.|
+|Auditoría  <br/> | Vaya a https://portal.office.comy, a continuación, haga clic en el icono de **administración** . <br/> Haga clic en **centros de administración** \> **Exchange**. Seleccione **administración de cumplimiento de normas** \> **auditoría**. | Vaya a https://portal.office.comy, a continuación, haga clic en el icono de administración. <br/> Haga clic en **centros de administración** \> **seguridad &amp; cumplimiento**. <br/> Seleccione **búsqueda &amp; investigación** \> **búsqueda de registro de auditoría**. |
    
 ### <a name="mailbox-migration"></a>Migración de correo
 

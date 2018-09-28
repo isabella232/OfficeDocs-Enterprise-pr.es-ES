@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: Híbrido moderno autenticación (HMA), es un método de administración de identidades que ofrece más seguro autorización y autenticación de usuario y está disponible para las implementaciones híbridas de Exchange server local.
-ms.openlocfilehash: 871f03b8e776c694f7378f6905259d21516f7326
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542855"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975198"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Exchange Server local para usar la autenticación moderna híbrida
 
@@ -81,7 +81,7 @@ Asegúrese de que las direcciones URL que los clientes pueden conectarse a apare
     
 Tome nota de (y captura de pantalla para realizar una comparación posterior) el resultado de este comando, que debe incluir un https:// * detección automática. .com *SuDominio* * y la dirección URL de https:// *correo.sudominio.com* , pero se componen principalmente de SPN que comiencen con 00000002-0000-0ff1-ce00-000000000000 /. Si no hay direcciones URL https:// desde su local que faltan necesitamos agregar esos registros específicos a esta lista. 
   
-3. Si no ve los registros MAPI/HTTP, EWS, ActiveSync, OAB y detección automática internos y externos en esta lista, debe agregarlas mediante el siguiente comando (en el ejemplo de las direcciones URL son '`mail.corp.contoso.com`'y'`owa.contoso.com`', pero tenía **reemplazar las direcciones URL de ejemplo con su propio** ) : </br>
+3. Si no ve los registros MAPI/HTTP, EWS, ActiveSync, OAB y detección automática internos y externos en esta lista, debe agregarlas mediante el siguiente comando (en el ejemplo de las direcciones URL son '`mail.corp.contoso.com`'y'`owa.contoso.com`', pero tenía **reemplazar las direcciones URL de ejemplo con su propio** ) : <br/>
 ```
 - $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 - $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")

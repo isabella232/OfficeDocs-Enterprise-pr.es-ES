@@ -1,9 +1,8 @@
 ---
 title: Cómo comprobar el estado del servicio Office 365
-ms.author: kfollis
-author: kfollis
-manager: scotv
-ms.date: 6/15/2018
+ms.author: robmazz
+author: robmazz
+manager: laurawi
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -21,16 +20,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Ver el estado de mantenimiento de servicios de Office 365 antes de llamar a soporte técnico para ver si hay una interrupción del servicio de active
-ms.openlocfilehash: d01fe8e269ace922ab92cca779d6f8fea8b6802e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: f4bdc0f4b6faa7a3ae86580596e28e6391167340
+ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542763"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24976570"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Cómo comprobar el estado del servicio Office 365
 
-Puede ver el estado de Office 365, Yammer, Microsoft Dynamics CRM y servicios de nube de Microsoft Intune en Office 365 ** de servicio de estado ** página en el centro de administración. Si experimenta problemas con un servicio de nube, puede comprobar el estado del servicio para determinar si se trata de un problema conocido con una resolución en curso antes de llamar al soporte técnico o dedicada a la solución de problemas de tiempo. 
+Puede ver el estado de Office 365, Yammer, Microsoft Dynamics CRM y servicios de nube de Microsoft Intune en la página de **estado del servicio** de Office 365 en el centro de administración. Si experimenta problemas con un servicio de nube, puede comprobar el estado del servicio para determinar si se trata de un problema conocido con una resolución en curso antes de llamar al soporte técnico o dedicada a la solución de problemas de tiempo. 
   
 ### <a name="how-to-check-service-health"></a>Cómo comprobar el estado del servicio
 
@@ -39,7 +38,7 @@ Puede ver el estado de Office 365, Yammer, Microsoft Dynamics CRM y servicios de
     > [!NOTE]
     > Las personas que tengan asignadas el administrador global o el rol de administrador de servicio pueden ver el estado del servicio. Para permitir que Exchange, SharePoint y Skype para los administradores de negocio ver el estado del servicio, se debe también asignar el rol de administrador de servicio. 
   
-2. Para abrir el estado del servicio, en el centro de administración, vaya a **Mantenimiento** \> **estado del servicio**, o haga clic en el estado del servicio de tarjetas en el panel principal. La tarjeta de panel indica si hay un problema de servicio de active y vínculos a la página de estado de servicio detallados.
+2. Para abrir el estado del servicio, en el centro de administración, vaya a **Mantenimiento** > **estado del servicio**, o haga clic en la **tarjeta de servicio de estado** en el **panel principal**. La tarjeta de panel indica si hay un problema de servicio de active y vínculos a la página de estado de servicio detallados.
     
     ![Tarjeta de panel de estado del servicio](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -94,16 +93,16 @@ La mayoría de los servicios de tiempo se mostrará como correcto sin más infor
    
 ### <a name="status-definitions"></a>Definiciones de estado
 
-| |
 |**Estado**|**Definición**|
 |:-----|:-----|
-|Investigar  <br/> |Se está al tanto de un posible problema y se recopilar más información sobre lo que está ocurriendo y el ámbito de impacto.  <br/> |
-|Degradación del servicio  <br/> |Hemos confirmado que hay un problema que puede afectar al uso de un servicio o característica. Es posible que vea este estado si un servicio está llevando a cabo más lentamente de lo habitual, hay interrupciones intermitentes, o si una característica no funciona, por ejemplo.  <br/> |
-|Interrupción del servicio  <br/> |Verá este estado si se determina que un problema afecta a la capacidad de los usuarios tener acceso al servicio. En este caso, el problema es significativo y puede reproducir de forma coherente.  <br/> |
-|Restauración del servicio  <br/> |Se ha identificado la causa del problema, sabemos qué que llevar a cabo una acción correctiva y están en el proceso de mejorar el servicio de estado correcto.  <br/> |
-|Recuperación extendida  <br/> |Este estado indica que una acción correctiva está en curso para restaurar el servicio a la mayoría de los usuarios, pero tardará algún tiempo en llegar a todos los sistemas afectados. También es posible que vea este estado si hemos hecho temporal corregir para reducir el impacto mientras se espera que se debe aplicar una solución permanente.  <br/> |
-|Investigación suspendida  <br/> |Si se produce una solicitud para obtener información adicional de los clientes para permitir que nos investigar aún más nuestra investigación detallada de un posible problema, verá este estado. Si necesitamos actuar, le dejaremos saber qué datos o los registros que necesitamos.  <br/> |
-|Servicio restaurado  <br/> |Hemos confirmado que una acción correctiva ha resuelto el problema subyacente y el servicio se ha restaurado a un estado correcto. Para averiguar lo que salió mal, ver los detalles del problema.  <br/> |
+|**Investigar** | Se está al tanto de un posible problema y se recopilar más información sobre lo que está ocurriendo y el ámbito de impacto. |
+|**Degradación del servicio** | Hemos confirmado que hay un problema que puede afectar al uso de un servicio o característica. Es posible que vea este estado si un servicio está llevando a cabo más lentamente de lo habitual, hay interrupciones intermitentes, o si una característica no funciona, por ejemplo. |
+|**Interrupción del servicio** | Verá este estado si se determina que un problema afecta a la capacidad de los usuarios tener acceso al servicio. En este caso, el problema es significativo y puede reproducir de forma coherente. |
+|**Restauración del servicio** | Se ha identificado la causa del problema, sabemos qué que llevar a cabo una acción correctiva y están en el proceso de mejorar el servicio de estado correcto. |
+|**Recuperación extendida** | Este estado indica que una acción correctiva está en curso para restaurar el servicio a la mayoría de los usuarios, pero tardará algún tiempo en llegar a todos los sistemas afectados. También es posible que vea este estado si hemos hecho temporal corregir para reducir el impacto mientras se espera que se debe aplicar una solución permanente. |
+|**Investigación suspendida** | Si se produce una solicitud para obtener información adicional de los clientes para permitir que nos investigar aún más nuestra investigación detallada de un posible problema, verá este estado. Si necesitamos actuar, le dejaremos saber qué datos o los registros que necesitamos. |
+|**Servicio restaurado** | Hemos confirmado que una acción correctiva ha resuelto el problema subyacente y el servicio se ha restaurado a un estado correcto. Para averiguar lo que salió mal, ver los detalles del problema. |
+|**Informe del incidente posteriores a la publicado** | Hemos publicado un informe del incidente Post para un problema específico que incluye información de la causa raíz y pasos siguientes para asegurarse de que no volver a producirse un problema similar. |
    
 ## <a name="history"></a>Historial
 

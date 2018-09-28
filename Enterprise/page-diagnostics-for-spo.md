@@ -15,12 +15,12 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: Use los diagnósticos de página para la herramienta de SharePoint para analizar sus páginas clásicas con las mejores prácticas recomendadas para SharePoint Online.
-ms.openlocfilehash: fb5bb9a333a3b04acfe3d014952eb6406f7dbe31
-ms.sourcegitcommit: 0466a88133a42e2db4245f972cecb371721c9b5d
+ms.openlocfilehash: 0fc2e16867b54e644d00c57fbfc41d4f7d042f88
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23849363"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975168"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>Use la herramienta de diagnóstico de la página de SharePoint Online
 
@@ -29,20 +29,20 @@ En este artículo se describe cómo puede usar la herramienta de diagnóstico de
 Los sitios de grupo que no tengan habilitada la publicación no se pueden hacer uso de las CDN pero todas las reglas restantes son aplicables. Publicación agrega sobrecarga adicional, por lo que no activa la publicación sólo para obtener la funcionalidad CDN tal y como lo quedará afectado negativamente tiempos de carga de página.
   
 > [!IMPORTANT]
-> La herramienta de diagnóstico de la página no se ejecutará con las bibliotecas de documentos o páginas del sistema, como la herramienta está diseñada para revisar las páginas del sitio de SharePoint. Una página *allitems.aspx* es un sistema. Si intenta ejecutar la herramienta en una página del sistema, recibirá un mensaje que lee, "esta aplicación sólo se debe ejecutar en las páginas de SharePoint."</br> ![Debe ejecutar en una página de SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)</br>No es un error en la herramienta como no hay ningún valor en la evaluación de bibliotecas o páginas del sistema. Navegue a una página de SharePoint que no sea de sistema para usar la herramienta. ¿Si desea enviar comentarios acerca de la herramienta por favor, haga clic en la ficha acerca y siga el [ceder el vínculo de comentarios](https://go.microsoft.com/fwlink/?linkid=874109). 
+> La herramienta de diagnóstico de la página no se ejecutará con las bibliotecas de documentos o páginas del sistema, como la herramienta está diseñada para revisar las páginas del sitio de SharePoint. Una página *allitems.aspx* es un sistema. Si intenta ejecutar la herramienta en una página del sistema, recibirá un mensaje que lee, "esta aplicación sólo se debe ejecutar en las páginas de SharePoint."<br/> ![Debe ejecutar en una página de SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>No es un error en la herramienta como no hay ningún valor en la evaluación de bibliotecas o páginas del sistema. Navegue a una página de SharePoint que no sea de sistema para usar la herramienta. ¿Si desea enviar comentarios acerca de la herramienta por favor, haga clic en la ficha acerca y siga el [ceder el vínculo de comentarios](https://go.microsoft.com/fwlink/?linkid=874109). 
   
 ## <a name="install-the-page-diagnostic-tool"></a>Instalar la herramienta de diagnóstico de página
 
 > [!IMPORTANT]
 > Microsoft no lee los datos o sitios Web que visite y no se captura cualquier información personal, la información de sitio Web o descargar con esta herramienta. La única información registrada por la herramienta es el nombre del inquilino, count y si se ha usado la opción de compatibilidad con el registro cuando se ejecuta la herramienta de la regla. Esta información es de Microsoft para analizar cuáles son los desafíos que se está produciendo por nuestros clientes y para garantizar que la capacidad de registro de soporte técnico no es un mal uso.
 
-1. Mediante un explorador de Chrome, abra directamente el [vínculo a la herramienta](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) o abra la búsqueda en el [Almacén Web del explorador de Chrome](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint) e instale la extensión de explorador. Revise la directiva de privacidad del usuario proporcionada en la página de descripción en el almacén. Al agregar la herramienta para el explorador, verá lo siguiente tenga en cuenta los permisos.</br>![Permisos del almacén de cromo](media/e9fbcef0-1171-43ac-8ea8-c2b5be1b7925.png)</br>   Este aviso está en su lugar debido a que una página puede contener contenido desde ubicaciones fuera de SharePoint según los elementos Web y las personalizaciones en la página. Esto significa que la herramienta leerá las solicitudes y respuestas cuando se hace clic en el botón Inicio y sólo de la ficha activa de SharePoint donde se ejecuta la herramienta. Esta información se captura localmente por el explorador web y está disponible a través de la exportación al vínculo de JSON en la herramienta. **La información no se envía o capturada por Microsoft.** (La herramienta respeta el Microsoft Privacy directiva accesible [aquí](https://go.microsoft.com/fwlink/p/?linkid=857875).)</br></br>La funcionalidad "Exportar a JSON" en la herramienta también es ¿por qué se necesita el permiso "Administrar sus descargas". Siga las directrices de privacidad de la compañía antes de compartir el archivo JSON fuera de la organización, como los resultados contienen direcciones URL y se puede clasificar como PII (información de identificación personal).
+1. Mediante un explorador de Chrome, abra directamente el [vínculo a la herramienta](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) o abra la búsqueda en el [Almacén Web del explorador de Chrome](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint) e instale la extensión de explorador. Revise la directiva de privacidad del usuario proporcionada en la página de descripción en el almacén. Al agregar la herramienta para el explorador, verá lo siguiente tenga en cuenta los permisos.<br/>![Permisos del almacén de cromo](media/e9fbcef0-1171-43ac-8ea8-c2b5be1b7925.png)<br/>   Este aviso está en su lugar debido a que una página puede contener contenido desde ubicaciones fuera de SharePoint según los elementos Web y las personalizaciones en la página. Esto significa que la herramienta leerá las solicitudes y respuestas cuando se hace clic en el botón Inicio y sólo de la ficha activa de SharePoint donde se ejecuta la herramienta. Esta información se captura localmente por el explorador web y está disponible a través de la exportación al vínculo de JSON en la herramienta. **La información no se envía o capturada por Microsoft.** (La herramienta respeta el Microsoft Privacy directiva accesible [aquí](https://go.microsoft.com/fwlink/p/?linkid=857875).)<br/><br/>La funcionalidad "Exportar a JSON" en la herramienta también es ¿por qué se necesita el permiso "Administrar sus descargas". Siga las directrices de privacidad de la compañía antes de compartir el archivo JSON fuera de la organización, como los resultados contienen direcciones URL y se puede clasificar como PII (información de identificación personal).
     
 2. (Esto es opcional) Si desea usar la herramienta en modo de incognito de cromo, navegue a la extensión y haga clic en **Permitir en incognito**.
     
 3. Navegue a la página de publicación de SharePoint clásica en SharePoint Online que le gustaría usar para revisar. Nos hemos permitido para "carga retrasada" de elementos en las páginas; por lo tanto, la **herramienta no se detiene automáticamente**. Si desea detener la colección, puede hacer clic en **Detener**. (Esto es por diseño que abarquen para todos los escenarios de carga de página). Antes de hacer clic en **Detener**, asegúrese de que los datos de seguimiento de red están completas. En caso contrario, tendrá un seguimiento parcial. Además, la herramienta es una extensión de explorador y apertura de varias fichas o windows solo permitirá una instancia activa de la herramienta para ejecutarse a la vez. Se trata de una limitación de extensiones en el explorador. 
   
-4. Haga clic en el logotipo de extensión ![Diagnósticos de página para el logotipo de SharePoint](media/60a3e44d-1b59-483f-b50f-d580044d921a.png) para cargar la herramienta y se presentarán con la siguiente ventana emergente de extensión:</br> ![Herramienta de diagnóstico de página de elemento emergente](media/b01fa00e-c5f3-4c37-91f2-6edd096cf87e.png)</br>Iniciar y detener follow operaciones comenzará el concepto básico de cuando haga clic en Inicio que volverá a cargar la página y la colección.
+4. Haga clic en el logotipo de extensión ![Diagnósticos de página para el logotipo de SharePoint](media/60a3e44d-1b59-483f-b50f-d580044d921a.png) para cargar la herramienta y se presentarán con la siguiente ventana emergente de extensión:<br/> ![Herramienta de diagnóstico de página de elemento emergente](media/b01fa00e-c5f3-4c37-91f2-6edd096cf87e.png)<br/>Iniciar y detener follow operaciones comenzará el concepto básico de cuando haga clic en Inicio que volverá a cargar la página y la colección.
 
 Lea las secciones siguientes para obtener más información acerca de la información proporcionada en la herramienta.
 
@@ -62,7 +62,7 @@ Lea las secciones siguientes para obtener más información acerca de la informa
     
   - La **dirección URL** (localizador uniforme de recursos) es la dirección web de la página actual. 
     
-3. La [ficha **diagnóstico** ](#how-to-use-the-diagnostic-tab) mostrará una lista de las reglas y si cualquiera de ellos están marcados con un color rojo ![entre](media/9859ac84-be43-4eae-984c-e0e827f5a228.png), a continuación, hay problemas identificados en la página.</br>Cada regla tiene su propio vínculo "más información" que haga clic en si un elemento es rojo. Que le llevará a los detalles detrás de esa regla y cómo corregir el problema.</br>![Diagnósticos rojo - regla open](media/1598f0f7-3103-4613-8787-dfec6fffd40a.png)
+3. La [ficha **diagnóstico** ](#how-to-use-the-diagnostic-tab) mostrará una lista de las reglas y si cualquiera de ellos están marcados con un color rojo ![entre](media/9859ac84-be43-4eae-984c-e0e827f5a228.png), a continuación, hay problemas identificados en la página.<br/>Cada regla tiene su propio vínculo "más información" que haga clic en si un elemento es rojo. Que le llevará a los detalles detrás de esa regla y cómo corregir el problema.<br/>![Diagnósticos rojo - regla open](media/1598f0f7-3103-4613-8787-dfec6fffd40a.png)
 
 4. Una [ficha de **seguimiento de red** ](#how-to-use-the-network-trace-tab) proporciona detalles acerca de la página generación las solicitudes y respuestas.
 
@@ -88,7 +88,7 @@ La ficha **Seguimiento de red** proporciona información detallada sobre las sol
 - Verde: \< 500 ms
 - Amarillo: 500 ms-1.000 ms
 - Rojo: \> 1000ms
-</br>![Seguimiento de red](media/3cfede99-7d31-4041-888d-7bbc275cadc2.png)</br>En la imagen que se muestra anteriormente, el elemento rojo pertenece a la página predeterminada. Siempre mostrará rojo a menos que la página se carga en \< 1000ms (menos de 1 segundo).
+<br/>![Seguimiento de red](media/3cfede99-7d31-4041-888d-7bbc275cadc2.png)<br/>En la imagen que se muestra anteriormente, el elemento rojo pertenece a la página predeterminada. Siempre mostrará rojo a menos que la página se carga en \< 1000ms (menos de 1 segundo).
 
 2. **Tiempos de carga de elemento de prueba**. En algunos casos no habrá ningún indicador de color o de tiempo debido a que los elementos estén ya en caché por el explorador. Para probar correctamente, abra la página, desactive la memoria caché del explorador y, a continuación, haga clic en **Iniciar** como que va a forzar la carga de una página "pasiva" y ser un reflejo de la carga de página inicial es true. Esto debe, a continuación, compararse a la carga de página "caliente" también le ayudará a determinar qué elementos se que se almacenan en caché en la página. 
     
@@ -107,7 +107,7 @@ Ningún cambio es visible, excepto en que se le notificará que se ha habilitado
 
 1. Abra la herramienta de diagnóstico de la página.
 2. En el teclado, presione ALT-MAYÚS-L. Esto mostrará **Habilitar el registro de nivel de soporte técnico**. 
-3. Seleccione la casilla de verificación y, a continuación, haga clic en **Iniciar** para volver a cargar la página y generar el registro detallado de soporte técnico analizar.</br>![Habilitada la opción de soporte técnico](media/ddef47de-8593-4b28-9346-eb48ebf6cdab.png)
+3. Seleccione la casilla de verificación y, a continuación, haga clic en **Iniciar** para volver a cargar la página y generar el registro detallado de soporte técnico analizar.<br/>![Habilitada la opción de soporte técnico](media/ddef47de-8593-4b28-9346-eb48ebf6cdab.png)
   
 Un elemento importante para esto es el CorrelationID como el equipo de soporte técnico, a continuación, utilizará ese número para extraer la información necesaria. Por favor, copie el CorrelationID (en la parte superior de la herramienta de diagnóstico de página) y proporcione a soporte técnico al no pueden llevar a cabo el trabajo necesario sin el identificador completo.
     
