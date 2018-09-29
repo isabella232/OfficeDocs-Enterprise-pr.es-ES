@@ -3,7 +3,7 @@ title: Cómo configurar Exchange Server local para usar la autenticación modern
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 3/23/2018
+ms.date: 09/28/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: Híbrido moderno autenticación (HMA), es un método de administración de identidades que ofrece más seguro autorización y autenticación de usuario y está disponible para las implementaciones híbridas de Exchange server local.
-ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
+ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975198"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347610"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Exchange Server local para usar la autenticación moderna híbrida
 
@@ -63,13 +63,12 @@ Ejecute los comandos que asignación direcciones URL de servicios de su web loca
   
 En primer lugar, recopilar todas las direcciones URL que necesita agregar en AAD. Ejecute estos comandos local:
   
-- Get-MapiVirtualDirectory | Servidor FL,\*dirección url\*
-    
-- Get-WebServicesVirtualDirectory | Servidor FL,\*dirección url\*
-    
-- **Get-ActiveSyncVirtualDirectory | Servidor FL,\*dirección url\***
-    
-- Get-OABVirtualDirectory | Servidor FL,\*dirección url\*
+```powershell
+Get-MapiVirtualDirectory | FL server,*url*
+Get-WebServicesVirtualDirectory | FL server,*url*
+Get-ActiveSyncVirtualDirectory | FL server,*url*
+Get-OABVirtualDirectory | FL server,*url*
+```
     
 Asegúrese de que las direcciones URL que los clientes pueden conectarse a aparecen como nombres principales de servicio HTTPS en AAD.
   
@@ -77,17 +76,19 @@ Asegúrese de que las direcciones URL que los clientes pueden conectarse a apare
     
 2. Para Exchange URL relacionadas, escriba el siguiente comando:
     
-- Get-MsolServicePrincipal - AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | Seleccione - ExpandProperty ServicePrincipalNames
-    
-Tome nota de (y captura de pantalla para realizar una comparación posterior) el resultado de este comando, que debe incluir un https:// * detección automática. .com *SuDominio* * y la dirección URL de https:// *correo.sudominio.com* , pero se componen principalmente de SPN que comiencen con 00000002-0000-0ff1-ce00-000000000000 /. Si no hay direcciones URL https:// desde su local que faltan necesitamos agregar esos registros específicos a esta lista. 
+```powershell
+Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
+```
+
+Tome nota de (y captura de pantalla para realizar una comparación posterior) el resultado de este comando, que debe incluir un https:// *autodiscover.yourdomain.com* y la dirección URL de *correo.sudominio.com* https://, pero se componen principalmente de SPN que comienzan con 00000002-0000-0ff1-CE00-000000000000 /. Si no hay direcciones URL https:// desde su local que faltan necesitamos agregar esos registros específicos a esta lista. 
   
 3. Si no ve los registros MAPI/HTTP, EWS, ActiveSync, OAB y detección automática internos y externos en esta lista, debe agregarlas mediante el siguiente comando (en el ejemplo de las direcciones URL son '`mail.corp.contoso.com`'y'`owa.contoso.com`', pero tenía **reemplazar las direcciones URL de ejemplo con su propio** ) : <br/>
-```
-- $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
-- $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
-- $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
-- $x.ServicePrincipalnames.Add("https://eas.contoso.com/")
-- Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+```powershell
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
+$x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
+$x.ServicePrincipalnames.Add("https://owa.contoso.com/")
+$x.ServicePrincipalnames.Add("https://eas.contoso.com/")
+Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
  
 4. Compruebe que los registros nuevos agregados por ejecutar de nuevo el comando Get-MsolServicePrincipal desde el paso 2 y con un aspecto a través del resultado. Compare la lista / captura de pantalla de antes de a la nueva lista de SPN (que es posible que también captura de pantalla de la nueva lista para sus registros). Si se realizaron correctamente, verá las dos nuevas direcciones URL en la lista. Va por nuestro ejemplo, la lista de los SPN ahora incluirá las direcciones URL específicas `https://mail.corp.contoso.com` y `https://owa.contoso.com`. 
@@ -96,28 +97,27 @@ Tome nota de (y captura de pantalla para realizar una comparación posterior) el
 
 Ahora compruebe OAuth está habilitada correctamente en podría usar Exchange en todos los de Outlook de los directorios virtuales mediante la ejecución de los siguientes comandos:
 
-```
-Get-MapiVirtualDirectory | FL server,\*url\*,\*auth\* 
-Get-WebServicesVirtualDirectory | FL server,\*url\*,\*oauth\*
-Get-OABVirtualDirectory | FL server,\*url\*,\*oauth\*
-Get-AutoDiscoverVirtualDirectory | FL server,\*oauth\*
+```powershell
+Get-MapiVirtualDirectory | FL server,*url*,*auth* 
+Get-WebServicesVirtualDirectory | FL server,*url*,*oauth*
+Get-OABVirtualDirectory | FL server,*url*,*oauth*
+Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
 ```
 
 Comprobar el resultado para hacer que **OAuth** está habilitada en cada uno de estos directorios virtuales combinados, buscará algo parecido a esto (y lo clave a mirar es 'OAuth'); 
-  
- **[PS] C:\Windows\System32\>Get-MapiVirtualDirectory | servidor fl,\*dirección url\*,\*auth\***
-  
- **Servidor: EX1**
-  
- **InternalUrl:`https://mail.contoso.com/mapi`**
-  
- **ExternalUrl:`https://mail.contoso.com/mapi`**
-  
- **IISAuthenticationMethods: {Ntlm, OAuth, negociar}**
-  
- **InternalAuthenticationMethods: {Ntlm, OAuth, negociar}**
-  
- **ExternalAuthenticationMethods: {Ntlm, OAuth, negociar}**
+
+```powershell
+Get-MapiVirtualDirectory | fl server,*url*,*auth*
+```
+
+```
+Server                        : EX1
+InternalUrl                   : https://mail.contoso.com/mapi
+ExternalUrl                   : https://mail.contoso.com/mapi
+IISAuthenticationMethods      : {Ntlm, OAuth, Negotiate}
+InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
+ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
+```
   
 Si no se encuentra ningún servidor y cualquiera de los cuatro directorios virtuales de OAuth, a continuación, debe agregar los comandos relevantes antes de continuar.
   
@@ -125,8 +125,10 @@ Si no se encuentra ningún servidor y cualquiera de los cuatro directorios virtu
 
 Volver a la consola de administración de Exchange local para este último comando. Ahora puede validar que su local tiene una entrada para el proveedor de autenticación evoSTS:
   
-`Get-AuthServer | where {$_.Name -eq "EvoSts"}`
-    
+```powershell
+Get-AuthServer | where {$_.Name -eq "EvoSts"}
+```
+
 El resultado debe mostrar una AuthServer de la EvoSts de nombre y el estado de 'Habilitado' debe ser True. Si no ve esto, debe descargar y ejecutar la versión más reciente del Asistente de configuración híbrida.
   
  **Importante** Si está ejecutando Exchange 2010 en su entorno, no se creará el proveedor de autenticación EvoSTS. 
@@ -135,7 +137,7 @@ El resultado debe mostrar una AuthServer de la EvoSts de nombre y el estado de '
 
 Ejecute el siguiente comando en el Shell de administración de Exchange local:
 
-```
+```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true  
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
