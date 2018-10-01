@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Resumen: Obtenga información acerca de las plataformas y los servicios en la nube de Microsoft. Revise nuestro mapa de ruta empresarial en la nube, explore nuestra serie de arquitectura y mucho más.'
-ms.openlocfilehash: f6f390a493efe4f4155655cc6116e9fdd7ec5a9f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
+ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915745"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24022099"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitectura de TI de la nube de Microsoft
 
@@ -40,7 +40,6 @@ Estos pósteres y herramientas de arquitectura ofrecen información sobre las pl
     - [Movilidad y seguridad de Microsoft para arquitectos empresariales](microsoft-cloud-it-architecture-resources.md#mobility)
     - [Almacenamiento de Microsoft Cloud para arquitectos empresariales](microsoft-cloud-it-architecture-resources.md#storage)
     - [Nube híbrida de Microsoft para arquitectos empresariales](microsoft-cloud-it-architecture-resources.md#hybrid)
-    - [Contoso en Microsoft Cloud](microsoft-cloud-it-architecture-resources.md#contoso)
     - [Ataques comunes y funcionalidades de Microsoft que protegen su organización](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
 - **[Serie de soluciones de Office 365 Enterprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
@@ -132,22 +131,13 @@ Lo que los arquitectos de TI necesitan saber sobre la nube híbrida para las pla
 |:-----|:-----|
 |[![Imagen en miniatura del modelo de nube híbrida de Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Artículo](https://technet.microsoft.com/library/mt750500.aspx) <br/>[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Este modelo contiene las páginas siguientes: <ul><li> **Resumen de la nube híbrida** Ofertas de la nube de Microsoft (SaaS, Azure PaaS y Azure IaaS) y sus elementos comunes. </li><li> **Arquitectura de escenarios de nube híbrida de Microsoft** Esquema de la arquitectura de la nube híbrida para ofertas de Microsoft. Muestra las capas comunes de infraestructura local, redes e identidad. </li><li> **Escenarios de nube híbrida de Microsoft SaaS (Office 365)** Arquitectura del escenario híbrido de SaaS y descripciones de las configuraciones híbridas clave de Skype Empresarial, SharePoint Server y Exchange Server. </li><li> **Escenarios de nube híbrida de Azure PaaS** Arquitectura de escenarios híbridos de Azure PaaS, descripción de una aplicación híbrida de Azure PaaS con un ejemplo y descripción de la base de datos de SQL Server 2016 Stretch. </li><li> **Escenarios de nube híbrida de Azure IaaS** Arquitectura del escenario híbrido de Azure IaaS y descripción de una aplicación de línea de negocio (LOB) hospedada en Azure IaaS. </li></ul><br/>|
    
-<a name="contoso"> </a>
-### <a name="contoso-in-the-microsoft-cloud"></a>Contoso en la nube de Microsoft
-
-¿Cómo una organización global ficticia pero representativa ha implementado ofertas de la nube de Microsoft, como Office 365, Azure, Dynamics 365 e Intune.
-  
-|**Elemento**|**Descripción**|
-|:-----|:-----|
-|[![Imagen en miniatura del póster "Contoso en Microsoft Cloud".](media/63077617-b8f2-45b6-b772-bad6cd98721d.png)          ](https://www.microsoft.com/download/details.aspx?id=54427) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)           \| [Artículo](https://technet.microsoft.com/library/mt775341.aspx) <br/>[Más idiomas](https://www.microsoft.com/download/details.aspx?id=54427) <br/> |Este modelo contiene lo siguiente: <ul><li>Información general sobre Contoso Corporation </li><li>Infraestructura y necesidades de TI de Contoso </li><li>Redes en la nube para Contoso</li><li>Identidad de nube para Contoso</li><li>Suscripciones, licencias y cuentas de usuario de Contoso</li><li>Seguridad de la nube para Contoso</li><li>Escenarios de nube empresarial para Contoso</li></ul> <br/>|
-   
 <a name="attacks"> </a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Ataques comunes y funcionalidades de Microsoft que protegen su organización
 Obtenga información sobre los ciberataques más comunes y cómo Microsoft puede ser de utilidad a su organización en todas las fases de un ataque. 
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![Imagen en miniatura del póster Ataques comunes.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) </br> | Este póster ilustra la ruta de acceso de los ataques comunes y en él se describen las funcionalidades que ayudan a detener a los intrusos en cada fase de un ataque. <br/>|
+|[![Imagen en miniatura del póster Ataques comunes.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | Este póster ilustra la ruta de acceso de los ataques comunes y en él se describen las funcionalidades que ayudan a detener a los intrusos en cada fase de un ataque. <br/>|
 
 
 <a name="santa"> </a>
