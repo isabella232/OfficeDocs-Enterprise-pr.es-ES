@@ -12,15 +12,16 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Expanda la presencia de Office 365 a varias regiones geográficas con las capacidades multigeográficas de OneDrive y SharePoint Online.
-ms.openlocfilehash: 939c12790c30172dc87f89fc1a91a92a40b1c219
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
+ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24012740"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Capacidades multigeográficas de OneDrive y SharePoint Online en Office 365
 
-Con las capacidades multigeográficas de OneDrive y SharePoint Online, su organización puede expandir su presencia en Office 365 a varias regiones geográficas y países dentro de su espacio empresarial existente. Póngase en contacto con su equipo de cuentas de Microsoft para inscribir su empresa multinacional en OneDrive para la Empresa multigeográfico.
+Con las capacidades multigeográficas de OneDrive y SharePoint Online, su organización puede expandir su presencia en Office 365 a varias regiones geográficas o países dentro de su espacio empresarial existente. Póngase en contacto con su equipo de cuentas de Microsoft para inscribir su empresa multinacional en OneDrive para la Empresa multigeográfico.
   
 Con OneDrive multigeográfico, puede aprovisionar y almacenar los datos en reposo en las ubicaciones geográficas que haya elegido para cumplir los requisitos de residencia de datos y al mismo tiempo permitir la implementación global de experiencias de productividad modernas para sus empleados.
   
@@ -69,6 +70,8 @@ OneDrive multigeográfico se ofrece actualmente en estos países y regiones:
 - Canadá
     
 - Unión Europea (EMEA)
+
+- Francia
     
 - Japón
     
@@ -80,7 +83,6 @@ OneDrive multigeográfico se ofrece actualmente en estos países y regiones:
       
 Próximas ubicaciones geográficas:
   
-- Francia
 - India
     
 ## <a name="getting-started"></a>Introducción

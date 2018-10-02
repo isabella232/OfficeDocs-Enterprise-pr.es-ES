@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Para ayudarle a identificar y diferenciar el tráfico de red de Office 365, un nuevo servicio web publica puntos de conexión de Office 365, con lo cual le resultará más fácil evaluar, configurar y mantenerse al día con los cambios. Este nuevo servicio web reemplaza los archivos XML descargables que están disponibles actualmente.
-ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: 2b5763b9f8f08f2cc619331dac70743474a8515b
+ms.sourcegitcommit: d67e73f6cdc1e8d220d90a239e23e218f24528d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831905"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "24961829"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Dirección IP de Office 365 y servicio web de URL**
 
@@ -182,9 +182,9 @@ El resultado del método web de extremos es una matriz de registros en la que ca
 - urls: las direcciones URL del conjunto de extremos. Una matriz de JSON de registros DNS. Se omite si está en blanco.
 - tcpPorts: los puertos TCP del conjunto de extremos. Todos los elementos de los puertos tienen formato de lista de valores separados por comas de puertos o intervalos de puertos separados por un carácter de guión (-). Los puertos se aplican a todas las direcciones IP y todas las direcciones URL en ese conjunto de extremos para esa categoría. Se omite si está en blanco.
 - udpPorts: los puertos UDP para los intervalos de direcciones IP en ese conjunto de extremos. Se omite si está en blanco.
-- ips: los intervalos de direcciones IP asociados a este conjunto de extremos punto de conexión que se establece como asociado a los puertos TCP o UDP mencionados. Una matriz de JSON de intervalos de direcciones IP. Se omite si está en blanco.
-- category: la categoría de conectividad del conjunto de extremos. Los valores válidos son Optimize, Allow y Default. Obligatorio.
-- expressRoute: verdadero o falso si este conjunto de extremos se enruta a través de ExpressRoute.
+- ips: los intervalos de direcciones IP asociados a este conjunto de puntos de conexión que se establece como asociado a los puertos TCP o UDP mencionados. Una matriz de JSON de intervalos de direcciones IP. Se omite si está en blanco.
+- categoría: la categoría de conectividad para el conjunto de puntos de conexión. Los valores válidos son Optimizar, Permitir y Predeterminado. Si usa los datos de punto de conexión para buscar la categoría de una dirección URL o una dirección IP, es posible que la consulta devuelva varias categorías. Esto se puede deber a múltiples motivos. En estos casos, debe seguir las recomendaciones para la categoría de prioridad más alta. Por ejemplo, si se muestra el punto de conexión en Optimizar y Permitir, debe seguir los requisitos para Optimizar. Obligatorio. 
+- expressRoute: verdadero o falso si este conjunto de puntos de conexión se enruta a través de ExpressRoute.
 - required: verdadero si se requiere que el conjunto de extremos tenga conectividad para Office 365 para ser compatible. Falso si el conjunto de extremos es opcional.
 - notes: para puntos de conexión opcionales, este texto describe la funcionalidad de Office 365 que faltará si las direcciones IP o las direcciones URL en este conjunto de extremos no se pueden consultar en el nivel de red. Se omite si está en blanco.
 
