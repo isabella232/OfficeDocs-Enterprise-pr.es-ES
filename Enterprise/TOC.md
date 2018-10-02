@@ -36,6 +36,10 @@
 ### [Azure ExpressRoute para Office 365](azure-expressroute.md)
 ### [Funcionamiento de la autenticación moderna para aplicaciones cliente de Office 2013 y Office 2016](modern-auth-for-office-2013-and-2016.md)
 ### [Colaboración entre espacios empresariales de Office 365](office-365-inter-tenant-collaboration.md)
+## Compatibilidad con clientes de Office 365
+### [Acceso condicional](office-365-client-support-conditional-access.md)
+### [Administración de aplicaciones móviles](office-365-client-support-mobile-application-management.md)
+### [Autenticación moderna](office-365-client-support-modern-authentication.md)
 ## Opciones híbridas
 ### [Autenticación moderna híbrida y requisitos previos para Skype Empresarial Server y Exchange Server](hybrid-modern-auth-overview.md)
 ### [Cómo configurar Exchange Server local para usar la autenticación moderna híbrida](configure-exchange-server-for-hybrid-modern-authentication.md)
@@ -169,6 +173,8 @@
 ### [Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento](performance-tuning-using-baselines-and-history.md)
 ### [Ajustar el rendimiento de Exchange Online](tune-exchange-online-performance.md)
 ### [Ajustar el rendimiento de SharePoint Online](tune-sharepoint-online-performance.md)
+#### [Introducción al ajuste del rendimiento para SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
+#### [Diagnosticar problemas de rendimiento con SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
 ### [Optimización de Skype para obtener un rendimiento empresarial en línea](tune-skype-for-business-online-performance.md)
 ### [Ajuste de rendimiento de Project Online](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
 ### [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
