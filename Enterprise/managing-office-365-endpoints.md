@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algunas redes están diseñados para restringir el acceso a internet, para asegurarse de que los equipos de las redes como estos pueden tener acceso a Office 365, los administradores de red y proxy necesitan para administrar la lista de nombres de dominio completos, las direcciones URL, y las direcciones IP que componen la lista de extremos de Office 365. Estos necesidad que se agregará al proxy o firewall reglas y PAC archivos para asegurarse de las solicitudes de red son capaces de ponerse en contacto con Office 365.
-ms.openlocfilehash: 42613b45b8395c3f81064bbc2171866bc922a657
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: a1a658ff04bc7306cb953477798d3e32d894d695
+ms.sourcegitcommit: 854653f927c9515024a1c9e0a86fd5f2fadb92f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831925"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25359502"
 ---
 # <a name="managing-office-365-endpoints"></a>Administrar puntos de conexión de Office 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "23831925"
   
 ## <a name="update-your-firewalls-outbound-allow-lists"></a>Actualización del firewall de salida permitir listas
 
-Puede optimizar la red por enviar que todas las solicitudes de red de Office 365 directamente a través de su servidor de seguridad de confianza, omitir la inspección del nivel de todos los paquetes adicionales o procesamiento. Esto reduce el rendimiento lento de latencia y reduce los requisitos de capacidad de perímetro. La forma más sencilla para elegir qué red solicita confiar es usar nuestros archivos PAC previamente creados en la ficha **servidores proxy de** arriba. 
+Puede optimizar la red por enviar que todas las solicitudes de red de Office 365 directamente a través de su servidor de seguridad de confianza, omitir la inspección del nivel de todos los paquetes adicionales o procesamiento. Esto reduce el rendimiento lento de latencia y reduce los requisitos de capacidad de perímetro. La forma más sencilla para elegir qué red solicita confiar es usar nuestros [archivos PAC creados previamente](managing-office-365-endpoints.md#pacfiles). 
   
 Si su firewall bloquea el tráfico saliente, querrá garantizar que todos de la dirección IP y FQDN aparecen como **necesarios** en este [archivo XML](https://go.microsoft.com/fwlink/?LinkId=533185) se encuentran en la lista Permitir. Reconocer que todos los servicios requieren el uso de algunos servicios de terceros 3ª. Se no proporcionar las direcciones IP para estos servicios parte 3ª como proveedores de certificado proveedores, redes de distribución de contenido, DNS y así sucesivamente. Para la funcionalidad completa de Office 365, debe ser capaz de llegar a todos los destinos solicitados por Office 365, independientemente de la cantidad de información se publique sobre el destino. 
   
@@ -888,7 +888,7 @@ Tenga en cuenta que bloquear el acceso a los servicios de consumidor de Microsof
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Servicio Web de dirección URL y la dirección IP de Office 365](office-365-ip-web-service.md)
+[Dirección IP de Office 365 y servicio web de URL](office-365-ip-web-service.md)
 
 [Intervalos IP del centro de datos de Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653)
   
@@ -898,7 +898,7 @@ Tenga en cuenta que bloquear el acceso a los servicios de consumidor de Microsof
   
 [ExpressRoute y power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   
-[Direcciones URL e intervalos de direcciones IP de Office 365](urls-and-ip-address-ranges.md)
+[Intervalos de direcciones IP y URL de Office 365](urls-and-ip-address-ranges.md)
   
 [Administrar ExpressRoute para la conectividad de Office 365](managing-expressroute-for-connectivity.md)
   
