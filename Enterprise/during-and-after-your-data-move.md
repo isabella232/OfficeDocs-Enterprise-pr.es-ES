@@ -3,7 +3,7 @@ title: Durante y después del movimiento de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Movimientos de datos son una operación de back-end con una repercusión mínima para los usuarios finales. Se requiere ninguna acción mientras Microsoft mueve cada servicio y los datos asociados para el inquilino a un nuevo ubican de centro de datos. Transferencia de datos y la validación se producen en segundo plano de antemano con un impacto mínimo en los usuarios.
-ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 6975a2ea4a1f2b2ebabe5f64b12ae58657180903
+ms.sourcegitcommit: b745d570fd6691606d226f6232cfaafd2d875a2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975178"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25361508"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -34,7 +34,7 @@ Una vez completados los movimientos para cada uno de Exchange Online, SharePoint
 |Australia, Nueva Zelanda, Fiyi  <br/> |31 de octubre de 2017  <br/> |
 |Japón  <br/> |31 de octubre de 2018  <br/> |
 |India  <br/> |31 de octubre de 2018  <br/> |
-|Canadá  <br/> |31 de octubre de 2018  <br/> |
+|Canadá  <br/> |30 de junio de 2019  <br/> |
 |Corea del sur  <br/> |31 de octubre de 2018  <br/> |
 |Reino Unido  <br/> |15 de septiembre de 2019  <br/> |
 |Francia  <br/> |15 de septiembre de 2020  <br/> |
