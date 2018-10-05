@@ -15,12 +15,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Describe las causas habituales de problemas con la sincronización de directorios en Office 365 y proporciona algunos métodos para ayudar a solucionar y resolverlos conflictos.
-ms.openlocfilehash: ad3b6e27439354a2ede9b1a4b100e0f9e06148d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
+ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542772"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25405133"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Solucionar problemas de la sincronización de directorios para Office 365
 
@@ -63,7 +63,7 @@ Para actualizar desde la sincronización de Azure Active Directory a Azure Conne
 - [Sincronización de directorios para deja de Azure Active Directory o se está le advierte que la sincronización no ha registrado en más de un día](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**No sincronización los hashes de contraseña u obtengo una alerta en el centro de administración de Office 365 que no ha habido una sincronización de hash de contraseña recientes**
-- [Implementación de la sincronización de hash de contraseña con la sincronización de Azure Connect de AD](https://go.microsoft.com/fwlink/p/?LinkId=820600)
+- [Implementación de la sincronización de hash de contraseña con la sincronización de Azure Connect de AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Estoy viendo una alerta que se ha excedido la cuota de objeto**
 - Hemos desarrollado una cuota de objeto integrado para ayudar a proteger el servicio. Si tiene demasiados objetos en el directorio que se deben sincronizar con Office 365, tendrá que el [contacto de soporte para productos de negocio](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) para aumentar la cuota.
