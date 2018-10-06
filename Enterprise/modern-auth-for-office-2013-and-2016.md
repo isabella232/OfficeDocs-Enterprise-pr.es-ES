@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 description: Obtenga información sobre cómo funciona la autenticación moderna de Office 365 diferente para las aplicaciones de cliente de 2016 y Office 2013.
-ms.openlocfilehash: a9b6e2dabec9fb59f5fd7f60508dcbc6fe840cfb
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 78df8c12ab008922592516cf1d3cda10c594e552
+ms.sourcegitcommit: 7a12a46019970fcd45a6461f4f4cbcd1f76c9b4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542866"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "25436088"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funcionamiento de la autenticación moderna para aplicaciones cliente de Office 2013 y Office 2016
 
@@ -54,7 +54,8 @@ Haga clic en los vínculos siguientes para ver cómo funciona la autenticación 
     
 - [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
     
-- [Skype Empresarial Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
+- 
+  [Skype Empresarial Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -94,7 +95,10 @@ En la siguiente tabla se describe el comportamiento de la autenticación para ap
 |Office 2013  <br/> |No  <br/> |No  <br/> |Microsoft Online-Asistente de sesión solo.  <br/> |Microsoft Online-Asistente de sesión solo.  <br/> |
 |Office 2013  <br/> |Sí, EnableADAL = 1  <br/> |Sí  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderno, se usa el Ayudante para el inicio de sesión de Microsoft Online. Servidor rechaza la autenticación moderna cuando Skype para los inquilinos empresarial en línea no están habilitados.  <br/> |Microsoft Online-Asistente de sesión solo.  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
-[Usar la autenticación moderna Office 365 con los clientes de Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)
+[Habilitar la autenticación moderno para Office 2013 en dispositivos de Windows](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
+[Planeación de la autenticación multifactor para las implementaciones de Office 365 (para administradores de Office 365)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+
+[Inicie sesión en Office 365 con comprobación paso 2 (para los usuarios finales)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
