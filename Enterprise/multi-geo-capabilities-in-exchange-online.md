@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Expanda su información de presencia de Office 365 a varias regiones geográficas con multi-ubican las capacidades de Exchange Online.
-ms.openlocfilehash: 9834b102365f11623a1decc00460f85f36552ccb
-ms.sourcegitcommit: d88307a32fd3439a09a87b260e0c0cf9074ebeb0
+ms.openlocfilehash: aa83b5040cdc98a1c651388fa82d746b852c2313
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "22914785"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498230"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Capacidades de Multi-Geo en Exchange Online
 
@@ -52,7 +52,7 @@ Las zonas siguientes están disponibles para su uso en una configuración de Mul
 - Estados Unidos
 
 ## <a name="prerequisite-configuration"></a>Configuración de requisitos previos
-Antes de empezar a usar las capacidades de Multi-Geo en Exchange Online, Microsoft tiene que configurar a su inquilino de Exchange Online para ofrecer compatibilidad con Multi-ubican. Este proceso de configuración de una sola vez se desencadena después de haber ordenado que Multi-Geo y las licencias se muestran en nuestro inquilino. Este proceso de configuración única normalmente debe tardar menos de 30 días en completarse.
+Antes de empezar a usar las capacidades de Multi-Geo en Exchange Online, Microsoft tiene que configurar a su inquilino de Exchange Online para ofrecer compatibilidad con Multi-ubican. Este proceso de configuración de una sola vez se desencadena después de haber ordenado que Multi-Geo y las licencias se muestran en el inquilino. Este proceso de configuración única normalmente debe tardar menos de 30 días en completarse. A orden Multi-ubican, póngase en contacto con su representante de Microsoft. Para obtener más información, consulte https://aka.ms/Multi-Geo.
 
 Recibirá notificaciones en el [Centro de mensajes de Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) cuando haya finalizado la configuración. Configuración se activa automáticamente una vez que las licencias de Multi-ubican aparezcan en el inquilino.
 
