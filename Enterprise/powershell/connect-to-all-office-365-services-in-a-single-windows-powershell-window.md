@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumen: Conectar Windows PowerShell a todos los servicios de Office 365 en una sola ventana de Windows PowerShell.'
-ms.openlocfilehash: b4d7b163bfba433196f46046030078c5559c4459
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 44f00364d1f81633e06663770f32e0c9f9e99ed8
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915835"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575265"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Conectarse a todos los servicios de Office 365 en una sola ventana de Windows PowerShell
 
@@ -44,6 +44,8 @@ Antes de poder administrar todo Office 365 desde una sola instancia de Windows P
   - Windows 10
     
   - Windows 8.1 o Windows 8
+    
+  - Windows Server 2019
     
   - Windows Server 2016
     
@@ -125,7 +127,7 @@ Estos son los pasos para conectarse a todos los servicios en una sola ventana de
 Aquí están todos los comandos en un único bloque cuando se usa Azure Active Directory PowerShell para el módulo de gráfico. Especifique el nombre de host de su dominio y, a continuación, ejecute todas ellas a la vez.
   
 ```
-$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
 Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
@@ -142,7 +144,7 @@ Import-PSSession $SccSession -Prefix cc
 Como alternativa, aquí están todos los comandos en un único bloque cuando se usa el módulo de Microsoft Azure Active Directory módulo para Windows PowerShell. Especifique el nombre de host de su dominio y, a continuación, ejecute todas ellas a la vez.
   
 ```
-$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
 Connect-MsolService -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
@@ -168,7 +170,7 @@ Aquí están todos los comandos en un bloque único para conectarse a Azure AD, 
 
 ````
 $acctName="<UPN of a global administrator account>"
-$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
 Connect-AzureAD
 #SharePoint Online
@@ -182,7 +184,7 @@ Como alternativa, aquí están todos los comandos cuando se usa el módulo de Mi
 
 ````
 $acctName="<UPN of a global administrator account>"
-$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
 Connect-MsolService
 #SharePoint Online

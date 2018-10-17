@@ -3,7 +3,7 @@ title: Conectarse a PowerShell de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/20/2018
+ms.date: 10/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,37 +15,44 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumen: Conéctese a la organización de Office 365 con Office 365 PowerShell para realizar tareas de centro de administración de la línea de comandos.'
-ms.openlocfilehash: 96406fbc23adadbf77a3cd02f8c167081f908977
-ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
+ms.openlocfilehash: e35dfd48f86cd4767f2e87786c4a6d1ea3aa608b
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "20720406"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575284"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectarse a PowerShell de Office 365
 
  **Resumen:** Conectarse a la organización de Office 365 con Office 365 PowerShell para realizar tareas de administración desde la línea de comandos.
   
-Con PowerShell de Office 365, se puede configurar Office 365 desde la línea de comandos. Conectarse a PowerShell de Office 365 es un sencillo proceso de tres pasos con el que instalará el software, ejecutará el software necesario y, después, se conectará a la organización de Office 365. 
+PowerShell de Office 365 le permite administrar la configuración de Office 365 desde la línea de comandos. Conectarse a Office 365 PowerShell es un proceso simple que instalar el software requerido y, a continuación, conectarse a la organización de Office 365. 
 
-  
+Hay dos versiones del módulo de PowerShell que use para conectarse a Office 365 y administrar las licencias, grupos y cuentas de usuario:
+
+- Azure Active Directory PowerShell para gráfico (cmdlets incluir **AzureAD** en su nombre) 
+- Microsoft Azure Active Directory módulo para Windows PowerShell (cmdlets incluir **MSol** en su nombre) 
+
+A partir de la fecha de este artículo, Azure Active Directory PowerShell para el módulo de gráfico no reemplazar completamente la funcionalidad en los cmdlets del módulo de Microsoft Azure Active Directory módulo para Windows PowerShell para el usuario, grupo y administración de licencias . En muchos casos, debe utilizar las dos versiones. Forma segura puede instalar ambas versiones en el mismo equipo.
+
 > [!TIP]
 > **¿Es la primera vez que usa PowerShell?** Vea el [vídeo de información general sobre PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx) ofrecido por LinkedIn Learning. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Tiempo estimado para finalizar: 5 minutos
     
 - Puede usar las siguientes versiones de Windows:
     
-  - Windows 10, Windows 8.1, Windows 8 o Windows 7 Service Pack 1 (SP1) 
+  - 10 de Windows, Windows 8.1, Windows 8 o Windows 7 Service Pack 1 (SP1) 
     
-  - Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2 SP1
+  - Windows Server 2019, 2016 de Windows Server, Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2 SP1
     
     > [!NOTE]
     >Use una versión de 64 bits de Windows. La compatibilidad con la versión de 32 bits de Módulo de Microsoft Azure Active Directory para Windows PowerShell se descontinuó en octubre de 2014.
     
 -  Estos procedimientos están diseñados para los usuarios que son miembros de un rol de administración de Office 365. Para obtener más información, vea [roles de administrador acerca de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Conectar con Azure Active Directory PowerShell para el módulo de gráfico
 
@@ -73,7 +80,7 @@ Si se le pregunta si quiere instalar un módulo desde un repositorio que no es d
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Paso 2: Conectarse a Azure AD para su suscripción de Office 365
 
-Para conectarse a Azure AD para Office 365 suscripción con un nombre de cuenta y una contraseña o con *autenticación multifactor (MFA)* ejecute este comando desde un símbolo del sistema de Windows PowerShell (no tiene que ser con privilegios elevados):
+Para conectarse a Azure AD para su suscripción de Office 365 con un nombre de cuenta y una contraseña o con *autenticación multifactor (MFA)*, ejecute este comando desde un símbolo del sistema de Windows PowerShell (no tiene que ser con privilegios elevados):
     
 ```
 Connect-AzureAD
@@ -128,8 +135,6 @@ Si surgen errores, compruebe los siguientes requisitos:
     
   - Para Windows Server 2012 o Windows Server 2012 R2, vea [Habilitar .NET Framework 3.5 con el Asistente para agregar roles y características](https://go.microsoft.com/fwlink/p/?LinkId=532368).
     
-  - Para Windows 8 o Windows 8.1, vea [Instalar .NET Framework 3.5 en Windows 8 u 8.1](https://go.microsoft.com/fwlink/p/?LinkId=532369).
-    
   - Para Windows 7 o Windows Server 2008 R2, vea [No puede abrir el Módulo de Azure Active Directory para Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532370).
 
   - Para Windows 10, Windows 8.1 y Windows 8, vea [instalar .NET Framework 3.5 en 10 de Windows, Windows 8.1 y Windows 8](https://docs.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-10)
@@ -146,7 +151,7 @@ Si surgen errores, compruebe los siguientes requisitos:
 - **Si recibe un error de conexión, vea este tema:** [Error “Connect-MsolService: Se produjo una excepción de tipo”](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Consulte también
 
 - [Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
 - [Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
