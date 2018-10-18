@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumen: Conéctese a la organización de Office 365 con Office 365 PowerShell para realizar tareas de centro de administración de la línea de comandos.'
-ms.openlocfilehash: e35dfd48f86cd4767f2e87786c4a6d1ea3aa608b
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 2ea9c3eaa9a589bed6bf7ac575ffd241b7a72f01
+ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575284"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25601644"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectarse a PowerShell de Office 365
 
@@ -89,6 +89,10 @@ Connect-AzureAD
 En el cuadro de diálogo **Inicio de sesión en su cuenta** , escriba su trabajo de Office 365 o nombre de usuario de escuela cuenta y contraseña y, a continuación, haga clic en **Aceptar**.
 
 Si está utilizando MFA, siga las instrucciones que aparecen en los cuadros de diálogo adicionales para proporcionar más información de autenticación, como un código de comprobación.
+
+>[!Tip]
+>Para conectarse a Office 365 Alemania, vea [Connect a Alemania de Azure mediante el uso de PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
+>
     
 Después de conectar, puede usar los cmdlets de nuevo para el [Azure Active Directory PowerShell para el módulo de gráfico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
@@ -122,6 +126,9 @@ En el cuadro de diálogo **Inicio de sesión en su cuenta** , escriba su trabajo
 
 Si está utilizando MFA, siga las instrucciones que aparecen en los cuadros de diálogo adicionales para proporcionar más información de autenticación, como un código de comprobación.
 
+>[!Tip]
+>Para conectarse a Office 365 Alemania, vea [Connect a Alemania de Azure mediante el uso de PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
+>
     
 ### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
