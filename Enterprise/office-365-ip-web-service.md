@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Para ayudarle a identificar y diferenciar el tráfico de red de Office 365, un nuevo servicio web publica puntos de conexión de Office 365, con lo cual le resultará más fácil evaluar, configurar y mantenerse al día con los cambios. Este nuevo servicio web reemplaza los archivos XML descargables que están disponibles actualmente.
-ms.openlocfilehash: 2b5763b9f8f08f2cc619331dac70743474a8515b
-ms.sourcegitcommit: d67e73f6cdc1e8d220d90a239e23e218f24528d2
+ms.openlocfilehash: 1765a35e961d6aa3da42c36e5a04333e57ae010b
+ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24961829"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25697986"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Dirección IP de Office 365 y servicio web de URL**
 
@@ -107,8 +107,8 @@ Este URI devuelve la versión más reciente de cada instancia de servicio de Off
 ]
 ```
 
-[!IMPORTANT]
-El GUID para el parámetro ClientRequestID en estos URI es solo un ejemplo. Para probar los URI de servicio web, genere su propio GUID. El servicio web podría bloquear en el futuro los GUID que se muestran en estos ejemplos.
+> [!IMPORTANT]
+> El GUID para el parámetro ClientRequestID en estos URI es solo un ejemplo. Para probar los URI de servicio web, genere su propio GUID. El servicio web podría bloquear en el futuro los GUID que se muestran en estos ejemplos.
 
 Ejemplo 2 de URI de solicitud: [https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
