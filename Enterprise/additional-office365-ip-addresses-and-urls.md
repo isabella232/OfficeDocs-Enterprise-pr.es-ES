@@ -1,9 +1,9 @@
 ---
-title: Direcciones IP y URL adicionales de Office 365 no incluidas en los servicios web
+title: Los puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 9/13/2018
+ms.date: 10/23/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,22 +22,22 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumen: los nuevos servicios web de puntos de conexión no incluyen un número reducido de puntos de conexión para escenarios específicos.'
 hideEdit: true
-ms.openlocfilehash: 4711f9b9560b0fab6d18700fcf3e933150861946
-ms.sourcegitcommit: 0f98c342f80ffa21ec35bbf4ae5619b5e3271da5
+ms.openlocfilehash: 1d551f8757464aa1336bc351de8689c103f0a54f
+ms.sourcegitcommit: d93f7a51e8cdefdfc9933cdf1f9e413b013bb367
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719014"
 ---
-# <a name="additional-office-365-ip-addresses-and-urls-not-included-in-the-web-services"></a>Direcciones IP y URL adicionales de Office 365 no incluidas en los servicios web
+# <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Los puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365
 
-Algunos puntos de conexión de red se han publicado anteriormente y no se han incluido en los servicios web. El ámbito de los servicios web son los puntos de conexión de red necesarios para la conectividad de un usuario final de Office 365 en una red perimetral empresarial. Actualmente no se incluyen:
+Algunos puntos de conexión de red se han publicado anteriormente y no se han incluido en los [servicios web de URL y de dirección IP de Office 365](office-365-ip-web-service.md). El ámbito de los servicios web son los puntos de conexión de red necesarios para la conectividad de un usuario final de Office 365 en una red perimetral empresarial. Actualmente no se incluyen:
 
 1. Conectividad de red que pueda ser requerida por un centro de datos de Microsoft a una red de cliente (tráfico de red de servidor de entrada híbrido)
-2. Conectividad de red desde servidores en una red de cliente en todo el perímetro de la empresa (tráfico de red de servidor saliente)
-3. Escenarios poco comunes para requisitos de conectividad de red de un usuario
-4. Requisito de conectividad de resolución DNS (no se muestra a continuación)
-5. Sitios de confianza de Internet Explorer o Microsoft Edge
+2. Conectividad de red desde servidores en una red de cliente en todo el perímetro de la empresa (tráfico de red de servidor saliente).
+3. Escenarios poco comunes para requisitos de conectividad de red de un usuario.
+4. Requisito de conectividad de resolución DNS (no se muestra a continuación).
+5. Sitios de confianza de Internet Explorer o Microsoft Edge.
 
 Aparte de DNS, estos son opcionales para la mayor parte de los clientes, salvo que necesite el escenario específico que se describe.
 
@@ -53,10 +53,13 @@ Aparte de DNS, estos son opcionales para la mayor parte de los clientes, salvo q
 | 7  | Autenticación de proxy de [Exchange híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) | STS local de cliente | Tráfico de servidor entrante |
 | 8  | Se usa para configurar[Exchange híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) mediante el Asistente de configuración híbrida de Exchange. <br> Nota: Estos puntos de conexión solo son necesarios para configurar la implementación híbrida de Exchange  | ```domains.live.com``` en los puertos TCP 80 y 443, solo son necesarios para el Asistente de configuración híbrida de Exchange 2010 SP3. | Solo tráfico de servidor saliente |
 | 9  | El servicio Detección automática se usa en escenarios de [Exchange híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) con [Autenticación moderna híbrida con Outlook para iOS y Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Servidor de Exchange local de cliente en TCP 443 | Tráfico de servidor entrante |
-| 10  | **FQDN de autenticación e identidad** <br> Para que funcione, el FQDN ```secure.aadcdn.microsoftonline-p.com``` debe estar en el Internet Explorer (IE) del cliente o en su zona de sitios de confianza de Edge. |  | Sitios de confianza |
-| 11  |  **FQDN de Microsoft Teams** <br> Si usa Internet Explorer o Microsoft Edge, debe habilitar las cookies propias y de terceros y agregar los FQDN para Teams a los sitios de confianza. Esto es complementario a los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados anteriormente. Para obtener más información, consulte [Problemas conocidos de Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Sitios de confianza |
-| 12  |  **FQDN de SharePoint Online y OneDrive para la Empresa** <br> Todos los FQDN ". sharepoint.com" con "\<inquilino >" en el FQDN tienen que estar en el Internet Explorer del cliente o en su zona de sitios de confianza de Edge para que funcionen. Además de los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados anteriormente, necesitará agregar estos puntos de conexión. |  | Sitios de confianza |
-| 13  | **Yammer**  <br> Yammer solo está disponible en el explorador y requiere que el usuario autenticado pase por un proxy. Para que funcionen, todos los FQDN de Yammer deben estar en el Internet Explorer del cliente o en su zona de sitios de confianza de Edge. |  | Sitios de confianza |
+| 10  | Skype Empresarial en Office 2016 incluye el uso compartido de pantalla basado en vídeo que usa los puertos UDP. Los clientes anteriores de Skype Empresarial de Office 2013 y versiones anteriores usaban RDP mediante un puerto TCP 443. | Puerto TCP 443 abierto para 52.112.0.0/14 | Versiones de cliente anteriores de Skype Empresarial en Office 2013 y versiones anteriores |
+| 11  | Conectividad de servidor local híbrido de Skype Empresarial para Skype Empresarial Online | 13.107.64.0/18, 52.112.0.0/14 puertos UDP 50,000-59,999 <BR>  Puertos TCP 50,000-59,999 | Conectividad de salida de servidor local de Skype Empresarial |
+| 12  | RTC en la nube con conectividad híbrida local requiere la conectividad de red abierta para los host locales Para más información acerca de las configuraciones híbridas de Skype Empresarial Online,  | vea [Solución híbrida de Skype Empresarial](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions) | Skype Empresarial híbrido local entrante |
+| 13  | **FQDN de autenticación e identidad** <br> Para que funcione, el FQDN ```secure.aadcdn.microsoftonline-p.com``` debe estar en el Internet Explorer (IE) del cliente o en su zona de sitios de confianza de Edge. |  | Sitios de confianza |
+| 14  |  **FQDN de Microsoft Teams** <br> Si usa Internet Explorer o Microsoft Edge, debe habilitar las cookies propias y de terceros y agregar los FQDN para Teams a los sitios de confianza. Esto es complementario a los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados anteriormente. Para obtener más información, consulte [Problemas conocidos de Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Sitios de confianza |
+| 15  |  **FQDN de SharePoint Online y OneDrive para la Empresa** <br> Todos los FQDN ". sharepoint.com" con "\<inquilino >" en el FQDN tienen que estar en el Internet Explorer del cliente o en su zona de sitios de confianza de Edge para que funcionen. Además de los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados anteriormente, necesitará agregar estos puntos de conexión. |  | Sitios de confianza |
+| 16  | **Yammer**  <br> Yammer solo está disponible en el explorador y requiere que el usuario autenticado pase por un proxy. Para que funcionen, todos los FQDN de Yammer deben estar en el Internet Explorer del cliente o en su zona de sitios de confianza de Edge. |  | Sitios de confianza |
 
 ## <a name="related-topics"></a>Temas relacionados
 
