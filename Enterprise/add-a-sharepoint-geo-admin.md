@@ -1,5 +1,5 @@
 ---
-title: Agregar o quitar un administrador de geo
+title: Agregar o quitar un administrador geográfico
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,11 +8,12 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: Obtenga información sobre cómo agregar o quitar un administrador ubican en OneDrive para profesionales Multi-ubican.
-ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 4e8c8bec148d5a4e7e55ffa2b08a49cd2ea6aa0a
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849816"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Agregar o quitar un administrador ubican en OneDrive para Busniess Multi-Geo
 
@@ -20,7 +21,7 @@ Puede configurar administradores independientes para cada ubicación geográfica
 
 Algunos servicios - como el almacén de términos - se administran desde la ubicación central y se replican en ubicaciones de satélite. El Administrador de geo para la ubicación central tiene acceso a estas, mientras que los administradores geo para las ubicaciones de satélite no.
 
-Los administradores globales y los administradores de SharePoint Online sigan teniendo acceso a la configuración en todas las ubicaciones de geo.
+Los administradores globales y los administradores de SharePoint Online sigan teniendo acceso a la configuración de la ubicación central y todas las ubicaciones de satélite.
 
 ## <a name="configuring-geo-administrators"></a>Configuración de los administradores de geo
 
@@ -40,9 +41,9 @@ Para quitar un usuario como un administrador de Geo de una ubicación, ejecute`R
 
 Puede agregar un grupo de seguridad o un grupo de seguridad habilitados para correo como un administrador ubican. (No se admiten grupos de distribución y grupos de Office 365.)
 
-Para agregar un grupo como un administrador de geo, ejecute`Add-SPOGeoAdministrator -GroupAlias <alias>`
+Para agregar un grupo como un administrador ubican, ejecute`Add-SPOGeoAdministrator -GroupAlias <alias>`
 
-Para quitar un grupo como un administrador de geo, ejecute`Remove-SPOGeoAdministrator -GroupAlias <alias>`
+Para quitar un grupo como un administrador ubican, ejecute`Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
 Tenga en cuenta que no todos los grupos de seguridad tienen un alias de grupo. Si desea agregar un grupo de seguridad que no tiene un alias, ejecute [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) para recuperar una lista de grupos, busque ObjectID de su grupo de seguridad y, a continuación, ejecute:
 
@@ -58,7 +59,7 @@ https://admin.onedrive.com/?geo=<*geo*>
 
 Por ejemplo, se encuentra en el centro de administración de OneDrive para Canadá: https://admin.onedrive.com/?geo=CAN.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [SPOGeoAdministrator agregar](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
 
