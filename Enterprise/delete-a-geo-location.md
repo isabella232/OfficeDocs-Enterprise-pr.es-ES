@@ -1,5 +1,5 @@
 ---
-title: Eliminar una ubicación geográfica
+title: Eliminar una ubicación de satélite
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,23 +10,24 @@ ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Aprenda a eliminar una ubicación geográfica en OneDrive para la Empresa multigeográfico.
-ms.openlocfilehash: f1da3d2e849d7ee931ef3a115502498743cc23bb
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+description: Aprenda a eliminar una ubicación de satélite en OneDrive para la Empresa multigeográfico.
+ms.openlocfilehash: d13de1b10cfc087337d22f9103afc33057bc40c1
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849846"
 ---
-# <a name="delete-a-geo-location-in-onedrive-for-business-multi-geo"></a>Eliminar una ubicación geográfica en OneDrive para la Empresa multigeográfico.
+# <a name="delete-a-satellite-location-in-onedrive-for-business-multi-geo"></a>Eliminar una ubicación de satélite en OneDrive para la Empresa multigeográfico.
 
-Si ya no necesita una ubicación geográfica, puede eliminarla del espacio empresarial del [Centro de administración de OneDrive](https://admin.onedrive.com)
+Si ya no necesita una ubicación de satélite, puede eliminarla del espacio empresarial desde el [Centro de administración de OneDrive](https://admin.onedrive.com)
 
 > [!WARNING]
-> Se eliminarán permanentemente todos los datos de usuario de la ubicación geográfica. Esto incluye todo el contenido de OneDrive para la Empresa, los sitios de SharePoint y los sitios de grupo. Debe migrar los datos a otra ubicación antes de eliminar la ubicación. Esta acción no se puede deshacer.
+> Se eliminarán permanentemente todos los datos de usuario de la ubicación de satélite. Esto incluye todo el contenido de OneDrive para la Empresa, los sitios de SharePoint y los sitios de grupo. Debe migrar los datos a otra ubicación de satélite o a la ubicación central antes de eliminar la ubicación de satélite. Esta acción no se puede deshacer.
 
-Solo los administradores globales pueden eliminar ubicaciones geográficas.
+Solo los administradores globales pueden eliminar ubicaciones de satélite.
 
-Para eliminar una ubicación geográfica
+Para eliminar una ubicación de satélite
 
 1. Abra el [Centro de administración de OneDrive](https://admin.onedrive.com).
 
