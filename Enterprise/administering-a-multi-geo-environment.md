@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Obtenga información sobre cómo administrar los servicios de SharePoint y OneDrive en un entorno multigeográfico.
-ms.openlocfilehash: 12da695b44c5102c985a8d64960b1d20e092c8cd
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 0113c20eab59e4d0a3122344346d31ae9f0a35a8
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21550063"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849886"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administración de un entorno multigeográfico
 
@@ -27,7 +27,7 @@ El [Centro de administración de OneDrive](https://admin.onedrive.com) tiene una
 
 #### <a name="taxonomy"></a>Taxonomía
 
-Se admite una [taxonomía](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) unificada para metadatos administrados empresariales en todas las ubicaciones geográficas, con el patrón hospedado en la ubicación central de la compañía. Se recomienda administrar la taxonomía global desde la ubicación central y agregar solo términos específicos de la ubicación a la taxonomía de la ubicación geográfica por satélite. Los términos de la taxonomía global se sincronizarán con las ubicaciones geográficas por satélite.
+Se admite una [taxonomía](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) unificada para metadatos administrados empresariales en todas las ubicaciones geográficas, con el patrón hospedado en la ubicación central de la compañía. Se recomienda administrar la taxonomía global desde la ubicación central y agregar solo términos específicos de la ubicación a la taxonomía de la ubicación por satélite. Los términos de la taxonomía global se sincronizarán con las ubicaciones por satélite.
 
 #### <a name="sharing"></a>Uso compartido
 
@@ -43,11 +43,11 @@ Si tiene propiedades de perfil personalizadas, se recomienda usar el mismo esque
 
 #### <a name="bcs-secure-store-apps"></a>BCS, Secure Store, Apps
 
-Los servicios BCS, Secure Store y Apps tienen todos instancias geográficas independientes, por lo que el Administrador de SharePoint Online debe administrarlos y configurarlos en cada instancia geográfica en la que quieren que estén presentes.
+Los servicios BCS, Secure Store y Apps tienen todos instancias independientes en cada ubicación satélite, por lo que el Administrador de SharePoint Online debe administrarlos y configurarlos independientemente de la ubicación satélite.
 
 #### <a name="security-and-compliance-admin-center"></a>Centro de seguridad y cumplimiento
 
-Existe un centro de cumplimiento centralizado para el inquilino multigeográfico: [Centro de seguridad y cumplimiento de Office 365](https://protection.office.com/?rfr=AdminCenter\#/homepage).
+Existe un centro de cumplimiento centralizado para un espacio empresarial multigeográfico: [Centro de seguridad y cumplimiento de Office 365](https://protection.office.com/?rfr=AdminCenter\#/homepage).
 
 #### <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>Directiva de prevención de pérdida de datos (DLP) e Information Protection (IP)
 
@@ -63,10 +63,10 @@ De forma predeterminada, un administrador o un supervisor de eDiscovery de un in
 
 El administrador global de Office 365 debe asignar permisos de supervisor de eDiscovery para que otros usuarios puedan ejecutar eDiscovery y asignar un parámetro "Región" en el filtro de seguridad de cumplimiento correspondiente para especificar la región donde se ejecutará eDiscovery como ubicación por satélite; en caso contrario, no se ejecutará eDiscovery en la ubicación por satélite.
 
-Cuando se establece el rol Administrador o Supervisor de eDiscovery para una ubicación geográfica concreta, el administrador o supervisor de eDiscovery solo podrán realizar acciones de búsqueda de eDiscovery en sitios de SharePoint y OneDrive situados en esa ubicación geográfica. Si un administrador o supervisor de eDiscovery intenta realizar búsquedas en sitios de SharePoint o OneDrive fuera de la región especificada, no se devolverá ningún resultado. Además, cuando el administrador o supervisor de eDiscovery de una región desencadena una exportación, los datos se exportan a la instancia de Azure de esa región. Esto ayuda a las organizaciones a mantener el cumplimiento al no permitir que el contenido se exporte a través de fronteras controladas.
+Cuando se establece el rol Administrador o Supervisor de eDiscovery para una ubicación satélite concreta, el administrador o supervisor de eDiscovery solo podrán realizar acciones de búsqueda de eDiscovery en sitios de SharePoint y OneDrive situados en esa ubicación satélite. Si un administrador o supervisor de eDiscovery intenta realizar búsquedas en sitios de SharePoint o OneDrive fuera de la ubicación satélite especificada, no se devolverá ningún resultado. Además, cuando el administrador o supervisor de eDiscovery de una ubicación satélite desencadena una exportación, los datos se exportan a la instancia de Azure de esa región. Esto ayuda a las organizaciones a mantener el cumplimiento al no permitir que el contenido se exporte a través de fronteras controladas.
 
 > [!NOTE]
-> Si es necesario que un supervisor de eDiscovery realice búsquedas en varias regiones de SharePoint, habrá que crear otra cuenta para el supervisor de eDiscovery que especifique la región alternativa en donde se encuentran los sitios de OneDrive o SharePoint.
+> Si es necesario que un supervisor de eDiscovery realice búsquedas en varias ubicaciones satélite de SharePoint, habrá que crear otra cuenta para el supervisor de eDiscovery que especifique la ubicación satélite alternativa donde se encuentran los sitios de OneDrive o SharePoint.
 
 <table>
 <thead>
@@ -122,7 +122,7 @@ Para establecer el filtro de seguridad de cumplimiento para una región:
 2.  Escriba  
     $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
 
-    $a = Import-PSSession $s -AllowClobber  
+    $a = Import-PSSession $s -AllowClobber  
 
 3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
 
@@ -132,4 +132,4 @@ Vea el articulo [New-ComplianceSecurityFilter](https://technet.microsoft.com/lib
 
 #### <a name="audit-log-search"></a>Búsqueda de registros de auditoría
 
-Hay un [registro de auditoría](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unificado de todas las ubicaciones geográficas disponible en la página de búsqueda de registros de auditoría de Office 365. Puede ver todas las entradas de registro de auditoría en todas las geoáreas, por ejemplo, las actividades de los usuarios de las geoáreas NAM y EUR se mostrarán en una vista de la organización y luego puede aplicar los filtros existentes para ver actividades específicas del usuario.
+Hay un [registro de auditoría](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unificado de todas las ubicaciones satelitales disponible en la página de búsqueda de registros de auditoría de Office 365. Puede ver todas las entradas de registro de auditoría en todas las geoáreas, por ejemplo, las actividades de los usuarios de las geoáreas NAM y EUR se mostrarán en una vista de la organización y luego puede aplicar los filtros existentes para ver actividades específicas del usuario.

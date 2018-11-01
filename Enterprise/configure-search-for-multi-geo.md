@@ -11,16 +11,16 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico.
-ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5ca2a35385ab2c246b78dc8811e8435bbdec25c7
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915065"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849916"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurar la búsqueda en OneDrive para la Empresa multigeográfico
 
-En un entorno de SharePoint Online (SPO) multigeográfico, una organización puede tener un espacio empresarial de Office 365, pero almacenar el contenido de SharePoint en varias ubicaciones geográficas: una ubicación central y una o varias ubicaciones geográficas por satélite.
+En un entorno de OneDrive para la Empresa multigeográfico, una organización puede tener un espacio empresarial de Office 365, pero almacenar el contenido de OneDrive en varias ubicaciones geográficas: una ubicación central y una o varias ubicaciones por satélite.
 
 Cada ubicación geográfica tiene su propio índice de búsqueda y Centro de búsqueda. Cuando un usuario realiza una búsqueda, se efectúa una distribución ramificada de la consulta a todos los índices y los resultados devueltos se combinan.
 
@@ -48,7 +48,7 @@ En cuanto se haya configurado el entorno multigeográfico, los usuarios que busq
 
 En cuanto se haya configurado el entorno multigeográfico, los usuarios que busquen en Delve obtendrán resultados de todas las ubicaciones geográficas.
 
-La fuente de Delve y la tarjeta de perfil solo muestran vistas previas de los archivos almacenados en la ubicación **central**. Para los archivos que se almacenan en ubicaciones geográficas por satélite, se muestra el icono del tipo de archivo en su lugar.
+La fuente de Delve y la tarjeta de perfil solo muestran vistas previas de los archivos almacenados en la ubicación **central**. Para los archivos que se almacenan en ubicaciones por satélite, se muestra el icono del tipo de archivo en su lugar.
 
 ### <a name="the-sharepoint-home-page"></a>Página principal de SharePoint
 
@@ -179,7 +179,7 @@ MultiGeoSearchConfiguration: lista opcional de las ubicaciones geográficas del 
 <table>
 <thead>
 <tr class="header">
-<th align="left">Elemento</th>
+<th align="left">Item</th>
 <th align="left">Descripción</th>
 </tr>
 </thead>

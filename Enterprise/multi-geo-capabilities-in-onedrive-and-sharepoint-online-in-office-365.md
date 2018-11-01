@@ -12,12 +12,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Expanda la presencia de Office 365 a varias regiones geográficas con las capacidades multigeográficas de OneDrive y SharePoint Online.
-ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
-ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
+ms.openlocfilehash: 725a7a88e3459f73ff00554b14afc740db1244b3
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24012740"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849826"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Capacidades multigeográficas de OneDrive y SharePoint Online en Office 365
 
@@ -43,7 +43,7 @@ Esta es la forma en que las características multigeográficas pueden beneficiar
     
 - Consolide los datos locales regionales en su inquilino multigeográfico de Office 365.
     
-En una configuración multigeográfica, el espacio empresarial de Office 365 se compone de una ubicación central (también denominada ubicación predeterminada) y una o varias ubicaciones geográficas por satélite. El concepto clave de la ubicación multigeográfica es que un solo espacio empresarial abarcará de una a varias ubicaciones geográficas. En un inquilino multigeográfico, la información sobre las ubicaciones geográficas, los grupos y los usuarios se controla en Azure Active Directory (AAD). Dado que la información del espacio empresarial se controla centralizadamente y se sincroniza en cada ubicación geográfica, el uso compartido y las experiencias en las que interviene alguien de su compañía contienen conocimiento global.
+En una configuración multigeográfica, el espacio empresarial de Office 365 se compone de una ubicación central (en la que su suscripción de Office 365 fue aprovisionada originalmente) y una o varias ubicaciones geográficas por satélite. El concepto clave de la ubicación multigeográfica es que un solo espacio empresarial abarcará de una a varias ubicaciones geográficas. En un espacio empresarial multigeográfico, la información sobre las ubicaciones geográficas, los grupos y los usuarios se controla en Azure Active Directory (AAD). Dado que la información del espacio empresarial se controla centralizadamente y se sincroniza en cada ubicación geográfica, el uso compartido y las experiencias en las que interviene alguien de su compañía contienen conocimiento global.
 
 ## <a name="video-introducing-office-365-multi-geo"></a>Vídeo: Presentación de Office 365 multigeográfico
 

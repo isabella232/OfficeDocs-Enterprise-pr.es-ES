@@ -3,7 +3,7 @@ title: Conectarse a los inquilinos de Exchange Online con el modo remoto de Wind
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -11,100 +11,108 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
-description: 'Resumen: Use el modo remoto de Windows PowerShell para conectarse a Exchange Online con el parámetro DelegatedOrg.'
-ms.openlocfilehash: d8cbb6640419ba2f1de868ae88b0a273c3f71ae7
-ms.sourcegitcommit: f3f81d2c2e8290948d93f3f787a679c804840256
+description: 'Resumen: use el modo remoto de Windows PowerShell para conectarse a Exchange Online con el valor DelegatedOrg.'
+ms.openlocfilehash: d14726a2983bf3f2d569305e1a7e2e1a86811ff5
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849906"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Conectarse a los inquilinos de Exchange Online con el modo remoto de Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 
- **Resumen:** use el modo remoto de Windows PowerShell para conectarse a Exchange Online con el parámetro _DelegatedOrg_.
+ **Resumen:** use el modo remoto de PowerShell para conectarse a Exchange Online con el valor `DelegatedOrg`.
+
+> [!IMPORTANT]
+> Los procedimientos descritos en este tema son solo para partners con permiso de acceso delegado (DAP). Si no es un partner con DAP, no use los procedimientos descritos en este tema. 
   
-El modo remoto de Windows PowerShell permite administrar la configuración de Exchange Online desde la línea de comandos. Use Windows PowerShell en el equipo local para crear una sesión remota a Exchange Online. Es un proceso de tres pasos en el que se especifican las credenciales de Exchange Online, se proporciona la configuración de conexión requerida y se importan los cmdlets de Exchange Online a la sesión local de Windows PowerShell para poder usarlos.
+Los partners con DAP son partners proveedores de soluciones en la nube de Microsoft (CSP) y redifusión web. Generalmente son proveedores de red o de telecomunicaciones para otras compañías. Empaquetan suscripciones en sus ofertas de servicio a sus clientes. Poseen un arrendamiento de asociado al que se le conceden automáticamente permisos Administrar en nombre de (AOBO) para sus arrendamientos de cliente de Office 365, de modo que pueden administrar todos sus arrendamientos de cliente e informar al respecto.
+
+Los partners con DAP pueden usar Exchange Online PowerShell para administrar la configuración de Exchange Online y obtener informes de Office 365 desde la línea de comandos. Use la sesión de Windows PowerShell en su equipo local para crear una sesión remota de PowerShell en Exchange Online. Es un sencillo proceso de tres pasos que consiste en escribir las credenciales, proporcionar la configuración de conexión necesaria y, después, importar los cmdlets de Exchange Online en la sesión local de Windows PowerShell para poder usarlos.
+
+> [!NOTE]
+> Los partners con DAP no pueden usar los procedimientos descritos en [Conectarse a Exchange Online PowerShell con la autenticación multifactor](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell) para conectarse a sus organizaciones de espacios empresariales de clientes en Exchange Online PowerShell. MFA y el módulo remoto Exchange Online PowerShell no funcionan con la autenticación delegada.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Tiempo estimado para finalizar: 5 minutos
-    
+
 - Puede usar las siguientes versiones de Windows:
     
   - Windows 10
-    
-  - Windows 8.1 o Windows 8
-    
-  - Windows Server 2012 R2 o Windows Server 2012
-    
-  - Windows 7 Service Pack 1 (SP1)*
-    
-  - Windows Server 2008 R2 SP1*
-    
-    \* Es necesario instalar .NET Framework 4.5.1 o .NET Framework 4.5 y, después, Windows Management Framework 4.0 o Windows Management Framework 3.0. Para obtener más información, vea los recursos siguientes:
-    
-    - [Instalar .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868)
-    
-    - [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) o [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)
-    
-- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [Métodos abreviados de teclado en el Centro de administración de Exchange](https://go.microsoft.com/fwlink/p/?LinkId=534017).
-    
-## 
 
-> [!IMPORTANT]
-> Este procedimiento es solo paraasociados con permiso de acceso delegado (DAP). Si no es socio DAP, no use este procedimiento. 
-  
-Los asociados con DAP son asociados de proveedor de soluciones en la nube (CSP) y redifusión web. Generalmente son proveedores de red o de telecomunicaciones para otras compañías. Empaquetan suscripciones en sus ofertas de servicio a sus clientes. Poseen un arrendamiento de asociado al que se le conceden automáticamente permisos Administrar en nombre de (AOBO) para susarrendamientos de cliente de Office 365, de modo que pueden administrar todos sus arrendamientos de cliente e informar al respecto.
-  
-## <a name="connect-to-exchange-online"></a>Conectarse a Exchange Online
+  - Windows 8.1
+
+  - Windows Server 2016
+
+  - Windows Server 2012 o Windows Server 2012 R2
+
+  - Windows 7 Service Pack 1 (SP1)<sup>*</sup>
+
+  - Windows Server 2008 R2 SP1<sup>*</sup>
+
+    <sup>*</sup> Para versiones anteriores de Windows, deberá instalar Microsoft.NET Framework 4.5 o una versión posterior y, a continuación, una versión actualizada de Windows Management Framework: 3.0, 4.0 o 5.1 (solamente uno). Para obtener más información, vea [Instalación de .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868), [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757), [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344) y [Windows Management Framework 5.1](https://aka.ms/wmf5download).
+
+- Windows PowerShell se debe configurar para ejecutar scripts y, por defecto, no lo está. Obtendrá el siguiente error al intentar conectar:
+
+  `Files cannot be loaded because running scripts is disabled on this system. Provide a valid certificate with which to sign the files.`
+
+  Para requerir que todos los scripts de PowerShell que se descargue de internet sean de publicadores de confianza, ejecute el siguiente comando en una ventana de Windows PowerShell con permisos elevados (o sea, una ventana de Windows PowerShell que se abre seleccionando **Ejecutar como administrador**):
+
+    ```
+    Set-ExecutionPolicy RemoteSigned
+    ```
+
+  Esta opción se configura una sola vez en el equipo, y no cada vez que se conecte.
+
+- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [Métodos abreviados de teclado en el Centro de administración de Exchange](https://go.microsoft.com/fwlink/p/?LinkId=534017).
+
+## <a name="connect-to-exchange-online-for-customer-organizations"></a>Conectarse a Exchange Online para organizaciones de cliente
 
 1. En el equipo local, abra Windows PowerShell y ejecute el siguiente comando.
     
-  ```
-  $UserCredential = Get-Credential
-  ```
+    ```
+    $UserCredential = Get-Credential
+    ```
 
-    En el cuadro de diálogo **Solicitud de credenciales para Windows PowerShell**, escriba su nombre de usuario de administrador DAP y contraseña y, a continuación, haga clic en **Acepta**.
+    En el cuadro de diálogo **Solicitud de credenciales para Windows PowerShell**, escriba su nombre de usuario de administrador DAP y contraseña y, a continuación, haga clic en **Aceptar**.
     
-2. Ejecute el siguiente comando, reemplace el  _<customer tenant domain name>_ por el nombre de dominio del inquilino al que desee conectarse.
+2. Reemplace _\<nombre de dominio de espacio empresarial de cliente\>_ con el nombre de dominio del espacio empresarial al que desee conectarse y ejecute el siguiente comando:
     
-  ```
-  $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid?DelegatedOrg=<customer tenant domain name>-Credential $UserCredential -Authentication Basic -AllowRedirection
-  ```
+    ```
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid?DelegatedOrg=<customer tenant domain name> -Credential $UserCredential -Authentication Basic -AllowRedirection
+    ```
 
-    El paso clave en este comando es especificar a qué cliente hay que acceder para obtener la información de supervisión. Esto se realiza en el parámetro  _ConnectionURI_, donde se proporciona el FQDN del nombre de dominio inicial como el valor para el parámetro _DelegatedOrg_. Esto indica al modo remoto de Windows PowerShell para Exchange Online para Windows PowerShell debe conectarse a los informes de Office 365 en el contexto de un cliente específico cada vez que un informe se ejecuta. Después de especificar el cliente, todos los comandos siguientes se ejecutan en el contexto de dicho cliente. Esto permite a los asociados acceder a todos los informes disponibles para este cliente.
+    El paso clave en este comando es especificar a qué cliente hay que acceder para obtener los datos de informes. Esto se realiza en el parámetro _ConnectionURI_, donde se proporciona el FQDN del nombre de dominio inicial como el valor para `?DelegatedOrg=`. Este valor indica el punto final de Exchange Online PowerShell al que conectarse. PowerShell remoto debe conectarse a los informes de Office 365 en el contexto de un cliente específico cada vez que un informe se ejecuta. Después de conectarse a Exchange Online PowerShell, todos los comandos siguientes se ejecutan en el contexto de dicho cliente, lo que permite acceder a todos los informes disponibles para este cliente.
     
 3. Ejecute el comando siguiente.
     
-  ```
-  Import-PSSession $Session
-  ```
+    ```
+    Import-PSSession $Session
+    ```
 
 > [!NOTE]
-> Hay un límite de tres sesiones simultáneas que se pueden ejecutar en una cuenta. Asegúrese de desconectarse de la sesión remota de Windows PowerShell cuando haya finalizado. Si cierra la ventana de Windows PowerShell sin desconectar la sesión, podría agotar todas las sesiones de Windows PowerShell remotas que tenga disponibles y deberá esperar a que las sesiones expiren. Ejecute el siguiente comando para desconectar la sesión remota de Windows PowerShell. >  `Remove-PSSession $Session`
+> Hay un límite de tres sesiones simultáneas que se pueden ejecutar en una cuenta. Asegúrese de desconectarse de la sesión remota de PowerShell cuando haya finalizado. Si cierra la ventana de Windows PowerShell sin desconectar la sesión, podría agotar todas las sesiones de PowerShell remotas que tenga disponibles y deberá esperar a que las sesiones expiren. Ejecute el siguiente comando para desconectar la sesión remota de PowerShell:
+
+```
+Remove-PSSession $Session
+```
   
 ## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
-Después del paso 3, los cmdlets de Exchange Online se importan a la sesión local de Windows PowerShell, como se indica en una barra de progreso. Si no aparece ningún error, la conexión se habrá establecido correctamente. Una prueba rápida es ejecutar un cmdlet de Exchange Online(por ejemplo, **Get-Mailbox** ) y ver los resultados.
+Después del paso 3, los cmdlets de Exchange Online se importan a la sesión local de Windows PowerShell, como se indica en una barra de progreso. Si no aparece ningún error, la conexión se habrá establecido correctamente. Una prueba rápida es ejecutar un cmdlet de Exchange Online (por ejemplo, **Get-Mailbox**) y ver los resultados.
   
 Si surgen errores, compruebe los siguientes requisitos:
   
 - Un problema habitual es una contraseña incorrecta. Vuelva a realizar los tres pasos y preste especial atención al nombre de usuario y contraseña que escriba en el paso 1.
     
-- Para evitar que se produzcan ataques por denegación de servicio (DoS), solo se pueden tener abiertas tres conexiones remotas de Windows PowerShell a la organización de Exchange Online.
-    
-- Windows PowerShell debe estar configurado para ejecutar scripts. Esta opción se configura una sola vez en el equipo, y no cada vez que se conecte. Para permitir que Windows PowerShell ejecute scripts firmados, ejecute el siguiente comando en una ventana de Windows PowerShell elevada (una ventana de Windows PowerShell que abrió cuando seleccionó **Ejecutar como administrador**).
-    
-  ```
-  Set-ExecutionPolicy RemoteSigned
-  ```
-
-- La cuenta que use para conectarse a Exchange Online debe estar habilitada para Windows PowerShell remoto. Para más información consulte [Administrar el acceso a PowerShell remoto en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534018).
+- La cuenta que use para conectarse a Exchange Online debe estar habilitada para PowerShell remoto. Para más información consulte [Activar o desactivar el acceso a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=534018).
     
 - Debe abrir el tráfico del puerto TCP 80 entre su equipo local y Exchange Online. Probablemente esté abierta, pero es un aspecto que se debe tener en cuenta si la directiva de acceso a Internet de su organización es restrictiva.
     
 ## <a name="call-the-cmdlet-directly-with-invoke-command"></a>Llamar directamente al cmdlet con Invoke-Command
 
-Importar una sesión remota de Windows PowerShell puede ser un proceso largo, ya que incorpora todos los cmdlets de Exchange Online. Esto puede ser un problema para el procesamiento por lotes, por ejemplo, cuando se ejecutan informes o se realizan cambios masivos para diferentes inquilinos. Como alternativa al uso de **Import-PSSession**, puede llamar a los cmdlets que desea usar directamente con **Invoke-Command**. Por ejemplo, para llamar al cmdlet **get-mailbox**, reemplace esta sintaxis por `Import-PSSession $Session`.
+Importar una sesión remota de PowerShell (paso 3) puede ser un proceso largo, ya que incorpora _todos_ los cmdlets de Exchange Online. Esto puede ser un problema para el procesamiento por lotes (por ejemplo, cuando se ejecutan informes o se realizan cambios masivos para diferentes inquilinos). Como alternativa al uso de **Import-PSSession**, puede llamar a los cmdlets que desea usar directamente con **Invoke-Command**. Por ejemplo, para llamar al cmdlet **Get-Milbox**, reemplace esta sintaxis por el comando `Import-PSSession $Session` del paso 3:
   
 ```
 Invoke-Command -Session $Session -ScriptBlock {Get-Mailbox}
