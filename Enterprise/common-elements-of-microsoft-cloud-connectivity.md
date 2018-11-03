@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Resumen: Descubra los elementos comunes de la infraestructura de red y aprenda a preparar la red.'
-ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
+ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915655"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25897033"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementos comunes de la conectividad de la nube de Microsoft
 
@@ -60,7 +60,7 @@ La figura 1 muestra cómo se puede conectar una red local con las ofertas en la 
     
 - **Carga de trabajo externa:** sitios web u otras cargas de trabajo a disposición de los usuarios externos de Internet.
     
-- **Servidor proxy:** atiende las solicitudes de contenido web en nombre de los usuarios de la intranet. Un proxy inverso permite las solicitudes entrantes no solicitadas.
+- **Servidor proxy:** Servicios de las solicitudes de contenido web en nombre de los usuarios de la intranet. Un proxy inverso permite que las solicitudes entrantes no solicitadas.
     
 - **Firewall externo:** permite el tráfico saliente y el tráfico entrante especificado. Puede traducir direcciones.
     
