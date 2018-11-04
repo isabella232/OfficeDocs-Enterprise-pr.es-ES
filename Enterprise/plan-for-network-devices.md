@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Resumen: describe las consideraciones sobre la capacidad de la red, los aceleradores de WAN y los dispositivos que equilibran la carga y que se utilizan para conectarse a Office 365.'
-ms.openlocfilehash: c384ba043e64ec83eda74b234937efaf72f29815
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 023eb3f5ed4d81d1d49d18c69ef8c81032fd5851
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223072"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933127"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planificación de dispositivos de red que se conecten a servicios de Office 365
 
@@ -37,7 +37,7 @@ Configuración de proxy de Internet saliente también afecta a la conectividad a
   
 El siguiente Skype para artículos de Ayuda de negocio tienen más información acerca de Skype para la configuración de negocio:
   
-- [Solución de problemas de Skype para profesionales inicio de sesión de errores (administradores)](https://go.microsoft.com/fwlink/p/?LinkID=243624)
+- [Solución de problemas de Skype para errores de inicio de sesión empresarial en línea para los administradores](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
 - [No se puede conectar a Skype para la empresa o determinadas características no funcionan, porque un firewall local bloquea la conexión](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
