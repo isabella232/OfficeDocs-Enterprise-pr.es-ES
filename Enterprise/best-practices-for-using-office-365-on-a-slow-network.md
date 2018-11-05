@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 description: ¿No sería genial si la conexión a Internet siempre era rápida y nunca abajo? Quizás surgirá ese día. Pero mientras tanto, hay prácticas cosas que puede hacer para evitar una red balky y aún realizar su trabajo cotidiano.
-ms.openlocfilehash: 52c3bde04aa58f9e24a49d2034e6b6433c44f21c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 2287de562672f5ceb1ab32949168e8dfdeb31585
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542957"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933147"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Procedimientos recomendados para usar Office 365 en una red lenta
 
@@ -162,7 +162,7 @@ Para obtener más información, vea la sección "más información acerca de adm
 
 Cuando personaliza una página web, podría causar por descuido un rendimiento deficiente con la página. Un número de factores puede tener un impacto, como la complejidad y el tamaño de la página, ¿cuántos elementos web se agregan, inicialmente se muestran cuántos elementos de lista o biblioteca y la forma en que la página de código.
   
-Para obtener más información, vea [SharePoint Online de ajuste de rendimiento](https://technet.microsoft.com/library/f97c2f06-0426-443d-8a16-d98abb0da252#TuneSharePoint).
+Para obtener más información, vea [SharePoint Online de ajuste de rendimiento](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance).
   
 ## <a name="best-practices-for-using-project-online"></a>Procedimientos recomendados para el uso de Project Online
 
@@ -190,7 +190,7 @@ Microsoft continuamente mejora el rendimiento general de Office 365 mediante la 
   
 [Curso de Microsoft Virtual Academy: administración de rendimiento de Office 365](https://blogs.office.com/2014/12/03/microsoft-virtual-academy-course-office-365-performance-management/)
   
-[Administración de extremos de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Preguntas más frecuentes de los extremos de Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Preguntas frecuentes sobre extremos de Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 
