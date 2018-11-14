@@ -3,7 +3,7 @@ title: Colaboración entre espacios empresariales de Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/28/2018
+ms.date: 11/08/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Obtenga información sobre cómo funciona la colaboración de Office 365 a través de los inquilinos y las organizaciones.
-ms.openlocfilehash: 932c837f9dc09dd0469a17ad4e6a05f09966d29c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: ec844f78a0ae31469c2ca92c5cb97d965bdb3508
+ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542765"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26219890"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Colaboración entre espacios empresariales de Office 365
 
@@ -41,15 +41,14 @@ Opciones de colaboración entre inquilinos de Office 365 incluyen el uso de una 
 
 |**Los objetivos de uso compartido**|**Acción administrativa**|**Información sobre procedimientos**|
 |:-----|:-----|:-----|
-|Compartir documentos y sitios con usuarios externos  <br/> |Los administradores configuran el uso compartido en el inquilino o nivel de colección de sitios para la cuenta de Microsoft autenticados, trabajo o escuela cuenta cuentas autenticadas o de invitado  <br/> |
-  [Administrar el uso compartido externo en su entorno de SharePoint Online](https://support.office.com/en-US/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Dominios restringidos el uso compartido en Office 365 SharePoint Online y OneDrive para la empresa](https://support.office.com/en-US/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [Use SharePoint Online como una solución de extranet de business-to-business (B2B)](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
+|Compartir documentos y sitios con usuarios externos  <br/> |Los administradores configuran el uso compartido en el inquilino o nivel de colección de sitios para la cuenta de Microsoft autenticados, trabajo o escuela cuenta cuentas autenticadas o de invitado  <br/> |[Administrar el uso compartido externo en su entorno de SharePoint Online](https://support.office.com/en-US/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Dominios restringidos el uso compartido en Office 365 SharePoint Online y OneDrive para la empresa](https://support.office.com/en-US/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [Use SharePoint Online como una solución de extranet de business-to-business (B2B)](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
 |Seguimiento y controlar el uso compartido externo para los usuarios finales  <br/> |OneDrive para los propietarios de archivos de negocio y SharePoint Online de los usuarios finales configurar sitios y el uso compartido de documentos y establecer notificaciones para realizar un seguimiento de uso compartido  <br/> |[Configurar notificaciones para uso compartido externo para OneDrive para la empresa](https://support.office.com/en-US/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) <br/> [Compartir archivos o carpetas de SharePoint en Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) <br/> |
    
 ## <a name="skype-for-business-collaboration-options"></a>Skype para las opciones de colaboración empresarial
 
 |**Finalidad del uso compartido**|**Acción administrativa**|**Información sobre procedimientos**|
 |:-----|:-----|:-----|
-|Skype para profesionales Online - mensajería instantánea, llamadas y la presencia con otro Skype para usuarios profesionales  <br/> |Los administradores pueden habilitar su Skype para los usuarios en línea de negocio para mensajería instantánea, realizar llamadas de audio y vídeo y ver estado de presencia con los usuarios de otra inquilino de Office 365.  <br/> |[Permitir a los usuarios ponerse en contacto con Skype externo para usuarios profesionales](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
+|Skype para profesionales Online - mensajería instantánea, llamadas y la presencia con otro Skype para usuarios profesionales  <br/> |Los administradores pueden habilitar su Skype para los usuarios en línea de negocio para mensajería instantánea, realizar llamadas de audio y vídeo y ver estado de presencia con los usuarios de otra inquilino de Office 365.  <br/> |[Permitir a los usuarios contactar con usuarios externos de Skype Empresarial](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
 |Skype para profesionales Online - mensajería instantánea, llamadas y la presencia con los usuarios de Skype (consumidor)  <br/> |Los administradores pueden habilitar su Skype para los usuarios en línea de negocio para mensajería instantánea, realizar llamadas y ver estado de presencia con los usuarios de Skype (consumidor).  <br/> |[Permitir Skype para usuarios profesionales agregar contactos de Skype](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460) <br/> |
    
 ## <a name="azure-ad-b2b-collaboration-options"></a>Opciones de colaboración B2B de AD de Azure
@@ -68,7 +67,7 @@ Opciones de colaboración entre inquilinos de Office 365 incluyen el uso de una 
 
 |**Finalidad del uso compartido**|**Acción administrativa**|**Información sobre procedimientos**|
 |:-----|:-----|:-----|
-|Yammer: colaboración a través de un medio sociales de empresa  <br/> |A menos que la capacidad de crear grupos externos está deshabilitada por un administrador de Yammer, los usuarios pueden crear grupos externos para colaborar en Yammer a través de conversaciones, la capacidad de like y siga entradas, compartir archivos y conversaciones en línea.  <br/> |[Crear y administrar grupos externos de Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a) <br/> |
+|Yammer: colaboración a través de un medio sociales de empresa  <br/> |A menos que la capacidad de crear grupos externos está deshabilitada por un administrador de Yammer, los usuarios pueden crear grupos externos para colaborar en Yammer a través de conversaciones, la capacidad de like y siga entradas, compartir archivos y conversaciones en línea.  <br/> |[Crear y administrar grupos externos en Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a) <br/> |
    
 ## <a name="teams-collaboration-options"></a>Opciones de colaboración de equipos
 
@@ -77,7 +76,13 @@ Opciones de colaboración entre inquilinos de Office 365 incluyen el uso de una 
 |Colaborar en los equipos con usuarios externos a la organización  <br/> |Un administrador global para el inquilino de Office 365 invitar a necesita habilitar la colaboración externa en los equipos. Los propietarios de los administradores y del equipo global ahora podrán invitar a alguien con una dirección de correo electrónico para colaborar en los equipos.  <br/> Los administradores también pueden administrar y editar a invitados ya están presentes en su inquilino.  <br/> |[Autorizar el acceso de invitado](https://docs.microsoft.com/en-us/microsoftteams/teams-dependencies) <br/> [Activar o desactivar el acceso como invitado en los equipos](https://docs.microsoft.com/en-us/microsoftteams/set-up-guests) <br/> [Uso de PowerShell para controlar el acceso de invitado](https://docs.microsoft.com/en-us/microsoftteams/guest-access-powershell) <br/> [Lista de comprobación de acceso de invitado](https://docs.microsoft.com/en-us/microsoftteams/guest-access-checklist) <br/> [Ver los usuarios de invitado](https://docs.microsoft.com/en-us/microsoftteams/view-guests) <br/> [Editar información de usuario de invitado](https://docs.microsoft.com/en-us/microsoftteams/edit-guests-information) <br/> |
 |Los propietarios de equipo pueden invitar a y administrar cómo colaboran invitados dentro de sus equipos.  <br/> |Los propietarios de equipo tienen controles adicionales sobre lo que los invitados pueden hacer dentro de sus equipos.  <br/> |[Agregar invitados](https://support.office.com/en-us/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) <br/> [Agregar a un invitado a un equipo](https://docs.microsoft.com/en-us/microsoftteams/add-guests) <br/> [Administrar el acceso de invitado en los equipos](https://docs.microsoft.com/en-us/microsoftteams/manage-guests) <br/> [Ver quién está en un equipo o en un canal](https://support.office.com/en-us/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> |
 |Pueden ver contenido en los equipos y colaborar con otros miembros invitados de otros inquilinos  <br/> |Ninguno.  <br/> |[La experiencia de acceso de invitado](https://docs.microsoft.com/en-us/microsoftteams/guest-experience) <br/> |
-   
+
+## <a name="power-bi-collaboration-options"></a>Opciones de colaboración de Power BI
+
+|**Finalidad del uso compartido**|**Acción administrativa**|**Información sobre procedimientos**|
+|:-----|:-----|:-----|
+|Power BI permite a los usuarios externos invitado consumir contenido compartido a ellos a través de vínculos. Esto permite a los usuarios de la organización distribuir contenido de forma segura entre las organizaciones.<br/> | El Administrador de Power BI puede controlar si los usuarios pueden invitar a los usuarios externos para ver contenido dentro de la organización. <br/> |[Distribuir contenido de Power BI para los usuarios externos invitado con Azure AD B2B](https://docs.microsoft.com/en-us/power-bi/service-admin-azure-ad-b2b) <br/> |
+ 
 ## <a name="points-to-be-aware-of-about-office-365-inter-tenant-collaboration"></a>Puntos que se deben tener en cuenta acerca de la colaboración entre inquilino de Office 365
 
 ### <a name="sharing-of-user-accounts-licenses-subscriptions-and-storage"></a>Uso compartido de almacenamiento, las licencias, las suscripciones y las cuentas de usuario

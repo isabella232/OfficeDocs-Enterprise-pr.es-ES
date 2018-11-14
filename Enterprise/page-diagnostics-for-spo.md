@@ -15,21 +15,23 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: Use los diagnósticos de página para la herramienta de SharePoint para analizar sus páginas clásicas con las mejores prácticas recomendadas para SharePoint Online.
-ms.openlocfilehash: 0fc2e16867b54e644d00c57fbfc41d4f7d042f88
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 1524befc0003006cfab9100aafc7d3deda2a37d2
+ms.sourcegitcommit: 5be99683fb2de87f723264c8a1123451d31ea43b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975168"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26253621"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>Use la herramienta de diagnóstico de la página de SharePoint Online
 
 En este artículo se describe cómo puede usar la herramienta de diagnóstico de página para analizar sus páginas de publicación clásicas y las páginas de sitios de equipo clásico, frente a un subconjunto de las prácticas recomendadas en **SharePoint Online**. 
   
 Los sitios de grupo que no tengan habilitada la publicación no se pueden hacer uso de las CDN pero todas las reglas restantes son aplicables. Publicación agrega sobrecarga adicional, por lo que no activa la publicación sólo para obtener la funcionalidad CDN tal y como lo quedará afectado negativamente tiempos de carga de página.
+
+**Así pues, tenga en cuenta que se ha publicado V1.05, actualización de su extensión, si lo ha instalado ya**. Si no está seguro de qué versión tiene, a continuación, haga clic en el vínculo "Acerca de" para comprobar.
   
 > [!IMPORTANT]
-> La herramienta de diagnóstico de la página no se ejecutará con las bibliotecas de documentos o páginas del sistema, como la herramienta está diseñada para revisar las páginas del sitio de SharePoint. Una página *allitems.aspx* es un sistema. Si intenta ejecutar la herramienta en una página del sistema, recibirá un mensaje que lee, "esta aplicación sólo se debe ejecutar en las páginas de SharePoint."<br/> ![Debe ejecutar en una página de SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>No es un error en la herramienta como no hay ningún valor en la evaluación de bibliotecas o páginas del sistema. Navegue a una página de SharePoint que no sea de sistema para usar la herramienta. ¿Si desea enviar comentarios acerca de la herramienta por favor, haga clic en la ficha acerca y siga el [ceder el vínculo de comentarios](https://go.microsoft.com/fwlink/?linkid=874109). 
+> La herramienta de diagnóstico de la página no se ejecutará con las bibliotecas de documentos o páginas del sistema, como la herramienta está diseñada para revisar las páginas del sitio de SharePoint. Una página *allitems.aspx* es un sistema. Si intenta ejecutar la herramienta en una página del sistema, recibirá un mensaje que lee, "esta aplicación sólo se debe ejecutar en las páginas de SharePoint."<br/> ![Debe ejecutar en una página de SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>No es un error en la herramienta como no hay ningún valor en la evaluación de bibliotecas o páginas del sistema. Navegue a una página de SharePoint que no sea de sistema para usar la herramienta. Si esto ocurre en una página de SharePoint, a continuación, compruebe el MasterPage tal y como se ha visto los clientes quitar el SharePoint MetaTags y, a continuación, la página ya no es una página de SharePoint. ¿Si desea enviar comentarios acerca de la herramienta por favor, haga clic en la ficha acerca y siga el [ceder el vínculo de comentarios](https://go.microsoft.com/fwlink/?linkid=874109). 
   
 ## <a name="install-the-page-diagnostic-tool"></a>Instalar la herramienta de diagnóstico de página
 
