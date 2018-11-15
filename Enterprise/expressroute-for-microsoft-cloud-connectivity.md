@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Resumen: Descubra cómo ExpressRoute puede ayudarle mediante conexiones más rápidas y fiables a los servicios y las plataformas en la nube de Microsoft.'
-ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1cd78372d37e40a53ba7725ff3653ef01daa48b0
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915495"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525841"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute para la conectividad en la nube de Microsoft
 
@@ -102,7 +102,7 @@ Una única conexión de ExpressRoute admite hasta tres relaciones diferentes de 
 
 ![Figura 3: Las tres relaciones BGP en una sola conexión de ExpressRoute](media/Network-Poster/ERPeering.png)
   
-La figura 3 muestra una conexión de ExpressRoute desde una red local. La conexión de ExpressRoute contiene tres relaciones lógicas de emparejamiento. Una relación de emparejamiento de Microsoft va a los servicios SaaS Microsoft, incluidos Office 365 y Dynamcs CRM Online. Una relación de emparejamiento pública va a los servicios de PaaS de Azure. Una relación de emparejamiento privada va a IaaS de Azure y a una puerta de enlace de red virtual que hospeda máquinas virtuales.
+La figura 3 muestra una conexión ExpressRoute desde una red local. La conexión de ExpressRoute tiene tres relaciones lógicas de interconexión. Una relación de interconexión Microsoft va a servicios de Microsoft SaaS, incluyendo Dynamcs CRM Online y Office 365. Una relación de interconexión pública que se va a los servicios de Azure PaaS. Una relación de interconexión privada va a Azure IaaS y a una puerta de enlace de red virtual que hospeda máquinas virtuales.
   
 La relación de emparejamiento de BGP de Microsoft: 
   
@@ -186,9 +186,9 @@ Cuando se crea una conexión de ExpressRoute a una ubicación de emparejamiento 
   
 Esto puede hacer que la entrega en los centros de datos locales de Microsoft no sea óptima para el modelo de conectividad universal.
   
-**Figura 7: Ejemplo de una organización distribuida geográficamente que usa una sola conexión de ExpressRoute**
+**Figura 7: Ejemplo de una organización distribuidos geográficamente que usa una sola conexión ExpressRoute**
 
-![Figura 7: Ejemplo de una organización distribuida geográficamente que usa una sola conexión de ExpressRoute](media/Network-Poster/MSNet1.png)
+![Figura 7: Ejemplo de una organización distribuidos geográficamente que usa una sola conexión ExpressRoute](media/Network-Poster/MSNet1.png)
   
 La figura 7 muestra una organización con dos ubicaciones, la ubicación 1 en el noroeste de Estados Unidos y la ubicación 2 en el noreste. Están conectados por un proveedor WAN universal. Esta organización tiene también una conexión de ExpressRoute a una ubicación de emparejamiento de Microsoft de la costa oeste. El tráfico de la ubicación 2 en el noreste destinado a un centro de datos de la costa este debe atravesar toda la red WAN de la organización hasta llegar a la costa oeste, a la ubicación de emparejamiento de Microsoft, y luego volver a recorrer todo el país por la red en la nube de Microsoft hasta llegar al centro de datos de la costa este.
   

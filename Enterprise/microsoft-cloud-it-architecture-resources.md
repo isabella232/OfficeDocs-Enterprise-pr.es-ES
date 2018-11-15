@@ -3,7 +3,7 @@ title: Recursos de arquitectura de TI de la nube de Microsoft
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 05/18/2018
+ms.date: 11/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Resumen: Obtenga información acerca de las plataformas y los servicios en la nube de Microsoft. Revise nuestro mapa de ruta empresarial en la nube, explore nuestra serie de arquitectura y mucho más.'
-ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
-ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
+ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24022099"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525851"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitectura de TI de la nube de Microsoft
 
@@ -38,8 +38,7 @@ Estos pósteres y herramientas de arquitectura ofrecen información sobre las pl
     - [Seguridad de Microsoft Cloud para arquitectos empresariales](microsoft-cloud-it-architecture-resources.md#security)
     - [Redes de Microsoft Cloud para arquitectos empresariales](microsoft-cloud-it-architecture-resources.md#networking)
     - [Movilidad y seguridad de Microsoft para arquitectos empresariales](microsoft-cloud-it-architecture-resources.md#mobility)
-    - [Almacenamiento de Microsoft Cloud para arquitectos empresariales](microsoft-cloud-it-architecture-resources.md#storage)
-    - [Nube híbrida de Microsoft para arquitectos empresariales](microsoft-cloud-it-architecture-resources.md#hybrid)
+    - [Microsoft Hybrid Cloud para arquitectos profesionales](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Ataques comunes y funcionalidades de Microsoft que protegen su organización](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
 - **[Serie de soluciones de Office 365 Enterprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
@@ -112,15 +111,6 @@ Lo que los arquitectos de TI necesitan saber sobre la movilidad con las platafor
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[![Imagen en miniatura del póster "Information Protection para Office 365"](media/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| [Más idiomas](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | Este modelo contiene lo siguiente: <ul><li>Aplicaciones para dispositivos móviles de primer nivel para empresas </li><li>Plataforma, servicios y recursos para desarrollar aplicaciones para dispositivos móviles </li><li>Administración del acceso a aplicaciones y datos basados en la nube desde dispositivos móviles </li><li>Comparación de funciones y compatibilidad de plataformas para Office 365 MDM, Azure Active Directory Premium e Intune </li></ul><br/> |
-   
-<a name="storage"> </a>
-### <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Almacenamiento de Microsoft Cloud para arquitectos empresariales
-
-Lo que los arquitectos de TI necesitan saber sobre las opciones de almacenamiento en las plataformas y los servicios en la nube de Microsoft.
-  
-|**Elemento**|**Descripción**|
-|:-----|:-----|
-|[![Imagen en miniatura del modelo de almacenamiento de Microsoft Cloud](media/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| [Artículo](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>[Más idiomas](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | Este modelo contiene lo siguiente: <ul><li>Motivos para usar el almacenamiento en la nube y los escenarios clave </li><li>Opciones de almacenamiento en la nube que se incluyen con servicios existentes </li><li>Opciones de almacenamiento que puede usar como punto de inicio para su solución de almacenamiento </li><li>Bloques de creación de almacenamiento para crear su propia solución de almacenamiento o almacenamiento para sus aplicaciones</li></ul><br/>|
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud para arquitectos profesionales
