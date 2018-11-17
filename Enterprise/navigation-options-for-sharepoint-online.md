@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Este artículo describen los sitios de las opciones de navegación con publicación de SharePoint habilitado en SharePoint Online. La elección y la configuración de navegación afectará de forma significativa el rendimiento y la escalabilidad de sitios de SharePoint Online.
-ms.openlocfilehash: 08790dcee343e9e69bbaab149cce8a390470e7d6
-ms.sourcegitcommit: 5731dce2440e5a7a261f6360e8e2e9639d339d4e
+ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23957455"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547182"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 
@@ -193,7 +193,7 @@ Este enfoque implica la creación de una página maestra personalizada y reempla
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. Los resultados se asignan a la matriz de self.nodes y se crea una jerarquía de fuera de los objetos con linq.js asignar el resultado a una matriz self.heirarchy. Esta matriz es el objeto que está enlazado el código HTML. Esto se realiza en la función toggleView(), pasando el objeto automático a la función ko.applyBinding().<br/>Esto hace que la matriz de jerarquía enlazar el código HTML siguiente:<br/>
+8. Los resultados se asignan a la matriz de self.nodes y se crea una jerarquía de fuera de los objetos con linq.js asignar el resultado a una matriz self.hierarchy. Esta matriz es el objeto que está enlazado el código HTML. Esto se realiza en la función toggleView(), pasando el objeto automático a la función ko.applyBinding().<br/>Esto hace que la matriz de jerarquía enlazar el código HTML siguiente:<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>

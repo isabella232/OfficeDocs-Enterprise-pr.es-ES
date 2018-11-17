@@ -3,7 +3,7 @@ title: Cómo configurar Exchange Server local para usar la autenticación modern
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 09/28/2018
+ms.date: 11/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: Híbrido moderno autenticación (HMA), es un método de administración de identidades que ofrece más seguro autorización y autenticación de usuario y está disponible para las implementaciones híbridas de Exchange server local.
-ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
-ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
+ms.openlocfilehash: df5ea03b06ee1c101b03e19c7acb445c9543586b
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347610"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547162"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Exchange Server local para usar la autenticación moderna híbrida
 
@@ -72,7 +72,9 @@ Get-OABVirtualDirectory | FL server,*url*
     
 Asegúrese de que las direcciones URL que los clientes pueden conectarse a aparecen como nombres principales de servicio HTTPS en AAD.
   
-1. En primer lugar, conectarse a AAD con [estas instrucciones](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell).
+1. En primer lugar, conectarse a AAD con [estas instrucciones](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell). 
+
+ **Nota** Debe usar la opción de Connect-MsolService desde esta página para poder utilizar el siguiente comando. 
     
 2. Para Exchange URL relacionadas, escriba el siguiente comando:
     
@@ -148,7 +150,7 @@ Una vez habilitar HMA, el siguiente inicio de sesión de un cliente utilizará e
   
 También debe mantenga presionada la tecla CTRL al mismo tiempo botón secundario haga clic en el icono para el cliente de Outlook (también en la Bandeja de notificaciones de Windows) y haga clic en estado de la conexión. Busque la dirección del cliente SMTP con respecto a un tipo 'Niveles de autenticación' de ' Bearer\*', que representa el token de portador utilizado en OAuth.
   
- **Nota** ¿Necesita configurar Skype para la empresa con HMA? Necesitará dos artículos: uno que enumera las [topologías admitidas](https://technet.microsoft.com/en-us/library/mt803262.aspx)y otro que muestra [cómo realizar la configuración](configure-skype-for-business-for-hybrid-modern-authentication.md).
+ **Nota** ¿Necesita configurar Skype para la empresa con HMA? Necesitará dos artículos: uno que enumera las [topologías admitidas](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)y otro que muestra [cómo realizar la configuración](configure-skype-for-business-for-hybrid-modern-authentication.md).
   
 
 ## <a name="related-topics"></a>Temas relacionados
