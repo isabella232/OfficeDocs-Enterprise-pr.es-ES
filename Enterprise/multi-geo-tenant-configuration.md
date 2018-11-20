@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Aprenda a configurar OneDrive para la Empresa multigeográfico.
-ms.openlocfilehash: 6c4a1012f3f26265ef88d82c55bb3ac11cc82da4
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: e6a4ee9bd933b3f0db278ca2a7b04661bf123184
+ms.sourcegitcommit: 444efa9e5ea6c0102bb7611d2a9a6b9e072e8a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849876"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539142"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configuración de espacios empresariales en OneDrive para la Empresa multigeográfico
 
@@ -112,7 +112,7 @@ En AAD hay dos tipos de objetos de usuario: usuarios solo de nube y usuarios sin
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Sincronizar la ubicación de datos preferida del usuario con AD Connect 
 
-Si los usuarios de la compañía se sincronizan en un sistema de Active Directory local con Azure Active Directory, su PreferredDataLocation debe rellenarse en AD y sincronizarse con AAD. Siga el proceso de [Sincronización de Azure AD Connect: cambiar a la configuración predeterminada](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) para configurar la sincronización de la ubicación de datos preferida en Active Directory local con Azure Active Directory.
+Si los usuarios de la compañía se sincronizan en un sistema de Active Directory local con Azure Active Directory, el elemento PreferredDataLocation tiene que rellenarse en AD y sincronizarse con AAD. Siga el proceso de [Sincronización de Azure Active Directory Connect: configurar la ubicación de datos preferida de recursos de Office 365](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) para configurar la sincronización de la ubicación de datos preferida del entorno local de Active Directory en Azure Active Directory.
 
 Se recomienda incluir el establecimiento de la ubicación de datos preferida del usuario como parte del flujo de trabajo de creación de usuarios estándar.
 
