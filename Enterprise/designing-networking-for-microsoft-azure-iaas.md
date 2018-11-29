@@ -3,7 +3,7 @@ title: Diseño de redes para IaaS de Microsoft Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 'Resumen: Conozca cómo diseñar redes optimizada para cargas de trabajo en Microsoft Azure IaaS.'
-ms.openlocfilehash: 0e7af14768aa1a21548b25a20a465b644b749f3e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d13c1d4b985c633b8336dc33253e1350a54b5a39
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915125"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872341"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Diseño de redes para IaaS de Microsoft Azure
 
@@ -92,11 +92,11 @@ Hay dos tipos de subredes en una red virtual: una subred de puerta de enlace y u
 
 ![Figura 3: Los dos tipos de subredes de Azure](media/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
   
-La figura 3 muestra una red virtual que contiene una subred de puerta de enlace que, a su vez, contiene una puerta de enlace de Azure y un conjunto de subredes de hospedaje de máquina virtual que engloba las máquinas virtuales.
+La figura 3 muestra un VNet que contiene una subred de puerta de enlace que tiene una puerta de enlace de Azure y un conjunto de subredes que hospeda la máquina virtual que contiene las máquinas virtuales.
   
 Azure necesita la subred de puerta de enlace de Azure para hospedar las dos máquinas virtuales de su puerta de enlace de Azure. Especifique un espacio de direcciones que tenga una longitud de prefijo de, al menos, 29 bits (ejemplo: 192.168.15.248/29). Se recomienda una longitud de prefijo de 28 bits o menor, especialmente si va a usar ExpressRoute.
   
-Una práctica recomendada para determinar el espacio de direcciones de la subred de puerta de enlace de Azure es la siguiente:
+Es una práctica recomendada para determinar el espacio de direcciones de la subred de puerta de enlace de Azure:
   
 1. Decida el tamaño de la subred de puerta de enlace.
     
@@ -123,11 +123,11 @@ Azure utiliza las direcciones en primer lugar 3 en cada subred. Por lo tanto, el
   
 |**Máquinas virtuales requeridas**|**Bits de host**|**Tamaño de la subred**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3  <br/> |/29  <br/> |
-|4-11  <br/> |4  <br/> |/28  <br/> |
-|12-27  <br/> |5  <br/> |/27  <br/> |
-|28-59  <br/> |6  <br/> |/26  <br/> |
-|60-123  <br/> |7  <br/> |/25  <br/> |
+|1-3  <br/> |3   <br/> |/29  <br/> |
+|4-11  <br/> |4   <br/> |/28  <br/> |
+|12-27  <br/> |5   <br/> |/27  <br/> |
+|28-59  <br/> |6   <br/> |/26  <br/> |
+|60-123  <br/> |7   <br/> |/25  <br/> |
    
  **Tabla 3: Requisitos de la máquina virtual y tamaños de subred**
   
@@ -358,7 +358,7 @@ Para el enrutamiento a una red local u otras redes virtuales desde una red virtu
   
 La figura 15 muestra una red virtual entre locales y el espacio de direcciones de red local en la puerta de enlace de Azure, que representa el espacio de direcciones accesible en la red local.  
   
-El espacio de direcciones de red local se puede definir de las siguientes maneras:
+Puede definir el espacio de direcciones de red Local de las siguientes maneras:
   
 - Opción 1: La lista de prefijos del espacio de direcciones que se necesita actualmente o que está en uso (podría ser necesario actualizar al agregar nuevas subredes).
     
@@ -419,22 +419,17 @@ Un ejemplo de una intranet hospedado en Azure IaaS de carga de trabajo de TI es 
 
 ![Una granja de servidores de SharePoint Server 2016 de alta disponibilidad en laaS de Azure](media/3a922e21-df91-455f-ba90-78abdd48d98d.png)
   
-La figura 19 muestra los nueve servidores de una granja de SharePoint Server 2016 implementada en un VNet entre locales que usa equilibradores de carga interno para los niveles front-end y los datos. Para obtener más información, incluidos diseño paso a paso y las instrucciones de implementación, vea [SharePoint Server 2016 en Microsoft Azure](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx).
+La figura 19 muestra los nueve servidores de una granja de SharePoint Server 2016 implementada en un VNet entre locales que usa equilibradores de carga interno para los niveles front-end y los datos. Para obtener más información, incluidos diseño paso a paso y las instrucciones de implementación, vea [SharePoint Server 2016 en Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure).
   
 > [!TIP]
-> Para crear una granja de servidores de SharePoint Server 2016 de servidor único en un VNet simulado entre locales, vea [2016 de servidor de SharePoint de Intranet en el entorno de desarrollo y prueba de Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx). 
+> Para crear una granja de servidores de SharePoint Server 2016 de servidor único en un VNet simulado entre locales, vea [2016 de servidor de SharePoint de Intranet en el entorno de desarrollo y prueba de Azure](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment). 
   
-Para obtener ejemplos adicionales de cargas de trabajo de TI implementados en máquinas virtuales en un Azure entre entornos virtual de red, vea los [escenarios de nube híbrida para IaaS de Azure](https://technet.microsoft.com/library/mt750502.aspx).
+Para obtener ejemplos adicionales de cargas de trabajo de TI implementados en máquinas virtuales en un Azure entre entornos virtual de red, vea los [escenarios de nube híbrida para IaaS de Azure](https://docs.microsoft.com/office365/enterprise/hybrid-cloud-scenarios-for-azure-iaas).
   
-## <a name="see-also"></a>Vea también
-
-<a name="cross_prem"> </a>
+## <a name="see-also"></a>Ver también
 
 [Microsoft Cloud Networking para arquitectos profesionales](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
-
 
 

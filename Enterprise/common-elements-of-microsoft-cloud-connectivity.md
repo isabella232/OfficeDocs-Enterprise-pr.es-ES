@@ -3,7 +3,7 @@ title: Elementos comunes de la conectividad de la nube de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Resumen: Descubra los elementos comunes de la infraestructura de red y aprenda a preparar la red.'
-ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
-ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
+ms.openlocfilehash: e00ad8820ef37c818c270323cf2aa036bb86a804
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25897033"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872221"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementos comunes de la conectividad de la nube de Microsoft
 
@@ -62,7 +62,7 @@ La figura 1 muestra cómo se puede conectar una red local con las ofertas en la 
     
 - **Servidor proxy:** Servicios de las solicitudes de contenido web en nombre de los usuarios de la intranet. Un proxy inverso permite que las solicitudes entrantes no solicitadas.
     
-- **Firewall externo:** permite el tráfico saliente y el tráfico entrante especificado. Puede traducir direcciones.
+- **Firewall externo:** Permite que el tráfico saliente y el tráfico entrante especificado. Puede realizar la traducción de direcciones, la inspección de paquetes, SSL de interrupción e inspeccionar o prevención de pérdida de datos.
     
 - **Conexión WAN a ISP:** conexión a un ISP basada en proveedor que se comunica con Internet para conseguir la conectividad y el enrutamiento.
     
