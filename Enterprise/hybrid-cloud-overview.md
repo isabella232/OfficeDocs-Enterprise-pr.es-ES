@@ -3,7 +3,7 @@ title: Información general de la nube híbrida
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Resumen: Comprenda la definición y los elementos de la nube híbrida de Microsoft.'
-ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915825"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123317"
 ---
 # <a name="hybrid-cloud-overview"></a>Información general de la nube híbrida
 
@@ -55,7 +55,7 @@ Los escenarios de nube híbrida con servicios en la nube de Microsoft varían se
   
 - SaaS
     
-    Los servicios SaaS de Microsoft incluyen Office 365, Microsoft Intune y Microsoft Dynamics 365. Los escenarios de nube híbrida con SaaS de Microsoft combinan estos servicios con aplicaciones o servicios locales. Por ejemplo, Exchange Online en ejecución en Office 365 puede integrarse con Skype Empresarial 2015, que está implementado de forma local.
+    Servicios de Microsoft SaaS incluyen Office 365, Microsoft Intune y Microsoft Dynamics 365. Escenarios de nube híbrida con Microsoft SaaS combinan estos servicios con aplicaciones o servicios locales. Por ejemplo, Exchange Online que se ejecuta en Office 365 se puede integrar con Skype para 2019 empresarial que se implementa localmente.
     
 - Plataforma como servicio de Azure
     
@@ -90,8 +90,4 @@ Debe tener en cuenta los siguientes elementos al planear e implementar escenario
 [Microsoft Hybrid Cloud para arquitectos profesionales](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
- 
-
 

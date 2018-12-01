@@ -3,7 +3,7 @@ title: Escenarios de nube híbrida para IaaS de Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Resumen: Conozca la arquitectura híbrida y los escenarios para la infraestructura de Microsoft como un servicio (IaaS)-en función de las ofertas de nube en Azure.'
-ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915035"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123247"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Escenarios de nube híbrida para Azure IaaS
 
@@ -67,7 +67,7 @@ Un servidor de sincronización de directorios es un servidor basado en Windows q
   
 El servidor de sincronización de directorios sondea Windows Server AD para obtener los cambios y, después, los sincroniza con la suscripción de Office 365.
   
-Para obtener más información, vea [Configurar la sincronización de Active directory para Office 365](set-up-directory-synchronization.md).
+Para obtener más información, vea [Implementar sincronización de directorios de Office 365 en Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   
 ## <a name="line-of-business-lob-application"></a>Aplicación de línea de negocio (LOB)
 
@@ -151,7 +151,7 @@ Siga esta ruta de acceso para realizar una adopción correcta:
     
     Vea el [Diseño de una granja de servidores de SharePoint Server 2016 en Azure](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure) paso a paso a través de un proceso para determinar el conjunto de redes de Azure IaaS, compute y elementos de almacenamiento para hospedar la granja de servidores y su configuración.
     
-3. Implementar
+3. Implementación
     
     Vea la [implementación de SharePoint Server 2016 con grupos de disponibilidad de SQL Server AlwaysOn en Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) paso a paso a través de la configuración de end-to-end de la granja de servidores de alta disponibilidad en cinco fases.
     
@@ -161,7 +161,7 @@ Otro ejemplo de una aplicación de línea de negocio de varios nivel y de alta d
   
 **La figura 5: Una infraestructura de identidad federada de alta disponibilidad para Office 365 en IaaS de Azure**
 
-![La configuración final de la infraestructura de la autenticación federada de Office 365 con alta disponibilidad en Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
+![Una alta disponibilidad Office 365 federados infraestructura de autenticación en Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
 En la figura 5, una red local hospeda una infraestructura de identidad y a los usuarios. Se conecta a una puerta de enlace de IaaS de Azure con una conexión de sitio a sitio VPN o ExpressRoute. El VNet de Azure contiene controladores de dominio de Windows Server Active Directory (AD), los servidores de servicios de federación de Active Directory (AD FS) y servidores proxy web.
   
@@ -177,23 +177,15 @@ Siga esta ruta de acceso para realizar una adopción correcta:
     
     Vea la [identidad federada para el entorno de desarrollo y prueba de Office 365](federated-identity-for-your-office-365-dev-test-environment.md) para crear un entorno de desarrollo o prueba simulado para autenticación federada con Office 365.
     
-2. Implementar
+2. Implementación
     
     Vea [autenticación federada de alta disponibilidad de implementación para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) paso a paso a través de la configuración de extremo a otro de la infraestructura de AD FS de alta disponibilidad en cinco fases.
     
-Consulte estos recursos adicionales:
-  
-- [Diseñar la arquitectura de entornos híbridos de nube](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
-    
-- [Diseño y creación de una aplicación de LOB en Azure](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
 ## <a name="see-also"></a>Vea también
 
 [Microsoft Hybrid Cloud para arquitectos profesionales](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Mapa de ruta de Enterprise Cloud de Microsoft: Recursos para los responsables de decisiones de TI](https://sway.com/FJ2xsyWtkJc2taRD)
-
 
 
