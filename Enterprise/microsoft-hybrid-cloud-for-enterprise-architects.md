@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: 'Resumen: Qué deben saber los arquitectos de TI sobre los escenarios híbridos al usar las plataformas y los servicios en la nube de Microsoft.'
-ms.openlocfilehash: a2859d6ce677a37541948d481530aee8f46adf7b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 06400dd4f49c51bc3f4712701d9fe6a387de5cff
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915555"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872251"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud para arquitectos profesionales
 
@@ -36,7 +36,7 @@ Este artículo contiene vínculos a un conjunto de artículos en los que se desc
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
 [Más idiomas](https://www.microsoft.com/download/details.aspx?id=54424)
   
-También puede ver todos los modelos en los [Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) y conocer el [Plan de desarrollo de la nube empresarial de Microsoft: Recursos para responsables de toma de decisiones de TI](https://aka.ms/cloudarchitecture).
+También puede ver todos los modelos en los [Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md).
   
 Vea las secciones siguientes:
   
