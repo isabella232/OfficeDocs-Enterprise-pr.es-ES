@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Para ayudarle a identificar y diferenciar el tráfico de red de Office 365, un nuevo servicio web publica puntos de conexión de Office 365, con lo cual le resultará más fácil evaluar, configurar y mantenerse al día con los cambios. Este nuevo servicio web reemplaza los archivos XML descargables que están disponibles actualmente.
-ms.openlocfilehash: 1765a35e961d6aa3da42c36e5a04333e57ae010b
-ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
+ms.openlocfilehash: 8a9b3981f833705b0d77e87a6f0588730b9fb170
+ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25697986"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26985775"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Dirección IP de Office 365 y servicio web de URL**
 
@@ -68,7 +68,7 @@ Hay un parámetro para el método web de versión:
 - **Format=JSON** | **CSV** | **RSS**. Además de los formatos JSON y CSV, el método web de versión también es compatible con RSS. Puede usarlo junto con el parámetro allVersions=true para solicitar una fuente RSS, que se puede usar con Outlook y otros lectores RSS.
 - **Instance**: parámetro de ruta. Este parámetro opcional especifica la instancia para la que se devolverá la versión. Si se omite, se devolverán todas las instancias. Las instancias válidas son: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
 
-El resultado del método web de versión puede ser un registro único o una matriz de registros. Los elementos de cada registro son:
+El método web de versión no tiene una tasa limitada y no devuelve nunca códigos de respuesta HTTP 429. La respuesta al método web de versión incluye un encabezado de control de caché que recomienda el almacenamiento en caché de los datos durante una hora. El resultado del método web de versión puede ser un registro único o una matriz de registros. Los elementos de cada registro son:
 
 - instance: el nombre corto de la instancia de servicio de Office 365.
 - latest: la versión más reciente de los extremos de la instancia especificada.
@@ -168,12 +168,14 @@ Este URI muestra una fuente RSS de las versiones publicadas que incluyen víncul
 
 ## <a name="endpoints-web-method"></a>**Método web de puntos de conexión**
 
-El método web de puntos de conexión devuelve todos los registros para los intervalos de direcciones IP y URL que conforman el servicio de Office 365. Aunque los datos más recientes del método web de puntos de conexión deben usarse para la configuración de dispositivos de red, los datos se pueden almacenar en caché por un máximo de 30 días tras su publicación debido a la antelación prevista para adiciones. Los parámetros del método web de puntos de conexión son:
+El método web de puntos de conexión devuelve todos los registros para los intervalos de direcciones IP y URL que conforman el servicio de Office 365. Aunque los datos más recientes del método web de puntos de conexión deben usarse para la configuración de dispositivos de red, los datos se pueden almacenar en caché por un máximo de 30 días tras su publicación debido a la antelación prevista para adiciones. Solo se recomienda llamar al método web de puntos de conexión de nuevo cuando el método web de versión indica que hay una nueva versión de los datos disponible. Los parámetros del método web de puntos de conexión son:
 
 - **ServiceAreas**: parámetro de cadena de consulta. Una lista de valores separados por comas de áreas de servicio. Los elementos válidos son Common, Exchange, SharePoint y Skype. Como los elementos del área de servicio Common son un requisito previo para todas las demás áreas de servicio, el servicio web siempre los incluirá. Si no incluye este parámetro, se devolverán todas las áreas de servicio.
 - **TenantName**: parámetro de cadena de consulta. El nombre de la cuenta empresarial de Office 365. El servicio web tiene el nombre especificado y lo inserta en partes de las direcciones URL que incluyen el nombre del inquilino. Si no proporciona un nombre de cuenta empresarial, esas partes de las direcciones URL tienen el carácter comodín (\*).
 - **NoIPv6**: parámetro de cadena de consulta. Establezca esto en true para excluir las direcciones IPv6 del resultado. Por ejemplo, si no usa IPv6 en la red.
 - **Instance**: parámetro de ruta. Este parámetro obligatorio especifica la instancia para la que se devolverán los extremos. Las instancias válidas son: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
+
+Si llama al método web de puntos de conexión una cantidad excesiva de veces desde la misma dirección IP de cliente es posible que reciba el código de respuesta HTTP 429 Demasiadas solicitudes. La mayoría de los usuarios nunca verá dicho código. Si recibe este código de respuesta, debe esperar 1 hora antes de llamar de nuevo al método. Planee llamar al método web de puntos de conexión solo cuando el método web indique que hay disponible una nueva versión. 
 
 El resultado del método web de extremos es una matriz de registros en la que cada registro representa un conjunto de extremos. Los elementos de cada registro son:
 
@@ -239,11 +241,22 @@ El parámetro para el método web de cambios es:
 
 - **Version**. Parámetro de ruta de URL necesario. La versión que está implementada actualmente y después de la cual desea ver los cambios realizados. El formato es _YYYYMMDDNN_.
 
+El método de web de cambios tiene una tasa limitada al igual que el método web de puntos de conexión. Si recibe un código de respuesta HTTP 429 debería esperar 1 hora antes de llamar de nuevo. 
+
 El resultado del método web de cambios es una matriz de registros en la que cada registro representa un cambio en una versión específica de los extremos. Los elementos de cada registro son:
 
 - id: el identificador inmutable del registro de cambios.
 - endpointSetId: el identificador del registro del conjunto de extremos que se modificó. Obligatorio.
 - disposition: puede ser de cambio, adición o eliminación y describe lo que hizo el cambio al registro del conjunto de extremos. Obligatorio.
+- impact: no todos los cambios serán igualmente importantes para cada entorno. Describe el impacto esperado en un entorno de perímetro de red empresarial como resultado de este cambio. Este atributo sólo se incluye en los registros de cambio de la versión 2018112800 y versiones posteriores. Las opciones para el impacto son:
+  - AddedIp: se agregó una dirección IP a Office 365 y estará en el servicio pronto. Esto representa un cambio que debe hacer en un firewall u otro dispositivo de perímetro de red de capa 3. Si no agrega esto antes de empezar a usarlo, puede experimentar una interrupción.
+  - AdedUrl: se agregó una URL a Office 365 y estará en el servicio pronto. Esto representa un cambio que debe hacer en un servidor proxy u otro dispositivo de perímetro de red de análisis de URL. Si no agrega esto antes de empezar a usarlo, puede experimentar una interrupción.
+  - AddedIpAndUrl: se han agregado una dirección IP y una dirección URL. Esto representa un cambio que debe seguir en un dispositivo de capa 3 de firewall o un servidor proxy o un dispositivo de análisis de URL. Si no agrega esto antes de empezar a usarlo, puede experimentar una interrupción.
+  - RemovedIpOrUrl: se ha eliminado al menos una dirección IP o una dirección URL de Office 365. Debería quitar los puntos de conexión de red de los dispositivos de perímetro, pero no hay ningún límite de tiempo para hacer esto.
+  - ChangedIsExpressRoute: se ha cambiado el atributo de soporte ExpressRoute. Si usa ExpressRoute puede que tenga que realizar alguna acción dependiendo de su configuración.
+  - MovedIpOrUrl: se ha pasado una dirección Url o una dirección IP entre este conjunto de puntos de conexión y otro. Por lo general, no es necesaria ninguna acción.
+  - RemovedDuplicateIpOrUrl: se ha eliminado una dirección IP o Url duplicada, pero aún está publicada para Office 365. Por lo general, no es necesaria ninguna acción.
+  - OtherNonPriorityChanges: se ha cambiado algo menos importante que todas las otras opciones, como un campo de nota
 - version: la versión del conjunto de extremos publicados en la que se presentó el cambio. Los números de versión están en el formato _YYYYMMDDNN_, donde NN es un número natural incrementado si hay varias versiones que deben publicarse en un solo día.
 - anterior: una subestructura en la que se detallan los valores anteriores de los elementos modificados en el conjunto de extremos. Esto no se incluye para los conjuntos de extremos recién añadidos. Incluye tcpPorts, udpPorts, ExpressRoute, category, required y notes.
 - current: una subestructura en la que se detallan los valores actualizados de los elementos de cambios en el conjunto de extremos. Incluye tcpPorts, udpPorts, ExpressRoute, category, required y notes.
