@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 'Resumen: diseñe las redes para las plataformas y los servicios en la nube de Microsoft.'
-ms.openlocfilehash: 5ee0df6442795a8ec440a0c56fa23dfd10448e0d
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 4864e92fd9a916c1aa15a8b921b9e64b486486fb
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872231"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123357"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft Cloud Networking para arquitectos profesionales
 
@@ -33,7 +33,7 @@ Este artículo contiene vínculos a un conjunto de artículos en los que se desc
 [![Imagen en miniatura del modelo de redes de Microsoft Cloud](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [Más idiomas](https://www.microsoft.com/download/details.aspx?id=54425)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)
   
 También puede ver todos los modelos en los [Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md).
   
