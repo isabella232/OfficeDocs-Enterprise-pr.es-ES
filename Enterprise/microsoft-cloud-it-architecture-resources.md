@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Resumen: Obtenga información acerca de las plataformas y los servicios en la nube de Microsoft. Revise nuestro mapa de ruta empresarial en la nube, explore nuestra serie de arquitectura y mucho más.'
-ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
-ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
+ms.openlocfilehash: 8a95cb5904907984b393c5e4c67840bd7c0b0311
+ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26525851"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26985765"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitectura de TI de la nube de Microsoft
 
@@ -137,7 +137,7 @@ Vea cómo Santa Claus y sus duendes usan ofertas de nube de Microsoft para reali
   
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![Imagen en miniatura del póster de Santa Cloud](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)          ](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |Para determinar quién ha sido bueno o malo, y los regalos que se entregan el 24 de diciembre, Papá Noel y su departamento de TI élfico usan Office 365, Azure, Dynamics 365 e Intune.  <br/>|
+|[![Imagen en miniatura del póster de Santa Cloud](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [Ver en línea](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |Para determinar quién ha sido bueno o malo, y los regalos que se entregan el 24 de diciembre, Papá Noel y su departamento de TI élfico usan Office 365, Azure, Dynamics 365 e Intune.  <br/>|
    
 <a name="BKMK_o365solutions"> </a>
 ## <a name="office-365-enterprise-solution-series"></a>Serie de soluciones de Office 365 Enterprise
