@@ -13,16 +13,16 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: En este artículo se describe cómo se puede implementar en SharePoint Online sin tener que realizar las pruebas de carga tradicional como no está permitido.
-ms.openlocfilehash: 06649942f20dc18abfcae0e56df7e3ea56ed9165
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 490d05598c42cd5d94f61dd21ee5a11701d4b4a7
+ms.sourcegitcommit: 033156d46ac0fb5f05d2b1a594d5ef368b93b893
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542973"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "27134675"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Planeación de capacidad y la carga de prueba de SharePoint Online
 
-En este artículo se describe cómo se puede implementar en SharePoint Online sin tener que realizar las pruebas de carga tradicional como no está permitido.
+En este artículo se describe cómo se puede implementar en SharePoint Online sin tener que realizar las pruebas de carga tradicional ya que no es recomendable.
   
 Aunque no es recomendable, existen otras maneras, puede asegurarse de que carga activo pruebas en SharePoint Online un sitio no producirá una experiencia de usuario deficiente cuando el sitio se ha iniciado. 
   
