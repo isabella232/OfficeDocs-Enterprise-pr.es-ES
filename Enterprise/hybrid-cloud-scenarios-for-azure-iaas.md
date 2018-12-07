@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Resumen: Conozca la arquitectura híbrida y los escenarios para la infraestructura de Microsoft como un servicio (IaaS)-en función de las ofertas de nube en Azure.'
-ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 441565adae46d50ad1b7139525ff3146c5f88ca3
+ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123247"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27181041"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Escenarios de nube híbrida para Azure IaaS
 
@@ -51,21 +51,21 @@ Para cada capa de la arquitectura:
     
     Contiene servidores de identidad que se sincronizan con los servidores de identidad que se ejecutan en Azure. También puede incluir recursos a los que pueden tener acceso las máquinas virtuales que se ejecutan en Azure, como la infraestructura de administración de sistemas y almacenamiento.
     
-## <a name="dirsync-server-for-office-365"></a>Servidor de sincronización de directorios para Office 365
+## <a name="directory-synchronization-server-for-office-365"></a>Servidor de sincronización de Active Directory para Office 365
 
-Ejecutar el servidor de sincronización de directorios (DirSync) desde una red virtual de Azure, como se muestra en la Figura 2, es un ejemplo de la ampliación de la infraestructura informática y de identidad a la nube.
+Ejecuta el servidor de sincronización de Active directory desde un VNet de Azure, tal como se muestra en la figura 2, es un ejemplo de ampliación de la infraestructura informática y la identidad a la nube.
   
-**Figura 2: Servidor de sincronización de directorios para Office 365 en IaaS de Azure**
+**La figura 2: Servidor de sincronización de Active Directory para Office 365 en IaaS de Azure**
 
-![Servidor de sincronización de directorios para Office 365 en IaaS de Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
+![Servidor de sincronización de Active Directory para Office 365 en IaaS de Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-En la figura 2, una red local hospeda una infraestructura de Windows Server AD, con un servidor proxy y un enrutador en su borde. El enrutador se conecta a una puerta de enlace de Azure en el borde de un VNet de Azure con una conexión de sitio a sitio VPN o ExpressRoute. Dentro de la VNet, un servidor de sincronización de directorios ejecuta en Azure Connect de AD.
+En la figura 2, una red local hospeda una infraestructura de Windows Server AD, con un servidor proxy y un enrutador en su borde. El enrutador se conecta a una puerta de enlace de Azure en el borde de un VNet de Azure con una conexión de sitio a sitio VPN o ExpressRoute. Dentro de la VNet, un servidor de sincronización de Active directory ejecuta en Azure Connect de AD.
   
-Un servidor de sincronización de directorios para Office 365 sincroniza la lista de cuentas en Windows Server AD con el inquilino de Azure AD de una suscripción de Office 365.
+Un servidor de sincronización de Active directory para Office 365 sincroniza la lista de cuentas en Windows Server AD con el inquilino de Azure AD de una suscripción a Office 365.
   
-Un servidor de sincronización de directorios es un servidor basado en Windows que ejecuta Azure AD Connect. Para obtener un aprovisionamiento más rápido o para reducir el número de servidores locales en su organización, implemente su servidor de sincronización de directorios en una red virtual (VNet) en IaaS de Azure.
+Un servidor de sincronización de Active directory es un servidor basado en Windows que se ejecuta Azure Connect de AD. El aprovisionamiento más rápidos o para reducir el número de servidores local de su organización, implementar el servidor de sincronización de Active directory en una red virtual (VNet) en Azure IaaS.
   
-El servidor de sincronización de directorios sondea Windows Server AD para obtener los cambios y, después, los sincroniza con la suscripción de Office 365.
+El servidor de sincronización de Active directory sondea Windows Server AD para que los cambios y, a continuación, sincroniza con la suscripción de Office 365.
   
 Para obtener más información, vea [Implementar sincronización de directorios de Office 365 en Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   
