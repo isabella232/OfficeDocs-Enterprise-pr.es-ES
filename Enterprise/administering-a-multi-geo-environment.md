@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Obtenga información sobre cómo administrar los servicios de SharePoint y OneDrive en un entorno multigeográfico.
-ms.openlocfilehash: 0113c20eab59e4d0a3122344346d31ae9f0a35a8
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: 09f8816fc0ba748ced5bd104710677829d893198
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849886"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200711"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administración de un entorno multigeográfico
 
@@ -99,6 +99,10 @@ Cuando se establece el rol Administrador o Supervisor de eDiscovery para una ubi
 <tr class="odd">
 <td align="left"><strong>GBR</strong></td>
 <td align="left">Centros de datos de Europa</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>IND</strong></td>
+<td align="left">Centros de datos de Asia oriental o Asia sudoriental</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>KOR</strong></td>
