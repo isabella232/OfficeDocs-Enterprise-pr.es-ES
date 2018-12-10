@@ -3,7 +3,6 @@ title: Capacidades multigeográficas de OneDrive y SharePoint Online en Office 3
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +11,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Expanda la presencia de Office 365 a varias regiones geográficas con las capacidades multigeográficas de OneDrive y SharePoint Online.
-ms.openlocfilehash: 725a7a88e3459f73ff00554b14afc740db1244b3
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: b62603759caf7a285896c1c87199a9bf59c546e3
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849826"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200733"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Capacidades multigeográficas de OneDrive y SharePoint Online en Office 365
 
@@ -64,27 +63,25 @@ La configuración multigeográfica resulta muy sencilla:
 OneDrive multigeográfico se ofrece actualmente en estos países y regiones:
   
 - Asia-Pacífico
-    
+
 - Australia
-    
+
 - Canadá
-    
+
 - Unión Europea (EMEA)
 
 - Francia
-    
-- Japón
-    
-- Reino Unido
-    
-- Estados Unidos (Norteamérica)
-    
-- Corea
-      
-Próximas ubicaciones geográficas:
-  
+
 - India
-    
+
+- Japón
+
+- Reino Unido
+
+- Estados Unidos (Norteamérica)
+
+- Corea
+
 ## <a name="getting-started"></a>Introducción
 
 Para empezar a usar OneDrive para la Empresa multigeográfico, el primer paso es [planear el entorno de OneDrive para la Empresa multigeográfico](plan-for-multi-geo.md). Después, [obtener información sobre cómo administrar un entorno multigeográfico](administering-a-multi-geo-environment.md) y [cómo experimentarán los usuarios un entorno multigeográfico](multi-geo-user-experience.md). Cuando esté listo para configurar OneDrive para la Empresa multigeográfico, [configure el espacio empresarial como multigeográfico](multi-geo-tenant-configuration.md), luego [mueva los sitios de OneDrive existentes a sus nuevas ubicaciones multigeográficas](move-onedrive-between-geo-locations.md) y [configure la búsqueda](configure-search-for-multi-geo.md).
