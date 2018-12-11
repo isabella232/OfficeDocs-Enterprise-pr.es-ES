@@ -3,7 +3,7 @@ title: Ver los detalles del servicio y la licencia de la cuenta con PowerShell d
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/27/2018
+ms.date: 12/10/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Se explica cómo usar PowerShell de Office 365 para determinar los servicios de Office 365 que se han asignado a los usuarios.
-ms.openlocfilehash: 78608c3a52151c115eaf80b5315bb71b61e62356
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 5d575ea9e0b45ddc453b3b1c73bd53bf73adab2e
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223112"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213957"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Ver los detalles del servicio y la licencia de la cuenta con PowerShell de Office 365
 
@@ -63,30 +63,6 @@ En este ejemplo se muestran los servicios a los que tiene acceso la usuaria Beli
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
-```
-
-Para buscar todos los usuarios con licencia que están habilitados o no habilitados para servicios específicos, use la sintaxis siguiente:
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[<LicenseIndexNumber> ].ServiceStatus[<ServiceIndexNumber> ].ProvisioningStatus <-eq | -ne> "Disabled" -and $_.Licenses[<LicenseIndexNumber> ].ServiceStatus[<ServiceIndexNumber> ].ProvisioningStatus <-eq | -ne> "Disabled"...}
-```
-
-Estos ejemplos usan la información siguiente:
-  
-- La licencia que proporciona acceso a los servicios de Office 365 que nos interesa es la primera que se asigna a todos los usuarios (el número de índice es 0).
-    
-- Los servicios de Office 365 que nos interesa son Skype para Exchange Online y en línea de negocio. Para las licencias que están asociadas con el plan de licencias, Skype para profesionales en línea es el servicio 6 que aparece (el número de índice es 5), y Exchange Online es el servicio de 9 enumerados (el número de índice es 8).
-    
-En este ejemplo se devuelve con licencia de todos los usuarios habilitados para Skype para Exchange Online y en línea de negocio.
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -ne "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -ne "Disabled"}
-```
-
-Este ejemplo devuelve todos los usuarios con licencia que no están habilitados para Skype para Exchange Online o en línea de negocio.
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -eq "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
 ```
 
 Para ver todos los servicios para un usuario que se ha asignado *varias licencias*, use la siguiente sintaxis:

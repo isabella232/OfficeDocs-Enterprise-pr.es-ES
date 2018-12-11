@@ -3,7 +3,7 @@ title: ExpressRoute para la conectividad en la nube de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 12/05/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Resumen: Descubra cómo ExpressRoute puede ayudarle mediante conexiones más rápidas y fiables a los servicios y las plataformas en la nube de Microsoft.'
-ms.openlocfilehash: 3ac8d52f50ff6df612de68ea51136fc16d5c9169
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872331"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213977"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute para la conectividad en la nube de Microsoft
 
@@ -222,7 +222,7 @@ Con varias conexiones de ExpressRoute Premium, podemos conseguir:
     
 - Mayor disponibilidad en la nube de Microsoft global cuando una conexión local de ExpressRoute deje de estar disponible.
     
-ExpressRoute Premium es necesario para las conexiones de ExpressRoute basadas en Office 365. Pero no supone un coste adicional para las empresas que tienen 500 usuarios con licencia o más.
+Es necesario para las conexiones basadas en Office 365 ExpressRoute ExpressRoute Premium.
   
 **Figura 9: La red mundial en la nube de Microsoft**
 
@@ -236,7 +236,7 @@ En el caso de una oficina regional, el tráfico adecuado de Office 365 que va a:
     
 - Centros de datos de Office 365 en otro continente viaja a través de la red intercontinental en nube de Microsoft.
     
-Para más información, visite:
+Para obtener más información, vea:
   
 - [Aprendizaje de Azure ExpressRoute para Office 365](https://channel9.msdn.com/series/aer/)
     
