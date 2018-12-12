@@ -3,7 +3,6 @@ title: Planear OneDrive para la Empresa con capacidades multigeográficas
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,18 +10,18 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Obtenga información sobre OneDrive para la Empresa con capacidades multigeográficas, cómo funcionan las Capacidades multigeográficas y qué ubicaciones geográficas están disponibles para el almacenamiento de datos.
-ms.openlocfilehash: d40f84ea3636b4eca2711a48bd9d70c73a242cfd
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: de856bdeb0c0f1ca8e718439ddb98d738843bc5a
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849866"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200723"
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a>Planear OneDrive para la Empresa con capacidades multigeográficas
 
 Esta guía está diseñada para administradores de compañías multinacionales (MNC) que estén preparando el espacio empresarial de SharePoint Online para expandirlo a otras geografías según la presencia de la compañía para cumplir con los requisitos de residencia de datos.
 
-En una configuración de OneDrive con capacidades multigeográficas, el espacio empresarial de Office 365 está compuesto por una ubicación central y una o más ubicaciones geográficas satelitales. Es un único espacio empresarial que abarca varias ubicaciones geográficas. En OneDrive con capacidades multigeográficas, la información del espacio empresarial, incluidas las ubicaciones geográficas, se dominan en Azure Active Directory (AAD). 
+En una configuración de OneDrive con capacidades multigeográficas, el espacio empresarial de Office 365 está compuesto por una ubicación central y una o más ubicaciones geográficas satélite. Es un único espacio empresarial que abarca varias ubicaciones geográficas. En OneDrive con capacidades multigeográficas, la información del espacio empresarial, incluidas las ubicaciones geográficas, se dominan en Azure Active Directory (AAD). 
 
 Aquí encontrará algunos términos clave de Capacidades multigeográficas para ayudarle a comprender los conceptos básicos de la configuración:
 
@@ -80,6 +79,10 @@ Puede configurar cualquiera de las ubicaciones siguientes para que sean ubicacio
 <td align="left">FRA</td>
 </tr>
 <tr class="odd">
+<td align="left">India</td>
+<td align="left">IND</td>
+</tr>
+<tr class="odd">
 <td align="left">Japón</td>
 <td align="left">JPN</td>
 </tr>
@@ -98,11 +101,7 @@ Puede configurar cualquiera de las ubicaciones siguientes para que sean ubicacio
 </tbody>
 </table>
 
-Próximas ubicaciones geográficas:
-  
-- India
-
-Al configurar Capacidades multigeográficas, podrá consolidar su infraestructura local al migrar a Office 365. Por ejemplo, si tiene granjas de servidores locales en Singapur y Malasia, puede consolidarlas en la ubicación satelital de APC, siempre que los requisitos de residencia de datos le permitan hacerlo.
+Al configurar Capacidades multigeográficas, podrá consolidar su infraestructura local al migrar a Office 365. Por ejemplo, si tiene granjas de servidores locales en Singapur y Malasia, puede consolidarlas en la ubicación satélite de APC, siempre que los requisitos de residencia de datos le permitan hacerlo.
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 
@@ -110,7 +109,7 @@ Le recomendamos que cree un usuario de prueba en Office 365 para realizar prueba
 
 Después de completar las pruebas con el usuario de prueba, seleccione un grupo piloto (por ejemplo, del departamento de TI) para que sea el primero en usar OneDrive en una nueva ubicación geográfica. Para este primer grupo, seleccione usuarios que aún no tengan una cuenta de OneDrive. Le recomendamos que no agregue más de cinco usuarios a este grupo inicial y que se expanda de forma progresiva siguiendo un método de implementación por lotes.
 
-Cada usuario necesita tener una *ubicación de datos preferida* (PDL) para que Office 365 pueda determinar en qué ubicación geográfica necesita aprovisionar la cuenta de OneDrive. La ubicación de datos preferida del usuario tiene que coincidir con una de las ubicaciones satelitales o con la ubicación central. Aunque el campo de PDL no es obligatorio, le recomendamos que establezca una PDL para todos los usuarios. Las cargas de trabajo de un usuario sin una PDL se aprovisionarán en la ubicación central.   
+Cada usuario necesita tener una *ubicación de datos preferida* (PDL) para que Office 365 pueda determinar en qué ubicación geográfica necesita aprovisionar la cuenta de OneDrive. La ubicación de datos preferida del usuario tiene que coincidir con una de las ubicaciones satélite o con la ubicación central. Aunque el campo de PDL no es obligatorio, le recomendamos que establezca una PDL para todos los usuarios. Las cargas de trabajo de un usuario sin una PDL se aprovisionarán en la ubicación central.   
 
 Cree una lista de los usuarios e incluya su nombre principal de usuario (UPN) y el código de ubicación para la ubicación de datos preferida. Incluya el usuario de prueba y el grupo piloto inicial para empezar. Necesitará esta lista en los procedimientos de configuración.
 

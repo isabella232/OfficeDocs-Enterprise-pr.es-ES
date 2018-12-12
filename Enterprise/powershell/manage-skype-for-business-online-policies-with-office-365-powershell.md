@@ -1,5 +1,5 @@
 ---
-title: "Administrar Skype para políticas de negocios en línea con Office 365 PowerShell"
+title: Administrar Skype para políticas de negocios en línea con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: "Resumen: Uso Office 365 PowerShell para administrar su Skype para los negocios en línea propiedades de cuenta de usuario con las directivas."
+description: 'Resumen: Uso Office 365 PowerShell para administrar su Skype para los negocios en línea propiedades de cuenta de usuario con las directivas.'
 ms.openlocfilehash: 6698bd43b2a55e1c98fbe8e536a46e2de604b4d2
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "17114919"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Administrar Skype para políticas de negocios en línea con Office 365 PowerShell
 
