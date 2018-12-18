@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Resumen: Describe la compatibilidad de IPv6 en los componentes de Microsoft Office 365 y en las ofertas de gobierno de Office 365.'
-ms.openlocfilehash: ed06f1eac3c6a3d631445db1d623bd25c62a309c
-ms.sourcegitcommit: ae7f2087d51698d3c5ef371888278544a7046205
+ms.openlocfilehash: 75ed1c8ffe96ed1b09aa8802e11ae195ad60a4f2
+ms.sourcegitcommit: d165aef59fe9a9ef538e6756fb014909a7cf975b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25493835"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "27294470"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Compatibilidad con IPv6 en servicios de Office 365
 
@@ -51,9 +51,7 @@ Si el programa que use para conectarse a SharePoint Online admite IPv6, usará I
   
 ### <a name="skype-for-business-and-ipv6"></a>Skype para empresas y IPv6
 
-Microsoft va a habilitar IPv6 para Skype para la empresa en su solicitud en la nube de varios inquilino pública y en Office 365 administración pública G1/G3/G4/K1 suscripciones. Una vez está habilitada, si el programa que use para conectarse a Skype para la empresa es compatible con IPv6, usará IPv6 de forma predeterminada. Si desea controlar las comunicaciones Skype para la empresa, use los intervalos de direcciones IP en [las direcciones URL de Office 365 y los intervalos de direcciones IP](https://go.microsoft.com/fwlink/?LinkId=293744).
-  
-Por favor, tenga en cuenta IPv6 no está disponible en todas las regiones y Microsoft no podrá activarlo para el inquilino en este momento.
+Por favor, tenga en cuenta IPv6 no es compatible con Skype para la empresa y ya no se puede habilitar.
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Protección en línea de Exchange e IPv6
 
@@ -83,7 +81,7 @@ Pueden que estas consideraciones se apliquen a su red:
 
 Este es un vínculo breve que se puede usar para volver: [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
   
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Papel de la posición de la tecnología de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=525743)
   

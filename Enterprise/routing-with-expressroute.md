@@ -3,7 +3,7 @@ title: Enrutamiento con ExpressRoute para Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/7/2017
+ms.date: 12/14/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Para conocer adecuadamente enrutar el tráfico a Office 365 con Azure ExpressRoute, necesitará una idea clara de los requisitos de enrutamiento de ExpressRoute núcleo y circuitos ExpressRoute y dominios de enrutamiento. Estos disponer los aspectos básicos para el uso de ExpressRoute que se dependen de los clientes de Office 365.
-ms.openlocfilehash: e80ce78c0b229881349a4d02c7708fb9509748a9
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: d8fa0c606a5aedd3760236cb46bcf9e1c584ecb8
+ms.sourcegitcommit: d165aef59fe9a9ef538e6756fb014909a7cf975b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542748"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "27294480"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Enrutamiento con ExpressRoute para Office 365
 
@@ -53,13 +53,11 @@ Independientemente de si se inicia una conexión a Office 365 a través de Inter
   
 Los siguientes son escenarios donde se iniciará comunicaciones de Office 365 a la red local. Para simplificar el diseño de la red, se recomienda el enrutamiento de estos a través de la ruta de acceso de Internet.
   
+- Servicios de SMTP como correo desde un inquilino de Exchange Online a un host local o correo de SharePoint Online enviado desde SharePoint Online para un host local. El protocolo SMTP se usa de forma más general dentro de la red de Microsoft de los prefijos de ruta comparten a través de circuitos ExpressRoute publicidad locales y en los servidores SMTP a través de ExpressRoute, producirán errores con estos otros servicios.
+
 - ADFS durante la validación de la contraseña para el inicio de sesión.
 
 - [Las implementaciones híbridas de Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
-
-- Enviar correo electrónico desde un inquilino de Exchange Online a un host local..
-
-- Enviar correo de SharePoint Online desde SharePoint Online para un host local.
 
 - [SharePoint federados búsqueda híbrida](https://technet.microsoft.com/library/dn197174.aspx).
 
@@ -69,7 +67,13 @@ Los siguientes son escenarios donde se iniciará comunicaciones de Office 365 a 
 
 - [Skype para la nube de Business Connector](https://technet.microsoft.com/library/mt605227.aspx ).
 
-Para que Microsoft pueda enrutar a la red para estos flujos de tráfico bidireccional, se deben compartir las rutas BGP a sus dispositivos locales con Microsoft.
+Para que Microsoft pueda enrutar a la red para estos flujos de tráfico bidireccional, se deben compartir las rutas BGP a sus dispositivos locales con Microsoft. Al anunciar prefijos de ruta a Microsoft a través de ExpressRoute, debe seguir estos procedimientos recomendados:
+
+1) No anunciar el prefijo de ruta de dirección IP público mismo a Internet pública y a través de ExpressRoute. Se recomienda encarecidamente que los anuncios de prefijo de ruta de IP BGP a Microsoft a través de ExpressRoute proceden de un rango que no se anuncia a internet en absoluto. Si esto no es posible lograr debido a que el espacio de dirección IP disponible, es esencial para asegurarse de que anunciar un rango más específico a través de ExpressRoute que cualquier circuitos de internet.
+
+2) Usar grupos de IP de NAT independientes por circuito ExpressRoute y separar a la de los circuitos de internet.
+
+3) Tenga en cuenta que cualquier ruta anunciada a Microsoft van a atraer el tráfico de red desde cualquier servidor de red de Microsoft, no solo aquellos para los que las rutas se anuncian a la red a través de ExpressRoute. Anunciar sólo las rutas a los servidores donde se definen y se entiende bien el equipo de escenarios de enrutamiento. Anunciar prefijos de ruta de dirección IP independientes en cada uno de varios circuitos ExpressRoute desde la red. 
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>Decidir qué aplicaciones y características enrutan a través de ExpressRoute
 
@@ -78,7 +82,7 @@ Cuando se configura una relación de interconexión con el dominio de enrutamien
 Otras aplicaciones, como Office 365 vídeo, es una aplicación de Office 365; Sin embargo, Office 365 vídeo consta de tres componentes diferentes, el portal de, el servicio de transmisión por secuencias y la red de entrega de contenido. El portal se encuentra dentro de SharePoint Online, la transmisión por secuencias vidas de servicio dentro de los servicios de medios de Azure, mientras que la red de entrega de contenido reside dentro de la CDN de Azure. En la siguiente tabla se describe estos componentes.
   
 | |
-|**Componente**|**Aplicación subyacente**|**¿Se incluyen en la Comunidad de SharePoint Online BGP?**|**Finalidad**|
+|**Componente**|**Aplicación subyacente**|**¿Se incluyen en la Comunidad de SharePoint Online BGP?**|**Uso**|
 |:-----|:-----|:-----|:-----|
 |Portal de vídeo de Office 365  <br/> |SharePoint Online  <br/> |Sí  <br/> |Configuración, cargar  <br/> |
 |Servicio de transmisión por secuencias de vídeo de Office 365  <br/> |Servicios de multimedia de Azure  <br/> |No  <br/> |Servicio de transmisión por secuencias, que se usa en el caso de que el vídeo no está disponible desde la CDN  <br/> |
@@ -222,7 +226,7 @@ Enrutamiento selectiva con ExpressRoute puedan ser necesarios para una variedad 
 
 4. **Las Comunidades BGP** - filtrado basado en [las etiquetas de la Comunidad BGP](https://aka.ms/bgpexpressroute365) permite que un cliente determinar qué aplicaciones de Office 365 atravesará ExpressRoute y que atravesará internet.
 
-Éste es un vínculo corto que puede usar para volver:[https://aka.ms/erorouting](https://aka.ms/erorouting)
+Este es un vínculo breve que se puede usar para volver: [https://aka.ms/erorouting](https://aka.ms/erorouting)
   
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -236,13 +240,13 @@ Enrutamiento selectiva con ExpressRoute puedan ser necesarios para una variedad 
   
 [Implementación de ExpressRoute para Office 365](implementing-expressroute.md)
   
-[Calidad de medios y el rendimiento de conectividad de red en Skype para la empresa en línea](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Calidad de medios y rendimiento de conectividad de red en Skype Empresarial Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Optimización de la red de Skype para profesionales en línea](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Optimización de la red para Skype Empresarial Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute y QoS en Skype para la empresa en línea](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute y QoS en Skype Empresarial Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Flujo de llamadas de uso ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Flujo de llamadas con ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Uso de las Comunidades BGP en ExpressRoute para escenarios de Office 365](bgp-communities-in-expressroute.md)
   
@@ -250,6 +254,6 @@ Enrutamiento selectiva con ExpressRoute puedan ser necesarios para una variedad 
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Red de Office 365 y ajuste del rendimiento](network-planning-and-performance.md)
+[Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
