@@ -21,12 +21,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo prepararse para abastecer a los usuarios a Office 365 mediante el uso de la sincronización de directorios y los beneficios a largo plazo de utilizar este método.
-ms.openlocfilehash: 78636fd3ec7aaaac8fa06ba8a0f2c37d76d1b045
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 8e84f4602b79ce321cd9a71e6c35331baf40f7f0
+ms.sourcegitcommit: c5761d3c41aa2d26815f0d24c73dbcd53ab37957
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542966"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27371124"
 ---
 # <a name="prepare-to-provision-users-through-directory-synchronization-to-office-365"></a>Preparación para aprovisionar a los usuarios a través de la sincronización del directorio a Office 365
 
@@ -44,7 +44,7 @@ Para determinar qué escenario es el mejor para su organización, revise la [com
 
 Antes de empezar a sincronizar el directorio, debe limpiar el directorio.
   
-Revise también los [atributos que se sincronizan con Azure Active Directory por Azure Connect de AD](https://go.microsoft.com/fwlink/p/?LinkId=746480).
+Revise también los [atributos que se sincronizan con Azure Active Directory por Azure Connect de AD](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized).
   
 > [!IMPORTANT]
 > Si no realiza la limpieza de Active directory antes de sincronizar, puede ser un efecto negativo significativo en el proceso de implementación. Podría tardar días o incluso semanas, vaya a través del ciclo de sincronización de directorios, que identifica los errores y volver a realizar la sincronización. 
