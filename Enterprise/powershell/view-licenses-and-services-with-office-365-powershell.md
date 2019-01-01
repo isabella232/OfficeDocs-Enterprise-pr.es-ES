@@ -3,7 +3,7 @@ title: Ver las licencias y los servicios con PowerShell de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/17/2018
+ms.date: 12/31/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explica cómo usar PowerShell de Office 365 para ver información sobre los planes de licencias, los servicios y las licencias disponibles en su organización de Office 365.
-ms.openlocfilehash: 21dda5bfc1bf1fa975b4a94879435c1842c383ec
-ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
+ms.openlocfilehash: dab6b8f1828c6be4d32bb2432437d23328653560
+ms.sourcegitcommit: 6dd4ac5808d72406578fcc7be6590dd7a99cebea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25601634"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27466879"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Ver licencias y servicios con PowerShell de Office 365
 
@@ -29,9 +29,9 @@ ms.locfileid: "25601634"
   
 Todas las suscripciones de Office 365 se componen de estos elementos:
 
-- **Planes de licencias** También se conocen comoplanes de licencia o planes de Office 365. Los planes de licencias determinan los servicios de Office 365 que están disponibles para los usuarios. Su suscripción a Office 365 puede contener varios planes de licencias. Un plan de licencias de ejemplo sería Office 365 Enterprise E3.
+- **Planes de licencias** Estos son también conocido como planes de licencias o planes de Office 365. Planes de licencias definición los servicios de Office 365 que están disponibles para los usuarios. Su suscripción de Office 365 puede contener varios planes de licencias. Un plan de licencias de ejemplo sería E3 Enterprise de Office 365.
     
-- **Servicios** También se conocen comoplanes de servicio. Los servicios son los productos, las características y las capacidades de Office 365 disponibles en cada plan de licencias, por ejemplo, Exchange Online y Office Professional Plus. Los usuarios pueden tener varias licencias asignadas que provengan de diferentes planes de licencias, y les permitan obtener acceso a diferentes servicios.
+- **Servicios de** Estos son también conocido como planes de servicio. Servicios son los productos de Office 365, características y capacidades que están disponibles en cada plan de licencias, por ejemplo, Exchange Online y Office Professional Plus. Los usuarios pueden tener varias licencias asignadas a ellos desde distintos planes de licencias que concesión acceso a diferentes servicios.
     
 - **Licencias** Los planes de licencias contienen el número de licencias que haya adquirido. Puede asignar licencias a los usuarios para que estos puedan usar los servicios de Office 365 definidos por el plan de licencias. Cada cuenta de usuario necesita como mínimo una licencia del plan de licencias para que el usuario correspondiente pueda iniciar sesión en Office 365 y usar los servicios.
     
@@ -41,7 +41,7 @@ Puede usar PowerShell de Office 365 para ver información detallada sobre los pl
 
 - Los procedimientos de este tema requieren conectarse a PowerShell de Office 365. Para obtener instrucciones, vea [Conectarse a PowerShell de Office 365](connect-to-office-365-powershell.md).
     
-- Hay un script de PowerShell que automatiza los procedimientos descritos en este tema. En concreto, el script le permite ver y deshabilitar servicios de la organización de Office 365, incluido Sway. Para obtener más información, consulte [Deshabilitar el acceso a Sway con Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
+- Un script de PowerShell está disponible que automatiza los procedimientos descritos en este tema. En concreto, la secuencia de comandos le permite ver y deshabilitar los servicios de la organización de Office 365, incluidos balanceo. Para obtener más información, vea [Deshabilitar el acceso a balanceo con PowerShell de Office 365](disable-access-to-sway-with-office-365-powershell.md).
     
 ## <a name="view-information-about-licensing-plans-and-the-available-licenses"></a>Ver información sobre los planes de licencias y las licencias disponibles
 
