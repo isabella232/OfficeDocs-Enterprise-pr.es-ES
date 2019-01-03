@@ -3,7 +3,7 @@ title: ExpressRoute para la conectividad en la nube de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 01/02/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Resumen: Descubra cómo ExpressRoute puede ayudarle mediante conexiones más rápidas y fiables a los servicios y las plataformas en la nube de Microsoft.'
-ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
-ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
+ms.openlocfilehash: b0f47278a94b2926cd540ce759ced9b2418aa598
+ms.sourcegitcommit: 6e3bfe55a173a733d6696790b88efa39853ebdb9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "27213977"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27470172"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute para la conectividad en la nube de Microsoft
 
@@ -96,25 +96,19 @@ La tabla 1 muestra los tres modelos de conectividad principales para las conexio
   
 ## <a name="expressroute-peering-relationships-to-microsoft-cloud-services"></a>Relaciones de emparejamiento de ExpressRoute a los servicios en la nube de Microsoft
 
-Una única conexión de ExpressRoute admite hasta tres relaciones diferentes de emparejamiento de Border Gateway Protocol (BGP) a distintas partes de la nube de Microsoft. BPG usa relaciones de emparejamiento para establecer la confianza e intercambiar información de enrutamiento.
+Una sola conexión ExpressRoute admite hasta dos relaciones de interconexión de protocolo de puerta de enlace de borde (BGP) diferentes a distintas partes de la nube de Microsoft. BPG usa relaciones de interconexión para establecer la confianza y la información de enrutamiento de exchange.
   
-**Figura 3: Las tres relaciones BGP en una sola conexión de ExpressRoute**
+**La figura 3: Las dos diferentes BGP relaciones en una sola conexión ExpressRoute**
 
-![Figura 3: Las tres relaciones BGP en una sola conexión de ExpressRoute](media/Network-Poster/ERPeering.png)
+![La figura 3: Las dos diferentes BGP relaciones en una sola conexión ExpressRoute](media/Network-Poster/ERPeering.png)
   
-La figura 3 muestra una conexión ExpressRoute desde una red local. La conexión de ExpressRoute tiene tres relaciones lógicas de interconexión. Una relación de interconexión Microsoft va a servicios de Microsoft SaaS, incluyendo Dynamcs CRM Online y Office 365. Una relación de interconexión pública que se va a los servicios de Azure PaaS. Una relación de interconexión privada va a Azure IaaS y a una puerta de enlace de red virtual que hospeda máquinas virtuales.
+La figura 3 muestra una conexión ExpressRoute desde una red local. La conexión de ExpressRoute tiene dos relaciones lógicas de interconexión. Una relación de interconexión Microsoft va a servicios de Microsoft SaaS, incluidos los servicios de Office 365, Dynamcs 365 y Azure PaaS. Una relación de interconexión privada va a Azure IaaS y a una puerta de enlace de red virtual que hospeda máquinas virtuales.
   
 La relación de emparejamiento de BGP de Microsoft: 
   
-- Va de un enrutador de la red perimetral a las direcciones públicas de los servicios de Office 365 y Dynamics 365. 
+- Es de un enrutador en su DMZ a las direcciones públicas de Office 365, Dynamics 365 y servicios de Azure. 
     
 - Admite la comunicación iniciada bidireccionalmente.
-    
-La relación de emparejamiento pública de BGP:
-  
-- Va de un enrutador de la red perimetral a las direcciones IP públicas de los servicios de Azure.
-    
-- Admite la comunicación iniciada unidireccionalmente solo desde sistemas locales. La relación de emparejamiento no admite comunicaciones iniciadas desde los servicios PaaS de Azure.
     
 La relación de emparejamiento privada de BGP:
   
@@ -123,6 +117,10 @@ La relación de emparejamiento privada de BGP:
 - Admite la comunicación iniciada bidireccionalmente.
     
 - Es una extensión de la red de su organización a la nube de Microsoft que incluye el direccionamiento y el enrutamiento internamente coherentes.
+
+>[!Note]
+>La relación de BGP interconexión pública que se describen en las versiones anteriores de este artículo ha quedado obsoleto.
+>
     
 ## <a name="example-of-application-deployment-and-traffic-flow-with-expressroute"></a>Ejemplo de la implementación de una aplicación y el flujo de tráfico con ExpressRoute
 
@@ -250,7 +248,7 @@ También puede incorporar las opciones siguientes a la implementación de Expres
   
 - **Seguridad en el perímetro:** para proporcionar seguridad avanzada en el tráfico enviado y recibido a través de la conexión de ExpressRoute, como la inspección del tráfico o la detección de intrusiones y malware, coloque las aplicaciones de seguridad en la ruta de acceso del tráfico dentro de la red perimetral o en el perímetro de la intranet.
     
-    Tráfico de Internet para máquinas virtuales: para impedir que las máquinas virtuales de Azure inicien el tráfico directamente con ubicaciones de Internet, anuncie la ruta predeterminada a Microsoft. El tráfico de Internet se enruta a través de la conexión de ExpressRoute y a través de los servidores proxy locales. El tráfico de las máquinas virtuales de Azure a los servicios PaaS de Azure o a Office 365 se vuelve a enrutar a través de la conexión de ExpressRoute.
+- **El tráfico de Internet para las máquinas virtuales:** Para impedir que las máquinas virtuales de Azure iniciar tráfico directamente con ubicaciones de Internet, anunciar la ruta predeterminada a Microsoft. Se enruta el tráfico a Internet a través de la conexión de ExpressRoute y a través de los servidores de proxy local. Se enruta el tráfico desde máquinas virtuales de Azure para los servicios de Azure PaaS u Office 365 volver a través de la conexión ExpressRoute.
     
 - **Optimizadores de WAN:** puede implementar optimizadores de WAN a ambos lados de una conexión de emparejamiento privada para una red virtual de Azure entre locales (VNet). Dentro de la VNet de Azure, use una aplicación de red del optimizador de WAN de Azure Marketplace y el enrutamiento definido por el usuario para enrutar el tráfico a través de la aplicación.
     
