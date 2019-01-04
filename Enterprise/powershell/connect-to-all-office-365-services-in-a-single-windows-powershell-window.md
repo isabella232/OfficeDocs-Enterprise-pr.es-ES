@@ -3,7 +3,7 @@ title: Conectarse a todos los servicios de Office 365 en una sola ventana de Wi
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/03/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumen: Conectar Windows PowerShell a todos los servicios de Office 365 en una sola ventana de Windows PowerShell.'
-ms.openlocfilehash: 5635cf8b03490c2b2f811f22c231c271d5204552
-ms.sourcegitcommit: 65de707bd1c389eea48767a68c31032dd5198359
+ms.openlocfilehash: f863879fd83fb09fc748066fb25ca4b73895eb98
+ms.sourcegitcommit: c6efb42ffa0e81122152b67a3568a1ad1ff30aba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706694"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "27521676"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Conectarse a todos los servicios de Office 365 en una sola ventana de Windows PowerShell
 
@@ -90,13 +90,13 @@ Estos son los pasos para conectarse a todos los servicios en una sola ventana de
 3. Ejecute este comando para conectar a Azure Active Directory (AD) con Azure Active Directory PowerShell para el módulo de gráfico.
     
   ```
-   Connect-AzureAD -Credential $credential
+  Connect-AzureAD -Credential $credential
   ```
   
   Como alternativa, si está utilizando el módulo de Microsoft Azure Active Directory módulo para Windows PowerShell, ejecute este comando.
       
   ```
-   Connect-MsolService -Credential $credential
+  Connect-MsolService -Credential $credential
  ```
 
 4. Ejecute estos comandos para conectarse a SharePoint Online. Reemplace _ \<domainhost >_ con el valor real de su dominio. Por ejemplo, para "litwareinc.onmicrosoft.com", la _ \<domainhost >_ valor es "litwareinc".
@@ -118,7 +118,7 @@ Estos son los pasos para conectarse a todos los servicios en una sola ventana de
     
   ```
   $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
-  Import-PSSession $exchangeSession
+  Import-PSSession $exchangeSession -DisableNameChecking
   ```
 
 >[!Note]
@@ -148,7 +148,7 @@ Import-Module SkypeOnlineConnector
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
-Import-PSSession $exchangeSession
+Import-PSSession $exchangeSession -DisableNameChecking
 $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
 Import-PSSession $SccSession -Prefix cc
 ```
@@ -165,7 +165,7 @@ Import-Module SkypeOnlineConnector
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
-Import-PSSession $exchangeSession
+Import-PSSession $exchangeSession -DisableNameChecking
 $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
 Import-PSSession $SccSession -Prefix cc
 ```
