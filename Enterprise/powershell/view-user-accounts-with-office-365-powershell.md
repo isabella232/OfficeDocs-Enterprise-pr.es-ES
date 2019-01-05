@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Resumen: Ver, lista o mostrar las cuentas de usuario de varias formas con PowerShell de Office 365.'
-ms.openlocfilehash: dc33b64207341576968867fbeea6f211034eeca6
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: e95353602b96babe5c80f7d57462370636dd26fa
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546531"
+ms.locfileid: "27730325"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Ver cuentas de usuario con PowerShell de Office 365
 
@@ -28,9 +28,9 @@ ms.locfileid: "27546531"
   
 Aunque puede usar el centro de administración de Office 365 para ver las cuentas para el inquilino de Office 365, también puede usar PowerShell de Office 365 y hacer cosas que no se puede el centro de administración de Office 365.
   
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usar Azure Active Directory PowerShell para el módulo de gráfico
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-Primero, [Conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 ### <a name="view-all-accounts"></a>Ver todas las cuentas
 
@@ -55,10 +55,16 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 
 ### <a name="view-a-specific-account"></a>Ver una cuenta específica
 
-Para mostrar una cuenta de usuario específica, rellene el nombre principal de usuario (UPN) de la cuenta de usuario, quite el "<" y ">" caracteres y ejecute este comando:
+Para mostrar una cuenta de usuario específica, quitar relleno en el nombre de inicio de sesión de la cuenta de la cuenta de usuario, también conocido como el nombre principal de usuario (UPN), el "<" y ">" caracteres y ejecute este comando:
   
 ```
-Get-AzureADUser -ObjectID <UPN of user account>
+Get-AzureADUser -ObjectID <sign-in name of the user account>
+```
+
+Aquí le mostramos un ejemplo:
+  
+```
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 ```
 
 ### <a name="view-additional-property-values-for-a-specific-account"></a>Ver los valores de propiedad adicionales de una cuenta específica
@@ -80,13 +86,13 @@ Este comando indica a Office 365 PowerShell para:
 Para ver todas las propiedades para las cuentas de usuario, use el cmdlet **Select-Object** y el carácter comodín (*) para mostrar todos ellos para una cuenta de usuario específica. Este es un ejemplo:
   
 ```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Como otro ejemplo, puede comprobar el estado habilitado de una cuenta de usuario específica con el siguiente comando:
   
 ```
-Get-AzureADUser -ObjectID <UPN of user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
+Get-AzureADUser -ObjectID <sign-in name of the user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
 ```
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>Ver algunas cuentas en función de una propiedad común
@@ -106,7 +112,7 @@ Este comando indica a Azure Active Directory PowerShell para gráfico para:
 La propiedad de la **propiedad UsageLocation** es solo una de las muchas propiedades asociadas con una cuenta de usuario. Para ver todas las propiedades para las cuentas de usuario, use el cmdlet **Select-Object** y el carácter comodín (*) para mostrar todos ellos para una cuenta de usuario específica. Este es un ejemplo:
   
 ```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Por ejemplo, en esta lista, **City** es el nombre de una propiedad de la cuenta de usuario. Esto significa que puede usar el comando siguiente para enumerar todas las cuentas de los usuarios que viven en Londres:
@@ -119,9 +125,9 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 >  La sintaxis para el cmdlet **Where-Object** , que se muestra en estos ejemplos es **Where-Object {$\_.** [nombre de propiedad de la cuenta de usuario] [operador de comparación] [valor] **}**. > [operador de comparación] es **-eq** para es igual a, **-ne** para no es igual a, **-lt** para menor que **-gt** para mayor y otros usuarios.  [valor] es normalmente una cadena (una secuencia de letras, números y otros caracteres), un valor numérico o **$Null** para que no se especifica > vea [Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) para obtener más información.
   
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usar el módulo de Microsoft Azure Active Directory para Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-Primero, [Conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 ### <a name="view-all-accounts"></a>Ver todas las cuentas
 
@@ -164,10 +170,10 @@ Para obtener más información acerca de los parámetros adicionales para filtra
 
 ### <a name="view-a-specific-account"></a>Ver una cuenta específica
 
-Para mostrar una cuenta de usuario específica, rellene el nombre principal de usuario (UPN) de la cuenta de usuario, quite el "<" y ">" caracteres y ejecute este comando:
+Para mostrar una cuenta de usuario específica, quitar relleno en el nombre de inicio de sesión de la cuenta de usuario de la cuenta de usuario, también conocido como el nombre principal de usuario (UPN), el "<" y ">" caracteres y ejecute este comando:
   
 ```
-Get-MsolUser -UserPrincipalName <UPN of user account>
+Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 ```
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>Ver algunas cuentas en función de una propiedad común
@@ -197,7 +203,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 La propiedad de la **propiedad UsageLocation** es solo una de las muchas propiedades asociadas con una cuenta de usuario. Para ver todas las propiedades para las cuentas de usuario, use el cmdlet **Select-Object** y el carácter comodín (*) para mostrar todos ellos para una cuenta de usuario específica. Este es un ejemplo:
   
 ```
-Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Por ejemplo, en esta lista, **City** es el nombre de una propiedad de la cuenta de usuario. Esto significa que puede usar el comando siguiente para enumerar todas las cuentas de los usuarios que viven en Londres:
@@ -254,7 +260,7 @@ Scott Wallace           Operations
 El cmdlet **Select-Object** le permite elegir y seleccionar las propiedades que desee un comando que se va a mostrar. Para ver todas las propiedades para las cuentas de usuario, use el carácter comodín (*) para mostrar todos ellos para una cuenta de usuario específica. Este es un ejemplo:
   
 ```
-Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Para ser más selectivo en lo que respecta a la lista de cuentas que se va a mostrar, también puede usar el cmdlet **Where-Object**. A continuación se incluye un comando de ejemplo que muestra solo las cuentas de usuario que tienen una ubicación de uso no especificada:
