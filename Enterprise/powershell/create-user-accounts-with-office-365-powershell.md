@@ -15,12 +15,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Aprenda a usar PowerShell de Office 365 para crear cuentas de usuario en Office 365.
-ms.openlocfilehash: e601b472086727be836de4726c247b9a91e0bbfd
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: 902f44dd4fc42d8f29ce92748cbbf1ce03c6615b
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546501"
+ms.locfileid: "27730315"
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Crear cuentas de usuario con PowerShell de Office 365
 
@@ -68,10 +68,10 @@ Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powersh
 Para crear una cuenta individual, use la sintaxis siguiente:
   
 ```
-New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last name> -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -LicenseAssignment <AccountSkuID> [-Password <Password>]
+New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last name> -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -LicenseAssignment <licensing plan name> [-Password <Password>]
 ```
 
-Para enumerar los AccountSkuID disponibles, use este comando:
+Para obtener una lista de los nombres de planes de licencias disponibles, use este comando:
 
 ````
 Get-MsolAccountSku
