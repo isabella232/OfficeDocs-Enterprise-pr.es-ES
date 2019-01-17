@@ -3,7 +3,6 @@ title: Ver errores de sincronización de Active directory en Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +16,16 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Obtenga información sobre cómo ver los errores de sincronización de Active directory en el centro de administración de Office 365.
-ms.openlocfilehash: 62f1135568261eccf0e7e66b78c5aaff966c7281
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 8beeeebbb24936abd7c93f4c04c0fa4e27c85c12
+ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542851"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327342"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Ver errores de sincronización de Active directory en Office 365
 
-Puede ver los errores de sincronización de Active directory en el centro de administración de Office 365. Se muestran sólo los errores del objeto de usuario. Para ver los errores mediante el uso de PowerShell, vea [identificar objetos con DirSyncProvisioningErrors](https://go.microsoft.com/fwlink/p/?LinkId=798300).
+Puede ver los errores de sincronización de Active directory en el centro de administración de Office 365. Se muestran sólo los errores del objeto de usuario. Para ver los errores mediante el uso de PowerShell, vea [identificar objetos con DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
 Después de visualización, vea [solución de problemas con la sincronización de Active directory para Office 365](fix-problems-with-directory-synchronization.md) para corregir los problemas identificados.
   

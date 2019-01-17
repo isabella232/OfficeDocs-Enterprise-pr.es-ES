@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Resumen: Comprenda la definición y los elementos de la nube híbrida de Microsoft.'
-ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 21f107c9f096e90cd0eb1dfc17f14431dec54a73
+ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123317"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327352"
 ---
 # <a name="hybrid-cloud-overview"></a>Información general de la nube híbrida
 
@@ -79,7 +79,7 @@ Debe tener en cuenta los siguientes elementos al planear e implementar escenario
     
 - Seguridad
     
-    La seguridad de los escenarios de nube híbrida incluye protección y administración de identidades, protección de datos, administración de privilegios administrativos, reconocimiento de amenazas e implementación de directivas de control y seguridad de datos. Para obtener más información, consulte [Seguridad en la nube de Microsoft para arquitectos profesionales](https://technet.microsoft.com/library/dn919927.aspx#security).
+    La seguridad de los escenarios de nube híbrida incluye protección y administración de identidades, protección de datos, administración de privilegios administrativos, reconocimiento de amenazas e implementación de directivas de control y seguridad de datos. Para obtener más información, consulte [Seguridad en la nube de Microsoft para arquitectos profesionales](microsoft-cloud-it-architecture-resources.md#security).
     
 - Administración
     
