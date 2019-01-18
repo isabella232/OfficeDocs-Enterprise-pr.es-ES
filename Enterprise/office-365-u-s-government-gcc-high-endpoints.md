@@ -3,7 +3,7 @@ title: Extremos de GCC alta de gobierno de Estados Unidos de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 01/17/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Si su organización usa Office 365 e impide que los equipos de la red que se conectan a Internet, a continuación encontrará los extremos (nombres de dominio completos, puertos, las direcciones URL, IPv4 y IPv6 intervalos de direcciones) que debe incluir en la salida permitir listas para asegurarse de que su los equipos pueden utilizar correctamente Office 365.
 hideEdit: true
-ms.openlocfilehash: 4cb3db656c2beb8d133d9a61ea7a35aa21d2cf7a
-ms.sourcegitcommit: e3fa9998321f6fa5d31217d107b672258993826e
+ms.openlocfilehash: 5c849775c8fd55d9e4196ebad6c55cdf56d2ab60
+ms.sourcegitcommit: 0c4f50aa55699b8390038efbb8b50dbe10f3eefe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "27746120"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723387"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Extremos de GCC alta de gobierno de Estados Unidos de Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "27746120"
   
 |||
 |:-----|:-----|
-|**Última actualización:** 01/07/de 2019 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [suscripción del registro de cambios](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Descargar:** la lista completa en [formato JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Última actualización:** 01/2019/17 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [suscripción del registro de cambios](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Descargar:** la lista completa en [formato JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Empiece con [extremos de administración de Office 365](managing-office-365-endpoints.md) comprender nuestras recomendaciones para administrar la conectividad de red con estos datos. Datos de extremos se actualizan al principio de cada mes con nuevas direcciones IP y URL publicadas 30 días antes de que sea activo. Esto permite a los clientes que todavía no han automatizado actualizaciones para completar sus procesos antes de que se requiere conectividad nuevo. Si es necesario para escalaciones de soporte técnico de dirección, incidentes de seguridad u otros requisitos de funcionamiento inmediatos extremos también pueden actualizarse durante el mes. Los datos que se muestran en esta página que aparece a continuación se generan desde los servicios web basado en REST. Si usa una secuencia de comandos o un dispositivo de red para tener acceso a estos datos, debe ir directamente al [servicio Web](office-365-ip-web-service.md) .
 
