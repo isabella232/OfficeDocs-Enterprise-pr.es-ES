@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Los clientes existentes de Office 365 será necesario enviar una solicitud antes de la fecha límite para su país para que los datos de cliente de sus servicios de Office 365 colaboradores movidos a su ubican nuevo.
-ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 15edbb41c14a1b3061d0d1923eeec4defab58a7b
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839578"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604511"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -80,7 +80,7 @@ Después de solicitar un movimiento, no es posible cambiar la selección a empez
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft Teams aún no admite la migración de contenido de cliente en reposo desde en la región a los centros de datos en el país donde residencia de datos para Microsoft Teams está disponible.  Por lo tanto, sólo los nuevos clientes tendrán todos sus datos almacenados dentro de país en las nuevas regiones donde Microsoft Teams admite residencia de datos.  Encontrará más información acerca de Office 365 residencia de datos para la ubicación de la compañía en [¿dónde están los datos que se encuentra?](https://office/com/datamaps)   
+Microsoft Teams aún no admite la migración de contenido de cliente en reposo desde en la región a los centros de datos en el país donde residencia de datos para Microsoft Teams está disponible.  Por lo tanto, sólo los nuevos clientes tendrán todos sus datos almacenados dentro de país en las nuevas regiones donde Microsoft Teams admite residencia de datos.  Encontrará más información acerca de Office 365 residencia de datos para la ubicación de la compañía en [¿dónde están los datos que se encuentra?](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Acciones opcionales antes de solicitar un movimiento
 
