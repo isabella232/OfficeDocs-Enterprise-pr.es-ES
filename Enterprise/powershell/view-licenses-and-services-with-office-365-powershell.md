@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explica cómo usar PowerShell de Office 365 para ver información sobre los planes de licencias, los servicios y las licencias disponibles en su organización de Office 365.
-ms.openlocfilehash: 8efc123e2820560b4bd8547f4c99bccae242956f
-ms.sourcegitcommit: 96313c3c812bae47819f603af995839f4da034c5
+ms.openlocfilehash: bce181445523a2f043caa932f3d4e0ddd81d89cc
+ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "27786156"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29651214"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Ver licencias y servicios con PowerShell de Office 365
 
@@ -50,7 +50,7 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 Los resultados contienen la siguiente información:
   
-- **SkuPartNumber:** Muestra los planes de licencias disponibles para su organización. Por ejemplo, `ENTERPRISEPACK` es el nombre del sistema para Office 365 Enterprise E3.
+- **SkuPartNumber:** Muestra los planes de licencias disponibles para su organización. Por ejemplo, `ENTERPRISEPACK` es el nombre del plan de licencias para Office 365 Enterprise E3.
     
 - **Habilitado:** Número de licencias que ha adquirido para un plan de licencias específico.
     
@@ -74,7 +74,7 @@ A continuación, se muestran los servicios en un plan de licencias específicos.
 $licenses[<index>].ServicePlans
 ````
 
-\<Índice > es un número entero que especifica el número de fila del plan de licencia de la presentación de la `Get-AzureADSubscribedSku | Select SkuPartNumber` command, menos 1.
+\<index> es un entero que especifica el número de fila del plan de licencia de la presentación de la `Get-AzureADSubscribedSku | Select SkuPartNumber` command, menos 1.
 
 Por ejemplo, si la presentación de la `Get-AzureADSubscribedSku | Select SkuPartNumber` comando es esto:
 
@@ -160,7 +160,7 @@ En este ejemplo se muestra los servicios de Office 365 que están disponibles en
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 
 [Administrar licencias y cuentas de usuario con PowerShell de Office 365](manage-user-accounts-and-licenses-with-office-365-powershell.md)
