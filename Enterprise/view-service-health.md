@@ -20,12 +20,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Ver el estado de mantenimiento de servicios de Office 365 antes de llamar a soporte técnico para ver si hay una interrupción del servicio de active
-ms.openlocfilehash: 7e04e1309c990ccced67663576285f7276603ccc
-ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
+ms.openlocfilehash: 52a7b762b8e86c3e538579f7c1e1611515469389
+ms.sourcegitcommit: c7ad181394a8a3ee261dc44e7a1e70f6ebe7cbcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29651194"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29696357"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Cómo comprobar el estado del servicio de Office 365
 
@@ -108,7 +108,7 @@ La mayoría de las veces, los servicios aparecerán como correctos sin más info
    
 ## <a name="history"></a>Historial
 
-El estado del servicio le permite ver el estado actual y el historial de los incidentes y avisos del servicio que se hayan producido durante los últimos 30 días. Para ver el estado anterior de todos los servicios, seleccione **Ver historial** en la página **Estado del servicio**. 
+Estado del servicio permite a mirar el estado actual de mantenimiento y ver el historial de los avisos de servicio y los incidentes que han afectado al inquilino en los últimos 30 días. Para ver el estado de todos los servicios anteriores, seleccione **Ver historial de** en la página de **estado del servicio** . 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
