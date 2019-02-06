@@ -3,13 +3,6 @@
 
 
 
-## <a name="week-of-december-24-2018"></a>Semana del 24 de diciembre de 2018
-
-
-| Publicado en |Título del tema | Cambio |
-|------|------------|--------|
-
-
 ## <a name="week-of-december-31-2018"></a>Semana del 31 de diciembre de 2018
 
 
@@ -72,4 +65,24 @@
 | 25/1/2019 | [Administrar grupos de Office 365 con PowerShell](/Office365/Enterprise/manage-office-365-groups-with-powershell) | modificado  |
 | 25/1/2019 | [Mover un sitio de OneDrive a otra ubicación geográfica](/Office365/Enterprise/move-onedrive-between-geo-locations) | modificado  |
 | 25/1/2019 | [Usar la red de entrega de contenido de Office 365 con SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | modificado  |
-| 25/1/2019 | [Configuración de la sincronización del directorio para Office 365](/Office365/Enterprise/set-up-directory-synchronization) | Fecha de modificación |
+| 25/1/2019 | [Configuración de la sincronización del directorio para Office 365](/Office365/Enterprise/set-up-directory-synchronization) | modificado  |
+
+
+## <a name="week-of-january-28-2019"></a>Semana del 28 de enero de 2019
+
+
+| Publicado en |Título del tema | Cambio |
+|------|------------|--------|
+| 28/1/2019 | [Asesores de implementación para servicios de Office 365](/Office365/Enterprise/deployment-advisors-for-office-365) | modificado  |
+| 28/1/2019 | [Cómo solicitar el movimiento de datos](/Office365/Enterprise/request-your-data-move) | modificado  |
+| 28/1/2019 | [Plan de fin del soporte técnico de SharePoint Server 2007](/Office365/Enterprise/sharepoint-2007-end-of-support) | modificado  |
+| 29/1/2019 | [Extremos de DoD de gobierno de Estados Unidos de Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificado  |
+| 29/1/2019 | [Extremos de GCC alta de gobierno de Estados Unidos de Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificado  |
+| 29/1/2019 | [Direcciones URL e intervalos de direcciones IP de Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificado  |
+| 30/1/2019 | [Preparar la organización para Office 365 Enterprise](/Office365/Enterprise/get-your-organization-ready-for-office-365) | modificado  |
+| 30/1/2019 | [Asignar licencias a cuentas de usuario con PowerShell de Office 365](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modificado  |
+| 30/1/2019 | [Eliminar licencias de cuentas de usuario con PowerShell de Office 365](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | modificado  |
+| 30/1/2019 | [Ver las licencias y los servicios con PowerShell de Office 365](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | modificado  |
+| 30/1/2019 | [Cómo comprobar el estado del servicio de Office 365](/Office365/Enterprise/view-service-health) | modificado  |
+| 31/1/2019 | [Asignar roles a cuentas de usuario con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | modificado  |
+| 1/2/2019 | [Cómo comprobar el estado del servicio de Office 365](/Office365/Enterprise/view-service-health) | Fecha de modificación |

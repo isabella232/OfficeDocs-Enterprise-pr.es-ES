@@ -1,8 +1,8 @@
 ---
 title: Administrar grupos de Office 365 con PowerShell
-ms.author: dianef
-author: dianef77
-manager: scotv
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Este artículo proporciona los pasos para realizar tareas comunes de administración de grupos en PowerShell de Microsoft.
-ms.openlocfilehash: 23dfb7f871496b33bf9c34937977b98dc13cea6d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 83b7340cea1fd8d38bba073353b61f0b17fad8a0
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542941"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741233"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Administrar grupos de Office 365 con PowerShell
 
@@ -37,7 +37,7 @@ Este artículo proporciona los pasos para realizar tareas comunes de administrac
     
 - [Administrar quién puede crear grupos de Office 365](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
     
-- [Administrar el acceso de invitado a los grupos de Office 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+- [Administrar el acceso de invitados a Grupos de Office 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
     
 - [Administración de grupos de forma dinámica en Active Directory de Azure](https://go.microsoft.com/fwlink/?linkid=847632)
     
@@ -204,7 +204,7 @@ Para obtener más información, vea [Set-OrganizationConfig](https://go.microsof
   
 ## <a name="office-365-groups-cmdlets"></a>Cmdlets de grupos de Office 365
 
-Los cmdlets siguientes se han realizado recientemente disponibles para grupos de Office 365. Si no puede utilizar estos, su suscripción de Office 365 no se actualizó con esta funcionalidad aún. Compruebe la recepción de mensajes y la [Guía básica de Office 365](http://roadmap.office.com/en-us).
+Los cmdlets siguientes se han realizado recientemente disponibles para grupos de Office 365. Si no puede utilizar estos, su suscripción de Office 365 no se actualizó con esta funcionalidad aún. Compruebe la recepción de mensajes y la [Guía de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
   
 |**Nombre de cmdlet**|**Descripción**|
 |:-----|:-----|

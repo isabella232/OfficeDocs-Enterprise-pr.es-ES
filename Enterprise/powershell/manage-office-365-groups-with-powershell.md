@@ -1,8 +1,8 @@
 ---
 title: Administrar grupos de Office 365 con PowerShell
-ms.author: dianef
-author: dianef77
-manager: scotv
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Última 18 de abril actualizados de 2018
-ms.openlocfilehash: 8def3b304a19ad57887c992aa6342ea2cf14ba28
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 518f845099a72d9addac13388d1b281ca63ee408
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22543052"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741223"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Administrar grupos de Office 365 con PowerShell
 
@@ -32,11 +32,11 @@ Este artículo proporciona los pasos para realizar tareas comunes de administrac
   
 ## <a name="common-tasks-for-managing-office-365-groups"></a>Tareas comunes para administrar grupos de Office 365
 
-- [Listas de distribución de actualización a Office 365 grupos en Outlook](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)
+- [Actualizar listas de distribución a grupos de Office 365 en Outlook](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)
     
 - [Administrar quién puede crear grupos de Office 365](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618)
     
-- [Administrar el acceso de invitado a los grupos de Office 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96)
+- [Administrar el acceso de invitados a Grupos de Office 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96)
     
 - [Administración de grupos de forma dinámica en Active Directory de Azure](https://go.microsoft.com/fwlink/?linkid=847632)
     
