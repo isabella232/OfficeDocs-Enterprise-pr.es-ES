@@ -22,6 +22,7 @@
 ### [Crear cuentas de usuario](create-user-accounts-with-office-365-powershell.md)
 ### [Ver cuentas de usuario](view-user-accounts-with-office-365-powershell.md)
 ### [Configurar las propiedades de la cuenta de usuario](configure-user-account-properties-with-office-365-powershell.md)
+## [Administrar grupos](manage-office-365-groups-with-powershell.md)
 ## [Administrar SharePoint Online](manage-sharepoint-online-with-office-365-powershell.md)
 ### [Crear sitios de SharePoint Online y agregar usuarios](create-sharepoint-sites-and-add-users-with-powershell.md)
 ### [Administrar usuarios y grupos de SharePoint Online](manage-sharepoint-users-and-groups-with-powershell.md)
