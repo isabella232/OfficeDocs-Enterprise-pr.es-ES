@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Se explica cómo usar PowerShell de Office 365 para deshabilitar el acceso a los servicios de Office 365 para los usuarios de su organización.
-ms.openlocfilehash: 3bab553bd23d6179eb60ff61ae3edb56c528946d
-ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
+ms.openlocfilehash: 66f6c04c1488f14d5752974a5475e7ef11279406
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498240"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897423"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Deshabilitar el acceso a servicios con PowerShell de Office 365
 
@@ -43,7 +43,7 @@ Cuando una cuenta de Office 365 se asigna una licencia de un plan de licencias, 
     
 - Para ver el antes y después de los resultados de los procedimientos descritos en este tema, vea [Ver los detalles de licencia y servicio cuenta con PowerShell de Office 365](view-account-license-and-service-details-with-office-365-powershell.md).
     
-- Hay un script de PowerShell que automatiza los procedimientos descritos en este tema. En concreto, el script le permite ver y deshabilitar servicios de la organización de Office 365, incluido Sway. Para obtener más información, consulte [Deshabilitar el acceso a Sway con Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
+- Un script de PowerShell está disponible que automatiza los procedimientos descritos en este tema. En concreto, la secuencia de comandos le permite ver y deshabilitar los servicios de la organización de Office 365, incluidos balanceo. Para obtener más información, vea [Deshabilitar el acceso a balanceo con PowerShell de Office 365](disable-access-to-sway-with-office-365-powershell.md).
     
 - Si usa el cmdlet **Get-MsolUser** sin usar el parámetro _All_ , se devuelven las primeras cuentas de usuario de 500.
     

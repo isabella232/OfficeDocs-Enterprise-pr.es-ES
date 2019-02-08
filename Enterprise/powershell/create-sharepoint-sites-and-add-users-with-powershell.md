@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: Use PowerShell de Office 365 para crear nuevos sitios de SharePoint Online y, a continuación, agregar usuarios y grupos a esos sitios.'
-ms.openlocfilehash: 41ca26249bd494d5603a425689e47f9fe6809f1a
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 61b9338469ed8d01abc76edbf14ed448c3ca00d3
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975208"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897173"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Crear sitios de SharePoint Online y agregar usuarios con PowerShell de Office 365
 
@@ -32,7 +32,7 @@ Los procedimientos descritos en este tema requieren que se va a conectar a Share
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>Paso 1: crear colecciones de sitios con Office 365 PowerShell
 
-Cree varios sitios mediante Office 365 PowerShell y un archivo .csv con el código de ejemplo provisto y el Bloc de notas. En este procedimiento, reemplazará la información de marcador de posición entre corchetes por su propia información específica de sitios e inquilinos. Durante el proceso, puede crear un único archivo y ejecutar un solo comando de Office 365 PowerShell que use dicho archivo. De este modo, las acciones que lleve a cabo serán repetibles y reproducibles, y se eliminarán muchos de los errores (si no todos) que pueden surgir al escribir comandos largos en el shell de administración de SharePoint Online. El procedimiento se divide en dos partes: primero crearemos un archivo .csv y, luego, haremos referencia a él mediante Office 365 PowerShell, que usará su contenido para crear los sitios.
+Crear varios sitios mediante PowerShell de Office 365 y un archivo .csv que se crea mediante el código de ejemplo proporcionado y el Bloc de notas. Para realizar este procedimiento, podrá reemplazar la información de marcador de posición que se muestra entre paréntesis con su propia información específica de sitio y de inquilinos. Este proceso le permite crear un único archivo y ejecutar un solo comando de PowerShell de Office 365 que usa el archivo. Esto hace que las acciones realizadas repetible y portátiles y elimina muchos, si no todos los errores que pueden proceder de escribiendo comandos largos en el Shell de administración de SharePoint Online. Hay dos partes para este procedimiento. En primer lugar debe crear un archivo .csv y, a continuación, podrá hacer referencia a los ese archivo .csv mediante PowerShell de Office 365, que utilizará su contenido para crear los sitios.
 
 El cmdlet de Office 365 PowerShell importa el archivo .csv y lo canaliza en un bucle entre llaves que lee la primera línea del archivo como encabezados de columna. Luego, el cmdlet de Office 365 PowerShell itera en el resto de los registros, crea una colección de sitios para cada uno de ellos y asigna propiedades a la colección de sitios en función de los encabezados de columna.
 

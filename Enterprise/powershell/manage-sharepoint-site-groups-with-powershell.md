@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: Use PowerShell de Office 365 para administrar grupos de sitio de SharePoint Online.'
-ms.openlocfilehash: c68e0905c0abcbea279829be7c841c31409db6cf
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 62643cabb2377c07117299dc25314cd515a06791
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975148"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897163"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Administrar grupos de sitio de SharePoint Online con PowerShell de Office 365
 
@@ -69,7 +69,7 @@ En ambos casos, el resultado será parecido a lo siguiente:
 
 ![Grupos de sitio de SharePoint Online](media/SPO-site-groups.png)
 
-Estos son todos los grupos que se han creado para el sitio de `https://litwareinc.sharepoint.com/sites/finance`, así como todos los usuarios asignados a esos grupos. Los nombres de grupo se encuentran en amarillo que le ayudarán a los nombres de grupo independiente de sus miembros.
+Estos son todos los grupos que se han creado para el sitio de `https://litwareinc.sharepoint.com/sites/finance`y todos los usuarios asignados a esos grupos. Los nombres de grupo se encuentran en amarillo que le ayudarán a los nombres de grupo independiente de sus miembros.
 
 Como otro ejemplo, aquí es un conjunto de comandos que enumera los grupos y todas las pertenencias a grupos, para todos los sitios de SharePoint Online.
 

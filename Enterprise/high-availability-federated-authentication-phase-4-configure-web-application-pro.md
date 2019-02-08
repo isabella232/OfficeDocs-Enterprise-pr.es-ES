@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumen: Configure los servidores de proxy de aplicación web para la autenticación federada de alta disponibilidad para Office 365 en Microsoft Azure.'
-ms.openlocfilehash: 0f0299fe8fecdea608330eebc12aea01098f8cec
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 69c1102326a00592d1f79bec4582fb8c9aa7f344
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915815"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897433"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 de la autenticación federada de alta disponibilidad: Configurar los proxy de aplicación web
 
@@ -32,12 +32,12 @@ Debe completar esta fase antes de pasar a en [alta disponibilidad federados aute
 Debe crear un equilibrador de carga accesible desde Internet para que Azure distribuya el tráfico de autenticación de cliente entrante desde Internet de forma uniforme entre los dos servidores proxy de aplicación web.
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Vea [Introducción a los cmdlets de Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Después de especificar los valores de grupo de recursos y ubicación, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en PowerShell ISE.
   
 > [!TIP]
-> Para un archivo de texto que contiene todos los comandos de PowerShell en este artículo y un libro de configuración de Microsoft Excel que genera bloques de comando de PowerShell listos para ejecutarse en función de su configuración personalizada, vea la autenticación federada para Office 365 [en Kit de implementación de Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> Para un archivo de texto que tiene todos los comandos de PowerShell en este artículo y un libro de configuración de Microsoft Excel que genera bloques de comando de PowerShell listos para ejecutarse en función de su configuración personalizada, vea la autenticación federada para Office 365 [en Azure Kit de implementación de](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
 ```
 # Set up key variables
@@ -64,13 +64,13 @@ Debe determinar el nombre DNS para identificar el nombre de servicio de federaci
   
 Una vez que tiene el FQDN de servicio de federación, cree un registro D de dominio DNS público para el FQDN de servicio de federación que se resuelve en la dirección IP pública del equilibrador de carga de Azure accesible desde Internet.
   
-|**Nombre**|**Tipo**|**TTL**|**Valor**|
+|**Nombre**|**Tipo**|**TTL**|**Value**|
 |:-----|:-----|:-----|:-----|
 |FQDN de servicio de federación  <br/> |A  <br/> |3600  <br/> |Dirección IP pública del equilibrador de carga de Azure accesible desde Internet (mostrado por el comando **Write-Host** en la sección anterior) <br/> |
    
 Aquí le mostramos un ejemplo:
   
-|**Nombre**|**Tipo**|**TTL**|**Valor**|
+|**Nombre**|**Tipo**|**TTL**|**Value**|
 |:-----|:-----|:-----|:-----|
 |FS.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -158,7 +158,7 @@ Esta es la configuración completada después de la finalización correcta de es
 
 ![Fase 4 de la infraestructura de la autenticación federada de Office 365 con alta disponibilidad en Azure con los servidores proxy de la aplicación web](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Use [High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) para seguir configurando esta carga de trabajo.
   

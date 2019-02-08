@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 'Resumen: obtenga información sobre cómo crear un entorno de pruebas que contenga un servidor con Exchange Server 2013, un servidor con Lync Server 2013 y un servidor con SharePoint Server 2013.'
-ms.openlocfilehash: bb668dcaff53f37127f43551cb4b108589a39def
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: b5d4527c063b0bfbac205007a9642b8edafd813b
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915605"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897053"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guía del laboratorio de pruebas: Configurar un laboratorio de pruebas integrado de Exchange, Lync y SharePoint
 
@@ -30,7 +30,7 @@ ms.locfileid: "22915605"
  
 El entorno de pruebas que se obtiene con esta configuración, que incluye la autenticación de servidor a servidor entre los tres tipos de servidores, puede usarse para crear los escenarios multiproducto y las soluciones que usan un servidor con Exchange Server 2013, un servidor con Lync Server 2013 y un servidor con SharePoint Server 2013, así como para mostrar su funcionamiento.
   
-Este documento contiene instrucciones para lo siguiente:
+Este documento contiene instrucciones para:
   
 1. Configurar el entorno de pruebas de configuración básica de Windows Server 2012.
     

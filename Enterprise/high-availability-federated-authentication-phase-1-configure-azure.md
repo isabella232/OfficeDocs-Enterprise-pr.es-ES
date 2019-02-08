@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumen: Configure la infraestructura de Microsoft Azure para que hospede la autenticación federada de alta disponibilidad para Office 365.'
-ms.openlocfilehash: e88204d7f69c56c951f5d6ebd4d978c96e4c52ba
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bbaefffb6bfa55d9af11e08c2011c7333cefe46e
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915465"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897483"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure
 
@@ -94,7 +94,7 @@ Para dos servidores de Sistema de nombres de dominio (DNS) en la red local que q
    
  **Tabla D: Servidores DNS locales**
   
-Para enrutar paquetes desde la red entre locales a la red de la organización por la conexión VPN de sitio a sitio, necesita configurar la red virtual con una red local que contenga una lista del espacio de direcciones (en notación CIDR) para todas las ubicaciones accesibles en la red local de la organización. La lista de espacios de direcciones que definen la red local tiene que ser única y no puede superponerse con el espacio de direcciones usado para otras redes virtuales ni otras redes locales.
+Para enrutar paquetes de la red entre locales a la red de su organización a través de la conexión VPN de sitio a sitio, debe configurar la red virtual con una red local que tiene una lista de los espacios de direcciones (en notación CIDR) para todos los puede alcanzar el ubicaciones de red de la organización local. La lista de espacios de direcciones que definen su red local debe ser única y no debe superponerse con el espacio de direcciones que se utiliza para otras redes virtuales u otras redes locales.
   
 Para el conjunto de espacios de direcciones de la red local, rellene la Tabla L. Fíjese en que aparecen tres entradas en blanco, pero lo normal es que necesite más. Colabore con su departamento de TI para determinar esta lista de espacios de direcciones.
   
@@ -109,7 +109,7 @@ Para el conjunto de espacios de direcciones de la red local, rellene la Tabla L.
 Ahora, empecemos a crear la infraestructura de Azure para hospedar la autenticación federada para Office 365.
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Vea [Introducción a los cmdlets de Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Primero, abra un símbolo del sistema de Azure PowerShell e inicie sesión con su cuenta.
   
@@ -118,7 +118,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> Para un archivo de texto que contiene todos los comandos de PowerShell en este artículo y un libro de configuración de Microsoft Excel que genera bloques de comando de PowerShell listos para ejecutarse en función de su configuración personalizada, vea la autenticación federada para Office 365 [en Kit de implementación de Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> Para un archivo de texto que tiene todos los comandos de PowerShell en este artículo y un libro de configuración de Microsoft Excel que genera bloques de comando de PowerShell listos para ejecutarse en función de su configuración personalizada, vea la autenticación federada para Office 365 [en Azure Kit de implementación de](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
 Obtenga su nombre de suscripción mediante el comando siguiente.
   
@@ -147,7 +147,7 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 Rellene la tabla siguiente para el conjunto de nombres de grupos de recursos únicos.
   
-|**Elemento**|**Nombre del grupo de recursos**|**Objetivo**|
+|**Elemento**|**Nombre del grupo de recursos**|**Finalidad**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Controladores de dominio  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Servidores de AD FS  <br/> |
@@ -199,7 +199,7 @@ New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $
 
 ```
 
-El paso siguiente es crear los grupos de seguridad de red para cada subred que contenga máquinas virtuales. Para realizar el aislamiento de la subred, puede agregar reglas para tipos específicos de tráfico permitido o denegado para el grupo de seguridad de red de una subred.
+A continuación, crear red grupos de seguridad para cada subred que tenga las máquinas virtuales. Para realizar el aislamiento de subred, puede agregar reglas para los tipos específicos de tráfico permitido o denegado al grupo de seguridad de red de una subred.
   
 ```
 # Create network security groups
@@ -303,7 +303,7 @@ Esta es la configuración que se muestra después de la finalización correcta d
 
 ![Fase 1 de la autenticación federada de Office 365 con alta disponibilidad en Azure con la infraestructura de Azure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Use [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) para continuar con la configuración de esta carga de trabajo.
   

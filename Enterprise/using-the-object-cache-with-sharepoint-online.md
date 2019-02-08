@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: En este artículo se explica la diferencia entre el uso de la memoria caché de objetos en SharePoint Server 2013 local y SharePoint Online.
-ms.openlocfilehash: 8aa505645bb5f39c65684412ddebbd2b02baa13f
-ms.sourcegitcommit: 7cd210c44622ea2de5fb0e8e91c7be4839c80205
+ms.openlocfilehash: 59f3a69199893cb367d4d28c0c545ebd9dfd1236
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24056169"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25769859"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Usar la memoria caché de objetos con SharePoint Online
 
@@ -34,7 +34,7 @@ Cuando SharePoint Server 2013 está hospedado local, el cliente tiene servidores
   
 En consecuencia, la segunda vez que un usuario visita una página, el tiempo de carga de la página mejora. Después de un mínimo de cuatro cargas de la misma página, la página se almacena en la memoria caché en todos los servidores front-end web.
   
-Por el contrario, en SharePoint Online hay muchos más servidores pero también muchos más sitios. Cada usuario puede conectarse a un servidor web front-end diferente que no tiene la memoria caché que se rellena. O bien, es posible obtener rellena la memoria caché para un servidor, pero el siguiente usuario que ese servidor front-end web solicita una página de un sitio diferente. O bien, incluso si el usuario siguiente solicita la misma página que en su visita anterior, son con equilibrio de carga en un servidor web front-end diferente que no tiene esa página en su memoria caché. En este último caso, el almacenamiento en caché no ayuda a los usuarios en absoluto.
+Por el contrario, en SharePoint Online hay muchos más servidores pero también muchos más sitios. Cada usuario puede conectarse a un servidor web front-end diferente que no tiene la memoria caché que se rellena. O bien, quizás obtener rellena la memoria caché para un servidor, pero el usuario siguiente a que las solicitudes de servidor front-end web una página de un sitio diferente. O bien, incluso si el usuario siguiente solicita la misma página que en su visita anterior, son con equilibrio de carga en un servidor web front-end diferente que no tiene esa página en su memoria caché. En este último caso, el almacenamiento en caché no ayuda a los usuarios en absoluto.
   
 En la figura siguiente, cada punto representa una página que un usuario solicita y donde se almacenó en la memoria caché. Los distintos colores representan a diferentes clientes que usan de modo compartido la infraestructura de SaaS.
   

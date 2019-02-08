@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: 'Resumen: Utilice a esta guía del entorno de pruebas para habilitar la integración de Dynamics 365 para Exchange Online en su suscripción de prueba de Office 365.'
-ms.openlocfilehash: 320a59043ab2a8810f9bfc03fdcf896241ec6b20
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 97e480bd148092f8e8e5ab610f0aed0a5eb2e20e
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915505"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897123"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Integración de Exchange Online para su entorno de desarrollo y pruebas y de Office 365 y 365 de Dynamics
 
@@ -46,7 +46,7 @@ Siga estos pasos para configurar el buzón del administrador global para la inte
     
 2. En la **Página principal de Microsoft Office**, haga clic en el icono de **Correo**.
     
-3. En la nueva pestaña **Correo** del explorador, haga clic en **Nuevo** y fíjese en la esquina inferior del panel de debajo del cuadro para escribir un mensaje: allí verá un icono de Mis plantillas.
+3. En la ficha **correo** nuevo en el explorador, haga clic en **nuevo** y observe cómo la esquina inferior del panel debajo del cuadro para escribir un mensaje tiene un icono para Mis plantillas.
     
      ![Un mensaje de correo electrónico nuevo en blanco sin integración con Dynamics 365.](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
@@ -88,7 +88,7 @@ Siga estos pasos para instalar la aplicación Dynamics 365 para Outlook y mostra
     
 5. Haga clic en la pestaña **Página principal de Microsoft Office** del explorador y, a continuación, en el icono **Correo**.
     
-6. En la nueva pestaña **Correo** del explorador, haga clic en **Nuevo**. Verá que en la parte inferior del panel de debajo del cuadro para escribir un mensaje ahora hay un icono de Dynamics 365.
+6. En la ficha **correo** nuevo en el explorador, haga clic en **nuevo**. Tenga en cuenta que la esquina inferior del panel debajo del cuadro para escribir un mensaje ahora tiene un icono para Dynamics 365.
     
      ![Un mensaje de correo electrónico nuevo en blanco con integración con Dynamics 365, en el que se muestra el icono nuevo.](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   

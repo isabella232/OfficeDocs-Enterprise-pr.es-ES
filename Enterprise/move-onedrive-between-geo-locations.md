@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Aprenda a mover un sitio de OneDrive a otra ubicación geográfica
-ms.openlocfilehash: 258c562343875ff4ad115b81dba5338c79641dfc
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: 4d55ce087b475b9364a4e1584a1ac4947cc1ba85
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849856"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29547138"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover un sitio de OneDrive a otra ubicación geográfica 
 
@@ -67,7 +67,7 @@ Antes de iniciar la transferencia geográfica de OneDrive, se recomienda validar
 
 Para asegurarse de que todas las ubicaciones geográficas son compatibles, ejecute:
 
-`Get-SPOGeoMoveCompatibilityStatus -AllLocations 1`
+`Get-SPOGeoMoveCrossCompatibilityStatus`
 
 Si una instancia de OneDrive se encuentra en suspensión legal o contiene un subsitio no puede moverse. Puede usar el cmdlet Start-SPOUserAndContentMove cmdlet con el parámetro -ValidationOnly para validar si la instancia de OneDrive puede moverse:
 

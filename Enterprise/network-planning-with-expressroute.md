@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute para Office 365 proporciona conectividad de capa 3 entre los centros de datos de Microsoft y de la red. Los circuitos usar anuncios de ruta de protocolo de puerta de enlace de borde (BGP) de los servidores front-end de Office 365. Desde la perspectiva de sus dispositivos locales, cuando sea necesario seleccionar la ruta de acceso correcta de TCP/IP a Office 365, ExpressRoute de Azure se ve como una alternativa a Internet.
-ms.openlocfilehash: 79cad16a619f048d1ba98b6058127f901211344d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7a2c9cb8ee562c0527416aa83184de90cd204476
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542950"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897233"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planeamiento de red con ExpressRoute para Office 365
 
@@ -185,7 +185,7 @@ Elija las ubicaciones de los circuitos en función de su ancho de banda, latenci
   
 Trabajar con su proveedor o proveedores para seleccionar las mejores opciones de conectividad, punto a punto, multipunto u hospedado. Recuerde, puede mezclar y coincidir con las opciones de conectividad, siempre y cuando el ancho de banda y otros componentes redundantes son compatibles con el diseño de enrutamiento y la alta disponibilidad.
   
-Éste es un vínculo corto que puede usar para volver:[https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
+Este es un vínculo breve que se puede usar para volver: [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
 ## <a name="related-topics"></a>Temas relacionados
 <a name="BKMK_high-availability"> </a>
@@ -200,15 +200,15 @@ Trabajar con su proveedor o proveedores para seleccionar las mejores opciones de
   
 [Implementación de ExpressRoute para Office 365](implementing-expressroute.md)
   
-[Uso de las Comunidades BGP en ExpressRoute para escenarios de Office 365 (vista previa)](bgp-communities-in-expressroute.md)
+[Uso de comunidades BGP en ExpressRoute para escenarios de Office 365 (versión preliminar)](bgp-communities-in-expressroute.md)
   
-[Calidad de medios y el rendimiento de conectividad de red en Skype para la empresa en línea](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Calidad de medios y rendimiento de conectividad de red en Skype Empresarial Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Optimización de la red de Skype para profesionales en línea](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Optimización de la red para Skype Empresarial Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute y QoS en Skype para la empresa en línea](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute y QoS en Skype Empresarial Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Flujo de llamadas de uso ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Flujo de llamadas con ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento](performance-tuning-using-baselines-and-history.md)
   
@@ -216,6 +216,6 @@ Trabajar con su proveedor o proveedores para seleccionar las mejores opciones de
   
 [Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Red de Office 365 y ajuste del rendimiento](network-planning-and-performance.md)
+[Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
   
-[Preguntas más frecuentes de los extremos de Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Preguntas frecuentes sobre extremos de Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

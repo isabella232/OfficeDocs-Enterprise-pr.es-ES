@@ -1,5 +1,5 @@
 ---
-title: Cloud App Security para el entorno de desarrollo y pruebas de Office 365
+title: Seguridad de Cloud App para su entorno de desarrollo y prueba de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,23 +16,23 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Resumen: Configurar y demostrar la seguridad de la aplicación de Office 365 en la nube en el entorno de desarrollo y prueba de Office 365.'
-ms.openlocfilehash: 089b9771d0600f8c74bc7b4c30ff2a4931c93ae6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 2c29e650233348e44bf72adcb8b18580e1de8802
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915765"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897063"
 ---
-# <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security para el entorno de desarrollo y pruebas de Office 365
+# <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Seguridad de Cloud App para su entorno de desarrollo y prueba de Office 365
 
  **Resumen:** Configurar y demostrar la seguridad de la aplicación de Office 365 en la nube en el entorno de desarrollo y prueba de Office 365.
   
-Office 365 en la nube seguridad de la aplicación, anteriormente conocido como Office 365 administración avanzada de seguridad, le permite crear directivas que supervisión e informan de las actividades sospechosas en su suscripción de Office 365, para que pueda investigar y tomar posibles acción de corrección. Para obtener más información, vea [Información general de la nube seguridad de la aplicación en Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+Office 365 en la nube seguridad de la aplicación, anteriormente conocido como Office 365 administración avanzada de seguridad, permite crear directivas que supervisión e informan de las actividades sospechosas en su suscripción de Office 365, para que pueda investigar y tomar las medidas posibles acción. Para obtener más información, vea [Información general de la nube seguridad de la aplicación en Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 Con las instrucciones de este artículo, habilitar y probar la seguridad de la aplicación en la nube en su suscripción de prueba de Office 365.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de One Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y pruebas ligero o de una empresa simulada de Office 365
 
@@ -81,9 +81,9 @@ En este procedimiento, habilitar la seguridad de la aplicación en la nube y cre
 
 1. Vaya al portal de Office 365 ([https://portal.office.com](https://portal.office.com)) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
     
-2. Haga clic en el icono de **administración** . En la ficha del **Centro de administración de Office** , haga clic en **centros de administración > seguridad y cumplimiento**.
+2. Haga clic en el icono de **administración** . En la ficha del **Centro de administración de Office** , haga clic en **Admin centros de seguridad de > & cumplimiento**.
     
-3. En el panel de navegación izquierdo, haga clic en **alertas > Administrar avanzada alertas**.
+3. En el panel de navegación izquierdo, haga clic en **avanzada de alertas > administrar alertas**.
     
 4. En la página **Administrar alertas de avanzada** , haga clic en **activar la seguridad de la aplicación de nube de Office 365**y, a continuación, haga clic en **Ir a la seguridad de la aplicación de nube de Office 365**.
     
@@ -145,7 +145,7 @@ En este procedimiento, demostrar cómo la seguridad de la aplicación en la nube
     
 18. Haga clic en el **seguridad &amp; cumplimiento** colocar en mosaico.
     
-19. En el panel de navegación izquierdo, haga clic en **alertas > Administrar avanzada alertas**.
+19. En el panel de navegación izquierdo, haga clic en **avanzada de alertas > administrar alertas**.
     
 20. En la página **Administrar alertas de avanzada** , haga clic en **Ir a la seguridad de la aplicación de nube de Office 365**.
     

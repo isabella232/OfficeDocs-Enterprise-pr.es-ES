@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Proteger el acceso de administrador global para la suscripción a Office 365 con estos tres pasos.
-ms.openlocfilehash: 7260e903ea007735c87ab8aa826e3b97e7bd28c1
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 41168643fb8867017865860624c8b436460fa0b8
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542954"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897523"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Protección de las cuentas de administrador global de Office 365
 
@@ -96,7 +96,7 @@ Autenticación multifactor (MFA) para las cuentas de administrador global requie
     
 - Un código de acceso generado de forma aleatoria
     
-- Una tarjeta inteligente (virtual o física)
+- Una tarjeta inteligente (física o virtual)
     
 - Un dispositivo biométrico
     
@@ -179,7 +179,7 @@ Ejecutar en un servidor de software SIEM realiza análisis en tiempo real de las
     
     Para obtener más información, vea [integrar su servidor SIEM con seguridad de la aplicación de nube de Office 365](https://support.office.com/article/dd6d2417-49c4-4de6-9294-67fdabbf8532).
     
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Vea [procedimientos recomendados de seguridad para Office 365](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3).
   

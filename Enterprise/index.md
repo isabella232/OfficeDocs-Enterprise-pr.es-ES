@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: ce79b11ccd298a35c23a3ffcd5dd9daa1b594204
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22915025"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "27745324"
 ---
 <h1>Office 365 Enterprise</h1>
 <p>Microsoft Office&nbsp;365 proporciona servicios de nube en línea eficaces que permiten la colaboración, seguridad y cumplimiento de normas, movilidad y intellgence y análisis. Esta página proporciona vínculos a instrucciones para administradores y profesionales de TI que están implementación, configuración y administración de Office&nbsp;365 servicios en organizaciones empresariales.</p>
@@ -243,7 +243,7 @@ ms.locfileid: "22915025"
 </ul>
 
 <hr>
-<h2>Comunidad y soporte técnico</h2>
+<h2>Más recursos</h2>
 
 <ul class="panelContent cardsF">
     <li>
@@ -275,6 +275,23 @@ ms.locfileid: "22915025"
                     <div class="cardText">
                         <h3>Obtener soporte técnico</h3>
                         <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Póngase en contacto con soporte técnico para obtener ayuda con Office&nbsp;365.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="Microsoft 365 Caret image" data-linktype="external">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft 365</h3>
+                        <p><a href="https://docs.microsoft.com/microsoft-365">Obtenga más información acerca de Microsoft 365.</a></p>
                     </div>
                 </div>
             </div>
