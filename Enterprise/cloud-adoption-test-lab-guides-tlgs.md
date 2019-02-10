@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: Con estas Guías del laboratorio de pruebas (TLG) para la adopción de la nube, podrá configurar entornos de demostración o de desarrollo y pruebas para los productos Office 365, Dynamics 365 y Office Server.'
-ms.openlocfilehash: 796d34294ef92702214df30ca5553759554996d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: df4729c93f3665bdfe072102f2952d7432ad22f0
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "23041504"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897243"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Probar Office 365 con guías de entorno de pruebas de adopción de la nube (TLG)
 
@@ -66,15 +66,15 @@ Para el entorno de desarrollo y pruebas de Office 365, use estos artículos para
     
     Configure y demuestre autenticación federada con las cuentas de un dominio Active Directory de Windows Server.
     
-- [Seguridad de Could App para su entorno de desarrollo y pruebas de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Cloud App Security para el entorno de desarrollo y pruebas de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-    Configure y pruebe la Seguridad de Cloud App de Office 365, que le permite crear directivas que supervisan e informan de actividades sospechosas en su suscripción de Office 365.
+    Configure y pruebe la Office 365 Cloud App Security, que le permite crear directivas que supervisan e informan de actividades sospechosas en su suscripción de Office 365.
     
 - [Protección contra amenazas avanzada en el entorno de desarrollo y pruebas de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
     Configure y pruebe la Protección contra amenazas avanzada, que es una característica de Exchange Online Protection (EOP), que le ayuda a evitar el malware en el correo electrónico.
     
-- [Exhibición avanzada de documentos electrónicos para el entorno de desarrollo y pruebas de Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [eDiscovery avanzado para el entorno de desarrollo y pruebas de Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
     Agregue datos de ejemplo y pruebe eDiscovery avanzado, que permite buscar y analizar rápidamente los datos que se almacenan en Office 365, como el correo electrónico y los documentos.
     

@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Resumen: configure la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 106e902c9da46c7c3c0fc6eb8af96d6695c7bdce
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 12a352bda387b79016edcc62c08ff15b0bf96ee9
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915845"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897503"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Configurar la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365
 
@@ -59,7 +59,7 @@ Esta configuración se compone de:
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>Fase 2: Instalar Azure AD Connect en APP1
 
-Una vez instalado y configurado, Azure Connect AD sincroniza el conjunto de cuentas del dominio CORP Windows Server AD con el conjunto de cuentas de su suscripción de prueba a Office 365. El siguiente procedimiento le guía a través de la instalación de Azure Connect AD en APP1 y la comprobación de que funciona.
+Una vez instalado y configurado, Azure AD Connect sincroniza el conjunto de cuentas del dominio CORP Windows Server AD con el conjunto de cuentas de su suscripción de prueba a Office 365. El siguiente procedimiento le guía a través de la instalación de Azure AD Connect en APP1 y la comprobación de que funciona.
   
 ### <a name="install-and-configure-azure-ad-connect-on-app1"></a>Instalar y configurar Azure AD Connect en APP1
 

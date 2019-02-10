@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Resumen: cree una red virtual simulada entre locales en Microsoft Azure como un entorno de desarrollo y pruebas.'
-ms.openlocfilehash: 0aee14af136e0874c259faac26d83d85b188a7c7
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 7341c8cc412636e633001882edfdfc661cce9a11
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915345"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897143"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Red virtual simulada entre locales en Azure
 
@@ -79,9 +79,9 @@ En esta fase, creará y configurará la nueva red virtual XPrem y la conectará 
 En primer lugar, inicie un símbolo del sistema de Azure PowerShell en el equipo local.
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos usan la versión más reciente de Azure PowerShell. Vea [Introducción a los cmdlets de Azure PowerShell](https://docs.microsoft.com/es-ES/powershell/azureps-cmdlets-docs/). 
+> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/es-ES/powershell/azureps-cmdlets-docs/). 
   
-Inicie sesión en su cuenta de Azure con el comando siguiente.
+Inicie sesión en su cuenta de Azure con este comando.
   
 ```
 Login-AzureRMAccount
@@ -90,7 +90,7 @@ Login-AzureRMAccount
 > [!TIP]
 > Para obtener un archivo de texto que contenga todos los comandos de PowerShell de este artículo, haga clic [aquí](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0).
   
-Obtenga su nombre de la suscripción con el comando siguiente.
+Obtenga su nombre de suscripción mediante este comando.
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name

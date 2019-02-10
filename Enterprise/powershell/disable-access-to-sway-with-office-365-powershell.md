@@ -13,12 +13,13 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
-description: "Obtenga información acerca de dónde descargar el script ManageSway.ps1 de PowerShell que le permite deshabilitar el acceso a Sway en la organización de Office 365."
-ms.openlocfilehash: d5e5c17a5156e9f969ea2908544993e3fa80f695
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Obtenga información acerca de dónde descargar el script ManageSway.ps1 de PowerShell que le permite deshabilitar el acceso a Sway en la organización de Office 365.
+ms.openlocfilehash: 38f50a483f7bb42ad2d944cf95c49050cf35bfb1
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897093"
 ---
 # <a name="disable-access-to-sway-with-office-365-powershell"></a>Deshabilitar el acceso a Sway con Office 365 PowerShell
 
@@ -32,8 +33,8 @@ El script ManageSway.ps1 de PowerShell le permite ver y deshabilitar los servici
     
 Debe descargar los dos archivos que están asociados con el script:
   
-- El script ManageSway.ps1 en [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070).
+- El script ManageSway.ps1 en [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)
     
-- El archivo de ayuda del script en [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072).
+- El archivo de ayuda para el script en [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072)
     
 
