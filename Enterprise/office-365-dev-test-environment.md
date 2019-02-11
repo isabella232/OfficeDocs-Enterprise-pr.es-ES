@@ -3,11 +3,13 @@ title: Entorno de desarrollo y pruebas de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/11/2018
+ms.date: 08/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Resumen: use esta Guías del entorno de pruebas para crear una suscripción de prueba de Office 365 para evaluación, pruebas o desarrollo.'
-ms.openlocfilehash: 57fdf66f11d9c71faf81e2a88482093f8f17dfbd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 1606f30e28a482e60610d15b2f1643b9dd5b3240
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897273"
 ---
 # <a name="office-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365
 
@@ -38,7 +41,7 @@ Puede usar una suscripción de prueba de Office 365 y crear un entorno de desarr
 > [!NOTE]
 > Es posible que quiera imprimir este artículo para anotar los valores específicos que necesite para usar este entorno durante los 30 días de la suscripción de prueba a Office 365. Puede extender fácilmente la suscripción de prueba otros 30 días. Para un entorno de pruebas y desarrollo permanente, cree una nueva suscripción de pago con un número reducido de licencias. 
   
-![Guías del entorno de pruebas en Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guías del entorno de pruebas en Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
@@ -51,7 +54,7 @@ Necesitará una suscripción de Azure. Para esta configuración, puede usar una 
   
 Esta es la configuración resultante.
   
-![Configuración básica del entorno de desarrollo y pruebas en Azure](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Configuración básica del entorno de desarrollo y pruebas en Azure](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
 
 
   
@@ -61,13 +64,13 @@ Esta configuración básica se compone de las máquinas virtuales DC1, APP1 y CL
 
 Para iniciar la suscripción de prueba a Office 365 E5, primero necesita el nombre de una compañía ficticia y una nueva cuenta Microsoft.
   
-1. Le recomendamos que use una variante del nombre de la compañía Contoso para el nombre de su compañía, que es una compañía ficticia usada en contenido de ejemplo de Microsoft, pero no es imprescindible. Anote aquí el nombre de la compañía ficticia: ![](./images/Common_Images/TableLine.png)
+1. Le recomendamos que use una variante del nombre de la compañía Contoso para el nombre de su compañía, que es una compañía ficticia usada en contenido de ejemplo de Microsoft, pero no es imprescindible. Anote aquí el nombre de la compañía ficticia: ![](./media/Common-Images/TableLine.png)
     
 2. Para registrarse para obtener una nueva cuenta Microsoft, vaya a [https://outlook.com](https://outlook.com) y cree una cuenta con una nueva cuenta y una dirección de correo electrónico. Usará esta cuenta para suscribirse a Office 365.
     
-  - Anote aquí el nombre y los apellidos de la nueva cuenta: ![](./images/Common_Images/TableLine.png)
+  - Anote aquí el nombre y los apellidos de la nueva cuenta: ![](./media/Common-Images/TableLine.png)
     
-  - Anote aquí la dirección de la nueva cuenta de correo electrónico: ![](./images/Common_Images/TableLine.png)@outlook.com
+  - Anote aquí la dirección de la nueva cuenta de correo electrónico: ![](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrarse para una suscripción de prueba a Office 365 E5
 
@@ -97,7 +100,7 @@ Para iniciar la suscripción de prueba a Office 365 E5, primero necesita el nomb
     
     Anote en un lugar seguro la contraseña que escriba.
     
-    Anote aquí el nombre de la compañía ficticia, que se denominará **nombre de la organización**: ![](./images/Common_Images/TableLine.png)
+    Anote aquí el nombre de la compañía ficticia, que se denominará **nombre de la organización**: ![](./media/Common-Images/TableLine.png)
     
 5. Haga clic en **Crear mi cuenta**.
     
@@ -105,9 +108,9 @@ Para iniciar la suscripción de prueba a Office 365 E5, primero necesita el nomb
     
 7. Escriba el código de verificación del mensaje de texto recibido y, después, haga clic en **Siguiente**.
     
-8. Anote aquí la URL de la página de inicio de sesión (seleccionar y copiar): ![](./images/Common_Images/TableLine.png)
+8. Anote aquí la URL de la página de inicio de sesión (seleccionar y copiar): ![](./media/Common-Images/TableLine.png)
     
-9. Anote aquí el identificador de usuario (seleccionar y copiar): ![](./images/Common_Images/TableLine.png).onmicrosoft.com
+9. Anote aquí el identificador de usuario (seleccionar y copiar): ![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Este valor se denominará **nombre de administrador global de Office 365**.
     
@@ -119,7 +122,7 @@ Verá la página principal del portal de Office 365, desde donde puede obtener a
   
 Para el entorno de desarrollo y pruebas de una empresa ficticia de Office 365, aquí se muestra la configuración resultante.
   
-![El entorno de desarrollo y pruebas de Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![El entorno de desarrollo y pruebas de Office 365](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 Esta configuración se compone de: 
   
@@ -184,8 +187,10 @@ Desde la pantalla del comando **New-MsolUser**, anote la contraseña generada pa
   
 Después, cree tres nuevos sitios de equipo de SharePoint Online para los departamentos de Ventas, Producción y Soporte técnico.
   
-### <a name="create-three-new-sharepoint-online-team-sites"></a>Crear tres sitios de grupo de SharePoint Online
+## <a name="phase-4-create-three-new-sharepoint-online-team-sites-optional"></a>Fase 4: Crear tres sitios de grupo de SharePoint Online (opcional)
 
+En esta fase, configurará un conjunto de sitios de equipo de SharePoint Online.
+  
 1. Instale el [Shell de administración de SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=255251) (la versión x64).
     
 2. Haga clic en **Inicio**, escriba **sharepoint** y después haga clic en **Shell de administración de SharePoint Online**.
@@ -223,11 +228,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 Anote estos valores para trabajar con o implementar Guías del entorno de pruebas adicionales en este entorno de prueba:
   
-- Nombre del administrador global de Office 365: ![](./images/Common_Images/TableLine.png).onmicrosoft.com (del paso 9 de la fase 2)
+- Nombre del administrador global de Office 365: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (del paso 9 de la fase 2)
     
     Guarde también la contraseña de esta cuenta en una ubicación segura.
     
-- Nombre de la organización de la suscripción de prueba: ![](./images/Common_Images/TableLine.png) (del paso 4 de la fase 2)
+- Nombre de la organización de la suscripción de prueba: ![](./media/Common-Images/TableLine.png) (del paso 4 de la fase 2)
     
 - Para mostrar las cuentas de los usuarios 2, 3, 4 y 5, ejecute los siguientes comandos desde el símbolo del sistema del Módulo de Windows Azure Active Directory para Windows PowerShell.
     
@@ -237,27 +242,27 @@ Anote estos valores para trabajar con o implementar Guías del entorno de prueba
 
     Anote aquí los nombres de las cuentas:
     
-  - Nombre de la cuenta de usuario 2: usuario2@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Nombre de la cuenta de usuario 2: usuario2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nombre de la cuenta de usuario 3: usuario3@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Nombre de la cuenta de usuario 3: usuario3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nombre de la cuenta de usuario 4: usuario4@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Nombre de la cuenta de usuario 4: usuario4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nombre de la cuenta de usuario 5: usuario5@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Nombre de la cuenta de usuario 5: usuario5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Guarde también las contraseñas de estas cuentas en una ubicación segura.
     
-- Para mostrar las direcciones URL de los sitios de grupo de Ventas, Producción y Soporte técnico, ejecute el comando siguiente desde el símbolo del sistema del Shell de administración de SharePoint Online:
+- (opcional) Para mostrar las direcciones URL de los sitios de grupo de Ventas, Producción y Soporte técnico, ejecute el comando siguiente desde el símbolo del sistema del Shell de administración de SharePoint Online:
     
   ```
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - Dirección URL del sitio de producción: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
+  - Dirección URL del sitio de producción: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/production
     
-  - Dirección URL del sitio de ventas: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
+  - Dirección URL del sitio de ventas: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/sales
     
-  - Dirección URL del sitio de soporte técnico: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
+  - Dirección URL del sitio de soporte técnico: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>Pasos siguientes
 
