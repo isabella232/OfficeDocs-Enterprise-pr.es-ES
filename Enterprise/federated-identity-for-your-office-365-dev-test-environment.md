@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Resumen: Configure la autenticación federada para su entorno de desarrollo y prueba de Office 365.'
-ms.openlocfilehash: f028acb99d0687bb3fcfbc1c66bdd8885850565b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d22f23d2c5c36f45cff7fde3185e1de3e4961ef9
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915245"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897553"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identidad federada para el entorno de desarrollo y prueba de Office 365
 
@@ -129,7 +129,7 @@ En la figura 3, se muestra la adición del servidor de ADFS1 a DirSync para el 
   
 ## <a name="phase-3-create-the-web-proxy-server"></a>Fase 3: Crear el servidor proxy web
 
-PROXY1 proporciona crear conexiones proxy de mensajes de autenticación entre usuarios que intentan autenticarse y ADFS1.
+PROXY1 permite crear conexiones proxy de mensajes de autenticación entre usuarios que intentan autenticarse y ADFS1.
   
 Para crear una máquina virtual de Azure para PROXY1, indique el nombre de su grupo de recursos y una ubicación de Azure y, después, ejecute estos comandos en el símbolo del sistema de Azure PowerShell en el equipo local.
   
@@ -401,7 +401,7 @@ Siga estos pasos para configurar Azure AD Connect y la suscripción de Office 36
     
 13. En la página **Instalación completada**, haga clic en **Salir**.
     
-Para demostrar que la autenticación federada funciona, haga lo siguiente:
+Para demostrar que la autenticación federada funciona:
   
 1. Abra una nueva instancia privada del explorador en el equipo local y vaya a[https://portal.office.com](https://portal.office.com).
     
