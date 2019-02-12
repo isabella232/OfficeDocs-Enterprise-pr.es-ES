@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Soporte de aplicación de cliente de Office 365 para la autenticación moderna.
-ms.openlocfilehash: 18ef5b2219c9527594ae8fcff7e29052671d1431
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 9705c70e68ec69dcfdac09342798baf860666535
+ms.sourcegitcommit: df40eb730e416f206ca8387ef9e6f559c4e4b8a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29771129"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29887627"
 ---
 # <a name="office-365-client-app-support---modern-authentication"></a>Soporte de aplicación de cliente de Office 365 - autenticación moderna
 
@@ -32,6 +32,8 @@ Aprender más acerca de [la autenticación multifactor](https://docs.microsoft.c
  - Android
  - iOS
  - Mac OS
+
+Para obtener más información sobre la compatibilidad de la plataforma en Office 365, vea [requisitos del sistema para Office 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Clientes compatibles
 
