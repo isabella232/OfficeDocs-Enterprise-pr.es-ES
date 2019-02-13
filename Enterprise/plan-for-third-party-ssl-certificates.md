@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Resumen: describe los certificados SSL necesarios para Exchange local e híbrido, SSO con AD FS, servicios de Exchange Online y servicios Web Exchange.'
-ms.openlocfilehash: c9e968ef7ec9015be398b4eef9184451dd316bea
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: 1746cf5059ba83e225e4a2d55c8eebc082366362
+ms.sourcegitcommit: bdd0083dc9dc62994de29421a1f4056ebe27f15f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546521"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29952476"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planificación de los certificados SSL de terceros para Office 365
 
@@ -49,7 +49,7 @@ Para obtener información general acerca de cómo usar certificados digitales pa
   
 ## <a name="certificates-for-single-sign-on"></a>Certificados para inicio de sesión único
 
-Para proporcionar a los usuarios con una único inicio de sesión experiencia simplificada que incluye seguridad sólida, los certificados que se muestra en la siguiente tabla son necesarios en los servidores de federación o el proxy de servidor de federación. En la tabla siguiente se centra en los servicios de federación de Active Directory (AD FS), también tenemos obtener más información sobre el [uso de proveedores de identidad de terceros](https://go.microsoft.com/fwlink/?LinkId=532869).
+Para proporcionar a los usuarios con una único inicio de sesión experiencia simplificada que incluye seguridad sólida, los certificados que se muestra en la siguiente tabla son necesarios en los servidores de federación o el proxy de servidor de federación. En la tabla siguiente se centra en los servicios de federación de Active Directory (AD FS), también tenemos obtener más información sobre el [uso de proveedores de identidad de terceros](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
   
 ||||
 |:-----|:-----|:-----|
