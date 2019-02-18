@@ -1,5 +1,5 @@
 ---
-title: Capacidades multigeográficas de OneDrive y SharePoint Online en Office 365
+title: Capacidades multigeográficas de OneDrive en Office 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,17 +10,17 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: Expanda la presencia de Office 365 a varias regiones geográficas con las capacidades multigeográficas de OneDrive y SharePoint Online.
-ms.openlocfilehash: b62603759caf7a285896c1c87199a9bf59c546e3
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+description: Expanda la presencia de Office 365 a varias regiones geográficas con las capacidades multigeográficas de OneDrive Online.
+ms.openlocfilehash: f89bfe7cb9a287200591746dc6d22430cd6eed1b
+ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200733"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30052994"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Capacidades multigeográficas de OneDrive y SharePoint Online en Office 365
+# <a name="multi-geo-capabilities-in-onedrive-in-office-365"></a>Capacidades multigeográficas de OneDrive en Office 365
 
-Con las capacidades multigeográficas de OneDrive y SharePoint Online, su organización puede expandir su presencia en Office 365 a varias regiones geográficas o países dentro de su espacio empresarial existente. Póngase en contacto con su equipo de cuentas de Microsoft para inscribir su empresa multinacional en OneDrive para la Empresa multigeográfico.
+Con las capacidades multigeográficas de OneDrive Online, su organización puede expandir su presencia en Office 365 a varias regiones geográficas o países dentro de su espacio empresarial existente. Póngase en contacto con su equipo de cuentas de Microsoft para inscribir su empresa multinacional en OneDrive para la Empresa multigeográfico.
   
 Con OneDrive multigeográfico, puede aprovisionar y almacenar los datos en reposo en las ubicaciones geográficas que haya elegido para cumplir los requisitos de residencia de datos y al mismo tiempo permitir la implementación global de experiencias de productividad modernas para sus empleados.
   
