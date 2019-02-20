@@ -9,25 +9,28 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: Proporciona un ejemplo y describe la convención de nomenclatura y el nivel de registro predeterminado del registro de transacciones de IdFix de Office 365.
-ms.openlocfilehash: 016318c7e771ec6c5f90336e11c5dd011144d12e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Proporciona un ejemplo y describe la Convención de nomenclatura y el nivel de registro predeterminado del registro de transacciones de IdFix de Office 365.
+ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542852"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085069"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Registro de transacciones de IdFix de Office 365
 
-Proporciona un ejemplo y describe la convención de nomenclatura y el nivel de registro predeterminado del registro de transacciones de IdFix de Office 365.
+Proporciona un ejemplo y describe la Convención de nomenclatura y el nivel de registro predeterminado del registro de transacciones de IdFix de Office 365.
   
 ## <a name="idfix-transaction-log-location"></a>Ubicación del registro de transacciones de IdFix
 
-La herramienta IdFix de Office 365 crea un nuevo registro de transacciones cada vez que haga clic en **Aplicar** en IdFix y aplica cambios en el bosque de Active Directory. El registro de transacciones se guarda en la misma carpeta donde ha instalado IdFix. De forma predeterminada, esta carpeta es C:\Deployment Tools\IDFix. El nombre de archivo de registro de transacciones usa un formato de marca de fecha y hora, por ejemplo, detallado 6-1-2018 6-17-22 P.M. indica un archivo que se generó en 1 de junio de 2018 en 6:17:22 P.M. detallado indica el nivel de registro. 
+La herramienta IdFix de Office 365 crea un nuevo registro de transacciones cada vez que hace clic en **aplicar** en IdFix y se aplican los cambios en el bosque de Active Directory. El registro de transacciones se guarda en la misma carpeta en la que ha instalado IdFix. De forma predeterminada, esta carpeta es C:\Deployment Tools\IDFix. El nombre del archivo de registro de transacciones usa un formato de marca de fecha y hora, por ejemplo, verbose 6-1-2018 6-17-22 PM indica un archivo que se generó el 1 de junio de 2018 a 6:17:22 PM. verbose indica el nivel de registro. 
   
 ## <a name="idfix-transaction-log-logging-level"></a>Nivel de registro de transacciones en IdFix
 

@@ -1,55 +1,55 @@
 ---
-title: Soporte de aplicación de cliente de Office 365 - autenticación moderna
+title: 'Compatibilidad con aplicaciones cliente de Office 365: autenticación moderna'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
-localization_priority: None
+localization_priority: Normal
+ms.collection: Strat_O365_Enterprise
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Soporte de aplicación de cliente de Office 365 para la autenticación moderna.
-ms.openlocfilehash: 9705c70e68ec69dcfdac09342798baf860666535
-ms.sourcegitcommit: df40eb730e416f206ca8387ef9e6f559c4e4b8a5
+description: Soporte técnico de la aplicación cliente de Office 365 para la autenticación moderna.
+ms.openlocfilehash: 8118ab6c9a7f62f01cede259b5b38c3242106102
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29887627"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085359"
 ---
-# <a name="office-365-client-app-support---modern-authentication"></a>Soporte de aplicación de cliente de Office 365 - autenticación moderna
+# <a name="office-365-client-app-support---modern-authentication"></a>Compatibilidad con aplicaciones cliente de Office 365: autenticación moderna
 
-Capacidad de autenticación moderno de Microsoft permite basada en Active Directory autenticación biblioteca ADAL inicio de sesión para las aplicaciones cliente de Office a través de distintas plataformas. Esto permite que las características de inicio de sesión, como la autenticación multifactor (MFA), tarjeta inteligente y la autenticación basada en certificados.
+La capacidad de autenticación moderna de Microsoft habilita el inicio de sesión basado en la biblioteca de autenticación de Active Directory (ADAL) para aplicaciones cliente de Office en distintas plataformas. Esto habilita las características de inicio de sesión, como la autenticación multiFactor (MFA), la tarjeta inteligente y la autenticación basada en certificados.
 
-Aprender más acerca de [la autenticación multifactor](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication) y [la autenticación basada en certificados](https://docs.microsoft.com/azure/active-directory/active-directory-certificate-based-authentication-get-started).
+Obtenga más información sobre [la autenticación multifactor](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication) y [la autenticación basada en certificados](https://docs.microsoft.com/azure/active-directory/active-directory-certificate-based-authentication-get-started).
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 
  - Escritorio de Windows 10
- - Aplicaciones de Windows 10 moderno
+ - Aplicaciones modernas de Windows 10
  - Explorador web
  - Android
  - iOS
- - Mac OS
+ - Os
 
-Para obtener más información sobre la compatibilidad de la plataforma en Office 365, vea [requisitos del sistema para Office 365](https://products.office.com/office-system-requirements).
+Para obtener más información acerca de la compatibilidad de plataformas en Office 365, vea [System Requirements for office 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Clientes compatibles
 
-Las versiones más recientes de los siguientes clientes admiten autenticación moderna:
+Las versiones más recientes de los siguientes clientes admiten la autenticación moderna:
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Icono de Azure](media/o365-azure-64x64.png) <br> [Azure AD <br> Portal](https://azure.microsoft.com/features/azure-portal/) | ![Icono del portal de la empresa](media/o365-microsoft-64x64.png) <br> [Compañía <br> Portal](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) | ![Icono de profundizar](media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Icono de Dynamics 365](media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) | ![Icono de Excel](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) |
-| ![Icono de flujo](media/o365-flow-64x64.png) <br> [Flow](https://flow.microsoft.com) | ![Icono de formularios](media/o365-forms-64x64.png) <br> [Formularios](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Icono de Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Icono de administración de Office 365](media/o365-o365admin-64x64.png) <br> [Office 365 <br> Admin](https://products.office.com/business/manage-office-365-admin-app) | ![Icono de lente](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | 
-| ![OneDrive para el icono de negocio](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![Icono de OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Icono de Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Icono de organizador](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Icono de PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)
-| ![Icono de PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) | ![Icono de proyecto](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Icono de SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint) | ![Skype para el icono de negocio](media/o365-skypeforbusiness-64x64.png) <br> [Skype para <br> empresarial](https://www.skype.com/business/) | ![Icono de StaffHub](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software)
-| ![Icono de notas rápida](media/o365-stickynotes-64x64.png) <br> [Notas rápidas](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Icono de secuencia](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Influir hora de elegir icono](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Icono de equipos](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Icono de tareas pendientes](media/o365-todo-64x64.png) <br> [To-Do](https://todo.microsoft.com)
-| ![Icono de Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Icono de Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) |![Icono de yammer](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview) | ![Icono de yammer](media/o365-yammer-64x64.png) <br> [Yammer <br> notificador](https://products.office.com/yammer/yammer-overview) |  |
+| ![Icono de Azure](media/o365-azure-64x64.png) <br> [Portal de <br> Azure ad](https://azure.microsoft.com/features/azure-portal/) | ![Icono del portal de empresa](media/o365-microsoft-64x64.png) <br> [Portal <br> de empresa](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) | ![Icono de Delve](media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Icono de Dynamics 365](media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) | ![Icono de Excel](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) |
+| ![Icono de flujo](media/o365-flow-64x64.png) <br> [Flow](https://flow.microsoft.com) | ![Icono formularios](media/o365-forms-64x64.png) <br> [Formularios](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Icono de Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Icono de Office 365 administrador](media/o365-o365admin-64x64.png) <br> [Office 365 <br> administrador](https://products.office.com/business/manage-office-365-admin-app) | ![Icono de lente](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | 
+| ![Icono de OneDrive para la empresa](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![Icono de OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Icono de Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Icono de Planner](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Icono de PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)
+| ![Icono de PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) | ![Icono de proyecto](media/o365-project-64x64.png) <br> [Proyecciones](https://products.office.com/project) | ![Icono de SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint) | ![Icono de Skype empresarial](media/o365-skypeforbusiness-64x64.png) <br> [Skype <br> empresarial](https://www.skype.com/business/) | ![Icono de StaffHub](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software)
+| ![Icono de notas adhesivas](media/o365-stickynotes-64x64.png) <br> [Notas rápidas](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Icono de secuencia](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Icono de Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Icono de Teams](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Icono de tarea pendiente](media/o365-todo-64x64.png) <br> [To-Do](https://todo.microsoft.com)
+| ![Icono de Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Icono de Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) |![Icono de Yammer](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview) | ![Icono de Yammer](media/o365-yammer-64x64.png) <br> [Notificador de Yammer <br>](https://products.office.com/yammer/yammer-overview) |  |
 
 ## <a name="supported-powershell-modules"></a>Módulos de PowerShell compatibles
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Icono de Azure](media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Icono de Exchange](media/o365-exchange-64x64.png) <br> [Exchange Online <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![Icono de SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)
+| ![Icono de Azure](media/o365-azure-64x64.png) <br> [PowerShell de <br> Azure ad](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Icono de Exchange](media/o365-exchange-64x64.png) <br> [PowerShell de <br> Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![Icono de SharePoint](media/o365-sharepoint-64x64.png) <br> [PowerShell de <br> SharePoint Online](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)

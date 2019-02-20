@@ -9,85 +9,88 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
-description: Describe la sincronización de directorios con Office 365, la limpieza de Active Directory y la herramienta de Azure Active Directory Connect.
-ms.openlocfilehash: cc2a2ca050facaf53f0a235898c31ae7aaeff4ae
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Describe la sincronización de directorios con Office 365, limpieza de Active Directory y la herramienta de Azure Active Directory Connect.
+ms.openlocfilehash: 5f380efe3293d25e2e208c5fef836a89f6fa0cc8
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542858"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085289"
 ---
 # <a name="plan-for-directory-synchronization-for-office-365"></a>Planificación de la sincronización del directorio para Office 365
-Según las necesidades del negocio y requisitos técnicos, sincronización de directorios es la opción de aprovisionamiento más comunes para los clientes de empresa que se mueven a Office 365. Sincronización de Active Directory permite que las identidades que va a administrar en el Active Directory local y todas las actualizaciones a esa identidad se sincronizan en Office 365.
+Según las necesidades empresariales y los requisitos técnicos, la sincronización de directorios es la opción de aprovisionamiento más común para los clientes empresariales que se mueven a Office 365. La sincronización de directorios permite que las identidades se administren en Active Directory local y todas las actualizaciones de dicha identidad se sincronizan con Office 365.
   
-Hay un par de cosas que hay que tener en cuenta al planear una implementación de la sincronización de Active directory, incluida la preparación de Active directory y los requisitos y la funcionalidad de Azure Active Directory. Preparación de Active Directory trata algunas áreas. Se incluyen las actualizaciones de atributos, auditoría y planear la ubicación del controlador de dominio. Planificación de requisitos y la funcionalidad incluye la determinación de los permisos que se requieren, planeación de escenarios de multiforest o directorio, la planeación de la capacidad y sincronización bidireccional.
+Hay un par de cosas que se deben tener en cuenta al planear una implementación de la sincronización de directorios, incluida la preparación del directorio, y los requisitos y la funcionalidad de Azure Active Directory. La preparación de directorios abarca un número muy reducido de áreas. Incluyen actualizaciones de atributos, auditoría y planeación de la ubicación de los controladores de dominio. Los requisitos y la funcionalidad de planeación incluyen la determinación de los permisos necesarios, la planeación de escenarios de bosques múltiples/directorios, la planificación de la capacidad y la sincronización bidireccional.
   
 ## <a name="office-365-identity-models"></a>Modelos de identidad de Office 365
-Office 365 usa dos modelos de autenticación e identidad principales: autenticación y autenticación federada de nube.
+Office 365 usa dos modelos de autenticación e identidad principales: la autenticación en la nube y la autenticación federada.
   
 ### <a name="cloud-authentication"></a>Autenticación en la nube
-[Identidad de nube](about-office-365-identity.md) : crear y administrar los usuarios en el centro de administración de Office 365, también puede usar Windows PowerShell o Azure Active Directory para administrar los usuarios. 
+[Identidad de nube](about-office-365-identity.md) : cree y administre usuarios en el centro de administración de Office 365, también puede usar Windows PowerShell o Azure Active Directory para administrar los usuarios. 
   
-[Sincronizar de hash de contraseña con un inicio de sesión único perfecta](about-office-365-identity.md) - la manera más sencilla de habilitar la autenticación para los objetos de Active directory local en Azure AD. Con la sincronización de hash de contraseña (PBS), sincronizar los objetos de cuenta de usuario de Active Directory local con Office 365 y administrar los usuarios locales. 
+[Sincronización de hash de contraseña con inicio de sesión único sin interrupciones](about-office-365-identity.md) : la forma más sencilla de habilitar la autenticación para los objetos de directorio local en Azure ad. Con la sincronización de hash de contraseña (PHS), se sincronizan los objetos de cuenta de usuario de Active Directory local con Office 365 y se administran los usuarios de forma local. 
   
-[Autenticación de paso a través con un inicio de sesión único transparente](about-office-365-identity.md) : proporciona una validación de contraseña simple para servicios de autenticación de Azure AD mediante un agente de software que se ejecuta en uno o más servidores locales para validar a los usuarios directamente con su Active Directory local. 
+[Autenticación de paso a través con el inicio de sesión único sin problemas](about-office-365-identity.md) : proporciona una validación de contraseña sencilla para los servicios de autenticación de Azure ad mediante un agente de software que se ejecuta en uno o varios servidores locales para validar a los usuarios directamente con su Active Directory local. 
   
 ### <a name="federated-authentication"></a>Autenticación federada
-[Identidad federada con los servicios de federación de Active Directory AD FS](about-office-365-identity.md) - principalmente para grandes organizaciones con requisitos de autenticación más complejas, local se sincronizan los objetos de Active directory con Office 365 y son las cuentas de usuarios administrada local. 
+[Identidad federada con los servicios de Federación de Active Directory AD FS](about-office-365-identity.md) : principalmente para grandes organizaciones empresariales con requisitos de autenticación más complejos, los objetos del directorio local se sincronizan con Office 365 y las cuentas de los usuarios se administrada de forma local. 
   
-[Proveedores de autenticación e identidad de terceros](about-office-365-identity.md) - Active directory objetos es posible que se sincronizan en Office 365 y acceso a los recursos de nube de local se administra principalmente por un proveedor de identidad de terceros (IdP). 
+Los objetos del directorio local de [autenticación e identidad de terceros](about-office-365-identity.md) se pueden sincronizar con Office 365 y el acceso a recursos de la nube es administrado principalmente por un proveedor de identidades de terceros (IDP). 
   
 ## <a name="active-directory-cleanup"></a>Limpieza de Active Directory
-Para ayudar a garantizar una transición sin problemas a Office 365 mediante la sincronización, se recomienda preparar el bosque de Active Directory antes de empezar la implementación de sincronización de directorios de Office 365.
+Para ayudar a garantizar una transición sin problemas a Office 365 mediante la sincronización, se recomienda encarecidamente preparar el bosque de Active Directory antes de comenzar la implementación de sincronización de directorios de Office 365.
   
-Al [Configurar la sincronización de Active directory en Office 365](set-up-directory-synchronization.md), es uno de los pasos para [descargar y ejecuta la herramienta IdFix](install-and-run-idfix.md). Puede usar la herramienta IdFix para ayudar con la [limpieza de directorios](prepare-directory-attributes-for-synch-with-idfix.md).
+Al [configurar la sincronización de directorios en Office 365](set-up-directory-synchronization.md), uno de los pasos es [Descargar y ejecutar la herramienta IdFix](install-and-run-idfix.md). Puede usar la herramienta IdFix para ayudarle con la [limpieza de directorios](prepare-directory-attributes-for-synch-with-idfix.md).
   
-La limpieza del directorio debería centrarse en las siguientes tareas:
+La limpieza de directorios debe centrarse en las siguientes tareas:
 
-- Quite los atributos **proxyAddress** y **userPrincipalName** duplicados.
+- Quitar los atributos **proxyAddress** y **userPrincipalName** duplicados.
 - Actualice los atributos **userPrincipalName** no válidos o en blanco con atributos **userPrincipalName** válidos.
-- Quitar caracteres no válidos y dudosos en **givenName**, apellido ( **sn** ), **sAMAccountName**, **displayName**, **correo**, **proxyAddresses**, **mailNickname**y **userPrincipalName** atributos. Para obtener información detallada sobre la preparación de atributos, vea la [lista de atributos que se sincronizan mediante la herramienta de sincronización de Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+- Quitar los caracteres dudosos y no válidos de **givenName**, apellidos ( **SN** ), **samAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname**y **userPrincipalName** sus. Para obtener información detallada sobre la preparación de atributos, consulte [lista de atributos que se sincronizan mediante la herramienta de sincronización de Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
     
     > [!NOTE]
-    > Estos son los mismos atributos que se sincroniza Azure Connect de AD. 
+    > Estos son los mismos atributos que Azure AD Connect sincroniza. 
   
 ## <a name="multiforest-deployment-considerations"></a>Consideraciones de implementación de bosques múltiples
-Para varios bosques y las opciones de SSO, use [Conectar de AD de instalación personalizada de Azure](https://go.microsoft.com/fwlink/p/?LinkId=698430).
+Para varios bosques y opciones de SSO, use la [instalación personalizada de Azure ad Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430).
   
-Si su organización tiene varios bosques para la autenticación (bosques de inicio de sesión), se recomienda lo siguiente:
+Si su organización tiene varios bosques para la autenticación (bosques de inicio de sesión), recomendamos encarecidamente lo siguiente:
   
-- **Evaluación de la consolidación de los bosques.** En general, hay más sobrecarga necesaria para mantener varios bosques. A menos que su organización tiene restricciones de seguridad que determinan la necesidad de bosques separados, considere la posibilidad de simplificar el entorno local.
-- **Uso únicamente en su bosque de inicio de sesión principal.** Considere la posibilidad de implementar Office 365 sólo en su bosque de inicio de sesión principal para la implementación inicial de Office 365. 
+- **Evaluar la consolidación de los bosques.** En general, es necesario más carga para mantener varios bosques. A menos que la organización tenga restricciones de seguridad que determinen la necesidad de bosques independientes, considere la posibilidad de simplificar el entorno local.
+- **Use solamente en el bosque de inicio de sesión principal.** Considere la posibilidad de implementar Office 365 solo en el bosque de inicio de sesión principal para su lanzamiento inicial de Office 365. 
     
-Si no se pueden consolidar la implementación de Active Directory de varios bosques o está utilizando otros servicios de directorio para administrar identidades, es posible que pueda sincronizar estos con la Ayuda de Microsoft o de un socio.
+Si no puede consolidar su implementación de Active Directory de varios bosques o está usando otros servicios de directorio para administrar las identidades, es posible que pueda sincronizarlas con la ayuda de Microsoft o de un asociado.
   
-Para obtener más información, consulte [Sincronización de Active Directory de varios bosques con escenario de inicio de sesión único](https://go.microsoft.com/fwlink/p/?LinkId=525321).
+Para obtener más información, vea [sincronización de directorios de varios bosques con escenario de inicio de sesión único](https://go.microsoft.com/fwlink/p/?LinkId=525321).
   
-## <a name="directory-integration-tools"></a>Herramientas de integración de Active Directory
-Sincronización de directorios es la sincronización de objetos de Active directory (usuarios, grupos y contactos) desde el entorno de Active Directory local a la infraestructura de Active directory de Office 365. Vea las [Herramientas de integración de Active directory](https://go.microsoft.com/fwlink/p/?LinkID=510956) para obtener una lista de las herramientas disponibles y su funcionalidad. La herramienta recomendada para usar es [Conectar de Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=525323).
+## <a name="directory-integration-tools"></a>Herramientas de integración de directorios
+La sincronización de directorios es la sincronización de objetos de directorio (usuarios, grupos y contactos) desde el entorno local de Active Directory a la infraestructura de directorios de Office 365. Consulte [herramientas de integración de directorios](https://go.microsoft.com/fwlink/p/?LinkID=510956) para obtener una lista de las herramientas disponibles y su funcionalidad. La herramienta que se recomienda usar es [Azure Active Directory Connect](https://go.microsoft.com/fwlink/?LinkId=525323).
   
-Cuando las cuentas de usuario se sincronizan con el directorio de Office 365 por primera vez, se marcan como no activada. No pueden enviar ni recibir correo electrónico, y no consumen licencias de suscripción. Cuando esté listo para asignar suscripciones a Office 365 a usuarios específicos, debe seleccionar y activarlos mediante la asignación de una licencia válida.
+Cuando las cuentas de usuario se sincronizan con el directorio de Office 365 por primera vez, se marcan como no activadas. No pueden enviar ni recibir correo electrónico y no consumen licencias de suscripción. Cuando esté listo para asignar suscripciones de Office 365 a usuarios específicos, debe seleccionarlas y activarlas asignando una licencia válida.
   
-Sincronización de directorios es necesaria para las características y funciones siguientes:
+La sincronización de directorios es necesaria para las siguientes características y funciones:
   
 - SSO
     
 - Coexistencia de Lync
     
-- Exchange implementación híbrida, incluidos:
+- Implementación híbrida de Exchange, que incluye:
     
-  - Totalmente compartida lista global de direcciones (GAL) entre su entorno de Exchange local y Office 365.
+  - Lista global de direcciones (GAL) totalmente compartida entre el entorno de Exchange local y Office 365.
   - Sincronización de información de GAL desde varios sistemas de correo.
-  - La capacidad para agregar a los usuarios y quitar usuarios de las ofertas de servicios de Office 365. Esto requiere lo siguiente:
-  - Sincronización bidireccional de directorios se debe configurar durante la instalación de la sincronización de Active directory. De forma predeterminada, las herramientas de sincronización de Active directory escriben información de Active directory sólo a la nube. Al configurar la sincronización bidireccional, habilita la funcionalidad de escritura diferida para que un número limitado de atributos de objeto se copian de la nube y, a continuación, les vuelven a escribir su Active Directory local. Reescritura también se conoce como modo de híbrida de Exchange. 
-  - Implementación híbrida de Exchange local
-  - La capacidad para mover algunos buzones de usuario a Office 365 manteniendo otros usuario buzones locales.
-  - Remitentes seguros y remitentes bloqueados locales se replican en Office 365.
+  - La capacidad de agregar usuarios y quitar usuarios de las ofertas de servicio de Office 365. Esto requiere lo siguiente:
+  - La sincronización bidireccional debe configurarse durante la configuración de la sincronización de directorios. De forma predeterminada, las herramientas de sincronización de directorios escriben información de directorio solo en la nube. Cuando se configura la sincronización bidireccional, se habilita la funcionalidad de reescritura de modo que se copie un número limitado de atributos de objeto de la nube y, a continuación, se escriban de nuevo en el Active Directory local. La escritura diferida también se conoce como modo híbrido de Exchange. 
+  - Una implementación híbrida de Exchange local
+  - La capacidad de mover algunos buzones de usuario a Office 365 al mismo tiempo que se conservan otros buzones de usuario locales.
+  - Los remitentes seguros y los remitentes bloqueados locales se replican en Office 365.
   - Función de delegación básica y envío en nombre de otra persona.
-  - Tiene una solución de autenticación de tarjetas inteligentes o multifactor integrado local.
+  - Tiene una solución de autenticación multifactor o de tarjeta inteligente local integrada.
     
 - Sincronización de fotos, miniaturas, salas de conferencias y grupos de seguridad

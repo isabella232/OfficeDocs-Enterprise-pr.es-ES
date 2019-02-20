@@ -13,25 +13,28 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: Ver el estado de mantenimiento de servicios de Office 365 antes de llamar a soporte técnico para ver si hay una interrupción del servicio de active
-ms.openlocfilehash: 52a7b762b8e86c3e538579f7c1e1611515469389
-ms.sourcegitcommit: c7ad181394a8a3ee261dc44e7a1e70f6ebe7cbcf
+description: Ver el estado de mantenimiento de los servicios de Office 365 antes de llamar al soporte técnico para ver si hay una interrupción del servicio activo
+ms.openlocfilehash: 7a8d6c028caa72d332a51123233b2d0642311da0
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29696357"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085299"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Cómo comprobar el estado del servicio de Office 365
 
-Puede ver el estado de Office 365, Yammer, Microsoft Dynamics CRM y servicios de nube de Microsoft Intune en la página de **estado del servicio** de Office 365 en el centro de administración. Si experimenta problemas con un servicio de nube, puede comprobar el estado del servicio para determinar si se trata de un problema conocido con una resolución en curso antes de llamar al soporte técnico o dedicada a la solución de problemas de tiempo. 
+Puede ver el estado de Office 365, Yammer, Microsoft Dynamics CRM y los servicios en la nube de Microsoft Intune en la página **Estado del servicio** de Office 365 en el centro de administración. Si experimenta problemas con un servicio en la nube, puede comprobar el estado del servicio para determinar si se trata de un problema conocido con una solución en curso antes de llamar al soporte técnico o gastar tiempo en solucionar problemas. 
 
-Si no puede iniciar sesión en el portal de servicio, puede usar la [página de estado de servicio](https://status.office365.com) para buscar problemas conocidos que le impide iniciar sesión en el inquilino.
+Si no puede iniciar sesión en el portal de servicios, puede usar la [Página estado del servicio](https://status.office365.com) para comprobar problemas conocidos que impiden que inicie sesión en su inquilino.
   
 ### <a name="how-to-check-service-health"></a>Cómo comprobar el estado del servicio
 
@@ -40,7 +43,7 @@ Si no puede iniciar sesión en el portal de servicio, puede usar la [página de 
     > [!NOTE]
     > Los usuarios que tienen asignado el rol de administrador de servicios o administrador global pueden ver el estado del servicio. Para que los administradores de Exchange, SharePoint y Skype Empresarial puedan ver el estado del servicio, también se les debe asignar el rol Administrador de servicios.
   
-2. Para abrir el estado del servicio, en el centro de administración, vaya a **Mantenimiento** > **estado del servicio**, o haga clic en la **tarjeta de servicio de estado** en el **panel principal**. La tarjeta de panel indica si hay un problema de servicio de active y vínculos a la página de estado de servicio detallados.
+2. Para abrir el estado del servicio, en el centro de administración, vaya al**Estado del servicio**de **mantenimiento** > o haga clic en la **tarjeta de estado del servicio** en el panel de **Inicio**. La tarjeta del panel indica si hay un problema de servicio activo y se vincula a la página de estado detallado del servicio.
     
     ![Dashboard card for service health](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -51,13 +54,13 @@ Si no puede iniciar sesión en el portal de servicio, puede usar la [página de 
   
 ### <a name="view-details-of-posted-service-health"></a>Ver detalles del estado del servicio publicado
 
-En la vista predeterminada, se muestran todos los servicios y su estado de mantenimiento actual. Para filtrar la vista a servicios está experimentando un incidente, seleccione **incidentes** en la barra de sombreado de la izquierda. Selección de **avisos** mostrará únicamente los servicios que actualmente tienen un asesor registrado. Desde la vista de **todos los servicios** , haciendo clic en el estado del servicio que se muestra se abrirá una vista de resumen del documento informativo o incidente. 
+En la vista predeterminada, se muestran todos los servicios y su estado de mantenimiento actual. Para filtrar la vista a los servicios que actualmente están experimentando un incidente, seleccione **incidentes** en la barra sombreada de la izquierda. Si se seleccionan los **avisos** , solo se mostrarán los servicios que tienen publicado actualmente un aviso. En la vista **todos los servicios** , al hacer clic en el estado del servicio que se muestra, se abrirá una vista de resumen del aviso o incidente. 
   
 ![View of current issues in service health](media/f829a3af-1aca-4dc2-97eb-15d805349b24.png)
   
 En el resumen del aviso o del incidente, se proporciona la siguiente información: 
   
-![Una captura de pantalla etiquetar los campos en un documento informativo de servicio](media/0dd6065c-1381-4a5c-8ca0-854c3e043a5c.png)
+![Una captura de pantalla que etiqueta los campos en un aviso de servicio](media/0dd6065c-1381-4a5c-8ca0-854c3e043a5c.png)
   
 1. Identificador y resumen de un problema.
     
@@ -104,11 +107,11 @@ La mayoría de las veces, los servicios aparecerán como correctos sin más info
 |**Recuperación extendida** | Este estado indica que se están llevando a cabo acciones correctivas para restablecer el servicio para la mayoría de los usuarios, pero que llevará algún tiempo llegar a todos los sistemas afectados. También es posible que vea este estado en caso de que hayamos aplicado una solución temporal para reducir el impacto a la espera de aplicar una permanente. |
 |**Investigación suspendida** | Si nuestra investigación detallada sobre un problema potencial resulta en una solicitud de información adicional por parte de los clientes para permitirnos investigar de forma más exhaustiva, verá este estado. Si necesitamos su ayuda, le haremos saber qué datos y registros necesitamos. |
 |**Servicio restaurado** | Hemos confirmado que una acción correctiva ha resuelto el problema subyacente y el servicio se ha restaurado al estado correcto. Para averiguar qué ha fallado, vea los detalles del problema. |
-|**Informe del incidente posteriores a la publicado** | Hemos publicado un informe del incidente Post para un problema específico que incluye información de la causa raíz y pasos siguientes para asegurarse de que no volver a producirse un problema similar. |
+|**Informe posterior a la incidencia publicado** | Hemos publicado un informe de incidente posterior para un problema específico que incluye información de causa raíz y pasos siguientes para garantizar que no se reproduzca un problema similar. |
    
 ## <a name="history"></a>Historial
 
-Estado del servicio permite a mirar el estado actual de mantenimiento y ver el historial de los avisos de servicio y los incidentes que han afectado al inquilino en los últimos 30 días. Para ver el estado de todos los servicios anteriores, seleccione **Ver historial de** en la página de **estado del servicio** . 
+El estado del servicio le permite ver el estado actual del mantenimiento y ver el historial de los avisos de servicio e incidentes que han afectado a su inquilino en los últimos 30 días. Para ver el estado anterior de todos los servicios, seleccione **Ver historial** en la página **Estado del servicio** . 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
@@ -116,9 +119,9 @@ Se muestra una lista de todos los mensajes del estado del servicio publicados en
   
 ![View service health history](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
   
-Puede ver el historial de mantenimiento para los últimos 7 días o últimos 30 días. Seleccione cualquier fila para ver más detalles acerca del problema.
+Puede ver el historial de mantenimiento de los últimos 7 días o de los últimos 30 días. Seleccione cualquier fila para ver más detalles sobre el problema.
   
-Para obtener más información acerca de nuestro compromiso de tiempo de actividad, vea [operations transparentes de Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
+Para obtener más información sobre nuestro compromiso con el tiempo de actividad, vea [operaciones transparentes desde Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
   
 ## <a name="leave-feedback"></a>Enviar comentarios
 
