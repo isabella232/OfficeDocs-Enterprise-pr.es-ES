@@ -3,7 +3,7 @@ title: Administrar puntos de conexión de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/11/2019
+ms.date: 02/21/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algunas redes empresariales restringen el acceso a ubicaciones de Internet genéricas o incluyen backhaul o procesamiento de tráfico de red substancial. Para garantizar que los equipos de redes como estos puedan tener acceso a Office 365, los administradores de red y de proxy deben administrar la lista de FQDN, direcciones URL y direcciones IP que componen la lista de puntos de conexión de Office 365. Estos deben agregarse a ruta directa, omisión de proxy o reglas de firewall y archivos PAC para garantizar que las solicitudes de red puedan alcanzar el alcance de Office 365.
-ms.openlocfilehash: ed3a64ad3cd840987d105ae99a5ba5cbf41567e9
-ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
+ms.openlocfilehash: 469c1fa91fc2695c4175a4eccea26a0ffc46c52a
+ms.sourcegitcommit: bc565081b64d374d43b1bf3bb3d92edaaa24e4c2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30053004"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30176750"
 ---
 # <a name="managing-office-365-endpoints"></a>Administrar puntos de conexión de Office 365
 
@@ -30,7 +30,7 @@ Microsoft le recomienda que obtenga acceso a los puntos de conexión de red de O
 
 Independientemente de cómo administre el tráfico de red vital de Office 365, Office 365 requiere conectividad a Internet. Otros extremos de red en los que se requiere conectividad se enumeran en puntos de conexión [adicionales no incluidos en la dirección IP de Office 365 y el servicio Web de dirección URL](additional-office365-ip-addresses-and-urls.md)
 
-La forma de usar los extremos de red de Office 365 dependerá de la arquitectura de red de la organización de la empresa. Este artículo describe varias maneras en las que se pueden integrar las arquitecturas de red empresarial con las direcciones IP y URL de Office 365. La forma más sencilla de elegir las solicitudes de red en las que confiar es usar dispositivos de SDWAN que admitan la configuración de Office 365 automatizada en cada una de las oficinas de la oficina. 
+La forma de usar los extremos de red de Office 365 dependerá de la arquitectura de red de la organización de la empresa. Este artículo describe varias maneras en las que se pueden integrar las arquitecturas de red empresarial con las direcciones IP y URL de Office 365. La forma más sencilla de elegir las solicitudes de red en las que confiar es usar dispositivos de SDWAN que admitan la configuración de Office 365 automatizada en cada una de las oficinas de la oficina.
 
 ## <a name="sdwan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>SDWAN para la salida de bifurcaciones locales de tráfico de red vital de Office 365
 
@@ -43,13 +43,13 @@ Microsoft está trabajando con proveedores de SDWAN para habilitar la configurac
 
 Usar archivos PAC o WPAD para administrar solicitudes de red asociadas con Office 365 pero que no tienen una dirección IP. Las solicitudes de red típicas que se envían a través de un proxy o un dispositivo perimetral aumentan la latencia. Mientras que la interrupción de SSL y la inspección crean la latencia más grande, otros servicios como la autenticación de proxy y la búsqueda de reputación pueden provocar un bajo rendimiento y una experiencia de usuario deficiente. Además, estos dispositivos de red perimetral necesitan suficiente capacidad para procesar todas las solicitudes de conexión de red. Se recomienda omitir el proxy o los dispositivos de inspección para solicitudes de red directas de Office 365.
   
-[PowerShell Gallery Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) es un script de PowerShell que lee los puntos de conexión de red más recientes de la dirección IP de Office 365 y del servicio Web de dirección URL y crea un archivo PAC de ejemplo. Puede modificar el script para que se integre con la administración de archivos PAC existente. 
+[PowerShell Gallery Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) es un script de PowerShell que lee los puntos de conexión de red más recientes de la dirección IP de Office 365 y del servicio Web de dirección URL y crea un archivo PAC de ejemplo. Puede modificar el script para que se integre con la administración de archivos PAC existente.
 
 ![Conectarse a Office 365 a través de firewalls y servidores proxy.](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
 **Figura 1: perímetro de red empresarial simple**
 
-El archivo PAC se implementa en los exploradores Web en el punto 1 de la figura 1. Cuando se usa un archivo PAC para salidas directas de tráfico de red vital de Office 365, también se debe permitir la conectividad a las direcciones IP que se encuentran detrás de estas URL en el firewall perimetral de red. Para ello, se obtienen las direcciones IP de las mismas categorías de punto de conexión de Office 365, tal como se especifica en el archivo PAC y se crean ACL de Firewall basadas en dichas direcciones. El servidor de seguridad es el punto 3 de la figura 1. 
+El archivo PAC se implementa en los exploradores Web en el punto 1 de la figura 1. Cuando se usa un archivo PAC para salidas directas de tráfico de red vital de Office 365, también se debe permitir la conectividad a las direcciones IP que se encuentran detrás de estas URL en el firewall perimetral de red. Para ello, se obtienen las direcciones IP de las mismas categorías de punto de conexión de Office 365, tal como se especifica en el archivo PAC y se crean ACL de Firewall basadas en dichas direcciones. El servidor de seguridad es el punto 3 de la figura 1.
 
 Por separado, si opta por solo el enrutamiento directo para los extremos de la categoría de optimización, los extremos de categoría de permiso necesarios que envíe al servidor proxy deben aparecer en el servidor proxy para omitir el procesamiento adicional. Por ejemplo, el salto de SSL e inspección y la autenticación de proxy son incompatibles con los extremos de la categoría optimizar y permitir. El servidor proxy es el punto 2 de la figura 1.
 
@@ -64,7 +64,7 @@ Hay dos tipos de archivos PAC que el script Get-PacFile generará.
 
 Este es un ejemplo sencillo de llamada al script de PowerShell:
 
-```
+```powershell
 Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 ```
 
@@ -79,20 +79,20 @@ Hay varios parámetros que puede pasar a la secuencia de comandos:
 
 Este es otro ejemplo de cómo llamar al script de PowerShell con parámetros adicionales.
 
+```powershell
+Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 ```
-Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 
-```
 
-## <a name="proxy-server-bypass-processing-of-office-365-network-traffic"></a>Omisión de procesamiento de tráfico de red de Office 365 en el servidor proxy 
+## <a name="proxy-server-bypass-processing-of-office-365-network-traffic"></a>Omisión de procesamiento de tráfico de red de Office 365 en el servidor proxy
 
-Cuando los archivos PAC no se usan para el tráfico saliente directo, sigue siendo conveniente omitir el procesamiento en el perímetro de la red mediante la configuración del servidor proxy. Algunos proveedores de servidores proxy han habilitado la configuración automatizada de esto tal como se describe en el [programa Office 365 Networking Partner](office-365-networking-partner-program.md). 
+Cuando los archivos PAC no se usan para el tráfico saliente directo, sigue siendo conveniente omitir el procesamiento en el perímetro de la red mediante la configuración del servidor proxy. Algunos proveedores de servidores proxy han habilitado la configuración automatizada de esto tal como se describe en el [programa Office 365 Networking Partner](office-365-networking-partner-program.md).
 
-Si está haciendo esto manualmente, tendrá que obtener los datos de categoría de extremo optimizar y permitir de la dirección IP y el servicio Web de Office 365 y configurar el servidor proxy para que omita el procesamiento de estos. Es importante evitar la interrupción de SSL e inspeccionar y autenticar proxy para los extremos de la categoría optimizar y permitir. 
+Si está haciendo esto manualmente, tendrá que obtener los datos de categoría de extremo optimizar y permitir de la dirección IP y el servicio Web de Office 365 y configurar el servidor proxy para que omita el procesamiento de estos. Es importante evitar la interrupción de SSL e inspeccionar y autenticar proxy para los extremos de la categoría optimizar y permitir.
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Administración de cambios de direcciones IP y URL de Office 365
 
-Además de seleccionar la configuración adecuada para el perímetro de la red, es fundamental que adopte un proceso de administración de cambios para los puntos de conexión de Office 365. Estos extremos cambian con regularidad y, si no administra los cambios, puede acabar con los usuarios bloqueados o con un bajo rendimiento después de agregar una dirección IP o dirección URL nueva. 
+Además de seleccionar la configuración adecuada para el perímetro de la red, es fundamental que adopte un proceso de administración de cambios para los puntos de conexión de Office 365. Estos extremos cambian con regularidad y, si no administra los cambios, puede acabar con los usuarios bloqueados o con un bajo rendimiento después de agregar una dirección IP o dirección URL nueva.
 
 Los cambios en las direcciones URL y direcciones IP de Office 365 suelen publicarse cerca del último día de cada mes. A veces, un cambio se publicará fuera de esa programación debido a los requisitos de funcionamiento, soporte técnico o seguridad.
 
@@ -100,7 +100,7 @@ Cuando se publica un cambio que requiere la acción de una dirección IP o direc
 
 ### <a name="change-notification-using-the-web-service"></a>Notificación de cambios mediante el servicio Web
 
-Puede usar la dirección IP de Office 365 y el servicio Web de dirección URL para obtener la notificación de cambios. Le recomendamos que llame al método Web **/version** una vez por hora para comprobar la versión de los puntos de conexión que usa para conectarse a Office 365. Si esta versión cambia en comparación con la versión que se está usando, debe obtener los datos de extremo más recientes del método Web **/endpoints** y, de manera opcional, obtener las diferencias del método Web **/Changes** . No es necesario llamar a los métodos Web **/endpoints** o **/Changes** si no ha habido ningún cambio en la versión que ha encontrado. 
+Puede usar la dirección IP de Office 365 y el servicio Web de dirección URL para obtener la notificación de cambios. Le recomendamos que llame al método Web **/version** una vez por hora para comprobar la versión de los puntos de conexión que usa para conectarse a Office 365. Si esta versión cambia en comparación con la versión que se está usando, debe obtener los datos de extremo más recientes del método Web **/endpoints** y, de manera opcional, obtener las diferencias del método Web **/Changes** . No es necesario llamar a los métodos Web **/endpoints** o **/Changes** si no ha habido ningún cambio en la versión que ha encontrado.
 
 Para obtener más información, consulte [Office 365 IP address and URL Web Service](office-365-ip-web-service.md).
 
@@ -110,7 +110,7 @@ El servicio Web de dirección IP y URL de Office 365 proporciona una fuente RSS 
 
 ### <a name="change-notification-and-approval-review-using-microsoft-flow"></a>Revisión de notificaciones y aprobación de cambios con Microsoft Flow
 
-Somos conscientes de que es posible que deba seguir requiriendo procesamiento manual para los cambios de punto de conexión de red que se realicen cada mes. Puede usar Microsoft Flow para crear un flujo que le notifique por correo electrónico y, de forma opcional, ejecuta un proceso de aprobación para los cambios cuando los puntos de conexión de red de Office 365 tienen cambios. Una vez completada la revisión, puede hacer que el flujo envíe por correo automáticamente los cambios en el equipo de administración del servidor proxy y del firewall. 
+Somos conscientes de que es posible que deba seguir requiriendo procesamiento manual para los cambios de punto de conexión de red que se realicen cada mes. Puede usar Microsoft Flow para crear un flujo que le notifique por correo electrónico y, de forma opcional, ejecuta un proceso de aprobación para los cambios cuando los puntos de conexión de red de Office 365 tienen cambios. Una vez completada la revisión, puede hacer que el flujo envíe por correo automáticamente los cambios en el equipo de administración del servidor proxy y del firewall.
 
 Para obtener información sobre una plantilla y un ejemplo de Microsoft Flow, vea [usar Microsoft Flow para recibir un correo electrónico de cambios en direcciones IP y URL de Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)
   
@@ -131,7 +131,7 @@ Haga clic en el vínculo de la parte inferior para indicar si el artículo resul
 
  Las **ubicaciones de emparejamiento** se describen con más detalle en [emparejamiento con Microsoft](https://www.microsoft.com/peering).
   
-Con más de 2500 relaciones de emparejamiento de ISP globalmente y 70 puntos de presencia, obtener desde su red a los nuestros deben estar sin problemas. No puede resultar perjudicial dedicar unos minutos asegurándose de que la relación de emparejamiento del ISP es la más óptima, a [continuación le presentamos algunos ejemplos](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) de buenas y no tan buenas entregas de emparejamiento a nuestra red. 
+Con más de 2500 relaciones de emparejamiento de ISP globalmente y 70 puntos de presencia, obtener desde su red a los nuestros deben estar sin problemas. No puede resultar perjudicial dedicar unos minutos asegurándose de que la relación de emparejamiento del ISP es la más óptima, a [continuación le presentamos algunos ejemplos](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) de buenas y no tan buenas entregas de emparejamiento a nuestra red.
   
 ### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Veo que las solicitudes de red a las direcciones IP no están en la lista publicada, ¿es necesario proporcionar acceso a las mismas?
 <a name="bkmk_MissingIP"> </a>
@@ -144,12 +144,25 @@ Vea una dirección IP asociada a Office 365 de la que desea obtener más informa
 2. Compruebe si un partner es propietario de la IP con una [consulta Whois](https://dnsquery.org/). Si es propietario de Microsoft, puede ser un asociado interno.
 3. compruebe el certificado, en un explorador conéctese a la dirección IP *mediante\<HTTPS://\> dirección_ip* , compruebe los dominios que aparecen en el certificado para comprender qué dominios están asociados con la dirección IP. Si es una dirección IP de propiedad de Microsoft y no se encuentra en la lista de direcciones IP de Office 365, es probable que la dirección IP esté asociada a una CDN de Microsoft como *MSOCDN.net* u otro dominio de Microsoft sin información de IP publicada. Si encuentra el dominio en el certificado es aquel en el que le indicamos que indique la dirección IP, infórmenos.
 
+<a name="bkmk_cname"> </a>
+### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Algunas direcciones URL de Office 365 señalan a registros CNAME en lugar de a registros en el DNS. ¿Qué tengo que hacer con los registros CNAME?
+
+Los equipos cliente necesitan un registro DNS A o AAAA que incluya una o varias direcciones IP para conectarse a un servicio en la nube. Algunas direcciones URL incluidas en Office 365 muestran registros CNAME en lugar de registros A o AAAA. Estos registros CNAME son intermediarios y es posible que haya varios en una cadena. Siempre se resolverán finalmente en un registro a o AAAA para una dirección IP. Por ejemplo, considere la siguiente serie de registros DNS, que, en última instancia, se resuelve en la dirección IP _IP_1_:
+
+```
+serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1
+```
+
+Estas redirecciones de CNAME son una parte normal del DNS y son transparentes para el equipo cliente y transparentes para los servidores proxy. Se usan para equilibrio de carga, redes de entrega de contenido, alta disponibilidad y mitigación de incidentes de servicio. Microsoft no publica los registros CNAME intermediarios, están sujetos a cambios en cualquier momento y no es necesario configurarlos como permitidos en el servidor proxy.
+
+Un servidor proxy valida la dirección URL inicial que en el ejemplo anterior es serviceA.office.com y esta dirección URL se incluiría en la publicación de Office 365. El servidor proxy solicita la resolución DNS de esa dirección URL a una dirección IP y recibirá IP_1. No valida los registros del redireccionamiento CNAME del intermediario.
+
+No se recomienda la configuración o la lista blanca codificada de forma rígida basada en FQDN indirectos de Office 365, que no es compatible con Microsoft, y se sabe que causa problemas de conectividad con los clientes. Las soluciones DNS que se bloquean en la redirección de CNAME o que, de lo contrario, resuelven incorrectamente las entradas DNS de Office 365, pueden resolverse mediante el reenvío condicional de DNS (en el ámbito de los FQDN de Office 365 de uso directo) con la recursión de DNS habilitada. Muchos productos perimetrales de red de terceros integran de forma nativa la lista blanca de puntos de conexión de Office 365 en su configuración mediante el [servicio Web de direcciones IP y URL de office 365](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service).
+
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>¿Por qué veo nombres como nsatc.net o akadns.net en los nombres de dominio de Microsoft?
 <a name="bkmk_akamai"> </a>
 
-Office 365 y otros servicios de Microsoft usan varios servicios de terceros, como Akamai y MarkMonitor, para mejorar la experiencia de Office 365. Para seguir dándole la mejor experiencia posible, podemos cambiar estos servicios en el futuro. Al hacerlo, a menudo publicamos el registro CNAME que apunta a un dominio de propietario de terceros, A un registro o a una dirección IP. Los dominios de terceros pueden hospedar contenido, como una red CDN, o pueden hospedar un servicio, como un servicio de administración de tráfico geográfico. Cuando ve conexiones a estos terceros, se encuentran en forma de una redirección o referencia, no una solicitud inicial del cliente. Algunos clientes necesitan garantizar esta forma de remisión y el redireccionamiento puede pasar sin agregar de forma explícita la lista larga de FQDN potenciales que los servicios de terceros pueden usar.
-  
-La lista de servicios está sujeta a cambios en cualquier momento. Algunos de los servicios actualmente en uso incluyen:
+Office 365 y otros servicios de Microsoft usan varios servicios de terceros, como Akamai y MarkMonitor, para mejorar la experiencia de Office 365. Para seguir dándole la mejor experiencia posible, podemos cambiar estos servicios en el futuro. Los dominios de terceros pueden hospedar contenido, como una red CDN, o pueden hospedar un servicio, como un servicio de administración de tráfico geográfico. Algunos de los servicios actualmente en uso incluyen:
   
 [MarkMonitor](https://www.markmonitor.com/) está en uso cuando se ven solicitudes que incluyen * \*. nsatc.net* . Este servicio proporciona protección y supervisión de nombres de dominio para protegerse contra comportamientos malintencionados.
   
