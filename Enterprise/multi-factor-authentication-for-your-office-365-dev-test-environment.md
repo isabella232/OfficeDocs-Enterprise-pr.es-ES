@@ -3,7 +3,7 @@ title: Autenticación multifactor para el entorno de desarrollo y pruebas de Off
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/22/2018
+ms.date: 02/20/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Resumen: configure la autenticación multifactor mediante mensajes de texto enviados a un smartphone en un entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 6e2aefa9309e7e268c937055f7fe59600f8c87da
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 453dbc6bda3cfbc6806159d53c9a805c4c6cac97
+ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897453"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242082"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticación multifactor para el entorno de desarrollo y pruebas de Office 365
 
  **Resumen:** configure la autenticación multifactor mediante mensajes de texto enviados a un smartphone en un entorno de desarrollo y pruebas de Office 365.
   
-Para obtener un nivel adicional de seguridad para iniciar sesión en su suscripción de Office 365, puede habilitar la autenticación multifactor Azure, lo cual requiere algo más que un nombre de usuario y una contraseña para autenticar una cuenta. Con la autenticación multifactor para Office 365, los usuarios son necesarios para confirmar una llamada de teléfono, escriba un código de comprobación enviado en un mensaje de texto o especificar una contraseña de la aplicación en sus teléfonos inteligentes después de escribir correctamente sus contraseñas. Puede iniciar sesión sólo después de que se haya probado este segundo factor de autenticación. 
+Para obtener un nivel de seguridad adicional para iniciar sesión en su suscripción de Office 365, puede habilitar la autenticación multifactor de Azure, que requiere más que un nombre de usuario y una contraseña para autenticar una cuenta. Con multi-factor Authentication para Office 365, los usuarios deben confirmar una llamada telefónica, escribir un código de verificación enviado en un mensaje de texto o especificar una contraseña de aplicación en sus teléfonos inteligentes después de escribir correctamente sus contraseñas. Solo pueden iniciar sesión después de que se cumpla este segundo factor de autenticación. 
   
 En este artículo, se describe cómo habilitar y probar la autenticación basada en mensajes de texto para una cuenta específica de Office 365.
   
@@ -42,9 +42,9 @@ Existen dos fases para configurar la autenticación multifactor para Office 365 
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y pruebas ligero o de una empresa simulada de Office 365
 
-Si desea probar la autenticación multifactor en una forma sencilla con los requisitos mínimos, siga las instrucciones que aparecen en las fases 2 y 3 del [entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md).
+Si solo quiere probar la autenticación multifactor de manera ligera con los requisitos mínimos, siga las instrucciones indicadas en las fases 2 y 3 de [Office 365 dev/test Environment](office-365-dev-test-environment.md).
   
-Si desea probar la autenticación multifactor en una empresa simulada, siga las instrucciones que aparecen en la [sincronización de directorios para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md).
+Si desea probar la autenticación multifactor en una empresa simulada, siga las instrucciones que se indican en [DirSync para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
 > Probar la autenticación multifactor no requiere el entorno de desarrollo y pruebas de una empresa simulada, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Windows Server AD. Aquí se ofrece como opción para que pueda probar la autenticación multifactor y experimentar con ella en un entorno que representa una organización típica. 
@@ -59,15 +59,15 @@ Siga estos pasos para habilitar la autenticación multifactor para la cuenta Usu
     
 3. En el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
     
-4. En el panel Usuarios activos, haga clic en **Más > Setup Azure multi-factor auth** (Configurar la autenticación multifactor de Azure).
+4. En el panel usuarios activos, haga clic en **más _GT_ multi-factor Authentication Setup**.
     
-5. En la lista, seleccione la cuenta de **usuario 2** .
+5. En la lista, seleccione la cuenta **usuario 2** .
     
 6. En la sección **Usuario 2**, en **Pasos rápidos**, haga clic en **Habilitar**.
     
 7. En el cuadro de diálogo **Acerca de la habilitación de autenticación multifactor**, haga clic en **Habilitar Multi-Factor Auth**.
     
-8. En el cuadro de diálogo **Actualización correcta**, haga clic en **Cerrar**.
+8. En el cuadro de diálogo **actualizaciones correctas** , haga clic en **cerrar**.
     
 9. En la pestaña **Página principal de Microsoft Office**, haga clic en el icono de cuenta de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
     
@@ -77,7 +77,7 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
   
 1. Abra una nueva instancia del explorador.
     
-2. Vaya al portal de Office 365 ([https://portal.office.com](https://portal.office.com)) y el inicio de sesión con la cuenta de usuario 2 (user2 @\<name>.onmicrosoft.com de organización) y la contraseña.
+2. Vaya al portal de Office 365 ([https://portal.office.com](https://portal.office.com)) e inicie sesión con la cuenta usuario 2 (usuario2 @\<Organization name>. en Microsoft. com) y la contraseña.
     
 3. Después de iniciar sesión, se le pedirá que configure la cuenta para la validación de seguridad adicional. Haga clic en **Configurar ahora**.
     
@@ -87,7 +87,7 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
     
   - Escriba el número de teléfono del smartphone que va a recibir los mensajes de texto.
     
-  - en **método**, haga clic en **Enviarme un código por mensaje de texto**.
+  - en **método**, haga clic en **enviarme un código por mensaje de texto**.
     
 5. Haga clic en **Siguiente**.
     
@@ -97,7 +97,7 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
     
 8. Si es la primera vez que inicia sesión con la cuenta Usuario 2, se le pedirá que cambie la contraseña. Escriba la contraseña original y la contraseña nueva dos veces y, después, haga clic en **Actualizar contraseña e iniciar sesión**. Anote la contraseña nueva en un lugar seguro.
     
-    Debería ver el portal de Office 365 para el usuario 2 en la ficha **Página principal de Microsoft Office** del explorador.
+    Debe ver el portal de Office 365 para el usuario 2 en la pestaña **Página principal de Microsoft Office** del explorador.
     
 ## <a name="see-also"></a>Vea también
 
