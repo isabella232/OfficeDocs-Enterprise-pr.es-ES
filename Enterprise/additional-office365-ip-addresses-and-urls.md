@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumen: los nuevos servicios web de puntos de conexión no incluyen un número reducido de puntos de conexión para escenarios específicos.'
 hideEdit: true
-ms.openlocfilehash: 2e25ed32a6e88654f583b4bdca2ff04e6a4c96ff
-ms.sourcegitcommit: 0c4f50aa55699b8390038efbb8b50dbe10f3eefe
+ms.openlocfilehash: 02deeb06f73b836d95a738ca8566bc2554010aa4
+ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723377"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242092"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Los puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365
 
@@ -56,7 +56,7 @@ Aparte de DNS, estos son opcionales para la mayor parte de los clientes, salvo q
 | 10  | El servicio Detección automática se usa en escenarios de [Exchange híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) con [Autenticación moderna híbrida con Outlook para iOS y Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Servidor de Exchange local de cliente en TCP 443 | Tráfico de servidor entrante |
 | 11  | Skype Empresarial en Office 2016 incluye el uso compartido de pantalla basado en vídeo que usa los puertos UDP. Los clientes anteriores de Skype Empresarial de Office 2013 y versiones anteriores usaban RDP mediante un puerto TCP 443. | Puerto TCP 443 abierto para 52.112.0.0/14 | Versiones de cliente anteriores de Skype Empresarial en Office 2013 y versiones anteriores |
 | 12  | Conectividad de servidor local híbrido de Skype Empresarial para Skype Empresarial Online | 13.107.64.0/18, 52.112.0.0/14 puertos UDP 50,000-59,999 <BR>  Puertos TCP 50,000-59,999 | Conectividad de salida de servidor local de Skype Empresarial |
-| 13  | RTC en la nube con conectividad híbrida local requiere la conectividad de red abierta para los host locales Para más información acerca de las configuraciones híbridas de Skype Empresarial Online,  | vea [Solución híbrida de Skype Empresarial](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions) | Skype Empresarial híbrido local entrante |
+| 13  | RTC en la nube con conectividad híbrida local requiere la conectividad de red abierta para los host locales Para más información acerca de las configuraciones híbridas de Skype Empresarial Online,  | Consulte [Planear la conectividad híbrida entre Skype Empresarial Server y Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity) | Skype Empresarial híbrido local entrante |
 | 14  | **FQDN de autenticación e identidad** <br> Para que funcione, el FQDN ```secure.aadcdn.microsoftonline-p.com``` debe estar en el Internet Explorer (IE) del cliente o en su zona de sitios de confianza de Edge. |  | Sitios de confianza |
 | 15  |  **FQDN de Microsoft Teams** <br> Si usa Internet Explorer o Microsoft Edge, debe habilitar las cookies propias y de terceros y agregar los FQDN para Teams a los sitios de confianza. Esto es complementario a los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados en la fila 14. Para obtener más información, vea [Problemas conocidos de Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Sitios de confianza |
 | 16  |  **FQDN de SharePoint Online y OneDrive para la Empresa** <br> Todos los FQDN ". sharepoint.com" con "\<inquilino >" en el FQDN deben estar en la zona de sitios de confianza de Internet Explorer o Microsoft Edge del cliente para que funcionen. Además de los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados en la fila 14, necesitará agregar también estos puntos de conexión. |  | Sitios de confianza |
