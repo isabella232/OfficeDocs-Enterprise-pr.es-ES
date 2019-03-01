@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algunas redes empresariales restringen el acceso a ubicaciones de Internet genéricas o incluyen backhaul o procesamiento de tráfico de red substancial. Para garantizar que los equipos de redes como estos puedan tener acceso a Office 365, los administradores de red y de proxy deben administrar la lista de FQDN, direcciones URL y direcciones IP que componen la lista de puntos de conexión de Office 365. Estos deben agregarse a ruta directa, omisión de proxy o reglas de firewall y archivos PAC para garantizar que las solicitudes de red puedan alcanzar el alcance de Office 365.
-ms.openlocfilehash: 469c1fa91fc2695c4175a4eccea26a0ffc46c52a
-ms.sourcegitcommit: bc565081b64d374d43b1bf3bb3d92edaaa24e4c2
+ms.openlocfilehash: d9138dd5d583b684c82d525001faee4d06e0fbe5
+ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30176750"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341991"
 ---
 # <a name="managing-office-365-endpoints"></a>Administrar puntos de conexión de Office 365
 
@@ -75,7 +75,7 @@ Hay varios parámetros que puede pasar a la secuencia de comandos:
 |**ClientRequestId** <br/> |Esto es obligatorio y es un GUID que se pasa al servicio Web que representa al equipo cliente que realiza la llamada. <br/> |
 |**Instance** <br/> |La instancia del servicio Office 365, que es el valor predeterminado de todo el mundo. También se pasa al servicio Web. <br/> |
 |**TenantName** <br/> |El nombre del espacio empresarial de Office 365. Se pasa al servicio Web y se usa como un parámetro reemplazable en algunas direcciones URL de Office 365. <br/> |
-|**Type** <br/> |El tipo de archivo PAC de proxy que desea generar. <br/> |
+|**Tipo** <br/> |El tipo de archivo PAC de proxy que desea generar. <br/> |
 
 Este es otro ejemplo de cómo llamar al script de PowerShell con parámetros adicionales.
 
