@@ -1,5 +1,5 @@
 ---
-title: Planeación de capacidad y la carga de prueba de SharePoint Online
+title: Capacity planning and load testing SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,58 +12,47 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
-description: En este artículo se describe cómo se puede implementar en SharePoint Online sin tener que realizar las pruebas de carga tradicional como no está permitido.
-ms.openlocfilehash: 6a22ee089adc0817f5c52bbfee5f2b41d7e5d80c
-ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
+description: En este artículo se describe cómo se puede implementar en SharePoint Online sin realizar pruebas de carga tradicionales, ya que no está permitido.
+ms.openlocfilehash: ef5d6c043b4be2e8c5358a9c060459b4c6a92156
+ms.sourcegitcommit: 468c8e8d2f951e08cf50301445ad650ef17328aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27181031"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512725"
 ---
-# <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Planeación de capacidad y la carga de prueba de SharePoint Online
+# <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Planeación de la capacidad y pruebas de carga de SharePoint Online.
 
-En este artículo se describe cómo se puede implementar en SharePoint Online sin pruebas de carga tradicional, ya que las pruebas de carga no son recomendable.
+En este artículo se describe cómo implementar en SharePoint Online sin pruebas de carga tradicionales, ya que las pruebas de carga no se permiten en SharePoint Online. SharePoint Online es un servicio en la nube las capacidades de carga, el estado y el equilibrio general de carga en el servicio son administrados por Microsoft.
   
-Aunque no es recomendable, existen otras maneras, puede asegurarse de que carga activo pruebas en SharePoint Online un sitio no producirá una experiencia de usuario deficiente cuando el sitio se ha iniciado. 
+El mejor enfoque para garantizar el éxito de iniciar el sitio es seguir los principios básicos, prácticas y recomendaciones que se resaltan a continuación.
   
-Con SharePoint Online no es necesario que realizar la planeación de la capacidad, como esto se realiza automáticamente como parte de la oferta de servicio. Con los entornos local, las pruebas de carga se usan para validar la suposición de escala y, finalmente, busque el punto de interrupción de una granja de servidores; al saturar con carga. Con SharePoint Online, necesitamos hacer cosas de manera diferente. Que se va a un entorno de varios inquilino, tenemos que proteger a todos los inquilinos en la misma granja de servidores, por lo que se va a limitar automáticamente cualquier las pruebas de carga. Esto significa que se recibirá decepcionantes y potencialmente engañoso son resultados si se intenta cargar el entorno de prueba.
+Con los entornos locales, las pruebas de carga se usan para validar la hipótesis de escala y, en última instancia, buscar el punto de ruptura de una granja de servidores; mediante saturarla con la carga. Con SharePoint Online, debemos hacer cosas de manera diferente. Como un entorno multiempresa, debemos proteger todos los inquilinos de la misma granja de servidores, por lo que se limitarán automáticamente las pruebas de carga. Esto significa que recibirá los resultados que pueden ser disimulables y potencialmente engañosos si intenta cargar el entorno de prueba.
   
-Uno de los principales beneficios de SharePoint Online a través de una implementación local es la elasticidad de la nube. Nuestro entorno de gran escala está configurado para el servicio millones de usuarios de manera diaria por lo que es importante que se controlan capacidad eficazmente mediante la expansión automática de las granjas de servidores, tal y como y cuando sea necesario. En este artículo se explica la planificación para el crecimiento de la capacidad y la escala horizontal en su lugar. El artículo también trata los enfoques para usar que no requieren pruebas de carga.
+Una de las principales ventajas de SharePoint Online sobre una implementación local es la elasticidad de la nube. Nuestro entorno de gran escala está configurado para atender a millones de usuarios a diario, por lo que es importante que controle la capacidad con eficacia mediante el equilibrio y la expansión de las granjas de servidores. En el artículo también se describen los métodos para usar que no implican pruebas de carga, pero que implican las siguientes directrices que le ayudarán a que se inicie correctamente. 
   
-## <a name="how-office-365-predicts-load-and-expands-capacity"></a>Cómo Office 365 prevé carga y expande la capacidad
+Aunque el crecimiento es impredecible para cualquier inquilino de una granja de servidores, la suma de las solicitudes agregadas es predecible a lo largo del tiempo. Al identificar las tendencias de crecimiento en SharePoint Online, podemos planear la expansión futura.
+  
+Para usar la capacidad de manera eficaz y hacer frente a un crecimiento inesperado, en cualquier granja de servidores, tenemos automatización que realiza un seguimiento de la carga front-end y la escalabilidad hacia arriba, cuando sea necesario. Hay varias métricas que se usan con una de las principales cargas de CPU que se usa como señal para escalar verticalmente los servidores front-end. Además de esto y de lo que notará en el artículo, recomendamos un enfoque escalonado/Wave a medida que se escalan los entornos SQL de acuerdo con la carga y la demanda, y según las fases y las ondas, se permite la distribución correcta de la carga y el crecimiento. 
+  
+## <a name="how-do-i-plan-for-a-site-launch"></a>¿Cómo planeo el inicio de un sitio?
 
-Trabajo de administración de capacidad de SharePoint Online server se realiza a través de dos métodos:
-  
-- Previsión de la capacidad
-    
-- Equilibrio de carga en granjas de servidores de un solo servidor
-    
-A diferencia de planeación para un entorno local, para la previsión de capacidad en SharePoint Online, estamos capacitados para compilar las estadísticas y los posibles requisitos en cualquier grupo de servidor determinado de gráfico. La demanda agregada puede parecerse a las solicitudes en la zona (donde una zona es un grupo de granjas de servidores de SharePoint) línea de crecimiento en la imagen siguiente:
-  
-![Gráfico que muestra la capacidad de predicción: previsión](media/ca800cb6-cc59-451f-98bd-55e035489af3.png)
-  
-Mientras el crecimiento es impredecible en cualquier una granja de servidores, la suma de las solicitudes en una zona agregada es predecible. Mediante la identificación de las tendencias de crecimiento en SharePoint Online, podemos hacer planes de expansión en el futuro.
-  
-Para poder utilizar la capacidad de forma eficaz y abordar los problemas con el crecimiento inesperado, en cualquier conjunto de servidores, tenemos automatización que realiza un seguimiento de carga front-end y cambia la escala de copia de seguridad en su lugar, cuando sea necesario. La métrica principal que se usa como una señal para escalar front-termina es la carga de CPU. Nuestro objetivo consiste en mantener los momentos de mayor carga de CPU en un 40%. Esto es con el fin de tener suficiente búfer absorber los picos inesperados. Como carga enfoques 40% en estado estable, se agregue servidores front-end para granjas de servidores.
-  
-![Gráfico que muestra la capacidad de predicción: administrar granjas de servidores](media/6b2a8c63-24c1-4504-b7a3-3d3b3be2583a.png)
-  
-Servidores adicionales se pueden agregar rápidamente a una granja de servidores, los que anteriormente se han agregado a la zona mediante el uso de la previsión con. 
-  
-## <a name="how-do-i-plan-for-a-site-launch"></a>¿Cómo planeado para el lanzamiento de un sitio?
+### <a name="optimize-pages-by-following-recommended-guidelines"></a>Optimizar las páginas siguiendo las recomendaciones recomendadas
+Las páginas de una implementación local no deben tomarse tan solo como están en SharePoint Online sin revisarlas con las instrucciones recomendadas para SharePoint Online.
 
-Puede esperar a que la granja de servidores en el que se inicia el nuevo sitio automáticamente se supervisarán para que se agreguen nuevos servidores front-end, como se describió anteriormente. Por este motivo, no es necesario ninguna notificación para su lanzamiento del sitio nuevo.
+Se deben tener en cuenta algunos factores clave:
+- Las implementaciones locales pueden aprovechar las memorias caché del lado servidor tradicionales como la memoria caché de objetos, pero con las diferencias de topología en la nube, estas opciones no están disponibles.
+- Las páginas/características/personalizaciones usadas para el consumo de nube deben optimizarse para varias ubicaciones, de modo que los usuarios de diferentes áreas o regiones tengan una experiencia coherente. La nube ofrece optimizaciones como redes de entrega de contenido (CDN) para optimizar para una base de usuarios distribuidos.
+
+En el caso de las páginas de publicación clásicas de SharePoint Online, puede usar la extensión Chrome de la [herramienta de diagnóstico de páginas](https://aka.ms/perftool) que le ayudarán a analizar las principales páginas de aterrizaje usadas por los usuarios.
+Las herramientas de desarrollo F12 en el explorador o [Fiddler](https://www.telerik.com/download/fiddler) se pueden usar para revisar el peso de la página y se debe revisar y optimizar el número de llamadas y elementos que afectan a la carga de páginas general. Puede consultar una lista de recomendaciones, como el uso de redes de entrega de contenido y otras optimizaciones, en el artículo [Tune SharePoint Online performance](https://aka.ms/spoperformance) .
+
+### <a name="wave--phase-approach"></a>Enfoque de onda/fase
+El enfoque de enorme exclamación tradicional para los lanzamientos de sitios no permite la comprobación de que las personalizaciones, los orígenes externos, los servicios o los procesos se hayan probado a la escala adecuada. SharePoint como servicio también escala su capacidad en función del uso y el uso previsto y, aunque no es necesario que notifique el inicio del sitio, debe seguir las instrucciones siguientes para garantizar el éxito.
   
-Después de otras prácticas recomendadas para una sola página en SharePoint Online es poco probable que el lanzamiento de un nuevo sitio a incluso 100.000 usuarios tendrán ningún impacto en la granja de servidores.
-  
-Hay algunas estrategias para planear una versión de un nuevo sitio de SharePoint Online. Tal como se muestra en la siguiente imagen, a menudo es considerablemente superior a los que realmente se usa el sitio que la cantidad de usuarios que están invitados. Esta imagen muestra una estrategia de acerca de cómo implantar una versión. Este método no sólo contribuye a la carga de rendimiento, sino que también puede ayudar a identificar maneras de mejorar el sitio de SharePoint antes de la gran mayoría de los usuarios para verlo.
+Como se muestra en la siguiente imagen, a menudo el número de usuarios invitados es significativamente más alto que los que realmente usan el sitio. Esta imagen muestra una estrategia sobre cómo implementar una versión. Este método ayuda a identificar formas de mejorar el sitio de SharePoint antes de que lo vea la mayoría de los usuarios. También permite que se ponga en pausa una implementación si se encuentra con problemas en cualquiera de las fases/ondas, con lo que se limita el número potencial de usuarios que se ven afectados.
   
 ![Gráfico que muestra los usuarios invitados y activos](media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
   
-En la fase piloto, es buena obtener comentarios de los usuarios que la organización confía y sabe realizarán ser ocupado. En este modo, es posible evaluar cómo se utiliza el sistema, así como cómo va a realizar.
+En la fase piloto, es bueno obtener comentarios de los usuarios para los que la organización confía y que sabe que se va a usar. De este modo, es posible evaluar el modo en que se usa el sistema, así como el modo en que se realiza.
   
-Una vez hecho esto, comienza un roll out a todos los usuarios de ondas; obtener comentarios y revisar el rendimiento con regularidad. Esto tiene la ventaja de lentamente Introducción al sistema y realizar mejoras como el sistema obtiene usar más. Esto también nos permite reaccionar ante el aumento de la carga como el sitio se ha implantado a más usuarios.
-  
-Por último, mientras que las pruebas de carga están prohibidas, los clientes desean configurar ping periódicos para el servicio de disponibilidad de medida y la latencia. Esto permitirá identificar una línea de base para su sitio. Sin embargo, estos deben mantenerse a baja frecuencia para evitar la limitación de los problemas descritos anteriormente.
-  
-
+Durante cada una de las ondas, recopile los comentarios de los usuarios sobre las características, así como el rendimiento durante cada una de las ondas de implementación. Esto tiene la ventaja de que presenta lentamente el sistema y mejora a medida que el sistema obtiene más uso. Esto también nos permite reaccionar a la carga aumentada, ya que el sitio se implementa para más y más usuarios.
