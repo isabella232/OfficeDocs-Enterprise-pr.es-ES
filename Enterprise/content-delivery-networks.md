@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use esta información para obtener información sobre las redes de entrega de contenido (CDN) y cómo Office 365 las aprovecha. Las redes CDN ayudan a mantener Office 365 rápido y fiable para los usuarios finales. Con las redes CDN, los servicios en la nube como Office 365n descargar rápidamente contenido genérico, como iconos, al explorador de los usuarios cuando usan el servicio a través de un cliente web.
-ms.openlocfilehash: c38b4c1fae2a40ff702c4d2222ed534e11fa2fc3
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 0c44cb1a17b64f1b2f14cc34e1207f450dbd5bbf
+ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458340"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492960"
 ---
 # <a name="content-delivery-networks"></a>Redes de entrega de contenido
 
@@ -77,7 +77,7 @@ Estamos buscando continuamente nuevas formas de apoyar las necesidades de nuestr
   
 ## <a name="is-my-data-safe"></a>¿Mis datos son seguros?
 
-Nos preocupamos de ayudarle a garantizar que se protegen los datos que se ejecutan en su empresa. Los datos específicos del cliente almacenados en las CDN se cifran en tránsito y en reposo, y están protegidos por los mismos permisos de nivel de archivo que los datos que no se almacenan en una red CDN.
+Nos preocupamos de ayudarle a garantizar que se protegen los datos que se ejecutan en su empresa. Los datos específicos del cliente almacenados en las CDN se cifran en tránsito y en reposo.
 
 Los proveedores de CDN pueden tener estándares de privacidad y cumplimiento que difieren de los compromisos indicados por el centro de confianza de Office 365. Los datos que se almacenan en caché a través del servicio de red CDN pueden no cumplir con los términos de procesamiento de datos de Microsoft (DPT) y pueden estar fuera de los límites de cumplimiento del centro de confianza de Office 365.
 
@@ -89,7 +89,7 @@ Para obtener información detallada acerca de la privacidad y la protección de 
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>¿Cómo puedo proteger mi red con estos servicios de terceros?
 
-Aprovechar un amplio conjunto de servicios de asociados permite escalar Office 365 y cumplir los requisitos de disponibilidad, así como mejorar la experiencia del usuario al usar Office 365. Los servicios de terceros que Office 365 usa incluyen ambas listas de revocación de certificados; como crl.microsoft.com o sa.symcb.com, y CDN; como R3.res.Outlook.com. Cada FQDN de CDN que Office 365 usa es un FQDN personalizado para Office 365, si se le envía a un FQDN a petición de Office 365, puede estar seguro de que controlamos el FQDN y el contenido subyacente en esa ubicación.
+Aprovechar un amplio conjunto de servicios de asociados permite escalar Office 365 y cumplir los requisitos de disponibilidad, así como mejorar la experiencia del usuario al usar Office 365. Los servicios de terceros que Office 365 usa incluyen ambas listas de revocación de certificados; como crl.microsoft.com o sa.symcb.com, y CDN; como R3.res.Outlook.com. Cada FQDN de CDN que Office 365 usa es un FQDN personalizado para Office 365. Si se le envía a un FQDN a petición de Office 365, puede tener la certeza de que el proveedor de la red CDN controla el FQDN y el contenido subyacente en esa ubicación.
   
 Para los clientes que aún quieren segregar solicitudes dirigidas a un centro de información de Microsoft u Office 365 desde solicitudes destinadas a terceros, hemos escrito una guía sobre la administración de los [puntos de conexión de office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
   
@@ -99,6 +99,6 @@ Para los clientes que aún quieren segregar solicitudes dirigidas a un centro de
   
 Este es un vínculo breve que se puede usar para volver: [https://aka.ms/o365cdns](https://aka.ms/o365cdns)
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Recursos adicionales
 
 [Preguntas frecuentes sobre extremos de Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

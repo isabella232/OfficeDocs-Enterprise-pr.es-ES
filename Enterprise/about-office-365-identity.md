@@ -10,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
+- M365-security-compliance
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -17,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo se administra la identidad del usuario en Office 365.
-ms.openlocfilehash: 0b0dd133979a5f94f7f8322c532c61fd24719359
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 7b9a95d7d9c7fb19163518ad68409a22790d4c6e
+ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085429"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30372897"
 ---
 # <a name="understanding-office-365-identity-and-azure-active-directory"></a>Descripción de la identidad de Office 365 y Azure Active Directory
 
@@ -34,7 +35,7 @@ Es importante considerar detenidamente cuál de estos modelos de identidad y aut
 
 En función de si tiene o no tiene un entorno de Active Directory existente, tiene varias opciones para administrar los servicios de autenticación e identidad para sus usuarios con Office 365.
   
-### <a name="cloud-only"></a>Basada solo en la nube
+### <a name="cloud-only"></a>Solo de nube
 
 Con el modelo de solo nube, solo se administran las cuentas de usuario en Office 365. No es necesario ningún servidor local; Azure AD los ha administrado en la nube. Los usuarios se crean y administran en el centro de administración de Office 365 o mediante los cmdlets de [PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) de Windows PowerShell y la identidad y la autenticación se administran completamente en la nube de Azure ad. El modelo de solo nube suele ser una buena opción si: 
   

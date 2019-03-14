@@ -3,7 +3,7 @@ title: Por qué necesita usar PowerShell de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 03/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Resumen: comprenda por qué debe usar PowerShell de Office 365 para administrar Office 365, en algunos casos de manera más eficiente y, en otros casos, por necesidad.'
-ms.openlocfilehash: 9909d9665817646f7c70c66012af4b8762cceaa1
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 32110b56f1123e404b1eb7996a9af5d244874377
+ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897473"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30538998"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Por qué necesita usar PowerShell de Office 365
 
@@ -65,7 +65,7 @@ El Centro de administración de Office 365 muestra una gran cantidad de informac
   
 ![Ejemplo de la presentación de los usuarios y grupos en el centro de administración de Office 365](media/o365-powershell-users-and-groups.png)
   
-Para muchos propósitos, se muestra la información que necesita saber. Sin embargo, hay veces cuando se necesita más información. Por ejemplo, la concesión de licencias de Office 365 (y las características de Office 365 disponibles para un usuario) dependen en parte de la ubicación geográfica de dicho usuario. Las directivas y las características que se puede extender a un usuario que reside en los Estados Unidos podrían no ser el mismo que las directivas y las características que se puede extender a un usuario que reside en la India, o en Bélgica. Puede usar el centro de administración de Office 365 para determinar la ubicación geográfica de un usuario con estos pasos:
+Para muchos fines, se muestra la información que necesita saber. En cambio, algunas veces necesitará más. Por ejemplo, las licencias de Office 365 (y las características de Office 365 disponibles para un usuario) dependen en parte de la ubicación geográfica del usuario. Las directivas y características que se pueden extender a un usuario que vive en los Estados Unidos tal vez no sean las mismas que las directivas y características que se pueden extender a un usuario que vive en India o en Bélgica. Puede usar el Centro de administración de Office 365 para determinar la ubicación geográfica de un usuario con estos pasos:
   
 1. Haga doble clic en el **Nombre para mostrar** del usuario.
     
@@ -93,7 +93,6 @@ Este es un ejemplo del resultado:
 ```
 DisplayName                               UsageLocation
 -----------                               -------------
-Zrinka Makovac                            US
 Bonnie Kearney                            GB
 Fabrice Canel                             BR
 Brian Johnson (TAILSPIN)                  US
@@ -122,7 +121,6 @@ Bonnie Kearney                              GB
 Alex Darrow                                 US
 Anne Wallace                                US
 Brian Johnson (TAILSPIN)                    US
-Zrinka Makovac                              US
 ```
 
 > [!TIP]
@@ -274,7 +272,6 @@ Alex Darrow                              San Diego
 Bonnie Kearney                           San Diego
 Julian Isla                              Bloomington
 Rob Young                                Bloomington
-Zrinka Makovac                           San Diego
 ```
 
 > [!TIP]
@@ -329,7 +326,7 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>PowerShell de Office 365 permite imprimir o guardar datos fácilmente
 
-El centro de administración de Office 365 le permite ver listas de datos. Este es un ejemplo de la Skype para el centro de administración en línea de negocio, mostrar una lista de los usuarios que han sido habilitados para Skype para profesionales en línea:
+El centro de administración de Office 365 le permite ver las listas de datos. Este es un ejemplo del Centro de administración de Skype Empresarial Online en el que se muestra una lista de los usuarios habilitados para Skype Empresarial Online:
   
 ![Ejemplo del centro de administración de Skype Empresarial Online que muestra una lista de usuarios que han sido habilitados para Skype Empresarial Online](media/o365-powershell-lync-users.png)
   
@@ -407,7 +404,6 @@ Este es un ejemplo del resultado:
 ```
 DisplayName             IsLicensed   IsMailboxEnabled   EnabledForSfB
 -----------             ----------   ----------------   --------------
-Zrinka Makovac          True         True               True
 Bonnie Kearney          True         True               True
 Fabrice Canel           True         True               True
 Brian Johnson           False        True               False
