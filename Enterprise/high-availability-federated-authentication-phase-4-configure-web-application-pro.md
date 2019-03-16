@@ -1,9 +1,9 @@
 ---
-title: Alta disponibilidad federados servidores de proxy de aplicación de autenticación fase 4 configuración web
+title: Fase 4 de la autenticación federada de alta disponibilidad configurar servidores proxy de aplicación Web
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,92 +11,94 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
-description: 'Resumen: Configure los servidores de proxy de aplicación web para la autenticación federada de alta disponibilidad para Office 365 en Microsoft Azure.'
-ms.openlocfilehash: 69c1102326a00592d1f79bec4582fb8c9aa7f344
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: 'Resumen: Configure los servidores proxy de aplicación web para la autenticación federada de alta disponibilidad para Office 365 en Microsoft Azure.'
+ms.openlocfilehash: c5472c8c7268d39dd6d3ca5ef78bde9e4bdde7a3
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897433"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650113"
 ---
-# <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a><span data-ttu-id="0df65-103">Fase 4 de la autenticación federada de alta disponibilidad: Configurar los proxy de aplicación web</span><span class="sxs-lookup"><span data-stu-id="0df65-103">High availability federated authentication Phase 4: Configure web application proxies</span></span>
+# <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a><span data-ttu-id="06e01-103">Fase 4 de la autenticación federada de alta disponibilidad: configurar servidores proxy de aplicación Web</span><span class="sxs-lookup"><span data-stu-id="06e01-103">High availability federated authentication Phase 4: Configure web application proxies</span></span>
 
- <span data-ttu-id="0df65-104">**Resumen:** Configurar los servidores de proxy de aplicación web para la autenticación federada de alta disponibilidad para Office 365 en Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="0df65-104">**Summary:** Configure the web application proxy servers for your high availability federated authentication for Office 365 in Microsoft Azure.</span></span>
+ <span data-ttu-id="06e01-104">**Resumen:** Configure los servidores proxy de aplicación web para la autenticación federada de alta disponibilidad para Office 365 en Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="06e01-104">**Summary:** Configure the web application proxy servers for your high availability federated authentication for Office 365 in Microsoft Azure.</span></span>
   
-<span data-ttu-id="0df65-105">En esta fase de la implementación de alta disponibilidad para la autenticación federada de Office 365 en servicios de infraestructura de Azure, se crea un equilibrador de carga interno y dos servidores de AD FS.</span><span class="sxs-lookup"><span data-stu-id="0df65-105">In this phase of deploying high availability for Office 365 federated authentication in Azure infrastructure services, you create an internal load balancer and two AD FS servers.</span></span>
+<span data-ttu-id="06e01-105">En esta fase de la implementación de alta disponibilidad para la autenticación federada de Office 365 en servicios de infraestructura de Azure, se crea un equilibrador de carga interno y dos servidores de AD FS.</span><span class="sxs-lookup"><span data-stu-id="06e01-105">In this phase of deploying high availability for Office 365 federated authentication in Azure infrastructure services, you create an internal load balancer and two AD FS servers.</span></span>
   
-<span data-ttu-id="0df65-p101">Debe completar esta fase antes de pasar a en [alta disponibilidad federados autenticación fase 5: configurar la autenticación federada para Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Vea [autenticación federada de alta disponibilidad de implementación para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) para todas las fases.</span><span class="sxs-lookup"><span data-stu-id="0df65-p101">You must complete this phase before moving on to [High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). See [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) for all of the phases.</span></span>
+<span data-ttu-id="06e01-106">Debe completar esta fase antes de pasar a la [fase 5 de la autenticación federada de alta disponibilidad: configurar la autenticación federada para Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md).</span><span class="sxs-lookup"><span data-stu-id="06e01-106">You must complete this phase before moving on to [High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md).</span></span> <span data-ttu-id="06e01-107">Consulte todas las fases en [Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).</span><span class="sxs-lookup"><span data-stu-id="06e01-107">See [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) for all of the phases.</span></span>
   
-## <a name="create-the-internet-facing-load-balancer-in-azure"></a><span data-ttu-id="0df65-108">Crear el equilibrador de carga accesible desde Internet en Azure</span><span class="sxs-lookup"><span data-stu-id="0df65-108">Create the Internet-facing load balancer in Azure</span></span>
+## <a name="create-the-internet-facing-load-balancer-in-azure"></a><span data-ttu-id="06e01-108">Crear el equilibrador de carga accesible desde Internet en Azure</span><span class="sxs-lookup"><span data-stu-id="06e01-108">Create the Internet-facing load balancer in Azure</span></span>
 
-<span data-ttu-id="0df65-109">Debe crear un equilibrador de carga accesible desde Internet para que Azure distribuya el tráfico de autenticación de cliente entrante desde Internet de forma uniforme entre los dos servidores proxy de aplicación web.</span><span class="sxs-lookup"><span data-stu-id="0df65-109">You must create an Internet-facing load balancer so that Azure distributes the incoming client authentication traffic from the Internet evenly among the two web application proxy servers.</span></span>
+<span data-ttu-id="06e01-109">Debe crear un equilibrador de carga accesible desde Internet para que Azure distribuya el tráfico de autenticación de cliente entrante desde Internet uniformemente entre los dos servidores proxy de aplicación Web.</span><span class="sxs-lookup"><span data-stu-id="06e01-109">You must create an Internet-facing load balancer so that Azure distributes the incoming client authentication traffic from the Internet evenly among the two web application proxy servers.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="0df65-p102">Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span><span class="sxs-lookup"><span data-stu-id="0df65-p102">The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span></span> 
+> <span data-ttu-id="06e01-110">Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell.</span><span class="sxs-lookup"><span data-stu-id="06e01-110">The following command sets use the latest version of Azure PowerShell.</span></span> <span data-ttu-id="06e01-111">Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span><span class="sxs-lookup"><span data-stu-id="06e01-111">See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span></span> 
   
-<span data-ttu-id="0df65-112">Después de especificar los valores de grupo de recursos y ubicación, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en PowerShell ISE.</span><span class="sxs-lookup"><span data-stu-id="0df65-112">When you have supplied location and resource group values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
+<span data-ttu-id="06e01-112">Cuando haya proporcionado los valores de ubicación y grupo de recursos, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en PowerShell ISE.</span><span class="sxs-lookup"><span data-stu-id="06e01-112">When you have supplied location and resource group values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
   
+<!--
 > [!TIP]
-> <span data-ttu-id="0df65-113">Para un archivo de texto que tiene todos los comandos de PowerShell en este artículo y un libro de configuración de Microsoft Excel que genera bloques de comando de PowerShell listos para ejecutarse en función de su configuración personalizada, vea la autenticación federada para Office 365 [en Azure Kit de implementación de](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664).</span><span class="sxs-lookup"><span data-stu-id="0df65-113">For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664).</span></span> 
+> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+-->
   
 ```
 # Set up key variables
 $locName="<your Azure location>"
 $rgName="<Table R - Item 4 - Resource group name column>"
 
-$publicIP=New-AzureRmPublicIpAddress -ResourceGroupName $rgName -Name "WebProxyPublicIP" -Location $LocName -AllocationMethod "Static"
-$frontendIP=New-AzureRmLoadBalancerFrontendIpConfig -Name "WebAppProxyServers-LBFE" -PublicIpAddress $publicIP
-$beAddressPool=New-AzureRMLoadBalancerBackendAddressPoolConfig -Name "WebAppProxyServers-LBBE"
-$healthProbe=New-AzureRMLoadBalancerProbeConfig -Name "WebServersProbe" -Protocol "TCP" -Port 443 -IntervalInSeconds 15 -ProbeCount 2
-$lbrule=New-AzureRMLoadBalancerRuleConfig -Name "WebTraffic" -FrontendIpConfiguration $frontendIP -BackendAddressPool $beAddressPool -Probe $healthProbe -Protocol "TCP" -FrontendPort 443 -BackendPort 443
-New-AzureRMLoadBalancer -ResourceGroupName $rgName -Name "WebAppProxyServers" -Location $locName -LoadBalancingRule $lbrule -BackendAddressPool $beAddressPool -Probe $healthProbe -FrontendIpConfiguration $frontendIP
+$publicIP=New-AzPublicIpAddress -ResourceGroupName $rgName -Name "WebProxyPublicIP" -Location $LocName -AllocationMethod "Static"
+$frontendIP=New-AzLoadBalancerFrontendIpConfig -Name "WebAppProxyServers-LBFE" -PublicIpAddress $publicIP
+$beAddressPool=New-AzLoadBalancerBackendAddressPoolConfig -Name "WebAppProxyServers-LBBE"
+$healthProbe=New-AzLoadBalancerProbeConfig -Name "WebServersProbe" -Protocol "TCP" -Port 443 -IntervalInSeconds 15 -ProbeCount 2
+$lbrule=New-AzLoadBalancerRuleConfig -Name "WebTraffic" -FrontendIpConfiguration $frontendIP -BackendAddressPool $beAddressPool -Probe $healthProbe -Protocol "TCP" -FrontendPort 443 -BackendPort 443
+New-AzLoadBalancer -ResourceGroupName $rgName -Name "WebAppProxyServers" -Location $locName -LoadBalancingRule $lbrule -BackendAddressPool $beAddressPool -Probe $healthProbe -FrontendIpConfiguration $frontendIP
 ```
 
-<span data-ttu-id="0df65-114">Para mostrar la dirección IP pública asignada al equilibrador de carga accesible desde Internet, ejecute estos comandos en el símbolo del sistema de Azure PowerShell en el equipo local:</span><span class="sxs-lookup"><span data-stu-id="0df65-114">To display the public IP address assigned to your Internet-facing load balancer, run these commands at the Azure PowerShell command prompt on your local computer:</span></span>
+<span data-ttu-id="06e01-113">Para mostrar la dirección IP pública asignada al equilibrador de carga accesible desde Internet, ejecute estos comandos en el símbolo del sistema de Azure PowerShell en el equipo local:</span><span class="sxs-lookup"><span data-stu-id="06e01-113">To display the public IP address assigned to your Internet-facing load balancer, run these commands at the Azure PowerShell command prompt on your local computer:</span></span>
   
 ```
-Write-Host (Get-AzureRMPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgName).IPAddress
+Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgName).IPAddress
 ```
 
-## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a><span data-ttu-id="0df65-115">Determinar el FQDN de servicio de federación y crear registros DNS</span><span class="sxs-lookup"><span data-stu-id="0df65-115">Determine your federation service FQDN and create DNS records</span></span>
+## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a><span data-ttu-id="06e01-114">Determinar el FQDN del servicio de Federación y crear registros DNS</span><span class="sxs-lookup"><span data-stu-id="06e01-114">Determine your federation service FQDN and create DNS records</span></span>
 
-<span data-ttu-id="0df65-p103">Debe determinar el nombre DNS para identificar el nombre de servicio de federación en Internet. Azure AD Connect configurará Office 365 con este nombre en la fase 5, que pasará a formar parte de la dirección URL que Office 365 envía a los clientes que se conectan para obtener un token de seguridad. Un ejemplo es fs.contoso.com (fs se refiere a servicio de federación).</span><span class="sxs-lookup"><span data-stu-id="0df65-p103">You need to determine the DNS name to identify your federation service name on the Internet. Azure AD Connect will configure Office 365 with this name in Phase 5, which will become part of the URL that Office 365 sends to connecting clients to get a security token. An example is fs.contoso.com (fs stands for federation service).</span></span>
+<span data-ttu-id="06e01-115">Debe determinar el nombre DNS para identificar el nombre del servicio de Federación en Internet.</span><span class="sxs-lookup"><span data-stu-id="06e01-115">You need to determine the DNS name to identify your federation service name on the Internet.</span></span> <span data-ttu-id="06e01-116">Azure AD Connect configurará Office 365 con este nombre en la fase 5, que pasará a formar parte de la dirección URL que Office 365 envía a los clientes que se conectan para obtener un token de seguridad.</span><span class="sxs-lookup"><span data-stu-id="06e01-116">Azure AD Connect will configure Office 365 with this name in Phase 5, which will become part of the URL that Office 365 sends to connecting clients to get a security token.</span></span> <span data-ttu-id="06e01-117">Un ejemplo es fs.contoso.com (FS significa servicio de Federación).</span><span class="sxs-lookup"><span data-stu-id="06e01-117">An example is fs.contoso.com (fs stands for federation service).</span></span>
   
-<span data-ttu-id="0df65-119">Una vez que tiene el FQDN de servicio de federación, cree un registro D de dominio DNS público para el FQDN de servicio de federación que se resuelve en la dirección IP pública del equilibrador de carga de Azure accesible desde Internet.</span><span class="sxs-lookup"><span data-stu-id="0df65-119">Once you have your federation service FDQN, create a public DNS domain A record for the federation service FDQN that resolves to the public IP address of the Azure Internet-facing load balancer.</span></span>
+<span data-ttu-id="06e01-118">Una vez que tenga el servicio de Federación FQDN, cree un registro de dominio DNS público a para el servicio de Federación FQDN que se resuelve en la dirección IP pública del equilibrador de carga de Azure accesible desde Internet.</span><span class="sxs-lookup"><span data-stu-id="06e01-118">Once you have your federation service FDQN, create a public DNS domain A record for the federation service FDQN that resolves to the public IP address of the Azure Internet-facing load balancer.</span></span>
   
-|<span data-ttu-id="0df65-120">**Nombre**</span><span class="sxs-lookup"><span data-stu-id="0df65-120">**Name**</span></span>|<span data-ttu-id="0df65-121">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="0df65-121">**Type**</span></span>|<span data-ttu-id="0df65-122">**TTL**</span><span class="sxs-lookup"><span data-stu-id="0df65-122">**TTL**</span></span>|<span data-ttu-id="0df65-123">**Value**</span><span class="sxs-lookup"><span data-stu-id="0df65-123">**Value**</span></span>|
+|<span data-ttu-id="06e01-119">**Name**</span><span class="sxs-lookup"><span data-stu-id="06e01-119">**Name**</span></span>|<span data-ttu-id="06e01-120">**Type**</span><span class="sxs-lookup"><span data-stu-id="06e01-120">**Type**</span></span>|<span data-ttu-id="06e01-121">**TTL**</span><span class="sxs-lookup"><span data-stu-id="06e01-121">**TTL**</span></span>|<span data-ttu-id="06e01-122">**Value**</span><span class="sxs-lookup"><span data-stu-id="06e01-122">**Value**</span></span>|
 |:-----|:-----|:-----|:-----|
-|<span data-ttu-id="0df65-124">FQDN de servicio de federación</span><span class="sxs-lookup"><span data-stu-id="0df65-124">federation service FDQN</span></span>  <br/> |<span data-ttu-id="0df65-125">A</span><span class="sxs-lookup"><span data-stu-id="0df65-125">A</span></span>  <br/> |<span data-ttu-id="0df65-126">3600</span><span class="sxs-lookup"><span data-stu-id="0df65-126">3600</span></span>  <br/> |<span data-ttu-id="0df65-127">Dirección IP pública del equilibrador de carga de Azure accesible desde Internet (mostrado por el comando **Write-Host** en la sección anterior)</span><span class="sxs-lookup"><span data-stu-id="0df65-127">public IP address of the Azure Internet-facing load balancer (displayed by the **Write-Host** command in the previous section)</span></span> <br/> |
+|<span data-ttu-id="06e01-123">servicio de Federación FQDN</span><span class="sxs-lookup"><span data-stu-id="06e01-123">federation service FDQN</span></span>  <br/> |<span data-ttu-id="06e01-124">A</span><span class="sxs-lookup"><span data-stu-id="06e01-124">A</span></span>  <br/> |<span data-ttu-id="06e01-125">3600</span><span class="sxs-lookup"><span data-stu-id="06e01-125">3600</span></span>  <br/> |<span data-ttu-id="06e01-126">Dirección IP pública del equilibrador de carga de Azure accesible desde Internet (mostrado por el comando **write-host** en la sección anterior)</span><span class="sxs-lookup"><span data-stu-id="06e01-126">public IP address of the Azure Internet-facing load balancer (displayed by the **Write-Host** command in the previous section)</span></span> <br/> |
    
-<span data-ttu-id="0df65-128">Aquí le mostramos un ejemplo:</span><span class="sxs-lookup"><span data-stu-id="0df65-128">Here is an example:</span></span>
+<span data-ttu-id="06e01-127">Aquí le mostramos un ejemplo:</span><span class="sxs-lookup"><span data-stu-id="06e01-127">Here is an example:</span></span>
   
-|<span data-ttu-id="0df65-129">**Nombre**</span><span class="sxs-lookup"><span data-stu-id="0df65-129">**Name**</span></span>|<span data-ttu-id="0df65-130">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="0df65-130">**Type**</span></span>|<span data-ttu-id="0df65-131">**TTL**</span><span class="sxs-lookup"><span data-stu-id="0df65-131">**TTL**</span></span>|<span data-ttu-id="0df65-132">**Value**</span><span class="sxs-lookup"><span data-stu-id="0df65-132">**Value**</span></span>|
+|<span data-ttu-id="06e01-128">**Name**</span><span class="sxs-lookup"><span data-stu-id="06e01-128">**Name**</span></span>|<span data-ttu-id="06e01-129">**Type**</span><span class="sxs-lookup"><span data-stu-id="06e01-129">**Type**</span></span>|<span data-ttu-id="06e01-130">**TTL**</span><span class="sxs-lookup"><span data-stu-id="06e01-130">**TTL**</span></span>|<span data-ttu-id="06e01-131">**Value**</span><span class="sxs-lookup"><span data-stu-id="06e01-131">**Value**</span></span>|
 |:-----|:-----|:-----|:-----|
-|<span data-ttu-id="0df65-133">FS.contoso.com</span><span class="sxs-lookup"><span data-stu-id="0df65-133">fs.contoso.com</span></span>  <br/> |<span data-ttu-id="0df65-134">A</span><span class="sxs-lookup"><span data-stu-id="0df65-134">A</span></span>  <br/> |<span data-ttu-id="0df65-135">3600</span><span class="sxs-lookup"><span data-stu-id="0df65-135">3600</span></span>  <br/> |<span data-ttu-id="0df65-136">131.107.249.117</span><span class="sxs-lookup"><span data-stu-id="0df65-136">131.107.249.117</span></span>  <br/> |
+|<span data-ttu-id="06e01-132">FS.contoso.com</span><span class="sxs-lookup"><span data-stu-id="06e01-132">fs.contoso.com</span></span>  <br/> |<span data-ttu-id="06e01-133">A</span><span class="sxs-lookup"><span data-stu-id="06e01-133">A</span></span>  <br/> |<span data-ttu-id="06e01-134">3600</span><span class="sxs-lookup"><span data-stu-id="06e01-134">3600</span></span>  <br/> |<span data-ttu-id="06e01-135">131.107.249.117</span><span class="sxs-lookup"><span data-stu-id="06e01-135">131.107.249.117</span></span>  <br/> |
    
-<span data-ttu-id="0df65-137">Después, agregue un registro de dirección DNS al espacio de nombres DNS privado de la organización que resuelva el FQDN de servicio de federación en la dirección IP privada asignada al equilibrador de carga interno para los servidores de AD FS (tabla I, elemento 4, columna Valor).</span><span class="sxs-lookup"><span data-stu-id="0df65-137">Next, add a DNS address record to your organization's private DNS namespace that resolves your federation service FQDN to the private IP address assigned to the internal load balancer for the AD FS servers (Table I, item 4, Value column).</span></span>
+<span data-ttu-id="06e01-136">A continuación, agregue un registro de dirección DNS al espacio de nombres DNS privado de su organización que resuelva el FQDN del servicio de Federación en la dirección IP privada asignada al equilibrador de carga interno para los servidores AD FS (tabla I, elemento 4, columna valor).</span><span class="sxs-lookup"><span data-stu-id="06e01-136">Next, add a DNS address record to your organization's private DNS namespace that resolves your federation service FQDN to the private IP address assigned to the internal load balancer for the AD FS servers (Table I, item 4, Value column).</span></span>
   
-## <a name="create-the-web-application-proxy-server-virtual-machines-in-azure"></a><span data-ttu-id="0df65-138">Crear las máquinas virtuales de servidor proxy de aplicación web en Azure</span><span class="sxs-lookup"><span data-stu-id="0df65-138">Create the web application proxy server virtual machines in Azure</span></span>
+## <a name="create-the-web-application-proxy-server-virtual-machines-in-azure"></a><span data-ttu-id="06e01-137">Crear las máquinas virtuales del servidor de proxy de aplicación web en Azure</span><span class="sxs-lookup"><span data-stu-id="06e01-137">Create the web application proxy server virtual machines in Azure</span></span>
 
-<span data-ttu-id="0df65-139">Use el siguiente bloque de comandos de Azure PowerShell para crear las máquinas virtuales para los dos servidores proxy de aplicación web. </span><span class="sxs-lookup"><span data-stu-id="0df65-139">Use the following block of Azure PowerShell commands to create the virtual machines for the two web application proxy servers.</span></span> 
+<span data-ttu-id="06e01-138">Use el siguiente bloque de comandos de Azure PowerShell para crear las máquinas virtuales para los dos servidores proxy de aplicación Web.</span><span class="sxs-lookup"><span data-stu-id="06e01-138">Use the following block of Azure PowerShell commands to create the virtual machines for the two web application proxy servers.</span></span> 
   
-<span data-ttu-id="0df65-140">Tenga en cuenta que los siguientes conjuntos de comandos de Azure PowerShell usan valores de las tablas siguientes:</span><span class="sxs-lookup"><span data-stu-id="0df65-140">Note that the following Azure PowerShell command sets use values from the following tables:</span></span>
+<span data-ttu-id="06e01-139">Tenga en cuenta que los siguientes conjuntos de comandos de Azure PowerShell usan valores de las tablas siguientes:</span><span class="sxs-lookup"><span data-stu-id="06e01-139">Note that the following Azure PowerShell command sets use values from the following tables:</span></span>
   
-- <span data-ttu-id="0df65-141">Tabla N, para las máquinas virtuales</span><span class="sxs-lookup"><span data-stu-id="0df65-141">Table M, for your virtual machines</span></span>
+- <span data-ttu-id="06e01-140">Tabla N, para las máquinas virtuales</span><span class="sxs-lookup"><span data-stu-id="06e01-140">Table M, for your virtual machines</span></span>
     
-- <span data-ttu-id="0df65-142">Tabla R, para los grupos de recursos</span><span class="sxs-lookup"><span data-stu-id="0df65-142">Table R, for your resource groups</span></span>
+- <span data-ttu-id="06e01-141">Tabla R, para los grupos de recursos</span><span class="sxs-lookup"><span data-stu-id="06e01-141">Table R, for your resource groups</span></span>
     
-- <span data-ttu-id="0df65-143">Tabla V, para la configuración de la red virtual</span><span class="sxs-lookup"><span data-stu-id="0df65-143">Table V, for your virtual network settings</span></span>
+- <span data-ttu-id="06e01-142">Tabla V, para la configuración de la red virtual</span><span class="sxs-lookup"><span data-stu-id="06e01-142">Table V, for your virtual network settings</span></span>
     
-- <span data-ttu-id="0df65-144">Tabla S, para las subredes</span><span class="sxs-lookup"><span data-stu-id="0df65-144">Table S, for your subnets</span></span>
+- <span data-ttu-id="06e01-143">Tabla S, para las subredes</span><span class="sxs-lookup"><span data-stu-id="06e01-143">Table S, for your subnets</span></span>
     
-- <span data-ttu-id="0df65-145">Tabla I, para las direcciones IP estáticas</span><span class="sxs-lookup"><span data-stu-id="0df65-145">Table I, for your static IP addresses</span></span>
+- <span data-ttu-id="06e01-144">Tabla I, para las direcciones IP estáticas</span><span class="sxs-lookup"><span data-stu-id="06e01-144">Table I, for your static IP addresses</span></span>
     
-- <span data-ttu-id="0df65-146">Tabla A, para los conjuntos de disponibilidad</span><span class="sxs-lookup"><span data-stu-id="0df65-146">Table A, for your availability sets</span></span>
+- <span data-ttu-id="06e01-145">Tabla A, para los conjuntos de disponibilidad</span><span class="sxs-lookup"><span data-stu-id="06e01-145">Table A, for your availability sets</span></span>
     
-<span data-ttu-id="0df65-147">Recuerde que definido M de tabla en [alta disponibilidad federados autenticación fase 2: configurar controladores de dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) y tablas R, V, S, I y A en [alta disponibilidad federados autenticación fase 1: configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span><span class="sxs-lookup"><span data-stu-id="0df65-147">Recall that you defined Table M in [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I, and A in [High availability federated authentication Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span></span>
+<span data-ttu-id="06e01-146">Recuerde que ha definido la tabla M en la [fase 2 de la autenticación federada de alta disponibilidad: configurar los controladores de dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) y las tablas R, V, S, I y A en la [fase 1 de la autenticación federada de alta disponibilidad: configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span><span class="sxs-lookup"><span data-stu-id="06e01-146">Recall that you defined Table M in [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I, and A in [High availability federated authentication Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span></span>
   
-<span data-ttu-id="0df65-148">Después de especificar todos los valores correctos, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en PowerShell ISE.</span><span class="sxs-lookup"><span data-stu-id="0df65-148">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
+<span data-ttu-id="06e01-147">Después de especificar todos los valores correctos, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en PowerShell ISE.</span><span class="sxs-lookup"><span data-stu-id="06e01-147">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
   
 ```
 # Set up variables common to both virtual machines
@@ -108,13 +110,13 @@ $rgNameTier="<Table R - Item 3 - Resource group name column>"
 $rgNameInfra="<Table R - Item 4 - Resource group name column>"
 
 $rgName=$rgNameInfra
-$vnet=Get-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
-$subnet=Get-AzureRmVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnetName
-$backendSubnet=Get-AzureRMVirtualNetworkSubnetConfig -Name $subnetName -VirtualNetwork $vnet
-$webLB=Get-AzureRMLoadBalancer -ResourceGroupName $rgName -Name "WebAppProxyServers"
+$vnet=Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
+$subnet=Get-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnetName
+$backendSubnet=Get-AzVirtualNetworkSubnetConfig -Name $subnetName -VirtualNetwork $vnet
+$webLB=Get-AzLoadBalancer -ResourceGroupName $rgName -Name "WebAppProxyServers"
 
 $rgName=$rgNameTier
-$avSet=Get-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName
+$avSet=Get-AzAvailabilitySet -Name $avName -ResourceGroupName $rgName
 
 # Create the first web application proxy server virtual machine
 $vmName="<Table M - Item 6 - Virtual machine name column>"
@@ -122,15 +124,15 @@ $vmSize="<Table M - Item 6 - Minimum size column>"
 $staticIP="<Table I - Item 7 - Value column>"
 $diskStorageType="<Table M - Item 6 - Storage type column>"
 
-$nic=New-AzureRMNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $backendSubnet -LoadBalancerBackendAddressPool $webLB.BackendAddressPools[0] -PrivateIpAddress $staticIP
-$vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
+$nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $backendSubnet -LoadBalancerBackendAddressPool $webLB.BackendAddressPools[0] -PrivateIpAddress $staticIP
+$vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
 
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for the first web application proxy server." 
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 # Create the second web application proxy virtual machine
 $vmName="<Table M - Item 7 - Virtual machine name column>"
@@ -138,38 +140,38 @@ $vmSize="<Table M - Item 7 - Minimum size column>"
 $staticIP="<Table I - Item 8 - Value column>"
 $diskStorageType="<Table M - Item 7 - Storage type column>"
 
-$nic=New-AzureRMNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName  -Subnet $backendSubnet -LoadBalancerBackendAddressPool $webLB.BackendAddressPools[0] -PrivateIpAddress $staticIP
-$vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
+$nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName  -Subnet $backendSubnet -LoadBalancerBackendAddressPool $webLB.BackendAddressPools[0] -PrivateIpAddress $staticIP
+$vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
 
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for the second web application proxy server." 
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> <span data-ttu-id="0df65-p104">Como estas máquinas virtuales son para una aplicación de intranet, no se les asigna una dirección IP pública ni una etiqueta de nombre de dominio DNS, ni se exponen a Internet. Pero esto también quiere decir que no podrá conectarse a ellas desde Azure Portal. La opción **Conectar** no estará disponible al consultar las propiedades de la máquina virtual. Use la herramienta Conexión a Escritorio remoto u otra herramienta de Escritorio remoto para conectarse a la máquina virtual con su dirección IP privada o con el nombre DNS de la intranet y las credenciales de la cuenta de administrador local.</span><span class="sxs-lookup"><span data-stu-id="0df65-p104">Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet. However, this also means that you cannot connect to them from the Azure portal. The **Connect** option is unavailable when you view the properties of the virtual machine. Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name and the credentials of the local administrator account.</span></span>
+> <span data-ttu-id="06e01-148">Como estas máquinas virtuales son para una aplicación de intranet, no se les asigna una dirección IP pública ni una etiqueta de nombre de dominio DNS, ni se exponen a Internet.</span><span class="sxs-lookup"><span data-stu-id="06e01-148">Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet.</span></span> <span data-ttu-id="06e01-149">Pero esto también quiere decir que no podrá conectarse a estas desde Azure Portal.</span><span class="sxs-lookup"><span data-stu-id="06e01-149">However, this also means that you cannot connect to them from the Azure portal.</span></span> <span data-ttu-id="06e01-150">La opción **Conectar** no estará disponible al ver las propiedades de la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="06e01-150">The **Connect** option is unavailable when you view the properties of the virtual machine.</span></span> <span data-ttu-id="06e01-151">Use el accesorio conexión a escritorio remoto u otra herramienta de escritorio remoto para conectarse a la máquina virtual usando su dirección IP privada o el nombre DNS de la intranet y las credenciales de la cuenta de administrador local.</span><span class="sxs-lookup"><span data-stu-id="06e01-151">Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name and the credentials of the local administrator account.</span></span>
   
-<span data-ttu-id="0df65-153">Esta es la configuración completada después de la finalización correcta de esta fase, con los nombres de equipo de marcadores de posición.</span><span class="sxs-lookup"><span data-stu-id="0df65-153">Here is the configuration resulting from the successful completion of this phase, with placeholder computer names.</span></span>
+<span data-ttu-id="06e01-152">Esta es la configuración completada después de la finalización correcta de esta fase, con los nombres de equipo de marcadores de posición.</span><span class="sxs-lookup"><span data-stu-id="06e01-152">Here is the configuration resulting from the successful completion of this phase, with placeholder computer names.</span></span>
   
-<span data-ttu-id="0df65-154">**Fase 4: El equilibrador de carga accesible desde Internet y los servidores proxy de aplicación web para la infraestructura de autenticación federada de alta disponibilidad en Azure**</span><span class="sxs-lookup"><span data-stu-id="0df65-154">**Phase 4: The Internet-facing load balancer and web application proxy servers for your high availability federated authentication infrastructure in Azure**</span></span>
+<span data-ttu-id="06e01-153">**Fase 4: el equilibrador de carga accesible desde Internet y los servidores proxy de aplicación web para la infraestructura de autenticación federada de alta disponibilidad en Azure**</span><span class="sxs-lookup"><span data-stu-id="06e01-153">**Phase 4: The Internet-facing load balancer and web application proxy servers for your high availability federated authentication infrastructure in Azure**</span></span>
 
-![Fase 4 de la infraestructura de la autenticación federada de Office 365 con alta disponibilidad en Azure con los servidores proxy de la aplicación web](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Fase 4 de la infraestructura de autenticación federada de Office 365 de alta disponibilidad en Azure con los servidores proxy de aplicación Web](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
-## <a name="next-step"></a><span data-ttu-id="0df65-156">Siguiente paso</span><span class="sxs-lookup"><span data-stu-id="0df65-156">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="06e01-155">Paso siguiente</span><span class="sxs-lookup"><span data-stu-id="06e01-155">Next step</span></span>
 
-<span data-ttu-id="0df65-157">Use [High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) para seguir configurando esta carga de trabajo.</span><span class="sxs-lookup"><span data-stu-id="0df65-157">Use [High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) to continue configuring this workload.</span></span>
+<span data-ttu-id="06e01-156">Use la [fase 5 de la autenticación federada de alta disponibilidad: configurar la autenticación federada para Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) para seguir configurando esta carga de trabajo.</span><span class="sxs-lookup"><span data-stu-id="06e01-156">Use [High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) to continue configuring this workload.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="0df65-158">Vea también</span><span class="sxs-lookup"><span data-stu-id="0df65-158">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="06e01-157">Vea también</span><span class="sxs-lookup"><span data-stu-id="06e01-157">See Also</span></span>
 
-[<span data-ttu-id="0df65-159">Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure</span><span class="sxs-lookup"><span data-stu-id="0df65-159">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[<span data-ttu-id="06e01-158">Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure</span><span class="sxs-lookup"><span data-stu-id="06e01-158">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[<span data-ttu-id="0df65-160">Identidad federada para el entorno de desarrollo y pruebas de Office 365</span><span class="sxs-lookup"><span data-stu-id="0df65-160">Federated identity for your Office 365 dev/test environment</span></span>](federated-identity-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="06e01-159">Identidad federada para el entorno de desarrollo y pruebas de Office 365</span><span class="sxs-lookup"><span data-stu-id="06e01-159">Federated identity for your Office 365 dev/test environment</span></span>](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[<span data-ttu-id="0df65-161">Adopción de la nube y soluciones híbridas</span><span class="sxs-lookup"><span data-stu-id="0df65-161">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="06e01-160">Adopción de la nube y soluciones híbridas</span><span class="sxs-lookup"><span data-stu-id="06e01-160">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
-[<span data-ttu-id="0df65-162">Opciones de autenticación federada</span><span class="sxs-lookup"><span data-stu-id="0df65-162">Federated authentication options</span></span>](about-office-365-identity.md#federated-authentication-options)
+[<span data-ttu-id="06e01-161">Opciones de autenticación federada</span><span class="sxs-lookup"><span data-stu-id="06e01-161">Federated authentication options</span></span>](about-office-365-identity.md#federated-authentication-options)
 
 
