@@ -1,9 +1,9 @@
 ---
-title: Alta disponibilidad federados controladores de dominio de fase 2 Configuración de autenticación
+title: Fase 2 de la autenticación federada de alta disponibilidad configurar controladores de dominio
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/09/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Resumen: Configure los controladores de dominio y el servidor de DirSync para la autenticación federada de alta disponibilidad para Office 365 en Microsoft Azure.'
-ms.openlocfilehash: 88e96c8173a209eb9a0a371b65eacda769e1f50f
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 5ca31f33ef75aeb00dee724dfc6bc86df51cbfef
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897223"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650133"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio
 
@@ -28,7 +28,7 @@ En esta fase de la implementación de alta disponibilidad para la autenticación
 > [!NOTE]
 > Servicios de federación de Active Directory (AD FS) no puede usar Azure Active Directory Domain Services como un sustituto para los controladores de dominio de Windows Server AD. 
   
-Debe completar esta fase antes de pasar a en [alta disponibilidad federados de autenticación en la fase 3: configuración de servidores de AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Vea [autenticación federada de alta disponibilidad de implementación para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) para todas las fases.
+Debe completar esta fase para poder pasar a la [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Consulte todas las fases en [Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Crear las máquinas virtuales del controlador de dominio en Azure
 
@@ -39,16 +39,16 @@ Primero, necesita rellenar la columna de **Nombre de la máquina virtual** de la
 |1.  <br/> |![](./media/Common-Images/TableLine.png) (primer controlador de dominio, ejemplo DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png) (segundo controlador de dominio, ejemplo DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)(Servidor de sincronización de directorios, ejemplo DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![](./media/Common-Images/TableLine.png)(primer servidor AD FS, ejemplo ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![](./media/Common-Images/TableLine.png)(segundo servidor AD FS, ejemplo ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./media/Common-Images/TableLine.png)(primera aplicación servidor proxy web, ejemplo WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./media/Common-Images/TableLine.png)(segunda aplicación servidor proxy web, ejemplo WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png)(primer servidor de AD FS, ejemplo ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./media/Common-Images/TableLine.png)(segundo servidor de AD FS, ejemplo ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./media/Common-Images/TableLine.png)(primer servidor proxy de aplicación Web, ejemplo WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./media/Common-Images/TableLine.png)(segundo servidor de proxy de aplicación Web, de ejemplo, WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
- **Tabla M - máquinas virtuales para la autenticación federada de alta disponibilidad para Office 365 en Azure**
+ **Tabla M: máquinas virtuales para la autenticación federada de alta disponibilidad para Office 365 en Azure**
   
 Para obtener la lista completa de tamaños de máquinas virtuales, vea [Tamaños de máquinas virtuales](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
   
-El siguiente bloque de comandos de Windows Azure PowerShell crea las máquinas virtuales para los dos controladores de dominio. Especifique los valores para las variables, quitar el \< y > caracteres. Tenga en cuenta que este bloque de comandos de Windows Azure PowerShell usa los valores de las tablas siguientes:
+El siguiente bloque de comandos de Azure PowerShell crea las máquinas virtuales de los dos controladores de dominio. Especifique los valores de las variables, quitando \< los caracteres y >. Tenga en cuenta que este bloque de comandos de Azure PowerShell usa valores de las siguientes tablas:
   
 - Tabla N, para las máquinas virtuales
     
@@ -62,15 +62,17 @@ El siguiente bloque de comandos de Windows Azure PowerShell crea las máquinas v
     
 - Tabla A, para los conjuntos de disponibilidad
     
-Recuerde que definido tablas R, V, S, I y A en [alta disponibilidad federados autenticación fase 1: configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Recuerde que definió las tablas R, V, S, I y A en la [fase 1 de la autenticación federada de alta disponibilidad: configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
 > Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Después de especificar todos los valores correctos, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en el Entorno de scripting integrado (ISE) de PowerShell en el equipo local.
   
+<!--
 > [!TIP]
-> Para un archivo de texto que tiene todos los comandos de PowerShell en este artículo y un libro de configuración de Microsoft Excel que genera bloques de comando de PowerShell listos para ejecutarse en función de su configuración personalizada, vea la autenticación federada para Office 365 [en Azure Kit de implementación de](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+-->
   
 ```
 # Set up variables common to both virtual machines
@@ -82,11 +84,11 @@ $rgNameTier="<Table R - Item 1 - Resource group name column>"
 $rgNameInfra="<Table R - Item 4 - Resource group name column>"
 
 $rgName=$rgNameInfra
-$vnet=Get-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
-$subnet=Get-AzureRmVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnetName
+$vnet=Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
+$subnet=Get-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnetName
 
 $rgName=$rgNameTier
-$avSet=Get-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName 
+$avSet=Get-AzAvailabilitySet -Name $avName -ResourceGroupName $rgName 
 
 # Create the first domain controller
 $vmName="<Table M - Item 1 - Virtual machine name column>"
@@ -95,17 +97,17 @@ $staticIP="<Table I - Item 1 - Value column>"
 $diskStorageType="<Table M - Item 1 - Storage type column>"
 $diskSize=<size of the extra disk for Windows Server AD data in GB>
 
-$nic=New-AzureRMNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
-$vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
-$diskConfig=New-AzureRmDiskConfig -AccountType $diskStorageType -Location $locName -CreateOption Empty -DiskSizeGB $diskSize
-$dataDisk1=New-AzureRmDisk -DiskName ($vmName + "-DataDisk1") -Disk $diskConfig -ResourceGroupName $rgName
-$vm=Add-AzureRmVMDataDisk -VM $vm -Name ($vmName + "-DataDisk1") -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
+$nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
+$vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
+$diskConfig=New-AzDiskConfig -AccountType $diskStorageType -Location $locName -CreateOption Empty -DiskSizeGB $diskSize
+$dataDisk1=New-AzDisk -DiskName ($vmName + "-DataDisk1") -Disk $diskConfig -ResourceGroupName $rgName
+$vm=Add-AzVMDataDisk -VM $vm -Name ($vmName + "-DataDisk1") -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for the first domain controller." 
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 # Create the second domain controller
 $vmName="<Table M - Item 2 - Virtual machine name column>"
@@ -114,17 +116,17 @@ $staticIP="<Table I - Item 2 - Value column>"
 $diskStorageType="<Table M - Item 2 - Storage type column>"
 $diskSize=<size of the extra disk for Windows Server AD data in GB>
 
-$nic=New-AzureRMNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
-$vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
-$diskConfig=New-AzureRmDiskConfig -AccountType $diskStorageType -Location $locName -CreateOption Empty -DiskSizeGB $diskSize
-$dataDisk1=New-AzureRmDisk -DiskName ($vmName + "-DataDisk1") -Disk $diskConfig -ResourceGroupName $rgName
-$vm=Add-AzureRmVMDataDisk -VM $vm -Name ($vmName + "-DataDisk1") -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
+$nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
+$vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
+$diskConfig=New-AzDiskConfig -AccountType $diskStorageType -Location $locName -CreateOption Empty -DiskSizeGB $diskSize
+$dataDisk1=New-AzDisk -DiskName ($vmName + "-DataDisk1") -Disk $diskConfig -ResourceGroupName $rgName
+$vm=Add-AzVMDataDisk -VM $vm -Name ($vmName + "-DataDisk1") -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for the second domain controller." 
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 # Create the DirSync server
 $vmName="<Table M - Item 3 - Virtual machine name column>"
@@ -132,25 +134,25 @@ $vmSize="<Table M - Item 3 - Minimum size column>"
 $staticIP="<Table I - Item 3 - Value column>"
 $diskStorageType="<Table M - Item 3 - Storage type column>"
 
-$nic=New-AzureRMNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
-$vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize
+$nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
+$vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize
 
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for the DirSync server." 
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Debido a que estas máquinas virtuales son para una aplicación de intranet, no se asigna una dirección IP pública o una etiqueta de nombre de dominio DNS y expuestos a Internet. Sin embargo, esto también significa que no se puede conectar a ellos desde el portal de Azure. La opción **Conectar** no está disponible cuando se visualizan las propiedades de la máquina virtual. Utilice el accesorio de conexión a Escritorio remoto u otra herramienta de escritorio remoto para conectarse a la máquina virtual con su privada dirección IP o intranet DNS nombre.
+> Como estas máquinas virtuales son para una aplicación de intranet, no se les asigna una dirección IP pública ni una etiqueta de nombre de dominio DNS, ni se exponen a Internet. Pero esto también quiere decir que no podrá conectarse a estas desde Azure Portal. La opción **Conectar** no estará disponible al ver las propiedades de la máquina virtual. Use la herramienta Conexión a Escritorio remoto u otra herramienta de Escritorio remoto para conectarse a la máquina virtual con su dirección IP privada o con el nombre DNS de la intranet.
   
 ## <a name="configure-the-first-domain-controller"></a>Configurar el primer controlador de dominio
 
 Use el cliente de Escritorio remoto que prefiera y cree una conexión a Escritorio remoto a la máquina virtual del primer controlador de dominio. Use el nombre DNS de la intranet o el nombre de equipo y las credenciales de la cuenta de administrador local.
   
-A continuación, agregue el disco de datos adicionales para el primer controlador de dominio con este comando desde un Windows PowerShell el símbolo del sistema **en la primera máquina virtual de controlador de dominio**:
+A continuación, agregue el disco de datos adicional al primer controlador de dominio con este comando desde un símbolo del sistema de Windows PowerShell **en la máquina virtual del primer controlador de dominio**:
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -175,7 +177,7 @@ Se le pedirá que especifique las credenciales de una cuenta de administrador de
 
 Use el cliente de Escritorio remoto que prefiera y cree una conexión a Escritorio remoto a la máquina virtual del segundo controlador de dominio. Use el nombre DNS de la intranet o el nombre de equipo y las credenciales de la cuenta de administrador local.
   
-A continuación, deberá agregar el disco de datos adicionales para el segundo controlador de dominio con este comando desde un Windows PowerShell el símbolo del sistema **en la máquina virtual de controlador de dominio segundo**:
+A continuación, necesita agregar el disco de datos adicional al segundo controlador de dominio con este comando desde un símbolo del sistema de Windows PowerShell **en la máquina virtual del segundo controlador de dominio**:
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -193,7 +195,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 Se le pedirá que especifique las credenciales de una cuenta de administrador de dominio. Se reiniciará el equipo.
   
-A continuación, deberá actualizar los servidores DNS de la red virtual, por lo que Azure asigna a las máquinas virtuales en las direcciones IP de los dos nuevos controladores de dominio que se utilizará como sus servidores DNS. Rellenar las variables y, a continuación, ejecute estos comandos desde un símbolo del sistema de Windows PowerShell en el equipo local:
+Después, tendrá que actualizar los servidores DNS de la red virtual para que Azure asigne a las máquinas virtuales las direcciones IP de los dos nuevos controladores de dominio para que las usen como sus servidores DNS. ReLlene las variables y, a continuación, ejecute estos comandos desde un símbolo del sistema de Windows PowerShell en el equipo local:
   
 ```
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -207,14 +209,14 @@ $staticIP2="<Table I - Item 2 - Value column>"
 $firstDCName="<Table M - Item 1 - Virtual machine name column>"
 $secondDCName="<Table M - Item 2 - Virtual machine name column>"
 
-$vnet=Get-AzureRMVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
+$vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
 $vnet.DhcpOptions.DnsServers.Add($staticIP1)
 $vnet.DhcpOptions.DnsServers.Add($staticIP2) 
 $vnet.DhcpOptions.DnsServers.Remove($onpremDNSIP1)
 $vnet.DhcpOptions.DnsServers.Remove($onpremDNSIP2) 
-Set-AzureRMVirtualNetwork -VirtualNetwork $vnet
-Restart-AzureRMVM -ResourceGroupName $adrgName -Name $firstDCName
-Restart-AzureRMVM -ResourceGroupName $adrgName -Name $secondDCName
+Set-AzVirtualNetwork -VirtualNetwork $vnet
+Restart-AzVM -ResourceGroupName $adrgName -Name $firstDCName
+Restart-AzVM -ResourceGroupName $adrgName -Name $secondDCName
 ```
 
 Tenga en cuenta que reiniciamos los dos controladores de dominio para que no estén configurados con los servidores DNS locales como los servidores DNS. Como ambos son servidores DNS, se configuraron automáticamente con los servidores DNS locales como reenviadores DNS cuando se promovieron a controladores de dominio.
@@ -230,7 +232,7 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 ## <a name="configure-the-dirsync-server"></a>Configurar el servidor de DirSync
 
-Use el cliente de escritorio remoto de su elección y crear una conexión a Escritorio remoto en la máquina virtual de servidor de sincronización de directorios. Use su nombre de equipo o DNS de intranet y las credenciales de la cuenta de administrador local.
+Use el cliente de escritorio remoto que prefiera y cree una conexión a escritorio remoto a la máquina virtual del servidor de sincronización de directorios. Use el nombre DNS de la intranet o el nombre de equipo y las credenciales de la cuenta de administrador local.
   
 Después, únala al dominio de Windows Server AD adecuado con estos comandos en el símbolo del sistema de Windows PowerShell.
   
@@ -245,9 +247,9 @@ Esta es la configuración completada después de la finalización correcta de es
   
 **Fase 2: Controladores de dominio y servidor de DirSync para la autenticación federada de alta disponibilidad en Azure**
 
-![Fase 2 de la infraestructura de la autenticación federada de Office 365 con alta disponibilidad en Azure con los controladores de dominio](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Fase 2 de la infraestructura de autenticación federada de Office 365 de alta disponibilidad en Azure con controladores de dominio](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Use [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) para seguir configurando esta carga de trabajo.
   
