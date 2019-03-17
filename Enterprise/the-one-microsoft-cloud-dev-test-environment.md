@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Resumen: use esta guía del entorno de pruebas para crear un entorno de desarrollo y pruebas donde se incluyan todas las ofertas de la nube de Microsoft.'
-ms.openlocfilehash: 51899ceb0cceef0248f6dc10cb21f5353e774cea
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 0ccea58e86f2e105704aac01ba4379c21a174e3a
+ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897153"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573664"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>El entorno de desarrollo y pruebas de One Microsoft Cloud
 
@@ -59,7 +59,7 @@ En la ilustración 1, se muestra la configuración resultante, donde se incluye 
 
 En esta fase, se inscribirá en la suscripción de prueba de EMS y la agregará a la misma organización que su suscripción de prueba de Office 365.
   
-1. Con un explorador con un equipo de escritorio o desde CLIENTE1, inicie sesión en el portal de Office 365 en [https://portal.office.com](https://portal.office.com) con las credenciales de la cuenta de administrador global.
+1. Con un explorador con un equipo de escritorio o desde CLIENTE1, inicie sesión en el portal de Office 365 en [https://www.office.com](https://www.office.com) con las credenciales de la cuenta de administrador global.
     
 2. Haga clic en el icono **Administración**.
     
@@ -102,11 +102,11 @@ En la ilustración 2, se muestra la configuración resultante, que agrega EMS.
 
 En esta fase, se registrará en la suscripción de prueba a Dynamics 365 y la agregará a la misma organización que su suscripción de prueba a Office 365 y EMS.
   
-1. Con un explorador con un equipo de escritorio o desde CLIENTE1, inicie sesión en el portal de Office 365 en [https://portal.office.com](https://portal.office.com) con las credenciales de la cuenta de administrador global.
+1. Con un explorador con un equipo de escritorio o desde CLIENTE1, inicie sesión en el portal de Office 365 en [https://www.office.com](https://www.office.com) con las credenciales de la cuenta de administrador global.
     
-2. Haga clic en el icono **Administración**.
+2. Haga clic en el icono **Administrador**.
     
-3. En la pestaña **Centro de administración de Office**, en el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
+3. En la pestaña **Centro de administración de Microsoft 365**, en el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
     
 4. En la página **Servicios de compra**, busque el elemento **Dynamics 365 (plan 1) Enterprise Edition**. Mantenga el puntero del mouse sobre ese elemento y haga clic en **Iniciar prueba gratuita**.
     
@@ -119,7 +119,7 @@ En esta fase, se registrará en la suscripción de prueba a Dynamics 365 y la ag
   
 Siga este procedimiento para asignar las licencias de Dynamics 365 al administrador global y a las cuentas Usuario 2 y Usuario 3, y los hará administradores del sistema.
   
-1. En la pestaña **Centro de administración de Office**, haga clic en **Usuarios > Usuarios activos**.
+1. En la pestaña **Centro de administración de Microsoft 365**, haga clic en **Usuarios > Usuarios activos**.
     
 2. En la lista de usuarios activos, haga clic en su cuenta de administrador global y, después, haga clic en **Editar** en **Licencias de productos**.
     
@@ -127,7 +127,7 @@ Siga este procedimiento para asignar las licencias de Dynamics 365 al administra
     
 4. Realice los pasos 2 y 3 para las cuentas Usuario 2 y Usuario 3.
     
-5. Cierre la pestaña **Centro de administración de Office**.
+5. Cierre la pestaña del **Centro de administración de Microsoft 365**.
     
 Siga estos pasos para configurar las cuentas Usuario 2 y Usuario 3 como administradores del sistema de Dynamics 365.
   
