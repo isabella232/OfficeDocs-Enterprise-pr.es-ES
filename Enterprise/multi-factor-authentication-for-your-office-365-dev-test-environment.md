@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Resumen: configure la autenticación multifactor mediante mensajes de texto enviados a un smartphone en un entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 453dbc6bda3cfbc6806159d53c9a805c4c6cac97
-ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
+ms.openlocfilehash: 13dc02cc23d12f6eb6e2898d34271685badd9f5a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242082"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573984"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticación multifactor para el entorno de desarrollo y pruebas de Office 365
 
  **Resumen:** configure la autenticación multifactor mediante mensajes de texto enviados a un smartphone en un entorno de desarrollo y pruebas de Office 365.
   
-Para obtener un nivel de seguridad adicional para iniciar sesión en su suscripción de Office 365, puede habilitar la autenticación multifactor de Azure, que requiere más que un nombre de usuario y una contraseña para autenticar una cuenta. Con multi-factor Authentication para Office 365, los usuarios deben confirmar una llamada telefónica, escribir un código de verificación enviado en un mensaje de texto o especificar una contraseña de aplicación en sus teléfonos inteligentes después de escribir correctamente sus contraseñas. Solo pueden iniciar sesión después de que se cumpla este segundo factor de autenticación. 
+Para obtener un nivel de seguridad adicional para iniciar sesión en su suscripción de Office 365, puede habilitar la autenticación multifactor de Azure, que requiere más que un nombre de usuario y una contraseña para autenticar una cuenta. Con la autenticación multifactor para Office 365, los usuarios deben confirmar una llamada telefónica, escribir un código de comprobación enviado en un mensaje de texto o especificar una contraseña de aplicación en su smartphone tras introducir correctamente la contraseña. Pueden iniciar sesión solo después de que se haya cumplido este segundo factor de autenticación. 
   
 En este artículo, se describe cómo habilitar y probar la autenticación basada en mensajes de texto para una cuenta específica de Office 365.
   
@@ -53,7 +53,7 @@ Si desea probar la autenticación multifactor en una empresa simulada, siga las 
 
 Siga estos pasos para habilitar la autenticación multifactor para la cuenta Usuario 2:
   
-1. Abra una instancia independiente del explorador, vaya al portal de Office 365 ([https://portal.office.com](https://portal.office.com)) y, a continuación, inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
+1. Abra una instancia independiente del explorador, vaya al portal de Office 365 ([https://www.office.com](https://www.office.com)) y, a continuación, inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
     
 2. En la página principal del portal, haga clic en **Administración**.
     
@@ -77,7 +77,7 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
   
 1. Abra una nueva instancia del explorador.
     
-2. Vaya al portal de Office 365 ([https://portal.office.com](https://portal.office.com)) e inicie sesión con la cuenta usuario 2 (usuario2 @\<Organization name>. en Microsoft. com) y la contraseña.
+2. Vaya al portal de Office 365 ([https://www.office.com](https://www.office.com)) e inicie sesión con la cuenta usuario 2 (usuario2 @\<Organization name>. en Microsoft. com) y la contraseña.
     
 3. Después de iniciar sesión, se le pedirá que configure la cuenta para la validación de seguridad adicional. Haga clic en **Configurar ahora**.
     
@@ -101,13 +101,13 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
     
 ## <a name="see-also"></a>Vea también
 
-[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías del entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
   
-[Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
+[Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 
-[Plan de Multi-Factor Authentication para implementaciones de Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Planeación de multi-factor Authentication para implementaciones de Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

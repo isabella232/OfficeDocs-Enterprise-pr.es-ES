@@ -3,7 +3,7 @@ title: ExpressRoute para la conectividad en la nube de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/02/2018
+ms.date: 03/12/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Resumen: Descubra cómo ExpressRoute puede ayudarle mediante conexiones más rápidas y fiables a los servicios y las plataformas en la nube de Microsoft.'
-ms.openlocfilehash: b0f47278a94b2926cd540ce759ced9b2418aa598
-ms.sourcegitcommit: 6e3bfe55a173a733d6696790b88efa39853ebdb9
+ms.openlocfilehash: a3b36e98c946bc3ae7281bd38cd4b98820ee8afb
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "27470172"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574014"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute para la conectividad en la nube de Microsoft
 
@@ -51,7 +51,7 @@ Estas son las rutas de acceso de red a la nube de Microsoft con una conexión de
   
 La figura 2 muestra dos rutas de acceso de red. El tráfico a Microsoft Intune viaja por la misma ruta que el tráfico normal de Internet. El tráfico que va a Office 365, Microsoft Azure y Dynamics 365 viaja a través de la conexión de ExpressRoute, una ruta dedicada que está entre el perímetro de la red local y el perímetro de la nube de Microsoft.
   
-Con una conexión ExpressRoute, ahora dispone de control a través de una relación con su proveedor de servicios, a través de la ruta de acceso completa del tráfico desde el borde de Microsoft en la nube perimetral. Esta conexión puede ofrecer performance predecible y un [tiempo de actividad de 99,95% SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/).
+Ahora, con una conexión de ExpressRoute, puede tener control, a través de una relación con su proveedor de servicios, sobre toda la ruta de tráfico desde su perímetro hasta el perímetro de la nube de Microsoft. Esta conexión puede ofrecer un rendimiento predecible y un [SLA de tiempo de actividad de 99,95%](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/).
   
 Ahora podrá disfrutar de un rendimiento y una latencia predecibles, según la conexión de su proveedor de servicios, en los servicios de Office 365, Azure y Dynamics 365. En este momento no se admiten las Conexiones de ExpressRoute a Microsoft Intune.
   
@@ -96,17 +96,17 @@ La tabla 1 muestra los tres modelos de conectividad principales para las conexio
   
 ## <a name="expressroute-peering-relationships-to-microsoft-cloud-services"></a>Relaciones de emparejamiento de ExpressRoute a los servicios en la nube de Microsoft
 
-Una sola conexión ExpressRoute admite hasta dos relaciones de interconexión de protocolo de puerta de enlace de borde (BGP) diferentes a distintas partes de la nube de Microsoft. BPG usa relaciones de interconexión para establecer la confianza y la información de enrutamiento de exchange.
+Una sola conexión de ExpressRoute admite hasta dos relaciones de emparejamiento del Protocolo de puerta de enlace de borde (BGP) diferentes a distintas partes de la nube de Microsoft. BPG usa relaciones de emparejamiento para establecer la confianza e intercambiar información de enrutamiento.
   
-**La figura 3: Las dos diferentes BGP relaciones en una sola conexión ExpressRoute**
+**Figura 3: las dos relaciones BGP diferentes en una sola conexión de ExpressRoute**
 
-![La figura 3: Las dos diferentes BGP relaciones en una sola conexión ExpressRoute](media/Network-Poster/ERPeering.png)
+![Figura 3: las dos relaciones BGP diferentes en una sola conexión de ExpressRoute](media/Network-Poster/ERPeering.png)
   
-La figura 3 muestra una conexión ExpressRoute desde una red local. La conexión de ExpressRoute tiene dos relaciones lógicas de interconexión. Una relación de interconexión Microsoft va a servicios de Microsoft SaaS, incluidos los servicios de Office 365, Dynamcs 365 y Azure PaaS. Una relación de interconexión privada va a Azure IaaS y a una puerta de enlace de red virtual que hospeda máquinas virtuales.
+La figura 3 muestra una conexión de ExpressRoute desde una red local. La conexión de ExpressRoute tiene dos relaciones de emparejamiento lógicas. Una relación de emparejamiento de Microsoft va a los servicios SaaS de Microsoft, incluidos Office 365, Dynamcs 365 y los servicios PaaS de Azure. Una relación de emparejamiento privada va a IaaS de Azure y a una puerta de enlace de red virtual que hospeda máquinas virtuales.
   
 La relación de emparejamiento de BGP de Microsoft: 
   
-- Es de un enrutador en su DMZ a las direcciones públicas de Office 365, Dynamics 365 y servicios de Azure. 
+- Va de un enrutador de la DMZ a las direcciones públicas de los servicios de Office 365, Dynamics 365 y Azure. 
     
 - Admite la comunicación iniciada bidireccionalmente.
     
@@ -119,7 +119,7 @@ La relación de emparejamiento privada de BGP:
 - Es una extensión de la red de su organización a la nube de Microsoft que incluye el direccionamiento y el enrutamiento internamente coherentes.
 
 >[!Note]
->La relación de BGP interconexión pública que se describen en las versiones anteriores de este artículo ha quedado obsoleto.
+>La relación BGP de emparejamiento pública descrita en las versiones anteriores de este artículo está en desuso.
 >
     
 ## <a name="example-of-application-deployment-and-traffic-flow-with-expressroute"></a>Ejemplo de la implementación de una aplicación y el flujo de tráfico con ExpressRoute
@@ -184,9 +184,9 @@ Cuando se crea una conexión de ExpressRoute a una ubicación de emparejamiento 
   
 Esto puede hacer que la entrega en los centros de datos locales de Microsoft no sea óptima para el modelo de conectividad universal.
   
-**Figura 7: Ejemplo de una organización distribuidos geográficamente que usa una sola conexión ExpressRoute**
+**Figura 7: ejemplo de una organización distribuida geográficamente que usa una sola conexión de ExpressRoute**
 
-![Figura 7: Ejemplo de una organización distribuidos geográficamente que usa una sola conexión ExpressRoute](media/Network-Poster/MSNet1.png)
+![Figura 7: ejemplo de una organización distribuida geográficamente que usa una sola conexión de ExpressRoute](media/Network-Poster/MSNet1.png)
   
 La figura 7 muestra una organización con dos ubicaciones, la ubicación 1 en el noroeste de Estados Unidos y la ubicación 2 en el noreste. Están conectados por un proveedor WAN universal. Esta organización tiene también una conexión de ExpressRoute a una ubicación de emparejamiento de Microsoft de la costa oeste. El tráfico de la ubicación 2 en el noreste destinado a un centro de datos de la costa este debe atravesar toda la red WAN de la organización hasta llegar a la costa oeste, a la ubicación de emparejamiento de Microsoft, y luego volver a recorrer todo el país por la red en la nube de Microsoft hasta llegar al centro de datos de la costa este.
   
@@ -220,7 +220,7 @@ Con varias conexiones de ExpressRoute Premium, podemos conseguir:
     
 - Mayor disponibilidad en la nube de Microsoft global cuando una conexión local de ExpressRoute deje de estar disponible.
     
-Es necesario para las conexiones basadas en Office 365 ExpressRoute ExpressRoute Premium.
+ExpressRoute Premium es necesario para las conexiones de ExpressRoute basadas en Office 365.
   
 **Figura 9: La red mundial en la nube de Microsoft**
 
@@ -234,13 +234,11 @@ En el caso de una oficina regional, el tráfico adecuado de Office 365 que va a:
     
 - Centros de datos de Office 365 en otro continente viaja a través de la red intercontinental en nube de Microsoft.
     
-Para obtener más información, vea:
+Para más información, visite:
   
 - [Aprendizaje de Azure ExpressRoute para Office 365](https://channel9.msdn.com/series/aer/)
     
 - [Planear la red y ajustar el rendimiento de Office 365](https://aka.ms/tune)
-    
-- [Administración del rendimiento de Office 365](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
     
 ## <a name="expressroute-options"></a>Opciones de ExpressRoute
 
@@ -248,7 +246,7 @@ También puede incorporar las opciones siguientes a la implementación de Expres
   
 - **Seguridad en el perímetro:** para proporcionar seguridad avanzada en el tráfico enviado y recibido a través de la conexión de ExpressRoute, como la inspección del tráfico o la detección de intrusiones y malware, coloque las aplicaciones de seguridad en la ruta de acceso del tráfico dentro de la red perimetral o en el perímetro de la intranet.
     
-- **El tráfico de Internet para las máquinas virtuales:** Para impedir que las máquinas virtuales de Azure iniciar tráfico directamente con ubicaciones de Internet, anunciar la ruta predeterminada a Microsoft. Se enruta el tráfico a Internet a través de la conexión de ExpressRoute y a través de los servidores de proxy local. Se enruta el tráfico desde máquinas virtuales de Azure para los servicios de Azure PaaS u Office 365 volver a través de la conexión ExpressRoute.
+- **Tráfico de Internet para máquinas virtuales:** Para evitar que las máquinas virtuales de Azure inicien el tráfico directamente con ubicaciones de Internet, anuncie la ruta predeterminada a Microsoft. El tráfico de Internet se enruta a través de la conexión de ExpressRoute y a través de los servidores proxy locales. El tráfico de las máquinas virtuales de Azure a los servicios PaaS de Azure o a Office 365 se vuelve a enrutar a través de la conexión de ExpressRoute.
     
 - **Optimizadores de WAN:** puede implementar optimizadores de WAN a ambos lados de una conexión de emparejamiento privada para una red virtual de Azure entre locales (VNet). Dentro de la VNet de Azure, use una aplicación de red del optimizador de WAN de Azure Marketplace y el enrutamiento definido por el usuario para enrutar el tráfico a través de la aplicación.
     

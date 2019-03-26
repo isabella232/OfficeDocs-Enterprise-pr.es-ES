@@ -16,39 +16,39 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Resumen: configure y demuestre la Protección contra amenazas avanzada de Office 365 en el entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 07411600db11c8eea825c0ef5b82ea1206d20e11
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 9870f666a979d00ce6621e9459a1f9ad236f9799
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914965"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573834"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Protección contra amenazas avanzada en el entorno de desarrollo y pruebas de Office 365
 
  **Resumen:** configure y demuestre la Protección contra amenazas avanzada de Office 365 en el entorno de desarrollo y pruebas de Office 365.
   
-Protección de amenaza avanzada de Office 365 (ATP) es una característica de Exchange Online Protection (EOP) que ayuda a mantener el malware fuera de su correo electrónico. Con ATP, crear directivas en el centro de administración de Exchange (EAC) o la seguridad &amp; centro de cumplimiento que ayudan a garantizar que los usuarios tener acceso sólo vínculos o datos adjuntos en mensajes de correo electrónico que se identifican como no malintencionado. Para obtener más información, consulte [protección contra amenazas avanzadas para los datos adjuntos seguros y vínculos seguros](https://technet.microsoft.com/library/mt148491%28v=exchg.150%29.aspx).
+La Protección contra amenazas avanzada de Office 365 (ATP) es una característica de Exchange Online Protection (EOP) que ayuda a mantener el malware fuera de su correo electrónico. Con ATP, se crean directivas en el centro de administración de Exchange (EAC) o &amp; en el centro de seguridad y cumplimiento que ayudan a los usuarios a acceder únicamente a vínculos o datos adjuntos en los correos electrónicos que se identifican como no malintencionados. Para obtener más información, consulte [Protección contra amenazas avanzada para datos adjuntos seguros y vínculos seguros](https://technet.microsoft.com/library/mt148491%28v=exchg.150%29.aspx).
   
 Con las instrucciones de este artículo puede configurar y probar ATP en una suscripción de prueba de Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y pruebas ligero o de una empresa simulada de Office 365
 
-Si desea probar ATP en una forma sencilla con los requisitos mínimos, siga las instrucciones que aparecen en las fases 2 y 3 del [entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md).
+Si solo quiere probar ATP de manera ligera con los requisitos mínimos, siga las instrucciones indicadas en las fases 2 y 3 del [entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md).
   
-Si desea probar ATP en una empresa simulada, siga las instrucciones que aparecen en la [sincronización de directorios para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md).
+Si desea probar ATP en una empresa simulada, siga las instrucciones que se indican en [DirSync para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
 > La realización de pruebas en ATP no requiere el entorno de desarrollo y pruebas de una empresa simulada, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Windows Server AD. Aquí se ofrece como opción para que pueda probar ATP y experimentar con ella en un entorno que representa una organización típica. 
   
-## <a name="phase-2-demonstrate-the-default-email-delivery-behavior-of-office-365"></a>Fase 2: Demostrar el comportamiento de entrega de correo electrónico predeterminado de Office 365
+## <a name="phase-2-demonstrate-the-default-email-delivery-behavior-of-office-365"></a>Fase 2: demostrar el comportamiento de entrega de correo electrónico predeterminado de Office 365
 
 En esta fase, se demuestra que antes de configurar directivas de ATP, se entrega correo electrónico potencialmente malintencionado a buzones de Office 365 sin filtrado ni mitigación.
   
-1. Abra Internet Explorer e inicie sesión la cuenta de Outlook que creó en la fase 2 del [entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md).
+1. Abra Internet Explorer e inicie sesión en la cuenta de Outlook que creó en la fase 2 del [entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md).
     
   - Si usa el entorno de desarrollo y pruebas ligero de Office 365, abra una sesión privada con Internet Explorer e inicie sesión desde el equipo local.
     
-  - Si está utilizando el entorno de desarrollo y prueba de Office 365 enterprise simulado, use el [portal de Azure](https://portal.azure.com) para conectarse a la máquina virtual CLIENT1 y, a continuación, iniciar sesión en desde CLIENT1.
+  - Si usa el entorno de desarrollo y pruebas de una empresa simulada de Office 365, use [Azure portal](https://portal.azure.com) para conectarse a la máquina virtual CLIENT1 y, a continuación, inicie sesión desde cliente1.
     
 2. Abra el Bloc de notas y escriba algún texto.
     
@@ -74,15 +74,15 @@ En esta fase, se demuestra que antes de configurar directivas de ATP, se entrega
     
 13. En el cuerpo, seleccione el texto **este sitio** y haga clic en el icono de hipervínculo en la barra de herramientas.
     
-14. En **dirección URL**, escriba **http://www.spamlink.contoso.com/**, haga clic en **Aceptar**y, a continuación, haga clic en **Enviar**.
+14. En **dirección URL**, **http://www.spamlink.contoso.com/** escriba, haga clic en **Aceptar**y, a continuación, haga clic en **Enviar**.
     
-15. Abra una instancia independiente de Internet Explorer en el modo de exploración privada, vaya al portal de Office 365 ([https://portal.office.com](https://portal.office.com)) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
+15. Abra una instancia independiente de Internet Explorer en el modo de exploración privado, vaya al centro de administración de Microsoft[https://admin.microsoft.com](https://admin.microsoft.com)365 () e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
     
 16. Desde la página principal del portal, haga clic en el mosaico de aplicaciones y después en **Correo**.
     
 17. En la Bandeja de entrada, haga clic en el mensaje con el asunto **Sus nuevas claves**.
     
-18. En la carpeta correo electrónico no deseado, haga clic en el mensaje con el asunto del **nuevo sitio web de viajes**. En el mensaje, haga clic en el vínculo de **este sitio** . ¡Debería ver un "Oops! Página de Internet Explorer no pudo encontrar spamlink.contoso.com.". Esto es el resultado correcto, porque no hay ninguna página web en esa ubicación.
+18. En la carpeta correo no deseado, haga clic en el mensaje con el asunto **nuevo sitio web de viajes**. En el mensaje, haga clic en el vínculo a **sitio** . Debe ver un "vaya! Internet Explorer no pudo encontrar spamlink.contoso.com. " bloque. Este es el resultado correcto porque no hay ninguna página web en esa ubicación.
     
 Observe que ambos correos electrónicos potencialmente malintencionados se entregaron correctamente. El correo electrónico **Sus nuevas claves** podría contener software malintencionado no detectado y se permite al usuario hacer clic en el vínculo potencialmente malintencionado en el correo electrónico **Nuevo sitio web de viajes**.
   
@@ -90,7 +90,7 @@ Observe que ambos correos electrónicos potencialmente malintencionados se entre
 
 En esta fase, creará y configurará una directiva de datos adjuntos seguros para evitar que el correo electrónico con datos adjuntos potencialmente malintencionados se entregue y una directiva de vínculos seguros para evitar que los usuarios visiten direcciones URL potencialmente inseguras.
   
-1. En la ficha **Página principal de Microsoft Office** de Internet Explorer, haga clic en el icono de **administración** .
+1. En la pestaña **Inicio de Microsoft Office** de Internet Explorer, haga clic en el icono **Administración** .
     
 2. En el panel de navegación izquierdo, haga clic en **Centros de administración** y después en **Exchange**.
     
@@ -98,15 +98,15 @@ En esta fase, creará y configurará una directiva de datos adjuntos seguros par
     
 4. Haga clic en la pestaña **datos adjuntos seguros** y después en el signo más.
     
-5. En la ventana de la **nueva directiva de los datos adjuntos seguros** , en **nombre**, escriba **Directiva de datos adjuntos seguros - bloque**.
+5. En la ventana **nueva Directiva de datos adjuntos seguros** , en **nombre**, escriba **Directiva de datos adjuntos seguros: bloquear**.
     
-6. **Respuesta de los datos adjuntos seguros malware desconocido**, haga clic en **Bloquear**.
+6. Para la respuesta de malware desconocidos de **datos adjuntos seguros**, haga clic en **bloquear**.
     
 7. En **Redirigir datos adjuntos al detectarlos**, haga clic en **Habilitar redirección** y escriba la dirección de correo electrónico de la cuenta de administrador global de Office 365.
     
-8. Para **se aplica a**, haga clic en la flecha hacia abajo y, a continuación, haga clic en **el dominio de destinatario es**. En la ventana, haga clic en el nombre de su organización (por ejemplo, contoso.onmicrosoft.com) y, a continuación, haga clic en **Aceptar**.
+8. En **Aplicado a**, haga clic en la flecha abajo y después en **El dominio del destinatario es**. En la ventana, haga clic en el nombre de su organización (por ejemplo, contoso.onmicrosoft.com) y, a continuación, haga clic en **Aceptar**.
     
-9. Haga clic en **Guardar**. Después de la actualización, debería ver la nueva y había habilitado la **Directiva de datos adjuntos seguros - bloque**.
+9. Haga clic en **Guardar **. Después de la actualización, debe ver el nuevo y habilitado **Directiva de datos adjuntos seguros: bloque**.
     
 10. Haga clic en la pestaña **Vínculos seguros** y después en el signo más.
     
@@ -114,7 +114,7 @@ En esta fase, creará y configurará una directiva de datos adjuntos seguros par
     
 12. En **Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en mensajes**, haga clic en **Activado** y seleccione **No permitir a los usuarios hacer clic en la dirección URL original**.
     
-13. Para **se aplica a**, haga clic en la flecha hacia abajo y, a continuación, haga clic en **el dominio de destinatario es**. En la ventana, haga clic en el nombre de su organización (por ejemplo, contoso.onmicrosoft.com) y, a continuación, haga clic en **Aceptar**.
+13. En **Aplicado a**, haga clic en la flecha abajo y después en **El dominio del destinatario es**. En la ventana, haga clic en el nombre de su organización (por ejemplo, contoso.onmicrosoft.com) y, a continuación, haga clic en **Aceptar**.
     
 14. Haga clic en **Guardar**. Debería ver la nueva y habilitada **Directiva de vínculos seguros**.
     
@@ -122,13 +122,13 @@ En esta fase, creará y configurará una directiva de datos adjuntos seguros par
 
 En esta fase, veremos cómo ATP se gestiona el correo electrónico malintencionado.
   
-1. En la instancia de Internet Explorer que usa para enviar el correo electrónico en la fase 2, en el panel de navegación izquierdo, haga clic en **elementos enviados.**
+1. En la sesión de Internet Explorer que usó para enviar el correo electrónico en la fase 2, en el panel de navegación izquierdo, haga clic en **elementos enviados.**
     
-2. Haga clic en el correo electrónico titulado **las claves de nuevo**, haga clic en el icono de flecha hacia abajo y, a continuación, haga clic en **hacia delante**.
+2. Haga clic en el correo electrónico titulado **claves nuevas**, haga clic en el icono de flecha **** abajo y, a continuación, haga clic en reenviar.
     
 3. En el nuevo mensaje, en **Para**, escriba la dirección de correo electrónico del nombre de administrador global de Office 365 de su suscripción de prueba y después haga clic en **Enviar**.
     
-4. Haga clic en el título **nuevo sitio web de viajes**de correo electrónico, haga clic en el icono de flecha hacia abajo, haga clic en **responder a todos**y, a continuación, haga clic en **Enviar**.
+4. Haga clic en el correo electrónico titulado **nuevo sitio web de viajes**, haga clic en el icono de flecha abajo, haga clic en **responder a todos**y, a continuación, haga clic en **Enviar**.
     
 5. Desde la instancia de Internet Explorer que usó para configurar directivas de ATP en la fase 3, haga clic en la pestaña Centro de administración de Exchange, en el mosaico de aplicaciones y en **Correo**. Verá dos nuevos mensajes de correo electrónico en la Bandeja de entrada:
     
@@ -136,31 +136,31 @@ En esta fase, veremos cómo ATP se gestiona el correo electrónico malintenciona
     
   - Uno titulado **RV: Nuevo sitio web de viajes**
     
-6. Abra el mensaje de correo electrónico titulado **RV: nuevo sitio web de viajes** y haga clic en el vínculo de **este sitio** . Debería ver una página "este sitio Web ha sido clasificado como malintencionados.". Esto demuestra que ATP le impide tener acceso al sitio web potencialmente malintencionado.
+6. Abra el mensaje de correo electrónico titulado **FW: nuevo sitio web de viajes** y haga clic en este vínculo de **sitio** . Debería ver "este sitio web se ha clasificado como malintencionado". bloque. Esto demuestra que ATP está impidiendo el acceso al sitio Web potencialmente malintencionado.
     
 7. En la pestaña Centro de administración de Exchange de Internet Explorer, en el panel de exploración izquierdo, haga clic en **Flujo de correo**.
     
 8. Haga clic en la pestaña **Seguimiento de mensajes** y después en **Buscar**.
     
-9. En la ventana de **Resultados de seguimiento de mensajes** , haga doble clic en el mensaje con el asunto de **las claves de nuevo**. Este mensaje se entregó correctamente a la Bandeja de entrada. Cierre esta ventana.
+9. En la ventana **Resultados de seguimiento de mensajes**, haga doble clic en el mensaje con el asunto **Sus nuevas claves**. Este mensaje se entregó correctamente a la bandeja de entrada. Cierre esta ventana.
     
-10. Haga doble clic en el mensaje con el asunto del **nuevo sitio web de viajes**. Este mensaje se entregó correctamente a la Bandeja de entrada. Cierre esta ventana.
+10. Haga doble clic en el mensaje con el asunto **Nuevo sitio web de viajes**. Este mensaje se entregó correctamente a la bandeja de entrada. Cierre esta ventana.
     
-11. Haga doble clic en el mensaje con el asunto **RV: sus nuevas claves**. Tenga en cuenta cómo este mensaje se procesa ATP y, a continuación, se entrega a la Bandeja de entrada. Cierre esta ventana.
+11. Haga doble clic en el mensaje con el asunto **RV: Sus nuevas claves**. Tenga en cuenta que ATP ha procesado este mensaje y, a continuación, se entregó en la bandeja de entrada. Cierre esta ventana.
     
     > [!NOTE]
-    > El propósito de la directiva de los datos adjuntos seguros era empezar a explorar los datos adjuntos para código malintencionado. Los datos adjuntos de getKeys.js se permiten debido a que no se determinó malintencionada. En este paso se muestra que ATP realizar un examen de los datos adjuntos. 
+    > La finalidad de la Directiva de datos adjuntos seguros era comenzar el examen de los datos adjuntos de código malintencionado. Se permitió el dato adjunto de getKeys. js porque no se determinó que era malintencionado. Este paso muestra que ATP llevó a cabo un análisis de los datos adjuntos. 
   
-12. Haga doble clic en el mensaje con el asunto **RV: nuevo sitio web de viajes**. Tenga en cuenta que este mensaje se entregó correctamente a la Bandeja de entrada.
+12. Haga doble clic en el mensaje con el asunto **RV: Nuevo sitio web de viajes**. Tenga en cuenta que este mensaje se entregó correctamente a la bandeja de entrada.
     
 Ahora puede usar este entorno para crear nuevas directivas y experimentar con ATP.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de One Microsoft Cloud.
   
 ## <a name="see-also"></a>Vea también
 
-[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías del entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
   

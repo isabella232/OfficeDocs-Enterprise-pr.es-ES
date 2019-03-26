@@ -11,11 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 'Resumen: aprenda a usar Windows PowerShell para realizar una migración total a Office 365.'
-ms.openlocfilehash: db2782faac86e53ffd4d2794ee77d53605c9484e
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 0f284e2dcccd3d7fc6958922ac4e87da4fc086ec
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574084"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Usar PowerShell para realizar una migración total a Office 365
 
@@ -74,7 +75,7 @@ Para obtener una lista completa de los comandos de migración, consulte [Cmdlets
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **Asignar una cuenta de usuario local de los permisos necesarios para tener acceso a los buzones de correo en la organización de Exchange.** La cuenta de usuario local que usa para conectarse a su organización de Exchange local (también denominada el Administrador de la migración) debe tener los permisos necesarios para tener acceso a los buzones de correo local que se va a migrar a Office 365. Esta cuenta de usuario se usa para crear un extremo de migración a la organización local.
+- **Asigne a una cuenta de usuario local los permisos necesarios para obtener acceso a los buzones de la organización de Exchange.** La cuenta de usuario local que se usa para conectarse a la organización de Exchange local (también denominada administrador de migración) debe disponer de los permisos necesarios para tener acceso a los buzones locales que desea migrar a Office 365. Esta cuenta de usuario se utiliza para crear un extremo de migración para la organización local.
     
     En la lista siguiente, se muestran los privilegios administrativos necesarios para migrar buzones con una migración total. Hay tres opciones posibles.
     
@@ -194,7 +195,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>Sección 7: Asignar licencias de usuario
 <a name="BK_Step7"> </a>
 
- **Active las cuentas de usuario de Office 365 para las cuentas migradas mediante la asignación de licencias.** Si no asigna una licencia, el buzón se deshabilitará cuando finalice el periodo de gracia (30 días). Para asignar una licencia en Centro de administración de Office 365, consulte[Asignar o cancelar la asignación de licencias de Office 365 para empresas](https://go.microsoft.com/fwlink/?LinkId=536681).
+ **Active las cuentas de usuario de Office 365 para las cuentas migradas mediante la asignación de licencias.** Si no asigna una licencia, el buzón se deshabilitará cuando finalice el periodo de gracia (30 días). Para asignar una licencia en el centro de administración de 365 de Microsoft, vea[asignar o cancelar la asignación de licencias para Office 365 para empresas](https://go.microsoft.com/fwlink/?LinkId=536681).
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Paso 8: Finalizar las tareas posteriores a la migración
 <a name="BK_Step8"> </a>

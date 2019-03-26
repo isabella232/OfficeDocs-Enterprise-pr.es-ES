@@ -15,24 +15,24 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
-description: 'Resumen: Configurar y demostrar cómo Information Rights Management de Office 365 protege los archivos confidenciales, incluso cuando se hayan registrado para la colección de sitios de SharePoint Online incorrecta.'
-ms.openlocfilehash: d866c8ef9d81ec3a80c466040dab34de8af2c1de
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: 'Resumen: Configure y demuestre cómo Office 365 Information Rights Management protege los archivos confidenciales, incluso cuando se publican en la colección de sitios incorrecta de SharePoint Online.'
+ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915705"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574074"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protección de archivos confidenciales en el entorno de desarrollo y pruebas de Office 365
 
- **Resumen:** Configurar y demostrar cómo Information Rights Management de Office 365 protege los archivos confidenciales, incluso cuando se hayan registrado para la colección de sitios de SharePoint Online incorrecta.
+ **Resumen:** Configure y muestre cómo Office 365 Information Rights Management protege los archivos confidenciales, incluso cuando se publican en la colección de sitios incorrecta de SharePoint Online.
   
 Information Rights Management (IRM) en Office 365 es un conjunto de características para proteger los documentos que se descargan de listas y bibliotecas de SharePoint Online. Los archivos descargados se cifran y contienen los permisos para abrir, copiar, guardar e imprimir que refleja la biblioteca de SharePoint Online en la que se almacenan.
   
 Con las instrucciones de este artículo, habilite y pruebe IRM en Office 365 para archivos que contienen posible información confidencial en su suscripción de prueba de Office 365.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de One Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: Crear el entorno de desarrollo y pruebas de Office 365
 
@@ -49,11 +49,11 @@ En esta fase, muestra que un usuario puede descargar un documento de un sitio pr
   
 En primer lugar, agregue tres cuentas de usuario nuevas que representen a ejecutivos y asígneles licencias de Office 365 E5.
   
-Use las instrucciones en [conectarse a Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) para instalar los módulos de PowerShell (si es necesario) y conectarse a la nueva suscripción de Office 365 desde:
+Siga las instrucciones de [conectarse a office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) para instalar los módulos de PowerShell (si es necesario) y conectarse a la nueva suscripción de Office 365 desde:
   
 - Su equipo (para el entorno de desarrollo y pruebas ligero de Office 365).
     
-- La máquina virtual CLIENTE1 (para el entorno de desarrollo y pruebas de una empresa ficticia de Office 365).
+- La máquina virtual CLIENT1 (para el entorno de desarrollo y pruebas de una empresa simulada de Office 365).
     
 En el cuadro de diálogo **Solicitud de credenciales para Windows PowerShell**, escriba el nombre de administrador global de Office 365 (ejemplo: jdoe@contosotoycompany.onmicrosoft.com) y la contraseña de su suscripción de prueba de Office 365.
   
@@ -92,7 +92,7 @@ Desde la pantalla del comando **New-MsolUser**, anote la contraseña generada pa
   
 Después, cree un grupo privado de ejecutivos y agregue en él las nuevas cuentas de ejecutivo.
   
-1. En el explorador, vaya al portal de Office en [http://portal.office.com](http://portal.office.com) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
+1. En el explorador, vaya al portal de Office en [http://admin.microsoft.com](http://admin.microsoft.com) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
     
   - Si usa el entorno de desarrollo y pruebas ligero de Office 365, abra una sesión privada con Internet Explorer o con su explorador e inicie sesión desde el equipo local.
     
@@ -126,39 +126,39 @@ Después, cree una colección de sitios de ejecutivos y permita que solo tengan 
   
 1. En la pestaña **Página principal de Microsoft Office**, haga clic en el icono de **Administración**.
     
-2. En la ficha del **Centro de administración de Office** , haga clic en **centros de administración > SharePoint**.
+2. En la pestaña **centro de administración de Office** , haga clic en centros de **Administración > SharePoint**.
     
-3. En la ficha del **Centro de administración de SharePoint** , haga clic en **Nuevo > colección de sitios privados**.
+3. En la pestaña **centro de administración de SharePoint** , haga clic en **nueva colección de sitios privados de >**.
     
-4. En el panel de colección de sitios nueva, escriba **los ejecutivos** en **título**, los ejecutivos en el cuadro Dirección URL, especifique el nombre de la cuenta de administrador global en **Administrador**y, a continuación, haga clic en **Aceptar**.
+4. En el panel nueva colección de sitios, escriba **ejecutivos** en **título**, ejecutivos en el cuadro Dirección URL, especifique el nombre de la cuenta de administrador global en **Administrador**y, a continuación, haga clic en **Aceptar**.
     
-5. Espere hasta que se ha creado la nueva colección de sitios. Cuando haya terminado, copie la dirección URL de la nueva colección de sitios de los ejecutivos y péguelo en una nueva ficha del explorador.
+5. Espere hasta que se haya creado la nueva colección de sitios. Cuando haya finalizado, copie la dirección URL de la nueva colección de sitios de ejecutivos y péguela en una nueva pestaña del explorador.
     
 6. En la esquina superior derecha de la colección de sitios **Ejecutivos**, haga clic en el icono Configuración y, después, en **Compartido con**.
     
-7. En el **recurso compartido 'Los ejecutivos'**, haga clic en **Avanzadas**.
+7. En **compartir "ejecutivos"**, haga clic en **Opciones avanzadas**.
     
 8. En la lista de grupos de SharePoint, haga clic en **Miembros ejecutivos**.
     
 9. En la página **Personas y grupos**, haga clic en **Nuevo**.
     
-10. En **recurso compartido de 'ejecutivos de '**, escriba **los ejecutivos**, haga clic en el grupo de **los ejecutivos** y, a continuación, haga clic en **Compartir**.
+10. En **compartir "ejecutivos"**, escriba **ejecutivos**, haga clic en el grupo **ejecutivos** y, a continuación, haga clic en **compartir**.
     
-11. Cierre la ficha **personas y grupos** .
+11. Cierre la pestaña **personas y grupos** .
     
 Después, permita que todos los usuarios tengan acceso a la colección de sitios de ventas.
   
-1. Desde la ficha del **Centro de administración de SharePoint** , copie la dirección URL de la colección de sitios de ventas y péguelo en una nueva ficha del explorador..
+1. En la pestaña **centro de administración de SharePoint** , copie la dirección URL de la colección de sitios de ventas y péguela en una nueva pestaña del explorador..
     
-2. En la parte superior derecha, haga clic en el icono de configuración y, a continuación, haga clic en **compartido con**.
+2. En la esquina superior derecha, haga clic en el icono Configuración y, después, en **Compartido con**.
     
-3. En **recurso compartido de 'Colección de sitios de ventas'**, haga clic en **Avanzadas**.
+3. En **compartir "colección de sitios de ventas"**, haga clic en **Opciones avanzadas**.
     
 4. En la lista de grupos de SharePoint, haga clic en **Miembros de la colección de sitios de ventas**.
     
 5. En la página **Personas y grupos**, haga clic en **Nuevo**.
     
-6. En **recurso compartido de 'Colección de sitios de ventas'**, escriba **todos los usuarios**, haga clic en **todos excepto los usuarios externos**y, a continuación, haga clic en **Compartir**.
+6. En **compartir "colección de sitios de ventas"**, escriba **todos**, haga clic en **todos excepto los usuarios externos**y, después, haga clic en **compartir**.
     
 7. Cierre las pestañas **Colección de sitios de ventas** y **SharePoint**.
     
@@ -166,15 +166,15 @@ Después, inicie sesión con una cuenta de ejecutivo y cree un documento en la c
   
 1. En la pestaña **Página principal de Microsoft Office**, haga clic en el icono de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
     
-2. Vaya a [http://portal.office.com](http://portal.office.com).
+2. Vaya a [http://admin.microsoft.com](http://admin.microsoft.com).
     
-3. En la página **Office 365 iniciar sesión** , haga clic en **usar otra cuenta**.
+3. En la página **Inicio de sesión en Office 365**, haga clic en **Usar otra cuenta**.
     
 4. Escriba el nombre de cuenta **CEO** y su contraseña y, luego, haga clic en **Iniciar sesión**.
     
-5. En una nueva ficha del explorador, escriba la dirección URL de la colección de sitios de los ejecutivos ( **https://**\<nombre de la organización >**.sharepoint.com/sites/executives**).
+5. en una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ejecutivos ( **https://**\<organization name>**. sharepoint.com/sites/executives**).
     
-6. Haga clic en **documentos**, haga clic en **nuevo** y, a continuación, haga clic en **Documento de Word**.
+6. Haga clic en **documentos**, en **nuevo** y, a continuación, en **documento de Word**.
     
 7. Haga clic en la barra de título y escriba **SensitiveData-BeforeIRM**.
     
@@ -184,13 +184,13 @@ Después, inicie sesión con una cuenta de ejecutivo y cree un documento en la c
     
 Después, descargue una copia local del documento SensitiveData-BeforeIRM.docx y, luego, publíquelo en la colección de sitios de ventas accidentalmente.
   
-1. En el equipo local, cree una nueva carpeta (por ejemplo, C:\\Tlg\\SensitiveDataTestFiles).
+1. En el equipo local, cree una carpeta nueva (por ejemplo, C:\\TLG\\SensitiveDataTestFiles).
     
 2. En la pestaña **Documentos** de su explorador, seleccione el documento **SensitiveData-BeforeIRM.docx**, haga clic en los puntos suspensivos y, después, en **Descargar**.
     
 3. Almacene el documento **SensitiveData-BeforeIRM.docx** en la carpeta que se ha creado en el paso 1.
     
-4. En una nueva ficha del explorador, escriba la dirección URL de la colección de sitios de ventas ( **https://**\<nombre de la organización >**.sharepoint.com/sites/sales**).
+4. en una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ventas ( **https://**\<organization name>**. sharepoint.com/sites/sales**).
     
 5. Haga clic en la carpeta **Documentos** de la **Colección de sitios de ventas**.
     
@@ -204,13 +204,13 @@ Después, inicie sesión como Usuario5 y pruebe a abrir el documento SensitiveDa
   
 1. En la pestaña **Página principal de Microsoft Office**, haga clic en el icono de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
     
-2. Vaya a [http://portal.office.com](http://portal.office.com).
+2. Vaya a [http://admin.microsoft.com](http://admin.microsoft.com).
     
-3. En la página **Office 365 iniciar sesión** , haga clic en **usar otra cuenta**.
+3. En la página **Inicio de sesión en Office 365**, haga clic en **Usar otra cuenta**.
     
 4. Escriba el nombre de cuenta del Usuario5 y su contraseña y, después, haga clic en **Iniciar sesión**.
     
-5. En una nueva ficha del explorador, escriba la dirección URL de la colección de sitios de ventas.
+5. En una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ventas.
     
 6. En la carpeta **Documentos** de la **Colección de sitios de ventas**, haga clic en el documento **SensitiveData-BeforeIRM.docx**. 
     
@@ -224,7 +224,7 @@ Para preparar Office 365 para las fases 3 y 4, habilite IRM para SharePoint Onli
   
 1. En la pestaña **Página principal de Microsoft Office**, haga clic en el icono de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
     
-2. Vaya a [http://portal.office.com](http://portal.office.com).
+2. Vaya a [http://admin.microsoft.com](http://admin.microsoft.com).
     
 3. En la página **Inicio de sesión en Office 365**, haga clic en el nombre de cuenta del administrador global, escriba su contraseña y, después, haga clic en **Iniciar sesión**.
     
@@ -242,7 +242,7 @@ En esta fase, usa SharePoint Information Rights Management con un grupo privado 
   
 Primero, habilite y configure IRM para la biblioteca de documentos de la colección de sitios de ejecutivos.  
   
-1. En una nueva ficha del explorador, escriba la dirección URL de la colección de sitios de los ejecutivos.
+1. En una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ejecutivos.
     
 2. Haga clic en **Documentos**.
     
@@ -276,15 +276,15 @@ Después, actuando como el CEO, cargue un documento nuevo en la carpeta de docum
     
 3. Haga clic con el botón derecho dentro de la carpeta y, después, en **Pegar**.
     
-4. Cambie el nombre del nuevo archivo **SensitiveData-BeforeIRM - Copy.docx** **SensitiveData-AfterIRM.docx**.
+4. Cambie el nombre del nuevo archivo **SensitiveData-BeforeIRM-Copy. docx** a **SensitiveData-AfterIRM. docx**.
     
 5. Desde la pestaña **Página principal de Microsoft Office** de su explorador, haga clic en el icono de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
     
-6. Vaya a [http://portal.office.com](http://portal.office.com).
+6. Vaya a [http://admin.microsoft.com](http://admin.microsoft.com).
     
 7. En la página **Inicio de sesión en Office 365**, haga clic en el nombre de cuenta del CEO, escriba su contraseña y, después, haga clic en **Iniciar sesión**.
     
-8. En una nueva ficha del explorador, escriba la dirección URL de la colección de sitios de los ejecutivos.
+8. En una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ejecutivos.
     
 9. En la página **Documentos**, haga clic en **Cargar**, especifique el documento **SensitiveData-AfterIRM.docx** de su carpeta local y, después, haga clic en **Abrir**.
     
@@ -294,7 +294,7 @@ Después, actuando como el CEO, cargue un documento nuevo en la carpeta de docum
     
 12. Cierre la pestaña de la página **Documentos**.
     
-13. En una nueva ficha del explorador, escriba la dirección URL de la colección de sitios de ventas.
+13. En una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ventas.
     
 14. Haga clic en **Documentos**.
     
@@ -306,11 +306,11 @@ Después, actuando como un usuario normal, intente acceder al documento **Sensit
   
 1. Desde la pestaña **Página principal de Microsoft Office** de su explorador, haga clic en el icono de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
     
-2. Vaya a [http://portal.office.com](http://portal.office.com).
+2. Vaya a [http://admin.microsoft.com](http://admin.microsoft.com).
     
-3. En la página **Office 365 iniciar sesión** , haga clic en el nombre de la cuenta User5, escriba su contraseña y, a continuación, haga clic en **Inicio de sesión**.
+3. En la página **Office 365 de inicio de sesión** , haga clic en el nombre de cuenta usuario5, escriba su contraseña y, a continuación, haga clic en **iniciar sesión**.
     
-4. En una nueva ficha del explorador, escriba la dirección URL de la colección de sitios de ventas.
+4. En una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ventas.
     
 5. Haga clic en **Documentos**.
     
@@ -332,11 +332,11 @@ Otra manera de ver la protección de IRM es mirar los archivos de su carpeta loc
   
 ## <a name="see-also"></a>Vea también
 
-[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías del entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
   
-[Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
+[Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 

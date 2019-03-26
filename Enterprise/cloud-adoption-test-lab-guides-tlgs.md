@@ -3,7 +3,7 @@ title: Probar Office 365 con guías de entorno de pruebas de adopción de la nub
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/23/2018
+ms.date: 03/13/2019
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: Con estas Guías del laboratorio de pruebas (TLG) para la adopción de la nube, podrá configurar entornos de demostración o de desarrollo y pruebas para los productos Office 365, Dynamics 365 y Office Server.'
-ms.openlocfilehash: df4729c93f3665bdfe072102f2952d7432ad22f0
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 9d3423c1dadf95cd744a393c08b4303bc5cb8832
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897243"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573754"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Probar Office 365 con guías de entorno de pruebas de adopción de la nube (TLG)
 
@@ -32,13 +32,9 @@ Las guías del laboratorio de pruebas le permiten conocer los productos Microsof
   
 Las guías del laboratorio de pruebas también crean entornos representativos para desarrollo y pruebas de aplicaciones, también conocidos como entornos de desarrollo y pruebas.
   
-![Guías de laboratorio de prueba en Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guías del laboratorio de pruebas de Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-Vea estos recursos adicionales antes de lanzarse:
-  
-- Vea la sesión [Conozca la Microsoft Cloud con las Guías del laboratorio de pruebas de adopción de la nube](https://mva.microsoft.com/en-US/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881 ) de la Academia Virtual de Microsoft (solo 22 minutos).
-    
-- Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
+Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de One Microsoft Cloud.
     
 ## <a name="office-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365
 

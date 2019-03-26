@@ -1,9 +1,9 @@
 ---
-title: Mover datos principales a nuevas zonas del centro de datos de Office 365
+title: Mover datos básicos a un nuevo Office 365 Datacenter GEOS
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -11,66 +11,64 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
-description: 'Zonas de centro de datos nuevo agregar capacidad y de compute recursos para admitir el crecimiento de propuestas y uso de nuestros continuo al cliente. Además, las nuevas zonas de centro de datos ofrecen en ubican residencia de datos para los datos de cliente principal. Los datos de cliente principal están un término que hace referencia a un subconjunto de datos de cliente definidos en los términos de Microsoft Online Services: contenido y los archivos del sitio contenido del buzón Exchange Online (cuerpo del correo electrónico, las entradas de calendario y el contenido de los datos adjuntos de correo electrónico) y SharePoint Online almacena dentro de ese sitio y los archivos cargan en OneDrive para la empresa.'
-ms.openlocfilehash: 362cb257f2098c1acaf08541f34278ed9b4987d2
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+description: 'El nuevo centro de GEOS agrega capacidad y calcula recursos para apoyar el crecimiento constante del uso y la demanda de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes. Los datos principales de los clientes son un término que hace referencia a un subconjunto de los datos de clientes definidos en los términos de Microsoft Online Services: contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico) y contenido del sitio de SharePoint Online y los archivos se almacenan en ese sitio y los archivos cargados en OneDrive para la empresa.'
+ms.openlocfilehash: d30ad64c96a3a2e790b911845141e1601758d384
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839588"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30647988"
 ---
-# <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Mover datos principales a nuevas zonas del centro de datos de Office 365
+# <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Mover datos básicos a un nuevo Office 365 Datacenter GEOS
 
-Se continuar abrir nuevas zonas del centro de datos para Office 365 para servicios de negocios. Estas nuevas zonas de centro de datos agregar capacidad y de compute recursos para admitir nuestro crecimiento continuo al cliente de propuestas y uso. Además, las nuevas zonas de centro de datos ofrecen en ubican residencia de datos para los datos de cliente principal. 
+Seguimos abrimos New Datacenter GEOS for Office 365 for Business Services. Estos nuevos GEOS de centro de recursos agregan capacidad y computan recursos para admitir el crecimiento constante del uso y la demanda de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes. 
 
-Los datos de cliente principal están un término que hace referencia a un subconjunto de datos de cliente definidos en los [Términos de Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=249048): 
-- Contenido del buzón Exchange Online (cuerpo del correo electrónico, las entradas de calendario y el contenido de los datos adjuntos de correo electrónico)
-- Contenido del sitio de SharePoint Online y los archivos almacenados dentro de ese sitio
+Los datos de clientes principales son un término que hace referencia a un subconjunto de los datos de clientes definidos en los [términos de Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=249048): 
+- Contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico)
+- Contenido del sitio de SharePoint Online y los archivos almacenados en ese sitio
 - Archivos cargados en OneDrive para la empresa 
   
-Los clientes existentes que tienen sus datos de clientes principales almacenados en una ya existente ubican de centro de datos no se ven afectados por el lanzamiento de un nuevo ubican de centro de datos. No se presentan capacidades únicas, características o certificaciones de cumplimiento con el nuevo ubican de centro de datos. Como un cliente en cualquiera de esos dos zonas, experimentará la misma calidad de servicio, rendimiento y controles de seguridad tal como hizo antes. Se ofrecen a los clientes existentes que tienen requisitos de residencia estricta de datos y que se enumeran en la tabla siguiente, una opción para que sus datos de clientes principales movidos a la nueva ubican.
+Los clientes existentes que tienen sus datos de clientes principales almacenados en un centro de datos ya existente no se ven afectados por el inicio de una nueva geografía del centro de datos. No presentamos ninguna funcionalidad, características o certificaciones de cumplimiento únicos con el nuevo centro de recursos geográfico. Como cliente en cualquiera de estas dos GEOS, obtendrá los mismos controles de calidad de servicio, rendimiento y seguridad que antes. Ofrecemos los clientes existentes que tienen requisitos de residencia de datos estrictos y que se enumeran en la tabla siguiente, una opción para que sus datos principales de clientes se muevan a la nueva geo.
   
-|Los clientes con la facturación de direcciones en ***|Centro de datos anterior ubican ***|Nuevo centro de datos ubican ***|Geo disponible desde ***|
+|Clientes con dirección de facturación en * * * *|Geo de centro de recursos anterior * * * *|Nueva geo del centro de recursos * * * *|Geográfico disponible desde * * * *|
 |:-----|:-----|:-----|:-----|
-|Japón ***| Asia Pacífico | Japón | Diciembre de 2014 |
-|Australia, Nueva Zelanda, Fiyi ***| Asia Pacífico | Australia | Marzo de 2015 |
-|India ***| Asia Pacífico | India | Octubre de 2015 |
-|Canadá ***| Norteamérica | Canadá | Mayo de 2016 |
-|Reino Unido ***| Europa | Reino Unido | Septiembre de 2016 |
-|Corea del sur ***| Asia Pacífico | Corea del sur | Abril de 2017 |
-|Francia ***| Europa | Francia | Marzo de 2018 |
+|Japón * * * *| Asia/Pacífico | Japón | Diciembre de 2014 |
+|Australia, Nueva Zelanda, Fiji * * * *| Asia/Pacífico | Australia | Marzo de 2015 |
+|India * * * *| Asia/Pacífico | India | Octubre de 2015 |
+|Canadá * * * *| Norteamérica | Canadá | Mayo de 2016 |
+|Reino Unido * * * *| Europeos | United Kingdom | Septiembre de 2016 |
+|Corea del sur * * * *| Asia/Pacífico | Corea del sur | Abril de 2017 |
+|Francia * * * *| Europeos | Francia | Marzo de 2018 |
+|Emiratos Árabes Unidos * * * *| Europeos | Emiratos Árabes Unidos | Anunció |
+|Sudáfrica * * * *| Europeos | Sudáfrica | Anunció |
    
 > [!NOTE]
-> La opción de residencia de datos y la disponibilidad para mover los datos de cliente en el nuevo ubican, no es un valor predeterminado para cada nuevo geo se inicio. Tal y como se expanda en zonas nuevo en el futuro, se evalúa la disponibilidad y las condiciones de datos se mueve en una ubican por ubican base. 
+> La opción de residencia de datos y la disponibilidad para mover los datos del cliente a la nueva geografía no son un valor predeterminado para todas las nuevas geografías que lanzamos. A medida que expandamos nuevas GEOS en el futuro, evaluaremos la disponibilidad y las condiciones de movimientos de datos en una geo por base geográfica. 
   
-Nuevos clientes o los inquilinos de Office 365 creados después de la disponibilidad de la nueva ubican de centro de datos tendrán sus datos de clientes principales almacenados en reposo en el nuevo ubican de centro de datos automáticamente.
+Los clientes nuevos o los inquilinos de Office 365 creados después de la disponibilidad del nuevo área geográfica del centro de datos tendrán automáticamente almacenados sus datos de clientes principales en el nuevo centro de datos.
   
-Una lista completa de todas las zonas de centro de datos, centros de datos y la ubicación de los datos en reposo de cliente está disponible como parte de los [mapas de centro de datos interactiva](https://aka.ms/dcmaps). 
+Una lista completa de todos los GEOS de centro de datos, los centros de datos y la ubicación de los datos de clientes en reposo están disponibles como parte de los [mapas de centros](https://office.com/datamaps)de datos interactivos. 
   
 ## <a name="data-residency-option"></a>Opción de residencia de datos
 
-Ofrecemos una opción de residencia datos a los clientes de Office 365 existentes que están cubiertos por las zonas de centro de datos que aparecen en la tabla anterior. Con esta opción, los clientes con los requisitos de residencia de datos pueden solicitar para mover sus datos de clientes principales en el nuevo ubican. Se recomienda nuestros clientes realizar ninguna acción, a menos que su organización necesita los datos de cliente principal se almacenen en reposo en su respectivos ubican de centro de datos de nuevo. Eligiendo mover los datos, los clientes limitar las posibilidades de Microsoft para optimizar la ubicación de datos de clientes principales en reposo en su sistema actual o el nuevo ubican de centro de datos. Como un cliente en cualquiera de esos dos zonas, experimentará la misma calidad de servicio, rendimiento y controles de seguridad tal como hizo antes.
+Proporcionamos una opción de residencia de datos para los clientes de Office 365 existentes que están cubiertos por la GEOS del centro de datos que se enumeran en la tabla anterior. Con esta opción, los clientes con requisitos de residencia de datos pueden solicitar mover sus datos principales de clientes a la nueva geografía. Recomendamos a los clientes no realizar ninguna acción, a menos que su organización necesite que los datos de los clientes principales se almacenen en reposo en su respectivo nuevo área geográfica del centro de datos. Al elegir mover sus datos, los clientes limitan las posibilidades de Microsoft para optimizar la ubicación de los datos de cliente principales en el resto, ya sea en su área geográfica actual o en el nuevo centro de datos. Como cliente en cualquiera de estas dos GEOS, obtendrá los mismos controles de calidad de servicio, rendimiento y seguridad que antes.
   
-Para los clientes que necesitan tener sus datos principales se mueven a la nueva geo:
-  
-- Los clientes necesitarán solicitar que se sus datos que se mueven dentro de una ventana de inscripción de conjunto. Revise la página [cómo solicitar el movimiento de datos](request-your-data-move.md) para obtener más información acerca de la ventana de inscripción para su geo y los pasos para inscribirse en el programa. 
+Los clientes que necesitan tener los datos principales se mueven a la nueva geografía con una fecha límite confirmada de la solicitud de Microsoft para que sus datos se muevan dentro de una ventana de inscripción establecida.  Revise la página [Cómo solicitar el movimiento de datos](request-your-data-move.md) para obtener más información sobre la ventana de inscripción para la geografía y los pasos para inscribirse en el programa.  Los movimientos de datos pueden tardar hasta 24 meses después del período de solicitud para completarse.
+
+- No realizar ninguna acción da como resultado que Microsoft pueda mover los datos principales de clientes en reposo a su nuevo centro de datos geográfico en el transcurso del tiempo como parte de la administración y optimización del servicio.Los datos principales de csutomer solo se pueden mover a su nuevo área geográfica del centro de datos, no a cualquier otra geografía.Notificaremos a los administradores de inquilinos a través del centro de mensajes cuando se haya completado este movimiento de administración del servicio.
+   
+- No presentamos ninguna funcionalidad, características o certificaciones de cumplimiento únicos con el nuevo centro de recursos geográfico.
     
-- Movimientos de datos pueden tardar hasta 24 meses después del período de solicitud para llevar a cabo.
+- La complejidad, la precisión y la escala a la que necesitamos realizar movimientos de datos dentro de un entorno operado globalmente y automatizado nos impedían compartir el contenido cuando se espera que se lleve a cabo un movimiento de datos para el inquilino o cualquier otro inquilino único. Los clientes recibirán una confirmación en el centro de mensajes por servicio colaborador cuando se haya completado el movimiento de datos. 
     
-- No se presentan capacidades únicas, características o certificaciones de cumplimiento con el nuevo ubican de centro de datos.
-    
-- La complejidad, precisión y una escala a la que necesitamos para llevar a cabo los movimientos de datos dentro de un entorno globalmente mando y automatizado prohíben nos uso compartido cuando se espera un movimiento de datos para llevar a cabo para el inquilino o cualquier otro inquilino único. Los clientes recibirán una confirmación en el centro de mensajes por servicio colaborador cuando haya finalizado el movimiento de datos. 
-    
-- Movimientos de datos son una operación de servicio back-end con una repercusión mínima para los usuarios finales. Las características que pueden verse afectadas se enumeran en la página [durante y después de la migración de datos](during-and-after-your-data-move.md) . Se cumplir el [Microsoft Online Services nivel contrato servicio (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) para disponibilidad por lo que no hay nada que necesitan los clientes para preparar o para supervisar durante el traslado. Notificación de cualquier mantenimiento del servicio se realiza si es necesario. 
+- Los movimientos de datos son una operación del servicio back-end con un impacto mínimo en los usuarios finales. Las características que se pueden influir se enumeran en la página [durante y después de mover datos](during-and-after-your-data-move.md) . Adhiere al [contrato de nivel de servicio de Microsoft Online Services (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) por disponibilidad para que no haya nada que los clientes necesiten para preparar o para supervisar durante el movimiento. La notificación de todo el mantenimiento del servicio se realiza si es necesario. 
     
 ## <a name="related-topics"></a>Temas relacionados 
  
 [Cómo solicitar el movimiento de datos](request-your-data-move.md)
     
-[Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.md)
+[Preguntas frecuentes generales sobre movimiento de datos](data-move-faq.md)
   
-[Nuevas zonas de centro de datos de Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Nueva GEOS de centro de recursos para Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
 [Servicios de Azure por región](https://azure.microsoft.com/en-us/regions/)
-  
-
