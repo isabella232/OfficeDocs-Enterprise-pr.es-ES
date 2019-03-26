@@ -14,17 +14,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: 'Resumen: aprenda a administrar licencias y cuentas de usuario con PowerShell de Office 365.'
-ms.openlocfilehash: 27bf709fc0daca5c56d9a1c57d3723a09ff49fdc
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: 604f0e6926936473f4b8e13546cdf0d7d839c667
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573894"
 ---
 # <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>Administrar licencias y cuentas de usuario con PowerShell de Office 365
 
  **Resumen:** obtenga información sobre cómo administrar licencias y cuentas de usuario con PowerShell de Office 365.
   
-Una de las tareas principales de cualquier administrador de Office 365 es administrar licencias y cuentas de usuario. Aunque puede realizar algunas de estas tareas en el Centro de administración de Office 365, otras tareas son mucho más rápidas y fáciles con PowerShell de Office 365. Para obtener más información, consulte los temas siguientes:
+Una de las tareas principales de cualquier administrador de Office 365 es administrar licencias y cuentas de usuario. Aunque puede realizar algunas de estas tareas en el Centro de administración de Microsoft 365, otras tareas son mucho más rápidas y fáciles con PowerShell de Office 365. Para obtener más información, vea los siguientes temas:
   
 - [Ver las licencias y los servicios con PowerShell de Office 365](view-licenses-and-services-with-office-365-powershell.md)
     
