@@ -3,11 +3,10 @@ title: Configuración de los servicios y las aplicaciones de Office 365 Enterpri
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: ITPro
 ms.topic: deployment
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -17,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 description: Configuración de los servicios y las aplicaciones de Office 365 Enterprise
-ms.openlocfilehash: cc94d8ee39611f01e2058273e92b845cdcc0c6d8
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
-ms.translationtype: HT
+ms.openlocfilehash: 2782d4501eb1e0b9d9d6fc40c251e1db065c86be
+ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085459"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004367"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>Configuración de los servicios y las aplicaciones de Office 365 Enterprise
 
@@ -39,7 +38,7 @@ Si necesita ayuda para configurar Office 365, use **[FastTrack](https://fasttrac
 |**Sitios** <br> (SharePoint Online) | - Configurar la funcionalidad híbrida entre [SharePoint Server 2013](https://technet.microsoft.com/library/jj838715) y Office 365 <br> - [Crear y usar plantillas de sitio](https://support.office.com/article/Create-and-use-site-templates-60371B0F-00E0-4C49-A844-34759EBDD989) para personalizar la apariencia de SharePoint Online <br> - Usar la [Guía de planeación de SharePoint Online](https://support.office.com/article/SharePoint-Online-Planning-Guide-for-Office-365-for-business-d5089cdf-3fd2-4230-acbd-20ecda2f9bb8) o el [Asesor de implementación de SharePoint Online](https://aka.ms/spoguidance) para planificar y configurar características adicionales <br> - Administrar el [portal de vídeo de Office 365](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da) |
 |**Mensajería instantánea y reuniones en línea** <br> (Skype Empresarial Online) | - Configurar la funcionalidad híbrida entre el entorno existente de [Lync Server 2013](https://technet.microsoft.com/library/jj204805) o [Skype Empresarial 2015](https://technet.microsoft.com/library/jj205403) y Office 365  <br> - [Configurar Skype Empresarial Online](https://support.office.com/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e) y configurar características comunes, como el enrutamiento de llamadas, las llamadas de conferencia y el uso compartido  <br> - Usar el [Asesor de implementación de Skype Empresarial](https://aka.ms/skypeguidance) para obtener instrucciones de configuración personalizadas |
 | **Almacenamiento y uso compartido de archivos** <br> (OneDrive para la Empresa y SharePoint Online) | - [Configurar el almacenamiento y uso compartido de archivos de Office 365](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_WhatDif): obtenga información sobre cuándo debería usar OneDrive para la Empresa para almacenar archivos y cuándo debería usar sitios de grupo de Office 365 <br> - [Configurar el almacenamiento y uso compartido de archivos de Office 365](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_MoveDocsVideo): vea lo fácil que es cargar archivos en OneDrive para la Empresa y en su sitio de grupo de Office 365 <br> - [Configurar el almacenamiento y uso compartido de archivos de Office 365](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_Store): Vea todos los pasos para cargar archivos en OneDrive para la Empresa y en su sitio de grupo de Office 365. Obtenga sugerencias para el uso compartido de archivos<br> - Usar la [Guía de configuración de OneDrive para la Empresa](https://aka.ms/OD4Bguidance) para obtener instrucciones de configuración personalizadas |
-|**Aplicaciones de Office 365** | - Los administradores office 365 deben usar la [Guía de implementación de Office 2016 para Mac, PC o móvil](https://technet.microsoft.com/library/cc303401%28v=office.16%29.aspx) para obtener ayuda para planear una implementación o una actualización de Office 365 ProPlus empresarial.  <br> - [Centro de administración de Power BI para Office 365](https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044) <br> - [Office Delve para administradores de Office 365](https://support.office.com/article/Office-Delve-for-Office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b) <br> - [Preguntas más frecuentes sobre Sway](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075) <br> - [Introducción a Project Online](https://support.office.com/article/Get-started-with-Project-Online-e3e5f64f-ada5-4f9d-a578-130b2d4e5f11)  <br> - [Asesor de implementación de Microsoft Intune](https://aka.ms/intuneguidance) |
+|**Aplicaciones de Office 365** | - Los administradores office 365 deben usar la [Guía de implementación de Office 2016 para Mac, PC o móvil](https://technet.microsoft.com/library/cc303401%28v=office.16%29.aspx) para obtener ayuda para planear una implementación o una actualización de Office 365 ProPlus empresarial.  <br> - [Centro de administración de Power BI para Microsoft 365](https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044) <br> - [Office Delve para administradores de Office 365](https://support.office.com/article/Office-Delve-for-Office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b) <br> - [Preguntas más frecuentes sobre Sway](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075) <br> - [Introducción a Project Online](https://support.office.com/article/Get-started-with-Project-Online-e3e5f64f-ada5-4f9d-a578-130b2d4e5f11)  <br> - [Asesor de implementación de Microsoft Intune](https://aka.ms/intuneguidance) |
 |**Redes sociales de empresa** <br> (Yammer) | - [Uso de Yammer con Office 365](https://support.office.com/article/Plan-for-Yammer-integration-with-Office-365-4086681f-6de1-4d39-aa72-752b2af1cbd7)  <br> - Usar la [Guía de configuración de Yammer Enterprise](https://aka.ms/yammerdeploy) para obtener instrucciones de configuración personalizadas |
    
 ## <a name="were-here-to-help"></a>¡Estamos aquí para ayudarle!

@@ -3,7 +3,6 @@ title: Automatizar la recopilación de archivos para la exhibición de documento
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Resumen: Aprenda a automatizar una recopilación de archivos de los equipos del usuario para la exhibición de documentos electrónicos.'
-ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915755"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001613"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizar la recopilación de archivos para la exhibición de documentos electrónicos
 
@@ -48,7 +47,7 @@ El siguiente diagrama le dirige por todos los pasos y elementos de la solución
 |![Llamada magenta 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)|   Configurar el filtro de seguridad GPO para aplicar el GPO solo al grupo de administradores <br/> |
 |![Llamada magenta 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Cuando un administrador inicia sesión y se ejecuta el GPO, se llama a la recopilación de scripts de inicio de sesión.  <br/> |
 |![Llamada magenta 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|La recopilación de scripts de inicio de sesión hace un inventario de todas las unidades adjuntadas de forma local del equipo de los administradores, en busca de los archivos que desea, y registra su ubicación.  <br/> |
-|![Llamada magenta 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|La recopilación de scripts de inicio de sesión copia los archivos inventariados en un recurso compartido de archivos oculto en el servidor de implementación.   <br/> |
+|![Llamada magenta 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|La recopilación de scripts de inicio de sesión copia los archivos inventariados en un recurso compartido de archivos oculto en el servidor de implementación.  <br/> |
 |![Llamada magenta 6](media/99589726-0c7e-406b-a276-44301a135768.png)| (Opción A) Ejecute manualmente el script de importación de PST para importar los archivos PST recopilados en Exchange Server 2013. <br/> |
 |![Llamada magenta 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Opción B) Mediante la herramienta de Importar y procesar de Office 365, importe los archivos PST recopilados en Exchange Online.  <br/> |
 |![Llamada magenta 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Mueva todos los archivos recopilados a un recurso compartido de archivos de Azure para un almacenamiento a largo plazo con el Runbook MoveToColdStorageSystem Center Orchestrator 2012 R2. <br/> |
@@ -273,9 +272,9 @@ Write-Host -ForegroundColor Cyan "Finished."
 |:-----|:-----|:-----|
 |71  <br/> |Variable **$FileTypes**. Incluir todos los tipos de extensiones de archivo que desea que el script inventarie y recopile en la variable de matriz<br/> |Opcional  <br/> |
 |76 y 77  <br/> |Cambie la manera en la que la variable **$CaseNo** se genera para que se adapte a sus necesidades. El script captura la fecha y hora actuales y le anexa el nombre de usuario.<br/> |Opcional  <br/> |
-|80  <br/> |La variable **$CaseRootLocation** debe establecerse en el recurso compartido de archivos del archivo de colección de servidores de implementación. Por ejemplo, **\\\\Staging\\Cases$** <br/> |Necesario  <br/> |
+|80  <br/> |La variable **$CaseRootLocation** debe establecerse en el recurso compartido de archivos del archivo de colección de servidores de implementación. Por ejemplo, **\\\\Staging\\Cases$** <br/> |Obligatorio  <br/> |
    
-4. Coloque el archivo CollectionScript.ps1 en el recurso compartido de archivo Netlogon en un controlador de dominio. 
+4. Coloque el archivo CollectionScript.ps1 en el recurso compartido de archivo Netlogon en un controlador de dominio.  
     
 ### <a name="configure-gpo-for-the-logon-script-and-custodians-group"></a>Configurar el GPO para el grupo Administradores y el script de inicio de sesión
 
@@ -330,7 +329,7 @@ $AllFiles | ForEach-Object {
 |**Número de línea**|**Lo que es necesario cambiar**|**obligatorio/opcional**|
 |:-----|:-----|:-----|
 |12  <br/> |**$FolderIdentifier** etiqueta las carpetas del buzón en las que se importan los archivos PST. Cambie esto si es necesario.<br/> |Opcional  <br/> |
-|17  <br/> |**$ConnectionUri** tiene que estar establecido como su propio servidor. <br/> > [!IMPORTANT]> Asegúrese de que su **$ConnectionUri** indica una ubicación http://, y no a una https://. No funcionará con https://          |Necesario  <br/> |
+|432  <br/> |**$ConnectionUri** tiene que estar establecido como su propio servidor. <br/> > [!IMPORTANT]> Asegúrese de que su **$ConnectionUri** indica una ubicación http://, y no a una https://. No funcionará con https://          |Obligatorio  <br/> |
    
 4. Compruebe que la cuenta del subsistema de confianza de Exchange tiene permisos de lectura, escritura y ejecución en el recurso compartido \\\\Staging\\Cases$.
     

@@ -23,16 +23,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Ver el estado de mantenimiento de los servicios de Office 365 antes de llamar al soporte técnico para ver si hay una interrupción del servicio activo
-ms.openlocfilehash: 7a8d6c028caa72d332a51123233b2d0642311da0
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 483ff0ff6507010c9a81f0774fc8c3e8820395cb
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085299"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001583"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Cómo comprobar el estado del servicio de Office 365
 
-Puede ver el estado de Office 365, Yammer, Microsoft Dynamics CRM y los servicios en la nube de Microsoft Intune en la página **Estado del servicio** de Office 365 en el centro de administración. Si experimenta problemas con un servicio en la nube, puede comprobar el estado del servicio para determinar si se trata de un problema conocido con una solución en curso antes de llamar al soporte técnico o gastar tiempo en solucionar problemas. 
+Puede ver el estado de Office 365, Yammer, Microsoft Dynamics CRM y los servicios en la nube de Microsoft Intune en la página **Estado del servicio** de Office 365 en el centro de administración de [Microsoft 365](https://admin.microsoft.com). Si experimenta algún problema con un servicio en la nube, antes de llamar al soporte técnico o de invertir tiempo intentando solucionarlo, puede comprobar el estado del servicio para determinar si se trata de un problema conocido que ya tenga una resolución en curso. 
 
 Si no puede iniciar sesión en el portal de servicios, puede usar la [Página estado del servicio](https://status.office365.com) para comprobar problemas conocidos que impiden que inicie sesión en su inquilino.
   
@@ -43,7 +43,7 @@ Si no puede iniciar sesión en el portal de servicios, puede usar la [Página es
     > [!NOTE]
     > Los usuarios que tienen asignado el rol de administrador de servicios o administrador global pueden ver el estado del servicio. Para que los administradores de Exchange, SharePoint y Skype Empresarial puedan ver el estado del servicio, también se les debe asignar el rol Administrador de servicios.
   
-2. Para abrir el estado del servicio, en el centro de administración, vaya al**Estado del servicio**de **mantenimiento** > o haga clic en la **tarjeta de estado del servicio** en el panel de **Inicio**. La tarjeta del panel indica si hay un problema de servicio activo y se vincula a la página de estado detallado del servicio.
+2. Para abrir el estado del servicio, en el centro de administración, vaya al**Estado del servicio**de **mantenimiento** > o haga clic en la **tarjeta de estado del servicio** en el panel de **Inicio**. En la tarjeta del panel, se indica si existe algún problema de servicio activo y se muestran vínculos a la página del estado detallado del servicio.
     
     ![Dashboard card for service health](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -100,7 +100,7 @@ La mayoría de las veces, los servicios aparecerán como correctos sin más info
 
 |**Estado**|**Definición**|
 |:-----|:-----|
-|**Bajo investigación** | Somos conscientes de que existe un problema potencial y estamos recopilando más información sobre lo que sucede y el ámbito de impacto. |
+|**Investigando** | Somos conscientes de que existe un problema potencial y estamos recopilando más información sobre lo que sucede y el ámbito de impacto. |
 |**Degradación del servicio** | Hemos confirmado que existe un problema que puede afectar al uso de un servicio o una característica. Es posible que vea este estado si un servicio está funcionando más lento de lo normal, si hay interrupciones intermitentes o si una característica no funciona, por ejemplo. |
 |**Interrupción del servicio** | Verá este estado si se determina que un problema afecta a posibilidad de los usuarios de obtener acceso al servicio. En este caso, el problema es importante y se puede reproducir de forma coherente. |
 |**Restaurando el servicio** | Se ha identificado la causa del problema, sabemos qué acción correctiva debemos aplicar y estamos en proceso de restablecer el servicio a un estado correcto. |
@@ -111,7 +111,7 @@ La mayoría de las veces, los servicios aparecerán como correctos sin más info
    
 ## <a name="history"></a>Historial
 
-El estado del servicio le permite ver el estado actual del mantenimiento y ver el historial de los avisos de servicio e incidentes que han afectado a su inquilino en los últimos 30 días. Para ver el estado anterior de todos los servicios, seleccione **Ver historial** en la página **Estado del servicio** . 
+El estado del servicio le permite ver el estado actual del mantenimiento y ver el historial de los avisos de servicio e incidentes que han afectado a su inquilino en los últimos 30 días. Para ver el estado anterior de todos los servicios, seleccione **Ver historial** en la página **Estado del servicio**. 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
@@ -119,7 +119,7 @@ Se muestra una lista de todos los mensajes del estado del servicio publicados en
   
 ![View service health history](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
   
-Puede ver el historial de mantenimiento de los últimos 7 días o de los últimos 30 días. Seleccione cualquier fila para ver más detalles sobre el problema.
+Es posible que vea el historial de estado de los últimos 7 días o de los últimos 30. Seleccione cualquier fila para ver más detalles sobre el problema.
   
 Para obtener más información sobre nuestro compromiso con el tiempo de actividad, vea [operaciones transparentes desde Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
   
@@ -127,9 +127,6 @@ Para obtener más información sobre nuestro compromiso con el tiempo de activid
 
 Nuestro objetivo es asegurarnos de que la información que le proporcionamos sobre un problema en curso sea oportuna, precisa y útil. Para indicarnos su opinión sobre nuestra actuación, seleccione una clasificación por estrellas. Una vez que nos haya valorado con una puntuación de 1 a 5 estrellas, podrá enviar comentarios sobre detalles específicos. Usaremos sus comentarios para ajustar nuestro sistema de estado del servicio.
   
-![Feedback form for service health issues](media/fd083fdb-fde8-47b4-9136-b90d1d003864.png)
-  
 ## <a name="see-also"></a>Vea también
 
-[Informes de actividades en el Centro de administración de Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
-
+[Informes de actividades en el centro de administración de Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)

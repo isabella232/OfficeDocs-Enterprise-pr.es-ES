@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo se administra la identidad del usuario en Office 365.
-ms.openlocfilehash: 7b9a95d7d9c7fb19163518ad68409a22790d4c6e
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372897"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001563"
 ---
 # <a name="understanding-office-365-identity-and-azure-active-directory"></a>Descripción de la identidad de Office 365 y Azure Active Directory
 
@@ -37,7 +37,7 @@ En función de si tiene o no tiene un entorno de Active Directory existente, tie
   
 ### <a name="cloud-only"></a>Solo de nube
 
-Con el modelo de solo nube, solo se administran las cuentas de usuario en Office 365. No es necesario ningún servidor local; Azure AD los ha administrado en la nube. Los usuarios se crean y administran en el centro de administración de Office 365 o mediante los cmdlets de [PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) de Windows PowerShell y la identidad y la autenticación se administran completamente en la nube de Azure ad. El modelo de solo nube suele ser una buena opción si: 
+Con el modelo de solo nube, solo se administran las cuentas de usuario en Office 365. No es necesario ningún servidor local; Azure AD los ha administrado en la nube. Puede crear y administrar usuarios en el [centro de administración de Microsoft 365](https://admin.microsoft.com) o mediante cmdlets de [PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) de Windows PowerShell, y la identidad y la autenticación se administran completamente en la nube de Azure ad. El modelo de solo nube suele ser una buena opción si: 
   
 - No tiene ningún otro directorio de usuarios local.
     

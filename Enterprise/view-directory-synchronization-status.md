@@ -3,7 +3,6 @@ title: Ver el estado de sincronización de directorios en Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,20 +17,22 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Obtenga información sobre cómo desactivar la sincronización de directorios. También puede ver su estado.
-ms.openlocfilehash: 4803cbadd17dbc1ee23d019f39144ff1ffaefd9a
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085059"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001573"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Ver el estado de sincronización de directorios en Office 365
+
 Si ha integrado su Active Directory local con Azure AD mediante la sincronización del entorno local con Office 365, también puede comprobar el estado de la sincronización.
   
 ## <a name="view-directory-synchronization-status"></a>Ver el estado de sincronización de directorios
-- Inicie sesión en el centro de administración de Office 365 y elija **Estado de sincronización de directorios** en la Página principal. 
+
+- Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) y elija **Estado de sincronización de directorios** en la Página principal.
 - **** \> Como alternativa, puede ir a usuarios **activos**y, en la página **usuarios activos** , elija **más** \> **sincronización de directorios**. En el panel **sincronización de directorios** , elija **ir a administración de sincronización**de directorios.
-    
+
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Información en la página administrar la sincronización de directorios
 
 En la siguiente tabla se enumeran las características a las que puede obtener información en la página.
