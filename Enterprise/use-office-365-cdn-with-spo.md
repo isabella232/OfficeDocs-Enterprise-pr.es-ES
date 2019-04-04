@@ -3,7 +3,7 @@ title: Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint 
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 4/3/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Describe cómo usar la red de entrega de contenido (CDN) de Office 365 para acelerar la entrega de los activos de SharePoint Online a todos los usuarios, independientemente de dónde se encuentren o de la forma en que tengan acceso al contenido.
-ms.openlocfilehash: a718c30a40209a8ee0c8e78700ed3eae72c8347c
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
+ms.sourcegitcommit: 100ae697304427dab5ad494a06323656b498c57e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039507"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31396928"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -288,7 +288,7 @@ Use el cmdlet **Add-SPOTenantCdnOrigin** para definir un origen. Puede definir v
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-El valor de _path_ es la ruta de acceso a la biblioteca o carpeta que contiene los activos. Puede usar caracteres comodín además de rutas relativas. Los orígenes admiten caracteres comodín que van precedidos de la dirección URL. Esto le permite crear orígenes que abarquen varios sitios. Por ejemplo, para incluir todos los activos de la carpeta MasterPages para todos los sitios como origen público en la red CDN, escriba el siguiente comando:
+El valor de _path_ es la ruta de acceso relativa a la biblioteca o carpeta que contiene los activos. Puede usar caracteres comodín además de rutas relativas. Los orígenes admiten caracteres comodín que van precedidos de la dirección URL. Esto le permite crear orígenes que abarquen varios sitios. Por ejemplo, para incluir todos los activos de la carpeta MasterPages para todos los sitios como origen público en la red CDN, escriba el siguiente comando:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
@@ -297,18 +297,18 @@ Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 - El modificador de comodín**/** * solo se puede usar al principio de la ruta de acceso y coincidirá con todos los segmentos de dirección URL en la dirección URL especificada.
 - La ruta de acceso puede apuntar a una biblioteca de documentos, carpeta o sitio. Por ejemplo, la ruta de acceso _*/site1_ coincidirá con todas las bibliotecas de documentos del sitio.
 
-Puede Agregar un origen con una ruta de acceso específica usando una ruta de acceso relativa o una ruta de acceso completa.
+Puede Agregar un origen con una ruta de acceso relativa específica. No se puede Agregar un origen mediante la ruta de acceso completa.
 
-En este ejemplo se agrega un origen privado de la biblioteca siteassets en un sitio específico mediante una ruta de acceso relativa:
+En este ejemplo se agrega un origen privado de la biblioteca siteassets en un sitio específico:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-En este ejemplo se agrega un origen privado de la carpeta _Folder1_ en la biblioteca de activos del sitio de la colección de sitios mediante la ruta de acceso completa:
+En este ejemplo se agrega un origen privado de la carpeta _Folder1_ en la biblioteca de activos del sitio de la colección de sitios:
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “https://contoso.sharepoint.com/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
 ```
 
 Para obtener más información sobre este comando y su sintaxis, consulte [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
@@ -469,7 +469,7 @@ Vea [orígenes de la red CDN](use-office-365-cdn-with-spo.md#default-cdn-origins
 
 ### <a name="add-an-office-365-cdn-origin"></a>Agregar un origen de red CDN de Office 365
 
-> [!NOTE]
+> [!IMPORTANT]
 > Nunca debe poner recursos considerados confidenciales para su organización en una biblioteca de documentos de SharePoint configurada como un origen público.
 
 Use el comando [spo cdn origin add](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) definir un origen de la red CDN. Puede definir varios orígenes. El origen es una dirección URL que apunta a una biblioteca de SharePoint o la carpeta que contiene los activos que desea que se hospeden mediante la red CDN.
@@ -478,7 +478,7 @@ Use el comando [spo cdn origin add](https://pnp.github.io/office365-cli/cmd/spo/
 spo cdn origin add --type [Public | Private] --origin <path>
 ```
 
-Donde `path` es la ruta de acceso a la carpeta que contiene los activos. Puede usar caracteres comodín además de rutas relativas.
+Donde `path` es la ruta de acceso relativa a la carpeta que contiene los activos. Puede usar caracteres comodín además de rutas relativas.
 
 Para incluir todos los activos de la **Galería de páginas maestras** de todos los sitios como origen público, ejecute:
 
