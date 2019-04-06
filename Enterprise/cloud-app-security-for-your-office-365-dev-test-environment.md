@@ -1,5 +1,5 @@
 ---
-title: Cloud App Security para el entorno de desarrollo y pruebas de Office 365
+title: Seguridad de Cloud App para su entorno de desarrollo y prueba de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,14 +16,14 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Resumen: Configure y demuestre Office 365 Cloud App Security en su entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: f8630f1666286c2f3cced9323eccbe1f73203fdb
-ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
+ms.openlocfilehash: 7b77c383eb521c51aa03208aae8c1636c7935821
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573684"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038044"
 ---
-# <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security para el entorno de desarrollo y pruebas de Office 365
+# <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Seguridad de Cloud App para su entorno de desarrollo y prueba de Office 365
 
  **Resumen:** Configure y demuestre Office 365 Cloud App Security en su entorno de desarrollo y pruebas de Office 365.
   
@@ -41,7 +41,7 @@ Si solo quiere probar Cloud App Security de manera ligera con los requisitos mí
 Si quiere probar Cloud App Security en una empresa simulada, siga las instrucciones que se indican en [DirSync para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> La prueba de Cloud App Security no requiere el entorno de desarrollo y pruebas de una empresa simulada, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Windows Server AD. Se proporciona aquí como una opción para poder probar Cloud App Security y experimentar con ella en un entorno que representa una organización típica. 
+> La prueba de Cloud App Security no requiere el entorno de desarrollo y pruebas de una empresa simulada, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de servicios de dominio de Active Directory (AD DS). Se proporciona aquí como una opción para poder probar Cloud App Security y experimentar con ella en un entorno que representa una organización típica. 
   
 ## <a name="phase-2-before-enabling-cloud-app-security-and-creating-a-policy"></a>Fase 2: antes de habilitar Cloud App Security y crear una directiva
 

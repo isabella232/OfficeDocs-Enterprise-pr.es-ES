@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 'Resumen: Las soluciones de SharePoint 2013 pueden hospedarse en máquinas virtuales de Microsoft Azure. Obtenga información acerca de qué tipo de soluciones son una buena opción y cómo configurar Microsoft Azure para hospedar una.'
-ms.openlocfilehash: f7d34f5f9640a8f404265433806ccc39a35c8fd5
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 7e40b7c4d37e5646d44a14f12a80a9c6cd25834b
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915385"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038074"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquitecturas de Microsoft Azure para SharePoint 2013
 
@@ -105,7 +105,7 @@ En este diagrama:
     
 Para obtener información adicional para planear y crear una red virtual entre locales, consulte [Conectar una red local con una red virtual de Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
   
-## <a name="add-windows-server-active-directory-ad-and-dns"></a>Agregar Windows Server Active Directory (AD) y DNS
+## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Adición de servicios de dominio de Active Directory (AD DS) y DNS
 
 Para la recuperación ante desastres en Azure, debe implementar Windows Server AD y DNS en un escenario híbrido donde se implementa Windows Server AD tanto de forma local como en máquinas virtuales de Azure.
   

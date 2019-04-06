@@ -3,7 +3,7 @@ title: Protección de archivos confidenciales en el entorno de desarrollo y prue
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Resumen: Configure y demuestre cómo Office 365 Information Rights Management protege los archivos confidenciales, incluso cuando se publican en la colección de sitios incorrecta de SharePoint Online.'
-ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574074"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037974"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protección de archivos confidenciales en el entorno de desarrollo y pruebas de Office 365
 
@@ -32,7 +32,7 @@ Information Rights Management (IRM) en Office 365 es un conjunto de característ
 Con las instrucciones de este artículo, habilite y pruebe IRM en Office 365 para archivos que contienen posible información confidencial en su suscripción de prueba de Office 365.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: Crear el entorno de desarrollo y pruebas de Office 365
 
@@ -53,7 +53,7 @@ Siga las instrucciones de [conectarse a office 365 PowerShell](https://technet.m
   
 - Su equipo (para el entorno de desarrollo y pruebas ligero de Office 365).
     
-- La máquina virtual CLIENT1 (para el entorno de desarrollo y pruebas de una empresa simulada de Office 365).
+- La máquina virtual CLIENTE1 (para el entorno de desarrollo y pruebas de una empresa ficticia de Office 365).
     
 En el cuadro de diálogo **Solicitud de credenciales para Windows PowerShell**, escriba el nombre de administrador global de Office 365 (ejemplo: jdoe@contosotoycompany.onmicrosoft.com) y la contraseña de su suscripción de prueba de Office 365.
   
@@ -232,7 +232,7 @@ Para preparar Office 365 para las fases 3 y 4, habilite IRM para SharePoint Onli
     
 5. En la pestaña **Centro de administración de SharePoint**, haga clic en **Configuración**.
     
-6. En la página **Configuración**, en la sección **Information Rights Management (IRM)**, seleccione **Use el servicio de IRM especificado en la configuración** y, después, seleccione **Actualizar configuración de IRM**.
+6. En la página, en la sección **Information Rights Management (IRM)** , seleccione **usar el servicio de IRM especificado en su configuración**y, después, seleccione **Actualizar configuración de IRM**.
     
 7. Cierre la pestaña **Centro de administración de SharePoint**.
     
@@ -264,7 +264,7 @@ Primero, habilite y configure IRM para la biblioteca de documentos de la colecci
     
 8. En **Configurar derechos de acceso de documentos**, seleccione **Permitir que los lectores impriman** y **Permitir a los lectores escribir en una copia del documento descargado**.
     
-9. En **Establecer la protección de grupos y el intervalo de credenciales**, seleccione **Permitir la protección de grupos** y, para **Grupo predeterminado**, escriba **Ejecutivos**.
+9. En **establecer intervalo de credenciales y protección de grupo**, seleccione **permitir la protección de grupos. Grupo predeterminado**y, a continuación, escriba **ejecutivos**.
     
 10. Haga clic en **Aceptar**.
     
@@ -332,11 +332,11 @@ Otra manera de ver la protección de IRM es mirar los archivos de su carpeta loc
   
 ## <a name="see-also"></a>Vea también
 
-[Guías del entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
   
-[Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
+[Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 

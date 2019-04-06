@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Resumen: configure y demuestre la Exhibición avanzada de documentos electrónicos de Office 365 en el entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 6c52c7c7fdc31616e58f186484d2d8c4506b7ea6
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573824"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038024"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Exhibición avanzada de documentos electrónicos para el entorno de desarrollo y pruebas de Office 365
 
@@ -30,7 +30,7 @@ Office 365 Advanced eDiscovery le permite encontrar y analizar rápidamente info
 Con las instrucciones de este artículo, puede crear un pequeño conjunto de datos para una disputa contractual ficticia y analizarlo con la exhibición avanzada de documentos electrónicos.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: Crear el entorno de desarrollo y prueba de Office 365
 
@@ -39,7 +39,7 @@ Si solo quiere probar la exhibición avanzada de documentos electrónicos de man
 Si desea probar la exhibición avanzada de documentos electrónicos en una empresa simulada, siga las instrucciones que se indican en [DirSync para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> La realización de pruebas en la exhibición avanzada de documentos electrónicos no requiere el entorno de una empresa simulada, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Windows Server AD. Se proporciona aquí como una opción para que pueda realizar pruebas y experimentación en un entorno que represente una organización típica. 
+> La prueba de eDiscovery avanzado no requiere el entorno empresarial simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de servicios de dominio de Active Directory (AD DS). Se proporciona aquí como una opción para que pueda realizar pruebas y experimentación en un entorno que represente una organización típica. 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>Fase 2: Crear datos de ejemplo para la exhibición avanzada de documentos electrónicos
 
@@ -183,7 +183,7 @@ Ahora puede utilizar este entorno para crear nuevo contenido, nuevas búsquedas 
   
 ## <a name="see-also"></a>Vea también
 
-[Guías del entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
   

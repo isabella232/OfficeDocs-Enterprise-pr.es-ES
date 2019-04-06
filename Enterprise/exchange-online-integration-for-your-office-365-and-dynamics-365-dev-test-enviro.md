@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: 'Resumen: Utilice a esta guía del entorno de pruebas para habilitar la integración de Dynamics 365 para Exchange Online en su suscripción de prueba de Office 365.'
-ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 47153f9321284d0bb30f59645dfe56ab40cb7982
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574024"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038004"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Integración de Exchange Online para su entorno de desarrollo y pruebas y de Office 365 y 365 de Dynamics
 
@@ -36,7 +36,7 @@ Utilice a esta guía del entorno de pruebas para configurar y mostrar cómo Exch
 Siga las instrucciones de [Entorno de desarrollo y pruebas de Office 365 y Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md) para crear una versión ligera o de empresa simulada de un entorno de desarrollo y pruebas de Office 365 y Dynamics 365.
   
 > [!NOTE]
-> La configuración recogida en este artículo no requiere el entorno de desarrollo y pruebas de una empresa simulada, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Windows Server Active Directory (AD). Aquí se ofrece como opción para que pueda experimentar con Office 365 y Dynamics 365 en un entorno que representa una organización típica. 
+> La configuración de este artículo no requiere el entorno de desarrollo y pruebas de una empresa simulada, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de servicios de dominio de Active Directory (AD DS). Aquí se ofrece como opción para que pueda experimentar con Office 365 y Dynamics 365 en un entorno que representa una organización típica. 
   
 ## <a name="phase-2-configure-and-demonstrate-dynamics-365-integration-in-exchange-online"></a>Fase 2: Configurar y mostrar la integración de Dynamics 365 en Exchange Online
 
@@ -113,7 +113,7 @@ Siga estos pasos para instalar la aplicación Dynamics 365 para Outlook y mostra
   
 [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
   
-[Sincronización de directorios (DirSync) para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 
 [Administración de suscripción para Dynamics 365 (online)](https://technet.microsoft.com/library/jj679903.aspx)
   

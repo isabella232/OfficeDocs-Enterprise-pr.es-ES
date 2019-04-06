@@ -18,17 +18,17 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: Obtenga información sobre cómo ver los errores de sincronización de directorios en el centro de administración de Office 365.
-ms.openlocfilehash: 8b7bb16aeddbf1765426c3725cd1f670524ef6d1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+description: Obtenga información sobre cómo ver los errores de sincronización de directorios en el centro de administración de Microsoft 365.
+ms.openlocfilehash: 8450c2e26c9c9ae194be46d81018a20c91e35f29
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085039"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001813"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Ver errores de sincronización de directorios en Office 365
 
-Puede ver los errores de sincronización de directorios en el centro de administración de Office 365. Solo se muestran los errores del objeto de usuario. Para ver los errores con PowerShell, consulte [identificar objetos con DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
+Puede ver los errores de sincronización de directorios en el [centro de administración de Microsoft 365](https://admin.microsoft.com). Solo se muestran los errores del objeto de usuario. Para ver los errores con PowerShell, consulte [identificar objetos con DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
 Después de ver, vea [solucionar problemas con la sincronización de directorios para Office 365](fix-problems-with-directory-synchronization.md) para corregir los problemas identificados.
   
@@ -38,7 +38,7 @@ Para ver los errores en el centro de administración:
   
 1. Inicie sesión en Office 365 con su cuenta profesional o educativa. 
     
-2. Vaya a la [información acerca del centro de administración de Office 365](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
+2. Vaya a la [información acerca del centro de administración](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
     
 3. En la página **principal** , verá el icono de **Estado de sincronización de directorios** . 
     

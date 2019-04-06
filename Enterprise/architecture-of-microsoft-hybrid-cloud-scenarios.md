@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: 'Resumen: Comprenda la arquitectura de las ofertas de nube híbrida de Microsoft.'
-ms.openlocfilehash: 74fc046d1f60b29338e7f12184dec018538ba9da
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: f5493c0f008b22af412ee95ccb8b7581eee71476
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123397"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038014"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Arquitectura de escenarios de nube híbrida de Microsoft
 
@@ -33,7 +33,7 @@ Use un enfoque de arquitectura para planear e implementar escenarios de nube hí
   
 En la figura 1, se muestra la pila de nube híbrida de Microsoft y su capa, que puede ser Local, Red, Identidad, aplicaciones y escenarios, y la categoría de servicio en la nube (SaaS de Microsoft y PaaS de Azure).
   
-La capa de aplicaciones y escenarios tiene los escenarios de nube híbrida específicos que se detallan en los artículos adicionales de este modelo. La identidad, red y local capas pueden ser comunes a las categorías de servicio de nube (SaaS, PaaS o PaaS).
+El nivel de aplicaciones y escenarios tiene los escenarios de nube híbrida específicos que se detallan en los artículos adicionales de este modelo. Las capas Identidad, Red y Local pueden ser comunes a las categorías de servicio en la nube (SaaS o PaaS).
   
 - Local
     
@@ -41,11 +41,11 @@ La capa de aplicaciones y escenarios tiene los escenarios de nube híbrida espec
     
 - Red
     
-    Hay dos opciones para la conectividad con plataformas de nube de Microsoft y servicios: la canalización de Internet existente y ExpressRoute. Usar una conexión de ExpressRoute si el rendimiento predecible es importante. Puede usar una conexión de ExpressRoute para conectarse directamente a los servicios de Microsoft SaaS (Office 365 y Dynamics 365), los servicios de Azure PaaS y servicios de Azure IaaS.
+    Hay dos opciones de conectividad con plataformas y servicios de nube de Microsoft: la canalización de Internet existente y ExpressRoute. Use una conexión de ExpressRoute si es importante el rendimiento predecible. Puede usar una conexión de ExpressRoute para conectarse directamente a los servicios de SaaS de Microsoft (Office 365 y Dynamics 365), los servicios PaaS de Azure y los servicios de IaaS de Azure.
     
 - Identidad
     
-    Para la infraestructura de identidad de la nube, hay dos formas de proceder, según la plataforma de nube de Microsoft. Para SaaS y PaaS de Azure, integre la infraestructura de identidad local con Azure AD o fedérese con los proveedores de identidad de terceros o de infraestructura de identidad local. Para máquinas virtuales que se ejecutan en Azure, puede ampliar su infraestructura de identidad local, como Windows Server AD, a las redes virtuales (VNets) en que se encuentran las máquinas virtuales.
+    Para la infraestructura de identidad de la nube, hay dos formas de proceder, según la plataforma de nube de Microsoft. Para SaaS y PaaS de Azure, integre la infraestructura de identidad local con Azure AD o fedérese con los proveedores de identidad de terceros o de infraestructura de identidad local. Para las máquinas virtuales que se ejecutan en Azure, puede ampliar la infraestructura de identidades local, como los servicios de dominio de Active Directory (AD DS), a las redes virtuales (Vnet) donde residen las VM.
     
 ## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>Escenarios de nube híbrida para el proceso de adopción de la nube de tres fases
 
@@ -67,5 +67,5 @@ Muchas empresas, incluida Microsoft, usan un enfoque de tres fases para la adopc
 
 [Microsoft Hybrid Cloud para arquitectos profesionales](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

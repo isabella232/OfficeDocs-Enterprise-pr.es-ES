@@ -3,50 +3,50 @@ title: Aplicaciones integradas y Azure AD para administradores de Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 11/19/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection: M365-subscription-management
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
-description: Obtenga información sobre cómo O365 integrar aplicaciones están registrados y administrarse en Azure AD
-ms.openlocfilehash: 6edf22261a40563227862908302d519a7edd6419
-ms.sourcegitcommit: 7be23a03daeb42c156220efe7b2112938438ee82
+description: Obtenga información sobre cómo las aplicaciones integradas de O365 se registran y administran en Azure AD
+ms.openlocfilehash: f4e2061c952a09c4e23aa50bd294b7391e1ca3e6
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "26618876"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001883"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Aplicaciones integradas y Azure AD para administradores de Office 365
 
-No hay más a la administración de aplicaciones integradas que acaba de [Aplicaciones integrado de activar o desactivar](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114). Con la llegada de las API de REST de Office 365, los usuarios pueden otorgar acceso de aplicaciones a sus datos de Office 365, como correo, calendarios, contactos, los usuarios, grupos, archivos y carpetas. De forma predeterminada, los usuarios necesitan conceder permisos para cada aplicación de forma individual, pero esto no se escala bien si desea autorizar a una aplicación una vez en el nivel de administrador global y desplegar a toda la organización a través del iniciador de la aplicación. Para ello, debe registrar la aplicación en Azure AD. Existen algunos pasos que debe tomar antes de que se puede registrar una aplicación en Azure AD y algunos información de fondo debe conocer que le ayudan a administrar las aplicaciones en la organización de Office 365. En este artículo le dirige a esos recursos.
+Hay más información sobre la administración de aplicaciones integradas que la [activación o desactivación de las aplicaciones integradas](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114). Con la llegada de las API de REST de Office 365, los usuarios pueden conceder acceso a las aplicaciones a sus datos de Office 365, como correo, calendarios, contactos, usuarios, grupos, archivos y carpetas. De forma predeterminada, los usuarios deben conceder permisos individualmente para cada aplicación, pero esto no se escalará correctamente si desea autorizar una aplicación una vez en el nivel de administrador global y implementarla en toda la organización mediante el iniciador de aplicaciones. Para ello, debe registrar la aplicación en Azure AD. Hay algunos pasos que debe tener en cuenta antes de poder registrar una aplicación en Azure AD y la información básica que necesita saber que puede ayudarle a administrar las aplicaciones de su organización de Office 365. Este artículo le dirige a esos recursos.
   
-## <a name="azure-ad-resources-for-office-365-admins"></a>Recursos de Azure AD para los administradores de Office 365
+## <a name="azure-ad-resources-for-office-365-admins"></a>Recursos de Azure AD para administradores de Office 365
 
-Tiene que hacer estos dos procedimientos antes de poder administrar las aplicaciones de Office 365 en Azure AD.
+Debe realizar estos dos procedimientos para poder administrar las aplicaciones de Office 365 en Azure AD.
   
-|**Requisitos previos**|**Comentarios**|
+|**Requisitos previos**|**Comments**|
 |:-----|:-----|
-|[Registre su suscripción gratuita de Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Cada suscripción de pago a Office 365 incluye una suscripción gratuita a Azure Active Directory. Puede usar Azure AD para administrar sus aplicaciones y para crear y administrar cuentas de usuario y grupo. Para activar esta suscripción y obtener acceso al portal de administración de Azure, debe completar un proceso de registro único. Posteriormente, puede ir a Azure AD desde el centro de administración de Office 365.  <br/> |
-|[Activar o desactivar las aplicaciones integradas](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114) <br/> |Debe activar aplicaciones integrada para los usuarios permitir que las aplicaciones de terceros tener acceso a su información de Office 365 y para registrar aplicaciones en Azure AD. Por ejemplo, cuando alguien utiliza una aplicación de terceros, es posible que pedir esa aplicación permiso para tener acceso a su calendario y para editar los archivos que se encuentran en un OneDrive para la carpeta Business.  <br/> |
+|[Registre su suscripción gratuita de Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Todas las suscripciones de pago a Office 365 incluyen una suscripción gratuita a Azure Active Directory. Puede usar Azure AD para administrar las aplicaciones y para crear y administrar cuentas de usuario y de grupo. Para activar esta suscripción y acceder al portal de administración de Azure, debe completar un proceso de registro. Después, puede ir a Azure AD desde el centro de administración de Office 365.  <br/> |
+|[Activar o desactivar las aplicaciones integradas](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114) <br/> |Debe activar las aplicaciones integradas para que los usuarios puedan permitir que las aplicaciones de terceros accedan a la información de Office 365 y para registrar aplicaciones en Azure AD. Por ejemplo, cuando alguien usa una aplicación de terceros, es posible que esa aplicación le pida permiso para obtener acceso a su calendario y editar los archivos que se encuentran en una carpeta de OneDrive para la empresa.  <br/> |
    
-Administración de aplicaciones de Office 365 requiere tener conocimientos de las aplicaciones de Azure AD. Estos artículos le ayudarán a la información que necesaria.
+Para administrar las aplicaciones de Office 365, es necesario tener conocimientos de aplicaciones en Azure AD. Estos artículos le proporcionan el fondo que necesita.
   
-|**Artículo de fondo**|**Comentarios**|
+|**Artículo de segundo plano**|**Comments**|
 |:-----|:-----|
-|[Cumplir el iniciador de la aplicación de Office 365](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |Si está familiarizado con el iniciador de la aplicación, es posible que se pregunte qué es y cómo usarla. El iniciador de la aplicación está diseñado para que le ayudará a empezar a sus aplicaciones desde cualquier lugar en Office 365.  <br/> |
-|[Agregar, actualizar y quitar una aplicación](https://go.microsoft.com/fwlink/?LinkId=617137) <br/> |En este tema se muestra cómo agregar, actualizar o quitar una aplicación en Azure Active Directory. Obtendrá información sobre los diferentes tipos de aplicaciones que se pueden integrar con Azure AD y cómo configurar las aplicaciones para tener acceso a otros recursos, como las API de web y mucho más.  <br/> |
-|[Tiene la aplicación aparecen en el selector de la aplicación de Office 365](https://go.microsoft.com/fwlink/?LinkId=617138).  <br/> |El iniciador de aplicación en Office 365 que facilita a los usuarios encontrar y tener acceso a sus aplicaciones. En este artículo se describe las formas como un desarrollador puede obtener las aplicaciones que aparecen en los iniciadores de aplicación de los usuarios y también proporcionar una experiencia de inicio de sesión único (SSO) usando sus credenciales de Office 365.  <br/> |
-|[Introducción a la plataforma de API de Office 365](https://go.microsoft.com/fwlink/?LinkId=617140) <br/> |Las API de Office 365 le permite proporcionar acceso a los datos de su cliente Office 365, incluidas las cosas que más les interesan: su correo, calendarios, contactos, los usuarios y grupos, archivos y carpetas. En este artículo que se muestra la relación entre las aplicaciones de Office 365, Azure AD, no hay un diagrama de buena y los datos que tienen acceso las aplicaciones.  <br/> |
-|[Integración de aplicaciones en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) <br/> | Obtenga información sobre las aplicaciones que se integran con Azure Active Directory y cómo registrar la aplicación, comprender los conceptos subyacentes a una aplicación registrada y obtenga información acerca de la personalización de marca directrices para múltiples aplicaciones de inquilinos.  <br/> |
-|[Tutoriales de integración de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list) <br/> |El objetivo de estos tutoriales es mostrar cómo configurar SSO de AD de Azure para las aplicaciones SaaS de terceros.  <br/> |
-|[Escenarios de autenticación para Azure AD](https://go.microsoft.com/fwlink/?LinkId=617145) <br/> |Azure AD simplifica la autenticación para los desarrolladores proporcionando identidad como un servicio, con la compatibilidad con protocolos estándar del sector como OAuth 2.0 y OpenID conectarse, así como abrir bibliotecas de origen para distintas plataformas que le ayudarán a comenzar a codificar más rápidamente. Este documento le ayudará a comprender los distintos escenarios de Azure AD admite y muestra cómo empezar a usar.  <br/> |
-|[Acceso a la aplicación](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-access-management) <br/> |Azure AD permite una integración más fácil a muchas de software más populares de hoy en día como en el caso de las aplicaciones de servicio (SaaS); Proporciona una administración de identidades y acceso, y ofrece un Panel de acceso para los usuarios dónde pueden descubrir qué acceso de la aplicación que tienen y de que puedan usar SSO para tener acceso a sus aplicaciones. Este artículo proporciona vínculos a los recursos relacionados que le permiten obtener más información sobre las mejoras de acceso de la aplicación para Azure AD y cómo pueden contribuir a ellos.  <br/> |
-|[Personalizar su experiencia de Office 365](https://support.office.com/article/eb34a21b-52fa-4fbf-a8d5-146132242985) <br/> |Puede obtener acceso rápido a las aplicaciones que usan todos los días mediante la adición o eliminación de aplicaciones en el selector de la aplicación de Office 365.  <br/> |
+|[Reunirse con el iniciador de aplicaciones de Office 365](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |Si no está familiarizado con el iniciador de aplicaciones, es posible que se pregunte qué es y cómo usarlo. El iniciador de aplicaciones está diseñado para ayudarle a acceder a sus aplicaciones desde cualquier lugar en Office 365.  <br/> |
+|[Agregar, actualizar y eliminar una aplicación](https://go.microsoft.com/fwlink/?LinkId=617137) <br/> |En este tema se muestra cómo agregar, actualizar o quitar una aplicación en Azure Active Directory. Obtendrá información sobre los distintos tipos de aplicaciones que se pueden integrar con Azure AD y cómo configurar las aplicaciones para que tengan acceso a otros recursos, como API Web, y mucho más.  <br/> |
+|[Hacer que la aplicación aparezca en el iniciador de aplicaciones de Office 365](https://go.microsoft.com/fwlink/?LinkId=617138).  <br/> |El iniciador de aplicaciones de Office 365 que facilita a los usuarios la búsqueda y el acceso a sus aplicaciones. En este artículo se describen las formas en las que el desarrollador puede hacer que las aplicaciones aparezcan en los iniciadores de aplicaciones de los usuarios y darles una experiencia de inicio de sesión único (SSO) mediante sus credenciales de Office 365.  <br/> |
+|[Información general sobre la plataforma de las API de Office 365](https://go.microsoft.com/fwlink/?LinkId=617140) <br/> |Las API de Office 365 le permiten proporcionar acceso a los datos de Office 365 del cliente, lo que incluye las cosas que le interesan con mayor frecuencia: su correo, calendarios, contactos, usuarios y grupos, archivos y carpetas. Hay un buen diagrama en este artículo que ilustra la relación entre las aplicaciones de Office 365, Azure AD y los datos a los que acceden las aplicaciones.  <br/> |
+|[Integración de aplicaciones en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) <br/> | Obtenga información sobre las aplicaciones que se integran con Azure Active Directory y cómo registrar la aplicación, comprender los conceptos de una aplicación registrada y obtener información sobre las pautas de personalización de marca para aplicaciones de varios inquilinos.  <br/> |
+|[Tutoriales de integración de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list) <br/> |El objetivo de estos tutoriales es mostrarle cómo configurar el SSO de Azure AD para las aplicaciones SaaS de terceros.  <br/> |
+|[Escenarios de autenticación de Azure AD](https://go.microsoft.com/fwlink/?LinkId=617145) <br/> |Azure AD simplifica la autenticación para los desarrolladores al proporcionar identidad como un servicio, con compatibilidad para protocolos estándar de la industria como OAuth 2,0 y OpenID Connect, así como bibliotecas de código abierto para diferentes plataformas que le ayudarán a empezar a codificar rápidamente. Este documento le ayuda a comprender los diversos escenarios que Azure AD admite y le muestra cómo empezar.  <br/> |
+|[Acceso a la aplicación](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-access-management) <br/> |Azure AD permite una integración sencilla con muchas de las aplicaciones de software de hoy en día (SaaS) más conocidas; proporciona administración de identidades y acceso, y ofrece un panel de acceso para los usuarios donde pueden descubrir qué acceso a la aplicación tienen y dónde pueden usar SSO para obtener acceso a sus aplicaciones. En este artículo se proporcionan vínculos a los recursos relacionados que le permiten obtener más información sobre las mejoras de acceso a la aplicación para Azure AD y cómo puede contribuir a ellas.  <br/> |
+|[Personalizar su experiencia de Office 365](https://support.office.com/article/eb34a21b-52fa-4fbf-a8d5-146132242985) <br/> |Puede obtener acceso rápido a las aplicaciones que usa cada día si agrega o quita aplicaciones en el iniciador de aplicaciones de Office 365.  <br/> |
    
 
