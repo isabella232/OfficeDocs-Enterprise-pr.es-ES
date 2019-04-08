@@ -1,9 +1,8 @@
 ---
-title: Configurar la búsqueda en OneDrive para la Empresa multigeográfico
+title: Configurar la búsqueda para Office 365 Multi-Geo
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,18 +10,16 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico.
-ms.openlocfilehash: c56e7d310dd6ece53fdea36df4ad94e2ebbc64cb
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 5a06b30e7850a23ff6443eb8b5b2e9e14850a7db
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "26705464"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931839"
 ---
-# <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurar la búsqueda en OneDrive para la Empresa multigeográfico
+# <a name="configure-search-for-office-365-multi-geo"></a>Configurar la búsqueda para Office 365 Multi-Geo
 
-En un entorno de OneDrive para la Empresa multigeográfico, una organización puede tener un espacio empresarial de Office 365, pero almacenar el contenido de OneDrive en varias ubicaciones geográficas: una ubicación central y una o varias ubicaciones por satélite.
-
-Cada ubicación geográfica tiene su propio índice de búsqueda y Centro de búsqueda. Cuando un usuario realiza una búsqueda, se efectúa una distribución ramificada de la consulta a todos los índices y los resultados devueltos se combinan.
+En un entorno multigeográfico, cada ubicación geográfica tiene su propio índice de búsqueda y centro de búsqueda. Cuando un usuario realiza una búsqueda, se efectúa una distribución ramificada de la consulta a todos los índices y los resultados devueltos se combinan.
 
 Por ejemplo, un usuario de una ubicación geográfica puede realizar búsquedas de contenido almacenado en otra ubicación geográfica o contenido de un sitio de SharePoint que está restringido a otra ubicación geográfica. Si el usuario tiene acceso a este contenido, la búsqueda mostrará el resultado.
 
@@ -48,7 +45,7 @@ En cuanto se haya configurado el entorno multigeográfico, los usuarios que busq
 
 En cuanto se haya configurado el entorno multigeográfico, los usuarios que busquen en Delve obtendrán resultados de todas las ubicaciones geográficas.
 
-La fuente de Delve y la tarjeta de perfil solo muestran vistas previas de los archivos almacenados en la ubicación **central**. Para los archivos que se almacenan en ubicaciones por satélite, se muestra el icono del tipo de archivo en su lugar.
+La fuente de Delve y la tarjeta de perfil solo muestran vistas previas de los archivos almacenados en la ubicación central. Para los archivos que se almacenan en ubicaciones satélite, se muestra el icono del tipo de archivo en su lugar.
 
 ### <a name="the-sharepoint-home-page"></a>Página principal de SharePoint
 
@@ -70,20 +67,20 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 <thead>
 <tr class="header">
 <th align="left"><strong>Característica</strong></th>
-<th align="left"><strong>¿Cómo funciona?</strong></th>
+<th align="left"><strong>Funcionamiento</strong></th>
 <th align="left"><strong>Solución alternativa</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">Resultados promocionados</td>
-<td align="left">Puede crear reglas de consulta con los resultados promocionados en distintos niveles: para todo el espacio empresarial, para una colección de sitios o para un sitio. En un entorno multigeográfico, defina los resultados promocionados en el nivel de <strong>espacio empresarial</strong> si quiere promover los resultados a los centros de búsqueda de <strong>todas</strong> las ubicaciones geográficas. Si <strong>solo</strong> quiere promover los resultados del Centro de búsqueda que se encuentra en la ubicación geográfica del sitio o la colección de sitios, defina los resultados en el nivel de <strong>colección de sitios</strong> o de <strong>sitio</strong>.</td>
+<td align="left">Puede crear reglas de consulta con resultados promocionados a diferentes niveles: para todo el inquilino, para una colección de sitios o para un sitio. En un entorno multigeográfico, defina los resultados promocionados a nivel de espacio empresarial para promover los resultados a los centros de búsqueda en todas las ubicaciones geográficas. Si solo quiere promover los resultados del Centro de búsqueda que se encuentra en la ubicación geográfica del sitio o la colección de sitios, defina los resultados en el nivel de colección de sitios o de sitio. Estos resultados no se promueven en otras ubicaciones geográficas.</td>
 <td align="left">Si no necesita resultados promocionados distintos por ubicación geográfica, por ejemplo, diferentes reglas de viaje, se recomienda definir los resultados promocionados en el nivel de espacio empresarial.</td>
 </tr>
 <tr class="even">
 <td align="left">Refinadores de búsquedas</td>
 <td align="left">La búsqueda devuelve refinadores de todas las ubicaciones geográficas de un espacio empresarial y luego los agrega. La agregación es la mejor posible, lo que significa que puede que los recuentos de refinadores no sean exactos al 100%. Para la mayoría de los escenarios basado en búsquedas esta precisión es suficiente. </td>
-<td align="left">En aplicaciones basadas en búsquedas que dependen de la exhaustividad del refinador, consulte cada ubicación geográfica por separado sin usar la distribución ramificada multigeográfica.</td>
+<td align="left">En aplicaciones basadas en búsquedas que dependen de la exhaustividad del refinador, consulte cada ubicación geográfica por separado.</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -98,6 +95,11 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 <tr class="odd">
 <td align="left">Número de resultados</td>
 <td align="left">La página de resultados de búsqueda muestra los resultados combinados de las ubicaciones geográficas, pero no es posible ver más allá de 500 resultados.</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Búsqueda híbrida</td>
+<td align="left">En un entorno de SharePoint híbrido con <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">búsqueda de nube híbrida</a>, el contenido local se agrega al índice de Office 365 de la ubicación central.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -128,7 +130,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, n
 
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>¿Cómo funciona la búsqueda en un entorno multigeográfico?
 
-**Todos** los clientes de búsqueda usan la API REST de SharePoint Search existente para interactuar con los índices de búsqueda.
+Todos los clientes de búsqueda usan la API REST de SharePoint Search existente para interactuar con los índices de búsqueda.
 
 <img src="media/configure-search-for-multi-geo-image1-1.png" />
 
@@ -153,7 +155,7 @@ Cada Centro de búsqueda tiene varios sectores verticales y hay que configurar i
 3.  Seleccione el sector vertical que quiere configurar, haga clic en el icono de engranaje **Configuración** de la esquina superior derecha y luego en **Editar página**. La página de resultados de búsqueda se abre en modo de edición.
 
      ![](media/configure-search-for-multi-geo-image2.png)
-1.  En el elemento web de resultados de búsqueda, mueva el puntero a la esquina superior derecha del elemento web, haga clic en la flecha y luego en **Editar elemento Web** en el menú. El panel de herramientas del elemento web de resultados de búsqueda se abrirá en la cinta de la parte superior derecha de la página. ![](media/configure-search-for-multi-geo-image3.png)
+1.  En el elemento web Resultados de búsqueda, mueva el puntero a la esquina superior derecha del elemento web, haga clic en la flecha y, a continuación, haga clic en **Editar elemento web** en el menú. El panel de herramientas del elemento web de resultados de búsqueda se abrirá debajo de la cinta en la parte superior derecha de la página. ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  En la sección **Configuración** del panel de herramientas del elemento web de resultados de búsqueda, en **Configuración de control de resultados**, seleccione **Show Multi-Geo results** (Mostrar resultados multigeográficos) para que el elemento web de resultados de la búsqueda muestre los resultados de todas las ubicaciones geográficas.
 
@@ -168,21 +170,22 @@ Cada Centro de búsqueda tiene varios sectores verticales y hay que configurar i
 
 Las aplicaciones de búsqueda personalizada obtienen resultados de todas o algunas de las ubicaciones geográficas especificando parámetros de consulta con la solicitud a la API REST de SharePoint Search. En función de los parámetros de consulta, se efectúa una distribución ramificada de la consulta a todas o a algunas de las ubicaciones geográficas. Por ejemplo, si solo tiene que consultar un subconjunto de las ubicaciones geográficas para encontrar información relevante, puede controlar la distribución ramificada a solo estas. Si la solicitud se realiza correctamente, la API REST de SharePoint Search devuelve datos de respuesta.
 
-#### <a name="requirement"></a>Requisito #### 
+**Requisito**
+
 Para cada ubicación geográfica, debe asegurarse de que se ha concedido a todos los usuarios de la organización el nivel de permisos de **lectura** para el sitio web raíz (por ejemplo, contoso**APAC**.sharepoint.com/ y contoso**UE**.sharepoint.com/). [Más información sobre permisos](https://support.office.com/es-ES/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parámetros de consulta
 
-EnableMultiGeoSearch: valor booleano que especifica si se efectuará una distribución ramificada de la consulta a los índices de otras ubicaciones geográficas del inquilino multigeográfico. Establézcalo en **true** para efectuar una distribución ramificada de la consulta; en **false** para no efectuar una distribución ramificada de la consulta. El valor predeterminado es **false**. Si no incluye este parámetro, **no** se efectúa una distribución ramificada de la consulta a otras ubicaciones geográficas. Si usa el parámetro en un entorno que no es multigeográfico, se ignorará el parámetro.
+EnableMultiGeoSearch: valor booleano que especifica si se efectuará una distribución ramificada de la consulta a los índices de otras ubicaciones geográficas del inquilino multigeográfico. Establézcalo en **true** para efectuar una distribución ramificada de la consulta o en **false** para no hacerlo. El valor predeterminado es **False**. Si no incluye este parámetro, no se efectúa una distribución ramificada de la consulta a otra ubicación geográfica. Si usa el parámetro en un entorno que no es multigeográfico, se ignorará el parámetro.
 
-ClientType: se trata de una cadena. Escriba un nombre de cliente único para cada aplicación de búsqueda. Si no incluye este parámetro, **no** se efectúa una distribución ramificada de la consulta a otra ubicación geográfica.
+ClientType: es una cadena. Escriba un nombre de cliente único para cada aplicación de búsqueda. Si no incluye este parámetro, no se efectúa una distribución ramificada de la consulta a otra ubicación geográfica.
 
 MultiGeoSearchConfiguration: lista opcional de las ubicaciones geográficas del inquilino multigeográfico que se distribuyen cuando **EnableMultiGeoSearch** es **true**. Si no incluye este parámetro o lo deja en blanco, se efectúa una distribución ramificada de la consulta a todas las ubicaciones geográficas. Para cada ubicación geográfica, escriba los elementos siguientes, con formato JSON:
 
 <table>
 <thead>
 <tr class="header">
-<th align="left">Item</th>
+<th align="left">Elemento</th>
 <th align="left">Descripción</th>
 </tr>
 </thead>
@@ -259,7 +262,7 @@ https:// \<espacio empresarial\>/\_api/search/query?querytext='sharepoint'&Prope
 https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
 
 > [!NOTE]
-> Las comas y los dos puntos de la lista de ubicaciones geográficas de la propiedad MultiGeoSearchConfiguration van precedidas por el carácter **barra diagonal inversa**. Esto es debido a que las solicitudes GET usan dos puntos para separar las propiedades, y comas para separar los argumentos de las propiedades. Sin la barra diagonal inversa como carácter de escape, la propiedad MultiGeoSearchConfiguration se interpreta de forma errónea.
+> Las comas y los dos puntos de la lista de ubicaciones geográficas de la propiedad MultiGeoSearchConfiguration van precedidas por el carácter **barra diagonal inversa**. Esto se debe a que las solicitudes GET usan dos puntos para separar las propiedades y comas para separar los argumentos de las propiedades. Sin la barra diagonal inversa como carácter de escape, la propiedad MultiGeoSearchConfiguration se interpreta de forma errónea.
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Ejemplo de distribución ramificada de una solicitud POST a **todas** las ubicaciones geográficas
 
@@ -315,7 +318,7 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
 
 ### <a name="query-using-csom"></a>Consultar con CSOM
 
-Ejemplo de distribución ramificada de una consulta CSOM a **todas** las ubicaciones geográficas
+Ejemplo de distribución ramificada de una consulta CSOM a **todas** las ubicaciones geográficas:
 
     var keywordQuery = new KeywordQuery(ctx);
     keywordQuery.QueryText = query.SearchQueryText;

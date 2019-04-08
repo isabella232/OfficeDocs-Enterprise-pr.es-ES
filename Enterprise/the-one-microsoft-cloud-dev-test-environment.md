@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Resumen: use esta guía del entorno de pruebas para crear un entorno de desarrollo y pruebas donde se incluyan todas las ofertas de la nube de Microsoft.'
-ms.openlocfilehash: 0ccea58e86f2e105704aac01ba4379c21a174e3a
-ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
+ms.openlocfilehash: b8ffd01c9d129d4537c82f0e1f74bd7c1be1388b
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573664"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037954"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>El entorno de desarrollo y pruebas de One Microsoft Cloud
 
@@ -46,7 +46,7 @@ Puede usar la configuración resultante para:
 
 Siga las instrucciones que se indican en [DirSync para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
-En la ilustración 1, se muestra la configuración resultante, donde se incluye Office 365 y una intranet simulada que se ejecuta en los servicios de infraestructura de Azure y la sincronización de directorios desde un bosque local de Windows Server Active Directory (AD).
+En la ilustración 1, se muestra la configuración resultante, donde se incluye Office 365 y una intranet simulada que se ejecuta en los servicios de infraestructura de Azure y la sincronización de directorios desde un bosque local de Servicios de dominio de Active Directory (AD DS).
   
 **Ilustración 1: La intranet simulada en Azure con Office 365**
 
