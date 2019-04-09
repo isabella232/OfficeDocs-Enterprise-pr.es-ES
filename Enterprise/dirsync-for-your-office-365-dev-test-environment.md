@@ -18,25 +18,25 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Resumen: configure la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 374d99bc2433f539451882e1c2affe7bd41290db
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: d5aff42837d3cf4789cf8785383ad213f98d35a3
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573954"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037914"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Configurar la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365
 
  **Resumen:** configure la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365.
   
-Muchas organizaciones usan Azure AD Connect y la sincronización de directorios para sincronizar el conjunto de cuentas de su bosque de Windows Server Active Directory (AD) local para el conjunto de cuentas de Office 365. En este artículo, se describe cómo agregar la sincronización de directorios con la sincronización de hash de contraseña al entorno de desarrollo y pruebas de Office 365, lo que da como resultado la siguiente configuración.
+Muchas organizaciones usan Azure AD Connect y la sincronización de directorios para sincronizar el conjunto de cuentas de su bosque de Active Directory Domain Services (AD DS) local para el conjunto de cuentas de Office 365. En este artículo, se describe cómo agregar la sincronización de directorios con la sincronización de hash de contraseña al entorno de desarrollo y pruebas de Office 365, lo que da como resultado la siguiente configuración.
   
 ![Entorno de desarrollo y pruebas de Office 365 con sincronización de directorios](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Esta configuración se compone de: 
   
 - Una suscripción de prueba a Office 365 E5, que expira a los 30 días de su creación.
-- La intranet de una organización simplificada conectada a Internet, que consta de tres máquinas virtuales en una subred de una red virtual de Azure (DC1, APP1 y CLIENTE1). Azure Connect de AD se ejecuta en APP1 para sincronizar el dominio de Windows Server AD con Office 365.
+- La intranet de una organización simplificada conectada a Internet, que consta de tres máquinas virtuales en una subred de una red virtual de Azure (DC1, APP1 y CLIENTE1). Azure AD Connect se ejecuta en APP1 para sincronizar el dominio de AD DS con Office 365.
     
 Existen dos fases para configurar el entorno de desarrollo y pruebas:
   
@@ -59,7 +59,7 @@ Esta configuración se compone de:
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>Fase 2: Instalar Azure AD Connect en APP1
 
-Una vez instalado y configurado, Azure AD Connect sincroniza el conjunto de cuentas del dominio CORP Windows Server AD con el conjunto de cuentas de su suscripción de prueba a Office 365. El siguiente procedimiento le guía a través de la instalación de Azure AD Connect en APP1 y la comprobación de que funciona.
+Una vez instalado y configurado, Azure AD Connect sincroniza el conjunto de cuentas del dominio de AD DS de CORP con el conjunto de cuentas de su suscripción de prueba a Office 365. El siguiente procedimiento le guía a través de la instalación de Azure AD Connect en APP1 y la comprobación de que funciona.
   
 ### <a name="install-and-configure-azure-ad-connect-on-app1"></a>Instalar y configurar Azure AD Connect en APP1
 
@@ -98,7 +98,7 @@ Stop-Process -Name Explorer -Force
     
 14. En el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
     
-    Observe la cuenta llamada **Usuario1**. Esta cuenta pertenece al dominio CORP de Windows Server AD y es una prueba de que la sincronización de directorios funcionó correctamente.
+    Observe la cuenta llamada **Usuario1**. Esta cuenta pertenece al dominio de AD DS de CORP y es una prueba de que la sincronización de directorios funcionó correctamente.
     
 15. Haga clic en la cuenta **Usuario1**. Para licencias de productos, haga clic en **Editar**.
     
@@ -111,7 +111,7 @@ Esta es la configuración resultante.
 Esta configuración se compone de: 
   
 - Una suscripción de prueba a Office 365 E5.
-- La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. Azure Connect de AD se ejecuta en APP1 para sincronizar el dominio de Windows Server AD de CORP con Office 365 cada 30 minutos.
+- La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. Azure AD Connect se ejecuta en APP1 para sincronizar el dominio de AD DS de CORP con Office 365 cada 30 minutos.
     
 ## <a name="next-step"></a>Paso siguiente
 

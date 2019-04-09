@@ -3,26 +3,28 @@ title: Manage Office 365 with Windows PowerShell for Delegated Access Permission
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: Resumen:Socios de sindicación y proveedor de soluciones en la nube (CSP) can use Windows PowerShell to manage Office 365 customer tenants.
-ms.openlocfilehash: 7920680f390b8a38f53386bd4af1efff895e4d6e
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: cab32f5c38e09a2c4407eb0831f4b67ccc3940f1
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001803"
 ---
 # <a name="manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Manage Office 365 with Windows PowerShell for Delegated Access Permissions (DAP) partners
 
  **Resumen:** los partners de redifusión y los proveedores de soluciones en la nube (CSP) pueden usar Windows PowerShell para administrar espacios empresariales de clientes de Office 365.
   
-Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Con frecuencia son los proveedores de red o de telecomunicaciones para otras compañías. Empaquetan las suscripciones de Office 365 en sus ofertas de servicio a sus clientes. Cuando se vende una suscripción a Office 365, automáticamente se les conceden permisos Administrar en nombre de (AOBO) a losarrendamientos de cliente para que puedan administrar y notificar los arrendamientos de cliente. At best, this is difficult and time consuming to do in the Centro de administración de Office 365. It is much easier to do administrative tasks like listing all the customer **TenantIds** and their domains or identifying all users in a customer tenancy and what licenses they are assigned by using Windows PowerShell for Office 365. In some cases, it is possible to do these administrative tasks only in Windows PowerShell for Office 365. Here are samples of scenarios that Syndication and CSP partners most frequently use to administer their customer tenancies:
+Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Con frecuencia son los proveedores de red o de telecomunicaciones para otras compañías. Empaquetan las suscripciones de Office 365 en sus ofertas de servicio a sus clientes. Cuando se vende una suscripción a Office 365, automáticamente se les conceden permisos Administrar en nombre de (AOBO) a los arrendamientos de cliente para que puedan administrar y notificar los arrendamientos de cliente. At best, this is difficult and time consuming to do in the Centro de administración de Office 365. It is much easier to do administrative tasks like listing all the customer **TenantIds** and their domains or identifying all users in a customer tenancy and what licenses they are assigned by using Windows PowerShell for Office 365. In some cases, it is possible to do these administrative tasks only in Windows PowerShell for Office 365. Here are samples of scenarios that Syndication and CSP partners most frequently use to administer their customer tenancies:
   
 ## 
 
