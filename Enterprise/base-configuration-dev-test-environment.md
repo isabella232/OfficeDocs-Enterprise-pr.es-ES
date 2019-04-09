@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Resumen: Cree una intranet simplificada como entorno de desarrollo y prueba en Microsoft Azure.'
-ms.openlocfilehash: a38fc04ffe4ffa9a76430cf44543174570d398bc
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: b232372654d6244589bf1f10c3d76d4b7558aa23
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948621"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037984"
 ---
 # <a name="base-configuration-devtest-environment"></a>Entorno de desarrollo y prueba de la configuración básica
 
@@ -121,10 +121,8 @@ Inicie sesión en su cuenta de Azure con el siguiente comando.
 Connect-AzAccount
 ```
 
-<!--
 > [!TIP]
-> Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d) to get a text file that has all the PowerShell commands in this article.
--->
+> Para obtener un archivo de texto que contenga todos los comandos de PowerShell de este artículo, haga clic [aquí](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d).
 
 Obtenga su nombre de suscripción mediante el comando siguiente.
   
@@ -173,7 +171,7 @@ Esta es su configuración actual.
   
 ### <a name="step-2-configure-dc1"></a>Paso 2: Configurar DC1
 
-En este paso, creamos la máquina virtual DC1 y la configuramos como controlador de dominio para el dominio corp.contoso.com de Windows Server Active Directory (AD) y como servidor DNS para las máquinas virtuales de la red virtual TestLab.
+En este paso, creamos la máquina virtual DC1 y la configuramos como controlador de dominio para el dominio corp.contoso.com de Servicios de dominio de Active Directory (AD DS) y como servidor DNS para las máquinas virtuales de la red virtual TestLab.
 
 > [!NOTE]
 > Antes de ejecutar el bloque de comandos siguiente, asegúrese de que la región de Azure (ubicación) que ha elegido es compatible con el tamaño de la máquina virtual de Azure, que está establecido por defecto en Standard_A1. Haga clic [aquí](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines) para ver la información más reciente sobre los tamaños y ubicaciones de la máquina virtual de Azure.
