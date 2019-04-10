@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Resumen: Cree una intranet simplificada como entorno de desarrollo y prueba en Microsoft Azure.'
-ms.openlocfilehash: b232372654d6244589bf1f10c3d76d4b7558aa23
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 68edf0dea20674a7dadb4d1e50b8151a9ce13c7b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037984"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741386"
 ---
 # <a name="base-configuration-devtest-environment"></a>Entorno de desarrollo y prueba de la configuración básica
 
@@ -32,7 +32,7 @@ En este artículo se ofrecen instrucciones para crear el siguiente entorno de de
   
 ![Configuración básica de Azure](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-**Figura 1: Entorno de desarrollo y prueba de la configuración básica**
+**Figura 1: Entorno de desarrollo y pruebas de la configuración básica**
 
 El entorno de desarrollo y prueba de la configuración básica de la figura 1 consta de la subred de la red corporativa en una red virtual de Azure solo de nube denominada TestLab que simula una intranet simplificada y privada conectada a Internet. Contiene tres máquinas virtuales de Azure con Windows Server 2016:
   
@@ -104,7 +104,7 @@ Si no dispone de una suscripción de Azure, puede registrarse para obtener una e
 ![Guías del laboratorio de pruebas de Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de Office 365.
   
 ### <a name="step-1-create-the-virtual-network"></a>Paso 1: Crear la red virtual
 
@@ -399,7 +399,7 @@ Esta es la configuración final.
 La configuración básica de Azure está preparada para desarrollar y probar aplicaciones o para crear entornos de prueba adicionales. 
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila de la guía del entorno de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila de la guía del entorno de pruebas de Office 365.
   
 <a name="mincost"> </a>
 ## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Minimizar los costos del entorno de pruebas de máquinas virtuales en Azure
@@ -436,8 +436,8 @@ Start-AzVM -ResourceGroupName $rgName -Name "CLIENT1"
 
 ## <a name="see-also"></a>Vea también
 
-- [Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
-- [Sincronización de directorios (DirSync) para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-- [Seguridad de Cloud App para su entorno de desarrollo y prueba de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-- [Protección contra amenazas avanzada en el entorno de desarrollo y prueba de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
+- [Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [Cloud App Security para el entorno de desarrollo y pruebas de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Protección contra amenazas avanzada en el entorno de desarrollo y pruebas de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 - [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
