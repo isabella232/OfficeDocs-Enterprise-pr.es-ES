@@ -17,25 +17,25 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
-description: Los asistentes para la implementación de Office 365 proporcionan compatibilidad autoguiada para la configuración de Office 365.
-ms.openlocfilehash: d948363c640896c8c14e695c5588f322756c92d1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+description: Los asesores de implementación para Office 365 proporcionan compatibilidad autoguiada para la configuración de Office 365.
+ms.openlocfilehash: cbb992b178f98f7149137c5c29569e36190db2e2
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085439"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741477"
 ---
 # <a name="deployment-advisors-for-office-365-services"></a>Asesores de implementación para servicios de Office 365
 
-Los asesores de implementación para Office 365 proporcionan compatibilidad autoguiada para la configuración de Office 365 para su organización. Solo tiene que seleccionar un asistente e iniciar sesión en Office 365. 
+Los asesores de implementación para Office 365 proporcionan compatibilidad autoguiada para la configuración de Office 365 para su organización. Solo tiene que seleccionar una guía de instalación o un asesor e iniciar sesión en Office 365. 
 
-Al seleccionar las características y opciones que desea implementar, el asistente crea un plan de configuración paso a paso que se adapta a sus necesidades. Obtendrá un conjunto completo de instrucciones, vídeos, artículos de referencia y scripts. Algunos asistentes tienen automatización que cambiará parte de la configuración, mientras que en otras áreas de los asistentes se cambia la configuración y los datos con el Asistente para guiarlo. Puede usar estos asistentes en cualquier momento, incluso durante la planeación o después de haber configurado los servicios, para obtener más información acerca de las características y opciones de Office 365.
+Al seleccionar las características y opciones que desea implementar, el asesor crea un plan de configuración paso a paso que se adapta a sus necesidades. Obtendrá un conjunto completo de instrucciones, vídeos, artículos de referencia y scripts. Algunos asesores tienen automatización que cambiará parte de la configuración, mientras que en otras áreas del asesor se cambia la configuración y los datos con el asesor para guiarlo. Puede usar estos asesores en cualquier momento, incluso durante la planeación o después de haber configurado los servicios, para obtener más información acerca de las características y opciones de Office 365.
   
 ## <a name="windows-10-with-office-365"></a>Windows 10 con Office 365
 
 [Asesor de implementación de Microsoft 365](https://aka.ms/microsoft365setupguide)
   
-Microsoft 365 es una solución completa e inteligente que incluye Office 365, Windows 10 y Enterprise Mobility + Security. Microsoft 365 permite a todo el mundo ser creativo y trabajar juntos, de forma segura. Use esta guía para configurar dispositivos con Windows 10 o actualizar los equipos de los usuarios a Windows 10, con la implementación opcional de aplicaciones de Office, Windows Analytics y la protección contra amenazas avanzada de Windows Defender (solo el plan de Microsoft 365 Enterprise E5).
+Microsoft 365 es una solución completa e inteligente que incluye Office 365, Windows 10 y Enterprise Mobility + Security. Microsoft 365 permite a todo el mundo ser creativo y trabajar juntos, de forma segura. Use este asesor para configurar dispositivos con Windows 10 o actualizar los equipos de los usuarios a Windows 10, con la implementación opcional de aplicaciones de Office, Windows Analytics y la protección contra amenazas avanzada de Windows Defender (solo el plan de Microsoft 365 Enterprise E5).
 
 
 ## <a name="mail-migration-and-protection"></a>Migración y protección de correo
@@ -46,7 +46,7 @@ La [Guía Prepare Your Environment](https://go.microsoft.com/fwlink/?linkid=2005
 ### <a name="exchange-migration-advisor"></a>Asesor de migración de Exchange
 El [Asesor de migración de correo de office 365](https://aka.ms/office365setup) le ayudará a mover buzones de su sistema de correo actual a Exchange online en Office 365 con herramientas automatizadas e instrucciones paso a paso. Recomendamos la mejor ruta de migración a su organización en función de su sistema de correo actual, el número de buzones que desea migrar y cómo planea administrar usuarios y el acceso de usuarios.
   
-Los [contactos y el Asistente de calendario de gmail](https://aka.ms/gmailcontactscalendar) proporcionan instrucciones paso a paso para migrar los contactos de gmail y los elementos de calendario de Google a Office 365. Al migrar un buzón de gmail de un usuario a Office 365, los mensajes de correo electrónico se migran, pero los contactos y los elementos de calendario no lo son. Este asistente proporciona los pasos para importar contactos de gmail y elementos de calendario de Google a Office 365.
+Los [contactos y el Asistente de calendario de gmail](https://aka.ms/gmailcontactscalendar) proporcionan instrucciones paso a paso para migrar los contactos de gmail y los elementos de calendario de Google a Office 365. Al migrar un buzón de gmail de un usuario a Office 365, los mensajes de correo electrónico se migran, pero los contactos y los elementos de calendario no lo son. En esta guía se proporcionan los pasos para importar contactos de gmail y elementos de calendario de Google a Office 365.
   
 ### <a name="exchange-online-protection"></a>Exchange Online Protection
 Microsoft [Exchange Online Protection (EOP)](https://aka.ms/EOPguidance) es un servicio de filtrado de correo electrónico basado en la nube que ayuda a proteger la organización contra el correo no deseado y el malware, e incluye características para salvaguardar la organización de infracciones de directivas de mensajería.
@@ -74,9 +74,9 @@ El [Asesor de implementación de SharePoint Online](https://aka.ms/spoguidance) 
 [Azure ad Connect Advisor](https://aka.ms/aadconnectpwsync) es una guía paso a paso que muestra cómo agregar información de la cuenta de usuario a Office 365 sin crear manualmente cada usuario. También se muestra cómo configurar la sincronización de hash de contraseña o la autenticación de paso a través para que los usuarios puedan iniciar sesión en su correo electrónico y en el dominio con la misma contraseña. Si decide configurar el inicio de sesión federado con AD FS, esta guía también le proporcionará los pasos para implementar AD FS en un nuevo servidor o en una granja de servidores de Windows Server 2012 R2 existente. Azure AD Connect reemplaza versiones antiguas de las herramientas de integración de identidades, como dirSync y sincronización de Azure AD, y se usa principalmente para agregar usuarios y otros datos a Azure Active Directory para Office 365.
   
 ### <a name="azure"></a>Azure
-La [Guía de instalación de Azure ad Basic](https://aka.ms/azureadbasic) le ayudará a configurar características como la administración de acceso basado en grupos, el restablecimiento de contraseñas de autoservicio para las aplicaciones en la nube y el proxy de aplicación de Azure Active Directory para la publicación de aplicaciones web locales.
+La [Guía de instalación de Azure ad Basic](https://aka.ms/azureadbasic) le ayuda a configurar características, como la administración de acceso basado en grupos, el restablecimiento de contraseñas de autoservicio para las aplicaciones en la nube y el proxy de aplicación de Azure Active Directory para la publicación de aplicaciones web locales.
   
-La [Guía de instalación de Azure ad Premium](https://aka.ms/aadpguidance) le ayuda a habilitar características de Azure Active Directory Premium (Azure ad Premium), que proporciona capacidades de administración de identidades como multi-factor Authentication, Inicio de sesión único (SSO), registro de dispositivos Administración de la seguridad y la contraseña de autoservicio, supervisión de seguridad.
+La [Guía de instalación de Azure ad Premium](https://aka.ms/aadpguidance) le ayuda a habilitar las numerosas características de Azure Active Directory Premium (Azure ad Premium), que proporciona capacidades de administración de identidades como multi-factor Authentication, Inicio de sesión único (SSO), registro de dispositivos contraseña de autoservicio y administración de grupos y supervisión de seguridad.
   
 ### <a name="verify-your-domain"></a>Verify your domain
 La [comprobación su dominio en office 365](https://aka.ms/verifyyourdomaino365) Advisor le ayuda a personalizar Office 365 agregando su propio nombre de dominio (también conocido como el nombre del sitio web).
@@ -86,7 +86,7 @@ La [comprobación su dominio en office 365](https://aka.ms/verifyyourdomaino365)
 ### <a name="office-365-groups"></a>Grupos de Office 365
 [Guía de configuración de grupos de Office 365](https://aka.ms/groupsguide)
 
-Office 365 los grupos son un área de trabajo compartida para el correo electrónico, las conversaciones, los archivos y los eventos en los que los miembros del grupo pueden realizar las cosas colectivamente. Los grupos de Office 365 le permiten elegir un conjunto de personas con el que desea colaborar y configurar fácilmente una colección de recursos para que las personas compartan. No tiene que preocuparse de asignar manualmente permisos a todos esos recursos, ya que al agregar miembros al grupo, se les conceden automáticamente los permisos que necesitan para las herramientas que proporciona el grupo.
+Office 365 los grupos son un área de trabajo compartida para el correo electrónico, las conversaciones, los archivos y los eventos en los que los miembros del grupo pueden realizar las cosas colectivamente. Grupos en Office 365 permite elegir un conjunto de personas con las que desea colaborar y configurar fácilmente una colección de recursos para que las personas compartan. No tiene que preocuparse de asignar manualmente permisos a todos esos recursos, ya que al agregar miembros al grupo, se les asignan automáticamente los permisos que necesitan para las herramientas que proporciona el grupo.
   
 ### <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -102,7 +102,7 @@ Póngase en marcha rápidamente con Skype empresarial para mensajería instantá
   
 [Asesor de implementación de Skype empresarial](https://aka.ms/skypeguidance)
   
-El asesor de implementación de Skype empresarial le ayuda a ponerse en marcha con Skype for Business online. Este asistente le muestra cómo configurar las características de Skype empresarial, como la mensajería instantánea (mi), las reuniones en línea, las conferencias de vídeo, las conferencias de red telefónica conmutada (RTC), el intercambio de marca privada en la nube (PBX) y la difusión de reunión de Skype. Se incluyen pasos para configurar un entorno híbrido, donde se conecta Skype empresarial online a su implementación local de Skype empresarial.
+El asesor de implementación de Skype empresarial le ayuda a ponerse en marcha con Skype for Business online. Este asesor le muestra cómo configurar las características de Skype empresarial, como la mensajería instantánea (mi), las reuniones en línea, las conferencias de vídeo, las conferencias de red telefónica conmutada (RTC), el intercambio de marca privada en la nube (PBX) y la difusión de reunión de Skype. Se incluyen pasos para configurar un entorno híbrido, donde se conecta Skype empresarial online a su implementación local de Skype empresarial.
   
 ### <a name="yammer"></a>Yammer
 

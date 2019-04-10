@@ -1,5 +1,5 @@
 ---
-title: Seguridad de Cloud App para su entorno de desarrollo y prueba de Office 365
+title: Cloud App Security para el entorno de desarrollo y pruebas de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,14 +16,14 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Resumen: Configure y demuestre Office 365 Cloud App Security en su entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 7b77c383eb521c51aa03208aae8c1636c7935821
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038044"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741266"
 ---
-# <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Seguridad de Cloud App para su entorno de desarrollo y prueba de Office 365
+# <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security para el entorno de desarrollo y pruebas de Office 365
 
  **Resumen:** Configure y demuestre Office 365 Cloud App Security en su entorno de desarrollo y pruebas de Office 365.
   
@@ -32,7 +32,7 @@ Office 365 Cloud App Security, anteriormente conocido como Office 365 Advanced S
 Con las instrucciones de este artículo, puede habilitar y probar Cloud App Security en su suscripción de prueba de Office 365.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la guía del entorno de pruebas de Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y pruebas ligero o de una empresa simulada de Office 365
 
@@ -63,9 +63,9 @@ En este procedimiento, se demuestra que antes de habilitar Cloud App Security, c
     
 5. En la página del **Usuario 4**, haga clic en **Editar** en la fila **Roles**.
     
-6. En la página **Edit user roles** (Editar roles de usuario), haga clic en **Administrador global**, escriba **user4@contoso.com** en **Alternative email address** (Dirección de correo electrónico alternativa) y haga clic en **Guardar**. Haga clic dos veces en **Cerrar**.
+6. En la **página Editar roles de usuario** , haga clic en **administrador global**, **user4@contoso.com** escriba la dirección de **correo electrónico alternativa**y, a continuación, haga clic en **Guardar**. Haga clic dos veces en **Cerrar**.
     
-7. 	Seleccione el icono del iniciador de aplicaciones en la esquina superior izquierda y elija **Correo**.
+7. Seleccione el icono del iniciador de aplicaciones en la esquina superior izquierda y elija **Correo**.
     
 8. Espere 30 minutos. Observe que no hay ningún mensaje de correo electrónico en la bandeja de entrada que le notifique el cambio en el rol del usuario 4 como administrador global.
     
@@ -81,7 +81,7 @@ En este procedimiento, se habilita Cloud App Security y se crea una nueva Direct
 
 1. Vaya al centro de administración de 365 de[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft () e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
     
-2. Haga clic en el icono **Administración**. En la pestaña **centro de administración de Office** , haga clic en centros de **Administración _GT_ seguridad de & cumplimiento**.
+2. Haga clic en el icono **Administrador**. En la pestaña **centro de administración de Office** , haga clic en centros de **Administración _GT_ seguridad de & cumplimiento**.
     
 3. En el panel de navegación izquierdo, haga clic en **alertas > de administración de alertas avanzadas**.
     
@@ -131,7 +131,7 @@ En este procedimiento, demostrará cómo Cloud App Security crea alertas y enví
     
 11. En la página del **Usuario 5**, haga clic en **Editar** en la fila **Roles**.
     
-12. En la página **Edit user roles** (Editar roles de usuario), haga clic en **Customized administrator** (Administrador personalizado), haga clic en **Administrador de contraseñas** y **Administrador de control de usuarios**, escriba **user5@contoso.com** en **Alternative email address** (Dirección de correo electrónico alternativa) y haga clic en **Guardar**. Haga clic dos veces en **Cerrar**.
+12. En la **página Editar roles de usuario** , haga clic en **Administrador personalizado**, haga clic en Administrador de **contraseñas** y administrador de administración de **usuarios**, escriba **user5@contoso.com** la dirección de **correo electrónico alternativa**y, a continuación, haga clic en **Guardar**. Haga clic dos veces en **Cerrar**.
     
 13. Haga clic en el icono de usuario en la esquina superior derecha y después en **Cerrar sesión**. 
     
@@ -159,9 +159,9 @@ Ahora puede usar este entorno para crear nuevas directivas y seguir probando con
   
 ## <a name="see-also"></a>Vea también
 
-[Guías del entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
+[Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 

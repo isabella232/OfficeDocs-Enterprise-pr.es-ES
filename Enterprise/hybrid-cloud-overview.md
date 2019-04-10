@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Resumen: Comprenda la definición y los elementos de la nube híbrida de Microsoft.'
-ms.openlocfilehash: 21f107c9f096e90cd0eb1dfc17f14431dec54a73
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327352"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741436"
 ---
 # <a name="hybrid-cloud-overview"></a>Información general de la nube híbrida
 
@@ -55,9 +55,9 @@ Los escenarios de nube híbrida con servicios en la nube de Microsoft varían se
   
 - SaaS
     
-    Servicios de Microsoft SaaS incluyen Office 365, Microsoft Intune y Microsoft Dynamics 365. Escenarios de nube híbrida con Microsoft SaaS combinan estos servicios con aplicaciones o servicios locales. Por ejemplo, Exchange Online que se ejecuta en Office 365 se puede integrar con Skype para 2019 empresarial que se implementa localmente.
+    Los servicios SaaS de Microsoft incluyen Office 365, Microsoft Intune y Microsoft Dynamics 365. Los escenarios de nube híbrida con SaaS de Microsoft combinan estos servicios con aplicaciones o servicios locales. Por ejemplo, Exchange online que se ejecuta en Office 365 se puede integrar con Skype empresarial 2019 que se implementa localmente.
     
-- Plataforma como servicio de Azure
+- PaaS de Azure
     
     Los servicios de PaaS de Microsoft Azure le permiten crear aplicaciones basadas en la nube. Los escenarios de nube híbrida con servicios de PaaS de Azure combinan una aplicación de PaaS de Azure con recursos o aplicaciones locales. Por ejemplo, una aplicación de PaaS de Azure pudo consultar de forma segura un almacén de datos local para obtener información necesaria para mostrar a usuarios de aplicaciones móviles.
     
@@ -69,13 +69,13 @@ Los escenarios de nube híbrida con servicios en la nube de Microsoft varían se
 
 Debe tener en cuenta los siguientes elementos al planear e implementar escenarios de nube híbrida con plataformas y servicios en la nube de Microsoft.
   
-- Conexión de red
+- Redes
     
     Las redes para escenarios de nube híbrida incluyen la conectividad a plataformas y servicios en la nube de Microsoft, así como ancho de banda suficiente para mantener el rendimiento durante las cargas máximas. Para obtener más información, consulte [Microsoft Cloud Networking para arquitectos profesionales](microsoft-cloud-networking-for-enterprise-architects.md).
     
 - Identidad
     
-    La identidad de los escenarios híbridos SaaS y PaaS de Azure puede incluir Azure AD como proveedor de identidades común, que se puede sincronizar con Windows Server AD local, o bien federarse con Windows Server AD u otros proveedores de identidades. También puede ampliar su infraestructura de identidad local a IaaS de Azure. Para obtener más información, consulte [Identidad de nube de Microsoft para arquitectos de empresa](microsoft-cloud-it-architecture-resources.md#identity).
+    La identidad para SaaS y escenarios PaaS híbridos de Azure pueden incluir a Azure AD como un proveedor de identidades común, que se puede sincronizar con los servicios de dominio de Active Directory (AD DS) locales o federados con AD DS u otros proveedores de identidades. También puede ampliar su infraestructura de identidad local a IaaS de Azure. Para obtener más información, consulte [Identidad de nube de Microsoft para arquitectos de empresa](microsoft-cloud-it-architecture-resources.md#identity).
     
 - Seguridad
     
@@ -89,5 +89,5 @@ Debe tener en cuenta los siguientes elementos al planear e implementar escenario
 
 [Microsoft Hybrid Cloud para arquitectos profesionales](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

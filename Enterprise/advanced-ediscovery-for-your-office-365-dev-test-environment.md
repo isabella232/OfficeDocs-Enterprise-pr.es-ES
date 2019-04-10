@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Resumen: configure y demuestre la Exhibición avanzada de documentos electrónicos de Office 365 en el entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038024"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741457"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Exhibición avanzada de documentos electrónicos para el entorno de desarrollo y pruebas de Office 365
 
@@ -30,7 +30,7 @@ Office 365 Advanced eDiscovery le permite encontrar y analizar rápidamente info
 Con las instrucciones de este artículo, puede crear un pequeño conjunto de datos para una disputa contractual ficticia y analizarlo con la exhibición avanzada de documentos electrónicos.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la guía del entorno de pruebas de Office 365.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: Crear el entorno de desarrollo y prueba de Office 365
 
@@ -53,7 +53,7 @@ En este procedimiento, se crean mensajes de correo electrónico que posteriormen
     
 2. En la pestaña **Correo de Outlook**, haga clic en **Nuevo**.
     
-3. En **para**, escriba la dirección de correo electrónico de la cuenta de User6 de su suscripción de prueba ( **user6 @.**<organization name> **. onmicrosoft.com**).
+3. En **para**, escriba la dirección de correo electrónico de la cuenta de User6 de su suscripción de prueba ( ** user6@.**<organization name> **. onmicrosoft.com**).
     
 4. En el asunto, escriba **Correo electrónico de prueba 1**.
     
@@ -185,13 +185,13 @@ Ahora puede utilizar este entorno para crear nuevo contenido, nuevas búsquedas 
 
 [Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
+[Entorno de desarrollo y prueba de la configuración básica](base-configuration-dev-test-environment.md)
   
 [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
   
-[Sincronización de directorios (DirSync) para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
-[Seguridad de Cloud App para su entorno de desarrollo y prueba de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Cloud App Security para el entorno de desarrollo y pruebas de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 

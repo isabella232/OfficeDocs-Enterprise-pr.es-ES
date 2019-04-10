@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Resumen: comprenda la arquitectura y los escenarios híbridos de las ofertas de la nube basadas en la infraestructura como servicio (IaaS) de Microsoft en Azure.'
-ms.openlocfilehash: 5d125780e8baf3dbbe71b0878f6bf57cbeb5740f
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037934"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741366"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Escenarios de nube híbrida para Azure IaaS
 
@@ -41,7 +41,7 @@ Para cada capa de la arquitectura:
     
 - Identidad
     
-    Agregue servidores de identidad, como controladores de dominio de Windows Server AD, al conjunto de servidores que se ejecutan en redes virtuales de Azure para la autenticación local.
+    Agregue servidores de identidad, como controladores de dominio de servicios de dominio de Active Directory (AD DS), al conjunto de servidores que se ejecutan en redes virtuales de Azure para la autenticación local.
     
 - Red
     
@@ -59,13 +59,13 @@ Ejecutar el servidor de sincronización de directorios desde una red virtual de 
 
 ![Servidor de sincronización de directorios para Office 365 en IaaS de Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-En la figura 2, una red local hospeda una infraestructura de Windows Server AD, con un servidor proxy y un enrutador en su periferia. El enrutador se conecta a una puerta de enlace de Azure en el perímetro de una red virtual de Azure con una conexión de ExpressRoute o VPN de sitio a sitio. Dentro de la red virtual, un servidor de sincronización de directorios ejecuta Azure AD Connect.
+En la figura 2, una red local hospeda una infraestructura de AD DS, con un servidor proxy y un enrutador en su periferia. El enrutador se conecta a una puerta de enlace de Azure en el perímetro de una red virtual de Azure con una conexión de ExpressRoute o VPN de sitio a sitio. Dentro de la red virtual, un servidor de sincronización de directorios ejecuta Azure AD Connect.
   
-Un servidor de sincronización de directorios para Office 365 sincroniza la lista de cuentas de Windows Server AD con el espacio empresarial de Azure AD de una suscripción a Office 365.
+Un servidor de sincronización de directorios para Office 365 sincroniza la lista de cuentas de AD DS con el inquilino de Azure AD de una suscripción a Office 365.
   
 Un servidor de sincronización de directorios es un servidor basado en Windows que ejecuta Azure AD Connect. Para un aprovisionamiento más rápido o para reducir el número de servidores locales de la organización, implemente el servidor de sincronización de directorios en una red virtual (VNet) en IaaS de Azure.
   
-El servidor de sincronización de directorios sondea Windows Server AD para comprobar si hay cambios y, a continuación, los sincroniza con la suscripción de Office 365.
+El servidor de sincronización de directorios sondea AD DS en busca de cambios y, a continuación, los sincroniza con la suscripción de Office 365.
   
 Para obtener más información, vea [deploy Office 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   
@@ -163,7 +163,7 @@ En la figura 5, una red local hospeda una infraestructura de identidad y usuario
   
 Esta configuración tiene los siguientes atributos de aplicaciones LOB en Azure:
   
-- **Niveles:** Hay niveles para los servidores proxy Web, los servidores de AD FS y los controladores de dominio de Windows Server AD.
+- **Niveles:** Hay niveles para los servidores proxy Web, los servidores de AD FS y los controladores de dominio de AD DS.
     
 - **Distribución de carga:** Un equilibrador de carga de Azure externo distribuye las solicitudes de autenticación de cliente entrantes a los proxy web y un equilibrador de carga interno de Azure distribuye las solicitudes de autenticación a los servidores de AD FS.
     

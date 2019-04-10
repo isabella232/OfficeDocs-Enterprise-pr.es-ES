@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: 'Resumen: Comprenda la arquitectura y los escenarios híbridos de las ofertas de nubes basadas en Plataforma como servicio (PaaS) de Microsoft en Azure.'
-ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123337"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741376"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Escenarios de nube híbrida para PaaS de Azure
 
@@ -69,7 +69,7 @@ Para poner sus recursos de proceso o almacenamiento a disposición de la aplicac
     
 La aplicación de Azure puede usar las credenciales de:
   
-- Azure AD, que se pueden sincronizar con el proveedor de identidades local, como Windows Server AD.
+- Azure AD, que se puede sincronizar con el proveedor de identidades local, como servicios de dominio de Active Directory (AD DS).
     
 - Un proveedor de identidades de terceros.
     
@@ -99,5 +99,5 @@ Dado que el proveedor de identidades local se ha sincronizado con Azure AD, la a
 
 [Microsoft Hybrid Cloud para arquitectos profesionales](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
