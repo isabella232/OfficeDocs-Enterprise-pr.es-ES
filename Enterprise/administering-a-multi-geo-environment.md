@@ -23,7 +23,7 @@ A continuación, se muestra cómo funcionan los servicios de Office 365 en un en
 
 ## <a name="audit-log-search"></a>Búsqueda de registros de auditoría
 
-Un [registro de auditoría](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unificado de todas las ubicaciones satélites está disponible desde la página de búsqueda de registros de auditoría de Office 365. Puede ver todas las entradas de registro de auditoría entre ubicaciones geográficas, por ejemplo, las actividades de los usuarios de NAM y EUR se mostrarán en una vista de la organización y, después, puede aplicar filtros existentes para ver las actividades de un usuario específico.
+En la página de búsqueda de registros de auditoría de Office 365 podrá encontrar un [registro de auditoría](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unificado de todas las ubicaciones satélite. Puede ver todas las entradas de registro de auditoría entre ubicaciones geográficas, por ejemplo, las actividades de los usuarios de NAM y EUR se mostrarán en una vista de la organización y, después, puede aplicar filtros existentes para ver las actividades de un usuario específico.
 
 ## <a name="bcs-secure-store-apps"></a>BCS, Secure Store, Apps
 
@@ -83,9 +83,9 @@ Si tiene propiedades de perfil personalizadas, se recomienda usar el mismo esque
 
 Vea [Trabajar con perfiles de usuario en un espacio empresarial multigeográfico](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-userprofileexperience) para obtener detalles adicionales y orientación para desarrolladores.
 
-## <a name="video-portal"></a>Portal de vídeo
+## <a name="video-portal"></a>Portal de Video
 
-En un espacio empresarial multigeográfico, el portal de vídeo de Office 365 se sirve solo desde la zona geográfica predeterminada y todos los usuarios se redirigirán a esa URL del portal central. Por ello, se usará el Remote Media Service (RMS) para esa región como sigue, según su ubicación central.
+En un espacio empresarial multigeográfico, el portal de Office 365 Video se sirve solo desde la zona geográfica predeterminada y todos los usuarios se redirigirán a esa URL del portal central. Por ello, se usará Remote Media Service (RMS) para esa región como sigue, según su ubicación central.
 
 Stream está disponible actualmente en las regiones siguientes:
 
@@ -93,7 +93,7 @@ Stream está disponible actualmente en las regiones siguientes:
 - Europa
 - Asia Pacífico
 
-Pero, Stream no aún está disponible en las siguientes regiones que actualmente son compatibles con Office 365 Video, por lo tanto, para estas instancias locales, usaremos RMS en la región admitida más cercana.
+Pero Stream no aún está disponible en las siguientes regiones que actualmente son compatibles con Office 365 Video, por lo tanto, para estas instancias locales, usaremos RMS en la región admitida más cercana.
 
 - Australia
 - Canada

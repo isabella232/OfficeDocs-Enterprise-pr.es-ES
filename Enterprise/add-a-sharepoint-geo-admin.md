@@ -1,5 +1,5 @@
 ---
-title: Agregar o quitar a un administrador geográfico
+title: Agregar o quitar un administrador geográfico
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -27,7 +27,7 @@ Los administradores globales y administradores de SharePoint Online seguirán te
 
 Para configurar los administradores geográficos se requiere el módulo de PowerShell de SharePoint Online.
 
-Use [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) para conectarse al centro de administración de la ubicación geográfica donde quiera agregar el administrador geográfico. (Por ejemplo, Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.))
+Use [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) para conectarse al centro de administración de la ubicación geográfica donde quiera agregar el administrador geográfico. (Por ejemplo, Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)
 
 Para ver los administradores geográficos existentes de una ubicación, ejecute `Get-SPOGeoAdministrator`
 
@@ -45,7 +45,7 @@ Para agregar un grupo como administrador geográfico, ejecute `Add-SPOGeoAdminis
 
 Para quitar un grupo como administrador geográfico, ejecute `Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
-Tenga en cuenta que no todos los grupos de seguridad tienen un alias de grupo. Si quiere agregar un grupo de seguridad que no tiene un alias, ejecute [Get-MsolGroup](https://docs.microsoft.com/es-ES/powershell/module/msonline/get-msolgroup) para recuperar una lista de grupos, busque el ObjectID del grupo seguridad y ejecute:
+Tenga en cuenta que no todos los grupos de seguridad tienen un alias de grupo. Si quiere agregar un grupo de seguridad que no tiene un alias, ejecute [Get-MsolGroup](https://docs.microsoft.com/es-ES/powershell/module/msonline/get-msolgroup) para recuperar una lista de grupos, busque el ObjectID del grupo seguridad y ejecute lo siguiente:
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
