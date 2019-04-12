@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Resumen: Configure la autenticación federada para su entorno de desarrollo y prueba de Office 365.'
-ms.openlocfilehash: b016e168ac1bfcf180c1c4ba04846416dbd098f4
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: f09aa66fb3183ffa924d6211fb7fa36e7de095eb
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948641"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741427"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identidad federada para el entorno de desarrollo y prueba de Office 365
 
@@ -33,7 +33,7 @@ Office 365 admite la identidad federada. Esto significa que, en lugar de realiza
   
 En este artículo, se describe cómo puede configurar la autenticación federada para el entorno de desarrollo y prueba de Office 365, lo que se traduce en el siguiente resultado:
   
-**Figura 1: Autenticación federada para el entorno de desarrollo y prueba de Office 365**
+**Figura 1: Autenticación federada para el entorno de desarrollo y pruebas de Office 365**
 
 ![La autenticación federada para el entorno de desarrollo y pruebas de Office 365](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
@@ -41,7 +41,7 @@ La configuración que se muestra en la figura 1 consta de:
   
 - Una suscripción de prueba a Office 365 E5, que expira a los 30 días de su creación.
     
-- Una intranet de una organización simplificada conectada a Internet, que consta de cinco máquinas virtuales en una subred de una red virtual de Azure (DC1, APP1, CLIENT1, ADFS1 y PROXY1). Azure AD Connect se ejecuta en APP1 para sincronizar la lista de cuentas del dominio de Windows Server AD con Office 365. PROXY1 recibe las solicitudes de autenticación entrantes. ADFS1 valida las credenciales con DC1 y emite tokens de seguridad.
+- Una intranet de una organización simplificada conectada a Internet que consta de cinco máquinas virtuales en una subred de una red virtual de Azure (DC1, APP1, CLIENT1, ADFS1 y PROXY1). Azure AD Connect se ejecuta en APP1 para sincronizar la lista de cuentas del dominio de Active Directory Domain Services con Office 365. PROXY1 recibe las solicitudes de autenticación entrantes. ADFS1 valida las credenciales con DC1 y emite tokens de seguridad.
     
 Existen cinco fases para configurar este entorno de desarrollo y pruebas:
   
@@ -61,21 +61,21 @@ Para realizar una implementación de producción de autenticación federada para
 > No puede configurar este entorno de desarrollo y prueba con una suscripción de evaluación de Azure. 
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del laboratorio de pruebas de Office 365.
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>Fase 1: Crear el entorno de desarrollo y prueba de una empresa simulada de Office 365 con DirSync
 
-Siga las instrucciones de [Sincronización de directorios para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md) para crear el entorno de desarrollo y prueba de una empresa simulada de Office 365 con APP1 como servidor de DirSync y la identidad sincronizada entre Office 365 y las cuentas de Windows Server AD en DC1.
+Siga las instrucciones de [Sincronización de directorios para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md) para crear el entorno de desarrollo y pruebas de una empresa simulada de Office 365 con APP1 como servidor de DirSync y la identidad sincronizada entre Office 365 y las cuentas de AD DS en DC1.
   
 Después, cree un nombre de dominio DNS público en función de su nombre de dominio actual y agréguelo a su suscripción de Office 365. Se recomienda usar el nombre **testlab.**\<su dominio público>. Por ejemplo, si su nombre de dominio público es contoso.com, agregue el nombre de dominio público testlab.contoso.com.
   
 Para obtener instrucciones sobre cómo crear los registros DNS correctos en su proveedor DNS y agregar el dominio a la suscripción de evaluación de Office 365, vea [Agregar usuarios y un dominio con el asistente de configuración a Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611). 
   
-Esta es la configuración resultante.
+Este es el resultado de la configuración.
   
-**Figura 2: Sincronización de directorios para el entorno de desarrollo y prueba de Office 365**
+**Figura 2: Sincronización de directorios para el entorno de desarrollo y pruebas de Office 365**
 
-![Entorno de desarrollo y prueba de Office 365 con sincronización de directorios](media/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Entorno de desarrollo y pruebas de Office 365 con sincronización de directorios](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 En la figura 2, se muestra la sincronización de directorios para el entorno de desarrollo y prueba de Office 365, que incluye Office 365 y las máquinas virtuales CLIENT1, APP1 y DC1 en una red virtual de Azure.
   
@@ -120,9 +120,9 @@ Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
 
-Esta es la configuración resultante.
+Este es el resultado de la configuración.
   
-**Figura 3: Adición del servidor de AD FS**
+**Figura 3: Adición del servidor de AD FS**
 
 ![Servidor de AD FS agregado a DirSync para el entorno de desarrollo y prueba de Office 365](media/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
@@ -191,9 +191,9 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv
 
 Estos comandos crean un registro DNS A para su FQDN del Servicio de federación que las máquinas virtuales de la red virtual de Azure pueden resolver en la dirección IP privada de ADFS1.
   
-Esta es la configuración resultante.
+Este es el resultado de la configuración.
   
-**Figura 4: Adición del servidor proxy de aplicación web**
+**Figura 4: Adición del servidor proxy de aplicación web**
 
 ![Servidor proxy de la aplicación web agregado a DirSync para el entorno de desarrollo y prueba de Office 365](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
@@ -422,7 +422,7 @@ Para demostrar que la autenticación federada funciona:
     
     Debe ver la página **principal de Microsoft Office**.
     
-En este procedimiento, se muestra que su suscripción de evaluación de Office 365 está federada con el dominio corp.contoso.com de Windows Server AD hospedado en DC1. Estos son los conceptos básicos del proceso de autenticación:
+En este procedimiento, se muestra que su suscripción de prueba de Office 365 está federada con el dominio corp.contoso.com de AD DS hospedado en DC1. Estos son los conceptos básicos del proceso de autenticación:
   
 1. Cuando use el dominio federado que ha creado en la fase 1 en el nombre de cuenta de inicio de sesión, Office 365 redirige su explorador al FQDN del Servicio de federación y a PROXY1.
     
@@ -448,7 +448,7 @@ Cuando esté listo para implementar la autenticación federada de alta disponibi
   
 [Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
   
-[Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
+[Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
   

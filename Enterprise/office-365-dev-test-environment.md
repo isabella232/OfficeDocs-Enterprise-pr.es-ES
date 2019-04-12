@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Resumen: use esta Guías del entorno de pruebas para crear una suscripción de prueba de Office 365 para evaluación, pruebas o desarrollo.'
-ms.openlocfilehash: a49ba10ab9ddded36f21ca9cc92f0482cbe7a4fb
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 3e7aafc847b28ad7a81373539c2ea30ce304725a
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038040"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741246"
 ---
 # <a name="office-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365
 
@@ -41,10 +41,10 @@ Puede usar una suscripción de prueba de Office 365 y crear un entorno de desarr
 > [!NOTE]
 > Es posible que quiera imprimir este artículo para anotar los valores específicos que necesite para usar este entorno durante los 30 días de la suscripción de prueba a Office 365. Puede extender fácilmente la suscripción de prueba otros 30 días. Para un entorno de pruebas y desarrollo permanente, cree una nueva suscripción de pago con un número reducido de licencias. 
   
-![Guías del entorno de pruebas en Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guías del laboratorio de pruebas de Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del laboratorio de pruebas de Office 365.
   
 ## <a name="phase-1-create-the-base-configuration-in-azure"></a>Fase 1: Crear la configuración básica de Azure
 
@@ -140,7 +140,7 @@ Siga las instrucciones que se indican en [Conectarse a PowerShell de Office 365]
     
 - La máquina virtual CLIENTE1 (para el entorno de desarrollo y pruebas de una empresa ficticia de Office 365).
     
- En el cuadro de diálogo Solicitud de credenciales para Windows PowerShell, escriba el nombre de administrador global de Office 365 (por ejemplo, svalladares@contosotoycompany.onmicrosoft.com) y la contraseña.
+ En el cuadro de diálogo Solicitud de credenciales para Windows PowerShell, escriba el nombre de administrador global de Office 365 (por ejemplo, jdoe@contosotoycompany.onmicrosoft.com) y la contraseña.
   
 Rellene el nombre de la organización (ejemplo: contosotoycompany), el código de país de dos caracteres para su ubicación, la contraseña de cuenta común y, después, ejecute los comandos siguientes desde el símbolo del sistema de PowerShell:
 
@@ -197,7 +197,7 @@ $spURL="https://" + $orgName + "-admin.sharepoint.com"
 Connect-SPOService -Url $spURL
 ```
 
-4. En el cuadro de diálogo **Shell de administración de Microsoft SharePoint Online**, escriba el nombre del administrador global de Office 365 (por ejemplo, svalladares@contosotoycompany.onmicrosoft.com) y la contraseña y, después, haga clic en **Iniciar sesión**.
+4. En el cuadro de diálogo **Shell de administración de Microsoft SharePoint Online**, escriba el nombre del administrador global de Office 365 (por ejemplo, jdoe@contosotoycompany.onmicrosoft.com) y la contraseña, y después haga clic en **Iniciar sesión**.
     
 5. Para crear tres sitios de grupo (Ventas, Producción y Soporte técnico), rellene el nombre de administrador global de Office 365 y, después, ejecute los comandos siguientes desde el símbolo del sistema del Shell de administración de SharePoint Online:
     
@@ -263,7 +263,7 @@ Anote estos valores para trabajar con o implementar Guías del entorno de prueba
 
 Use estos artículos adicionales en el entorno de desarrollo y pruebas de Office 365:
   
-- [Configurar la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [Sincronización de directorios para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
     
 - [Autenticación multifactor para el entorno de desarrollo y pruebas de Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
@@ -277,21 +277,13 @@ Use estos artículos adicionales en el entorno de desarrollo y pruebas de Office
     
 - [Protección de archivos confidenciales en el entorno de desarrollo y pruebas de Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
-- [Sitio de grupo de SharePoint Online aislado en el entorno de desarrollo y pruebas](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [Entorno de desarrollo y pruebas en un sitio de grupo de SharePoint Online aislado](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
 - [Etiquetado y clasificación de datos en el entorno de desarrollo y pruebas de Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
-Extienda el entorno de desarrollo y pruebas de Office 365 para incluir ofertas adicionales en la nube de Microsoft:
-  
-- [Entorno de desarrollo y pruebas de Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
-    
-- [Entorno de desarrollo y pruebas de Office 365 y Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
-    
 ## <a name="see-also"></a>Vea también
 
-- [Guías del entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
-  
-- [Entorno de desarrollo y pruebas de Office 365 y Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+- [Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 - [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 

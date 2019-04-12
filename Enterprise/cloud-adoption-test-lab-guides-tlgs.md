@@ -3,7 +3,7 @@ title: Probar Office 365 con guías de entorno de pruebas de adopción de la nub
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2019
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,25 +16,25 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Resumen: Con estas Guías del laboratorio de pruebas (TLG) para la adopción de la nube, podrá configurar entornos de demostración o de desarrollo y pruebas para los productos Office 365, Dynamics 365 y Office Server.'
-ms.openlocfilehash: 9d3423c1dadf95cd744a393c08b4303bc5cb8832
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+description: 'Resumen: Con estas Guías del laboratorio de pruebas (TLG) para la adopción de la nube, podrá configurar entornos de demostración, prueba de concepto y desarrollo y pruebas para Office 365.'
+ms.openlocfilehash: 3531a3185cd52044ee59391d676fff1a7f4a5f64
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573754"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741176"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Probar Office 365 con guías de entorno de pruebas de adopción de la nube (TLG)
 
- **Resumen:** Con estas Guías del laboratorio de pruebas (TLG) para la adopción de la nube, podrá configurar entornos de demostración o de desarrollo y pruebas para los productos Office 365, Dynamics 365 y Office Server.
+ **Resumen:** Con estas Guías del laboratorio de pruebas (TLG) para la adopción de la nube, podrá configurar entornos de demostración, prueba de concepto y desarrollo y pruebas para Office 365.
   
-Las guías del laboratorio de pruebas le permiten conocer los productos Microsoft de manera rápida. Son ideales para las situaciones en las que necesita evaluar una tecnología o configuración antes de decidir si es adecuada o antes de implementarla en los equipos de los usuarios. Esta experiencia práctica de "yo la compilo y me funciona" le permitirá entender los requisitos de implementación de un nuevo producto o solución, de modo que pueda planear mejor el hospedaje en la producción.
+Las TLG le permiten conocer los productos Microsoft de manera rápida. Son ideales para situaciones en las que necesita evaluar una tecnología o configuración antes de decidir si es adecuada y comenzar el diseño, planeación y lanzamiento para los usuarios. Esta experiencia práctica, que consiste en desarrollar la herramienta por sus propios medios y lograr que funcione, le permitirá entender los requisitos de implementación de un nuevo producto o solución, de modo que pueda planear mejor el hospedaje en la producción.
   
 Las guías del laboratorio de pruebas también crean entornos representativos para desarrollo y pruebas de aplicaciones, también conocidos como entornos de desarrollo y pruebas.
   
 ![Guías del laboratorio de pruebas de Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de One Microsoft Cloud.
+Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del laboratorio de pruebas de Office 365.
     
 ## <a name="office-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365
 
@@ -50,7 +50,7 @@ Use estos artículos para crear su entorno de desarrollo y pruebas de Office 365
     
 - [Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
     
-    Instale y configure Azure AD Connect para la sincronización de directorios con sincronización de contraseñas. Este paso es opcional si quiere crear una configuración de empresa simulada.
+    Instale y configure Azure AD Connect para la sincronización de directorios con sincronización de hash de contraseñas. Este paso es opcional si quiere crear una configuración de empresa simulada.
     
 Para el entorno de desarrollo y pruebas de Office 365, use estos artículos para probar las características empresariales de Office 365:
   
@@ -60,7 +60,7 @@ Para el entorno de desarrollo y pruebas de Office 365, use estos artículos para
     
 - [Identidad federada para el entorno de desarrollo y pruebas de Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
     
-    Configure y demuestre autenticación federada con las cuentas de un dominio Active Directory de Windows Server.
+    Configure y demuestre autenticación federada con las cuentas de un dominio de Active Directory Domain Services (AD DS).
     
 - [Cloud App Security para el entorno de desarrollo y pruebas de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
@@ -80,69 +80,48 @@ Para el entorno de desarrollo y pruebas de Office 365, use estos artículos para
     
 - [Etiquetado y clasificación de datos en el entorno de desarrollo y pruebas de Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
-    Muestre cómo el cliente de Azure Information Protection (AIP) puede usarse para clasificar documentos con varios niveles de seguridad.
+    Muestre cómo el cliente de Azure Information Protection puede usarse para clasificar documentos con varios niveles de seguridad.
     
-- [Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [Entorno de desarrollo y pruebas en un sitio de grupo de SharePoint Online aislado](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
     Mostrar cómo crear un sitio de grupo de SharePoint Online aislado del resto de la organización para los recursos privados o muy confidenciales.
     
-## <a name="the-microsoft-365-enterprise-test-environment"></a>El entorno de pruebas de Microsoft 365 Enterprise
 
-Cree un entorno de pruebas para [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) con [estos artículos](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).
- 
-    
-## <a name="office-365-and-dynamics-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365 y Dynamics 365
-
-Agregue una suscripción de prueba a Dynamics 365 y pruebe las características y los escenarios integrados de Office 365 y Dynamics 365 con estos artículos:
-  
-- [Entorno de desarrollo y pruebas de Office 365 y Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
-    
-    Agregue una suscripción de prueba a Dynamics 365, así como licencias y permisos de Dynamics 365 a sus cuentas de usuario.
-    
-- [Integración de Exchange Online para su entorno de desarrollo y pruebas y de Office 365 y 365 de Dynamics](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
-    
-    Configure y muestre cómo Office 365 y Dynamics 365 colaboran en los buzones de Exchange Online.
-    
-## <a name="the-one-microsoft-cloud-devtest-environment"></a>El entorno de desarrollo y pruebas de One Microsoft Cloud
-
-Crear un entorno de desarrollo y prueba que incluya todas las ofertas de la nube Microsoft: Office 365, Azure, EMS y Dynamics 365. Vea [el entorno de desarrollo y prueba de One Microsoft Cloud](the-one-microsoft-cloud-dev-test-environment.md) para las instrucciones paso a paso.
-  
 ## <a name="simulated-cross-premises-devtest-environments"></a>Entornos de pruebas y desarrollo simulado de varias ubicaciones
 
 Puede crear un entorno de pruebas y desarrollo simulado de varias ubicaciones que incluya una red virtual Azure y una red local simulada con estos artículos:
   
-- [Red virtual entre locales simulada en Azure](simulated-cross-premises-virtual-network-in-azure.md)
+- [Red virtual simulada entre locales en Azure](simulated-cross-premises-virtual-network-in-azure.md)
     
     Cree una intranet simulada conectada a una red virtual de Azure en una configuración de la nube híbrida.
     
-- [Intranet SharePoint Server 2016 en entorno de prueba y desarrollo de Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)
+- [Intranet SharePoint Server 2016 en el entorno de desarrollo y pruebas de Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)
     
-    Cree una granja de un solo servidor de SharePoint Server 2016 en la red virtual de Azure y pruebe la conectividad y administración desde la red local.
+    Cree una granja de un solo servidor de SharePoint Server 2016 en la red virtual de Azure y pruebe la conectividad y administración desde la red local simulada.
     
-## <a name="additional-cloud-based-devtest-environments"></a>Entornos adicionales de desarrollo y pruebas basados en la nube
+## <a name="sharepoint-server-2016-devtest-environments"></a>Entornos de desarrollo y pruebas de SharePoint Server 2016
 
-Estos son entornos adicionales de desarrollo y pruebas basados en la nube que puede crear en los servicios de infraestructura de Azure:
+Estos son entornos de desarrollo y pruebas de SharePoint Server 2016 que puede crear en los servicios de infraestructura de Azure:
   
-- [Entorno de desarrollo y pruebas de SharePoint Server 2016 en Azure](https://technet.microsoft.com/library/mt723354.aspx)
+- [Entorno de desarrollo y pruebas de SharePoint Server 2016 en Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-dev-test-environment-in-azure)
     
     Cree una granja de un solo servidor de SharePoint Server 2016 en los servicios de infraestructura de Azure.
+
+- [Intranet SharePoint Server 2016 en el entorno de desarrollo y pruebas de Azure](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)
     
-- [Entorno de desarrollo y pruebas de Exchange 2016 en Azure](https://technet.microsoft.com/library/mt733070%28v=exchg.160%29.aspx)
-    
-    Cree un único servidor de Exchange 2016 en los servicios de infraestructura de Azure.
-    
-- [Entorno de desarrollo y pruebas de SharePoint Server 2013 en Azure](http://technet.microsoft.com/library/165de4d5-8fe6-4fbb-a15b-39a8b0a0eb23.aspx)
-    
-    Cree granjas de servidores básicas y de alta disponibilidad de SharePoint Server 2013 en los servicios de infraestructura de Azure.
+    Cree una granja de un solo servidor de SharePoint Server 2016 en los servicios de infraestructura de Azure y acceda a ella desde una intranet simulada.
+
+
+## <a name="the-microsoft-365-enterprise-devtest-environments"></a>Los entornos de desarrollo y pruebas de Microsoft 365 Enterprise
+
+Cree un entorno de desarrollo y pruebas para [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) con [estos artículos](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).  
     
 ## <a name="see-also"></a>Vea también
 
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
   
-[Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
 [Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
 [Soluciones híbridas](hybrid-solutions.md)
-
-
