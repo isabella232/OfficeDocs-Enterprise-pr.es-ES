@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 'Resumen: Use el modo remoto de Windows PowerShell para Microsoft Exchange Online para recuperar informes de inquilinos de cliente individuales.'
-ms.openlocfilehash: 8df88e8b00cbd8e14558e423f41f45ea5f9bf26a
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 478cd8736a837dae571e20f38187be087b48231a
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992830"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Retrieve customer tenant reporting data with Windows PowerShell for Delegated Access Permissions (DAP) partners
 
@@ -26,8 +26,7 @@ Socios de sindicación y proveedor de soluciones en la nube (CSP) puede acceder 
   
 En este artículo, debe usar el modo remoto de Windows PowerShell para Exchange Online para conectarse a un solo arrendamiento de cliente y recuperar un informe. De forma predeterminada, Windows PowerShell no admite agregar datos de informes de varios arrendamientos de cliente. Los informes que recupera con este procedimiento son solo para el  _DelegatedOrg_ al que se conecta.
   
-Si desea recuperar un único informe para todos los arrendamientos de cliente, encontrará un script de ejemplo para ello en [Agregar datos de informes de clientes a través de Windows PowerShell para asociados con permiso de acceso delegado (DAP)](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md) .
-  
+ 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 - Debe conectarse a su inquilino de Exchange Online mediante el modo remoto de Windows PowerShell. Para obtener instrucciones, consulte [Conectarse a los inquilinos de Exchange Online con el modo remoto de Windows PowerShell para asociados con permiso de acceso delegado (DAP)](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)

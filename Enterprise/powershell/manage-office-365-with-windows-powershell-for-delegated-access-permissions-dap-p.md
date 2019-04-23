@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: Resumen:Socios de sindicación y proveedor de soluciones en la nube (CSP) can use Windows PowerShell to manage Office 365 customer tenants.
-ms.openlocfilehash: cab32f5c38e09a2c4407eb0831f4b67ccc3940f1
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 93b323d8de7016008ba7e4f75ff4b1c011adb9f2
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992820"
 ---
 # <a name="manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Manage Office 365 with Windows PowerShell for Delegated Access Permissions (DAP) partners
 
@@ -36,6 +36,6 @@ Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación
     
 - [Retrieve customer tenant reporting data with Windows PowerShell for Delegated Access Permissions (DAP) partners](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
     
-- [Agregar datos de informes de clientes a través de Windows PowerShell para asociados con permiso de acceso delegado (DAP)](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)
+
     
 
