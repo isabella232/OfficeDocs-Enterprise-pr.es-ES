@@ -11,12 +11,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Expanda la presencia de Office 365 a varias regiones geográficas con las capacidades multigeográficas de OneDrive Online.
-ms.openlocfilehash: 15dcb44943fa1bf331ef6260946f7c3a632d3c4a
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: ce5a846391fd62daafd174baea4144ac1d1aba37
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992850"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Capacidades multigeográficas de OneDrive y SharePoint Online
 
@@ -30,7 +30,9 @@ Los usuarios obtienen una experiencia fluida al usar los servicios de Office 365
 
 El OneDrive de cada usuario lo puede aprovisionar o [mover un administrador](move-onedrive-between-geo-locations.md) a una ubicación de satélite conforme con la PDL del usuario. Los archivos personales se conservan en esa ubicación geográfica, aunque se pueden compartir con usuarios en otra ubicación geográfica.
 
-## <a name="sites-and-groups"></a>Equipos y grupos
+## <a name="sharepoint-sites-and-groups"></a>Sitios y grupos de SharePoint
+
+La administración de la característica multigeográfica está disponible en el Centro de administración de SharePoint. Encontrará información detallada en la [correspondiente entrada de blog](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302).
 
 Cuando un usuario crea un sitio de SharePoint conectado al grupo, su PDL se utiliza para determinar la ubicación geográfica donde se crean el sitio y su buzón de grupo asociado. (Si el valor de la PDL del usuario no se ha configurado o se ha establecido en una ubicación geográfica que no se ha configurado como una ubicación de satélite, el sitio y el buzón se crean en la ubicación central).
 
@@ -46,7 +48,7 @@ Puede configurar y administrar su entorno multigeográfico mediante el Centro de
 
 ## <a name="see-also"></a>Vea también
 
-[Aka.ms/GetMultiGeo ](https://Aka.ms/GetMultiGeo)
+[Capacidades multigeográficas en Grupos de Office 365 y SharePoint](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)
 
 [Administración de un entorno multigeográfico](administering-a-multi-geo-environment.md)
 
