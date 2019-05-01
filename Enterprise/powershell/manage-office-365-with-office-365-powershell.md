@@ -16,11 +16,11 @@ ms.custom:
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Resumen: Obtenga información sobre cómo usar PowerShell de Office 365 con usuarios y licencias de Office 365, Skype Empresarial Online, SharePoint Online, Exchange Online y el Centro de seguridad y cumplimiento de Office 365.'
 ms.openlocfilehash: eb5b9a91a81d03a2de14d3507ef9a9172f44ec58
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "18609012"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491176"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Administrar Office 365 con PowerShell de Office 365
 

@@ -15,11 +15,11 @@ search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Antes de empezar a planear la red para la conectividad de red de Office 365, es importante comprender los principios de conectividad para administrar de forma segura el tráfico de Office 365 y obtener el mejor rendimiento posible. Este artículo le ayudará a comprender las instrucciones más recientes para optimizar de manera segura la conectividad de red de Office 365.
 ms.openlocfilehash: 3dfb0732ff15c7d8f3c20ac659f94b8d807afa07
-ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30303624"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492376"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Principios de conectividad de red de Office 365
 
@@ -204,7 +204,7 @@ Microsoft ofrece una amplia gama de características de seguridad de Office 365 
 
 - **Configurar prevención de pérdida de datos (DLP)** DLP le permite identificar datos confidenciales y crear directivas que ayuden a impedir que los usuarios compartan los datos por accidente o de forma intencionada. DLP funciona en Office 365, incluidos Exchange Online, SharePoint Online y OneDrive para que los usuarios puedan cumplir sin interrumpir el flujo de trabajo.
 
-- **Usar caja de caja del cliente** Como administrador de Office 365, puede usar la caja de control del cliente para controlar cómo un ingeniero de soporte técnico de Microsoft obtiene acceso a los datos durante una sesión de ayuda. En los casos en los que el ingeniero requiere el acceso a los datos para solucionar un problema, el Lockbox del cliente le permite aprobar o rechazar la solicitud de acceso.
+- **Usar caja de caja del cliente** Como administrador de Office 365, puede usar la caja de control del cliente para controlar cómo un ingeniero de soporte técnico de Microsoft obtiene acceso a los datos durante una sesión de ayuda. En casos donde el ingeniero requiere acceso a los datos para solucionar un problema, la Caja de seguridad del cliente le permite aprobar o rechazar la solicitud de acceso.
 
 - **Usar la puntuación segura de Office 365** La calificación segura es una herramienta de análisis de seguridad que recomienda lo que se puede hacer para reducir aún más el riesgo. Puntuación segura busca la configuración y las actividades de Office 365 y las compara con una línea base establecida por Microsoft. Obtendrá una puntuación en función de la alineación que tenga con los procedimientos recomendados de seguridad.
 
