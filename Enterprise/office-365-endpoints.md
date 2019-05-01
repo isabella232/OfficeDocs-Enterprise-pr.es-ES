@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: ''
 description: 'Resumen: vea estos artículos para obtener información sobre los puntos de conexión de Internet de las diferentes nubes de Office 365.'
 ms.openlocfilehash: 1312dd80130d99dba24b0c99f7570a57e70982ac
-ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341931"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492016"
 ---
 # <a name="office-365-endpoints"></a>Puntos de conexión de Office 365
 
