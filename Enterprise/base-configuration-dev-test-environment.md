@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Resumen: Cree una intranet simplificada como entorno de desarrollo y prueba en Microsoft Azure.'
 ms.openlocfilehash: 68edf0dea20674a7dadb4d1e50b8151a9ce13c7b
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741386"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490546"
 ---
 # <a name="base-configuration-devtest-environment"></a>Entorno de desarrollo y prueba de la configuración básica
 
@@ -32,7 +32,7 @@ En este artículo se ofrecen instrucciones para crear el siguiente entorno de de
   
 ![Configuración básica de Azure](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-**Figura 1: Entorno de desarrollo y pruebas de la configuración básica**
+**Figura 1: Entorno de desarrollo y prueba de la configuración básica**
 
 El entorno de desarrollo y prueba de la configuración básica de la figura 1 consta de la subred de la red corporativa en una red virtual de Azure solo de nube denominada TestLab que simula una intranet simplificada y privada conectada a Internet. Contiene tres máquinas virtuales de Azure con Windows Server 2016:
   
@@ -436,8 +436,8 @@ Start-AzVM -ResourceGroupName $rgName -Name "CLIENT1"
 
 ## <a name="see-also"></a>Vea también
 
-- [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
-- [Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-- [Cloud App Security para el entorno de desarrollo y pruebas de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-- [Protección contra amenazas avanzada en el entorno de desarrollo y pruebas de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
+- [Sincronización de directorios (DirSync) para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [Seguridad de Cloud App para su entorno de desarrollo y prueba de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Protección contra amenazas avanzada en el entorno de desarrollo y prueba de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 - [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)

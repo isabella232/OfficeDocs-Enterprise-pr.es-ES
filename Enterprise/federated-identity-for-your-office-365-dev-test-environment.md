@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Resumen: Configure la autenticación federada para su entorno de desarrollo y prueba de Office 365.'
 ms.openlocfilehash: f09aa66fb3183ffa924d6211fb7fa36e7de095eb
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741427"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487976"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identidad federada para el entorno de desarrollo y prueba de Office 365
 
@@ -33,7 +33,7 @@ Office 365 admite la identidad federada. Esto significa que, en lugar de realiza
   
 En este artículo, se describe cómo puede configurar la autenticación federada para el entorno de desarrollo y prueba de Office 365, lo que se traduce en el siguiente resultado:
   
-**Figura 1: Autenticación federada para el entorno de desarrollo y pruebas de Office 365**
+**Figura 1: Autenticación federada para el entorno de desarrollo y prueba de Office 365**
 
 ![La autenticación federada para el entorno de desarrollo y pruebas de Office 365](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
@@ -71,11 +71,11 @@ Después, cree un nombre de dominio DNS público en función de su nombre de dom
   
 Para obtener instrucciones sobre cómo crear los registros DNS correctos en su proveedor DNS y agregar el dominio a la suscripción de evaluación de Office 365, vea [Agregar usuarios y un dominio con el asistente de configuración a Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611). 
   
-Este es el resultado de la configuración.
+Esta es la configuración resultante.
   
-**Figura 2: Sincronización de directorios para el entorno de desarrollo y pruebas de Office 365**
+**Figura 2: Sincronización de directorios para el entorno de desarrollo y prueba de Office 365**
 
-![Entorno de desarrollo y pruebas de Office 365 con sincronización de directorios](media/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Entorno de desarrollo y prueba de Office 365 con sincronización de directorios](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 En la figura 2, se muestra la sincronización de directorios para el entorno de desarrollo y prueba de Office 365, que incluye Office 365 y las máquinas virtuales CLIENT1, APP1 y DC1 en una red virtual de Azure.
   
@@ -120,9 +120,9 @@ Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
 
-Este es el resultado de la configuración.
+Esta es la configuración resultante.
   
-**Figura 3: Adición del servidor de AD FS**
+**Figura 3: Adición del servidor de AD FS**
 
 ![Servidor de AD FS agregado a DirSync para el entorno de desarrollo y prueba de Office 365](media/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
@@ -191,9 +191,9 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv
 
 Estos comandos crean un registro DNS A para su FQDN del Servicio de federación que las máquinas virtuales de la red virtual de Azure pueden resolver en la dirección IP privada de ADFS1.
   
-Este es el resultado de la configuración.
+Esta es la configuración resultante.
   
-**Figura 4: Adición del servidor proxy de aplicación web**
+**Figura 4: Adición del servidor proxy de aplicación web**
 
 ![Servidor proxy de la aplicación web agregado a DirSync para el entorno de desarrollo y prueba de Office 365](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
@@ -448,7 +448,7 @@ Cuando esté listo para implementar la autenticación federada de alta disponibi
   
 [Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
   
-[Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
+[Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
   

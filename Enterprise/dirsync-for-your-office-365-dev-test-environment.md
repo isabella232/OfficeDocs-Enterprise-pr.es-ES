@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Resumen: configure la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365.'
 ms.openlocfilehash: 74457cca2d199fe7bfa8839908b0f6a413890f8a
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741236"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487336"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Configurar la sincronización de directorios para el entorno de desarrollo y pruebas de Office 365
 
@@ -121,13 +121,13 @@ Cuando esté preparado para implementar la sincronización de directorios para s
 
 [Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
 
-[Entorno de desarrollo y prueba de la configuración básica](base-configuration-dev-test-environment.md)
+[Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
 
 [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
 
 [Cloud App Security para el entorno de desarrollo y pruebas de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
 
-[Protección contra amenazas avanzada en el entorno de desarrollo y pruebas de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[Protección contra amenazas avanzada en el entorno de desarrollo y prueba de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 
