@@ -1,5 +1,5 @@
 ---
-title: Optimización de Skype para obtener un rendimiento empresarial en línea
+title: Optimización del rendimiento de Skype Empresarial Online
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,47 +16,47 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
-description: Este artículo proporciona vínculos para los administradores del sistema que desean planear los requisitos de ancho de banda de red, o que necesitan mejorar el rendimiento de Skype para profesionales en línea.
+description: En este artículo se proporcionan vínculos para administradores de sistemas que quieren planear los requisitos de ancho de banda de red o que necesitan mejorar el rendimiento de Skype empresarial online.
 ms.openlocfilehash: f2357491b61c6715491577925e8c952a7f2ea717
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22543011"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492006"
 ---
-# <a name="tune-skype-for-business-online-performance"></a>Optimización de Skype para obtener un rendimiento empresarial en línea
+# <a name="tune-skype-for-business-online-performance"></a>Optimización del rendimiento de Skype Empresarial Online
 
-Este artículo proporciona vínculos para los administradores del sistema que desean planear los requisitos de ancho de banda de red, o que necesitan mejorar el rendimiento de Skype para profesionales en línea. 
+En este artículo se proporcionan vínculos para administradores de sistemas que quieren planear los requisitos de ancho de banda de red o que necesitan mejorar el rendimiento de Skype empresarial online. 
   
-## <a name="fine-tuning-skype-for-business-online-performance"></a>Ajuste de Skype para obtener un rendimiento empresarial en línea
+## <a name="fine-tuning-skype-for-business-online-performance"></a>Ajustar el rendimiento de Skype empresarial online
 
-- **Para obtener más información acerca de la configuración y las métricas para el mantenimiento de la calidad de las llamadas para su organización**, es importante leer la [calidad de los medios y el rendimiento de la conectividad de red en Skype para profesionales en línea](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance). Este artículo proporciona información, si desea usar ExpressRoute, acerca de los tipos de implementación y otra información que necesite.
+- **Para obtener información sobre la configuración y las métricas para mantener la calidad de las llamadas en su organización**, es importante leer la [calidad de los medios y el rendimiento de la conectividad de la red en Skype empresarial online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance). En este artículo se proporciona información, si desea usar ExpressRoute, sobre los tipos de implementación y otra información que necesitará.
     
-- **Para las implementaciones híbridas y locales**, puede ver el ancho de banda requisitos de Skype para Business Server telefónico, consulte [Plan para conferencias de acceso telefónico en Skype para Business Server 2015](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing).
+- **Para las implementaciones locales e híbridas**, puede ver los requisitos de ancho de banda para las conferencias de acceso telefónico local de Skype empresarial Server, vea [Plan for Dial-in Conferencing in Skype for Business Server 2015](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing).
     
-## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Más maneras de mejorar Skype para obtener un rendimiento empresarial en línea
+## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Más formas de mejorar el rendimiento de Skype empresarial online
 
-- [ExpressRoute y QoS en Skype para empresarial en línea](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online): conectarse a Office 365 a través de una conexión de red dedicada con ExpressRoute de Azure para Office 365 y Skype para profesionales en línea. 
+- [ExpressRoute y QoS en Skype empresarial online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online): Conéctese a Office 365 a través de una conexión de red dedicada mediante Azure ExpressRoute para Office 365 y Skype empresarial online. 
     
-- [Activar y con el panel de calidad de llamadas en Skype para empresarial en línea](https://docs.microsoft.com/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard): panel de calidad de llamadas (CQD) le permite supervisar y obtenga conocimientos en la calidad de las llamadas realizadas mediante Skype para servicios de negocios. 
+- [Activar y usar el panel de calidad de llamadas en Skype empresarial online](https://docs.microsoft.com/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard): el panel de calidad de llamadas (CQD) le permite supervisar y obtener información sobre la calidad de las llamadas realizadas con los servicios de Skype empresarial. 
     
-## <a name="articles-on-setting-up-skype-for-business-online"></a>Artículos sobre la configuración de Skype para profesionales en línea
+## <a name="articles-on-setting-up-skype-for-business-online"></a>Artículos sobre la configuración de Skype empresarial online
 
-- [Configuración de Skype para profesionales en línea](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
+- [Configurar Skype Empresarial Online](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
     
-- [Configurar conferencias de Audio para Skype para empresas y Microsoft Teams](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
+- [Configurar audioconferencia para Skype empresarial y Microsoft Teams](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
     
-- [Configurar planes de llamada (Skype para la empresa)](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
+- [Configurar planes de llamada (Skype empresarial)](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
     
-- [Aquí es lo que obtiene con el sistema telefónico en Office 365](https://docs.microsoft.com/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
+- [Esto es lo que obtiene con sistema telefónico en Office 365](https://docs.microsoft.com/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
     
 ## <a name="see-also"></a>Vea también
 
 [Planeamiento de red y ajuste del rendimiento para Office 365](network-planning-and-performance.md)
   
-[Optimización de la red de Skype para profesionales en línea](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/optimizing-your-network)
+[Optimización de la red para Skype Empresarial Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/optimizing-your-network)
   
-[ExpressRoute y QoS en Skype para la empresa en línea](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
+[ExpressRoute y QoS en Skype empresarial online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
   
-[Flujo de llamadas de uso ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
+[Flujo de llamadas con ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
 

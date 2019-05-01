@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Obtenga información sobre cómo desactivar la sincronización de directorios. También puede ver su estado.
 ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001573"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492106"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Ver el estado de sincronización de directorios en Office 365
 
@@ -39,7 +39,7 @@ En la siguiente tabla se enumeran las características a las que puede obtener i
   
 Si hay un problema con la sincronización de directorios, los errores también se enumeran en esta página. Para obtener más información acerca de los diferentes errores que se pueden producir, consulte [identificar errores de sincronización de directorios en Office 365](identify-directory-synchronization-errors.md).
   
-|**Elemento**|**Para qué sirve**|
+|**Item**|**Para qué sirve**|
 |:-----|:-----|
 |**Dominios comprobados** | Número de dominios de su inquilino de Office 365 que ha comprobado que es el propietario. |
 |**Dominios no comprobados** | Dominios que ha agregado, pero no comprobado. |

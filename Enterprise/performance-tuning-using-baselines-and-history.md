@@ -19,11 +19,11 @@ ms.collection:
 - Ent_O365
 description: Hay sencillas formas de comprobar el rendimiento de la conexión entre Office 365 y su empresa que le permitirá establecer una línea de base aproximada de su conectividad. Conocer el historial de rendimiento de las conexiones de los equipos cliente puede ayudarle a detectar los problemas emergentes con anticipación, la identificación y la predicción de los problemas.
 ms.openlocfilehash: 328b8f66b86f2fc1880b3a9d65f4b9fd63b51d40
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372947"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491886"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento
 
@@ -157,7 +157,7 @@ Puede tomar una línea de base antes del horario comercial, de nuevo durante el 
   
 ![Gráfico que propone una manera de organizar los datos de rendimiento en carpetas.](media/13e01ffa-f0f2-4d10-b89d-d5980ec89fae.png)
   
-También debe elegir una Convención de nomenclatura para los archivos. Estos son algunos ejemplos:
+También debe elegir una Convención de nomenclatura para los archivos. Aquí le mostramos otros ejemplos:
   
 - Feb_09_2015_9amPST_PerfBaseline_Netmon_ClientToEgress_Normal
     
@@ -322,7 +322,7 @@ Si está en medio de un problema de rendimiento, muchos de los pasos son los mis
   
 Para solucionar un problema de rendimiento, *ahora* tiene que realizar un seguimiento en el momento en que experimenta el problema de rendimiento. Debe disponer de las herramientas adecuadas para recopilar los registros y necesitará un plan de acción, es decir, una lista de acciones de solución de problemas para recopilar la mejor información que puede. Lo primero que debe hacer es registrar la fecha y la hora de la prueba para que los archivos se puedan guardar en una carpeta que refleje el intervalo. A continuación, Refine los pasos del problema. Estos son los pasos exactos que usará para las pruebas. No olvide los conceptos básicos: Si el problema solo está relacionado con Outlook, asegúrese de grabar que el comportamiento del problema ocurre en un solo servicio de Office 365. Restringir el alcance de este problema le ayudará a centrarse en algo que pueda resolver. 
   
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
 

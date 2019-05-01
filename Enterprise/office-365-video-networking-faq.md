@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
 description: El repositorio de vídeo de Office 365 y los servicios de streaming simplifican el almacenamiento y la transmisión de vídeos en la organización. Hay mucha información importante sobre Office 365 video; estas preguntas frecuentes sobre redes están diseñadas para responder las preguntas más comunes sobre la planeación del ancho de banda, el cifrado y cómo el servicio aprovecha las redes de entrega de contenido (CDN).
 ms.openlocfilehash: f11bd8baff7c2527287f6e1249ad4dae1928bdd2
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30641527"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491936"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Preguntas más frecuentes sobre redes de vídeo de Office 365
 
@@ -112,11 +112,12 @@ Estos son algunos otros recursos que le ayudarán a implementar y usar Office 36
   
 [Obtener ayuda sobre la configuración de vídeo de Office 365](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)
   
-[Reunirse con Office 365 video](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)
+[Meet Office 365 Video](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6) (Conozca Office 365 Video)
   
 [Crear y administrar un canal en Office 365 video](https://support.office.com/article/Create-and-manage-a-channel-in-Office-365-Video-1fede4cc-13c0-435a-b585-e7fbf1c83bb2)
   
-[Administración del portal de vídeo de Office 365](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da)
+
+  [Manage your Office 365 Video portal](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da) (Administrar el portal de Office 365 Video)
   
 [Formatos de vídeo que funcionan en Office 365 video](https://support.office.com/article/Video-formats-that-work-in-Office-365-Video-dd1af01c-fd8e-4640-b17b-93ee02b9b817)
   

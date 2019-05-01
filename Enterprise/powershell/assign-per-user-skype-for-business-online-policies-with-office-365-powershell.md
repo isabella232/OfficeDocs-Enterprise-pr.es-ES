@@ -11,27 +11,27 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Resumen: Uso Office 365 PowerShell para asignar a cada usuario configuración de comunicaciones con Skype para las políticas de negocios en línea.'
+description: 'Resumen: Use Office 365 PowerShell para asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.'
 ms.openlocfilehash: 7f819b619c5b3607c98c10791fe30c3944e862a4
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "17114819"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492026"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Asignar cada usuario Skype para las políticas de negocios en línea con Office 365 PowerShell
 
- **Resumen:** Utilice Office 365 PowerShell para asignar a cada usuario configuración de comunicaciones con Skype para las políticas de negocios en línea.
+ **Resumen:** Use Office 365 PowerShell para asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.
   
-Con Office 365 PowerShell es una forma eficaz de asignar a cada usuario configuración de comunicaciones con Skype para las políticas de negocios en línea.
+El uso de Office 365 PowerShell es una forma eficaz de asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Siga estas instrucciones para obtener configurado para ejecutar los comandos (sáltese los pasos que ya ha completado):
+Siga estas instrucciones para preparar la ejecución de los comandos (omita los pasos que ya ha completado):
   
-1. Descargue e instale el [Skype para el módulo de Business Connector en línea](https://www.microsoft.com/en-us/download/details.aspx?id=39366).
+1. Descargue e instale el [módulo de conector de Skype empresarial online](https://www.microsoft.com/en-us/download/details.aspx?id=39366).
     
-2. Abra un símbolo del sistema de Windows PowerShell y ejecute los comandos siguientes: 
+2. Abra un símbolo del sistema de Windows PowerShell y ejecute los siguientes comandos: 
     
   ```
   Import-Module LyncOnlineConnector
@@ -39,26 +39,26 @@ $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
 Import-PSSession $sfbSession
   ```
-Cuando se le solicite, escriba su Skype para contraseña y nombre de cuenta de administrador de negocios en línea.
+Cuando se le solicite, escriba el nombre y la contraseña de la cuenta de administrador en línea de Skype empresarial online.
     
-## <a name="updating-external-communication-settings-for-a-user-account"></a>Actualizando la configuración de la comunicación externa para una cuenta de usuario
+## <a name="updating-external-communication-settings-for-a-user-account"></a>Actualización de la configuración de comunicación externa para una cuenta de usuario
 
-Suponga que desea cambiar la configuración de la comunicación externa en una cuenta de usuario. Por ejemplo, desea permitir que Alex para comunicarse con los usuarios federados (EnableFederationAccess es igual a True) pero no a los usuarios de Windows Live (EnablePublicCloudAccess es igual a falso). Para ello, debe hacer dos cosas:
+SuPongamos que desea cambiar la configuración de comunicación externa en una cuenta de usuario. Por ejemplo, desea permitir que Alex se comunique con los usuarios federados (EnableFederationAccess es igual a true) pero no con los usuarios de Windows Live (EnablePublicCloudAccess es igual a false). Para ello, debe hacer dos cosas:
   
 1. Buscar una directiva de acceso externo que cumpla nuestros criterios.
     
 2. Asignar esa directiva de acceso externo a Alex.
     
 > [!NOTE]
->  No se puede crear una directiva personalizada todos nuestros propios. Eso es porque Skype para los negocios en línea no le permiten crear directivas personalizadas. En su lugar, debe asignar una de las directivas que se han creado específicamente para Office 365. Aquellos creados previamente las políticas incluyen: 4 políticas de cliente diferente, 224 conferencias diferentes directivas, 5 otros planes de marcado, 5 directivas de acceso externo diferente, directivas de correo de voz hospedado 1 y 4 otra voz directivas.
+>  No se puede crear una directiva personalizada todo lo mismo. Esto se debe a que Skype empresarial online no permite crear directivas personalizadas. En su lugar, debe asignar una de las directivas creadas específicamente para Office 365. Estas directivas predefinidas incluyen: 4 directivas de cliente diferentes, 224 distintas directivas de conferencia, 5 planes de marcado diferentes, 5 directivas de acceso externo diferentes, una directiva de correo de voz hospedado y 4 directivas de voz distintas.
   
-Entonces, ¿cómo puede determinar qué directiva de acceso externo para asignar a Alex? El siguiente comando devuelve todas las directivas de acceso externo donde EnableFederationAccess está establecida en True y EnablePublicCloudAccess se establece en False:
+¿Cómo se determina qué directiva de acceso externo asignara Alex? El siguiente comando devuelve todas las directivas de acceso externo donde EnableFederationAccess se establece en True y EnablePublicCloudAccess se establece en False:
   
 ```
 Get-CsExternalAccessPolicy | Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Lo que hace el comando es devolver todas las directivas que cumplan dos criterios: la propiedad EnableFederationAccess está establecida en True, y la directiva EnablePublicCloudAccess está establecida en False. A su vez, ese comando devuelve una directiva que cumpla nuestros criterios (FederationOnly). Éste es un ejemplo:
+Lo que hace el comando devuelve todas las directivas que cumplen dos criterios: la propiedad EnableFederationAccess se establece en true y la Directiva EnablePublicCloudAccess se establece en false. A su vez, el comando devuelve una directiva que cumple nuestros criterios (FederationOnly). Aquí le mostramos un ejemplo:
   
 ```
 Identity                          : Tag:FederationOnly
@@ -71,43 +71,43 @@ EnableOutsideAccess               : True
 ```
 
 > [!NOTE]
-> La directiva de identidad indica etiqueta: FederationOnly. Según parece, la etiqueta: prefijo es un remanente de trabajo previo al lanzamiento temprano realizado en Microsoft Lync 2013. En cuanto a la asignación de directivas a los usuarios, debe eliminar la etiqueta: prefijo y utilizar simplemente el nombre de la directiva: FederationOnly. 
+> La identidad de la Directiva dice etiqueta: FederationOnly. Como resultado, el prefijo de etiqueta es un remanente del trabajo anterior de la versión preliminar que se hizo en Microsoft Lync 2013. Cuando se trata de asignar directivas a los usuarios, debe eliminar el prefijo de etiqueta y usar únicamente el nombre de directiva: FederationOnly. 
   
-Ahora que sabe qué directiva para asignar a Alex, podemos asignar esa directiva mediante el cmdlet de [Concesión CsExternalAccessPolicy](https://go.microsoft.com/fwlink/?LinkId=523974) . Éste es un ejemplo:
+Ahora que ya sabe qué directiva asignar a Alex, podemos asignar esa Directiva mediante el cmdlet [Grant-CsExternalAccessPolicy](https://go.microsoft.com/fwlink/?LinkId=523974) . Aquí le mostramos un ejemplo:
   
 ```
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
 ```
 
-Asignación de una directiva es bastante sencilla: sólo tiene que especificar la identidad del usuario y el nombre de la directiva que se asignará. 
+La asignación de una directiva es muy sencilla: simplemente especifique la identidad del usuario y el nombre de la Directiva que se va a asignar. 
   
-Y en cuanto a las políticas y las asignaciones de directivas, no está limitado a trabajar con cuentas de usuario una vez. Por ejemplo, suponga que necesita una lista de todos los usuarios que tienen permiso para comunicarse con los socios federados y con usuarios de Windows Live. Ya se sabe que los usuarios le ha asignado la directiva de acceso de usuario externo FederationAndPICDefault. Porque sabemos, mediante la ejecución de un comando simple puede mostrar una lista de todos los usuarios. Aquí está el comando:
+En lo que se refiere a las directivas y asignaciones de directivas, no se limita a trabajar con cuentas de usuario una vez. Por ejemplo, supongamos que necesita una lista de todos los usuarios que tienen permiso para comunicarse con los socios federados y los usuarios de Windows Live. Ya sabemos que a esos usuarios se les ha asignado la directiva de acceso de usuario externo FederationAndPICDefault. Como sabemos, puede mostrar una lista de todos los usuarios mediante la ejecución de un comando sencillo. Este es el comando:
   
 ```
 Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | Select-Object DisplayName
 ```
 
-En otras palabras, nos muestran todos los usuarios donde se establece la propiedad ExternalAccessPolicy a FederationAndPICDefault. (Y, con el fin de limitar la cantidad de información que aparece en la pantalla, use el cmdlet Select-Object para mostrar nos muestran sólo nombre para mostrar de cada usuario). 
+En otras palabras, veremos a todos los usuarios donde la propiedad ExternalAccessPolicy se establece en FederationAndPICDefault. (Y, para limitar la cantidad de información que aparece en la pantalla, use el cmdlet Select-Object para mostrar solo el nombre para mostrar de cada usuario). 
   
-Para configurar todas las cuentas de usuarios para utilizar esa misma directiva, use este comando:
+Para configurar todas las cuentas de usuario para que usen la misma directiva, use este comando:
   
 ```
 Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 ```
 
-Este comando utiliza Get-CsOnlineUser para devolver una colección de todos los usuarios que se han habilitado para Lync, entonces envía toda esa información a CsExternalAccessPolicy de la concesión, que se asigna la directiva FederationAndPICDefault para cada usuario de la colección.
+Este comando usa Get-CsOnlineUser para devolver una colección de todos los usuarios que se han habilitado para Lync y, a continuación, envía toda la información a Grant-CsExternalAccessPolicy, que asigna la Directiva FederationAndPICDefault a todos y cada uno de los usuarios de la colección.
   
-Como ejemplo adicional, supongamos que Alex previamente se ha asignado la directiva FederationAndPICDefault y ahora ha cambiado de opinión y desea que le sea administrado por la directiva global de acceso externo. No se puede asignar explícitamente la directiva global a nadie. Sólo se utiliza si no se ha asignado ninguna otra directiva por usuario. Por lo tanto, si queremos que Alex sea administrado por la directiva global, debe *desasignar* cualquier directiva por usuario previamente asignado a él. Aquí es un comando de ejemplo:
+Por ejemplo, supongamos que anteriormente ha asignado a Alex la Directiva FederationAndPICDefault y que ahora ha cambiado de opinión y desea que se administre mediante la directiva global de acceso externo. No se puede asignar explícitamente la directiva global a nadie. Solo se usa si no se ha asignado ninguna otra directiva por usuario. Por lo tanto, si queremos que Alex administre la directiva global, debe anular la *asignación* de la Directiva por usuario que se le haya asignado anteriormente. A continuación se muestra un ejemplo:
   
 ```
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
-Este comando establece el nombre de la directiva de acceso externo asignado a Alex en un valor nulo ($Null). NULL significa "nada". En otras palabras, no se asigna ninguna directiva de acceso externo a Alex. Cuando se ha asignado ninguna directiva de acceso externo a un usuario, dicho usuario obtiene administrado por la directiva global.
+Este comando establece el nombre de la Directiva de acceso externo asignada a Alex en un valor nulo ($Null). Null significa "Nothing". Es decir, no se asigna ninguna directiva de acceso externo a Alex. Cuando no se asigna ninguna directiva de acceso externo a un usuario, dicho usuario se administra mediante la directiva global.
   
-Para deshabilitar una cuenta de usuario con Windows PowerShell, usar los cmdlets de Azure Active Directory para quitar Skype de Alex para licencia de negocios en línea. Para obtener más información, vea [Deshabilitar el acceso a los servicios de Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
+Para deshabilitar una cuenta de usuario con Windows PowerShell, use los cmdlets de Azure Active Directory para quitar la licencia de Skype empresarial online de Alex. Para obtener más información, vea desHabilitar el [acceso a servicios con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### 
 
