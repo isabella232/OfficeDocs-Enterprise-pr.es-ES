@@ -1,5 +1,5 @@
 ---
-title: Durante y después de mover los datos
+title: Durante y después del movimiento de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
 ms.openlocfilehash: 7635de71e207ff01b24b8b8df8664e3f57f395cf
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647998"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487236"
 ---
-# <a name="during-and-after-your-data-move"></a>Durante y después de mover los datos
+# <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
 Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
   
@@ -34,9 +34,9 @@ Vea el centro de mensajes de Office 365 para confirmar que se han completado los
 |Australia, Nueva Zelanda, Fiji  <br/> |31 de octubre de 2017  <br/> |
 |Japón  <br/> |31 de octubre de 2018  <br/> |
 |India  <br/> |31 de octubre de 2018  <br/> |
-|Canadá  <br/> |30 de junio de 2019  <br/> |
+|Canada  <br/> |30 de junio de 2019  <br/> |
 |Corea del sur  <br/> |31 de octubre de 2018  <br/> |
-|United Kingdom  <br/> |15 de septiembre de 2019  <br/> |
+|Reino Unido  <br/> |15 de septiembre de 2019  <br/> |
 |Francia  <br/> |15 de septiembre de 2020  <br/> |
 |Emiratos Árabes Unidos  <br/> |Anunció  <br/> |
 |Sudáfrica  <br/> |Anunció  <br/> |
@@ -90,7 +90,7 @@ Una vez que haya terminado de mover los datos de SharePoint Online, es posible q
     
 - Estamos quitando las copias transcodificadas del centro de recursos anterior y transformarlas de nuevo en el nuevo centro de recursos.
     
-### <a name="search"></a>Buscar
+### <a name="search"></a>Buscar 
 
 En el transcurso del traslado de los datos de SharePoint Online, migramos el índice de búsqueda y la configuración de búsqueda a una nueva ubicación. Hasta que haya **completado** el traslado de los datos de SharePoint Online, seguiremos atendiendo a los usuarios del índice en la ubicación original. En la nueva ubicación, la búsqueda comienza automáticamente el rastreo del contenido después de haber terminado de mover los datos de SharePoint Online. A partir de este punto, traponemos a sus usuarios del índice migrado. Los cambios en el contenido que se produjeron después de la migración no se incluyen en el índice migrado hasta que el rastreo los seleccione. La mayoría de los clientes no aprecian que los resultados sean menos actualizados después de haber terminado de mover los datos de SharePoint Online, pero algunos clientes podrían experimentar una actualización reducida en las primeras 24-48 horas. 
   
@@ -131,7 +131,7 @@ Solo se mueven los datos de clientes para Exchange Online, SharePoint Online y S
  
 [Cómo solicitar el movimiento de datos](request-your-data-move.md)
     
-[Preguntas frecuentes generales sobre movimiento de datos](data-move-faq.md)
+[Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.md)
   
 [Nueva GEOS de centro de recursos para Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

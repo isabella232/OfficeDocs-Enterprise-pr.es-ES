@@ -13,34 +13,34 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: Se explica cómo usar PowerShell de Office 365 para bloquear y desbloquear el acceso a cuentas de Office 365.
+description: Explica cómo usar Office 365 PowerShell para bloquear y desbloquear el acceso a cuentas de Office 365.
 ms.openlocfilehash: 0e1ac3f61acafedd77c2af760b8316aa6b936e7b
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546481"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491396"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Bloquear cuentas de usuario con PowerShell de Office 365
 
-**Resumen:**  Se explica cómo usar PowerShell de Office 365 para bloquear y desbloquear el acceso a cuentas de Office 365.
+**Resumen:**  Explica cómo usar Office 365 PowerShell para bloquear y desbloquear el acceso a cuentas de Office 365.
   
-Bloquear el acceso a una cuenta de Office 365 impide que alguien pueda usar la cuenta para iniciar sesión y tener acceso a los servicios y los datos de la organización de Office 365. Puede usar PowerShell de Office 365 para bloquear el acceso a una persona y varias cuentas de usuario.
+Al bloquear el acceso a una cuenta de Office 365, cualquier usuario que no pueda usar la cuenta puede iniciar sesión y acceder a los servicios y datos de su organización de Office 365. Puede usar Office 365 PowerShell para bloquear el acceso a cuentas de usuario individuales y múltiples.
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usar Azure Active Directory PowerShell para el módulo de gráfico
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-Primero, [Conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
  
-### <a name="block-access-to-individual-user-accounts"></a>Bloquear el acceso a las cuentas de usuario individuales
+### <a name="block-access-to-individual-user-accounts"></a>Bloquear el acceso a cuentas de usuario individuales
 
-Para bloquear una cuenta de usuario individual, use la siguiente sintaxis:
+Use la siguiente sintaxis para bloquear una cuenta de usuario individual:
   
 ```
 Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $false
 ```
 
 > [!NOTE]
-> El parámetro - ObjectID en el cmdlet Set-AzureAD acepta puede ser el inicio de sesión de nombre de cuenta, también conocida como el nombre Principal de usuario o identificador de objeto. de la cuenta 
+> El parámetro-ObjectID en el cmdlet Set-AzureAD acepta el nombre de inicio de sesión de la cuenta, también conocido como nombre principal de usuario, o el identificador de objeto de la cuenta. 
   
 Este ejemplo bloquea el acceso a la cuenta de usuario fabricec@litwareinc.com.
   
@@ -54,7 +54,7 @@ Para desbloquear esta cuenta de usuario, ejecute el siguiente comando:
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $true
 ```
 
-Para mostrar la cuenta de usuario que UPN basado en nombre para mostrar del usuario, use los siguientes comandos:
+Para mostrar el UPN de la cuenta de usuario en función del nombre para mostrar del usuario, use los comandos siguientes:
   
 ```
 $userName="<display name>"
@@ -62,14 +62,14 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-En este ejemplo se muestra la cuenta de usuario UPN para el usuario llamado Caleb Sills.
+En este ejemplo se muestra el UPN de la cuenta de usuario para el usuario denominado Caleb alféizares.
   
 ```
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-Para bloquear una cuenta basada en el nombre para mostrar del usuario, use los siguientes comandos:
+Para bloquear una cuenta según el nombre para mostrar del usuario, use los comandos siguientes:
   
 ```
 $userName="<display name>"
@@ -85,7 +85,7 @@ Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,Ac
 
 ### <a name="block-access-to-multiple-user-accounts"></a>Bloquear el acceso a varias cuentas de usuario
 
-Para bloquear el acceso a varias cuentas de usuario, cree un archivo de texto que contiene un inicio de sesión de nombre de cuenta en cada línea como la siguiente:
+Para bloquear el acceso a varias cuentas de usuario, cree un archivo de texto que contenga un nombre de inicio de sesión de la cuenta en cada línea de la siguiente manera:
     
   ```
 akol@contoso.com
@@ -93,7 +93,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-En los siguientes comandos, el archivo de texto de ejemplo es C:\My Documents\Accounts.txt. Reemplazar por la ruta de acceso y el nombre de su archivo de texto.
+En los siguientes comandos, el archivo de texto de ejemplo es C:\Mis Documentos\cuentas.txt. Reemplácelo por la ruta de acceso y el nombre de archivo del archivo de texto.
   
 Para bloquear el acceso a las cuentas enumeradas en el archivo de texto, ejecute el siguiente comando:
     
@@ -107,12 +107,12 @@ Para desbloquear las cuentas enumeradas en el archivo de texto, ejecute el sigui
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usar el módulo de Microsoft Azure Active Directory para Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-Primero, [Conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
     
-### <a name="block-access-to-individual-user-accounts"></a>Bloquear el acceso a las cuentas de usuario individuales
+### <a name="block-access-to-individual-user-accounts"></a>Bloquear el acceso a cuentas de usuario individuales
 
 Utilice la sintaxis siguiente para bloquear el acceso a una cuenta de usuario individual:
   
@@ -140,14 +140,14 @@ Get-MsolUser -UserPrincipalName <sign-in name of user account> | Select DisplayN
 
 ### <a name="block-access-to-multiple-user-accounts"></a>Bloquear el acceso a varias cuentas de usuario
 
-En primer lugar, cree un archivo de texto que contiene una cuenta en cada línea como la siguiente:
+En primer lugar, cree un archivo de texto que contenga una cuenta en cada línea como esta:
     
   ```
 akol@contoso.com
 tjohnston@contoso.com
 kakers@contoso.com
   ```
-En los siguientes comandos, el archivo de texto de ejemplo es C:\My Documents\Accounts.txt. Reemplazar por la ruta de acceso y el nombre de su archivo de texto.
+En los siguientes comandos, el archivo de texto de ejemplo es C:\Mis Documentos\cuentas.txt. Reemplácelo por la ruta de acceso y el nombre de archivo del archivo de texto.
     
 Para bloquear el acceso a las cuentas enumeradas en el archivo de texto, ejecute el siguiente comando:
     

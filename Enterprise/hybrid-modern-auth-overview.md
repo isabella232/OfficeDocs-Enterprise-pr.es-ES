@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras. Está disponible para implementaciones híbridas de Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial. Este artículo contiene vínculos a documentos relacionados sobre requisitos previos, la configuración/deshabilitación de la autenticación moderna y para algunos de los clientes relacionados (por ejemplo, Outlook y clientes de Skype) información.
-ms.openlocfilehash: 26efa77e3c98c0395188e6ca7a2f65cd3b8b939e
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: d8d06a3e2d178f68bcb130228ed1834f4eb878f8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458350"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491406"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para su uso con servidores locales de Skype empresarial y Exchange
 
@@ -90,6 +90,18 @@ Compruebe y compruebe estos elementos de la lista antes de continuar:
   - El dominio SIP se agrega como un dominio federado en Office 365
     
   - Todos los front-ends de SFB deben tener conexiones salientes a Internet, a las direcciones URL de autenticación de Office 365 (TCP 443) y las CRL de raíz de certificado conocidas (TCP 80) que aparecen en las filas 56 y 125 de la sección "Microsoft 365 Common y Office Online" de las [direcciones URL e IP de office 365 intervalos de direcciones](urls-and-ip-address-ranges.md).
+  
+- **Skype empresarial local en un entorno híbrido de Office 365**
+  - Una implementación de Skype empresarial Server 2019 con todos los servidores que ejecutan Skype empresarial Server 2019.
+  
+  - Una implementación de Skype empresarial Server 2015 con todos los servidores que ejecutan Skype empresarial Server 2015.
+  
+  - Una implementación con un máximo de dos versiones de servidor distintas, como se muestra a continuación:
+  
+     - Skype empresarial Server 2015 y Skype empresarial Server 2019
+     
+  - Todos los servidores de Skype empresarial deben tener instaladas las últimas actualizaciones de Cummulative, consulte [actualizaciones de Skype empresarial Server](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates) para buscar y administrar todas las actualizaciones disponibles.
+  - No hay Lync Server 2010 o 2013 en el entorno híbrido.
     
  **Nota:** Si los servidores front-end de Skype empresarial usan un servidor proxy para el acceso a Internet, se debe especificar el número de puerto y la IP del servidor proxy que se usan en la sección de configuración del archivo Web. config para cada front-end. 
   
@@ -120,7 +132,17 @@ Compruebe y compruebe estos elementos de la lista antes de continuar:
     
   - La descarga de SSL no está configurada. Se admite la terminación SSL y el nuevo cifrado.
     
-  - En el caso de que el entorno use una infraestructura de servidor proxy para permitir que los servidores se conecten a Internet, asegúrese de que todos los servidores de Exchange tengan el servidor proxy definido en la propiedad [InternetWebProxy](https://technet.microsoft.com/en-us/library/bb123716%28v=exchg.160%29.aspx) .
+  - En el caso de que el entorno use una infraestructura de servidor proxy para permitir que los servidores se conecten a Internet, asegúrese de que todos los servidores de Exchange tengan el servidor proxy definido en la propiedad [InternetWebProxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx) .
+  
+- **Exchange Server local en un entorno híbrido de Office 365**
+
+  - Si usa Exchange Server 2013, al menos un servidor debe tener instalados los roles de servidor buzón de correo y acceso de cliente. Aunque es posible instalar los roles de acceso de cliente y buzón de correo en servidores independientes, se recomienda instalar ambos roles en cada servidor para proporcionar confiabilidad adicional y mejorar el rendimiento.
+  
+  - Si usa Exchange Server 2016 o una versión posterior, al menos un servidor debe tener instalado el rol de servidor buzón de correo.
+  
+  - No existe el servidor de Exchange 2007 o 2010 en el entorno híbrido.
+  
+  - Todos los servidores de Exchange deben tener instaladas las últimas actualizaciones de Cummulative, consulte [Actualizar Exchange a las actualizaciones acumulativas más recientes](https://docs.microsoft.com/en-us/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) para buscar y administrar todas las actualizaciones disponibles.
     
 - **Requisitos del protocolo y del cliente de Exchange**
   
@@ -164,6 +186,6 @@ Compruebe y compruebe estos elementos de la lista antes de continuar:
     
 - [Cómo configurar Skype empresarial local para usar la autenticación moderna](configure-skype-for-business-for-hybrid-modern-authentication.md)
     
-- [Eliminación o deshabilitación de la autenticación moderna híbrida de Skype empresarial y Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
+- [Quitar o deshabilitar la autenticación moderna híbrida de Skype Empresarial y Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
     
 

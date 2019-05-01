@@ -1,5 +1,5 @@
 ---
-title: Administrar puntos de conexión de Office 365
+title: Administración de puntos de conexión de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,13 +16,13 @@ search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algunas redes empresariales restringen el acceso a ubicaciones de Internet genéricas o incluyen backhaul o procesamiento de tráfico de red substancial. Para garantizar que los equipos de redes como estos puedan tener acceso a Office 365, los administradores de red y de proxy deben administrar la lista de FQDN, direcciones URL y direcciones IP que componen la lista de puntos de conexión de Office 365. Estos deben agregarse a ruta directa, omisión de proxy o reglas de firewall y archivos PAC para garantizar que las solicitudes de red puedan alcanzar el alcance de Office 365.
 ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458360"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487096"
 ---
-# <a name="managing-office-365-endpoints"></a>Administrar puntos de conexión de Office 365
+# <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365
 
 La mayoría de las organizaciones empresariales que tienen varias ubicaciones de oficina y una WAN que se conecta necesitarán tener la configuración de la conectividad de red de Office 365. Puede optimizar la red mediante el envío de todas las solicitudes de red de Office 365 de confianza directamente a través del firewall, evitando el procesamiento o la inspección adicionales del nivel de paquetes. Esto reduce la latencia y los requisitos de capacidad del perímetro. La identificación del tráfico de red de Office 365 es el primer paso para ofrecer un rendimiento óptimo para los usuarios. Para obtener más información acerca de la conectividad de red de Office 365, consulte [office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md).
 
@@ -221,6 +221,6 @@ Tenga en cuenta que bloquear el acceso a los servicios de atención al cliente d
   
 [Direcciones URL e intervalos de direcciones IP de Office 365](urls-and-ip-address-ranges.md)
   
-[Administración de ExpressRoute para la conectividad de Office 365](managing-expressroute-for-connectivity.md)
+[Administrar ExpressRoute para la conectividad de Office 365](managing-expressroute-for-connectivity.md)
   
 [Principios de conectividad de red de Office 365](office-365-network-connectivity-principles.md)

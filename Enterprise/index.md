@@ -1,6 +1,6 @@
 ---
 title: Office 365 Enterprise
-description: Microsoft Office 365 proporciona servicios de nube en línea eficaces que permiten la colaboración, seguridad y cumplimiento de normas, movilidad y intellgence y análisis. Esta página proporciona instrucciones para administradores y profesionales de TI que implementar, configurar y administrar los servicios de Office 365 en organizaciones empresariales.
+description: Microsoft Office 365 ofrece eficaces servicios en la nube en línea que permiten la colaboración, la seguridad y el cumplimiento, la movilidad y la Intellgence y análisis. Esta página proporciona instrucciones para los administradores y los profesionales de ti que están implementando, configurando y administrando los servicios de Office 365 en organizaciones empresariales.
 services: o365-solutions
 author: robmazz
 manager: laurawi
@@ -15,14 +15,14 @@ ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
 ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "27745324"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487136"
 ---
 <h1>Office 365 Enterprise</h1>
-<p>Microsoft Office&nbsp;365 proporciona servicios de nube en línea eficaces que permiten la colaboración, seguridad y cumplimiento de normas, movilidad y intellgence y análisis. Esta página proporciona vínculos a instrucciones para administradores y profesionales de TI que están implementación, configuración y administración de Office&nbsp;365 servicios en organizaciones empresariales.</p>
+<p>Microsoft Office&nbsp;365 ofrece eficaces servicios en la nube en línea que permiten la colaboración, la seguridad y el cumplimiento, la movilidad y la Intellgence y análisis. Esta página proporciona vínculos a instrucciones para administradores y profesionales de ti que implementan, configuran y administran&nbsp;servicios de Office 365 en organizaciones empresariales.</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="https://www.microsoft.com/fasttrack/microsoft-365/office-365">
@@ -36,7 +36,7 @@ ms.locfileid: "27745324"
                     </div>
                     <div class="cardText">
                         <h3>Implementación guiada con FastTrack</h3>
-                <p>Use la ventaja de centro de FastTrack para Office&nbsp;365 para obtener Ayuda guiada en la planeación, implementación y promoviendo la adopción de Office&nbsp;365 servicios para su organización.</p>
+                <p>Use el beneficio del centro FastTrack para&nbsp;Office 365 para obtener asistencia guiada en la planeación, implementación y conducción de&nbsp;la adopción de los servicios de Office 365 para su organización.</p>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ ms.locfileid: "27745324"
                     </div>
                     <div class="cardText">
                         <h3>Migrar a Office 365</h3>
-                <p>Migración de la infraestructura existente de local a Office&nbsp;365 y Microsoft en la nube.</p>
+                <p>Migre su infraestructura local existente a Office&nbsp;365 y la nube de Microsoft.</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@ ms.locfileid: "27745324"
                     </div>
                     <div class="cardText">
                         <h3>Office 365 ProPlus</h3>
-                <p>Planear, implementar y administrar Office&nbsp;365 ProPlus en su entorno empresarial.</p>
+                <p>Planee, implemente y administre Office&nbsp;365 ProPlus en su entorno empresarial.</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@ ms.locfileid: "27745324"
                     </div>
                     <div class="cardText">
                         <h3>Implementar Office 365</h3>
-                <p>Implementar Office&nbsp;365, como configurar el inquilino, configuración de la red y aprovisionamiento de los usuarios.</p>
+                <p>Implemente&nbsp;Office 365, incluida la configuración del espacio empresarial, la configuración de la red y el aprovisionamiento de los usuarios.</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@ ms.locfileid: "27745324"
                     </div>
                     <div class="cardText">
                         <h3>Implementaciones híbridas</h3>
-                <p>Configurar y administrar una implementación híbrida entre la infraestructura local y Office existentes&nbsp;365.</p>
+                <p>Configure y administre una implementación híbrida entre su infraestructura local existente y Office&nbsp;365.</p>
                     </div>
                 </div>
             </div>
@@ -130,8 +130,8 @@ ms.locfileid: "27745324"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Formación de Office 365</h3>
-                <p>Mejorar su oficina&nbsp;365 administración y los conocimientos con Office&nbsp;365 cursos de aprendizaje para profesionales de TI.</p>
+                        <h3>Aprendizaje de Office 365</h3>
+                <p>Mejore sus conocimientos&nbsp;y habilidades de administración de Office 365&nbsp;con los cursos de aprendizaje de Office 365 para profesionales de ti.</p>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@ ms.locfileid: "27745324"
     </li>
 </ul>
 
-<h2>Implementar las cargas de trabajo de Office 365</h2>
+<h2>Implementar cargas de trabajo de Office 365</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -256,8 +256,8 @@ ms.locfileid: "27745324"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Comunidad de Office 365 Tech</h3>
-                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Obtenga información sobre los procedimientos recomendados, noticias y las últimas tendencias y temas relacionados con Office&nbsp;365.</a></p>
+                        <h3>Office 365 Tech Community</h3>
+                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Obtenga información sobre los procedimientos recomendados, las noticias y las últimas tendencias y temas relacionados&nbsp;con Office 365.</a></p>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@ ms.locfileid: "27745324"
                     </div>
                     <div class="cardText">
                         <h3>Obtener soporte técnico</h3>
-                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Póngase en contacto con soporte técnico para obtener ayuda con Office&nbsp;365.</a></p>
+                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Póngase en contacto con soporte técnico&nbsp;para obtener ayuda con Office 365.</a></p>
                     </div>
                 </div>
             </div>
@@ -291,7 +291,7 @@ ms.locfileid: "27745324"
                     </div>
                     <div class="cardText">
                         <h3>Microsoft 365</h3>
-                        <p><a href="https://docs.microsoft.com/microsoft-365">Obtenga más información acerca de Microsoft 365.</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365">Obtenga más información sobre Microsoft 365.</a></p>
                     </div>
                 </div>
             </div>

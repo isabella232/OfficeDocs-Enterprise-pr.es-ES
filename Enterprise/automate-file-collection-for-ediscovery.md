@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: 'Resumen: Aprenda a automatizar una recopilación de archivos de los equipos del usuario para la exhibición de documentos electrónicos.'
 ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001613"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490876"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizar la recopilación de archivos para la exhibición de documentos electrónicos
 
@@ -270,8 +270,8 @@ Write-Host -ForegroundColor Cyan "Finished."
     
 |**Número de línea**|**Lo que es necesario cambiar**|**obligatorio/opcional**|
 |:-----|:-----|:-----|
-|71  <br/> |Variable **$FileTypes**. Incluir todos los tipos de extensiones de archivo que desea que el script inventarie y recopile en la variable de matriz<br/> |Opcional  <br/> |
-|76 y 77  <br/> |Cambie la manera en la que la variable **$CaseNo** se genera para que se adapte a sus necesidades. El script captura la fecha y hora actuales y le anexa el nombre de usuario.<br/> |Opcional  <br/> |
+|71  <br/> |Variable **$FileTypes**. Incluir todos los tipos de extensiones de archivo que desea que el script inventarie y recopile en la variable de matriz<br/> |Optional  <br/> |
+|76 y 77  <br/> |Cambie la manera en la que la variable **$CaseNo** se genera para que se adapte a sus necesidades. El script captura la fecha y hora actuales y le anexa el nombre de usuario.<br/> |Optional  <br/> |
 |80  <br/> |La variable **$CaseRootLocation** debe establecerse en el recurso compartido de archivos del archivo de colección de servidores de implementación. Por ejemplo, **\\\\Staging\\Cases$** <br/> |Obligatorio  <br/> |
    
 4. Coloque el archivo CollectionScript.ps1 en el recurso compartido de archivo Netlogon en un controlador de dominio.  
@@ -329,7 +329,7 @@ $AllFiles | ForEach-Object {
 |**Número de línea**|**Lo que es necesario cambiar**|**obligatorio/opcional**|
 |:-----|:-----|:-----|
 |12  <br/> |**$FolderIdentifier** etiqueta las carpetas del buzón en las que se importan los archivos PST. Cambie esto si es necesario.<br/> |Opcional  <br/> |
-|432  <br/> |**$ConnectionUri** tiene que estar establecido como su propio servidor. <br/> > [!IMPORTANT]> Asegúrese de que su **$ConnectionUri** indica una ubicación http://, y no a una https://. No funcionará con https://          |Obligatorio  <br/> |
+|17   <br/> |**$ConnectionUri** tiene que estar establecido como su propio servidor. <br/> > [!IMPORTANT]> Asegúrese de que su **$ConnectionUri** indica una ubicación http://, y no a una https://. No funcionará con https://          |Obligatorio  <br/> |
    
 4. Compruebe que la cuenta del subsistema de confianza de Exchange tiene permisos de lectura, escritura y ejecución en el recurso compartido \\\\Staging\\Cases$.
     

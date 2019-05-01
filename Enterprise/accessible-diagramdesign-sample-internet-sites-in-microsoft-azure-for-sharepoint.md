@@ -1,5 +1,5 @@
 ---
-title: "Ejemplo de diseño diagrama accesible - sitios de Internet de Microsoft Azure para SharePoint 2013"
+title: 'Diagrama accesible: sitios de Internet de ejemplo de diseño en Microsoft Azure para SharePoint 2013'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,20 +10,21 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
-description: "Este artículo es una versión de texto accesible del diagrama Ejemplo de diseño: Sitios de Internet en Microsoft Azure con SharePoint Server 2013."
+description: 'Este artículo es una versión de texto accesible del diagrama Ejemplo de diseño: Sitios de Internet en Microsoft Azure con SharePoint Server 2013.'
 ms.openlocfilehash: 0d42a96f80d47b360084557fea47c4155d106d30
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487836"
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagrama accesible: Muestra de diseño. Sitios de Internet en Microsoft Azure para SharePoint 2013
 
-**Resumen:** Este artículo es una versión de texto accesible del diagrama denominado diseño sample: sitios de Internet de Microsoft Azure para 2013 de SharePoint.
+**Resumen:** Este artículo es una versión de texto accesible del diagrama ejemplo de diseño: sitios de Internet en Microsoft Azure para SharePoint 2013.
   
-Utilice este ejemplo de diseño como punto de partida para un sitio en Internet en Azure usando SharePoint 2013.
+Use este ejemplo de diseño como punto de partida para un sitio orientado a Internet en Azure con SharePoint 2013.
   
-Este póster muestra un ejemplo de cómo diseñar los siguientes aspectos de 2013 de SharePoint:
+En este póster se muestra un ejemplo de cómo diseñar los siguientes aspectos de SharePoint 2013:
   
 - Usuarios
     
@@ -49,13 +50,13 @@ Este póster muestra un ejemplo de cómo diseñar los siguientes aspectos de 201
 
 Hay cuatro tipos de cuentas de usuario en este diseño. Cada tipo de cuenta está asociado con un sitio para el acceso y con una zona que usa un tipo de autenticación específico.  
   
-- Los clientes anónimos, los clientes anónimos tienen acceso a través de un sitio, por ejemplo, http://www.contoso.com. La zona que utilizan es la "zona Internet / anónimos", que utiliza la autenticación anónima.
+- Clientes anónimos: los clientes anónimos tienen acceso a través http://www.contoso.comde un sitio como. La zona que usan es la "zona de Internet/anónima", que usa la autenticación anónima.
     
-- Autenticar clientes: los clientes autenticados tienen acceso a través de un sitio como https://secure.contoso.com. La zona que utilizan es la "zona de Extranet / SAML", que utiliza Active Directory de Azure con autenticación SAML.
+- Clientes autenticados: los clientes autenticados tienen acceso a través de un https://secure.contoso.comsitio como. La zona que usan es la "zona de extranet/SAML", que usa Azure Active Directory con autenticación SAML.
     
-- Autores y los desarrolladores del sitio, los autores de sitios y los desarrolladores tienen acceso a través de sitios como http://authoring.contoso.com:8000 o http://www.contoso.com:8000. La zona que utilizan es la "zona predeterminada Windows integrada", que utiliza los servicios de dominio de Active Directory (AD DS).
+- Autores y desarrolladores de sitios: los autores y programadores de sitios tienen acceso http://authoring.contoso.com:8000 a http://www.contoso.com:8000través de sitios como o. La zona que usan es la "zona predeterminada de Windows/integrada", que usa los servicios de dominio de Active Directory (AD DS).
     
-- Cuenta de rastreo de búsqueda: La cuenta de rastreo de búsqueda tiene acceso a través de sitios como http://authoring.contoso.com:8000 o http://www.contoso.com:8000. La zona que se utiliza es la "zona predeterminada Windows integrada", que usa AD DS con autenticación Windows NTLM.
+- Cuenta de rastreo de búsqueda: la cuenta de rastreo de búsqueda http://authoring.contoso.com:8000 tiene http://www.contoso.com:8000acceso a través de sitios como o. La zona que usa es la "zona predeterminada integrada en Windows", que usa AD DS con autenticación NTLM de Windows.
     
 ## <a name="server-farm"></a>Granja de servidores
 
@@ -73,27 +74,27 @@ En el ejemplo de diseño se muestra un sitio web de Internet Information Service
   
 Notas sobre los servicios para sitios de Internet:
   
-> Metadatos administrados, No olvide seleccionar **esta aplicación de servicio es la ubicación de almacenamiento predeterminada para conjuntos de términos específicos de la columna**.
+> Metadatos administrados: no olvide seleccionar **Esta aplicación de servicio es la ubicación de almacenamiento predeterminada para conjuntos de términos específicos de columnas**.
     
 > Administración de la aplicación: le aconsejamos que no use aplicaciones en un sitio de Internet público en Azure.
     
 ## <a name="application-pools-and-web-applications"></a>Grupos de aplicaciones y aplicaciones web
 
-El grupo predeterminado en Azure muestra el grupo de aplicación 3, que contiene una aplicación web denominada Sitios de Contoso. Esta colección de sitios basados en la ruta de acceso se encuentra en http://internal:8000.
+El grupo predeterminado en Azure muestra el grupo de aplicación 3, que contiene una aplicación web denominada Sitios de Contoso. Esta colección de sitios basada en rutas de acceso http://internal:8000se encuentra en.
   
 ## <a name="site-collections-and-sites"></a>Sitios y colecciones de sitios
 
 Estas son algunas de las colecciones de sitios que se incluyen en el grupo de aplicaciones:
   
-- Colección de sitios denominados host 1 para rastreo (ubicación de ejemplo http://authoring.contoso.com:8000)
+- Colección de sitios con nombre de host 1 para el rastreo (ubicación de ejemplohttp://authoring.contoso.com:8000)
     
-- Colección de sitios denominados host 2 para consultas (ubicaciones de ejemplo http://www.contoso.com, https://secure.contoso.com, http://www.contoso.com:8000)
+- Colección de sitios con nombre de host 2 para consultas ( http://www.contoso.comubicaciones https://secure.contoso.comde ejemplo,,http://www.contoso.com:8000)
     
-- Colección de sitios denominados host 3 para consultas (ubicaciones de ejemplo http://assets.contoso.com, https://secureassets.contoso.com, http://assets.contoso.com:8000)
+- Colección de sitios con nombre de host 3 para consultas ( http://assets.contoso.comubicaciones https://secureassets.contoso.comde ejemplo,,http://assets.contoso.com:8000)
     
 ## <a name="content-databases"></a>Bases de datos de contenido
 
-En el ejemplo se muestran dos bases de datos de contenido. Una es para la colección de sitios 1 usada para rastreo (http://authoring.contoso.com:8000). La otra es para las dos colecciones de sitios 2 y 3 que se usan para consultas (http://www.contoso.com, https://secure.contoso.com, http://www.contoso.com:8000 o http://assets.contoso.com, https://secureassets.contoso.com, http://assets.contoso.com:8000).
+En el ejemplo se muestran dos bases de datos de contenido. Una es para la colección de sitios 1 que se usa parahttp://authoring.contoso.com:8000)el rastreo (. La otra es para las dos colecciones de sitios 2 y 3 usadas para lashttp://www.contoso.comconsultas https://secure.contoso.com( http://www.contoso.com:8000,, http://assets.contoso.como https://secureassets.contoso.com, http://assets.contoso.com:8000),.
   
 ## <a name="zones-and-urls"></a>Zonas y direcciones URL
 
@@ -101,62 +102,62 @@ En el ejemplo se muestran tres zonas con las URL de carga equilibrada asociadas,
   
 La primera lista zonas y URL está relacionada con la colección de sitios 1 y contiene esta información:
   
-- Usuarios: los autores de sitios
+- Usuarios-autores de sitios
     
-- Zona - predeterminado
+- Zona-predeterminada
     
-- URL de carga equilibrada - http://authoring.contoso.com:8000
+- URL de carga equilibrada:http://authoring.contoso.com:8000
     
 La segunda lista de zonas y URL tiene tres tipos diferentes de usuarios en tres zonas diferentes. Está relacionada con la colección de sitios 2 y contiene esta información:
   
 Primera zona:
   
-- Usuarios: los autores de sitios
+- Usuarios-autores de sitios
     
-- Zona - predeterminado
+- Zona-predeterminada
     
-- URL de carga equilibrada - http://www.contoso.com:8000
+- URL de carga equilibrada:http://www.contoso.com:8000
     
 Segunda zona:
   
 - Usuarios: clientes anónimos
     
-- Zona - Internet
+- Zona: Internet
     
-- Equilibrio de carga de URL - http://www.contoso.com
+- URL de carga equilibrada:http://www.contoso.com
     
 Tercera zona:
   
-- Usuarios: los clientes autenticados
+- Clientes autenticados por usuarios
     
-- Zona - Extranet
+- Zone-extranet
     
-- Equilibrio de carga de URL - https://secure.contoso.com
+- URL de carga equilibrada:https://secure.contoso.com
     
 La tercera lista de zonas y URL tiene tres tipos diferentes de usuarios en tres zonas diferentes. Está relacionada con la colección de sitios 3 y contiene esta información:
   
 Primera zona:
   
-- Usuarios: los autores de sitios
+- Usuarios-autores de sitios
     
-- Zona - Internet
+- Zona: Internet
     
-- URL de carga equilibrada - http://assets.contoso.com:8000
+- URL de carga equilibrada:http://assets.contoso.com:8000
     
 Segunda zona:
   
 - Usuarios: clientes anónimos
     
-- Zona - Internet
+- Zona: Internet
     
-- Equilibrio de carga de URL - http://assets.contoso.com
+- URL de carga equilibrada:http://assets.contoso.com
     
 Tercera zona:
   
-- Usuarios: los clientes autenticados
+- Clientes autenticados por usuarios
     
-- Zona - Extranet
+- Zone-extranet
     
-- Equilibrio de carga de URL - http://secureassets.contoso.com
+- URL de carga equilibrada:http://secureassets.contoso.com
     
 

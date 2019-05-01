@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Su suscripción a Office 365 incluye una suscripción a Azure AD. Integre Office 365 con Azure AD si desea la sincronización de contraseña o el inicio de sesión único con el entorno local.
 ms.openlocfilehash: 0ad1c064d2ffe29f0f06e1368cd728d8b3bd630b
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085479"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490146"
 ---
 # <a name="azure-integration-with-office-365"></a>Integración de Azure con Office 365
 
@@ -54,14 +54,14 @@ Para obtener más información sobre Office 365 y Azure AD, consulte [understand
 
 |**Característica**|**Descripción**|
 |:-----|:-----|
-|Aplicaciones integradas  <br/> |Puede conceder acceso a aplicaciones individuales a los datos de Office 365, como correo, calendarios, contactos, usuarios, grupos, archivos y carpetas. También puede autorizar estas aplicaciones en el nivel de administrador global y ponerlas a disposición de toda la empresa registrando las aplicaciones en Azure AD. Para obtener información detallada [, vea aplicaciones integradas y Azure ad para administradores de Office 365](https://support.office.com/article/cb2250e3-451e-416f-bf4e-363549652c2a).<br/> Consulte también la [Galería de aplicaciones de Azure ad y el inicio de sesión único](https://go.microsoft.com/fwlink/p/?LinkId=698604).  <br/> |
-|PowerApps  <br/> | Las aplicaciones Power se centran en aplicaciones para dispositivos móviles que se pueden conectar a los orígenes de datos existentes, como las listas de SharePoint y otras aplicaciones de datos. Consulte [Create a PowerApp for a List in SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) and [PowerApps Page](https://powerapps.microsoft.com/) for details.<br/> |
+|Aplicaciones integradas  <br/> |Puede conceder acceso a aplicaciones individuales a los datos de Office 365, como correo, calendarios, contactos, usuarios, grupos, archivos y carpetas. También puede autorizar estas aplicaciones en el nivel de administrador global y ponerlas a disposición de toda la empresa registrando las aplicaciones en Azure AD. Para obtener información detallada [, vea aplicaciones integradas y Azure ad para administradores de Office 365](https://support.office.com/article/cb2250e3-451e-416f-bf4e-363549652c2a).  <br/> Consulte también la [Galería de aplicaciones de Azure ad y el inicio de sesión único](https://go.microsoft.com/fwlink/p/?LinkId=698604).  <br/> |
+|PowerApps  <br/> | Las aplicaciones Power se centran en aplicaciones para dispositivos móviles que se pueden conectar a los orígenes de datos existentes, como las listas de SharePoint y otras aplicaciones de datos. Consulte [Create a PowerApp for a List in SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) and [PowerApps Page](https://powerapps.microsoft.com/) for details.  <br/> |
    
 Para obtener información sobre otros recursos sobre la nube de Microsoft y Office 365, consulte estos recursos:
   
-- [Identidad de Microsoft Cloud para arquitectos empresariales](https://go.microsoft.com/fwlink/p/?LinkId=524586)
+- [Identidad de nube de Microsoft para arquitectos de empresa](https://go.microsoft.com/fwlink/p/?LinkId=524586)
     
-- [Implementar Sincronización de directorios (DirSync) de Office 365 en Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=517887)
+- [Implementar la sincronización de directorios (DirSync) de Office 365 en Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=517887)
     
 
 Para obtener más información [, vea aplicaciones integradas y Azure ad para Office 365 administradores](integrated-apps-and-azure-ads.md) y la [Galería de aplicaciones de Azure ad y el inicio de sesión único](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).

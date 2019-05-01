@@ -1,5 +1,5 @@
 ---
-title: "Diagrama accesible SharePoint Server, Exchange, Lync, Office Web Apps Entorno móvil"
+title: Diagrama accesible SharePoint Server, Exchange, Lync, Office Web Apps Entorno móvil
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -9,12 +9,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
-description: "Este artículo es una versión de texto accesible del diagrama con el nombre Opciones de plataformas de Microsoft Exchange 2013, que está disponible en Diagramas técnicos."
+description: Este artículo es una versión de texto accesible del diagrama con el nombre Opciones de plataformas de Microsoft Exchange 2013, que está disponible en Diagramas técnicos.
 ms.openlocfilehash: c54e223645cebfa56347a273e61d70afaf33ce05
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487686"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Diagrama accesible: SharePoint Server, Exchange, Lync, Office Web Apps (entorno móvil)
 
@@ -211,7 +212,7 @@ En un flujo de trabajo normal, un dispositivo móvil externo envía una solicitu
   
 En el servidor front-end, el servicio de detección automática recupera las URL del servicio web del grupo inicial del usuario y devuelve esa información al dispositivo móvil a través del servidor proxy inverso. El servicio de detección automática permite que los dispositivos móviles localicen servicios web de Lync Server sin que los usuarios tengan que introducir las URL manualmente.
   
-Si un dispositivo móvil se registra en el servidor de seguridad, se envía un comando HTTPS Get directamente al grupo de servidores front-end de Lync, como LyncDiscoverInternal.com. La solicitud se recibe en el puerto 443, el mismo puerto que usa el servicio de autodetección para comunicarse a su vez con el dispositivo móvil.
+Si un dispositivo móvil inicia sesión en el firewall, se envía un comando HTTPS Get directamente a la granja de servidores front-end de Lync, como LyncDiscoverInternal.com. La solicitud se recibe en el puerto 443, el mismo puerto que el servicio de detección automática usa para la comunicación con el dispositivo móvil.
   
 Debe configurar dos registros DNS para admitir la movilidad: uno para LyncDiscover.contoso.com y otro para LyncDiscoverInternal.com. El FQDN externo debe ser accesible solo desde fuera del firewall; el FQDN interno debe ser accesible únicamente desde dentro del firewall.
   

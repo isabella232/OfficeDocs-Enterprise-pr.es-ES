@@ -1,5 +1,5 @@
 ---
-title: 'Diagrama accesible: Opciones de plataformas de Microsoft SharePoint 2013'
+title: Diagrama accesible Opciones de plataformas de Microsoft SharePoint 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
-description: "Este artículo es una versión de texto accesible del diagrama Opciones de plataforma para Microsoft SharePoint 2013."
+description: Este artículo es una versión de texto accesible del diagrama Opciones de plataforma para Microsoft SharePoint 2013.
 ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487826"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>Diagrama accesible: Opciones de plataformas de Microsoft SharePoint 2013
 
@@ -121,7 +122,7 @@ Tiene la propiedad de todo.
   
 En el diagrama adjunto se muestra un entorno local con servidores web, servidores de aplicaciones y Active Directory, que se comunica con todas las bases de datos y los servidores de aplicaciones dedicados para la búsqueda. 
   
-Entre las características se incluyen: 
+Entre las características se incluyen:  
   
 - Planeamiento de la capacidad y ajuste del tamaño. 
     
@@ -287,7 +288,7 @@ Diseñar el entorno de SharePoint en Azure:
 
 Diseñar el entorno de SharePoint en un entorno local existente: 
   
-- Topología de granja de SharePoint y arquitectura lógica. 
+- Topología de granja de SharePoint y arquitectura lógica.  
     
 - Hardware de servidores. 
     
@@ -333,7 +334,7 @@ Implementar y administrar el entorno de Azure y SharePoint:
   
 - Implemente y administre el entorno de red de Azure. 
     
-- Implementar el entorno SharePoint. 
+- Implemente el entorno de SharePoint. 
     
 - Actualice los servidores de la granja de SharePoint. 
     
@@ -343,7 +344,7 @@ Implementar y administrar el entorno de Azure y SharePoint:
     
 - Haga copia de seguridad del entorno de SharePoint. 
     
-- Implemente el entorno de recuperación ante desastres y el protocolo. 
+- Implemente el entorno de recuperación ante desastres y el protocolo.  
     
 #### <a name="on-premises"></a>Implementación local
 

@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Esta lista de comprobación ayudará a su organización cuando Planee y prepare una migración a Office 365. Las fases y los pasos de la lista de comprobación se alinean con las instrucciones proporcionadas por el centro de incorporación.
 ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085309"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490106"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Lista de comprobación para planificar la implementación de Office 365
 
@@ -37,7 +37,7 @@ Al mover una organización empresarial a Office 365, es importante planear exact
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**Eventos/tareas de implementación** <br/> |**Fecha de inicio** <br/> |**Fecha de finalización** <br/> |**Recursos** <br/> |**Dependencias** <br/> |
+|**Tareas de implementación de/Events** <br/> |**Fecha de inicio** <br/> |**Fecha de finalización** <br/> |**Resources** <br/> |**Dependencias** <br/> |
 |**Determinación de los objetivos de la implementación** <br/> |||||
 | Con las partes interesadas internas y externas:<br>  -Acordar el ámbito y la escala de tiempo <br>  -Acuerde el mecanismo de seguimiento del proyecto  <br>  -desarrollar criterios de éxito y una [comunicación](https://fasttrack.microsoft.com/office) / [introducción a Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Realizar un inventario de su entorno actual y tomar decisiones clave de implementación** |||||

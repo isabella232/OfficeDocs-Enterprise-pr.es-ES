@@ -1,5 +1,5 @@
 ---
-title: Cómo configurar Skype empresarial local para usar la autenticación moderna híbrida
+title: Cómo configurar Skype Empresarial local para usar la autenticación moderna híbrida
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -14,14 +14,14 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras, está disponible para Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial.
-ms.openlocfilehash: 23a9262659ae47f5aeb5577b9bb45ea2c1aad235
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: a9fb93d0269628c0c1d4cd374e3bca36482f7eee
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372937"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490336"
 ---
-# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Skype empresarial local para usar la autenticación moderna híbrida
+# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Skype Empresarial local para usar la autenticación moderna híbrida
 
 La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras, está disponible para Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial.
   
@@ -87,8 +87,10 @@ Una vez que haya comprobado que cumple los [requisitos previos](hybrid-modern-au
     
 Necesitará direcciones URL de servicios Web internos y externos para todos los grupos de SfB 2015 que se implementen. Para obtenerlos, ejecute lo siguiente desde Shell de administración de Skype empresarial:
   
-Get-CsService-webServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | Florida
-  
+```
+Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
+```
+
 - Precio. Internoshttps://lyncwebint01.contoso.com
     
 - Precio. Exteriorhttps://lyncwebext01.contoso.com
@@ -115,41 +117,46 @@ Ahora deberá ejecutar comandos para agregar las direcciones URL (recopiladas an
   
  **Nota:** Los nombres de entidad de seguridad de servicio (SPN) identifican los servicios web y los asocian a una entidad de seguridad (como un grupo o nombre de cuenta) para que el servicio pueda actuar en nombre de un usuario autorizado. Los clientes que se autentican en un servidor usan la información contenida en los SPN. 
   
-1. En primer lugar, conéctese a AAD con [estas instrucciones](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+1. En primer lugar, conéctese a AAD con [estas instrucciones](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0).
     
 2. Ejecute este comando, local, para obtener una lista de las direcciones URL del servicio Web de SFB.
+
+   Tenga en cuenta que el AppPrincipalId `00000004`comienza con. Esto corresponde a Skype empresarial online.
     
-  - Get-MsolServicePrincipal-AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select-ExpandProperty ServicePrincipalNames
+   Tome nota de (y captura de pantalla para comparaciones posteriores) el resultado de este comando, que incluirá una dirección URL de SE y WS, pero en `00000004-0000-0ff1-ce00-000000000000/`su mayoría constará de los SPN que comienzan con.
     
-    Observe que AppPrincipalId comienza por "00000004". Esto corresponde a Skype empresarial online.
-    
-    Tome nota de (y captura de pantalla para comparaciones posteriores) el resultado de este comando, que incluirá una dirección URL de SE y WS, pero en su mayoría constará de SPN que comienzan con 00000004-0000-0ff1-ce00-000000000000/.
+```
+Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
+```
     
 3. Si faltan las URL de SFB internas **o** externas de local (por ejemplo, https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com) se deben agregar esos registros específicos a esta lista. 
     
     Asegúrese de reemplazar *las direcciones URL de ejemplo* , a continuación, con las direcciones URL reales en el comando Agregar comandos! 
-    
-  - $x = Get-MsolServicePrincipal-AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
-    
-  - $x. ServicePrincipalnames. Add (" *https://lyncwebint01.contoso.com/* ") 
-    
-  - $x. ServicePrincipalnames. Add (" *https://lyncwebext01.contoso.com/* ") 
-    
-  - Set-MSOLServicePrincipal-AppPrincipalId 00000004-0000-0ff1-ce00-000000000000-ServicePrincipalNames $x. ServicePrincipalNames
-    
-4. Compruebe que los nuevos registros se han agregado ejecutando el comando Get-MsolServicePrincipal del paso 2 de nuevo y observando los resultados. Compare la lista o la captura de pantalla de antes con la nueva lista de SPN (también puede mostrar una captura de pantalla de la nueva lista de sus registros). Si ha tenido éxito, verá las dos nuevas direcciones URL en la lista. Siguiendo nuestro ejemplo, la lista de SPN ahora incluirá las direcciones URL https://lyncweb01.contoso.com específicas y https://autodiscover.contoso.com.
+  
+```  
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
+$x.ServicePrincipalnames.Add("https://lyncwebint01.contoso.com/")
+$x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
+Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+```
+  
+4. Compruebe que los nuevos registros se han agregado ejecutando el comando Get-MsolServicePrincipal del paso 2 de nuevo y observando los resultados. Compare la lista o la captura de pantalla de antes con la nueva lista de SPN (también puede mostrar una captura de pantalla de la nueva lista de sus registros). Si ha tenido éxito, verá las dos nuevas direcciones URL en la lista. Siguiendo nuestro ejemplo, la lista de SPN ahora incluirá las direcciones URL https://lyncweb01.contoso.com específicas y https://lyncwebext01.contoso.com/.
     
 ### <a name="create-the-evosts-auth-server-object"></a>Crear el objeto de servidor de autenticación de EvoSTS
 
 Ejecute el siguiente comando en el shell de administración de Skype empresarial.
   
-- New-CsOAuthServer-Identity evoSTS-MetadataURL https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $True-Type AzureAD
+```
+New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $true -Type AzureAD
+```
     
 ### <a name="enable-hybrid-modern-authentication"></a>Habilitar la autenticación moderna híbrida
 
 Este es el paso que realmente activa MA. Todos los pasos anteriores se pueden ejecutar con antelación sin cambiar el flujo de autenticación del cliente. Cuando esté listo para cambiar el flujo de autenticación, ejecute este comando en el shell de administración de Skype empresarial. 
   
-- Set-CsOAuthConfiguration-ClientAuthorizationOAuthServerIdentity evoSTS
+```
+Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
+```
     
 ## <a name="verify"></a>Comprueba
 

@@ -1,5 +1,5 @@
 ---
-title: Uso de elemento de Web de búsqueda de contenido en lugar de elemento Web consulta de contenido para mejorar el rendimiento en SharePoint Online
+title: Usar el elemento Web de búsqueda de contenido en lugar del elemento Web de consulta de contenido para mejorar el rendimiento en SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,58 +14,58 @@ search.appverid:
 - MET150
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
-description: En este artículo se describe cómo aumentar el rendimiento mediante el reemplazo del elemento Web consulta de contenido con el elemento Web de búsqueda de contenido en SharePoint Server 2013 y SharePoint Online.
+description: En este artículo se describe cómo aumentar el rendimiento al reemplazar el elemento Web de consulta de contenido con el elemento Web de búsqueda de contenido en SharePoint Server 2013 y SharePoint Online.
 ms.openlocfilehash: f86a4b75c4bf75ebaa99924411d017c7eb7b6760
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22543019"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492186"
 ---
-# <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Uso de elemento de Web de búsqueda de contenido en lugar de elemento Web consulta de contenido para mejorar el rendimiento en SharePoint Online
+# <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Usar el elemento Web de búsqueda de contenido en lugar del elemento Web de consulta de contenido para mejorar el rendimiento en SharePoint Online
 
-En este artículo se describe cómo aumentar el rendimiento mediante el reemplazo del elemento Web consulta de contenido con el elemento Web de búsqueda de contenido en SharePoint Server 2013 y SharePoint Online.
+En este artículo se describe cómo aumentar el rendimiento al reemplazar el elemento Web de consulta de contenido con el elemento Web de búsqueda de contenido en SharePoint Server 2013 y SharePoint Online.
   
-Una de las nuevas características más eficaces de SharePoint Server 2013 y SharePoint Online es la parte de Web de búsqueda de contenido (CSWP). Este elemento Web utiliza el índice de búsqueda para recuperar rápidamente los resultados que se muestran al usuario. Use el elemento Web de búsqueda de contenido en lugar del contenido consulta de elemento Web (CQWP) en las páginas para mejorar el rendimiento para los usuarios.
+Una de las características nuevas más eficaces de SharePoint Server 2013 y SharePoint Online es el elemento Web de búsqueda de contenido (CSWP). Este elemento Web usa el índice de búsqueda para recuperar rápidamente los resultados que se muestran al usuario. Use el elemento Web de búsqueda de contenido en lugar del elemento Web de consulta de contenido (CQWP) en las páginas para mejorar el rendimiento de los usuarios.
   
-Uso de un elemento Web de búsqueda de contenido a través de un elemento Web consulta de contenido, se producirá casi siempre mucho mejor rendimiento de carga de página en SharePoint Online. Hay una poco una configuración adicional para obtener la consulta derecha, pero las recompensas son usuarios más satisfechos y mejorar el rendimiento.
+El uso de un elemento Web de búsqueda de contenido en un elemento Web de consulta de contenido casi siempre dará lugar a un rendimiento de carga de páginas significativamente mejor en SharePoint Online. Hay una configuración adicional para obtener la consulta correcta, pero las recompensas mejoran el rendimiento y los usuarios más contentos.
   
-## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>Comparación de la mejora del rendimiento que obtiene al utilizar el elemento Web de búsqueda de contenido en lugar de elemento Web consulta de contenido
+## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>Comparación de la mejora de rendimiento que obtiene al usar el elemento Web de búsqueda de contenido en lugar del elemento Web de consulta de contenido
 
-Los siguientes ejemplos muestran las mejoras de rendimiento relativa que puede recibir al usar un elemento Web de búsqueda de contenido en lugar de un elemento Web consulta de contenido. Los efectos son más obvios con una estructura compleja de sitios y las consultas de contenido muy amplias.
+Los siguientes ejemplos muestran las mejoras de rendimiento relativas que puede recibir cuando usa un elemento Web de búsqueda de contenido en lugar de un elemento Web de consulta de contenido. Los efectos son más obvios con una compleja estructura del sitio y consultas de contenido muy amplias.
   
 Este sitio de ejemplo tiene las siguientes características:
   
 - 8 niveles de subsitios.
     
-- Se enumeran con un tipo de contenido personalizado "fruta".
+- Listas con un tipo de contenido personalizado "fruta".
     
-- En el elemento Web, la consulta de contenido es amplia, devolución de todos los elementos con el tipo de contenido de "fruta".
+- En el elemento Web, la consulta de contenido es amplia y devuelve todos los elementos con el tipo de contenido "fruta".
     
-- En el ejemplo se utiliza sólo 50 artículos en todos los sitios de 8. Los efectos se pronuncia aún más para los sitios con más contenido.
+- En el ejemplo solo se usan 50 elementos en los 8 sitios. Los efectos serán aún más pronunciados para los sitios con más contenido.
     
-Aquí es una captura de pantalla de los resultados del elemento Web consulta de contenido.
+Esta es una captura de pantalla de los resultados del elemento Web consulta de contenido.
   
 ![Gráfico que muestra la consulta de contenido del elemento web](media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
   
-En el Explorador de Internet, utilice la ficha de **red** de las herramientas de desarrollo F12 para ver los detalles del encabezado de respuesta. En la siguiente captura de pantalla, el valor de la **SPRequestDuration** para esta carga de página es 924 milisegundos. 
+En Internet Explorer, use la pestaña **red** de las herramientas de desarrollo F12 para ver los detalles del encabezado de respuesta. En la siguiente captura de pantalla, el valor de **SPRequestDuration** para esta carga de página es de 924 milisegundos. 
   
 ![Captura de pantalla que muestra la duración de la solicitud de 924](media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
- **SPRequestDuration** indica la cantidad de trabajo que se realiza en el servidor para preparar la página. Elementos Web de consulta de contenido con elementos Web de búsqueda de contenido de conmutación considerablemente reduce el tiempo necesario para representar la página. Sin embargo, una página con un elemento de Web de búsqueda de contenido equivalente, devolver el mismo número de resultados tiene un valor de **SPRequestDuration** de 106 milisegundos, como se muestra en esta captura de pantalla: 
+ **SPRequestDuration** indica la cantidad de trabajo que se realiza en el servidor para preparar la página. El cambio de contenido por elementos Web de consulta con contenido por elementos Web de búsqueda reduce considerablemente el tiempo que se tarda en representar la página. Por el contrario, una página con un elemento Web de búsqueda de contenido equivalente que devuelve el mismo número de resultados tiene un valor **SPRequestDuration** de 106 milisegundos, tal como se muestra en esta captura de pantalla: 
   
 ![Captura de pantalla que muestra la duración de la solicitud de 106](media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
 ## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>Adición de un elemento Web de búsqueda de contenido en SharePoint Online
 
-Adición de un elemento Web de búsqueda de contenido es muy similar a un elemento de Web de consulta de contenido normal. Vea la sección *"Agregar un elemento Web de búsqueda"* en [configurar un elemento Web de búsqueda de contenido en SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
+Agregar un elemento Web de búsqueda de contenido es muy similar a un elemento Web de consulta de contenido normal. Vea la sección *sobre cómo agregar un elemento Web de búsqueda de contenido* en [configurar un elemento Web de búsqueda de contenido en SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
   
-## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>Creación de la consulta de búsqueda adecuada para su elemento Web búsqueda de contenido
+## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>Crear la consulta de búsqueda correcta para el elemento Web de búsqueda de contenido
 
-Una vez que haya agregado un elemento Web de búsqueda de contenido, puede refinar la búsqueda y devolver los elementos que desee. Para obtener instrucciones detalladas acerca de cómo hacer esto, vea la sección, *"Mostrar contenido mediante la configuración de una consulta avanzada en un elemento Web búsqueda de contenido"* en [configurar un elemento Web de búsqueda de contenido en SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
+Una vez que haya agregado un elemento Web de búsqueda de contenido, puede refinar la búsqueda y devolver los elementos que desee. Para obtener instrucciones detalladas sobre cómo hacerlo, vea la sección *"Mostrar contenido mediante la configuración de una consulta avanzada en un elemento Web de búsqueda de contenido"* en [configurar un elemento Web de búsqueda de contenido en SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
   
-## <a name="query-building-and-testing-tool"></a>Crear y probar la herramienta de consulta
+## <a name="query-building-and-testing-tool"></a>Herramienta de creación de consultas y pruebas
 
-Para que una herramienta crear y probar las consultas complejas, consulte la [Herramienta de consulta de búsqueda](https://sp2013searchtool.codeplex.com/) en Codeplex. 
+Para obtener una herramienta para compilar y probar consultas complejas, vea la [herramienta de consulta de búsqueda](https://sp2013searchtool.codeplex.com/) en Codeplex. 
   
 

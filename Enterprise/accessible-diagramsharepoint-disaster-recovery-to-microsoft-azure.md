@@ -1,5 +1,5 @@
 ---
-title: "Diagrama accesible: Recuperación ante desastres de SharePoint para Microsoft Azure"
+title: 'Diagrama accesible: Recuperación ante desastres de SharePoint para Microsoft Azure'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,16 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
-description: "Este artículo es una versión de texto accesible del diagrama con el nombre Recuperación ante desastres de SharePoint en Microsoft Azure."
+description: Este artículo es una versión de texto accesible del diagrama con el nombre Recuperación ante desastres de SharePoint en Microsoft Azure.
 ms.openlocfilehash: 545aaae05e3becbde60fe01c0e50e5610ee69f98
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487726"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagrama accesible: Recuperación ante desastres de SharePoint para Microsoft Azure
 
-**Resumen:** Este artículo es una versión de texto accesible del diagrama denominado recuperación de desastres de SharePoint de Microsoft Azure.
+**Resumen:** Este artículo es una versión de texto accesible del diagrama con el nombre recuperación ante desastres de SharePoint en Microsoft Azure.
   
 En este póster se proporcionan ejemplos de arquitecturas para la creación de un entorno de recuperación de Azure.  
   
@@ -45,7 +46,7 @@ En este nivel hay tres servidores. Cada servidor proporciona los siguientes serv
   
 - Servicios de back-end  
     
-- Administración 
+- Admin 
     
 - Administrador de flujos de trabajo 
     
@@ -75,7 +76,7 @@ El diagrama adjunto muestra el entorno local replicado exactamente en el entorno
   
 ### <a name="overview"></a>Información general
 
-El entorno de recuperación ante desastres para una granja de SharePoint 2013 local puede alojarse en Azure. 
+El entorno de recuperación ante desastres para una granja de servidores de SharePoint 2013 local se puede hospedar en Azure. 
   
 -   Servicios de infraestructura de Azure proporciona un centro de datos secundario. 
     
@@ -185,7 +186,7 @@ Hay tres servicios en la nube en el entorno de red virtual de Azure:
   
 - El primer servicio en la nube tiene dos servidores de Active Directory y DNS con un conjunto de disponibilidad.  
     
-- El segundo servicio de nube tiene tres conjuntos de servidores: dos distribuyen servidores de caché con un conjunto de disponibilidad. Dos servidores front-end con un conjunto de disponibilidad. Tres servidores de back-end con un conjunto de disponibilidad.
+- El segundo servicio en la nube tiene tres granjas de servidores: Dos servidores de caché distribuida con un conjunto de disponibilidad. Dos servidores de front-end con un conjunto de disponibilidad. Dos servidores de back-end con un conjunto de disponibilidad.
     
 - El tercer servicio en la nube tiene tres servidores de bases de datos con un conjunto de disponibilidad. Uno de estos servidores de bases de datos es un recurso compartido de archivos para el trasvase de registros y un tercer nodo de una mayoría de nodos para SQL Server AlwaysOn  
     
@@ -193,9 +194,9 @@ Hay tres servicios en la nube en el entorno de red virtual de Azure:
 
 La configuración de AD DS para esta solución consiste en un escenario de implementación híbrida en el que AD DS se implementa parcialmente en las instalaciones locales y parcialmente en máquinas virtuales de Azure.  
   
-Importante: antes de implementar AD DS en Azure, lea las Directrices para implementar Windows Server Active Directory en máquinas virtuales de Azure (http://msdn.microsoft.com/es-es/library/windowsazure/jj156090.aspx).  
+Importante: antes de implementar AD DS en Azure, lea las directrices para implementar Windows Server Active Directory en máquinas virtuales de Microsoft Azurehttp://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)(. 
   
-Para obtener instrucciones completas sobre el diseño y la implementación de entornos de Active Directory, consulte http://TechNet.microsoft.com.  
+Para obtener instrucciones completas sobre el diseño y la implementación de entornos de http://TechNet.microsoft.comActive Directory, consulte. 
   
 Esta arquitectura de referencia incluye dos máquinas virtuales configuradas como controladores de dominio. Cada una está configurada del modo siguiente:·  
   

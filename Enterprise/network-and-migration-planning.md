@@ -1,5 +1,5 @@
 ---
-title: Planeación de la migración y red para Office 365
+title: Planeación de la migración y la red para Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contiene vínculos a información acerca de la planeación y las pruebas de red, y la migración a Office 365.
 ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574044"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487286"
 ---
-# <a name="network-and-migration-planning-for-office-365"></a>Planeación de la migración y red para Office 365
+# <a name="network-and-migration-planning-for-office-365"></a>Planeación de la migración y la red para Office 365
 
 Este artículo contiene vínculos a información acerca de la planeación y las pruebas de red, y la migración a Office 365.
   
@@ -108,7 +108,7 @@ Estos temas contienen información detallada de referencia de la red de Office 3
     
 - [Preguntas más frecuentes (FAQ) de Office 365 video Networking](office-365-video-networking-faq.md)
     
-- [Planeación de dispositivos de red que se conectan a servicios de Office 365](plan-for-network-devices.md)
+- [Planificación de dispositivos de red que se conecten a servicios de Office 365](plan-for-network-devices.md)
     
 - [Asesores de implementación para servicios de Office 365](deployment-advisors-for-office-365.md)
     

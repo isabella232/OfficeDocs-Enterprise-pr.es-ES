@@ -1,5 +1,5 @@
 ---
-title: 'Agregar varios usuarios al mismo tiempo a Office 365: ayuda para administradores'
+title: Agregar varios usuarios a Office 365 a la vez - Ayuda de administración
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,35 +23,35 @@ search.appverid:
 - GEA150
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
-description: 'Obtenga información sobre cómo agregar varios usuarios a Office 365 para profesionales de una lista en una hoja de cálculo o de otro CSV con formato de archivo. Vea un vídeo de YouTube que se explica cómo agregar cuentas a Office 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón de Office 365. '
+description: 'Obtenga información sobre cómo agregar varios usuarios a Office 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Office 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón de Office 365. '
 ms.openlocfilehash: 1f91821ee552b59201ca01bdbce7edc0406929d6
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542749"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491596"
 ---
-# <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Agregar varios usuarios al mismo tiempo a Office 365: ayuda para administradores
+# <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Agregar varios usuarios a Office 365 a la vez. Ayuda para administradores
 
-Cada persona en su equipo necesita una cuenta de usuario antes de que pueden iniciar sesión y tener acceso a servicios de Office 365, como correo electrónico y Office. Si tiene una gran cantidad de personas, puede agregar sus cuentas a la vez desde una hoja de cálculo de Excel u otro archivo que se guardó en formato CSV. [Es no está seguro de qué formato CSV?](add-several-users-at-the-same-time.md#__toc316652088)
+Todos los usuarios de su grupo deben tener una cuenta de usuario para poder iniciar sesión y acceder a servicios de Office 365, como el correo electrónico y Office. Si son muchas personas, puede agregar sus cuentas de una vez desde una hoja de cálculo de Excel u otro archivo guardado en formato CSV. [¿No tiene claro qué es un archivo CSV?](add-several-users-at-the-same-time.md#__toc316652088)
   
-## <a name="add-multiple-users-to-office-365-in-the-office-365-admin-center"></a>Agregar varios usuarios a Office 365 en el centro de administración de Office 365
+## <a name="add-multiple-users-to-office-365-in-the-office-365-admin-center"></a>Agregar varios usuarios a Office 365 en el Centro de administración de Office 365
 
 1. Inicie sesión en Office 365 con su cuenta profesional o educativa. 
     
-2. En el centro de administración de Office 365, elija **usuarios** \> **usuarios activos**.
+2. En el Centro de administración de Office 365, seleccione **Usuarios** \> **Usuarios activos**.
     
-    ![En el centro de administración, elija los usuarios y, a continuación, activa](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
+    ![In the Admin center choose Users and then Active users](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
   
-3. En el desplegable **más** , elija **importar varios usuarios**.
+3. En la lista desplegable **Más**, elija **Importar varios usuarios**.
     
-4. En el panel **importar varios usuarios** , opcionalmente, puede descargar un archivo CSV de ejemplo con o sin datos de ejemplo rellenados. 
+4. En el panel **Importar varios usuarios**, tiene la opción de descargar un archivo CSV de ejemplo con datos de ejemplo o sin rellenar. 
     
-    ![En el desplegable más, elija importar varios usuarios](media/77df8a4a-fd00-4fbe-bf1c-d234fc1d5e93.png)
+    ![In the More drop-down, choose Import multiple users](media/77df8a4a-fd00-4fbe-bf1c-d234fc1d5e93.png)
   
-    La hoja de cálculo debe incluir los **mismos encabezados de columna exacta** como el ejemplo uno (nombre de usuario, nombre, etcetera...). Si usa la plantilla, abra en una herramienta de edición de texto, como el Bloc de notas y considere la posibilidad de dejar todos los datos en la fila 1 por sí solo y sólo introducir datos en las filas 2 y a continuación. 
+    Su hoja de cálculo debe incluir **exactamente los mismos encabezados de columna** que la de ejemplo (Nombre de usuario, Nombre, etc.). Si usa la plantilla, ábrala en una herramienta de edición de texto y considere la opción de no editar ningún dato de la fila 1 y escribir los datos a partir de la fila 2. 
     
-    La hoja de cálculo también debe incluir los valores para el nombre de usuario (por ejemplo, bob@contoso.com) y un nombre para mostrar (por ejemplo, Bob Kelly) para cada usuario. 
+    La hoja de cálculo también debe incluir valores para el nombre de usuario (por ejemplo, alberto@contoso.com) y un nombre para mostrar (por ejemplo, Alberto Hermosilla) para cada usuario. 
     
   ```
   User Name,First Name,Last Name,Display Name,Job Title,Department,Office Number,Office Phone,Mobile Phone,Fax,Address,City,State or Province,ZIP or Postal Code,Country or Region
@@ -63,151 +63,151 @@ Cada persona en su equipo necesita una cuenta de usuario antes de que pueden ini
   
   ```
 
-5. Escriba una ruta de acceso de archivo en el cuadro o elija **Examinar** para vaya a la ubicación del archivo CSV, a continuación, elija **Comprobar**.
+5. Escriba una ruta de acceso al archivo en el cuadro o elija **Examinar** para ir a la ubicación del archivo CSV y, a continuación, elija **Comprobar**.
     
-    ![Se comprueba el archivo CSV](media/a43d49db-b2ab-4200-8ddf-0bc846ac6fe5.png)
+    ![Your CSV file is verified](media/a43d49db-b2ab-4200-8ddf-0bc846ac6fe5.png)
   
-    Si hay problemas con el archivo, el problema se muestra en el panel. También puede descargar un archivo de registro.
+    Si hay problemas con el archivo, se mostrarán en el panel. También puede descargar un archivo de registro.
     
-6. En el cuadro de diálogo **establecer las opciones de usuario** puede establecer el estado de inicio de sesión y elija la licencia del producto que se asignará a todos los usuarios. 
+6. En el cuadro de diálogo **Establecer opciones de usuario**, puede establecer el estado de inicio de sesión y elegir qué licencia de producto se asignará a cada uno de los usuarios. 
     
-7. En el cuadro de diálogo **ver su resultado** puede elegir enviar los resultados a usted u otros usuarios (contraseñas estará en texto sin formato) y puede ver cuántos usuarios se han creado, y si es necesario adquirir más licencias para asignar a algunos de los nuevos usuarios. 
+7. En el cuadro de diálogo **Ver el resultado**, puede elegir si desea enviar los resultados a su usuario o a otros usuarios (las contraseñas se mostrarán en texto sin formato). Además, puede ver cuántos usuarios se crearon y, si lo necesita, comprar más licencias para asignárselas a algunos de los nuevos usuarios. 
     
-## <a name="watch-the-video"></a>Vea el vídeo
+## <a name="watch-the-video"></a>Ver vídeo
 <a name="bk_preview"> </a>
 
- Vea un breve vídeo que muestra cómo masiva de agregar usuarios. 
+ Vea un breve vídeo en el que se muestra cómo agregar usuarios en masa. 
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/f4e7f161-8ae6-4264-a429-9297b539a8de?autoplay=false]
   
 ## <a name="next-steps"></a>Pasos siguientes
 <a name="bk_preview"> </a>
 
-- Ahora que estas personas tienen cuentas, deben [descargar e instalar o volver a instalar Office 365 o 2016 de Office en un PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Cada persona en su equipo puede instalar Office 365 en hasta 5 equipos o Mac. 
+- Ahora que estas personas tienen cuentas, necesitan [Descargar e instalar o reinstalar office 365 u office 2016 en un equipo PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Cada persona de su equipo puede usar Office 365 en un máximo de 5 equipos o Mac. 
     
-- Cada persona también puede [configurar las aplicaciones de Office y correo electrónico en un dispositivo móvil](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) en 5 teléfonos, por ejemplo, iPhone, iPad y teléfonos Android y tabletas y tabletas hasta 5. De este modo pueden editar los archivos de Office desde cualquier lugar. 
+- Cada persona también puede [configurar el correo electrónico y las aplicaciones de Office en un dispositivo móvil en un](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) máximo de 5 tabletas y 5 teléfonos, como iPhone, iPad, y teléfonos y tabletas Android. De esta forma, puede editar archivos de Office desde cualquier lugar. 
     
-    Para obtener una lista de los pasos del programa de instalación-to-end, vea [configurar Office 365 para la empresa](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) . 
+    Vea [set up Office 365 for Business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) para obtener una lista completa de los pasos de configuración. 
     
-## <a name="more-information-about-how-to-add-users-to-office-365"></a>Para obtener más información acerca de cómo agregar usuarios a Office 365
+## <a name="more-information-about-how-to-add-users-to-office-365"></a>Más información sobre cómo agregar usuarios a Office 365
 <a name="bk_preview"> </a>
 
-### <a name="not-sure-what-csv-format-is"></a>¿No está seguro de qué formato CSV es?
+### <a name="not-sure-what-csv-format-is"></a>¿No tiene claro qué es un archivo CSV?
 <a name="__toc316652088"> </a>
 
-Un archivo CSV es un archivo con valores separados por comas. Puede crear o editar un archivo similar con cualquier editor de texto o un programa de hoja de cálculo, como Excel.
+Un archivo CSV es un archivo con valores separados por comas. Puede crear o editar un archivo como este con cualquier editor de textos o programa de hojas de cálculo, como Excel.
   
-Puede descargar [esta hoja de cálculo de ejemplo](https://www.microsoft.com/en-us/download/details.aspx?id=45485) como punto de partida. Recuerde que Office 365 requiere los encabezados de columna en la primera fila por lo que no reemplazarlos con otra cosa. 
+Puede descargar [esta hoja de cálculo de muestra](https://www.microsoft.com/en-us/download/details.aspx?id=45485) como punto de partida. Recuerde que Office 365 requiere encabezados de columna en la primera fila, así que no los sustituya con ningún otro elemento. 
   
-Guarde el archivo con un nombre nuevo y especificar el formato CSV.
+Guarde el archivo con un nuevo nombre y especifique el formato CSV.
   
-![Una imagen de cómo guardar un archivo de Excel en formato CSV](media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
+![Imagen de cómo guardar un archivo de Excel en formato CSV](media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
   
-Cuando guarde el archivo, probablemente obtendrá un símbolo del sistema que algunas características del libro se perderán si guarda el archivo en formato CSV. Esto es correcto. Haga clic en **Sí** para continuar. 
+Cuando guarde el archivo, probablemente recibirá un mensaje que le informará de que se perderán algunas características del libro si guarda el archivo en formato CSV. No pasa nada. Haga clic en **Sí** para continuar. 
   
-![Una imagen del símbolo del sistema que se obtenga de Excel que le pregunta si realmente desea guardar el archivo como un formato CSV](media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
+![Imagen del mensaje que obtendría en Excel que pregunta si realmente quiere guardar el archivo como formato CSV](media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
   
-### <a name="tips-for-formatting-your-spreadsheet"></a>Sugerencias para dar formato a la hoja de cálculo
+### <a name="tips-for-formatting-your-spreadsheet"></a>Consejos para aplicar formato a la hoja de cálculo
 <a name="__toc314595848"> </a>
 
-- **necesito los mismos encabezados de columna como se muestra en la hoja de cálculo de ejemplo?** Sí. La hoja de cálculo de ejemplo contiene los encabezados de columna en la primera fila. Estos títulos son necesarios. Para cada usuario que desee agregar a Office 365, cree una fila bajo el encabezado. Si agregar, cambiar o eliminar cualquiera de los encabezados de columna, es posible que Office 365 no pueda crear los usuarios de la información en el archivo. 
+- **¿Debo mantener los mismos encabezados de columna que en la hoja de cálculo de muestra?** Sí. La hoja de cálculo de muestra contiene los encabezados de columna en la primera fila. Estos encabezados son necesarios. Para cada usuario que desee agregar a Office 365, cree una fila bajo el encabezado. Si agrega, cambia o elimina cualquiera de los encabezados de columna, Office 365 podría no crear usuarios a partir de la información del archivo. 
     
-- **¿Qué ocurre si no tiene toda la información necesaria para cada usuario?** El nombre de usuario y el nombre para mostrar son necesarios, y no se puede agregar un nuevo usuario sin esta información. Si no dispone de parte de la información, como el fax, puede usar un espacio además una coma para indicar que el campo debe permanecer en blanco. 
+- **¿Qué ocurre si no tengo toda la información requerida para cada usuario?** El nombre de usuario y el nombre para mostrar son obligatorios, y no puede agregar un nuevo usuario sin esta información. Si le falta parte de la información, como el fax, puede usar un espacio más una coma para indicar que el campo debe dejarse en blanco. 
     
-- ¿** Cómo pequeños o grandes puede ser la hoja de cálculo? ** La hoja de cálculo debe tener al menos dos filas. Uno es para los encabezados de columna (la etiqueta de columna de datos de usuario) y otra para el usuario. No puede tener más de 251 filas. Si necesita importar más de 250 usuarios, puede crear más de una hoja de cálculo. 
+- ** How small or large can the spreadsheet be? ** The spreadsheet must have at least two rows. One is for the column headings (the user data column label) and one for the user. You cannot have more than 251 rows. If you need to import more than 250 users, you can create more than one spreadsheet. 
     
-- ** ¿Qué idiomas puedo usar? ** Cuando se crea la hoja de cálculo, puede escribir los rótulos de columna de datos de usuario en cualquier idioma o caracteres, pero no debe cambiar el orden de las etiquetas, tal como se muestra en el ejemplo. A continuación, puede realizar las entradas en los campos con cualquier lenguaje o caracteres y guarde el archivo en formato Unicode o UTF-8. 
+- ** What languages can I use? ** When you create your spreadsheet, you can enter user data column labels in any language or characters, but you must not change the order of the labels, as shown in the sample. You can then make entries into the fields, using any language or characters, and save your file in a Unicode or UTF-8 format. 
     
-- **¿Qué sucede si estoy agregando los usuarios de diferentes países o regiones?** Crear una hoja de cálculo independiente para cada área. Necesitará paso a paso a través de la mayor parte Asistente para agregar usuarios que cada hoja de cálculo, proporcionar una única ubicación de todos los usuarios incluidos en el archivo que está trabajando. 
+- **¿Qué ocurre si voy a agregar usuarios de diferentes países o regiones?** Cree una hoja de cálculo para cada área. Deberá seguir los pases del asistente para agregar usuarios en bloque para cada una de las hojas de cálculo y dar una única ubicación a todos los usuarios incluidos en el archivo con los que trabaja. 
     
-- **Hay un límite para el número de caracteres que puedo usar?** La siguiente tabla muestran los rótulos de columna de datos de usuario y la longitud máxima de caracteres para cada uno en la hoja de cálculo de ejemplo. 
+- **¿Existe algún límite de caracteres que se pueden usar?** En la siguiente tabla se muestran las etiquetas de las columnas de datos de usuario y la longitud máxima (en caracteres) para cada una en la hoja de cálculo de muestra. 
     
-|**Etiqueta de columna de datos de usuario**|**Longitud máxima de caracteres**|
+|**Etiquetas columnas datos usuarios**|**Longitud máxima (en caracteres)**|
 |:-----|:-----|
-|Nombre de usuario (obligatorio)  <br/> |79 incluido el signo de arroba (@), con el formato name@domain. \<extensión\>. El alias del usuario no puede superar los 30 caracteres y el nombre de dominio no puede superar los 48 caracteres.  <br/> |
+|Nombre de usuario (obligatorio)  <br/> |79 incluida la arroba (@), en el formato nombre@dominio.\<extensión\>. El alias del usuario no debe superar los 30 caracteres y el nombre de dominio no debe superar los 48 caracteres.  <br/> |
 |Nombre  <br/> |64  <br/> |
-|Apellidos  <br/> |64  <br/> |
-|Nombre para mostrar (requerido)  <br/> |256  <br/> |
+|Apellido  <br/> |64  <br/> |
+|Nombre para mostrar (obligatorio)  <br/> |256  <br/> |
 |Puesto  <br/> |64  <br/> |
 |Departamento  <br/> |64  <br/> |
-|Número de la oficina  <br/> |128  <br/> |
-|Teléfono de la oficina  <br/> |64  <br/> |
+|Número del trabajo  <br/> |128  <br/> |
+|Teléfono del trabajo  <br/> |64  <br/> |
 |Teléfono móvil  <br/> |64  <br/> |
 |Fax  <br/> |64  <br/> |
 |Dirección  <br/> |1023  <br/> |
 |Ciudad  <br/> |128  <br/> |
 |Estado o provincia  <br/> |128  <br/> |
-|Código Postal  <br/> |40  <br/> |
+|Código postal  <br/> |40  <br/> |
 |País o región  <br/> |128  <br/> |
    
-### <a name="still-having-problems-when-adding-users-to-office-365"></a>¿Sigue teniendo problemas al agregar usuarios a Office 365?
+### <a name="still-having-problems-when-adding-users-to-office-365"></a>¿Aún tiene problemas al agregar usuarios a Office 365?
 
-- **Vuelva a comprobar que la hoja de cálculo tiene el formato correcto.** Compruebe los encabezados de columna para asegurarse de que coinciden con los títulos en el archivo de ejemplo. Asegúrese de que está siguiendo las reglas para longitudes de caracteres y que cada campo viene separada por una coma. 
+- **Asegúrese una vez más de que el archivo tenga un formato correcto.** Compruebe que los encabezados de las columnas coincidan con los encabezados del archivo de muestra. Asegúrese de haber respetado los límites de longitud y de que los campos estén separados por comas. 
     
-- ** Si no ve inmediatamente los nuevos usuarios de Office 365, espere unos minutos. ** Puede tardar un poco mientras para que los cambios ir a través de todos los servicios de Office 365. 
+- ** If you don't see the new users in Office 365 right away, wait a few minutes. ** It can take a little while for changes to go across all the services in Office 365. 
     
-## <a name="add-multiple-users-to-office-365-in-the-old-office-365-admin-center"></a>Agregar varios usuarios a Office 365 en el centro de administración de Office 365 antiguo
+## <a name="add-multiple-users-to-office-365-in-the-old-office-365-admin-center"></a>Agregar varios usuarios a Office 365 en el antiguo Centro de administración de Office 365
 
-1. Descargue [esta hoja de cálculo de ejemplo](https://www.microsoft.com/en-us/download/details.aspx?id=45485) y abrirlo en Excel. 
+1. Descargue [esta hoja de cálculo de muestra](https://www.microsoft.com/en-us/download/details.aspx?id=45485) y ábrala en Excel. 
     
-    La hoja de cálculo debe incluir los **mismos encabezados de columna exacta** como el ejemplo uno (nombre de usuario, nombre, etcetera...). Si usa la plantilla, considere la posibilidad de dejar todos los datos en la fila 1 por sí solo y sólo introducir datos en las filas 2 y a continuación. 
+    Su hoja de cálculo debe incluir **exactamente los mismos encabezados de columna** que la de ejemplo (Nombre de usuario, Nombre, etc.). Si usa la plantilla, considere la opción de no editar ningún dato de la fila 1 y escribir los datos a partir de la fila 2. 
     
-    La hoja de cálculo también debe incluir los valores para el nombre de usuario (por ejemplo, bob@contoso.com) y un nombre para mostrar (por ejemplo, Bob Kelly) para cada usuario. Para dejar el resto de los campos en blanco, escriba un espacio además una coma en el campo, tal como se muestra en la ilustración siguiente. 
+    La hoja de cálculo también debe incluir valores para el nombre de usuario (por ejemplo, alberto@contoso.com) y un nombre para mostrar (por ejemplo, Alberto Hermosilla) para cada usuario. Para dejar otros campos en blanco, escriba un espacio seguido de una coma en el campo, tal y como se muestra en la siguiente ilustración. 
     
-    ![Un archivo de Currículos de ejemplo que tiene filas en blanco especificado](media/9c596ba1-1053-4687-a46c-c9359e9818c9.png)
+    ![Ejemplo de archivo CVS con filas en blanco especificadas](media/9c596ba1-1053-4687-a46c-c9359e9818c9.png)
   
-    Si dispone de personas que trabajan en distintos países, debe crear una hoja de cálculo para los usuarios en cada país. Por ejemplo, una hoja de cálculo que se enumera todas las personas que funciona en los Estados Unidos y otro que enumera todas las personas que funciona en Japón. Esto es debido a que la disponibilidad de servicios de Office 365 varía según la región. 
+    Si hay usuarios que trabajan en los diferentes países, deberá crear una hoja de cálculo para los usuarios de cada país. Por ejemplo, una hoja en la que se incluyan todos los que trabajan en los Estados Unidos y otra que incluya los que trabajan en Japón. Esto se debe a que la disponibilidad de los servicios de Office 365 varía según la región. 
     
-    **Sugerencia:** Antes de agregar muchos usuarios a Office 365, es posible que desee práctica con la hoja de cálculo de ejemplo. Por ejemplo, editar la hoja de cálculo de ejemplo con datos para algunos de los usuarios, diga 5 o 10 y guarde el archivo con un nombre nuevo. Ejecutar a través de los pasos descritos en este procedimiento, compruebe los resultados y, a continuación, eliminar las nuevas cuentas y comenzar de nuevo. De este modo puede practicar la todos los de la derecha de datos obtención de para su situación. Desproteger también [sugerencias para dar formato a la hoja de cálculo](add-several-users-at-the-same-time.md#__toc314595848).
+    **Consejo:** antes de agregar una gran cantidad de usuarios a Office 365, sería conveniente que practicara con esta hoja de cálculo de muestra. Por ejemplo, edite la hoja de cálculo de muestra con datos de varios de sus usuarios (unos 5 o 10) y guarde el archivo con un nombre nuevo. Siga los pasos descritos en este procedimiento, compruebe los resultados, elimine las cuentas nuevas y vuelva a empezar. De este modo puede practicar obteniendo todos los datos adecuados para su caso. Consulte también [Consejos para aplicar formato a la hoja de cálculo](add-several-users-at-the-same-time.md#__toc314595848).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa. 
     
 3. Vaya al Centro de administración de Office 365.
     
-4. Para que las personas a usar servicios de Office 365, deben asignarse una licencia. Antes de continuar, es posible que desee comprobar que dispone de suficientes licencias para todos los usuarios que aparecen en la hoja de cálculo. Elija la **facturación** \> **suscripciones** para ver si dispone de suficiente. Si necesita comprar más licencias, elija ** Cambiar la cantidad de licencias **. O bien, puede ejecutar al asistente y asignar las licencias que tiene, a continuación, compra más licencias más adelante y vuelva a ejecutar al Asistente para. 
+4. For people to use Office 365 services, they need to be assigned a license. Before continuing, you might want to check that you have enough licenses for everyone listed in your spreadsheet. Choose **Billing** \> **Subscriptions** to see if you have enough. If you need to buy more licenses, choose ** Change license quantity **. Or, you can run the wizard and assign the licenses you have, then buy more licenses later and rerun the wizard. 
     
-5. Ahora vaya a la mayor parte Asistente para agregar usuarios: elija **usuarios** \> **Usuarios activos**. Elija ![el icono de adición de muchos usuarios a Office 365](media/3481ffea-d552-4a7f-9a3b-014504e69746.png) tal como se muestra en la ilustración siguiente. 
+5. Ahora, vaya al asistente para agregar usuarios en bloque: elija **Usuarios** \> **Usuarios activos**. Elija ![Icono para agregar muchos usuarios a Office 365](media/3481ffea-d552-4a7f-9a3b-014504e69746.png), tal como se muestra en la siguiente ilustración. 
     
-    ![Una imagen de la sección usuarios del centro de administración de Office 365](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
+    ![Imagen de la sección Usuarios del centro de administración de Office 365](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
   
-    La mayor parte agregar usuarios asistente aparecerá y le guiará en el proceso de adición de un grupo de usuarios a Office 365. 
+    El asistente para agregar usuarios en bloque aparecerá y le mostrará paso a paso el proceso para agregar un grupo de usuarios a Office 365. 
     
-6. En el paso 1: seleccione un archivo CSV, especifique su propia hoja de cálculo tal como se muestra en la ilustración siguiente.
+6. En el paso 1: seleccionar un archivo CSV, especifique su propia hoja de cálculo, como se muestra en la siguiente ilustración.
     
-    ![Paso 1 de la mayor parte Asistente para agregar usuarios - archivo CSV Select](media/aeb837ed-1f86-427d-b038-c643c383829c.png)
+    ![Paso 1 del asistente para Agregar usuarios en masa - Seleccionar archivo CSV](media/aeb837ed-1f86-427d-b038-c643c383829c.png)
   
-7. En el paso 2: comprobación, el asistente le indica si el contenido de la hoja de cálculo tiene el formato correcto.
+7. En el paso 2: verificación, el asistente le indica si el contenido de la hoja de cálculo tiene el formato correcto.
     
-    ![Paso 2 de la mayor parte Asistente para agregar usuarios - comprobación](media/3fd3cd2c-44d4-4593-b02c-b87c176affb3.png)
+    ![Paso 2 del asistente para Agregar usuarios en masa - Verificación](media/3fd3cd2c-44d4-4593-b02c-b87c176affb3.png)
   
-8. En el paso 3: configuración, elija **permitido** para que las personas que aparecen en la hoja de cálculo puedan usar Office 365. Elija también el país en el que estas personas a usar Office 365. Recuerde que si algunas personas de la organización va a usar Office 365 en un país diferente, cree una hoja de cálculo independiente con sus nombres y la mayor parte de ejecutar Asistente para agregar usuarios a que vuelva a agregarlos. 
+8. En el paso 3: configuración, elija **Permitido** para que los usuarios incluidos en la hoja de cálculo puedan usar Office 365. Seleccione también el país o la región en la que los usuarios usarán Office 365. Recuerde si hay personas en la organización que vayan a usar Office 365 en un país diferente, cree una hoja de cálculo separada con sus nombres y vuelva a ejecutar el asistente para agregar usuarios en bloque para agregarlos. 
     
-    ![Paso 3 de la mayor parte Asistente para agregar usuarios - configuración](media/ff12ad34-5d8b-4e89-a02f-d827a94095b3.png)
+    ![Paso 3 del asistente para Agregar usuarios en masa - Configuración](media/ff12ad34-5d8b-4e89-a02f-d827a94095b3.png)
   
-9. La página asignar licencias indica cuántas licencias están disponibles. 
+9. La página de asignación de licencias indica las licencias que hay disponibles. 
     
-    ![Paso 4 del Asistente para agregar usuarios de forma masiva - licencias](media/161ea34c-c67e-43be-962f-029f5426ff1b.png)
+    ![Paso 4 del asistente para Agregar usuarios en masa: licencias](media/161ea34c-c67e-43be-962f-029f5426ff1b.png)
   
-    Puede elegir **comprar más licencias**, pero deje la mayor parte Asistente para agregar usuarios y vaya a la **facturación** en el centro de administración de Office 365. Después de comprar más licencias, tendrá que esperar unos minutos para el orden que va a procesar y, a continuación, la mayor parte de inicio Asistente para agregar usuarios desde el principio. 
+    Puede seleccionar **Comprar más licencias**, pero saldrá del asistente para agregar usuarios en masa e irá a **Facturación** en el Centro de administración de Office 365. Después de comprar más licencias, tendrá que esperar unos minutos para que se procese el pedido y, a continuación, inicie el asistente para Agregar usuarios en masa desde el principio. 
     
-    Si no comprar más licencias, no se creará cuentas para todos los usuarios que aparecen en la hoja de cálculo. 
+    Si no compra más licencias, no se crearán cuentas para todos los usuarios incluidos en la hoja de cálculo. 
     
-    En este ejemplo, no comprar más licencias de prueba y continuar con la mayor parte Asistente para agregar usuarios.
+    En este ejemplo, no compramos más licencias y continuamos con el asistente para agregar en bloque.
     
-10. En el paso 5: los resultados se envían, escriba las direcciones de correo electrónico de las personas que desean obtener un correo electrónico que se enumera *todos los* de los nombres de usuario de Office 365 y contraseñas temporales para las personas de la hoja de cálculo. 
+10. En el paso 5: enviar resultados, escriba las direcciones de correo electrónico de los usuarios que desee que reciban un mensaje de correo electrónico que enumere  *todos*  los nombres de usuario y las contraseñas temporales de Office 365 de las personas incluidas en la hoja de cálculo. 
     
-    ![Paso 5 de la mayor parte Asistente para agregar usuarios - enviar resultados](media/5beeb825-4ba7-4ae0-bfb5-a1f8a785ebdb.png)
+    ![Paso 5 del asistente para Agregar usuarios en masa: enviar resultados](media/5beeb825-4ba7-4ae0-bfb5-a1f8a785ebdb.png)
   
-    El correo electrónico siguiente se envía a todas las direcciones de correo electrónico que se especificó en el paso 5 - enviar resultados. Este correo electrónico indica las cuentas que se crearon. Tenga en cuenta que no se han creado cuentas para algunas personas porque no hay suficientes licencias. 
+    Se envía el siguiente mensaje de correo electrónico a todas las direcciones de correo electrónico que ha especificado en el paso 5 Enviar resultados. Este mensaje de correo electrónico indica qué cuentas se crearon. Tenga en cuenta que no se crearon cuentas para algunos usuarios debido a que no había licencias suficientes. 
     
-    ![Un correo electrónico de ejemplo con información de credenciales de usuario](media/0a40c612-2078-4b5b-813e-f99bc53635a6.png)
+    ![Correo electrónico de ejemplo con información de credenciales de usuario](media/0a40c612-2078-4b5b-813e-f99bc53635a6.png)
   
-    Puede comprar más licencias más adelante y agregar la mayor parte de volver a ejecutar el Asistente para usuarios con la misma hoja de cálculo. El asistente omite los usuarios que ya tienen cuentas; en el informe de resultados, dirá "nombre de usuario duplicado" para indicar a alguien con esa información ya tiene una cuenta.
+    Más adelante, puede agregar más licencias y volver a ejecutar el asistente para agregar usuarios en bloque con la misma hoja de cálculo. El asistente omitirá los usuarios que ya tengan cuentas. En el informe de resultados aparecerá "nombre de usuario duplicado" para indicar que la persona son esa información ya tiene una cuenta.
     
-11. La página final de la forma masiva agregar Asistente para los usuarios enumera los nombres de usuario y contraseñas temporales, tal como se muestra en la ilustración siguiente.
+11. La página final del asistente para agregar usuarios en bloque enumera los nombres de usuario y las contraseñas temporales, tal como se muestra en la siguiente ilustración.
     
-    ![Paso 6 de la mayor parte Asistente para agregar usuarios - enviar resultados](media/0cd43832-071b-4b33-b57a-5d07959985ad.png)
+    ![Paso 6 del asistente para Agregar usuarios en masa: enviar resultados](media/0cd43832-071b-4b33-b57a-5d07959985ad.png)
   
-12. Una vez que haya agregado a los usuarios a Office 365, es necesario indicar a ellos acerca de la información de su cuenta de Office 365. Usar el proceso normal para comunicar las nuevas contraseñas.
+12. Una vez haya agregado los usuarios a Office 365, debe comunicarles su información de cuenta de Office 365. Use el proceso habitual para comunicar nuevas contraseñas.
     
 

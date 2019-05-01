@@ -3,18 +3,6 @@
 
 
 
-## <a name="week-of-march-18-2019"></a>Semana del 18 de marzo de 2019
-
-
-| Fecha de publicación |Título del tema | Cambio |
-|------|------------|--------|
-| 3/18/2019 | [Preguntas más frecuentes sobre el movimiento de datos](/Office365/Enterprise/data-move-faq) | modificado |
-| 3/18/2019 | [Durante y después del movimiento de datos](/Office365/Enterprise/during-and-after-your-data-move) | modificado |
-| 3/18/2019 | [Capacity planning and load testing SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | modificado |
-| 3/18/2019 | [Colaboración entre espacios empresariales de Office 365](/Office365/Enterprise/office-365-inter-tenant-collaboration) | modificado |
-| 3/19/2019 | [Ver cuentas de usuario con PowerShell de Office 365](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modificado |
-
-
 ## <a name="week-of-march-25-2019"></a>Semana del 25 de marzo de 2019
 
 
@@ -49,7 +37,7 @@
 | 3/29/2019 | [Direcciones URL e intervalos de direcciones IP de Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificado |
 | 3/29/2019 | [Redes de entrega de contenido](/Office365/Enterprise/content-delivery-networks) | modificado |
 | 3/29/2019 | [Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | modificado |
-| 3/29/2019 | [DesHabilitar el acceso a los servicios mientras se asignan licencias de usuario](/Office365/Enterprise/powershell/disable-access-to-services-while-assigning-user-licenses) | modificado |
+| 3/29/2019 | [Deshabilitar el acceso a los servicios al asignar licencias de usuario](/Office365/Enterprise/powershell/disable-access-to-services-while-assigning-user-licenses) | modificado |
 | 3/29/2019 | [Deshabilitar el acceso a servicios con PowerShell de Office 365](/Office365/Enterprise/powershell/disable-access-to-services-with-office-365-powershell) | modificado |
 | 3/29/2019 | [Descripción de la identidad de Office 365 y Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | modificado |
 | 3/29/2019 | [Automatizar la recopilación de archivos para la exhibición de documentos electrónicos](/Office365/Enterprise/automate-file-collection-for-ediscovery) | modificado |
@@ -138,7 +126,7 @@
 | 4/9/2019 | [Suscripciones, licencias, cuentas y espacios empresariales para las ofertas de la nube de Microsoft](/Office365/Enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) | modificado |
 | 4/9/2019 | El entorno de desarrollo y pruebas de One Microsoft Cloud | eliminación |
 | 4/9/2019 | [Ajustar el rendimiento de Office 365](/Office365/Enterprise/tune-office-365-performance) | modificado |
-| 10/04/2019 | [Capacity planning and load testing SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | modificado |
+| 10/04/2019 | [Planeamiento de capacidad y pruebas de carga en SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | modificado |
 | 10/04/2019 | [Administración de buzones de correo de Exchange Online en un entorno multigeográfico](/Office365/Enterprise/administering-exchange-online-multi-geo) | modificado |
 | 10/04/2019 | [Multi-Geo de Exchange](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | modificado |
 | 4/12/2019 | [Recursos de arquitectura de TI de la nube de Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modificado |
@@ -155,4 +143,16 @@
 | 4/18/2019 | [Asignar licencias a cuentas de usuario con PowerShell de Office 365](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modificado |
 | 4/18/2019 | [Asignar roles a cuentas de usuario con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | modificado |
 | 4/18/2019 | [Enrutamiento con ExpressRoute para Office 365](/Office365/Enterprise/routing-with-expressroute) | modificado |
-| 4/18/2019 | [Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | Fecha de modificación |
+| 4/18/2019 | [Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | modificado |
+
+
+## <a name="week-of-april-22-2019"></a>Semana del 22 de abril de 2019
+
+
+| Fecha de publicación |Título del tema | Cambio |
+|------|------------|--------|
+| 4/22/2019 | [Capacidades multigeográficas de OneDrive y SharePoint Online](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | modificado |
+| 4/22/2019 | [Multi-Geo de Office 365](/Office365/Enterprise/office-365-multi-geo) | modificado |
+| 4/22/2019 | Agregar datos de informes de clientes a través de Windows PowerShell para asociados con permiso de acceso delegado (DAP) | eliminación |
+| 4/22/2019 | [Administrar Office 365 con Windows PowerShell para socios de permisos de acceso delegado (DAP)](/Office365/Enterprise/powershell/manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p) | modificado |
+| 4/22/2019 | [Retrieve customer tenant reporting data with Windows PowerShell for Delegated Access Permissions (DAP) partners](/Office365/Enterprise/powershell/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac) | modificado |

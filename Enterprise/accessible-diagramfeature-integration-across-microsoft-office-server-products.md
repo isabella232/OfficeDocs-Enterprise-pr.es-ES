@@ -1,5 +1,5 @@
 ---
-title: "Diagrama accesible: Integración de características en productos de servidores de Microsoft Office"
+title: 'Diagrama accesible: Integración de características en productos de servidores de Microsoft Office'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,18 +10,19 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: "Este artículo es una versión de texto accesible del diagrama Integración de características en los productos de Microsoft Office Server: SharePoint Server, Exchange Server, Lync Server y Office Online."
+description: 'Este artículo es una versión de texto accesible del diagrama Integración de características en los productos de Microsoft Office Server: SharePoint Server, Exchange Server, Lync Server y Office Online.'
 ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487816"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagrama accesible: Integración de características en productos de servidores de Microsoft Office
 
-**Resumen:** Este artículo es una versión de texto accesible del diagrama denominado característica integración a través de Microsoft Office productos de servidor: el servidor de SharePoint, Exchange Server, Lync Server y Office Online.
+**Resumen:** Este artículo es una versión de texto accesible del diagrama con el nombre integración de características en los productos de Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server y Office online.
   
-El diagrama consta de varias fichas, como se indica en los títulos de la sección de este documento.
+El diagrama consta de varias pestañas, como se indica en los títulos de sección de este documento.
   
 ## <a name="introduction-tab"></a>Ficha Introducción
 
@@ -55,19 +56,19 @@ Envíe sus comentarios sobre esta solución o solicite otras soluciones a MODACo
 
 El tamaño de página de cada ficha es 22 x 17 pulgadas (aproximadamente un cuarto del tamaño de un diagrama de ingeniería ANSI). Puede imprimir esta página en dos hojas de tamaño tabloide (17 x 11 pulgadas) o cuatro hojas de tamaño carta (11 x 8,5 pulgadas). Si dispone de un trazador, puede imprimir estos pósteres a tamaño completo. Si no tiene un trazador, siga estos pasos para imprimir en un papel de tamaño más reducido.  
   
- **Imprimir pósters en papel más pequeño**
+ **Impresión de pósteres en papel de tamaño reducido**
   
 1. Abra el póster en Visio. 
     
-2. En el menú **archivo** , haga clic en **Configurar página**. 
+2. En el menú **Archivo**, haga clic en **Configurar página**. 
     
-3. En la ficha **Configurar impresión** , en la sección de **papel de la impresora** , seleccione el tamaño de papel que desee imprimir en.
+3. En la ficha **Configurar impresión**, en la sección **Papel de la impresora**, seleccione el tamaño del papel en el que desee imprimir.
     
-4. En la ficha **Configurar impresión** , en la sección **zoom para imprimir** , haga clic en **Ajustar a**y, a continuación, escriba **1 hoja a lo ancho por 1 hoja a lo largo**. 
+4. En la ficha **Configurar impresión**, en la sección **Zoom para imprimir**, haga clic en **Ajustar a** y, a continuación, escriba **1 hoja a lo ancho por 1 hoja a lo largo**. 
     
-5. En la ficha **Tamaño de página** , haga clic en **Ajustar al contenido del dibujo**y, a continuación, haga clic en **Aceptar**. 
+5. En la ficha **Tamaño de página**, haga clic en **Ajustar al contenido del dibujo** y, a continuación, haga clic en **Aceptar**. 
     
-6. En el menú **archivo** , haga clic en **Imprimir**. 
+6. En el menú **Archivo**, haga clic en **Imprimir**. 
     
 ### <a name="microsoft-tags-and-qr-codes"></a>Etiquetas de Microsoft y códigos QR
 
@@ -83,7 +84,7 @@ Autenticación de servidor a servidor. Esta característica se aplica a: 
     
 - Exchange
     
-- Lync
+- 2015
     
 - Office Online (anteriormente conocido como Office Web Apps)  
     
@@ -93,13 +94,13 @@ Fotos de usuarios en alta resolución. Esta característica se aplica a: 
     
 - Exchange
     
-- Lync
+- 2015
     
 Almacén de contactos unificado. Esta característica se aplica a:  
   
 - Exchange
     
-- Lync
+- 2015
     
 Buzones de sitio. Esta característica se aplica a:  
   
@@ -115,23 +116,23 @@ Sincronización de tareas de Exchange. Esta característica se aplica a: 
     
 Presencia de Lync en Outlook Web App. Esta característica se aplica a:  
   
-- Lync
+- 2015
     
 Correo de voz. Esta característica se aplica a:  
   
-- Lync
+- 2015
     
 Grabaciones de reuniones. Esta característica se aplica a:  
   
 - SharePoint
     
-- Lync
+- 2015
     
 ### <a name="office-web-apps-server"></a>Servidor Office Web Apps
 
 Office Web Apps Server es un producto de Office Server que proporciona servicios de visualización y edición de archivos basados en el explorador para archivos de Office. Office Web Apps Server funciona con productos y servicios que admiten el protocolo de la Interfaz de plataforma abierta de aplicaciones web (WOPI). Estos productos, conocidos como hosts, incluyen SharePoint 2013, Lync Server 2013 y Exchange Server 2013.   
   
-Si quiere saber más sobre Office Web Apps Server, descargue el póster simplificado de la implementación de Office Web Apps en  http://aka.ms/OfficeWebAppsPoster.  
+Para obtener más información sobre Office Web Apps Server, descargue el póster simplificado de la implementación http://aka.ms/OfficeWebAppsPosterde Office Web Apps en. 
   
 ## <a name="server-to-server-authentication-tab"></a>Ficha Autenticación de servidor a servidor
 
@@ -139,7 +140,7 @@ Si quiere saber más sobre Office Web Apps Server, descargue el póster simplifi
 
 La autenticación de servidor a servidor es una característica nueva de Exchange Server 2013, Lync Server 2013 y SharePoint Server 2013 que permite a un servidor solicitar los recursos de otro servidor en nombre de un usuario. Esta característica usa el protocolo Open Authorization (OAuth) 2.0 estándar del sector. La autenticación de servidor a servidor permite muchos escenarios nuevos, como la exhibición de documentos electrónicos, las fotos de usuarios en alta resolución y los buzones de correo del sitio.  
   
- **Productos de servidor**
+ **Productos de servidor** 
   
 - Exchange Server 2013 
     
@@ -161,11 +162,11 @@ Para configurar una confianza de autenticación de servidor a servidor, debe agr
   
 La tabla siguiente enumera el extremo de metadatos JSON para cada servidor. La tabla muestra:  
   
-- Un servidor de Exchange con un extremo de metadatos JSON de https://<server name>/autodiscover/metadata/json/1 
+- Un servidor Exchange con un extremo de metadatos JSON<server name>de https:///Autodiscover/Metadata/JSON/1 
     
-- Un servidor de Lync con un extremo de metadatos JSON de https://<server name>/metadata/json/1 
+- Un servidor Lync con un extremo de metadatos JSON<server name>de https:///Metadata/JSON/1 
     
-- Un servidor de SharePoint con un extremo de metadatos JSON de https://<web app name>/_layouts/15/metadata/json/1 
+- Un servidor de SharePoint con un extremo de metadatos<web app name>JSON de https:///_layouts/15/Metadata/JSON/1 
     
 ### <a name="example-how-server-to-server-authentication-works-for-ediscovery-between-sharepoint-and-exchange"></a>Ejemplo: Funcionamiento de la autenticación de servidor a servidor para la exhibición de documentos electrónicos entre SharePoint y Exchange
 
@@ -183,15 +184,15 @@ En el diagrama adjunto se muestra cómo se desplazan las consultas y los tokens 
     
 4. El servidor Exchange valida el token de acceso y envía los resultados de la consulta.  
     
-5. El servidor que ejecuta SharePoint Server envía el eDiscovery resultados de la consulta al equipo del Administrador de eDiscovery. 
+5. El servidor que ejecuta SharePoint Server envía los resultados de la consulta de eDiscovery al equipo del administrador de eDiscovery. 
     
 ## <a name="high-resolution-user-photos-tab"></a>Ficha Fotos de usuarios en alta resolución
 
 ### <a name="larger-profile-picture-used-across-all-office-applications"></a>Imagen de perfil más grande usada en todas las aplicaciones de Office
 
-Utilizando la ficha **fotos de alta resolución del usuario** , usted puede almacenar fotos hasta 648 x 648 píxeles en Exchange de 2013. Se puede acceder por las aplicaciones cliente, como Outlook, Outlook Web App, SharePoint 2013, 2013 de Lync y clientes de correo electrónico móvil. Una foto de baja resolución también se almacena en Active Directory.
+Use la información de la ficha **Fotos de usuarios en alta resolución** para almacenar fotos de hasta 648 x 648 píxeles en Exchange 2013. Otras aplicaciones cliente tendrán acceso a estas fotos, como Outlook, Outlook Web App, SharePoint 2013, Lync 2013 y clientes de correo electrónico móvil. También se almacena una fotografía de baja resolución en Active Directory.
   
- **Productos de servidor**
+ **Productos de servidor** 
   
 - Exchange Server 2013 
     
@@ -207,19 +208,19 @@ Configurar la autenticación de servidor a servidor:
     
 - Entre Exchange 2013 y Lync 2013.  
     
- **En Exchange Server de 2013**
+ **En Exchange Server 2013**
   
 - Inicie y configure el servicio Detección automática de Exchange de 2013.  
     
 - Configure las URL externas para SharePoint. Estas son las URL que SharePoint usa cuando accede a fotos en Exchange.  
     
- **El servidor de SharePoint 2013**
+ **En SharePoint Server 2013**
   
 - Instale la API administrada de servicios Web Exchange. Use GacUtil para cargar Microsoft.Exchange.WebServices.dll en la caché global de ensamblados (GAC).   
     
 - Use Windows PowerShell para configurar la sincronización de fotos con Exchange.  
     
- **Cómo funciona**
+ **Funcionamiento**
   
 - Los usuarios cargan una foto a través de la página Mi cuenta en Outlook Web App (OWA) o mediante la configuración de la cuenta en Outlook 2013.  
     
@@ -233,11 +234,11 @@ Los usuarios pueden cargar imágenes que abarquen entre 48 × 48 y 648 × 648 p�
     
 - Se usa 648 × 648 para Lync Web Access y Lync 2013.  
     
-Por ejemplo, secuencias de comandos de configuración, consulte artículos del blog de Jens Trier Rasmussen: 
+Para obtener ejemplos de scripts de configuración, vea los artículos del blog de Jens Trier Rasmussen: 
   
-- Usar fotos de alta resolución en Exchange 2013 procedentes de SharePoint Server 2013 (http://aka.ms/Bhr4d2)   
+- Uso de fotos de alta resolución de Exchange 2013 desde SharePoint Server 2013 (http://aka.ms/Bhr4d2) 
     
-- Integración de 2013 Exchange y Lync Server 2013 (http://aka.ms/Pn08dw) 
+- Integración de Exchange 2013 y Lync Server 2013 (http://aka.ms/Pn08dw) 
     
 El póster también contiene códigos QR para estos dos artículos del blog.  
   
@@ -252,7 +253,7 @@ En el diagrama de acompañamiento se muestra a los usuarios cómo cargar una fot
     
   - Desde Mi sitio a través de HTTP o HTTPS hacia un servidor SharePoint. SharePoint almacena en caché el usuario en la base de datos de Mi sitio (Https:443). El servidor SharePoint interactúa con el servidor de acceso de cliente de Exchange mediante las URL externas configuradas en Exchange.  
     
-  - Cliente de Lync 2013, que mantiene un GetConnection con el servidor de Exchange para obtener actualizaciones de fotos (solicitud HTTPS Get - 443). 
+  - Lync 2013 Client, que mantiene una GetConnection con el servidor de Exchange para obtener actualizaciones de fotos (HTTPS Get request-443). 
     
 4. El servidor de acceso de cliente de Exchange se conecta al servidor de buzones de Exchange mediante la comunicación interna de Exchange.   
     
@@ -268,7 +269,7 @@ En el diagrama de acompañamiento se muestra a los usuarios cómo cargar una fot
 
 El Almacén de contactos unificado (UCS) es una característica que proporciona una experiencia de contactos uniforme para todos los productos de Microsoft Office. Los usuarios almacenan toda la información de contacto en su buzón de Exchange 2013. Esta información de contacto está disponible de manera global en Lync, Exchange, Outlook y Outlook Web App.   
   
- **Productos de servidor**
+ **Productos de servidor** 
   
 - Exchange Server 2013 
     
@@ -280,11 +281,11 @@ El Almacén de contactos unificado (UCS) es una característica que proporciona 
     
 - En Lync 2013, habilite la directiva del almacén de contactos unificado (está habilitada de manera predeterminada).  
     
-Por ejemplo secuencias de comandos de configuración, consulte el artículo del blog de Jens Trier Rasmussen: 
+Para obtener ejemplos de scripts de configuración, vea el artículo del blog de Jens Trier Rasmussen: 
   
-- Integrar Exchange 2013 y Lync Server 2013 (http://aka.ms/Oyg7fh)   
+- Integración de Exchange 2013 y Lync Server 2013 (http://aka.ms/Oyg7fh) 
     
- **Cómo funciona**
+ **Cómo funciona** 
   
 - Los contactos de Lync para un usuario se migran automáticamente a Exchange 2013 cuando el usuario inicia sesión con Lync de 2013.  
     
@@ -292,11 +293,11 @@ Por ejemplo secuencias de comandos de configuración, consulte el artículo del 
     
 Los contactos de un usuario se migran automáticamente al servidor Exchange 2013 cuando el usuario: 
   
-1. Se ha asignado una directiva de servicios de usuario que tiene UcsAllowed establecido en **True**. 
+1. Tiene asignada una directiva de servicios de usuario que tiene UcsAllowed configurado en **True**. 
     
 2. Tiene aprovisionado un buzón de Exchange 2013 y ha iniciado sesión en el buzón al menos una vez. 
     
-3. Inicia una sesión en Lync a través de un cliente enriquecido de Lync 2013.  
+3. Inicia una sesión en Lync a través de un cliente enriquecido de Lync 2013. 
     
 Inicia una sesión en Lync a través de un cliente enriquecido de Lync 2013.  
   
@@ -306,7 +307,7 @@ Inicia una sesión en Lync a través de un cliente enriquecido de Lync 2013. 
     
 3. El cliente de Lync indica al servidor Lync que el usuario está habilitado para el almacén de contactos unificado a través de SIP/5061.  
     
-4. El Lync server utiliza el servicio de almacenamiento de información de Lync para migrar los contactos del usuario a 2013 de Exchange en el servidor de acceso de cliente de Exchange. 
+4. Lync Server usa el servicio de almacenamiento de Lync para migrar los contactos del usuario a Exchange 2013 en el servidor de acceso de cliente de Exchange. 
     
 5. El usuario debe cerrar la sesión e iniciar sesión en Lync 2013 para que se muestren los cambios (no se muestra en el diagrama).  
     
@@ -318,7 +319,7 @@ Inicia una sesión en Lync a través de un cliente enriquecido de Lync 2013. 
 
 Los buzones del sitio mejoran la colaboración y la productividad de los usuarios, ya que permiten el acceso a documentos almacenados en SharePoint y a mensajes de correo almacenados en Exchange, todo ello a través de la misma interfaz de cliente. 
   
- **Productos de servidor**
+ **Productos de servidor** 
   
 - Exchange Server 2013 
     
@@ -346,7 +347,7 @@ Configuración de Exchange: 
     
 - Configure un prefijo de nombre del buzón del sitio. 
     
- **Cómo funciona**
+ **Funcionamiento**
   
 Un buzón del sitio está compuesto funcionalmente por la pertenencia al sitio de SharePoint 2013 (propietarios y miembros), el almacenamiento compartido mediante un buzón de Exchange 2013 para los mensajes de correo y un sitio de SharePoint 2013 para los documentos, y una interfaz de administración que atiende las necesidades del ciclo de vida y el aprovisionamiento. 
   
@@ -384,7 +385,7 @@ La retención del buzón del sitio sigue la misma directiva de ciclo de vida que
   
 #### <a name="exchange"></a>Exchange
 
-El diagrama muestra la directiva buzón de aprovisionamiento del sitio. Éste es el componente de Exchange necesario para aprovisionar el buzón del sitio.
+En el diagrama se muestra la directiva de aprovisionamiento del buzón del sitio. Se trata del componente de Exchange necesario para aprovisionar el buzón del sitio.
   
 En el servidor Exchange, puede definir las directivas de aprovisionamiento del buzón del sitio. Estas directivas rigen las características de correo electrónico que se envían al buzón del sitio y que se reciben de él, así como el tamaño del buzón del sitio en el servidor Exchange. También permiten definir un prefijo para las direcciones de correo del buzón del sitio.   
   
@@ -396,7 +397,7 @@ Para las implementaciones locales de Exchange, también tendrá que buscar y eli
 
 Use la información de la ficha Sincronización de tareas de Exchange para sincronizar tareas en SharePoint Server 2013 y Project Server 2013 con Exchange Server 2013. Los usuarios pueden ver y administrar sus tareas en Outlook 2013 o en Mi sitio.  
   
- **Productos de servidor**
+ **Productos de servidor** 
   
 - Exchange Server 2013 
     
@@ -456,7 +457,7 @@ SharePoint Server 2013 ejecuta estos trabajos y aplicaciones: 
     
 - Trabajo del temporizador de sincronización de Exchange, que se describen a continuación.  
     
-- SharePoint Server 2013 contiene Mi sitio del usuario y otros sitios y ejecuta varias tareas de usuario. 
+- SharePoint Server 2013 contiene el usuario mi sitio y otros sitios, y ejecuta varias tareas de usuario. 
     
 - SharePoint Server 2013 contiene un índice de búsqueda.  
     
@@ -508,9 +509,9 @@ Al usar la información de presencia de Lync, tendrá una vista uniforme de la i
   
 Productos de cliente:  
   
-- Outlook 2013  
+- Outlook 2013 
     
-- Lync 2013  
+- Lync 2013 
     
 Productos de servidor:  
   
@@ -520,13 +521,13 @@ Productos de servidor: 
     
 - SharePoint Server 2013 
     
- **Cómo funciona**
+ **Cómo funciona** 
   
 Mientras Lync 2013 esté instalado en el equipo local del usuario, Outlook y SharePoint Server mostrarán automáticamente la información de presencia de los usuarios.  
   
 Para los usuarios de Outlook Web App, el servidor de acceso cliente (CAS) de Exchange consulta la presencia en nombre del usuario.  
   
- **Hay dos diagramas de acompañamiento**
+ **Hay dos diagramas adjuntos**
   
 El primero muestra el procedimiento por el que un usuario inicia sesión en Outlook Web App y, después, Exchange solicita Lync Server la información de presencia.  
   
@@ -534,7 +535,7 @@ El primero muestra el procedimiento por el que un usuario inicia sesión en Outl
     
 2. El usuario inicia sesión en su buzón de Exchange 2013 y el servidor de acceso de cliente de Exchange consulta a Lync Server para obtener información de presencia a través de SIP/MTLS:5061.  
     
-Para obtener más información, vea [integración de Microsoft Lync Server 2013 y 2013 de Microsoft Outlook Web App](https://go.microsoft.com/fwlink/?LinkId=313522).
+Para obtener más información, consulte [integración de Microsoft Lync Server 2013 y Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/?LinkId=313522).
   
 En el segundo diagrama se muestra cómo Outlook y SharePoint Server usan Lync 2013 para mostrar información de presencia de los usuarios.  
   
@@ -554,21 +555,21 @@ En el segundo diagrama se muestra cómo Outlook y SharePoint Server usan Lync 20
 
 El correo de voz permite a una persona que realiza una llamada dejar un mensaje de voz para cualquier usuario de Lync mediante Mensajería unificada de Exchange.   
   
-Productos de cliente:  
+Productos de cliente: 
   
-- Lync 2013  
+- Lync 2013 
     
 - Dispositivo PSTN (PBX, móvil, POTS)  
     
-Productos de servidor:  
+Productos de servidor: 
   
 - Exchange Server 2013 
     
 - Exchange Server 2013 
     
- **Cómo funciona**
+ **Cómo funciona** 
   
-Cuando una llamada no es respondida por el destinatario de la llamada en cualquiera de los extremos activos del destinatario de la llamada, Lync Server enruta la llamada al correo de voz de mensajería unificada de Exchange (es decir, servidor de buzones de Exchange). 
+Cuando el destinatario de la llamada no responde a una llamada en ninguno de los puntos de conexión activos del destinatario de la llamada, Lync Server enruta la llamada al correo de voz en la mensajería UNIFICAda de Exchange (por ejemplo, el servidor de buzones de Exchange). 
   
 En el diagrama adjunto se muestra el enrutamiento de llamadas en dos escenarios:  
   
@@ -582,19 +583,19 @@ El autor de la llamada inicia una llamada mediante Lync 2013: 
     
 2. La llamada se enruta al servidor principal de Lync del destinatario de la llamada. 
     
-3. Lync Server anillos extremos activos del destinatario de la llamada de Lync de 2013. 
+3. Lync Server suena los puntos de conexión activos del destinatario de la llamada en Lync 2013. 
     
 4. Cuando no se contesta la llamada, esta se enruta al buzón de voz (Mensajería unificada de Exchange) en el servidor de acceso cliente de Exchange (enrutador de llamada).  
     
 El autor de la llamada inicia una llamada mediante Lync 2013:  
   
-1. Llamador B marca el número de teléfono del destinatario de la llamada con RTC. 
+1. El autor de la llamada B marca el número de teléfono del destinatario de la llamada con RTC. 
     
 2. La llamada de PSTN se enruta desde la puerta de enlace IP hacia el servidor de mediación, que es un servidor Lync.  
     
-3. El servidor de mediación rutas la llamada al servidor principal de Lync del destinatario de la llamada. 
+3. El servidor de mediación enrutar la llamada al servidor principal de Lync del destinatario de la llamada. 
     
-4. Lync Server anillos extremos activos del destinatario de la llamada de Lync de 2013. 
+4. Lync Server suena los puntos de conexión activos del destinatario de la llamada en Lync 2013. 
     
 5. Cuando no se contesta la llamada, esta se enruta al buzón de voz (Mensajería unificada de Exchange) en el servidor de acceso cliente de Exchange (enrutador de llamada).  
     
@@ -606,27 +607,27 @@ Las grabaciones de reuniones son un componente esencial de las comunicaciones un
   
 Productos de cliente:  
   
-- Lync 2013  
+- Lync 2013 
     
 Productos de servidor:  
   
 - Productos de servidor:  
     
-- SharePoint 2013  
+- SharePoint 2013 
     
-Requisitos previos: 
+Requisitos previos 
   
 - Lync 2013: la grabación de reuniones es una característica del lado cliente en Lync 2013.   
     
 - SharePoint 2013: dispone del sitio de grupo, donde puede almacenar las grabaciones de reuniones que ya hay en marcha.  
     
- **¿Qué se registra?**
+ **¿Qué se graba?**
   
 Durante la reunión, se graba lo siguiente en un archivo MP4 (cada punto de la lista va precedido de un icono que representa el tipo de grabación):  
   
 - Todo el audio  
     
-- Vídeo (si se utiliza) de altavoz activo 
+- Vídeo del orador activo (si se usa) 
     
 - Vídeo de panorámica (si se usa)  
     
@@ -656,9 +657,9 @@ El centro de Administración Central contiene la configuración general de la ap
   
 El servidor de IIS contiene la configuración de IIS.  
   
-Preparación para publicar grabaciones de reuniones:  
+Preparación para publicar grabaciones de reuniones: 
   
-1. En el sitio de SharePoint team, agregar App de la biblioteca de activos de manera opcional, si no puede cargar las grabaciones de la reunión debido a restricciones de tamaño o tiempos de espera de conexión, realice los pasos adicionales de 2 y 3. 
+1. En el sitio de grupo de SharePoint, agregue la aplicación Biblioteca de activos. Si no puede cargar las grabaciones de las reuniones debido a restricciones de tamaño o tiempos de espera de la conexión, otra posibilidad es que realice los pasos adicionales 2 y 3. 
     
 2. En Administración Central de SharePoint, cambie el valor del tamaño máximo de carga para la aplicación web que contiene la colección de sitios de grupo.  
     
@@ -666,26 +667,26 @@ Preparación para publicar grabaciones de reuniones: 
     
  **Bibliotecas de activos digitales**
   
-Las bibliotecas de activos digitales son bibliotecas de activos que contienen vídeos y, además, tienen ciertas implicaciones de capacidad y rendimiento. Para más información, vea el artículo sobre el planeamiento de bibliotecas de activos digitales en SharePoint Server 2013, en http://aka.ms/O1vq5w. El póster también incluye un código QR para acceder a esta información.  
+Las bibliotecas de activos digitales son bibliotecas de activos que contienen vídeos y, además, tienen ciertas implicaciones de capacidad y rendimiento. Para obtener más información, vea planear bibliotecas de activos digitales en SharePoint Server 2013 http://aka.ms/O1vq5w, que se encuentra en. El póster también incluye un código QR para acceder a esta información. 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Grabación y publicación de una reunión con el cliente de Lync
 
 En el diagrama se muestra un usuario que usa Lync para unirse a una reunión. La reunión se graba mediante el cliente de Lync, que crea un archivo MP4 con el contenido de la reunión. La grabación en MP4 se guarda en la carpeta de grabaciones de Lync del equipo. Puede mover la grabación MP4 a la biblioteca de activos de reuniones; desde allí podrá insertar la grabación en una página wiki, una página SharePoint o un blog.  
   
- **Para grabar y publicar una reunión mediante el cliente de Lync**
+ **Para grabar y publicar una reunión mediante el cliente de Lync** 
   
 1. Empiece a grabar la reunión con el cliente de Lync.  
     
 2. El contenido de la reunión se graba en un archivo MP4 mientras dura la reunión.  
     
-3. Cuando termina la reunión, la grabación MP4 aparece en la carpeta de grabación en el equipo (C:\\usuarios\\<username>\\Videos\\Lync grabaciones). Si lo desea, puede personalizar la grabación de la reunión mediante la aplicación Administrador de grabación de Lync que se instala con cliente Lync. 
+3. Una vez finalizada la reunión, la grabación de MP4 aparece en la carpeta Recording de su equipo\\(\\<username>\\C\\: users videos, grabaciones de Lync). Si lo desea, puede personalizar la grabación de la reunión mediante la aplicación Administrador de grabaciones de Lync que se instala con el cliente de Lync. 
     
-4. Arrastre y coloque la grabación de la reunión en la biblioteca de activos de SharePoint.  
+4. Arrastre y coloque la grabación de la reunión en la biblioteca de activos de SharePoint. 
     
-5. Opcional: Una vez que la grabación está en el panel biblioteca, puede insertarlo en cualquier página de SharePoint. Para obtener más información sobre este paso, vea que la entrada del blog de Office 365, crear y publicar vídeos de aprendizaje con SharePoint y Lync Online, se encuentra en http://aka.ms/R61q35. 
+5. Opcional: Una vez que la grabación está en la biblioteca de activos, puede insertarla en cualquier página de SharePoint. Para obtener más información acerca de este paso, vea la entrada del blog de Office 365, crear y publicar vídeos de aprendizaje con SharePoint y http://aka.ms/R61q35Lync Online, que se encuentran en. 
     
  **Miniaturas de vídeo**
   
-Las miniaturas de vídeo mejoran el aspecto de la biblioteca de activos. Para más información sobre la creación de miniaturas para las grabaciones de reuniones, vea el artículo sobre capturar o cambiar una miniatura de vídeo, que se encuentra en http://aka.ms/Kupj85. El póster también incluye un código QR para acceder a esta información.  
+Las miniaturas de vídeo mejoran el aspecto de la biblioteca de activos. Para obtener más información acerca de la creación de miniaturas para sus grabaciones de reuniones, consulte capturar o cambiar una http://aka.ms/Kupj85miniatura de vídeo, que se encuentra en. El póster también incluye un código QR para acceder a esta información. 
   
 

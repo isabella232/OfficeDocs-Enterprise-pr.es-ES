@@ -1,5 +1,5 @@
 ---
-title: Elementos comunes de la conectividad de la nube de Microsoft
+title: Elementos comunes de la conectividad en la nube de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Resumen: Descubra los elementos comunes de la infraestructura de red y aprenda a preparar la red.'
 ms.openlocfilehash: e00ad8820ef37c818c270323cf2aa036bb86a804
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872221"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490206"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementos comunes de la conectividad de la nube de Microsoft
 
@@ -60,9 +60,9 @@ La figura 1 muestra cómo se puede conectar una red local con las ofertas en la 
     
 - **Carga de trabajo externa:** sitios web u otras cargas de trabajo a disposición de los usuarios externos de Internet.
     
-- **Servidor proxy:** Servicios de las solicitudes de contenido web en nombre de los usuarios de la intranet. Un proxy inverso permite que las solicitudes entrantes no solicitadas.
+- **Servidor proxy:** atiende las solicitudes de contenido web en nombre de los usuarios de la intranet. Un proxy inverso permite solicitudes entrantes no solicitadas.
     
-- **Firewall externo:** Permite que el tráfico saliente y el tráfico entrante especificado. Puede realizar la traducción de direcciones, la inspección de paquetes, SSL de interrupción e inspeccionar o prevención de pérdida de datos.
+- **Firewall externo:** permite el tráfico saliente y el tráfico entrante especificado. Puede realizar la traducción de direcciones, la inspección de paquetes, el salto de SSL e inspeccionar o la prevención de pérdida de datos.
     
 - **Conexión WAN a ISP:** conexión a un ISP basada en proveedor que se comunica con Internet para conseguir la conectividad y el enrutamiento.
     
@@ -84,12 +84,12 @@ Al adoptar cualquiera de los servicios en la nube de Microsoft, debe tener en cu
 
 [ExpressRoute para la conectividad en la nube de Microsoft](expressroute-for-microsoft-cloud-connectivity.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 <a name="steps"> </a>
 
 [Microsoft Cloud Networking para arquitectos profesionales](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 

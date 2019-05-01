@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Describe cómo usar la red de entrega de contenido (CDN) de Office 365 para acelerar la entrega de los activos de SharePoint Online a todos los usuarios, independientemente de dónde se encuentren o de la forma en que tengan acceso al contenido.
 ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
-ms.sourcegitcommit: 100ae697304427dab5ad494a06323656b498c57e
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31396928"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492236"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -718,5 +718,5 @@ Puede elegir trabajar con la red CDN de Office 365 usando el módulo de PowerShe
 
 [Redes de entrega de contenido](https://aka.ms/o365cdns)
 
-[Planear la red y ajustar el rendimiento de Office 365](https://aka.ms/tune)
+[Planeamiento de red y ajuste del rendimiento para Office 365](https://aka.ms/tune)
 

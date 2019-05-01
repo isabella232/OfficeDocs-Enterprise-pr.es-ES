@@ -15,78 +15,78 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
-description: 'Resumen: Describe la compatibilidad de IPv6 en los componentes de Microsoft Office 365 y en las ofertas de gobierno de Office 365.'
+description: 'Resumen: describe la compatibilidad de IPv6 en componentes de Microsoft Office 365 y en ofertas de administración pública de Office 365.'
 ms.openlocfilehash: 82af5c7659b3c16c8e92b45b65b6868a404eca23
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327362"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487757"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Compatibilidad con IPv6 en servicios de Office 365
 
- **Resumen**: describe la compatibilidad de IPv6 en los componentes de Microsoft Office 365 y en las ofertas de gobierno de Office 365.
+ **Resumen**: describe la compatibilidad de IPv6 en componentes de Microsoft Office 365 y en ofertas de administración pública de Office 365.
   
-Office 365 es compatible con IPv6 y IPv4; Sin embargo, no todas las características de Office 365 totalmente se habilitan con IPv6. Esto significa que debe usar IPv4 e IPv6 para conectarse a Office 365. Si se van a filtrar el tráfico saliente a Office 365, la lista completa de las direcciones IPv6 que son compatibles con Office 365 puede encontrarse en el artículo de [las direcciones URL de Office 365 y los intervalos de direcciones IP](urls-and-ip-address-ranges.md). Después de la red está configurada y se permiten las direcciones IPv6 adecuadas, puede descargar el [plan de pruebas de IPv6 de Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) desde Microsoft Download Center.
+Office 365 admite tanto IPv6 como IPv4; sin embargo, no todas las características de Office 365 están completamente habilitadas con IPv6. Esto significa que debe usar tanto IPv4 como IPv6 para conectarse a Office 365. Si va a filtrar el tráfico saliente a Office 365, la lista completa de direcciones IPv6 admitidas por Office 365 puede encontrarse en el artículo [office 365 URL e intervalos de direcciones IP](urls-and-ip-address-ranges.md). Una vez configurada la red y se permiten las direcciones IPv6 adecuadas, puede descargar el [plan de pruebas de IPv6 de Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) desde el centro de descarga de Microsoft.
   
 ||
 |:-----|
-| En este artículo forma parte de la [planeación de la red y ajuste del rendimiento de Office 365](https://aka.ms/tune).|
+| Este artículo forma parte de la planeación de [red y el ajuste del rendimiento de Office 365](https://aka.ms/tune).|
 
 ## <a name="ipv6-support-in-office-365-subscription-service"></a>Compatibilidad con IPv6 en el servicio de suscripción de Office 365
 
 ### <a name="exchange-online-and-ipv6"></a>Exchange Online e IPv6
 
-Si el programa que use para conectarse a Exchange Online admite IPv6, usará IPv6 de forma predeterminada en redes por cable e inalámbricas. Si desea controlar las comunicaciones a Exchange Online, use los intervalos de direcciones IP en [las direcciones URL de Office 365 y los intervalos de direcciones IP](urls-and-ip-address-ranges.md).
+Si el programa que usa para conectarse a Exchange Online es compatible con IPv6, usará IPv6 de forma predeterminada tanto en las redes cableadas como en las inalámbricas. Si desea controlar las comunicaciones con Exchange Online, use los intervalos de direcciones IP en [Office 365 URL e intervalos de direcciones IP](urls-and-ip-address-ranges.md).
   
 ### <a name="sharepoint-online-and-ipv6"></a>SharePoint Online e IPv6
 
- **Office 365 gobierno G1/G3/G4/K1** Si el programa que use para conectarse a SharePoint Online admite IPv6, intentará usar IPv6 de forma predeterminada.
+ **Office 365 Government G1/G3/G4/K1** Si el programa que usa para conectarse a SharePoint Online admite IPv6, intentará usar IPv6 de forma predeterminada.
   
- **Nube pública de varios inquilino** Microsoft habilita IPv6 en línea de SharePoint en su solicitud. Es necesario que proporcione que la CIDR expresa las direcciones IP para la infraestructura DNS de su organización. Tenga en cuenta que no se puede compartir esta infraestructura DNS por otras organizaciones para IPv6 a habilitarse para el inquilino. Después de habilitar IPv6, si el programa que use para conectarse a SharePoint Online admite IPv6, usa IPv6 de forma predeterminada.
+ **Nube de varios inquilinos pública** Microsoft habilita IPv6 de SharePoint Online en su solicitud. Debe proporcionar las direcciones IP de CIDR expresadas para la infraestructura DNS de su organización. Tenga en cuenta que esta infraestructura DNS no se puede compartir con otras organizaciones para que IPv6 esté habilitado para su inquilino. Después de habilitar IPv6, si el programa que usa para conectarse a SharePoint Online es compatible con IPv6, usa IPv6 de forma predeterminada.
   
-Si el programa que use para conectarse a SharePoint Online admite IPv6, usará IPv6 de forma predeterminada en redes por cable e inalámbricas. Si desea controlar las comunicaciones a SharePoint Online, use los intervalos de direcciones IP en [las direcciones URL de Office 365 y los intervalos de direcciones IP](urls-and-ip-address-ranges.md).
+Si el programa que usa para conectarse a SharePoint Online admite IPv6, usará IPv6 de forma predeterminada en las redes cableadas e inalámbricas. Si quiere controlar las comunicaciones a SharePoint Online, use los intervalos de direcciones IP en [Office 365 URL e intervalos de direcciones IP](urls-and-ip-address-ranges.md).
   
- **Office 365 gobierno G1/G3/G4/K1** Si el programa que use para conectarse a SharePoint Online admite IPv6, intentará usar IPv6 de forma predeterminada.
+ **Office 365 Government G1/G3/G4/K1** Si el programa que usa para conectarse a SharePoint Online admite IPv6, intentará usar IPv6 de forma predeterminada.
   
-### <a name="skype-for-business-and-ipv6"></a>Skype para empresas y IPv6
+### <a name="skype-for-business-and-ipv6"></a>Skype empresarial e IPv6
 
-Por favor, tenga en cuenta IPv6 no es compatible con Skype para la empresa y ya no se puede habilitar.
+Tenga en cuenta que el IPv6 no es compatible con Skype empresarial y ya no se puede habilitar.
   
-### <a name="exchange-online-protection-and-ipv6"></a>Protección en línea de Exchange e IPv6
+### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection e IPv6
 
-Exchange Online Protection (EOP) es compatible con IPv6, si se produce la transmisión a través del protocolo de seguridad de capa de transporte. El intervalo de elevación de privilegios, use [las direcciones URL de Office 365 y los intervalos de direcciones IP](urls-and-ip-address-ranges.md).
+Exchange Online Protection (EOP) admite IPv6 si la transmisión se produce a través del Protocolo de seguridad de la capa de transporte. Para el intervalo de EOP, use [Office 365 URL e intervalos de direcciones IP](urls-and-ip-address-ranges.md).
   
-### <a name="ipv6-support-for-office-365-government-offerings"></a>Compatibilidad con IPv6 para las ofertas de Office 365 Administración pública
+### <a name="ipv6-support-for-office-365-government-offerings"></a>Compatibilidad con IPv6 para las ofertas de Office 365 Government
 
-Compatibilidad con IPv6 de Office 365 para las ofertas de gobierno se ajusta a la oficina de administración y memorando Budget (OMB) para directores de información de departamentos ejecutivo y organismos, así como la Federal gobierno adopción de Internet Protocol versión 6 (IPv6 ) memorando. [Microsoft Office 365 para el gobierno](https://go.microsoft.com/fwlink/p/?LinkId=325414) es un servicio de varios inquilino que nos datos gubernamentales almacena en una nube de la Comunidad separadas. Al igual que otras ofertas de Office 365, proporciona servicios de productividad y colaboración, incluido Exchange Online, Skype para la empresa, SharePoint Online y Office Professional Plus. 
+Office 365 IPv6 Support for Government offers se ajusta al Office of Management and Budget (OMB) memorándum para los responsables de información de los departamentos y agencias ejecutivos, así como la adopción del Protocolo de Internet versión 6 (IPv6 Memorándum. [Microsoft Office 365 para administración pública](https://go.microsoft.com/fwlink/p/?LinkId=325414) es un servicio multiempresa que almacena datos gubernamentales de Estados Unidos en una nube de la comunidad segregada. Como otras ofertas de Office 365, proporciona servicios de productividad y colaboración, como Exchange Online, Skype empresarial, SharePoint Online y Office Professional Plus. 
 
-Las ofertas de administración pública de Microsoft Office 365 se aplican sólo para 2013 y versiones posteriores. Para obtener más información acerca de las ofertas de gobierno de Office 365, vea [anunciar Office 365 para el gobierno: A nosotros gobierno nube de la Comunidad](https://go.microsoft.com/fwlink/p/?LinkId=325414). El tráfico de internacional en las normativas de armas (ITAR) es un conjunto de reglamentaciones gubernamentales de Estados Unidos que controlan la exportación e importación de artículos relacionados con la defensa y servicios en la [Lista de municiones de Estados Unidos (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415). 
+Las ofertas de Microsoft Office 365 Government solo se aplican a 2013 y versiones posteriores. Para obtener más información acerca de las ofertas de Office 365 Government, consulte el [anuncio de office 365 para la administración pública: una nube de la comunidad de administración pública de Estados Unidos](https://go.microsoft.com/fwlink/p/?LinkId=325414). El tráfico internacional en las regulaciones de brazos (ITAR) es un conjunto de regulaciones del gobierno de Estados Unidos que controlan la exportación y la importación de artículos y servicios relacionados con la defensa en la lista de municiones de [Estados Unidos (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415). 
 
-Microsoft Office 365 para empresas proporciona servicios de hospedaje dedicados para soluciones de productividad de Microsoft que admiten la seguridad, privacidad y los requisitos de cumplimiento de normativas para nosotros agencias federales que requieren Federal de información de seguridad Certificación de administración (FISMA) y entidades comerciales sujetas a ITAR.
+Microsoft Office 365 para empresas proporciona servicios de hospedaje dedicados para soluciones de productividad de Microsoft que admiten los requisitos de seguridad, privacidad y cumplimiento normativo para agencias federales de Estados Unidos que requieran la seguridad de la información federal Certificación de administración (FISMA) y entidades comerciales sujetas a ITAR.
   
-## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>Cosas que debe tener en cuenta cuando use IPv6 y Office 365
+## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>Aspectos que se deben tener en cuenta al usar IPv6 y Office 365
 
-Se recomienda deshabilitar IPv6. Para obtener más información, vea este [artículo de instrucciones](https://support.microsoft.com/help/929852/guidance-for-configuring-ipv6-in-windows-for-advanced-users). Para determinar qué versiones IP se usan en la red, tenga en cuenta lo siguiente:
+Le recomendamos que no deshabilite IPv6. Para obtener más información, vea este [artículo de orientación](https://support.microsoft.com/help/929852/guidance-for-configuring-ipv6-in-windows-for-advanced-users). Para determinar qué versiones IP se usan en la red, tenga en cuenta lo siguiente:
   
-- Si la presentación del comando **IPConfig** en el símbolo del sistema contiene filas con el nombre "Dirección IPv6" o "Dirección IPv6 temporal", que dispone de IPv6 en su entorno.
+- Si la presentación del comando **ipconfig** en el símbolo del sistema contiene filas denominadas "dirección IPv6" o "dirección IPv6 temporal", tiene IPv6 en su entorno.
 
-- Si todas las direcciones IPv6 comienzan por "fe80" y se corresponden con las filas denominadas "Dirección IPv6 de vínculo Local", que no dispone de IPv6 en su entorno.
+- Si todas las direcciones IPv6 empiezan por "fe80" y se corresponden con las filas denominadas "dirección IPv6 local de vínculo", no tiene IPv6 en su entorno.
 
-Pueden que estas consideraciones se apliquen a su red:
+Estas consideraciones podrían aplicarse a su red:
   
-- El servicio de suscripción pública no admite compras con tarjeta de crédito a través de IPv6. Esto no se aplica a la nube de comunidad de administración pública (GCC) porque la administración pública dispone de licencias de Contrato Enterprise (EA).
+- El servicio de suscripción pública no admite la compra mediante tarjeta de crédito a través de IPv6. Esto no se aplica a la nube de la comunidad de administración pública (GCC) porque los gobiernos tienen licencias de Enterprise Agreement (EA).
 
 - IPv6 no admite algunos escenarios de Rights Management Services (RMS).
 
-- IPv6 no admite BlackBerry® Enterprise Server (BES) porque BlackBerry no es compatible con IPv6.
+- IPv6 no es compatible con BlackBerry ® Enterprise Server (BES) porque BlackBerry no es compatible con IPv6.
 
-- Si usa los servicios de federación de Active Directory (AD FS) con Office 365, anuncie su extremo de la red de AD FS a Office 365 usa IPv6 no se admite. No debe incluir registros AAAA en la entrada de DNS de AD FS al usar Exchange Online. 
+- Si usa los servicios de Federación de Active Directory (AD FS) con Office 365, no se admite la publicidad del punto de conexión de red de AD FS en Office 365 con IPv6. No debe incluir registros AAAA en la entrada DNS de AD FS cuando use Exchange Online. 
 
 Este es un vínculo breve que se puede usar para volver: [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
   
 ## <a name="see-also"></a>Vea también
 
-[Ruta de aprendizaje de IPv6](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
+[Mapa de ruta de aprendizaje de IPv6](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
   
 [Guía de supervivencia de IPv6](https://social.technet.microsoft.com/wiki/contents/articles/1728.ipv6-survival-guide.aspx)

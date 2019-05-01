@@ -12,33 +12,33 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: En este artículo se describe cómo puede disminuir el tiempo de carga para las páginas de SharePoint Online mediante el uso de JavaScript para retrasar la carga de imágenes y también esperando cargar JavaScript que no sean esenciales hasta después de la carga de las páginas.
+description: En este artículo se describe cómo reducir el tiempo de carga de las páginas de SharePoint Online con JavaScript para retrasar la carga de imágenes y también al esperar a cargar JavaScript no esencial hasta que se cargue la página.
 ms.openlocfilehash: b8b052d85c99e51dff4b0fc747b3b52c17de8d8b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542937"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490306"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Retrasar la carga de imágenes y JavaScript en SharePoint Online
 
-En este artículo se describe cómo puede disminuir el tiempo de carga para las páginas de SharePoint Online mediante el uso de JavaScript para retrasar la carga de imágenes y también esperando cargar JavaScript que no sean esenciales hasta después de la carga de las páginas. 
+En este artículo se describe cómo reducir el tiempo de carga de las páginas de SharePoint Online con JavaScript para retrasar la carga de imágenes y también al esperar a cargar JavaScript no esencial hasta que se cargue la página. 
   
-Las imágenes pueden afectar negativamente las velocidades de carga de página en SharePoint Online. De forma predeterminada, la mayoría de exploradores de Internet modernos buscan previamente las imágenes al cargar una página HTML. Esto puede provocar que la página esté innecesariamente lenta si las imágenes no están visibles en la pantalla hasta que el usuario se desplaza hacia abajo. Las imágenes pueden bloquear el explorador y este no podrá cargar la parte visible de la página. Para solucionar este problema, puede usar JavaScript para omitir cargar las imágenes en primer lugar. Además, cargar JavaScript no esencial puede ralentizar demasiado los tiempos de carga de las páginas de SharePoint. En este tema se describen algunos métodos que puede utilizar para mejorar los tiempos de carga de página con JavaScript en SharePoint Online. 
+Las imágenes pueden afectar negativamente a la velocidad de carga de página en SharePoint Online. De forma predeterminada, la mayoría de los exploradores de Internet modernos capturan imágenes antes de cargar una página HTML. Esto puede hacer que la página sea innecesariamente lenta para cargarse si las imágenes no se ven en la pantalla hasta que el usuario se desplaza hacia abajo. Las imágenes pueden impedir que el explorador cargue la parte visible de la página. Para solucionar este problema, puede usar JavaScript para omitir primero la carga de las imágenes. Además, la carga de JavaScript que no es esencial puede ralentizar la carga de los tiempos de las páginas de SharePoint. En este tema se describen algunos métodos que puede usar para mejorar los tiempos de carga de página con JavaScript en SharePoint Online. 
   
-## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Mejorar los tiempos de carga de página al retrasar la carga de imágenes en páginas de SharePoint Online con JavaScript
+## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Mejorar los tiempos de carga de página retrasando la carga de imágenes en las páginas de SharePoint Online con JavaScript
 
-Puede usar JavaScript para evitar que un explorador web de la búsqueda anticipada de las imágenes. Esto acelera la representación global del documento. Para hacer esto quita el valor del atributo src de la \<img\> etiquetar y reemplácelo por la ruta de acceso a un archivo en un atributo de datos tales como: datos-src. Por ejemplo:
+Puede usar JavaScript para evitar que un explorador Web Busque imágenes previamente. Esto acelera la representación general de los documentos. Para ello, quite el valor del atributo src de la \<etiqueta IMG\> y reemplácelo por la ruta de acceso a un archivo en un atributo de datos como: Data-src. Por ejemplo:
   
 ```
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
-Mediante el uso de este método, el explorador no descargue las imágenes inmediatamente. Si la imagen se encuentra en el área de visualización, JavaScript indica al explorador para recuperar la dirección URL de los atributos de datos e Insertar como el valor para el atributo src. La imagen se carga sólo como el usuario se desplaza y lo que respecta a la vista.
+Mediante este método, el explorador no descarga las imágenes de forma inmediata. Si la imagen ya está en la ventanilla, JavaScript le indica al explorador que recupere la dirección URL del atributo Data e insértela como el valor para el atributo src. La imagen solo se carga cuando el usuario se desplaza y se muestra.
   
-Para hacer que todo esto ocurra, necesitará usar JavaScript.
+Para que todo esto suceda, deberá usar JavaScript.
   
-En un archivo de texto, defina la función **isElementInViewport()** para comprobar si un elemento está en la parte del explorador que es visible para el usuario. 
+En un archivo de texto, defina la función **isElementInViewport ()** para comprobar si un elemento se encuentra o no en la parte del explorador que es visible para el usuario. 
   
 ```
 function isElementInViewport(el) {
@@ -55,7 +55,7 @@ function isElementInViewport(el) {
 
 ```
 
-A continuación, utilice **isElementInViewport()** en la función **loadItemsInView()**. La función **loadItemsInView()** cargará todas las imágenes que tienen un valor para el atributo data-src si se encuentran en la parte del explorador que es visible para el usuario. Agregue la siguiente función en el archivo de texto: 
+A continuación, use **isElementInViewport ()** en la función **loadItemsInView ()** . La función **loadItemsInView ()** cargará todas las imágenes que tienen un valor para el atributo Data-src si se encuentran en la parte del explorador que es visible para el usuario. Agregue la siguiente función al archivo de texto: 
   
 ```
 function loadItemsInView() {
@@ -71,7 +71,7 @@ function loadItemsInView() {
 }
 ```
 
-Por último, llame a **loadItemsInView()** desde **window.onscroll()** tal como se muestra en el ejemplo siguiente. Esto garantiza que las imágenes que se encuentran en la ventanilla se cargan cuando el usuario necesita, pero no antes. Agregue lo siguiente en el archivo de texto: 
+Por último, llame a **loadItemsInView ()** desde dentro de **window. OnScroll ()** , como se muestra en el ejemplo siguiente. Esto garantiza que las imágenes que están en la ventanilla se cargan a medida que las necesita el usuario, pero no antes. Agregue lo siguiente al archivo de texto: 
   
 ```
 //Example of calling loadItemsInView() from within window.onscroll()
@@ -81,7 +81,7 @@ $(window).on("scroll", function () {
 
 ```
 
-Para SharePoint Online, deberá asociar la siguiente función al evento de desplazamiento en el área de s4 # \<div\> etiqueta. Esto es debido a que los eventos de ventana se reemplazan a fin de garantizar que la cinta de opciones permanece conectado a la parte superior de la página.
+Para SharePoint Online, debe adjuntar la siguiente función al evento scroll en la etiqueta div \<\> #s4-Workspace. Esto se debe a que los eventos de ventana se invalidan para garantizar que la cinta permanece adjunta a la parte superior de la página.
   
 ```
 //Keep the ribbon at the top of the page
@@ -90,35 +90,35 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-Guarde el archivo de texto como archivo de JavaScript con la extensión .js. Por ejemplo: delayLoadImages.js.
+Guarde el archivo de texto como archivo JavaScript con la extensión. js, por ejemplo, delayLoadImages. js.
   
-Una vez que haya terminado de escribir delayLoadImages.js, puede agregar el contenido del archivo a una página maestra en SharePoint Online. Para ello, mediante la adición de un vínculo de la secuencia de comandos al encabezado de la página maestra. Una vez que se encuentra en una página maestra, el código JavaScript se aplicarán a todas las páginas en su sitio de SharePoint Online que usan ese diseño de página maestra. Como alternativa, si se va a usar sólo esto en una página de su sitio, use el elemento Web editor de secuencias de comandos para incrustar el código JavaScript en la página. Consulte estos temas para obtener más información:
+Una vez que haya terminado de escribir delayLoadImages. js, puede Agregar el contenido del archivo a una página maestra en SharePoint Online. Para ello, agregue un vínculo de script al encabezado en la página maestra. Una vez que está en una página maestra, el JavaScript se aplicará a todas las páginas de su sitio de SharePoint Online que usen ese diseño de página maestra. Como alternativa, si solo va a usar esto en una página del sitio, use el elemento Web script editor para incrustar el código JavaScript en la página. Vea estos temas para obtener más información:
   
-- [Cómo: aplicar una página maestra a un sitio de SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+- [Aplicar una página maestra a un sitio de SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
     
-- [Cómo: crear un diseño de página en SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+- [Cómo crear un diseño de página en SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
     
- **Ejemplo: Hacer referencia al archivo delayLoadImages.js de JavaScript desde una página maestra en SharePoint Online**
+ **Ejemplo: hacer referencia al archivo delayLoadImages. js de JavaScript desde una página maestra en SharePoint Online**
   
-Para que funcione, también deberá hacer referencia a jQuery en la página maestra. En el ejemplo siguiente, puede ver en la carga inicial de páginas que hay solo una imagen cargada pero hay varias más en la página.
+Para que esto funcione, también tiene que hacer referencia a jQuery en la página maestra. En el siguiente ejemplo, puede ver en la carga de página inicial que solo hay una imagen cargada, pero hay varias más en la página.
   
 ![Captura de pantalla que muestra una imagen cargada en la página](media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
-La captura de pantalla siguiente muestra el resto de las imágenes que se descargan cuando se desplazan a la vista activa.
+En la siguiente captura de pantalla se muestra el resto de las imágenes que se descargan cuando se desplazan a la vista.
   
 ![Captura de pantalla que muestra varias imágenes cargadas en la página](media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
-Retrasar la carga de la imagen con JavaScript puede ser una técnica eficaz para aumentar el rendimiento; Sin embargo, si se aplica la técnica en un sitio web público, los motores de búsqueda no pueden rastrear las imágenes tal como rastrearían una imagen formada de manera habitual. Esto puede afectar a las clasificaciones de motores de búsqueda porque los metadatos en la imagen en sí no están realmente allí hasta que se cargue la página. Los rastreadores de los motores de búsqueda solo leen el código HTML y, por lo tanto, no verán las imágenes como contenido de la página. Las imágenes son uno de los factores que se usan para clasificar páginas en los resultados de búsqueda. Una forma de solucionar este problema es usar texto de introducción para las imágenes.
+ReTrasar la carga de imágenes mediante JavaScript puede ser una técnica eficaz para aumentar el rendimiento; sin embargo, si la técnica se aplica a un sitio web público, los motores de búsqueda no podrán rastrear las imágenes de la misma forma que lo harían con una imagen de formato frecuente. Esto puede afectar a las clasificaciones en los motores de búsqueda porque los metadatos de la imagen en sí no están realmente ahí hasta que se carga la página. Los rastreadores del motor de búsqueda solo leen el HTML y, por lo tanto, no verán las imágenes como contenido en la página. Las imágenes son uno de los factores que se usan para clasificar las páginas en los resultados de búsqueda. Una manera de solucionar esto es usar texto de introducción para sus imágenes.
   
-## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>Ejemplo de código de GitHub: Inserción de JavaScript para mejorar el rendimiento
+## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>Ejemplo de código de GitHub: inyectar JavaScript para mejorar el rendimiento
 
-No se pierda el artículo y ejemplo de código en [JavaScript inyección](https://go.microsoft.com/fwlink/p/?LinkId=524759) proporcionado en depósito. 
+No pierdas el artículo y el ejemplo de código de la [inyección de JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) que se proporciona en github. 
   
 ## <a name="see-also"></a>Vea también
 
-[Exploradores compatibles de Office 2013 y Office 365 ProPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Exploradores compatibles en Office 2013 y Office 365 proPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
-[Cómo: aplicar una página maestra a un sitio de SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+[Aplicar una página maestra a un sitio de SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   
-[Cómo: crear un diseño de página en SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+[Cómo crear un diseño de página en SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
 

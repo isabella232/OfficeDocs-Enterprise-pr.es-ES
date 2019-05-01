@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: Proporciona un ejemplo y describe la Convención de nomenclatura y el nivel de registro predeterminado del registro de transacciones de IdFix de Office 365.
 ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085069"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490946"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Registro de transacciones de IdFix de Office 365
 
@@ -30,13 +30,13 @@ Proporciona un ejemplo y describe la Convención de nomenclatura y el nivel de r
   
 ## <a name="idfix-transaction-log-location"></a>Ubicación del registro de transacciones de IdFix
 
-La herramienta IdFix de Office 365 crea un nuevo registro de transacciones cada vez que hace clic en **aplicar** en IdFix y se aplican los cambios en el bosque de Active Directory. El registro de transacciones se guarda en la misma carpeta en la que ha instalado IdFix. De forma predeterminada, esta carpeta es C:\Deployment Tools\IDFix. El nombre del archivo de registro de transacciones usa un formato de marca de fecha y hora, por ejemplo, verbose 6-1-2018 6-17-22 PM indica un archivo que se generó el 1 de junio de 2018 a 6:17:22 PM. verbose indica el nivel de registro. 
+La herramienta IdFix de Office 365 crea un nuevo registro de transacciones cada vez que hace clic en **aplicar** en IdFix y se aplican los cambios en el bosque de Active Directory. El registro de transacciones se guarda en la misma carpeta en la que ha instalado IdFix. De forma predeterminada, esta carpeta es C:\Deployment Tools\IDFix. El nombre del archivo de registro de transacciones usa un formato de marca de fecha y hora, por ejemplo, verbose 6-1-2018 6-17-22 PM indica un archivo que se generó el 1 de junio de 2018 a 6:17:22 PM. Verbose indica el nivel de registro. 
   
-## <a name="idfix-transaction-log-logging-level"></a>Nivel de registro de transacciones en IdFix
+## <a name="idfix-transaction-log-logging-level"></a>Nivel de registro de transacciones de IdFix
 
-La palabra "detallado" en el nombre del archivo de registro de transacciones indica el nivel de registro en el archivo. Detallado significa que se captura la mayor cantidad de información posible en el registro. Es el nivel predeterminado de registro. En este momento, no puede cambiar el nivel de registro.
+La palabra verbose en el nombre del archivo de registro de transacciones indica el nivel de registro en el archivo. Detallado significa que se captura la cantidad máxima de información en el registro. Este es el nivel de registro predeterminado. En este momento, no puede cambiar el nivel de registro.
   
-## <a name="idfix-transaction-log-format"></a>Formato del registro de transacciones de IdFix
+## <a name="idfix-transaction-log-format"></a>Formato de registro de transacciones de IdFix
 
 IdFix escribe los resultados de cada acción de **actualización** en un registro de transacciones, como se muestra en el ejemplo siguiente:
   

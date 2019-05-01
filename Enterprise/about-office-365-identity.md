@@ -1,5 +1,5 @@
 ---
-title: Descripción de la identidad de Office 365 y Azure Active Directory
+title: Información acerca de la identidad de Office 365 y Azure Active Directory
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -19,13 +19,13 @@ search.appverid:
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo se administra la identidad del usuario en Office 365.
 ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001563"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487771"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Descripción de la identidad de Office 365 y Azure Active Directory
+# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Información acerca de la identidad de Office 365 y Azure Active Directory
 
 Office 365 usa el servicio de autenticación y la identidad de usuario basada en la nube de Azure Active Directory (Azure AD) para administrar usuarios. Si se configura la administración de identidades entre la organización local y Office 365 es una decisión temprana que es una de las bases de la infraestructura de la nube. Dado que cambiar esta configuración más adelante puede ser difícil, tenga en cuenta las opciones para determinar qué funciona mejor para las necesidades de su organización. Puede elegir entre dos modelos de autenticación principales en Office 365 para configurar y administrar cuentas de usuario; **autenticación de nube** y **autenticación federada**.
   

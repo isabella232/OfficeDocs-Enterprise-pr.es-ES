@@ -13,11 +13,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Resumen: comprenda la arquitectura y los escenarios híbridos de las ofertas de la nube basadas en la infraestructura como servicio (IaaS) de Microsoft en Azure.'
 ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741366"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487666"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Escenarios de nube híbrida para Azure IaaS
 
@@ -147,7 +147,7 @@ Siga esta ruta de acceso para una adopción correcta:
     
     Vea [Designing a SharePoint Server 2016 Farm in Azure](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure) para recorrer un proceso para determinar el conjunto de elementos de red, cálculo y almacenamiento de la IaaS de Azure para hospedar la granja de servidores y su configuración.
     
-3. Implementar
+3. Implementación
     
     Vea [Deploying SharePoint server 2016 with SQL Server alwaysOn Availability Groups in Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) para recorrer la configuración de un extremo a otro de la granja de servidores de alta disponibilidad en cinco fases.
     
@@ -173,7 +173,7 @@ Siga esta ruta de acceso para una adopción correcta:
     
     Consulte [Federated Identity for your Office 365 dev/test Environment](federated-identity-for-your-office-365-dev-test-environment.md) para crear un entorno de pruebas y desarrollo simulado para la autenticación federada con Office 365.
     
-2. Implementar
+2. Implementación
     
     Consulte [deploy High Availability Federated Authentication for Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) para recorrer la configuración de un extremo a otro de la infraestructura de AD FS de alta disponibilidad en cinco fases.
     

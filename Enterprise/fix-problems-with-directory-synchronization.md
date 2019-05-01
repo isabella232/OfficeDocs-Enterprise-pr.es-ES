@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas de la sincronización de directorios para Office 365
+title: Solución de problemas con la sincronización de directorios para Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Describe las causas comunes de los problemas con la sincronización de directorios en Office 365 y proporciona algunos métodos para ayudar a solucionar problemas y resolverlos.
 ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001843"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487476"
 ---
-# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Solucionar problemas de la sincronización de directorios para Office 365
+# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Solución de problemas con la sincronización de directorios para Office 365
 
 Con la sincronización de directorios, puede seguir Administrando usuarios y grupos locales y sincronizar adiciones, eliminaciones y cambios en la nube. Pero la configuración es un poco complicada y a veces puede ser difícil identificar el origen de los problemas. Tenemos recursos para ayudarle a identificar posibles problemas y solucionarlos.
   

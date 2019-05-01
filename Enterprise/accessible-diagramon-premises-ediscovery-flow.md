@@ -1,5 +1,5 @@
 ---
-title: "Diagrama accesible: Flujo de exhibición de documentos electrónicos local"
+title: 'Diagrama accesible: Flujo de exhibición de documentos electrónicos local'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,22 +10,23 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
-description: "Este artículo es una versión de texto accesible del diagrama Flujo de exhibición de documentos electrónicos local."
+description: Este artículo es una versión de texto accesible del diagrama Flujo de exhibición de documentos electrónicos local.
 ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487706"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Diagrama accesible: Flujo de exhibición de documentos electrónicos local
 
-**Resumen:** Este artículo es una versión de texto accesible del diagrama denominado local eDiscovery flujo.
+**Resumen:** Este artículo es una versión de texto accesible del diagrama denominada flujo de exhibición de documentos electrónicos local.
   
 En este póster se explica de manera detallada la arquitectura y el flujo de datos entre productos de servidor. 
   
 ## <a name="across-sharepoint-exchange-lync-and-file-shares"></a>En SharePoint, Exchange, Lync y recursos compartidos de archivos
 
-El diagrama muestra un usuario que envíe una consulta que tiene acceso a dos conjuntos de servidores, un entorno de aplicación de SharePoint 2013 Enterprise y un conjunto de servicios de SharePoint de 2013. La granja de servidores de SharePoint 2013 Services se comunica con un conjunto de contenido de SharePoint 2013, 2013 de Exchange Server (que se comunica con Lync 2013) y archivos compartidos de Windows. 
+El diagrama muestra un usuario que envía una consulta que tiene acceso a dos granjas de servidores, una granja de aplicaciones de SharePoint 2013 Enterprise y una granja de servicios de SharePoint 2013. La granja de servicios de SharePoint 2013 se comunica con una granja de contenido de SharePoint 2013, Exchange Server 2013 (que se comunica con Lync 2013) y recursos comPartidos de archivos de Windows. 
   
 La lista de flujo de exhibición de documentos electrónicos describe el flujo de datos y el orden en que las acciones de consulta de exhibición de documentos electrónicos se producen en SharePoint, Exchange, Lync y los recursos compartidos de archivos.  
   
@@ -35,29 +36,29 @@ Primero de describe detalladamente la lista de flujo de exhibición de documento
 
 Los números de cada uno de los pasos descritos en esta lista corresponden a los pasos que se muestran en el diagrama. El diagrama se describe con mayor detalle más adelante en este documento  
   
-1. casos de eDiscovery son creados, gestionados y utilizados en el centro de eDiscovery (EDC). La EDC es una colección de sitios de SharePoint de 2013. Esto es donde se definen los casos, se identifican los orígenes de seguimiento, se emiten consultas, se revisan los resultados de la consulta y suspensiones en el contenido se coloca o se quitan. 
+1. Los casos de exhibición de documentos electrónicos se crean, gestionan y usan en el centro de exhibición de documentos electrónicos (EDC). EDC es una colección de sitios de SharePoint 2013. Aquí es donde se definen los casos, se identifican los orígenes que se deben seguir, se emiten las consultas, se revisan los resultados de las consultas y se establecen o eliminan las operaciones de conservación de contenido. 
     
-2. La consulta de eDiscovery o acción, por ejemplo, colocar una suspensión, ReleaseHold o GetStatus, se retransmite desde la EDC para el proxy de aplicación de servicio de búsqueda (SSA) en el conjunto de servidores de empresa de la aplicación. El proxy de SSA, a continuación, retransmite el tráfico de lo SSA en el conjunto de servidores de servicios de la aplicación. En este ejemplo, la solicitud es colocar nada en el conjunto de contenido de SharePoint con "CONTOSO" en el nombre del archivo en espera. 
+2. La consulta o la acción de exhibición de documentos electrónicos, como las operaciones Hold, ReleaseHold o GetStatus, se transmiten desde el EDC al proxy de la aplicación de servicio de búsqueda (SSA) en la granja de SharePoint Enterprise. Después, el proxy de SSA transmite el tráfico a la SSA en la granja de SharePoint Services. En este ejemplo, la solicitud es ubicar cualquier cosa en la granja de contenido de SharePoint con "CONTOSO" en el nombre de archivo en retención. 
     
 3. Si la solicitud consiste en consultar un caso, la SSA consulta el índice de búsqueda. Después, el conjunto de resultados de consulta de exhibición de documentos electrónicos se devuelve al usuario a través del EDC.  
     
-4. Si la solicitud es una acción, como colocar una suspensión o ReleaseHold, dicha acción se escribe en el Actions_Table en la base de datos administrativa de SSA. En este ejemplo, se escribe una solicitud de suspensión para nada en el conjunto de contenido de SharePoint con "CONTOSO" en la Actions_Table. 
+4. Si la solicitud es una acción, como ejecutar una operación Hold o ReleaseHold, esa acción se escribe en la tabla Actions_Table en la base de datos administrativa de la SSA. En este ejemplo, se escribe una solicitud de retención para cualquier cosa de la granja de contenido de SharePoint con "CONTOSO" en Actions_Table. 
     
-5. A intervalos regulares, se activa el trabajo del temporizador con la operación de conservación local de exhibición de documentos electrónicos en la granja de contenido, el cual genera una solicitud de acciones pendientes y envía actualizaciones de estado mediante el proxy de SSA a la SSA.  
+5. A intervalos regulares, se activa el trabajo del temporizador con la operación de conservación local de exhibición de documentos electrónicos en la granja de contenido, el cual genera una solicitud de acciones pendientes y envía actualizaciones de estado mediante el proxy de SSA a la SSA. 
     
-6. La consulta de acciones pendientes se retransmite a la central SSA, que consulta el Action_Table de acciones para el conjunto de contenido pendientes. El trabajo del temporizador de suspensión en lugar de granja de servidores de contenido también envía actualizaciones de estado de los objetos y las acciones que ha recibido, que se escriben en el ActionsTable. 
+6. La consulta de acciones pendientes se transmite a la SSA central, que a su vez consulta en Actions_Table si hay alguna acción pendiente para la granja de contenido. El trabajo del temporizador de conservación local en la granja de contenido también envía actualizaciones de estado para objetos y acciones que ha recibido, y estas se escriben en Action_Table. 
     
-7. El SSA envía la solicitud de suspensión de cualquier contenido con "CONTOSO" en el nombre del conjunto de servidores de contenido de SharePoint 2013 para el trabajo del temporizador de suspensión en lugar de eDiscovery en la granja de servidores de contenido. 
+7. El SSA envía la solicitud de retención para cualquier contenido con "CONTOSO" en el nombre de la granja de contenido de SharePoint 2013 al trabajo del temporizador de conservación local de eDiscovery en la granja de servidores de contenido. 
     
-8. El eDiscovery lugar mantenga temporizador lugares de trabajo mantienen el "Sitio de CONTOSO" y "Contenido CONTOSO" en. 
+8. El trabajo del temporizador de conservación local de eDiscovery coloca el "sitio de CONTOSO" y el "contenido de CONTOSO" en espera. 
     
 9. El trabajo del temporizador de conservación local de exhibición de documentos electrónicos se ejecuta periódicamente en la granja de SharePoint Enterprise para comprobar el estado de las acciones de detección y actualizarlo.  
     
 10. La consulta de estado se transmite a través del proxy de SSA de la granja de SharePoint Enterprise hacia la SSA de la granja SharePoint Services.  
     
-11. La SSA recupera el estado de Action_Table y lo devuelve al trabajo del temporizador en la granja de SharePoint Enterprise, la cual inserta las actualizaciones de estado en el EDC.  
+11. La SSA recupera el estado de Action_Table y lo devuelve al trabajo del temporizador en la granja de SharePoint Enterprise, la cual inserta las actualizaciones de estado en el EDC. 
     
-12. Cuando el usuario de eDiscovery está buscando (o realizar una acción) para los orígenes de Exchange, como un buzón o el contenido archivado de Lync, el SSA central utiliza proxy de Exchange Web Services (EWS) para consultar los servicios Web Exchange. Exchange tiene su propia infraestructura de eDiscovery y de búsqueda y administra todas las llamadas de eDiscovery internamente. 
+12. Cuando el usuario de exhibición de documentos electrónicos realiza una búsqueda (o ejecuta una acción) en los orígenes de Exchange, como buscar un buzón de correo o contenido de Lync archivado, la SSA central usa el proxy de los servicios Web Exchange (EWS) para consultar los EWS. Exchange tiene su propia infraestructura de búsqueda y exhibición de documentos electrónicos, y gestiona internamente todas las llamadas a exhibición de documentos electrónicos. 
     
 13. Los EWS responden a la SSA con resultados de búsqueda de exhibición de documentos electrónicos o con una respuesta a una solicitud de estado para una conservación basada en una consulta que, a su vez, se transmite al EDC.  
     
@@ -69,11 +70,11 @@ Los números de cada uno de los pasos descritos en esta lista corresponden a los
     
 ### <a name="description-of-components-in-the-diagram"></a>Descripción de los componentes del diagrama
 
-El diagrama muestra un usuario que envíe una consulta que tiene acceso a dos conjuntos de servidores, un entorno de SharePoint 2013 empresarial de la aplicación y un conjunto de servicios de SharePoint de 2013. El conjunto de servidores de SharePoint Services interactúa con un conjunto de contenido de SharePoint 2013, 2013 de Exchange Server (las interfaces con Lync 2013) y archivos compartidos de Windows. 
+El diagrama muestra un usuario que envía una consulta, que tiene acceso a dos granjas de servidores, una granja de aplicaciones de SharePoint 2013 Enterprise y una granja de servicios de SharePoint 2013. La granja de SharePoint Services interactúa con una granja de contenido de SharePoint 2013, Exchange Server 2013 (que interactúa con Lync 2013) y recursos comPartidos de archivos de Windows. 
   
-#### <a name="sharepoint-2013-enterprise-app-farm"></a>El conjunto de servidores de SharePoint 2013 Enterprise App
+#### <a name="sharepoint-2013-enterprise-app-farm"></a>Granja de servidores de aplicaciones empresariales de SharePoint 2013
 
-El conjunto de servidores de SharePoint 2013 empresarial de la aplicación contiene los siguientes componentes: 
+La granja de aplicaciones de SharePoint 2013 Enterprise contiene los siguientes componentes: 
   
 - EDC
     
@@ -91,15 +92,15 @@ Cuando el usuario envía una consulta o una acción, esta se envía al EDC de la
     
 - Los resultados de la consulta o la acción se envían al usuario desde el EDC.  
     
-#### <a name="sharepoint-2013-services-farm"></a>Conjunto de servicios de SharePoint de 2013
+#### <a name="sharepoint-2013-services-farm"></a>Granja de servicios de SharePoint 2013
 
-La granja de servidores de SharePoint 2013 Services contiene los siguientes componentes: 
+La granja de servicios de SharePoint 2013 contiene los siguientes componentes: 
   
 - Servicio de SSA  
     
-- Base de datos del índice de búsqueda  
+- Base de datos del índice de búsqueda 
     
-- Base de datos de admin_db de SSA. Contiene la tabla de acciones en esta base de datos: mantenga versión mantenga GetStatus 
+- Base de datos de admin_db de SSA. La tabla de acciones de esta base de datos contiene: retener reTenciones de suspensión 
     
 - Proxy de EWS  
     
@@ -109,7 +110,7 @@ Cuando el proxy de SSA en la granja de SharePoint Enterprise envía una consulta
     
 - Si la solicitud es una acción de escritura, el servicio de SSA envía la acción de escritura a admin_db de SSA.  
     
-- Un rastreo y responder los resultados de la solicitud se envía desde el SSA para el conjunto de servidores de contenido de SharePoint 2013 y se devuelve una respuesta para el SSA. 
+- Se envía una solicitud de resultados de rastreo y respuesta desde el SSA a la granja de servidores de contenido de SharePoint 2013 y se devuelve una respuesta a la SSA. 
     
 - Se envía una consulta de rastreo y de resultados de respuesta desde la SSA a los recursos de archivos compartidos de Windows, y se devuelve una respuesta a la SSA.  
     
@@ -121,9 +122,9 @@ Cuando el proxy de SSA en la granja de SharePoint Enterprise envía una consulta
     
 - Se envía una consulta/respuesta de acción pendiente desde la SSA hacia admin_db de la SSA y se devuelve a la SSA.  
     
-#### <a name="sharepoint-2013-content-farm"></a>Conjunto de contenido de SharePoint de 2013
+#### <a name="sharepoint-2013-content-farm"></a>Granja de contenido de SharePoint 2013
 
-El conjunto de servidores de SharePoint 2013 contenido contiene los siguientes componentes: 
+La granja de contenido de SharePoint 2013 contiene los siguientes componentes: 
   
 - Proxy de SSA  
     
@@ -145,7 +146,7 @@ Cuando la SSA en la granja de SharePoint Services envía una consulta de estado 
 
 El componente de servidor de Exchange 2013 contiene el servicio Web Exchange y proporciona lo siguiente:  
   
-- Confianza/OAuth de servidor a servidor se controla entre el conjunto de contenido de SharePoint 2013 y 2013 de Exchange. 
+- La confianza/OAuth de servidor a servidor se controla entre la granja de servidores de contenido de SharePoint 2013 y la de Exchange 2013. 
     
 - La confianza/OAuth de servidor a servidor se controla entre Exchange 2013 y Lync 2013.  
     
@@ -157,19 +158,19 @@ El componente Lync 2013 archiva contenido de Lync en Exchange 2013. 
 
 El componente de recursos compartidos de archivos de Windows proporciona resultados de rastreo para la SSA en la granja de SharePoint Services.  
   
-### <a name="legend"></a>Leyenda
+### <a name="legend"></a>Legend
 
 La leyenda de este diagrama muestra de forma gráfica los distintos tipos de tráfico representados entre los componentes con líneas de colores distintos:  
   
-- Línea azul claro: consulta/acción - datos de consulta o acción de eDiscovery 
+- Línea azul claro: consulta/acción-datos de la consulta o de la acción de eDiscovery 
     
-- Línea naranja: respuesta de eDiscovery - datos de respuesta de consulta de eDiscovery 
+- Línea naranja: datos de respuesta de consulta de las-eDiscovery Query Response 
     
-- Línea verde: consultas y respuestas de estado - datos de consultas y respuestas de estado de eDiscovery 
+- Línea verde: estado de consulta/respuesta-estado de exhibición de documentos electrónicos datos de consulta/respuesta 
     
-- Púrpura línea: solicitud de acción o estado de Exchange - solicitud de eDiscovery para el estado de la acción para el tráfico de Exchange. 
+- Línea púrpura: solicitud de acción/estado de Exchange-solicitud de exhibición de documentos electrónicos para el estado de acción del tráfico de Exchange. 
     
-- Línea roja: intercambiar respuesta datos/estado - respuesta de consulta o estado de eDiscovery desde Exchange. 
+- Línea roja: respuesta de estado/datos de Exchange-respuesta de consulta o estado de exhibición de documentos electrónicos de Exchange. 
     
 - Línea negra discontinua: OAuth/Confianza de servidor a servidor  
     
