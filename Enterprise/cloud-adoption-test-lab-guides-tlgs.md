@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: Con estas Guías del laboratorio de pruebas (TLG) para la adopción de la nube, podrá configurar entornos de demostración, prueba de concepto y desarrollo y pruebas para Office 365.'
 ms.openlocfilehash: 3531a3185cd52044ee59391d676fff1a7f4a5f64
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741176"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490238"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Probar Office 365 con guías de entorno de pruebas de adopción de la nube (TLG)
 
@@ -82,7 +82,7 @@ Para el entorno de desarrollo y pruebas de Office 365, use estos artículos para
     
     Muestre cómo el cliente de Azure Information Protection puede usarse para clasificar documentos con varios niveles de seguridad.
     
-- [Entorno de desarrollo y pruebas en un sitio de grupo de SharePoint Online aislado](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
     Mostrar cómo crear un sitio de grupo de SharePoint Online aislado del resto de la organización para los recursos privados o muy confidenciales.
     
@@ -91,11 +91,11 @@ Para el entorno de desarrollo y pruebas de Office 365, use estos artículos para
 
 Puede crear un entorno de pruebas y desarrollo simulado de varias ubicaciones que incluya una red virtual Azure y una red local simulada con estos artículos:
   
-- [Red virtual simulada entre locales en Azure](simulated-cross-premises-virtual-network-in-azure.md)
+- [Red virtual entre locales simulada en Azure](simulated-cross-premises-virtual-network-in-azure.md)
     
     Cree una intranet simulada conectada a una red virtual de Azure en una configuración de la nube híbrida.
     
-- [Intranet SharePoint Server 2016 en el entorno de desarrollo y pruebas de Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)
+- [Intranet SharePoint Server 2016 en entorno de prueba y desarrollo de Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)
     
     Cree una granja de un solo servidor de SharePoint Server 2016 en la red virtual de Azure y pruebe la conectividad y administración desde la red local simulada.
     
@@ -107,7 +107,7 @@ Estos son entornos de desarrollo y pruebas de SharePoint Server 2016 que puede c
     
     Cree una granja de un solo servidor de SharePoint Server 2016 en los servicios de infraestructura de Azure.
 
-- [Intranet SharePoint Server 2016 en el entorno de desarrollo y pruebas de Azure](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)
+- [SharePoint Server 2016 en un entorno de desarrollo y pruebas de Azure en una intranet](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)
     
     Cree una granja de un solo servidor de SharePoint Server 2016 en los servicios de infraestructura de Azure y acceda a ella desde una intranet simulada.
 
@@ -120,7 +120,7 @@ Cree un entorno de desarrollo y pruebas para [Microsoft 365 Enterprise](https://
 
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
   
-[Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
   
 [Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
