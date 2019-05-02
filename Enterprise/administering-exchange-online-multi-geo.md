@@ -10,11 +10,11 @@ ms.custom: ''
 localization_priority: Priority
 description: Obtenga información sobre cómo administrar el ajuste multigeográfico de Exchange Online con Microsoft PowerShell.
 ms.openlocfilehash: cc8adecda26073f588b63af12c13209720f9bc98
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765052"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490886"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administración de buzones de correo de Exchange Online en un entorno multigeográfico
 
@@ -42,7 +42,7 @@ Para conectarse a una ubicación geográfica específica, el parámetro *Connect
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
    ```
 
-   Por ejemplo, si olga@contoso.onmicrosoft.com es la dirección de correo electrónico de un buzón válido en la ubicación geográfica en la que quiere conectarse, ejecute el siguiente comando:
+   Por ejemplo, si olga@contoso.onmicrosoft.com es la dirección de correo electrónico de un buzón válido en la ubicación geográfica a la que desea conectarse, ejecute el siguiente comando:
 
    ```powershell
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
@@ -86,7 +86,7 @@ Para ver estas propiedades de un buzón, use la siguiente sintaxis:
 Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
 ```
 
-Por ejemplo, para ver la información de la ubicación geográfica del buzón chris@contoso.onmicrosoft.com, ejecute el siguiente comando:
+Por ejemplo, para ver la información geográfica del buzón chris@contoso.onmicrosoft.com, ejecute el siguiente comando:
 
 ```powershell
 Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
@@ -168,7 +168,7 @@ New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>
 
 Este ejemplo crea una cuenta de usuario para Elizabeth Brunner con los valores siguientes:
 
-- Nombre principal de usuario: ebrunner@contoso.onmicrosoft.com
+- Nombre de usuario principal: ebrunner@contoso.onmicrosoft.com
 
 - Nombre: Elizabeth
 
@@ -225,4 +225,4 @@ Los **Informes de uso multigeográfico** en el Centro de administración de Micr
 
 ## <a name="see-also"></a>Vea también
 
-[Administración de Office 365 y Exchange Online con Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6)
+[Administración de Office 365 y Exchange Online con Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6)
