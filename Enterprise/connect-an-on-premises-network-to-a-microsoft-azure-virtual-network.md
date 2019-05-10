@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Resumen: obtenga información sobre cómo configurar una red virtual de Azure entre locales para las cargas de trabajo de servidores de Office con una conexión VPN de sitio a sitio.'
-ms.openlocfilehash: f6ee25d7e1564ce5770bada709934e68dd6888ee
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 894d2ae7392b5365c4c074a3c7d48dd815c5b7d1
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490656"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867765"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Conectar una red local con una red virtual de Microsoft Azure
 
@@ -271,6 +271,7 @@ New-AzNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName -Locatio
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
 $nsg=Get-AzNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -AddressPrefix $SubnetPrefix -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 Esta es la configuración resultante.

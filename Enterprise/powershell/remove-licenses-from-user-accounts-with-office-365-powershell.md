@@ -16,12 +16,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Explica cómo usar Office 365 PowerShell para quitar licencias de Office 365 que se han asignado anteriormente a los usuarios.
-ms.openlocfilehash: 66ffe7275bcfd936c7df70d3969b96fefafb355d
-ms.sourcegitcommit: 0a99abcb67fc8ee7594cb66f5f7fd0e6e94eb3fd
+ms.openlocfilehash: f5154bbec90bc7b9d0a7d944ab1cfaefd401ae87
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30474181"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867759"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Eliminar licencias de cuentas de usuario con PowerShell de Office 365
 
@@ -81,6 +81,10 @@ En este ejemplo se `litwareinc:ENTERPRISEPACK` quita la licencia (Office 365 Ent
 ```
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
 ```
+
+>[!Note]
+>No puede usar el cmdlet Set-MsolUserLicense para anular la asignación ** de usuarios de licencias canceladas. Debe hacerlo de forma individual para cada cuenta de usuario en el centro de administración de Microsoft 365.
+>
 
 Para quitar licencias de un grupo de usuarios con licencia existentes, utilice uno de los métodos siguientes:
   

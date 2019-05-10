@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Resumen: cree una red virtual simulada entre locales en Microsoft Azure como un entorno de desarrollo y pruebas.'
-ms.openlocfilehash: 57262ee58f539fffbb0fc5b92c3a24f4c9204293
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 1eefbf94549d8af927d93a554418cb2642d1b447
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741216"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867725"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Red virtual simulada entre locales en Azure
 
@@ -117,6 +117,7 @@ New-AzNetworkSecurityGroup -Name "Testnet" -ResourceGroupName $rgName -Location 
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name XPrem
 $nsg=Get-AzNetworkSecurityGroup -Name "Testnet" -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name "Testnet" -AddressPrefix 192.168.0.0/24 -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 Después, cree la relación de emparejamiento de VNet entre las redes virtuales TestLab y XPrem con estos comandos.
@@ -217,11 +218,11 @@ Use este entorno de desarrollo y pruebas para simular una [granja de servidores 
   
 [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
   
-[Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[Sincronización de directorios (DirSync) para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
-[Cloud App Security para el entorno de desarrollo y pruebas de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Seguridad de Cloud App para su entorno de desarrollo y prueba de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
-[Protección contra amenazas avanzada en el entorno de desarrollo y pruebas de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[Protección contra amenazas avanzada en el entorno de desarrollo y prueba de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 
