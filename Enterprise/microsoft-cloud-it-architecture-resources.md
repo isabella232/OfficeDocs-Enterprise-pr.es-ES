@@ -65,7 +65,7 @@ See the posters, icon sets, community venues, and other resources that describe 
 -->
   
 <a name="cloudarch"></a>
-<span data-ttu-id="06777-128">## Serie de la nube de Microsoft para arquitectos empresariales</span><span class="sxs-lookup"><span data-stu-id="06777-128">## Microsoft cloud for enterprise architects series</span></span>
+## <span data-ttu-id="06777-128">Serie de la nube de Microsoft para arquitectos empresariales</span><span class="sxs-lookup"><span data-stu-id="06777-128">Microsoft cloud for enterprise architects series</span></span>
 
 <span data-ttu-id="06777-p105">Estos pósteres de arquitectura en la nube le ofrecen información acerca de los servicios en la nube de Microsoft, como Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online y las soluciones híbridas locales y en la nube. Los arquitectos y los responsables de la toma de decisiones de TI pueden usar estos recursos para determinar las soluciones ideales para sus cargas de trabajo y para tomar decisiones acerca de los componentes de la infraestructura básica, como la identidad y la seguridad.</span><span class="sxs-lookup"><span data-stu-id="06777-p105">These cloud architecture posters give you information about Microsoft cloud services, including Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security.</span></span>
 
@@ -82,7 +82,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
    
 <a name="identity"></a>
-<span data-ttu-id="06777-131">### Identidad de nube de Microsoft para arquitectos profesionales</span><span class="sxs-lookup"><span data-stu-id="06777-131">### Microsoft cloud identity for enterprise architects</span></span>
+### <span data-ttu-id="06777-131">Identidad de nube de Microsoft para arquitectos profesionales</span><span class="sxs-lookup"><span data-stu-id="06777-131">Microsoft cloud identity for enterprise architects</span></span>
 
 <span data-ttu-id="06777-132">Lo que los arquitectos de TI necesitan saber sobre el diseño de la identidad para las organizaciones que usan plataformas y servicios en la nube de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="06777-132">What IT architects need to know about designing identity for organizations using Microsoft cloud services and platforms.</span></span>
   
@@ -137,7 +137,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 |[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
    
 <a name="BKMK_o365solutions"></a>
-<span data-ttu-id="06777-189">## Serie de soluciones de Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="06777-189">## Microsoft 365 enterprise solution series</span></span>
+## <span data-ttu-id="06777-189">Serie de soluciones de Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="06777-189">Microsoft 365 enterprise solution series</span></span>
 
 <span data-ttu-id="06777-190">La serie de soluciones empresariales de Microsoft 365 ofrece orientación para implementar funcionalidades de Microsoft 365, sobre todo cuando estas abarcan varias tecnologías.</span><span class="sxs-lookup"><span data-stu-id="06777-190">The Microsoft 365 enterprise solution series provides guidance for implementing Microsoft 365 capabilities, especially where capabilities cross technologies.</span></span>
 
