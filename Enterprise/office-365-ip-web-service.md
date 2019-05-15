@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Para ayudarle a identificar y diferenciar el tráfico de red de Office 365, un nuevo servicio web publica puntos de conexión de Office 365, con lo cual le resultará más fácil evaluar, configurar y mantenerse al día con los cambios. Este nuevo servicio web reemplaza los archivos XML descargables que están disponibles actualmente.
-ms.openlocfilehash: c87f297c6bc1fc4cf317db60d3fd2ef2e4b8443b
-ms.sourcegitcommit: a35d23929bfbfd956ee853b5e828b36e2978bf36
+ms.openlocfilehash: 35a34071a76e551cde8342566a912e4fd4d0100e
+ms.sourcegitcommit: 9c6e31204aa326c31d60befe80e610f702e65800
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33655794"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33976525"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Dirección IP y servicio web de URL de Office 365
 
@@ -406,8 +406,28 @@ if ($version.latest -gt $lastVersion) {
         }
         $ipCustomObjects
     }
+    $flatIp6s = $endpointSets | ForEach-Object {
+    $endpointSet = $_
+    $ips = $(if ($endpointSet.ips.Count -gt 0) { $endpointSet.ips } else { @() })
+    # IPv6 strings have colons while IPv6 strings have dots
+    $ip6s = $ips | Where-Object { $_ -like '*:*' }
+    $ipCustomObjects = @()
+    if ($endpointSet.category -in ("Optimize")) {
+        $ipCustomObjects = $ip6s | ForEach-Object {
+            [PSCustomObject]@{
+                category = $endpointSet.category;
+                ip = $_;
+                tcpPorts = $endpointSet.tcpPorts;
+                udpPorts = $endpointSet.udpPorts;
+            }
+        }
+    }
+    $ipCustomObjects
+}
     Write-Output "IPv4 Firewall IP Address Ranges"
     ($flatIps.ip | Sort-Object -Unique) -join "," | Out-String
+    Write-Output "IPv6 Firewall IP Address Ranges"
+    ($flatIp6s.ip | Sort-Object -Unique) -join "," | Out-String
     Write-Output "URLs for Proxy Server"
     ($flatUrls.url | Sort-Object -Unique) -join "," | Out-String
     # TODO Call Send-MailMessage with new endpoints data
