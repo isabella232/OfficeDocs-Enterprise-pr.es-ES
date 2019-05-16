@@ -21,7 +21,8 @@
 ### [Planificación de dispositivos de red que se conecten a servicios de Office 365](plan-for-network-devices.md)
 ### [Planificación de los certificados SSL de terceros para Office 365](plan-for-third-party-ssl-certificates.md)
 ### [Descripción de la identidad de Office 365 y Azure Active Directory](about-office-365-identity.md)
-### [Elegir entre MDM e Intune](https://docs.microsoft.com/es-ES/office365/securitycompliance/choose-between-mdm-and-intune)
+### 
+  [Elegir entre MDM e Intune](https://docs.microsoft.com/es-ES/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Planeación de la migración y red para Office 365](network-and-migration-planning.md)
 ### [Conectividad de red a Office 365](network-connectivity.md)
 ### [Asesores de implementación para servicios de Office 365](deployment-advisors-for-office-365.md)
@@ -32,9 +33,11 @@
 ### [Funcionamiento de la autenticación moderna para aplicaciones cliente de Office 2013 y Office 2016](modern-auth-for-office-2013-and-2016.md)
 ### [Colaboración entre espacios empresariales de Office 365](office-365-inter-tenant-collaboration.md)
 ## Compatibilidad de clientes con Office 365
+### [Autenticación basada en certificados](office-365-client-support-certificate-based-authentication.md)
 ### [Acceso condicional](office-365-client-support-conditional-access.md)
 ### [Administración de aplicaciones móviles](office-365-client-support-mobile-application-management.md)
 ### [Autenticación moderna](office-365-client-support-modern-authentication.md)
+### [Inicio de sesión único](office-365-client-support-single-sign-on.md)
 ## Opciones híbridas
 ### [Autenticación moderna híbrida y requisitos previos para Skype Empresarial Server y Exchange Server](hybrid-modern-auth-overview.md)
 ### [Cómo configurar Exchange Server local para usar la autenticación moderna híbrida](configure-exchange-server-for-hybrid-modern-authentication.md)
@@ -72,7 +75,7 @@
 ## [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)
 ## [Implementar Office 365 Enterprise para la organización](setup-overview-for-enterprises.md)
 ### [Lista de comprobación para planificar la implementación de Office 365](deployment-planning-checklist.md)
-### [Procedimientos recomendados de seguridad para Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
+### [Procedimientos recomendados de seguridad para Office 365](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
 ## [Configurar la red](set-up-network-for-office-365.md)
 ### [Información general de conectividad de red de Office 365](office-365-networking-overview.md)
 ### [Principios de conectividad de red de Office 365](office-365-network-connectivity-principles.md)
@@ -161,8 +164,10 @@
 # Administrar Office 365
 ## [Estado del servicio](view-service-health.md)
 ### [Conectividad del monitor](monitor-connectivity.md)
-### [Opciones de soporte técnico](https://support.office.com/es-ES/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-## [Herramientas de administración](https://support.office.com/es-ES/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### 
+  [Opciones de soporte técnico](https://support.office.com/es-ES/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+## 
+  [Herramientas de administración](https://support.office.com/es-ES/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Herramientas para administrar cuentas de Office 365](manage-office-365-accounts.md)
 ### [Agregar varios usuarios al mismo tiempo a Office 365: ayuda para administradores](add-several-users-at-the-same-time.md)
 ### [Recuperar elementos eliminados en un buzón de usuario: ayuda para administradores](recover-deleted-items-in-a-mailbox.md)
