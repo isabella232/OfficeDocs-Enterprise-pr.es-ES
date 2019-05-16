@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
 description: Este artículo es una versión de texto accesible del diagrama Flujo de exhibición de documentos electrónicos local.
-ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487706"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068536"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Diagrama accesible: Flujo de exhibición de documentos electrónicos local
 
@@ -26,7 +26,7 @@ En este póster se explica de manera detallada la arquitectura y el flujo de dat
   
 ## <a name="across-sharepoint-exchange-lync-and-file-shares"></a>En SharePoint, Exchange, Lync y recursos compartidos de archivos
 
-El diagrama muestra un usuario que envía una consulta que tiene acceso a dos granjas de servidores, una granja de aplicaciones de SharePoint 2013 Enterprise y una granja de servicios de SharePoint 2013. La granja de servicios de SharePoint 2013 se comunica con una granja de contenido de SharePoint 2013, Exchange Server 2013 (que se comunica con Lync 2013) y recursos comPartidos de archivos de Windows. 
+El diagrama muestra un usuario que envía una consulta que tiene acceso a dos granjas de servidores, una granja de aplicaciones de SharePoint 2013 Enterprise y una granja de servicios de SharePoint 2013. La granja de servicios de SharePoint 2013 se comunica con una granja de contenido de SharePoint 2013, Exchange Server 2013 (que se comunica con Lync 2013) y recursos compartidos de archivos de Windows. 
   
 La lista de flujo de exhibición de documentos electrónicos describe el flujo de datos y el orden en que las acciones de consulta de exhibición de documentos electrónicos se producen en SharePoint, Exchange, Lync y los recursos compartidos de archivos.  
   
@@ -70,7 +70,7 @@ Los números de cada uno de los pasos descritos en esta lista corresponden a los
     
 ### <a name="description-of-components-in-the-diagram"></a>Descripción de los componentes del diagrama
 
-El diagrama muestra un usuario que envía una consulta, que tiene acceso a dos granjas de servidores, una granja de aplicaciones de SharePoint 2013 Enterprise y una granja de servicios de SharePoint 2013. La granja de SharePoint Services interactúa con una granja de contenido de SharePoint 2013, Exchange Server 2013 (que interactúa con Lync 2013) y recursos comPartidos de archivos de Windows. 
+El diagrama muestra un usuario que envía una consulta, que tiene acceso a dos granjas de servidores, una granja de aplicaciones de SharePoint 2013 Enterprise y una granja de servicios de SharePoint 2013. La granja de SharePoint Services interactúa con una granja de contenido de SharePoint 2013, Exchange Server 2013 (que interactúa con Lync 2013) y recursos compartidos de archivos de Windows. 
   
 #### <a name="sharepoint-2013-enterprise-app-farm"></a>Granja de servidores de aplicaciones empresariales de SharePoint 2013
 
@@ -100,7 +100,7 @@ La granja de servicios de SharePoint 2013 contiene los siguientes componentes:
     
 - Base de datos del índice de búsqueda 
     
-- Base de datos de admin_db de SSA. La tabla de acciones de esta base de datos contiene: retener reTenciones de suspensión 
+- Base de datos de admin_db de SSA. La tabla de acciones de esta base de datos contiene: retener retenciones de suspensión 
     
 - Proxy de EWS  
     

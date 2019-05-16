@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/29/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: 'Resumen: Office 365 requiere conectividad a Internet. Los puntos de conexión a continuación deben ser accesibles para los clientes que usen solo planes de Office 365 U.S. Government DoD.'
 hideEdit: true
-ms.openlocfilehash: 08c78c38d97c2cd1e7ea5478a9effd235b06b3fb
-ms.sourcegitcommit: 89eaafb5e21b80b8dfdc72a93f8588bf9c4512d9
+ms.openlocfilehash: 67f8c294e6a400365bed7d94b4e4a85d7e32a621
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497672"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069696"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Extremos DoD del gobierno de Estados Unidos de Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "33497672"
   
 |||
 |:-----|:-----|
-|**última actualización:** 04/29/2019- ![](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [suscripción de registro de cambios](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) de RSS <br/> |**Descargar:** lista completa en [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Última actualización:** 29/04/2019 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Suscripción del registro de cambios](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Descargar:** lista completa en [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Comience con la administración de los puntos de conexión de [Office 365](managing-office-365-endpoints.md) para comprender nuestras recomendaciones para administrar la conectividad de red con estos datos. Los datos de puntos de conexión se actualizan al principio de cada mes con nuevas direcciones IP y direcciones URL publicadas 30 días antes de estar activo. Esto permite a los clientes que aún no tienen actualizaciones automatizadas para completar sus procesos antes de que sea necesaria una nueva conectividad. Los puntos de conexión también se pueden actualizar durante el mes si es necesario para resolver las escalaciones de soporte, los incidentes de seguridad u otros requisitos operativos inmediatos. Los datos que se muestran en esta página se generan a partir de los servicios web basados en REST. Si usa un script o un dispositivo de red para tener acceso a estos datos, debe ir directamente al [servicio Web](office-365-ip-web-service.md) .
 
@@ -65,4 +65,4 @@ Notas sobre esta tabla:
 
 - El centro de seguridad y cumplimiento (SCC) proporciona compatibilidad con Azure ExpressRoute para Office 365. Lo mismo se aplica a muchas características expuestas a través del SCC, como la creación de informes, la auditoría, la exhibición avanzada de documentos electrónicos, la DLP unificada y el gobierno de datos. Dos características específicas, la importación de PST y la exportación de exhibición de documentos electrónicos, actualmente no admiten Azure ExpressRoute con solo filtros de ruta de Office 365 debido a su dependencia del almacenamiento de blobs de Azure. Para usar estas características, necesitará conectividad independiente a Azure BLOB Storage mediante las opciones de conectividad de Azure que se puedan admitir, que incluyen conectividad a Internet o Azure ExpressRoute con filtros de ruta pública de Azure. Debe evaluar el establecimiento de dicha conectividad para ambas características. El equipo de protección de la información de Office 365 conoce esta limitación y está trabajando activamente para permitir que Azure ExpressRoute para Office 365 se limite a los filtros de ruta de Office 365 para ambas características.
 
-- Hay puntos de conexión opcionales adicionales para Office 365 proPlus que no se muestran y que no son necesarios para que los usuarios inicien aplicaciones de Office 365 proPlus y editen documentos. Los puntos de conexión opcionales se hospedan en centros de datos de Microsoft y no procesan, transmiten ni almacenan datos de clientes. Se recomienda que las conexiones de usuario con estos extremos se dirijan al perímetro de salida de Internet predeterminado.
+- Hay puntos de conexión opcionales adicionales para Office 365 ProPlus que no se muestran y que no son necesarios para que los usuarios inicien aplicaciones de Office 365 ProPlus y editen documentos. Los puntos de conexión opcionales se hospedan en centros de datos de Microsoft y no procesan, transmiten ni almacenan datos de clientes. Se recomienda que las conexiones de usuario con estos extremos se dirijan al perímetro de salida de Internet predeterminado.

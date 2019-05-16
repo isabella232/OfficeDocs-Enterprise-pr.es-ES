@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumen: Configure la infraestructura de Microsoft Azure para que hospede la autenticación federada de alta disponibilidad para Office 365.'
-ms.openlocfilehash: ec7aa71b9782dd568f85b78fb3e5110e32e2e23e
-ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
+ms.openlocfilehash: 8b6511a3ce23a352b59a0e9a89f8f9901897391f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33867715"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067506"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure
 
@@ -39,7 +39,7 @@ Azure debe estar aprovisionado con estos componentes básicos:
 
 Antes de empezar a configurar los componentes de Azure, rellene las tablas siguientes. Para ayudarle en los procedimientos de configuración de Azure, imprima esta sección y anote la información necesaria, o bien copie esta sección en un documento y rellénelo. Para la configuración de la red virtual, rellene la tabla V.
   
-|**Elemento**|**Opción de configuración**|**Descripción**|**Valor**|
+|**Item**|**Opción de configuración**|**Descripción**|**Valor**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Nombre de VNET  <br/> |Nombre que se asignará a la red virtual (por ejemplo, FedAuthNet).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Ubicación de la VNET  <br/> |Centro de datos regional de Azure que contendrá la red virtual.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,7 +61,7 @@ Vea [calculadora de espacio de direcciones para subredes de puerta de enlace de 
   
 Trabaje con su departamento de TI para determinar estos espacios de direcciones a partir del espacio de direcciones de la red virtual.
   
-|**Elemento**|**Nombre de la subred**|**Espacio de direcciones de la subred**|**Finalidad**|
+|**Item**|**Nombre de la subred**|**Espacio de direcciones de la subred**|**Finalidad**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |La subred usada por el controlador de dominio de Active Directory Domain Services (AD DS) y las máquinas virtuales (VM) del servidor de dirSync.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales de AD FS.  <br/> |
@@ -72,7 +72,7 @@ Trabaje con su departamento de TI para determinar estos espacios de direcciones 
   
 Ahora, rellene la Tabla I para las direcciones IP estáticas asignadas a las máquinas virtuales y a las instancias del equilibrador de carga.
   
-|**Elemento**|**Objetivo**|**Dirección IP en la subred**|**Valor**|
+|**Item**|**Objetivo**|**Dirección IP en la subred**|**Valor**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Dirección IP estática del primer controlador de dominio  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Dirección IP estática del segundo controlador de dominio  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -87,7 +87,7 @@ Ahora, rellene la Tabla I para las direcciones IP estáticas asignadas a las má
   
 Para dos servidores de Sistema de nombres de dominio (DNS) en la red local que quiera usar al configurar de manera inicial los controladores de dominio en la red virtual, rellene la Tabla D. Colabore con su departamento de TI para determinar esta lista.
   
-|**Elemento**|**Nombre descriptivo del servidor DNS**|**Dirección IP del servidor DNS**|
+|**Item**|**Nombre descriptivo del servidor DNS**|**Dirección IP del servidor DNS**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |

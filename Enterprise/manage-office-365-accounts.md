@@ -1,10 +1,9 @@
 ---
 title: Herramientas para administrar cuentas de Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 5/3/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
@@ -19,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Obtenga información sobre qué herramientas usar para administrar los usuarios de Office 365 y cómo lo que puede usar depende de cómo administre las identidades de usuario. '
-ms.openlocfilehash: fb98c7103aaadb16ac6f7d459a2595022110bb94
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a9bd7cd75902d2b3b3ff17572849fb1a46053eb5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487076"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067196"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Herramientas para administrar cuentas de Office 365
 
@@ -75,7 +74,7 @@ A la hora de decidir la forma en que su organización va a crear y administrar c
     > [!IMPORTANT]
     > La creación de cuentas en Office 365 sin asignar una licencia (en SharePoint Online, por ejemplo) significa que el propietario de la cuenta puede ver el portal de Office 365, pero no puede tener acceso a ninguno de los servicios de la suscripción de la compañía. Después de asignar una ubicación y la licencia, la cuenta se replica en el servicio o los servicios que asignó. El usuario puede iniciar sesión en su cuenta y usar los servicios que se le asignaron. 
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Integración de Office 365 con entornos locales](office-365-integration.md)
   

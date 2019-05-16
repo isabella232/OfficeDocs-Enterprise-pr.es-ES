@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 5/10/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: ¿Necesita conocer los pasos que debe seguir para identificar y corregir los intervalos, los bloqueos y el rendimiento lento entre SharePoint Online, OneDrive para la empresa, Exchange online o Skype empresarial online, y el equipo cliente? Antes de llamar al soporte técnico, este artículo puede ayudarle a solucionar problemas de rendimiento de Office 365 e incluso a solucionar algunos de los problemas más comunes.
-ms.openlocfilehash: 5d7201174d33afab3e85714202aa637a835b7776
-ms.sourcegitcommit: f506c95807a681cd661a99b1a8768c5c657dc126
+ms.openlocfilehash: afa24144c1595fd55477e45f4368d99bd4274aca
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33881538"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069586"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plan de solución de problemas de rendimiento para Office 365
 

@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 9/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: En este artículo se proporcionan vínculos para administradores de sistemas que quieren planear los requisitos de ancho de banda de red o que necesitan mejorar el rendimiento de Skype empresarial online.
-ms.openlocfilehash: f2357491b61c6715491577925e8c952a7f2ea717
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9475f94678836842b6e6cf3b49084b4a6de3c77d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492006"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070396"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Optimización del rendimiento de Skype Empresarial Online
 

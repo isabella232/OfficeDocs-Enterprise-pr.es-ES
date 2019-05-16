@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/20/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Resumen: configure la autenticación multifactor mediante mensajes de texto enviados a un smartphone en un entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 091b82132b407cfd25b18c3ba8e424e29df58910
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 2c53d7fa9239395e28d68487dd0ccea8cc57efb7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741226"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069956"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticación multifactor para el entorno de desarrollo y pruebas de Office 365
 
@@ -38,7 +38,7 @@ Existen dos fases para configurar la autenticación multifactor para Office 365 
 2. Habilitar y probar la autenticación multifactor para la cuenta Usuario 2.
     
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la guía del entorno de pruebas de Office 365.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y pruebas ligero o de una empresa simulada de Office 365
 
@@ -103,11 +103,11 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
 
 [Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Entorno de desarrollo y prueba de la configuración básica](base-configuration-dev-test-environment.md)
+[Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
   
-[Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
+[Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 
-[Plan de Multi-Factor Authentication para implementaciones de Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Planeación de multi-factor Authentication para implementaciones de Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

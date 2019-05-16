@@ -1,9 +1,9 @@
 ---
 title: Integración de Azure con Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Su suscripción a Office 365 incluye una suscripción a Azure AD. Integre Office 365 con Azure AD si desea la sincronización de contraseña o el inicio de sesión único con el entorno local.
-ms.openlocfilehash: 0ad1c064d2ffe29f0f06e1368cd728d8b3bd630b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 51ed71aa94bc5317d9b5ff76d0aa6af2762c429e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490146"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068226"
 ---
 # <a name="azure-integration-with-office-365"></a>Integración de Azure con Office 365
 
@@ -48,7 +48,7 @@ Con la suscripción gratuita, puede sincronizar con directorios locales, configu
   
 Si desea funcionalidad de AD DS mejorada, sincronización bidireccional y otras capacidades de administración, puede actualizar su suscripción gratuita a una suscripción Premium de pago. Para obtener información detallada, consulte [Azure Active Directory Editions](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
   
-Para obtener más información sobre Office 365 y Azure AD, consulte [understandIng office 365 Identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
+Para obtener más información sobre Office 365 y Azure AD, consulte [Understanding office 365 Identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
   
 ## <a name="extend-the-capabilities-of-your-office-365-tenant"></a>Ampliar las capacidades de su inquilino de Office 365
 

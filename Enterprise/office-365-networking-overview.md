@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 9/12/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Se explica por qué es importante la optimización de red para los servicios SaaS, el objetivo de la red de Office 365 y cómo SaaS requiere distintas redes de otras cargas de trabajo.
-ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 88fde9a142b5394b642a46c19da6979c93fe8f9e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491916"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069626"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Introducción a la conectividad de red de Office 365
 

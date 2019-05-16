@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Resumen: configure y demuestre la Exhibición avanzada de documentos electrónicos de Office 365 en el entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: df506b6637d28387fae7587e081251fd81e1ce1a
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491226"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068346"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>eDiscovery avanzado para el entorno de desarrollo y pruebas de Office 365
 
@@ -30,7 +30,7 @@ Office 365 Advanced eDiscovery le permite encontrar y analizar rápidamente info
 Con las instrucciones de este artículo, puede crear un pequeño conjunto de datos para una disputa contractual ficticia y analizarlo con la exhibición avanzada de documentos electrónicos.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del laboratorio de pruebas de Office 365.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de Office 365.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: Crear el entorno de desarrollo y prueba de Office 365
 
@@ -91,7 +91,7 @@ En este procedimiento, se crean dos documentos de Word que posteriormente podrá
   
 1. En la página **Office**, haga clic en **Iniciar sesión**, inicie sesión con las credenciales de su cuenta de administrador global.
     
-2. en una pestaña nueva, obtenga acceso a la dirección URL de su sitio de SharePoint de producción: **https://** <fictional organization name> **. sharepoint.com/sites/production**
+2. En una pestaña nueva, obtenga acceso a la dirección URL de su sitio de SharePoint de producción: **https://** <fictional organization name> **. SharePoint.com/sites/Production**
     
 3. En la pestaña **Colección de sitios de producción**, en **Documentos**, haga clic en **Nuevo > Documento de Word**.
     
@@ -177,7 +177,7 @@ En este procedimiento, creará un nuevo caso de exhibición avanzada de document
     
 9. En la página **Configuración**, en **Temas**, escriba **3** en **Número máximo de temas**.
     
-10. Haga clic en **Analizar** y espere a que el análisis se complete. Debería ver una serie de gráficos circulares con el análisis de la población objetivo, los documentos, los correos electrónicos y los datos adjuntos. Para obtener más información, consulte [viewIng Analyze Results](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e).
+10. Haga clic en **Analizar** y espere a que el análisis se complete. Debería ver una serie de gráficos circulares con el análisis de la población objetivo, los documentos, los correos electrónicos y los datos adjuntos. Para obtener más información, consulte [Viewing Analyze Results](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e).
     
 Ahora puede utilizar este entorno para crear nuevo contenido, nuevas búsquedas y casos, además de experimentar con la exhibición avanzada de documentos electrónicos en Office 365.
   

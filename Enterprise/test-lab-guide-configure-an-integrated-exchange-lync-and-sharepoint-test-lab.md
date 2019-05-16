@@ -4,7 +4,7 @@ ms.author: jhendr
 author: JoanneHendrickson
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 'Resumen: obtenga información sobre cómo crear un entorno de pruebas que contenga un servidor con Exchange Server 2013, un servidor con Lync Server 2013 y un servidor con SharePoint Server 2013.'
-ms.openlocfilehash: b5d4527c063b0bfbac205007a9642b8edafd813b
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 58c7d5ad701471e87c5e6600af2f9a36ac374448
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897053"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070406"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guía del laboratorio de pruebas: Configurar un laboratorio de pruebas integrado de Exchange, Lync y SharePoint
 
@@ -54,7 +54,7 @@ Para obtener información sobre cómo configurar este entorno de pruebas en Hype
   
 ## <a name="download-the-test-lab-guide"></a>Descargar la guía de entorno de pruebas
 
-[Guía del laboratorio de pruebas: configurar un Exchange integrada, Lync y laboratorio de pruebas de SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
+[Guía de entorno de pruebas: Configurar un entorno de pruebas integrado de Exchange, Lync y SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
 ## <a name="see-also"></a>Consulte también
 

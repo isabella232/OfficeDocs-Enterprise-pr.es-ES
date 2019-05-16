@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/14/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Para comprender correctamente el tráfico de enrutamiento a Office 365 mediante Azure ExpressRoute, necesitará una sólida visión de los requisitos de enrutamiento de ExpressRoute principales y los circuitos y dominios de enrutamiento de ExpressRoute. Estos diseñan los conceptos básicos para usar ExpressRoute en los que se basarán los clientes de Office 365.
-ms.openlocfilehash: 83c3801e7886bf44500f1dc0b185782e2a7f3bc1
-ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
+ms.openlocfilehash: 60277e9d9f2a5b2fc92465b57b5aa08148b604f7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31957721"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071006"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Enrutamiento con ExpressRoute para Office 365
 
@@ -35,7 +35,7 @@ Algunos de los elementos más importantes de los artículos anteriores que debe 
 
 - Hay una asignación 1:1 entre un circuito ExpressRoute y una clave s del cliente.
 
-- Cada circuito puede admitir hasta tres relaciones de emparejamiento independientes (emparejamiento público de Azure, emparejamiento privado de Azure y emparejamiento de Microsoft); Office 365 requiere emparejamiento de Microsoft.
+- Cada circuito puede admitir 2 relaciones de emparejamiento independientes (emparejamiento privado de Azure y emparejamiento de Microsoft); Office 365 requiere emparejamiento de Microsoft.
 
 - Cada circuito tiene un ancho de banda fijo que se comparte entre todas las relaciones de emparejamiento.
 
@@ -57,7 +57,7 @@ A continuación se muestran escenarios en los que se iniciarán las comunicacion
 
 - ADFS durante la validación de contraseñas para el inicio de sesión.
 
-- [ImplementaCiones híbridas de Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
+- [Implementaciones híbridas de Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
 
 - [Búsqueda híbrida federada de SharePoint](https://technet.microsoft.com/library/dn197174.aspx).
 
@@ -69,7 +69,7 @@ A continuación se muestran escenarios en los que se iniciarán las comunicacion
 
 Para que Microsoft vuelva a enrutarse a la red para estos flujos de tráfico bidireccional, las rutas BGP a los dispositivos locales deben compartirse con Microsoft. Al anunciar prefijos de ruta a Microsoft a través de ExpressRoute, debe seguir estos procedimientos recomendados:
 
-1) No anuncie el mismo prefijo de ruta de dirección IP pública a la Internet pública y a través de ExpressRoute. Se recomienda encarecidamente que los anuncios de preFijo de ruta BGP IP para Microsoft sobre ExpressRoute provienen de un intervalo que no se anuncia a Internet en absoluto. Si no es posible lograr esto debido al espacio de direcciones IP disponible, es esencial que anuncie un intervalo más específico sobre ExpressRoute que los circuitos de Internet.
+1) No anuncie el mismo prefijo de ruta de dirección IP pública a la Internet pública y a través de ExpressRoute. Se recomienda encarecidamente que los anuncios de prefijo de ruta BGP IP para Microsoft sobre ExpressRoute provienen de un intervalo que no se anuncia a Internet en absoluto. Si no es posible lograr esto debido al espacio de direcciones IP disponible, es esencial que anuncie un intervalo más específico sobre ExpressRoute que los circuitos de Internet.
 
 2) Use grupos de direcciones IP NAT independientes por circuito de ExpressRoute y sepárelos con los de los circuitos de Internet.
 
@@ -82,7 +82,7 @@ Cuando configure una relación de emparejamiento con el dominio de enrutamiento 
 Otras aplicaciones, como Office 365 video, es una aplicación de Office 365; sin embargo, Office 365 video consta de tres componentes diferentes, el portal, el servicio de streaming y la red de entrega de contenido. El portal se encuentra dentro de SharePoint Online, el servicio de streaming de Azure Media Services y la red de entrega de contenido reside en la red CDN de Azure. En la tabla siguiente se describen estos componentes.
   
 | |
-|**Componente**|**Aplicación subyacente**|**¿Se incluye en la comunidad BGP de SharePoint Online?**|**Uso**|
+|**Componente**|**Aplicación subyacente**|**¿Se incluye en la comunidad BGP de SharePoint Online?**|**Finalidad**|
 |:-----|:-----|:-----|:-----|
 |Portal de vídeo de Office 365  <br/> |SharePoint Online  <br/> |Sí  <br/> |Configuración, cargar  <br/> |
 |Servicio de streaming de vídeo de Office 365  <br/> |Servicios multimedia de Azure  <br/> |No  <br/> |Servicio de streaming, usado en el caso de que el vídeo no esté disponible en la red CDN  <br/> |
@@ -96,8 +96,8 @@ En esta tabla se muestran los FQDN comodín que se anuncian tanto a Internet com
 
 |**Dominio comodín anunciado para los circuitos de ExpressRoute e Internet**|**Sub-FQDN anunciado solo para circuitos de Internet**|
 |:-----|:-----|
-|\*. microsoftonline.com  <br/> |click.email.microsoftonline.com  <br/> Portal.microsoftonline.com  <br/> provisioningapi.microsoftonline.com  <br/> adminwebservice.microsoftonline.com  <br/> |
-|\*. officeapps.Live.com  <br/> |nexusRules.officeapps.live.com  <br/> Nexus.officeapps.Live.com  <br/> ODC.officeapps.Live.com  <br/> ODC.officeapps.Live.com  <br/> CDN.odc.officeapps.Live.com  <br/> OLS.officeapps.Live.com  <br/> ocsredir.officeapps.Live.com  <br/> ocws.officeapps.Live.com  <br/> OCSA.officeapps.Live.com  <br/> |
+|\*. microsoftonline.com  <br/> |click.email.microsoftonline.com  <br/> portal.microsoftonline.com  <br/> provisioningapi.microsoftonline.com  <br/> adminwebservice.microsoftonline.com  <br/> |
+|\*. officeapps.live.com  <br/> |nexusRules.officeapps.live.com  <br/> nexus.officeapps.live.com  <br/> odc.officeapps.live.com  <br/> odc.officeapps.live.com  <br/> cdn.odc.officeapps.live.com  <br/> ols.officeapps.live.com  <br/> ocsredir.officeapps.live.com  <br/> ocws.officeapps.live.com  <br/> ocsa.officeapps.live.com  <br/> |
 
 Por lo general, los archivos PAC están diseñados para enviar solicitudes de red a los extremos anunciados de ExpressRoute directamente al circuito y a todas las demás solicitudes de red al proxy. Si está configurando un archivo PAC como este, Redacte el archivo PAC en el siguiente orden:
   
@@ -111,11 +111,11 @@ En esta tabla se muestran los dominios comodín que se anuncian a los circuitos 
 
 |**Dominio comodín anunciado solo para circuitos de Internet**|**Sub-FQDN anunciado para los circuitos de ExpressRoute e Internet**|
 |:-----|:-----|
-|\*. Office.com  <br/> |\*. Outlook.Office.com  <br/> Home.Office.com  <br/> Outlook.Office.com  <br/> Portal.Office.com  <br/> www.Office.com  <br/> |
-|\*. Office.net  <br/> |Agent.Office.net  <br/> |
-|\*. Office365.com  <br/> |Outlook.Office365.com  <br/> smtp.office365.com  <br/> |
-|\*. Outlook.com  <br/> |\*. Protection.Outlook.com  <br/> \*. mail.Protection.Outlook.com  <br/> Autodiscover-\<tenant\>. Outlook.com  <br/> |
-|\*. Windows.net  <br/> |login.Windows.net  <br/> |
+|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
+|\*. office.net  <br/> |agent.office.net  <br/> |
+|\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
+|\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> Autodiscover-\<tenant\>. Outlook.com  <br/> |
+|\*. windows.net  <br/> |login.windows.net  <br/> |
 
 ## <a name="routing-office-365-traffic-over-the-internet-and-expressroute"></a>Enrutamiento de tráfico de Office 365 a través de Internet y ExpressRoute
 
@@ -151,13 +151,13 @@ Los FQDN de mayor volumen para Exchange Online, SharePoint Online y Skype empres
   
 ![Red perimetral del cliente de ExpressRoute](media/dab8cc42-b1d6-46d6-b2f6-d70f9e16d5ea.png)
   
-- Outlook.Office365.com, Outlook.Office.com
+- outlook.office365.com, outlook.office.com
 
-- \<tenant-nombre\>. sharepoint.com, \<tenant-name\>-my.sharepoint.com, \<tenant-name\>-\<app\>. sharepoint.com
+- \<tenant-nombre\>. SharePoint.com, \<tenant-name\>-My.SharePoint.com, \<tenant-name\>-\<APP\>. SharePoint.com
 
 - \*. Lync.com junto con los intervalos IP para el tráfico no TCP
 
-- \*Broadcast.officeapps.Live.com, \*Excel.officeapps.Live.com, \*OneNote.officeapps.Live.com, \*PowerPoint.officeapps.Live.com, \*View.officeapps.Live.com, \*Visio.officeapps.Live.com, \* Word-Edit.officeapps.Live.com, \*Word-View.officeapps.Live.com, Office.Live.com
+- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*PowerPoint.officeapps.Live.com, \*View.officeapps.Live.com, \*Visio.officeapps.Live.com, \* word-edit.officeapps.live.com, \*word-view.officeapps.live.com, Office.Live.com
 
 Obtenga más información sobre la [implementación y la administración de la configuración de proxy en Windows 8](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx) y [Asegúrese de que Office 365 no está limitado por el proxy](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx).
   
@@ -254,6 +254,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/erorout
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)

@@ -5,7 +5,7 @@ ms.reviewer: smithre4
 author: MSFTTracyP
 manager: laurawi
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras. Está disponible para implementaciones híbridas de Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial. Este artículo contiene vínculos a documentos relacionados sobre requisitos previos, la configuración/deshabilitación de la autenticación moderna y para algunos de los clientes relacionados (por ejemplo, Outlook y clientes de Skype) información.
-ms.openlocfilehash: d8d06a3e2d178f68bcb130228ed1834f4eb878f8
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 17c61b028aacd5abaf72450e197475fa2c0a2589
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491406"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067206"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para su uso con servidores locales de Skype empresarial y Exchange
 
@@ -75,7 +75,7 @@ Esto también significa que aunque sus entornos de Exchange Server y Skype empre
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>Comprobar el estado de autenticación moderna del entorno local
 <a name="BKMK_CheckStatus"> </a>
 
-Debido a que la autenticación moderna cambia el servidor de autorización usado cuando los servicios aprovechan OAuth o S2S, necesita saber si la autenticación moderna está habilitada o desActivada para su entorno de Skype empresarial y Exchange. Puede comprobar el estado de los servidores de Exchange o Skype empresarial, local, mediante la ejecución del `Get-CSOAuthConfiguration` comando en PowerShell. Si el comando devuelve una propiedad ' OAuthServers ' vacía, la autenticación moderna está deshabilitada.
+Debido a que la autenticación moderna cambia el servidor de autorización usado cuando los servicios aprovechan OAuth o S2S, necesita saber si la autenticación moderna está habilitada o desactivada para su entorno de Skype empresarial y Exchange. Puede comprobar el estado de los servidores de Exchange o Skype empresarial, local, mediante la ejecución del `Get-CSOAuthConfiguration` comando en PowerShell. Si el comando devuelve una propiedad ' OAuthServers ' vacía, la autenticación moderna está deshabilitada.
   
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>¿Cumple los requisitos previos de autenticación moderna?
 

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 2/2/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010 y SharePoint Server 2010 están llegando al final del soporte técnico. Use este artículo como guía para actualizar a SharePoint Online o a una versión más reciente de SharePoint Server local.
-ms.openlocfilehash: c88c6010aa398d8076fce59976bf6f5c0aa1a743
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 18522f9abb1514e14a172c6f2d661591826dff22
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492051"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070686"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
@@ -85,7 +85,7 @@ Al migrar a Office 365, el cambio único tendrá un costo más pesado en el tiem
   
 ### <a name="migrate-to-sharepoint-online"></a>Migrar a SharePoint Online
 
-Asegúrese de que SharePoint Online ofrece todas las características que necesita mediante la revisión de la descripción del servicio asociado. Este es el vínculo a todas las deScripciones del servicio Office 365:
+Asegúrese de que SharePoint Online ofrece todas las características que necesita mediante la revisión de la descripción del servicio asociado. Este es el vínculo a todas las descripciones del servicio Office 365:
   
 [Descripciones del servicio de Office 365](https://go.microsoft.com/fwlink/?linkid=272060)
   
@@ -149,15 +149,15 @@ Comience por comparar los requisitos de hardware y software. Si no cumple los re
   
 - **Requisitos de hardware y software para**: 
     
-    [](https://go.microsoft.com/fwlink/?linkid=843204) | sharepoint server 2010 sharepoint[server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [](https://go.microsoft.com/fwlink/?linkid=843204) | SharePoint Server 2010 SharePoint[Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - Límites **de software para**: 
     
-    [](https://go.microsoft.com/fwlink/?linkid=843247) | sharepoint server 2010 sharepoint[server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [](https://go.microsoft.com/fwlink/?linkid=843247) | SharePoint Server 2010 SharePoint[Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **Información general sobre el proceso de actualización para**: 
     
-    [](https://go.microsoft.com/fwlink/?linkid=843251) | sharepoint server 2010 sharepoint[server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [](https://go.microsoft.com/fwlink/?linkid=843251) | SharePoint Server 2010 SharePoint[Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Crear una solución híbrida de SharePoint entre SharePoint Online y SharePoint Server local
 

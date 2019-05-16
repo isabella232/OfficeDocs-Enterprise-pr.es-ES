@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/13/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: ExpressRoute para Office 365 ofrece una ruta de acceso alternativa para llegar a varios servicios de Office 365 sin necesidad de que todo el tráfico llegue a Internet. Aunque la conexión a Internet con Office 365 todavía es necesaria, las rutas específicas que Microsoft anuncia a través de BGP a la red hacen que se prefiera el circuito de ExpressRoute directo a menos que haya otras configuraciones en la red. Las tres áreas comunes que puede configurar para administrar este enrutamiento incluyen el filtrado de prefijos, la seguridad y el cumplimiento.
-ms.openlocfilehash: 5345c4067f4ecf9b1b1bc1a0ad20d6e1f5273f65
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 08c991deaaf1b8fa1e17addbed8a23cbfcf37b87
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487736"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067136"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Administración de la conectividad de ExpressRoute para Office 365
 
@@ -29,7 +29,7 @@ ExpressRoute para Office 365 ofrece una ruta de acceso alternativa para llegar a
 > [!NOTE]
 > Microsoft cambió el modo en que se revisó el dominio de enrutamiento de emparejamiento de Microsoft para Azure ExpressRoute. A partir del 31 de julio de 2017, todos los clientes de Azure ExpressRoute pueden habilitar el emparejamiento de Microsoft directamente desde la consola de administración de Azure o a través de PowerShell. Después de habilitar el emparejamiento de Microsoft, cualquier cliente puede crear filtros de ruta para recibir anuncios de ruta BGP para las aplicaciones de participación del cliente de Dynamics 365 (anteriormente conocidas como CRM Online). Los clientes que necesiten Azure ExpressRoute para Office 365 deben obtener una revisión de Microsoft antes de que puedan crear filtros de ruta para Office 365. Póngase en contacto con su equipo de cuentas de Microsoft para obtener información sobre cómo solicitar una revisión para habilitar Office 365 ExpressRoute. Las suscripciones no autorizadas que intenten crear filtros de ruta para Office 365 recibirán un [mensaje de error](https://support.microsoft.com/kb/3181709)
   
-## <a name="prefix-filtering"></a>Filtrado de preFijos
+## <a name="prefix-filtering"></a>Filtrado de prefijos
 
 Microsoft recomienda que los clientes acepten todas las rutas BGP, tal y como se anuncian en Microsoft, las rutas que se han sometido a un proceso de revisión y validación rigurosos eliminando los beneficios de los controles. ExpressRoute ofrece de forma nativa los controles recomendados, como la propiedad del prefijo de IP, la integridad y la escala, sin filtrado de ruta entrante en el lado del cliente.
   
@@ -80,7 +80,7 @@ Hay varios escenarios opcionales que requieren que Microsoft inicie conexiones a
   
 - ADFS durante la validación de contraseñas para el inicio de sesión.
 
-- [ImplementaCiones híbridas de Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
+- [Implementaciones híbridas de Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
 
 - Correo de un inquilino de Exchange Online a un host local.
 
@@ -106,7 +106,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/managee
 
 [Redes de entrega de contenido](content-delivery-networks.md)
   
-[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

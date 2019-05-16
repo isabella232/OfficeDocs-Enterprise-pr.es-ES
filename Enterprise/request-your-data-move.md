@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Los clientes de Office 365 existentes deberán enviar una solicitud antes de la fecha límite de su país para que los datos del cliente de los servicios de Office 365 participantes se muevan a su nueva geografía.
-ms.openlocfilehash: 2307cb7d197397044578f9af3037914c83a1e220
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650083"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071016"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -36,7 +36,7 @@ No podemos aceptar las solicitudes que se moverán después de la fecha límite 
 |Australia, Nueva Zelanda, Fiji  <br/> |1 de agosto de 2016  <br/> |31 de octubre de 2016  <br/> |
 |India  <br/> |1 de agosto de 2016  <br/> |31 de octubre de 2016  <br/> |
 |Canadá  <br/> |1 de agosto de 2016  <br/> |31 de octubre de 2016  <br/> |
-|United Kingdom  <br/> |15 de marzo de 2017  <br/> |15 de septiembre de 2017  <br/> |
+|Reino Unido  <br/> |15 de marzo de 2017  <br/> |15 de septiembre de 2017  <br/> |
 |Corea del sur  <br/> |1 de mayo de 2017  <br/> |31 de octubre de 2017  <br/> |
 |Francia  <br/> |14 de marzo de 2018  <br/> |15 de septiembre de 2018  <br/> |
 |Emiratos Árabes Unidos  <br/> |Plane  <br/> |Plane  <br/> |
@@ -113,7 +113,7 @@ Si los usuarios tienen un dispositivo móvil con el servidor de Exchange configu
 
 [Mover datos básicos a un nuevo Office 365 Datacenter GEOS](moving-data-to-new-datacenter-geos.md)
 
-[Preguntas frecuentes generales sobre movimiento de datos](data-move-faq.md)
+[Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.md)
 
 [Nueva GEOS de centro de recursos para Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

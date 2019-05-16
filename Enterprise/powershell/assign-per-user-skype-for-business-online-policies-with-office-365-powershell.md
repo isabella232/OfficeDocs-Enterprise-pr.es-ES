@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Resumen: Use Office 365 PowerShell para asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.'
-ms.openlocfilehash: 7f819b619c5b3607c98c10791fe30c3944e862a4
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3c6c869874329d7efb6d8c417c797c9f81df6bf8
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492026"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069296"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Asignar cada usuario Skype para las políticas de negocios en línea con Office 365 PowerShell
 
@@ -43,7 +43,7 @@ Cuando se le solicite, escriba el nombre y la contraseña de la cuenta de admini
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>Actualización de la configuración de comunicación externa para una cuenta de usuario
 
-SuPongamos que desea cambiar la configuración de comunicación externa en una cuenta de usuario. Por ejemplo, desea permitir que Alex se comunique con los usuarios federados (EnableFederationAccess es igual a true) pero no con los usuarios de Windows Live (EnablePublicCloudAccess es igual a false). Para ello, debe hacer dos cosas:
+Supongamos que desea cambiar la configuración de comunicación externa en una cuenta de usuario. Por ejemplo, desea permitir que Alex se comunique con los usuarios federados (EnableFederationAccess es igual a true) pero no con los usuarios de Windows Live (EnablePublicCloudAccess es igual a false). Para ello, debe hacer dos cosas:
   
 1. Buscar una directiva de acceso externo que cumpla nuestros criterios.
     
@@ -105,7 +105,7 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 Este comando establece el nombre de la Directiva de acceso externo asignada a Alex en un valor nulo ($Null). Null significa "Nothing". Es decir, no se asigna ninguna directiva de acceso externo a Alex. Cuando no se asigna ninguna directiva de acceso externo a un usuario, dicho usuario se administra mediante la directiva global.
   
-Para deshabilitar una cuenta de usuario con Windows PowerShell, use los cmdlets de Azure Active Directory para quitar la licencia de Skype empresarial online de Alex. Para obtener más información, vea desHabilitar el [acceso a servicios con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
+Para deshabilitar una cuenta de usuario con Windows PowerShell, use los cmdlets de Azure Active Directory para quitar la licencia de Skype empresarial online de Alex. Para obtener más información, vea deshabilitar el [acceso a servicios con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
   
 ## <a name="see-also"></a>Vea también
 

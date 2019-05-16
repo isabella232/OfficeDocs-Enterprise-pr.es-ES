@@ -3,7 +3,7 @@ title: Aplicaciones integradas y Azure AD para administradores de Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Obtenga información sobre cómo las aplicaciones integradas de O365 se registran y administran en Azure AD
-ms.openlocfilehash: f4e2061c952a09c4e23aa50bd294b7391e1ca3e6
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 01bd932ed12e040a0e6dae517d7b4fd360b5da80
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487127"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067256"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Aplicaciones integradas y Azure AD para administradores de Office 365
 

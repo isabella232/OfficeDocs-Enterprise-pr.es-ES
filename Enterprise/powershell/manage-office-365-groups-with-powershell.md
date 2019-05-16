@@ -3,7 +3,7 @@ title: Administrar grupos de Office 365 con PowerShell
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Obtenga información sobre cómo realizar tareas de administración comunes para los grupos de Office 365 en Microsoft PowerShell.
-ms.openlocfilehash: 6d7841595315507b0b7f28f6b86f9349705f1d8b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b2cd536630f80dec66344162669b0bbe1cf3b4cd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491776"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069026"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Administrar grupos de Office 365 con PowerShell
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/01/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: Use Office 365 PowerShell para administrar grupos de sitio de SharePoint Online.'
-ms.openlocfilehash: 04df780732913eaaf80d9bca64db5174089ed80b
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: a128823ba125342bd1d209ac8a2bf28334da866d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573914"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068866"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Administrar grupos de sitio de SharePoint Online con PowerShell de Office 365
 
@@ -35,7 +35,7 @@ Los procedimientos de este artículo requieren que se conecte a SharePoint Onlin
 
 El centro de administración de SharePoint Online tiene algunos métodos fáciles de usar para administrar grupos de sitio. Por ejemplo, supongamos que desea ver los grupos y los miembros del grupo para el `https://litwareinc.sharepoint.com/sites/finance` sitio. Haga lo siguiente:
 
-1. en el centro de administración de Microsoft 365, haga clic en**sitios**de **recursos** > y, a continuación, haga clic en la dirección URL del sitio.
+1. En el centro de administración de Microsoft 365, haga clic en**sitios**de **recursos** > y, a continuación, haga clic en la dirección URL del sitio.
 2. En el cuadro de diálogo Colección de sitios, haga clic en **Ir al sitio**.
 3. En la página del sitio, haga clic en el icono **Configuración** (situado en la esquina superior derecha de la página) y después en **Configuración del sitio**:<br/>
 ![Configuración del sitio de SharePoint Online](media/spo-site-settings.png)<br/>

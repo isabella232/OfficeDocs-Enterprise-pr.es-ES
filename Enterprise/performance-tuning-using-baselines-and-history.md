@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/31/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Hay sencillas formas de comprobar el rendimiento de la conexión entre Office 365 y su empresa que le permitirá establecer una línea de base aproximada de su conectividad. Conocer el historial de rendimiento de las conexiones de los equipos cliente puede ayudarle a detectar los problemas emergentes con anticipación, la identificación y la predicción de los problemas.
-ms.openlocfilehash: 328b8f66b86f2fc1880b3a9d65f4b9fd63b51d40
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a399cb0057e9cc62e180fea8a6d7b9dbf1993a5f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491886"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069526"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento
 
@@ -39,7 +39,7 @@ Si no se usa para trabajar en problemas de rendimiento, este artículo está dis
 Office 365 vive en una red de Microsoft de gran capacidad y dedicada que está en un monitoreo único y no solo por la automatización, sino por personas reales. Una parte de la función de mantenimiento de la nube de Office 365 es el refuerzo y la optimización del rendimiento cuando es posible. Como los clientes de la nube de Office 365 tienen que conectarse a través de Internet, hay un esfuerzo continuo para ajustar el rendimiento entre los servicios de Office 365 también. Las mejoras de rendimiento nunca se detienen realmente en la nube y hay una gran experiencia acumulada para mantener la nube en buen estado y de forma rápida. Si experimenta un problema de rendimiento que se conecta desde su ubicación a Office 365, es mejor no empezar y esperar un caso de soporte técnico. En su lugar, debe empezar a investigar el problema de "The Inside Out". Es decir, comience dentro de la red y trabaje de la manera que espera para Office 365. Antes de abrir un caso con soporte técnico de Office 365, puede recopilar datos y emprender acciones que exploren y puede resolver el problema.
   
 > [!IMPORTANT]
-> Tenga en cuenta los límites y la planeación de la capacidad en Office 365. Esta información le llevará por delante de la curva cuando intente resolver un problema de rendimiento. Este es un vínculo a la [Descripción del servicio de la plataforma 365 de Office](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx). Se trata de un concentrador central y todos los servicios ofrecidos por Office 365 tienen un vínculo que va a sus propias deScripciones de servicio desde aquí. Esto significa que, por ejemplo, si necesita ver los límites estándar de SharePoint Online, tendría que hacer clic en [Descripción del servicio de SharePoint Online](https://technet.microsoft.com/en-us/library/sharepoint-online-service-description.aspx) y buscar su [sección límites de SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=856113). 
+> Tenga en cuenta los límites y la planeación de la capacidad en Office 365. Esta información le llevará por delante de la curva cuando intente resolver un problema de rendimiento. Este es un vínculo a la [Descripción del servicio de la plataforma 365 de Office](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx). Se trata de un concentrador central y todos los servicios ofrecidos por Office 365 tienen un vínculo que va a sus propias descripciones de servicio desde aquí. Esto significa que, por ejemplo, si necesita ver los límites estándar de SharePoint Online, tendría que hacer clic en [Descripción del servicio de SharePoint Online](https://technet.microsoft.com/en-us/library/sharepoint-online-service-description.aspx) y buscar su [sección límites de SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=856113). 
   
 Asegúrese de que va a solucionar problemas con la comprensión de que el rendimiento es una escala deslizante, no es conseguir un valor ideal y mantenerlo de forma permanente (si cree que esto es así), las tareas ocasionales de gran ancho de banda, como la incorporación de un un gran número de usuarios o la realización de grandes migraciones de datos serán muy estresantes, así que planee el impacto en el rendimiento. Puede, y debe, tener una idea aproximada de sus objetivos de rendimiento, pero una gran cantidad de variables se reproducen en el rendimiento, por lo que el rendimiento varía. Esa es la naturaleza del rendimiento. 
   
@@ -97,7 +97,7 @@ Cuando los usuarios notifican un problema de rendimiento, hay mucha información
     
 - ¿Ha intentado las mismas acciones en otro equipo y veo el mismo comportamiento?
     
-- ReCorra los pasos que le dan el problema para que pueda escribir las acciones que se van a realizar.
+- Recorra los pasos que le dan el problema para que pueda escribir las acciones que se van a realizar.
     
 - ¿Cuál es el rendimiento en segundos o minutos?
     
@@ -214,13 +214,13 @@ Hay varias formas de tratar el punto de salida, en este caso, el servidor proxy.
     
 - \*. microsoftonline-p.com
     
-- \*. SharePoint.com
+- \*. sharepoint.com
     
-- \*. Outlook.com
+- \*. outlook.com
     
-- \*. Lync.com
+- \*. lync.com
     
-- osub.Microsoft.com
+- osub.microsoft.com
     
 Todos los usuarios deben tener permiso para acceder a estas direcciones sin ninguna interferencia de proxy o autenticación. En una red más pequeña, debe agregarlas a la lista de omisión de proxy en el explorador Web. 
   
@@ -246,13 +246,13 @@ Debe usar [PSPing](https://technet.microsoft.com/en-us/sysinternals/jj729731.asp
     
 2. Desplácese hasta la carpeta en la que está instalada la herramienta (en este caso, PsPing) y Pruebe estas direcciones URL de Office 365:
     
-  - psping portal.Office.com:443
+  - psping portal.office.com:443
     
-  - psping Microsoft-My.SharePoint.com:443
+  - psping microsoft-my.sharepoint.com:443
     
-  - psping Outlook.Office365.com:443
+  - psping outlook.office365.com:443
     
-  - psping www.Yammer.com:443
+  - psping www.yammer.com:443
     
     ![El comando PSPing que va a microsoft-my.sharepoint.com puerto 443.](media/3258f620-4513-4e82-95c9-06b387fc3a82.PNG)
   
@@ -276,13 +276,13 @@ Si no está familiarizado con la omisión de proxy y prefiere realizar todas las
     
     El comando puede tener un aspecto similar a cualquiera de estos ejemplos: 
     
-  - ping ourproxy.ourdomain.Industry.Business.com
+  - ping ourproxy.ourdomain.industry.business.com
     
   - ping 155.55.121.55
     
   - ping ourproxy
     
-  - psping ourproxy.ourdomain.Industry.Business.com:80
+  - psping ourproxy.ourdomain.industry.business.com:80
     
   - psping 155.55.121.55:80
     

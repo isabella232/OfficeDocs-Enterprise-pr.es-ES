@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contiene vínculos a información acerca de la planeación y las pruebas de red, y la migración a Office 365.
-ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a32a8584f1aada7e2b82451d520f72bb7577bc4b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487286"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069926"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planeación de la migración y la red para Office 365
 
@@ -47,7 +47,7 @@ Para calcular el ancho de banda, siga estos pasos:
   
 1. Evalúe el número de clientes que usarán cada salida de Internet. Permita que nuestro controlador de red multiterabit sea la mayor parte posible de la conexión. 
     
-2. DeTermine qué servicios y características de Office 365 estarán disponibles para que los usen los clientes. Probablemente tendrá grupos de personas con diferentes servicios o perfiles de uso.
+2. Determine qué servicios y características de Office 365 estarán disponibles para que los usen los clientes. Probablemente tendrá grupos de personas con diferentes servicios o perfiles de uso.
     
 3. Mida el uso de red para un grupo piloto de clientes. Asegúrese de que los clientes piloto son representativos de los diferentes perfiles de las personas de la organización, así como las distintas ubicaciones geográficas. Puede realizar una comprobación cruzada de sus resultados con respecto a nuestras antiguas calculadoras para [Exchange ](https://go.microsoft.com/fwlink/p/?LinkId=321550)y [Skype empresarial](https://go.microsoft.com/fwlink/p/?LinkId=321551) , o al [caso práctico](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) que hicimos en nuestra propia red. 
     
@@ -83,7 +83,7 @@ Profundizar un poco más en estos procedimientos recomendados para obtener más 
     
 3. Si tiene un gran número de calendarios y buzones compartidos, es posible que vea un aumento en el número de conexiones de Outlook a Exchange. Por ejemplo, el cliente de Outlook puede abrir hasta dos conexiones adicionales para cada calendario compartido en uso. En esta situación, asegúrese de que el proxy de salida puede controlar las conexiones, o bien, pase por alto el proxy para las conexiones a Office 365 para Outlook.
     
-4. DeTermine el número máximo de dispositivos admitidos para una dirección IP pública y cómo equilibrar la carga entre varias direcciones IP. Para obtener más información, consulte [Compatibilidad de NAT con Office 365](nat-support-with-office-365.md).
+4. Determine el número máximo de dispositivos admitidos para una dirección IP pública y cómo equilibrar la carga entre varias direcciones IP. Para obtener más información, consulte [Compatibilidad de NAT con Office 365](nat-support-with-office-365.md).
     
 5. Si va a inspeccionar las conexiones de salida de los equipos de la red, al omitir este filtrado a los dominios de Office 365 mejorará la conectividad y el rendimiento. Además, al omitir la inspección saliente, a menudo se elimina la necesidad de una sola salida de Internet y se habilita la salida de Internet local para las solicitudes de red dirigidas a Office 365.
     

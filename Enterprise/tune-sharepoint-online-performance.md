@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Contiene vínculos a otros artículos que le indican cómo mejorar el rendimiento de los tiempos de descarga de páginas de SharePoint Online.
-ms.openlocfilehash: 8c4f3c0545408457b2c0b5150ea062b9666f7e44
-ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
+ms.openlocfilehash: 2359ab11ffd4d03874c410b4c6e0b0e692c5e9cb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492940"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070676"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Ajustar el rendimiento de SharePoint Online
 
@@ -48,7 +48,7 @@ Use estos artículos para ajustar el rendimiento de SharePoint Online.
     
 - [Usar el elemento Web de búsqueda de contenido en lugar del elemento Web de consulta de contenido para mejorar el rendimiento en SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
     
-- [Capacity planning and load testing SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
+- [Planeamiento de capacidad y pruebas de carga en SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
     
 - [Diagnosticar problemas de rendimiento con SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
     

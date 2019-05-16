@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/19/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Obtenga información sobre cómo usar representaciones y sprites para mejorar el rendimiento de la imagen en los sitios web de SharePoint Online.
-ms.openlocfilehash: 313046dec885a38062635254699301bcf556d698
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b1210146aa3efb042937abeece4df0e62a579b94
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487391"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067376"
 ---
 # <a name="image-optimization-for-sharepoint-online"></a>Optimización de imágenes para SharePoint Online
 
@@ -75,6 +75,6 @@ Los pasos son relativamente sencillos, pero para que las imágenes usen las repr
   
 ## <a name="custom-cropping-with-image-renditions-in-sharepoint"></a>Recorte personalizado con representaciones de imágenes en SharePoint
 
-De forma predeterminada, se genera una representación de imágenes desde el centro de la imagen. Puede ajustar la representación de imagen para imágenes individuales al recortar la parte de la imagen que desea usar. Puede recortar las imágenes de manera individual, por representación. ReCortar las imágenes acelera la carga de páginas mediante la caché BLOB de SharePoint para crear una versión de la imagen para cada representación. De este modo, se reduce la carga del servidor, ya que sólo se cambia el tamaño de la imagen una vez y, a continuación, está lista para servir a los usuarios finales varias veces. Para obtener más información sobre Cómo recortar una representación de imágenes, vea reCortar [una representación de imágenes](https://go.microsoft.com/fwlink/p/?LinkId=525626).
+De forma predeterminada, se genera una representación de imágenes desde el centro de la imagen. Puede ajustar la representación de imagen para imágenes individuales al recortar la parte de la imagen que desea usar. Puede recortar las imágenes de manera individual, por representación. Recortar las imágenes acelera la carga de páginas mediante la caché BLOB de SharePoint para crear una versión de la imagen para cada representación. De este modo, se reduce la carga del servidor, ya que sólo se cambia el tamaño de la imagen una vez y, a continuación, está lista para servir a los usuarios finales varias veces. Para obtener más información sobre Cómo recortar una representación de imágenes, vea recortar [una representación de imágenes](https://go.microsoft.com/fwlink/p/?LinkId=525626).
   
 

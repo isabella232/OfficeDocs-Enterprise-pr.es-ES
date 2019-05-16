@@ -4,19 +4,19 @@ ms.author: dstrome
 author: dstrome
 manager: laurawi
 ms.date: 1/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: El 11 de abril de 2017, el 2007 del servidor de Exchange alcanzó el final del soporte técnico. Si todavía no ha iniciado la migración de Exchange 2007 a Office 365 o Exchange 2016, ahora es el momento de empezar la planeación.
-ms.openlocfilehash: 674de8904d03e024a8a75b945b5ef94319214f92
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 08796407e41fcc249da709267301de94fc359f36
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33488476"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067616"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de Exchange 2007
 
@@ -121,7 +121,7 @@ Para obtener más información sobre la migración total, eche un vistazo a:
 
 Una migración preconfigurada es una de las que tiene unos cientos o miles de buzones de correo que desea migrar a Office 365, necesita llevar una semana o más para completar la migración y no necesita ninguna de las características avanzadas de migración híbrida, como la información de disponibilidad compartida rmation.
   
-La migración preConfigurada es ideal para las organizaciones que necesitan más tiempo para migrar sus buzones de correo a Office 365, pero que todavía tienen previsto completar la migración en unas pocas semanas. Puede migrar los buzones de correo en "lotes" que le permiten controlar cuántos y qué buzones se migran en un momento dado. Es posible que tenga que realizar buzones de correo por lotes de usuarios en el mismo departamento, por ejemplo, para asegurarse de que todos se mueven al mismo tiempo. O bien, puede dejar buzones ejecutivos hasta el último lote. Al igual que con las migraciones de traslado, los usuarios tendrán que volver a crear sus perfiles de Outlook.
+La migración preconfigurada es ideal para las organizaciones que necesitan más tiempo para migrar sus buzones de correo a Office 365, pero que todavía tienen previsto completar la migración en unas pocas semanas. Puede migrar los buzones de correo en "lotes" que le permiten controlar cuántos y qué buzones se migran en un momento dado. Es posible que tenga que realizar buzones de correo por lotes de usuarios en el mismo departamento, por ejemplo, para asegurarse de que todos se mueven al mismo tiempo. O bien, puede dejar buzones ejecutivos hasta el último lote. Al igual que con las migraciones de traslado, los usuarios tendrán que volver a crear sus perfiles de Outlook.
   
 Si está pensando en realizar una migración preconfigurada, tenga en cuenta lo siguiente:
   
@@ -169,7 +169,7 @@ Las migraciones híbridas completas son las más adecuadas para las organizacion
   
 Si está pensando en realizar una migración híbrida completa, estas son algunas de las cosas que debe tener en cuenta:
   
-- Las migraciones híbridas completas no son adecuadas para todos los tipos de organizaciones. Debido a la complejidad de las migraciones híbridas completas, las organizaciones con menos de unos pocos cientos de buzones de correo no suelen ver las ventajas que justifican el esfuerzo y el costo necesario para configurarlos. Si esto suena como su organización, se recomienda que considere las migraciones de transferencia o preConfiguradas en su lugar.
+- Las migraciones híbridas completas no son adecuadas para todos los tipos de organizaciones. Debido a la complejidad de las migraciones híbridas completas, las organizaciones con menos de unos pocos cientos de buzones de correo no suelen ver las ventajas que justifican el esfuerzo y el costo necesario para configurarlos. Si esto suena como su organización, se recomienda que considere las migraciones de transferencia o preconfiguradas en su lugar.
     
 - Deberá implementar al menos un servidor de Exchange 2013 en la organización de Exchange 2007 para que actúe como un "servidor híbrido". Este servidor se comunicará con Office 365 en nombre de los servidores de Exchange 2007;
     

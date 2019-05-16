@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Resumen: Configure y demuestre cómo Office 365 Information Rights Management protege los archivos confidenciales, incluso cuando se publican en la colección de sitios incorrecta de SharePoint Online.'
-ms.openlocfilehash: 4b65df7fe194d543acaf1c3ba6f104681a998dc6
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741306"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070896"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protección de archivos confidenciales en el entorno de desarrollo y pruebas de Office 365
 
@@ -32,7 +32,7 @@ Information Rights Management (IRM) en Office 365 es un conjunto de característ
 Con las instrucciones de este artículo, habilite y pruebe IRM en Office 365 para archivos que contienen posible información confidencial en su suscripción de prueba de Office 365.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la guía del entorno de pruebas de Office 365.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: Crear el entorno de desarrollo y pruebas de Office 365
 
@@ -55,7 +55,7 @@ Siga las instrucciones de [conectarse a office 365 PowerShell](https://technet.m
     
 - La máquina virtual CLIENTE1 (para el entorno de desarrollo y pruebas de una empresa ficticia de Office 365).
     
-En el cuadro de diálogo solicitud de credenciales para **Windows PowerShell** , escriba el nombre de administrador global jdoe@contosotoycompany.onmicrosoft.comde Office 365 (example:) y la contraseña de su suscripción de prueba de Office 365.
+En el cuadro de diálogo **Solicitud de credenciales para Windows PowerShell**, escriba el nombre de administrador global de Office 365 (ejemplo: jdoe@contosotoycompany.onmicrosoft.com) y la contraseña de su suscripción de prueba de Office 365.
   
 Rellene el nombre de su organización (ejemplo: contosotoycompany), el código de país de dos caracteres para su ubicación y, después, ejecute los siguientes comandos desde el símbolo del sistema de Módulo Windows Azure Active Directory para Windows PowerShell:
   
@@ -172,7 +172,7 @@ Después, inicie sesión con una cuenta de ejecutivo y cree un documento en la c
     
 4. Escriba el nombre de cuenta **CEO** y su contraseña y, luego, haga clic en **Iniciar sesión**.
     
-5. en una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ejecutivos ( **https://**\<organization name>**. sharepoint.com/sites/executives**).
+5. En una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ejecutivos ( **https://**\<Organization name>**. SharePoint.com/sites/Executives**).
     
 6. Haga clic en **documentos**, en **nuevo** y, a continuación, en **documento de Word**.
     
@@ -190,7 +190,7 @@ Después, descargue una copia local del documento SensitiveData-BeforeIRM.docx y
     
 3. Almacene el documento **SensitiveData-BeforeIRM.docx** en la carpeta que se ha creado en el paso 1.
     
-4. en una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ventas ( **https://**\<organization name>**. sharepoint.com/sites/sales**).
+4. En una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ventas ( **https://**\<Organization name>**. SharePoint.com/sites/sales**).
     
 5. Haga clic en la carpeta **Documentos** de la **Colección de sitios de ventas**.
     
@@ -334,9 +334,9 @@ Otra manera de ver la protección de IRM es mirar los archivos de su carpeta loc
 
 [Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Entorno de desarrollo y prueba de la configuración básica](base-configuration-dev-test-environment.md)
+[Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
   
-[Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
+[Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
 

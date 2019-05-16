@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 4/10/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Proteja el acceso de administrador global a su suscripción a Office 365 con estos tres pasos.
-ms.openlocfilehash: 23d47ec1f5fc4126113dd69e1ac6400d003ca41f
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: bb1b19a7ac0ec8e32c23303e8acf2b7ee42f0532
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573924"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071026"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteger las cuentas de administrador global de Office 365
 
@@ -49,7 +49,7 @@ Microsoft ofrece capacidades para ayudar a proteger su organización, pero solo 
 
 Hay relativamente pocas tareas administrativas, como asignar roles a cuentas de usuario, que requieran privilegios de administrador global. Por lo tanto, en lugar de usar las cuentas de usuario diarias que tienen asignado el rol de administrador global, siga estos pasos:
   
-1. DeTermine el conjunto de cuentas de usuario a las que se ha asignado el rol de administrador global. Puede hacerlo con este comando en el símbolo del sistema de módulo de Microsoft Azure Active Directory para Windows PowerShell:
+1. Determine el conjunto de cuentas de usuario a las que se ha asignado el rol de administrador global. Puede hacerlo con este comando en el símbolo del sistema de módulo de Microsoft Azure Active Directory para Windows PowerShell:
     
   ```
   Get-MsolRoleMember -RoleObjectId (Get-MsolRole -RoleName "Company Administrator").ObjectId
@@ -75,7 +75,7 @@ Hay relativamente pocas tareas administrativas, como asignar roles a cuentas de 
     
 El resultado debe ser:
   
-- Las únicas cuentas de usuario de su suscripción que tienen el rol de administrador global son el nuevo conjunto de cuentas de administrador global dedicadas. Compruebe esto con el siguiente comando de PowerShell:
+- Las únicas cuentas de usuario de su suscripción que tienen el rol de administrador global son aquellas pertenecientes al nuevo conjunto de cuentas de administrador global dedicadas. Compruebe esto con el siguiente comando de PowerShell:
     
   ```
   Get-MsolRoleMember -RoleObjectId (Get-MsolRole -RoleName "Company Administrator").ObjectId

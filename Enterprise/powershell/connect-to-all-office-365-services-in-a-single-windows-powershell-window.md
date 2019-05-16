@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/28/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumen: Conecte Windows PowerShell a todos los servicios de Office 365 en una sola ventana de Windows PowerShell.'
-ms.openlocfilehash: 3f6153d5ea8b88d8c6853dbbe597f2cf7cc62fab
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: ae9487f48439c6f8d98f927c610e5f2af4c1b361
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573974"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069186"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Conectarse a todos los servicios de Office 365 en una sola ventana de Windows PowerShell
 
@@ -66,7 +66,7 @@ Antes de poder administrar todo Office 365 desde una única instancia de Windows
 - Debe instalar los módulos necesarios para Azure AD, SharePoint Online y Skype empresarial online:
     
    - [Azure Active Directory V2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
-   - [Shell de administración en línea de SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=255251)
+   - [Shell de administración de SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype empresarial online, módulo Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
 -  Windows PowerShell tiene que configurarse para ejecutar scripts firmados para Skype empresarial online, Exchange Online y el &amp; centro de seguridad y cumplimiento. Para ello, ejecute el siguiente comando en una sesión de Windows PowerShell con privilegios elevados (una ventana de Windows PowerShell que se abre seleccionando **Ejecutar como administrador**).
@@ -99,7 +99,7 @@ Estos son los pasos para conectarse a todos los servicios en una sola ventana de
   Connect-MsolService -Credential $credential
  ```
 
-4. Ejecute estos comandos para conectarse a SharePoint Online. Reemplace _ \<domainhost>_ por el valor real de su dominio. por ejemplo, para "litwareinc.onmicrosoft.com", el _ \<_ valor de domainhost> es "litwareinc".
+4. Ejecute estos comandos para conectarse a SharePoint Online. Reemplace _ \<domainhost>_ por el valor real de su dominio. Por ejemplo, para "litwareinc.onmicrosoft.com", el _ \<_ valor de domainhost> es "litwareinc".
     
   ```
   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking

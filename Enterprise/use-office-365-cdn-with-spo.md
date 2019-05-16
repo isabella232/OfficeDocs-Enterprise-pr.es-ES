@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 4/3/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Describe cómo usar la red de entrega de contenido (CDN) de Office 365 para acelerar la entrega de los activos de SharePoint Online a todos los usuarios, independientemente de dónde se encuentren o de la forma en que tengan acceso al contenido.
-ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: de8c02b44405260aa7379ab0a881ba72f73c7a6b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492236"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070636"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -138,11 +138,11 @@ Puede obtener más información sobre cómo el acceso de la red CDN a los activo
 
 Para obtener más información sobre por qué usar la red CDN de Office 365, los conceptos generales de CDN y otros CDN de Microsoft que puede usar con el inquilino de Office 365, consulte [redes de entrega de contenido](content-delivery-networks.md).
 
-### <a name="default-cdn-origins"></a>Orígenes de red CDN preDeterminados
+### <a name="default-cdn-origins"></a>Orígenes de red CDN predeterminados
 
 A menos que especifique lo contrario, Office 365 configura algunos orígenes predeterminados cuando habilita la red CDN de Office 365. Si inicialmente opta por no aprovisionarlos, puede agregar estos orígenes después de completar la instalación. A menos que comprenda las consecuencias de omitir la configuración de orígenes predeterminados y tenga una razón específica para hacerlo, debería permitir que se creen al habilitar la red CDN.
   
-Orígenes de red CDN privados preDeterminados:
+Orígenes de red CDN privados predeterminados:
   
 - \*/userphoto.aspx
 - \*/siteassets
@@ -405,7 +405,7 @@ Para obtener información sobre cómo usar este cmdlet, vea [Remove-SPOTenantCdn
 
 No puede modificar el origen que ha creado. En su lugar, quite el origen y, a continuación, agregue uno nuevo. Para obtener más información, vea [para quitar un origen de la red CDN de Office 365](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin) y [Agregar un origen a los activos](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin).
   
-#### <a name="disable-the-office-365-cdn"></a>DesHabilitar la red CDN de Office 365
+#### <a name="disable-the-office-365-cdn"></a>Deshabilitar la red CDN de Office 365
 <a name="Office365CDNforSPODisable"> </a>
 
 Use el cmdlet **set-SPOTenantCdnEnabled** para deshabilitar la red CDN de su organización. Si tiene los orígenes públicos y privados habilitados para la red CDN, debe ejecutar el cmdlet dos veces, como se muestra en los siguientes ejemplos.
@@ -538,7 +538,7 @@ Para excluir los sitios clasificados como _HBI_ desde la red CDN pública, ejecu
 spo cdn policy set --type Public --policy ExcludeRestrictedSiteClassifications --value "HBI"
 ```
 
-### <a name="disable-the-office-365-cdn"></a>DesHabilitar la red CDN de Office 365
+### <a name="disable-the-office-365-cdn"></a>Deshabilitar la red CDN de Office 365
 
 Para deshabilitar la red CDN de Office 365, use el comando `spo cdn set`, por ejemplo:
 

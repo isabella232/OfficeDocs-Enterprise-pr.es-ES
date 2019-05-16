@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Resumen: configure y demuestre la Protección contra amenazas avanzada de Office 365 en el entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 53bff386490ed9647a511f75c997cb91b0acc181
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 7063b56762711fdb06c0c879d74b783c0137b550
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490156"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068306"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Protección contra amenazas avanzada en el entorno de desarrollo y pruebas de Office 365
 
@@ -156,7 +156,7 @@ En esta fase, veremos cómo ATP se gestiona el correo electrónico malintenciona
 Ahora puede usar este entorno para crear nuevas directivas y experimentar con ATP.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del laboratorio de pruebas de Office 365.
+> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de Office 365.
   
 ## <a name="see-also"></a>Vea también
 

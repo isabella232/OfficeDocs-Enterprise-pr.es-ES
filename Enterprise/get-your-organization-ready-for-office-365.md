@@ -1,9 +1,9 @@
 ---
 title: Preparar la organización para Office 365 Enterprise
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Si ha decidido no participar en la implementación de FastTrack y no encuentra lo que necesita en nuestros pasos de implementación básicos, este es el punto de partida.
-ms.openlocfilehash: a15bd73efe2fd2e2dfd13b3a444f77b9d0bfc764
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 90cf7cda7070c626579389f8122cdc438d88abe0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487748"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067546"
 ---
 # <a name="get-your-organization-ready-for-office-365-enterprise"></a>Preparar la organización para Office 365 Enterprise
 
@@ -34,7 +34,7 @@ Si necesita ayuda para empezar a configurar Office 365, [FastTrack](https://fast
   
 |**Elija uno o más para empezar:**||
 |:-----|:-----|
-| [Requisitos del sistema para Office](https://products.office.com/office-system-requirements) |-Microsoft Office Professional, Office 365, Office 365 proPlus y todas las aplicaciones de Office para Windows, Mac, iOS y Android tienen requisitos de sistema específicos. Asegúrese de que el hardware y el software cumplen con los requisitos mínimos del sistema.|
+| [Requisitos del sistema para Office](https://products.office.com/office-system-requirements) |-Microsoft Office Professional, Office 365, Office 365 ProPlus y todas las aplicaciones de Office para Windows, Mac, iOS y Android tienen requisitos de sistema específicos. Asegúrese de que el hardware y el software cumplen con los requisitos mínimos del sistema.|
 |**La mayoría** de los clientes conectan su directorio local con Office 365. Obtenga una introducción a la preparación del directorio al [instalar y ejecutar IdFix en la red](https://www.microsoft.com/download/details.aspx?id=36832). <br> Use [AAD Connect Advisor](https://aka.ms/aadconnectpwsync) y la [Guía de configuración de Azure ad Premium](https://aka.ms/aadpguidance) para obtener instrucciones de configuración personalizadas. <br> |-Las comprobaciones automatizadas en el directorio para [validar las cuentas de las personas se sincronizarán correctamente](https://support.office.com/article/Prepare-to-provision-users-through-directory-synchronization-to-Office-365-01920974-9e6f-4331-a370-13aea4e82b3e). <br> -Recomienda cambios en los objetos de directorio y ofrece la automatización de los cambios. <br> - [Más información sobre el uso de la herramienta IdFix](prepare-directory-attributes-for-synch-with-idfix.md). |
 |**Lea** nuestra [Guía de rendimiento de red](https://aka.ms/tune) y use nuestras herramientas para asegurarse de que tiene la conectividad y la configuración de rendimiento necesarias para proporcionar a los usuarios la mejor experiencia posible.  <br> | -Asegúrese de que puede conectarse a Office 365, si filtra o analiza el tráfico saliente, le interesará saber qué significa [administrar los puntos de conexión de Office 365](https://support.office.com/article/Managing-Office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a) para su organización.  <br>  - [Modele y pruebe su capacidad de red](https://support.office.com/article/Network-and-migration-planning-for-Office-365-f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132) o desplácese a un circuito de [Azure ExpressRoute para Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd) para obtener una experiencia más predecible.   |
 |**Use** nuestra [lista de comprobación](https://support.office.com/article/Deployment-planning-checklist-for-Office-365-5fa4f6ef-35ad-4840-91c1-4834df3df5a0) de planeación como punto de partida para crear su propio plan de implementación.  <br> | -En profundidad información general sobre las posibles áreas que necesitará planear con vínculos a referencias o información de procedimientos para ayudarle a planear. |

@@ -1,10 +1,9 @@
 ---
 title: Lista de comprobación para planificar la implementación de Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Esta lista de comprobación ayudará a su organización cuando Planee y prepare una migración a Office 365. Las fases y los pasos de la lista de comprobación se alinean con las instrucciones proporcionadas por el centro de incorporación.
-ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 858ae9520db4cfb18696c817f041b879d66484e3
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490106"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067886"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Lista de comprobación para planificar la implementación de Office 365
 
@@ -39,7 +38,7 @@ Al mover una organización empresarial a Office 365, es importante planear exact
 |:-----|:-----|:-----|:-----|:-----|
 |**Tareas de implementación de/Events** <br/> |**Fecha de inicio** <br/> |**Fecha de finalización** <br/> |**Resources** <br/> |**Dependencias** <br/> |
 |**Determinación de los objetivos de la implementación** <br/> |||||
-| Con las partes interesadas internas y externas:<br>  -Acordar el ámbito y la escala de tiempo <br>  -Acuerde el mecanismo de seguimiento del proyecto  <br>  -desarrollar criterios de éxito y una [comunicación](https://fasttrack.microsoft.com/office) / [introducción a Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
+| Con las partes interesadas internas y externas:<br>  -Acordar el ámbito y la escala de tiempo <br>  -Acuerde el mecanismo de seguimiento del proyecto  <br>  -Desarrollar criterios de éxito y una [comunicación](https://fasttrack.microsoft.com/office) / [Introducción a Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Realizar un inventario de su entorno actual y tomar decisiones clave de implementación** |||||
 |Inventario del entorno actual |||||
 | Recopilar el número de cuentas de usuario (nombres de inicio de sesión, direcciones de correo electrónico) |||||

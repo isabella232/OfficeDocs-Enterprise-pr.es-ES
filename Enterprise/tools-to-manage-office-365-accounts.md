@@ -1,9 +1,9 @@
 ---
 title: Herramientas para administrar cuentas de Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Obtenga información sobre qué herramientas usar para administrar los usuarios de Office 365 y cómo lo que puede usar depende de cómo administre las identidades de usuario. '
-ms.openlocfilehash: 6e8f35d9b4f753d8e5ddad448d311767971c3c2a
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 3b1a869825991d9c85e16b1cc5f50646806ab3fd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001603"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070386"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Herramientas para administrar cuentas de Office 365
 
@@ -63,7 +63,7 @@ En la siguiente tabla se enumeran las diferentes herramientas de administración
 |**Windows PowerShell** | - [Administración de Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br> -Permite agregar usuarios a usuarios en masa mediante un script de Windows PowerShell. <br> -Puede usarse para asignar una ubicación y licencias a cuentas, independientemente de cómo se creen las cuentas. <br> |
 |**Importación masiva** | - [Agregar varios usuarios al mismo tiempo a Office 365: ayuda para administradores](add-several-users-at-the-same-time.md) <br> -Permite importar un archivo CSV para agregar un grupo de usuarios a Office 365. <br> -No se puede usar con las opciones de SSO. <br> |
 |**Azure Active Directory** | -Obtiene una edición gratuita de Azure Active Directory con su suscripción a Office 365. -Puede realizar funciones como el restablecimiento de contraseña de autoservicio para los usuarios de la nube y la personalización de las páginas de inicio de sesión y panel de acceso con la edición gratuita. <br> -Para obtener una funcionalidad mejorada, puede actualizar a la edición básica o a la edición Premium. Vea las [ediciones de Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=698465) para obtener la lista de características admitidas. <br> |
-|**Sincronización de directorios** | - [Integración de las identidades locales con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br> -Para la sincronización de directorios con o sin sincronización de contraseñas, use [Azure ad Connect con configuración rápida](https://go.microsoft.com/fwlink/p/?LinkID=698537).  <br>  -Para varios bosques y opciones de SSO, use la [instalación personalizada de Azure ad Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430). <br> : Proporciona la infraestructura necesaria para habilitar el SSO. <br> -Necesario para muchos escenarios híbridos (migración preConfigurada, Exchange híbrido) <br> : Sincroniza los grupos habilitados para correo y la seguridad desde el directorio local. <br> |
+|**Sincronización de directorios** | - [Integración de las identidades locales con Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br> -Para la sincronización de directorios con o sin sincronización de contraseñas, use [Azure ad Connect con configuración rápida](https://go.microsoft.com/fwlink/p/?LinkID=698537).  <br>  -Para varios bosques y opciones de SSO, use la [instalación personalizada de Azure ad Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430). <br> : Proporciona la infraestructura necesaria para habilitar el SSO. <br> -Necesario para muchos escenarios híbridos (migración preconfigurada, Exchange híbrido) <br> : Sincroniza los grupos habilitados para correo y la seguridad desde el directorio local. <br> |
 
 Independientemente de cómo pretenda agregar las cuentas de usuario a Office 365, debe administrar varias características de cuenta, como la asignación de licencias, la especificación de la ubicación, etc. Estas características se pueden administrar a largo plazo desde el centro de administración o también se pueden [crear cuentas de usuario con PowerShell de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=717083).
 

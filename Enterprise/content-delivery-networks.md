@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 4/2/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use esta información para obtener información sobre cómo Office 365 usa redes de entrega de contenido (CDN) para mejorar el rendimiento.
-ms.openlocfilehash: 5d02b28fad0e47473cc6a75948c9dd27e6728bb5
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 8694f8aa4caf6161d221d1375d97ad5b72fb1818
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490456"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068031"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de entrega de contenido (CDN)
 
@@ -152,7 +152,7 @@ Para obtener información detallada acerca de la privacidad y la protección de 
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>¿Cómo puedo proteger mi red con estos servicios de terceros?
 
-Aprovechar un amplio conjunto de servicios de asociados permite escalar Office 365 y cumplir los requisitos de disponibilidad, así como mejorar la experiencia del usuario al usar Office 365. Los servicios de terceros que Office 365 usa incluyen ambas listas de revocación de certificados; como crl.microsoft.com o sa.symcb.com, y CDN; como R3.res.Outlook.com. Cada FQDN de CDN generado por Office 365 es un FQDN personalizado para Office 365. Si se le envía a un FQDN a petición de Office 365, puede tener la certeza de que el proveedor de la red CDN controla el FQDN y el contenido subyacente en esa ubicación.
+Aprovechar un amplio conjunto de servicios de asociados permite escalar Office 365 y cumplir los requisitos de disponibilidad, así como mejorar la experiencia del usuario al usar Office 365. Los servicios de terceros que Office 365 usa incluyen ambas listas de revocación de certificados; como crl.microsoft.com o sa.symcb.com, y CDN; como r3.res.outlook.com. Cada FQDN de CDN generado por Office 365 es un FQDN personalizado para Office 365. Si se le envía a un FQDN a petición de Office 365, puede tener la certeza de que el proveedor de la red CDN controla el FQDN y el contenido subyacente en esa ubicación.
   
 Para los clientes que desean segregar las solicitudes dirigidas a un centro de información de Microsoft u Office 365 desde solicitudes destinadas a terceros, hemos escrito una guía sobre la [Administración de puntos de conexión de office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
 
@@ -186,7 +186,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/o365cdn
 
 [Administrar puntos de conexión de Office 365](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 
-[Direcciones URL e intervalos de direcciones IP de Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744)
+[Intervalos de direcciones IP y URL de Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
 [Uso de la red de entrega de contenido de Office 365 con SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
 

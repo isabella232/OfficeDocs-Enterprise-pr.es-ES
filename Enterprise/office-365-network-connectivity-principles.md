@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/14/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Antes de empezar a planear la red para la conectividad de red de Office 365, es importante comprender los principios de conectividad para administrar de forma segura el tráfico de Office 365 y obtener el mejor rendimiento posible. Este artículo le ayudará a comprender las instrucciones más recientes para optimizar de manera segura la conectividad de red de Office 365.
-ms.openlocfilehash: 3dfb0732ff15c7d8f3c20ac659f94b8d807afa07
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 2d8b629d291be44da3d3360e676e7a01d9cd5a35
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492376"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069826"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Principios de conectividad de red de Office 365
 
@@ -137,14 +137,14 @@ Office 365 los administradores pueden crear scripts PAC (configuración automát
 #### <a name="office-365-security-features"></a>Características de seguridad de Office 365
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft es transparente sobre la seguridad del centro de información, la seguridad operativa y la reducción de riesgos en torno a los servidores de Office 365 y los puntos de conexión de red que representan. Office 365 las características de seguridad integradas están disponibles para reducir los riesgos de seguridad de la red, como prevención de pérdida de datos, anti-virus, autenticación multiFactor, casilla de bloqueo de cliente, protección contra amenazas avanzada, inteligencia sobre amenazas de Office 365, Office 365 Secure Puntuación, Exchange Online Protection y seguridad DDOS para red.
+Microsoft es transparente sobre la seguridad del centro de información, la seguridad operativa y la reducción de riesgos en torno a los servidores de Office 365 y los puntos de conexión de red que representan. Office 365 las características de seguridad integradas están disponibles para reducir los riesgos de seguridad de la red, como prevención de pérdida de datos, anti-virus, autenticación multifactor, casilla de bloqueo de cliente, protección contra amenazas avanzada, inteligencia sobre amenazas de Office 365, Office 365 Secure Puntuación, Exchange Online Protection y seguridad DDOS para red.
   
 Para obtener más información sobre el centro de datos de Microsoft y la seguridad global de la red, consulte el [centro de confianza de Microsoft](https://www.microsoft.com/en-us/trustcenter/security).
   
 ## <a name="new-office-365-endpoint-categories"></a>Nuevas categorías de puntos de conexión de Office 365
 <a name="BKMK_Categories"> </a>
 
-Los puntos de conexión de Office 365 representan un conjunto variado de direcciones y subredes de red. Los puntos de conexión pueden ser direcciones URL, direcciones IP o intervalos IP, y algunos puntos de conexión se muestran con puertos TCP/UDP específicos. las direcciones url pueden ser un FQDN como *account.office.net* o una dirección URL de comodín como * \*. office365.com*.
+Los puntos de conexión de Office 365 representan un conjunto variado de direcciones y subredes de red. Los puntos de conexión pueden ser direcciones URL, direcciones IP o intervalos IP, y algunos puntos de conexión se muestran con puertos TCP/UDP específicos. Las direcciones URL pueden ser un FQDN como *account.Office.net* o una dirección URL de comodín como * \*. Office365.com*.
   
 > [!NOTE]
 > Las ubicaciones de los puntos de conexión de Office 365 dentro de la red no están directamente relacionadas con la ubicación de los datos del espacio empresarial de Office 365. Por esta razón, los clientes deben mirar a Office 365 como un servicio distribuido y global, y no deben intentar bloquear las conexiones de red a los puntos de conexión de Office 365 según criterios geográficos.
@@ -157,7 +157,7 @@ En el nuevo modelo, los puntos de conexión se segregan en tres categorías: **o
 
     Una lista condensada de puntos de conexión críticos bien definidos debe ayudarle a planear e implementar optimizaciones de red de gran valor para estos destinos de forma más rápida y sencilla.
 
-    algunos ejemplos de *optimización* de extremos *https://outlook.office365.com* son *https://\<tenant\>. sharepoint.com* y *https://\<tenant\>-my.sharepoint.com* .
+    Algunos ejemplos de *optimización* de extremos *https://outlook.office365.com* son *https://\<tenant\>. SharePoint.com* y *https://\<tenant\>-My.SharePoint.com* .
 
     Los métodos de optimización incluyen:
 
@@ -216,7 +216,7 @@ Un enfoque holístico de la seguridad mejorada debe incluir la consideración de
   - Centrarse en proteger la ubicación de los datos y la ubicación del usuario
   - Los equipos de usuarios administrados tienen mayor confianza con la seguridad de extremos
 - Administrar toda la seguridad de la información de forma holística, no centrarse exclusivamente en el perímetro
-  - ReDefina WAN y cree la seguridad de la red perimetral al permitir que el tráfico de confianza eluda los dispositivos de seguridad y separe los dispositivos no administrados en las redes Wi-Fi de invitado.
+  - Redefina WAN y cree la seguridad de la red perimetral al permitir que el tráfico de confianza eluda los dispositivos de seguridad y separe los dispositivos no administrados en las redes Wi-Fi de invitado.
   - Reduce los requisitos de seguridad de red del perímetro WAN de la empresa
   - Algunos dispositivos de seguridad del perímetro de red, como firewalls, aún son necesarios, pero la carga disminuye
   - Garantiza la salida local para el tráfico de Office 365

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras, está disponible para Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial.
-ms.openlocfilehash: a9fb93d0269628c0c1d4cd374e3bca36482f7eee
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a6f1b64aade9cd7c2fa5b44e18e1075008676f90
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490336"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067996"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Skype Empresarial local para usar la autenticación moderna híbrida
 

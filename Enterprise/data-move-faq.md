@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 09/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: A continuación, se incluyen respuestas a preguntas generales sobre cómo mover datos principales a un nuevo centro de datos geográfico.
-ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 29706f49ee0faf8c535b50843f224b7b1b2a372e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490077"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067906"
 ---
 # <a name="data-move-general-faq"></a>Preguntas más frecuentes sobre el movimiento de datos
 
@@ -139,7 +139,7 @@ R. Sí. Microsoft mantiene una red global de gran tamaño con conexiones a Inter
 
 ## <a name="my-tenant-is-configured-for-office-365-multi-geohttpsakamsmulti-geo--can-i-still-enroll-in-my-tenant-in-the-office-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>Mi espacio empresarial está configurado para [Office 365 multigeográfico](https://aka.ms/multi-geo).  ¿Puedo inscribirse en mi inquilino en el programa de Office 365 mover para cambiar mi área geográfica predeterminada y mover a un usuario que no está en una región de satélite al nuevo área geográfica predeterminada?
 
-Sí, el espacio empresarial es apto para inscribirse.  Se moverán todos los buzones EXO de su área geográfica predeterminada actual a la nueva geo del centro de recursos local.  No se moverán los buzones EXO configurados en regiones multiLingües multiLingües para seguir respetando la residencia de datos de la región satélite como se ha previsto.  SharePoint Online y OneDrive para la empresa no pueden migrar al nuevo centro de proceso de correo geográfico como parte del programa mover, aunque puede configurar los recursos compartidos de OneDrive para la empresa para que se muevan a cualquier región que quiera mediante el programa multiGeográfico.
+Sí, el espacio empresarial es apto para inscribirse.  Se moverán todos los buzones EXO de su área geográfica predeterminada actual a la nueva geo del centro de recursos local.  No se moverán los buzones EXO configurados en regiones multilingües multilingües para seguir respetando la residencia de datos de la región satélite como se ha previsto.  SharePoint Online y OneDrive para la empresa no pueden migrar al nuevo centro de proceso de correo geográfico como parte del programa mover, aunque puede configurar los recursos compartidos de OneDrive para la empresa para que se muevan a cualquier región que quiera mediante el programa multigeográfico.
   
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -147,7 +147,7 @@ Sí, el espacio empresarial es apto para inscribirse.  Se moverán todos los buz
 
 [Cómo solicitar el movimiento de datos](request-your-data-move.md)
 
-[Office 365 multiGeográfico](https://aka.ms/multi-geo)
+[Office 365 multigeográfico](https://aka.ms/multi-geo)
 
 [Mapa de centros de recursos interactivos de Office 365](https://office.com/datamaps)
 

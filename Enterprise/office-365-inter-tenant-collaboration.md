@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 11/08/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Obtenga información sobre cómo funciona la colaboración de Office 365 en espacios empresariales y organizaciones.
-ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: cedeab08cf6daf3817179bcf770eda6598361e67
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492096"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069676"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Colaboración entre inquilinos de Office 365
 
 En este artículo se describen varias formas de colaborar entre dos inquilinos de Office 365. Está destinado a los administradores de Office 365.
   
-SuPongamos que dos organizaciones, Fabrikam y Contoso, tienen un espacio empresarial de Office 365 para empresas y quieren trabajar juntos en varios proyectos; algunos de los cuales se ejecutan durante un tiempo limitado y algunos de los cuales están en curso. ¿Cómo pueden los usuarios y los equipos de Fabrikam y contoso colaborar de forma más eficaz en sus diferentes inquilinos de Office 365 de forma segura? Office 365, junto con la colaboración B2B de Azure Active Directory, proporciona varias opciones. En este artículo se describen varios escenarios clave que Fabrikam y contoso pueden tener en cuenta.
+Supongamos que dos organizaciones, Fabrikam y Contoso, tienen un espacio empresarial de Office 365 para empresas y quieren trabajar juntos en varios proyectos; algunos de los cuales se ejecutan durante un tiempo limitado y algunos de los cuales están en curso. ¿Cómo pueden los usuarios y los equipos de Fabrikam y contoso colaborar de forma más eficaz en sus diferentes inquilinos de Office 365 de forma segura? Office 365, junto con la colaboración B2B de Azure Active Directory, proporciona varias opciones. En este artículo se describen varios escenarios clave que Fabrikam y contoso pueden tener en cuenta.
   
 Las opciones de colaboración entre inquilinos de Office 365 incluyen el uso de una ubicación central para los archivos y las conversaciones, el uso compartido de calendarios, el uso de la mensajería instantánea, las llamadas de audio y vídeo para la comunicación y la protección del acceso a recursos y aplicaciones. Use las tablas siguientes para seleccionar soluciones y obtener más información.
   

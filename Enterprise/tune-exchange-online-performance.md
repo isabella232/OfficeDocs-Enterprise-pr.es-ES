@@ -4,7 +4,7 @@ ms.author: krowley
 author: tracyp
 manager: laurawi
 ms.date: 12/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: Este artículo contiene sugerencias generales y vínculos a otros recursos que le indican cómo mejorar el rendimiento de Exchange Online.
-ms.openlocfilehash: f75869ba6d83a92b1e19743c8b38c4bcbb6762cf
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: d736568687da5ffe0ebed5a57a6afa6f93173c54
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372857"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070356"
 ---
 # <a name="tune-exchange-online-performance"></a>Ajustar el rendimiento de Exchange Online
 

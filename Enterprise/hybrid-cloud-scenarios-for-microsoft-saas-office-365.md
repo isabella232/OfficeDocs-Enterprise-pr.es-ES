@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: 'Resumen: comprenda la arquitectura y los escenarios híbridos de las ofertas de la nube basadas en SaaS de Microsoft (Office 365).'
-ms.openlocfilehash: 90b751e4bbea42d723961eb2ac339d23faf8c259
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 84092fe419ab31fca7763f434e328eb855d46835
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487536"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067226"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Escenarios de nube híbrida para Microsoft SaaS (Office 365)
 
@@ -75,7 +75,7 @@ Para obtener más información, consulte [planear la conectividad híbrida entre
     
 ## <a name="cloud-pbx-with-skype-for-business-server"></a>PBX en la nube con Skype Empresarial Server
 
-PBX en la nube con Skype empresarial Server le permite realizar la transición de una implementación local de Skype empresarial Server existente a una topología con conectividad de red telefónica conMutada (RTC) local. 
+PBX en la nube con Skype empresarial Server le permite realizar la transición de una implementación local de Skype empresarial Server existente a una topología con conectividad de red telefónica conmutada (RTC) local. 
   
 **Figura 3: PBX en la nube con Skype Empresarial Server**
 

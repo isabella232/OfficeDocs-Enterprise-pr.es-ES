@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/21/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algunas redes empresariales restringen el acceso a ubicaciones de Internet genéricas o incluyen backhaul o procesamiento de tráfico de red substancial. Para garantizar que los equipos de redes como estos puedan tener acceso a Office 365, los administradores de red y de proxy deben administrar la lista de FQDN, direcciones URL y direcciones IP que componen la lista de puntos de conexión de Office 365. Estos deben agregarse a ruta directa, omisión de proxy o reglas de firewall y archivos PAC para garantizar que las solicitudes de red puedan alcanzar el alcance de Office 365.
-ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 37f90ba5c008a4e0b562526d10185e01d07e4918
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487096"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067176"
 ---
 # <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365
 
@@ -142,7 +142,7 @@ Vea una dirección IP asociada a Office 365 de la que desea obtener más informa
   
 1. Compruebe si la dirección IP se incluye en un intervalo publicado mayor con una [calculadora CIDR](http://jodies.de/ipcalc).
 2. Compruebe si un partner es propietario de la IP con una [consulta Whois](https://dnsquery.org/). Si es propietario de Microsoft, puede ser un asociado interno.
-3. compruebe el certificado, en un explorador conéctese a la dirección IP *mediante\<HTTPS://\> dirección_ip* , compruebe los dominios que aparecen en el certificado para comprender qué dominios están asociados con la dirección IP. Si es una dirección IP de propiedad de Microsoft y no se encuentra en la lista de direcciones IP de Office 365, es probable que la dirección IP esté asociada a una CDN de Microsoft como *MSOCDN.net* u otro dominio de Microsoft sin información de IP publicada. Si encuentra el dominio en el certificado es aquel en el que le indicamos que indique la dirección IP, infórmenos.
+3. Compruebe el certificado, en un explorador Conéctese a la dirección IP *mediante\<https://\> dirección_ip* , compruebe los dominios que aparecen en el certificado para comprender qué dominios están asociados con la dirección IP. Si es una dirección IP de propiedad de Microsoft y no se encuentra en la lista de direcciones IP de Office 365, es probable que la dirección IP esté asociada a una CDN de Microsoft como *MSOCDN.net* u otro dominio de Microsoft sin información de IP publicada. Si encuentra el dominio en el certificado es aquel en el que le indicamos que indique la dirección IP, infórmenos.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Algunas direcciones URL de Office 365 señalan a registros CNAME en lugar de a registros en el DNS. ¿Qué tengo que hacer con los registros CNAME?
@@ -166,7 +166,7 @@ Office 365 y otros servicios de Microsoft usan varios servicios de terceros, com
   
 [MarkMonitor](https://www.markmonitor.com/) está en uso cuando se ven solicitudes que incluyen * \*. nsatc.net* . Este servicio proporciona protección y supervisión de nombres de dominio para protegerse contra comportamientos malintencionados.
   
-[ExactTarget](https://www.marketingcloud.com/) está en uso cuando se ven solicitudes a * \*. exacttarget.com* . Este servicio proporciona supervisión y administración de vínculos de correo electrónico contra comportamientos malintencionados.
+[ExactTarget](https://www.marketingcloud.com/) está en uso cuando se ven solicitudes a * \*. ExactTarget.com* . Este servicio proporciona supervisión y administración de vínculos de correo electrónico contra comportamientos malintencionados.
   
 [Akamai](https://www.akamai.com/) está en uso cuando se ven solicitudes que incluyen uno de los siguientes FQDN. Este servicio ofrece servicios de red de entrega de contenido y de DNS geográfico.
   
@@ -219,7 +219,7 @@ Tenga en cuenta que bloquear el acceso a los servicios de atención al cliente d
   
 [ExpressRoute y Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   
-[Direcciones URL e intervalos de direcciones IP de Office 365](urls-and-ip-address-ranges.md)
+[Intervalos de direcciones IP y URL de Office 365](urls-and-ip-address-ranges.md)
   
 [Administrar ExpressRoute para la conectividad de Office 365](managing-expressroute-for-connectivity.md)
   

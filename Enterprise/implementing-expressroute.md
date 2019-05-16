@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/5/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute para Office 365 proporciona una ruta de acceso de enrutamiento alternativa a muchos servicios de Office 365 de conexión a Internet. La arquitectura de ExpressRoute para Office 365 se basa en los prefijos IP públicos de publicidad de los servicios de Office 365 a los que ya se puede tener acceso a través de Internet en los circuitos de ExpressRoute aprovisionados para la redistribución posterior de dichos prefijos IP en la red. Con ExpressRoute, se habilitan de manera eficaz varias rutas de acceso de enrutamiento diferentes, a través de Internet y de ExpressRoute, para muchos servicios de Office 365. Este estado de enrutamiento en la red puede representar un cambio importante en la forma en que se diseña la topología de la red interna.
-ms.openlocfilehash: e535135557f7f2f64077c1d926f120fff78dbd42
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: c9e4fa4f5c8cb46d32e1b0de6f18f66b3a971aa6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491736"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067406"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
 
@@ -43,7 +43,7 @@ Esperamos que se completen los siguientes requisitos previos antes de que se ini
 
 3. Ya ha leído y entendido la [documentación de expressroute](https://azure.microsoft.com/documentation/services/expressroute/) y su red interna puede cumplir los requisitos previos de expressroute de principio a fin.
 
-4. su equipo ha leído todas las instrucciones y la documentación pública en [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365), [https://aka.ms/ert](https://aka.ms/ert)y ha visto la serie de [aprendizaje de Azure ExpressRoute para Office 365](https://channel9.msdn.com/series/aer) en Channel 9 para obtener conocimientos técnicos críticos, entre los que se incluyen:
+4. Su equipo ha leído todas las instrucciones y la documentación pública en [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365), [https://aka.ms/ert](https://aka.ms/ert)y ha visto la serie de [aprendizaje de Azure ExpressRoute para Office 365](https://channel9.msdn.com/series/aer) en Channel 9 para obtener conocimientos técnicos críticos, entre los que se incluyen:
 
       - Las dependencias de Internet de los servicios SaaS.
 
@@ -181,7 +181,7 @@ La selección de las ubicaciones Meet-me, que son la ubicación física donde el
   
 Esto significa que la consideración más importante que debe tomar al seleccionar ubicaciones de Meet-me para ExpressRoute para Office 365 es donde se conectará a las personas de su organización. La recomendación general para la conectividad de Office 365 óptima es implementar el enrutamiento, de modo que las solicitudes de usuario a los servicios de Office 365 se entreguen a la red de Microsoft a través de la ruta de acceso de red más corta, esto también se conoce como el enrutamiento de "patata caliente". Por ejemplo, si la mayoría de los usuarios de Office 365 se encuentran en una o dos ubicaciones, al seleccionar las ubicaciones Meet-me más cercanas a la ubicación de dichos usuarios se creará un diseño óptimo. Si su compañía tiene grandes poblaciones de usuarios en muchas regiones diferentes, es posible que desee considerar la posibilidad de tener varios circuitos de ExpressRoute y ubicaciones de Meet-me. Para algunas de sus ubicaciones de usuario, la ruta más corta o óptima a Microsoft Network y Office 365, puede que no sea a través de los puntos de reunirse-conmigo internos de WAN y ExpressRoute, sino a través de Internet.
   
-A menudo, hay varias ubicaciones Meet-me que se pueden seleccionar en una región con proximidad relativa a los usuarios. ReLlene la tabla siguiente para obtener una guía de las decisiones.
+A menudo, hay varias ubicaciones Meet-me que se pueden seleccionar en una región con proximidad relativa a los usuarios. Rellene la tabla siguiente para obtener una guía de las decisiones.
 
 |**Ubicaciones planeadas para reunirse con conmigo de ExpressRoute en California y Nueva York**||
 |:-----|:-----|
@@ -251,11 +251,11 @@ Al realizar una evaluación del ancho de banda con los usuarios piloto, puede us
   
 #### <a name="plan-for-high-availability-requirements"></a>Planeación de requisitos de alta disponibilidad
   
-Cree un plan de alta disponibilidad para satisfacer sus necesidades e incorpore esto en el diagrama de la topología de red actualizada. Lea la sección **alta disponibilidad y conmutación por error con Azure ExpressRoute** en planeaCión de [red con ExpressRoute para Office 365](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd).
+Cree un plan de alta disponibilidad para satisfacer sus necesidades e incorpore esto en el diagrama de la topología de red actualizada. Lea la sección **alta disponibilidad y conmutación por error con Azure ExpressRoute** en planeación de [red con ExpressRoute para Office 365](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd).
   
 #### <a name="plan-for-network-security-requirements"></a>Planeación de los requisitos de seguridad de red
   
-Cree un plan para cumplir con los requisitos de seguridad de la red e incorpórelo a su diagrama de topología de red actualizada. Lea la sección **aplicar controles de seguridad a Azure ExpressRoute para office 365 escenarios** de planeaCión de [red con ExpressRoute para Office 365](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd).
+Cree un plan para cumplir con los requisitos de seguridad de la red e incorpórelo a su diagrama de topología de red actualizada. Lea la sección **aplicar controles de seguridad a Azure ExpressRoute para office 365 escenarios** de planeación de [red con ExpressRoute para Office 365](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd).
   
 ### <a name="design-outbound-service-connectivity"></a>Diseño de la Conectividad del servicio de salida
 <a name="outbound"> </a>
@@ -520,7 +520,7 @@ Primero para la prueba y, a continuación, para producción:
 
 - Realice pruebas en cada servicio de entrada y de salida.
 
-- ReVertir si detecta algún problema.
+- Revertir si detecta algún problema.
 
 ### <a name="set-up-a-test-connection-to-expressroute-with-a-test-network-segment"></a>Configurar una conexión de prueba para ExpressRoute con un segmento de red de prueba
 
@@ -592,6 +592,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/impleme
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)

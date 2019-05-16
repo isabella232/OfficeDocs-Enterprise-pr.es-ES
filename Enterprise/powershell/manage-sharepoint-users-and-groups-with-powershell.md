@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/07/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: Use Office 365 PowerShell para administrar usuarios, grupos y sitios de SharePoint Online.'
-ms.openlocfilehash: 747371b6ea63431fedb60fa9165fe496acb5b7c7
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 194486f539593215b8f8a17c04e3d4f499077c65
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573994"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068826"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Administrar usuarios y grupos de SharePoint Online con PowerShell de Office 365
 

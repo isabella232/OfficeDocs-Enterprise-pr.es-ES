@@ -1,10 +1,10 @@
 ---
-title: Eliminación o deshabilitación de la autenticación moderna híbrida de Skype empresarial y Exchange
+title: Quitar o deshabilitar la autenticación moderna híbrida de Skype Empresarial y Exchange
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/3/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,14 +14,14 @@ ms.assetid: 5a91b9e3-1508-475b-93e0-710fa5d5cd2d
 ms.collection:
 - M365-security-compliance
 description: Si ha habilitado la autenticación moderna híbrida (HMA) solo para encontrar que no es adecuada para su entorno actual, puede deshabilitar la HMA. En este artículo se explica cómo hacerlo.
-ms.openlocfilehash: 4df044a8243bc6016f71c31d5b5cba7db901be98
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: 011e24c546fede11177e49ce8b36599d7d81d121
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372847"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070986"
 ---
-# <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Eliminación o deshabilitación de la autenticación moderna híbrida de Skype empresarial y Exchange
+# <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Quitar o deshabilitar la autenticación moderna híbrida de Skype Empresarial y Exchange
 
 Si ha habilitado la autenticación moderna híbrida (HMA) solo para encontrar que no es adecuada para su entorno actual, puede deshabilitar la HMA. En este artículo se explica cómo hacerlo.
   

@@ -1,10 +1,9 @@
 ---
 title: Planificación de los certificados SSL de terceros para Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/24/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Resumen: describe los certificados SSL necesarios para Exchange local e híbrido, SSO con AD FS, servicios de Exchange Online y servicios web Exchange.'
-ms.openlocfilehash: 3c22daa2315e36c45b5b5dd6271842168c90726d
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9b5bcb20272dcaf5c1df39179a4ba4b05fc04a28
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491416"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069356"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planificación de los certificados SSL de terceros para Office 365
 
@@ -76,6 +75,6 @@ Los servidores o servidores híbridos de Exchange con conexión externa requiere
   
 ## <a name="office-365-certificate-chains"></a>Cadenas de certificados de Office 365
 
-En este artículo se describen los certificados que puede que necesite instalar en su infraestructura. Para obtener más información sobre los certificados instalados en nuestros servidores de Office 365, consulte [office 365 certificaTe Chains](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
+En este artículo se describen los certificados que puede que necesite instalar en su infraestructura. Para obtener más información sobre los certificados instalados en nuestros servidores de Office 365, consulte [office 365 Certificate Chains](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
   
 

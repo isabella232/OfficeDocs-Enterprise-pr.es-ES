@@ -1,9 +1,9 @@
 ---
-title: Configuración de la sincronización del directorio para Office 365
-ms.author: robmazz
-author: robmazz
+title: Configurar la sincronización de directorios en Office 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,20 +19,20 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Obtenga información sobre cómo configurar la sincronización de directorios entre Office 365 y su Active Directory local.
-ms.openlocfilehash: 6d635dbcacb5a1c6c6c9c202f2ece4fac35558a4
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: d5c09b006c4e4b9ca9fbe3b0d673435a8ea6637e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001753"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070876"
 ---
-# <a name="set-up-directory-synchronization-for-office-365"></a>Configuración de la sincronización del directorio para Office 365
+# <a name="set-up-directory-synchronization-for-office-365"></a>Configurar la sincronización de directorios en Office 365
 
 Office 365 usa el servicio de administración de identidades de usuario basado en la nube de Azure Active Directory para administrar usuarios. También puede integrar su Active Directory local con Azure AD mediante la sincronización del entorno local con Office 365. Una vez que haya configurado la sincronización, puede decidir que su autenticación de usuario tenga lugar dentro de Azure AD o en el directorio local.
   
 ## <a name="office-365-directory-synchronization"></a>Sincronización de directorios de Office 365
 
-Puede usar una identidad sincronizada o una identidad federada entre la organización local y Office 365. Con la identidad sincronizada, los usuarios se administran de forma local y Azure AD los autentica cuando usan la misma contraseña en la nube local. Este es el escenario de sincronización de directorios más común. La autenticación de paso a través o la identidad federada permiten administrar los usuarios de forma local y se autentican mediante el directorio local. La identidad federada requiere una configuración adicional y permite que los usuarios solo inicien sesión una vez. Para obtener más información, lea [understandIng Office 365 Identity y Azure Active Directory](about-office-365-identity.md).
+Puede usar una identidad sincronizada o una identidad federada entre la organización local y Office 365. Con la identidad sincronizada, los usuarios se administran de forma local y Azure AD los autentica cuando usan la misma contraseña en la nube local. Este es el escenario de sincronización de directorios más común. La autenticación de paso a través o la identidad federada permiten administrar los usuarios de forma local y se autentican mediante el directorio local. La identidad federada requiere una configuración adicional y permite que los usuarios solo inicien sesión una vez. Para obtener más información, lea [Understanding Office 365 Identity y Azure Active Directory](about-office-365-identity.md).
   
 ## <a name="want-to-upgrade-from-windows-azure-active-directory-sync-dirsync-to-azure-active-directory-connect"></a>¿Quiere actualizar desde la sincronización (dirSync) de Windows Azure Active Directory a Azure Active Directory Connect?
 
@@ -53,7 +53,7 @@ Para el servidor local en el que instale Azure AD Connect, necesitará el siguie
 |:-----|:-----|
 |**Windows Server 2012 R2** | -PowerShell está instalado de forma predeterminada, no se requiere ninguna acción.  <br> -Net 4.5.1 y versiones posteriores se ofrecen a través de Windows Update. Asegúrese de que tiene instaladas las últimas actualizaciones de Windows Server en el panel de control. |
 |**Windows server 2008 R2 con Service Pack 1 (SP1)** o **Windows Server 2012** | -La versión más reciente de PowerShell está disponible en Windows Management Framework 4,0. Buscarlo en el [centro de descarga de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> -.Net 4.5.1 y versiones posteriores están disponibles en el [centro de descarga de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
-|**Windows Server 2008** | -La versión más reciente compatible de PowerShell está disponible en Windows Management Framework 3,0, disponible en el [centro de descarga de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> -.Net 4.5.1 y versiones posteriores están disponibles en el [centro de descarga de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
+|**Windows Server 2008** | -La versión más reciente compatible de PowerShell está disponible en Windows Management Framework 3,0, disponible en el [centro de descarga de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> -.Net 4.5.1 y versiones posteriores están disponibles en el [centro de descarga de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
 
 > [!NOTE]
 > Si usa la sincronización de directorios de Active Directory de Azure, el número máximo de miembros del grupo de distribución que puede sincronizar desde su implementación local de Active Directory a Azure Active Directory es 15.000. Para Azure AD Connect, ese número es 50.000.
@@ -64,7 +64,7 @@ También puede revisar el [historial de versiones](https://docs.microsoft.com/az
 
 ## <a name="to-set-up-directory-synchronization"></a>Para configurar la sincronización de directorios
 
-1. inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) y elija **** \> usuarios **activos** en el panel de navegación izquierdo.
+1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) y elija **** \> usuarios **activos** en el panel de navegación izquierdo.
 2. En la página **usuarios activos** del centro de administración, elija **más** \> **sincronización de directorios**.
 
     ![En el menú más, elija sincronización de directorios.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)

@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/6/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: 'Resumen: explica cómo se conectan los equipos cliente a los inquilinos de Office 365, según la ubicación del equipo cliente y el centro de recursos de inquilino de Office 365.'
-ms.openlocfilehash: 9455147e70a391619e1602f2e36d9162ff2c0928
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d101af5a0fdd4e29e366b34ad1ab682489f6b3ca
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490596"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068206"
 ---
 # <a name="client-connectivity"></a>Conectividad de clientes
 
@@ -31,7 +31,7 @@ ms.locfileid: "33490596"
   
 Office 365 reside en centros de información de Microsoft en todo el mundo, lo que ayuda a mantener el servicio en funcionamiento incluso cuando hay un problema importante en una región, como un terremoto o una interrupción de la alimentación. Cuando se conecte a su inquilino de Office 365, la conexión de cliente se dirigirá al centro de recursos apropiado en el que se hospeda el inquilino. Las reglas que determinan dónde se puede hospedar el inquilino están definidas por su acuerdo con Microsoft. Las reglas que determinan la forma en que el cliente adquiere los datos de esa ubicación del centro de datos dependen de la arquitectura del servicio que esté usando.
   
-Por ejemplo, cuando inicia sesión en el portal de Office 365, normalmente se conecta al cliente del centro de recursos más cercano y, a continuación, se dirige según el servicio que use a continuación. Si inicia el correo electrónico, es posible que la conexión inicial para mostrar la interfaz de usuario siga apareciendo en el centro de datos más cercano, pero se puede abrir una segunda conexión entre el centro de datos más cercano y el centro de datos donde se encuentra el inquilino para mostrarle lo que hay en los correos electrónicos que lee. Microsoft opera una de las diez principales redes del mundo, lo que da lugar a conexiones rápidas de centro de recursos y centro de conexión increíblemente rápidas.
+Por ejemplo, cuando inicia sesión en el portal de Office 365, normalmente se conecta al cliente del centro de recursos más cercano y, a continuación, se dirige según el servicio que use a continuación. Si inicia el correo electrónico, es posible que la conexión inicial para mostrar la interfaz de usuario siga apareciendo en el centro de datos más cercano, pero se puede abrir una segunda conexión entre el centro de datos más cercano y el centro de datos donde se encuentra el inquilino para mostrarle lo que hay en los correos electrónicos que lee. Microsoft opera una de las diez principales redes del mundo, lo que da como resultado conexiones increíblemente rápidas de centro de recursos y centro de recursos.
   
 Después de leer el artículo, es probable que comprenda por qué no se proporcionan [direcciones URL y intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) por centro de información, por lo que simplemente están muy interconectados y se confían entre sí para que sea factible.
   

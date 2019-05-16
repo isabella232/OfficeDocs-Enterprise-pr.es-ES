@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/01/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Obtenga información sobre cómo se usa Azure ExpressRoute con Office 365 y cómo planear el proyecto de implementación de red que será necesario si está implementando Azure ExpressRoute para usarlo con Office 365.
-ms.openlocfilehash: c8cff4ef85c4383ba04829cf3cf8da3a1bc36715
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 26aa65cdec5e9e37ee99a283d600d56f79fd85a4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490366"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068276"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute para Office 365
 
@@ -66,7 +66,7 @@ En la siguiente tabla se enumeran los servicios de Office 365 que son compatible
 
 <sup>1</sup> Cada una de estas aplicaciones no es compatible con los requisitos de conectividad de Internet a través de ExpressRoute, consulte el artículo de puntos de conexión de [Office 365](https://aka.ms/o365endpoints) para obtener más información.
 
-Los servicios que no se incluyen en ExpressRoute para Office 365 son las descargas de cliente de Office 365 proPlus, el inicio de sesión de proveedor de identidades local y el servicio Office 365 (operado por 21 ViaNet) en China.
+Los servicios que no se incluyen en ExpressRoute para Office 365 son las descargas de cliente de Office 365 ProPlus, el inicio de sesión de proveedor de identidades local y el servicio Office 365 (operado por 21 ViaNet) en China.
 
 ([Azure ExpressRoute para Office 365](azure-expressroute.md#BKMK_HOME))
 
@@ -78,7 +78,7 @@ La implementación de ExpressRoute requiere la participación de los propietario
 
 2. Determinar las ubicaciones de salida y emparejamiento para el tráfico de Internet y ExpressRoute<sup>1</sup>.
 
-3. DeTermine la capacidad necesaria en las conexiones de Internet y ExpressRoute.
+3. Determine la capacidad necesaria en las conexiones de Internet y ExpressRoute.
 
 4. Disponer de un plan para implementar la seguridad y otros controles perimetrales estándar<sup>1</sup>.
 
@@ -122,6 +122,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/express
 
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
 
-[Direcciones URL e intervalos de direcciones IP de Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+[Intervalos de direcciones IP y URL de Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
