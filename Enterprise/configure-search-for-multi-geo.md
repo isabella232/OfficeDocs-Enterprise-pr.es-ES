@@ -3,19 +3,19 @@ title: Configurar la búsqueda para Office 365 Multi-Geo
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico.
-ms.openlocfilehash: 5a06b30e7850a23ff6443eb8b5b2e9e14850a7db
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 39493c4df48af239306d8b22de451d6db6e3bcf9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490406"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068076"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Configurar la búsqueda para Office 365 Multi-Geo
 
@@ -85,7 +85,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La búsqueda multigeográfica no admite la creación dinámica de cubos para refinadores numéricos.</td>
-<td align="left">Use el parámetro <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize”</a> para refinadores numéricos.</td>
+<td align="left">Use el parámetro <a href="https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize”</a> para refinadores numéricos.</td>
 </tr>
 <tr class="even">
 <td align="left">Identificadores de documento</td>

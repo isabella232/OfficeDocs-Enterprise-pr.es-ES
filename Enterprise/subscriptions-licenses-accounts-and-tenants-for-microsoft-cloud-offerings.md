@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/12/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumen: comprenda las relaciones de las organizaciones, las suscripciones, las licencias, las cuentas de usuario y los espacios empresariales en las ofertas de la nube de Microsoft.'
-ms.openlocfilehash: 55d13e55b597f398189efbafb6b3426609f2d41d
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 9df81d14cbd18246bf10e66002d9042a3b3d9384
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741326"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070436"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, cuentas y espacios empresariales para las ofertas de la nube de Microsoft
 
@@ -62,7 +62,7 @@ También puede usar una suscripción de prueba, pero la suscripción expira desp
   
 Las organizaciones pueden tener varias suscripciones para las ofertas de la nube de Microsoft. En la ilustración 1 se muestra un ejemplo.
   
-**Figura 1: Ejemplo de varias suscripciones para una organización**
+**Ilustración 1: Ejemplo de varias suscripciones para una organización**
 
 ![Una organización de ejemplo con varias suscripciones para las ofertas de la nube de Microsoft.](media/Subscriptions/Subscriptions-Fig1.png)
 
@@ -73,7 +73,7 @@ En la ilustración 1, se muestra una sola organización con varias suscripciones
 
 Para las ofertas de la nube de SaaS de Microsoft, una licencia permite a una cuenta de usuario específica usar los servicios de la oferta de la nube. Se le cobrará un precio mensual fijo como parte de su suscripción. Los administradores asignan licencias a cuentas de usuario individuales en la suscripción. En el ejemplo de la ilustración 2, Contoso Corporation tiene una suscripción a Office 365 Enterprise E5 con 100 licencias, que permite a hasta 100 cuentas de usuario individuales usar las características y los servicios de Enterprise E5.
   
-**Figura 2: Licencias en las suscripciones basadas en SaaS para una organización**
+**Ilustración 2: Licencias en las suscripciones basadas en SaaS para una organización**
 
 ![Un ejemplo de varias licencias de suscripciones para las ofertas de la nube de Microsoft basadas en SaaS.](media/Subscriptions/Subscriptions-Fig2.png)
   
@@ -89,7 +89,7 @@ Las cuentas de usuario para todas las ofertas de la nube de Microsoft se almacen
   
 En la ilustración 3, se muestra un ejemplo de varias suscripciones de una organización con un espacio empresarial de Azure AD común que contiene las cuentas de la organización.
   
-**Figura 3: Varias suscripciones de una organización que usan el mismo inquilino de Azure AD.**
+**Ilustración 3: Varias suscripciones de una organización que usan el mismo espacio empresarial de Azure AD**
 
 ![Una organización de ejemplo con varias suscripciones que usan el mismo espacio empresarial de Azure AD.](media/Subscriptions/Subscriptions-Fig3.png)
   
@@ -131,7 +131,7 @@ Aquí tiene un ejemplo de la relación de las organizaciones, suscripciones, lic
     
 Varias suscripciones de la oferta de la nube de Microsoft pueden usar el mismo inquilino de Azure AD, que actúa como proveedor común de identidades. Un inquilino central de Azure AD que contiene las cuentas sincronizadas de su AD DS local le proporciona identidad como servicio (IDaaS) basada en la nube para su organización. Esto se muestra en la figura 4.
   
-**Figura 4: Cuentas locales sincronizadas e IDaaS para una organización**
+**Ilustración 4: Cuentas locales sincronizadas e IDaaS para una organización**
 
 ![IDaaS de identidad como servicio (IaaS) para su organización.](media/Subscriptions/Subscriptions-Fig4.png)
   
@@ -172,9 +172,9 @@ Si compró suscripciones de Office 365 y Azure por separado y quiere obtener acc
   
 ## <a name="see-also"></a>Vea también
 
-[Recursos de arquitectura de TI de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
   
-[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   

@@ -3,17 +3,17 @@ title: Agregar o quitar un administrador geográfico
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 description: Aprenda a agregar o quitar un administrador geográfico de Office 365 Multi-Geo.
-ms.openlocfilehash: 54850252d133e3e26b02cabe3ead0900287e832c
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 767dcf5284e93b9a2e908d4ec837f034b29cb6db
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490916"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068476"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Agregar o quitar un administrador geográfico de Office 365 Multi-Geo
 
@@ -59,4 +59,5 @@ Para quitar un grupo mediante ObjectID, ejecute `Remove-SPOGeoAdministrator -Obj
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[Establecer un alias (MailNickName) de un grupo de seguridad](https://docs.microsoft.com/es-ES/powershell/module/azuread/set-azureadgroup)
+
+  [Establecer un alias (MailNickName) de un grupo de seguridad](https://docs.microsoft.com/es-ES/powershell/module/azuread/set-azureadgroup)

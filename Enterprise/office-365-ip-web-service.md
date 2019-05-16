@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 5/7/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Para ayudarle a identificar y diferenciar el tráfico de red de Office 365, un nuevo servicio web publica puntos de conexión de Office 365, con lo cual le resultará más fácil evaluar, configurar y mantenerse al día con los cambios. Este nuevo servicio web reemplaza los archivos XML descargables que están disponibles actualmente.
-ms.openlocfilehash: 35a34071a76e551cde8342566a912e4fd4d0100e
-ms.sourcegitcommit: 9c6e31204aa326c31d60befe80e610f702e65800
+ms.openlocfilehash: fcef7a6a175b043639275fedc77faaa689f0e7d5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33976525"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069736"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Dirección IP y servicio web de URL de Office 365
 
