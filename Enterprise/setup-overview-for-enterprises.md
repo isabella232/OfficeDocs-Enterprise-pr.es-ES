@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Estos pasos generales están diseñados para ayudarle a implementar Office 365, conectar su Active Directory y migrar los datos, y para ayudar a las personas de su organización a empezar a usar la versión más reciente de Office 2016.
-ms.openlocfilehash: 16e6c60404a9e1f2c49b2e8e23920540e1dd8e49
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2530b170c607f635f6f1baebf1d83fa7745d23a6
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070816"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102548"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Implementar Office 365 Enterprise para la organización
 ¿Listo para implementar e integrar Office 365 Enterprise en su infraestructura local? Estos pasos generales están diseñados para ayudarle a conectar su directorio y migrar los datos, y para ayudar a las personas de su organización a empezar a usar la versión más reciente de Office 2016.
@@ -38,12 +38,12 @@ Si desea implementar Office 365 por su cuenta, los siguientes pasos pueden servi
 
 1. **[Prepararse para Office 365](get-your-organization-ready-for-office-365.md)**. Estas herramientas y recursos le servirán de ayuda para preparar la red, el directorio y los usuarios finales para Office 365.
 
-2. **[Iniciar sesión y agregar el dominio o los dominios de Internet a Office 365](https://portal.office.com/Domains/AddDomainWizard.aspx?Scenario=AdvancedSetup)**. Inicie sesión en el portal y agregue uno o más dominios a su suscripción de Office 365 sin agregar usuarios ni migrar el correo electrónico. Si desea configurar todos los usuarios y servicios al mismo tiempo, siga nuestras [instrucciones básicas de configuración](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa).
+2. **Inicie sesión y agregue sus dominios de Internet a Office 365**. Inicie sesión en el [centro de administración de 365 de Microsoft](https://portal.microsoft.com), haga clic en **configurar > dominios**y, a continuación, haga clic en **nuevo dominio**. Agregue uno o más dominios a su suscripción de Office 365 sin agregar usuarios o migrar correo electrónico. 
 
 >[!IMPORTANT] 
 >Las instrucciones básicas de configuración no funcionarán si desea sincronizar los usuarios desde un directorio local o usar un inicio de sesión único.
 
-3. **[Conectar el directorio a Office 365](https://support.office.com/article/Understanding-Office-365-Identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9)**. Guía para las opciones de configuración de sincronización de identidades y/o el inicio de sesión único. Use el [asesor de AAD Connect](https://aka.ms/aadconnectpwsync) y la [Guía de configuración de Azure AD Premium](https://aka.ms/aadpguidance) para obtener instrucciones de configuración personalizadas.
+3. **[Conectar el directorio a Office 365](about-office-365-identity.md)**. Guía para las opciones de configuración de sincronización de identidades y/o el inicio de sesión único. Use el [asesor de AAD Connect](https://aka.ms/aadconnectpwsync) y la [Guía de configuración de Azure AD Premium](https://aka.ms/aadpguidance) para obtener instrucciones de configuración personalizadas.
 4. **[Configurar las aplicaciones y los servicios de Office 365](configure-services-and-applications.md)**. Empiece aquí para configurar el correo electrónico, el uso compartido de archivos, la mensajería instantánea o cualquier otro servicio o aplicación de Office 365.
 5. **[Migrar datos a Office 365](migrate-data-to-office-365.md)**. Una vez que los servicios estén configurados, podrá empezar a migrar los datos.
 6. **[Ayudar a los usuarios con Office 365](https://support.office.com/article/Get-started-with-Office-365-for-business-d6466f0d-5d13-464a-adcb-00906ae87029)**. Ayude a los usuarios de su organización a familiarizarse con Office 365 mediante estos recursos.

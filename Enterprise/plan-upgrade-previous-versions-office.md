@@ -13,20 +13,20 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Si usa Office 2007 u Office 2010, es el momento de planear la actualización. No se bloquee con aplicaciones obsoletas. Use estos recursos para empezar a trabajar con su plan.
-ms.openlocfilehash: 3643463e950fdfdf4440a7060383b3e7f21a9037
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3af3b366aa8ae7b9e70169ca0885959fe2b6f8dd
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069336"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102438"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planeación de la actualización de los servidores y clientes de Office 2007 u Office 2010
 
-Si su organización usa versiones anteriores de productos y servidores de Office, este es un buen momento para empezar a planear la actualización. Los productos y servicios de Office 2007 han llegado al final del soporte técnico y los productos y servicios de Office 2010 están próximos a la finalización del soporte técnico. Use los recursos de esta sección para empezar.
-
-- [Actualización de clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)
+Si su organización usa versiones anteriores de productos y servidores de Office, este es un buen momento para empezar a planear la actualización. Los productos y servicios de Office 2007 han llegado al final del soporte técnico y los productos y servicios de Office 2010 alcanzarán su fin de soporte el **13 de octubre de 2020**. Use los recursos de esta sección para empezar.
 
 - [Actualización de clientes y servidores de Office 2007](upgrade-from-office-2007-servers-and-products.md)
+
+- [Actualización de clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>¿Qué sucede si no actualizo?
 
