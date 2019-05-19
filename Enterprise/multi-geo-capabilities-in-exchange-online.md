@@ -3,55 +3,55 @@ title: Multi-Geo de Exchange
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
-description: Obtenga más información sobre las funcionalidades multigeográficas en Exchange Online.
-ms.openlocfilehash: 70db45bb7626c49a2c9cd6ec827bff6ca16d4673
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
-ms.translationtype: MT
+description: Obtenga información sobre las capacidades multigeográficas en Exchange Online
+ms.openlocfilehash: d518121c69ee29ee246c6947e361a74a3933310f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765072"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069936"
 ---
-# <a name="multi-geo-capabilities-in-exchange-online"></a>Capacidades multigeográficas de Exchange Online
+# <a name="multi-geo-capabilities-in-exchange-online"></a>Capacidades multigeográficas en Exchange Online
 
-En un entorno multigeográfico, puede seleccionar la ubicación del contenido del buzón de correo de Exchange Online (datos en reposo) por cada usuario.
+En un entorno multigeográfico, puede seleccionar la ubicación del contenido del buzón de Exchange Online (datos almacenados) de cada usuario.
 
-Puede situar buzones en ubicaciones geográficas por satélite:
+Puede colocar buzones en ubicaciones geográficas satélite:
 
-- Crear un nuevo buzón de correo de Exchange online directamente en una ubicación geográfica de satélite.
+- Creando un nuevo buzón de Exchange Online directamente en una ubicación geográfica satélite.
 
-- Mover un buzón de correo de Exchange Online existente a una ubicación geográfica de satélite cambiando la ubicación de datos preferida del usuario.
+- Moviendo un buzón de Exchange Online existente a una ubicación geográfica satélite si cambia la ubicación de datos preferida del usuario.
 
-- Incorporación de un buzón de una organización de Exchange local directamente en una ubicación geográfica de satélite.
+- Incorporando un buzón de una organización de Exchange local directamente en una ubicación geográfica satélite. 
 
-## <a name="mailbox-placement-and-moves"></a>Colocación y desplazamiento de buzones
+## <a name="mailbox-placement-and-moves"></a>Colocación y movimiento de buzones
 
-Una vez que Microsoft complete los pasos de configuración multigeográfico de requisitos previos, Exchange Online admitirá el atributo **PreferredDataLocation** en objetos de usuario en Azure ad.
+Cuando Microsoft complete los requisitos previos de configuración multigeográfica, Exchange Online respetará el atributo **PreferredDataLocation** de los objetos de usuario de Azure AD.
 
-Exchange Online sincroniza la propiedad **PreferredDataLocation** de Azure ad con la propiedad **MailboxRegion** del servicio de directorio de Exchange Online. El valor de **MailboxRegion** determina la ubicación geográfica en la que se colocarán los buzones de usuario y los buzones de archivo asociados. No se puede configurar el buzón de correo principal de un usuario y los buzones de archivo para que residan en ubicaciones geográficas diferentes. Solo se puede configurar una ubicación geográfica por cada objeto de usuario.
+Exchange Online sincroniza la propiedad **PreferredDataLocation** de Azure AD en la propiedad **MailboxRegion** en el servicio de directorio de Exchange Online. El valor de **MailboxRegion** determina la ubicación geográfica donde se colocarán los buzones de usuario y cualquier archivo asociado. No es posible configurar el buzón principal y los de archivo de un usuario para que residan en ubicaciones geográficas distintas. Solo puede configurarse una ubicación geográfica por objeto de usuario.
 
-- Cuando **PreferredDataLocation** se configura en un usuario con un buzón existente, el buzón se coloca en una cola de reubicación y se mueve automáticamente a la ubicación geográfica especificada.
+- Cuando **PreferredDataLocation** está configurado en un usuario con un buzón existente, el buzón se colocará en una cola de reubicación y se moverá automáticamente a la ubicación geográfica especificada.
 
-- Cuando se configura **PreferredDataLocation** en un usuario sin un buzón existente, al aprovisionar el buzón de correo, se aprovisionará en la ubicación geográfica especificada.
+- Cuando **PreferredDataLocation** está configurado en un usuario sin un buzón existente, al aprovisionar el buzón, se aprovisionará en la ubicación geográfica especificada.
 
-- Cuando **PreferredDataLocation** no se especifica en un usuario, al aprovisionar el buzón de correo, se aprovisionará en la ubicación geográfica central.
+- Cuando **PreferredDataLocation** no está especificada en un usuario, al aprovisionar el buzón, se aprovisionará en la ubicación geográfica central.
 
-- Si el código de **PreferredDataLocation** es incorrecto (por ejemplo, un tipo Nan en lugar de Nam), el buzón de correo se aprovisionará en la ubicación geográfica central.
+- Si el código**PreferredDataLocation** no es correcto (por ejemplo, un tipo de NAN en lugar de NAM), el buzón se aprovisionará en la ubicación geográfica central.
 
-**Nota**: las capacidades multigeográficas y las reuniones hospedadas en el país de Skype empresarial online usan la propiedad **PreferredDataLocation** en objetos de usuario para ubicar los servicios. Si configura valores de **PreferredDataLocation** en objetos de usuario para reuniones hospedadas de forma regional, el buzón de correo de dichos usuarios se moverá automáticamente a la ubicación geográfica especificada después de habilitar multigeográfico en el inquilino de Office 365.
+**Nota**: las funciones de Multi-geo y las reuniones hospedadas regionalmente por Skype Empresarial Online utilizan la propiedad **PreferredDataLocation** en los objetos de usuario para buscar servicios. Si configura los valores de **PreferredDataLocation** en los objetos de usuario para reuniones hospedadas regionalmente, el buzón de correo de esos usuarios se moverá automáticamente a la ubicación geográfica especificada después de que se habilite en el espacio empresarial de Office 365.
 
-## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitaciones de características para multi-geo en Exchange Online
+## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitación de funciones para empresas multigeográficas en Exchange Online
 
-- Las características de seguridad y cumplimiento (por ejemplo, la auditoría y la exhibición de documentos electrónicos) que están disponibles en el centro de administración de Exchange (EAC) no están disponibles en organizaciones multigeográficas. En su lugar, debe usar el [centro de cumplimiento de & de seguridad de Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar las características de cumplimiento y seguridad.
+- Características de seguridad y cumplimiento (por ejemplo, auditoría y eDiscovery) que están disponibles en el centro de administración de Exchange (EAC) no están disponibles en las organizaciones multigeográficas. En su lugar, debe utilizar el [Centro de seguridad y cumplimiento de Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar las características de seguridad y cumplimiento.
 
-- Los usuarios de Outlook para Mac pueden experimentar una pérdida temporal de acceso a su carpeta de archivo en línea mientras mueve su buzón de correo a una nueva ubicación geográfica. Esta condición se produce cuando los buzones de correo principales y de archivo del usuario se encuentran en ubicaciones geográficas diferentes, ya que los movimientos entre buzones de correo geográfico pueden completarse en diferentes momentos.
+- Los usuarios de Outlook para Mac pueden experimentar una pérdida temporal de acceso a su carpeta de archivo en línea mientras mueven su buzón de correo a una nueva ubicación geográfica. Esta condición se produce cuando los buzones de correo principal y de archivo del usuario se encuentran en diferentes ubicaciones geográficas, ya que los movimientos de buzones entre ubicaciones geográficas se pueden completar en diferentes momentos.
 
-- Los usuarios no pueden compartir carpetas de buzones de *correo* entre ubicaciones geográficas en Outlook en la web (anteriormente conocido como Outlook Web App o OWA). Por ejemplo, un usuario de la Unión Europea no puede usar Outlook en la web para abrir una carpeta compartida en un buzón que se encuentra en los Estados Unidos. Sin embargo, los usuarios de Outlook en la web pueden abrir *otros buzones* en distintas ubicaciones geográficas mediante una ventana del explorador independiente, tal como se describe en [abrir el buzón de otra persona en una ventana del explorador independiente en Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
+- Los usuarios no pueden compartir *carpetas del buzón* entre distintas ubicaciones geográficas de Outlook en la Web (anteriormente conocida como Outlook Web App u OWA). Por ejemplo, un usuario de la Unión Europea no puede usar Outlook en la Web para abrir una carpeta compartida en un buzón que se encuentra en Estados Unidos. Sin embargo, los usuarios de Outlook en la Web pueden abrir *otros buzones* en diferentes ubicaciones geográficas utilizando una ventana de explorador separada, como se describe en [Abrir el buzón de otra persona en una ventana de navegador separada en Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
 
-  **Nota**: el uso compartido de carpetas entre buzones de correo entre bosques se admite en Outlook en Windows.
+  **Nota**: el uso compartido de carpetas de buzones entre distintas ubicaciones geográficas es compatible con Outlook en Windows.
 
-- Las carpetas públicas se admiten en varias organizaciones geográficas. Sin embargo, las carpetas públicas deben permanecer en la ubicación geográfica central. No puede mover carpetas públicas a ubicaciones geográficas de satélite.
+- Las carpetas públicas se admiten en organizaciones multigeográficas. Sin embargo, las carpetas públicas deben permanecer en la ubicación geográfica central. No puede mover carpetas públicas a ubicaciones geográficas satélite.
