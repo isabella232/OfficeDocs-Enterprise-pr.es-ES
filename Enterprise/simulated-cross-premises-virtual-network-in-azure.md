@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Resumen: cree una red virtual simulada entre locales en Microsoft Azure como un entorno de desarrollo y pruebas.'
-ms.openlocfilehash: 23e713ee50f1efed9ede07b13c289195d9054f8d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 595aa20595f43f481aaf090a14d0d7c0df000345
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070426"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162493"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Red virtual simulada entre locales en Azure
 
@@ -218,9 +218,7 @@ Use este entorno de desarrollo y pruebas para simular una [granja de servidores 
   
 [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
   
-[Sincronización de directorios (DirSync) para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Seguridad de Cloud App para su entorno de desarrollo y prueba de Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
 [Protección contra amenazas avanzada en el entorno de desarrollo y prueba de Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
   

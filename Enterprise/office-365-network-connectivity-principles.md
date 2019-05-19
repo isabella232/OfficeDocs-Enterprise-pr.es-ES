@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Antes de empezar a planear la red para la conectividad de red de Office 365, es importante comprender los principios de conectividad para administrar de forma segura el tráfico de Office 365 y obtener el mejor rendimiento posible. Este artículo le ayudará a comprender las instrucciones más recientes para optimizar de manera segura la conectividad de red de Office 365.
-ms.openlocfilehash: 2d8b629d291be44da3d3360e676e7a01d9cd5a35
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d242196c2136962bf11472b51c28889977c2fc21
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069826"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162503"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Principios de conectividad de red de Office 365
 
@@ -200,7 +200,7 @@ Microsoft ofrece una amplia gama de características de seguridad de Office 365 
   
 - **Usar multi-factor Authentication (MFA)** La MFA agrega una capa de protección adicional a una estrategia de contraseña segura, ya que obliga a los usuarios a confirmar una llamada telefónica, un mensaje de texto o una notificación de la aplicación en el smartphone después de escribir correctamente su contraseña.
 
-- **Usar Office 365 Cloud App Security** Configure las directivas para realizar un seguimiento de la actividad anómala y actuar sobre ella. Configurar alertas con Office 365 Cloud App Security para que los administradores puedan revisar la actividad de los usuarios inusual o arriesgada, como descargar grandes cantidades de datos, varios intentos de inicio de sesión incorrectos o conexiones de direcciones IP desconocidas o peligrosas.
+- **Usar Microsoft Cloud App Security** Configure las directivas para realizar un seguimiento de la actividad anómala y actuar sobre ella. Configurar alertas con Microsoft Cloud App Security para que los administradores puedan revisar la actividad de los usuarios inusual o arriesgada, como descargar grandes cantidades de datos, varios intentos de inicio de sesión incorrectos o conexiones de direcciones IP desconocidas o peligrosas.
 
 - **Configurar prevención de pérdida de datos (DLP)** DLP le permite identificar datos confidenciales y crear directivas que ayuden a impedir que los usuarios compartan los datos por accidente o de forma intencionada. DLP funciona en Office 365, incluidos Exchange Online, SharePoint Online y OneDrive para que los usuarios puedan cumplir sin interrumpir el flujo de trabajo.
 
