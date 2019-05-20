@@ -164,10 +164,8 @@
 # Administrar Office 365
 ## [Estado del servicio](view-service-health.md)
 ### [Conectividad del monitor](monitor-connectivity.md)
-### 
-  [Opciones de soporte técnico](https://support.office.com/es-ES/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-## 
-  [Herramientas de administración](https://support.office.com/es-ES/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Opciones de soporte técnico](https://support.office.com/es-ES/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+## [Herramientas de administración](https://support.office.com/es-ES/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Herramientas para administrar cuentas de Office 365](manage-office-365-accounts.md)
 ### [Agregar varios usuarios al mismo tiempo a Office 365: ayuda para administradores](add-several-users-at-the-same-time.md)
 ### [Recuperar elementos eliminados en un buzón de usuario: ayuda para administradores](recover-deleted-items-in-a-mailbox.md)
