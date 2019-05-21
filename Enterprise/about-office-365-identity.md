@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo se administra la identidad del usuario en Office 365.
-ms.openlocfilehash: 1d4a2f40ebae9fa87d59ee3f7c9b621b40b03640
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 421002825842201fa754b4c5579dc04fde37eeaf
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162393"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249468"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Modelos de identidad de Office 365 y Azure Active Directory
 
@@ -91,7 +91,7 @@ No usa el centro de administración de Microsoft 365 o Windows PowerShell para a
 
 Si necesita el modelo de identidad solo de la nube, consulte [identidades solo de nube](cloud-only-identities.md).
 
-Si necesita el modelo de identidad híbrida, consulte [planeación de las identidades sincronizadas y los métodos de autenticación](plan-for-directory-synchronization.md).
+Si necesita el modelo de identidad híbrida, consulte [sincronización de directorios](plan-for-directory-synchronization.md).
   
 
 ## <a name="video-training"></a>Vídeo de aprendizaje

@@ -17,13 +17,13 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
-description: Esta lista de comprobación ayudará a su organización cuando Planee y prepare una migración a Office 365. Las fases y los pasos de la lista de comprobación se alinean con las instrucciones proporcionadas por el centro de incorporación.
-ms.openlocfilehash: 858ae9520db4cfb18696c817f041b879d66484e3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Esta lista de comprobación ayudará a su organización cuando Planee y prepare una migración a Office 365.
+ms.openlocfilehash: 9cd2977a43f26e724d85c723aa6aad70937b1f1f
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067886"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249498"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Lista de comprobación para planificar la implementación de Office 365
 
