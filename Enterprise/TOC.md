@@ -204,8 +204,7 @@
 ### [Desactivar la sincronización de directorios](turn-off-directory-synchronization.md)
 
 ## Usuarios
-### 
-  [Centro de ayuda para administradores de Office 365](https://support.office.com/es-ES/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Centro de ayuda para administradores de Office 365](https://support.office.com/es-ES/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Herramientas para administrar cuentas de usuario](manage-office-365-accounts.md)
 ### [Agregar varios usuarios al mismo tiempo](add-several-users-at-the-same-time.md)
 ### [Recuperar elementos eliminados en un buzón de usuario ](recover-deleted-items-in-a-mailbox.md)
@@ -223,8 +222,7 @@
 
 ## Estado del servicio
 ### [Cómo comprobar](view-service-health.md)
-### 
-  [Opciones de soporte técnico](https://support.office.com/es-ES/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+### [Opciones de soporte técnico](https://support.office.com/es-ES/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## Rendimiento
 ### [Ajustar el rendimiento de Office 365](tune-office-365-performance.md)
