@@ -3,7 +3,7 @@ title: Recursos que le ayudarán a actualizar desde los servidores y clientes de
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/28/2019
+ms.date: 06/03/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,16 +21,20 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: El soporte técnico finaliza pronto para las aplicaciones cliente y servidores de Office 2010, y los contratos de soporte personalizados no están disponibles. Use este artículo para empezar a planear la actualización ahora.
-ms.openlocfilehash: 11bd2e7acf5c35a427b2acd04fd37605615b42ed
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: de5c3f8d3e8cc86a2b53d175725e21f764f20df7
+ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539216"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34704090"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2010
 
-Si usa productos y servicios de Office 2010, probablemente estará consciente de que los productos y servicios de Office 2010 alcanzarán el final del soporte técnico el **13 de octubre de 2020**. Mientras planea la actualización, este es un buen momento para considerar cambiar a Office 365. Office 365 tiene servicios basados en la nube para Office 2010 productos de servidor, como Exchange Server y SharePoint Server, y nuevos servicios como Teams y OneDrive para la empresa. Office 365 ProPlus es las aplicaciones cliente de Office 2010 que se instalan en el dispositivo local y se actualizan con nuevas características de seguridad y productividad de manera ongoign desde la nube de Microsoft. Office 365 ProPlus se incluye con Office 365 E3 y E5.
+Exchange 2010 alcanzará su fin de soporte el **14 de enero de 2020**. Otros productos y servicios de Office 2010 llegarán a su fin de soporte el **13 de octubre de 2020**. Mientras planea la actualización, este es un buen momento para considerar cambiar a Office 365. 
+
+Office 365 tiene servicios basados en la nube para Office 2010 productos de servidor, como Exchange Server y SharePoint Server, y nuevos servicios como Teams y OneDrive para la empresa. 
+
+Office 365 ProPlus, incluido con Office 365 E3 y E5, es el conjunto de aplicaciones cliente de Office que se instala en el dispositivo local. Se actualizan con nuevas características de productividad y seguridad de manera continua desde la nube de Microsoft.
 
 Use este artículo como punto de partida para revisar sus opciones.
       

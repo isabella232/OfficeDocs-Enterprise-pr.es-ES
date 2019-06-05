@@ -3,7 +3,7 @@ title: Planeación de la actualización desde servidores y clientes de Office 20
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/12/2019
+ms.date: 06/04/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Si usa Office 2007 u Office 2010, es el momento de planear la actualización. No se bloquee con aplicaciones obsoletas. Use estos recursos para empezar a trabajar con su plan.
-ms.openlocfilehash: 0ef77765b2f75bc0c8680c5fb93167ad1a32983a
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: 1867661c158667a6da6108380841f8d9d692ba15
+ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539282"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34704111"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planeación de la actualización de los servidores y clientes de Office 2007 u Office 2010
 
-Si su organización usa versiones anteriores de productos y servidores de Office, este es un buen momento para empezar a planear la actualización. Los productos y servicios de Office 2007 han llegado al final del soporte técnico y los productos y servicios de Office 2010 alcanzarán su fin de soporte el **13 de octubre de 2020**. Use los recursos de esta sección para empezar.
+Si su organización usa versiones anteriores de productos y servidores de Office, este es un buen momento para empezar a planear la actualización. Los productos y servicios de Office 2007 han llegado al final del soporte técnico. Exchange 2010 alcanzará su fin de soporte el **14 de enero de 2020**. Otros productos y servicios de Office 2010 llegarán a su fin de soporte el **13 de octubre de 2020**. Use los recursos de esta sección para empezar.
 
 - [Actualización de clientes y servidores de Office 2007](upgrade-from-office-2007-servers-and-products.md)
 
@@ -71,7 +71,7 @@ Si está usando Office 2007 u Office 2010 en el hogar, tenga en cuenta las sigui
 - **Pruebe Office 365 para uso doméstico**. Revise los [requisitos](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab)y, a continuación, elija entre [Office 365 hogar](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) u [Office 365 personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf). Inicie una versión de prueba y vea cómo Office 365 trabaja para usted. Con Office 365, podrá disfrutar de un almacenamiento en la nube con OneDrive, obtendrá 60 minutos de llamadas de Skype a números móviles y fijos cada mes y obtendrá muchas otras excelentes características. Para obtener más información, vea [saque el máximo partido de Office con office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1).
     
 - **Compre Office hogar &amp; Student**. Si elige esta opción, realizará una compra de pago único y, a continuación, instalará Office en su equipo con Windows o Mac. Esta no es una suscripción; se trata de una licencia de uso único y perpetua para un equipo. Vea los [requisitos](http://office.com/systemrequirements)y, a continuación, elija la versión que desea usar.
-    - Si su PC Windows ejecuta Windows 10, considere la posibilidad de obtener [Office Home _AMP_ Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
+    - Si su PC Windows ejecuta Windows 10, considere la posibilidad de obtener [Office Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
     - Si su PC Windows ejecuta Windows 7, 8 o 8,1 y no va a actualizar a Windows 10 en este momento, considere la posibilidad de obtener Office Home & Student 2016 (u otra edición de Microsoft Office) de un distribuidor autorizado.
 
 También puede elegir no actualizar en este momento. Las aplicaciones de Office seguirán ejecutándose. (Las escalas de tiempo de las fechas de soporte técnico de Office están disponibles [aquí](https://go.microsoft.com/fwlink/p/?linkid=2085724)). Sin embargo, la actualización le proporcionará acceso a características nuevas y mejoradas, incluidas las actualizaciones de seguridad. 

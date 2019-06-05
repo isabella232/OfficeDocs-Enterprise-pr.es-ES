@@ -3,30 +3,6 @@
 
 
 
-## <a name="week-of-april-15-2019"></a>Semana del 15 de abril de 2019
-
-
-| Fecha de publicación |Título del tema | Cambio |
-|------|------------|--------|
-| 4/18/2019 | [Funcionamiento de la autenticación moderna para aplicaciones cliente de Office 2013 y Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | modificado |
-| 4/18/2019 | [Asignar licencias a cuentas de usuario con PowerShell de Office 365](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modificado |
-| 4/18/2019 | [Asignar roles a cuentas de usuario con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | modificado |
-| 4/18/2019 | [Enrutamiento con ExpressRoute para Office 365](/Office365/Enterprise/routing-with-expressroute) | modificado |
-| 4/18/2019 | [Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | modificado |
-
-
-## <a name="week-of-april-22-2019"></a>Semana del 22 de abril de 2019
-
-
-| Fecha de publicación |Título del tema | Cambio |
-|------|------------|--------|
-| 4/22/2019 | [Capacidades multigeográficas de OneDrive y SharePoint Online](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | modificado |
-| 4/22/2019 | [Multi-Geo de Office 365](/Office365/Enterprise/office-365-multi-geo) | modificado |
-| 4/22/2019 | Agregar datos de informes de clientes a través de Windows PowerShell para asociados con permiso de acceso delegado (DAP) | eliminación |
-| 4/22/2019 | [Administrar Office 365 con Windows PowerShell para socios de permisos de acceso delegado (DAP)](/Office365/Enterprise/powershell/manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p) | modificado |
-| 4/22/2019 | [Retrieve customer tenant reporting data with Windows PowerShell for Delegated Access Permissions (DAP) partners](/Office365/Enterprise/powershell/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac) | modificado |
-
-
 ## <a name="week-of-april-29-2019"></a>Semana del 29 de abril de 2019
 
 
@@ -343,3 +319,38 @@
 | 5/17/2019 | [Protección de las cuentas de administrador global de Office 365](/Office365/Enterprise/protect-your-global-administrator-accounts) | modificado |
 | 5/17/2019 | [Configuración de la sincronización del directorio para Office 365](/Office365/Enterprise/set-up-directory-synchronization) | modificado |
 | 5/17/2019 | [Red virtual entre locales simulada en Azure](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | modificado |
+
+
+## <a name="week-of-may-20-2019"></a>Semana del 20 de mayo de 2019
+
+
+| Fecha de publicación |Título del tema | Cambio |
+|------|------------|--------|
+| 5/20/2019 | [Modelos de identidad de Office 365 y Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | modificado |
+| 5/20/2019 | [Lista de comprobación para planificar la implementación de Office 365](/Office365/Enterprise/deployment-planning-checklist) | modificado |
+| 5/20/2019 | [Planeación de Office 365 Enterprise](/Office365/Enterprise/get-your-organization-ready-for-office-365) | modificado |
+| 5/20/2019 | [Implementar Office 365 Enterprise para la organización](/Office365/Enterprise/setup-overview-for-enterprises) | modificado |
+| 5/21/2019 | [Cómo configurar Exchange Server local para usar la autenticación moderna híbrida](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | modificado |
+| 5/21/2019 | Using content delivery networks with SharePoint Online (Usar redes de entrega de contenido con SharePoint Online) | eliminación |
+| 5/22/2019 | [Introducción a la autenticación moderna híbrida y requisitos previos para su uso con servidores locales de Skype empresarial y Exchange](/Office365/Enterprise/hybrid-modern-auth-overview) | modificado |
+| 5/22/2019 | Uso de Azure AD para la autenticación de SharePoint Server | eliminación |
+
+
+## <a name="week-of-may-27-2019"></a>Semana del 27 de mayo de 2019
+
+
+| Fecha de publicación |Título del tema | Cambio |
+|------|------------|--------|
+| 5/28/2019 | [Office 365 Enterprise](/Office365/Enterprise/index) | modificado |
+| 5/28/2019 | [Descargar y ejecutar la herramienta IdFix de Office 365](/Office365/Enterprise/install-and-run-idfix) | modificado |
+| 5/28/2019 | [Herramientas para administrar cuentas de Office 365](/Office365/Enterprise/manage-office-365-accounts) | modificado |
+| 5/28/2019 | [Preparación de los atributos del directorio para sincronizarlos con Office 365 mediante la herramienta IdFix](/Office365/Enterprise/prepare-directory-attributes-for-synch-with-idfix) | modificado |
+| 5/28/2019 | [Preparación para la sincronización de directorios en Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | modificado |
+| 5/28/2019 | [Herramientas para administrar cuentas de Office 365](/Office365/Enterprise/tools-to-manage-office-365-accounts) | modificado |
+| 5/28/2019 | [Extremos DoD del gobierno de Estados Unidos de Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificado |
+| 5/28/2019 | [Office 365 puntos de conexión altos de GCC U.S. Government](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificado |
+| 5/28/2019 | [Intervalos de direcciones IP y URL de Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificado |
+| 5/29/2019 | [Recursos de arquitectura de TI de la nube de Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modificado |
+| 5/29/2019 | [Planeación de la actualización desde servidores y clientes de Office 2007 o 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | modificado |
+| 5/29/2019 | [Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | modificado |
+| 5/30/2019 | [Asignar roles a cuentas de usuario con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | modificado |
