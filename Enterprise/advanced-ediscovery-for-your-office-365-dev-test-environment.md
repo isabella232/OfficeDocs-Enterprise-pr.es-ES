@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Resumen: configure y demuestre la Exhibición avanzada de documentos electrónicos de Office 365 en el entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: dc783672f8f667e424ad738d8eb9091732537ebe
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
+ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162413"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726236"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>eDiscovery avanzado para el entorno de desarrollo y pruebas de Office 365
 
@@ -95,11 +95,11 @@ En este procedimiento, se crean dos documentos de Word que posteriormente podrá
     
 3. En la pestaña **Colección de sitios de producción**, en **Documentos**, haga clic en **Nuevo > Documento de Word**.
     
-4. En la página de **Word Online**, escriba **Proyecto de contrato de Tailspin**, espere hasta que se muestre **Guardado** en el título y, después, cierre la pestaña de la página de **Word Online**.
+4. En la página de **Word** , **Escriba proyecto de contrato de Tailspin**, espere hasta que se muestre **guardado** en el título y, a continuación, cierre la ficha Página de **Word** .
     
 5. En la pestaña **Colección de sitios de producción**, en **Documentos**, haga clic en **Nuevo > Documento de Word**.
     
-6. 	En la pestaña de **Word Online**, escriba **Notas del conflicto del contrato de Tailspin**, espere hasta que se muestre **Guardado** en el título y, después, cierre la pestaña **Word Online**.
+6. En la pestaña **Word** , escriba **notas del conflicto del contrato de Tailspin**, espere hasta que se muestre **guardado** en el título y, a continuación, cierre la pestaña **Word** .
     
 7. En la pestaña **Colección de sitios de producción**, debería ver **Documento** y **Documento1** en la lista de documentos.
     
@@ -139,7 +139,7 @@ En este procedimiento, creará una búsqueda en el centro &amp; de seguridad y c
     
 11. En la ventana **Grupo de roles **, haga clic en **Guardar**.
     
-12. En el panel de navegación izquierdo **, &amp; **haga clic en búsqueda de contenido >.
+12. En el panel de navegación izquierdo, haga clic en **investigación de búsqueda &amp; > búsqueda de contenido**.
     
 13. Haga clic en el icono de signo más para agregar una búsqueda.
     
