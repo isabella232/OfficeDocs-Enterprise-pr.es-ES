@@ -21,16 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: El soporte técnico finaliza pronto para las aplicaciones cliente y servidores de Office 2010, y los contratos de soporte personalizados no están disponibles. Use este artículo para empezar a planear la actualización ahora.
-ms.openlocfilehash: de5c3f8d3e8cc86a2b53d175725e21f764f20df7
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: 4c0c5101a7d1dbd068fe4bbbd03eb1bdd41b3b05
+ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704090"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34780869"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2010
 
-Exchange 2010 alcanzará su fin de soporte el **14 de enero de 2020**. Otros productos y servicios de Office 2010 llegarán a su fin de soporte el **13 de octubre de 2020**. Mientras planea la actualización, este es un buen momento para considerar cambiar a Office 365. 
+Exchange Server 2010 alcanzará su fin de soporte el **14 de enero de 2020**. Office 2010, SharePoint 2010 y Project Server 2010 llegarán a su fin de soporte el **13 de octubre de 2020**. Mientras planea la actualización, este es un buen momento para considerar cambiar a Office 365. 
 
 Office 365 tiene servicios basados en la nube para Office 2010 productos de servidor, como Exchange Server y SharePoint Server, y nuevos servicios como Teams y OneDrive para la empresa. 
 
