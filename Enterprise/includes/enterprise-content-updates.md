@@ -3,25 +3,6 @@
 
 
 
-## <a name="week-of-april-29-2019"></a>Semana del 29 de abril de 2019
-
-
-| Fecha de publicación |Título del tema | Cambio |
-|------|------------|--------|
-| 30/4/2019 | [Cómo configurar Skype Empresarial local para usar la autenticación moderna híbrida](/Office365/Enterprise/configure-skype-for-business-for-hybrid-modern-authentication) | modificado |
-| 30/4/2019 | [Diseño de redes para IaaS de Microsoft Azure](/Office365/Enterprise/designing-networking-for-microsoft-azure-iaas) | modificado |
-| 30/4/2019 | [Introducción a la autenticación moderna híbrida y requisitos previos para su uso con servidores locales de Skype empresarial y Exchange](/Office365/Enterprise/hybrid-modern-auth-overview) | modificado |
-| 30/4/2019 | [Supervisar la conectividad de Office 365](/Office365/Enterprise/monitor-connectivity) | modificado |
-| 30/4/2019 | [Puntos de conexión de Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | modificado |
-| 30/4/2019 | [Dirección IP de Office 365 y servicio web de URL](/Office365/Enterprise/office-365-ip-web-service) | modificado |
-| 30/4/2019 | [Extremos DoD del gobierno de Estados Unidos de Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificado |
-| 30/4/2019 | [Office 365 puntos de conexión altos de GCC U.S. Government](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificado |
-| 30/4/2019 | [Enrutamiento con ExpressRoute para Office 365](/Office365/Enterprise/routing-with-expressroute) | modificado |
-| 30/4/2019 | [Intervalos de direcciones IP y URL de Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificado |
-| 30/4/2019 | [Uso de Azure AD para la autenticación de SharePoint Server](/Office365/Enterprise/using-azure-ad-for-sharepoint-server-authentication) | modificado |
-| 5/1/2019 | [Dirección IP de Office 365 y servicio web de URL](/Office365/Enterprise/office-365-ip-web-service) | modificado |
-
-
 ## <a name="week-of-may-06-2019"></a>Semana del 6 de mayo de 2019
 
 
@@ -354,3 +335,34 @@
 | 5/29/2019 | [Planeación de la actualización desde servidores y clientes de Office 2007 o 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | modificado |
 | 5/29/2019 | [Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | modificado |
 | 5/30/2019 | [Asignar roles a cuentas de usuario con Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | modificado |
+
+
+## <a name="week-of-june-03-2019"></a>Semana del 03 de junio de 2019
+
+
+| Fecha de publicación |Título del tema | Cambio |
+|------|------------|--------|
+| 6/4/2019 | [Soporte técnico de aplicaciones de cliente de Office 365: autenticación moderna](/Office365/Enterprise/office-365-client-support-modern-authentication) | modificado |
+| 6/4/2019 | [Extremos DoD del gobierno de Estados Unidos de Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificado |
+| 6/4/2019 | [Office 365 puntos de conexión altos de GCC U.S. Government](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificado |
+| 6/4/2019 | [Planeación de la actualización desde servidores y clientes de Office 2007 o 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | modificado |
+| 6/4/2019 | [Plan de fin de soporte de Project Server 2010](/Office365/Enterprise/project-server-2010-end-of-support) | modificado |
+| 6/4/2019 | [Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | modificado |
+| 6/4/2019 | [Actualización desde SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | modificado |
+| 6/5/2019 | [Azure ExpressRoute para Office 365](/Office365/Enterprise/azure-expressroute) | modificado |
+| 6/5/2019 | [Uso de comunidades BGP en ExpressRoute para Office 365 escenarios](/Office365/Enterprise/bgp-communities-in-expressroute) | modificado |
+| 6/5/2019 | [Conectividad de clientes](/Office365/Enterprise/client-connectivity) | modificado |
+| 6/5/2019 | [Redes de entrega de contenido](/Office365/Enterprise/content-delivery-networks) | modificado |
+| 6/5/2019 | [Implementación de ExpressRoute para Office 365](/Office365/Enterprise/implementing-expressroute) | modificado |
+| 6/5/2019 | [Planeamiento de red con ExpressRoute para Office 365](/Office365/Enterprise/network-planning-with-expressroute) | modificado |
+| 6/5/2019 | [Dirección IP de Office 365 y servicio web de URL](/Office365/Enterprise/office-365-ip-web-service) | modificado |
+| 6/5/2019 | [Principios de conectividad de red de Office 365](/Office365/Enterprise/office-365-network-connectivity-principles) | modificado |
+| 6/5/2019 | [Introducción a la conectividad de red de Office 365](/Office365/Enterprise/office-365-networking-overview) | modificado |
+| 6/5/2019 | [Planificación de dispositivos de red que se conecten a servicios de Office 365](/Office365/Enterprise/plan-for-network-devices) | modificado |
+| 6/5/2019 | [Enrutamiento con ExpressRoute para Office 365](/Office365/Enterprise/routing-with-expressroute) | modificado |
+| 6/5/2019 | [Configurar la red de Office 365](/Office365/Enterprise/set-up-network-for-office-365) | modificado |
+| 6/5/2019 | [Los puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modificado |
+| 6/5/2019 | [eDiscovery avanzado para el entorno de desarrollo y pruebas de Office 365](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | modificado |
+| 6/7/2019 | [Los puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modificado |
+| 6/7/2019 | [Plan de fin de soporte de Project Server 2010](/Office365/Enterprise/project-server-2010-end-of-support) | modificado |
+| 6/7/2019 | [Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | modificado |
