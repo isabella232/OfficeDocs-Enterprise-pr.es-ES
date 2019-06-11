@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Aprenda a mover un sitio de OneDrive a otra ubicación geográfica
-ms.openlocfilehash: 3315c14debf14c6876e2da90a2ade10ca8a7499a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 352e8317a3f62e23c4dc0faed4cb412707f525d8
+ms.sourcegitcommit: 921545ad533001a7ab055d3e6b19bfc8869df286
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070136"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814722"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover un sitio de OneDrive a otra ubicación geográfica 
 
@@ -88,9 +88,6 @@ Con estos parámetros:
 -   _UserPrincipalName_: UPN del usuario cuya instancia de OneDrive se va a mover.
 
 -   _DestinationDataLocation_: ubicación geográfica a la que hay que mover OneDrive. Debe ser la ubicación de datos preferida del usuario.
-
-> [!NOTE]
-> Se recomienda ejecutar `Get-SPOGeoMoveStateCompatibility` con `ValidationOnly` antes de iniciar la transferencia geográfica de OneDrive.
 
 Por ejemplo, para mover la instancia de OneDrive de matt@contosoenergy.onmicrosoft.com de EUR a AUS, ejecute:
 
