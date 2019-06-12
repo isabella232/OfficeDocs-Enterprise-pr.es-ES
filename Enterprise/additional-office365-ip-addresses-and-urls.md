@@ -3,7 +3,7 @@ title: Los puntos de conexión adicionales no incluidos en el servicio web de UR
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/05/2019
+ms.date: 06/11/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumen: los nuevos servicios web de puntos de conexión no incluyen un número reducido de puntos de conexión para escenarios específicos.'
 hideEdit: true
-ms.openlocfilehash: 05bb48efef57785b75d302fd12294b7fb7062862
-ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
+ms.openlocfilehash: 01d0acfd832df47dd5cabd95b7b8137dd76ab049
+ms.sourcegitcommit: 37c29ded24f999fc5f41f5aae284238b25eb83f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34726246"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857363"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Los puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365
 
@@ -61,7 +61,9 @@ Aparte de DNS, estos son opcionales para la mayor parte de los clientes, salvo q
 | 15  |  **FQDN de Microsoft Teams** <br> Si usa Internet Explorer o Microsoft Edge, debe habilitar las cookies propias y de terceros y agregar los FQDN para Teams a los sitios de confianza. Esto es complementario a los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados en la fila 14. Para obtener más información, vea [Problemas conocidos de Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Sitios de confianza |
 | 16  |  **FQDN de SharePoint Online y OneDrive para la Empresa** <br> Todos los FQDN ". sharepoint.com" con "\<inquilino >" en el FQDN deben estar en la zona de sitios de confianza de Internet Explorer o Microsoft Edge del cliente para que funcionen. Además de los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados en la fila 14, necesitará agregar también estos puntos de conexión. |  | Sitios de confianza |
 | 17  | **Yammer**  <br> Yammer solo está disponible en el explorador y requiere que el usuario autenticado pase por un proxy. Para que funcionen, todos los FQDN de Yammer deben estar en el Internet Explorer del cliente o en su zona de sitios de confianza de Edge. |  | Sitios de confianza |
-| 18  | Use [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) para sincronizar las cuentas de usuarios locales con Azure AD. | Consulte [Puertos y protocolos necesarios para la identidad híbrida,](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) [Solución de problemas de conectividad de Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) e [Instalación del agente de Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Solo tráfico de servidor saliente |
+| 18  | Use [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) para sincronizar las cuentas de usuarios locales con Azure AD. | Vea [Puertos y protocolos necesarios para la identidad híbrida,](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) [Solución de problemas de conectividad de Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) e [Instalación del Agente de Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Solo tráfico de servidor saliente |
+| 19  | Microsoft Stream (necesita el token de usuario de Azure AD). <BR> Office 365 mundial (incluido GCC) | *.cloudapp.net <BR> *.api.microsoftstream.com <BR> *.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> Puerto TCP 443  | Tráfico de servidor entrante |
+|||||
 
 ## <a name="related-topics"></a>Temas relacionados
 
