@@ -3,7 +3,7 @@ title: Actualización desde SharePoint 2010
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 2/2/2018
+ms.date: 06/04/2019
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -14,17 +14,17 @@ search.appverid:
 - WSU140
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
-description: SharePoint 2010 y SharePoint Server 2010 están llegando al final del soporte técnico. Use este artículo como guía para actualizar a SharePoint Online o a una versión más reciente de SharePoint Server local.
-ms.openlocfilehash: 18522f9abb1514e14a172c6f2d661591826dff22
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: La compatibilidad finaliza para SharePoint 2010 y SharePoint Server 2010 finaliza el 13 de octubre de 2020. Use este artículo como guía para actualizar a SharePoint Online o a una versión más reciente de SharePoint Server local.
+ms.openlocfilehash: 58e642a0a38dac1d140487716ab3e46b6fafd53f
+ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070686"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34704161"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
-El 13 de octubre de 2020, Microsoft Office SharePoint Server 2010 llega al final del soporte técnico. En este artículo se detallan los recursos para ayudar a los usuarios a migrar sus datos existentes de SharePoint Server 2010 a SharePoint Online o actualizar el servidor de SharePoint local.
+Microsoft SharePoint 2010 y SharePoint Server 2010 llegarán a fin de soporte el **13 de octubre de 2020**. En este artículo se detallan los recursos para ayudar a los usuarios a migrar sus datos existentes de SharePoint Server 2010 a SharePoint Online o actualizar el entorno local de SharePoint Server 2010.
   
 ## <a name="what-is-end-of-support"></a>¿Qué es el final del soporte técnico?
 
@@ -41,7 +41,7 @@ Cuando el software de SharePoint Server 2010 y SharePoint Foundation 2010 alcanz
 Esto significa que no se enviarán más actualizaciones, parches ni correcciones para el producto (incluidas las revisiones o correcciones de seguridad) y el soporte técnico de Microsoft se desplazará completamente a las versiones más recientes. Como fin de soporte para enfoques de SharePoint Server 2010, debe aprovechar las oportunidades para recortar los datos que ya no necesita antes de actualizar el producto y/o migrar los datos importantes.
   
 > [!NOTE]
-> Un ciclo de vida de software suele durar 10 años a partir de la fecha de lanzamiento inicial del producto. Puede buscar a los [socios de Microsoft](https://go.microsoft.com/fwlink/?linkid=841249) que pueden ayudarle con la actualización a la siguiente versión del software o a la migración de Office 365 (o ambas). Asegúrese de que está al tanto de las fechas de fin de soporte en las tecnologías subyacentes fundamentales, sobre todo de la versión de SQL Server que está usando con SharePoint. 
+> Un ciclo de vida de software suele durar 10 años a partir de la fecha de lanzamiento inicial del producto. Puede buscar proveedores de [soluciones de Microsoft](https://go.microsoft.com/fwlink/?linkid=841249) que puedan ayudarle con la actualización a la siguiente versión del software o a la migración de Office 365 (o ambas). Asegúrese de que está al tanto de las fechas de fin de soporte en las tecnologías subyacentes fundamentales, sobre todo de la versión de SQL Server que está usando con SharePoint. 
   
 ## <a name="what-are-my-options"></a>¿Qué opciones tengo?
 
@@ -49,13 +49,20 @@ En primer lugar, Compruebe la fecha en la que finaliza el soporte técnico del [
   
 Esta matriz ayuda a trazar un curso en lo referente a la migración de características de productos y datos de usuario:
   
-|**fin del producto de soporte**|**Good**|**Procedimientos**|
+|**Fin del producto de soporte**|**Good**|**Procedimientos**|
 |:-----|:-----|:-----|
-|SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
-||Entorno híbrido de SharePoint  <br/> |SharePoint Server 2016 (local)  <br/> |
+|SharePoint Server 2010  <br/> |SharePoint Server 2013 (local)  <br/> |SharePoint Online  <br/> |
+||SharePoint Server 2013 híbrido con SharePoint Online  <br/> |SharePoint Server 2016 (local)  <br/> |
 |||Búsqueda híbrida en la nube de SharePoint  <br/> |
    
-Si elige opciones en el extremo inferior de la escala (buenas opciones), deberá comenzar a planear otra actualización inmediatamente después de que finalice la migración de SharePoint Server 2010. [la finalización del soporte técnico para SharePoint Server 2010 y SharePoint Foundation 2010 están programadas para el 13 de octubre de 2020, pero tenga en *cuenta* que debe comprobar siempre el [sitio del ciclo de vida del producto](https://support.microsoft.com/en-us/lifecycle) en busca de las fechas más precisas.) 
+Si elige opciones en el extremo inferior de la escala (buenas opciones), deberá comenzar a planear otra actualización inmediatamente después de que finalice la migración de SharePoint Server 2010. 
+
+>[!Note]
+>El final del soporte técnico para SharePoint Server 2010 y SharePoint Foundation 2010 están programados para el 13 de octubre de 2020, pero tenga en *cuenta* que siempre debe comprobar el [sitio de ciclo de vida del producto](https://support.microsoft.com/en-us/lifecycle) en busca de las fechas más recientes.
+>
+
+
+ 
   
 ## <a name="where-should-i-go-next"></a>¿Dónde debo ir ahora?
 
@@ -69,12 +76,12 @@ SharePoint Server 2013 y SharePoint Foundation 2013 se pueden instalar localment
     
 - Implementar una solución [híbrida de SharePoint](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx) 
     
-Tenga en cuenta los costos ocultos asociados con el mantenimiento de una granja de servidores en el futuro, el mantenimiento o la migración de personalizaciones, y la actualización del hardware que depende de SharePoint Server. Si tiene constancia y tiene en cuenta todas estas, será más fácil continuar con la actualización local. De lo contrario, si ejecuta la granja de servidores de SharePoint heredados sin una gran personalización, puede beneficiarse de una migración planeada a SharePoint Online. También es posible que las tiendas locales de SharePoint Server opten por colocar algunos datos en SharePoint Online para reducir la cantidad de administración de hardware que implica mantener todos los datos de forma local. Es posible que sea más económico mover algunos datos en SharePoint Online.
+Tenga en cuenta los costos ocultos asociados con el mantenimiento de una granja de servidores en el futuro, el mantenimiento o la migración de personalizaciones, y la actualización del hardware que depende de SharePoint Server. Si tiene constancia y tiene en cuenta todas estas, será más fácil continuar con la actualización local. De lo contrario, si ejecuta la granja de servidores de SharePoint heredados sin una gran personalización, puede beneficiarse de una migración planeada a SharePoint Online. También es posible que, para su entorno de SharePoint Server local, pueda optar por colocar algunos datos en SharePoint Online para reducir la cantidad de administración de hardware que implica que todos los datos de la implementación local se conserven. Es posible que sea más económico mover algunos datos en SharePoint Online.
   
 > [!NOTE]
 > Los administradores de SharePoint pueden [crear una suscripción de Office 365](https://go.microsoft.com/fwlink/?linkid=843152), configurar un nuevo sitio de SharePoint Online de marca y, a continuación, alejarse de sharepoint Server 2010, sin problemas, tomando solo los documentos más esenciales en los sitios de SharePoint Online nuevos. Desde allí, cualquier dato restante se puede purgar del sitio de SharePoint Server 2010 en archivos locales. 
   
-|**SharePoint Online (SPO)**|**SharePoint Server local**|
+|**SharePoint Online**|**SharePoint Server local**|
 |:-----|:-----|
 |Costo elevado en el tiempo (planificación/ejecución/comprobación)  <br/> |Costo elevado en el tiempo (planificación/ejecución/comprobación)  <br/> |
 |Menor coste de fondos (no hay compras de hardware)  <br/> |Costo mayor en fondos (adquisiciones de hardware)  <br/> |
@@ -85,15 +92,13 @@ Al migrar a Office 365, el cambio único tendrá un costo más pesado en el tiem
   
 ### <a name="migrate-to-sharepoint-online"></a>Migrar a SharePoint Online
 
-Asegúrese de que SharePoint Online ofrece todas las características que necesita mediante la revisión de la descripción del servicio asociado. Este es el vínculo a todas las descripciones del servicio Office 365:
-  
-[Descripciones del servicio de Office 365](https://go.microsoft.com/fwlink/?linkid=272060)
+Asegúrese de que SharePoint Online ofrece todas las características que necesita revisando la [Descripción](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description)de su servicio.
   
 Actualmente no hay ningún medio que pueda migrar directamente de SharePoint Server 2010 (o SharePoint Foundation 2010) a SharePoint Online, por lo que gran parte del trabajo es manual. Esto le ofrece la oportunidad de archivar y eliminar los datos y los sitios que ya no son necesarios antes del traslado. Puede archivar otros datos en el almacenamiento. Recuerde también que ni SharePoint Server 2010 ni SharePoint Foundation 2010 dejarán de funcionar al final del soporte técnico, por lo que los administradores pueden tener un período durante el cual SharePoint aún se está ejecutando si los clientes olvidan mover algunos de sus datos.
   
 Si actualiza a SharePoint Server 2013 o SharePoint Server 2016 y decide colocar datos en SharePoint Online, su traslado también podría implicar el uso de la [API de migración de SharePoint](https://support.office.com/en-us/article/Upload-on-premises-content-to-SharePoint-Online-using-PowerShell-cmdlets-555049c6-15ef-45a6-9a1f-a1ef673b867c?ui=en-US&amp;rs=en-US&amp;ad=US) (para migrar información a OneDrive para la empresa). 
   
-|**Online Pro**|**Con en línea**|
+|**Ventajas de SharePoint Online**|**Inconvenientes de SharePoint Online**|
 |:-----|:-----|
 |Microsoft proporciona el hardware de SPO y toda la administración de hardware.  <br/> |Las características disponibles pueden ser diferentes entre la implementación local de SharePoint Server y SPO.  <br/> |
 |Usted es el administrador global de su suscripción y puede asignar administradores a los sitios de SPO.  <br/> |Algunas acciones disponibles para un administrador de la granja de servidores en SharePoint Server local no existen (o no son necesarias) en el rol de administrador de SharePoint en Office 365, pero la administración de SharePoint, la administración de colecciones de sitios y la propiedad del sitio son locales para su organización.  <br/> |
@@ -102,16 +107,16 @@ Si actualiza a SharePoint Server 2013 o SharePoint Server 2016 y decide colocar 
 |Las pruebas de seguridad y el ajuste del rendimiento del servidor se llevan a cabo de manera continua en el servicio de Microsoft.  <br/> |El servicio instala los cambios en la interfaz de usuario y en otras características de SharePoint, por lo que es posible que deban activarse o desactivarse.  <br/> |
 |Office 365 cumple muchos estándares del sector: [office 365 Compliance](https://go.microsoft.com/fwlink/?linkid=843165).  <br/> |La asistencia de [FastTrack](https://go.microsoft.com/fwlink/?linkid=518597) para la migración es limitada.  <br/> La mayor parte de la actualización será manual o a través de la API de migración de SPO que se describe en la [Guía de contenido de migración de SharePoint Online y OneDrive](https://go.microsoft.com/fwlink/?linkid=843184).  <br/> |
 |Ni los ingenieros de soporte técnico de Microsoft ni los empleados en el centro de administración de la sesión tienen acceso de administrador sin restricciones a su suscripción.  <br/> |Puede haber costos adicionales si es necesario actualizar la infraestructura de hardware para que sea compatible con la versión más reciente de SharePoint o si se requiere una granja secundaria para la actualización.  <br/> |
-|Los socios pueden ayudarle con el trabajo único de migrar los datos a SharePoint Online.  <br/> |No todos los cambios en SharePoint Online se encuentran en el control. Después de la migración, las diferencias de diseño en menús, bibliotecas y otras características pueden afectar temporalmente al uso.  <br/> |
+|Los proveedores de soluciones pueden ayudarle con el trabajo único de migrar los datos a SharePoint Online.  <br/> |No todos los cambios en SharePoint Online se encuentran en el control. Después de la migración, las diferencias de diseño en menús, bibliotecas y otras características pueden afectar temporalmente al uso.  <br/> |
 |Los productos en línea se actualizan automáticamente en el servicio, lo que significa que, aunque las características puedan dejar de estar en desuso, no hay un verdadero fin del ciclo de vida de soporte técnico.  <br/> |Hay un fin del ciclo de vida de soporte técnico para SharePoint Server (o SharePoint Foundation), así como para los servidores SQL subyacentes.  <br/> |
    
-Si ha decidido crear un nuevo sitio de Office 365 y migrar los datos de forma manual según sea necesario, puede ver las opciones de 365 de Office en el siguiente sitio:
+Si ha decidido crear un nuevo sitio de Office 365 y migrar los datos de forma manual según sea necesario, puede mirar sus opciones de plan de [office 365](https://go.microsoft.com/fwlink/?linkid=843151).
   
-[Opciones de planes de Office 365](https://go.microsoft.com/fwlink/?linkid=843151)
+
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>Actualizar SharePoint Server local
 
-A partir de la última versión del producto local de SharePoint (SharePoint Server 2016), las actualizaciones de SharePoint Server deben realizarse en *serie* , lo que significa que no hay forma de actualizar de sharepoint Server 2010 a sharepoint Server 2016 directamente. 
+A partir de la última versión del producto local de SharePoint (SharePoint Server 2016), las actualizaciones de SharePoint Server deben realizarse en *serie*, lo que significa que no hay forma de actualizar de sharepoint Server 2010 a sharepoint Server 2016 directamente. 
   
 |||
 |:-----|:-----|
@@ -134,13 +139,13 @@ Si tiene **personalizaciones**, es fundamental que disponga de un plan de actual
     
 - [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
     
-|**Pro local**|**Local con**|
+|**Ventajas locales**|**Desventaja local**|
 |:-----|:-----|
 |Control total de todos los aspectos de la granja de servidores de SharePoint (y su SQL), desde el hardware del servidor hacia arriba.  <br/> |Todos los descansos y las correcciones son responsabilidad de la empresa (pero usted puede participar en el soporte de Microsoft si su producto no está al final del soporte técnico):  <br/> |
 |Conjunto completo de características de SharePoint Server local con la opción de conectar la granja de servidores local con una suscripción de SharePoint Online a través de un híbrido.  <br/> |La actualización, las revisiones, las revisiones de seguridad, las actualizaciones de hardware y todo el mantenimiento de SharePoint Server y su granja de servidores SQL se administran de forma local.  <br/> |
 |Acceso completo para obtener más opciones de personalización que con SharePoint Online.  <br/> |Los [estándares de cumplimiento admitidos por Office 365](https://go.microsoft.com/fwlink/?linkid=843165) deben configurarse manualmente de forma local.  <br/> |
 |Pruebas de seguridad y ajuste del rendimiento del servidor, realizadas en sus instalaciones (bajo su control).  <br/> |Office 365 puede poner características a disposición de SharePoint Online que no interoperen con SharePoint Server local  <br/> |
-|Los socios pueden ayudarle a migrar datos a la próxima versión de SharePoint Server (y versiones posteriores).  <br/> |Los sitios de SharePoint Server no usarán automáticamente los certificados [SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167) como se ve en SharePoint Online.  <br/> |
+|Los proveedores de soluciones pueden ayudarle a migrar datos a la próxima versión de SharePoint Server (y versiones posteriores).  <br/> |Los sitios de SharePoint Server no usarán automáticamente los certificados [SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167) como se ve en SharePoint Online.  <br/> |
 |Control total de las convenciones de nomenclatura, copia de seguridad y restauración, y otras opciones de recuperación en SharePoint Server local.  <br/> |SharePoint Server local es sensible a los ciclos de vida de los productos.  <br/> |
    
 ### <a name="upgrade-resources"></a>Recursos de actualización
@@ -182,7 +187,7 @@ Una buena forma de ver cómo funciona una granja de servidores híbrida de Share
   
 [Solucionar problemas de actualización de bases de datos en SharePoint 2013](https://go.microsoft.com/fwlink/?linkid=843195)
   
-[Buscar a los socios de Microsoft para ayudarle con la actualización](https://go.microsoft.com/fwlink/?linkid=841249)
+[Buscar proveedores de soluciones de Microsoft para ayudarle con la actualización](https://go.microsoft.com/fwlink/?linkid=841249)
   
 [Directiva de servicio del producto actualizada para SharePoint 2013](https://technet.microsoft.com/en-us/library/mt493253%28v=office.16%29.aspx)
   
