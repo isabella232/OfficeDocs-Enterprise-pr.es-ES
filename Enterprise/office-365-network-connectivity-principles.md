@@ -3,7 +3,7 @@ title: Principios de conectividad de red de Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/14/2018
+ms.date: 6/5/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,18 +14,18 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Antes de empezar a planear la red para la conectividad de red de Office 365, es importante comprender los principios de conectividad para administrar de forma segura el tráfico de Office 365 y obtener el mejor rendimiento posible. Este artículo le ayudará a comprender las instrucciones más recientes para optimizar de manera segura la conectividad de red de Office 365.
-ms.openlocfilehash: d242196c2136962bf11472b51c28889977c2fc21
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: e8bb819fee5aa53fe3ea23f7b3b691be131ddf1f
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162503"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017300"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Principios de conectividad de red de Office 365
 
 Antes de empezar a planear la red para la conectividad de red de Office 365, es importante comprender los principios de conectividad para administrar de forma segura el tráfico de Office 365 y obtener el mejor rendimiento posible. Este artículo le ayudará a comprender las instrucciones más recientes para optimizar de manera segura la conectividad de red de Office 365.
   
-Las redes empresariales tradicionales están diseñadas principalmente para proporcionar a los usuarios acceso a las aplicaciones y los datos hospedados en centros de datos de empresa con una seguridad de perímetro sólida. El modelo tradicional presupone que los usuarios accederán a las aplicaciones y los datos desde dentro del perímetro de la red corporativa, a través de vínculos WAN desde sucursales o de forma remota a través de conexiones VPN. 
+Las redes empresariales tradicionales están diseñadas principalmente para proporcionar a los usuarios acceso a las aplicaciones y los datos hospedados en centros de datos de empresa con una seguridad de perímetro sólida. El modelo tradicional presupone que los usuarios accederán a las aplicaciones y los datos desde dentro del perímetro de la red corporativa, a través de vínculos WAN desde sucursales o de forma remota a través de conexiones VPN.
   
 La adopción de aplicaciones SaaS como Office 365 mueve una combinación de servicios y datos fuera del perímetro de la red. Sin la optimización, el tráfico entre los usuarios y las aplicaciones SaaS está sujeto a la latencia que presenta la inspección de paquetes, el las redirecciones de red, las conexiones involuntarias a extremos geográficamente alejados y otros factores. Para garantizar el mejor rendimiento y la confiabilidad de Office 365, comprenda e implemente las directrices de optimización de claves.
   
@@ -37,6 +37,7 @@ En este artículo, obtendrá información sobre:
 - [Nuevas categorías de extremos de Office 365](office-365-network-connectivity-principles.md#BKMK_Categories) y guía de optimización
 - [Comparación de la seguridad del perímetro de la red con la seguridad de extremos](office-365-network-connectivity-principles.md#BKMK_SecurityComparison)
 - Opciones de [optimización incremental](office-365-network-connectivity-principles.md#BKMK_IncOpt) para el tráfico de Office 365
+- La [herramienta de incorporación de red de office 365](https://aka.ms/netonboard), una nueva herramienta para probar la conectividad básica con Office 365
 
 ## <a name="office-365-architecture"></a>Arquitectura de Office 365
 <a name="BKMK_Architecture"> </a>
@@ -61,7 +62,7 @@ El objetivo principal del diseño de red debe ser minimizar la latencia reducien
   
 La identificación del tráfico de red de Office 365 es el primer paso para poder diferenciar ese tráfico del tráfico de red genérico enlazado a Internet. La conectividad de Office 365 puede optimizarse mediante la implementación de una combinación de enfoques como la optimización de rutas de red, las reglas de firewall, la configuración de proxy del explorador y el desvío de dispositivos de inspección de red para determinados puntos de conexión.
   
-La guía de optimización anterior de Office 365 dividió los puntos de conexión **** de Office 365 en dos categorías, obligatorios y **opcionales**. A medida que se han agregado puntos de conexión para admitir los nuevos servicios y características de Office 365, hemos reorganizado los puntos de conexión de Office 365 en tres categorías: **optimizar**, **permitir** y **predeterminado**. Las directrices para cada categoría se aplican a todos los extremos de la categoría, lo que facilita la comprensión y la implementación de las optimizaciones. 
+La guía de optimización anterior de Office 365 dividió los puntos de conexión **** de Office 365 en dos categorías, obligatorios y **opcionales**. A medida que se han agregado puntos de conexión para admitir los nuevos servicios y características de Office 365, hemos reorganizado los puntos de conexión de Office 365 en tres categorías: **optimizar**, **permitir** y **predeterminado**. Las directrices para cada categoría se aplican a todos los extremos de la categoría, lo que facilita la comprensión y la implementación de las optimizaciones.
   
 Para obtener más información sobre las categorías de extremos de Office 365 y los métodos de optimización, consulte la nueva sección de [categorías de puntos de conexión de office 365](office-365-network-connectivity-principles.md#BKMK_Categories) .
   
@@ -149,7 +150,7 @@ Los puntos de conexión de Office 365 representan un conjunto variado de direcci
 > [!NOTE]
 > Las ubicaciones de los puntos de conexión de Office 365 dentro de la red no están directamente relacionadas con la ubicación de los datos del espacio empresarial de Office 365. Por esta razón, los clientes deben mirar a Office 365 como un servicio distribuido y global, y no deben intentar bloquear las conexiones de red a los puntos de conexión de Office 365 según criterios geográficos.
   
-En nuestras instrucciones anteriores para administrar el tráfico de Office 365, los puntos de conexión se han **** organizado en dos categorías: obligatorios y **opcionales**. Los puntos de conexión dentro de cada categoría requerían diferentes optimizaciones en función de la criticidad del servicio y muchos clientes se enfrentaron a desafíos para justificar la aplicación de las mismas optimizaciones de red a la lista completa de direcciones IP y URL de Office 365. 
+En nuestras instrucciones anteriores para administrar el tráfico de Office 365, los puntos de conexión se han **** organizado en dos categorías: obligatorios y **opcionales**. Los puntos de conexión dentro de cada categoría requerían diferentes optimizaciones en función de la criticidad del servicio y muchos clientes se enfrentaron a desafíos para justificar la aplicación de las mismas optimizaciones de red a la lista completa de direcciones IP y URL de Office 365.
   
 En el nuevo modelo, los puntos de conexión se segregan en tres categorías: **optimizar**, **permitir** y **predeterminado**, lo que proporciona una tabla dinámica basada en la prioridad en la que se centran los esfuerzos de optimización de la red para obtener las mejores mejoras de rendimiento y volver de la inversión. Los puntos de conexión se consolidan en las categorías anteriores en función de la sensibilidad de la experiencia eficaz del usuario al uso de la calidad de la red, el volumen y el rendimiento de los escenarios y la facilidad de implementación. Se pueden aplicar optimizaciones recomendadas de la misma forma a todos los extremos de una categoría determinada.
   
@@ -240,3 +241,31 @@ Puede enfocar la optimización como proceso incremental, aplicando cada método 
 |Omitir servidores proxy y dispositivos de inspección  <br/> |Configure los exploradores con archivos PAC que envíen solicitudes de Office 365 directamente a puntos de salida.  <br/> Configure los enrutadores y los firewalls perimetrales para permitir el tráfico de Office 365 sin inspección.  <br/> | Minimizar la latencia  <br/>  Reducir la carga de los dispositivos de red  <br/> |
 |Habilitar conexión directa para usuarios de VPN  <br/> |Para los usuarios de VPN, habilite las conexiones de Office 365 para conectarse directamente desde la red del usuario, en lugar de hacerlo a través del túnel VPN mediante la implementación de túneles divididos.  <br/> | Minimizar la latencia  <br/>  Mejorar la conectividad fiable con el punto de entrada de Office 365 más cercano  <br/> |
 |Migrar de WAN tradicional a SD-WAN  <br/> |Las redes de área extensa de SD-WAN (software definido por software) simplifican la administración de WAN y mejoran el rendimiento al reemplazar los enrutadores WAN tradicionales por dispositivos virtuales, de manera similar a la virtualización de los recursos de proceso mediante máquinas virtuales (VM).  <br/> | Mejorar el rendimiento y la facilidad de administración del tráfico de WAN  <br/>  Reducir la carga de los dispositivos de red  <br/> |
+
+## <a name="related-topics"></a>Temas relacionados
+
+[Introducción a la conectividad de red de Office 365](office-365-networking-overview.md)
+
+[Administrar puntos de conexión de Office 365](managing-office-365-endpoints.md)
+
+[Intervalos de direcciones IP y URL de Office 365](urls-and-ip-address-ranges.md)
+
+[Dirección IP de Office 365 y servicio web de URL](office-365-ip-web-service.md)
+
+[Evaluación de la conectividad de red de Office 365](assessing-network-connectivity.md)
+
+[Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
+
+[Evaluación de la conectividad de red de Office 365](assessing-network-connectivity.md)
+
+[Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento](performance-tuning-using-baselines-and-history.md)
+
+[Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
+
+[Redes de entrega de contenido](content-delivery-networks.md)
+
+[Herramienta de incorporación de red de Office 365](https://aka.ms/netonboard)
+
+[Cómo Microsoft crea su red global rápida y fiable](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+
+[Blog de redes de Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

@@ -3,7 +3,7 @@ title: Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint 
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2019
+ms.date: 5/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +15,21 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Describe cómo usar la red de entrega de contenido (CDN) de Office 365 para acelerar la entrega de los activos de SharePoint Online a todos los usuarios, independientemente de dónde se encuentren o de la forma en que tengan acceso al contenido.
-ms.openlocfilehash: de8c02b44405260aa7379ab0a881ba72f73c7a6b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7ca9283348bda666b2de8c0ae07896164f40d240
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070636"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017320"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
 Puede usar la red de entrega de contenido (CDN) de Office 365 integrada para hospedar archivos estáticos y mejorar el rendimiento de las páginas de SharePoint Online. La CDN de Office 365 mejora el rendimiento al almacenamiento en caché los archivos estáticos más cerca de los exploradores que los solicitan, lo que ayuda a acelerar descargas y reducir la latencia. Además, la red CDN de Office 365 usa el [protocolo http/2](https://en.wikipedia.org/wiki/HTTP/2) para mejorar la compresión y la canalización http. La red CDN de Office 365 se incluye como parte de la suscripción a SharePoint Online.
+
+> [!NOTE]
+> Restricciones de uso de la red CDN de Office 365:
+> + La red CDN de Office 365 solo está disponible para los inquilinos en la nube de **producción** (en todo el mundo). Actualmente, los inquilinos de las nubes del gobierno de Estados Unidos, China y Alemania no admiten la red CDN de Office 365.
+> + La red CDN de Office 365 no es compatible actualmente con los inquilinos configurados con dominios personalizados o "" de cortesía ". Si ha agregado un dominio a su inquilino siguiendo las instrucciones del tema [Agregar un dominio a office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide), la red CDN de Office 365 devolverá errores cuando intente obtener acceso al contenido de la red CDN.
 
 La CDN de Office 365 se compone de varias redes CDN que permite hospedar archivos estáticos en varias ubicaciones u _orígenes_ y a realizar la entrega desde redes de alta velocidad globales. Según el tipo de contenido que quiera hospedar en la CDN de Office 365, puede agregar orígenes **públicos**, **privados** o ambos. Vea [elegir si cada origen debe ser público o privado](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) para obtener más información sobre la diferencia entre los orígenes públicos y privados.
 
@@ -308,7 +313,17 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 En este ejemplo se agrega un origen privado de la carpeta _Folder1_ en la biblioteca de activos del sitio de la colección de sitios:
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder1
+```
+
+Si hay un espacio en la ruta de acceso, puede poner la ruta entre comillas dobles o reemplazar el espacio con la codificación de la dirección URL% 20. En los ejemplos siguientes se agrega un origen privado de la carpeta de la _carpeta 1_ en la biblioteca de activos del sitio de la colección de sitios:
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%201
+```
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
 Para obtener más información sobre este comando y su sintaxis, consulte [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
@@ -598,7 +613,7 @@ El siguiente diagrama ilustra el flujo de trabajo cuando SharePoint recibe una s
 ![Diagrama de flujo de trabajo: recuperar activos de la red CDN de Office 365 desde un origen público] (media/O365-CDN/o365-cdn-public-steps-transparent.svg "Flujo de trabajo: recuperación de recursos de la red CDN de Office 365 desde un origen público")
 
 > [!TIP]
-> Si desea deshabilitar la reescritura automática de direcciones URL específicas en una página, puede desproteger la página y agregar el parámetro de cadena de consulta **?NoAutoReWrites = true** al final de cada vínculo que desee deshabilitar.
+> Si desea deshabilitar la reescritura automática de direcciones URL específicas en una página, puede desproteger la página y agregar el parámetro de la cadena de consulta. ** NoAutoReWrites = true** al final de cada vínculo que desee deshabilitar.
 
 #### <a name="hardcoding-cdn-urls-for-public-assets"></a>Direcciones URL de CDN de Hardcoding para activos públicos
 
@@ -633,7 +648,7 @@ El siguiente diagrama ilustra el flujo de trabajo cuando SharePoint recibe una s
 
 El acceso a los activos de orígenes privados en la red CDN de Office 365 se concede mediante tokens generados por SharePoint Online. Los usuarios que ya tienen permiso para obtener acceso a la carpeta o a la biblioteca designada por el origen reciben automáticamente tokens que permiten al usuario tener acceso al archivo en función de su nivel de permisos. Estos tokens de acceso son válidos durante 30 a 90 minutos después de que se generen para ayudar a evitar ataques de reproducción de tokens.
 
-Una vez que se genera el token de acceso, SharePoint Online devuelve un URI personalizado al cliente que contiene dos parámetros de autorización _comer_ (token de autorización perimetral) y _OAT_ (token Authorization Authorization). La estructura de cada token es _<'expiration tiempo de tiempo Format'>__<'secure signature'>_. Por ejemplo:
+Una vez que se genera el token de acceso, SharePoint Online devuelve un URI personalizado al cliente que contiene dos parámetros de autorización _comer_ (token de autorización perimetral) y _OAT_ (token Authorization Authorization). La estructura de cada token es _< ' tiempo de expiración en formato de hora en tiempo de duración ' >__< >' firma segura ' _. Por ejemplo:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
