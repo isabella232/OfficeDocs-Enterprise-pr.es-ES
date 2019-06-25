@@ -16,13 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'Este artículo está destinado a los administradores. ¿Un usuario elimina permanentemente los elementos de su buzón de Outlook? El usuario desea volver a hacerlo, pero no puede recuperarlos. Es posible que pueda recuperar los elementos purgados si no se han quitado permanentemente del buzón de correo del usuario. '
-ms.openlocfilehash: 5ec1ba41924d773859d742bc06bbfe76582072c1
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d4be48d6166d970572dd1cb343ccd83f22330e12
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071216"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203659"
 ---
+<a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Recuperar elementos eliminados en un buzón de usuario. Ayuda para administradores
 
 **Este artículo está destinado a los administradores. ¿Está tratando de recuperar elementos eliminados en su propio buzón?** Pruebe con uno de los siguientes procedimientos:
@@ -230,7 +231,8 @@ El último paso que debe realizar es enviar al usuario el archivo PST que se exp
     
 Los pasos de la siguiente sección son realizados por el usuario para restaurar los elementos eliminados en su buzón de correo.
   
- **Restaurar elementos eliminados en un buzón con un archivo PST**
+ <a name="restoredeleteditems"></a>
+**Restaurar elementos eliminados en un buzón con un archivo PST**
   
 Tiene que usar la aplicación de escritorio de Outlook para restaurar un elemento eliminado mediante un archivo PST. No puede usar Outlook Web App u Outlook en la web para abrir un archivo PST.
   

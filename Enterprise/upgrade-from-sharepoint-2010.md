@@ -15,20 +15,20 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: La compatibilidad finaliza para SharePoint 2010 y SharePoint Server 2010 finaliza el 13 de octubre de 2020. Use este artículo como guía para actualizar a SharePoint Online o a una versión más reciente de SharePoint Server local.
-ms.openlocfilehash: 58e642a0a38dac1d140487716ab3e46b6fafd53f
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: d2114baf03d19c6be818139a08ed93ff3b64f664
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704161"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203619"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
-Microsoft SharePoint 2010 y SharePoint Server 2010 llegarán a fin de soporte el **13 de octubre de 2020**. En este artículo se detallan los recursos para ayudar a los usuarios a migrar sus datos existentes de SharePoint Server 2010 a SharePoint Online o actualizar el entorno local de SharePoint Server 2010.
+Microsoft SharePoint 2010 y SharePoint Server 2010 llegarán a fin de soporte el **13 de octubre de 2020**. En este artículo se detallan los recursos que le ayudarán a migrar los datos existentes de SharePoint Server 2010 a SharePoint Online en Office 365 o a actualizar el entorno local de SharePoint Server 2010.
   
 ## <a name="what-is-end-of-support"></a>¿Qué es el final del soporte técnico?
 
-Cuando el software de SharePoint Server 2010 y SharePoint Foundation 2010 alcanza el final de su ciclo de vida de soporte técnico (el tiempo durante el cual Microsoft proporciona nuevas características, correcciones de errores, correcciones de seguridad, etc.) esto se denomina "fin del soporte" del software, o bien, a veces, su "jubilación". Una vez finalizado el soporte técnico (o EOS) de un producto, ningún hecho se cierra o deja de funcionar; sin embargo, al final del soporte técnico de software, Microsoft ya no ofrece:
+Cuando el software de SharePoint Server 2010 y SharePoint Foundation 2010 alcanza el final de su ciclo de vida de soporte técnico (el tiempo durante el cual Microsoft proporciona nuevas características, correcciones de errores, correcciones de seguridad, etc.), se denomina "fin del soporte" del software, o a veces, su "jubilación". Una vez finalizado el soporte técnico (o EOS) de un producto, ningún hecho se cierra o deja de funcionar; sin embargo, al final del soporte técnico de software, Microsoft ya no ofrece:
   
 - Soporte técnico para los problemas que pueden surgir;
     
@@ -74,7 +74,7 @@ SharePoint Server 2013 y SharePoint Foundation 2013 se pueden instalar localment
     
 - Hacer lo anterior
     
-- Implementar una solución [híbrida de SharePoint](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx) 
+- Implementar una solución [híbrida de SharePoint](https://docs.microsoft.com/sharepoint/hybrid/hybrid) 
     
 Tenga en cuenta los costos ocultos asociados con el mantenimiento de una granja de servidores en el futuro, el mantenimiento o la migración de personalizaciones, y la actualización del hardware que depende de SharePoint Server. Si tiene constancia y tiene en cuenta todas estas, será más fácil continuar con la actualización local. De lo contrario, si ejecuta la granja de servidores de SharePoint heredados sin una gran personalización, puede beneficiarse de una migración planeada a SharePoint Online. También es posible que, para su entorno de SharePoint Server local, pueda optar por colocar algunos datos en SharePoint Online para reducir la cantidad de administración de hardware que implica que todos los datos de la implementación local se conserven. Es posible que sea más económico mover algunos datos en SharePoint Online.
   

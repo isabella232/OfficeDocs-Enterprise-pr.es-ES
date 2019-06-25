@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Resumen: con Azure, puede crear un entorno de recuperación ante desastres para la granja de servidores local de SharePoint. En este artículo se describe cómo diseñar e implementar esta solución.'
-ms.openlocfilehash: a302f86e97cd7b61236a92f51a043258882991f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070446"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203649"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
 
@@ -36,34 +36,6 @@ Use este artículo con el modelo de solución: **recuperación ante desastres de
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
-En este artículo:
-  
-- [Usar Servicios de infraestructura de Azure para recuperación ante desastres](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#AZ)
-    
-- [Descripción de la solución](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#SOL)
-    
-- [Arquitectura detallada](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#arch)
-    
-- [Plan de recuperación ante desastres](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#RDmap)
-    
-- [Fase 1: Diseñar el entorno de recuperación ante desastres](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase1)
-    
-- [Fase 2: Crear la red virtual de Azure y la conexión VPN](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase2)
-    
-- [Fase 3: Implementar Active Directory y servicios de nombres de dominio en la red virtual de Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase3)
-    
-- [Fase 4: Implementar la granja de servidores de recuperación de SharePoint en Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase4)
-    
-- [Fase 5: Configurar DFSR entre las granjas de servidores](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase5)
-    
-- [Fase 6: Configurar el trasvase de registros a la granja de servidores de recuperación](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase6)
-    
-- [Fase 7: Validar la conmutación por error y la recuperación](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase7)
-    
-- [Entorno de prueba de concepto de Microsoft](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#POC)
-    
-- [Sugerencias para solucionar problemas](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Troubleshooting)
-    
 ## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>Usar Servicios de infraestructura de Azure para recuperación ante desastres
 
 Muchas organizaciones no disponen de un entorno de recuperación ante desastres para SharePoint, ya que puede resultar caro crearlo y mantenerlo en la instalación local. Servicios de infraestructura de Azure ofrece opciones atractivas para entornos de recuperación ante desastres que son más flexibles y económicas que las alternativas en instalación local.
@@ -297,7 +269,7 @@ Esta fase abarca la implementación de Windows Server Active Directory y DNS en 
   
 **Ilustración: Configuración de dominio híbrido de Active Directory**
 
-![Dos máquinas virtuales implementadas en la red virtual de Azure y la subred de la granja de servidores de SharePoint son réplicas de controladores de dominio y servidores DNS.](media/AZarch-HyADdomainConfig.png)
+![Dos máquinas virtuales implementadas en la red virtual de Azure y la subred de la granja de servidores de SharePoint son controladores de dominio de réplica y servidores DNS.](media/AZarch-HyADdomainConfig.png)
   
 En la ilustración, se implementan dos máquinas virtuales en la misma subred. Cada una de estas máquinas virtuales hospeda dos roles: Active Directory y DNS.
   
