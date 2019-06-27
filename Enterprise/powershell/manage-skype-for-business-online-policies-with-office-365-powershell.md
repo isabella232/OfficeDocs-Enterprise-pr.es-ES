@@ -3,7 +3,7 @@ title: Administrar Skype para políticas de negocios en línea con Office 365 Po
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 06/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Resumen: Use Office 365 PowerShell para administrar las propiedades de la cuenta de usuario de Skype empresarial online con directivas.'
-ms.openlocfilehash: 853d70a008a3e42c6fa1175a52cadab815a46dfe
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f19e262947b40b3e61dc8376b8e2e9c8ec984ff7
+ms.sourcegitcommit: c115a3554647167e3770dda6b69dbf5c5de11ed7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068846"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35253690"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Administrar Skype para políticas de negocios en línea con Office 365 PowerShell
 
@@ -84,15 +84,14 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 Este comando busca la directiva asignada al usuario y, a continuación, busca las funciones habilitadas o deshabilitadas en esa Directiva.
   
-Tenga en cuenta que no hay cmdlets para crear o modificar directivas. Debe usar las directivas suministradas previamente por Office 365. Si desea echar un vistazo a las diferentes directivas disponibles, puede usar estos comandos:
-  
-- Get-CsClientPolicy       
-- Get-CsConferencingPolicy        
-- Get-CsDialPlan            
-- Get-CsExternalAccessPolicy                         
-- Get-CsHostedVoicemailPolicy                        
-- Get-CsPresencePolicy                               
-- Get-CsVoicePolicy                                  
+Para administrar las directivas de Skype empresarial online con PowerShell, consulte los cmdlets de:
+
+- [Directiva de cliente](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
+- [Directiva de conferencia](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
+- [Directiva móvil](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
+- [Directiva de correo de voz en línea](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [Directiva de enrutamiento de voz](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+
 
 > [!NOTE]
 > Un plan de marcado de Skype empresarial online es una directiva en todos los aspectos excepto en el nombre. Se ha elegido el nombre "plan de marcado" en lugar de, por ejemplo, "Directiva de marcado" para proporcionar compatibilidad con versiones anteriores de Office Communications Server y con Exchange. 
