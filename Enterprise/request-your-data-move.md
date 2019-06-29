@@ -3,7 +3,7 @@ title: Cómo solicitar el movimiento de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,21 +12,19 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Los clientes de Office 365 existentes deberán enviar una solicitud antes de la fecha límite de su país para que los datos del cliente de los servicios de Office 365 participantes se muevan a su nueva geografía.
-ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7558e65672afdb1fa91b8a958472eab00fb89d0c
+ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071016"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35392360"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
 > [!NOTE]
 > La información de esta página solo se aplica a los clientes que tienen inquilinos de Office 365 existentes antes de los nuevos centros de datos en su área geográfica lanzada. 
   
-Los clientes de Office 365 existentes deberán enviar una solicitud antes de la fecha límite de su país para que los datos del cliente de los servicios de Office 365 participantes se muevan a su nueva geografía. 
-  
-No podemos aceptar las solicitudes que se moverán después de la fecha límite en cada área geográfica. 
+Los clientes de Office 365 existentes pueden solicitar una migración temprana de los datos principales de los clientes de su organización en reposo.  
   
 ## <a name="when-can-i-request-a-move"></a>¿Cuándo puedo solicitar un movimiento?
 
@@ -55,13 +53,10 @@ En la página Perfil de la **organización** , desplácese hacia abajo hasta la 
 ![Tarjeta de residencia de datos](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
   
 **Es posible que no vea esta sección si se aplica una de las siguientes opciones**:
-- El inquilino no es apto para el programa de movimiento. 
+- El inquilino no es apto para el programa de movimiento.  La idoneidad la determina el país de suscripción del inquilino.
 - Todos los datos ya están ubicados en la nueva área geográfica (consulte la sección Ubicación de datos de la página). 
   
-> [!IMPORTANT]
-> **Está a punto de tomar una decisión importante para su organización. Después de confirmar la opción siguiente, no podrá deshacerla. El soporte técnico no puede revertir también esta decisión.**
-  
-Si su organización tiene requisitos de residencia de datos y necesita solicitar un movimiento, haga clic en **Editar** en la parte superior derecha de la sección. Aparecerá una nueva sección en el lado derecho de la pantalla en la que se explican los detalles del programa de movimiento. Seleccione el botón de alternancia junto al texto que dice **sí, mi organización tiene requisitos de residencia de datos**. A continuación, haga clic en **Guardar**.
+Si su organización tiene requisitos de residencia de datos y necesita solicitar una migración temprana, haga clic en **Editar** en la parte superior derecha de la sección. Aparecerá una nueva sección en el lado derecho de la pantalla en la que se explican los detalles del programa de movimiento. Seleccione el botón de alternancia junto al texto que dice **sí, mi organización tiene requisitos de residencia de datos**. A continuación, haga clic en **Guardar**.
   
 ![Pantalla de opción de suscripción de Datacenter](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
   
@@ -74,8 +69,6 @@ Debe ver el texto en la **opción de residencia de datos** cambiar para indicar 
 Una vez solicitada la transferencia, le haremos avanzar tan pronto como nuestras restricciones operativas lo permitan. Debido a la naturaleza impredecible de muchas de las restricciones, no se puede compartir una fecha o un período de tiempo específicos para los movimientos. Verá una notificación cuando se haya completado el movimiento.
   
 Los movimientos pueden tardar hasta 24 meses desde la fecha límite de la solicitud para que se complete el país.
-  
-Después de solicitar un movimiento, no es posible cambiar la selección a medida que empezamos a procesar los movimientos una vez que ha realizado la solicitud.
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
