@@ -1,5 +1,5 @@
 ---
-title: Mover un sitio de SharePoint a otra ubicación geográfica (versión preliminar)
+title: 'Mover un sitio SharePoint a otra ubicación geográfica '
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -9,16 +9,16 @@ ms.service: o365-solutions
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Aprenda a mover un sitio de OneDrive a otra ubicación geográfica
-ms.openlocfilehash: 74a1ccf7dcfa60d74135211d7b74a2e7096d09b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f1837942a72881578930f94ad8c4b57dbdb0c649
+ms.sourcegitcommit: 59c250b5f62e72fb51fd0b80d2be636ee8078f6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070116"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35422379"
 ---
-# <a name="move-a-sharepoint-site-to-a-different-geo-location-preview"></a>Mover un sitio de SharePoint a otra ubicación geográfica (versión preliminar)
+# <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 
-Con el movimiento geográfico de sitios de SharePoint, puede mover dichos sitios a otras ubicaciones geográficas dentro de su entorno multigeográfico.  Esta característica está disponible actualmente en versión preliminar.
+Con el movimiento geográfico de sitios de SharePoint, puede mover dichos sitios a otras ubicaciones geográficas dentro de su entorno multigeográfico. 
 
 Los siguientes tipos de sitios pueden moverse entre ubicaciones geográficas:
 
@@ -95,11 +95,11 @@ Esto devolverá *Success* si el sitio está listo para moverse o *Fail* si hay a
 
 De forma predeterminada, se cambiará la dirección URL inicial del sitio a la dirección URL de la ubicación geográfica de destino. Por ejemplo:
 
-https://Contoso.sharepoint.com/sites/projectx a https://Contoso.sharepointEUR.com/sites/projectx
+https://Contoso.sharepoint.com/sites/projectx a https://ContosoEUR.sharepoint.com/sites/projectx
 
 Los sitios sin ninguna asociación con los Grupos de Office 365, también pueden cambiar el nombre mediante el parámetro `-DestinationUrl`. Por ejemplo:
 
-https://Contoso.sharepoint.com/sites/projectx a https://Contoso.sharepointEUR.com/sites/projecty
+https://Contoso.sharepoint.com/sites/projectx a https://ContosoEUR.sharepoint.com/sites/projecty
 
 Para iniciar el movimiento del sitio, ejecute:
 
