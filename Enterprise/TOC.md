@@ -204,7 +204,9 @@
 ### [Centro de ayuda para administradores de Office 365](https://support.office.com/es-ES/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Herramientas para administrar cuentas de usuario](manage-office-365-accounts.md)
 ### [Agregar varios usuarios al mismo tiempo](add-several-users-at-the-same-time.md)
-### [Recuperar elementos eliminados en un buzón de usuario ](recover-deleted-items-in-a-mailbox.md)
+### [Recuperar elementos eliminados en un buzón de usuario](recover-deleted-items-in-a-mailbox.md)
+### Colaborar con invitados
+#### [Referencia para uso compartido de invitados](microsoft-365-guest-settings.md)
 
 ## Dispositivos
 ### [Elegir entre MDM e Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
