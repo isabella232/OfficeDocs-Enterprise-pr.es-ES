@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Resumen: conozca los conceptos principales de arquitectura de la nube de identidad, seguridad, redes e híbrida de Microsoft. Revise las recomendaciones para proteger los archivos, las identidades y los dispositivos al usar la nube de Microsoft. Obtenga información sobre cómo implementar un escritorio moderno y seguro con Windows 10 y Office ProPlus.'
-ms.openlocfilehash: dfb6df46faacf6623a90ac5a4cf95d9512c31289
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: 7af74f254ffc73251188b23255a35f800b5503f6
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539336"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616893"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitectura de TI de la nube de Microsoft
 
@@ -39,6 +39,7 @@ Estos pósteres y herramientas de arquitectura ofrecen información acerca de lo
     - [Nube híbrida de Microsoft para arquitectos empresariales](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Ataques comunes y funcionalidades de Microsoft que protegen su organización](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     - [Infraestructura básica de Microsoft 365 Enterprise](#m365foundationinfra)
+    - [Métodos de arquitectura para migraciones de inquilino a inquilino de la nube de Microsoft](#architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations)
     
 - **[Serie de soluciones de Microsoft 365 Enterprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
     - [Microsoft Teams y servicios de productividad relacionados de Microsoft 365 para arquitectos de TI](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
@@ -134,6 +135,12 @@ Obtenga una vista rápida de la [infraestructura básica](https://docs.microsoft
 |:-----|:-----|
 |[![Imagen en miniatura del póster de la infraestructura básica Microsoft 365 Enterprise](media/Microsoft365EnterpriseFoundInfra-thumb.png)](http://aka.ms/m365efoundinfraposter) <br/> [Ver en línea](http://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Este póster resume cada fase de la infraestructura básica en términos de objetivos, características y herramientas, decisiones de diseño, resultados de la configuración, incorporación y supervisión y actualizaciones constantes. <br/>| 
 
+### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Métodos de arquitectura para migraciones de inquilino a inquilino de la nube de Microsoft 
+En esta serie de temas se muestran varios métodos de arquitectura para las fusiones, las adquisiciones, las ventas y otros casos que podrían llevarle a migrar a un nuevo inquilino en la nube. En estos temas se proporciona una guía inicial para la planeación.
+
+|**Item**|**Descripción**|
+|:-----|:-----|
+|[![Imagen en miniatura para el póster de la arquitectura lógica de Teams](downloads/msft-tenant-to-tenant-migration-thumb.png)](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx)     |Este modelo contiene lo siguiente: <ul><li>Una asignación de escenarios empresariales a métodos arquitectónicos</li><li>Consideraciones sobre diseño</li><li>Flujo de migración de evento único</li><li>Flujo de migración en fases</li><li>Flujo de desplazamiento o división del inquilino</li></ul>|
 
 <!--<a name="santa"></a>
 ### The Santa cloud
