@@ -1,7 +1,7 @@
 ---
 title: Opciones de navegación para SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: En este artículo se describen las opciones de navegación sitios con la publicación de SharePoint habilitada en SharePoint Online. La elección y configuración de la navegación afectan significativamente al rendimiento y la escalabilidad de los sitios de SharePoint Online.
-ms.openlocfilehash: 9bf2010000f14b173b63574fab4ee77cb772b3f4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b3194009d21f60093ec80cb2e138df34df60e22e
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069946"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616863"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 
@@ -29,7 +29,7 @@ La configuración del proveedor de navegación puede afectar significativamente 
 
 Se recomienda la primera opción, la [**navegación administrada (metadatos)**](#using-managed-navigation-and-metadata-in-sharepoint-online), y es una de las opciones predeterminadas de SharePoint Online; sin embargo, se recomienda deshabilitar el recorte de seguridad a menos que sea necesario. El recorte de seguridad está habilitado como configuración segura de forma predeterminada para este proveedor de navegación; sin embargo, muchos sitios no requieren la sobrecarga de recorte de seguridad, ya que los elementos de navegación suelen ser coherentes para todos los usuarios del sitio. Con la configuración recomendada para deshabilitar el recorte de seguridad, este proveedor de navegación no necesita la enumeración de la estructura del sitio y es altamente escalable con un impacto aceptable en el rendimiento.
 
-La segunda opción, [**navegación estructural**](#using-structural-navigation-in-sharepoint-online), **no es una opción de navegación recomendada en SharePoint Online**. Este proveedor de navegación se diseñó para una topología local con compatibilidad limitada en SharePoint Online. Aunque proporciona un conjunto adicional de funcionalidades en lugar de otras opciones de navegación, estas características, incluidos el recorte de seguridad y la enumeración de la estructura del sitio, tienen un costo de llamadas de servidor excesivas y afectan a la escalabilidad y al rendimiento cuando se usan. Los sitios que usan la navegación con estructuras que consumen recursos excesivo pueden estar sujetos a la limitación.
+La segunda opción, [**navegación estructural**](#using-structural-navigation-in-sharepoint-online), **no es una opción de navegación recomendada en SharePoint Online**. Este proveedor de navegación se diseñó para una topología local con compatibilidad limitada en SharePoint Online. Aunque proporciona un conjunto adicional de funcionalidades en lugar de otras opciones de navegación, estas características, incluidos el recorte de seguridad y la enumeración de la estructura del sitio, tienen un costo de llamadas de servidor excesivas y afectan a la escalabilidad y al rendimiento cuando se usan. Los sitios que usan la navegación estructurada que consumen demasiados recursos pueden estar sujetos a limitación.
 
 Además de los proveedores de navegación preinstalados, muchos clientes han implementado correctamente implementaciones de navegación personalizadas alternativas. Una clase común de implementaciones de navegación personalizadas adopta patrones de diseño representados por el cliente que almacenan una memoria caché local de nodos de navegación. (Vea **[scripting del lado cliente basado en búsquedas](#using-search-driven-client-side-scripting)** en este artículo).
 
@@ -52,7 +52,7 @@ En la tabla siguiente se resumen las ventajas y los inconvenientes de cada opci�
 |Ti<br/><br/>Fácil de mantener<br/>Opción recomendada<br/>     |Ti<br/><br/>Fácil de configurar<br/>Seguridad recortada<br/>Se actualiza automáticamente cuando se agrega contenido<br/>|Ti<br/><br/>Seguridad recortada<br/>Se actualiza automáticamente cuando se agregan sitios<br/>Tiempo de carga rápida y estructura de navegación en caché local<br/>|Ti<br/><br/>Opción más amplia de opciones disponibles<br/>Carga rápida cuando se utiliza correctamente el almacenamiento en caché<br/>Muchas opciones funcionan bien con un diseño de página dinámico<br/>|
 |Conos<br/><br/>No se actualiza automáticamente para reflejar la estructura del sitio<br/>Afecta al rendimiento si se habilita el recorte de seguridad<br/>|Conos<br/><br/>**No recomendado**<br/>**Impacto en el rendimiento y la escalabilidad**<br/>**Sujeto a la limitación**<br/>|Conos<br/><br/>No se pueden ordenar sitios fácilmente<br/>Requiere la personalización de la página maestra (habilidades técnicas necesarias)<br/>|Conos<br/><br/>Se requiere desarrollo personalizado<br/>Se necesita un origen de datos externo o almacenamiento en caché, por ejemplo Azure<br/>|
 
-La opción más adecuada para su sitio dependerá de los requisitos de su sitio y de su capacidad técnica. Si desea un proveedor de navegación listo para usar que sea escalable, la navegación administrada con el recorte de seguridad deshabilitado es una buena opción. 
+La opción más adecuada para su sitio dependerá de los requisitos de su sitio y de su capacidad técnica. Si desea un proveedor de navegación listo para usar que sea escalable, la navegación administrada con el recorte de seguridad deshabilitado es una buena opción.
 
 La opción de navegación administrada se puede mantener mediante la configuración, no implica archivos de personalización de código y es significativamente más rápida que la navegación estructural. Si requiere el recorte de seguridad y se siente cómodo con una página maestra personalizada y tiene alguna función en la organización para mantener los cambios que se pueden producir en la página maestra predeterminada para SharePoint Online, la opción basada en búsquedas puede producir una mejor experiencia del usuario. Si tiene requisitos más complejos, un proveedor de navegación personalizado puede ser la opción correcta. NO se recomienda la navegación estructural.
 

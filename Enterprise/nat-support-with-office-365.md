@@ -1,7 +1,7 @@
 ---
 title: Compatibilidad de NAT con Office 365
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 1/24/2017
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: 'Resumen: proporciona detalles sobre cómo aproximar el número correcto de clientes que se pueden usar por dirección IP dentro de la organización mediante la traducción de direcciones de red (NAT).'
-ms.openlocfilehash: bdbf108163c7b22fd6d7583436af5f0ed655784c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 63180faab720e32c1066dcca60536db492d52734
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069886"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616873"
 ---
 # <a name="nat-support-with-office-365"></a>Compatibilidad de NAT con Office 365
 
@@ -50,12 +50,12 @@ Dispositivos máximos admitidos detrás de una sola dirección IP pública = (64
   
  **Por ejemplo, si se cumplen las siguientes condiciones:**
   
-- **Puertos restringidos:** 4.000 para el sistema operativo 
-    
-- **Consumo de puertos máximo:** 6 por dispositivo 
-    
-- **Factor máximo:** 4 
-    
+- **Puertos restringidos:** 4.000 para el sistema operativo
+
+- **Consumo de puertos máximo:** 6 por dispositivo
+
+- **Factor máximo:** 4
+
 A continuación, el máximo de dispositivos admitidos detrás de una sola dirección IP pública = (64.000-4000)/(6 + 4) = 6.000
   
 Con el lanzamiento del paquete de hospedaje de Office 365, incluido en las actualizaciones de septiembre de 2011 para Microsoft Office Outlook 2007 o de noviembre de 2011 para Microsoft Outlook 2010, o una actualización posterior, el número de conexiones de Outlook (Office Outlook 2007 con Service El paquete 2 y Outlook 2010) a Exchange pueden tener un mínimo de 2. Necesitará tener en cuentan los diferentes sistemas operativos, comportamientos de usuario, etc., para determinar el número mínimo y máximo de puertos que la red necesitará como pico.
@@ -79,4 +79,3 @@ Hay varios métodos para distribuir la carga de clientes a través de direccione
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
 [Preguntas frecuentes sobre extremos de Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
-
