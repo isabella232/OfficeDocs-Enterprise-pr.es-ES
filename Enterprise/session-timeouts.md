@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
 - M365-security-compliance
-description: Los tiempos de espera de sesión se usan para equilibrar la securtiy y facilidad de acceso en aplicaciones cliente de Office 365.
-ms.openlocfilehash: d43bc123de982f3ebf55f05f48e53debe7df036b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Los tiempos de espera de sesión se usan para equilibrar la seguridad y la facilidad de acceso en aplicaciones cliente de Office 365.
+ms.openlocfilehash: 82ce98de440175f2190d5da6e4d1c02b8b678b89
+ms.sourcegitcommit: 237e1c485214c2ff75375988febfd7fb70faa5f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070856"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35746698"
 ---
 # <a name="session-timeouts-for-office-365"></a>Tiempos de espera de sesión para Office 365
 
