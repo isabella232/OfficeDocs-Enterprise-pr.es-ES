@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Resumen: Use Windows PowerShell para Office 365 para agregar un nombre de dominio alternativo a un inquilino de cliente existente.'
-ms.openlocfilehash: 9b65a5665ce8aa7205db733a2d0e0969e5cd401d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1a1c1c06a2912f6624e6eb860ea6794f9474c09e
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069276"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781850"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Agregar un dominio a un arrendamiento de cliente con Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 
@@ -46,7 +46,7 @@ También necesitará la siguiente información:
  Sus clientes probablemente le pedirán crear dominios adicionales para asociar con su arrendamiento, ya que no desean que el dominio predeterminado <domain>.onmicrosoft.com sea el dominio principal que represente su identidad corporativa en el mundo. En este procedimiento se explica cómo crear un nuevo dominio asociado con el arrendamiento de su cliente.
   
 > [!NOTE]
-> Para realizar algunas de estas operaciones, la cuenta de administrador de asociado con la que inicie sesión debe establecerse en **Administración completa** para la opción **Asignar acceso administrativo a las compañías a las que proporciona soporte técnico** que se encuentra en la información de la cuenta de administrador en el Centro de administración de Office 365. Para obtener más información sobre cómo administrar roles de administrador de asociado, vea[Asociados: Ofrecer administración delegada](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
+> Para realizar algunas de estas operaciones, la cuenta de administrador de asociados con la que inicia sesión debe estar establecida en **administración completa** para la opción **asignar acceso administrativo a compañías que admite, que** se encuentra en los detalles de la cuenta de administrador del Centro de administración de Microsoft 365. Para obtener más información sobre cómo administrar roles de administrador de asociado, vea[Asociados: Ofrecer administración delegada](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>Crear el dominio en Azure Active Directory
 

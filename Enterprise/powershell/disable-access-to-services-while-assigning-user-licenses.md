@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Obtenga información sobre cómo asignar licencias a cuentas de usuario y deshabilitar planes de servicio específicos al mismo tiempo mediante Office 365 PowerShell.
-ms.openlocfilehash: 82a448e4fc7f068fab3b04519b9689506208bee8
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f45c76ba0e756aec057e4243ece51de2af26aaec
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069056"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782150"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Deshabilitar el acceso a los servicios al asignar licencias de usuario
 
@@ -40,7 +40,7 @@ Get-MsolAccountSku
 
 En la pantalla del `Get-MsolAccountSku` comando:
   
-- **AccountSkuId** es una suscripción para su organización en \<el formato\<OrganizationName>: Subscription>. \<OrganizationName> es el valor que proporcionó cuando se inscribió en Office 365 y es único para su organización. El \<valor Subscription> es para una suscripción específica. Por ejemplo, para litwareinc: ENTERPRISEPACK, el nombre de la organización es litwareinc y el nombre de la suscripción es ENTERPRISEPACK (Office 365 Enterprise E3).
+- **AccountSkuId** es una suscripción para su organización en \<NombreOrganización>:\<subscription> Format. El \<> NombreDeOrganización es el valor que proporcionó cuando se inscribió en Office 365 y es único para su organización. El \<valor de> de suscripción es para una suscripción específica. Por ejemplo, para litwareinc: ENTERPRISEPACK, el nombre de la organización es litwareinc y el nombre de la suscripción es ENTERPRISEPACK (Office 365 Enterprise E3).
     
 - **ActiveUnits** es el número de licencias que ha comprado para la suscripción.
     
@@ -70,7 +70,7 @@ En la tabla siguiente, se muestran los planes de servicio de Office 365, junto c
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype Empresarial Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Plan 2 de Exchange Online  <br/> |
    

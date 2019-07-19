@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Hay sencillas formas de comprobar el rendimiento de la conexión entre Office 365 y su empresa que le permitirá establecer una línea de base aproximada de su conectividad. Conocer el historial de rendimiento de las conexiones de los equipos cliente puede ayudarle a detectar los problemas emergentes con anticipación, la identificación y la predicción de los problemas.
-ms.openlocfilehash: a399cb0057e9cc62e180fea8a6d7b9dbf1993a5f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 755f4c4bde7e040638e768002a528710bcdd48fd
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069526"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781910"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento
 
@@ -49,7 +49,7 @@ La solución de problemas de rendimiento no es sobre la satisfacción de objetiv
 
 En primer lugar, debe asegurarse de que lo que está experimentando es, en realidad, un problema de rendimiento y no un incidente de servicio. Un problema de rendimiento es diferente de un incidente de servicio en Office 365. Aquí te mostramos cómo distinguirlas.
   
-Si el servicio de Office 365 tiene problemas, es un incidente del servicio. Verá los iconos rojos o amarillos bajo **mantenimiento actual** en el centro de administración de Office 365, también puede observar un rendimiento lento en los equipos cliente que se conectan a Office 365. Por ejemplo, si el estado actual informa de un icono rojo y **** ve investigando junto a Exchange, puede que también reciba un grupo de llamadas de personas de su organización que se quejan de que los buzones de correo de cliente que usan Exchange Online se están realizando mal. En ese caso, es razonable asumir que el rendimiento de Exchange Online se ha convertido en una víctima de problemas en el servicio. 
+Si el servicio de Office 365 tiene problemas, es un incidente del servicio. Verá los iconos rojos o amarillos bajo **mantenimiento actual** en el centro de administración de Microsoft 365, también puede observar un rendimiento lento en los equipos cliente que se conectan a Office 365. Por ejemplo, si el estado actual informa de un icono rojo y **** ve investigando junto a Exchange, puede que también reciba un grupo de llamadas de personas de su organización que se quejan de que los buzones de correo de cliente que usan Exchange Online se están realizando mal. En ese caso, es razonable asumir que el rendimiento de Exchange Online se ha convertido en una víctima de problemas en el servicio. 
   
 ![El panel de estado de Office 365 con todas las cargas de trabajo que muestran Green, excepto Exchange, que muestra el servicio restaurado.](media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
@@ -59,7 +59,7 @@ En este momento, el administrador de Office 365, debe comprobar el **estado actu
   
 Un problema de rendimiento no es un incidente del servicio, aunque los incidentes pueden provocar un rendimiento lento. Un problema de rendimiento tiene el siguiente aspecto:
   
-- Un problema de rendimiento se produce independientemente de la **condición del estado actual** del centro de administración de Office 365 para el servicio. 
+- Un problema de rendimiento se produce independientemente del **estado actual** del centro de administración que informa al servicio. 
     
 -  Un comportamiento que solía ser relativamente fluido tarda mucho tiempo en completarse o nunca en completarse. 
     
@@ -198,7 +198,7 @@ El objetivo de estos métodos sencillos es aprender a tomar, comprender y almace
 ![Red básica con cliente, proxy y nube, y sugerencias de herramientas PSPing, TraceTCP y seguimientos de red.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP se incluye en esta captura de pantalla porque es una herramienta útil para mostrar, en milisegundos, el tiempo que tarda en procesarse una solicitud y Cuántos saltos de red o conexiones de un equipo a la siguiente, que la solicitud tarda en llegar a un destino. TraceTCP también puede dar los nombres de los servidores usados durante los saltos, lo que puede resultar útil para un solucionador de problemas de Microsoft Office 365 en soporte técnico. >los comandos TraceTCP pueden ser muy sencillos, como: `tracetcp.exe outlook.office365.com:443`_GT_ > Recuerde incluir el número de puerto en el comando! > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) es una descarga gratuita, pero depende de wincap. Wincap es una herramienta que Netmon también usa e instala. También usamos Netmon en la sección métodos avanzados. 
+> TraceTCP se incluye en esta captura de pantalla porque es una herramienta útil para mostrar, en milisegundos, el tiempo que tarda en procesarse una solicitud y Cuántos saltos de red o conexiones de un equipo a la siguiente, que la solicitud tarda en llegar a un destino. TraceTCP también puede dar los nombres de los servidores usados durante los saltos, lo que puede resultar útil para un solucionador de problemas de Microsoft Office 365 en soporte técnico. Los comandos de > TraceTCP pueden ser muy sencillos, como `tracetcp.exe outlook.office365.com:443` : >> Recuerde incluir el número de puerto en el comando! > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) es una descarga gratuita, pero depende de wincap. Wincap es una herramienta que Netmon también usa e instala. También usamos Netmon en la sección métodos avanzados. 
   
  Si tiene varias oficinas, tendrá que mantener un conjunto de datos de un cliente en cada una de esas ubicaciones también. Esta prueba mide la latencia, que, en este caso, es un valor numérico que describe la cantidad de tiempo entre un cliente que envía una solicitud a Office 365 y Office 365 a responder a la solicitud. Las pruebas se originan dentro de su dominio en un equipo cliente y buscan medir un recorrido de ida y vuelta desde dentro de la red, pasando por un punto de salida, a través de Internet a Office 365 y atrás. 
   

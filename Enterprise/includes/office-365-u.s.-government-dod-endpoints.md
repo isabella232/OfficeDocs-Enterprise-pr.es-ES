@@ -29,7 +29,7 @@ ID | Categoría | EMERGENCIA | Addresses | Puertos
 8 | Predeterminada<BR>Obligatorio | Sí | `*.dod.teams.microsoft.us, *.online.dod.skypeforbusiness.us, dod.teams.microsoft.us` | **TCP:** 5061, 50000-59999<BR>**UDP:** 50000-59999
 21 | Predeterminada<BR>Obligatorio | No | `statics.microsoft.com` | **TCP:** 443
 
-## <a name="microsoft-365-common-and-office-online"></a>Microsoft 365 Common y Office Online
+## <a name="microsoft-365-common-and-office"></a>Microsoft 365 Common y Office 
 
 ID | Categoría | EMERGENCIA | Addresses | Puertos
 -- | ------------------- | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------

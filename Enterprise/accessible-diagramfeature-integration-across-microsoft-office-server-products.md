@@ -10,17 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: 'Este artículo es una versión de texto accesible del diagrama Integración de características en los productos de Microsoft Office Server: SharePoint Server, Exchange Server, Lync Server y Office Online.'
-ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Este artículo es una versión de texto accesible del diagrama con el nombre integración de características en los productos de Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server y Office Online Server.
+ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068776"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782250"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagrama accesible: Integración de características en productos de servidores de Microsoft Office
 
-**Resumen:** Este artículo es una versión de texto accesible del diagrama con el nombre integración de características en los productos de Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server y Office online.
+**Resumen:** Este artículo es una versión de texto accesible del diagrama con el nombre integración de características en los productos de Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server y Office Online Server.
   
 El diagrama consta de varias pestañas, como se indica en los títulos de sección de este documento.
   
@@ -86,7 +86,7 @@ Autenticación de servidor a servidor. Esta característica se aplica a: 
     
 - 2015
     
-- Office Online (anteriormente conocido como Office Web Apps)  
+- Office Online Server (anteriormente conocido como Office Web Apps) 
     
 Fotos de usuarios en alta resolución. Esta característica se aplica a:  
   
@@ -569,7 +569,7 @@ Productos de servidor:
     
  **Cómo funciona** 
   
-Cuando el destinatario de la llamada no responde a una llamada en ninguno de los puntos de conexión activos del destinatario de la llamada, Lync Server enruta la llamada al correo de voz en la mensajería UNIFICAda de Exchange (por ejemplo, el servidor de buzones de Exchange). 
+Cuando el destinatario de la llamada no responde a una llamada en ninguno de los puntos de conexión activos del destinatario de la llamada, Lync Server enruta la llamada al correo de voz en la mensajería unificada de Exchange (por ejemplo, el servidor de buzones de Exchange). 
   
 En el diagrama adjunto se muestra el enrutamiento de llamadas en dos escenarios:  
   

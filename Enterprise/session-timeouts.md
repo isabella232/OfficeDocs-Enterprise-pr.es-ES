@@ -19,12 +19,12 @@ ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
 - M365-security-compliance
 description: Los tiempos de espera de sesión se usan para equilibrar la seguridad y la facilidad de acceso en aplicaciones cliente de Office 365.
-ms.openlocfilehash: 82ce98de440175f2190d5da6e4d1c02b8b678b89
-ms.sourcegitcommit: 237e1c485214c2ff75375988febfd7fb70faa5f3
+ms.openlocfilehash: 6c37f53086a840a05e879682c95d6a4f25463707
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35746698"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782020"
 ---
 # <a name="session-timeouts-for-office-365"></a>Tiempos de espera de sesión para Office 365
 
@@ -38,7 +38,7 @@ En la siguiente tabla se enumeran las duraciones de sesión para los servicios d
   
 |**Servicio de Office 365**|**Tiempo de espera de sesión**|
 |:-----|:-----|
-|Centro de administración de Office 365  <br/> |Se le pedirá que proporcione las credenciales del centro de administración cada 8 horas.  <br/> |
+|Centro de administración de 365 de Microsoft  <br/> |Se le pedirá que proporcione las credenciales del centro de administración cada 8 horas.  <br/> |
 |SharePoint Online  <br/> |5 días de inactividad siempre que los usuarios elijan **mantener la sesión iniciada**. Si el usuario obtiene acceso a SharePoint Online una vez transcurridas 24 o más horas desde el inicio de sesión anterior, el valor de tiempo de espera se restablece en 5 días.  <br/> |
 |Outlook Web App  <br/> |6 horas.  <br/> Puede cambiar este valor usando el parámetro _ActivityBasedAuthenticationTimeoutInterval_ en el cmdlet [set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) .  <br/> |
 |Azure Active Directory  <br/> (Lo usan los clientes de Office 2013 con la autenticación moderna habilitada)  <br/> | La autenticación moderna usa tokens de acceso y tokens de actualización para conceder acceso de usuario a los recursos de Office 365 mediante Azure Active Directory. Un token de acceso es un token web JSON que se proporciona después de una autenticación correcta y es válido durante 1 hora. También se proporciona un token de actualización con una duración más larga. Cuando los tokens de acceso expiran, los clientes de Office usan un token de actualización válido para obtener un nuevo token de acceso. Este intercambio es correcto si la autenticación inicial del usuario sigue siendo válida.  <br/>  Los tokens de actualización son válidos durante 90 días y con uso continuo, pueden ser válidos hasta que se revocan.  <br/>  Los tokens de actualización se pueden invalidar con varios eventos como:  <br/>  La contraseña del usuario ha cambiado desde que se emitió el token de actualización.  <br/>  Un administrador puede aplicar directivas de acceso condicional que restringen el acceso al recurso al que el usuario intenta obtener acceso.  <br/> |

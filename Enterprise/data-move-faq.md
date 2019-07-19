@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: A continuación, se incluyen respuestas a preguntas generales sobre cómo mover datos principales a un nuevo centro de datos geográfico.
-ms.openlocfilehash: 29706f49ee0faf8c535b50843f224b7b1b2a372e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067906"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782330"
 ---
 # <a name="data-move-general-faq"></a>Preguntas más frecuentes sobre el movimiento de datos
 
@@ -61,7 +61,7 @@ Sí. Una vez que haya una nueva geografía del centro de datos disponible, los c
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>¿Dónde se encuentran los datos principales de los clientes?
 
-Los administradores de espacios empresariales pueden ver la tarjeta de ubicación de datos en el centro de administración en cualquier momento para confirmar los datos principales del cliente en la ubicación de REST para cada servicio, específicamente para su inquilino.También publicamos la ubicación del centro de datos GEOS, los centros de datos y la ubicación de los datos de cliente de Office 365 en el centro de datos [ interactivo de office 365](https://office.com/datamaps) como referencia para los datos de cliente principales predeterminados en las ubicaciones de REST para los nuevos inquilinos.  Puede comprobar la ubicación de los datos de cliente en reposo a través de la sección Ubicación de datos del perfil de la organización en el centro de administración de Office 365.  
+Los administradores de espacios empresariales pueden ver la tarjeta de ubicación de datos en el centro de administración en cualquier momento para confirmar los datos principales del cliente en la ubicación de REST para cada servicio, específicamente para su inquilino.También publicamos la ubicación del centro de datos GEOS, los centros de datos y la ubicación de los datos de cliente de Office 365 en el centro de datos [ interactivo de office 365](https://office.com/datamaps) como referencia para los datos de cliente principales predeterminados en las ubicaciones de REST para los nuevos inquilinos.  Puede comprobar la ubicación de los datos de cliente en reposo mediante la sección Ubicación de datos del perfil de la organización en el centro de administración de Microsoft 365.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>¿Cuándo podré solicitar un movimiento?
   
@@ -101,7 +101,7 @@ Vea [durante y después de la transferencia de datos](during-and-after-your-data
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>¿Cómo sé que se ha completado el traslado?
   
-Vea el centro de mensajes de Office 365 para confirmar que se ha completado el movimiento de los datos de cada servicio. Cuando se mueven los datos de cada servicio, publicaremos un aviso de finalización para que reciba tres avisos de finalización: uno para cada uno de ellos para Exchange Online, SharePoint Online y Skype empresarial online.  También puede comprobar la ubicación de los datos de cliente en reposo mediante la sección Ubicación de datos del perfil de la organización en el centro de administración de Office 365.  
+Vea el centro de mensajes de Office 365 para confirmar que se ha completado el movimiento de los datos de cada servicio. Cuando se mueven los datos de cada servicio, publicaremos un aviso de finalización para que reciba tres avisos de finalización: uno para cada uno de ellos para Exchange Online, SharePoint Online y Skype empresarial online.  También puede comprobar la ubicación de los datos de cliente en reposo a través de la sección Ubicación de datos del perfil de la organización en el centro de administración de Microsoft 365.  
   
 ## <a name="i-am-an-office-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>Soy un cliente de Office 365 en una de las nuevas GEOS de centro de recursos, pero cuando me he registrado, seleccioné un país diferente. ¿Cómo se puede mover a la nueva geografía del centro de recursos?
 

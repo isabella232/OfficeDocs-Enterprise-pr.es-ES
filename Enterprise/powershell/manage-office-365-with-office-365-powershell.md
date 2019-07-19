@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Resumen: Obtenga información sobre cómo usar PowerShell de Office 365 con usuarios y licencias de Office 365, Skype Empresarial Online, SharePoint Online, Exchange Online y el Centro de seguridad y cumplimiento de Office 365.'
-ms.openlocfilehash: 90903c33ebabc426ba95e0c69e71fea985cb464d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 56c23aca44d09947e7469296c6ed85b2f3d2f3c5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068910"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782110"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Administrar Office 365 con PowerShell de Office 365
 
  **Resumen:** Obtenga información sobre cómo usar PowerShell de Office 365 con usuarios y licencias de Office 365, Skype Empresarial Online, SharePoint Online, Exchange Online y el Centro de seguridad y cumplimiento de Office 365.
   
-PowerShell de Office 365 es una herramienta de administración eficaz que se complementa con el centro de administración de Office 365. Por ejemplo, puede usar la automatización de PowerShell de Office 365 para administrar varias cuentas de usuario y licencias más rápidamente y crear informes. Aprenda a usar PowerShell de Office 365 con usuarios y licencias de Office 365, Skype Empresarial Online, SharePoint Online, Exchange Online y el Centro de seguridad y cumplimiento de Office 365.
+Office 365 PowerShell es una herramienta de administración eficaz que complementa el centro de administración de Microsoft 365. Por ejemplo, puede usar la automatización de PowerShell de Office 365 para administrar varias cuentas de usuario y licencias más rápidamente y crear informes. Obtenga información sobre cómo usar Office 365 PowerShell con Office 365 usuarios y licencias, Skype empresarial online, SharePoint Online, Exchange Online y el centro de seguridad & cumplimiento de Office 365.
   
 Seleccione el tema según sus necesidades:
   

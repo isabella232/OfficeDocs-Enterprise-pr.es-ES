@@ -13,12 +13,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Las aplicaciones de Office para Mac proporcionan una experiencia de aplicación nativa en la plataforma de macOS. Cada aplicación está diseñada para trabajar en diversos escenarios, incluidos los Estados en los que no hay acceso a la red disponible. Cuando un equipo está conectado a una red, las aplicaciones se conectan automáticamente a una serie de servicios basados en web para proporcionar funciones mejoradas. En este documento se describen los puntos de conexión y las direcciones URL que las aplicaciones intentan alcanzar y los servicios que se proporcionan. Esta información es útil para solucionar problemas de configuración de red y establecer una directiva para los servidores proxy de red. Los detalles de este artículo tienen como objetivo complementar el artículo Office 365 URL y los intervalos de direcciones.
-ms.openlocfilehash: 0493fcc0954456ed190791b089fe4e0a568e82d7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069665"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781960"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Solicitudes de red en Office para Mac
 
@@ -68,7 +68,7 @@ Los siguientes puntos de conexión de red se contactan en el primer inicio de un
 |```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |Provincia  <br/> |Descarga de telemetría de reglas de Office: informa al cliente sobre los datos y eventos que se deben cargar en el servicio de telemetría.  <br/> |
 |```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |COMPLEJO  <br/> |Servicio de telemetría de OneNote  <br/> |
 |```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |Provincia  <br/> |Informes de carga de telemetría de Office: "Heartbeart" y eventos de error que se producen en el cliente se cargan en el servicio de telemetría.  <br/> |
-|```https://templateservice.office.com/```  <br/> |WXP  <br/> |COMPLEJO  <br/> |Servicio de plantillas de Office Online: proporciona a los usuarios plantillas de documento en línea.  <br/> |
+|```https://templateservice.office.com/```  <br/> |WXP  <br/> |COMPLEJO  <br/> |Servicio de plantillas de Office: proporciona a los usuarios plantillas de documento en línea.  <br/> |
 |```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |COMPLEJO  <br/> |Descargas de plantillas de Office: almacenamiento de imágenes de plantillas PNG.  <br/> |
 |```https://store.office.com/```  <br/> |WXP  <br/> |COMPLEJO  <br/> |Configuración de la tienda para las aplicaciones de Office.  <br/> |
 |```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |COMPLEJO  <br/> |Catálogo de servicios de integración de documentos de Office (lista de servicios y extremos) y detección del dominio de inicio.  <br/> |

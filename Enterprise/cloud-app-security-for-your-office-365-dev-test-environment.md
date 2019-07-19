@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Resumen: Configure y demuestre Office 365 Cloud App Security en su entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: af2a2657ede46818b9d705ca38f99d779f98fb11
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1b20f4dc98c23c2063d77703f157a31889c69e6c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068106"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782260"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security para el entorno de desarrollo y pruebas de Office 365
 
@@ -81,13 +81,13 @@ En este procedimiento, se habilita Cloud App Security y se crea una nueva Direct
 
 1. Vaya al centro de administración de 365 de[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft () e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
     
-2. Haga clic en el icono **Administración**. En la pestaña **centro de administración de Office** , haga clic en centros de **Administración _GT_ seguridad de & cumplimiento**.
+2. Haga clic en el icono **Administración**. En la pestaña **centro de administración de Office** , haga clic en centros de **Administración > el cumplimiento de & de seguridad**.
     
-3. En el panel de navegación izquierdo, haga clic en **alertas > de administración de alertas avanzadas**.
+3. En el panel de navegación izquierdo, haga clic en **alertas > administrar alertas avanzadas**.
     
 4. En la página **Administrar alertas avanzadas** , haga clic en **activar Office 365 Cloud App Security**y, a continuación, haga clic en **ir a Office 365 Cloud App Security**.
     
-5. En la pestaña nuevo **Panel** , haga clic en **directivas de > de control**.
+5. En la pestaña nuevo **Panel** , haga clic en **Control > directivas**.
     
 6. En la página **Directiva** , haga clic en **crear Directiva**y, a continuación, haga clic en **Directiva de actividad**.
     
@@ -145,7 +145,7 @@ En este procedimiento, demostrará cómo Cloud App Security crea alertas y enví
     
 18. Haga clic en el icono **seguridad &amp; y cumplimiento** .
     
-19. En el panel de navegación izquierdo, haga clic en **alertas > de administración de alertas avanzadas**.
+19. En el panel de navegación izquierdo, haga clic en **alertas > administrar alertas avanzadas**.
     
 20. En la página **Administrar alertas avanzadas** , haga clic en **ir a Office 365 Cloud App Security**.
     
@@ -153,7 +153,7 @@ En este procedimiento, demostrará cómo Cloud App Security crea alertas y enví
     
 22. En la pestaña **Página principal de Microsoft Office** , haga clic en **correo**. Espere unos 30 minutos. 
     
-    Verá dos nuevos mensajes de correo electrónico en la bandeja de entrada con el título **servicio de notificación de Microsoft Azure ad**. Un mensaje indica que la cuenta de usuario 5 se ha agregado a la función de **Administrador de contraseña** y otro mensaje indica que la cuenta de usuario 5 se ha agregado a la función de **Administrador** de usuarios (igual al rol de administrador de administración de usuarios en el Centro de administración de Office 365
+    Verá dos nuevos mensajes de correo electrónico en la bandeja de entrada con el título **servicio de notificación de Microsoft Azure ad**. Un mensaje indica que la cuenta de usuario 5 se ha agregado a la función de **Administrador de contraseña** y otro mensaje indica que la cuenta de usuario 5 se ha agregado a la función de **Administrador** de usuarios (igual al rol de administrador de administración de usuarios en el Centro de administración de 365 de Microsoft).
     
 Ahora puede usar este entorno para crear nuevas directivas y seguir probando con Office 365 Cloud App Security. Vea [Get Ready for Office 365 Cloud App Security](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) para obtener vínculos a artículos de configuración adicionales.
   
