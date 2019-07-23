@@ -3,7 +3,7 @@ title: Cómo solicitar el movimiento de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Los clientes de Office 365 existentes deberán enviar una solicitud antes de la fecha límite de su país para que los datos del cliente de los servicios de Office 365 participantes se muevan a su nueva geografía.
-ms.openlocfilehash: 7558e65672afdb1fa91b8a958472eab00fb89d0c
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: b1fc5606549597eb91990f3675d4d867d0605f04
+ms.sourcegitcommit: 626ffb9907d5225acccf94095f54c8244df8dd49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392360"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "35818040"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -37,20 +37,20 @@ Los clientes de Office 365 existentes pueden solicitar una migración temprana d
 |Reino Unido  <br/> |15 de marzo de 2017  <br/> |15 de septiembre de 2017  <br/> |
 |Corea del sur  <br/> |1 de mayo de 2017  <br/> |31 de octubre de 2017  <br/> |
 |Francia  <br/> |14 de marzo de 2018  <br/> |15 de septiembre de 2018  <br/> |
-|Emiratos Árabes Unidos  <br/> |Plane  <br/> |Plane  <br/> |
+|Emiratos Árabes Unidos  <br/> |15 de julio de 2019  <br/> |31 de enero de 2020  <br/> |
 |Sudáfrica  <br/> |Plane  <br/> |Plane  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Cómo solicitar un movimiento
 
-Los clientes elegibles verán una página en el [centro de administración de Office 365](https://aka.ms/365admin), que les permitirá solicitar que sus datos principales de clientes se muevan a su nueva región de centro de datos.  
+Los clientes elegibles verán una página en su [centro de administración](https://aka.ms/365admin), que les permitirá solicitar que sus datos principales de clientes se muevan a su nueva región de centro de datos.  
   
-Para obtener acceso a la página en el centro de administración de Office 365, en el panel de navegación de la izquierda, expanda **configuración**y, a continuación, haga clic en Perfil de la **organización**.
+Para obtener acceso a la página en el centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **configuración**y, a continuación, haga clic en Perfil de la **organización**.
   
-![Menú Configuración con el perfil organizativo resaltado](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
+![Menú de configuración con el perfil de organización resaltado](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
   
 En la página Perfil de la **organización** , desplácese hacia abajo hasta la sección opción de **residencia de datos** . 
   
-![Tarjeta de residencia de datos](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
+![Tarjeta de residencia de datos](media/dataresidencyae.jpg)
   
 **Es posible que no vea esta sección si se aplica una de las siguientes opciones**:
 - El inquilino no es apto para el programa de movimiento.  La idoneidad la determina el país de suscripción del inquilino.
@@ -58,7 +58,7 @@ En la página Perfil de la **organización** , desplácese hacia abajo hasta la 
   
 Si su organización tiene requisitos de residencia de datos y necesita solicitar una migración temprana, haga clic en **Editar** en la parte superior derecha de la sección. Aparecerá una nueva sección en el lado derecho de la pantalla en la que se explican los detalles del programa de movimiento. Seleccione el botón de alternancia junto al texto que dice **sí, mi organización tiene requisitos de residencia de datos**. A continuación, haga clic en **Guardar**.
   
-![Pantalla de opción de suscripción de Datacenter](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
+![Pantalla de opción de suscripción de Datacenter](media/dataresidencyflyoutae.jpg)
   
 Debe ver el texto en la **opción de residencia de datos** cambiar para indicar que **su organización ha solicitado mover sus datos principales de clientes.** También tendrá un mensaje de confirmación en el centro de mensajes. Esto confirma que ha solicitado un movimiento correctamente. 
 
