@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Use los cmdlets de PowerShell de implementación centralizada como ayuda para implementar y administrar complementos de Office para su organización de Office 365.
-ms.openlocfilehash: c63a48d212bba4eda25fb6b8843f6321892dc54b
-ms.sourcegitcommit: d53033c2d2d41d52047e3e2644d77373d4a5dd9a
+ms.openlocfilehash: 301e44da4c663fa54c4e2b753552b0b345e2a6e5
+ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35791255"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35834240"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos
 
@@ -171,6 +171,8 @@ Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ## <a name="customize-microsoft-store-add-ins-for-your-organization"></a>Personalizar complementos de Microsoft Store para su organización
 
 Debe personalizar el complemento antes de implementarlo en su organización. Esta característica no es compatible con los complementos anteriores a la versión 1,1. 
+
+Le recomendamos que primero implemente un complemento personalizado para asegurarse de que funciona según lo esperado antes de implementarlo en toda la organización.
 
 Tenga en cuenta también las siguientes restricciones:
 - Todas las direcciones URL deben ser absolutas (incluidas http o https) y válidas.
