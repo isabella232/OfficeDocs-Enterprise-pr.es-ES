@@ -172,10 +172,10 @@
 ##### [Habilitar SharePoint Multi-Geo en su ubicación geográfica de satélite](enabling-SP-multigeo-satellite-geolocation.md)
 ##### [Administración de Multi-Geo de Exchange](administering-exchange-online-multi-geo.md)
 
-#### [Mover a un nuevo centro de datos geográfico de Office 365](moving-data-to-new-datacenter-geos.md)
-##### [Cómo solicitar el movimiento de datos](request-your-data-move.md)
-##### [Durante y después del movimiento de datos](during-and-after-your-data-move.md)
-##### [Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.md)
+### [Mover a un nuevo centro de datos geográfico de Office 365](moving-data-to-new-datacenter-geos.md)
+#### [Cómo solicitar el movimiento de datos](request-your-data-move.md)
+#### [Durante y después del movimiento de datos](during-and-after-your-data-move.md)
+#### [Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.md)
 
 ### Soluciones híbridas
 #### [Usar Azure Active Directory para la autenticación de SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
