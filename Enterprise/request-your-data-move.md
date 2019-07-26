@@ -3,7 +3,7 @@ title: Cómo solicitar el movimiento de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/22/2019
+ms.date: 07/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Los clientes de Office 365 existentes deberán enviar una solicitud antes de la fecha límite de su país para que los datos del cliente de los servicios de Office 365 participantes se muevan a su nueva geografía.
-ms.openlocfilehash: b1fc5606549597eb91990f3675d4d867d0605f04
-ms.sourcegitcommit: 626ffb9907d5225acccf94095f54c8244df8dd49
+ms.openlocfilehash: 4df9c3481782f6d3f0b8431bd91677fb1262812c
+ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "35818040"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907653"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -38,7 +38,7 @@ Los clientes de Office 365 existentes pueden solicitar una migración temprana d
 |Corea del sur  <br/> |1 de mayo de 2017  <br/> |31 de octubre de 2017  <br/> |
 |Francia  <br/> |14 de marzo de 2018  <br/> |15 de septiembre de 2018  <br/> |
 |Emiratos Árabes Unidos  <br/> |15 de julio de 2019  <br/> |31 de enero de 2020  <br/> |
-|Sudáfrica  <br/> |Plane  <br/> |Plane  <br/> |
+|Sudáfrica  <br/> |25 de julio de 2019  <br/> |31 de enero de 2020  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Cómo solicitar un movimiento
 
@@ -53,14 +53,14 @@ En la página Perfil de la **organización** , desplácese hacia abajo hasta la 
 ![Tarjeta de residencia de datos](media/dataresidencyae.jpg)
   
 **Es posible que no vea esta sección si se aplica una de las siguientes opciones**:
-- El inquilino no es apto para el programa de movimiento.  La idoneidad la determina el país de suscripción del inquilino.
-- Todos los datos ya están ubicados en la nueva área geográfica (consulte la sección Ubicación de datos de la página). 
+- El inquilino no es apto para el programa de Office 365 Move.  La idoneidad la determina el país de suscripción del inquilino.
+- Todos los datos principales de clientes en reposo ya se encuentran en la nueva área geográfica (consulte la sección Ubicación de datos de la página). 
   
-Si su organización tiene requisitos de residencia de datos y necesita solicitar una migración temprana, haga clic en **Editar** en la parte superior derecha de la sección. Aparecerá una nueva sección en el lado derecho de la pantalla en la que se explican los detalles del programa de movimiento. Seleccione el botón de alternancia junto al texto que dice **sí, mi organización tiene requisitos de residencia de datos**. A continuación, haga clic en **Guardar**.
+Si su organización tiene requisitos de residencia de datos y necesita solicitar una migración temprana, haga clic en **participar** en la parte superior derecha de la sección. En el lado derecho de la pantalla aparecerá una nueva sección en la que se explican los detalles del programa de Office 365 Move. Seleccione el botón de alternancia junto al texto en el que **se indica que es necesario migrar los datos principales de clientes de la organización en reposo**. A continuación, haga clic en **Guardar**.
   
 ![Pantalla de opción de suscripción de Datacenter](media/dataresidencyflyoutae.jpg)
   
-Debe ver el texto en la **opción de residencia de datos** cambiar para indicar que **su organización ha solicitado mover sus datos principales de clientes.** También tendrá un mensaje de confirmación en el centro de mensajes. Esto confirma que ha solicitado un movimiento correctamente. 
+Debe ver el texto en la sección **residencia de datos** para indicar que **su organización ha solicitado mover sus datos principales de clientes.** También tendrá un mensaje de confirmación en el centro de mensajes. Esto confirma que ha solicitado un movimiento correctamente. 
 
 
   
