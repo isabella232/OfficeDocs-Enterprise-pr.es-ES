@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras. Está disponible para implementaciones híbridas de Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial. Este artículo contiene vínculos a documentos relacionados sobre requisitos previos, la configuración/deshabilitación de la autenticación moderna y para algunos de los clientes relacionados (por ejemplo, Outlook y clientes de Skype) información.
-ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
-ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
+ms.openlocfilehash: a8395a4d1bc212f23309b4ea273588d44eef69a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34404222"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782460"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para su uso con servidores locales de Skype empresarial y Exchange
 
@@ -88,7 +88,7 @@ Compruebe y compruebe estos elementos de la lista antes de continuar:
     
   - El dominio SIP se agrega como un dominio federado en Office 365
     
-  - Todos los front-ends de SFB deben tener conexiones salientes a Internet, a las direcciones URL de autenticación de Office 365 (TCP 443) y las CRL de raíz de certificado conocidas (TCP 80) que aparecen en las filas 56 y 125 de la sección "Microsoft 365 Common y Office Online" de las [direcciones URL e IP de office 365 intervalos de direcciones](urls-and-ip-address-ranges.md).
+  - Todos los front-ends de SFB deben tener conexiones salientes a Internet, a las direcciones URL de autenticación de Office 365 (TCP 443) y las CRL de raíz de certificado conocidas (TCP 80) enumeradas en filas 56 y 125 de la sección "Microsoft 365 Common y Office" de las [direcciones IP y URL de office 365 rangos](urls-and-ip-address-ranges.md).
   
 - **Skype empresarial local en un entorno híbrido de Office 365**
   - Una implementación de Skype empresarial Server 2019 con todos los servidores que ejecutan Skype empresarial Server 2019.

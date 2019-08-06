@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Para comprender correctamente el tráfico de enrutamiento a Office 365 mediante Azure ExpressRoute, necesitará una sólida visión de los requisitos de enrutamiento de ExpressRoute principales y los circuitos y dominios de enrutamiento de ExpressRoute. Estos diseñan los conceptos básicos para usar ExpressRoute en los que se basarán los clientes de Office 365.
-ms.openlocfilehash: 60277e9d9f2a5b2fc92465b57b5aa08148b604f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 01251880eba2051d8839f7c08e244398906c75ed
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071006"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722719"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Enrutamiento con ExpressRoute para Office 365
 
@@ -90,7 +90,7 @@ Otras aplicaciones, como Office 365 video, es una aplicación de Office 365; sin
 
 Cada una de las características de Office 365 que están disponibles con emparejamiento de Microsoft se enumeran en el [artículo de puntos de conexión de office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) por tipo de aplicación y FQDN. La razón para usar el FQDN en las tablas es permitir que los clientes administren el tráfico mediante archivos PAC u otras configuraciones de proxy, consulte nuestra guía para [administrar puntos de conexión de Office 365](https://aka.ms/manageo365endpoints) por ejemplo archivos PAC.
   
-En algunas situaciones, hemos usado un dominio comodín donde uno o más subNOMBREs secundarios se anuncian de forma diferente que el dominio comodín de nivel superior. Esto suele ocurrir cuando el carácter comodín representa una lista larga de servidores que se anuncian en ExpressRoute e Internet, mientras que un pequeño subconjunto de destinos solo se anuncia a Internet o al revés. Consulte las tablas siguientes para conocer dónde se encuentran las diferencias.
+En algunas situaciones, hemos usado un dominio comodín donde uno o más subnombres secundarios se anuncian de forma diferente que el dominio comodín de nivel superior. Esto suele ocurrir cuando el carácter comodín representa una lista larga de servidores que se anuncian en ExpressRoute e Internet, mientras que un pequeño subconjunto de destinos solo se anuncia a Internet o al revés. Consulte las tablas siguientes para conocer dónde se encuentran las diferencias.
   
 En esta tabla se muestran los FQDN comodín que se anuncian tanto a Internet como a Azure ExpressRoute junto con los sub-FQDN que se anuncian solo en Internet.
 
@@ -107,7 +107,7 @@ Por lo general, los archivos PAC están diseñados para enviar solicitudes de re
 
 3. Incluya otros extremos de red o reglas por debajo de estas dos entradas, enviando el tráfico hacia el proxy.
 
-En esta tabla se muestran los dominios comodín que se anuncian a los circuitos de Internet solo junto con los subFQDN que se anuncian a Azure ExpressRoute y a los circuitos de Internet. Para el archivo PAC anterior, los FQDN de la columna dos de la tabla siguiente se muestran como anunciados en ExpressRoute en el vínculo al que se hace referencia, lo que significa que se incluirán en el segundo grupo de entradas del archivo.
+En esta tabla se muestran los dominios comodín que se anuncian a los circuitos de Internet solo junto con los subfqdn que se anuncian a Azure ExpressRoute y a los circuitos de Internet. Para el archivo PAC anterior, los FQDN de la columna dos de la tabla siguiente se muestran como anunciados en ExpressRoute en el vínculo al que se hace referencia, lo que significa que se incluirán en el segundo grupo de entradas del archivo.
 
 |**Dominio comodín anunciado solo para circuitos de Internet**|**Sub-FQDN anunciado para los circuitos de ExpressRoute e Internet**|
 |:-----|:-----|
@@ -230,7 +230,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/erorout
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Conectividad de red a Office 365](network-connectivity.md)
+[Evaluación de la conectividad de red de Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute para Office 365](azure-expressroute.md)
   

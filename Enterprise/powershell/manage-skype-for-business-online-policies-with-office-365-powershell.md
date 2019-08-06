@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Resumen: Use Office 365 PowerShell para administrar las propiedades de la cuenta de usuario de Skype empresarial online con directivas.'
-ms.openlocfilehash: f19e262947b40b3e61dc8376b8e2e9c8ec984ff7
-ms.sourcegitcommit: c115a3554647167e3770dda6b69dbf5c5de11ed7
+ms.openlocfilehash: ed09b117d2de805e2ae28f05d734ced303db2405
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35253690"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782600"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Administrar Skype para políticas de negocios en línea con Office 365 PowerShell
 
@@ -62,7 +62,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-En este ejemplo, los valores de esta directiva determinan lo que un uso puede o no hacer cuando se trata de comunicarse con usuarios federados. Por ejemplo, la propiedad EnableOutsideAccess debe establecerse en true para que un usuario pueda comunicarse con personas fuera de la organización. Tenga en cuenta que esta propiedad no aparece en el centro de administración de Office 365. En su lugar, la propiedad se establece automáticamente en true o false en función de las otras selecciones que realice. Las otras dos propiedades de interés son:
+En este ejemplo, los valores de esta directiva determinan lo que un uso puede o no hacer cuando se trata de comunicarse con usuarios federados. Por ejemplo, la propiedad EnableOutsideAccess debe establecerse en true para que un usuario pueda comunicarse con personas fuera de la organización. Tenga en cuenta que esta propiedad no aparece en el centro de administración de Microsoft 365. En su lugar, la propiedad se establece automáticamente en true o false en función de las otras selecciones que realice. Las otras dos propiedades de interés son:
   
 - **EnableFederationAccess** indica si el usuario puede comunicarse con usuarios de dominios federados.
     

@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'Este artículo está destinado a los administradores. ¿Un usuario elimina permanentemente los elementos de su buzón de Outlook? El usuario desea volver a hacerlo, pero no puede recuperarlos. Es posible que pueda recuperar los elementos purgados si no se han quitado permanentemente del buzón de correo del usuario. '
-ms.openlocfilehash: d4be48d6166d970572dd1cb343ccd83f22330e12
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 12e07a88136d0dee0f186857aa71c3de6736a798
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203659"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782620"
 ---
 <a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Recuperar elementos eliminados en un buzón de usuario. Ayuda para administradores
@@ -48,7 +48,7 @@ El primer paso es asignarse a sí mismo los permisos necesarios en Exchange Onli
     
 2. Seleccione el icono ![del iniciador de aplicaciones el icono del iniciador de aplicaciones de Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) en la esquina superior izquierda y haga clic en **Administrador**.
     
-3. En el panel de navegación izquierdo del centro de administración de Office 365, expanda **centros de administración**y, a continuación, haga clic en **Exchange**.
+3. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, expanda **centros de administración**y, a continuación, haga clic en **Exchange**.
     
     ![Lista del centro de administración](media/7d308eb7-ba63-4156-a845-3770facc5de4.PNG)
   
@@ -85,7 +85,7 @@ Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos local
     
 2. Seleccione el icono ![del iniciador de aplicaciones el icono del iniciador de aplicaciones de Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) en la esquina superior izquierda y haga clic en **Administrador**.
     
-3. En la navegación izquierda del centro de administración de Office 365, expanda **Administración**y, a continuación, haga clic en **Exchange**.
+3. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, expanda **Administración**y, a continuación, haga clic en **Exchange**.
     
 4. En el centro de administración de Exchange, haga clic en **Administración de cumplimiento**, haga clic en **conservación de &amp; exhibición de**documentos electrónicos local y, a continuación, haga clic en **nuevo**![icono](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)agregar.
     

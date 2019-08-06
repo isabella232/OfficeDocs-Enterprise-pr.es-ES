@@ -3,29 +3,6 @@
 
 
 
-## <a name="week-of-june-24-2019"></a>Semana del 24 de junio de 2019
-
-
-| Fecha de publicación |Título del tema | Cambio |
-|------|------------|--------|
-| 6/24/2019 | [Los puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modificado |
-| 6/24/2019 | [Funcionamiento de la autenticación moderna para aplicaciones cliente de Office 2013 y Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | modificado |
-| 6/24/2019 | [Preparar un dominio no enrutable para la sincronización de directorios](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | modificado |
-| 6/24/2019 | [Recuperar elementos eliminados en un buzón de usuario: ayuda para administradores](/Office365/Enterprise/recover-deleted-items-in-a-mailbox) | modificado |
-| 6/24/2019 | [Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure](/Office365/Enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure) | modificado |
-| 6/24/2019 | [Actualización desde SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | modificado |
-| 6/26/2019 | [Administrar Skype para políticas de negocios en línea con Office 365 PowerShell](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | modificado |
-| 6/26/2019 | [Preparación para la sincronización de directorios en Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | modificado |
-| 6/26/2019 | [Ajustar el rendimiento de SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | modificado |
-| 6/28/2019 | [Puntos de conexión de Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | modificado |
-| 6/28/2019 | [Extremos DoD del gobierno de Estados Unidos de Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificado |
-| 6/28/2019 | [Office 365 puntos de conexión altos de GCC U.S. Government](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificado |
-| 6/28/2019 | [Direcciones URL e intervalos de direcciones IP para Office 365 operado por 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | modificado |
-| 6/28/2019 | [Intervalos de direcciones IP y URL de Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificado |
-| 6/28/2019 | [Mover datos básicos a un nuevo Office 365 Datacenter GEOS](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | modificado |
-| 6/28/2019 | [Cómo solicitar el movimiento de datos](/Office365/Enterprise/request-your-data-move) | modificado |
-
-
 ## <a name="week-of-july-01-2019"></a>Semana del 01 de julio de 2019
 
 
@@ -132,3 +109,15 @@
 | 7/24/2019 | [Agregar un dominio a un arrendamiento de cliente con Windows PowerShell para asociados con permiso de acceso delegado (DAP)](/Office365/Enterprise/powershell/add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe) | modificado |
 | 7/25/2019 | [Mover datos básicos a un nuevo Office 365 Datacenter GEOS](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | modificado |
 | 7/25/2019 | [Cómo solicitar el movimiento de datos](/Office365/Enterprise/request-your-data-move) | modificado |
+
+
+## <a name="week-of-july-29-2019"></a>Semana del 29 de julio de 2019
+
+
+| Fecha de publicación |Título del tema | Cambio |
+|------|------------|--------|
+| 7/29/2019 | [Puntos de conexión de Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | modificado |
+| 7/29/2019 | [Extremos DoD del gobierno de Estados Unidos de Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificado |
+| 7/29/2019 | [Office 365 puntos de conexión altos de GCC U.S. Government](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificado |
+| 7/29/2019 | [Direcciones URL e intervalos de direcciones IP para Office 365 operado por 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | modificado |
+| 7/29/2019 | [Intervalos de direcciones IP y URL de Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificado |

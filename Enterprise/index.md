@@ -1,6 +1,6 @@
 ---
 title: Office 365 Enterprise
-description: Microsoft Office 365 ofrece eficaces servicios en la nube en línea que permiten la colaboración, la seguridad y el cumplimiento, la movilidad y la Intellgence y análisis. Esta página proporciona instrucciones para los administradores y los profesionales de ti que están implementando, configurando y administrando los servicios de Office 365 en organizaciones empresariales.
+description: Microsoft Office 365 ofrece eficaces servicios en la nube en línea que permiten la colaboración, la seguridad y el cumplimiento, la movilidad y la inteligencia y análisis. Esta página proporciona instrucciones para los administradores y los profesionales de ti que están implementando, configurando y administrando los servicios de Office 365 en organizaciones empresariales.
 services: o365-solutions
 author: robmazz
 manager: laurawi
@@ -14,15 +14,15 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9be2aa25a0b59d9a13a9cee3a1b1b59f240f2030
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487136"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490733"
 ---
 <h1>Office 365 Enterprise</h1>
-<p>Microsoft Office&nbsp;365 ofrece eficaces servicios en la nube en línea que permiten la colaboración, la seguridad y el cumplimiento, la movilidad y la Intellgence y análisis. Esta página proporciona vínculos a instrucciones para administradores y profesionales de ti que implementan, configuran y administran&nbsp;servicios de Office 365 en organizaciones empresariales.</p>
+<p>Microsoft Office&nbsp;365 ofrece eficaces servicios en la nube en línea que permiten la colaboración, la seguridad y el cumplimiento, la movilidad y la inteligencia y análisis. Esta página proporciona vínculos a instrucciones para administradores y profesionales de ti que implementan, configuran y administran&nbsp;servicios de Office 365 en organizaciones empresariales.</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="https://www.microsoft.com/fasttrack/microsoft-365/office-365">

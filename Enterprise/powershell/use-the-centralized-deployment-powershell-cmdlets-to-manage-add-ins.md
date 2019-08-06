@@ -15,16 +15,16 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Use los cmdlets de PowerShell de implementación centralizada como ayuda para implementar y administrar complementos de Office para su organización de Office 365.
-ms.openlocfilehash: 404085d79827664437f3ad327fac4a99166adcf4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3d6495646c6ce0a1d15f2d911f1fa8af92e3c2c6
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071146"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782590"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos
 
-Como administrador de Office 365, puede implementar complementos de Office para los usuarios a través de la característica de implementación centralizada (vea [Manage Deployment of office 365 Add-Ins in the office 365 admin Center](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)). Además de implementar complementos de Office a través del centro de administración de Office 365, también puede usar PowerShell de Microsoft. [Descargue](https://go.microsoft.com/fwlink/p/?linkid=850850) los cmdlets de PowerShell de implementación centralizada desde el centro de descarga de Microsoft. 
+Como administrador de Office 365, puede implementar complementos de Office para los usuarios a través de la característica de implementación centralizada (vea [Manage Deployment of office 365 Add-Ins in the admin Center](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)). Además de implementar complementos de Office a través del centro de administración, también puede usar PowerShell de Microsoft. [Descargue](https://go.microsoft.com/fwlink/p/?linkid=850850) los cmdlets de PowerShell de implementación centralizada desde el centro de descarga de Microsoft. 
   
 ## <a name="what-do-you-want-to-do"></a>¿Qué quiere hacer?
 
@@ -92,7 +92,7 @@ New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale '
 
 Ejecute el cmdlet New-OrganizationAddIn para cargar un manifiesto de la tienda Office.
   
-En el siguiente ejemplo, el cmdlet New-OrganizationAddIn especifica el assetId para un complemento para una ubicación de Estados Unidos y un mercado de contenido.
+En el siguiente ejemplo, el cmdlet New-OrganizationAddIn especifica el AssetID para un complemento para una ubicación de Estados Unidos y un mercado de contenido.
   
 ```
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'

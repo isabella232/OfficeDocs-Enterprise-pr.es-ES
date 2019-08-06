@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Obtenga información sobre cómo las aplicaciones integradas de O365 se registran y administran en Azure AD
-ms.openlocfilehash: 01bd932ed12e040a0e6dae517d7b4fd360b5da80
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c52b4beefaefd4a115c132c6f82e7f1d20564b46
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067256"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782530"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Aplicaciones integradas y Azure AD para administradores de Office 365
 
@@ -32,7 +32,7 @@ Debe realizar estos dos procedimientos para poder administrar las aplicaciones d
   
 |**Requisitos previos**|**Comments**|
 |:-----|:-----|
-|[Registre su suscripción gratuita de Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Todas las suscripciones de pago a Office 365 incluyen una suscripción gratuita a Azure Active Directory. Puede usar Azure AD para administrar las aplicaciones y para crear y administrar cuentas de usuario y de grupo. Para activar esta suscripción y acceder al portal de administración de Azure, debe completar un proceso de registro. Después, puede ir a Azure AD desde el centro de administración de Office 365.  <br/> |
+|[Registre su suscripción gratuita de Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Todas las suscripciones de pago a Office 365 incluyen una suscripción gratuita a Azure Active Directory. Puede usar Azure AD para administrar las aplicaciones y para crear y administrar cuentas de usuario y de grupo. Para activar esta suscripción y acceder al portal de administración de Azure, debe completar un proceso de registro. Después, puede ir a Azure AD desde el centro de administración de Microsoft 365.  <br/> |
 |[Activar o desactivar las aplicaciones integradas](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114) <br/> |Debe activar las aplicaciones integradas para que los usuarios puedan permitir que las aplicaciones de terceros accedan a la información de Office 365 y para registrar aplicaciones en Azure AD. Por ejemplo, cuando alguien usa una aplicación de terceros, es posible que esa aplicación le pida permiso para obtener acceso a su calendario y editar los archivos que se encuentran en una carpeta de OneDrive para la empresa.  <br/> |
    
 Para administrar las aplicaciones de Office 365, es necesario tener conocimientos de aplicaciones en Azure AD. Estos artículos le proporcionan el fondo que necesita.

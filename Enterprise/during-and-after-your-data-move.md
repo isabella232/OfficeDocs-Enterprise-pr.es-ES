@@ -3,7 +3,7 @@ title: Durante y después del movimiento de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 07/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
-ms.openlocfilehash: a0fb2e7ad31a2c5492260bd5f1d67d80632024c0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 09d858f42b44ae6252872120597145b55c1d3552
+ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067736"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786235"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -38,7 +38,7 @@ Vea el centro de mensajes de Office 365 para confirmar que se han completado los
 |Corea del sur  <br/> |31 de octubre de 2018  <br/> |
 |Reino Unido  <br/> |15 de septiembre de 2019  <br/> |
 |Francia  <br/> |15 de septiembre de 2020  <br/> |
-|Emiratos Árabes Unidos  <br/> |Anunció  <br/> |
+|Emiratos Árabes Unidos  <br/> |1 de febrero de 2022  <br/> |
 |Sudáfrica  <br/> |Anunció  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
@@ -74,7 +74,7 @@ Cuando se mueve SharePoint Online, también se mueven los datos de los siguiente
     
 - Servicios de vídeo de Office 365
     
-- Office Online
+- Explorador de Office en s
     
 - Office 365 ProPlus
     

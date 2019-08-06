@@ -23,12 +23,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo preparar el aprovisionamiento de usuarios a Office 365 mediante la sincronización de directorios y las ventajas a largo plazo del uso de este método.
-ms.openlocfilehash: 2361f4484f00d61fda90fed407bf3c287bbc2bc1
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
+ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162473"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35249201"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Preparación para la sincronización de directorios en Office 365
 
@@ -113,7 +113,7 @@ A continuación se enumeran los atributos que debe preparar:
   - Número máximo de caracteres por valor: 256
   - El valor del atributo no debe contener un espacio.
   - El valor del atributo debe ser único dentro del directorio.
-  - Caracteres no válidos: \< \> (); , [ ] "
+  - Caracteres no válidos: \< \> (); , [ ] " '
     
     Tenga en cuenta que los caracteres no válidos se aplican a los caracteres que siguen al delimitador de tipo y ":", de modo que SMTP:User@contso.com está permitido, pero SMTP:user:M@contoso.com no lo es.
     
@@ -124,7 +124,7 @@ A continuación se enumeran los atributos que debe preparar:
     
   - Número máximo de caracteres: 20
   - El valor del atributo debe ser único dentro del directorio.
-  - Caracteres no válidos: [\ "|, \< \> /: + =;? \* ]
+  - Caracteres no válidos: [\ "|, \< \> /: + =;? \* ']
   - Si un usuario tiene un atributo **samAccountName** no válido, pero tiene un atributo **userPrincipalName** válido, se crea la cuenta de usuario en Office 365. 
   - Si **samAccountName** y **userPrincipalName** no son válidos, se debe actualizar el atributo **userPrincipalName** de AD DS. 
     
@@ -148,7 +148,7 @@ A continuación se enumeran los atributos que debe preparar:
   - El número máximo de caracteres para el atributo **userPrincipalName** es de 113. Se permite un número específico de caracteres antes y después de la arroba (@), de la siguiente manera: 
   - Número máximo de caracteres para el nombre de usuario que está delante del signo (@): 64
   - Número máximo de caracteres para el nombre de dominio después de la arroba (@): 48
-  - Caracteres no válidos: &amp; \* \% +/=? { } | \< \> ( ) ; : , [ ] "
+  - Caracteres no válidos: &amp; \* \% +/=? { } | \< \> ( ) ; : , [ ] " '
   - Una umlaut también es un carácter no válido.
   - El carácter @ es necesario en cada valor **userPrincipalName** . 
   - El carácter @ no puede ser el primer carácter de cada valor **userPrincipalName**. 
@@ -160,9 +160,9 @@ A continuación se enumeran los atributos que debe preparar:
 
 Vea [preparar los atributos de directorio con la herramienta idfix](prepare-directory-attributes-for-synch-with-idfix.md) para usar la herramienta idfix con el fin de identificar errores en los atributos de AD DS.
     
-## <a name="2-prepare-the-userprincipalname-attribute"></a>2. preparar el atributo userPrincipalName
+## <a name="3-prepare-the-userprincipalname-attribute"></a>3. preparar el atributo userPrincipalName
 
-Active Directory está diseñado para permitir que los usuarios finales de la organización inicien sesión en su directorio mediante **samAccountName** o **userPrincipalName**. De forma similar, los usuarios finales pueden iniciar sesión en Office 365 mediante el nombre principal de usuario (UPN) de su cuenta profesional o educativa. La sincronización de directorios intenta crear nuevos usuarios en Azure Active Directory con el mismo UPN que se encuentra en el AD SD. El UPN tiene el mismo formato que una dirección de correo electrónico. 
+Active Directory está diseñado para permitir que los usuarios finales de la organización inicien sesión en su directorio mediante **samAccountName** o **userPrincipalName**. De forma similar, los usuarios finales pueden iniciar sesión en Office 365 mediante el nombre principal de usuario (UPN) de su cuenta profesional o educativa. La sincronización de directorios intenta crear nuevos usuarios en Azure Active Directory con el mismo UPN que se encuentra en AD DS. El UPN tiene el mismo formato que una dirección de correo electrónico. 
 
 En Office 365, el UPN es el atributo predeterminado que se usa para generar la dirección de correo electrónico. Es fácil obtener **userPrincipalName** (en AD DS y en Azure ad) y la dirección de correo electrónico principal en **proxyAddresses** se establece en valores diferentes. Cuando se establecen en valores diferentes, puede haber confusión para los administradores y los usuarios finales. 
   
@@ -181,7 +181,7 @@ Si ya ha configurado la sincronización de directorios, es posible que el UPN de
 Consulte también [Cómo preparar un dominio no enrutable (como un dominio. local) para la sincronización de directorios](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Vea [preparar los atributos de directorio con la herramienta IdFix](prepare-directory-attributes-for-synch-with-idfix.md) para ayudarle a corregir errores en los atributos de AD DS antes de la sincronización de directorios.
 

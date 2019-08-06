@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Obtenga información sobre qué herramientas usar para administrar los usuarios de Office 365 y cómo lo que puede usar depende de cómo administre las identidades de usuario. '
-ms.openlocfilehash: 007de5844badbaad2c5061c69cae33523438805f
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 3e29af9e3d01184f9edc386148de60897fb03e27
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102448"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490743"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Herramientas para administrar cuentas de Office 365
 
@@ -53,7 +53,7 @@ A la hora de decidir la forma en que su organización va a crear y administrar c
   
 - El software de sincronización de directorios debe instalarse en los servidores del entorno local para conectar las identidades entre Office 365 y el directorio local.
     
-- Cualquier opción de sincronización de directorios, incluidas las opciones SSO, requiere que los atributos de directorio local cumplan los estándares. Los detalles de los atributos que se usan en el directorio y la forma en que se necesita la limpieza (si los hay) se describen en [preparación para aprovisionar a los usuarios a través de la sincronización de directorios a Office 365](prepare-for-directory-synchronization.md). Consulte [instalar y ejecutar la herramienta idfix de Office 365](install-and-run-idfix.md) para obtener instrucciones sobre cómo usar IdFix para automatizar la limpieza de directorios. 
+- Cualquier opción de sincronización de directorios, incluidas las opciones SSO, requiere que los atributos de directorio local cumplan los estándares. Los detalles de los atributos que se usan en el directorio y la forma en que se necesita la limpieza (si los hay) se describen en [preparación para aprovisionar a los usuarios a través de la sincronización de directorios a Office 365](prepare-for-directory-synchronization.md). Consulte [Descargar y ejecutar la herramienta idfix de Office 365](install-and-run-idfix.md) para obtener instrucciones sobre cómo usar IdFix para automatizar la limpieza de directorios. 
     
 - Planee cómo va a crear cuentas de Office 365.
     
@@ -74,7 +74,7 @@ A la hora de decidir la forma en que su organización va a crear y administrar c
     > [!IMPORTANT]
     > La creación de cuentas en Office 365 sin asignar una licencia (en SharePoint Online, por ejemplo) significa que el propietario de la cuenta puede ver el portal de Office 365, pero no puede tener acceso a ninguno de los servicios de la suscripción de la compañía. Después de asignar una ubicación y la licencia, la cuenta se replica en el servicio o los servicios que asignó. El usuario puede iniciar sesión en su cuenta y usar los servicios que se le asignaron. 
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Integración de Office 365 con entornos locales](office-365-integration.md)
   

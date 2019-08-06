@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algunas redes empresariales restringen el acceso a ubicaciones de Internet genéricas o incluyen backhaul o procesamiento de tráfico de red substancial. Para garantizar que los equipos de redes como estos puedan tener acceso a Office 365, los administradores de red y de proxy deben administrar la lista de FQDN, direcciones URL y direcciones IP que componen la lista de puntos de conexión de Office 365. Estos deben agregarse a ruta directa, omisión de proxy o reglas de firewall y archivos PAC para garantizar que las solicitudes de red puedan alcanzar el alcance de Office 365.
-ms.openlocfilehash: 37f90ba5c008a4e0b562526d10185e01d07e4918
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 21129387aeaf20f34e8528829dd942fddd381108
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067176"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782480"
 ---
 # <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365
 
@@ -194,7 +194,7 @@ El conjunto de aplicaciones de Office 365 se desglosa en las principales áreas 
 |**Exchange** <br/> |Exchange Online y Exchange Online Protection <br/> |
 |**SharePoint** <br/> |SharePoint Online y OneDrive para la Empresa <br/> |
 |**Skype Empresarial Online y Microsoft Teams** <br/> |Skype empresarial y Microsoft Teams <br/> |
-|**Común** <br/> |Office 365 Pro Plus, Office Online, Azure AD y otros puntos de conexión de red comunes <br/> |
+|**Común** <br/> |Office 365 Pro Plus, Office en un explorador, Azure AD y otros extremos de red comunes <br/> |
 
 Además de los servicios básicos de Internet, hay servicios de terceros que solo se usan para integrar la funcionalidad. Aunque estas son necesarias para la integración, están marcadas como opcionales en el artículo Office 365 endpoints, lo que significa que la funcionalidad básica del servicio seguirá funcionando si no se puede acceder al punto de conexión. Cualquier punto de conexión de red necesario tendrá el atributo necesario establecido en true. Cualquier punto de conexión de red que sea opcional tendrá el atributo necesario establecido en false y el atributo notas detallará las funciones que faltan en espera si la conectividad está bloqueada.
   

@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Resumen: describe las consideraciones sobre la capacidad de red, los aceleradores WAN y los dispositivos de equilibrio de carga que se usan para conectarse a Office 365.'
-ms.openlocfilehash: 6ff63232d4efe581ed4a6ba0a83730a5362ecff7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b6804e7922178a3b653b3767a33e02e2a382ef93
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069376"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722629"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planificación de dispositivos de red que se conecten a servicios de Office 365
 
@@ -66,7 +66,7 @@ Proporcionamos una solución NLB basada en software integrada en Windows Server.
   
 ## <a name="firewalls-and-proxies"></a>Firewalls y servidores proxy
 
-Para obtener más información sobre cómo configurar firewalls y servidores proxy para conectarse a Office 365, vea la sección sobre la [Administración de extremos de office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), la [conectividad de red a Office 365](network-connectivity.md)y las [preguntas más frecuentes](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) de los puntos de conexión de Office 365 para obtener más información acerca de los dispositivos y la selección de circuitos.
+Para obtener más información sobre cómo configurar firewalls y servidores proxy para conectarse a Office 365, consulte Administración de puntos de conexión de [office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), evaluación de la [conectividad de red](assessing-network-connectivity.md)de Office 365 y preguntas más frecuentes de los puntos de conexión de [Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) para obtener más información sobre los dispositivos y el circuito selección.
   
 ## <a name="see-also"></a>Vea también
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Resumen: Configure y demuestre cómo Office 365 Information Rights Management protege los archivos confidenciales, incluso cuando se publican en la colección de sitios incorrecta de SharePoint Online.'
-ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070896"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782500"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protección de archivos confidenciales en el entorno de desarrollo y pruebas de Office 365
 
@@ -128,7 +128,7 @@ Después, cree una colección de sitios de ejecutivos y permita que solo tengan 
     
 2. En la pestaña **centro de administración de Office** , haga clic en centros de **Administración > SharePoint**.
     
-3. En la pestaña **centro de administración de SharePoint** , haga clic en **nueva colección de sitios privados de >**.
+3. En la pestaña **centro de administración de SharePoint** , haga clic en **nueva > colección de sitios privados**.
     
 4. En el panel nueva colección de sitios, escriba **ejecutivos** en **título**, ejecutivos en el cuadro Dirección URL, especifique el nombre de la cuenta de administrador global en **Administrador**y, a continuación, haga clic en **Aceptar**.
     
@@ -172,7 +172,7 @@ Después, inicie sesión con una cuenta de ejecutivo y cree un documento en la c
     
 4. Escriba el nombre de cuenta **CEO** y su contraseña y, luego, haga clic en **Iniciar sesión**.
     
-5. En una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ejecutivos ( **https://**\<Organization name>**. SharePoint.com/sites/Executives**).
+5. En una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ejecutivos (nombre de la organización de **https://**\<>**. SharePoint.com/sites/Executives**).
     
 6. Haga clic en **documentos**, en **nuevo** y, a continuación, en **documento de Word**.
     
@@ -190,7 +190,7 @@ Después, descargue una copia local del documento SensitiveData-BeforeIRM.docx y
     
 3. Almacene el documento **SensitiveData-BeforeIRM.docx** en la carpeta que se ha creado en el paso 1.
     
-4. En una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ventas ( **https://**\<Organization name>**. SharePoint.com/sites/sales**).
+4. En una pestaña nueva del explorador, escriba la dirección URL de la colección de sitios de ventas ( **https://**\<Organization Name>**. SharePoint.com/sites/sales**).
     
 5. Haga clic en la carpeta **Documentos** de la **Colección de sitios de ventas**.
     
@@ -316,7 +316,7 @@ Después, actuando como un usuario normal, intente acceder al documento **Sensit
     
 6. En la página **Documentos**, abra el documento **SensitiveData-AfterIRM.docx**. 
     
-    Debe ver un mensaje que diga "Word Online no puede abrir este documento porque está protegido por Information Rights Management (IRM)".  
+    Debe ver un mensaje que indica "lo sentimos, Word no puede abrir este documento porque está protegido por Information Rights Management (IRM)." 
     
 7. Haga clic en **Editar en Word**. Se le solicitará si quiere abrir el archivo. Haga clic en **Sí**.
     

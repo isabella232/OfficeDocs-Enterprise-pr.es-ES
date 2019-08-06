@@ -16,17 +16,18 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Proporciona instrucciones sobre cómo usar IdFix para preparar y limpiar el directorio local antes de sincronizar con Office 365.
-ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: cba2889673d1ff50161cde77670f06ab40e233c0
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162373"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490793"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>Preparación de los atributos del directorio para sincronizarlos con Office365 mediante la herramienta IdFix
 Este tema contiene instrucciones detalladas sobre cómo ejecutar la herramienta IdFix, algunos errores comunes que puede encontrar, correcciones sugeridas, ejemplos y procedimientos recomendados para lo que debe hacer si tiene un gran número de errores.
   
 ## <a name="fixing-errors-in-your-directory-by-using-the-idfix-gui"></a>Corregir errores en el directorio mediante la GUI de IdFix
+
 [Ejecute la herramienta IdFix de Office 365](install-and-run-idfix.md) para buscar problemas en el directorio y, a continuación, corrija los errores en la interfaz gráfica de usuario, tal y como se describe en este tema. Si la herramienta devuelve una tabla en blanco, entonces no se detectó ningún error. Si hay muchos problemas en el directorio, puede resultar abrumador cuando la herramienta devuelve los errores. Una forma de abordar esto es corregir todos los errores de un tipo en primer lugar y, a continuación, ir al siguiente tipo. 
   
 1. Antes de comenzar a realizar cambios, eche un vistazo a las recomendaciones que presenta IdFix.
@@ -82,6 +83,6 @@ De forma predeterminada, IdFix busca en todo el directorio. Si lo desea, puede c
 ## <a name="rolling-back-your-changes-by-using-the-idfix-gui"></a>Revertir los cambios mediante la GUI de IdFix
 Cada vez que haga clic en **aplicar** para aplicar los cambios, la herramienta IdFix crea un archivo independiente denominado registro de transacciones que enumera los cambios que acaba de realizar. Puede usar el registro de transacciones para revertir solo los cambios que se encuentran en el registro más reciente en caso de que comete un error. Si comete un error durante la actualización, puede deshacer los cambios aplicados más recientemente haciendo clic en **Deshacer**. Al hacer clic **** en deshacer, IdFix usa el registro de transacciones para revertir solo los cambios que se encuentran en el registro de transacciones más reciente. Para obtener más información acerca del uso del registro de transacciones, vea [Referencia: registro de transacciones de IdFix de Office 365](idfix-transaction-log.md).
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 [Configurar la sincronización de directorios](set-up-directory-synchronization.md)
