@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumen: comprenda las relaciones de las organizaciones, las suscripciones, las licencias, las cuentas de usuario y los espacios empresariales en las ofertas de la nube de Microsoft.'
-ms.openlocfilehash: 9df81d14cbd18246bf10e66002d9042a3b3d9384
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 29b9954467e2d6dd7ece2e33376f28882152693c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070436"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782520"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, cuentas y espacios empresariales para las ofertas de la nube de Microsoft
 
@@ -148,9 +148,9 @@ En la siguiente tabla se describe cómo combinar varias ofertas de la nube de Mi
 |**Office 365** <br/> |ND  <br/> |Agregue una suscripción de Azure a la organización desde el portal de Azure.  <br/> |Agregue una suscripción de Intune/EMS a la organización desde el Centro de administración de Microsoft 365.  <br/> |Agregue una suscripción de Dynamics 365 a la organización desde el Centro de administración de Microsoft 365.  <br/> |
 |**Azure** <br/> |Agregue una suscripción de Office 365 a su organización.  <br/> |ND  <br/> |Agregue una suscripción de Intune/EMS a su organización.  <br/> |Agregue una suscripción de Dynamics 365 a su organización.  <br/> |
 |**Intune/EMS** <br/> |Agregue una suscripción de Office 365 a su organización.  <br/> |Agregue una suscripción de Azure a la organización desde el portal de Azure.  <br/> |ND  <br/> |Agregue una suscripción de Dynamics 365 a su organización.  <br/> |
-|**Dynamics 365** <br/> |Agregue una suscripción de Office 365 a su organización.  <br/> |Agregue una suscripción de Azure a la organización desde el portal de Azure.  <br/> |Agregue una suscripción de Intune/EMS a su organización.  <br/> |ND  <br/> |
+|**Dynamics 365** <br/> |Agregue una suscripción de Office 365 a su organización.  <br/> |Agregue una suscripción de Azure a la organización desde el portal de Azure.  <br/> |Agregue una suscripción de Intune/EMS a su organización.  <br/> |N/D  <br/> |
    
-Una forma sencilla de agregar suscripciones a su organización para los servicios basados en SaaS de Microsoft es a través del Centro de administración de Office 365:
+Una forma sencilla de agregar suscripciones a su organización para los servicios basados en SaaS para Microsoft es a través del Centro de administración:
   
 1. Inicie sesión en el Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) con su cuenta de administrador global.
     
@@ -158,7 +158,7 @@ Una forma sencilla de agregar suscripciones a su organización para los servicio
     
 3. En la página **Servicios de compra**, compre las nuevas suscripciones.
     
-El Centro de administración de Office 365 asigna la organización y el inquilino de Azure AD de su suscripción a Office 365 a las nuevas suscripciones para las ofertas de la nube basadas en SaaS.
+El Centro de administración asigna la organización y al inquilino de Azure AD de su suscripción en Office 365 a las nuevas suscripciones para las ofertas de la nube basadas en SaaS.
   
 Para agregar una suscripción de Azure con la misma organización y espacio empresarial de Azure AD como su suscripción de Office 365:
   
@@ -168,8 +168,8 @@ Para agregar una suscripción de Azure con la misma organización y espacio empr
     
 3. En la página **Agregar suscripción**, seleccione una oferta y complete la información de pago y el contrato.
     
-Si compró suscripciones de Office 365 y Azure por separado y quiere obtener acceso al espacio empresarial de Azure AD de Office 365 desde su suscripción de Azure, vea las instrucciones en [Asociar un espacio empresarial de Office 365 con una suscripción de Azure](https://channel9.msdn.com/Series/Microsoft-Azure-Tutorials/Associate-an-Office-365-tenant-with-an-Azure-subscription).
-  
+Si usted adquiere suscripciones de Office 365 y Azure por separado y quiere obtener acceso del inquilino de Azure AD de Office 365 desde su suscripción de Azure, vea las instrucciones en [Asociar o añadir una suscripción de Azure a su Directorio de Azure Active ](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+ 
 ## <a name="see-also"></a>Vea también
 
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
