@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Resumen: Use Office 365 PowerShell para administrar las propiedades de la cuenta de usuario de Skype empresarial online con directivas.'
-ms.openlocfilehash: ed09b117d2de805e2ae28f05d734ced303db2405
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 4b0d45e89910c7fb1a215f78690cfc2fdb17c472
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782600"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302732"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Administrar Skype para políticas de negocios en línea con Office 365 PowerShell
 
@@ -34,7 +34,7 @@ Siga estas instrucciones para preparar la ejecución de los comandos (omita los 
 2. Abra un símbolo del sistema de Windows PowerShell y ejecute los siguientes comandos: 
     
 ```
-Import-Module LyncOnlineConnector
+Import-Module SkypeOnlineConnector
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
 Import-PSSession $sfbSession

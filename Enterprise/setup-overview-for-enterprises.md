@@ -3,6 +3,7 @@ title: Implementar Office 365 Enterprise para la organización
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Estos pasos de introducción están diseñados para ayudarle a configurar su red, crear sus identidades, implementar Office 365 ProPlus, migrar los datos y ayudar a las personas de su organización a empezar a usar Office 365.
-ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 20b970651d2ff432e0bf7b5d74bdc5f02e34f225
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249508"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302722"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Implementar Office 365 Enterprise para la organización
 
@@ -77,3 +78,5 @@ Para implementar Office 365 Enterprise por su cuenta, estos son los pasos recome
 >[!Note]
 >Estos pasos también son para empresas y [ONG](https://go.microsoft.com/fwlink/?LinkId=627221) que desean empezar con una implementación personalizada de Office 365 Enterprise. 
 >
+
+Si tiene una suscripción de Microsoft 365 Enterprise, empiece [aquí](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise).

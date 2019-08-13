@@ -3,7 +3,7 @@ title: Guía básica de soporte de Exchange 2010
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 está llegando al final del soporte técnico. Use esta guía básica de planeación como guía para preparar la actualización a Exchange online o a una versión más reciente de Exchange Server local.
-ms.openlocfilehash: f0ff6551f9ef2c0ed57baabacc04293e83d25e13
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a08ef80d2e6081adbc62b4c534ef185dcaff611f
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067576"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302761"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Guía básica de soporte de Exchange 2010
 
@@ -51,6 +51,10 @@ Una vez que Exchange 2010 alcanza su fin de soporte técnico, este es un buen mo
 
 > [!NOTE]
 > Aunque un poco más complicado, también puede migrar buzones a Office 365 y migrar los servidores locales de Exchange 2010 a Exchange 2016.
+
+Estas son las tres rutas que puede realizar para evitar el fin de soporte para Exchange Server 2010.
+
+![Rutas de actualización de Exchange Server 2010](./media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
 
 En las siguientes secciones se examina cada opción con más detalle.
 
