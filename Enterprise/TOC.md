@@ -72,16 +72,13 @@
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
 # Probar Office 365
-## [Guías del laboratorio de pruebas de adopción de la nube](cloud-adoption-test-lab-guides-tlgs.md)
+## [Probar Office 365](cloud-adoption-test-lab-guides-tlgs.md)
 ## [Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
 ## [Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
 ### [Sincronización de directorios](dirsync-for-your-office-365-dev-test-environment.md)
 ### [Autenticación multifactor](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [Identidad federada](federated-identity-for-your-office-365-dev-test-environment.md)
 ### [Protección contra amenazas avanzada](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-### [eDiscovery avanzado](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
-### [Protección de archivos confidenciales](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
-### [Clasificación y etiquetas de datos](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Red virtual entre locales simulada en Azure](simulated-cross-premises-virtual-network-in-azure.md)
 
 # [Implementar Office 365 Enterprise](setup-overview-for-enterprises.md)
