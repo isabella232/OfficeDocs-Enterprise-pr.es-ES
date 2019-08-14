@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Obtenga información sobre cómo se usa Azure ExpressRoute con Office 365 y cómo planear el proyecto de implementación de red que será necesario si está implementando Azure ExpressRoute para usarlo con Office 365.
-ms.openlocfilehash: d881dc4e65ca2533f511c7f613c38569811b95a7
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: b12310d9a82a1adafd82ce0c3b6554e7ceea9550
+ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782360"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36385188"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute para Office 365
 
@@ -58,7 +58,7 @@ En la siguiente tabla se enumeran los servicios de Office 365 que son compatible
 |**Aplicaciones incluidas**|
 |:-----|
 |Exchange Online<sup>1</sup> <br/> Protección de Exchange Online<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
-|Skype empresarial online<sup>1</sup> <br/> |
+|Skype empresarial online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive para la empresa<sup>1</sup> <br/> Project online<sup>1</sup> <br/> |
 |Portal y<sup>1</sup> compartido <br/> Azure Active Directory<sup>1</sup> <br/> Connect<sup>1</sup> de AAD <br/> Office<sup>1</sup> <br/> |
 

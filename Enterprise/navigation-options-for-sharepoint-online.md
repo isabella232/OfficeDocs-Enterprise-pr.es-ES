@@ -11,13 +11,13 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: En este artículo se describen las opciones de navegación sitios con la publicación de SharePoint habilitada en SharePoint Online. La elección y configuración de la navegación afectan significativamente al rendimiento y la escalabilidad de los sitios de SharePoint Online.
-ms.openlocfilehash: b3194009d21f60093ec80cb2e138df34df60e22e
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+description: En este artículo se describen las opciones de navegación sitios con la publicación de SharePoint habilitada en SharePoint Online. La elección y configuración de la navegación afectan significativamente al rendimiento y la escalabilidad de los sitios de SharePoint Online. Este artículo no se aplica a los sitios de grupo clásicos.
+ms.openlocfilehash: 10b4e1cbad4fbb570affe43feb6773aa59c5f2f3
+ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616863"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36385208"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 
