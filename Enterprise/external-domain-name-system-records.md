@@ -3,7 +3,7 @@ title: Registros externos del Sistema de nombres de dominio para Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/14/2018
+ms.date: 8/13/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,38 +17,37 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
-description: 'Resumen: Lista de referencia de los registros DNS para usar al planear una implementación de Office 365.'
-ms.openlocfilehash: bc1bb822bc0baf376c96c95ff637b93f131605e9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 'Resumen: Lista de referencia de los registros DNS para usar cuando se planee una implementación de Office 365.'
+ms.openlocfilehash: 24991c4142c33ca80b5b48e8914ce6aeaaa186bc
+ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067666"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36385178"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Registros externos del Sistema de nombres de dominio para Office 365
 
- **Resumen:** Lista de referencia de los registros DNS para usar al planear una implementación de Office 365.
+ **Resumen:** Lista de referencia de los registros DNS para usar cuando se planee una implementación de Office 365.
   
 |||
 |:-----|:-----|
-|![Dominio](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**¿Desea ver una lista personalizada de registros DNS para su organización de Office 365? ** Puede [encontrar la información que necesita para crear los registros DNS de Office 365](https://support.office.microsoft.com/en-us/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) para su dominio en Office 365.  <br/> **¿Necesita ayuda paso a paso para agregar estos registros al host DNS de su dominio, como GoDaddy o eNom? ** [Encontrará vínculos con instrucciones paso a paso para muchos de los hosts DNS](https://go.microsoft.com/fwlink/?LinkId=286745).  <br/> **Vuelva a ** [Planeamiento de red y ajuste del rendimiento para Office 365](https://aka.ms/tune).  <br/> |
+|![Dominio](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**¿Desea ver una lista personalizada de registros DNS para su organización de Office 365? ** Puede [encontrar la información que necesita para crear los registros DNS de Office 365](https://support.office.microsoft.com/en-us/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) para su dominio en Office 365.  <br/> **¿Necesita ayuda paso a paso para agregar estos registros al host DNS de su dominio, como GoDaddy o eNom? ** [Encontrará vínculos con instrucciones paso a paso para muchos de los hosts DNS](https://go.microsoft.com/fwlink/?LinkId=286745). <br/>  **¿Busca la lista de referencia para su propia implementación personalizada?** La siguiente lista debe usarse como referencia para la implementación personalizada de Office 365. Tendrá que seleccionar los registros que se aplican a su organización y completar los valores adecuados. <br/> **Regrese a ** [Planeamiento de red y ajuste del rendimiento para Office 365](https://aka.ms/tune).  <br/> |
 
- **¿Busca la lista de referencia para su propia implementación personalizada?** La siguiente lista debe usarse como referencia para la implementación personalizada de Office 365. Tendrá que seleccionar los registros que se aplican a su organización y completar los valores adecuados.
-  
-A menudo, los registros SPF y MX son los más difíciles de averiguar. Hemos actualizado nuestras indicaciones sobre los registros SPF al final de este artículo. Lo que debe recordar es que *solo puede tener un único registro SPF para su dominio*. Puede tener varios registros MX. Sin embargo, a menudo es lo que causa problemas de entrega de correo. Tener un único registro MX que dirige el correo electrónico a un sistema de correo elimina muchos de estos problemas potenciales.
+A menudo, los registros SPF y MX son los más difíciles de averiguar. Hemos actualizado nuestras indicaciones sobre los registros SPF al final de este artículo. Lo importante que debe recordar es que _solo puede tener un único registro SPF para su dominio_. Puede tener varios registros MX. Sin embargo, a menudo es lo que causa problemas de entrega de correo. Tener un registro único de MX que dirige el correo electrónico a un sistema de correo elimina muchos de estos potenciales problemas.
   
 Las secciones siguientes están organizadas por servicio en Office 365. Para ver una lista personalizada de los registros DNS de Office 365 para su dominio, inicie sesión en Office 365 y [Recopile la información necesaria para crear registros DNS de Office 365](https://support.office.com/article/77f90d4a-dc7f-4f09-8972-c1b03ea85a67).
   
 ## <a name="external-dns-records-required-for-office-365-core-services"></a>Registros DNS externos necesarios para Office 365 (servicios principales)
 <a name="BKMK_ReqdCore"> </a>
 
-Todos los clientes de Office 365 deben agregar dos registros a su DNS externo. El primer registro CNAME garantiza que Office 365 pueda dirigir las estaciones de trabajo para autenticarlas con la plataforma de identidad adecuada. El segundo registro que se necesita verifica que el usuario es el propietario del nombre de dominio. 
+Todos los clientes de Office 365 deben agregar dos registros a su DNS externo. El primer registro CNAME garantiza que Office 365 pueda dirigir las estaciones de trabajo para autenticarlas con la plataforma de identidad adecuada. El segundo registro que se necesita verifica que el usuario es el propietario del nombre de dominio.
   
 ||||
 |:-----|:-----|:-----|
 |**Registro DNS** <br/> |**Finalidad** <br/> |**Valor para usar** <br/> |
-|**CNAME** <br/> **(Conjunto de aplicaciones)** <br/> |Utilizado por Office 365 para dirigir la autenticación hacia la plataforma de identidad correcta. [Más información](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> [!NOTE]  Este CNAME solo se aplica a Office 365 operado por 21Vianet.   |**Alias:** msoid  <br/> **Destino:** clientconfig.microsoftonline-p.net  <br/> |
-|**TXT** <br/> **(Verificación de dominio)** <br/> |Utilizado por Office 365 para verificar que el usuario es el propietario del dominio. No afecta a nada más.  <br/> |**Host:** @ (o, para algunos proveedores de hospedaje DNS, su nombre de dominio)  <br/> **Valor de TXT:** _Una cadena de texto proporcionada por _ Office 365  <br/> El asistente de **configuración de dominio** de Office 365 proporciona los valores que utiliza para crear este registro.  <br/> |
+|**CNAME** <br/> **(Conjunto de aplicaciones)** <br/> |Utilizado por Office 365 para dirigir la autenticación hacia la plataforma de identidad correcta. [Más información](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Nota:** Este CNAME solo se aplica a Office 365 operado por 21Vianet.   |**Alias:** msoid  <br/> **Target:** clientconfig.microsoftonline-p.net  <br/> |
+|**TXT** <br/> **(Verificación de dominio)** <br/> |Utilizado por Office 365 para verificar que el usuario es el propietario del dominio. No afecta a nada más.  <br/> |**Host:** @ (o, para algunos proveedores de hospedaje DNS, su nombre de dominio)  <br/> **Valor de TXT:** _Una cadena de texto proporcionada por _ Office 365  <br/> El asistente de configuración de dominio de **Office 365** proporciona los valores que utiliza para crear este registro.  <br/> |
+
 
 ## <a name="external-dns-records-required-for-email-in-office-365-exchange-online"></a>Registros DNS externos necesarios para el correo electrónico en Office 365 (Exchange Online)
 <a name="BKMK_ReqdCore"> </a>
@@ -57,9 +56,10 @@ El correo electrónico en Office 365 requiere distintos registros. Los tres regi
   
 - **El registro de detección automática** permite que los equipos cliente busquen Exchange de manera automática y configuren el cliente correctamente.
 
-- **El registro MX** indica a otros sistemas de correo dónde enviar el correo electrónico del dominio.  *Al cambiar el correo electrónico a Office 365, al actualizar el registro MX de su dominio, todo el correo electrónico enviado a ese dominio empezará a llegar a Office 365. * (¿Desea cambiar algunas direcciones de correo electrónico a Office 365? Puede [Probar Office 365 con algunas direcciones de correo electrónico en su dominio personalizado](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7)).
+- **El registro de MX**le avisa a otros sistemas del correo a donde tiene que enviar el correo electrónico hacia su dominio.**Nota:** Al cambiar el correo electrónico a Office 365, después de actualizar el registro MX del dominio, Todo correo electrónico que se envíe al dominio empezará a llegar a Office 365.  
+¿Desea cambiar solo algunas direcciones de correo electrónico a Office 365? Usted puede[controlar Office 365 con algunas direcciones de correo electrónico en el dominio personalizado](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7).
 
-- **El registro TXT para SPF** lo usan los sistemas de correo electrónico del destinatario para validar que usted aprueba el servidor desde donde envía el correo electrónico. Esto ayuda a evitar problemas como la suplantación de identidad y de correo electrónico. Consulte los [Registros DNS externos necesarios para SPF](external-domain-name-system-records.md#BKMK_SPFrecords) en este artículo de ayuda para entender qué incluir en el registro.
+- **El registro TXT para SPF** se usa por los sistemas de correo electrónico del destinatario para validar que el servidor que envía el correo electrónico sea uno que aprueba. Esto ayuda a evitar problemas como la suplantación de identidad y phishing a través del correo electrónico. Consulte los [registros DNS externos necesarios para SPF](external-domain-name-system-records.md#BKMK_SPFrecords) en este artículo para que le resulte más fácil comprender qué se debe incluir en el registro.
 
 Los clientes de correo electrónico que utilizan federación de Exchange también tendrán un registro CNAME y TXT adicional en la parte inferior de la tabla.
   
@@ -67,23 +67,23 @@ Los clientes de correo electrónico que utilizan federación de Exchange tambié
 |:-----|:-----|:-----|
 |**Registro DNS** <br/> |**Finalidad** <br/> |**Valor para usar** <br/> |
 |**CNAME** <br/> **(Exchange Online)** <br/> |Ayuda a los clientes de Outlook a conectarse fácilmente al servicio Exchange Online con el servicio de detección automática. La detección automática encuentra automáticamente el host de Exchange Server correcto y configura Outlook para los usuarios.  <br/> |**Alias:** Autodiscover  <br/> **Destino:** autodiscover.outlook.com  <br/> |
-|**MX** <br/> **(Exchange Online)** <br/> |Envía el correo entrante para su dominio al servicio de Exchange Online de Office 365.  <br/> [!NOTE] Una vez que el correo fluye a Exchange Online, debe quitar los registros MX que hacen referencia a su antiguo sistema.   |**Dominio:** por ejemplo, contoso.com  <br/> **Servidor de correo electrónico de destino:**\<token MX\>.mail.protection.outlook.com  <br/> **Preferencia/Prioridad:** inferior a todos los registros MX (garantiza el envío de correo a Exchange Online), por ejemplo, 1 o “baja”  <br/>  Para buscar su \<token MX\>, siga estos pasos:  <br/>  Inicie sesión en Office 365, vaya a la Administración de Office 365 \> Dominios.  <br/>  En la columna Acción para su dominio, elija Corregir problemas.  <br/>  En la sección de registros MX, elija ¿Qué puedo corregir?  <br/>  Siga las instrucciones de esta página para actualizar el registro MX.  <br/> [¿Qué es una prioridad de MX?](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
+|**MX** <br/> **(Exchange Online)** <br/> |Envía el correo entrante para su dominio al servicio de Exchange Online de Office 365.  <br/> **Nota:** Una vez que el correo fluye a Exchange Online, debe eliminar los registros MX que hacen referencia a su antiguo sistema.   |**Dominio:** Por ejemplo, contoso.com  <br/> **Servidor de correo electrónico de destino:**\<token MX\>.mail.protection.outlook.com  <br/> **Preferencia/Prioridad:** inferior a todos los registros MX (garantiza el envío de correo a Exchange Online) - por ejemplo, 1 o “baja”  <br/>  Encuentre su token MX siguiendo estos pasos:  <br/>  1. Inicie sesión en Office 365, diríjase a la administración de Office 365 \> Dominios.  <br/>  2. En la columna Acción para su dominio, elija**Corregir problemas**.  <br/>  3. En la sección de registros MX, elija** ¿Qué puedo corregir?**  <br/>  4. Siga las instrucciones de esta página para actualizar el registro MX:  <br/> [¿Qué es una prioridad de MX?](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
 |**SPF (TXT)** <br/> (Exchange Online)  <br/> |Ayuda a evitar que otros usen su dominio para enviar correo no deseado u otros correos electrónicos malintencionados. Los registros de la estructura de directivas de remitente (SPF) trabajan para identificar los servidores que estén autorizados para enviar correo electrónico desde su dominio.  <br/> |[Registros DNS externos necesarios para SPF](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
-|**TXT** <br/> **(Federación de Exchange)** <br/> |Utilizado para la federación de Exchange para la implementación híbrida.  <br/> |**Registro 1 TXT:** por ejemplo, contoso.com y texto hash asociado, generado de forma personalizada y de prueba de dominio (por ejemplo, Y96nu89138789315669824)  <br/> **Registro 2 TXT:** por ejemplo, exchangedelegation.contoso.com y texto hash asociado, generado de forma personalizada y de prueba del dominio (por ejemplo Y3259071352452626169)  <br/> |
-|**CNAME** <br/> ** (Federación de Exchange) ** <br/> |Ayuda a los clientes de Outlook a conectarse fácilmente al servicio de Exchange Online con el servicio de detección automática cuando su empresa utilice la federación de Exchange. La detección automática encuentra automáticamente el host de Exchange Server correcto y configura para los usuarios.  <br/> |**Alias:** por ejemplo, Autodiscover.service.contoso.com  <br/> **Destino:** autodiscover.outlook.com  <br/> |
+
+|**TXT** <br/> **(Federación de Exchange)** <br/> |Utilizado para la federación de Exchange para la implementación híbrida.  <br/> |**Registro 1 TXT:** Por ejemplo, contoso.com y texto hash asociado, generado de forma personalizada y de prueba de dominio (por ejemplo, Y96nu89138789315669824)  <br/> **Registro 2 TXT:** Por ejemplo, exchangedelegation.contoso.com y texto hash asociado, generado de forma personalizada y de prueba del dominio (por ejemplo Y3259071352452626169)  <br/> | |**CNAME** <br/> **(Federación de Exchange)** <br/> |Ayuda a los clientes de Outlook a conectar fácilmente con el servicio de Exchange en línea utilizando el servicio de detección automática cuando su compañía utilice la federación de Exchange. La detección automática encuentra el host de Exchange Server correcto y configura Outlook para sus usuarios automáticamente.  <br/> |**Alias:** Por ejemplo, Autodiscover.service.contoso.com  <br/> **Destino:** autodiscover.outlook.com  <br/> |
 
 ## <a name="external-dns-records-required-for-skype-for-business-online"></a>Registros DNS externos necesarios para Skype Empresarial Online
 <a name="BKMK_ReqdCore"> </a>
 
-Existen pasos específicos que realizar cuando se usan [direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO) para asegurarse de que la red esté correctamente configurada.
+Existen pasos específicos que realizar cuando se usan [direcciones URL y direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO) para asegurarse de que la red esté correctamente configurada.
   
 ||||
 |:-----|:-----|:-----|
 |**Registro DNS** <br/> |**Finalidad** <br/> |**Valor para usar** <br/> |
-|**SRV** <br/> **(Skype Empresarial Online)** <br/> |Permite a su dominio de Office 365 compartir características de mensajería instantánea (MI) con clientes externos al habilitar la federación SIP. Obtenga más información sobre [direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).  <br/> |**Servicio:**_sipfederationtls  <br/> **Protocolo:** _TCP  <br/> **Prioridad:** 100  <br/> **Peso:** 1  <br/> **Puerto:** 5061  <br/> **Destino:** Sipfed.online.lync.com  <br/> > [!NOTE]>Si el firewall o el servidor proxy bloquean las búsquedas de SRV en un DNS externo, debería agregar este registro al registro DNS interno.   |
-|**SRV** <br/> **(Skype Empresarial Online)** <br/> |Lo usa Skype Empresarial para coordinar el flujo de información entre los clientes de Lync.  <br/> |**Servicio:**_sip  <br/> **Protocolo:**_TLS  <br/> **Prioridad:** 100  <br/> **Peso:** 1  <br/> **Puerto:** 443  <br/> **Destino:** sipdir.online.lync.com  <br/> |
-|**CNAME** <br/> **(Skype Empresarial Online)** <br/> |Lo usa el cliente de Lync para ayudar a encontrar el servicio de Skype Empresarial Online e iniciar sesión.  <br/> |**Alias:** sip  <br/> **Destino:** sipdir.online.lync.com  <br/> Para obtener más información, consulte [direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).  <br/> |
-|**CNAME** <br/> **(Skype Empresarial Online)** <br/> |Lo usa el cliente móvil de Lync para ayudar a encontrar el servicio de Skype Empresarial Online e iniciar sesión.  <br/> |**Alias:** lyncdiscover  <br/> **Destino:** webdir.online.lync.com  <br/> |
+|**SRV** <br/> **(Skype Empresarial Online)** <br/> |Permite a su dominio de Office 365 compartir características de mensajería instantánea (MI) con clientes externos al habilitar la federación SIP. Obtenga más información sobre [direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).  <br/> |**Servicio:** sipfederationtls  <br/> **Protocolo:** TCP  <br/> **Prioridad:** 100  <br/> **Peso:** 1  <br/> **Puerto:** 5061  <br/> **Objetivo:** sipfed.online.lync.com  <br/> **Nota:** Si el firewall o el servidor proxy bloquean las búsquedas de SRV en un DNS externo, debería agregar este registro al registro DNS interno.   |
+|**SRV** <br/> **(Skype Empresarial Online)** <br/> |Lo usa Skype Empresarial para coordinar el flujo de información entre los clientes de Lync.  <br/> |**Servicio:** sip  <br/> **Protocolo:** TLS  <br/> **Prioridad:** 100  <br/> **Peso:** 1  <br/> **Puerto:** 443  <br/> **Objetivo:** sipdir.online.lync.com  <br/> |
+
+|**CNAME** <br/> **(Skype para Empresas en línea)** <br/> |Usado por el cliente de Lync para ayudar a encontrar el servicio de Skype Empresarial Online e iniciar sesión.  <br/> |**Alias:** SIP  <br/> **Objetivo:** sipdir.online.lync.com  <br/> Para obtener más información, consulte[direcciones URL e rangos de direcciones IP de Office 365 ](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).  <br/> | |**CNAME** <br/> **(Skype para Empresas en línea)** <br/> |Usado por el cliente móvil de Lync para ayudar a encontrar el servicio de Skype Empresarial Online e iniciar sesión.  <br/> |**Alias:** lyncdiscover  <br/> **Objetivo:** webdir.online.lync.com  <br/> |
 
 ## <a name="external-dns-records-required-for-sharepoint-online"></a>Registros DNS externos necesarios para SharePoint Online
 <a name="BKMK_ReqdCore"> </a>
@@ -102,7 +102,7 @@ SharePoint Online solo requiere un registro DNS si su organización lo usa para 
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
->  SPF está diseñado para ayudar a evitar la suplantación de identidad, pero existen técnicas de suplantación de identidad contra las que SPF no puede ofrecer protección. Para obtener protección contra estas, una vez que haya configurado SPF, también debe configurar DKIM y DMARC para Office 365. Vea [Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/es-ES/library/mt695945%28v=exchg.150%29.aspx) para comenzar. A continuación, vea [Use DMARC to validate email in Office 365](https://technet.microsoft.com/es-ES/library/mt734386%28v=exchg.150%29.aspx).
+>  SPF está diseñado para ayudar a evitar la suplantación de identidad, pero existen técnicas de suplantación de identidad contra las que SPF no puede ofrecer protección. Para obtener protección contra estas, una vez que haya configurado SPF, también debe configurar DKIM y DMARC para Office 365. Vea [Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx) para comenzar. A continuación, vea [Use DMARC to validate email in Office 365](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx).
   
 Los registros SPF son registros TXT que ayudan a evitar que otros usen su dominio para enviar correo no deseado o correos electrónicos malintencionados. Los registros de la estructura de directivas de remitente (SPF) identifican los servidores autorizados para enviar correo electrónico desde su dominio.
   
@@ -112,12 +112,12 @@ Solo puede tener un registro SPF (es decir, un registro TXT que defina SPF) para
 
 Todos los registros SPF constan de tres partes: la declaración de que es un registro SPF, los dominios y las direcciones IP desde donde se deberían enviar los correos electrónicos y una regla de cumplimiento. Las tres son necesarias en un registro SPF válido. Este es un ejemplo de un registro SPF común para Office 365 cuando usa solo correo electrónico de Exchange Online:
   
-```
+``` dns
 TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com -all
 ```
 
-Un sistema de correo electrónico que reciba correo desde su dominio examina el registro SPF y, si el servidor de correo electrónico que envió el mensaje era un servidor de Office 365, se acepta el mensaje. Si el servidor que envió el mensaje era, por ejemplo, su sistema de correo antiguo o un sistema malintencionado de Internet, es posible que la comprobación SPF produzca un error y el mensaje no se entregue. Comprobaciones como esta ayudan a evitar la suplantación de identidad y de mensajes.
+Un sistema de correo electrónico que recibe un correo electrónico de su dominio examina el registro SPF, y si el servidor de correo electrónico que ha enviado el mensaje era un servidor de Office 365, se acepta el mensaje. Si el servidor que ha enviado el mensaje era su sistema de correo antiguo o un sistema malicioso de Internet, por ejemplo, se puede producir un error en la comprobación SPF y el mensaje no se entregará. Comprueba cómo esto ayuda a evitar los mensajes de suplantación de identidad y de phishing.
   
 ### <a name="choose-the-spf-record-structure-you-need"></a>Elegir la estructura de registro SPF que necesita
 
@@ -141,7 +141,7 @@ Para los escenarios donde no solo utiliza el correo electrónico de Exchange Onl
 
 Si ya tiene un registro SPF, necesitará agregar o actualizar los valores para Office 365. Por ejemplo, imagine que este es su registro SPF existente para contoso.com:
   
-```
+``` dns
 TXT Name @
 Values: v=spf1 ip4:60.200.100.30 include:spf.protection.outlook.com -all
 ```
@@ -150,14 +150,14 @@ Ahora está actualizando su registro SPF para Office 365, por ejemplo, para incl
   
 Correcto:
   
-```
+``` dns
 TXT Name @
 Values: v=spf1 ip4:60.200.100.30 include:sharepointonline.com -all
 ```
 
 Incorrecto:
   
-```
+``` dns
 Record 1:
 TXT Name @
 Values: v=spf1 ip4:60.200.100.30 include:spf.protection.outlook.com -all
@@ -170,14 +170,14 @@ Values: v=spf1 include:sharepointonline.com -all
 
 Si usa el conjunto completo de Office 365 y utiliza MailChimp para enviar correos electrónicos de marketing en su nombre, su registro SPF en contoso.com podría ser similar al siguiente, que usa las filas 1, 3, 4 y 6 de la tabla anterior. Recuerde que las filas 1 y 6 son necesarias y "sharepointonline.com" incluye correo electrónico tanto de Exchange (Outlook) como de SharePoint.
   
-```
+``` dns
 TXT Name @
 Values: v=spf1 include:sharepointonline.com include:servers.mcsv.net -all
 ```
 
 Como alternativa, si tiene una configuración híbrida de Exchange donde se envía correo electrónico desde el sistema de correo local y desde Office 365, el registro SPF en contoso.com podría ser similar al siguiente:
   
-```
+``` dns
 TXT Name @
 Values: v=spf1 include:sharepointonline.com include:mail.contoso.com -all
 ```
