@@ -3,7 +3,7 @@ title: Plan de fin de soporte de Project Server 2010
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 07/11/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: El soporte técnico finaliza para Project Server 2010 finaliza el 13 de octubre de 2020. Use este artículo como guía para actualizar a Project online o a una versión más reciente de Project Server local.
-ms.openlocfilehash: 8001a3e3c9cb40d23f60a6d38aceca55e4838831
-ms.sourcegitcommit: 19de9984f47a1490e277848f079088685ad22a63
+ms.openlocfilehash: 5133cfaba65349133246e4e3eee3dd2fc286289d
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35630407"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491319"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Guía básica de fin de soporte de Project Server 2010
 
@@ -197,6 +197,16 @@ Otros recursos:
 - Descripciones de [servicios de Project online](https://go.microsoft.com/fwlink/p/?linkid=841280): vea las características de administración de cartera incluidas en project Server 2016 y Project online Premium.
     
 - [Guía de migración de Microsoft Office Project Portfolio Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841279)
+
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Resumen de opciones para el cliente y los servidores de Office 2010 y Windows 7
+
+Para obtener un resumen visual de las opciones de actualización, migración y movimiento a la nube para los clientes y servidores de Office 2010 y Windows 7, descargue el [póster de final de servicio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+Este póster de una página es una forma rápida de comprender las diversas rutas que puede realizar para evitar que los productos de cliente y servidor de Office 2010 y Windows 7 lleguen al final del servicio, con las rutas de usuario preferidas y la compatibilidad con la opción en Microsoft 365 empresa resaltada.
+
+Puede imprimir este póster en formato carta, legal o tabloide (11 x 17).
     
 ## <a name="related-topics"></a>Temas relacionados
 
