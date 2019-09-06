@@ -10,4 +10,6 @@
 |Japón                        |JPN     |Centros de datos de Asia oriental o Asia sudoriental|
 |Corea                        |KOR     |Centros de datos de Asia oriental o Asia sudoriental|
 |Norteamérica                |NAM     |Centros de datos de Estados Unidos                    |
+|Sudáfrica                 |ZAF     |(Próximamente)                     |
+|Emiratos Árabes Unidos         |ARE     |(Próximamente)                     |
 |Reino Unido               |GBR     |Centros de datos de Europa                |
