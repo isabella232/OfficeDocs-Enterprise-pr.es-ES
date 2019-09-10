@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 description: Descripción de la compatibilidad de aplicaciones cliente de Office 365 para el acceso condicional
-ms.openlocfilehash: bed811e16204fd05a83cf2b982a9a825b78b0e10
-ms.sourcegitcommit: 27614632a0ceccbd5a4083cefa822187417f02a6
+ms.openlocfilehash: c5c94a1ed7d87a625599c37e5652911109afec33
+ms.sourcegitcommit: b1a32e8df403143fb34eaddf116aed3595228c8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36672930"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "36817296"
 ---
 # <a name="office-365-client-app-support--conditional-access"></a>Compatibilidad con aplicaciones cliente de Office 365: acceso condicional
 
@@ -50,7 +50,7 @@ Las versiones más recientes de los siguientes clientes admiten el acceso condic
 | ![Icono de Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Icono de Office.com](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Icono de lente](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Icono de Office 365 administrador](media/o365-o365admin-64x64.png) <br> [Office 365 <br> administrador](https://products.office.com/business/manage-office-365-admin-app) | ![Icono de OneDrive para la empresa](media/o365-OneDrive-64x64.png) <br> [OneDrive<sup>2</sup>](https://products.office.com/onedrive-for-business/online-cloud-storage) 
 | ![Icono de OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Icono de Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Icono de Planner](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Icono de PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com) | ![Icono de PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![Icono de proyecto](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Icono de Publisher](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![Icono de SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint) | ![Icono de Skype empresarial](media/o365-skypeforbusiness-64x64.png) <br> [Skype <br> empresarial](https://www.skype.com/business/) | ![Icono de notas adhesivas](media/o365-stickynotes-64x64.png) <br> [Notas rápidas](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) 
-| ![Icono de secuencia](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Icono de Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Icono de Teams](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Icono de tarea pendiente](media/o365-todo-64x64.png) <br> [To-Do](https://todo.microsoft.com) | ![Icono de Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) 
+| ![Icono de secuencia](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Icono de Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Icono de Teams](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Icono de tareas pendientes](media/o365-todo-64x64.png) <br> [Para realizar](https://todo.microsoft.com) | ![Icono de Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) 
 | ![Icono de Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Icono de Yammer](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview)
 
 ## <a name="supported-powershell-modules"></a>Módulos de PowerShell compatibles
