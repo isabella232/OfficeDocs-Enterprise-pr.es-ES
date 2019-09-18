@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Describe cómo usar la red de entrega de contenido (CDN) de Office 365 para acelerar la entrega de los activos de SharePoint Online a todos los usuarios, independientemente de dónde se encuentren o de la forma en que tengan acceso al contenido.
-ms.openlocfilehash: ffb464b31a5f5a87a09334e2c5f7ae3c3027af65
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: 80f13afb751775010a613be41b7f9fa6dec40c72
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385198"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017339"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -104,7 +104,7 @@ Puede crear un nuevo contenedor para sus orígenes, como carpetas o bibliotecas 
 
 También puede configurar una colección de sitios, un sitio, una biblioteca o una carpeta existentes como un origen, lo que hará que todos los activos elegibles del contenedor estén disponibles desde la red CDN. Antes de agregar un contenedor existente como origen, es importante asegurarse de que está al tanto de su contenido y permisos para que no exponga involuntariamente los activos al acceso anónimo o a los usuarios no autorizados.
 
-Puede definir _directivas de CDN_ para excluir el contenido de los orígenes de la red CDN. Las directivas de CDN excluyen los activos de los orígenes públicos o privados mediante atributos como el _tipo de archivo_ y la _clasificación del sitio_, y se aplican a todos los orígenes del CdnType (privado o público) que especifique en la Directiva. Por ejemplo, si agrega un origen privado que consta de un sitio que contiene varios subsitios, puede definir una directiva para excluir los sitios marcados **** como confidenciales para que el contenido de los sitios con esa clasificación aplicada no se atienda desde la red CDN. La Directiva se aplicará al contenido de _todos los_ orígenes privados que haya agregado a la red CDN.
+Puede definir _directivas de CDN_ para excluir el contenido de los orígenes de la red CDN. Las directivas de CDN excluyen los activos de los orígenes públicos o privados mediante atributos como el _tipo de archivo_ y la _clasificación del sitio_, y se aplican a todos los orígenes del CdnType (privado o público) que especifique en la Directiva. Por ejemplo, si agrega un origen privado que consta de un sitio que contiene varios subsitios, puede definir una directiva para excluir los sitios marcados como **confidenciales** para que el contenido de los sitios con esa clasificación aplicada no se atienda desde la red CDN. La Directiva se aplicará al contenido de _todos los_ orígenes privados que haya agregado a la red CDN.
   
 Tenga en cuenta que cuanto mayor sea el número de orígenes, mayor será el impacto en el tiempo que tarda el servicio de la red CDN en procesar las solicitudes. Le recomendamos que limite el número de orígenes tanto como sea posible.
   
@@ -204,7 +204,7 @@ Para permitir que su organización use orígenes públicos y privados, pero omit
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
 ```
 
-Vea [orígenes de la red CDN](use-office-365-cdn-with-spo.md#default-cdn-origins) predeterminados para obtener información sobre los orígenes que se aprovisionan de forma predeterminada al habilitar la red CDN de Office 365 y el impacto potencial de omitir la configuración de orígenes predeterminados.
+Vea [orígenes de la red CDN predeterminados](use-office-365-cdn-with-spo.md#default-cdn-origins) para obtener información sobre los orígenes que se aprovisionan de forma predeterminada al habilitar la red CDN de Office 365 y el impacto potencial de omitir la configuración de orígenes predeterminados.
 
 Para permitir que su organización use orígenes públicos, escriba el siguiente comando:
 
@@ -277,7 +277,7 @@ La propiedad _IncludeFileExtensions_ contiene la lista de extensiones de archivo
 
 La propiedad _ExcludeRestrictedSiteClassifications_ contiene las clasificaciones de sitio que desea excluir de la red CDN. Por ejemplo, puede excluir los sitios marcados como **confidenciales** para que el contenido de los sitios con esa clasificación aplicada no se atienda desde la red CDN.
 
-La propiedad _ExcludeIfNoScriptDisabled_ excluye el contenido de la red CDN en función de la configuración del atributo NoScript en el nivel de sitio. __ De forma predeterminada, __ el atributo NoScript está establecido **** en habilitado para los sitios _modernos_ y deshabilitado para los sitios _clásicos_ . **** Esto depende de la configuración del espacio empresarial.
+La propiedad _ExcludeIfNoScriptDisabled_ excluye el contenido de la red CDN en función de la configuración del atributo _NoScript_ en el nivel de sitio. De forma predeterminada, el atributo _NoScript_ está establecido en **habilitado** para los sitios _modernos_ y **deshabilitado** para los sitios _clásicos_ . Esto depende de la configuración del espacio empresarial.
 
 Para obtener más información acerca de estos cmdlets, consulte [set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) y [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).
   
@@ -480,7 +480,7 @@ Para ver los orígenes configurados actualmente de la red CDN pública de Office
 spo cdn origin list --type Public
 ```
 
-Vea [orígenes de la red CDN](use-office-365-cdn-with-spo.md#default-cdn-origins) predeterminados para obtener información sobre los orígenes que se aprovisionan de forma predeterminada al habilitar la red CDN de Office 365.
+Vea [orígenes de la red CDN predeterminados](use-office-365-cdn-with-spo.md#default-cdn-origins) para obtener información sobre los orígenes que se aprovisionan de forma predeterminada al habilitar la red CDN de Office 365.
 
 ### <a name="add-an-office-365-cdn-origin"></a>Agregar un origen de red CDN de Office 365
 
@@ -685,6 +685,8 @@ No se pueden probar direcciones URL de CDN directamente en un explorador web por
 
 Para obtener más información sobre el uso de las herramientas de desarrollo en el explorador de Microsoft Edge, consulte [herramientas de desarrollo de Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide).
 
+Para obtener un vídeo hospedado en [patrones y prácticas](https://aka.ms/sppnp-videos) , el canal de YouTube que muestra que su red CDN está funcionando, consulte [comprobar el uso de la red CDN y garantizar la conectividad de red óptima](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5).
+
 ### <a name="why-are-assets-from-a-new-origin-unavailable"></a>¿Por qué no están disponibles los activos de un nuevo origen?
 Los activos en nuevos orígenes no estarán disponibles para su uso inmediatamente, ya que el registro se propagará a través de la red CDN y se cargarán los activos del origen al almacenamiento de la red CDN. El tiempo necesario para que los activos estén disponibles en la red CDN depende de cuántos activos y el tamaño de los archivos.
 
@@ -729,7 +731,7 @@ Puede elegir trabajar con la red CDN de Office 365 usando el módulo de PowerShe
 - [Introducción al shell de administración de SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 - [Instalar Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Redes de entrega de contenido](https://aka.ms/o365cdns)
 

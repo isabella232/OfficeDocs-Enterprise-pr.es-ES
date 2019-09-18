@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Obtenga información sobre cómo realizar tareas de administración comunes para los grupos de Office 365 en Microsoft PowerShell.
-ms.openlocfilehash: b2cd536630f80dec66344162669b0bbe1cf3b4cd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7e07041516acd3c2038dd92b464073279c49d1a6
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069026"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017348"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Administrar grupos de Office 365 con PowerShell
 
@@ -122,7 +122,7 @@ Si no quiere que los usuarios de otras organizaciones envíen correo electrónic
 Ejecute el cmdlet Set-UnifiedGroup para actualizar esta configuración, como se muestra a continuación:
 
 ```
-Set-UnifiedGroup -Identity "Internal senders only" - RequireSenderAuthenticationEnabled $true
+Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationEnabled $true
 ```
 
 ## <a name="add-mailtips-to-the-office-365-groups"></a>Agregar sugerencias de correo a los grupos de Office 365
