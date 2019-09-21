@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity y SharePoint Server 2007 han llegado al final del soporte técnico. Lea este artículo para planear la actualización de la solución de BI.
-ms.openlocfilehash: 9fde75724bf82a37f98fd98ddda1017198b850dd
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 507e6c1707844fed3ecd7cf4d3a69174a10b3dc4
+ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782540"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37067095"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de PerformancePoint Server 2007
 
@@ -60,7 +60,7 @@ Si estas aplicaciones de BI alcanzan el final del soporte técnico, este es un b
    
 ### <a name="what-if-i-need-help-selecting-a-solution"></a>¿Qué debo hacer si necesito ayuda para seleccionar una solución?
 
-Con tantas opciones de BI disponibles, puede parecer abrumador determinar cuál es la mejor opción. Tenemos una guía en línea disponible para ayudarle. Consulte [choosinging Microsoft Business Intelligence (BI) Tools for Analysis and](https://go.microsoft.com/fwlink/?linkid=839877)Reporting.
+Con tantas opciones de BI disponibles, puede parecer abrumador determinar cuál es la mejor opción. Tenemos una guía en línea disponible para ayudarle. Consulte [choosinging Microsoft Business Intelligence (BI) Tools for Analysis and Reporting](https://go.microsoft.com/fwlink/?linkid=839877).
   
 ### <a name="what-happens-if-i-dont-upgrade-now"></a>¿Qué sucede si no actualizo ahora?
 
@@ -72,8 +72,8 @@ Una vez que haya explorado las opciones de actualización, el siguiente paso con
   
 |**Opción**|**¿En la nube o local?**|
 |:-----|:-----|
-|[Excel](#use-excel-with-excel-online-in-the-cloud-or-on-premises) <br/> |Ambas  <br/> |
-|[Power BI](#use-power-bi-in-the-cloud-or-on-premises) <br/> |Ambas  <br/> |
+|[Excel](#excel-with-sharepoint-server-on-premises) <br/> |Ambas  <br/> |
+|[Power BI](#use-power-bi-in-the-cloud-or on-premises) <br/> |Ambas  <br/> |
 |[Reporting Services](#use-reporting-services-on-premises) <br/> |Solo local  <br/> |
 |[Servicios PerformancePoint](#use-performancepoint-services-on-premises) <br/> |Solo local  <br/> |
    
