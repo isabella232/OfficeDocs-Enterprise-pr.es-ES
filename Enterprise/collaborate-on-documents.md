@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Obtenga información sobre cómo colaborar con invitados en un documento en SharePoint y OneDrive.
-ms.openlocfilehash: c0c74f2457e9b25b37355c58ed18f120261e3364
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: ebb887e4fc337b4c0e94e85e0a08e87be0e74490
+ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992409"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37108230"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar con invitados en un documento
 
-Si necesita colaborar con los invitados en documentos de SharePoint o OneDrive, puede enviarles un vínculo para compartir al documento. En este artículo, analizaremos los pasos de configuración de Microsoft 365 necesarios para configurar los vínculos para compartir de SharePoint y OneDrive.
+Si necesita colaborar con los invitados en documentos de SharePoint o OneDrive, puede enviarles un vínculo para compartir al documento. En este artículo, analizaremos los pasos de configuración de Microsoft 365 necesarios para configurar los vínculos de uso compartido de SharePoint y OneDrive según las necesidades de su organización.
 
 ## <a name="azure-organizational-relationships-settings"></a>Configuración de las relaciones de organización de Azure
 
@@ -44,7 +44,7 @@ Para que los invitados tengan acceso a un documento en SharePoint o OneDrive, la
 
 La configuración a nivel de organización para SharePoint determina qué opciones de configuración están disponibles para los sitios de SharePoint individuales. La configuración del sitio no puede ser más permisiva que la configuración de nivel de organización. La configuración en el nivel de la organización para OneDrive determina el nivel de uso compartido que está disponible en las bibliotecas de OneDrive de los usuarios.
 
-Para SharePiont y OneDrive, si quiere permitir el uso compartido de archivos y carpetas con usuarios anónimos, elija **cualquier persona**. Si desea asegurarse de que todos los invitados tienen que autenticarse, elija los **invitados nuevos y existentes**. 
+Para SharePoint y OneDrive, si quiere permitir el uso compartido de archivos y carpetas con usuarios anónimos, elija **cualquier persona**. Si desea asegurarse de que todos los invitados tienen que autenticarse, elija los **invitados nuevos y existentes**. Los vínculos a *cualquier persona* es la forma más sencilla de compartir: los invitados pueden abrir el vínculo sin autenticación y pueden pasarlo a otros usuarios de forma gratuita.
 
 Para SharePoint, elija la configuración más permisiva que necesitará cualquier sitio de la organización.
 
