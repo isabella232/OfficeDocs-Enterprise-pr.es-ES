@@ -209,6 +209,10 @@
 ##### [Colaboración en documentos](collaborate-on-documents.md)
 ##### [Colaboración en un sitio](collaborate-in-a-site.md)
 ##### [Colaborar en equipo](collaborate-as-a-team.md)
+#### Seguridad para uso compartido para invitados
+##### [Uso compartido anónimo](best-practices-anonymous-sharing.md)
+##### [Limitar la exposición accidental](sharing-limit-accidental-exposure.md)
+##### [Crear un entorno seguro de uso compartido para invitados](create-a-secure-guest-sharing-environment.md)
 
 ## Dispositivos
 ### [Elegir entre MDM e Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
