@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Un resumen de cómo Microsoft aplica el aislamiento de inquilino para Office 365.
-ms.openlocfilehash: 4859fd5feec50159e71ca2ca8968388c5ab82d64
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: a5b8a3e42aa7acc5cebe8ed21a8599fc03b5060f
+ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067833"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37375528"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Aislamiento de inquilinos en Office 365
 
@@ -34,7 +34,7 @@ Se han implementado varias formas de protección a través de Office 365 para ev
 - El aislamiento lógico del contenido del cliente dentro de cada inquilino para los servicios de Office 365 se logra a través de la autorización de Azure Active Directory y el control de acceso basado en roles.
 - SharePoint Online proporciona mecanismos de aislamiento de datos en el nivel de almacenamiento.
 - Microsoft usa una rigurosa seguridad física, detección en segundo plano y una estrategia de cifrado de varias capas para proteger la confidencialidad y la integridad del contenido del cliente. Todos los centros de recursos de Office 365 tienen controles de acceso biométricos, con la mayoría de los que requieren impresiones de Palm para obtener acceso físico. Además, todos los empleados de Microsoft en Estados Unidos deben realizar correctamente una comprobación de antecedentes estándar como parte del proceso de contratación. Para obtener más información acerca de los controles usados para el acceso administrativo en Office 365, consulte [office 365 Administrative Access Controls](office-365-administrative-access-controls-overview.md).
-- Office 365 usa tecnologías de servicio que cifran el contenido del cliente en reposo y en tránsito, incluidos BitLocker, el cifrado por archivo, la seguridad de la capa de transporte (TLS) y el protocolo de seguridad de Internet (IPsec). Para obtener información específica sobre el cifrado en Office 365, consulte [tecnologías de cifrado de datos en office 365](/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview.md).
+- Office 365 usa tecnologías de servicio que cifran el contenido del cliente en reposo y en tránsito, incluidos BitLocker, el cifrado por archivo, la seguridad de la capa de transporte (TLS) y el protocolo de seguridad de Internet (IPsec). Para obtener información específica sobre el cifrado en Office 365, consulte [tecnologías de cifrado de datos en office 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview).
 
 Juntas, las protecciones de la lista anterior proporcionan controles sólidos de aislamiento lógico que proporcionan protección contra amenazas y mitigación equivalente a la que proporciona el aislamiento físico por sí solo.
 
