@@ -3,7 +3,7 @@ title: Suscripciones, licencias, cuentas y espacios empresariales para las ofert
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/12/2018
+ms.date: 10/08/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumen: comprenda las relaciones de las organizaciones, las suscripciones, las licencias, las cuentas de usuario y los espacios empresariales en las ofertas de la nube de Microsoft.'
-ms.openlocfilehash: 29b9954467e2d6dd7ece2e33376f28882152693c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 5c0bd0ad10dc1ddfdcb13d09010c69f4e8b5a75a
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782520"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428137"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, cuentas y espacios empresariales para las ofertas de la nube de Microsoft
 
@@ -31,21 +31,12 @@ ms.locfileid: "35782520"
 Microsoft facilita una jerarquía de organizaciones, suscripciones, licencias y cuentas de usuario para un uso coherente de las identidades y la facturación en todas sus ofertas de la nube:
   
 - Microsoft Office 365
-    
-    Para obtener más información, vea [Planes para empresas y precios](https://products.office.com/business/compare-office-365-for-business-plans).
-    
 - Microsoft Azure
-    
-    Para obtener más información, vea [Precios de Azure](https://azure.microsoft.com/pricing/).
-    
 - Microsoft Intune y Enterprise Mobility + Security (EMS)
-    
-    Para obtener más información, vea [Precios de Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
-    
 - Microsoft Dynamics 365
-    
-    Para obtener más información, vea [Precios de Dynamics 365](https://dynamics.microsoft.com/).
-    
+
+[Microsoft 365](https://docs.microsoft.com/microsoft-365/) combina Office 365, EMS y Windows 10 Enterprise en una única suscripción y un conjunto de servicios integrados.
+
 ## <a name="elements-of-the-hierarchy"></a>Elementos de la jerarquía
 
 Estos son los elementos de la jerarquía:
@@ -56,22 +47,23 @@ Una organización representa una entidad empresarial que usa ofertas de la nube 
   
 ### <a name="subscriptions"></a>Suscripciones
 
-Una suscripción es un contrato con Microsoft para usar uno o más servicios o plataformas de la nube de Microsoft, para los que se acumulan los cargos según un precio de licencia por usuario o en el consumo de recursos basados en la nube. Las ofertas de la nube basadas en el software como servicio (SaaS) de Microsoft (Office 365, Intune/EMS y Dynamics 365) se cobran por precios de licencia por usuario. Las ofertas de la nube de plataforma como servicio (PaaS) y de infraestructura como servicio (IaaS) de Microsoft (Azure) se cobran según el consumo de recursos de la nube.
-  
+Una suscripción es un contrato con Microsoft para utilizar uno o más servicios o plataformas de la nube de Microsoft, para los que se acumulan los cargos en función de un precio de licencia por usuario o en el consumo de recursos basados en la nube. 
+
+- Las ofertas de la nube basadas en el software como servicio (SaaS) de Microsoft (Office 365, Intune/EMS y Dynamics 365) se cobran por precios de licencia por usuario. 
+- Las ofertas de la nube de plataforma como servicio (PaaS) y de infraestructura como servicio (IaaS) de Microsoft (Azure) se cobran en función del consumo de recursos de la nube.
+ 
 También puede usar una suscripción de prueba, pero la suscripción expira después de un periodo de tiempo o cargos por consumo determinados. Puede convertir una suscripción de prueba en una suscripción de pago.
   
-Las organizaciones pueden tener varias suscripciones para las ofertas de la nube de Microsoft. En la ilustración 1 se muestra un ejemplo.
-  
+Las organizaciones pueden tener varias suscripciones para las ofertas de la nube de Microsoft. En la ilustración 1, se muestra una sola organización con varias suscripciones de Office 365, una suscripción de Intune, una suscripción de Dynamics 365 y varias suscripciones de Azure.
+
 **Ilustración 1: Ejemplo de varias suscripciones para una organización**
 
 ![Una organización de ejemplo con varias suscripciones para las ofertas de la nube de Microsoft.](media/Subscriptions/Subscriptions-Fig1.png)
 
   
-En la ilustración 1, se muestra una sola organización con varias suscripciones de Office 365, una suscripción de Intune, una suscripción de Dynamics 365 y varias suscripciones de Azure.
-  
 ### <a name="licenses"></a>Licencias
 
-Para las ofertas de la nube de SaaS de Microsoft, una licencia permite a una cuenta de usuario específica usar los servicios de la oferta de la nube. Se le cobrará un precio mensual fijo como parte de su suscripción. Los administradores asignan licencias a cuentas de usuario individuales en la suscripción. En el ejemplo de la ilustración 2, Contoso Corporation tiene una suscripción a Office 365 Enterprise E5 con 100 licencias, que permite a hasta 100 cuentas de usuario individuales usar las características y los servicios de Enterprise E5.
+Para las ofertas de la nube de SaaS de Microsoft, una licencia permite a una cuenta de usuario específica utilizar los servicios de la oferta de la nube. Se le cobrará un precio mensual fijo como parte de su suscripción. Los administradores asignan licencias a cuentas de usuario individuales en la suscripción. Para el ejemplo en la figura 2, Contoso Corporation tiene una suscripción a Office 365 Enterprise E5 con 100 licencias, que permite a hasta 100 cuentas de usuario individuales utilizar las características y los servicios de Office 365 Enterprise E5.
   
 **Ilustración 2: Licencias en las suscripciones basadas en SaaS para una organización**
 
@@ -85,7 +77,7 @@ Algunas imágenes de máquina virtual tienen versiones de prueba de aplicaciones
   
 ### <a name="user-accounts"></a>Cuentas de usuario
 
-Las cuentas de usuario para todas las ofertas de la nube de Microsoft se almacenan en un inquilino de Azure Active Directory (AD), que contiene grupos y cuentas de usuario. Un inquilino de Azure AD se puede sincronizar con las cuentas existentes de Active Directory Domain Services (AD DS) mediante Azure AD Connect, un servicio basado en Windows Server. Esto se conoce como sincronización de directorios (DirSync).
+Las cuentas de usuario para todas las ofertas de la nube de Microsoft se almacenan en un espacio empresarial de Azure Active Directory (Azure AD), que contiene grupos y cuentas de usuario. Un inquilino de Azure AD se puede sincronizar con las cuentas existentes de Active Directory Domain Services (AD DS) mediante Azure AD Connect, un servicio basado en Windows Server. Esto se conoce como sincronización de directorios (DirSync).
   
 En la ilustración 3, se muestra un ejemplo de varias suscripciones de una organización con un espacio empresarial de Azure AD común que contiene las cuentas de la organización.
   
@@ -129,15 +121,13 @@ Aquí tiene un ejemplo de la relación de las organizaciones, suscripciones, lic
     
   - Las cuentas de usuario de la organización en un inquilino común de Azure AD.
     
-Varias suscripciones de la oferta de la nube de Microsoft pueden usar el mismo inquilino de Azure AD, que actúa como proveedor común de identidades. Un inquilino central de Azure AD que contiene las cuentas sincronizadas de su AD DS local le proporciona identidad como servicio (IDaaS) basada en la nube para su organización. Esto se muestra en la figura 4.
+Varias suscripciones de la oferta de la nube de Microsoft pueden usar el mismo inquilino de Azure AD, que actúa como proveedor común de identidades. Un espacio empresarial central de Azure AD que contiene las cuentas sincronizadas de su servidor local de AD DS le proporciona identidad como servicio (IDaaS) basada en la nube para su organización. 
   
 **Ilustración 4: Cuentas locales sincronizadas e IDaaS para una organización**
 
 ![IDaaS de identidad como servicio (IaaS) para su organización.](media/Subscriptions/Subscriptions-Fig4.png)
   
 En la figura 4, se muestra cómo las ofertas de la nube de SaaS de Microsoft, las aplicaciones de PaaS de Azure y las máquinas virtuales de IaaS de Azure que usan Azure AD Domain Services usan un inquilino común de Azure AD. Azure AD Connect sincroniza el bosque de AD DS local con el inquilino de Azure AD.
-  
-Para obtener más información sobre la integración de identidades en las ofertas de la nube de Microsoft, vea [Identidad de Microsoft Cloud para arquitectos empresariales](https://aka.ms/cloudarchidentity).
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>Combinación de suscripciones para varias ofertas de la nube de Microsoft
 
@@ -168,15 +158,17 @@ Para agregar una suscripción de Azure con la misma organización y espacio empr
     
 3. En la página **Agregar suscripción**, seleccione una oferta y complete la información de pago y el contrato.
     
-Si usted adquiere suscripciones de Office 365 y Azure por separado y quiere obtener acceso del inquilino de Azure AD de Office 365 desde su suscripción de Azure, vea las instrucciones en [Asociar o añadir una suscripción de Azure a su Directorio de Azure Active ](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+Si usted adquiere suscripciones de Office 365 y Azure por separado y quiere obtener acceso del espacio empresarial de Azure AD de Office 365 desde su suscripción de Azure, vea las instrucciones en [Añadir una suscripción existente de Azure a su Directorio de Azure Active](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
 ## <a name="see-also"></a>Vea también
 
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
   
-[Guías de entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
-  
 [Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
 [Soluciones híbridas](hybrid-solutions.md)
+
+## <a name="next-step"></a>Siguiente paso
+
+[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)
   

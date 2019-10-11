@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 'Resumen: Use Office 365 PowerShell para configurar las propiedades de una o varias cuentas de usuario en el inquilino de Office 365.'
-ms.openlocfilehash: 3d81a7e5860b086fd411e8e6fcaab44568e890d5
-ms.sourcegitcommit: 4d29b00a57c22225f2cdd592064ee8b6e575fceb
+ms.openlocfilehash: 40d7e78b3fd6c011f6c53b2af433f258b888d5bb
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "37411519"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435354"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell
 
@@ -72,10 +72,7 @@ La cuenta se identifica con el parámetro **-objectId** y se establecen o cambia
     
 Consulte [set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) para obtener más parámetros.
 
->[!Note]
-> Establezca la propiedad **mail** con el parámetro **-OtherMails** .
->
- 
+
 Para mostrar el nombre principal de usuario de las cuentas de usuario, ejecute el siguiente comando.
   
 ```
@@ -191,10 +188,6 @@ La cuenta se identifica con el parámetro **-UserPrincipalName** y se establecen
     
 Consulte [set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) para obtener más parámetros.
 
->[!Note]
-> Establezca la propiedad **mail** con el parámetro **-AlternateEmailAddresses** .
->
- 
 Para ver los nombres principales de usuario de todos los usuarios, ejecute el siguiente comando.
   
 ```

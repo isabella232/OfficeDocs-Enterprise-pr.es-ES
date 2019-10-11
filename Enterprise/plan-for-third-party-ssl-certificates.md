@@ -4,6 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
+ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Resumen: describe los certificados SSL necesarios para Exchange local e híbrido, SSO con AD FS, servicios de Exchange Online y servicios web Exchange.'
-ms.openlocfilehash: 9b5bcb20272dcaf5c1df39179a4ba4b05fc04a28
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3120be6cf127b8615259f865f03db1dbe6f0ea73
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069356"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428099"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planificación de los certificados SSL de terceros para Office 365
+
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
  **Resumen:** Describe los certificados SSL necesarios para Exchange local e híbrido, SSO con AD FS, servicios de Exchange Online y servicios web Exchange. 
   
@@ -32,7 +35,7 @@ Para cifrar las comunicaciones entre los clientes y el entorno de Office 365, lo
 
 ||
 |:-----|
-| Este artículo forma parte de la planeación de [red y el ajuste del rendimiento de Office 365](https://aka.ms/tune).|
+| Este artículo forma parte de la [planeación de red y el ajuste del rendimiento de Office 365](https://aka.ms/tune).|
    
 Los certificados son necesarios para los siguientes componentes de Office 365:
   
@@ -50,7 +53,7 @@ Para obtener información general sobre cómo usar certificados digitales para q
   
 ## <a name="certificates-for-single-sign-on"></a>Certificados para el inicio de sesión único
 
-Para proporcionar a los usuarios una experiencia de inicio de sesión único simplificada que incluya seguridad robusta, los certificados que se muestran en la tabla siguiente son necesarios en los servidores de Federación o en los proxies del servidor de Federación. La siguiente tabla se centra en los servicios de Federación de Active Directory (AD FS), también tenemos más información sobre el [uso de proveedores](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility)de identidades de terceros.
+Para proporcionar a los usuarios una experiencia de inicio de sesión único simplificada que incluya seguridad robusta, los certificados que se muestran en la tabla siguiente son necesarios en los servidores de Federación o en los proxies del servidor de Federación. La siguiente tabla se centra en los servicios de Federación de Active Directory (AD FS), también tenemos más información sobre el [uso de proveedores de identidades de terceros](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
   
 ||||
 |:-----|:-----|:-----|
@@ -77,4 +80,6 @@ Los servidores o servidores híbridos de Exchange con conexión externa requiere
 
 En este artículo se describen los certificados que puede que necesite instalar en su infraestructura. Para obtener más información sobre los certificados instalados en nuestros servidores de Office 365, consulte [office 365 Certificate Chains](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
   
+## <a name="see-also"></a>Vea también
 
+[Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

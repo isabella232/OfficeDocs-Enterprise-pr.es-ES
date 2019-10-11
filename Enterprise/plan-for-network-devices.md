@@ -16,22 +16,24 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Resumen: describe las consideraciones sobre la capacidad de red, los aceleradores WAN y los dispositivos de equilibrio de carga que se usan para conectarse a Office 365.'
-ms.openlocfilehash: b6804e7922178a3b653b3767a33e02e2a382ef93
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722629"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428107"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planificación de dispositivos de red que se conecten a servicios de Office 365
 
- **Resumen**: describe las consideraciones sobre la capacidad de red, los aceleradores WAN y los dispositivos de equilibrio de carga que se usan para conectarse a Office 365.
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
   
+**Resumen**: describe las consideraciones sobre la capacidad de red, los aceleradores WAN y los dispositivos de equilibrio de carga que se usan para conectarse a Office 365.
+
 Es posible que el hardware de red tenga limitaciones en el número de sesiones simultáneas que se admiten. Para las organizaciones que tienen más de 2.000 usuarios, recomendamos que supervisen sus dispositivos de red para garantizar que puedan controlar el tráfico adicional del servicio Office 365. El software de supervisión del Protocolo simple de administración de redes (SNMP) puede ayudarle a hacerlo.
 
 ||
 |:-----|
-| Este artículo forma parte de la planeación de [red y el ajuste del rendimiento de Office 365](https://aka.ms/tune).|
+| Este artículo forma parte de la [planeación de red y el ajuste del rendimiento de Office 365](https://aka.ms/tune).|
 
 La configuración de proxy de Internet saliente local también afecta a la conectividad con los servicios de Office 365 para las aplicaciones cliente. También debe configurar los dispositivos proxy de red para permitir conexiones de las aplicaciones y las direcciones URL de servicios en la nube de Microsoft. Cada organización es diferente. Para hacerse una idea de cómo Microsoft administra este proceso y la cantidad de ancho de banda que aprovisionamos, [Lea el caso práctico](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
   
@@ -71,3 +73,5 @@ Para obtener más información sobre cómo configurar firewalls y servidores pro
 ## <a name="see-also"></a>Vea también
 
 [Asesores de implementación para servicios de Office 365](deployment-advisors-for-office-365.md)
+
+[Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

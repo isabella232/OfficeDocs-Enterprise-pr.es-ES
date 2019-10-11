@@ -21,14 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo funciona la autenticación moderna de Office 365 de forma diferente para las aplicaciones cliente de Office 2013 y 2016.
-ms.openlocfilehash: 17a6713fe12e7cdb1fe0355dd38b44b4cb93be54
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: 2518f60141f04c0474d849e6f597c062e23e06d7
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491299"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435364"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Cómo funciona la autenticación moderna para las aplicaciones de cliente de Office 2013 y Office 2016
+
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Lea este artículo para obtener información sobre cómo las aplicaciones cliente de Office 2013 y Office 2016 usan las características de autenticación moderna basadas en la configuración de autenticación en el inquilino de Office 365 para Exchange Online, SharePoint Online y Skype empresarial online.
 
@@ -39,14 +41,14 @@ Lea este artículo para obtener información sobre cómo las aplicaciones client
 
 Para los servicios de Office 365, el estado predeterminado de la autenticación moderna es:
   
-- Activado **** para Exchange online de forma predeterminada. Consulte [habilitar o deshabilitar la autenticación moderna en Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) para activarla o desactivarla. 
+- Activado **para Exchange online de forma** predeterminada. Consulte [habilitar o deshabilitar la autenticación moderna en Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) para activarla o desactivarla. 
     
-- Activado **** para SharePoint Online de forma predeterminada. 
+- Activado **para SharePoint** online de forma predeterminada. 
     
-- Activado **** para Skype empresarial online de forma predeterminada. Consulte [Habilitar Skype empresarial online para la autenticación moderna ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)para desactivarla o desactivarla.
+- Activado **para Skype** empresarial online de forma predeterminada. Consulte [Habilitar Skype empresarial online para la autenticación moderna ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)para desactivarla o desactivarla.
 
 > [!NOTE]
-> Para los inquilinos creados **antes** del 1 de agosto de 2017, la **** autenticación moderna está desactivada de forma predeterminada para Exchange Online y Skype empresarial online.
+> Para los inquilinos creados **antes** del 1 de agosto de 2017, la autenticación moderna está **desactivada de forma predeterminada** para Exchange Online y Skype empresarial online.
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Comportamiento de inicio de sesión de las aplicaciones cliente de Office
 
@@ -110,3 +112,5 @@ En la tabla siguiente se describe el comportamiento de autenticación para las a
 [Planeación de multi-factor Authentication para implementaciones de Office 365 (para administradores de Office 365)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
 [Inicie sesión en Office 365 con verificación en dos pasos (para usuarios finales)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
+
+[Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
