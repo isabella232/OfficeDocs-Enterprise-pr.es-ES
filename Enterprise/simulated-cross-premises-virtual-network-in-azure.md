@@ -79,7 +79,7 @@ En esta fase, creará y configurará la nueva red virtual XPrem y la conectará 
 En primer lugar, inicie un símbolo del sistema de Azure PowerShell en el equipo local.
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/es-ES/powershell/azureps-cmdlets-docs/). 
+> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Inicie sesión en su cuenta de Azure con este comando.
   

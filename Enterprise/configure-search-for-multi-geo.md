@@ -85,7 +85,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La búsqueda multigeográfica no admite la creación dinámica de cubos para refinadores numéricos.</td>
-<td align="left">Use el parámetro <a href="https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize”</a> para refinadores numéricos.</td>
+<td align="left">Use el parámetro <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize”</a> para refinadores numéricos.</td>
 </tr>
 <tr class="even">
 <td align="left">Identificadores de documento</td>
@@ -172,7 +172,7 @@ Las aplicaciones de búsqueda personalizada obtienen resultados de todas o algun
 
 **Requisito**
 
-Para cada ubicación geográfica, debe asegurarse de que se ha concedido a todos los usuarios de la organización el nivel de permisos de **lectura** para el sitio web raíz (por ejemplo, contoso**APAC**.sharepoint.com/ y contoso**UE**.sharepoint.com/). [Más información sobre permisos](https://support.office.com/es-ES/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Para cada ubicación geográfica, debe asegurarse de que se ha concedido a todos los usuarios de la organización el nivel de permisos de **lectura** para el sitio web raíz (por ejemplo, contoso**APAC**.sharepoint.com/ y contoso**UE**.sharepoint.com/). [Más información sobre permisos](https://support.office.com/en-us/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parámetros de consulta
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration: lista opcional de las ubicaciones geográficas del 
 </tbody>
 </table>
 
-Si omite DataLocation o EndPoint, o si una DataLocation se duplica, la solicitud no se realiza. [Puede obtener información sobre el punto de conexión de las ubicaciones geográficas de un espacio empresarial con Microsoft Graph](https://docs.microsoft.com/es-ES/sharepoint/dev/solution-guidance/multigeo-discovery).
+Si omite DataLocation o EndPoint, o si una DataLocation se duplica, la solicitud no se realiza. [Puede obtener información sobre el punto de conexión de las ubicaciones geográficas de un espacio empresarial con Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Datos de respuesta
 
