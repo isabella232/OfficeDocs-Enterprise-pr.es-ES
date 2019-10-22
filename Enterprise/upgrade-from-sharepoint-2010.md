@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: La compatibilidad finaliza para SharePoint 2010 y SharePoint Server 2010 finaliza el 13 de octubre de 2020. Use este artículo como guía para actualizar a SharePoint Online o a una versión más reciente de SharePoint Server local.
-ms.openlocfilehash: c83d91b3ae8124312459033cb59524dec048fd03
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: 1d3931970047a3c19a8e5bd3a03378855056a3ad
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782437"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616133"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
@@ -41,7 +41,7 @@ Cuando el software de SharePoint Server 2010 y SharePoint Foundation 2010 alcanz
 Esto significa que no se enviarán más actualizaciones, parches ni correcciones para el producto (incluidas las revisiones o correcciones de seguridad) y el soporte técnico de Microsoft se desplazará completamente a las versiones más recientes. Como fin de soporte para enfoques de SharePoint Server 2010, debe aprovechar las oportunidades para recortar los datos que ya no necesita antes de actualizar el producto y/o migrar los datos importantes.
   
 > [!NOTE]
-> Un ciclo de vida de software suele durar 10 años a partir de la fecha de lanzamiento inicial del producto. Puede buscar proveedores de [soluciones de Microsoft](https://go.microsoft.com/fwlink/?linkid=841249) que puedan ayudarle con la actualización a la siguiente versión del software o a la migración de Office 365 (o ambas). Asegúrese de que está al tanto de las fechas de fin de soporte en las tecnologías subyacentes fundamentales, sobre todo de la versión de SQL Server que está usando con SharePoint. 
+> Un ciclo de vida de software suele durar diez años a partir de la fecha de lanzamiento inicial del producto. Puede buscar proveedores de [soluciones de Microsoft](https://go.microsoft.com/fwlink/?linkid=841249) que puedan ayudarle a actualizar a la siguiente versión del software o a la migración de Office 365 (o ambas). Asegúrese de que está al tanto de las fechas de fin de soporte en las tecnologías subyacentes fundamentales, sobre todo de la versión de SQL Server que está usando con SharePoint. Vea la [Directiva de ciclo de vida fijo](https://support.microsoft.com/help/14085) para comprender el ciclo de vida del producto en detalle.
   
 ## <a name="what-are-my-options"></a>¿Qué opciones tengo?
 
@@ -118,7 +118,7 @@ Si ha decidido crear un nuevo sitio de Office 365 y migrar los datos de forma ma
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>Actualizar SharePoint Server local
 
-A partir de la última versión del producto local de SharePoint (SharePoint Server 2016), las actualizaciones de SharePoint Server deben realizarse en *serie*, lo que significa que no hay forma de actualizar de sharepoint Server 2010 a sharepoint Server 2016 directamente. 
+A partir de la última versión del producto local de SharePoint (SharePoint Server 2019), las actualizaciones de SharePoint Server deben ir en *serie*, lo que significa que no hay forma de actualizar de sharepoint Server 2010 a sharepoint Server 2016 o a SharePoint 2019. directamente. 
   
 |||
 |:-----|:-----|
@@ -168,7 +168,7 @@ Comience por comparar los requisitos de hardware y software. Si no cumple los re
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Crear una solución híbrida de SharePoint entre SharePoint Online y SharePoint Server local
 
-Otra opción (que puede ser la mejor de los mundos locales y en línea para algunas necesidades de migración) es un híbrido, puede conectar granjas de servidores de SharePoint Server 2013 o 2016 a SharePoint Online para crear un entorno híbrido de SharePoint: [información sobre las soluciones híbridas de SharePoint ](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx).
+Otra opción (que puede ser la mejor de los mundos locales y en línea para algunas necesidades de migración) es un híbrido, puede conectar granjas de servidores de SharePoint Server 2013 o 2016 o 2019 a SharePoint Online para crear un entorno híbrido de SharePoint: [información sobre el entorno híbrido de SharePoint soluciones](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx).
   
 Si decide que una granja de servidores híbrida de SharePoint Server es su objetivo de migración, asegúrese de planear los sitios y usuarios a los que se debe mover en línea y que deben permanecer de forma local. Una revisión y una clasificación del contenido de la granja de servidores de SharePoint Server (determinar qué datos son de alto, medio o bajo impacto en su compañía) pueden ser útiles para tomar esta decisión. Es posible que lo único que debe compartir con SharePoint Online sea (a) las cuentas de usuario para iniciar sesión y (b) el índice de búsqueda de SharePoint Server, que puede no ser claro hasta que vea cómo se usan los sitios. Si su compañía decide posteriormente migrar todo el contenido a SharePoint Online, puede mover todas las cuentas y datos restantes en línea y retirar la granja de servidores local, y la administración o administración de la granja de servidores de SharePoint se realizará a través de Office 365 consolas a partir de ese momento.
   
