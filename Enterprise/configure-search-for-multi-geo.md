@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico.
-ms.openlocfilehash: 39493c4df48af239306d8b22de451d6db6e3bcf9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e2f3aa9888e3c41c445e4ceeab491a3c5a617a14
+ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068076"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37643283"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Configurar la búsqueda para Office 365 Multi-Geo
 
@@ -172,11 +172,11 @@ Las aplicaciones de búsqueda personalizada obtienen resultados de todas o algun
 
 **Requisito**
 
-Para cada ubicación geográfica, debe asegurarse de que se ha concedido a todos los usuarios de la organización el nivel de permisos de **lectura** para el sitio web raíz (por ejemplo, contoso**APAC**.sharepoint.com/ y contoso**UE**.sharepoint.com/). [Más información sobre permisos](https://support.office.com/en-us/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Para cada ubicación geográfica, debe asegurarse de que se ha concedido a todos los usuarios de la organización el nivel de permisos de **lectura** para el sitio web raíz (por ejemplo, contoso**APAC**.sharepoint.com/ y contoso**UE**.sharepoint.com/). [Más información sobre permisos](https://support.office.com/es-ES/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parámetros de consulta
 
-EnableMultiGeoSearch: valor booleano que especifica si se efectuará una distribución ramificada de la consulta a los índices de otras ubicaciones geográficas del inquilino multigeográfico. Establézcalo en **true** para efectuar una distribución ramificada de la consulta o en **false** para no hacerlo. El valor predeterminado es **False**. Si no incluye este parámetro, no se efectúa una distribución ramificada de la consulta a otra ubicación geográfica. Si usa el parámetro en un entorno que no es multigeográfico, se ignorará el parámetro.
+EnableMultiGeoSearch: valor booleano que especifica si se efectuará una distribución ramificada de la consulta a los índices de otras ubicaciones geográficas del inquilino multigeográfico. Establézcalo en **true** para efectuar una distribución ramificada de la consulta o en **false** para no hacerlo. Si no incluye este parámetro, el valor por defecto es**falso**, excepto cuando se realiza una llamada a REST API contra un sitio que utiliza la plantilla de Enterprise Search Center, en este caso el valor por defecto es **verdadero**.  Si usa el parámetro en un entorno que no es multigeográfico, se ignorará el parámetro.
 
 ClientType: es una cadena. Escriba un nombre de cliente único para cada aplicación de búsqueda. Si no incluye este parámetro, no se efectúa una distribución ramificada de la consulta a otra ubicación geográfica.
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration: lista opcional de las ubicaciones geográficas del 
 </tbody>
 </table>
 
-Si omite DataLocation o EndPoint, o si una DataLocation se duplica, la solicitud no se realiza. [Puede obtener información sobre el punto de conexión de las ubicaciones geográficas de un espacio empresarial con Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).
+Si omite DataLocation o EndPoint, o si una DataLocation se duplica, la solicitud no se realiza. [Puede obtener información sobre el punto de conexión de las ubicaciones geográficas de un espacio empresarial con Microsoft Graph](https://docs.microsoft.com/es-ES/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Datos de respuesta
 
