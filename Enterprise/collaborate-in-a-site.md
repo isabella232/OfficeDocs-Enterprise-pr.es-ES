@@ -8,18 +8,24 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Obtenga información sobre cómo colaborar con invitados en un sitio de SharePoint.
-ms.openlocfilehash: 4b68b50fec4322f12c24969bdd71e7d9c0fda245
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: d0f4528db683795da0f3c949228f902d775f6b7e
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017318"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920173"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
 Si necesita colaborar con invitados en documentos, datos y listas, puede usar un sitio de SharePoint. Los sitios modernos de SharePoint están conectados a Office 365 grupos que pueden administrar la pertenencia al sitio y proporcionar herramientas de colaboración adicionales, como un buzón compartido y un calendario.
 
 En este artículo, analizaremos los pasos de configuración de Microsoft 365 necesarios para configurar un sitio de SharePoint para la colaboración con los invitados.
+
+## <a name="video-demonstration"></a>Vídeo de demostración
+
+En este vídeo se muestran los pasos de configuración que se describen en este documento.</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44Llg?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Configuración de las relaciones de organización de Azure
 
@@ -69,7 +75,7 @@ Si desea permitir el uso compartido de archivos y carpetas con usuarios anónimo
 Para establecer la configuración de uso compartido en el nivel de la organización de SharePoint
 
 1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración**, haga clic en **SharePoint**.
-2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **compartir**.
+2. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
 3. Asegúrese de que el uso compartido externo para SharePoint está establecido en **todos** o en **invitados nuevos o existentes**.
 4. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -97,9 +103,9 @@ Tenga en cuenta que el sitio no se puede compartir con usuarios anónimos (confi
 ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
 Para establecer la configuración de uso compartido de nivel de sitio
-1. En el centro de administración de SharePoint, en el panel de navegación de la izquierda, expanda **sitios** y haga clic en **sitios activos**.
+1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **Sitios** y haga clic en **Sitios activos**.
 2. Seleccione el sitio que acaba de crear.
-3. En la cinta, haga clic en **uso compartido**.
+3. En la cinta de opciones, haga clic en **Uso compartido**.
 4. Asegúrese de que el uso compartido está establecido en **todos** o en **invitados nuevos o existentes**.
 5. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -122,3 +128,10 @@ Para invitar a invitados a un sitio
 4. Haga clic en **Cerrar**.
 
 ## <a name="see-also"></a>Vea también
+
+[Procedimientos recomendados para compartir archivos y carpetas con usuarios anónimos](best-practices-anonymous-sharing.md)
+
+[Reducir la exposición accidental de archivos al compartirlos con invitados](sharing-limit-accidental-exposure.md)
+
+[Crear un entorno de uso compartido de invitado seguro](create-a-secure-guest-sharing-environment.md))
+

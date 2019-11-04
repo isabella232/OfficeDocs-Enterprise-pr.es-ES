@@ -1,5 +1,5 @@
 ---
-title: Colaborar con los invitados en un equipo
+title: Colaborar con invitados en un equipo
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,18 +8,24 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Obtenga información sobre cómo colaborar con invitados en Microsoft Teams.
-ms.openlocfilehash: 9a169e33a9cbd8f079966443bd3d830aa79f4971
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 6a50331b5badcd2534052f04193300b427bafd57
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992419"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920163"
 ---
-# <a name="collaborate-with-guests-in-a-team"></a>Colaborar con los invitados en un equipo
+# <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
 Si necesita colaborar con invitados en documentos, tareas y conversaciones, le recomendamos que use Microsoft Teams. Teams ofrece todas las características de colaboración disponibles en Office y SharePoint con chat persistente y un conjunto de herramientas de colaboración personalizable y extensible en una experiencia de usuario unificada.
 
 En este artículo, analizaremos los pasos de configuración de Microsoft 365 necesarios para configurar un equipo para la colaboración con los invitados.
+
+## <a name="video-demonstration"></a>Vídeo de demostración
+
+En este vídeo se muestran los pasos de configuración que se describen en este documento.</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44NTr?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Configuración de las relaciones de organización de Azure
 
@@ -77,7 +83,7 @@ Para establecer la configuración de invitado de Office 365 Groups
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>Configuración de uso compartido en el nivel de organización de SharePoint
 
-Para que los invitados tengan acceso a los archivos de Microsoft Teams, la configuración de uso compartido en el nivel de la organización de SharePoint debe permitir el uso compartido con invitados.
+El contenido de Microsoft Teams, como archivos, carpetas y listas, se almacena en SharePoint. Para que los invitados tengan acceso a estos elementos en Microsoft Teams, la configuración de uso compartido en el nivel de la organización de SharePoint debe permitir el uso compartido con invitados.
 
 La configuración en el nivel de la organización determina qué opciones de configuración están disponibles para cada uno de los sitios, incluidos los sitios asociados a teams. La configuración del sitio no puede ser más permisiva que la configuración de nivel de organización.
 
@@ -89,7 +95,7 @@ Si desea permitir el uso compartido de archivos y carpetas con usuarios anónimo
 Para establecer la configuración de uso compartido en el nivel de la organización de SharePoint
 
 1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración**, haga clic en **SharePoint**.
-2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **compartir**.
+2. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
 3. Asegúrese de que el uso compartido externo para SharePoint está establecido en **todos** o en **invitados nuevos o existentes**.
 4. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -137,9 +143,9 @@ Compruebe la configuración de uso compartido de nivel de sitio para asegurarse 
 
 
 Para establecer la configuración de uso compartido de nivel de sitio
-1. En el centro de administración de SharePoint, en el panel de navegación de la izquierda, expanda **sitios** y haga clic en **sitios activos**.
-2. Seleccione el sitio para el equipo que acaba de crear.
-3. En la cinta, haga clic en **uso compartido**.
+1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **Sitios** y haga clic en **Sitios activos**.
+2. Seleccione el sitio para el equipo recién creado.
+3. En la cinta de opciones, haga clic en **Uso compartido**.
 4. Asegúrese de que el uso compartido está establecido en **todos** o en **invitados nuevos o existentes**.
 5. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -160,4 +166,11 @@ Para invitar a invitados a un equipo
 5. Haga clic en **Agregar** y, después, en **Cerrar**.
 
 ## <a name="see-also"></a>Vea también
+
+[Procedimientos recomendados para compartir archivos y carpetas con usuarios anónimos](best-practices-anonymous-sharing.md)
+
+[Reducir la exposición accidental de archivos al compartirlos con invitados](sharing-limit-accidental-exposure.md)
+
+[Crear un entorno de uso compartido de invitado seguro](create-a-secure-guest-sharing-environment.md))
+
 
