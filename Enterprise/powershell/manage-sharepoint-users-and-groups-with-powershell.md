@@ -3,7 +3,7 @@ title: Administrar usuarios y grupos de SharePoint Online con PowerShell de Offi
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/07/2018
+ms.date: 10/05/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: Use Office 365 PowerShell para administrar usuarios, grupos y sitios de SharePoint Online.'
-ms.openlocfilehash: 194486f539593215b8f8a17c04e3d4f499077c65
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f84e4cda797cd8f1bc4ddf573cb4f1c6f0165da7
+ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068826"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37975895"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Administrar usuarios y grupos de SharePoint Online con PowerShell de Office 365
 
@@ -83,7 +83,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 Puede copiar y pegar estos comandos en el Bloc de notas, cambiar los valores de las variables para $tenant, $site y $user a valores reales de su entorno y, a continuación, pegarlos en la ventana del shell de administración de SharePoint Online para ejecutarlos.
 
-## <a name="add-a-user-to-other-site-collection-administrators-groups"></a>Agregar un usuario a otros grupos de administradores de la colección de sitios
+## <a name="add-a-user-to-other-site-collection-groups"></a>Agregar un usuario a otros grupos de la colección de sitios
 
 En esta tarea, vamos a usar el comando **Add-SPOUser** para agregar un usuario a un grupo de SharePoint en una colección de sitios.
 
@@ -108,7 +108,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https:/
 
 ## <a name="create-a-site-collection-group"></a>Crear un grupo de colecciones de sitios
 
-El comando **Set-SPOSiteGroup** se usa para crear un nuevo grupo de SharePoint y agregarlo a la colección de sitios de ContosoTest.
+Use el comando **New-SPOSiteGroup** para crear un nuevo grupo de SharePoint y agregarlo a la colección de sitios ContosoTest.
 
 ```
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
