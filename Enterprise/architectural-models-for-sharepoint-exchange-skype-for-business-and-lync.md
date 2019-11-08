@@ -11,18 +11,19 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 'Resumen: Obtenga los pósteres de TI que describen los modelos de arquitectura, la implementación y las opciones de plataforma de SharePoint, Exchange, Skype Empresarial y Lync.'
-ms.openlocfilehash: ed4aca3728d12b1a7828b003f0da219d67da6de3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce12d0a807c71e88d2f989f1b24ce033a63b8b70
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068416"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038269"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Lync
 
@@ -108,7 +109,7 @@ En estos nuevos pósteres de TI de SharePoint 2016 y Skype Empresarial 2015, se 
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![Miniatura del póster de bases de datos de SharePoint Server 2016](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Más idiomas](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Este póster de TI es una guía de referencia rápida para bases de datos de SharePoint Server 2016. Cada base de datos tiene los detalles siguientes: <br/><br/> - Tamaño <br/> - Instrucciones de escalado <br/> - Patrones de E/S <br/> - Requisitos <br/><br/>  La primera página contiene las bases de datos del sistema de SharePoint y las aplicaciones de servicio con múltiples bases de datos. La segunda página muestra todas las aplicaciones de servicio con bases de datos únicas. <br/><br/>  Para obtener más información sobre las bases de datos de SharePoint Server 2016, consulte [Tipos y descripciones de bases de datos en SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc678868%28v=office.16%29.aspx) <br/> |
+|[![Miniatura del póster de bases de datos de SharePoint Server 2016](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Más idiomas](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Este póster de TI es una guía de referencia rápida para bases de datos de SharePoint Server 2016. Cada base de datos tiene los detalles siguientes: <br/><br/> - Tamaño <br/> - Instrucciones de escalado <br/> - Patrones de E/S <br/> - Requisitos <br/><br/>  La primera página contiene las bases de datos del sistema de SharePoint y las aplicaciones de servicio con múltiples bases de datos. La segunda página muestra todas las aplicaciones de servicio con bases de datos únicas. <br/><br/>  Para obtener más información sobre las bases de datos de SharePoint Server 2016, consulte [Tipos y descripciones de bases de datos en SharePoint Server 2016](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions) <br/> |
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Modelos de arquitectura de Microsoft Skype Empresarial 2015
@@ -138,7 +139,7 @@ En estos pósteres de TI de SharePoint 2013, Exchange 2013 y Lync 2013, se propo
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![Imagen en miniatura de las opciones de la plataforma de SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Más idiomas](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Destinado a arquitectos y a responsables de la toma de decisiones, este modelo muestra las opciones de plataforma de SharePoint 2013, SharePoint en Office 365, implementación híbrida local con Office 365, Azure e implementaciones exclusivamente locales. Incluye información general de cada arquitectura, recomendaciones, requisitos de licencia y listas de tareas de arquitectos y profesionales de TI para cada plataforma. Se destacan algunas soluciones de SharePoint en Azure. <br/><br/>Para obtener una versión de texto accesible de este póster, consulte [Diagrama accesible: opciones de plataforma para Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
+|[![Imagen en miniatura de las opciones de la plataforma de SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Más idiomas](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Destinado a arquitectos y a responsables de la toma de decisiones, este modelo muestra las opciones de plataforma de SharePoint 2013, SharePoint en Office 365, implementación híbrida local con Office 365, Azure e implementaciones exclusivamente locales. Incluye información general de cada arquitectura, recomendaciones, requisitos de licencia y listas de tareas de arquitectos y profesionales de TI para cada plataforma. Se destacan algunas soluciones de SharePoint en Azure. <br/><br/>Para obtener una versión de texto accesible de este póster, consulte [Diagrama accesible: opciones de plataforma para Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Opciones de plataforma para Exchange 2013

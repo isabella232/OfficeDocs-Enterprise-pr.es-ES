@@ -3,7 +3,7 @@ title: Optimizar el rendimiento de elementos web en páginas del sitio modernas 
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/18/2019
+ms.date: 11/6/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,26 +16,23 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo optimizar el rendimiento de elementos web en páginas de sitio modernas de SharePoint Online.
-ms.openlocfilehash: 2fabfa44e29ac70d587ec2b6b95943a7c65632aa
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 776f80691b8679fdae04993763304ecf4867d3c5
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028247"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032235"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de elementos web en páginas del sitio modernas de SharePoint Online
-
->[!TIP]
->Para obtener información sobre la optimización de iframes en las páginas de sitio de SharePoint, vea [Optimizar los iframes en las páginas del sitio de publicación de SharePoint Online moderno y clásico](modern-iframe-optimization.md).
 
 Las páginas del sitio de SharePoint Online modernas contienen elementos web que pueden contribuir a los tiempos de carga totales de la página. En este artículo se mostrará cómo los elementos web de sus páginas afectan a la latencia que percibe el usuario y cómo corregir los problemas más comunes.
 
 >[!NOTE]
->Para obtener más información sobre el rendimiento de los portales modernos de SharePoint Online, vea [Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/es-ES/sharepoint/modern-experience-performance).
+>Para obtener más información sobre el rendimiento de los portales modernos de SharePoint Online, vea [Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Usar la herramienta de Diagnóstico de páginas para SharePoint para analizar los elementos web
 
-La **herramienta Diagnóstico de páginas para SharePoint** es una extensión de explorador para Chrome y la [versión 77 o posteriores de Microsoft Edge](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8) que le permite analizar páginas de sitios de publicación modernas y clásicas en SharePoint. La herramienta le ofrece un informe para cada página analizada en el que se muestra el rendimiento de la página respecto a un conjunto definido de criterios de rendimiento. Para instalar e informarse sobre la herramienta Diagnóstico de páginas para SharePoint, visite [Usar la herramienta Diagnóstico de página para SharePoint Online](page-diagnostics-for-spo.md).
+La **herramienta Diagnóstico de páginas para SharePoint** es una extensión de explorador para Chrome y la [versión 77 o posteriores de Microsoft Edge](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) que le permite analizar páginas de sitios de publicación modernas y clásicas en SharePoint. La herramienta le ofrece un informe para cada página analizada en el que se muestra el rendimiento de la página respecto a un conjunto definido de criterios de rendimiento. Para instalar e informarse sobre la herramienta Diagnóstico de páginas para SharePoint, visite [Usar la herramienta Diagnóstico de página para SharePoint Online](page-diagnostics-for-spo.md).
 
 Al analizar una página de un sitio de SharePoint con la herramienta Diagnóstico de páginas para SharePoint, puede ver información sobre los elementos web que superan la métrica de línea base en el resultado **Los elementos web afectan al tiempo de carga de la página** en el panel _Pruebas de diagnóstico_.
 
@@ -72,7 +69,7 @@ Existen tres tipos de causas por las que el elemento web puede tener problemas d
   - Mueva los escenarios menos frecuentes y el código de modo de edición (como el panel de propiedades) para separar fragmentos con la instrucción _import()_.
   - Revise las dependencias del archivo _package.json_ para quitar por completo todos los códigos no alcanzados. Mueva todas las dependencias de solo prueba o compilación a devDependencies.
   - El uso de la red CDN de Office 365 es necesario para una descarga de recursos estática óptima. Se prefieren los orígenes de la red CDN pública para los archivos _js/css_. Para obtener información sobre cómo usar la CDN de Office 365, vea [Usar la red de entrega de contenido (CDN) de Office 365 con SharePoint Online](use-office-365-cdn-with-spo.md).
-  - Reutilice marcos como _importaciones de Fabric_ y _React_ que forman parte de SharePoint Framework (SPFx). Para más información, vea [Información general de SharePoint Framework](https://docs.microsoft.com/es-ES/sharepoint/dev/spfx/sharepoint-framework-overview).
+  - Reutilice marcos como _importaciones de Fabric_ y _React_ que forman parte de SharePoint Framework (SPFx). Para más información, vea [Información general de SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Asegúrese de que está usando la versión más reciente de SharePoint Framework y actualice a las nuevas versiones a medida que estén disponibles.
 - Búsqueda y almacenamiento en caché de datos
   - Si el elemento web se basa en llamadas de servidor adicionales para obtener datos para mostrar, asegúrese de que las API del servidor son rápidas o implementan el almacenamiento en caché del lado cliente (como _localStorage_ o _IndexDB_ para conjuntos más grandes).
@@ -99,7 +96,7 @@ Antes de realizar revisiones de página para corregir problemas de rendimiento, 
 
 [Ajustar el rendimiento de Office 365](tune-office-365-performance.md)
 
-[Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/es-ES/sharepoint/modern-experience-performance.md)
+[Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
 
 [Redes de entrega de contenido](content-delivery-networks.md)
 

@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Expandir la presencia de Office 365 a varias regiones geográficas con Office 365 Multi-Geo.
-ms.openlocfilehash: 7aa1933725617bcc1f84bbe6d0f31a6ddd91815d
-ms.sourcegitcommit: a7b2adf4b55df5fc35a617a145e8177caefce28b
+ms.openlocfilehash: 86234cb025d5e0398cbfa626b4867642412e7e0b
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078514"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031935"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -25,7 +25,7 @@ Con Office 365 Multi-Geo, puede aprovisionar y almacenar los datos en reposo en 
 
 #### <a name="video-introducing-office-365-multi-geo"></a>Vídeo: Introducción a Office 365 Multi-Geo
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
 
 En un entorno multigeográfico, su espacio empresarial de Office 365 cuenta con una ubicación central (donde se aprovisionó originalmente la suscripción a Office 365) y una o varias ubicaciones satélites. En un espacio empresarial multigeográfico, la información sobre las ubicaciones geográficas, grupos y la información de usuario, se controla en Azure Active Directory (AAD). Como la información del espacio empresarial se controla de forma centralizada y se sincroniza en cada ubicación geográfica, el uso compartido y las experiencias que involucran a todos los empleados de su compañía comparten una conciencia global.
 
