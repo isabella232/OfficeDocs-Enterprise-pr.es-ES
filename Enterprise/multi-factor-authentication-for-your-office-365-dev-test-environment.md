@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Resumen: configure la autenticación multifactor mediante mensajes de texto enviados a un smartphone en un entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 2c53d7fa9239395e28d68487dd0ccea8cc57efb7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 6e78d826cd010230218048ef320d8f32430ac02b
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069956"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032135"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticación multifactor para el entorno de desarrollo y pruebas de Office 365
 
@@ -38,7 +38,7 @@ Existen dos fases para configurar la autenticación multifactor para Office 365 
 2. Habilitar y probar la autenticación multifactor para la cuenta Usuario 2.
     
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de Office 365.
+> Haga clic [aquí](https://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del laboratorio de pruebas de Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y pruebas ligero o de una empresa simulada de Office 365
 
@@ -59,7 +59,7 @@ Siga estos pasos para habilitar la autenticación multifactor para la cuenta Usu
     
 3. En el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
     
-4. En el panel usuarios activos, haga clic en **más _GT_ multi-factor Authentication Setup**.
+4. En el panel usuarios activos, haga clic en **más > configuración de multi-factor Authentication**.
     
 5. En la lista, seleccione la cuenta **usuario 2** .
     
@@ -77,7 +77,7 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
   
 1. Abra una nueva instancia del explorador.
     
-2. Vaya al portal de Office 365 ([https://www.office.com](https://www.office.com)) e inicie sesión con la cuenta usuario 2 (usuario2 @\<Organization name>. en Microsoft. com) y la contraseña.
+2. Vaya al portal de Office 365 ([https://www.office.com](https://www.office.com)) e inicie sesión con la cuenta usuario 2 (user2@\<nombre de la organización>. onmicrosoft.com) y la contraseña.
     
 3. Después de iniciar sesión, se le pedirá que configure la cuenta para la validación de seguridad adicional. Haga clic en **Configurar ahora**.
     

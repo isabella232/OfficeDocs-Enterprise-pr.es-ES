@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: Si ha decidido no participar en la implementación FastTrack y está listo para migrar datos a Office 365, este es el lugar ideal para empezar.
-ms.openlocfilehash: cd9f113f7b8e66e22ad61c4f406ac693a8aa3695
-ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
+ms.openlocfilehash: 8fa0b26a1051c33a32fa9a583c76662e998b0692
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35597556"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031335"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Migrar los datos de su organización a Office 365 Enterprise
 
@@ -42,7 +42,7 @@ Si necesita ayuda para empezar a configurar Office 365, [FastTrack](https://fast
 
 ## <a name="migrate-skype-for-business-users"></a>Migrar a los usuarios de Skype Empresarial
 - [Migrar a Skype Empresarial Online](https://technet.microsoft.com/library/jj204969.aspx). (Administrador)
-- Descargue la [herramienta para actualización de reunión de Skype Empresarial](https://www.microsoft.com/en-us/download/details.aspx?id=51659) y [ejecútela en todas las estaciones de trabajo](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4). (Administrador o usuario final)
+- Descargue la [herramienta para actualización de reunión de Skype Empresarial](https://www.microsoft.com/download/details.aspx?id=51659) y [ejecútela en todas las estaciones de trabajo](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4). (Administrador o usuario final)
   
 ## <a name="need-to-talk-to-support"></a>¿Necesita hablar con el soporte técnico?
 [Póngase en contacto con el soporte técnico](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) para productos empresariales.

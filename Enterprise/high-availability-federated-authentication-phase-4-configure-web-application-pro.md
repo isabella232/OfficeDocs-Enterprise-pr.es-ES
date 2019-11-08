@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumen: Configure los servidores proxy de aplicación web para la autenticación federada de alta disponibilidad para Office 365 en Microsoft Azure.'
-ms.openlocfilehash: fe98657f1298021d9ed2c32a357051b5faeb4f21
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: c0a469f8945b9e69415b511c253e72a0118a4cfa
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102538"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027674"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 de la autenticación federada de alta disponibilidad: Configurar los proxy de aplicación web
 
@@ -32,7 +32,7 @@ Debe completar esta fase antes de pasar a la [fase 5 de la autenticación federa
 Debe crear un equilibrador de carga accesible desde Internet para que Azure distribuya el tráfico de autenticación de cliente entrante desde Internet uniformemente entre los dos servidores proxy de aplicación Web.
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Cuando haya proporcionado los valores de ubicación y grupo de recursos, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en PowerShell ISE.
   
@@ -160,7 +160,7 @@ Esta es la configuración completada después de la finalización correcta de es
 
 ![Fase 4 de la infraestructura de autenticación federada de Office 365 de alta disponibilidad en Azure con los servidores proxy de aplicación Web](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Use la [fase 5 de la autenticación federada de alta disponibilidad: configurar la autenticación federada para Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) para seguir configurando esta carga de trabajo.
   

@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute para Office 365 ofrece conectividad de nivel 3 entre la red y los centros de recursos de Microsoft. Los circuitos usan anuncios de ruta de protocolo de puerta de enlace de borde (BGP) de los servidores front-end de Office 365. Desde la perspectiva de los dispositivos locales, cuando es necesario seleccionar la ruta TCP/IP correcta a Office 365, Azure ExpressRoute se ve como una alternativa a Internet.
-ms.openlocfilehash: b31d6150ee3eb11a93b485a5eece22eb3a82021e
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eb03ffbcb2ce61590c230e5bdfabb29df0b69c95
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782240"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032125"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planeamiento de redes con ExpressRoute para Office 365
 
@@ -76,7 +76,7 @@ Todas las recomendaciones en cuanto al tipo de procesamiento de red se recomiend
 
 La protección de la conectividad de Azure ExpressRoute comienza con los mismos principios que la protección de conectividad de Internet. Muchos clientes eligen implementar los controles de red y perimetral a lo largo de la ruta de acceso de ExpressRoute que conecta su red local a Office 365 y otras nubes de Microsoft. Estos controles pueden incluir firewalls, proxies de aplicaciones, prevención de fugas de datos, detección de intrusiones, sistemas de prevención de intrusiones, etc. En muchos casos, los clientes aplican diferentes niveles de controles al tráfico iniciado desde el entorno local pasando a Microsoft, en comparación con el tráfico Iniciado por Microsoft que va a la red local del cliente, en lugar de que el tráfico iniciado de forma local pase a un general Destino de Internet.
   
-Estos son algunos ejemplos de integración de la seguridad con el [modelo de conectividad de ExpressRoute](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models) que decida implementar.
+Estos son algunos ejemplos de integración de la seguridad con el [modelo de conectividad de ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models) que decida implementar.
 
 |**Opción de integración de ExpressRoute**|**Modelo de perímetro de seguridad de red**|
 |:-----|:-----|
@@ -102,7 +102,7 @@ Este es un ejemplo de Woodgrove Bank que compara las diferentes opciones de cone
   
 ### <a name="example-1-securing-azure-expressroute"></a>Ejemplo 1: protección de Azure ExpressRoute
   
-En Woodgrove Bank se está pensando en implementar Azure ExpressRoute y después de planear la arquitectura óptima para el [enrutamiento con ExpressRoute para Office 365](routing-with-expressroute.md) y después de usar las instrucciones anteriores para comprender los requisitos de ancho de banda, que determinan el mejor método para proteger su perímetro.
+En Woodgrove Bank se está pensando en implementar Azure ExpressRoute y después de planear la arquitectura óptima para el [enrutamiento con ExpressRoute para Office 365](routing-with-expressroute.md) y después de usar las instrucciones anteriores para comprender los requisitos de ancho de banda, ya que determinan el mejor método para proteger su perímetro.
   
 Para Woodgrove, una organización multinacional con ubicaciones en varios continentes, la seguridad debe abarcar todos los perímetros. La opción de conectividad óptima para Woodgrove es una conexión multipunto con varias ubicaciones de emparejamiento en todo el mundo para atender las necesidades de sus empleados en cada continente. Cada continente incluye circuitos de Azure ExpressRoute redundantes en el continente y la seguridad debe abarcar todos ellos.
   
@@ -190,7 +190,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/plannin
 ## <a name="related-topics"></a>Temas relacionados
 <a name="BKMK_high-availability"> </a>
 
-[Evaluación de la conectividad de red de Office 365](assessing-network-connectivity.md)
+[Evaluar la red de Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute para Office 365](azure-expressroute.md)
   
@@ -214,7 +214,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/plannin
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
   

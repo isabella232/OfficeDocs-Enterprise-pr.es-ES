@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Define y explica la inmutabilidad de datos en Office 365.
-ms.openlocfilehash: 7563b37af6c59d8d1d4273f70d86b2551addab89
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 027191e6bd8cb117bfec3fcd4e9b26ab0a6940b3
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067847"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035580"
 ---
 # <a name="immutability-in-office-365"></a>Inmutabilidad en Office 365
 
@@ -38,12 +38,12 @@ Mediante la conservación local y las características de directiva de conservac
 
 Además, Microsoft ha desarrollado características complementarias para permitir el [archivado de datos](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) de otros orígenes mediante la integración con soluciones de administración y captura de datos de terceros. Una vez importados los datos de terceros, puede aplicar las características de cumplimiento de Office 365 a los datos, entre los que se incluyen:
 
-- [Retención por juicio](/microsoft365/compliance/create-a-litigation-hold.md)
-- [Exhibición de documentos electrónicos local y retención](/microsoft365/compliance/manage-legal-investigations.md)
-- [Búsqueda de cumplimiento](/microsoft365/compliance/search-for-content.md)
-- [Archivado local](/microsoft365/compliance/enable-archive-mailboxes.md)
-- [Auditoría de buzones](/microsoft365/compliance/enable-mailbox-auditing.md)
-- [Directivas de retención](/microsoft365/compliance/retention-policies.md)
+- [Retención por juicio](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
+- [Exhibición de documentos electrónicos local y retención](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
+- [Búsqueda de cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)
+- [Archivado local](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
+- [Auditoría de buzones](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)
+- [Directivas de retención](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
 Por ejemplo, cuando un buzón de correo se coloca en retención por juicio, se conservan los datos de terceros. Puede buscar datos de terceros mediante la exhibición de documentos electrónicos local o la búsqueda de cumplimiento. O bien, puede aplicar directivas de archivado y retención a datos de terceros, como lo haría con los datos de Microsoft. El archivado de datos de terceros en Office 365 ayuda a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 

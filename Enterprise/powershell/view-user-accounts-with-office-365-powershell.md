@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Resumen: vea, enumere o muestre las cuentas de usuario de varias formas con Office 365 PowerShell.'
-ms.openlocfilehash: e1a99aef4f2045dcba8d7f3894ef82f9e7c36a15
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 63756e29bb4d5f3e749cf4d66ef31c98ffac6182
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071106"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031665"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Ver cuentas de usuario con PowerShell de Office 365
 
 **Resumen:** Vea sus cuentas de usuario de varias formas con Office 365 PowerShell.
   
-Aunque puede usar el centro de administración de Office 365 para ver las cuentas de su inquilino de Office 365, también puede usar PowerShell de Office 365 y realizar algunas tareas que el centro de administración de Office 365 no puede.
+Aunque puede usar el centro de administración de Microsoft 365 para ver las cuentas de su inquilino de Office 365, también puede usar PowerShell de Office 365 y realizar algunas acciones que el centro de administración no puede.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
@@ -122,7 +122,7 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  La sintaxis del cmdlet **Where-Object** que se muestra en estos ejemplos es **Where-Object {\_$.** [nombre de propiedad de cuenta de usuario] [operador de comparación] Value **}**. > [Comparison Operator] is **-EQ** para igual a, **-ne** para no es igual a, **-lt** para menor que, **-gt** para mayor que, y otros.  [VALUE] suele ser una cadena (una secuencia de letras, números y otros caracteres), un valor numérico o **$null** para Unspecified> vea [Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) para obtener más información.
+>  La sintaxis del cmdlet **Where-Object** que se muestra en estos ejemplos es **Where-Object {\_$.** [nombre de propiedad de cuenta de usuario] [operador de comparación] Value **}**. > [operador de comparación] is **-EQ** para igual a, **-ne** para no es igual a, **-lt** para menor que, **-gt** para mayor que, y otros.  [VALUE] suele ser una cadena (una secuencia de letras, números y otros caracteres), un valor numérico o **$null** para> sin especificar consulte [Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) para obtener más información.
   
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
@@ -212,7 +212,7 @@ Get-MsolUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  La sintaxis del cmdlet **Where-Object** que se muestra en estos ejemplos es **Where-Object {\_$.** [nombre de propiedad de cuenta de usuario] [operador de comparación] Value **}**.  [Comparison Operator] es **-EQ** para igual a, **-ne** para no es igual a, **-lt** para menor que, **-gt** para mayor que, y otros.  [VALUE] suele ser una cadena (una secuencia de letras, números y otros caracteres), un valor numérico o **$null** para no especificado. Consulte [Where-Object](https://technet.microsoft.com/en-us/library/hh849715.aspx) para obtener más información.
+>  La sintaxis del cmdlet **Where-Object** que se muestra en estos ejemplos es **Where-Object {\_$.** [nombre de propiedad de cuenta de usuario] [operador de comparación] Value **}**.  [Comparison Operator] es **-EQ** para igual a, **-ne** para no es igual a, **-lt** para menor que, **-gt** para mayor que, y otros.  [VALUE] suele ser una cadena (una secuencia de letras, números y otros caracteres), un valor numérico o **$null** para no especificado. Consulte [Where-Object](https://technet.microsoft.com/library/hh849715.aspx) para obtener más información.
   
 Puede comprobar el estado de bloqueo de una cuenta de usuario con el siguiente comando:
   
@@ -230,7 +230,7 @@ De forma predeterminada, el cmdlet **Get-MsolUser** muestra tres propiedades de 
     
 - isLicensed
     
-Si necesita más propiedades, como el Departamento en el que trabaja el usuario y el país o la región donde el usuario usa los servicios de Office 365, puede ejecutar <b0>Get-MsolUser</b0> en combinación con el cmdlet <b1>Select-Object</b1> para especificar la lista de cuentas de usuario. </a1>. Aquí le mostramos un ejemplo:
+Si necesita propiedades adicionales, como el Departamento en el que trabaja el usuario y el país o la región donde el usuario usa los servicios de Office 365, puede ejecutar **Get-MsolUser** en combinación con el cmdlet **Select-Object** para especificar la lista de propiedades de la cuenta de usuario. Aquí le mostramos un ejemplo:
   
 ```
 Get-MsolUser | Select-Object DisplayName, Department, UsageLocation
@@ -284,7 +284,7 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-Si usa la sincronización de directorios para crear y administrar los usuarios de Office 365, puede mostrar la cuenta local de la que se ha proyectado un usuario de Office 365. El siguiente ejemplo presupone que Azure AD Connect se ha configurado para usar el delimitador de origen predeterminado de ObjectGUID (para obtener más información sobre la configuración de un delimitador de origen, consulte [Azure ad Connect: Design Concepts](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)) y se supone que el módulo de Active Directory para PowerShell tiene se ha instalado (consulte [herramientas de RSAT](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):
+Si usa la sincronización de directorios para crear y administrar los usuarios de Office 365, puede mostrar la cuenta local de la que se ha proyectado un usuario de Office 365. A continuación se supone que Azure AD Connect se ha configurado para usar el delimitador de origen predeterminado de ObjectGUID (para obtener más información sobre la configuración de un delimitador de origen, consulte [Azure ad Connect: Design Concepts](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)) y se supone que se ha instalado el módulo de Active Directory para PowerShell (consulte [las herramientas de RSAT](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):
 
 ```
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid

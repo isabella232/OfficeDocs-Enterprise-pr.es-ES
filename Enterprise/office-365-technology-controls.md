@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumen: información general sobre las prácticas de control de tecnología de Microsoft para Office 365.'
-ms.openlocfilehash: 1ddf4efdd8e2c2159f6d6c55cfeead1cfbd54395
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3063bcaca85d529885fbafddda88f61325b2b83c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067831"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031145"
 ---
 # <a name="office-365-technology-controls"></a>Controles de tecnología de Office 365 
 
@@ -39,7 +39,7 @@ Caja de caja de cliente para Office 365 ayuda a cumplir con las obligaciones de 
 
 En el caso poco frecuente de que un ingeniero de servicios de Microsoft necesite tener acceso a sus datos, sólo debe conceder acceso a los datos necesarios para resolver el problema y durante un período de tiempo limitado. Si rechaza una solicitud de acceso, los ingenieros de Microsoft no tienen acceso a su contenido y no podrán completar las operaciones de servicio. Si aprueba la solicitud, los ingenieros de Microsoft tienen un acceso Just-in-Time limitado al contenido a través de interfaces de administración restringidas y supervisadas.
 
-Las acciones llevadas a cabo por el ingeniero de soporte se registran con fines de auditoría y son accesibles a través de la [API de actividad de administración de Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) y el [centro de seguridad y cumplimiento](http://protection.office.com/).
+Las acciones llevadas a cabo por el ingeniero de soporte se registran con fines de auditoría y son accesibles a través de la [API de actividad de administración de Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) y el [centro de seguridad y cumplimiento](https://protection.office.com/).
 
 >[!NOTE]
 > La caja de caja de cliente está disponible en [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) como una compra de complemento. Para obtener más información, consulte [Solicitudes de caja de seguridad del cliente de Office 365](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
@@ -60,7 +60,7 @@ Los servidores de Office 365 restringen las sesiones simultáneas a una sesión 
 
 Las directivas de grupo de Active Directory establecen las restricciones de uso y los requisitos de conexión y configuración para Office 365 personal. Estas directivas incluyen las siguientes características:
 
-- TSGs usar solo el cifrado validado [FIPS](https://www.microsoft.com/en-us/TrustCenter/Compliance/FIPS) 140-2.
+- TSGs usar solo el cifrado validado [FIPS](https://www.microsoft.com/TrustCenter/Compliance/FIPS) 140-2.
 - Las sesiones de TSG se desconectan después de 30 minutos de inactividad.
 - Las sesiones de TSG cierran sesión automáticamente transcurridas 24 horas.
 

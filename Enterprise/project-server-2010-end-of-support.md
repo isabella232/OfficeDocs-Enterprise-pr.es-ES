@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: El soporte técnico finaliza para Project Server 2010 finaliza el 13 de octubre de 2020. Use este artículo como guía para actualizar a Project online o a una versión más reciente de Project Server local.
-ms.openlocfilehash: f43bf5bfc6468d48708e02eec62fb3f822f5eb47
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: b1505a89b10b3e18da99f66a203dde376f8db5c4
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782447"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031625"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Guía básica de fin de soporte de Project Server 2010
 
@@ -157,7 +157,7 @@ Recursos clave:
 
 Después de migrar a Project Server 2013 y comprobar que los datos se han migrado correctamente, el siguiente paso consiste en migrar los datos a Project Server 2016.
   
-Para obtener una descripción completa de lo que debe hacer para actualizar de Project Server 2013 a Project Server 2016, consulte [Upgrade to Project server 2016](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016).
+Para obtener una descripción completa de lo que debe hacer para actualizar de Project Server 2013 a Project Server 2016, consulte [Upgrade to Project server 2016](https://docs.microsoft.com/Project/upgrade-to-project-server-2016).
   
 Recursos clave:
   
@@ -176,7 +176,7 @@ Lo [que debe saber sobre la actualización de Project Server 2016](https://docs.
 
 Después de migrar a Project Server 2016 y comprobar que los datos se han migrado correctamente, el siguiente paso consiste en migrar los datos a Project Server 2019.
   
-Para obtener una descripción completa de lo que debe hacer para actualizar de Project Server 2016 a Project Server 2019, consulte [Upgrade to Project server 2019](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016).
+Para obtener una descripción completa de lo que debe hacer para actualizar de Project Server 2016 a Project Server 2019, consulte [Upgrade to Project server 2019](https://docs.microsoft.com/Project/upgrade-to-project-server-2016).
   
 Recursos clave:
   
@@ -189,7 +189,7 @@ Lo [que debe saber sobre la actualización de Project Server 2019](https://go.mi
   
 - El proceso de actualización migrará los datos de la base de datos de Project Server 2016 a la base de datos de contenido de SharePoint Server 2019.  Project Server 2019 ya no creará su propia base de datos de Project Server en la granja de servidores de SharePoint.
 
-- Después de la actualización, tenga en cuenta varios cambios en Project Web App.  Para obtener una descripción de estas características, consulte [what's New in Project Server 2019](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
+- Después de la actualización, tenga en cuenta varios cambios en Project Web App.  Para obtener una descripción de estas características, consulte [what's New in Project Server 2019](https://docs.microsoft.com/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
 
   
 Otros recursos:
@@ -212,6 +212,6 @@ También puede [Descargar](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 [Actualización desde SharePoint 2010](upgrade-from-sharepoint-2010.md)
   
-[Actualización de clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)
+[Actualizar los clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)
   
 

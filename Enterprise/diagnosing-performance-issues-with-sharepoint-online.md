@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: En este artículo se muestra cómo diagnosticar problemas comunes relacionados con el sitio de SharePoint Online mediante las herramientas de desarrollo de Internet Explorer.
-ms.openlocfilehash: a4d66fd019a3b477a97dbf039144734dc7ee1288
-ms.sourcegitcommit: cb338a74194ec9ba0913070e2b74c9f50caffb3b
+ms.openlocfilehash: 2b97098c68eb519ed5a1edc26146c521f39a11d1
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605509"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033416"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnosticar problemas de rendimiento con SharePoint Online
 
@@ -32,7 +34,7 @@ Hay tres formas diferentes de identificar que una página de un sitio de SharePo
 
 - Métricas del encabezado de respuesta de SharePoint Online
 
-En este tema se describe cómo usar cada uno de estos métodos para diagnosticar problemas de rendimiento. Una vez que haya averiguado la causa del problema, puede trabajar en una solución con los artículos sobre cómo mejorar el rendimiento de SharePoint que puede encontrar http://aka.ms/tuneen.
+En este tema se describe cómo usar cada uno de estos métodos para diagnosticar problemas de rendimiento. Una vez que haya averiguado la causa del problema, puede trabajar en una solución con los artículos sobre cómo mejorar el rendimiento de SharePoint que puede encontrar https://aka.ms/tuneen.
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Usar la barra de herramientas F12 para diagnosticar el rendimiento en SharePoint Online
 <a name="F12ToolInfo"> </a>

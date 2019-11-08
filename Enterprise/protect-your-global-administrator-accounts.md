@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Proteger el acceso de administrador global a su suscripción a Office 365.
-ms.openlocfilehash: 353787ccda7ab96583fe75bc423f70d339d3435b
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: a75cab61c5b59ebd1b085829cfa20365f20443c9
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162403"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031615"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteger las cuentas de administrador global de Office 365
 
@@ -125,7 +125,7 @@ Después de los pasos 1 y 2, use estos métodos adicionales para asegurarse de q
 
 Para asegurarse de que la ejecución de las tareas con privilegios elevados sea lo más segura posible, use una estación de trabajo de acceso privilegiado (pata). Una pata es un equipo dedicado que solo se usa para tareas de configuración confidenciales, como la configuración de Office 365 que requiere una cuenta de administrador global. Como este equipo no se usa diariamente para la exploración de Internet o el correo electrónico, es mejor estar protegido frente a ataques y amenazas de Internet.
   
-Para obtener instrucciones sobre cómo configurar un pata, mira [http://aka.ms/cyberpaw](http://aka.ms/cyberpaw).
+Para obtener instrucciones sobre cómo configurar un pata, mira [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw).
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
@@ -144,7 +144,7 @@ Para obtener más información, consulte [Configure Azure ad privileged Identity
 
 El software de SIEM se ejecuta en un servidor realiza un análisis en tiempo real de los eventos y las alertas de seguridad creados por las aplicaciones y el hardware de red. Para permitir que el servidor de SIEM incluya eventos y alertas de seguridad de Office 365 en sus funciones de análisis e informes, integre Azure AD en su SEIM. Consulte [integrar registros de recursos de Azure en sus sistemas Siem](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Si está configurando una identidad para su suscripción de Office 365, consulte:
 

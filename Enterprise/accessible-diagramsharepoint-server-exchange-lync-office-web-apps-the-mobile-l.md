@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: Este artículo es una versión de texto accesible del diagrama con el nombre Opciones de plataformas de Microsoft Exchange 2013, que está disponible en Diagramas técnicos.
-ms.openlocfilehash: 9d10b9475a2c3a316ad5d23876574a46469e462e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068446"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030584"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Diagrama accesible: SharePoint Server, Exchange, Lync, Office Web Apps (entorno móvil)
 
-**Resumen:** este artículo es una versión de texto accesible del diagrama “Opciones de plataformas de Microsoft Exchange 2013”, que está disponible en [Diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409).
+**Resumen:** este artículo es una versión de texto accesible del diagrama “Opciones de plataformas de Microsoft Exchange 2013”, que está disponible en [Diagramas técnicos](https://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409).
   
 Este póster muestra un diseño detallado de la aplicación y el entorno móvil basado en el explorador para SharePoint Server, Lync, Exchange Server y Office Web Apps. Incluye la siguiente información: 
   

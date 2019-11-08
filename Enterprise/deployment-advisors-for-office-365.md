@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Acelere la planeación y la configuración de Office 365 o Microsoft 365 con asesores de implementación.
-ms.openlocfilehash: 86605b1476916d8510a52009dc20a37eafd7c08f
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eee8dfedd72ed0e2e1ac6660d32167490a13f504
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782310"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030804"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Asesores de implementación para los servicios de Office 365 o Microsoft 365
 
@@ -320,7 +320,7 @@ Microsoft StaffHub es una plataforma basada en la nube que funciona en todos los
 
 ### <a name="microsoft-365-admin-center"></a>Centro de administración de 365 de Microsoft
 
-- [Orientación del centro de administración](https://www.microsoft.com/en-us/videoplayer/embed/RWfMut)
+- [Orientación del centro de administración](https://www.microsoft.com/videoplayer/embed/RWfMut)
 
 - [Crear usuarios en el centro de administración](https://aka.ms/ac-createusers)
 

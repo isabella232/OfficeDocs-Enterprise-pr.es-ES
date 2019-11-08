@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: En este artículo se explica qué aspectos específicos debe tener en cuenta al diseñar páginas para obtener el mejor rendimiento en SharePoint Online.
-ms.openlocfilehash: d0dc4d6eac1a8711d1c93b97eccbf5474092d3af
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3c2c6ccc58659aceaaf831b97eb8c4c05141afce
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616683"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033406"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introducción al ajuste del rendimiento para SharePoint Online
 
@@ -44,7 +46,7 @@ Los datos nos dicen:
     
 - Las páginas no personalizadas se cargan muy rápidamente.
     
-- OneDrive para la empresa, los sitios de grupo y las páginas del sistema, como _ layouts, etc., se cargan rápidamente.
+- OneDrive para la empresa, los sitios de grupo y las páginas del sistema, como _layouts, etc., se cargan rápidamente.
     
 - El 1% más lento de las páginas de SharePoint Online tarda más de 5.000 milisegundos en cargarse.
     
@@ -124,7 +126,7 @@ Independientemente de la versión de SharePoint (y la red) que use, lo que norma
     
 - Gran distancia física con el servidor
     
-Una característica que puede aprovechar en SharePoint Online es la red de entrega de contenido (CDN) de Microsoft. Una CDN es básicamente una colección distribuida de servidores implementados en varios centros de recursos. Con una red CDN, el contenido de las páginas puede alojarse en un servidor cercano al cliente incluso si el cliente se encuentra alejado del servidor de SharePoint de origen. Microsoft lo utilizará más en el futuro para almacenar instancias locales de páginas que no se pueden personalizar, por ejemplo, la Página principal de administración de SharePoint Online. Para obtener más información acerca de las CDN, vea [redes de entrega de contenido](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks).
+Una característica que puede aprovechar en SharePoint Online es la red de entrega de contenido (CDN) de Microsoft. Una CDN es básicamente una colección distribuida de servidores implementados en varios centros de recursos. Con una red CDN, el contenido de las páginas puede alojarse en un servidor cercano al cliente incluso si el cliente se encuentra alejado del servidor de SharePoint de origen. Microsoft lo utilizará más en el futuro para almacenar instancias locales de páginas que no se pueden personalizar, por ejemplo, la Página principal de administración de SharePoint Online. Para obtener más información acerca de las CDN, vea [redes de entrega de contenido](https://docs.microsoft.com/office365/enterprise/content-delivery-networks).
   
 Algo que necesita tener en cuenta pero que no puede hacer mucho por es la velocidad de conexión de su ISP. Una herramienta de prueba de velocidad simple le dirá la velocidad de conexión.
   
@@ -158,6 +160,6 @@ Consulte los siguientes artículos para conocer las distintas técnicas de perso
     
 - [Usar la memoria caché de objetos con SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
     
-- [Cómo: Evitar estar limitado o bloqueado en SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [Cómo: Evitar estar limitado o bloqueado en SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
     
 

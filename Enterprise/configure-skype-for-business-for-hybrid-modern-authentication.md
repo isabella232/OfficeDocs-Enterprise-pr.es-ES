@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras, está disponible para Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial.
-ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
-ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
+ms.openlocfilehash: 17079ab5e47e2e739780d3df4a9a523edccda14f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36759688"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029134"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Skype Empresarial local para usar la autenticación moderna híbrida
 
@@ -67,7 +67,7 @@ Nota estos pasos activan MA para SFB, SFBO, EXCH y EXO--es decir, todos los prod
   
 Como puede ver, hay cuatro lugares distintos para activar MA. Para obtener la mejor experiencia de usuario, se recomienda activar MA en cuatro de estas ubicaciones. Si no puede activar MA en todas estas ubicaciones, ajuste los pasos para que Active MA solo en las ubicaciones necesarias para su entorno.
   
-Vea el [tema sobre compatibilidad de Skype empresarial con Ma](https://technet.microsoft.com/en-us/library/mt803262.aspx) para topologías compatibles. 
+Vea el [tema sobre compatibilidad de Skype empresarial con Ma](https://technet.microsoft.com/library/mt803262.aspx) para topologías compatibles. 
   
  **Importante** Compruebe que ha cumplido todos los requisitos previos antes de comenzar. Encontrará esta información [aquí](hybrid-modern-auth-overview.md).
   
@@ -79,7 +79,7 @@ Una vez que haya comprobado que cumple los [requisitos previos](hybrid-modern-au
     
   - Precio. contoso.com (se ha federado con Office 365)
     
-- **IDENTIFICADOR de inquilino**
+- **Identificación del inquilino**
     
   - El GUID que representa el inquilino de Office 365 (en el inicio de sesión de contoso.onmicrosoft.com).
     
@@ -117,7 +117,7 @@ Ahora deberá ejecutar comandos para agregar las direcciones URL (recopiladas an
   
  **Nota:** Los nombres de entidad de seguridad de servicio (SPN) identifican los servicios web y los asocian a una entidad de seguridad (como un grupo o nombre de cuenta) para que el servicio pueda actuar en nombre de un usuario autorizado. Los clientes que se autentican en un servidor usan la información contenida en los SPN. 
   
-1. En primer lugar, conéctese a AAD con [estas instrucciones](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0).
+1. En primer lugar, conéctese a AAD con [estas instrucciones](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
     
 2. Ejecute este comando, local, para obtener una lista de las direcciones URL del servicio Web de SFB.
 
@@ -174,7 +174,7 @@ También debe mantener presionada la tecla CTRL al mismo tiempo que se hace clic
 
 [Vínculo volver a la introducción a la autenticación moderna](hybrid-modern-auth-overview.md) . 
   
-¿Necesita saber cómo usar la autenticación moderna (ADAL) para sus clientes de Skype empresarial? Tenemos pasos [aquí](https://technet.microsoft.com/en-us/library/mt710548.aspx).
+¿Necesita saber cómo usar la autenticación moderna (ADAL) para sus clientes de Skype empresarial? Tenemos pasos [aquí](https://technet.microsoft.com/library/mt710548.aspx).
   
 ¿Quiere leer estos pasos tal y como aparecen para Exchange Server, local, en ejecución sin SFB? Estos pasos están disponibles aquí.
   

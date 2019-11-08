@@ -13,24 +13,26 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Un resumen de cómo Microsoft aplica el aislamiento de inquilino para Office 365.
-ms.openlocfilehash: a5b8a3e42aa7acc5cebe8ed21a8599fc03b5060f
-ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
+ms.openlocfilehash: 37d695635a5b7145b8384f1bf69fc357875ac38f
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375528"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035630"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Aislamiento de inquilinos en Office 365
 
 Una de las principales ventajas de la informática en la nube es el concepto de una infraestructura compartida común en numerosos clientes a la vez, lo que lleva a economías de escala. Este concepto se denomina *multiempresa*. Microsoft funciona continuamente para garantizar que las arquitecturas multiinquilinos de nuestros servicios en la nube admitan la seguridad de ámbito empresarial, la confidencialidad, la privacidad, la integridad y los estándares de disponibilidad.
 
-Los servicios en la nube de Microsoft se han diseñado teniendo en cuenta las importantes inversiones y experiencias obtenidas de la [informática digna de confianza](https://www.microsoft.com/en-us/twc/default.aspx) y el [ciclo de vida de desarrollo de seguridad](http://www.microsoft.com/security/sdl/default.aspx), por la hipótesis de que todos los inquilinos son potencialmente hostiles para todos otros inquilinos y hemos implementado medidas de seguridad para evitar que las acciones de un inquilino afecten a la seguridad o el servicio de otro inquilino, u obtenga acceso al contenido de otro inquilino.
+De acuerdo con las importantes inversiones y la experiencia obtenida de la [informática de confianza](https://www.microsoft.com/trust-center) y el ciclo de vida de [desarrollo de seguridad](https://www.microsoft.com/securityengineering/sdl/), los servicios en la nube de Microsoft se diseñaron con la hipótesis de que todos los inquilinos son potencialmente hostiles a todos los demás inquilinos, y hemos implementado medidas de seguridad para evitar que las acciones de un inquilino afecten a la seguridad o el servicio de
 
 Los dos objetivos principales de mantener el aislamiento de inquilino en un entorno multiempresa son:
+
 1.  Evitar la fuga o el acceso no autorizado a contenido de clientes entre inquilinos; y
 2.  Evitar que las acciones de un inquilino afecten negativamente al servicio para otro espacio empresarial
 
 Se han implementado varias formas de protección a través de Office 365 para evitar que los clientes pongan en peligro los servicios o las aplicaciones de Office 365 o que obtengan acceso no autorizado a la información de otros inquilinos o del sistema Office 365, incluidos:
+
 - El aislamiento lógico del contenido del cliente dentro de cada inquilino para los servicios de Office 365 se logra a través de la autorización de Azure Active Directory y el control de acceso basado en roles.
 - SharePoint Online proporciona mecanismos de aislamiento de datos en el nivel de almacenamiento.
 - Microsoft usa una rigurosa seguridad física, detección en segundo plano y una estrategia de cifrado de varias capas para proteger la confidencialidad y la integridad del contenido del cliente. Todos los centros de recursos de Office 365 tienen controles de acceso biométricos, con la mayoría de los que requieren impresiones de Palm para obtener acceso físico. Además, todos los empleados de Microsoft en Estados Unidos deben realizar correctamente una comprobación de antecedentes estándar como parte del proceso de contratación. Para obtener más información acerca de los controles usados para el acceso administrativo en Office 365, consulte [office 365 Administrative Access Controls](office-365-administrative-access-controls-overview.md).
@@ -39,6 +41,7 @@ Se han implementado varias formas de protección a través de Office 365 para ev
 Juntas, las protecciones de la lista anterior proporcionan controles sólidos de aislamiento lógico que proporcionan protección contra amenazas y mitigación equivalente a la que proporciona el aislamiento físico por sí solo.
 
 ## <a name="related-links"></a>Vínculos relacionados
+
 - [Aislamiento y Control de acceso en Azure Active Directory](office-365-isolation-in-azure-active-directory.md)
 - [Aislamiento del inquilino en Office Graph y Delve](office-365-isolation-in-graph-and-delve.md)
 - [Aislamiento de inquilino en búsqueda de Office 365](office-365-isolation-in-office-365-search.md)

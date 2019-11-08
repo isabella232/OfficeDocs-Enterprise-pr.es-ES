@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Esta lista de comprobación ayudará a su organización cuando Planee y prepare una migración a Office 365.
-ms.openlocfilehash: 9cd2977a43f26e724d85c723aa6aad70937b1f1f
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 9248ed4a252990094e91579deb723aa32f04316a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249498"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028874"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Lista de comprobación para planificar la implementación de Office 365
 
@@ -36,7 +36,7 @@ Al mover una organización empresarial a Office 365, es importante planear exact
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**Tareas de implementación de/Events** <br/> |**Fecha de inicio** <br/> |**Fecha de finalización** <br/> |**Resources** <br/> |**Dependencias** <br/> |
+|**Tareas de implementación de/Events** <br/> |**Fecha de inicio** <br/> |**Fecha de finalización** <br/> |**Recursos** <br/> |**Dependencias** <br/> |
 |**Determinación de los objetivos de la implementación** <br/> |||||
 | Con las partes interesadas internas y externas:<br>  -Acordar el ámbito y la escala de tiempo <br>  -Acuerde el mecanismo de seguimiento del proyecto  <br>  -Desarrollar criterios de éxito y una [comunicación](https://fasttrack.microsoft.com/office) / [Introducción a Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Realizar un inventario de su entorno actual y tomar decisiones clave de implementación** |||||
@@ -78,5 +78,5 @@ Al mover una organización empresarial a Office 365, es importante planear exact
 | Migrar datos opcionalmente ( [correo electrónico](https://go.microsoft.com/fwlink/?LinkId=534823), [archivos](https://go.microsoft.com/fwlink/?LinkId=534824), etc.) |||||
 |Validar la funcionalidad y completar los pasos finales |||||
 | Migrar la [configuración de DNS para que apunte a Office 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| Informar a los usuarios de que pueden [empezar a usar Office 365](https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
+| Informar a los usuarios de que pueden [empezar a usar Office 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
 | Reconfigurar sistemas cliente para conectarse a Office 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook para Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [dispositivos móviles](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||

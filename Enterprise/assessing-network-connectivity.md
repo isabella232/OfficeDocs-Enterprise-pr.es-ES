@@ -1,5 +1,5 @@
 ---
-title: Evaluación de la conectividad de red de Office 365
+title: Evaluar la red de Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 está diseñado para permitir que los clientes de todo el mundo se conecten al servicio con una conexión a Internet. A medida que el servicio evoluciona, la seguridad, el rendimiento y la confiabilidad de Office 365 se han mejorado en función de los clientes que usan Internet para establecer una conexión con el servicio.
-ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 6f212e2a7531e1e635c8a5426338abbc2bc3712c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428077"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030504"
 ---
-# <a name="assessing-office-365-network-connectivity"></a>Evaluación de la conectividad de red de Office 365
+# <a name="assessing-office-365-network-connectivity"></a>Evaluar la red de Office 365
 
 *Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
@@ -41,7 +41,7 @@ Algunos recursos para ayudarle a evaluar su red:
 
 - Consulte [office 365 Network Connectivity Overview](office-365-networking-overview.md) para obtener información conceptual sobre las redes de Office 365.
 - Consulte los [principios de conectividad de red de office 365](https://aka.ms/o365networkingprinciples) para comprender los principios de conectividad para administrar de forma segura el tráfico de Office 365 y obtener el mejor rendimiento posible.
-- Regístrese en [Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack) para obtener asistencia guiada con Office 365 de planeación, diseño e implementación. 
+- Regístrese en [Microsoft FastTrack](https://www.microsoft.com/fasttrack) para obtener asistencia guiada con Office 365 de planeación, diseño e implementación. 
 - Consulte la sección de la [herramienta de incorporación de red de Office 365](assessing-network-connectivity.md#the-office-365-network-onboarding-tool) a continuación para ejecutar pruebas de conectividad básicas que proporcionan una guía específica sobre las mejoras de conectividad de red que se pueden realizar entre una ubicación de usuario determinada y Office 365.
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Puntos clave que se deben tener en cuenta al planear la evaluación de red de Of
 
 - Estamos optimizando continuamente los aspectos básicos de Office 365 como la disponibilidad, el alcance global y el rendimiento de la conectividad basada en Internet. Por ejemplo, muchos servicios de Office 365 aprovechan un conjunto expandido de nodos perimetrales con conexión a Internet. Esta red perimetral ofrece la mejor proximidad y el máximo rendimiento a las conexiones que llegan a través de Internet.
 
-- Al considerar el uso de Office 365 para cualquiera de los servicios incluidos, como Microsoft Teams o Skype for Business online Voice, video o las capacidades de reunión, los clientes deben completar una evaluación de la red de un extremo a otro y cumplir con los requisitos de conectividad mediante [Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack).
+- Al considerar el uso de Office 365 para cualquiera de los servicios incluidos, como Microsoft Teams o Skype for Business online Voice, video o las capacidades de reunión, los clientes deben completar una evaluación de la red de un extremo a otro y cumplir con los requisitos de conectividad mediante [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
 Si está evaluando Office 365 y no está seguro de dónde comenzar con la evaluación de la red o ha encontrado desafíos de diseño de red que necesita para solucionar problemas, trabaje con su equipo de la cuenta de Microsoft.
 
@@ -113,7 +113,7 @@ Este es un vínculo breve que puede usar para volver: [ https://aka.ms/o365netwo
 
 [Administrar puntos de conexión de Office 365](managing-office-365-endpoints.md)
 
-[Intervalos de direcciones IP y URL de Office 365](urls-and-ip-address-ranges.md)
+[Direcciones URL e intervalos de direcciones IP de Office 365](urls-and-ip-address-ranges.md)
 
 [Dirección IP de Office 365 y servicio web de URL](office-365-ip-web-service.md)
 

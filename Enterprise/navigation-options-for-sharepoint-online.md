@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: En este artículo se describen las opciones de navegación sitios con la publicación de SharePoint habilitada en SharePoint Online. La elección y configuración de la navegación afectan significativamente al rendimiento y la escalabilidad de los sitios de SharePoint Online. Este artículo no se aplica a los sitios de grupo clásicos.
-ms.openlocfilehash: 10b4e1cbad4fbb570affe43feb6773aa59c5f2f3
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: fa180e1904ef57f28e512c6d6ff163f2f4a483ad
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385208"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031265"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 
@@ -99,7 +99,7 @@ Para analizar el rendimiento de una página de SharePoint, use la ficha **red** 
   
 1. En la ficha **red** , haga clic en la página. aspx que se va a cargar y, a continuación, haga clic en la pestaña **detalles** .<br/> ![Captura de pantalla que muestra la pestaña Detalles](media/ad85cefb-7bc5-4932-b29c-25f61b4ceeb2.png)<br/>
 2. Haga clic en **encabezados de respuesta**. <br/>![Captura de pantalla de la pestaña Detalles](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)<br/>SharePoint devuelve información de diagnóstico útil en sus encabezados de respuesta. 
-3. Uno de los elementos de información más útiles es **SPRequestDuration** , que es el valor, en milisegundos, del tiempo que tardó una solicitud en procesarse en el servidor. En la siguiente captura de pantalla, **Mostrar** subsitios está desactivada para la navegación estructural. Esto significa que solo hay un vínculo a la colección de sitios en la navegación global:<br/>![Captura de pantalla que muestra los tiempos de carga como duración de solicitud](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
+3. Uno de los elementos de información más útiles es **SPRequestDuration** , que es el valor, en milisegundos, del tiempo que tardó una solicitud en procesarse en el servidor. En la siguiente captura de pantalla, **Mostrar subsitios** está desactivada para la navegación estructural. Esto significa que solo hay un vínculo a la colección de sitios en la navegación global:<br/>![Captura de pantalla que muestra los tiempos de carga como duración de solicitud](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
 4. La clave **SPRequestDuration** tiene un valor de 245 milisegundos. Esto representa el tiempo que tardó en devolver la solicitud. Como solo hay un elemento de navegación en el sitio, esta es una buena prueba de la forma en que SharePoint Online realiza sin una navegación intensiva. En la siguiente captura de pantalla se muestra cómo la adición en los subsitios afecta a esta clave.<br/>![Captura de pantalla que muestra una duración de solicitud de 2 502 ms](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)<br/>
   
 La adición de los subsitios ha aumentado significativamente el tiempo que se tarda en devolver la solicitud de página para este sitio de ejemplo relativamente sencillo. Las jerarquías de sitio complejas, incluidas las páginas de navegación, y otras opciones de configuración y topología pueden aumentar drásticamente este impacto aún más.
@@ -456,9 +456,9 @@ En la [implementación del ejemplo](#example-replace-the-out-of-the-box-navigati
 
 El [código anterior](#about-the-javascript-file) tiene las siguientes dependencias:
 
-- jQueryhttp://jquery.com/
-- KnockoutJS -http://knockoutjs.com/
-- Linq. js- http://linqjs.codeplex.com/o github.com/neuecc/Linq.js
+- jQueryhttps://jquery.com/
+- KnockoutJS -https://knockoutjs.com/
+- Linq. js- https://linqjs.codeplex.com/o github.com/neuecc/Linq.js
 
 La versión actual de LinqJS no contiene el método ByHierarchy que se usó en el código anterior y romperá el código de navegación. Para solucionarlo, agregue el método siguiente al archivo Linq. js antes de la línea `Flatten: function ()`.
 

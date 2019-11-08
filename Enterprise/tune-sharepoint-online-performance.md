@@ -11,16 +11,18 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - SPO160
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Contiene vínculos a otros artículos que le indican cómo mejorar el rendimiento de los tiempos de descarga de páginas de SharePoint Online.
-ms.openlocfilehash: 4352420637974e07a6c9d5ed843c312ea74729f4
-ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
+ms.openlocfilehash: 8cd8b3b7a957fac7f3ddaed325cf64850b111fea
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375498"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033436"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Ajustar el rendimiento de SharePoint Online
 
@@ -36,7 +38,7 @@ Use estos artículos para ajustar el rendimiento de SharePoint Online.
 
 - [Opciones de navegación para SharePoint Online](navigation-options-for-sharepoint-online.md)
 
-- [Performance guidance for SharePoint Online portals](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance) (Guía de rendimiento para los portales de SharePoint Online)
+- [Guía de rendimiento para los portales de SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)
 
 - [Optimización de imágenes para SharePoint Online](image-optimization-for-sharepoint-online.md)
 
@@ -56,7 +58,7 @@ Use estos artículos para ajustar el rendimiento de SharePoint Online.
 
 - [Usar la memoria caché de objetos con SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
 
-- [Cómo: Evitar estar limitado o bloqueado en SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [Cómo: Evitar estar limitado o bloqueado en SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
 
 - [Optimizar iFrames en páginas de portal modernas de SharePoint Online](modern-iframe-optimization.md)
 

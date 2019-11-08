@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
-ms.openlocfilehash: 09d858f42b44ae6252872120597145b55c1d3552
-ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
+ms.openlocfilehash: 67b337ee1ddf34a547ddafc80d886ff6075987ce
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786235"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030784"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -90,7 +90,7 @@ Una vez que haya terminado de mover los datos de SharePoint Online, es posible q
     
 - Estamos quitando las copias transcodificadas del centro de recursos anterior y transformarlas de nuevo en el nuevo centro de recursos.
     
-### <a name="search"></a>Buscar
+### <a name="search"></a>Búsqueda
 
 En el transcurso del traslado de los datos de SharePoint Online, migramos el índice de búsqueda y la configuración de búsqueda a una nueva ubicación. Hasta que haya **completado** el traslado de los datos de SharePoint Online, seguiremos atendiendo a los usuarios del índice en la ubicación original. En la nueva ubicación, la búsqueda comienza automáticamente el rastreo del contenido después de haber terminado de mover los datos de SharePoint Online. A partir de este punto, traponemos a sus usuarios del índice migrado. Los cambios en el contenido que se produjeron después de la migración no se incluyen en el índice migrado hasta que el rastreo los seleccione. La mayoría de los clientes no aprecian que los resultados sean menos actualizados después de haber terminado de mover los datos de SharePoint Online, pero algunos clientes podrían experimentar una actualización reducida en las primeras 24-48 horas. 
   
@@ -118,7 +118,7 @@ Todos los usuarios se cerrarán desde el software de cliente de Skype empresaria
    
 |**Después del movimiento**|
 |:-----|
-| Los datos de la reunión (presentaciones cargadas, etc.) no se moverán y deberán volver a cargarse.  <br/>  Los clientes más antiguos de Lync, como el cliente de Lync 2010 y el cliente de Lync para Mac 2011, se sabe que almacenan en caché la información de DNS para el servicio que causa problemas de inicio de sesión. Es posible que sea necesario borrar la memoria caché de DNS si el usuario no se encuentra en el último cliente Windows de Skype empresarial. Pida a los usuarios que ejecuten el Asistente para la [solución de problemas](https://support.microsoft.com/en-us/kb/2541980) y siga las instrucciones sobre cómo borrar la memoria caché del cliente. Los usuarios del cliente de Lync para Mac deben seguir [estas instrucciones](https://support.microsoft.com/en-us/kb/2629861).  <br/> |
+| Los datos de la reunión (presentaciones cargadas, etc.) no se moverán y deberán volver a cargarse.  <br/>  Los clientes más antiguos de Lync, como el cliente de Lync 2010 y el cliente de Lync para Mac 2011, se sabe que almacenan en caché la información de DNS para el servicio que causa problemas de inicio de sesión. Es posible que sea necesario borrar la memoria caché de DNS si el usuario no se encuentra en el último cliente Windows de Skype empresarial. Pida a los usuarios que ejecuten el Asistente para la [solución de problemas](https://support.microsoft.com/kb/2541980) y siga las instrucciones sobre cómo borrar la memoria caché del cliente. Los usuarios del cliente de Lync para Mac deben seguir [estas instrucciones](https://support.microsoft.com/kb/2629861).  <br/> |
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Movimientos de Skype empresarial que implican a un proveedor de servicios de audioconferencia de terceros
 Los servicios complementarios de proveedores de servicios de audioconferencia de terceros para Skype empresarial no están disponibles para los usuarios hospedados en nuevos centros de datos geográficamente específicos.  Los clientes existentes que usen un servicio de proveedor de servicios de audioconferencia de terceros no deben solicitar el traslado a un nuevo centro de datos específico de forma geográfica.  Los clientes nuevos que se implementen en los nuevos centros de datos geográficamente específicos deberán solicitar un traslado a un centro de datos regional para usar un proveedor de servicios de audioconferencia de terceros.
@@ -135,5 +135,5 @@ Solo se mueven los datos de clientes para Exchange Online, SharePoint Online y S
   
 [Nueva GEOS de centro de recursos para Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Servicios de Azure por región](https://azure.microsoft.com/en-us/regions/)
+[Servicios de Azure por región](https://azure.microsoft.com/regions/)
 

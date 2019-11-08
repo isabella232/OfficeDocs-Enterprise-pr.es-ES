@@ -13,14 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Un breve resumen de los cmdlets que se usan para las migraciones de buzones de Office 365.
-ms.openlocfilehash: bdd4d6eb68a8727dc26a693f2716ed602e7a5a60
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 03075fdab50ed5dd315d4f9b988032e40f4cbc85
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067807"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035550"
 ---
 # <a name="office-365-mailbox-migrations"></a>Migraciones de buzones de Office 365
+
 Con una implementación híbrida basada en Exchange, los clientes pueden elegir entre mover buzones de Exchange locales a una organización de [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) o mover buzones de correo de Exchange Online a una organización [local de Exchange](https://docs.microsoft.com/Exchange/exchange-server) . Los lotes de migración se usan cuando se mueven buzones de correo entre organizaciones locales y de Exchange Online.
 
 Los clientes pueden revisar las estadísticas y otra información sobre las migraciones de buzones de correo con los siguientes cmdlets:

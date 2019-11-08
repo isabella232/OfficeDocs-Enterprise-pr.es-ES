@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algunas redes empresariales restringen el acceso a ubicaciones de Internet genéricas o incluyen backhaul o procesamiento de tráfico de red substancial. Para garantizar que los equipos de redes como estos puedan tener acceso a Office 365, los administradores de red y de proxy deben administrar la lista de FQDN, direcciones URL y direcciones IP que componen la lista de puntos de conexión de Office 365. Estos deben agregarse a ruta directa, omisión de proxy o reglas de firewall y archivos PAC para garantizar que las solicitudes de red puedan alcanzar el alcance de Office 365.
-ms.openlocfilehash: 21129387aeaf20f34e8528829dd942fddd381108
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 1a694d516a81fec7d6c619c17414e2245dd6b0ef
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782480"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030614"
 ---
 # <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365
 
@@ -53,7 +53,7 @@ El archivo PAC se implementa en los exploradores Web en el punto 1 de la figura 
 
 Por separado, si opta por solo el enrutamiento directo para los extremos de la categoría de optimización, los extremos de categoría de permiso necesarios que envíe al servidor proxy deben aparecer en el servidor proxy para omitir el procesamiento adicional. Por ejemplo, el salto de SSL e inspección y la autenticación de proxy son incompatibles con los extremos de la categoría optimizar y permitir. El servidor proxy es el punto 2 de la figura 1.
 
-La configuración común es permitir sin procesar todo el tráfico saliente del servidor proxy para las direcciones IP de destino para el tráfico de red de Office 365 que alcanza el servidor proxy. Para obtener información acerca de los problemas de salto de SSL e inspeccionar, vea [usar dispositivos de red de terceros o soluciones en el tráfico de Office 365](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
+La configuración común es permitir sin procesar todo el tráfico saliente del servidor proxy para las direcciones IP de destino para el tráfico de red de Office 365 que alcanza el servidor proxy. Para obtener información acerca de los problemas de salto de SSL e inspeccionar, vea [usar dispositivos de red de terceros o soluciones en el tráfico de Office 365](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
 Hay dos tipos de archivos PAC que el script Get-PacFile generará.
 
@@ -75,7 +75,7 @@ Hay varios parámetros que puede pasar a la secuencia de comandos:
 |**ClientRequestId** <br/> |Esto es obligatorio y es un GUID que se pasa al servicio Web que representa al equipo cliente que realiza la llamada. <br/> |
 |**Instancia** <br/> |La instancia del servicio Office 365, que es el valor predeterminado de todo el mundo. También se pasa al servicio Web. <br/> |
 |**TenantName** <br/> |El nombre del espacio empresarial de Office 365. Se pasa al servicio Web y se usa como un parámetro reemplazable en algunas direcciones URL de Office 365. <br/> |
-|**Type** <br/> |El tipo de archivo PAC de proxy que desea generar. <br/> |
+|**Tipo** <br/> |El tipo de archivo PAC de proxy que desea generar. <br/> |
 
 Este es otro ejemplo de cómo llamar al script de PowerShell con parámetros adicionales:
 
@@ -125,7 +125,7 @@ Haga clic en el vínculo de la parte inferior para indicar si el artículo resul
   
 ### <a name="how-do-i-determine-the-location-of-my-tenant"></a>¿Cómo se determina la ubicación de mi espacio empresarial?
 
- La **Ubicación del espacio empresarial** se determina mejor usando nuestro [mapa de centro de recursos](http://aka.ms/datamaps).
+ La **Ubicación del espacio empresarial** se determina mejor usando nuestro [mapa de centro de recursos](https://aka.ms/datamaps).
   
 ### <a name="am-i-peering-appropriately-with-microsoft"></a>¿Estoy emparejamiento adecuadamente con Microsoft?
 
@@ -140,9 +140,9 @@ Solo se proporcionan direcciones IP para los servidores de Office 365 a los que 
   
 Vea una dirección IP asociada a Office 365 de la que desea obtener más información.
   
-1. Compruebe si la dirección IP se incluye en un intervalo publicado mayor con una [calculadora CIDR](http://jodies.de/ipcalc).
+1. Compruebe si la dirección IP se incluye en un intervalo publicado mayor con una [calculadora CIDR](https://jodies.de/ipcalc).
 2. Compruebe si un partner es propietario de la IP con una [consulta Whois](https://dnsquery.org/). Si es propietario de Microsoft, puede ser un asociado interno.
-3. Compruebe el certificado, en un explorador Conéctese a la dirección IP *mediante\<https://\> dirección_ip* , compruebe los dominios que aparecen en el certificado para comprender qué dominios están asociados con la dirección IP. Si es una dirección IP de propiedad de Microsoft y no se encuentra en la lista de direcciones IP de Office 365, es probable que la dirección IP esté asociada a una CDN de Microsoft como *MSOCDN.net* u otro dominio de Microsoft sin información de IP publicada. Si encuentra el dominio en el certificado es aquel en el que le indicamos que indique la dirección IP, infórmenos.
+3. Compruebe el certificado, en un explorador Conéctese a la dirección IP *mediante\<https://\> IP_ADDRESS* , compruebe los dominios que aparecen en el certificado para comprender qué dominios están asociados con la dirección IP. Si es una dirección IP de propiedad de Microsoft y no se encuentra en la lista de direcciones IP de Office 365, es probable que la dirección IP esté asociada a una CDN de Microsoft como *MSOCDN.net* u otro dominio de Microsoft sin información de IP publicada. Si encuentra el dominio en el certificado es aquel en el que le indicamos que indique la dirección IP, infórmenos.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Algunas direcciones URL de Office 365 señalan a registros CNAME en lugar de a registros en el DNS. ¿Qué tengo que hacer con los registros CNAME?
@@ -155,9 +155,9 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 Estas redirecciones de CNAME son una parte normal del DNS y son transparentes para el equipo cliente y transparentes para los servidores proxy. Se usan para equilibrio de carga, redes de entrega de contenido, alta disponibilidad y mitigación de incidentes de servicio. Microsoft no publica los registros CNAME intermediarios, están sujetos a cambios en cualquier momento y no es necesario configurarlos como permitidos en el servidor proxy.
 
-Un servidor proxy valida la dirección URL inicial que en el ejemplo anterior es serviceA.office.com y esta dirección URL se incluiría en la publicación de Office 365. El servidor proxy solicita la resolución DNS de esa dirección URL a una dirección IP y recibirá IP_1. No valida los registros del redireccionamiento CNAME del intermediario.
+Un servidor proxy valida la dirección URL inicial que en el ejemplo anterior es serviceA.office.com y esta dirección URL se incluiría en la publicación de Office 365. El servidor proxy solicita la resolución DNS de esa dirección URL a una dirección IP y recibirá una IP_1. No valida los registros del redireccionamiento CNAME del intermediario.
 
-No se recomienda la configuración o la lista blanca codificada de forma rígida basada en FQDN indirectos de Office 365, que no es compatible con Microsoft, y se sabe que causa problemas de conectividad con los clientes. Las soluciones DNS que se bloquean en la redirección de CNAME o que, de lo contrario, resuelven incorrectamente las entradas DNS de Office 365, pueden resolverse mediante el reenvío condicional de DNS (en el ámbito de los FQDN de Office 365 de uso directo) con la recursión de DNS habilitada. Muchos productos perimetrales de red de terceros integran de forma nativa la lista blanca de puntos de conexión de Office 365 en su configuración mediante el [servicio Web de direcciones IP y URL de office 365](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service).
+No se recomienda la configuración o la lista blanca codificada de forma rígida basada en FQDN indirectos de Office 365, que no es compatible con Microsoft, y se sabe que causa problemas de conectividad con los clientes. Las soluciones DNS que se bloquean en la redirección de CNAME o que, de lo contrario, resuelven incorrectamente las entradas DNS de Office 365, pueden resolverse mediante el reenvío condicional de DNS (en el ámbito de los FQDN de Office 365 de uso directo) con la recursión de DNS habilitada. Muchos productos perimetrales de red de terceros integran de forma nativa la lista blanca de puntos de conexión de Office 365 en su configuración mediante el [servicio Web de direcciones IP y URL de office 365](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>¿Por qué veo nombres como nsatc.net o akadns.net en los nombres de dominio de Microsoft?
 <a name="bkmk_akamai"> </a>
@@ -219,7 +219,7 @@ Tenga en cuenta que bloquear el acceso a los servicios de atención al cliente d
   
 [ExpressRoute y Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   
-[Intervalos de direcciones IP y URL de Office 365](urls-and-ip-address-ranges.md)
+[Direcciones URL e intervalos de direcciones IP de Office 365](urls-and-ip-address-ranges.md)
   
 [Administrar ExpressRoute para la conectividad de Office 365](managing-expressroute-for-connectivity.md)
   

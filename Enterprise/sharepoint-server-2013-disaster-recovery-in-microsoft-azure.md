@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Resumen: con Azure, puede crear un entorno de recuperación ante desastres para la granja de servidores local de SharePoint. En este artículo se describe cómo diseñar e implementar esta solución.'
-ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: cd350cca38b3cf11764e34bf5f0744f8a3c50190
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203649"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031525"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
 
@@ -110,7 +110,7 @@ Después de realizar una recuperación, esta solución proporciona los elementos
   
 **Tabla: Objetivos de recuperación de solución**
 
-|**Item**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |Sitios y contenido  <br/> |Los sitios y el contenido están disponibles en el entorno de recuperación.  <br/> |
 |Una nueva instancia de búsqueda  <br/> |En esta solución de espera semiactiva, la búsqueda no se restaura a partir de las bases de datos de búsqueda. Los componentes de búsqueda de la granja de servidores de recuperación se configuran lo más parecido posible a la granja de servidores de producción. Después de restaurar los sitios y el contenido, se inicia un rastreo completo para recompilar el índice de búsqueda. No es necesario esperar a que se complete el rastreo para que los sitios y el contenido estén disponibles.  <br/> |
@@ -120,7 +120,7 @@ Puede trabajar con los Servicios de Consultoría de Microsoft (MCS) o un socio p
   
 **Tabla: Otros elementos que MCS o un socio pueden tratar**
 
-|**Item**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |Sincronización de soluciones de granja personalizadas  <br/> |Lo ideal es que la configuración de la granja de servidores de recuperación sea idéntica a la granja de servidores de producción. Puede trabajar con un consultor o un socio para evaluar si se replicarán las soluciones de granja personalizadas y si hay un proceso para mantener los dos entornos sincronizados.  <br/> |
 |Conexiones a orígenes de datos de locales  <br/> |No sería práctico replicar las conexiones en sistemas de datos back-end, como conexiones de controlador de dominio de reserva (BDC) y orígenes de contenido de búsqueda.  <br/> |
@@ -446,9 +446,9 @@ Debe crear manualmente los registros DNS para que apunten a la granja de servido
   
 En la mayoría de los casos donde tiene varios servidores front-end web, tiene sentido aprovechar las ventajas de la característica de equilibrio de carga de red en Windows Server 2012 o un equilibrador de carga de hardware para distribuir las solicitudes entre los servidores front-end web en la granja de servidores. El equilibrio de carga de red también puede ayudar a reducir el riesgo, mediante la distribución de las solicitudes a los demás servidores si se produce un error en uno de los servidores front-end web. 
   
-Normalmente, al configurar el equilibrio de carga de red, el clúster se asigna una dirección IP única. A continuación, crea un registro de host DNS en el proveedor DNS para la red que apunta al clúster. (Para este proyecto, se coloca un servidor DNS en Azure para resistir en caso de un error en el centro de datos local). Por ejemplo, puede crear un registro DNS, en el Administrador de DNS en Active Directory, por ejemplo, denominado  `http://sharepoint.contoso.com`, que señale a la dirección IP para el clúster de equilibrio de carga.
+Normalmente, al configurar el equilibrio de carga de red, el clúster se asigna una dirección IP única. A continuación, crea un registro de host DNS en el proveedor DNS para la red que apunta al clúster. (Para este proyecto, se coloca un servidor DNS en Azure para resistir en caso de un error en el centro de datos local). Por ejemplo, puede crear un registro DNS, en el Administrador de DNS en Active Directory, por ejemplo, denominado  `https://sharepoint.contoso.com`, que señale a la dirección IP para el clúster de equilibrio de carga.
   
-Para el acceso externo a la granja de servidores de SharePoint, puede crear un registro de host en un servidor DNS externo con la misma dirección URL que usan los clientes en `http://sharepoint.contoso.com`la intranet (por ejemplo,) que apunta a una dirección IP externa en el firewall. (Un procedimiento recomendado es configurar un DNS dividido para que el servidor DNS interno tenga autoridad para `contoso.com` y enrute las solicitudes directamente al clúster de la granja de servidores de SharePoint, en lugar de enrutar las solicitudes DNS al servidor DNS externo). A continuación, puede asignar la dirección IP externa a la dirección IP interna del clúster local para que los clientes encuentren los recursos que buscan.
+Para el acceso externo a la granja de servidores de SharePoint, puede crear un registro de host en un servidor DNS externo con la misma dirección URL que usan los clientes en `https://sharepoint.contoso.com`la intranet (por ejemplo,) que apunta a una dirección IP externa en el firewall. (Un procedimiento recomendado es configurar un DNS dividido para que el servidor DNS interno tenga autoridad para `contoso.com` y enrute las solicitudes directamente al clúster de la granja de servidores de SharePoint, en lugar de enrutar las solicitudes DNS al servidor DNS externo). A continuación, puede asignar la dirección IP externa a la dirección IP interna del clúster local para que los clientes encuentren los recursos que buscan.
   
 A partir de aquí, puede que se encuentre con un par de escenarios de recuperación ante desastres diferentes:
   
@@ -456,7 +456,7 @@ A partir de aquí, puede que se encuentre con un par de escenarios de recuperaci
   
  **Escenario de ejemplo: el centro de datos local se pierde por completo.** Esta situación puede deberse a un desastre natural, como un incendio o una inundación. En este caso, si esto ocurriera en una empresa es probable que tuviera un centro de datos secundario hospedado en otra región, además de la subred de Azure que tiene sus propios servicios de directorio y DNS. Al igual que ocurre en el escenario de desastres anterior, puede redirigir los registros DNS internos y externos para que apunten a la granja de servidores de SharePoint en Azure. De nuevo, tenga en cuenta que la propagación del registro DNS puede tardar bastante.
   
-Si usa colecciones de sitios con nombre de host, como se recomienda en [arquitectura e implementación de colecciones de sitios con nombre de host (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), es posible que tenga varias colecciones de sitios hospedadas por la misma aplicación web en su granja de servidores de SharePoint, con Unique Nombres DNS (por ejemplo, `http://sales.contoso.com` y `http://marketing.contoso.com`). En este caso, puede crear registros DNS para cada colección de sitios que señalen la dirección IP del clúster. En cuanto una solicitud llega a los servidores front-end web de SharePoint, estos se encargan de enrutar cada solicitud a la colección de sitios adecuada.
+Si usa colecciones de sitios con nombre de host, como se recomienda en [arquitectura e implementación de colecciones de sitios con nombre de host (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), puede tener varias colecciones de sitios hospedadas por la misma aplicación web en su granja de servidores de SharePoint, `https://sales.contoso.com` con `https://marketing.contoso.com`nombres DNS únicos (por ejemplo, y). En este caso, puede crear registros DNS para cada colección de sitios que señalen la dirección IP del clúster. En cuanto una solicitud llega a los servidores front-end web de SharePoint, estos se encargan de enrutar cada solicitud a la colección de sitios adecuada.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Entorno de prueba de concepto de Microsoft
 
@@ -612,7 +612,7 @@ Import-module activedirectory
 
 ```
 
-### <a name="availability-group-creation-fails-at-starting-the-alwaysonhealth-xevent-session-on-server-name"></a>Se produce un error en la creación del grupo de disponibilidad al iniciar la sesión de XEvent 'AlwaysOn_health' en '<server name>'
+### <a name="availability-group-creation-fails-at-starting-the-alwayson_health-xevent-session-on-server-name"></a>Se produce un error en la creación del grupo de disponibilidad al iniciar la sesión de XEvent 'AlwaysOn_health' en '<server name>'
 
 Asegúrese de que los dos nodos del clúster de conmutación por error tienen el estado "Arriba" y no "En pausa" o "Detenido". 
   

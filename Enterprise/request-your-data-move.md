@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Los clientes de Office 365 existentes deberán enviar una solicitud antes de la fecha límite de su país para que los datos del cliente de los servicios de Office 365 participantes se muevan a su nueva geografía.
-ms.openlocfilehash: 4df9c3481782f6d3f0b8431bd91677fb1262812c
-ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
+ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35907653"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031595"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -100,7 +100,7 @@ El inquilino de prueba no se puede combinar con el espacio empresarial existente
     
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notificar a los usuarios que actualicen la configuración de Exchange no actualizada en los dispositivos móviles
 
-Si los usuarios tienen un dispositivo móvil con el servidor de Exchange configurado en **m.Outlook.com** o **podxxxxx.Outlook.com**, se recomienda cambiar a **Outlook.Office365.com**, siguiendo las instrucciones de [configurar un dispositivo móvil para la sincronización. con su cuenta](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+Si los usuarios tienen un dispositivo móvil con el servidor de Exchange configurado en **m.Outlook.com** o **podxxxxx.Outlook.com**, se recomienda cambiar a **Outlook.Office365.com**, siguiendo las instrucciones de [configurar un dispositivo móvil para sincronizar con la cuenta](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -110,6 +110,6 @@ Si los usuarios tienen un dispositivo móvil con el servidor de Exchange configu
 
 [Nueva GEOS de centro de recursos para Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Servicios de Azure por región](https://azure.microsoft.com/en-us/regions/)
+[Servicios de Azure por región](https://azure.microsoft.com/regions/)
   
 

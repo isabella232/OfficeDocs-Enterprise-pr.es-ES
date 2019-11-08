@@ -13,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Resumen: Aprenda a automatizar una recopilación de archivos de los equipos del usuario para la exhibición de documentos electrónicos.'
-ms.openlocfilehash: b54e54e2905407b81d95238afe97c1a542238e06
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 0133da6eecb229ad999043c9dfcb15d98a732829
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068426"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030494"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizar la recopilación de archivos para la exhibición de documentos electrónicos
 
@@ -272,7 +272,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 |:-----|:-----|:-----|
 |71  <br/> |Variable **$FileTypes**. Incluir todos los tipos de extensiones de archivo que desea que el script inventarie y recopile en la variable de matriz<br/> |Optional  <br/> |
 |76 y 77  <br/> |Cambie la manera en la que la variable **$CaseNo** se genera para que se adapte a sus necesidades. El script captura la fecha y hora actuales y le anexa el nombre de usuario.<br/> |Optional  <br/> |
-|80  <br/> |La variable **$CaseRootLocation** debe establecerse en el recurso compartido de archivos del archivo de colección de servidores de implementación. Por ejemplo, **\\\\Staging\\Cases$** <br/> |Obligatorio  <br/> |
+|80  <br/> |La variable **$CaseRootLocation** debe establecerse en el recurso compartido de archivos del archivo de colección de servidores de implementación. Por ejemplo, **\\\\Staging\\Cases$** <br/> |Necesario  <br/> |
    
 4. Coloque el archivo CollectionScript.ps1 en el recurso compartido de archivo Netlogon en un controlador de dominio.  
     
@@ -301,9 +301,9 @@ param ([String]$SourcePath,[String]$MailboxAlias)
 $FolderIdentifier = "zzImportedPSTs_"
 
 # Connect to Exchange remote powershell using the connection Uri below
-# This would be the format http://<exchange server FQDN>/Powershell
+# This would be the format https://<exchange server FQDN>/Powershell
 
-$ConnectionUri = 'http://h10-exch/PowerShell'
+$ConnectionUri = 'https://h10-exch/PowerShell'
 $RemoteEx2013Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $ConnectionUri -Authentication Kerberos
 Import-PSSession $RemoteEx2013Session
 

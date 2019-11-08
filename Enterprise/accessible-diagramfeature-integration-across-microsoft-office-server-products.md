@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: Este artículo es una versión de texto accesible del diagrama con el nombre integración de características en los productos de Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server y Office Online Server.
-ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9cc13853f839e86867caed8d8d689b9b3a894a96
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782250"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027694"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagrama accesible: Integración de características en productos de servidores de Microsoft Office
 
@@ -132,7 +132,7 @@ Grabaciones de reuniones. Esta característica se aplica a: 
 
 Office Web Apps Server es un producto de Office Server que proporciona servicios de visualización y edición de archivos basados en el explorador para archivos de Office. Office Web Apps Server funciona con productos y servicios que admiten el protocolo de la Interfaz de plataforma abierta de aplicaciones web (WOPI). Estos productos, conocidos como hosts, incluyen SharePoint 2013, Lync Server 2013 y Exchange Server 2013.   
   
-Para obtener más información sobre Office Web Apps Server, descargue el póster simplificado de la implementación http://aka.ms/OfficeWebAppsPosterde Office Web Apps en. 
+Para obtener más información sobre Office Web Apps Server, descargue el póster simplificado de la implementación https://aka.ms/OfficeWebAppsPosterde Office Web Apps en. 
   
 ## <a name="server-to-server-authentication-tab"></a>Ficha Autenticación de servidor a servidor
 
@@ -236,9 +236,9 @@ Los usuarios pueden cargar imágenes que abarquen entre 48 × 48 y 648 × 648 p�
     
 Para obtener ejemplos de scripts de configuración, vea los artículos del blog de Jens Trier Rasmussen: 
   
-- Uso de fotos de alta resolución de Exchange 2013 desde SharePoint Server 2013 (http://aka.ms/Bhr4d2) 
+- Uso de fotos de alta resolución de Exchange 2013 desde SharePoint Server 2013 (https://aka.ms/Bhr4d2) 
     
-- Integración de Exchange 2013 y Lync Server 2013 (http://aka.ms/Pn08dw) 
+- Integración de Exchange 2013 y Lync Server 2013 (https://aka.ms/Pn08dw) 
     
 El póster también contiene códigos QR para estos dos artículos del blog.  
   
@@ -283,7 +283,7 @@ El Almacén de contactos unificado (UCS) es una característica que proporciona 
     
 Para obtener ejemplos de scripts de configuración, vea el artículo del blog de Jens Trier Rasmussen: 
   
-- Integración de Exchange 2013 y Lync Server 2013 (http://aka.ms/Oyg7fh) 
+- Integración de Exchange 2013 y Lync Server 2013 (https://aka.ms/Oyg7fh) 
     
  **Cómo funciona** 
   
@@ -615,7 +615,7 @@ Productos de servidor: 
     
 - SharePoint 2013 
     
-Requisitos previos 
+Requisitos previos: 
   
 - Lync 2013: la grabación de reuniones es una característica del lado cliente en Lync 2013.   
     
@@ -667,7 +667,7 @@ Preparación para publicar grabaciones de reuniones:
     
  **Bibliotecas de activos digitales**
   
-Las bibliotecas de activos digitales son bibliotecas de activos que contienen vídeos y, además, tienen ciertas implicaciones de capacidad y rendimiento. Para obtener más información, vea planear bibliotecas de activos digitales en SharePoint Server 2013 http://aka.ms/O1vq5w, que se encuentra en. El póster también incluye un código QR para acceder a esta información. 
+Las bibliotecas de activos digitales son bibliotecas de activos que contienen vídeos y, además, tienen ciertas implicaciones de capacidad y rendimiento. Para obtener más información, vea planear bibliotecas de activos digitales en SharePoint Server 2013 https://aka.ms/O1vq5w, que se encuentra en. El póster también incluye un código QR para acceder a esta información. 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Grabación y publicación de una reunión con el cliente de Lync
 
@@ -683,10 +683,10 @@ En el diagrama se muestra un usuario que usa Lync para unirse a una reunión. La
     
 4. Arrastre y coloque la grabación de la reunión en la biblioteca de activos de SharePoint. 
     
-5. Opcional: Una vez que la grabación está en la biblioteca de activos, puede insertarla en cualquier página de SharePoint. Para obtener más información acerca de este paso, vea la entrada del blog de Office 365, crear y publicar vídeos de aprendizaje con SharePoint y http://aka.ms/R61q35Lync Online, que se encuentran en. 
+5. Opcional: Una vez que la grabación está en la biblioteca de activos, puede insertarla en cualquier página de SharePoint. Para obtener más información acerca de este paso, vea la entrada del blog de Office 365, crear y publicar vídeos de aprendizaje con SharePoint y https://aka.ms/R61q35Lync Online, que se encuentran en. 
     
  **Miniaturas de vídeo**
   
-Las miniaturas de vídeo mejoran el aspecto de la biblioteca de activos. Para obtener más información acerca de la creación de miniaturas para sus grabaciones de reuniones, consulte capturar o cambiar una http://aka.ms/Kupj85miniatura de vídeo, que se encuentra en. El póster también incluye un código QR para acceder a esta información. 
+Las miniaturas de vídeo mejoran el aspecto de la biblioteca de activos. Para obtener más información acerca de la creación de miniaturas para sus grabaciones de reuniones, consulte capturar o cambiar una https://aka.ms/Kupj85miniatura de vídeo, que se encuentra en. El póster también incluye un código QR para acceder a esta información. 
   
 

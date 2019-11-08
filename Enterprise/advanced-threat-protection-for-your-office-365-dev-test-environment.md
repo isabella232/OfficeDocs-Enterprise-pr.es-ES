@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Resumen: configure y demuestre la Protección contra amenazas avanzada de Office 365 en el entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 274f8558d23714a73e0891500dac5d5e007b6be2
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: e3efe339550992fba85509cd07a791d916d5d6e7
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162423"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030564"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Protección contra amenazas avanzada en el entorno de desarrollo y pruebas de Office 365
 
@@ -74,7 +74,7 @@ En esta fase, se demuestra que antes de configurar directivas de ATP, se entrega
     
 13. En el cuerpo, seleccione el texto **este sitio** y haga clic en el icono de hipervínculo en la barra de herramientas.
     
-14. En **dirección URL**, **http://www.spamlink.contoso.com/** escriba, haga clic en **Aceptar**y, a continuación, haga clic en **Enviar**.
+14. En **dirección URL**, **https://www.spamlink.contoso.com/** escriba, haga clic en **Aceptar**y, a continuación, haga clic en **Enviar**.
     
 15. Abra una instancia independiente de Internet Explorer en el modo de exploración privado, vaya al centro de administración de Microsoft[https://admin.microsoft.com](https://admin.microsoft.com)365 () e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
     
@@ -100,13 +100,13 @@ En esta fase, creará y configurará una directiva de datos adjuntos seguros par
     
 5. En la ventana **nueva Directiva de datos adjuntos seguros** , en **nombre**, escriba **Directiva de datos adjuntos seguros: bloquear**.
     
-6. Para la respuesta de malware desconocidos de **datos adjuntos seguros**, haga clic en **bloquear**.
+6. Para la **respuesta de malware desconocidos de datos adjuntos seguros**, haga clic en **bloquear**.
     
 7. En **Redirigir datos adjuntos al detectarlos**, haga clic en **Habilitar redirección** y escriba la dirección de correo electrónico de la cuenta de administrador global de Office 365.
     
 8. En **Aplicado a**, haga clic en la flecha abajo y después en **El dominio del destinatario es**. En la ventana, haga clic en el nombre de su organización (por ejemplo, contoso.onmicrosoft.com) y, a continuación, haga clic en **Aceptar**.
     
-9. Haga clic en **Guardar **. Después de la actualización, debe ver el nuevo y habilitado **Directiva de datos adjuntos seguros: bloque**.
+9. Haga clic en **Guardar**. Después de la actualización, debe ver el nuevo y habilitado **Directiva de datos adjuntos seguros: bloque**.
     
 10. Haga clic en la pestaña **Vínculos seguros** y después en el signo más.
     
@@ -124,7 +124,7 @@ En esta fase, veremos cómo ATP se gestiona el correo electrónico malintenciona
   
 1. En la sesión de Internet Explorer que usó para enviar el correo electrónico en la fase 2, en el panel de navegación izquierdo, haga clic en **elementos enviados.**
     
-2. Haga clic en el correo electrónico titulado **claves nuevas**, haga clic en el icono de flecha **** abajo y, a continuación, haga clic en reenviar.
+2. Haga clic en el correo electrónico titulado **claves nuevas**, haga clic en el icono de flecha abajo y, a continuación, haga clic en **reenviar**.
     
 3. En el nuevo mensaje, en **Para**, escriba la dirección de correo electrónico del nombre de administrador global de Office 365 de su suscripción de prueba y después haga clic en **Enviar**.
     
@@ -156,7 +156,7 @@ En esta fase, veremos cómo ATP se gestiona el correo electrónico malintenciona
 Ahora puede usar este entorno para crear nuevas directivas y experimentar con ATP.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de Office 365.
+> Haga clic [aquí](https://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del laboratorio de pruebas de Office 365.
   
 ## <a name="see-also"></a>Vea también
 
@@ -164,9 +164,9 @@ Ahora puede usar este entorno para crear nuevas directivas y experimentar con AT
   
 [Entorno de desarrollo y pruebas de la configuración básica](base-configuration-dev-test-environment.md)
   
-[Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
+[Entorno de desarrollo y pruebas de Office 365](office-365-dev-test-environment.md)
   
-[Sincronización de directorios (DirSync) para el entorno de desarrollo y prueba de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[Sincronización de directorios (DirSync) para el entorno de desarrollo y pruebas de Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md) 
 

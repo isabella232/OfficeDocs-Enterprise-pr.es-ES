@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Resumen: Use Office 365 PowerShell para administrar las propiedades de la cuenta de usuario de Skype empresarial online con directivas.'
-ms.openlocfilehash: 4b0d45e89910c7fb1a215f78690cfc2fdb17c472
-ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
+ms.openlocfilehash: 51e402922b2a357ef29e9b2628eb25fc252e5437
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302732"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031735"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Administrar Skype para políticas de negocios en línea con Office 365 PowerShell
 
@@ -103,7 +103,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> Eso devuelve una lista de todas las directivas de voz disponibles para usted. No obstante, tenga en cuenta que no todas las directivas se pueden asignar a todos los usuarios. Esto se debe a varias restricciones relacionadas con la concesión de licencias y la ubicación geográfica. (El denominado "ubicación de[uso](https://msdn.microsoft.com/en-us/library/azure/dn194136.aspx)"). Si desea conocer las directivas de acceso externo y las directivas de conferencia que se pueden asignar a un usuario en particular, use comandos similares a los siguientes: 
+> Eso devuelve una lista de todas las directivas de voz disponibles para usted. No obstante, tenga en cuenta que no todas las directivas se pueden asignar a todos los usuarios. Esto se debe a varias restricciones relacionadas con la concesión de licencias y la ubicación geográfica. (El denominado "ubicación de[uso](https://msdn.microsoft.com/library/azure/dn194136.aspx)"). Si desea conocer las directivas de acceso externo y las directivas de conferencia que se pueden asignar a un usuario en particular, use comandos similares a los siguientes: 
 
 ```
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"

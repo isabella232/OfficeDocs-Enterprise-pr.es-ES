@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Obtenga información sobre cómo agregar varios usuarios a Office 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Office 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón de Office 365. '
-ms.openlocfilehash: ece3cc6f207b5c0caaa03880da925eb3b6ac2c5b
-ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
+ms.openlocfilehash: a719b2626eada8abe225a6951af4a2d292667856
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "36198662"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030734"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Agregar varios usuarios a Office 365 a la vez. Ayuda para administradores
 
@@ -39,7 +39,7 @@ Todos los usuarios de su grupo deben tener una cuenta de usuario para poder inic
 
 1. Inicie sesión en Office 365 con su cuenta profesional o educativa. 
     
-2. En el centro de administración, **** \> elija usuarios **activos**.
+2. En el centro de administración, **Elija** \> usuarios **activos**.
     
     ![En el centro de administración, elija usuarios y, a continuación, usuarios activos](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
   
@@ -79,7 +79,7 @@ Todos los usuarios de su grupo deben tener una cuenta de usuario para poder inic
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/f4e7f161-8ae6-4264-a429-9297b539a8de?autoplay=false]
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 <a name="bk_preview"> </a>
 
 - Ahora que estas personas tienen cuentas, necesitan [Descargar e instalar o reinstalar office 365 u office 2016 en un equipo PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Cada persona de su equipo puede usar Office 365 en un máximo de 5 equipos o Mac. 
@@ -96,7 +96,7 @@ Todos los usuarios de su grupo deben tener una cuenta de usuario para poder inic
 
 Un archivo CSV es un archivo con valores separados por comas. Puede crear o editar un archivo como este con cualquier editor de textos o programa de hojas de cálculo, como Excel.
   
-Puede descargar [esta hoja de cálculo de muestra](https://www.microsoft.com/en-us/download/details.aspx?id=45485) como punto de partida. Recuerde que Office 365 requiere encabezados de columna en la primera fila, así que no los sustituya con ningún otro elemento. 
+Puede descargar [esta hoja de cálculo de muestra](https://www.microsoft.com/download/details.aspx?id=45485) como punto de partida. Recuerde que Office 365 requiere encabezados de columna en la primera fila, así que no los sustituya con ningún otro elemento. 
   
 Guarde el archivo con un nuevo nombre y especifique el formato CSV.
   
@@ -147,7 +147,7 @@ Cuando guarde el archivo, probablemente recibirá un mensaje que le informará d
     
 ## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>Agregar varios usuarios a Office 365 en el centro de administración anterior
 
-1. Descargue [esta hoja de cálculo de muestra](https://www.microsoft.com/en-us/download/details.aspx?id=45485) y ábrala en Excel. 
+1. Descargue [esta hoja de cálculo de muestra](https://www.microsoft.com/download/details.aspx?id=45485) y ábrala en Excel. 
     
     Su hoja de cálculo debe incluir **exactamente los mismos encabezados de columna** que la de ejemplo (Nombre de usuario, Nombre, etc.). Si usa la plantilla, considere la opción de no editar ningún dato de la fila 1 y escribir los datos a partir de la fila 2. 
     

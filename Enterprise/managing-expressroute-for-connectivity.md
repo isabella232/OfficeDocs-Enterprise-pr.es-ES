@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: ExpressRoute para Office 365 ofrece una ruta de acceso alternativa para llegar a varios servicios de Office 365 sin necesidad de que todo el tráfico llegue a Internet. Aunque la conexión a Internet con Office 365 todavía es necesaria, las rutas específicas que Microsoft anuncia a través de BGP a la red hacen que se prefiera el circuito de ExpressRoute directo a menos que haya otras configuraciones en la red. Las tres áreas comunes que puede configurar para administrar este enrutamiento incluyen el filtrado de prefijos, la seguridad y el cumplimiento.
-ms.openlocfilehash: 08c991deaaf1b8fa1e17addbed8a23cbfcf37b87
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 163b94bed1bf27b30a3ac8d3079d6fe70d7a1af0
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067136"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027554"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Administración de la conectividad de ExpressRoute para Office 365
 
@@ -46,7 +46,7 @@ Hay varios motivos para evitar el uso de las [direcciones URL de Office 365 e in
 | |
 |**Opción**|**Complejidad**|**Control de cambios**|
 |:-----|:-----|:-----|
-|Aceptar todas las rutas de Microsoft  <br/> |**Bajo:** El cliente se basa en los controles de Microsoft para asegurarse de que todas las rutas son propiedad de forma adecuada.  <br/> |Ninguno  <br/> |
+|Aceptar todas las rutas de Microsoft  <br/> |**Bajo:** El cliente se basa en los controles de Microsoft para asegurarse de que todas las rutas son propiedad de forma adecuada.  <br/> |None  <br/> |
 |Filtrar superredes de Microsoft propiedad  <br/> |**Medio:** El cliente implementa listas resumidas de filtros de prefijo para permitir solo las rutas de propiedad de Microsoft.  <br/> |Los clientes deben asegurarse de que las actualizaciones poco frecuentes se reflejan en los filtros de ruta.  <br/> |
 |Filtrar intervalos IP de Office 365  <br/> [!CAUTION] No recomendado
 |**Alto:** El cliente filtra las rutas basándose en prefijos IP 365 de Office definidos.  <br/> |Los clientes deben implementar un proceso de administración de cambios sólido para las actualizaciones mensuales.  <br/> [!CAUTION] Esta solución requiere cambios significativos en el curso. Es probable que los cambios no implementados en tiempo se produzcan en una interrupción del servicio.   |
@@ -70,7 +70,7 @@ Para los controles agregados, puede usar el filtrado de nivel de FQDN dentro de 
 
 |**Opción**|**Complejidad**|**Control de cambios**|
 |:-----|:-----|:-----|
-|Sin restricciones  <br/> |**Bajo:** El cliente permite el acceso saliente sin restricciones a Microsoft.  <br/> |Ninguno  <br/> |
+|Sin restricciones  <br/> |**Bajo:** El cliente permite el acceso saliente sin restricciones a Microsoft.  <br/> |None  <br/> |
 |Restricciones de puertos  <br/> |**Bajo:** El cliente restringe el acceso saliente a Microsoft por los puertos esperados.  <br/> |Poco frecuentes.  <br/> |
 |Restricciones de FQDN  <br/> |**Alto:** El cliente restringe el acceso saliente a Office 365 en función de los FQDN publicados.  <br/> |Cambios mensuales.  <br/> |
 
@@ -90,7 +90,7 @@ Hay varios escenarios opcionales que requieren que Microsoft inicie conexiones a
 
 - [BCS híbrido de SharePoint](https://technet.microsoft.com/library/dn197239.aspx ).
 
-- Federación [de Skype empresarial híbrido](https://technet.microsoft.com/en-us/library/jj205403.aspx) o [Skype empresarial](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
+- Federación [de Skype empresarial híbrido](https://technet.microsoft.com/library/jj205403.aspx) o [Skype empresarial](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
 
 - [Skype empresarial Cloud Connector](https://technet.microsoft.com/library/mt605227.aspx ).
 
@@ -106,7 +106,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/managee
 
 [Redes de entrega de contenido](content-delivery-networks.md)
   
-[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

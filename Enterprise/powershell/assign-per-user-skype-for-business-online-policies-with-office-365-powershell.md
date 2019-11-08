@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Resumen: Use Office 365 PowerShell para asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.'
-ms.openlocfilehash: 3c6c869874329d7efb6d8c417c797c9f81df6bf8
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2252a6df4298bb36a669404aefac3b14eaa23b7f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069296"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031045"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Asignar cada usuario Skype para las políticas de negocios en línea con Office 365 PowerShell
 
@@ -29,7 +29,7 @@ El uso de Office 365 PowerShell es una forma eficaz de asignar configuraciones d
 
 Siga estas instrucciones para preparar la ejecución de los comandos (omita los pasos que ya ha completado):
   
-1. Descargue e instale el [módulo de conector de Skype empresarial online](https://www.microsoft.com/en-us/download/details.aspx?id=39366).
+1. Descargue e instale el [módulo de conector de Skype empresarial online](https://www.microsoft.com/download/details.aspx?id=39366).
     
 2. Abra un símbolo del sistema de Windows PowerShell y ejecute los siguientes comandos: 
     
@@ -97,7 +97,7 @@ Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 
 Este comando usa Get-CsOnlineUser para devolver una colección de todos los usuarios que se han habilitado para Lync y, a continuación, envía toda la información a Grant-CsExternalAccessPolicy, que asigna la Directiva FederationAndPICDefault a todos y cada uno de los usuarios de la colección.
   
-Por ejemplo, supongamos que anteriormente ha asignado a Alex la Directiva FederationAndPICDefault y que ahora ha cambiado de opinión y desea que se administre mediante la directiva global de acceso externo. No se puede asignar explícitamente la directiva global a nadie. Solo se usa si no se ha asignado ninguna otra directiva por usuario. Por lo tanto, si queremos que Alex administre la directiva global, debe anular la *asignación* de la Directiva por usuario que se le haya asignado anteriormente. A continuación se muestra un ejemplo:
+Por ejemplo, supongamos que anteriormente ha asignado a Alex la Directiva FederationAndPICDefault y que ahora ha cambiado de opinión y desea que se administre mediante la directiva global de acceso externo. No se puede asignar explícitamente la directiva global a nadie. Solo se usa si no se ha asignado ninguna otra directiva por usuario. Por lo tanto, si queremos que Alex administre la directiva global, debe *anular la asignación* de la Directiva por usuario que se le haya asignado anteriormente. A continuación se muestra un ejemplo:
   
 ```
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
@@ -105,7 +105,7 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 Este comando establece el nombre de la Directiva de acceso externo asignada a Alex en un valor nulo ($Null). Null significa "Nothing". Es decir, no se asigna ninguna directiva de acceso externo a Alex. Cuando no se asigna ninguna directiva de acceso externo a un usuario, dicho usuario se administra mediante la directiva global.
   
-Para deshabilitar una cuenta de usuario con Windows PowerShell, use los cmdlets de Azure Active Directory para quitar la licencia de Skype empresarial online de Alex. Para obtener más información, vea deshabilitar el [acceso a servicios con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
+Para deshabilitar una cuenta de usuario con Windows PowerShell, use los cmdlets de Azure Active Directory para quitar la licencia de Skype empresarial online de Alex. Para obtener más información, vea [deshabilitar el acceso a servicios con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
   
 ## <a name="see-also"></a>Vea también
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: A continuación, se incluyen respuestas a preguntas generales sobre cómo mover datos principales a un nuevo centro de datos geográfico.
-ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782330"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028894"
 ---
 # <a name="data-move-general-faq"></a>Preguntas más frecuentes sobre el movimiento de datos
 
@@ -43,7 +43,7 @@ Debido a las dependencias compartidas entre Exchange Online y SharePoint Online/
 Hay dos acciones que puede llevar a cabo como administrador de inquilinos.
 
 - Suscripción.Inscríbase en el programa de migración de Office 365 y recibirá una fecha límite asignada para que los servicios migren los datos principales del cliente en reposo a la nueva área geográfica del centro de datos.Consulte la página [Cómo solicitar el movimiento de datos](request-your-data-move.md) para obtener instrucciones sobre cómo participar en el programa.
-- No ejecutar ninguna acción.No emprender ninguna acción, lo que hace que Microsoft pueda mover los datos principales de clientes en reposo a su nuevo centro de datos geográfico en el transcurso del tiempo como parte de la administración y optimización del servicio.Los datos solo pueden moverse a su nuevo área geográfica del centro de datos, no a cualquier otra geografía.Se notifica a través del centro de mensajes cuando se ha completado este movimiento de administración del servicio.
+- No hacer nada.No emprender ninguna acción, lo que hace que Microsoft pueda mover los datos principales de clientes en reposo a su nuevo centro de datos geográfico en el transcurso del tiempo como parte de la administración y optimización del servicio.Los datos solo pueden moverse a su nuevo área geográfica del centro de datos, no a cualquier otra geografía.Se notifica a través del centro de mensajes cuando se ha completado este movimiento de administración del servicio.
 
 ## <a name="how-do-you-make-sure-my-customer-data-is-safe-during-the-move-and-that-i-wont-experience-downtime"></a>¿Cómo se asegura de que mis datos de clientes sean seguros durante el traslado y que no me informará de que se produzca un tiempo de inactividad?
   
@@ -155,4 +155,4 @@ Sí, el espacio empresarial es apto para inscribirse.  Se moverán todos los buz
 
 [Nueva GEOS de centro de recursos para Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Servicios de Azure por región](https://azure.microsoft.com/en-us/regions/)
+[Servicios de Azure por región](https://azure.microsoft.com/regions/)

@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: En este artículo se describe cómo usar minificación y las técnicas de agrupación con Web Essentials para reducir el número de solicitudes HTTP y reducir el tiempo que se tarda en cargar páginas en SharePoint Online.
-ms.openlocfilehash: 823011894019e9602d949f1301994d79dc209664
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3303ea49a1308e4ad7b3139547c20b4351fc84b5
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616853"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031315"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minificación y agrupación en SharePoint Online
 
@@ -33,7 +33,7 @@ Para los archivos JavaScript y CSS, también puede usar un enfoque denominado mi
 Puede usar software de terceros, como Web Essentials, para agrupar archivos CSS y JavaScript.
   
 > [!IMPORTANT]
-> Web Essentials es un proyecto de terceros, basado en la comunidad de código abierto. El software es una extensión de Visual Studio 2012 y Visual Studio 2013 y no es compatible con Microsoft. Para descargar Web Essentials, visite el sitio web en [http://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629). 
+> Web Essentials es un proyecto de terceros, basado en la comunidad de código abierto. El software es una extensión de Visual Studio 2012 y Visual Studio 2013 y no es compatible con Microsoft. Para descargar Web Essentials, visite el sitio web en [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629). 
   
 Web Essentials ofrece dos formas de agrupación:
   
@@ -49,7 +49,7 @@ Puede usar Web Essentials si tiene una característica existente con algunos ele
   
 1. En Visual Studio, en el explorador de soluciones, seleccione los archivos que desea incluir en la agrupación.
     
-2. Haga clic con el botón derecho en los archivos seleccionados y seleccione **Web Essentials** \> **crear archivo** de agrupación de JavaScript en el menú contextual. Por ejemplo: 
+2. Haga clic con el botón derecho en los archivos seleccionados y seleccione **Web Essentials** \> **crear archivo de agrupación de JavaScript** en el menú contextual. Por ejemplo: 
     
     ![Captura de pantalla que muestra las opciones de menú de Web Essentials](media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   

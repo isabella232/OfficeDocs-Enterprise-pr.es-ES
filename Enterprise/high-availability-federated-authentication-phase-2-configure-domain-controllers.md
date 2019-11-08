@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Resumen: Configure los controladores de dominio y el servidor de DirSync para la autenticación federada de alta disponibilidad para Office 365 en Microsoft Azure.'
-ms.openlocfilehash: 299723c8f49cddd4a30ba2defc73dd156792f337
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 5cb7c75f5d66dc37aa9e4b7fdc682c9508eac40e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102528"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028804"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio
 
@@ -48,7 +48,7 @@ Primero, necesita rellenar la columna de **Nombre de la máquina virtual** de la
   
 Para obtener la lista completa de tamaños de máquinas virtuales, vea [Tamaños de máquinas virtuales](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
   
-El siguiente bloque de comandos de Azure PowerShell crea las máquinas virtuales de los dos controladores de dominio. Especifique los valores de las variables, quitando \< los caracteres y >. Tenga en cuenta que este bloque de comandos de Azure PowerShell usa valores de las siguientes tablas:
+El siguiente bloque de comandos de Azure PowerShell crea las máquinas virtuales de los dos controladores de dominio. Especifique los valores de las variables, quitando \< y > caracteres. Tenga en cuenta que este bloque de comandos de Azure PowerShell usa valores de las siguientes tablas:
   
 - Tabla N, para las máquinas virtuales
     
@@ -65,7 +65,7 @@ El siguiente bloque de comandos de Azure PowerShell crea las máquinas virtuales
 Recuerde que definió las tablas R, V, S, I y A en la [fase 1 de la autenticación federada de alta disponibilidad: configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Después de especificar todos los valores correctos, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en el Entorno de scripting integrado (ISE) de PowerShell en el equipo local.
   
@@ -249,7 +249,7 @@ Esta es la configuración completada después de la finalización correcta de es
 
 ![Fase 2 de la infraestructura de autenticación federada de Office 365 de alta disponibilidad en Azure con controladores de dominio](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Use [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) para seguir configurando esta carga de trabajo.
   

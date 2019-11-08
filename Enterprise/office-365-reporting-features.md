@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Una explicación de las características de informes en Office 365.
-ms.openlocfilehash: 27dc1f8164e21040399ae9882c3fab78ab3d5eb2
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067796"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031865"
 ---
 # <a name="office-365-reporting-features"></a>Características de presentación de informes de Office 365 
 
@@ -78,7 +78,7 @@ Los informes de cumplimiento de MDM proporcionan una descripción general de las
 
 Las directivas de DLP ayudan a administrar la seguridad y el flujo de la información en una organización. Puede configurar directivas para bloquear el acceso al contenido, cifrar los datos o notificar a los usuarios de las infracciones de directivas y directivas mediante sugerencias de directivas DLP en la aplicación. Los informes de DLP proporcionan información sobre el número de coincidencias de directivas y reglas, invalidaciones y falsos positivos.
 
-Use el centro de administración de Microsoft 365 para ver información sobre el número de mensajes detectados por las directivas de DLP. Los informes de DLP proporcionan información sobre las coincidencias de reglas y directivas para el correo enviado y recibido. También puede ver el número de coincidencias, invalidaciones y falsos positivos para cada directiva en las últimas 24 horas usando el centro de administración de Exchange. Si descarga un informe de Excel, puede ver incluso más detalles, como quién envió el mensaje, en qué día y qué coincidencias de directivas se activaron. Para obtener más información, vea [ver informes sobre detecciones de directivas de DLP](https://technet.microsoft.com/en-us/library/jj889415(v=exchg.150).aspx).
+Use el centro de administración de Microsoft 365 para ver información sobre el número de mensajes detectados por las directivas de DLP. Los informes de DLP proporcionan información sobre las coincidencias de reglas y directivas para el correo enviado y recibido. También puede ver el número de coincidencias, invalidaciones y falsos positivos para cada directiva en las últimas 24 horas usando el centro de administración de Exchange. Si descarga un informe de Excel, puede ver incluso más detalles, como quién envió el mensaje, en qué día y qué coincidencias de directivas se activaron. Para obtener más información, vea [ver informes sobre detecciones de directivas de DLP](https://technet.microsoft.com/library/jj889415(v=exchg.150).aspx).
 
 ## <a name="auditing-in-yammer-enterprise"></a>Auditoría en Yammer Enterprise
 

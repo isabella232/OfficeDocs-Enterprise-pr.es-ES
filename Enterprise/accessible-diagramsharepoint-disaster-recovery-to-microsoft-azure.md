@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: Este artículo es una versión de texto accesible del diagrama con el nombre Recuperación ante desastres de SharePoint en Microsoft Azure.
-ms.openlocfilehash: d7df0f44dd4e7f0cbb8580029991bc9280892afb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e711452f6e019ceb280d43c2e0167507a0b0ef20
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068526"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038239"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagrama accesible: Recuperación ante desastres de SharePoint para Microsoft Azure
 
@@ -194,10 +194,9 @@ Hay tres servicios en la nube en el entorno de red virtual de Azure:
 
 La configuración de AD DS para esta solución consiste en un escenario de implementación híbrida en el que AD DS se implementa parcialmente en las instalaciones locales y parcialmente en máquinas virtuales de Azure.  
   
-Importante: antes de implementar AD DS en Azure, lea las directrices para implementar Windows Server Active Directory en máquinas virtuales de Microsoft Azurehttp://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)(. 
+Importante: antes de implementar AD DS en Azure, lea las directrices para implementar Windows Server Active Directory en máquinas virtuales de Microsoft Azurehttps://docs.microsoft.com/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)(. 
   
-Para obtener instrucciones completas sobre el diseño y la implementación de entornos de http://TechNet.microsoft.comActive Directory, consulte. 
-  
+ 
 Esta arquitectura de referencia incluye dos máquinas virtuales configuradas como controladores de dominio. Cada una está configurada del modo siguiente:·  
   
 - Tamaño: pequeño.  

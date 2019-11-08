@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Hay sencillas formas de comprobar el rendimiento de la conexión entre Office 365 y su empresa que le permitirá establecer una línea de base aproximada de su conectividad. Conocer el historial de rendimiento de las conexiones de los equipos cliente puede ayudarle a detectar los problemas emergentes con anticipación, la identificación y la predicción de los problemas.
-ms.openlocfilehash: 755f4c4bde7e040638e768002a528710bcdd48fd
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: f7ce3b70e698bd0125ba2a1623f40ddf808ee4d3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781910"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031795"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento
 
@@ -39,7 +39,7 @@ Si no se usa para trabajar en problemas de rendimiento, este artículo está dis
 Office 365 vive en una red de Microsoft de gran capacidad y dedicada que está en un monitoreo único y no solo por la automatización, sino por personas reales. Una parte de la función de mantenimiento de la nube de Office 365 es el refuerzo y la optimización del rendimiento cuando es posible. Como los clientes de la nube de Office 365 tienen que conectarse a través de Internet, hay un esfuerzo continuo para ajustar el rendimiento entre los servicios de Office 365 también. Las mejoras de rendimiento nunca se detienen realmente en la nube y hay una gran experiencia acumulada para mantener la nube en buen estado y de forma rápida. Si experimenta un problema de rendimiento que se conecta desde su ubicación a Office 365, es mejor no empezar y esperar un caso de soporte técnico. En su lugar, debe empezar a investigar el problema de "The Inside Out". Es decir, comience dentro de la red y trabaje de la manera que espera para Office 365. Antes de abrir un caso con soporte técnico de Office 365, puede recopilar datos y emprender acciones que exploren y puede resolver el problema.
   
 > [!IMPORTANT]
-> Tenga en cuenta los límites y la planeación de la capacidad en Office 365. Esta información le llevará por delante de la curva cuando intente resolver un problema de rendimiento. Este es un vínculo a la [Descripción del servicio de la plataforma 365 de Office](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx). Se trata de un concentrador central y todos los servicios ofrecidos por Office 365 tienen un vínculo que va a sus propias descripciones de servicio desde aquí. Esto significa que, por ejemplo, si necesita ver los límites estándar de SharePoint Online, tendría que hacer clic en [Descripción del servicio de SharePoint Online](https://technet.microsoft.com/en-us/library/sharepoint-online-service-description.aspx) y buscar su [sección límites de SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=856113). 
+> Tenga en cuenta los límites y la planeación de la capacidad en Office 365. Esta información le llevará por delante de la curva cuando intente resolver un problema de rendimiento. Este es un vínculo a la [Descripción del servicio de la plataforma 365 de Office](https://technet.microsoft.com/library/office-365-service-descriptions.aspx). Se trata de un concentrador central y todos los servicios ofrecidos por Office 365 tienen un vínculo que va a sus propias descripciones de servicio desde aquí. Esto significa que, por ejemplo, si necesita ver los límites estándar de SharePoint Online, tendría que hacer clic en [Descripción del servicio de SharePoint Online](https://technet.microsoft.com/library/sharepoint-online-service-description.aspx) y buscar su [sección límites de SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=856113). 
   
 Asegúrese de que va a solucionar problemas con la comprensión de que el rendimiento es una escala deslizante, no es conseguir un valor ideal y mantenerlo de forma permanente (si cree que esto es así), las tareas ocasionales de gran ancho de banda, como la incorporación de un un gran número de usuarios o la realización de grandes migraciones de datos serán muy estresantes, así que planee el impacto en el rendimiento. Puede, y debe, tener una idea aproximada de sus objetivos de rendimiento, pero una gran cantidad de variables se reproducen en el rendimiento, por lo que el rendimiento varía. Esa es la naturaleza del rendimiento. 
   
@@ -49,7 +49,7 @@ La solución de problemas de rendimiento no es sobre la satisfacción de objetiv
 
 En primer lugar, debe asegurarse de que lo que está experimentando es, en realidad, un problema de rendimiento y no un incidente de servicio. Un problema de rendimiento es diferente de un incidente de servicio en Office 365. Aquí te mostramos cómo distinguirlas.
   
-Si el servicio de Office 365 tiene problemas, es un incidente del servicio. Verá los iconos rojos o amarillos bajo **mantenimiento actual** en el centro de administración de Microsoft 365, también puede observar un rendimiento lento en los equipos cliente que se conectan a Office 365. Por ejemplo, si el estado actual informa de un icono rojo y **** ve investigando junto a Exchange, puede que también reciba un grupo de llamadas de personas de su organización que se quejan de que los buzones de correo de cliente que usan Exchange Online se están realizando mal. En ese caso, es razonable asumir que el rendimiento de Exchange Online se ha convertido en una víctima de problemas en el servicio. 
+Si el servicio de Office 365 tiene problemas, es un incidente del servicio. Verá los iconos rojos o amarillos bajo **mantenimiento actual** en el centro de administración de Microsoft 365, también puede observar un rendimiento lento en los equipos cliente que se conectan a Office 365. Por ejemplo, si el estado actual informa de un icono rojo y ve **investigando** junto a Exchange, puede que también reciba un grupo de llamadas de personas de su organización que se quejan de que los buzones de correo de cliente que usan Exchange Online se están realizando mal. En ese caso, es razonable asumir que el rendimiento de Exchange Online se ha convertido en una víctima de problemas en el servicio. 
   
 ![El panel de estado de Office 365 con todas las cargas de trabajo que muestran Green, excepto Exchange, que muestra el servicio restaurado.](media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
@@ -165,7 +165,7 @@ También debe elegir una Convención de nomenclatura para los archivos. Aquí le
     
 - Feb_08_2015_2pmEST_PerfBaseline_BADPerf
     
-- Feb_08_2015_8-30amEST_PerfBaseline_GoodPerf
+- Feb_08_2015_8 30amEST_PerfBaseline_GoodPerf
     
 Hay muchas maneras diferentes de hacerlo, pero usar ** \<DateTime\>\<Format lo que sucede\> en la prueba** es un buen punto de partida. Ser diligente con respecto a esto le ayudará mucho cuando intente solucionar problemas más adelante. Más adelante, podrá decir "he tomado dos seguimientos el 8 de febrero, uno demostró un buen rendimiento y uno mostró que es malo, para que podamos compararlos". Esto es muy útil para solucionar problemas. 
   
@@ -198,7 +198,7 @@ El objetivo de estos métodos sencillos es aprender a tomar, comprender y almace
 ![Red básica con cliente, proxy y nube, y sugerencias de herramientas PSPing, TraceTCP y seguimientos de red.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP se incluye en esta captura de pantalla porque es una herramienta útil para mostrar, en milisegundos, el tiempo que tarda en procesarse una solicitud y Cuántos saltos de red o conexiones de un equipo a la siguiente, que la solicitud tarda en llegar a un destino. TraceTCP también puede dar los nombres de los servidores usados durante los saltos, lo que puede resultar útil para un solucionador de problemas de Microsoft Office 365 en soporte técnico. Los comandos de > TraceTCP pueden ser muy sencillos, como `tracetcp.exe outlook.office365.com:443` : >> Recuerde incluir el número de puerto en el comando! > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) es una descarga gratuita, pero depende de wincap. Wincap es una herramienta que Netmon también usa e instala. También usamos Netmon en la sección métodos avanzados. 
+> TraceTCP se incluye en esta captura de pantalla porque es una herramienta útil para mostrar, en milisegundos, el tiempo que tarda en procesarse una solicitud y Cuántos saltos de red o conexiones de un equipo a la siguiente, que la solicitud tarda en llegar a un destino. TraceTCP también puede dar los nombres de los servidores usados durante los saltos, lo que puede resultar útil para un solucionador de problemas de Microsoft Office 365 en soporte técnico. Los comandos de > TraceTCP pueden ser muy sencillos, como `tracetcp.exe outlook.office365.com:443` : >> Recuerde incluir el número de puerto en el comando! > [TraceTCP](https://simulatedsimian.github.io/tracetcp_download.html) es una descarga gratuita, pero depende de wincap. Wincap es una herramienta que Netmon también usa e instala. También usamos Netmon en la sección métodos avanzados. 
   
  Si tiene varias oficinas, tendrá que mantener un conjunto de datos de un cliente en cada una de esas ubicaciones también. Esta prueba mide la latencia, que, en este caso, es un valor numérico que describe la cantidad de tiempo entre un cliente que envía una solicitud a Office 365 y Office 365 a responder a la solicitud. Las pruebas se originan dentro de su dominio en un equipo cliente y buscan medir un recorrido de ida y vuelta desde dentro de la red, pasando por un punto de salida, a través de Internet a Office 365 y atrás. 
   
@@ -214,7 +214,7 @@ Hay varias formas de tratar el punto de salida, en este caso, el servidor proxy.
     
 - \*. microsoftonline-p.com
     
-- \*. sharepoint.com
+- \*.sharepoint.com
     
 - \*. outlook.com
     
@@ -232,7 +232,7 @@ Una vez que haya omitido el proxy, debe poder usar ping o PsPing directamente en
   
 El tiempo de ida y vuelta, o RTT, es un valor numérico que mide el tiempo que se tarda en enviar una solicitud HTTP a un servidor como outlook.office365.com y obtener una respuesta que confirme que el servidor sabe que lo hizo. A veces verá esto abreviado como RTT. Este debe ser un período de tiempo relativamente corto.
   
-Debe usar [PSPing](https://technet.microsoft.com/en-us/sysinternals/jj729731.aspx) u otra herramienta que no use paquetes ICMP que estén bloqueados por Office 365 para realizar esta prueba. 
+Debe usar [PSPing](https://technet.microsoft.com/sysinternals/jj729731.aspx) u otra herramienta que no use paquetes ICMP que estén bloqueados por Office 365 para realizar esta prueba. 
   
  **Cómo usar PsPing para obtener un tiempo global de ida y vuelta en milisegundos directamente desde una dirección URL de Office 365**
   
@@ -304,7 +304,7 @@ En cuanto a la solución de problemas, es posible que le resulte interesante man
   
 ### <a name="advanced-methods"></a>Métodos avanzados
 
-Si realmente quiere saber lo que ocurre con sus solicitudes de Internet a Office 365, debe familiarizarse con los seguimientos de red. No importa qué herramientas se prefieren para estos seguimientos, HTTPWatch, Netmon, Message Analyzer, Wireshark, Fiddler, la herramienta del panel del programador o cualquier otro, lo hará siempre que esa herramienta pueda capturar y filtrar el tráfico de red. En esta sección, verá que es ventajoso ejecutar más de una de estas herramientas para obtener una imagen más completa del problema. Al realizar las pruebas, algunas de estas herramientas también actúan como servidores proxy en su propio derecho. Herramientas que se usan en el artículo adjunto [plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md), incluidos [Netmon 3,4](https://www.microsoft.com/en-us/download/details.aspx?id=4865), [HTTPWatch](https://www.httpwatch.com/download/)o [Wireshark](https://www.wireshark.org/).
+Si realmente quiere saber lo que ocurre con sus solicitudes de Internet a Office 365, debe familiarizarse con los seguimientos de red. No importa qué herramientas se prefieren para estos seguimientos, HTTPWatch, Netmon, Message Analyzer, Wireshark, Fiddler, la herramienta del panel del programador o cualquier otro, lo hará siempre que esa herramienta pueda capturar y filtrar el tráfico de red. En esta sección, verá que es ventajoso ejecutar más de una de estas herramientas para obtener una imagen más completa del problema. Al realizar las pruebas, algunas de estas herramientas también actúan como servidores proxy en su propio derecho. Herramientas que se usan en el artículo adjunto [plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md), incluidos [Netmon 3,4](https://www.microsoft.com/download/details.aspx?id=4865), [HTTPWatch](https://www.httpwatch.com/download/)o [Wireshark](https://www.wireshark.org/).
   
 Tomar una línea de base de rendimiento es la parte sencilla de este método y muchos de los pasos son los mismos que cuando se soluciona un problema de rendimiento. Los métodos más avanzados para crear líneas base para el rendimiento requieren que se tomen y almacenen los seguimientos de red. La mayoría de los ejemplos de este artículo usan SharePoint Online, pero debe desarrollar una lista de acciones comunes en los servicios de Office 365 a los que se suscribe para probar y grabar. Este es un ejemplo de línea de base:
   

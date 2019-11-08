@@ -21,12 +21,12 @@ search.appverid:
 - OSU160
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 description: SharePoint Server 2007 ha alcanzado el final del soporte técnico y es el momento de actualizar. Use este artículo para ayudarle a crear su plan.
-ms.openlocfilehash: 98151ecd32f0066f583da1142d6010d46e120a43
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: acf1e0283f70763c0f0fbd458b7c79b23fc31235
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070706"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031555"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>Opciones de migración de SharePoint 2007 para tener en cuenta
 
@@ -59,9 +59,9 @@ El conocimiento de la función de la granja de servidores y se usa para es una r
 > [!TIP]
 > Microsoft Office SharePoint Server 2007 también tiene una actualización gradual que no se incluye aquí. Para ver una lista de los artículos de actualización específica del paso, vea el [mapa de ruta del fin de soporte de SharePoint Server 2007](sharepoint-2007-end-of-support.md). 
   
-Recuerde comprobar el [ciclo de vida del producto](https://support.microsoft.com/en-us/lifecycle/search) y los requisitos del sistema para cualquier versión de SharePoint a la que esté actualizando. Esto es así que sabrá Cuándo será necesaria la próxima actualización (por ejemplo, si pausa en un producto heredado como SharePoint Server 2010 para planear más actualizaciones, asegúrese de que conoce la fecha de finalización del soporte técnico) y asegúrese de que dispone de hardware compatible con su plan. 
+Recuerde comprobar el [ciclo de vida del producto](https://support.microsoft.com/lifecycle/search) y los requisitos del sistema para cualquier versión de SharePoint a la que esté actualizando. Esto es así que sabrá Cuándo será necesaria la próxima actualización (por ejemplo, si pausa en un producto heredado como SharePoint Server 2010 para planear más actualizaciones, asegúrese de que conoce la fecha de finalización del soporte técnico) y asegúrese de que dispone de hardware compatible con su plan. 
   
-Si está planeando realizar la transición de algunos o todos los sitios de SharePoint a Office 365 en la nube, esta es una hora para marcar un vínculo a las descripciones [de servicio de Office 365](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx). Necesitará las descripciones de servicio para obtener información sobre las características de SharePoint Online y cómo podrían diferir de SharePoint Server local. Actualización de granjas funcionales de Microsoft Office SharePoint Server 2007. Si su instalación tiene sitios rotos, corríjalos antes de realizar la actualización.
+Si está planeando realizar la transición de algunos o todos los sitios de SharePoint a Office 365 en la nube, esta es una hora para marcar un vínculo a las [descripciones de servicio de Office 365](https://technet.microsoft.com/library/office-365-service-descriptions.aspx). Necesitará las descripciones de servicio para obtener información sobre las características de SharePoint Online y cómo podrían diferir de SharePoint Server local. Actualización de granjas funcionales de Microsoft Office SharePoint Server 2007. Si su instalación tiene sitios rotos, corríjalos antes de realizar la actualización.
   
 ## <a name="a-note-about-managing-risk"></a>Una nota sobre la administración de riesgos
 
@@ -76,7 +76,7 @@ Los métodos como ' en paralelo ' son importantes en el esquema de la lógica de
 Los métodos como la actualización local actuarán directamente en su granja de servidores de Microsoft Office SharePoint Server 2007, lo que le proporcionará menos opciones sencillas para abandonar una ruta y comenzar de nuevo con su entorno original. En la medida de lo posible, cree algunas medidas de seguridad (como tomar y probar las copias de seguridad del entorno original). Por ejemplo, si la granja de servidores de Microsoft Office SharePoint Server 2007 es virtual y está duplicada con fines de copia de seguridad y restauración, haga una copia de seguridad y restaure las bases de datos más recientes antes de la ventana de servicio para la actualización. Saber que tiene la opción de restaurar las copias de seguridad de la base de datos no solo le ofrecerá un failsafe, sino que podrá tener la tranquilidad.
   
 > [!TIP]
-> Procedimientos recomendados los documentos para la actualización existen para [Microsoft Office SharePoint server 2007](https://technet.microsoft.com/en-us/library/cc261992%28v=office.12%29.aspx), [SharePoint Server 2010](https://technet.microsoft.com/en-us/library/cc261992%28v=office.14%29.aspx), [SharePoint server 2013](https://technet.microsoft.com/en-us/library/cc261992%28v=office.15%29.aspx)y [SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc261992%28v=office.16%29.aspx). También puede buscar a los [socios de Microsoft](https://partnercenter.microsoft.com/en-us/pcv/search) que tienen experiencia con las actualizaciones o migraciones de Office 365. 
+> Procedimientos recomendados los documentos para la actualización existen para [Microsoft Office SharePoint server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx), [SharePoint Server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx), [SharePoint server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)y [SharePoint Server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx). También puede buscar a los [socios de Microsoft](https://partnercenter.microsoft.com/pcv/search) que tienen experiencia con las actualizaciones o migraciones de Office 365. 
   
 ## <a name="make-your-plan"></a>Hacer que el plan
 
@@ -176,8 +176,8 @@ A menudo, los principales factores a la hora de elegir un método son el costo t
 
 [Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2007](upgrade-from-office-2007-servers-and-products.md)
   
-[Búsqueda del ciclo de vida y la Directiva de Microsoft Lifecycle](https://support.microsoft.com/en-us/lifecycle)
+[Búsqueda del ciclo de vida y la Directiva de Microsoft Lifecycle](https://support.microsoft.com/lifecycle)
   
-[Buscar asociados de Microsoft que puedan ayudarle con la actualización o migración](https://partnercenter.microsoft.com/en-us/pcv/search)
+[Buscar asociados de Microsoft que puedan ayudarle con la actualización o migración](https://partnercenter.microsoft.com/pcv/search)
   
 

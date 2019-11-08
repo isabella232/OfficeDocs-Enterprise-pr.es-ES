@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Resumen: Configure y demuestre cómo Office 365 Information Rights Management protege los archivos confidenciales, incluso cuando se publican en la colección de sitios incorrecta de SharePoint Online.'
-ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3fa771d63ca30fb53ac2c77466546cf3a2098deb
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782500"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031575"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protección de archivos confidenciales en el entorno de desarrollo y pruebas de Office 365
 
@@ -32,7 +32,7 @@ Information Rights Management (IRM) en Office 365 es un conjunto de característ
 Con las instrucciones de este artículo, habilite y pruebe IRM en Office 365 para archivos que contienen posible información confidencial en su suscripción de prueba de Office 365.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de Office 365.
+> Haga clic [aquí](https://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del laboratorio de pruebas de Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: Crear el entorno de desarrollo y pruebas de Office 365
 
@@ -92,7 +92,7 @@ Desde la pantalla del comando **New-MsolUser**, anote la contraseña generada pa
   
 Después, cree un grupo privado de ejecutivos y agregue en él las nuevas cuentas de ejecutivo.
   
-1. En el explorador, vaya al portal de Office en [http://admin.microsoft.com](http://admin.microsoft.com) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
+1. En el explorador, vaya al portal de Office en [https://admin.microsoft.com](https://admin.microsoft.com) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
     
   - Si usa el entorno de desarrollo y pruebas ligero de Office 365, abra una sesión privada con Internet Explorer o con su explorador e inicie sesión desde el equipo local.
     
@@ -166,7 +166,7 @@ Después, inicie sesión con una cuenta de ejecutivo y cree un documento en la c
   
 1. En la pestaña **Página principal de Microsoft Office**, haga clic en el icono de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
     
-2. Vaya a [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Vaya a [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. En la página **Inicio de sesión en Office 365**, haga clic en **Usar otra cuenta**.
     
@@ -204,7 +204,7 @@ Después, inicie sesión como Usuario5 y pruebe a abrir el documento SensitiveDa
   
 1. En la pestaña **Página principal de Microsoft Office**, haga clic en el icono de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
     
-2. Vaya a [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Vaya a [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. En la página **Inicio de sesión en Office 365**, haga clic en **Usar otra cuenta**.
     
@@ -224,7 +224,7 @@ Para preparar Office 365 para las fases 3 y 4, habilite IRM para SharePoint Onli
   
 1. En la pestaña **Página principal de Microsoft Office**, haga clic en el icono de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
     
-2. Vaya a [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Vaya a [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. En la página **Inicio de sesión en Office 365**, haga clic en el nombre de cuenta del administrador global, escriba su contraseña y, después, haga clic en **Iniciar sesión**.
     
@@ -280,7 +280,7 @@ Después, actuando como el CEO, cargue un documento nuevo en la carpeta de docum
     
 5. Desde la pestaña **Página principal de Microsoft Office** de su explorador, haga clic en el icono de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
     
-6. Vaya a [http://admin.microsoft.com](http://admin.microsoft.com).
+6. Vaya a [https://admin.microsoft.com](https://admin.microsoft.com).
     
 7. En la página **Inicio de sesión en Office 365**, haga clic en el nombre de cuenta del CEO, escriba su contraseña y, después, haga clic en **Iniciar sesión**.
     
@@ -306,7 +306,7 @@ Después, actuando como un usuario normal, intente acceder al documento **Sensit
   
 1. Desde la pestaña **Página principal de Microsoft Office** de su explorador, haga clic en el icono de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
     
-2. Vaya a [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Vaya a [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. En la página **Office 365 de inicio de sesión** , haga clic en el nombre de cuenta usuario5, escriba su contraseña y, a continuación, haga clic en **iniciar sesión**.
     

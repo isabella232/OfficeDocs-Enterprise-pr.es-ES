@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumen: explicación del aislamiento de inquilinos en Office 365 video.'
-ms.openlocfilehash: a9ecd4b2c2d7dc7bf69a43c608312e3893b5009d
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: c9be942e10debeb729cda87a88131c17d736d4a2
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067811"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035590"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Aislamiento del inquilino en Office 365 Video
 
@@ -26,12 +26,15 @@ ms.locfileid: "37067811"
 > El vídeo de Office 365 se reemplazará por Microsoft Stream. Para obtener más información sobre el nuevo servicio de vídeo empresarial que aporta inteligencia a la colaboración de vídeos y sobre los planes de transición para los clientes actuales de vídeo de Office 365, vea [Migrate to stream from office 365 video](https://docs.microsoft.com/stream/).
 
 ## <a name="introduction"></a>Introducción
+
 Azure Storage se usa para almacenar datos para varios servicios de Office 365, incluidos Office 365 video y Sway. Azure Storage incluye almacenamiento de blobs, que es un almacén de objetos de nube altamente escalable y basado en REST que se usa para almacenar datos sin estructurar. Azure Storage usa un modelo de control de acceso sencillo; cada suscripción de Azure puede crear una o varias cuentas de almacenamiento. Cada cuenta de almacenamiento tiene una clave secreta única que se usa para controlar el acceso a todos los datos de esa cuenta de almacenamiento. Esto es compatible con el escenario típico en el que el almacenamiento está asociado a las aplicaciones y estas aplicaciones tienen control total sobre sus datos asociados; por ejemplo, Sway almacenando contenido en Azure Storage. Todo el contenido de los clientes de Sway se almacena en cuentas de almacenamiento de Azure compartidas. El contenido de cada usuario está en un árbol de directorios independiente de blobs en Azure Storage.
 
 Los sistemas que administran el acceso a los entornos del cliente (por ejemplo, el portal de Azure, SMAPI, etc.) están aislados dentro de una aplicación de Azure operada por Microsoft. De esta forma, se separa lógicamente la infraestructura de acceso al cliente de la capa de aplicaciones y almacenamiento del cliente.
 
 ## <a name="tenant-isolation-in-office-365-video"></a>Aislamiento del inquilino en Office 365 Video
+
 [Office 365 video](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6) es un portal empresarial que ofrece a las organizaciones un destino de gran seguridad y de toda la organización para publicar, compartir y detectar contenido de vídeo. En Office 365 vídeo, los vídeos de cada inquilino se mantienen aislados y cifrados en todas las ubicaciones, y solo están disponibles para los usuarios autenticados que tienen acceso y permisos para los vídeos de la organización. Office 365 video usa una combinación de tecnologías para hacerlo:
+
 - SharePoint Online se usa para almacenar el archivo de vídeo y los metadatos (título de vídeo, descripción, etc.). También proporciona la capa de seguridad y cumplimiento (incluida la autenticación) y las características de búsqueda.
 - Servicios multimedia de Azure proporciona transcodificación, transmisión por secuencias adaptable, entrega segura (mediante cifrado AES) y características de miniaturas.
 

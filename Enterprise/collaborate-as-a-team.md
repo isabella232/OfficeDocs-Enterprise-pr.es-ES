@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Obtenga información sobre cómo colaborar con invitados en Microsoft Teams.
-ms.openlocfilehash: 6a50331b5badcd2534052f04193300b427bafd57
-ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
+ms.openlocfilehash: a3e34431b97e8f565d61470ddd55797981b837c8
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37920163"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029174"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -25,7 +25,7 @@ En este artículo, analizaremos los pasos de configuración de Microsoft 365 nec
 
 En este vídeo se muestran los pasos de configuración que se describen en este documento.</br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44NTr?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Configuración de las relaciones de organización de Azure
 

@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Use los cmdlets de PowerShell de implementación centralizada como ayuda para implementar y administrar complementos de Office para su organización de Office 365.
-ms.openlocfilehash: 301e44da4c663fa54c4e2b753552b0b345e2a6e5
-ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
+ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35834240"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030865"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos
 
@@ -66,7 +66,7 @@ Ejecute el cmdlet **New-OrganizationAdd-in** para cargar un manifiesto de comple
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-También puede ejecutar el cmdlet **New-OrganizationAdd-in** para cargar un complemento y asignarlo a usuarios o grupos directamente mediante el parámetro Members, __ como se muestra en el ejemplo siguiente. Separe las direcciones de correo electrónico de los miembros con una coma. 
+También puede ejecutar el cmdlet **New-OrganizationAdd-in** para cargar un complemento y asignarlo a usuarios o grupos directamente mediante el parámetro _Members_ , como se muestra en el ejemplo siguiente. Separe las direcciones de correo electrónico de los miembros con una coma. 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
@@ -82,9 +82,9 @@ En el siguiente ejemplo, el cmdlet **New-OrganizationAddIn** especifica el Asset
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Para determinar el valor para el __ parámetro AssetID, puede copiarlo desde la dirección URL de la Página Web de la tienda Office para el complemento. AssetIds siempre comienza por "WA" seguido de un número. Por ejemplo, en el ejemplo anterior, el origen del valor de WA104099688 es la dirección URL de la Página Web de la tienda de Office para el complemento [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688):.
+Para determinar el valor para el parámetro _AssetID_ , puede copiarlo desde la dirección URL de la Página Web de la tienda Office para el complemento. AssetIds siempre comienza por "WA" seguido de un número. Por ejemplo, en el ejemplo anterior, el origen del valor de WA104099688 es la dirección URL de la Página Web de la tienda de Office para el complemento [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688):.
   
-Los valores para el __ parámetro locale y el parámetro _ContentMarket_ son idénticos e indican el país o región desde el que está intentando instalar el complemento. El formato es en-US, fr-FR. y así sucesivamente. 
+Los valores para el parámetro _locale_ y el parámetro _ContentMarket_ son idénticos e indican el país o región desde el que está intentando instalar el complemento. El formato es en-US, fr-FR. y así sucesivamente. 
   
 > [!NOTE]
 > Los complementos cargados desde la tienda Office se actualizarán de forma automática dentro de unos días a partir de la actualización más reciente disponible en la tienda Office. 
@@ -111,7 +111,7 @@ Get-OrganizationAddIn |Format-List
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>Activar o desactivar un complemento
 
-Para desactivar un complemento de modo que los usuarios y grupos que están asignados a él ya no tengan acceso, ejecute el cmdlet **set-OrganizationAddIn** con el parámetro _ProductID_ y el parámetro _Enabled_ en `$false`, tal como se muestra en el siguiente ejemplo .
+Para desactivar un complemento de modo que los usuarios y grupos que están asignados a él ya no tengan acceso, ejecute el cmdlet **set-OrganizationAddIn** con el parámetro _ProductID_ y el parámetro _Enabled_ en `$false`, tal como se muestra en el ejemplo siguiente.
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
@@ -125,7 +125,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $
 
 ## <a name="add-or-remove-users-from-an-add-in"></a>Agregar o quitar usuarios de un complemento
 
-Para agregar usuarios y grupos a un complemento específico, ejecute el cmdlet **set-OrganizationAddInAssignments** con los parámetros _ProductID_, _Add_y Members __ . Separe las direcciones de correo electrónico de los miembros con una coma. 
+Para agregar usuarios y grupos a un complemento específico, ejecute el cmdlet **set-OrganizationAddInAssignments** con los parámetros _ProductID_, _Add_y _Members_ . Separe las direcciones de correo electrónico de los miembros con una coma. 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
@@ -151,7 +151,7 @@ Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 
 ## <a name="update-an-add-in"></a>Actualizar un complemento
 
-Para actualizar un complemento desde un manifiesto, ejecute el cmdlet **set-OrganizationAddIn** con los parámetros _ProductID_, _ManifestPath_y locale __ , tal y como se muestra en el siguiente ejemplo. 
+Para actualizar un complemento desde un manifiesto, ejecute el cmdlet **set-OrganizationAddIn** con los parámetros _ProductID_, _ManifestPath_y _locale_ , tal y como se muestra en el siguiente ejemplo. 
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
@@ -177,7 +177,7 @@ Le recomendamos que primero implemente un complemento personalizado para asegura
 Tenga en cuenta también las siguientes restricciones:
 - Todas las direcciones URL deben ser absolutas (incluidas http o https) y válidas.
 - *DisplayName* no debe superar los 125 caracteres 
-- *DisplayName*, ** Resources y *AppDomains* no deben incluir los siguientes caracteres: 
+- *DisplayName*, *Resources* y *AppDomains* no deben incluir los siguientes caracteres: 
  
     - \<
     -  \>
@@ -189,12 +189,12 @@ Si desea personalizar un complemento que se ha implementado, debe desinstalarlo 
 Para personalizar un complemento, ejecute el cmdlet **set – OrganizationAddInOverrides** con *ProductID* como parámetro, seguido de la etiqueta que desea sobrescribir y el nuevo valor. Para averiguar cómo obtener el *ProductID* [, vea obtener detalles de un complemento](#get-details-of-an-add-in) en este artículo. Por ejemplo:
 
 ```powershell
- Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "http://site.com/img.jpg" 
+ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
 Para personalizar varias etiquetas para un complemento, agregue las etiquetas a la línea de comandos:
 
 ```powershell
-Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "http://site.com/img.jpg" 
+Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
@@ -219,7 +219,7 @@ Cualquier elemento de la <Resources> etiqueta del manifiesto se puede personaliz
 ```
 <Resources>  
     <bt:Images> 
-          <bt:Image id=”img16icon” DefaultValue=”http://site.com/img.jpg” 
+          <bt:Image id=”img16icon” DefaultValue=”https://site.com/img.jpg” 
     </bt:Images> 
 </Resources> 
 ``` 

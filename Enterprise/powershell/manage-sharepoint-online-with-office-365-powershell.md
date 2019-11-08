@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: use PowerShell de Office 365 para administrar usuarios, grupos y grupos de sitios de SharePoint Online.'
-ms.openlocfilehash: 2721639ca3ef83b39f85f6da70e47ba90f93f558
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f1257d7ff69aa83c6a66da894f7a3b58d36884dc
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068876"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030985"
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Administrar SharePoint Online con PowerShell de Office 365
 
@@ -27,7 +27,7 @@ ms.locfileid: "34068876"
   
 Una de las tareas principales de cualquier administrador de SharePoint Online es administrar sitios, grupos de sitios y usuarios. Aunque puede realizar algunas de estas tareas en el Centro de administración de Microsoft 365, otras tareas son mucho más rápidas y fáciles en PowerShell de Office 365. Para obtener más información, vea los siguientes temas:
 
-- [Conectarse a SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+- [Conectarse a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
 - [Crear sitios de SharePoint Online y agregar usuarios con PowerShell de Office 365](create-sharepoint-sites-and-add-users-with-powershell.md)
     
@@ -35,7 +35,7 @@ Una de las tareas principales de cualquier administrador de SharePoint Online es
     
 - [Manage SharePoint Online site groups with Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
     
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
 

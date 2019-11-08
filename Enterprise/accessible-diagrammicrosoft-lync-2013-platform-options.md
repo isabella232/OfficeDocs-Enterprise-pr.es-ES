@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: Este artículo es una versión de texto accesible del diagrama con el nombre Opciones de plataformas de Microsoft Lync 2013, que está disponible en Diagramas técnicos.
-ms.openlocfilehash: 4993ad90307973589da6dc5081d8c2875b44ce66
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a62fb6d1e1ee7fbddb79b0aec4ddafea4b07b4fe
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068616"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030604"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>Diagrama accesible: Opciones de plataformas de Microsoft Lync 2013
 
-**Resumen:** este artículo es una versión de texto accesible del diagrama “Opciones de plataformas de Microsoft Lync 2013”, que está disponible en [Diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
+**Resumen:** este artículo es una versión de texto accesible del diagrama “Opciones de plataformas de Microsoft Lync 2013”, que está disponible en [Diagramas técnicos](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
   
 Este póster describe lo que los arquitectos y responsables de decisiones empresariales (BDM) necesitan saber sobre implementaciones de Lync Online (Office 365) y Lync Server. Incluye lo siguiente:
   

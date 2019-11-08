@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Resumen: Configure y demuestre Office 365 Cloud App Security en su entorno de desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 1b20f4dc98c23c2063d77703f157a31889c69e6c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: c4a36ea766bd42b432d531ffecdfb709056220d8
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782260"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030834"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security para el entorno de desarrollo y pruebas de Office 365
 
@@ -32,7 +32,7 @@ Office 365 Cloud App Security, anteriormente conocido como Office 365 Advanced S
 Con las instrucciones de este artículo, puede habilitar y probar Cloud App Security en su suscripción de prueba de Office 365.
   
 > [!TIP]
-> Haga clic [aquí](http://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de Office 365.
+> Haga clic [aquí](https://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del laboratorio de pruebas de Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y pruebas ligero o de una empresa simulada de Office 365
 
@@ -153,13 +153,13 @@ En este procedimiento, demostrará cómo Cloud App Security crea alertas y enví
     
 22. En la pestaña **Página principal de Microsoft Office** , haga clic en **correo**. Espere unos 30 minutos. 
     
-    Verá dos nuevos mensajes de correo electrónico en la bandeja de entrada con el título **servicio de notificación de Microsoft Azure ad**. Un mensaje indica que la cuenta de usuario 5 se ha agregado a la función de **Administrador de contraseña** y otro mensaje indica que la cuenta de usuario 5 se ha agregado a la función de **Administrador** de usuarios (igual al rol de administrador de administración de usuarios en el Centro de administración de 365 de Microsoft).
+    Verá dos nuevos mensajes de correo electrónico en la bandeja de entrada con el título **servicio de notificación de Microsoft Azure ad**. Un mensaje indica que la cuenta de usuario 5 se ha agregado a la función de **Administrador de contraseña** y otro mensaje indica que la cuenta de usuario 5 se ha agregado a la función de **Administrador** de usuarios (igual a la función de administrador de administración de usuarios en el centro de administración de Microsoft 365).
     
 Ahora puede usar este entorno para crear nuevas directivas y seguir probando con Office 365 Cloud App Security. Vea [Get Ready for Office 365 Cloud App Security](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) para obtener vínculos a artículos de configuración adicionales.
   
 ## <a name="see-also"></a>Vea también
 
-[Guías del entorno de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guías del laboratorio de pruebas de adopción de la nube (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Entorno de desarrollo y prueba de Office 365](office-365-dev-test-environment.md)
   

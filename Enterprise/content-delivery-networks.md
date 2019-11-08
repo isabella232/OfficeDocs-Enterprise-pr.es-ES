@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use esta información para obtener información sobre cómo Office 365 usa redes de entrega de contenido (CDN) para mejorar el rendimiento.
-ms.openlocfilehash: a65e83c6063dcd5102dabb6be5ba76029aff6c85
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 7b9ef7a3742dbbccbc052eca28469c4fb10cdae1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643293"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029124"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de entrega de contenido (CDN)
 
@@ -62,7 +62,7 @@ Los orígenes **privados** de la red CDN de Office 365 proporcionan acceso priva
 
 La red CDN de Office 365 se incluye como parte de la suscripción a SharePoint Online.
 
-Para obtener más información acerca de cómo usar la red CDN de Office 365, vea [usar la red de entrega de contenido de office 365 con SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo).
+Para obtener más información acerca de cómo usar la red CDN de Office 365, vea [usar la red de entrega de contenido de office 365 con SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo).
 
 Para ver una serie de vídeos breves que proporcionan información conceptual y de cómo usar la red CDN de Office 365, visite el [canal de YouTube de patrones y prácticas para desarrolladores de SharePoint](https://aka.ms/sppnp-videos).
 
@@ -74,11 +74,11 @@ Aunque no forma parte de la red CDN de Office 365, puede usar estas CDN en el in
 
 Puede usar la **red CDN de Azure** para implementar su propia instancia de CDN para hospedar elementos Web personalizados, bibliotecas y otros activos de recursos, lo que le permite aplicar claves de acceso a su almacenamiento de red CDN y ejercer un mayor control sobre la configuración de la red CDN. El uso de la red CDN de Azure no es gratuito y requiere una suscripción a Azure.
 
-Para obtener más información sobre cómo configurar una instancia de CDN de Azure, consulte [QuickStart: integrar una cuenta de almacenamiento de Azure en la red CDN de Azure](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn).
+Para obtener más información sobre cómo configurar una instancia de CDN de Azure, consulte [QuickStart: integrar una cuenta de almacenamiento de Azure en la red CDN de Azure](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn).
 
-Para ver un ejemplo de cómo se puede usar la red CDN de Azure para hospedar elementos Web de SharePoint, vea [implementar el elemento Web del lado cliente de SharePoint en la red CDN de Azure](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn).
+Para ver un ejemplo de cómo se puede usar la red CDN de Azure para hospedar elementos Web de SharePoint, vea [implementar el elemento Web del lado cliente de SharePoint en la red CDN de Azure](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn).
 
-Para obtener información sobre el módulo de PowerShell de la red CDN de Azure, vea [administrar la red CDN de Azure con PowerShell](https://docs.microsoft.com/en-us/azure/cdn/cdn-manage-powershell).
+Para obtener información sobre el módulo de PowerShell de la red CDN de Azure, vea [administrar la red CDN de Azure con PowerShell](https://docs.microsoft.com/azure/cdn/cdn-manage-powershell).
 
 ### <a name="microsoft-ajax-cdn"></a>RED CDN de Microsoft Ajax
 
@@ -87,10 +87,10 @@ La **red CDN de Ajax** de Microsoft es una red CDN de solo lectura que ofrece mu
 Para incluir estos scripts en su proyecto, simplemente reemplace todas las referencias a estas bibliotecas disponibles públicamente por referencias a la dirección de la red CDN en lugar de incluirla en el propio proyecto. Por ejemplo, use el siguiente código para vincular a jQuery:
 
 ``` html
-<script src=http://ajax.aspnetcdn.com/ajax/jquery-2.1.1.js> </script>
+<script src=https://ajax.aspnetcdn.com/ajax/jquery-2.1.1.js> </script>
 ```
 
-Para obtener más información acerca de cómo usar la red CDN de Microsoft Ajax, consulte [CDN de Microsoft Ajax](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview).
+Para obtener más información acerca de cómo usar la red CDN de Microsoft Ajax, consulte [CDN de Microsoft Ajax](https://docs.microsoft.com/aspnet/ajax/cdn/overview).
 
 ## <a name="how-does-office-365-use-content-from-a-cdn"></a>¿Cómo usa Office 365 el contenido de una red CDN?
 
@@ -110,7 +110,7 @@ La red CDN Averigua el centro de datos más cercano al explorador del usuario y,
 
 ## <a name="how-should-i-set-up-my-network-so-that-cdns-work-best-with-office-365"></a>¿Cómo debo configurar mi red para que las redes CDN funcionen mejor con Office 365?
 
-La reducción de la latencia entre los clientes de la red y los puntos de conexión de red CDN es la consideración clave para garantizar un rendimiento óptimo. Puede usar las prácticas recomendadas que se describen en [Administración de puntos de conexión de Office 365](managing-office-365-endpoints.md) para garantizar que la configuración de red permita a los exploradores del cliente tener acceso a la red CDN directamente en lugar de enrutar el tráfico de la red CDN a través de servidores proxy centralizados para evitar la introducción latencia innecesaria.
+La reducción de la latencia entre los clientes de la red y los puntos de conexión de red CDN es la consideración clave para garantizar un rendimiento óptimo. Puede usar las prácticas recomendadas que se describen en [Administración de puntos de conexión de Office 365](managing-office-365-endpoints.md) para garantizar que la configuración de red permita a los exploradores de cliente tener acceso a la red CDN directamente en lugar de enrutar el tráfico de la red CDN a través de proxies centrales para evitar la latencia innecesaria.
 
 También puede leer los [principios de conectividad de red de office 365](https://aka.ms/o365networkingprinciples) para comprender los conceptos que hay tras optimizar el rendimiento de la red de Office 365.
 
@@ -118,17 +118,17 @@ También puede leer los [principios de conectividad de red de office 365](https:
 
 Las redes CDN que usa Office 365 siempre están sujetas a cambios y, en muchos casos, hay varios socios de la red CDN configurados en el evento uno no está disponible. Los CDN principales usados por Office 365 son:
 
-|COMPLEMENTA  |Company  |Uso  |Vínculo  |
+|CDN  |Company  |Uso  |Vínculo  |
 |---------|---------|---------|---------|
-|RED CDN de Office 365     |Download         |Recursos genéricos en orígenes públicos, contenido de usuario de SharePoint en orígenes privados         |[Uso de la red de entrega de contenido de Office 365 con SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)         |
+|RED CDN de Office 365     |Download         |Recursos genéricos en orígenes públicos, contenido de usuario de SharePoint en orígenes privados         |[Uso de la red de entrega de contenido de Office 365 con SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)         |
 |RED CDN de Azure     |Microsoft         |Código personalizado, soluciones de SharePoint Framework         |[CDN de Microsoft Azure](https://azure.microsoft.com/documentation/services/cdn/)         |
-|RED CDN de Microsoft Ajax (solo lectura)     |Microsoft         |Bibliotecas comunes para Ajax, jQuery, ASP.NET, Bootstrap, Knockout. js, etc.         |[RED CDN de Microsoft Ajax](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview)         |
+|RED CDN de Microsoft Ajax (solo lectura)     |Microsoft         |Bibliotecas comunes para Ajax, jQuery, ASP.NET, Bootstrap, Knockout. js, etc.         |[RED CDN de Microsoft Ajax](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>¿Qué beneficios de rendimiento proporciona una red CDN?
 
 Hay muchos factores implicados en la medición de diferencias específicas de rendimiento entre los datos descargados directamente desde Office 365 y los datos descargados desde una CDN específica, como la ubicación relativa al espacio empresarial y el extremo de red CDN más cercano, el número de activos en una página que atiende la red CDN y cambios transitorios en la latencia y el ancho de banda de la red. Sin embargo, una prueba A/B sencilla puede ayudar a mostrar la diferencia en el tiempo de descarga de un archivo específico.
 
-En las siguientes capturas de pantalla se muestra la diferencia en la velocidad de descarga entre la ubicación nativa de archivos en Office 365 y el mismo archivo hospedado en la [red de entrega de contenido de Microsoft Ajax](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview). Estas capturas de pantalla se encuentran en la pestaña **red** de las herramientas de desarrollo de Internet Explorer 11. En estas capturas de pantalla se muestra la latencia de la biblioteca de jQuery de la popular. Para que aparezca esta pantalla, en Internet Explorer, presione **F12** y seleccione la pestaña **red** , que se simbólica con un icono de Wi-Fi.
+En las siguientes capturas de pantalla se muestra la diferencia en la velocidad de descarga entre la ubicación nativa de archivos en Office 365 y el mismo archivo hospedado en la [red de entrega de contenido de Microsoft Ajax](https://docs.microsoft.com/aspnet/ajax/cdn/overview). Estas capturas de pantalla se encuentran en la pestaña **red** de las herramientas de desarrollo de Internet Explorer 11. En estas capturas de pantalla se muestra la latencia de la biblioteca de jQuery de la popular. Para que aparezca esta pantalla, en Internet Explorer, presione **F12** y seleccione la pestaña **red** , que se simbólica con un icono de Wi-Fi.
   
 ![Captura de pantalla de red F12](media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
@@ -153,7 +153,7 @@ Para obtener información detallada acerca de la privacidad y la protección de 
 
 - Obtenga más información sobre la protección de datos y privacidad de Office 365 en el [centro de confianza de Microsoft](https://www.microsoft.com/trustcenter)
 - Obtenga más información sobre la privacidad y la protección de datos de Akamai en el centro de confianza de la [privacidad de Akamai](https://www.akamai.com/us/en/about/compliance/data-protection-at-akamai.jsp)
-- Obtenga más información sobre la privacidad y la protección de datos de Azure en el [centro de confianza de Azure](https://azure.microsoft.com/en-us/overview/trusted-cloud/)
+- Obtenga más información sobre la privacidad y la protección de datos de Azure en el [centro de confianza de Azure](https://azure.microsoft.com/overview/trusted-cloud/)
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>¿Cómo puedo proteger mi red con estos servicios de terceros?
 
@@ -165,13 +165,13 @@ Para los clientes que desean segregar las solicitudes dirigidas a un centro de i
 
 La lista de FQDN y la forma en que aprovechan las CDN cambian con el tiempo. Consulte nuestra página de [direcciones url 365 URL publicadas e intervalos de direcciones IP](https://go.microsoft.com/fwlink/p/?LinkID=293744) para obtener los últimos FQDN que aprovechan las CDN.
 
-También puede usar la [dirección IP y el servicio Web de office 365](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service) para solicitar las direcciones URL y los intervalos de direcciones IP de Office 365 actuales con formato CSV o JSON.
+También puede usar la [dirección IP y el servicio Web de office 365](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service) para solicitar las direcciones URL y los intervalos de direcciones IP de Office 365 actuales con formato CSV o JSON.
 
 ## <a name="can-i-use-my-own-cdn-and-cache-content-on-my-local-network"></a>¿Puedo usar mi propia red CDN y contenido de caché en mi red local?
 
 Estamos buscando continuamente nuevas formas de apoyar las necesidades de nuestros clientes y actualmente está explorando el uso de soluciones de proxy de almacenamiento en caché y otras soluciones de CDN local.
 
-Aunque no forma parte de la red CDN de Office 365, también puede usar la **red CDN de Azure** para hospedar elementos Web personalizados, bibliotecas y otros activos de recursos, lo que le permite aplicar teclas de acceso al almacenamiento de la red CDN y ejercer un mayor control sobre la configuración de la red CDN. El uso de la red CDN de Azure no es gratuito y requiere una suscripción a Azure. Para obtener más información sobre cómo configurar una instancia de CDN de Azure, consulte [QuickStart: integrar una cuenta de almacenamiento de Azure en la red CDN de Azure](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn).
+Aunque no forma parte de la red CDN de Office 365, también puede usar la **red CDN de Azure** para hospedar elementos Web personalizados, bibliotecas y otros activos de recursos, lo que le permite aplicar teclas de acceso al almacenamiento de la red CDN y ejercer un mayor control sobre la configuración de la red CDN. El uso de la red CDN de Azure no es gratuito y requiere una suscripción a Azure. Para obtener más información sobre cómo configurar una instancia de CDN de Azure, consulte [QuickStart: integrar una cuenta de almacenamiento de Azure en la red CDN de Azure](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn).
 
 ## <a name="im-using-azure-expressroute-for-office-365-does-that-change-things"></a>Estoy usando Azure ExpressRoute para Office 365, ¿eso cambia?
 
@@ -183,17 +183,17 @@ El uso de redes CDN solo tiene sentido en un contexto de SharePoint Online y deb
   
 Este es un vínculo breve que se puede usar para volver: [https://aka.ms/o365cdns](https://aka.ms/o365cdns)
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Principios de conectividad de red de Office 365](https://aka.ms/o365networkingprinciples)
 
-[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)
+[Evaluar la red de Office 365](assessing-network-connectivity.md)
 
-[Administrar puntos de conexión de Office 365](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
+[Administrar puntos de conexión de Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
 
 [Direcciones URL e intervalos de direcciones IP de Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
-[Uso de la red de entrega de contenido de Office 365 con SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
+[Uso de la red de entrega de contenido de Office 365 con SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)
 
 [Centro de confianza de Microsoft](https://www.microsoft.com/trustcenter)
 

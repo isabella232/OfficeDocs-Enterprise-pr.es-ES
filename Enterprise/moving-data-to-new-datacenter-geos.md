@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'El nuevo centro de GEOS agrega capacidad y calcula recursos para apoyar el crecimiento constante del uso y la demanda de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes. Los datos principales de los clientes son un término que hace referencia a un subconjunto de los datos de clientes definidos en los términos de Microsoft Online Services: contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico) y contenido del sitio de SharePoint Online y los archivos se almacenan en ese sitio y los archivos cargados en OneDrive para la empresa.'
-ms.openlocfilehash: df52b50f6e291a80aeb7b8d783937d225bfb6e29
-ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
+ms.openlocfilehash: 780530873022426a8dc10c6a30573e303239a0d1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35907643"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032195"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Mover datos básicos a un nuevo Office 365 Datacenter GEOS
 
@@ -34,17 +34,17 @@ Los clientes existentes que tienen sus datos de clientes principales almacenados
 |:-----|:-----|:-----|:-----|
 |Japón * * * *| Asia/Pacífico | Japón | Diciembre de 2014 |
 |Australia, Nueva Zelanda, Fiji * * * *| Asia/Pacífico | Australia | Marzo de 2015 |
-|India * * * *| Asia/Pacífico | India | Octubre de 2015 |
+|India * * * *| Asia/Pacífico | India | octubre de 2015 |
 |Canadá * * * *| Norteamérica | Canadá | Mayo de 2016 |
 |Reino Unido * * * *| Europa | Reino Unido | Septiembre de 2016 |
 |Corea del sur * * * *| Asia/Pacífico | Corea del sur | Abril de 2017 |
 |Francia * * * *| Europa | Francia | Marzo de 2018 |
 |Emiratos Árabes Unidos * * * *| Europa | Emiratos Árabes Unidos | Junio de 2019 |
-|Sudáfrica * * * *| Europa | Sudáfrica | 2019 de julio |
+|Sudáfrica * * * *| Europa | Sudáfrica | Julio de 2019 |
   
 Los clientes nuevos o los inquilinos de Office 365 creados después de la disponibilidad del nuevo área geográfica del centro de datos tendrán automáticamente almacenados sus datos de clientes principales en el nuevo centro de datos.
   
-Una lista completa de todos los GEOS de centro de datos, los centros de datos y la ubicación de los datos de clientes en reposo están disponibles como parte de los [mapas de centros](https://office.com/datamaps)de datos interactivos. 
+Una lista completa de todos los GEOS de centro de datos, los centros de datos y la ubicación de los datos de clientes en reposo están disponibles como parte de los mapas de centros de datos [interactivos](https://office.com/datamaps). 
   
 ## <a name="data-residency-option"></a>Opción de residencia de datos
 
@@ -68,4 +68,4 @@ Los datos que se mueven a la nueva geo de centro de datos se completan sin costo
   
 [Nueva GEOS de centro de recursos para Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Servicios de Azure por región](https://azure.microsoft.com/en-us/regions/)
+[Servicios de Azure por región](https://azure.microsoft.com/regions/)

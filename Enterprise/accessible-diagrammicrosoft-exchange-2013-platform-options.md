@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: Este artículo es una versión de texto accesible del diagrama con el nombre Opciones de plataforma de Microsoft Exchange 2013, que está disponible en Diagramas técnicos.
-ms.openlocfilehash: ddf215544b811257e6d43f212784a3a1e5aac7b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce1fe525b6a339c64d757b82a6f1c9ea4b82d23e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068596"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027574"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Diagrama accesible: Opciones de plataformas de Microsoft Exchange 2013
 
-**Resumen:** este artículo es una versión de texto accesible del diagrama “Opciones de plataformas de Microsoft Exchange 2013”, que está disponible en [Diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
+**Resumen:** este artículo es una versión de texto accesible del diagrama “Opciones de plataformas de Microsoft Exchange 2013”, que está disponible en [Diagramas técnicos](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
   
 Este póster describe lo que los arquitectos y responsables de decisiones empresariales (BDM) necesitan saber sobre implementaciones de Exchange Online e Exchange Server. Incluye lo siguiente: 
   

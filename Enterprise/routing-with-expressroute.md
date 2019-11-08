@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Para comprender correctamente el tráfico de enrutamiento a Office 365 mediante Azure ExpressRoute, necesitará una sólida visión de los requisitos de enrutamiento de ExpressRoute principales y los circuitos y dominios de enrutamiento de ExpressRoute. Estos diseñan los conceptos básicos para usar ExpressRoute en los que se basarán los clientes de Office 365.
-ms.openlocfilehash: 01251880eba2051d8839f7c08e244398906c75ed
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722719"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031585"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Enrutamiento con ExpressRoute para Office 365
 
@@ -63,7 +63,7 @@ A continuación se muestran escenarios en los que se iniciarán las comunicacion
 
 - [BCS híbrido de SharePoint](https://technet.microsoft.com/library/dn197239.aspx ).
 
-- Federación [de Skype empresarial híbrido](https://technet.microsoft.com/en-us/library/jj205403.aspx) o [Skype empresarial](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
+- Federación [de Skype empresarial híbrido](https://technet.microsoft.com/library/jj205403.aspx) o [Skype empresarial](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
 
 - [Skype empresarial Cloud Connector](https://technet.microsoft.com/library/mt605227.aspx ).
 
@@ -137,11 +137,11 @@ Este ejemplo es un escenario para una compañía ficticia denominada Trey Resear
   
 Los empleados de Trey Research solo pueden conectarse a los servicios y sitios web de Internet que el Departamento de seguridad permite explícitamente en el par de servidores proxy salientes que se encuentran entre la red corporativa y su ISP.
   
-Trey Research planea usar Azure ExpressRoute para Office 365 y reconoce que parte del tráfico, como el tráfico destinado a las redes de entrega de contenido, no podrá enrutar a través de ExpressRoute para la conexión de Office 365. Dado que todo el tráfico ya se enruta a los dispositivos de proxy de forma predeterminada, estas solicitudes seguirán funcionando como antes. Una vez que Trey Research determina que puede cumplir los requisitos de enrutamiento de Azure ExpressRoute, crea un circuito, configura el enrutamiento y vincula el nuevo circuito de ExpressRoute a una red virtual. Una vez que se ha implementado la configuración fundamental de Azure ExpressRoute, Trey Research usa el [#2 archivo PAC](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies) que publicamos para enrutar el tráfico con datos específicos del cliente a través de ExpressRoute de Direct ExpressRoute para Office 365 conexiones.
+Trey Research planea usar Azure ExpressRoute para Office 365 y reconoce que parte del tráfico, como el tráfico destinado a las redes de entrega de contenido, no podrá enrutar a través de ExpressRoute para la conexión de Office 365. Dado que todo el tráfico ya se enruta a los dispositivos de proxy de forma predeterminada, estas solicitudes seguirán funcionando como antes. Una vez que Trey Research determina que puede cumplir los requisitos de enrutamiento de Azure ExpressRoute, crea un circuito, configura el enrutamiento y vincula el nuevo circuito de ExpressRoute a una red virtual. Una vez que se ha implementado la configuración fundamental de Azure ExpressRoute, Trey Research usa el [#2 archivo PAC que publicamos](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies) para enrutar el tráfico con datos específicos del cliente a través de ExpressRoute de Direct ExpressRoute para Office 365 conexiones.
   
 Como se muestra en el siguiente diagrama, Trey Research puede satisfacer los requisitos para enrutar el tráfico de Office 365 a través de Internet y un subconjunto de tráfico a través de ExpressRoute usando una combinación de cambios de configuración de enrutamiento y de proxy saliente.
   
-1. Mediante el [#2 archivo PAC](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies) que publicamos para enrutar el tráfico a través de un punto de salida de Internet independiente para Azure ExpressRoute para Office 365.
+1. Mediante el [#2 archivo PAC que publicamos](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies) para enrutar el tráfico a través de un punto de salida de Internet independiente para Azure ExpressRoute para Office 365.
 
 2. Los clientes se configuran con una ruta predeterminada hacia los servidores proxy de Trey Research.
 
@@ -157,7 +157,7 @@ Los FQDN de mayor volumen para Exchange Online, SharePoint Online y Skype empres
 
 - \*. Lync.com junto con los intervalos IP para el tráfico no TCP
 
-- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*PowerPoint.officeapps.Live.com, \*View.officeapps.Live.com, \*Visio.officeapps.Live.com, \* word-edit.officeapps.live.com, \*word-view.officeapps.live.com, Office.Live.com
+- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*powerpoint.officeapps.live.com, \*view.officeapps.live.com, \*Visio.officeapps.Live.com, \*Word-Edit.officeapps.Live.com, \*Word-View.officeapps.Live.com, Office.Live.com
 
 Obtenga más información sobre la [implementación y la administración de la configuración de proxy en Windows 8](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx) y [Asegúrese de que Office 365 no está limitado por el proxy](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx).
   
@@ -212,7 +212,7 @@ En este escenario, el tráfico de la oficina remota resolverá la infraestructur
   
 Si Humongous tiene oficinas principales en varios continentes, se recomienda un mínimo de dos circuitos activos/activos por región, a fin de reducir la latencia de aplicaciones confidenciales, como Skype empresarial online. Si todas las oficinas están en un solo continente o no usan la colaboración en tiempo real, tener un punto de salida consolidado o distribuido es una decisión específica del cliente. Cuando hay varios circuitos disponibles, el enrutamiento de BGP garantizará la conmutación por error si un único circuito deja de estar disponible.
   
-Obtenga más información sobre [configuraciones](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) de enrutamiento [https://azure.microsoft.com/en-us/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/)de muestra y.
+Obtenga más información sobre [configuraciones](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) de enrutamiento [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/)de muestra y.
   
 ## <a name="selective-routing-with-expressroute"></a>Enrutamiento selectivo con ExpressRoute
 
@@ -230,7 +230,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/erorout
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Evaluación de la conectividad de red de Office 365](assessing-network-connectivity.md)
+[Evaluar la red de Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute para Office 365](azure-expressroute.md)
   
@@ -254,6 +254,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/erorout
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)

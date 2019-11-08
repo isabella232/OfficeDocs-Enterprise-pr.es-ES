@@ -13,16 +13,17 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumen: funcionamiento del aislamiento y el control de acceso dentro de Azure Active Directory.'
-ms.openlocfilehash: d1f3a10d44a949511236d5adce38693ad2ad5c04
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 0e6423c53bd0c2823708f59830d1ba628a0c71ca
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067822"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035787"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Aislamiento y Control de acceso en Azure Active Directory
 
 Azure Active Directory se diseñó para hospedar varios inquilinos de una forma muy segura mediante el aislamiento de datos lógicos. Un nivel de autorización controla el acceso a Azure Active Directory. Azure Active Directory aísla a los clientes en el uso de contenedores de inquilinos como límites de seguridad para proteger el contenido de un cliente de modo que los coinquilinos no puedan acceder al contenido ni verse comprometidos. La capa de autorización de Azure Active Directory realiza tres comprobaciones:
+
 - ¿Está habilitada la entidad principal para obtener acceso al inquilino de Azure Active Directory?
 - ¿Está habilitada la entidad principal para obtener acceso a los datos de este inquilino?
 - ¿La entidad de identidad está autorizada en este inquilino para el tipo de acceso a datos solicitado?
