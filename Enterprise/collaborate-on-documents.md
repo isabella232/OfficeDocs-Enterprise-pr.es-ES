@@ -6,14 +6,15 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
+ms.collection: SPO_Content
 localization_priority: Normal
 description: Obtenga información sobre cómo colaborar con invitados en un documento en SharePoint y OneDrive.
-ms.openlocfilehash: 9ddbae276252c89ecae31a7f2bf5f1a3bf59af0f
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1f5053a332c80fbb957cfcb3e11f35aa94cfe270
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029154"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076174"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar con invitados en un documento
 
@@ -31,7 +32,7 @@ El uso compartido en Microsoft 365 se rige en su nivel más alto por la configur
 
 Compruebe la configuración de relaciones de organización para asegurarse de que no se bloquee el uso compartido con invitados.
 
-![Captura de pantalla de la página de configuración de relaciones empresariales de Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
+![Captura de pantalla de la página de configuración de relaciones de organización de Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
 
 Para establecer la configuración de relación organizativa
 
@@ -76,7 +77,7 @@ Elija el tipo de vínculo que está seleccionado de forma predeterminada cuando 
 - **Solo las personas de su organización** : elija esta opción si prevé que la mayoría del uso compartido de archivos y carpetas sea para personas dentro de la organización.
 - **Personas específicas** : considere esta opción si espera compartir muchos archivos y carpetas con los invitados. Este tipo de vínculo funciona con los invitados y requiere que se autentiquen.
  
-![Captura de pantalla de la configuración de uso compartido de archivos y carpetas en el nivel de organización de SharePoint](media/sharepoint-organization-files-folders-sharing-settings.png)
+![Captura de pantalla de la configuración de uso compartido de los archivos y carpetas de nivel de organización de SharePoint ](media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 Para establecer la configuración de vínculo predeterminado de SharePoint y OneDrive de la organización

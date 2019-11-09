@@ -8,19 +8,21 @@ audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 search.appverid:
 - MET150
 - WSU140
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: La compatibilidad finaliza para SharePoint 2010 y SharePoint Server 2010 finaliza el 13 de octubre de 2020. Use este artículo como guía para actualizar a SharePoint Online o a una versión más reciente de SharePoint Server local.
-ms.openlocfilehash: a8ab4a79053badf4e07918e5e97c7d4821edd5f8
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 639782e877b9a6b0d8a7979d8984da11f2403f50
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030905"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078119"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 

@@ -6,15 +6,16 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: Obtenga más información sobre la configuración de uso compartido de invitados disponible en Microsoft 365.
-ms.openlocfilehash: 4cba1f087828d33fb53b084e792664ecd11d3e63
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 739a14460d4039281bde11eb1bec60bb3a5b8886
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032325"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076404"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -203,7 +204,7 @@ Puede establecer permisos para el uso compartido de invitados para cada sitio de
 
 ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
-|**Setting**|**Default**|**Descripción**|
+|**Setting**|**Predeterminado**|**Descripción**|
 |:-----|:-----|:-----|
 |Puede compartir contenido con|Varía por tipo de sitio (consulte la tabla siguiente)|Indica el tipo de uso compartido externo permitido para este sitio. Las opciones disponibles en esta sección están sujetas a la configuración de uso compartido en el nivel de la organización de SharePoint.|
 

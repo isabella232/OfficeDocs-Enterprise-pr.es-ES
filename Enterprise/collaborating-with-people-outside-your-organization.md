@@ -6,14 +6,15 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
+ms.collection: SPO_Content
 localization_priority: Normal
 description: Obtenga información sobre cómo configurar Office 365 para la colaboración con usuarios invitados.
-ms.openlocfilehash: e9cae26881e1efcf1f958a436d095296fcf3c2be
-ms.sourcegitcommit: 1123ef65778a17b7d2cfc308435e96d4b9509df0
+ms.openlocfilehash: b98792d365953b61f564f04765d4249605e24e43
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37026220"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076184"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Colaborar con personas fuera de la organización
 
@@ -23,4 +24,10 @@ De forma predeterminada, en Microsoft 365, el uso compartido de invitados está 
 - [Colaborar en un sitio](collaborate-in-a-site.md) : Obtenga información sobre cómo configurar Microsoft 365 para habilitar el uso compartido de sitios de SharePoint con invitados.
 - [Colaborar como un equipo](collaborate-as-a-team.md) : Obtenga información sobre cómo configurar Microsoft 365 para habilitar la colaboración de invitado en Microsoft Teams.
 
+## <a name="see-also"></a>Vea también
 
+[Procedimientos recomendados para compartir archivos y carpetas con usuarios anónimos](best-practices-anonymous-sharing.md)
+
+[Reducir la exposición accidental de archivos al compartirlos con invitados](sharing-limit-accidental-exposure.md)
+
+[Crear un entorno de uso compartido de invitado seguro](create-a-secure-guest-sharing-environment.md))

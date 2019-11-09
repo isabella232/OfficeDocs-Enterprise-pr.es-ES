@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: 'Resumen: explica cómo se conectan los equipos cliente a los inquilinos de Office 365, según la ubicación del equipo cliente y el centro de recursos de inquilino de Office 365.'
-ms.openlocfilehash: f7b41e1ff4fd8b30ed0f51641c479025b4e04ae5
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 0eb62c2f23004d2d81a89395bdd99151a8daeed9
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722699"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077683"
 ---
 # <a name="client-connectivity"></a>Conectividad de clientes
 
@@ -41,7 +42,7 @@ Para obtener más información sobre las solicitudes de red de Skype empresarial
 
 ||
 |:-----|
-| Este artículo forma parte de la planeación de [red y el ajuste del rendimiento de Office 365](https://aka.ms/tune).|
+| Este artículo forma parte de la [planeación de red y el ajuste del rendimiento de Office 365](https://aka.ms/tune).|
 
 > [!NOTE]
 > Nos preocupamos por administrar los datos de los clientes para que sean seguros y privados en nuestros centros de datos. Los detalles sobre los pasos necesarios para administrar la privacidad se incluyen en el [centro de confianza](https://go.microsoft.com/fwlink/?LinkID=397383).
@@ -130,4 +131,4 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/o365cli
 
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Evaluación de la conectividad de red de Office 365](assessing-network-connectivity.md)
+[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)

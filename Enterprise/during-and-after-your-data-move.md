@@ -7,17 +7,18 @@ ms.date: 07/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.collection: SPO_Content
 search.appverid:
 - MET150
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
-ms.openlocfilehash: 67b337ee1ddf34a547ddafc80d886ff6075987ce
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 86bdc1679b787952f7999f04a92c0a9e2ff6e347
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030784"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077603"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
