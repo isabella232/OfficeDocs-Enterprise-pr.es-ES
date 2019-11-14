@@ -16,14 +16,13 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'Este artículo está destinado a los administradores. ¿Un usuario elimina permanentemente los elementos de su buzón de Outlook? El usuario desea volver a hacerlo, pero no puede recuperarlos. Es posible que pueda recuperar los elementos purgados si no se han quitado permanentemente del buzón de correo del usuario. '
-ms.openlocfilehash: 12e07a88136d0dee0f186857aa71c3de6736a798
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
+ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782620"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38308605"
 ---
-<a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Recuperar elementos eliminados en un buzón de usuario. Ayuda para administradores
 
 **Este artículo está destinado a los administradores. ¿Está tratando de recuperar elementos eliminados en su propio buzón?** Pruebe con uno de los siguientes procedimientos:
@@ -74,7 +73,7 @@ El primer paso es asignarse a sí mismo los permisos necesarios en Exchange Onli
 > [!CAUTION]
 > Los miembros del grupo de roles Discovery Management pueden tener acceso al contenido de mensajes confidenciales. Esto incluye buscar en todos los buzones de la organización, obtener una vista previa de los resultados de la búsqueda (y otros elementos del buzón de correo), copiar los resultados en un buzón de correo de detección y exportar los resultados de la búsqueda a un archivo PST. 
   
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-2-search-the-users-mailbox-for-deleted-items"></a>Paso 2: buscar en el buzón del usuario los elementos eliminados
 <a name="step2"> </a>
@@ -93,7 +92,7 @@ Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos local
   
 5. En la página **nombre y descripción** , escriba un nombre para la búsqueda (por ejemplo, el nombre del usuario del que está recuperando el correo electrónico), una descripción opcional y, a continuación, haga clic en **siguiente**.
     
-6. En la **** página buzones, haga clic en **especificar buzones para buscar**y, a continuación,](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)haga clic en **Agregar**![icono de agregar.
+6. En la página **buzones** , haga clic en **especificar buzones para buscar**y, a continuación,](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)haga clic en **Agregar**![icono de agregar.
     
     ![Haga clic en especificar buzones para buscar en un buzón de manifiestan](media/83879a40-5e5c-49a8-be3b-c0023d197588.png)
   
@@ -119,10 +118,10 @@ Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos local
 |![Número 4 en un círculo rosa.](media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)           <br/> |Buscar mensajes recibidos o enviados a personas específicas.  <br/> |
 |![Número cinco en un círculo rosa.](media/878cc815-0165-49ba-a1ee-9236e5980403.png)           <br/> |Busque todos los tipos de mensajes o seleccione unos específicos.  <br/> |
    
-    > [!TIP]
-    >  Here's a few tips about how to build a search query to find missing items. Try to get as much information from the user to help you create a search query so you can find what you're looking for. >  If you not sure how to find a missing message, consider using the **Include all content** option. The search results will include all items in the user's Recoverable Items folder, including the hidden folder (called the Purges folder) that contain items that have been purged by the user. Then you can go to Step 3, copy the results to a discovery mailbox, and look at the message in the hidden folder. >  If you know approximately when the missing message was originally sent or received by the user, use the **Specify start date** and **Specify end date** options to provide a date range. This will return all messages sent or received by the user within that date range. Specifying a date range is a really good way to narrow the search results. >  If you know who sent the missing email, use the **From** box to specify this sender. >  If you want to narrow the search results to different types of mailbox items, click **Select message types**, click **Select the message types to search**, and then choose a specific message type to search for. For example, you can search only for calendar items or contacts. Here's a screenshot of the different message types you can search for; the default is to search for all message types. 
+   > [!TIP]
+   >  Estas son algunas sugerencias sobre cómo crear una consulta de búsqueda para encontrar los elementos que faltan. Intente obtener toda la información del usuario para ayudarle a crear una consulta de búsqueda para que pueda encontrar lo que está buscando. Si no está seguro de cómo encontrar un mensaje que falta, considere la posibilidad de usar la opción **incluir todo el contenido** . Los resultados de la búsqueda incluirán todos los elementos de la carpeta elementos recuperables del usuario, incluida la carpeta oculta (denominada la carpeta purga) que contiene elementos purgados por el usuario. A continuación, puede ir al paso 3, copiar los resultados en un buzón de correo de detección y ver el mensaje en la carpeta oculta. Si sabe aproximadamente Cuándo el usuario envió o recibió originalmente el mensaje que falta, use las opciones **especificar fecha de inicio** y **especificar fecha de finalización** para proporcionar un intervalo de fechas. Se devolverán todos los mensajes enviados o recibidos por el usuario dentro del intervalo de fechas. Especificar un intervalo de fechas es una buena forma de restringir los resultados de la búsqueda. Si sabe quién envió el correo electrónico que falta, use el cuadro **de** para especificar a este remitente. Si desea restringir los resultados de la búsqueda a diferentes tipos de elementos del buzón de correo, haga clic en **seleccionar tipos de mensajes**, haga clic en **seleccionar los tipos de mensajes para buscar**y, a continuación, elija un tipo de mensaje específico para buscar. Por ejemplo, puede buscar sólo en los elementos de calendario o los contactos. Esta es una captura de pantalla de los diferentes tipos de mensajes que puede buscar; el valor predeterminado es buscar todos los tipos de mensajes. 
   
-    Click **Next** when you've completed the **Search query** page. 
+   Haga clic en **siguiente** cuando haya completado la página de **consulta de búsqueda** . 
     
 10. En la página **configuración de conservación local** , haga clic en **Finalizar** para iniciar la búsqueda. Para recuperar el correo electrónico eliminado, no hay razón para poner el buzón de correo del usuario en retención. 
     
@@ -136,7 +135,7 @@ Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos local
   
 13. Si no encuentra lo que está buscando, puede revisar los criterios de búsqueda seleccionando la búsqueda, haciendo clic en **Editar**![icono](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)editar y, a continuación, haciendo clic en **consulta de búsqueda**. Cambie los criterios de búsqueda y vuelva a ejecutar la búsqueda.
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="optional-step-3-copy-the-search-results-to-a-discovery-mailbox"></a>Opcional Paso 3: copiar los resultados de la búsqueda en un buzón de correo de detección
 <a name="step3"> </a>
@@ -147,7 +146,7 @@ Si no puede encontrar un elemento al obtener una vista previa de los resultados 
     
 2. En la lista de búsquedas, seleccione la búsqueda que ha creado en el paso 2.
     
-3. Haga clic en buscar búsqueda y, a continuación, haga clic en **copiar resultados de búsqueda** en la lista desplegable. ****![](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png) 
+3. Haga clic **en buscar búsqueda**y, a continuación, haga clic en **copiar resultados de búsqueda** en la lista desplegable.![](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png) 
     
     ![Haga clic en buscar y, a continuación, en copiar resultados de búsqueda](media/7888df82-94b4-4e44-8a53-f66854dc7c86.png)
   
@@ -181,7 +180,7 @@ Si no puede encontrar un elemento al obtener una vista previa de los resultados 
     > [!TIP]
     > Si un usuario no encuentra un elemento eliminado mediante la herramienta elementos recuperables, pero ese elemento todavía se puede recuperar (lo que significa que no se ha quitado de forma permanente del buzón de correo), es más probable que se encuentre en la carpeta depuraciones. Por lo tanto, asegúrese de buscar en la carpeta purgas el elemento eliminado que está intentando recuperar para un usuario. 
   
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-4-export-the-search-results-to-a-pst-file"></a>Paso 4: exportar los resultados de la búsqueda a un archivo PST
 <a name="step4"> </a>
@@ -208,7 +207,7 @@ Una vez que encuentre el elemento que está intentando recuperar para un usuario
     
     La **herramienta de exportación de PST de eDiscovery** muestra información de estado sobre el proceso de exportación. Una vez completada la exportación, puede tener acceso al archivo en la ubicación donde se ha descargado. 
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-5-restore-the-recovered-items-to-the-users-mailbox"></a>Paso 5: restaurar los elementos recuperados en el buzón de correo del usuario
 <a name="step5"> </a>
@@ -271,11 +270,12 @@ Tiene que usar la aplicación de escritorio de Outlook para restaurar un element
     
 ![Seleccionar una carpeta para mover otros tipos de elementos](media/f8290131-43f2-46f1-bc07-228c2d83b96c.png)
   
-    Note that calendar items, contacts, and tasks are located directly in the Purges folder, and not in a Calendar, Contacts, or Tasks subfolder. However, you can sort by **Type** to group similar types of items. 
+   > [!NOTE]
+   > Los elementos de calendario, los contactos y las tareas se encuentran directamente en la carpeta purgas y no en una subcarpeta calendario, contactos o tareas. Sin embargo, puede ordenar por **tipo** para agrupar tipos similares de elementos. 
     
 8. Cuando haya terminado de recuperar los elementos eliminados, haga clic con el botón derecho en el archivo PST en la barra de navegación izquierda y seleccione **Cerrar "nombre de archivo pst"**.
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="more-information"></a>Más información
 <a name="moreinfo"> </a>
@@ -296,6 +296,6 @@ Tiene que usar la aplicación de escritorio de Outlook para restaurar un element
     
   - [Restaurar mensajes de correo electrónico eliminados en Outlook.com](https://go.microsoft.com/fwlink/p/?LinkID=623435)
     
-[Volver al principio](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 

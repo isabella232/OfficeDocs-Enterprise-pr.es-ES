@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 'Resumen: Las soluciones de SharePoint 2013 pueden hospedarse en máquinas virtuales de Microsoft Azure. Obtenga información acerca de qué tipo de soluciones son una buena opción y cómo configurar Microsoft Azure para hospedar una.'
-ms.openlocfilehash: 7bc274098f961ccf9aa6aef05f595dfc6e116bec
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2059ee68a523641bbfe7389d273c931e44d23bd5
+ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032295"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38308595"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquitecturas de Microsoft Azure para SharePoint 2013
 
@@ -54,7 +54,7 @@ Para intranet y cargas de trabajo y soluciones de colaboración, considere las s
 
 Aunque en este artículo se usan topologías de SharePoint como ejemplo, puede usar estos conceptos de diseño con cualquier topología de granja de SharePoint. Antes de diseñar el entorno de Azure, use la guía de topología, arquitectura, capacidad y rendimiento siguiente para diseñar la granja de SharePoint:
   
-- [Diseño de la arquitectura de SharePoint 2013 para profesionales de TI](http://technet.microsoft.com/sharepoint/fp123594.aspx)
+- [Diseño de la arquitectura de SharePoint 2013 para profesionales de TI](https://technet.microsoft.com/sharepoint/fp123594.aspx)
     
 - [Plan for performance and capacity management in SharePoint Server 2013](https://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     

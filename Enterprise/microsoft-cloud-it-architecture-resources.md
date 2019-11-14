@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Resumen: conozca los conceptos principales de arquitectura de la nube de identidad, seguridad, redes e híbrida de Microsoft. Revise las recomendaciones para proteger los archivos, las identidades y los dispositivos al usar la nube de Microsoft. Obtenga información sobre cómo implementar un escritorio moderno y seguro con Windows 10 y Office ProPlus.'
-ms.openlocfilehash: 8fd86e045f0c40857c13e9875477eba23f1f6fca
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: f22c61ee1ed8dc205b5818d46e03300c21c5f22d
+ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032285"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38308615"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitectura de TI de la nube de Microsoft
 
@@ -197,7 +197,7 @@ Recomendaciones para descubrir, clasificar, proteger y supervisar datos personal
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|![Miniatura para Information Protection de Office 365 para RGPD](media/o365infoprotectforgdpr-thumb.png)  <br/> [PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf) \| [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)    |Si desea ver este contenido en formato de artículo, haga clic en [Information Protection de Office 365 para RGPD](https://docs.microsoft.com/Office365/SecurityCompliance/office-365-information-protection-for-gdpr).      |
+|![Miniatura para Information Protection de Office 365 para RGPD](media/o365infoprotectforgdpr-thumb.png)  <br/> [PDF](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf) \| [Visio](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)    |Si desea ver este contenido en formato de artículo, haga clic en [Information Protection de Office 365 para RGPD](https://docs.microsoft.com/Office365/SecurityCompliance/office-365-information-protection-for-gdpr).      |
 
 ### <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles 
 
