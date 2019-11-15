@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'El nuevo centro de GEOS agrega capacidad y calcula recursos para apoyar el crecimiento constante del uso y la demanda de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes. Los datos principales de los clientes son un término que hace referencia a un subconjunto de los datos de clientes definidos en los términos de Microsoft Online Services: contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico) y contenido del sitio de SharePoint Online y los archivos se almacenan en ese sitio y los archivos cargados en OneDrive para la empresa.'
-ms.openlocfilehash: 780530873022426a8dc10c6a30573e303239a0d1
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e6bd86e7d3eebd0395d50e7668cf32dcabd0f20f
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032195"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626160"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Mover datos básicos a un nuevo Office 365 Datacenter GEOS
 
 Seguimos abrimos New Datacenter GEOS for Office 365 for Business Services. Estos nuevos GEOS de centro de recursos agregan capacidad y computan recursos para admitir el crecimiento constante del uso y la demanda de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes. 
 
-Los datos de clientes principales son un término que hace referencia a un subconjunto de los datos de clientes definidos en los [términos de Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=249048): 
+Los datos principales de los clientes son un término que hace referencia a un subconjunto de datos de clientes, entre los que se incluyen: 
 - Contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico)
 - Contenido del sitio de SharePoint Online y los archivos almacenados en ese sitio
 - Archivos cargados en OneDrive para la empresa 
@@ -34,8 +34,8 @@ Los clientes existentes que tienen sus datos de clientes principales almacenados
 |:-----|:-----|:-----|:-----|
 |Japón * * * *| Asia/Pacífico | Japón | Diciembre de 2014 |
 |Australia, Nueva Zelanda, Fiji * * * *| Asia/Pacífico | Australia | Marzo de 2015 |
-|India * * * *| Asia/Pacífico | India | octubre de 2015 |
-|Canadá * * * *| Norteamérica | Canadá | Mayo de 2016 |
+|India * * * *| Asia/Pacífico | India | Octubre de 2015 |
+|Canadá * * * *| Norteamérica | Canada | Mayo de 2016 |
 |Reino Unido * * * *| Europa | Reino Unido | Septiembre de 2016 |
 |Corea del sur * * * *| Asia/Pacífico | Corea del sur | Abril de 2017 |
 |Francia * * * *| Europa | Francia | Marzo de 2018 |

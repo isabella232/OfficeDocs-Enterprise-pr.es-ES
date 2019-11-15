@@ -3,7 +3,7 @@ title: Durante y después del movimiento de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/18/2019
+ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
-ms.openlocfilehash: 86bdc1679b787952f7999f04a92c0a9e2ff6e347
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077603"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626140"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -35,12 +35,12 @@ Vea el centro de mensajes de Office 365 para confirmar que se han completado los
 |Australia, Nueva Zelanda, Fiji  <br/> |31 de octubre de 2017  <br/> |
 |Japón  <br/> |31 de octubre de 2018  <br/> |
 |India  <br/> |31 de octubre de 2018  <br/> |
-|Canadá  <br/> |30 de junio de 2019  <br/> |
+|Canada  <br/> |30 de junio de 2019  <br/> |
 |Corea del sur  <br/> |31 de octubre de 2018  <br/> |
 |Reino Unido  <br/> |15 de septiembre de 2019  <br/> |
 |Francia  <br/> |15 de septiembre de 2020  <br/> |
 |Emiratos Árabes Unidos  <br/> |1 de febrero de 2022  <br/> |
-|Sudáfrica  <br/> |Anunció  <br/> |
+|Sudáfrica  <br/> |1 de febrero de 2022  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -119,7 +119,7 @@ Todos los usuarios se cerrarán desde el software de cliente de Skype empresaria
    
 |**Después del movimiento**|
 |:-----|
-| Los datos de la reunión (presentaciones cargadas, etc.) no se moverán y deberán volver a cargarse.  <br/>  Los clientes más antiguos de Lync, como el cliente de Lync 2010 y el cliente de Lync para Mac 2011, se sabe que almacenan en caché la información de DNS para el servicio que causa problemas de inicio de sesión. Es posible que sea necesario borrar la memoria caché de DNS si el usuario no se encuentra en el último cliente Windows de Skype empresarial. Pida a los usuarios que ejecuten el Asistente para la [solución de problemas](https://support.microsoft.com/kb/2541980) y siga las instrucciones sobre cómo borrar la memoria caché del cliente. Los usuarios del cliente de Lync para Mac deben seguir [estas instrucciones](https://support.microsoft.com/kb/2629861).  <br/> |
+| Los datos de la reunión (presentaciones cargadas, etc.) no se moverán y deberán volver a cargarse.  <br/>  Los clientes más antiguos de Lync, como el cliente de Lync 2010 y el cliente de Lync para Mac 2011, se sabe que almacenan en caché la información de DNS para el servicio que causa problemas de inicio de sesión. Es posible que sea necesario borrar la memoria caché de DNS si el usuario no se encuentra en el último cliente Windows de Skype empresarial. Vea [solución de problemas de configuración de DNS de Skype empresarial online en Office 365](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue). Los usuarios del cliente de Lync para Mac deben seguir [estas instrucciones](https://support.microsoft.com/kb/2629861).  <br/> |
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Movimientos de Skype empresarial que implican a un proveedor de servicios de audioconferencia de terceros
 Los servicios complementarios de proveedores de servicios de audioconferencia de terceros para Skype empresarial no están disponibles para los usuarios hospedados en nuevos centros de datos geográficamente específicos.  Los clientes existentes que usen un servicio de proveedor de servicios de audioconferencia de terceros no deben solicitar el traslado a un nuevo centro de datos específico de forma geográfica.  Los clientes nuevos que se implementen en los nuevos centros de datos geográficamente específicos deberán solicitar un traslado a un centro de datos regional para usar un proveedor de servicios de audioconferencia de terceros.
