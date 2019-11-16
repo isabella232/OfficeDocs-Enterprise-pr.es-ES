@@ -15,10 +15,10 @@ search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Antes de empezar a planear la red para la conectividad de red de Office 365, es importante comprender los principios de conectividad para administrar de forma segura el tráfico de Office 365 y obtener el mejor rendimiento posible. Este artículo le ayudará a comprender las instrucciones más recientes para optimizar de manera segura la conectividad de red de Office 365.
 ms.openlocfilehash: d403cd6245be21f8089e1234e7c769b93c2142cb
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38031925"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Principios de conectividad de red de Office 365

@@ -16,10 +16,10 @@ search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algunas redes empresariales restringen el acceso a ubicaciones de Internet genéricas o incluyen backhaul o procesamiento de tráfico de red substancial. Para garantizar que los equipos de redes como estos puedan tener acceso a Office 365, los administradores de red y de proxy deben administrar la lista de FQDN, direcciones URL y direcciones IP que componen la lista de puntos de conexión de Office 365. Estos deben agregarse a ruta directa, omisión de proxy o reglas de firewall y archivos PAC para garantizar que las solicitudes de red puedan alcanzar el alcance de Office 365.
 ms.openlocfilehash: 1a694d516a81fec7d6c619c17414e2245dd6b0ef
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38030614"
 ---
 # <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365

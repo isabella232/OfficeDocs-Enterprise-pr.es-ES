@@ -25,10 +25,10 @@ search.appverid:
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Obtenga información sobre cómo agregar varios usuarios a Office 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Office 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón de Office 365. '
 ms.openlocfilehash: a719b2626eada8abe225a6951af4a2d292667856
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38030734"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Agregar varios usuarios a Office 365 a la vez. Ayuda para administradores
@@ -79,7 +79,7 @@ Todos los usuarios de su grupo deben tener una cuenta de usuario para poder inic
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/f4e7f161-8ae6-4264-a429-9297b539a8de?autoplay=false]
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 <a name="bk_preview"> </a>
 
 - Ahora que estas personas tienen cuentas, necesitan [Descargar e instalar o reinstalar office 365 u office 2016 en un equipo PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Cada persona de su equipo puede usar Office 365 en un máximo de 5 equipos o Mac. 

@@ -14,10 +14,10 @@ ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Si usa Office 2007 u Office 2010, es el momento de planear la actualización. No se bloquee con aplicaciones y servidores obsoletos y no admitidos. Use estos recursos para empezar a trabajar con su plan.
 ms.openlocfilehash: 39ae2a80f9f16d70e22f7654c8818155b0ffda91
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38031065"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planeación de la actualización de los servidores y clientes de Office 2007 u Office 2010

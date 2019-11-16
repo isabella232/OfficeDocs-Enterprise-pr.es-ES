@@ -13,19 +13,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Información general sobre las directivas de Microsoft para Office 365 relativas a la retención, eliminación y destrucción de datos.
-ms.openlocfilehash: 08b04e4fec762249208acb626fa20562ffecb82f
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: e4632a3025f1dc0f22338c0a463f054a7b993524
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067846"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "37975835"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Retención, eliminación y destrucción de datos en Office 365
 
 Microsoft tiene una directiva estándar de tratamiento de datos para Office 365 que especifica cuánto tiempo se conservan los datos de los clientes tras la eliminación. Normalmente, hay dos escenarios en los que se eliminan los datos de los clientes:
 
-- **Eliminación activa:** El inquilino tiene una suscripción activa y un usuario elimina datos o los administradores eliminan los datos proporcionados por un usuario.
-- **Eliminación pasiva:** Finaliza la suscripción de inquilino.
+- **Eliminación activa**: el inquilino tiene una suscripción activa y un usuario o administrador elimina datos o los administradores eliminan un usuario.
+- **Eliminación pasiva**: finaliza la suscripción de inquilino.
 
 ## <a name="data-retention"></a>Retención de datos
 
@@ -34,7 +34,7 @@ Para cada uno de estos escenarios de eliminación, en la tabla siguiente se mues
 | Categoría de datos | Clasificación de datos | Descripción | Ejemplos | Período de retención |
 |-----------------|-----------------|-----------------|----------------------------------|-------------------------------|
 | Datos de cliente | Contenido del cliente| Contenido proporcionado directamente/creado por administradores y usuarios <br><br> Incluye todo el texto, sonido, vídeo, archivos de imagen y software creado y almacenado en centros de datos de Microsoft cuando se usan los servicios de Office 365 | Algunos ejemplos de las aplicaciones de Office 365 más usadas que permiten a los usuarios crear datos son Word, Excel, PowerPoint, Outlook y OneNote <br><br> El contenido del cliente también incluye secretos de propiedad del cliente o proporcionados (contraseñas, certificados, claves de cifrado, claves de almacenamiento) | **Escenario de eliminación activa:** como máximo 30 días <br><br> **Escenario de eliminación pasiva:** como máximo 180 días |
-| Datos de cliente | Información de identificación del usuario final (EUII) | Datos que identifican o pueden usarse para identificar al usuario de un servicio de Microsoft. EUII no incluye contenido del cliente | Nombre de usuario o nombre para mostrar (Dominio\nombre de usuario) <br><br> Nombre principal de usuario (nombre @ dominio) <br><br>  Direcciones IP específicas del usuario | **Escenario de eliminación activa:** como máximo de 180 días (solo una acción de administrador de inquilinos) <br><br> **Escenario de eliminación pasiva:** como máximo 180 días |
+| Datos de cliente | Información de identificación del usuario final (EUII) | Datos que identifican o pueden usarse para identificar al usuario de un servicio de Microsoft. EUII no incluye contenido del cliente | Nombre de usuario o nombre para mostrar (Dominio\nombre de usuario) <br><br> Nombre principal de usuario (name@domain) <br><br>  Direcciones IP específicas del usuario | **Escenario de eliminación activa:** como máximo de 180 días (solo una acción de administrador de inquilinos) <br><br> **Escenario de eliminación pasiva:** como máximo 180 días |
 | Datos personales <br> (datos no incluidos en los datos del cliente) | Identificadores de seudónimos de usuario final (EUPI) | Identificador creado por Microsoft ligado al usuario de un servicio de Microsoft. Cuando se combina con otra información, como una tabla de asignación, EUPI identifica al usuario final <br><br> EUPI no contiene información que el cliente ha cargado o creado | GUID de usuario, PUIDs o SID <br><br> Identificadores de sesión | **Escenario de eliminación activa:** como máximo 30 días <br><br> **Escenario de eliminación pasiva:** como máximo 180 días |
 
 ## <a name="subscription-retention"></a>Retención de suscripción
@@ -50,6 +50,7 @@ Para cualquier suscripción, un suscriptor puede ponerse en contacto con el sopo
 Para obtener más información acerca de la deshabilitación de aprovisionamiento rápido, consulte [Cancelar Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
 
 ## <a name="related-links"></a>Vínculos relacionados
+
 - [Destrucción de datos](office-365-data-destruction.md)
 - [Inmutabilidad en Office 365](office-365-data-immutability.md)
 - [Eliminación de datos en Exchange Online](office-365-exchange-online-data-deletion.md)
