@@ -15,12 +15,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Aprenda a usar PowerShell de Office 365 para crear cuentas de usuario en Office 365.
-ms.openlocfilehash: 846dafb842b87f119670f44848152a99341939e7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9d4aee35a1fc78753087b6eb6695e96966794000
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069066"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38707057"
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Crear cuentas de usuario con PowerShell de Office 365
 
@@ -45,7 +45,7 @@ Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powersh
 
 Después de haberse conectado, use la sintaxis siguiente para crear una cuenta individual:
   
-```
+```powershell
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 $PasswordProfile.Password="<user account password>"
 New-AzureADUser -DisplayName "<display name>" -GivenName "<first name>" -SurName "<last name>" -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -MailNickName <mailbox name> -PasswordProfile $PasswordProfile -AccountEnabled $true
@@ -53,7 +53,7 @@ New-AzureADUser -DisplayName "<display name>" -GivenName "<first name>" -SurName
 
 En este ejemplo se crea una cuenta para el usuario de Estados Unidos llamado Caleb Sills:
   
-```
+```powershell
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 $PasswordProfile.Password="3Rv0y1q39/chsy"
 New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -MailNickName calebs -PasswordProfile $PasswordProfile -AccountEnabled $true
@@ -67,19 +67,19 @@ Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powersh
 
 Para crear una cuenta individual, use la sintaxis siguiente:
   
-```
+```powershell
 New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last name> -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -LicenseAssignment <licensing plan name> [-Password <Password>]
 ```
 
 Para obtener una lista de los nombres de planes de licencias disponibles, use este comando:
 
-````
+````powershell
 Get-MsolAccountSku
 ````
 
 En este ejemplo se crea una cuenta para el usuario de Estados Unidos llamado Caleb Sills y se asigna una licencia desde el plan de licencias `contoso:ENTERPRISEPACK` (Office 365 Enterprise E3).
   
-```
+```powershell
 New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -LicenseAssignment contoso:ENTERPRISEPACK
 ```
 
@@ -87,7 +87,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
 
 1. Cree un archivo de valores separados por comas (CSV) que contenga la información necesaria de la cuenta de usuario. Por ejemplo:
     
-  ```
+  ```powershell
   UserPrincipalName,FirstName,LastName,DisplayName,UsageLocation,AccountSkuId
   ClaudeL@contoso.onmicrosoft.com,Claude,Loiselle,Claude Loiselle,US,contoso:ENTERPRISEPACK
   LynneB@contoso.onmicrosoft.com,Lynne,Baxter,Lynne Baxter,US,contoso:ENTERPRISEPACK
@@ -99,13 +99,13 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
     
 2. Utilice la sintaxis siguiente:
     
-  ```
+  ```powershell
   Import-Csv -Path <Input CSV File Path and Name> | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId [-Password $_.Password]} | Export-Csv -Path <Output CSV File Path and Name>
   ```
 
 En este ejemplo se crean las cuentas de usuario a partir del archivo denominado C:\My Documents\NewAccounts.csv y se registran los resultados en el archivo denominado C:\My Documents\NewAccountResults.csv.
     
-  ```
+  ```powershell
   Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
   ```
 

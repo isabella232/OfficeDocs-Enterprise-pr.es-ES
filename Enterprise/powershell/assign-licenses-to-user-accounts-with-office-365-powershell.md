@@ -18,12 +18,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Cómo usar Office 365 PowerShell para asignar una licencia de Office 365 a los usuarios sin licencia.
-ms.openlocfilehash: e963b9a0f24ae5b573dfe9612d9d09419809defe
-ms.sourcegitcommit: 6b4fca7ccdbb7aeadc705d82f1007ac285f27357
+ms.openlocfilehash: 22cc5377557464ac6d67833381b96ac01382bc4b
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37282935"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38707007"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Asignar licencias a cuentas de usuario con PowerShell de Office 365
 
@@ -42,7 +42,7 @@ Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powersh
 
 A continuación, enumere los planes de licencia para el inquilino con este comando.
 
-```
+```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
@@ -50,13 +50,13 @@ A continuación, obtenga el nombre de inicio de sesión de la cuenta a la que de
 
 A continuación, asegúrese de que la cuenta de usuario tiene asignada una ubicación de uso.
 
-```
+```powershell
 Get-AzureADUser -ObjectID <user sign-in name (UPN)> | Select DisplayName, UsageLocation
 ```
 
 Si no hay ninguna ubicación de uso asignada, puede asignar una con estos comandos:
 
-```
+```powershell
 $userUPN="<user sign-in name (UPN)>"
 $userLoc="<ISO 3166-1 alpha-2 country code>"
 Set-AzureADUser -ObjectID $userUPN -UsageLocation $userLoc
@@ -64,7 +64,7 @@ Set-AzureADUser -ObjectID $userUPN -UsageLocation $userLoc
 
 Por último, especifique el nombre de inicio de sesión del usuario y el nombre del plan de licencia y ejecute estos comandos.
 
-```
+```powershell
 $userUPN="<user sign-in name (UPN)>"
 $planName="<license plan name from the list of license plans>"
 $License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
@@ -82,7 +82,7 @@ Ejecute el comando **Get-MsolAccountSku** para ver los planes de licencias dispo
     
 Para buscar las cuentas sin licencia de la organización, ejecute este comando.
 
-```
+```powershell
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
@@ -90,19 +90,19 @@ Solo se pueden asignar licencias a cuentas de usuario que tengan la propiedad **
     
 Para buscar las cuentas que no tienen un valor **UsageLocation** , ejecute este comando.
 
-```
+```powershell
 Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 ```
 
 Para establecer el valor **UsageLocation** en una cuenta, ejecute este comando.
 
-```
+```powershell
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
 Por ejemplo:
 
-```
+```powershell
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 ```
     
@@ -112,19 +112,19 @@ Si usa el cmdlet **Get-MsolUser** sin usar el parámetro **All**, solo se devuel
     
 Para asignar una licencia a un usuario, use el siguiente comando en Office 365 PowerShell.
   
-```
+```powershell
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
 En este ejemplo se asigna una licencia desde el plan de licencias **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) al usuario sin licencia **\@litwareinc.com**:
   
-```
+```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
 Para asignar una licencia a muchos usuarios sin licencia, ejecute este comando.
   
-```
+```powershell
 Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLicense -AddLicenses "<AccountSkuId>"
 ```
   
@@ -134,13 +134,13 @@ Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLi
 
 En este ejemplo se asignan licencias desde el plan de licencias **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) a todos los usuarios sin licencia:
   
-```
+```powershell
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
 En este ejemplo se asignan las mismas licencias a los usuarios sin licencia del Departamento de ventas de Estados Unidos:
   
-```
+```powershell
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
@@ -152,13 +152,13 @@ A continuación, obtenga el nombre de inicio de sesión de la cuenta de usuario 
 
 A continuación, enumere las suscripciones (planes de licencia) para el inquilino con este comando.
 
-```
+```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
 A continuación, enumere las suscripciones que la cuenta de usuario tiene actualmente con estos comandos.
 
-```
+```powershell
 $userUPN="<user account UPN>"
 $licensePlanList = Get-AzureADSubscribedSku
 $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
@@ -169,7 +169,7 @@ Identifique la suscripción que el usuario tiene actualmente (la suscripción de
 
 Por último, especifique los nombres de suscripción para y de (números de parte de SKU) y ejecute estos comandos.
 
-```
+```powershell
 $subscriptionFrom="<SKU part number of the current subscription>"
 $subscriptionTo="<SKU part number of the new subscription>"
 # Unassign
@@ -190,7 +190,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 
 Puede comprobar el cambio de suscripción de la cuenta de usuario con estos comandos.
 
-```
+```powershell
 $licensePlanList = Get-AzureADSubscribedSku
 $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }

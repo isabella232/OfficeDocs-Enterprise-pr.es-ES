@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 'Resumen: Use Office 365 PowerShell para configurar las propiedades de una o varias cuentas de usuario en el inquilino de Office 365.'
-ms.openlocfilehash: 40d7e78b3fd6c011f6c53b2af433f258b888d5bb
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 94596326c9d52b4010f6e9baf67fe3c7a12399be
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435354"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38706997"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell
 
@@ -75,7 +75,7 @@ Consulte [set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/
 
 Para mostrar el nombre principal de usuario de las cuentas de usuario, ejecute el siguiente comando.
   
-```
+```powershell
 Get-AzureADUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName | More
 ```
 
@@ -90,21 +90,21 @@ Este comando indica a Office 365 PowerShell que:
     
 En este comando se enumeran todas las cuentas. Si desea mostrar el nombre principal de usuario de una cuenta en función de su nombre para mostrar (nombre y apellido), rellene la variable **$username** a continuación (quite \< los caracteres y >) y, a continuación, ejecute los siguientes comandos:
   
-```
+```powershell
 $userName="<Display name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 En este ejemplo se muestra el nombre principal de usuario de la cuenta de usuario con el nombre para mostrar de los alféizares de Caleb.
   
-```
+```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 Mediante el uso de una variable **$UPN** , puede realizar cambios en las cuentas individuales en función de su nombre para mostrar. Este es un ejemplo de configuración de la ubicación de uso de Belinda Newman en Francia, pero especificando su nombre para mostrar en lugar de su nombre principal de usuario:
   
-```
+```powershell
 $userName="Belinda Newman"
 $upn=(Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
@@ -114,7 +114,7 @@ Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
 
 Para cambiar las propiedades de todos los usuarios, puede usar la combinación de los cmdlets **Get-AzureADUser** y **set-AzureADUser** . En el siguiente ejemplo se cambia a Francia la ubicación de uso de todos los usuarios:
   
-```
+```powershell
 Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
 ```
 
@@ -128,7 +128,7 @@ Este comando indica a Office 365 PowerShell que:
 
 Para cambiar las propiedades de un conjunto específico de cuentas de usuario, puede usar la combinación de los cmdlets **Get-AzureADUser**, **Where**y **set-AzureADUser** . En el siguiente ejemplo se cambia a Francia la ubicación de uso de todos los usuarios del departamento de contabilidad:
   
-```
+```powershell
 Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
 ```
 
@@ -190,7 +190,7 @@ Consulte [set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) 
 
 Para ver los nombres principales de usuario de todos los usuarios, ejecute el siguiente comando.
   
-```
+```powershell
 Get-MSolUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName | More
 ```
 
@@ -206,21 +206,21 @@ Este comando indica a Office 365 PowerShell que:
     
 En este comando se enumeran todas las cuentas. Si desea mostrar el nombre principal de usuario de una cuenta en función de su nombre para mostrar (nombre y apellido), rellene la variable **$username** a continuación (quite \< los caracteres y >) y, a continuación, ejecute los siguientes comandos:
   
-```
+```powershell
 $userName="<Display name>"
 Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 En este ejemplo se muestra el nombre principal de usuario del usuario denominado Caleb alféizares.
   
-```
+```powershell
 $userName="Caleb Sills"
 Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 Mediante el uso de una variable **$UPN** , puede realizar cambios en las cuentas individuales en función de su nombre para mostrar. Este es un ejemplo de configuración de la ubicación de uso de Belinda Newman en Francia, pero especificando su nombre para mostrar en lugar de su nombre principal de usuario:
   
-```
+```powershell
 $userName="<display name>"
 $upn=(Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
@@ -230,7 +230,7 @@ Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
 
 Para cambiar las propiedades de todos los usuarios, puede combinar los cmdlets **Get-MsolUser** y **Set-MsolUser**. En el siguiente ejemplo se cambia a Francia la ubicación de uso de todos los usuarios:
   
-```
+```powershell
 Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 ```
 
@@ -244,7 +244,7 @@ Este comando indica a Office 365 PowerShell que:
 
 Para cambiar las propiedades de un conjunto específico de cuentas de usuario, puede usar la combinación de los cmdlets **Get-msoluser**, **Where-Object**y **set-MsolUser** . En el siguiente ejemplo se cambia a Francia la ubicación de uso de todos los usuarios del departamento de contabilidad:
   
-```
+```powershell
 Get-MsolUser | Where-Object {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
 ```
 
