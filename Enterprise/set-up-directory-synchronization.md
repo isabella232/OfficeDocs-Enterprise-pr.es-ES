@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Obtenga información sobre cómo configurar la sincronización de directorios entre Office 365 y su Active Directory local.
-ms.openlocfilehash: 1798c54854bc5ecc82481aaabca3690e7212e135
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: a51abf7dcca0a9edc4ecf233ea67fdeb80070a70
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162483"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702251"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Configurar la sincronización de directorios en Office 365
 
@@ -67,7 +67,7 @@ Para el servidor local en el que instale Azure AD Connect, necesitará:
 |Windows Server 2008 R2 con Service Pack 1 (SP1) * * o Windows Server 2012 | -La versión más reciente de PowerShell está disponible en Windows Management Framework 4,0. Buscarlo en el [centro de descarga de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> -.Net 4.5.1 y versiones posteriores están disponibles en el [centro de descarga de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
 |Windows Server 2008 | -La versión más reciente compatible de PowerShell está disponible en Windows Management Framework 3,0, disponible en el [centro de descarga de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> -.Net 4.5.1 y versiones posteriores están disponibles en el [centro de descarga de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
 
-Consulte requisitos previos de [Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites) para obtener información detallada sobre los requisitos de hardware, software, cuentas y permisos, los requisitos de certificados SSL y los límites de objetos para Azure ad Connect.
+Consulte requisitos [previos de Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites) para obtener información detallada sobre los requisitos de hardware, software, cuentas y permisos, los requisitos de certificados SSL y los límites de objetos para Azure ad Connect.
   
 También puede revisar el [historial de versiones](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history) de Azure ad Connect para ver lo que se incluye y corregir en cada versión.
 
@@ -82,12 +82,10 @@ Antes de empezar, asegúrese de que tiene:
 
 Siga estos pasos:
 
-1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) https://admin.microsoft.com) ( **** \> y seleccione usuarios **activos** usuarios en el panel de navegación de la izquierda.
-2. En la página **usuarios activos** del centro de administración, elija **más** \> **sincronización de directorios**.
-
-    ![En el menú más, elija sincronización de directorios.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) https://admin.microsoft.com) ( **y seleccione** \> usuarios **activos** usuarios en el panel de navegación de la izquierda.
+2. En la **Página usuarios activos** , elija una **sincronización de directorios** **más** (tres puntos) \> .
   
-3. En la página de **preparación de Active** Directory, seleccione el vínculo Descargar la **herramienta de Microsoft Azure Active Directory Connect** para empezar. 
+3. En la página **preparación de Azure Active Directory** , seleccione el vínculo **ir al centro de descargas para obtener la herramienta de Azure ad Connect** para empezar. 
 4. Siga los pasos del [mapa de ruta de la instalación de Azure ad Connect y Azure ad Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap).
 
 ## <a name="3-finish-setting-up-domains"></a>3. finalizar la configuración de dominios

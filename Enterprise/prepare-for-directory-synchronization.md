@@ -3,6 +3,7 @@ title: Preparación para la sincronización de directorios en Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 11/18/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo preparar el aprovisionamiento de usuarios a Office 365 mediante la sincronización de directorios y las ventajas a largo plazo del uso de este método.
-ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
-ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
+ms.openlocfilehash: 22db70d659d74e6d0f37f54a7743a562f220565d
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35249201"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702241"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Preparación para la sincronización de directorios en Office 365
 
@@ -54,6 +55,9 @@ Antes de sincronizar AD DS con su espacio empresarial de Azure AD, debe limpiar 
 En AD DS, complete las siguientes tareas de limpieza para cada cuenta de usuario a la que se asignará una licencia de Office 365:
   
 1. Asegúrese de que haya una dirección de correo electrónico válida y única en el atributo **proxyAddresses** . 
+
+  >[!Note]
+  >Se omitirá un carácter de tilde (~) en las direcciones de correo electrónico. Esto puede dar lugar a errores de sincronización de directorios falsos positivos al duplicar proxyAddresses.
     
 2. Quite los valores duplicados en el atributo **proxyAddresses** . 
     
@@ -71,7 +75,7 @@ En AD DS, complete las siguientes tareas de limpieza para cada cuenta de usuario
   - Teléfono móvil
   - Número de fax
   - Dirección
-  - Población
+  - Ciudad
   - Provincia
   - Código postal
   - País o región
@@ -95,14 +99,14 @@ A continuación se enumeran los atributos que debe preparar:
   - Si el atributo existe en el objeto de usuario, se sincronizará con Office 365, pero Office 365 no lo necesita ni lo usa.
   - Número máximo de caracteres: 64
     
-- **tales**
+- **mail**
     
   - El valor del atributo debe ser único dentro del directorio.
     
     > [!NOTE]
     > Si hay valores duplicados, se sincroniza el primer usuario con el valor. Los usuarios posteriores no aparecerán en Office 365. Debe modificar el valor de Office 365 o modificar ambos valores en AD DS para que ambos usuarios aparezcan en Office 365. 
   
-- **mailNickname** (Alias de Exchange) 
+- **mailNickname** (alias de Exchange) 
     
   - El valor del atributo no puede comenzar con un punto (.).
   - El valor del atributo debe ser único dentro del directorio.
@@ -128,7 +132,7 @@ A continuación se enumeran los atributos que debe preparar:
   - Si un usuario tiene un atributo **samAccountName** no válido, pero tiene un atributo **userPrincipalName** válido, se crea la cuenta de usuario en Office 365. 
   - Si **samAccountName** y **userPrincipalName** no son válidos, se debe actualizar el atributo **userPrincipalName** de AD DS. 
     
-- **SN** Apellido 
+- **SN** (Apellidos) 
     
   - Si el atributo existe en el objeto de usuario, se sincronizará con Office 365, pero Office 365 no lo necesita ni lo usa.
     
@@ -176,7 +180,7 @@ Para obtener más información acerca de cómo agregar un sufijo UPN alternativo
   
 ## <a name="5-match-the-ad-ds-upn-with-the-office-365-upn"></a>5. hacer coincidir con el UPN de AD DS con el UPN de Office 365
 
-Si ya ha configurado la sincronización de directorios, es posible que el UPN del usuario para Office 365 no concuerda con el UPN AD DS del usuario definido en AD DS. Esto puede suceder cuando se ha asignado una licencia a un usuario antes de que se comprobara el dominio. Para solucionar esto, use [PowerShell para corregir](https://go.microsoft.com/fwlink/p/?LinkId=396730) el UPN duplicado y actualizar el UPN del usuario para asegurarse de que el UPN de Office 365 coincide con el nombre de usuario corporativo y el dominio. Si actualiza el UPN en AD DS y desea que se sincronice con la identidad de Azure Active Directory, debe quitar la licencia del usuario en Office 365 antes de realizar los cambios en AD DS. 
+Si ya ha configurado la sincronización de directorios, es posible que el UPN del usuario para Office 365 no concuerda con el UPN AD DS del usuario definido en AD DS. Esto puede suceder cuando se ha asignado una licencia a un usuario antes de que se comprobara el dominio. Para solucionar esto, use [PowerShell para corregir el UPN duplicado](https://go.microsoft.com/fwlink/p/?LinkId=396730) y actualizar el UPN del usuario para asegurarse de que el UPN de Office 365 coincide con el nombre de usuario corporativo y el dominio. Si actualiza el UPN en AD DS y desea que se sincronice con la identidad de Azure Active Directory, debe quitar la licencia del usuario en Office 365 antes de realizar los cambios en AD DS. 
   
 Consulte también [Cómo preparar un dominio no enrutable (como un dominio. local) para la sincronización de directorios](prepare-a-non-routable-domain-for-directory-synchronization.md).
 

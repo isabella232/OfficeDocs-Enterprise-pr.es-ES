@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Describe las causas comunes de los problemas con la sincronización de directorios en Office 365 y proporciona algunos métodos para ayudar a solucionar problemas y resolverlos.
-ms.openlocfilehash: 3a1cf63122be84dc3e1c60e84a9a3a488f81bc0f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f7a117df41e9a972f4ea166eb7b75e5fb1a85295
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067676"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702231"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Solución de problemas con la sincronización de directorios para Office 365
 
@@ -30,21 +30,17 @@ Con la sincronización de directorios, puede seguir Administrando usuarios y gru
   
 ## <a name="how-do-i-know-if-something-is-wrong"></a>¿Cómo sé si algo es incorrecto?
 
-La primera indicación de que algo es incorrecto es cuando el icono Estado de sincronización de directorios del centro de administración de Microsoft 365 indica que hay un problema:
-  
-![Icono de estado de sincronización de directorios de la versión preliminar del centro de administración](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+La primera indicación de que algo es incorrecto es cuando el icono Estado de sincronización de directorios del centro de administración de Microsoft 365 indica que hay un problema.
   
 También recibirá un mensaje de correo (para el correo electrónico alternativo y el correo electrónico de administrador) de Office 365 que indica que el inquilino ha encontrado errores de sincronización de directorios. Para obtener información detallada, vea [identificar errores de sincronización de directorios en Office 365](identify-directory-synchronization-errors.md).
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>¿Cómo obtengo la herramienta Azure Active Directory Connect?
 
-En el [centro de administración de Microsoft 365](https://admin.microsoft.com), vaya a * * usuarios \> * * **usuarios activos**. Haga clic en el menú **más** y seleccione **sincronización de directorios**. 
-  
-![En el menú más, elija sincronización de directorios.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+En el [centro de administración de Microsoft 365](https://admin.microsoft.com), vaya a **usuarios** \> **activos**. Haga clic en el menú **más** (tres puntos) y seleccione **sincronización de directorios**. 
   
 Siga las [instrucciones del asistente](set-up-directory-synchronization.md) para descargar Azure ad Connect. 
   
-Si sigue usando Azure Active Directory Sync (dirSync), eche un vistazo a [cómo solucionar problemas de los mensajes de error del Asistente para la instalación y configuración de la herramienta de sincronización de Azure Active Directory en Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) para obtener información sobre los requisitos del sistema para instalar. DirSync, los permisos que necesita y cómo solucionar errores comunes. 
+Si sigue usando Azure Active Directory Sync (DirSync), eche un vistazo a [cómo solucionar problemas de los mensajes de error del Asistente para la instalación y configuración de la herramienta de sincronización de Azure Active Directory en Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) para obtener información acerca de los requisitos del sistema para instalar DirSync, los permisos necesarios y cómo solucionar errores comunes. 
   
 Para actualizar desde Azure Active Directory Sync a Azure AD Connect, consulte [las instrucciones de actualización](https://go.microsoft.com/fwlink/p/?LinkId=733240).
   
