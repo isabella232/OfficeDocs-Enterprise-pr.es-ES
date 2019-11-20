@@ -3,7 +3,7 @@ title: Configurar la red de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,20 +17,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: Vea estos artículos para comprender las redes de Office 365.'
-ms.openlocfilehash: 958841733259bd01cd16a908cfac65998a3f3127
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 725c2470644206045a40816fad3643b83d6c8ea6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722689"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747419"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Configurar la red de Office 365
 
-**Resumen:** Vea estos artículos para comprender las redes de Office 365.
-  
-Una parte importante de la integración de Office 365 es asegurarse primero de que la red y las conexiones a Internet están configuradas para el acceso optimizado. Configurar la red local para obtener acceso a una nube distribuida globalmente de software como servicio (SaaS) es diferente de una red tradicional que está optimizada para el tráfico a los centros de datos locales. 
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
-Use estos artículos para comprender las principales diferencias, así como para modificar los dispositivos perimetrales, los equipos cliente y la red local a fin de obtener el mejor rendimiento de usuario.
+Una parte importante de la integración de Office 365 es asegurarse de que la red y las conexiones a Internet están configuradas para el acceso optimizado. Configurar la red local para obtener acceso a una nube distribuida globalmente de software como servicio (SaaS) es diferente de una red tradicional que está optimizada para el tráfico a los centros de datos locales. 
+
+Use estos artículos para comprender las principales diferencias, así como para modificar los dispositivos perimetrales, los equipos cliente y la red local a fin de obtener el mejor rendimiento para sus usuarios locales.
 
 ## <a name="how-office-365-networking-works"></a>Funcionamiento de las redes de Office 365
 
@@ -50,7 +50,7 @@ Si es un proveedor de equipos de red, únase al [Programa para partners de redes
 
 Los puntos de conexión son el conjunto de direcciones IP de destino, nombres de dominio DNS y URL para el tráfico de Office 365 en Internet. 
 
-Para optimizar el rendimiento de los servicios basados en la nube de Office 365, estos puntos de conexión necesitan un tratamiento especial por parte de los exploradores cliente y los dispositivos de la red perimetral. Estos dispositivos incluyen firewalls, inspección e interrupción SSL, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos.
+Para optimizar el rendimiento de los servicios basados en la nube de Office 365, algunos puntos de conexión necesitan un tratamiento especial por parte de los exploradores cliente y los dispositivos de la red perimetral. Estos dispositivos incluyen firewalls, inspección e interrupción SSL, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos.
 
 Vea [Administrar puntos de conexión de Office 365](managing-office-365-endpoints.md) para obtener detalles.
 
