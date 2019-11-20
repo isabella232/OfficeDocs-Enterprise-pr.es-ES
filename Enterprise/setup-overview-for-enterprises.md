@@ -3,7 +3,7 @@ title: Implementar Office 365 Enterprise para la organización
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/12/2019
+ms.date: 11/19/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Estos pasos de introducción están diseñados para ayudarle a configurar su red, crear sus identidades, implementar Office 365 ProPlus, migrar los datos y ayudar a las personas de su organización a empezar a usar Office 365.
-ms.openlocfilehash: 20b970651d2ff432e0bf7b5d74bdc5f02e34f225
-ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
+ms.openlocfilehash: e9af8d1ad617d617450946966967ab797eeffa07
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302722"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748071"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Implementar Office 365 Enterprise para la organización
 
@@ -30,7 +30,7 @@ ms.locfileid: "36302722"
 
 En este artículo se describen dos opciones de implementación, si quiere ayuda o lo hace por su cuenta. En cada caso, Microsoft proporciona una ruta de acceso guiada para que pueda seguir implementando correctamente.
 
-## <a name="guided-enterprise-office-365-setup-process-with-fasttrack"></a>Proceso guiado de implementación empresarial de Office 365 con FastTrack
+## <a name="guided-office-365-enterprise-setup-process-with-fasttrack"></a>Proceso de instalación de Office 365 Enterprise guiado con FastTrack
 
 **[FastTrack para office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** es el mejor método para implementar Office 365. FastTrack le guía a través de las configuraciones de implementación más comunes y puede responder a las preguntas a lo largo del proceso. 
 
@@ -40,39 +40,39 @@ Para tener acceso a una serie de guías de configuración, inicie sesión en su 
 >También puede obtener ayuda de un [socio de Microsoft](https://www.microsoft.com/solution-providers/home).
 >
 
-## <a name="self-deployment-of-office-365-enterprise"></a>Implementación automática de Office 365 Enterprise
+## <a name="do-it-yourself-guided-deployment-of-office-365-enterprise"></a>Implementación guiada por usted mismo de Office 365 Enterprise
 
-La implementación de Office 365 Enterprise por su cuenta requiere que realice una investigación detallada para tomar decisiones de diseño que optimicen la configuración de los servicios de nube y la adopción de usuarios. Empiece la planeación [aquí](get-your-organization-ready-for-office-365.md).
+La implementación de Office 365 Enterprise por su cuenta requiere que realice una investigación detallada para tomar decisiones de diseño que optimicen la configuración del servicio de Office 365 y la adopción del usuario. Empiece la planeación [aquí](get-your-organization-ready-for-office-365.md).
 
-Para implementar Office 365 Enterprise por su cuenta, estos son los pasos recomendados.
+Para implementar Office 365 Enterprise por su cuenta después de completar la planeación, estos son los pasos recomendados.
 
-1. Configurar la red
+1. [Configurar la red](set-up-network-for-office-365.md)
 
-   Incluye la adición de dominios de Internet y la optimización del rendimiento de red para los usuarios locales. Empiece [aquí](set-up-network-for-office-365.md).
+   Incluye la adición de dominios de Internet y la optimización del rendimiento de red para los usuarios locales.
  
-2. Configurar las identidades
+2. [Configurar las identidades](protect-your-global-administrator-accounts.md)
 
-   Incluye la determinación de un modelo de identidad (solo en la nube o híbrido) y de la identidad híbrida, la configuración de la sincronización de directorios entre los servicios de dominio de Active Directory (AD DS) locales y la suscripción a Office 365. Empiece [aquí](protect-your-global-administrator-accounts.md).
+   Incluye la determinación de un modelo de identidad (solo en la nube o híbrido) y de la identidad híbrida, la configuración de la sincronización de directorios entre los servicios de dominio de Active Directory (AD DS) locales y la suscripción a Office 365.
 
-3. Implementar capacidades de seguridad
+3. [Implementar seguridad](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)
 
-   Incluye la configuración y la implementación de seguridad básica y mejorada, protección contra amenazas e información para su espacio empresarial e identidades en los primeros 30 días, 90 días y más allá. Empiece [aquí](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).
+   Incluye la configuración y la implementación de seguridad básica y mejorada, protección contra amenazas e información para su espacio empresarial e identidades en los primeros 30 días, 90 días y más allá.
  
-4. Implementación de software cliente
+4. [Implementación de software cliente](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 
-   Incluye la implementación de Office 365 ProPlus, la versión actualizada en la nube y siempre actualizada del conjunto de aplicaciones de Office (Word, Excel, PowerPoint y otros) en los dispositivos. Todas las licencias de cliente de Office 365 incluyen una licencia para Office 365 ProPlus. Empiece [aquí](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus).
+   Incluye la implementación de Office 365 ProPlus, la versión actualizada en la nube y siempre actualizada del conjunto de aplicaciones de Office (Word, Excel, PowerPoint y otros) en los dispositivos. Todas las licencias de cliente de Office 365 incluyen una licencia para Office 365 ProPlus.
  
-5. Configurar la administración de dispositivos móviles
+5. [Configurar la administración de dispositivos móviles](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
-   Office 365 Enterprise incluye capacidades de administración de dispositivos móviles que le ayudarán a proteger y administrar los dispositivos móviles de los usuarios. Empiece [aquí](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd).
+   Office 365 Enterprise incluye capacidades de administración de dispositivos móviles que le ayudarán a proteger y administrar los dispositivos móviles de los usuarios.
  
-6. Configuración de servicios y aplicaciones
+6. [Configuración de servicios y aplicaciones](configure-services-and-applications.md)
 
-   Incluye información sobre la migración de los datos y vínculos a artículos que le ayudarán a comenzar con los servicios clave de Office 365 como Exchange Online, SharePoint Online y Teams. Empiece [aquí](configure-services-and-applications.md).
+   Incluye información sobre la migración de los datos y vínculos a artículos que le ayudarán a comenzar con los servicios clave de Office 365 como Exchange Online, SharePoint Online y Teams.
  
-7. Proporcionar recursos de aprendizaje a los usuarios
+7. [Proporcionar formación a los usuarios](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
-   Incluye vídeos breves que ayudan a los usuarios a sacar el máximo partido de Office 365 rápidamente. Empiece [aquí](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users).
+   Incluye vídeos breves que ayudan a los usuarios a sacar el máximo partido de Office 365 rápidamente.
  
 
 >[!Note]

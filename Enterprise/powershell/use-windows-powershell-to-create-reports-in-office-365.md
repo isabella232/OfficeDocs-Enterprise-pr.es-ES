@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Resumen: Use el PowerShell de Office 365 para crear informes que no se pueden crear en el Centro de administración de Office 365.'
-ms.openlocfilehash: e620ecffc89bd5b93de7b608be55bf68721b80af
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 4303f03c282c84972428ab8e5010aa316f40c90a
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031685"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746263"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Usar Windows PowerShell para crear informes en Office 365
 
- **Resumen:** Use PowerShell de Office 365 para crear informes que no se pueden crear en el Centro de administración de Microsoft Office 365.
-  
 Existen muchos informes diferentes disponibles en el Centro de administración de Microsoft Office 365. Sin embargo, estos informes solo proporcionan demasiada información y a veces necesita más. Ahí es cuando necesita PowerShell de Office 365.
   
 Estos artículos que describen cómo usar PowerShell de Office 365 para obtener información de su inquilino de Office 365:
@@ -58,8 +56,6 @@ Estos artículos que describen cómo usar PowerShell de Office 365 para obtener 
   - [Display Exchange Online reports with Office 365 PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
 ## <a name="see-also"></a>Consulte también
-
-#### 
 
 [Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
   

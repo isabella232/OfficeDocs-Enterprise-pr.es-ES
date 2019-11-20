@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo se administra la identidad del usuario en Office 365.
-ms.openlocfilehash: b1c1e8f9a56f2bdaa927ef3d096c1c614de647bb
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: f6e871f03fb99feea05293c425406b6be7dfedd5
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428087"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745673"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Modelos de identidad de Office 365 y Azure Active Directory
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
 Office 365 usa Azure Active Directory (Azure AD), una identidad de usuario basada en la nube y un servicio de autenticación que se incluye con su suscripción a Office 365, para administrar las identidades y la autenticación de Office 365. La configuración correcta de la infraestructura de identidades es fundamental para administrar el acceso de usuarios y los permisos de Office 365 para la organización.
 

@@ -23,14 +23,16 @@ search.appverid:
 - OSU160
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 description: SharePoint Server 2007 ha alcanzado el final del soporte técnico y es el momento de actualizar. Use este artículo para ayudarle a crear su plan.
-ms.openlocfilehash: 2ed36816eeb466cd35b999b48521495406d28641
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 6315c06f034464cf12224582c9dcd0257bf43961
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078109"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748037"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>Opciones de migración de SharePoint 2007 para tener en cuenta
+
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
 Microsoft SharePoint 2007 y SharePoint Server 2007 han llegado al final del soporte técnico. Es el momento de actualizar. En este artículo se proporciona información acerca de las opciones de migración.
   

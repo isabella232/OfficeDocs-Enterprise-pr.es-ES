@@ -15,19 +15,16 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Obtenga información sobre cómo usar PowerShell de Office 365 para eliminar cuentas de usuario de Office 365.
-ms.openlocfilehash: dd7e5052f8933955267302a5d03870017702a7fb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7c30ec422475a4cf11b28249e8a20d64a3c90a4
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069046"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746433"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Eliminar cuentas de usuario con PowerShell de Office 365
 
-**Resumen**: Obtenga información sobre cómo usar PowerShell de Office 365 para eliminar cuentas de usuario de Office 365.
-  
 Puede usar PowerShell de Office 365 para eliminar una cuenta de usuario.
-
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
@@ -35,13 +32,13 @@ Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powersh
 
 Después de haberse conectado, use la sintaxis siguiente para eliminar una cuenta de usuario individual:
   
-```
+```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
 Este ejemplo elimina la cuenta de usuario fabricec@litwareinc.com.
   
-```
+```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
@@ -50,21 +47,21 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
   
 Para mostrar el nombre de cuenta según el nombre de usuario, use los comandos siguientes:
   
-```
+```powershell
 $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 Este ejemplo muestra el nombre de cuenta para el usuario llamado Caleb Sills.
   
-```
+```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 Para eliminar una cuenta según el nombre para mostrar del usuario, use los comandos siguientes:
   
-```
+```powershell
 $userName="<display name>"
 Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
@@ -78,25 +75,25 @@ Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powersh
 
 Para eliminar una cuenta de usuario, utilice la siguiente sintaxis:
   
-```
+```powershell
 Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 Este ejemplo elimina la cuenta de usuario BelindaN@litwareinc.com.
   
-```
+```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
 ```
 
 Para restaurar una cuenta de usuario eliminada dentro del periodo de gracia de 30 días, utilice la sintaxis siguiente:
   
-```
+```powershell
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 Este ejemplo restaura la cuenta eliminada BelindaN@litwareinc.com.
   
-```
+```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
@@ -104,7 +101,7 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
   
 - Para ver la lista de usuarios eliminados que pueden restaurarse, ejecute el siguiente comando:
     
-  ```
+  ```powershell
   Get-MsolUser -All -ReturnDeletedUsers
   ```
 

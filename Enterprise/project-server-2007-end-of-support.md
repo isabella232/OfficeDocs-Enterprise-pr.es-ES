@@ -17,18 +17,20 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: El 10 de octubre de 2017, se finalizó la compatibilidad con Project Server 2007, Project Portfolio Server y Project 2007. Use este artículo para planear la actualización ahora.
-ms.openlocfilehash: 620b5ae3e23c3b4bdba9c429def81eebedbd32a3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c21d9d1c2539f66587243f04d4d874649d6bf460
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071056"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746243"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de Project Server 2007
 
-El soporte técnico está finalizado para los servidores y aplicaciones de Office 2007 en 2017 y debe tener en cuenta los planes para la migración. Si actualmente usa Project Server 2007, tenga en cuenta que estos productos relacionados tendrán las siguientes fechas de finalización de soporte:
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+
+El soporte técnico finalizó para los servidores y aplicaciones de Office 2007 en el 2017 y debe tener en cuenta los planes para la migración. Si actualmente usa Project Server 2007, tenga en cuenta que estos otros productos relacionados tenían las siguientes fechas de finalización de soporte:
   
-|**Producto**|**fecha de finalización del soporte técnico**|
+|**Producto**|**Fecha de finalización del soporte técnico**|
 |:-----|:-----|
 |Project Server 2007  <br/> |10 de octubre de 2017  <br/> |
 |Project Portfolio Server 2007  <br/> |10 de octubre de 2017  <br/> |
@@ -39,7 +41,7 @@ Para obtener más información acerca de los servidores de Office 2007 que alcan
   
 ## <a name="what-does-end-of-support-mean"></a>¿Qué significa el fin de soporte?
 
-Project Server, al igual que casi todos los productos de Microsoft, tiene un ciclo de vida de soporte técnico durante el cual ofrecemos nuevas características, correcciones de errores, correcciones de seguridad, etc. Este ciclo de vida suele durar 10 años a partir de la fecha de lanzamiento inicial del producto y el final de este ciclo de vida se conoce como el final del soporte técnico del producto. Como Project Server 2007 ha llegado al final del soporte técnico el 10 de octubre de 2017, Microsoft dejará de proporcionar:
+Project Server, al igual que casi todos los productos de Microsoft, tiene un ciclo de vida de soporte técnico durante el cual ofrecemos nuevas características, correcciones de errores, correcciones de seguridad, etc. Este ciclo de vida suele durar 10 años a partir de la fecha de lanzamiento inicial del producto y el final de este ciclo de vida se conoce como el final del soporte técnico del producto. Dado que Project Server 2007 ha llegado al final del soporte técnico el 10 de octubre de 2017, Microsoft ya no proporciona:
   
 - Soporte técnico para los problemas que pueden surgir.
     
@@ -70,7 +72,7 @@ Si usa Project Server 2007, debe explorar las opciones de migración, que son:
 
 Debe tener en cuenta lo siguiente al planear la migración desde Project Server 2007:
   
-- **Obtener ayuda de un socio de Microsoft** : la actualización desde Project Server 2007 puede ser un reto y requiere una gran preparación y planeación. Puede ser especialmente difícil si no es el que se va a instalar y configurar originalmente Project Server 2007. Afortunadamente, hay socios de Microsoft que puede pasar a la persona que lo hace por un testamento vital, independientemente de si planea migrar a Project Server 2016 o a Project online. Puede buscar un socio de Microsoft para ayudarle con la migración en el [centro de Partners de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=841249). Puede extraer una lista de todos los socios de Microsoft que tienen experiencia en Project realizando búsquedas en el término *Gold Project Management y* en la administración de carteras. 
+- **Obtener ayuda de un socio de Microsoft** : la actualización desde Project Server 2007 puede ser un reto y requiere una gran preparación y planeación. Puede ser especialmente difícil si no es el que se va a instalar y configurar originalmente Project Server 2007. Afortunadamente, hay socios de Microsoft que puede pasar a la persona que lo hace por un testamento vital, independientemente de si planea migrar a Project Server 2016 o a Project online. Puede buscar un socio de Microsoft para ayudarle con la migración en el [centro de Partners de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=841249). Puede extraer una lista de todos los socios de Microsoft que tienen experiencia en Project realizando búsquedas en el término *Gold Project Management y en la administración de carteras* . 
     
 - **Planeación de las personalizaciones** : tenga en cuenta que muchas de las personalizaciones que ha trabajado en el entorno de project Server 2007 podrían no funcionar al migrar a project Server 2016 o a Project online. Existen grandes diferencias en la arquitectura de Project Server entre versiones, así como los sistemas operativos, los servidores de bases de datos y los exploradores Web de cliente que se admiten para trabajar con la versión más reciente. Disponer de un plan sobre cómo probar o volver a crear las personalizaciones según sea necesario en el nuevo entorno. La planeación de la actualización también será una buena oportunidad para comprobar si realmente se necesita una personalización específica mientras avanza. [Crear un plan de personalizaciones actuales durante la actualización a SharePoint 2013 tiene una](https://go.microsoft.com/fwlink/p/?linkid=842061) gran información general sobre la evaluación y la planeación de las personalizaciones actuales durante la actualización. 
     
@@ -211,7 +213,7 @@ Project Portfolio Server 2007 se usó con Project Server 2007 para la estrategia
   
 Otros recursos:
   
-- Descripciones de [servicios de Project online](https://go.microsoft.com/fwlink/p/?linkid=841280): vea las características de administración de cartera incluidas en project Server 2016 y Project online Premium.
+- [Descripciones de servicios de Project online](https://go.microsoft.com/fwlink/p/?linkid=841280): vea las características de administración de cartera incluidas en project Server 2016 y Project online Premium.
     
 - [Guía de migración de Microsoft Office Project Portfolio Server 2007](https://go.microsoft.com/fwlink/p/?linkid=841279)
     

@@ -21,14 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: El soporte técnico finaliza pronto para las aplicaciones cliente y servidores de Office 2007, y los contratos de soporte personalizados no están disponibles. Use este artículo para empezar a planear la actualización ahora.
-ms.openlocfilehash: 7f07de4fcca57dd2ad744a7c8c594ca88ddd5f4e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2fd2e8a0bd2435dbec8c846111a628ffe56fa10c
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070216"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748027"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2007
+
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
 Si usa productos y servicios de Office 2007, la compatibilidad con estas aplicaciones ha finalizado. Mientras planea la actualización, este es un buen momento para considerar cambiar a la nube de Microsoft, comenzando con Office 365. Use este artículo como punto de partida para revisar las opciones y planear la actualización.
       

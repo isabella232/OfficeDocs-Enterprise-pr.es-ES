@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Resumen: Use Office 365 PowerShell para administrar las propiedades de la cuenta de usuario de Skype empresarial online con directivas.'
-ms.openlocfilehash: 51e402922b2a357ef29e9b2628eb25fc252e5437
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1d4f6bc52932bb7315fdd769788b5b3108423424
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031735"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748530"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Administrar Skype para políticas de negocios en línea con Office 365 PowerShell
 
- **Resumen:** Use Office 365 PowerShell para administrar las propiedades de la cuenta de usuario de Skype empresarial online con directivas.
-  
 Para administrar muchas propiedades de la cuenta de usuario de Skype empresarial online, debe especificarlas como propiedades de directivas con Office 365 PowerShell.
   
 ## <a name="before-you-begin"></a>Antes de empezar
@@ -33,7 +31,7 @@ Siga estas instrucciones para preparar la ejecución de los comandos (omita los 
     
 2. Abra un símbolo del sistema de Windows PowerShell y ejecute los siguientes comandos: 
     
-```
+```powershell
 Import-Module SkypeOnlineConnector
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
@@ -46,13 +44,13 @@ Cuando se le solicite, escriba el nombre y la contraseña de la cuenta de admini
 
 Muchas de las propiedades de las cuentas de usuario de Skype empresarial online se configuran mediante directivas. Las directivas son simplemente colecciones de opciones de configuración que se pueden aplicar a uno o más usuarios. Para echar un vistazo al modo en que se ha configurado la Directiva, puede ejecutar este comando de ejemplo para la Directiva FederationAndPICDefault:
   
-```
+```powershell
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"
 ```
 
 Por su parte, debería obtener algo similar a esto:
   
-```
+```powershell
 Identity                          : Tag:FederationAndPICDefault
 Description                       :
 EnableFederationAccess            : True
@@ -78,7 +76,7 @@ Si desea saber si alguien puede comunicarse con usuarios externos a la organizac
     
 Por ejemplo, puede hacerlo con este comando:
   
-```
+```powershell
 Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -Identity $_.ExternalAccessPolicy}
 ```
 
@@ -98,14 +96,14 @@ Para administrar las directivas de Skype empresarial online con PowerShell, cons
   
 Por ejemplo, para ver todas las directivas de voz disponibles para su uso, ejecute este comando:
   
-```
+```powershell
 Get-CsVoicePolicy
 ```
 
 > [!NOTE]
 > Eso devuelve una lista de todas las directivas de voz disponibles para usted. No obstante, tenga en cuenta que no todas las directivas se pueden asignar a todos los usuarios. Esto se debe a varias restricciones relacionadas con la concesión de licencias y la ubicación geográfica. (El denominado "ubicación de[uso](https://msdn.microsoft.com/library/azure/dn194136.aspx)"). Si desea conocer las directivas de acceso externo y las directivas de conferencia que se pueden asignar a un usuario en particular, use comandos similares a los siguientes: 
 
-```
+```powershell
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
 Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 ```
@@ -116,13 +114,11 @@ En algunos casos, las propiedades de las directivas no se usan con Office 365, m
   
 Con Skype empresarial online, los usuarios deben ser administrados por una directiva de algún tipo. Si una propiedad relacionada con directivas válida está en blanco, significa que el usuario en cuestión se administra mediante una directiva global, que es una directiva que se aplica automáticamente a un usuario a menos que se le asigne específicamente una directiva por usuario. Como no vemos una directiva de cliente listada para una cuenta de usuario, ésta se administra mediante la directiva global. Puede determinar la Directiva de cliente global con este comando:
   
-```
+```powershell
 Get-CsClientPolicy -Identity "Global"
 ```
 
 ## <a name="see-also"></a>Vea también
-
-#### 
 
 [Administrar Skype Empresarial Online con PowerShell de Office 365](manage-skype-for-business-online-with-office-365-powershell.md)
   

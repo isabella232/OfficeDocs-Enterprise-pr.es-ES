@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Obtenga información sobre cómo se usa Azure ExpressRoute con Office 365 y cómo planear el proyecto de implementación de red que será necesario si está implementando Azure ExpressRoute para usarlo con Office 365.
-ms.openlocfilehash: 360cae39010f35b5a921ec95f6e8ed1d02afb808
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 63ac8c23a6b36ed6ed079a20f05ca5fdfdcfcb83
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435414"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745743"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute para Office 365
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
 Obtenga información sobre cómo se usa Azure ExpressRoute con Office 365 y cómo planear el proyecto de implementación de red que será necesario si está implementando Azure ExpressRoute para usarlo con Office 365. La infraestructura y los servicios de la plataforma que se ejecutan en Azure se beneficiarán con frecuencia al abordar la arquitectura de red y las consideraciones de rendimiento. En estos casos, se recomienda ExpressRoute para Azure. Las ofertas de software como servicio como Office 365 y Dynamics 365 se han creado para que se pueda acceder a ellos de forma segura y fiable a través de Internet. Puede obtener información sobre el rendimiento y la seguridad de Internet y cuándo puede considerar Azure ExpressRoute para Office 365 en el artículo [Evaluating Office 365 Network Connectivity](assessing-network-connectivity.md).
 
@@ -70,7 +70,7 @@ Los servicios que no se incluyen en ExpressRoute para Office 365 son las descarg
 
 ## <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
 
-La implementación de ExpressRoute requiere la participación de los propietarios de la red y de la aplicación, y requiere una planificación minuciosa para determinar la nueva [arquitectura de enrutamiento de red](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), los requisitos de ancho de banda, dónde se implementará la seguridad, alta disponibilidad y así sucesivamente. Para implementar ExpressRoute, necesitará:
+La implementación de ExpressRoute requiere la participación de los propietarios de la red y de la aplicación, y requiere una planificación minuciosa para determinar la nueva [arquitectura de enrutamiento de red](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), los requisitos de ancho de banda, dónde se implementará la seguridad, alta disponibilidad, etc. Para implementar ExpressRoute, necesitará:
 
 1. Comprenda completamente la necesidad de que ExpressRoute satisfaga en su plan de conectividad de Office 365. Comprenda qué aplicaciones usarán Internet o ExpressRoute y planee completamente la capacidad de la red, la seguridad y las necesidades de alta disponibilidad en el contexto de usar tanto Internet como ExpressRoute para el tráfico de Office 365.
 
@@ -100,7 +100,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/express
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Evaluación de la conectividad de red de Office 365](assessing-network-connectivity.md)
+[Evaluar la red de Office 365](assessing-network-connectivity.md)
 
 [Administrar ExpressRoute para la conectividad de Office 365](managing-expressroute-for-connectivity.md)
 
@@ -118,7 +118,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/express
 
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
 
-[Intervalos de direcciones IP y URL de Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+[Direcciones URL e intervalos de direcciones IP de Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
 

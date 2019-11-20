@@ -11,17 +11,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: 'Resumen: obtenga ayuda para PowerShell de Office 365 de estos lugares de la comunidad.'
-ms.openlocfilehash: 98147f9bc698184a4146580c10966a8f102bde21
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: f4bb2fe6321921b5f345630460ae7b388d40d896
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031705"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748448"
 ---
 # <a name="office-365-powershell-community-resources"></a>Recursos de la comunidad de PowerShell de Office 365
 
- **Resumen:** obtenga ayuda para PowerShell de Office 365 de estas ubicaciones de la comunidad.
-  
 Use estos foros de la comunidad y wikis para conectarse con sus colegas y Obtenga respuestas rápidas y correctas a sus preguntas sobre PowerShell de Office 365. 
   
 - [Visite Office 365 Tech Community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
@@ -35,8 +33,6 @@ Use estos foros de la comunidad y wikis para conectarse con sus colegas y Obteng
 - [Wiki de Administrar Office 365](https://community.office365.com/w/manage/default.aspx)
     
 ## <a name="see-also"></a>Vea también
-
-#### 
 
 [Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
   

@@ -15,17 +15,15 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: Use Office 365 PowerShell para administrar grupos de sitio de SharePoint Online.'
-ms.openlocfilehash: eedbfbecea0f488b96cfe7a87a2b4851352f4fac
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 7eb8a472cb021fb2b78468a9100282b72c1b88cb
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077989"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748540"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Administrar grupos de sitio de SharePoint Online con PowerShell de Office 365
 
- **Resumen:** Use Office 365 PowerShell para administrar grupos de sitio de SharePoint Online.
-  
 Aunque puede usar el centro de administración de Microsoft 365, también puede usar Office 365 PowerShell para administrar los grupos de sitio de SharePoint Online.
 
 ## <a name="before-you-begin"></a>Antes de empezar
@@ -46,7 +44,7 @@ Y, así, repita el proceso con el siguiente sitio que quiera ver.
 
 Para obtener una lista de los grupos con PowerShell de Office 365, use el siguiente conjunto de comandos:
 
-```
+```powershell
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
 $x = Get-SPOSiteGroup -Site $siteURL
 foreach ($y in $x)
@@ -62,7 +60,7 @@ Hay dos formas de ejecutar este comando configurado en el símbolo del sistema d
 - Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteUrl** , seleccione los comandos y péguelos en el símbolo del sistema del shell de administración de SharePoint Online. Cuando lo haga, PowerShell se detendrá en **>>** un símbolo del sistema. Presione Entrar para ejecutar el comando **foreach**.<br/>
 - Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteURL** y después guarde este archivo de texto con un nombre y la extensión. ps1 en la carpeta adecuada. A continuación, ejecute el script desde el símbolo del sistema del shell de administración de SharePoint Online especificando su ruta de acceso y nombre de archivo. A continuación se muestra un ejemplo:
 
-```
+```powershell
 C:\Scripts\SiteGroupsAndUsers.ps1
 ```
 
@@ -74,7 +72,7 @@ Se trata de todos los grupos que se han creado para el `https://litwareinc.share
 
 Otro ejemplo: a continuación se muestra un conjunto de comandos que enumera los grupos y todas las pertenencias a grupos de todos los sitios de SharePoint Online.
 
-```
+```powershell
 $x = Get-SPOSite
 foreach ($y in $x)
     {

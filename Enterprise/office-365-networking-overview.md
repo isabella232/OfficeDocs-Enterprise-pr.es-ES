@@ -14,14 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Se explica por qué es importante la optimización de red para los servicios SaaS, el objetivo de la red de Office 365 y cómo SaaS requiere distintas redes de otras cargas de trabajo.
-ms.openlocfilehash: f26a7c245b0a6258717e8917628caeaef250e378
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031895"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747712"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Introducción a la conectividad de red de Office 365
+
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
 Office 365 es una nube de software como servicio (SaaS) distribuida que proporciona escenarios de productividad y colaboración a través de un conjunto diverso de micro-servicios y aplicaciones. Los componentes de cliente de Office 365 como Outlook, Word y PowerPoint se ejecutan en los equipos de los usuarios y se conectan a otros componentes de Office 365 que se ejecutan en centros de usuarios de Microsoft. El factor más importante que determina la calidad de la experiencia del usuario final de Office 365 es la confiabilidad de red y la baja latencia entre los clientes de Office 365 y las puertas frontales del servicio de Office 365.
 
