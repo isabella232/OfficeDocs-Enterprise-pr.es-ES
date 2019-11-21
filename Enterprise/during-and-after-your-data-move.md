@@ -1,9 +1,9 @@
 ---
 title: Durante y después del movimiento de datos
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
-ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626140"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756579"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -35,7 +35,7 @@ Vea el centro de mensajes de Office 365 para confirmar que se han completado los
 |Australia, Nueva Zelanda, Fiji  <br/> |31 de octubre de 2017  <br/> |
 |Japón  <br/> |31 de octubre de 2018  <br/> |
 |India  <br/> |31 de octubre de 2018  <br/> |
-|Canada  <br/> |30 de junio de 2019  <br/> |
+|Canadá  <br/> |30 de junio de 2019  <br/> |
 |Corea del sur  <br/> |31 de octubre de 2018  <br/> |
 |Reino Unido  <br/> |15 de septiembre de 2019  <br/> |
 |Francia  <br/> |15 de septiembre de 2020  <br/> |
@@ -123,10 +123,6 @@ Todos los usuarios se cerrarán desde el software de cliente de Skype empresaria
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Movimientos de Skype empresarial que implican a un proveedor de servicios de audioconferencia de terceros
 Los servicios complementarios de proveedores de servicios de audioconferencia de terceros para Skype empresarial no están disponibles para los usuarios hospedados en nuevos centros de datos geográficamente específicos.  Los clientes existentes que usen un servicio de proveedor de servicios de audioconferencia de terceros no deben solicitar el traslado a un nuevo centro de datos específico de forma geográfica.  Los clientes nuevos que se implementen en los nuevos centros de datos geográficamente específicos deberán solicitar un traslado a un centro de datos regional para usar un proveedor de servicios de audioconferencia de terceros.
-
-## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>Datos para otros servicios, incluidos Teams, Yammer y Power BI
-
-Solo se mueven los datos de clientes para Exchange Online, SharePoint Online y Skype empresarial. No se mueven datos para otros servicios. No hay ningún cambio ni impacto para usted como cliente o usuario de estos otros servicios. El proceso de traslado no influye en ellos y la ubicación de los datos de sus clientes no sufre cambios.
   
 ## <a name="related-topics"></a>Temas relacionados 
  

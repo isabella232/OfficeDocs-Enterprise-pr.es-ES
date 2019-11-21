@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras. Está disponible para implementaciones híbridas de Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial. Este artículo contiene vínculos a documentos relacionados sobre requisitos previos, la configuración/deshabilitación de la autenticación moderna y para algunos de los clientes relacionados (por ejemplo, Outlook y clientes de Skype) información.
-ms.openlocfilehash: d3dc209a4e1cfe3e313b0a1adf2bb6b5bd3b5b37
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: add02bdb04a347c4372b479a2607f24a32f9d90b
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745693"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756569"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para su uso con servidores locales de Skype empresarial y Exchange
 
@@ -127,7 +127,7 @@ Compruebe y compruebe estos elementos de la lista antes de continuar:
   
 - **Específico de Exchange Server**
     
-  - Está usando Exchange Server 2013 CU19, o bien Exchange Server 2016 CU8 y up.
+  - Está usando tanto Exchange Server 2013 CU19 como up, Exchange Server 2016 CU8 y up, o Exchange Server 2019 CU1 y up.
     
   - No hay ningún servidor de Exchange 2010 en el entorno.
     

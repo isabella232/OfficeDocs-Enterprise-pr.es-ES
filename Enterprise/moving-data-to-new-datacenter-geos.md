@@ -1,7 +1,7 @@
 ---
 title: Mover datos básicos a un nuevo Office 365 Datacenter GEOS
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/25/2019
 audience: ITPro
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'El nuevo centro de GEOS agrega capacidad y calcula recursos para apoyar el crecimiento constante del uso y la demanda de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes. Los datos principales de los clientes son un término que hace referencia a un subconjunto de los datos de clientes definidos en los términos de Microsoft Online Services: contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico) y contenido del sitio de SharePoint Online y los archivos se almacenan en ese sitio y los archivos cargados en OneDrive para la empresa.'
-ms.openlocfilehash: e6bd86e7d3eebd0395d50e7668cf32dcabd0f20f
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 3cccd9d5cb3f961a3621bf6f54104c2e1e3b8ece
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626160"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756549"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Mover datos básicos a un nuevo Office 365 Datacenter GEOS
 
@@ -35,7 +35,7 @@ Los clientes existentes que tienen sus datos de clientes principales almacenados
 |Japón * * * *| Asia/Pacífico | Japón | Diciembre de 2014 |
 |Australia, Nueva Zelanda, Fiji * * * *| Asia/Pacífico | Australia | Marzo de 2015 |
 |India * * * *| Asia/Pacífico | India | Octubre de 2015 |
-|Canadá * * * *| Norteamérica | Canada | Mayo de 2016 |
+|Canadá * * * *| Norteamérica | Canadá | Mayo de 2016 |
 |Reino Unido * * * *| Europa | Reino Unido | Septiembre de 2016 |
 |Corea del sur * * * *| Asia/Pacífico | Corea del sur | Abril de 2017 |
 |Francia * * * *| Europa | Francia | Marzo de 2018 |

@@ -1,9 +1,9 @@
 ---
 title: Cómo solicitar el movimiento de datos
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/25/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Los clientes de Office 365 existentes deberán enviar una solicitud antes de la fecha límite de su país para que los datos del cliente de los servicios de Office 365 participantes se muevan a su nueva geografía.
-ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031595"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756599"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -72,7 +72,7 @@ Los movimientos pueden tardar hasta 24 meses desde la fecha límite de la solici
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft Teams todavía no es compatible con la migración del contenido de clientes en reposo de los centros de datos locales en los que se encuentra disponible la residencia de datos para Microsoft Teams.  Por lo tanto, solo los clientes nuevos tendrán todos sus datos almacenados en el país en las nuevas regiones donde Microsoft Teams admita la residencia de datos.  Obtenga más información sobre la residencia de datos de Office 365 para la ubicación de su compañía en [¿dónde se encuentran los datos?](https://products.office.com/where-is-your-data-located)   
+La compatibilidad con la migración de los datos de mensajes de canal y de chat de Microsoft Teams se agregará al programa de migración local de Office 365.  Planeamos abrir la inscripción de programa en enero de 2020 para todos los clientes elegibles, incluidos los clientes que antes han optado por la migración de Exchange Online y SharePoint Online/OneDrive para la empresa.  Expondrá el control de participación en el centro de administración de Microsoft 365 y enviará una notificación en el centro de mensajes a todos los clientes elegibles.   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Acciones opcionales antes de solicitar un movimiento
 

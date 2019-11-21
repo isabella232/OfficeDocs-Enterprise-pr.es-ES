@@ -1,9 +1,9 @@
 ---
 title: Preguntas más frecuentes sobre el movimiento de datos
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: A continuación, se incluyen respuestas a preguntas generales sobre cómo mover datos principales a un nuevo centro de datos geográfico.
-ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028894"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756589"
 ---
 # <a name="data-move-general-faq"></a>Preguntas más frecuentes sobre el movimiento de datos
 
@@ -29,7 +29,7 @@ Los clientes de Office 365 Commercial existentes que seleccionaron un país apto
 
 ## <a name="how-do-we-define-core-customer-data"></a>¿Cómo se definen los principales datos de clientes?
  
-Los datos de clientes principales son un término que hace referencia a un subconjunto de los datos de clientes definidos en los [términos de Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=249048): 
+Los datos de clientes principales son un término que hace referencia a un subconjunto de los datos de clientes definidos en los [términos de Microsoft Online Services](https://aka.ms/ost): 
 - Contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico)
 - Contenido del sitio de SharePoint Online y los archivos almacenados en ese sitio
 - Archivos cargados en OneDrive para la empresa 
