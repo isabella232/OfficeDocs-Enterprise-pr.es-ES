@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
-ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
+ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756579"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250506"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -54,14 +54,6 @@ Algunos usuarios abren una carpeta de correo compartido desde otro buzón (que e
 |:-----|:-----|
 |El usuario tiene permiso de carpeta de buzón de correo en otro buzón  <br/> |Posiblemente limitado.  <br/> Si el usuario A y el buzón B no se encuentran en el mismo área geográfica durante el movimiento de inquilino, el usuario A no puede abrir la carpeta del buzón B en Outlook Web Access si el usuario A solo tiene permiso para una carpeta específica del buzón B.  <br/> Para agregar una carpeta compartida, haga clic con el botón derecho en el nombre de usuario en el panel de navegación izquierdo y seleccione **Agregar carpeta compartida**.  <br/> |
 |Usuario con permiso de buzón de correo completo a otro buzón  <br/> |Totalmente compatible.  <br/> Si el usuario A tiene permiso de "acceso total" en el buzón B, el usuario A puede hacer clic en la carpeta compartida en el panel de navegación izquierdo de Outlook Web Access para abrir una ventana que muestre el buzón B.  Un usuario puede abrir un buzón compartido mediante Outlook Web Access durante la transferencia sin ningún impacto negativo. La limitación solo se aplica al uso compartido en el nivel de carpeta en un buzón.           |
-   
-### <a name="public-folders"></a>Carpetas públicas
-
-Si el buzón de carpeta pública se encuentra temporalmente en un centro de recursos geográfico diferente del usuario que intenta tener acceso a él, es posible que el usuario no pueda obtener acceso al buzón de carpetas públicas. 
-  
-### <a name="online-archives"></a>Archivos en línea
-
-Mientras el movimiento está en curso, es posible que los usuarios que se conectan a través de Outlook para Mac no puedan conectarse a su buzón de archivo en línea. Se admite el acceso al buzón de archivo para los usuarios que se conectan con Outlook y Outlook Web Access.
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 

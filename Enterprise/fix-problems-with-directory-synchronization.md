@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Describe las causas comunes de los problemas con la sincronización de directorios en Office 365 y proporciona algunos métodos para ayudar a solucionar problemas y resolverlos.
-ms.openlocfilehash: f7a117df41e9a972f4ea166eb7b75e5fb1a85295
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: cc0fe15d0d49542489ac1e586efbe99d0846b3ab
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702231"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254529"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Solución de problemas con la sincronización de directorios para Office 365
 
