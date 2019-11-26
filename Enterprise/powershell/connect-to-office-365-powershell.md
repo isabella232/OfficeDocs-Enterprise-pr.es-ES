@@ -3,7 +3,7 @@ title: Conectarse a PowerShell de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,17 +15,15 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumen: conéctese a su organización de Office 365 con PowerShell de Office 365 para realizar tareas del Centro de administración desde la línea de comandos.'
-ms.openlocfilehash: e80af8b4174a4d3ac423e887b7f3c2fd9ee73375
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 3e31bfb68614ceb7c10f4b45e141928169121006
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707047"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257409"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectarse a PowerShell de Office 365
 
- **Resumen**: conéctese a su organización de Office 365 con PowerShell para realizar tareas de administración de Office 365 desde la línea de comandos.
-  
 PowerShell de Office 365 le permite administrar la configuración de Office 365 desde la línea de comandos. Conectarse a PowerShell de Office 365 es un proceso sencillo que consiste en instalar el software necesario y conectarse a su organización de Office 365. 
 
 Hay dos versiones del módulo de PowerShell que puede usar para conectarse a Office 365 y administrar cuentas de usuario, grupos y licencias:
@@ -105,6 +103,10 @@ Después de conectarse, podrá usar los nuevos cmdlets del [módulo de PowerShel
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Conectar con el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
 Los comandos del Módulo Microsoft Azure Active Directory para Windows PowerShell tienen **Msol** en el nombre de su cmdlet.
+
+>[!Note]
+>PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell y los cmdlet que llevan **Msol** en su nombre. Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.
+>
     
 ### <a name="step-1-install-required-software"></a>Paso 1: Instalar el software necesario
 

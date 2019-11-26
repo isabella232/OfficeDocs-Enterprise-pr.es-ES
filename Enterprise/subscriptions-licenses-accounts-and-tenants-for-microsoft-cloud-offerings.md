@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumen: comprenda las relaciones de las organizaciones, las suscripciones, las licencias, las cuentas de usuario y los espacios empresariales en las ofertas de la nube de Microsoft.'
-ms.openlocfilehash: c6c6aa02701d47c5818f66d2f0e499e7a85cb902
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: 3e10ed7752fc4763aef77c7cb683532cf0d5c2ce
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616153"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254589"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, cuentas y espacios empresariales para las ofertas de la nube de Microsoft
 
@@ -77,7 +77,7 @@ Algunas imágenes de máquina virtual tienen versiones de prueba de aplicaciones
   
 ### <a name="user-accounts"></a>Cuentas de usuario
 
-Las cuentas de usuario para todas las ofertas de la nube de Microsoft se almacenan en un espacio empresarial de Azure Active Directory (Azure AD), que contiene grupos y cuentas de usuario. Un inquilino de Azure AD se puede sincronizar con las cuentas existentes de Active Directory Domain Services (AD DS) mediante Azure AD Connect, un servicio basado en Windows Server. Esto se conoce como sincronización de directorios (DirSync).
+Las cuentas de usuario para todas las ofertas de la nube de Microsoft se almacenan en un espacio empresarial de Azure Active Directory (Azure AD), que contiene grupos y cuentas de usuario. Un inquilino de Azure AD se puede sincronizar con las cuentas existentes de Active Directory Domain Services (AD DS) mediante Azure AD Connect, un servicio basado en Windows Server. Esto se conoce como sincronización de directorios.
   
 En la ilustración 3, se muestra un ejemplo de varias suscripciones de una organización con un espacio empresarial de Azure AD común que contiene las cuentas de la organización.
   
