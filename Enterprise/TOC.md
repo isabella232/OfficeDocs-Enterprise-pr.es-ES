@@ -158,11 +158,11 @@
 #### [Conectar una red local con una red virtual de Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Implementar un servidor de sincronización de directorio en Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
 #### [Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
-##### [Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
-##### [Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
-##### [Fase 3 de la autenticación federada de alta disponibilidad: Configurar servidores de AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
-##### [Fase 4 de la autenticación federada de alta disponibilidad: Configurar los proxy de aplicación web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
-##### [Fase 5 de la autenticación federada de alta disponibilidad: Configurar la autenticación federada para Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+##### [Fase 1: configurar Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
+##### [Fase 2: Configurar controladores de dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md).
+##### [Fase 3: configurar los servidores AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
+##### [Fase 4: configurar los servidores proxy de la aplicación Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
+##### [Fase 5: configurar la autenticación federada](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
 # Administrar Office 365
 
