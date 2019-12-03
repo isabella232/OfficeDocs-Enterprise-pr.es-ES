@@ -15,30 +15,30 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Explica cómo usar Office 365 PowerShell para determinar los servicios de Office 365 que se han asignado a los usuarios.
-ms.openlocfilehash: 53668a69d72cdcbe912d550be2b9e571b7f6c0e0
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f73acb5a107aa6ef970046a371b7a722a6abc8d9
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747479"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655872"
 ---
-# <a name="view-account-license-and-service-details-with-office-365-powershell"></a><span data-ttu-id="40e6c-103">Ver los detalles del servicio y la licencia de la cuenta con PowerShell de Office 365</span><span class="sxs-lookup"><span data-stu-id="40e6c-103">View account license and service details with Office 365 PowerShell</span></span>
+# <a name="view-account-license-and-service-details-with-office-365-powershell"></a><span data-ttu-id="800c8-103">Ver los detalles del servicio y la licencia de la cuenta con PowerShell de Office 365</span><span class="sxs-lookup"><span data-stu-id="800c8-103">View account license and service details with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="40e6c-104">En Office 365, las licencias de los planes de licencias (también denominados SKU o los planes de Office 365) proporcionan a los usuarios acceso a los servicios de Office 365 definidos para esos planes.</span><span class="sxs-lookup"><span data-stu-id="40e6c-104">In Office 365, licenses from licensing plans (also called SKUs or Office 365 plans) give users access to the Office 365 services that are defined for those plans.</span></span> <span data-ttu-id="40e6c-105">Sin embargo, un usuario podría no tener acceso a todos los servicios disponibles en una licencia que está actualmente asignada a ellos.</span><span class="sxs-lookup"><span data-stu-id="40e6c-105">However, a user might not have access to all the services that are available in a license that's currently assigned to them.</span></span> <span data-ttu-id="40e6c-106">Puede usar Office 365 PowerShell para ver el estado de los servicios de las cuentas de usuario.</span><span class="sxs-lookup"><span data-stu-id="40e6c-106">You can use Office 365 PowerShell to view the status of services on user accounts.</span></span> 
+<span data-ttu-id="800c8-104">En Office 365, las licencias de los planes de licencias (también denominados SKU o los planes de Office 365) proporcionan a los usuarios acceso a los servicios de Office 365 definidos para esos planes.</span><span class="sxs-lookup"><span data-stu-id="800c8-104">In Office 365, licenses from licensing plans (also called SKUs or Office 365 plans) give users access to the Office 365 services that are defined for those plans.</span></span> <span data-ttu-id="800c8-105">Sin embargo, un usuario podría no tener acceso a todos los servicios disponibles en una licencia que está actualmente asignada a ellos.</span><span class="sxs-lookup"><span data-stu-id="800c8-105">However, a user might not have access to all the services that are available in a license that's currently assigned to them.</span></span> <span data-ttu-id="800c8-106">Puede usar Office 365 PowerShell para ver el estado de los servicios de las cuentas de usuario.</span><span class="sxs-lookup"><span data-stu-id="800c8-106">You can use Office 365 PowerShell to view the status of services on user accounts.</span></span> 
 
-<span data-ttu-id="40e6c-107">Para obtener más información acerca de los planes de licencias, la licencia y los servicios, consulte [ver licencias y servicios con Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="40e6c-107">For more information about licensing plans, license, and services, see [View licenses and services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="800c8-107">Para obtener más información acerca de los planes de licencias, la licencia y los servicios, consulte [ver licencias y servicios con Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="800c8-107">For more information about licensing plans, license, and services, see [View licenses and services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="40e6c-108">Use el módulo de PowerShell Azure Active Directory para Graph</span><span class="sxs-lookup"><span data-stu-id="40e6c-108">Use the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="800c8-108">Use el módulo de PowerShell Azure Active Directory para Graph</span><span class="sxs-lookup"><span data-stu-id="800c8-108">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="40e6c-109">Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span><span class="sxs-lookup"><span data-stu-id="40e6c-109">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="800c8-109">Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span><span class="sxs-lookup"><span data-stu-id="800c8-109">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
   
-<span data-ttu-id="40e6c-110">A continuación, enumere los planes de licencia para el inquilino con este comando.</span><span class="sxs-lookup"><span data-stu-id="40e6c-110">Next, list the license plans for your tenant with this command.</span></span>
+<span data-ttu-id="800c8-110">A continuación, enumere los planes de licencia para el inquilino con este comando.</span><span class="sxs-lookup"><span data-stu-id="800c8-110">Next, list the license plans for your tenant with this command.</span></span>
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-<span data-ttu-id="40e6c-111">Use estos comandos para enumerar los servicios que están disponibles en cada plan de licencias.</span><span class="sxs-lookup"><span data-stu-id="40e6c-111">Use these commands to list the services that are available in each licensing plan.</span></span>
+<span data-ttu-id="800c8-111">Use estos comandos para enumerar los servicios que están disponibles en cada plan de licencias.</span><span class="sxs-lookup"><span data-stu-id="800c8-111">Use these commands to list the services that are available in each licensing plan.</span></span>
 
 ```powershell
 $allSKUs=Get-AzureADSubscribedSku
@@ -52,7 +52,7 @@ $licArray +=  ""
 $licArray
 ```
 
-<span data-ttu-id="40e6c-112">Use estos comandos para enumerar las licencias que se asignan a una cuenta de usuario.</span><span class="sxs-lookup"><span data-stu-id="40e6c-112">Use these commands to list the licenses that are assigned to a user account.</span></span>
+<span data-ttu-id="800c8-112">Use estos comandos para enumerar las licencias que se asignan a una cuenta de usuario.</span><span class="sxs-lookup"><span data-stu-id="800c8-112">Use these commands to list the licenses that are assigned to a user account.</span></span>
 
 ```powershell
 $userUPN="<user account UPN, such as belindan@contoso.com>"
@@ -61,54 +61,57 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="40e6c-113">Use el Módulo Microsoft Azure Active Directory para Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="40e6c-113">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="800c8-113">Use el Módulo Microsoft Azure Active Directory para Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="800c8-113">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="40e6c-114">Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="40e6c-114">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="800c8-114">Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="800c8-114">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-<span data-ttu-id="40e6c-115">A continuación, ejecute este comando para enumerar los planes de licencias disponibles en su organización.</span><span class="sxs-lookup"><span data-stu-id="40e6c-115">Next, run this command to list the licensing plans that are available in your organization.</span></span> 
+<span data-ttu-id="800c8-115">A continuación, ejecute este comando para enumerar los planes de licencias disponibles en su organización.</span><span class="sxs-lookup"><span data-stu-id="800c8-115">Next, run this command to list the licensing plans that are available in your organization.</span></span> 
 
 ```powershell
 Get-MsolAccountSku
 ```
+>[!Note]
+><span data-ttu-id="800c8-116">PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell y los cmdlet que llevan **Msol** en su nombre.</span><span class="sxs-lookup"><span data-stu-id="800c8-116">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="800c8-117">Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="800c8-117">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+>
 
-<span data-ttu-id="40e6c-116">A continuación, ejecute este comando para enumerar los servicios que están disponibles en cada plan de licencias y el orden en que aparecen (el número de índice).</span><span class="sxs-lookup"><span data-stu-id="40e6c-116">Next, run this command to list the services that are available in each licensing plan, and the order in which they are listed (the index number).</span></span>
+<span data-ttu-id="800c8-118">A continuación, ejecute este comando para enumerar los servicios que están disponibles en cada plan de licencias y el orden en que aparecen (el número de índice).</span><span class="sxs-lookup"><span data-stu-id="800c8-118">Next, run this command to list the services that are available in each licensing plan, and the order in which they are listed (the index number).</span></span>
 
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus
 ```
   
-<span data-ttu-id="40e6c-117">Use este comando para enumerar las licencias que se asignan a un usuario y el orden en que aparecen (el número de índice).</span><span class="sxs-lookup"><span data-stu-id="40e6c-117">Use this command to list the licenses that are assigned to a user, and the order in which they are listed (the index number).</span></span>
+<span data-ttu-id="800c8-119">Use este comando para enumerar las licencias que se asignan a un usuario y el orden en que aparecen (el número de índice).</span><span class="sxs-lookup"><span data-stu-id="800c8-119">Use this command to list the licenses that are assigned to a user, and the order in which they are listed (the index number).</span></span>
 
 ```powershell
 Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
 ```
 
 >[!Note]
-><span data-ttu-id="40e6c-118">Si usa el cmdlet **Get-MsolUser** sin usar el parámetro _All_, solo se devuelven las 500 primeras cuentas.</span><span class="sxs-lookup"><span data-stu-id="40e6c-118">If you use the **Get-MsolUser** cmdlet without using the _All_ parameter, only the first 500 accounts are returned.</span></span>
+><span data-ttu-id="800c8-120">Si usa el cmdlet **Get-MsolUser** sin usar el parámetro _All_, solo se devuelven las 500 primeras cuentas.</span><span class="sxs-lookup"><span data-stu-id="800c8-120">If you use the **Get-MsolUser** cmdlet without using the _All_ parameter, only the first 500 accounts are returned.</span></span>
 >
    
 
-### <a name="to-view-services-for-a-user-account"></a><span data-ttu-id="40e6c-119">Para ver los servicios de una cuenta de usuario</span><span class="sxs-lookup"><span data-stu-id="40e6c-119">To view services for a user account</span></span>
+### <a name="to-view-services-for-a-user-account"></a><span data-ttu-id="800c8-121">Para ver los servicios de una cuenta de usuario</span><span class="sxs-lookup"><span data-stu-id="800c8-121">To view services for a user account</span></span>
 
-<span data-ttu-id="40e6c-120">Para ver todos los servicios de Office 365 a los que tiene acceso un usuario, use la siguiente sintaxis:</span><span class="sxs-lookup"><span data-stu-id="40e6c-120">To view all the Office 365 services that a user has access to, use the following syntax:</span></span>
+<span data-ttu-id="800c8-122">Para ver todos los servicios de Office 365 a los que tiene acceso un usuario, use la siguiente sintaxis:</span><span class="sxs-lookup"><span data-stu-id="800c8-122">To view all the Office 365 services that a user has access to, use the following syntax:</span></span>
   
 ```powershell
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
 ```
 
-<span data-ttu-id="40e6c-121">En este ejemplo se muestran los servicios a los que el usuario BelindaN@litwareinc.com tiene acceso.</span><span class="sxs-lookup"><span data-stu-id="40e6c-121">This example shows the services to which the user BelindaN@litwareinc.com has access.</span></span> <span data-ttu-id="40e6c-122">Se muestran los servicios que están asociados a todas las licencias asignadas a su cuenta.</span><span class="sxs-lookup"><span data-stu-id="40e6c-122">This shows the services that are associated with all licenses that are assigned to her account.</span></span>
+<span data-ttu-id="800c8-123">En este ejemplo se muestran los servicios a los que el usuario BelindaN@litwareinc.com tiene acceso.</span><span class="sxs-lookup"><span data-stu-id="800c8-123">This example shows the services to which the user BelindaN@litwareinc.com has access.</span></span> <span data-ttu-id="800c8-124">Se muestran los servicios que están asociados a todas las licencias asignadas a su cuenta.</span><span class="sxs-lookup"><span data-stu-id="800c8-124">This shows the services that are associated with all licenses that are assigned to her account.</span></span>
   
 ```powershell
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus
 ```
 
-<span data-ttu-id="40e6c-123">En este ejemplo se muestran los servicios a los que tiene acceso la usuaria BelindaN@litwareinc.com a partir de la primera licencia asignada a su cuenta (el número de índice es 0).</span><span class="sxs-lookup"><span data-stu-id="40e6c-123">This example shows the services that user BelindaN@litwareinc.com has access to from the first license that's assigned to her account (the index number is 0).</span></span>
+<span data-ttu-id="800c8-125">En este ejemplo se muestran los servicios a los que tiene acceso la usuaria BelindaN@litwareinc.com a partir de la primera licencia asignada a su cuenta (el número de índice es 0).</span><span class="sxs-lookup"><span data-stu-id="800c8-125">This example shows the services that user BelindaN@litwareinc.com has access to from the first license that's assigned to her account (the index number is 0).</span></span>
   
 ```powershell
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
 ```
 
-<span data-ttu-id="40e6c-124">Para ver todos los servicios de un usuario que tiene asignadas *varias licencias*, use la siguiente sintaxis:</span><span class="sxs-lookup"><span data-stu-id="40e6c-124">To view all the services for a user who has been assigned *multiple licenses*, use the following syntax:</span></span>
+<span data-ttu-id="800c8-126">Para ver todos los servicios de un usuario que tiene asignadas *varias licencias*, use la siguiente sintaxis:</span><span class="sxs-lookup"><span data-stu-id="800c8-126">To view all the services for a user who has been assigned *multiple licenses*, use the following syntax:</span></span>
 
 ```powershell
 $userAccountUPN="<user account UPN>"
@@ -124,14 +127,14 @@ $licArray
 ```
 
   
-## <a name="new-to-office-365"></a><span data-ttu-id="40e6c-125">¿Es la primera vez que usa Office 365?</span><span class="sxs-lookup"><span data-stu-id="40e6c-125">New to Office 365?</span></span>
+## <a name="new-to-office-365"></a><span data-ttu-id="800c8-127">¿Es la primera vez que usa Office 365?</span><span class="sxs-lookup"><span data-stu-id="800c8-127">New to Office 365?</span></span>
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
 
-## <a name="see-also"></a><span data-ttu-id="40e6c-126">Consulte también</span><span class="sxs-lookup"><span data-stu-id="40e6c-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="800c8-128">Consulte también</span><span class="sxs-lookup"><span data-stu-id="800c8-128">See also</span></span>
 
-[<span data-ttu-id="40e6c-127">Administrar licencias y cuentas de usuario con PowerShell de Office 365</span><span class="sxs-lookup"><span data-stu-id="40e6c-127">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="800c8-129">Administrar licencias y cuentas de usuario con PowerShell de Office 365</span><span class="sxs-lookup"><span data-stu-id="800c8-129">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[<span data-ttu-id="40e6c-128">Administrar Office 365 con PowerShell de Office 365</span><span class="sxs-lookup"><span data-stu-id="40e6c-128">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="800c8-130">Administrar Office 365 con PowerShell de Office 365</span><span class="sxs-lookup"><span data-stu-id="800c8-130">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="40e6c-129">Introducción a PowerShell de Office 365</span><span class="sxs-lookup"><span data-stu-id="40e6c-129">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="800c8-131">Introducción a PowerShell de Office 365</span><span class="sxs-lookup"><span data-stu-id="800c8-131">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
