@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Resumen: comprenda por qué debe usar PowerShell de Office 365 para administrar Office 365, en algunos casos de manera más eficiente y, en otros casos, por necesidad.'
-ms.openlocfilehash: 66782a9165c76c7e1d506e40fa1cacd6db0c6724
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 3e2f0d4ee1c86e26ccf728412d419ae6ba3018e7
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747449"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655790"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Por qué necesita usar PowerShell de Office 365
 
@@ -83,9 +83,11 @@ Debe repetir este procedimiento para cada usuario. Para muchos usuarios, esto pu
 Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
-> [!NOTE]
-> Este comando requiere que instale el [módulo de Windows Azure Active Directory](https://docs.microsoft.com/powershell/module/Azuread/?view=azureadps-2.0). 
-  
+
+>[!Note]
+>PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell y los cmdlet que llevan **Msol** en su nombre. Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.
+>
+
 Este es un ejemplo del resultado:
   
 ```powershell

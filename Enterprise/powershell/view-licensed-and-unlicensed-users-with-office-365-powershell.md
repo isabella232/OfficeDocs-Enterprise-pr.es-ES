@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Se explica cómo usar PowerShell de Office 365 para ver las cuentas de usuario con licencia y sin licencia.
-ms.openlocfilehash: 3869be5a0f7527f516248e7e1ef0333707f49305
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f56a3fe7ece50c5f7fb345ccc0b843cacf185d28
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748418"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655862"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Ver los usuarios con licencia y sin licencia con PowerShell de Office 365
 
@@ -54,6 +54,10 @@ Para ver la lista de todas las cuentas de usuario y su estado de licencias en la
 ```powershell
 Get-MsolUser -All
 ```
+
+>[!Note]
+>PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell y los cmdlet que llevan **Msol** en su nombre. Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.
+>
 
 Para ver la lista de todas las cuentas de usuario sin licencia de su organización, ejecute el comando siguiente:
   
