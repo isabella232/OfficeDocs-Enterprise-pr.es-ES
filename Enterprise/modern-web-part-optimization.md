@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo optimizar el rendimiento de elementos web en páginas de sitio modernas de SharePoint Online.
-ms.openlocfilehash: 859a9481ca29215edf27cc2cbd48510051932d50
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 00a21adbd7971e86d23e1e45ee850ab52f46004a
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078325"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814208"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de elementos web en páginas del sitio modernas de SharePoint Online
 
@@ -97,7 +97,7 @@ Antes de realizar revisiones de página para corregir problemas de rendimiento, 
 
 [Ajustar el rendimiento de Office 365](tune-office-365-performance.md)
 
-[Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [Redes de entrega de contenido](content-delivery-networks.md)
 

@@ -16,14 +16,17 @@ ms.collection:
 - M365-identity-device-management
 ms.assetid: cc453ae5-fa9b-4836-b0ce-c7e824b1e36d
 description: Enumera los atributos que se excluyen y son compatibles con la herramienta IdFix.
-ms.openlocfilehash: bf88fea3592860a89d69717177593b6553318ee4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e57507688fe1efd21bb629b4fad297129eff55d6
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067276"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813930"
 ---
 # <a name="idfix-excluded-and-supported-objects-and-attributes"></a>Objetos y atributos admitidos y excluidos en IdFix
+
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+
 Hay dos conjuntos de reglas que se mantienen en IdFix; Multiinquilino y dedicado/ITAR. En este momento, los dos conjuntos de reglas excluyen los mismos objetos, atributos y valores de atributo de su búsqueda. Esto puede cambiar en futuras versiones.
   
 ## <a name="multi-tenant-and-dedicated-error-exclusions-used-by-idfix"></a>Exclusiones de error dedicadas y multiinquilino usadas por IdFix
@@ -34,16 +37,16 @@ En esta sección se enumeran los objetos, los atributos y los valores que se exc
 |**Exclusión**|**Ejemplo**|
 |:-----|:-----|
 |Elección\* |Administrador |
-|CAS_{\*  |CAS_{fe35fc98e69e4d08} |
+|CAS_ {\*  |CAS_ {fe35fc98e69e4d08} |
 |DiscoverySearchMailbox\*  |DiscoverySearchMailbox  |
 |FederatedEmail\* |FederatedEmail. *GUID* |
 |Guest\* ||
 |HTTPConnector\*  |HTTPConnector |
 |krbtgt\* |MS-DS-KrbTgt-Link |
-|cuenta\* |IUSR _ *nombreEquipo* |
-|IWAM\*  |IWAM _ *nombreEquipo* |
+|iusr_\* |iusr_ *MachineName* |
+|IWAM\*  |IWAM_ *MachineName* |
 |msol\* |MSOL_AD_SYNC |
-|admisión\* ||
+|support_\* ||
 |SystemMailbox\* |SystemMailbox { *GUID* }|
 |WWIOadmini\*  ||
 |\*$ ||

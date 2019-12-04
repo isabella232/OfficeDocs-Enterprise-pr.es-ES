@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: ¿Necesita conocer los pasos que debe seguir para identificar y corregir los intervalos, los bloqueos y el rendimiento lento entre SharePoint Online, OneDrive para la empresa, Exchange online o Skype empresarial online, y el equipo cliente? Antes de llamar al soporte técnico, este artículo puede ayudarle a solucionar problemas de rendimiento de Office 365 e incluso a solucionar algunos de los problemas más comunes.
-ms.openlocfilehash: e0117cebc80acbd2b29ce319002dbd3dccafb764
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1740e73c298578b4a13e254081ae62b795aed0ab
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031135"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814628"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plan de solución de problemas de rendimiento para Office 365
 
@@ -139,7 +139,7 @@ Grabación de acciones de usuario, o PSR. exe, permite registrar los problemas q
 
 3. Haga clic en **Detener grabación** cuando haya completado los pasos. Si el problema de rendimiento es representación de una página, espere a que la página se represente antes de detener la grabación.
 
-4. Haga clic en **Guardar**.
+4. Haga clic en **Guardar **.
 
 ![Captura de pantalla de los grabadores de acciones o PSR. exe.](media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
   
@@ -250,7 +250,7 @@ La latencia es una medida que puede cambiar mucho en función de muchas variable
 
 Hay calculadoras de ancho de banda para Office 365 disponible en esta página de [planeación de red y ajuste del rendimiento para office 365](network-planning-and-performance.md) .  
 
-¿Necesita medir la velocidad de la conexión o el ancho de banda de la conexión de su ISP? Prueba este sitio (o sitios como él): [sitio oficial de speedtest](https://www.speedtest.net/)y [Pingtest](https://www.pingtest.net/).
+¿Necesita medir la velocidad de la conexión o el ancho de banda de la conexión de su ISP? Prueba este sitio (o sitios como él): [sitio oficial de speedtest](https://www.speedtest.net/)o consulta tu motor de búsqueda favorito para **comprobar la velocidad**de la frase.
 
 #### <a name="tools"></a>Herramientas
 

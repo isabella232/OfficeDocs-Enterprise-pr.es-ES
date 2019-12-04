@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Aprenda cómo optimizar el rendimiento de los iFrames en las páginas de sitio de publicación moderna y clásica de SharePoint Online
-ms.openlocfilehash: 97848d28277f19e8984f1f08e90f07236fd5c85b
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: f4b28ad9e59e41ddb8a4b96b532a49811e722874
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078439"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814238"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimizar los iFrames en las páginas de sitio de publicación moderna y clásica de SharePoint Online
 
@@ -75,4 +75,4 @@ Antes de realizar revisiones de página para corregir problemas de rendimiento, 
 
 [Ajustar el rendimiento de Office 365](tune-office-365-performance.md)
 
-[Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)

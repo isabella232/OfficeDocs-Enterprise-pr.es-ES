@@ -3,6 +3,7 @@ title: Identidades de solo nube de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,14 +24,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo crear usuarios y grupos cuando la suscripción de Office 365 usa identidades de solo nube.
-ms.openlocfilehash: 7a2aaf7705378da3cbd91b415f07d10b6e039293
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 6815c89821216416379a27eb525e66b90b828ea8
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34164615"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813418"
 ---
 # <a name="office-365-cloud-only-identities"></a>Identidades de solo nube de Office 365
+
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
 Con la identidad solo de nube, todos los usuarios, grupos y contactos se almacenan en el inquilino de Azure Active Directory (Azure AD) de la suscripción a Office 365. Estos son los componentes básicos de la identidad solo de la nube.
  
@@ -53,12 +56,12 @@ Puede usar grupos en Azure AD para varios fines que simplifican la administraci�
 
 Puede crear nuevos ***usuarios*** con:
 
-- [Centro de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+- [Centro de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
 - [PowerShell de Office 365](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)
 
 Puede crear ***grupos*** nuevos con:
 
-- [Centro de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
+- [Centro de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
 - [PowerShell de Office 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 

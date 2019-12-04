@@ -18,15 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Cómo descargar y ejecutar la herramienta IdFix de Office 365 para ayudar a limpiar los servicios de dominio de Active Directory (AD DS) antes de sincronizarlos con Office 365.
-ms.openlocfilehash: 4a402cf245ebd20fbc5846908d521469ebfb90c1
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 03f26f877786057a4ebca2bad0ae85369fb712ac
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490762"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813538"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Descargar y ejecutar la herramienta IdFix de Office 365
 
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
 IdFix identifica errores como duplicados y problemas de formato en el dominio de servicios de dominio de Active Directory (AD DS) antes de sincronizar con Office 365. 
   
@@ -77,7 +78,7 @@ Siga estas instrucciones.
     
 3. En la ventana de **IdFix** , elija **extraer**y, a continuación, **extraer todo**. De forma predeterminada, IdFix se extrae a `C:\Users\<your user name>\Documents\IdFix`. 
     
-6. Elija **extraer**.
+6. Elija **Extraer**.
 
 Estas instrucciones se han realizado con Internet Explorer en un servidor que ejecuta Windows Server 2016. Si está usando una versión diferente de Windows o un explorador diferente, los pasos pueden variar.
     

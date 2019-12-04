@@ -14,12 +14,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: En este artículo se describen las opciones de navegación sitios con la publicación de SharePoint habilitada en SharePoint Online. La elección y configuración de la navegación afectan significativamente al rendimiento y la escalabilidad de los sitios de SharePoint Online. Este artículo no se aplica a los sitios de grupo clásicos.
-ms.openlocfilehash: d86b0462e8ddb93c39eab0d42a24f3a94f785ecd
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: ce6bde50d35cdddf28fed4ad6c74a9a2da8193af
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078315"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814198"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 
@@ -35,19 +35,19 @@ La segunda opción, [**navegación estructural**](#using-structural-navigation-i
 
 Además de los proveedores de navegación preinstalados, muchos clientes han implementado correctamente implementaciones de navegación personalizadas alternativas. Una clase común de implementaciones de navegación personalizadas adopta patrones de diseño representados por el cliente que almacenan una memoria caché local de nodos de navegación. (Vea **[scripting del lado cliente basado en búsquedas](#using-search-driven-client-side-scripting)** en este artículo).
 
-Estos proveedores de navegación tienen un par de ventajas clave: 
-- Por lo general, funcionan bien con diseños de página dinámicos.
-- Son extremadamente escalables y funcionan porque pueden representarse sin costo de recursos (y actualizar en segundo plano después de un tiempo de espera). 
-- Estos proveedores de navegación pueden recuperar datos de navegación mediante varias estrategias, desde configuraciones estáticas simples a varios proveedores de datos dinámicos. 
+Estos proveedores de navegación tienen un par de ventajas clave:
 
-Un ejemplo de un proveedor de datos es usar una **navegación**basada en búsquedas, que permite la flexibilidad para enumerar los nodos de navegación y controlar de forma eficaz el recorte de seguridad. 
+- Por lo general, funcionan bien con diseños de página dinámicos.
+- Son extremadamente escalables y funcionan porque pueden representarse sin costo de recursos (y actualizar en segundo plano después de un tiempo de espera).
+- Estos proveedores de navegación pueden recuperar datos de navegación mediante varias estrategias, desde configuraciones estáticas simples a varios proveedores de datos dinámicos.
+
+Un ejemplo de un proveedor de datos es usar una **navegación**basada en búsquedas, que permite la flexibilidad para enumerar los nodos de navegación y controlar de forma eficaz el recorte de seguridad.
 
 Hay otras opciones populares para crear **proveedores de navegación personalizados**. Revise [soluciones de navegación para portales de SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) para obtener más información sobre la creación de un proveedor de navegación personalizado.
   
 ## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Ventajas y desventajas de las opciones de navegación de SharePoint Online
 
-En la tabla siguiente se resumen las ventajas y los inconvenientes de cada opción. 
-
+En la tabla siguiente se resumen las ventajas y los inconvenientes de cada opción.
 
 |Navegación administrada  |Navegación estructural  |Navegación basada en búsquedas  |Proveedor de navegación personalizada  |
 |---------|---------|---------|---------|
@@ -58,8 +58,7 @@ La opción más adecuada para su sitio dependerá de los requisitos de su sitio 
 
 La opción de navegación administrada se puede mantener mediante la configuración, no implica archivos de personalización de código y es significativamente más rápida que la navegación estructural. Si requiere el recorte de seguridad y se siente cómodo con una página maestra personalizada y tiene alguna función en la organización para mantener los cambios que se pueden producir en la página maestra predeterminada para SharePoint Online, la opción basada en búsquedas puede producir una mejor experiencia del usuario. Si tiene requisitos más complejos, un proveedor de navegación personalizado puede ser la opción correcta. NO se recomienda la navegación estructural.
 
-Por último, es importante tener en cuenta que SharePoint está agregando proveedores de navegación adicionales y funcionalidad para arquitecturas de sitio de SharePoint modernas que aprovechan una jerarquía de sitios más acoplada y un modelo de concentrador y radio con sitios concentradores de SharePoint. Esto permite lograr muchos escenarios que no requieren el uso de la característica de publicación de SharePoint y estas configuraciones de navegación están optimizadas para la escalabilidad y la latencia en SharePoint Online. Tenga en cuenta que al aplicar el mismo principio, simplificando la estructura general del sitio de publicación de SharePoint a una estructura más plana, a menudo también mejora el rendimiento y la escala general. Esto significa que en lugar de tener una sola colección de sitios con cientos de sitios (subwebs), un mejor enfoque es disponer de muchas colecciones de sitios con muy pocos subsitios (subwebs).
-
+Por último, es importante tener en cuenta que SharePoint está agregando proveedores de navegación adicionales y funcionalidad para arquitecturas de sitio de SharePoint modernas que aprovechan una jerarquía de sitios más acoplada y un modelo de concentrador y radio con sitios concentradores de SharePoint. Esto permite lograr muchos escenarios que no requieren el uso de la característica de publicación de SharePoint y estas configuraciones de navegación están optimizadas para la escalabilidad y la latencia en SharePoint Online. Tenga en cuenta que aplicar el mismo principio de simplificar la estructura general del sitio de publicación de SharePoint a una estructura más plana suele ayudar a aumentar el rendimiento y la escala general. Esto significa que en lugar de tener una sola colección de sitios con cientos de sitios (subwebs), un mejor enfoque es disponer de muchas colecciones de sitios con muy pocos subsitios (subwebs).
 
 ## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Usar la navegación administrada y los metadatos en SharePoint Online
 
@@ -95,7 +94,7 @@ Ilustrar cómo se activa el rendimiento de una solución estándar de SharePoint
   
 ### <a name="analyzing-structural-navigation-performance-in-sharepoint-online"></a>Analizar el rendimiento de la navegación estructural en SharePoint Online
 
-Para analizar el rendimiento de una página de SharePoint, use la ficha **red** de las herramientas de desarrollo F12 de Internet Explorer. 
+Para analizar el rendimiento de una página de SharePoint, use la ficha **red** de las herramientas de desarrollo F12 de Internet Explorer.
   
 ![Captura de pantalla que muestra la pestaña Red de herramientas de desarrollo F12](media/SPONavOptionsNetworks.png)
   
@@ -114,13 +113,13 @@ Este enfoque implica la creación de una página maestra personalizada y la sust
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Ejemplo: reemplazar el código de navegación de precodificación en una página maestra
 
-1.  Navegue a la página Configuración del sitio.
-2.  Abra la galería de páginas maestras; para ello, haga clic en **páginas maestras**.
-3.  Desde aquí puede navegar por la biblioteca y descargar el archivo `seattle.master`.
-4.  Edite el código con un editor de texto y elimine el bloque de código en la siguiente captura de pantalla.<br/>![Eliminar el bloque de código que se muestra](media/SPONavOptionsDeleteCodeBlock.png)<br/>
+1. Navegue a la página Configuración del sitio.
+2. Abra la galería de páginas maestras; para ello, haga clic en **páginas maestras**.
+3. Desde aquí puede navegar por la biblioteca y descargar el archivo `seattle.master`.
+4. Edite el código con un editor de texto y elimine el bloque de código en la siguiente captura de pantalla.<br/>![Eliminar el bloque de código que se muestra](media/SPONavOptionsDeleteCodeBlock.png)<br/>
 5. Quite el código entre las `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` etiquetas `<\SharePoint:AjaxDelta>` y y reemplácela por el siguiente fragmento de código:<br/>
 
-```
+```javascript
 <div id="loading">
   <!--Replace with path to loading image.-->
   <div style="background-image: url(''); height: 22px; width: 22px; ">
@@ -143,15 +142,15 @@ Este enfoque implica la creación de una página maestra personalizada y la sust
                         </span>
                     </span>
                 <!-- /ko -->
-                <!-- ko if: children.length == 0-->   
+                <!-- ko if: children.length == 0-->
                     <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
                         <span class="menu-item-text" data-bind="text: item.Title">
                         </span>
                     </span>
-                <!-- /ko -->   
+                <!-- /ko -->
                 </a>
                
-                <!-- ko if: children.length > 0-->                                                       
+                <!-- ko if: children.length > 0-->
                 <ul id="menu"  data-bind="foreach: children;" class="dynamic  level2" >
                     <li class="dynamic level2">
                         <a class="dynamic menu-item ms-core-listMenu-item ms-displayInline  ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
@@ -166,8 +165,8 @@ Este enfoque implica la creación de una página maestra personalizada y la sust
           <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
            <span class="menu-item-text" data-bind="text: item.Title">
            </span>
-          </span>                 
-          <!-- /ko -->   
+          </span>
+          <!-- /ko -->
                         </a>
           <!-- ko if: children.length > 0-->
          <ul id="menu" data-bind="foreach: children;" class="dynamic level3" >
@@ -191,13 +190,13 @@ Este enfoque implica la creación de una página maestra personalizada y la sust
 6. Reemplace la dirección URL de la etiqueta de anclaje de la imagen de carga al principio, por un vínculo a una imagen de carga en la colección de sitios. Después de realizar los cambios, cambie el nombre del archivo y, a continuación, cárguelo en la galería de páginas maestras. Esto genera un nuevo archivo. Master.<br/>
 7. Este HTML es el marcado básico que rellenará los resultados de la búsqueda devueltos desde el código JavaScript. Tendrá que editar el código para cambiar el valor de var root = "site Collection URL" como se muestra en el siguiente fragmento de código:<br/>
 
-```
+```javascript
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
 8. Los resultados se asignan a self. Nodes y una jerarquía se crea a partir de los objetos mediante Linq. js, que asigna el resultado a una matriz self. hierarchy. Esta matriz es el objeto que está enlazado al HTML. Esto se realiza en la función toggleView () pasando el objeto Self a la función ko. applyBinding ().<br/>Esto hace que la matriz de jerarquías se enlace al siguiente HTML:<br/>
 
-```
+```javascript
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
 ```
 
@@ -209,7 +208,7 @@ En nuestro ejemplo de navegación compleja, una carga de página nueva sin el al
 
 El archivo JavaScript completo es el siguiente:
 
-```
+```javascript
 //Models and Namespaces
 var SPOCustom = SPOCustom || {};
 SPOCustom.Models = SPOCustom.Models || {}
@@ -393,7 +392,7 @@ function NavigationViewModel() {
         }
     };
 
-    // ByHierarchy method breaks the sorting in chrome and firefix 
+    // ByHierarchy method breaks the sorting in chrome and firefox
     // we need to resort  as ascending
     self.sortObjectsInArray2 = function (a, b) {
         if (a.item.Title() > b.item.Title())
@@ -440,7 +439,7 @@ function addEventsToElements() {
     });
 } _spBodyOnLoadFunctionNames.push("InitCustomNav");
 
-``` 
+```
 
 Para resumir el código que se ha mostrado `jQuery $(document).ready` anteriormente en la función `viewModel object` , se ha creado `loadNavigationNodes()` una y, a continuación, se llama a la función en ese objeto. Esta función carga la jerarquía de navegación previamente creada almacenada en el almacenamiento local de HTML5 del explorador del cliente o llama a `queryRemoteInterface()`la función.
 
@@ -464,7 +463,7 @@ El [código anterior](#about-the-javascript-file) tiene las siguientes dependenc
 
 La versión actual de LinqJS no contiene el método ByHierarchy que se usó en el código anterior y romperá el código de navegación. Para solucionarlo, agregue el método siguiente al archivo Linq. js antes de la línea `Flatten: function ()`.
 
-```
+```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
      ascending = ascending == undefined ? true : ascending;
      var orderMethod = ascending == true ? 'OrderBy' : 'OrderByDescending';
@@ -530,4 +529,3 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 ## <a name="related-topics"></a>Temas relacionados
 
 [Información general sobre la navegación administrada en SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
-

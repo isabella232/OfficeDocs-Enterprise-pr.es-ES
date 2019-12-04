@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Describe cómo usar la red de entrega de contenido (CDN) de Office 365 para acelerar la entrega de los activos de SharePoint Online a todos los usuarios, independientemente de dónde se encuentren o de la forma en que tengan acceso al contenido.
-ms.openlocfilehash: eedbbbf143890e336ae16f80a135f611b9e65f26
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: bb60e129f988041a7d763c1558a9ee3c86f75226
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077959"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813518"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -446,7 +446,7 @@ Para obtener más información sobre este cmdlet, vea [set-SPOTenantCdnEnabled](
 <a name="CDNSetupinCLI"> </a>
 ## <a name="set-up-and-configure-the-office-365-cdn-using-the-office-365-cli"></a>Instalar y configurar la red CDN de Office 365 con la CLI de Office 365
 
-Los procedimientos de esta sección requieren que tenga instalada la [CLI 365 de Office](https://aka.ms/o365cli). Después, conéctese al inquilino de SharePoint Online mediante el comando [spo connect](https://pnp.github.io/office365-cli/cmd/spo/connect/).
+Los procedimientos de esta sección requieren que tenga instalada la [CLI 365 de Office](https://aka.ms/o365cli). A continuación, conéctese a su inquilino de Office 365 con el comando [login](https://pnp.github.io/office365-cli/cmd/login/) .
 
 Siga estos pasos para configurar y configurar la red CDN para hospedar los activos en SharePoint Online mediante la CLI de Office 365.
 
@@ -670,7 +670,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 Es importante tener en cuenta que SharePoint Online no admite permisos de nivel de elemento para activos en orígenes privados. Por ejemplo, para un archivo que se `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`encuentra en, los usuarios tienen acceso efectivo al archivo teniendo en cuenta las siguientes condiciones:
 
-|Usuario  |Permisos  |Acceso efectivo  |
+|Usuario  |Permissions  |Acceso efectivo  |
 |---------|---------|---------|
 |Usuario 1     |Tiene acceso a la carpeta1         |Puede tener acceso a image1. jpg desde la red CDN         |
 |Usuario 2     |No tiene acceso a la carpeta1         |No se puede tener acceso a image1. jpg desde la red CDN         |
@@ -740,7 +740,7 @@ Puede elegir trabajar con la red CDN de Office 365 usando el módulo de PowerShe
 + [Introducción al shell de administración de SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 + [Instalar Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Redes de entrega de contenido](https://aka.ms/o365cdns)
 

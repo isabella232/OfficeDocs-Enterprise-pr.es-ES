@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute para Office 365 proporciona una ruta de acceso de enrutamiento alternativa a muchos servicios de Office 365 de conexión a Internet. La arquitectura de ExpressRoute para Office 365 se basa en los prefijos IP públicos de publicidad de los servicios de Office 365 a los que ya se puede tener acceso a través de Internet en los circuitos de ExpressRoute aprovisionados para la redistribución posterior de dichos prefijos IP en la red. Con ExpressRoute, se habilitan de manera eficaz varias rutas de acceso de enrutamiento diferentes, a través de Internet y de ExpressRoute, para muchos servicios de Office 365. Este estado de enrutamiento en la red puede representar un cambio importante en la forma en que se diseña la topología de la red interna.
-ms.openlocfilehash: 3e3171c3058b485ef644af3f1d33a9f80c71345c
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 0b200c3a7a54d28aee20b03c850c908bfd1c868d
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722729"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813488"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
+
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
 ExpressRoute para Office 365 proporciona una ruta de acceso de enrutamiento alternativa a muchos servicios de Office 365 de conexión a Internet. La arquitectura de ExpressRoute para Office 365 se basa en los prefijos IP públicos de publicidad de los servicios de Office 365 a los que ya se puede tener acceso a través de Internet en los circuitos de ExpressRoute aprovisionados para la redistribución posterior de dichos prefijos IP en la red. Con ExpressRoute, se habilitan de manera eficaz varias rutas de acceso de enrutamiento diferentes, a través de Internet y de ExpressRoute, para muchos servicios de Office 365. Este estado de enrutamiento en la red puede representar un cambio importante en la forma en que se diseña la topología de la red interna.
   
@@ -89,7 +91,7 @@ El catálogo de tráfico de red debe contener listas de todas las conexiones de 
 
 - Los flujos de tráfico de red de entrada son todos los escenarios en los que se inicia una conexión desde la nube de Microsoft a un host local. Por lo general, estas conexiones deben pasar por firewall y otras infraestructuras de seguridad que la Directiva de seguridad de cliente necesita para flujos externos originados.
 
-Lea la sección **garantizar la simetría de rutas** del artículo [enrutamiento con ExpressRoute para Office 365](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) para determinar qué servicios enviarán tráfico entrante y busque la columna que se ha marcado como **ExpressRoute para office 365** en el [Office 365 ](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)el artículo de referencia de puntos de conexión para determinar el resto de la información de conectividad.
+Lea la **sección garantizar la simetría de rutas** del artículo [enrutamiento con expressroute para Office 365](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) para determinar qué servicios enviarán tráfico entrante y busque la columna marcada como **expressroute para Office 365** en el artículo de referencia de los puntos de conexión de [Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) para determinar el resto de la información de conectividad.
   
 Para cada servicio que requiera una conexión saliente, querrá describir la conectividad planeada para el servicio, incluidos el enrutamiento de red, la configuración de proxy, la inspección de paquetes y las necesidades de ancho de banda.
   
@@ -99,7 +101,7 @@ Las conexiones entrantes deben revisarse independientemente de si se conectan a 
   
 A continuación, se muestra un ejemplo del nivel de detalle necesario. En este caso, Exchange Hybrid se enrutaría al sistema local a través de ExpressRoute.
 
-|**Connection (propiedad)**|**Value**|
+|**Connection (propiedad)**|**Valor**|
 |:-----|:-----|
 |**Dirección del tráfico de red** <br/> |Entrada  <br/> |
 |**Servicio** <br/> |Exchange Hybrid  <br/> |
@@ -116,7 +118,7 @@ A continuación, se muestra un ejemplo del nivel de detalle necesario. En este c
 
 Este es un ejemplo de un servicio que solo es saliente:
 
-|**Connection (propiedad)**|**Value**|
+|**Connection (propiedad)**|**Valor**|
 |:-----|:-----|
 |**Dirección del tráfico de red** <br/> |Salida  <br/> |
 |**Servicio** <br/> |SharePoint Online  <br/> |
@@ -186,7 +188,7 @@ A menudo, hay varias ubicaciones Meet-me que se pueden seleccionar en una regió
 |**Ubicaciones planeadas para reunirse con conmigo de ExpressRoute en California y Nueva York**||
 |:-----|:-----|
 |Ubicación  <br/> |Número de personas  <br/> |Latencia esperada para la red de Microsoft en la salida de Internet  <br/> |Latencia esperada para Microsoft Network sobre ExpressRoute  <br/> |
-|Los Ángeles  <br/> |10,000  <br/> |~ 15ms  <br/> |~ 10 ms (a través de Silicon Valley)  <br/> |
+|Los Ángeles  <br/> |10 000  <br/> |~ 15ms  <br/> |~ 10 ms (a través de Silicon Valley)  <br/> |
 |DC de Washington  <br/> |15.000  <br/> |~ 20 MS  <br/> |~ 10 ms (a través de Nueva York)  <br/> |
 |Dallas  <br/> |5,000  <br/> |~ 15ms  <br/> |~ 40ms (a través de Nueva York)  <br/> |
 
@@ -251,11 +253,11 @@ Al realizar una evaluación del ancho de banda con los usuarios piloto, puede us
   
 #### <a name="plan-for-high-availability-requirements"></a>Planeación de requisitos de alta disponibilidad
   
-Cree un plan de alta disponibilidad para satisfacer sus necesidades e incorpore esto en el diagrama de la topología de red actualizada. Lea la sección **alta disponibilidad y conmutación por error con Azure ExpressRoute** en planeación de [red con ExpressRoute para Office 365](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd).
+Cree un plan de alta disponibilidad para satisfacer sus necesidades e incorpore esto en el diagrama de la topología de red actualizada. Lea la sección **alta disponibilidad y conmutación por error con Azure ExpressRoute** en [planeación de red con ExpressRoute para Office 365](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd).
   
 #### <a name="plan-for-network-security-requirements"></a>Planeación de los requisitos de seguridad de red
   
-Cree un plan para cumplir con los requisitos de seguridad de la red e incorpórelo a su diagrama de topología de red actualizada. Lea la sección **aplicar controles de seguridad a Azure ExpressRoute para office 365 escenarios** de planeación de [red con ExpressRoute para Office 365](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd).
+Cree un plan para cumplir con los requisitos de seguridad de la red e incorpórelo a su diagrama de topología de red actualizada. Lea la sección **aplicar controles de seguridad a Azure ExpressRoute para office 365 escenarios** de [planeación de red con ExpressRoute para Office 365](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd).
   
 ### <a name="design-outbound-service-connectivity"></a>Diseño de la Conectividad del servicio de salida
 <a name="outbound"> </a>
@@ -568,7 +570,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/impleme
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Evaluación de la conectividad de red de Office 365](assessing-network-connectivity.md)
+[Evaluar la red de Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute para Office 365](azure-expressroute.md)
   
@@ -592,6 +594,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/impleme
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)

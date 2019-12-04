@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: ExpressRoute para Office 365 ofrece una ruta de acceso alternativa para llegar a varios servicios de Office 365 sin necesidad de que todo el tráfico llegue a Internet. Aunque la conexión a Internet con Office 365 todavía es necesaria, las rutas específicas que Microsoft anuncia a través de BGP a la red hacen que se prefiera el circuito de ExpressRoute directo a menos que haya otras configuraciones en la red. Las tres áreas comunes que puede configurar para administrar este enrutamiento incluyen el filtrado de prefijos, la seguridad y el cumplimiento.
-ms.openlocfilehash: 163b94bed1bf27b30a3ac8d3079d6fe70d7a1af0
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 589d8e60d2826170b7eddb84406d1d3d0effbb43
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027554"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814248"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Administración de la conectividad de ExpressRoute para Office 365
 
@@ -43,10 +43,9 @@ Hay varios motivos para evitar el uso de las [direcciones URL de Office 365 e in
 
 - Las direcciones URL y los intervalos de direcciones IP de Office 365 no cubren otros servicios de Microsoft que puedan estar en el ámbito de las conexiones de ExpressRoute.
 
-| |
 |**Opción**|**Complejidad**|**Control de cambios**|
 |:-----|:-----|:-----|
-|Aceptar todas las rutas de Microsoft  <br/> |**Bajo:** El cliente se basa en los controles de Microsoft para asegurarse de que todas las rutas son propiedad de forma adecuada.  <br/> |None  <br/> |
+|Aceptar todas las rutas de Microsoft  <br/> |**Bajo:** El cliente se basa en los controles de Microsoft para asegurarse de que todas las rutas son propiedad de forma adecuada.  <br/> |Ninguno  <br/> |
 |Filtrar superredes de Microsoft propiedad  <br/> |**Medio:** El cliente implementa listas resumidas de filtros de prefijo para permitir solo las rutas de propiedad de Microsoft.  <br/> |Los clientes deben asegurarse de que las actualizaciones poco frecuentes se reflejan en los filtros de ruta.  <br/> |
 |Filtrar intervalos IP de Office 365  <br/> [!CAUTION] No recomendado
 |**Alto:** El cliente filtra las rutas basándose en prefijos IP 365 de Office definidos.  <br/> |Los clientes deben implementar un proceso de administración de cambios sólido para las actualizaciones mensuales.  <br/> [!CAUTION] Esta solución requiere cambios significativos en el curso. Es probable que los cambios no implementados en tiempo se produzcan en una interrupción del servicio.   |
@@ -70,7 +69,7 @@ Para los controles agregados, puede usar el filtrado de nivel de FQDN dentro de 
 
 |**Opción**|**Complejidad**|**Control de cambios**|
 |:-----|:-----|:-----|
-|Sin restricciones  <br/> |**Bajo:** El cliente permite el acceso saliente sin restricciones a Microsoft.  <br/> |None  <br/> |
+|Sin restricciones  <br/> |**Bajo:** El cliente permite el acceso saliente sin restricciones a Microsoft.  <br/> |Ninguno  <br/> |
 |Restricciones de puertos  <br/> |**Bajo:** El cliente restringe el acceso saliente a Microsoft por los puertos esperados.  <br/> |Poco frecuentes.  <br/> |
 |Restricciones de FQDN  <br/> |**Alto:** El cliente restringe el acceso saliente a Office 365 en función de los FQDN publicados.  <br/> |Cambios mensuales.  <br/> |
 

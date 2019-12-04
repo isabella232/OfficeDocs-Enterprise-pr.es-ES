@@ -3,6 +3,7 @@ title: Asignar licencias de Office 365 a cuentas de usuario
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo asignar licencias de Office 365 a cuentas de usuario, ya sea de forma individual o en función de la pertenencia a grupos.
-ms.openlocfilehash: bc736236f9371ee1372fd36af4a707aca2ee1408
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 169f5a3c0bf75bf807c40338542e0ba15b79a1bc
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745713"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813388"
 ---
 # <a name="assign-office-365-licenses-to-user-accounts"></a>Asignar licencias de Office 365 a cuentas de usuario
 
@@ -49,11 +50,11 @@ Para asignar licencias de Office 365 a cuentas de usuario individuales, puede us
 
 Para la asignación automática de licencias, consulte [licencias basadas en grupos en Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Con el conjunto completo de cuentas de usuario a las que se han asignado licencias, ya está listo para:
 
 - [Implementar seguridad](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [Implementación de software de cliente, como Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
-- [Configuración de la administración de dispositivos móviles](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [Configurar la administración de dispositivos móviles en Office 365](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [Configuración de servicios y aplicaciones](configure-services-and-applications.md)

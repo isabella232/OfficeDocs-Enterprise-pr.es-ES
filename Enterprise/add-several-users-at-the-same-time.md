@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Obtenga información sobre cómo agregar varios usuarios a Office 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Office 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón de Office 365. '
-ms.openlocfilehash: 864bdf788b0beefce49a53382795d522114aad5d
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 16cea3b09da7d6450efd09bad0937bfcef9f70ab
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702221"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813498"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Agregar varios usuarios a Office 365 a la vez. Ayuda para administradores
 
@@ -142,3 +142,10 @@ Cuando guarde el archivo, probablemente recibirá un mensaje que le informará d
     
 - **Si no ve los nuevos usuarios en Office 365 inmediatamente, espere unos minutos.** Los cambios pueden tardar un poco en llegar a todos los servicios de Office 365. 
     
+## <a name="related-articles"></a>Artículos relacionados
+
+[Agregar usuarios individualmente o de forma masiva a Office 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+
+
+
+

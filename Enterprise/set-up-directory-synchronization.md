@@ -3,6 +3,7 @@ title: Configurar la sincronización de directorios en Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,14 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Obtenga información sobre cómo configurar la sincronización de directorios entre Office 365 y su Active Directory local.
-ms.openlocfilehash: a51abf7dcca0a9edc4ecf233ea67fdeb80070a70
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 5cd56eb90e6421d530ff0c2b8739bd13be238eae
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702251"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814598"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Configurar la sincronización de directorios en Office 365
+
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
 Office 365 usa un inquilino de Azure Active Directory (Azure AD) para almacenar y administrar identidades de autenticación y permisos para obtener acceso a los recursos basados en la nube. 
 
@@ -90,8 +93,8 @@ Siga estos pasos:
 
 ## <a name="3-finish-setting-up-domains"></a>3. finalizar la configuración de dominios
 
-Siga los pasos descritos en [crear registros DNS para Office 365 cuando administre sus registros DNS](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23) para finalizar la configuración de sus dominios.
+Siga los pasos descritos en [crear registros DNS para Office 365 cuando administre sus registros DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) para finalizar la configuración de sus dominios.
 
 ## <a name="next-step"></a>Paso siguiente
 
-[Asignar licencias a cuentas de usuario](assign-licenses-to-user-accounts.md).
+[Asignar licencias a cuentas de usuario](assign-licenses-to-user-accounts.md)

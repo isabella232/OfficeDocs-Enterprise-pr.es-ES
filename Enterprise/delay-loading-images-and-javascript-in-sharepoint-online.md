@@ -3,7 +3,7 @@ title: Retrasar la carga de imágenes y JavaScript en SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/29/2016
+ms.date: 12/3/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: En este artículo se describe cómo reducir el tiempo de carga de las páginas de SharePoint Online con JavaScript para retrasar la carga de imágenes y también al esperar a cargar JavaScript no esencial hasta que se cargue la página.
-ms.openlocfilehash: a015c8ca26c402733eba3b26e641524f38acca21
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: bf68dd29d1c92d37e8dfb5b99f043af160f96d1e
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077673"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813478"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Retrasar la carga de imágenes y JavaScript en SharePoint Online
 
@@ -32,7 +32,7 @@ Las imágenes pueden afectar negativamente a la velocidad de carga de página en
 
 Puede usar JavaScript para evitar que un explorador Web Busque imágenes previamente. Esto acelera la representación general de los documentos. Para ello, quite el valor del atributo src de la \<etiqueta IMG\> y reemplácelo por la ruta de acceso a un archivo en un atributo de datos como: Data-src. Por ejemplo:
   
-```txt
+```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
@@ -40,9 +40,9 @@ Mediante este método, el explorador no descarga las imágenes de forma inmediat
   
 Para que todo esto suceda, deberá usar JavaScript.
   
-En un archivo de texto, defina la función **isElementInViewport ()** para comprobar si un elemento se encuentra o no en la parte del explorador que es visible para el usuario. 
+En un archivo de texto, defina la función **isElementInViewport ()** para comprobar si un elemento se encuentra o no en la parte del explorador que es visible para el usuario.
   
-```txt
+```javascript
 function isElementInViewport(el) {
   if (!el)
     return false;
@@ -51,14 +51,14 @@ function isElementInViewport(el) {
     rect.top >= 0 &amp;&amp;
     rect.left >= 0 &amp;&amp;
     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &amp;&amp;
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
 ```
 
-A continuación, use **isElementInViewport ()** en la función **loadItemsInView ()** . La función **loadItemsInView ()** cargará todas las imágenes que tienen un valor para el atributo Data-src si se encuentran en la parte del explorador que es visible para el usuario. Agregue la siguiente función al archivo de texto: 
+A continuación, use **isElementInViewport ()** en la función **loadItemsInView ()** . La función **loadItemsInView ()** cargará todas las imágenes que tienen un valor para el atributo Data-src si se encuentran en la parte del explorador que es visible para el usuario. Agregue la siguiente función al archivo de texto:
   
-```
+```javascript
 function loadItemsInView() {
   //Select elements by the row id.
   $("#row [data-src]").each(function () {
@@ -72,9 +72,9 @@ function loadItemsInView() {
 }
 ```
 
-Por último, llame a **loadItemsInView ()** desde dentro de **window. OnScroll ()** , como se muestra en el ejemplo siguiente. Esto garantiza que las imágenes que están en la ventanilla se cargan a medida que las necesita el usuario, pero no antes. Agregue lo siguiente al archivo de texto: 
+Por último, llame a **loadItemsInView ()** desde dentro de **window. OnScroll ()** , como se muestra en el ejemplo siguiente. Esto garantiza que las imágenes que están en la ventanilla se cargan a medida que las necesita el usuario, pero no antes. Agregue lo siguiente al archivo de texto:
   
-```
+```javascript
 //Example of calling loadItemsInView() from within window.onscroll()
 $(window).on("scroll", function () {
     loadItemsInView();
@@ -84,7 +84,7 @@ $(window).on("scroll", function () {
 
 Para SharePoint Online, debe adjuntar la siguiente función al evento scroll en la etiqueta div \<\> #s4-Workspace. Esto se debe a que los eventos de ventana se invalidan para garantizar que la cinta permanece adjunta a la parte superior de la página.
   
-```
+```javascript
 //Keep the ribbon at the top of the page
 $('#s4-workspace').on("scroll", function () {
     loadItemsInView();
@@ -96,10 +96,10 @@ Guarde el archivo de texto como archivo JavaScript con la extensión. js, por ej
 Una vez que haya terminado de escribir delayLoadImages. js, puede Agregar el contenido del archivo a una página maestra en SharePoint Online. Para ello, agregue un vínculo de script al encabezado en la página maestra. Una vez que está en una página maestra, el JavaScript se aplicará a todas las páginas de su sitio de SharePoint Online que usen ese diseño de página maestra. Como alternativa, si solo va a usar esto en una página del sitio, use el elemento Web script editor para incrustar el código JavaScript en la página. Vea estos temas para obtener más información:
   
 - [Aplicar una página maestra a un sitio de SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
-    
+
 - [Cómo crear un diseño de página en SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
-    
- **Ejemplo: hacer referencia al archivo delayLoadImages. js de JavaScript desde una página maestra en SharePoint Online**
+
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Ejemplo: hacer referencia al archivo delayLoadImages. js de JavaScript desde una página maestra en SharePoint Online
   
 Para que esto funcione, también tiene que hacer referencia a jQuery en la página maestra. En el siguiente ejemplo, puede ver en la carga de página inicial que solo hay una imagen cargada, pero hay varias más en la página.
   
@@ -113,13 +113,12 @@ Retrasar la carga de imágenes mediante JavaScript puede ser una técnica eficaz
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>Ejemplo de código de GitHub: inyectar JavaScript para mejorar el rendimiento
 
-No pierdas el artículo y el ejemplo de código de la [inyección de JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) que se proporciona en github. 
+No pierdas el artículo y el ejemplo de código de la [inyección de JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) que se proporciona en github.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Exploradores compatibles en Office 2013 y Office 365 ProPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [Aplicar una página maestra a un sitio de SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   
 [Cómo crear un diseño de página en SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
-
