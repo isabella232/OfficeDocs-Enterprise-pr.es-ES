@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo preparar el aprovisionamiento de usuarios a Office 365 mediante la sincronización de directorios y las ventajas a largo plazo del uso de este método.
-ms.openlocfilehash: ab2908fac1dfb19c72d3321d6d2087bbf24fe6df
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 4b602be99239d1e66b149929bd73142252f6cba6
+ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814188"
+ms.locfileid: "39825192"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Preparación para la sincronización de directorios en Office 365
 
@@ -57,10 +57,7 @@ Antes de sincronizar AD DS con su espacio empresarial de Azure AD, debe limpiar 
 En AD DS, complete las siguientes tareas de limpieza para cada cuenta de usuario a la que se asignará una licencia de Office 365:
   
 1. Asegúrese de que haya una dirección de correo electrónico válida y única en el atributo **proxyAddresses** . 
-
-  >[!Note]
-  >Se omitirá un carácter de tilde (~) en las direcciones de correo electrónico. Esto puede dar lugar a errores de sincronización de directorios falsos positivos al duplicar proxyAddresses.
-    
+  
 2. Quite los valores duplicados en el atributo **proxyAddresses** . 
     
 3.  Si es posible, asegúrese de un valor válido y único para el atributo **userPrincipalName** en el objeto de **usuario** del usuario. Para obtener una mejor experiencia de sincronización, asegúrese de que el UPN de AD DS coincida con el UPN de Azure AD. Si un usuario no tiene un valor para el atributo **userPrincipalName** , el objeto de **usuario** debe contener un valor válido y único para el atributo **samAccountName** . Quite los valores duplicados en el atributo **userPrincipalName** . 
@@ -101,7 +98,7 @@ A continuación se enumeran los atributos que debe preparar:
   - Si el atributo existe en el objeto de usuario, se sincronizará con Office 365, pero Office 365 no lo necesita ni lo usa.
   - Número máximo de caracteres: 64
     
-- **tales**
+- **mail**
     
   - El valor del atributo debe ser único dentro del directorio.
     
