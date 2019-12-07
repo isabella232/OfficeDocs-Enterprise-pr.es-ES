@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: Obtenga información sobre cómo colaborar con invitados en un documento en SharePoint y OneDrive.
-ms.openlocfilehash: 1f5053a332c80fbb957cfcb3e11f35aa94cfe270
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 20b97ed6e232385500e74adcaa11378252167c26
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076174"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886499"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar con invitados en un documento
 
@@ -51,7 +51,7 @@ Para que los invitados tengan acceso a un documento en SharePoint o OneDrive, la
 
 La configuración a nivel de organización para SharePoint determina qué opciones de configuración están disponibles para los sitios de SharePoint individuales. La configuración del sitio no puede ser más permisiva que la configuración de nivel de organización. La configuración en el nivel de la organización para OneDrive determina el nivel de uso compartido que está disponible en las bibliotecas de OneDrive de los usuarios.
 
-Para SharePoint y OneDrive, si quiere permitir el uso compartido de archivos y carpetas con usuarios anónimos, elija **cualquier persona**. Si desea asegurarse de que todos los invitados tienen que autenticarse, elija los **invitados nuevos y existentes**. Los vínculos para *Cualquiera* son la manera más fácil de compartir: los invitados pueden abrir el vínculo sin autenticación y tienen la libertad de compartirlo con otros usuarios.
+Para SharePoint y OneDrive, si quiere permitir el uso compartido de archivos y carpetas sin autenticar, elija **cualquier persona**. Si desea asegurarse de que todos los invitados tienen que autenticarse, elija los **invitados nuevos y existentes**. Los vínculos para *Cualquiera* son la manera más fácil de compartir: los invitados pueden abrir el vínculo sin autenticación y tienen la libertad de compartirlo con otros usuarios.
 
 Para SharePoint, elija la configuración más permisiva que necesitará cualquier sitio de la organización.
 
@@ -73,7 +73,7 @@ Tenga en cuenta que esta configuración afecta a los sitios de SharePoint de su 
 
 Elija el tipo de vínculo que está seleccionado de forma predeterminada cuando los usuarios comparten archivos y carpetas:
 
-- **Cualquiera que tenga el vínculo** : elija esta opción si prevé compartir una gran cantidad de archivos y carpetas con usuarios anónimos. Si desea permitir que *todos* los vínculos, pero le preocupa el uso compartido de anónimos accidentales, tenga en cuenta una de las otras opciones predeterminadas. Este tipo de vínculo solo está disponible si ha habilitado a **todos los usuarios** que comparten el mismo.
+- **Cualquiera que tenga el vínculo** : elija esta opción si tiene previsto compartir una gran cantidad de archivos y carpetas sin autenticar. Si desea permitir que *todos* los vínculos, pero le preocupa el uso compartido no autenticado accidentalmente, considere una de las otras opciones como predeterminada. Este tipo de vínculo solo está disponible si ha habilitado a **todos los usuarios** que comparten el mismo.
 - **Solo las personas de su organización** : elija esta opción si prevé que la mayoría del uso compartido de archivos y carpetas sea para personas dentro de la organización.
 - **Personas específicas** : considere esta opción si espera compartir muchos archivos y carpetas con los invitados. Este tipo de vínculo funciona con los invitados y requiere que se autentiquen.
  
@@ -105,6 +105,6 @@ La configuración de uso compartido de invitados ya está configurada, por lo qu
 
 ## <a name="see-also"></a>Vea también
 
-[Procedimientos recomendados para compartir archivos y carpetas con usuarios anónimos](best-practices-anonymous-sharing.md)
+[Procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 
 [Reducir la exposición accidental de archivos al compartirlos con invitados](sharing-limit-accidental-exposure.md)

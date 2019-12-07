@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Obtenga información sobre cómo colaborar con invitados en un sitio de SharePoint.
-ms.openlocfilehash: 25b0aea05c922385828e62512d3724da7324c719
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 746e592a027c05f489e9f5dfe819cfb107c6b1f5
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029164"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886489"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -33,7 +33,7 @@ El uso compartido en Microsoft 365 se rige en su nivel más alto por la configur
 
 Compruebe la configuración de relaciones de organización para asegurarse de que no se bloquee el uso compartido con invitados.
 
-![Captura de pantalla de la página de configuración de relaciones empresariales de Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
+![Captura de pantalla de la página de configuración de relaciones de organización de Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
 
 Para establecer la configuración de relación organizativa
 
@@ -50,7 +50,7 @@ Anote la configuración de la sección **restricciones de colaboración** . Aseg
 
 Los sitios modernos de SharePoint usan grupos de Office 365 para controlar el acceso al sitio. La configuración de invitado de los grupos de Office 365 debe estar activada para que el acceso de invitado en los sitios de SharePoint funcione.
 
-![Captura de pantalla de la configuración de invitado de Office 365 Groups en el centro de administración de Microsoft 365](media/office-365-groups-guest-settings.png)
+![Captura de pantalla de la configuración de invitados de Grupos de Office 365 en el Centro de administración de Microsoft 365](media/office-365-groups-guest-settings.png)
 
 Para establecer la configuración de invitado de Office 365 Groups
 
@@ -67,7 +67,7 @@ Para que los invitados tengan acceso a los sitios de SharePoint, la configuraci�
 
 La configuración en el nivel de la organización determina qué opciones de configuración están disponibles para cada sitio. La configuración del sitio no puede ser más permisiva que la configuración de nivel de organización.
 
-Si desea permitir el uso compartido de archivos y carpetas con usuarios anónimos, elija **cualquier persona**. Si desea asegurarse de que todos los invitados tienen que autenticarse, elija los **invitados nuevos y existentes**. Elija la configuración más permisiva que necesitará cualquier sitio de la organización.
+Si desea permitir el uso compartido de archivos y carpetas sin autenticar, elija **cualquiera**. Si desea asegurarse de que todos los invitados tienen que autenticarse, elija los **invitados nuevos y existentes**. Elija la configuración más permisiva que necesitará cualquier sitio de la organización.
 
 ![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -98,7 +98,7 @@ Invitaremos a los usuarios más adelante. A continuación, es importante comprob
 
 Compruebe la configuración de uso compartido de nivel de sitio para asegurarse de que permite el tipo de acceso que desea para este sitio. Por ejemplo, si establece la configuración de nivel de organización en **cualquiera**, pero desea que todos los invitados se autentiquen en este sitio, asegúrese de que la configuración de uso compartido de nivel de sitio esté establecida en **invitados nuevos y existentes**.
 
-Tenga en cuenta que el sitio no se puede compartir con usuarios anónimos (configuración de**cualquier persona** ), pero sí puede archivos y carpetas individuales.
+Tenga en cuenta que no se puede compartir el sitio con personas no autenticadas (configuración de**cualquier persona** ), pero puede que los archivos y las carpetas individuales.
 
 ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
@@ -129,7 +129,7 @@ Para invitar a invitados a un sitio
 
 ## <a name="see-also"></a>Vea también
 
-[Procedimientos recomendados para compartir archivos y carpetas con usuarios anónimos](best-practices-anonymous-sharing.md)
+[Procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 
 [Reducir la exposición accidental de archivos al compartirlos con invitados](sharing-limit-accidental-exposure.md)
 

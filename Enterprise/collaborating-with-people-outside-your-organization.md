@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: Obtenga información sobre cómo configurar Office 365 para la colaboración con usuarios invitados.
-ms.openlocfilehash: b98792d365953b61f564f04765d4249605e24e43
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 1af8a1c810047e4f91b0bda31934742884f6645e
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076184"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886449"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Colaborar con personas fuera de la organización
 
@@ -26,7 +26,7 @@ De forma predeterminada, en Microsoft 365, el uso compartido de invitados está 
 
 ## <a name="see-also"></a>Vea también
 
-[Procedimientos recomendados para compartir archivos y carpetas con usuarios anónimos](best-practices-anonymous-sharing.md)
+[Procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 
 [Reducir la exposición accidental de archivos al compartirlos con invitados](sharing-limit-accidental-exposure.md)
 

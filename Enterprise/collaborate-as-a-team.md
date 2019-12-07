@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Obtenga información sobre cómo colaborar con invitados en Microsoft Teams.
-ms.openlocfilehash: a3e34431b97e8f565d61470ddd55797981b837c8
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 9920bb57f31a36dcc4f903e2f26eccbf41a522db
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029174"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886529"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -33,7 +33,7 @@ El uso compartido en Microsoft 365 se rige en su nivel más alto por la configur
 
 Compruebe la configuración de relaciones de organización para asegurarse de que no se bloquee el uso compartido con invitados.
 
-![Captura de pantalla de la página de configuración de relaciones empresariales de Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
+![Captura de pantalla de la página de configuración de relaciones de organización de Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
 
 Para establecer la configuración de relación organizativa
 
@@ -52,7 +52,7 @@ Los equipos tienen un conmutador de encendido y apagado principal para el acceso
 
 Asegúrese de que el acceso de invitado esté habilitado en Microsoft Teams y realice cualquier ajuste en la configuración de invitado en función de las necesidades de su empresa. Tenga en cuenta que esta configuración afecta a todos los equipos.
 
-![Captura de pantalla de alternancia de acceso de invitado de Teams](media/teams-guest-access-toggle-on.png)
+![Captura de pantalla de la opción de acceso de invitado de Teams](media/teams-guest-access-toggle-on.png)
 
 Para establecer la configuración de acceso de invitado de Teams
 
@@ -70,7 +70,7 @@ Para establecer la configuración de acceso de invitado de Teams
 
 Microsoft Teams usa los grupos de Office 365 para la pertenencia al equipo. La configuración de invitado de los grupos de Office 365 debe estar activada para que el acceso de invitado en Microsoft Teams funcione.
 
-![Captura de pantalla de la configuración de invitado de Office 365 Groups en el centro de administración de Microsoft 365](media/office-365-groups-guest-settings.png)
+![Captura de pantalla de la configuración de invitados de Grupos de Office 365 en el Centro de administración de Microsoft 365](media/office-365-groups-guest-settings.png)
 
 Para establecer la configuración de invitado de Office 365 Groups
 
@@ -87,7 +87,7 @@ El contenido de Microsoft Teams, como archivos, carpetas y listas, se almacena e
 
 La configuración en el nivel de la organización determina qué opciones de configuración están disponibles para cada uno de los sitios, incluidos los sitios asociados a teams. La configuración del sitio no puede ser más permisiva que la configuración de nivel de organización.
 
-Si desea permitir el uso compartido de archivos y carpetas con usuarios anónimos, elija **cualquier persona**. Si desea asegurarse de que todos los invitados tienen que autenticarse, elija los **invitados nuevos y existentes**. Elija la configuración más permisiva que necesitará cualquier sitio de la organización.
+Si desea permitir el uso compartido de archivos y carpetas con personas sin autenticar, elija **cualquiera**. Si desea asegurarse de que todos los invitados tienen que autenticarse, elija los **invitados nuevos y existentes**. Elija la configuración más permisiva que necesitará cualquier sitio de la organización.
 
 ![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -108,11 +108,11 @@ Tenga en cuenta que esta configuración afecta a todos los equipos y sitios de S
 
 Elija el tipo de vínculo que está seleccionado de forma predeterminada cuando los usuarios comparten archivos y carpetas:
 
-- **Cualquiera que tenga el vínculo** : elija esta opción si prevé compartir una gran cantidad de archivos y carpetas con usuarios anónimos. Si desea permitir que *todos* los vínculos, pero le preocupa el uso compartido de anónimos accidentales, tenga en cuenta una de las otras opciones predeterminadas. Este tipo de vínculo solo está disponible si ha habilitado a **todos los usuarios** que comparten el mismo.
+- **Cualquiera que tenga el vínculo** : elija esta opción si prevé compartir una gran cantidad de archivos y carpetas con personas no autenticadas. Si desea permitir que *todos* los vínculos, pero le preocupa el uso compartido no autenticado accidentalmente, considere una de las otras opciones como predeterminada. Este tipo de vínculo solo está disponible si ha habilitado a **todos los usuarios** que comparten el mismo.
 - **Solo las personas de su organización** : elija esta opción si prevé que la mayoría del uso compartido de archivos y carpetas sea para personas dentro de la organización.
 - **Personas específicas** : considere esta opción si espera compartir muchos archivos y carpetas con los invitados. Este tipo de vínculo funciona con los invitados y requiere que se autentiquen.
  
-![Captura de pantalla de la configuración de uso compartido de archivos y carpetas en el nivel de organización de SharePoint](media/sharepoint-organization-files-folders-sharing-settings.png)
+![Captura de pantalla de la configuración de uso compartido de los archivos y carpetas de nivel de organización de SharePoint ](media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 Para establecer la configuración de vínculos predeterminados de nivel de organización de SharePoint
@@ -167,7 +167,7 @@ Para invitar a invitados a un equipo
 
 ## <a name="see-also"></a>Vea también
 
-[Procedimientos recomendados para compartir archivos y carpetas con usuarios anónimos](best-practices-anonymous-sharing.md)
+[Procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 
 [Reducir la exposición accidental de archivos al compartirlos con invitados](sharing-limit-accidental-exposure.md)
 
