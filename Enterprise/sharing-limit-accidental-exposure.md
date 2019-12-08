@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: Obtenga información sobre cómo limitar la exposición accidental de información al compartir archivos con invitados.
-ms.openlocfilehash: d1a12579bdcce03ad74dbf753ddb1a8a6368c88c
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 3a5a99e96207e407f15abb17d9e1903c8ba52339
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108412"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886479"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-guests"></a>Limitar la exposición accidental de archivos al compartir con invitados
 
@@ -21,13 +21,13 @@ Al compartir archivos y carpetas con invitados, hay una amplia variedad de opcio
 
 ## <a name="use-best-practices-for-anyone-links"></a>Usar los procedimientos recomendados para los vínculos de tipo "Cualquiera"
 
-Si los usuarios de su organización necesitan llevar a cabo un uso compartido anónimo, pero le preocupa que los invitados sin autenticar modifiquen el contenido, lea los [procedimientos recomendados para el uso compartido anónimo](best-practices-anonymous-sharing.md) para obtener instrucciones sobre cómo trabajar con el uso compartido anónimo en su organización.
+Si los usuarios de su organización necesitan llevar a cabo un uso compartido no autenticado, pero le preocupa que los invitados sin autenticar modifiquen el contenido, lea los [procedimientos recomendados para el uso compartido no autenticado](best-practices-anonymous-sharing.md) para obtener instrucciones sobre cómo trabajar con el uso compartido anónimo en su organización.
 
 ## <a name="turn-off-anyone-links"></a>Desactivar vínculos de tipo Cualquiera
 
 Se recomienda dejar habilitados los vínculos de tipo *Cualquiera* para el contenido adecuado, ya que es la manera más sencilla de compartir y puede ayudar a reducir el riesgo de que los usuarios soliciten otras soluciones que no están controladas por el departamento de TI. Los vínculos de tipo *Cualquiera* se pueden reenviar a otros usuarios, pero el acceso al archivo solo está disponible para los usuarios que tengan el vínculo.
 
-Si quiere que los invitados siempre tengan que autenticarse al obtener acceso al contenido de SharePoint, Grupos o Teams, puede desactivar el uso compartido de tipo *Cualquiera*. Esto evitará que los usuarios puedan compartir contenido de forma anónima.
+Si quiere que los invitados siempre tengan que autenticarse al obtener acceso al contenido de SharePoint, Grupos o Teams, puede desactivar el uso compartido de tipo *Cualquiera*. Esto impedirá que los usuarios compartan el contenido sin autenticar.
 
 Si deshabilita los vínculos de tipo *Cualquiera*, los usuarios podrán seguir compartiendo con los invitados mediante los vínculos de *Personas específicas*. En este caso, todos los invitados tendrán que autenticarse antes de poder tener acceso al contenido compartido.
 
@@ -73,8 +73,8 @@ Puede restringir el uso compartido de invitados de archivos, carpetas y sitios a
 
 Limitar el uso compartido de invitados a los miembros de un grupo de seguridad
 1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
-2. En Otras opciones de configuración. Seleccione el vínculo Limitar el uso compartido externo a grupos de seguridad especíﬁcos.
-3. En Quién puede compartir elementos con usuarios ajenos a la organización, seleccione una o ambas casillas: a. **Permitir que solo los usuarios de los grupos de seguridad seleccionados compartan con usuarios externos autenticados** para especificar un grupo de seguridad que pueda compartir con usuarios autenticados b. **Permitir que solo los usuarios de los grupos de seguridad seleccionados compartan con usuarios externos y con vínculos anónimos** para especificar un grupo de seguridad que pueda compartir con usuarios autenticados y con vínculos de tipo Cualquiera.
+2. En **Otras opciones de configuración**. Seleccione el vínculo **Limitar el uso compartido externo a grupos de seguridad especíﬁcos**.
+3. En **Quién puede compartir elementos con usuarios ajenos a la organización**, seleccione una o ambas casillas: a. **Permitir que solo los usuarios de los grupos de seguridad seleccionados compartan con usuarios externos autenticados** para especificar un grupo de seguridad que pueda compartir con usuarios autenticados b. **Permitir que solo los usuarios de los grupos de seguridad seleccionados compartan con usuarios externos y con vínculos anónimos** para especificar un grupo de seguridad que pueda compartir con usuarios autenticados y con vínculos de tipo Cualquiera.
 4. Haga clic en **Aceptar**.
 
 Tenga en cuenta que esto afecta a archivos, carpetas y sitios, pero no a los grupos de Office 365 o Teams. Cuando los miembros inviten a invitados a un grupo privado de Office 365 o Microsoft Teams, la invitación se enviará al propietario del grupo o equipo para que la apruebe.

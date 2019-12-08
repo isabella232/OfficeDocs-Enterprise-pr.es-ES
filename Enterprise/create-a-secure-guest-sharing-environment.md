@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
 description: Aprenda a crear un entorno de uso compartido para invitados seguro en Microsoft 365.
-ms.openlocfilehash: 727b635c0ed13a9dcf85bb93092ab9a002740e99
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 51e9d8c8d09d5ee687fc47a1c382da383d1cf231
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077713"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886519"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -308,7 +308,7 @@ Cómo crear una directiva de archivo basada en etiquetas
 12. Para el mensaje de notificación personalizado, escriba *Este archivo es extremadamente confidencial. La Directiva de la empresa prohíbe compartirla con sus invitados*.
 13. Haga clic en **Crear**.
 
-Tenga en cuenta que esta directiva quita el acceso a los archivos compartidos con un vínculo de *Personas específicas*. No elimina el acceso de los vínculos anónimos (*Cualquiera*). Tampoco retira el acceso si el invitado es miembro del sitio o del equipo en general. Si prevé disponer de documentos extremadamente confidenciales en un sitio o equipo con miembros invitados, considere usar [Canales privados en Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9) y solo permitir que los miembros de su organización los usen.
+Tenga en cuenta que esta directiva quita el acceso a los archivos compartidos con un vínculo de *Personas específicas*. No elimina el acceso de vínculos no autenticados (*Cualquiera*). Tampoco retira el acceso si el invitado es miembro del sitio o del equipo en general. Si prevé disponer de documentos extremadamente confidenciales en un sitio o equipo con miembros invitados, considere usar [Canales privados en Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9) y solo permitir que los miembros de su organización los usen.
 
 ## <a name="test-the-solution"></a>Probar la solución
 
@@ -322,4 +322,4 @@ Puede combinar las herramientas que se describen en este artículo de distintas 
 
 [Reducir la exposición accidental de archivos al compartirlos con invitados](sharing-limit-accidental-exposure.md)
 
-[Prácticas recomendadas para compartir archivos y carpetas con usuarios anónimos](best-practices-anonymous-sharing.md)
+[Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)

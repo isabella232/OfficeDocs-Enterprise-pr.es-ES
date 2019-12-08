@@ -1,5 +1,5 @@
 ---
-title: Procedimientos recomendados para el uso compartido anónimo
+title: Prácticas recomendadas para el uso compartido no autenticado
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,26 +7,26 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
-description: Obtenga más información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios anónimos
-ms.openlocfilehash: f6263fe09a677094055f79a4ff38ec9d41f48898
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+description: Aprenda prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
+ms.openlocfilehash: bf2ef1e7013f97739c72f125ea4c81e17beb161c
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108408"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886509"
 ---
-# <a name="best-practices-for-sharing-files-and-folders-with-anonymous-users"></a>Procedimientos recomendados para compartir archivos y carpetas con usuarios anónimos
+# <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
-El uso compartido anónimo (los vínculos para *Cualquiera*) puede ser práctico y útil en diversos escenarios. Los vínculos para *Cualquiera* son la manera más fácil de compartir: los invitados pueden abrir el vínculo sin autenticación y tienen la libertad de compartirlo con otros usuarios.
+El uso compartido no autenticado (los vínculos para *Cualquiera*) puede ser práctico y útil en diversos escenarios. Los vínculos para *Cualquiera* son la manera más fácil de compartir: los invitados pueden abrir el vínculo sin autenticación y tienen la libertad de compartirlo con otros usuarios.
 
-Por lo general, no todo el contenido de una organización es adecuado para el uso compartido anónimo. Este artículo describe las opciones disponibles para ayudarle a crear un entorno en el que los usuarios puedan compartir archivos y carpetas de forma anónima, pero donde existan medidas de seguridad para ayudar a proteger el contenido de su organización.
+Por lo general, no todo el contenido de una organización es adecuado para el uso compartido no autenticado. Este artículo describe las opciones disponibles para ayudarle a crear un entorno en el que los usuarios puedan compartir sin autenticarse archivos y carpetas, pero donde existan medidas de seguridad para ayudar a proteger el contenido de su organización.
 
 > [!NOTE]
-> Para que funcione el uso compartido anónimo, debe habilitarlo para su organización y para el sitio individual o el equipo que lo utilizará. Consulte [Colaborar con personas fuera de su organización](collaborating-with-people-outside-your-organization.md) para ver el escenario que quiere habilitar.
+> Para que funcione el uso compartido sin autenticarse, debe habilitarlo para su organización y para el sitio individual o el equipo que lo utilizará. Consulte [Colaborar con personas fuera de su organización](collaborating-with-people-outside-your-organization.md) para ver el escenario que quiere habilitar.
 
 ## <a name="set-an-expiration-date-for-anyone-links"></a>Establezca una fecha de expiración de los vínculos para Cualquiera
 
-A menudo, los archivos se almacenan en sitios, grupos y equipos durante largos períodos de tiempo. En ocasiones, hay directivas de retención de datos que requieren que se conserven archivos durante años. Si esos archivos son compartidos de forma anónima, esto podría originar un acceso inesperado y cambios en los archivos en el futuro. Para mitigar esta posibilidad, puede configurar una fecha de expiración de los vínculos para *Cualquiera*.
+A menudo, los archivos se almacenan en sitios, grupos y equipos durante largos períodos de tiempo. En ocasiones, hay directivas de retención de datos que requieren que se conserven archivos durante años. Si esos archivos se comparten con usuarios no autenticados, esto podría originar un acceso inesperado y cambios en los archivos en el futuro. Para mitigar esta posibilidad, puede configurar una fecha de expiración de los vínculos para *Cualquiera*.
 
 Una vez que el vínculo para *Cualquiera* haya expirado, ya no podrá usarse para acceder al contenido.
 
@@ -43,9 +43,9 @@ Tenga en cuenta que una vez que el vínculo para *Cualquiera*expire, el archivo 
 
 De forma predeterminada, los vínculos para *Cualquiera*para un archivo permiten a los usuarios editar el archivo, mientras que los vínculos para *Cualquiera*para una carpeta permiten a los usuarios ver, editar los archivos, y cargar archivos nuevos en la carpeta. Puede cambiar estos permisos para los archivos y las carpetas independientemente de si está en modo solo vista.
 
-Si desea permitir el uso compartido anónimo, pero le preocupa que los usuarios sin autenticación modifiquen el contenido de su organización, considere la posibilidad de configurar los permisos de archivos y carpetas al modo **Vista**.
+Si desea permitir el uso compartido sin autenticarse, pero le preocupa que los usuarios sin autenticación modifiquen el contenido de su organización, considere la posibilidad de configurar los permisos de archivos y carpetas al modo **Vista**.
 
-Para establecer los permisos para vínculos anónimos
+Para establecer permisos para cualquiera para los vínculos
 1. Inicie el centro de administración de SharePoint Online.
 2. En el panel de navegación izquierdo, haga clic en **Uso compartido**.
 3. En **Configuración avanzada de vínculos para "Cualquiera"**, seleccione los permisos de los archivos y carpetas que quiera usar.</br>
@@ -55,9 +55,9 @@ Con los vínculos para *Cualquiera* que se establecen en **Vista**, los usuarios
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>Establezca el tipo de vínculo predeterminado para que solo funcione para las personas de su organización
 
-Cuando *Cualquiera* está habilitado para su organización, el vínculo de uso compartido predeterminado está generalmente establecido para **Cualquiera**. Aunque esto puede resultar conveniente para los usuarios, puede aumentar el riesgo de un uso compartido anónimo involuntario. Si un usuario olvida cambiar el tipo de vínculo mientras comparte un documento confidencial, podría crear accidentalmente un vínculo de uso compartido que no requiera autenticación.
+Cuando *Cualquiera* está habilitado para su organización, el vínculo de uso compartido predeterminado está generalmente establecido para **Cualquiera**. Aunque esto puede resultar conveniente para los usuarios, puede aumentar el riesgo de un uso compartido involuntario sin autenticarse. Si un usuario olvida cambiar el tipo de vínculo mientras comparte un documento confidencial, podría crear accidentalmente un vínculo de uso compartido que no requiera autenticación.
 
-Para mitigar este riesgo, puede cambiar la configuración de vínculo predeterminado a un vínculo que solo funcione para las personas de su organización. Los usuarios que quieran compartir de forma anónima tendrían que seleccionar esa opción específicamente.
+Para mitigar este riesgo, puede cambiar la configuración de vínculo predeterminado a un vínculo que solo funcione para las personas de su organización. Los usuarios que quieran compartir con otros usuarios no autenticados tendrían que seleccionar esa opción específicamente.
 
 Para establecer el vínculo de uso compartido de archivos y carpetas predeterminado
 1. En el centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
