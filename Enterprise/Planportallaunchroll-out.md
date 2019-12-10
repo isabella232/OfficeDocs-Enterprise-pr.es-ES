@@ -13,15 +13,15 @@ ms.collection:
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: En este artículo se describe cómo planear el lanzamiento del portal en SharePoint Online y los pasos que se deben seguir para un inicio correcto
-ms.openlocfilehash: bba38bb188235ed38f3719cb4472ef156a4d76b3
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: c66754cdcd682cb39c0ff235a07a464613d1d3e7
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077573"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919132"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planeación del lanzamiento del portal del plan de implementación en SharePoint Online
-Un portal es el sitio predeterminado de SharePoint para su compañía; en las organizaciones grandes podría haber varias de estas. Si espera que más del 20% de los usuarios de su organización accedan a la página, debe tener en cuenta que se trata de una página de portal. Esto no debe confundirse con un sitio de grupo que su departamento utiliza para colaborar y compartir documentos con su grupo.
+Un portal es un sitio de SharePoint en la intranet que tiene un gran número de visores de sitio que consumen contenido en el sitio. En las organizaciones grandes puede haber varios de ellos; por ejemplo, un portal de empresa y un portal de recursos humanos. Por lo general, los portales tienen relativamente pocas personas que crean y crean el sitio y su contenido. La mayoría de los visitantes del portal solo leen y consumen el contenido.
 
 En este artículo se describe cómo planear la implementación y el plan de implementación en SharePoint Online. También proporciona métodos para seguir, ya que las pruebas de carga tradicionales no están permitidas en SharePoint Online. SharePoint Online es un servicio en la nube y las capacidades de carga, el estado y el equilibrio general de carga en el servicio son administrados por Microsoft.
 
