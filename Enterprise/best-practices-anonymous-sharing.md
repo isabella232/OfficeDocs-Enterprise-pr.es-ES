@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: Aprenda prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
-ms.openlocfilehash: bf2ef1e7013f97739c72f125ea4c81e17beb161c
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: decdc068f238329516ae0ce3594e68a753780216
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886509"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919142"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
-El uso compartido no autenticado (los vínculos para *Cualquiera*) puede ser práctico y útil en diversos escenarios. Los vínculos para *Cualquiera* son la manera más fácil de compartir: los invitados pueden abrir el vínculo sin autenticación y tienen la libertad de compartirlo con otros usuarios.
+El uso compartido no autenticado (los vínculos para *Cualquiera*) puede ser práctico y útil en diversos escenarios. Los vínculos para *Cualquiera* son la manera más fácil de compartir: los usuarios pueden abrir el vínculo sin autenticación y tienen la libertad de compartirlo con otros usuarios.
 
 Por lo general, no todo el contenido de una organización es adecuado para el uso compartido no autenticado. Este artículo describe las opciones disponibles para ayudarle a crear un entorno en el que los usuarios puedan compartir sin autenticarse archivos y carpetas, pero donde existan medidas de seguridad para ayudar a proteger el contenido de su organización.
 
@@ -51,7 +51,7 @@ Para establecer permisos para cualquiera para los vínculos
 3. En **Configuración avanzada de vínculos para "Cualquiera"**, seleccione los permisos de los archivos y carpetas que quiera usar.</br>
    ![Captura de pantalla de la configuración de permisos de los vínculos para Cualquiera en el nivel de organización de SharePoint](media/sharepoint-organization-anyone-link-permissions.png)
 
-Con los vínculos para *Cualquiera* que se establecen en **Vista**, los usuarios pueden seguir compartiendo archivos y carpetas con los invitados y concederles permisos de edición mediante vínculos para *Personas específicas*. Estos vínculos requieren la autenticación de los invitados, y puede realizar un seguimiento de la actividad de los invitados en los archivos y carpetas compartidos con estos vínculos.
+Con los vínculos para *Cualquiera* que se establecen en **Vista**, los usuarios pueden seguir compartiendo archivos y carpetas con los invitados y concederles permisos de edición mediante vínculos para *Personas específicas*. Estos vínculos requieren la autenticación de los usuarios externos a la organización. Puede realizar un seguimiento de la actividad de los invitados en los archivos y carpetas compartidos con dichos vínculos.
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>Establezca el tipo de vínculo predeterminado para que solo funcione para las personas de su organización
 

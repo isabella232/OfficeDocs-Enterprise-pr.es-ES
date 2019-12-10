@@ -10,16 +10,16 @@ ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: Obtenga más información sobre la configuración de uso compartido de invitados disponible en Microsoft 365.
-ms.openlocfilehash: 739a14460d4039281bde11eb1bec60bb3a5b8886
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 3181e1abc44ff62bf3973a87a626291b9e946c51
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076404"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919384"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
-En este artículo se proporciona una referencia para las distintas opciones de configuración que pueden afectar al uso compartido de invitados en las cargas de trabajo de Microsoft 365: Teams, Grupos de Office 365, SharePoint y OneDrive. Esta configuración se encuentra en el centro de administración de Azure Active Directory, Microsoft 365, Teams y SharePoint.
+En este artículo se proporciona una referencia para las distintas opciones de configuración que pueden afectar al uso compartido de usuarios externos a la organización en las cargas de trabajo de Microsoft 365: Teams, Grupos de Office 365, SharePoint y OneDrive. Esta configuración se encuentra en el centro de administración de Azure Active Directory, Microsoft 365, Teams y SharePoint.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
@@ -204,7 +204,7 @@ Puede establecer permisos para el uso compartido de invitados para cada sitio de
 
 ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
-|**Setting**|**Predeterminado**|**Descripción**|
+|**Setting**|**Default**|**Descripción**|
 |:-----|:-----|:-----|
 |Puede compartir contenido con|Varía por tipo de sitio (consulte la tabla siguiente)|Indica el tipo de uso compartido externo permitido para este sitio. Las opciones disponibles en esta sección están sujetas a la configuración de uso compartido en el nivel de la organización de SharePoint.|
 
