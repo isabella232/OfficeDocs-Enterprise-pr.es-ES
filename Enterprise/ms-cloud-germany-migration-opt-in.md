@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: '
-ms.openlocfilehash: 6105b9a386a64c2f855433fcc60ebb41149afdab
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 97075a861a86f8285837b8528f8c387d45dbafab
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39920290"
+ms.locfileid: "39962437"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Cómo participar en la migración de Microsoft Cloud Alemania (Microsoft Cloud Deutschland) a los servicios de Office 365 en las nuevas regiones del centro de datos alemán
 
@@ -46,7 +46,7 @@ Se mostrará una nueva sección en la parte derecha de la pantalla para aceptar 
  
 ![Aceptación de la participación](./media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-Una vez que el administrador ha aceptado la participación en nombre de su espacio empresarial, todos los administradores verán la confirmación en la sección **Migrar desde Microsoft Cloud Alemania (Microsoft Cloud Deutschland) a los servicios Office 365 en las nuevas regiones del centro de datos alemán**, incluida la fecha de participación. Los administradores también tendrán una confirmación en el Centro de mensajes del Centro de administración de Microsoft 365. 
+Una vez que el administrador ha aceptado la participación en nombre de su espacio empresarial, todos los administradores verán la confirmación en la sección **Migrar desde Microsoft Cloud Alemania (Microsoft Cloud Deutschland) a los servicios Office 365 en las nuevas regiones del centro de datos alemán**, incluida la fecha de participación. Los administradores también recibirán una confirmación en el centro de mensajes del Centro de administración de Microsoft 365. 
  
 ![Confirmación de participación](./media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
@@ -56,8 +56,8 @@ Se espera que las migraciones de las organizaciones que participen en el enfoque
 
 ## <a name="more-information"></a>Más información
 
-- Asistencia para la migración a Microsoft Cloud Alemania en [https://aka.ms/germanymigrateassist](https://aka.ms/germanymigrateassist)
-- Migración de Office 365 en [https://aka.ms/office365germanymove](https://aka.ms/office365germanymove)
-- Migración de Dynamics 365 en [https://aka.ms/d365ceoptin](https://aka.ms/d365ceoptin)
-- Migración de Power BI en [https://aka.ms/pbioptin](https://aka.ms/pbioptin)
+- [Asistencia para la migración a Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
+- [Programa de migración de Office 365 para clientes de Microsoft Cloud Deutschland](https://aka.ms/office365germanymove)
+- [Programa de migración de Dynamics 365 para clientes de Microsoft Cloud Deutschland](https://aka.ms/d365ceoptin)
+- [Programa de migración de Power BI para clientes de Microsoft Cloud Deutschland](https://aka.ms/pbioptin)
 - Envíe preguntas con el vínculo "¿Necesita ayuda?" del [Centro de administración de Microsoft 365](https://portal.office.de/)
