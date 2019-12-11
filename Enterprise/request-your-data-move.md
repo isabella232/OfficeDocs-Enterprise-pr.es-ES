@@ -3,7 +3,7 @@ title: Cómo solicitar el movimiento de datos
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Los clientes de Office 365 existentes deberán enviar una solicitud antes de la fecha límite de su país para que los datos del cliente de los servicios de Office 365 participantes se muevan a su nueva geografía.
-ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 97fc83db3ceac1a5c3aca65f8b780a3f7841528c
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756599"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962467"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -28,7 +28,7 @@ Los clientes de Office 365 existentes pueden solicitar una migración temprana d
   
 ## <a name="when-can-i-request-a-move"></a>¿Cuándo puedo solicitar un movimiento?
 
-|**Clientes con dirección de facturación en**|**Inicio del período de la solicitud**|**Fecha límite de solicitud**|
+|**Clientes con país de suscripción en**|**Inicio del período de la solicitud**|**Fecha límite de solicitud**|
 |:-----|:-----|:-----|
 |Japón  <br/> |1 de agosto de 2016  <br/> |31 de octubre de 2016  <br/> |
 |Australia, Nueva Zelanda, Fiji  <br/> |1 de agosto de 2016  <br/> |31 de octubre de 2016  <br/> |
@@ -39,10 +39,12 @@ Los clientes de Office 365 existentes pueden solicitar una migración temprana d
 |Francia  <br/> |14 de marzo de 2018  <br/> |15 de septiembre de 2018  <br/> |
 |Emiratos Árabes Unidos  <br/> |15 de julio de 2019  <br/> |31 de enero de 2020  <br/> |
 |Sudáfrica  <br/> |25 de julio de 2019  <br/> |31 de enero de 2020  <br/> |
+|Suiza, Liechtenstein  <br/> |10 de diciembre de 2019  <br/> |30 de junio de 2020  <br/> |
+|Alemania  <br/> |Plane  <br/> |Plane  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Cómo solicitar un movimiento
 
-Los clientes elegibles verán una página en su [centro de administración](https://aka.ms/365admin), que les permitirá solicitar que sus datos principales de clientes se muevan a su nueva región de centro de datos.  
+Los clientes elegibles verán una página en el [centro de administración de 365 de Microsoft](https://aka.ms/365admin), que les permitirá solicitar que sus datos principales de clientes se muevan a su nueva región de centro de datos.  
   
 Para obtener acceso a la página en el centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **configuración**y, a continuación, haga clic en Perfil de la **organización**.
   

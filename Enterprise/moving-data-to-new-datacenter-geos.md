@@ -3,7 +3,7 @@ title: Mover datos básicos a un nuevo Office 365 Datacenter GEOS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/25/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'El nuevo centro de GEOS agrega capacidad y calcula recursos para apoyar el crecimiento constante del uso y la demanda de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes. Los datos principales de los clientes son un término que hace referencia a un subconjunto de los datos de clientes definidos en los términos de Microsoft Online Services: contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico) y contenido del sitio de SharePoint Online y los archivos se almacenan en ese sitio y los archivos cargados en OneDrive para la empresa.'
-ms.openlocfilehash: 3cccd9d5cb3f961a3621bf6f54104c2e1e3b8ece
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 8dcbcd6bbbe1761c9d57c953ad176c87b5b3f221
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756549"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962457"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Mover datos básicos a un nuevo Office 365 Datacenter GEOS
 
@@ -30,7 +30,7 @@ Los datos principales de los clientes son un término que hace referencia a un s
   
 Los clientes existentes que tienen sus datos de clientes principales almacenados en un centro de datos ya existente no se ven afectados por el inicio de una nueva geografía del centro de datos. No presentamos ninguna funcionalidad, características o certificaciones de cumplimiento únicos con el nuevo centro de recursos geográfico. Como cliente en cualquiera de estas dos GEOS, obtendrá los mismos controles de calidad de servicio, rendimiento y seguridad que antes. Ofrecemos a los clientes existentes que aparecen en la tabla que se muestra a continuación una opción para solicitar la migración temprana de los datos principales de clientes de la organización en el resto a su nuevo área geográfica del centro de datos.
   
-|Clientes con dirección de facturación en * * * *|Geo de centro de recursos anterior * * * *|Nueva geo del centro de recursos * * * *|Geográfico disponible desde * * * *|
+|Clientes con país de suscripción de inquilinos en * * * *|Geo de centro de recursos anterior * * * *|Nueva geo del centro de recursos * * * *|Geográfico disponible desde * * * *|
 |:-----|:-----|:-----|:-----|
 |Japón * * * *| Asia/Pacífico | Japón | Diciembre de 2014 |
 |Australia, Nueva Zelanda, Fiji * * * *| Asia/Pacífico | Australia | Marzo de 2015 |
@@ -41,8 +41,15 @@ Los clientes existentes que tienen sus datos de clientes principales almacenados
 |Francia * * * *| Europa | Francia | Marzo de 2018 |
 |Emiratos Árabes Unidos * * * *| Europa | Emiratos Árabes Unidos | Junio de 2019 |
 |Sudáfrica * * * *| Europa | Sudáfrica | Julio de 2019 |
+|Suiza, Liechtenstein * * * *| Europa | Suiza | Diciembre de 2019 |
+|Alemania * * * *| Europa | Alemania | Diciembre de 2019 |
   
 Los clientes nuevos o los inquilinos de Office 365 creados después de la disponibilidad del nuevo área geográfica del centro de datos tendrán automáticamente almacenados sus datos de clientes principales en el nuevo centro de datos.
+
+
+>[!Note]
+>Se ha lanzado la región del centro de recursos de Alemania en diciembre de 2019. Los clientes nuevos de Office 365 con una dirección de suscripción en alemán asociada con su inquilino tendrán sus datos de clientes principales almacenados en Alemania. Planeamos ofrecer una migración de Europa a Alemania a los clientes alemanes en el futuro. En la actualidad, los clientes de Microsoft Cloud Alemania/Alemania pueden solicitar la migración a los servicios de Office 365 en las regiones del centro de administración de la nueva región de Alemania. Para obtener más información, vea [Cómo participar en la migración de Microsoft Cloud Germany (Microsoft Cloud Alemania) a Office 365 Services en las nuevas regiones del centro](https://aka.ms/office365germanymoveoptin) de datos alemán.
+>
   
 Una lista completa de todos los GEOS de centro de datos, los centros de datos y la ubicación de los datos de clientes en reposo están disponibles como parte de los mapas de centros de datos [interactivos](https://office.com/datamaps). 
   

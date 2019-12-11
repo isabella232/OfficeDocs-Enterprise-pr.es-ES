@@ -3,7 +3,7 @@ title: Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint 
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/22/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Describe cómo usar la red de entrega de contenido (CDN) de Office 365 para acelerar la entrega de los activos de SharePoint Online a todos los usuarios, independientemente de dónde se encuentren o de la forma en que tengan acceso al contenido.
-ms.openlocfilehash: bb60e129f988041a7d763c1558a9ee3c86f75226
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: de4982047e7a92d7df477128274e0037fbc86d42
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813518"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962487"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -670,7 +670,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 Es importante tener en cuenta que SharePoint Online no admite permisos de nivel de elemento para activos en orígenes privados. Por ejemplo, para un archivo que se `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`encuentra en, los usuarios tienen acceso efectivo al archivo teniendo en cuenta las siguientes condiciones:
 
-|Usuario  |Permissions  |Acceso efectivo  |
+|Usuario  |Permisos  |Acceso efectivo  |
 |---------|---------|---------|
 |Usuario 1     |Tiene acceso a la carpeta1         |Puede tener acceso a image1. jpg desde la red CDN         |
 |Usuario 2     |No tiene acceso a la carpeta1         |No se puede tener acceso a image1. jpg desde la red CDN         |
@@ -688,9 +688,9 @@ Una vez que haya agregado los vínculos a los activos de la red CDN a una págin
 También puede usar las herramientas de desarrollo del explorador para ver la dirección URL de cada activo en una página o usar una herramienta de seguimiento de red de terceros.
 
 > [!NOTE]
-> Si usa una herramienta de red como Fiddler para probar los activos fuera de la representación del activo desde una página de SharePoint, debe agregar manualmente el encabezado de referencia "referrer: `https://yourdomain.sharepoint.com`" a la solicitud GET, donde la dirección URL es la dirección URL raíz del inquilino de SharePoint Online.
+> Si usa una herramienta de red como Fiddler para probar los activos fuera de la representación del activo desde una página de SharePoint, debe agregar manualmente el encabezado referer "Referer: `https://yourdomain.sharepoint.com`" a la solicitud GET, donde la dirección URL es la dirección URL raíz del inquilino de SharePoint Online.
 
-No se pueden probar direcciones URL de CDN directamente en un explorador web porque debe haber un sitio de referencia que provenga de SharePoint Online. Sin embargo, si agrega la dirección URL de los activos de la red CDN a una página de SharePoint y, a continuación, abre la página en un explorador, verá el activo de la red CDN representado en la página.
+No se pueden probar direcciones URL de CDN directamente en un explorador web porque debe haber una referencia desde SharePoint Online. Sin embargo, si agrega la dirección URL de los activos de la red CDN a una página de SharePoint y, a continuación, abre la página en un explorador, verá el activo de la red CDN representado en la página.
 
 Para obtener más información sobre el uso de las herramientas de desarrollo en el explorador de Microsoft Edge, consulte [herramientas de desarrollo de Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide).
 
@@ -740,7 +740,7 @@ Puede elegir trabajar con la red CDN de Office 365 usando el módulo de PowerShe
 + [Introducción al shell de administración de SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 + [Instalar Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Redes de entrega de contenido](https://aka.ms/o365cdns)
 

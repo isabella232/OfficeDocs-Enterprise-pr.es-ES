@@ -3,7 +3,7 @@ title: Durante y después del movimiento de datos
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
-ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
-ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
+ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250506"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39959285"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -30,7 +30,7 @@ Los movimientos de datos son una operación back-end con un impacto mínimo en l
 Vea el centro de mensajes de Office 365 para confirmar que se han completado los movimientos de Exchange Online, SharePoint Online y Skype empresarial. Como se muestra en la tabla siguiente, puede tardar hasta 24 meses, después del final del período de inscripción, completar todos los movimientos de datos solicitados para todos los clientes de una geo específica. Si ve algún problema con el espacio empresarial después de la transferencia, póngase en contacto con el [soporte técnico de Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) para obtener ayuda. 
   
 
-|**Clientes con dirección de facturación en**|**Todos los movimientos completados por**|
+|**Clientes con país de suscripción en**|**Todos los movimientos completados por**|
 |:-----|:-----|
 |Australia, Nueva Zelanda, Fiji  <br/> |31 de octubre de 2017  <br/> |
 |Japón  <br/> |31 de octubre de 2018  <br/> |
@@ -41,6 +41,8 @@ Vea el centro de mensajes de Office 365 para confirmar que se han completado los
 |Francia  <br/> |15 de septiembre de 2020  <br/> |
 |Emiratos Árabes Unidos  <br/> |1 de febrero de 2022  <br/> |
 |Sudáfrica  <br/> |1 de febrero de 2022  <br/> |
+|Suiza, Liechtenstein  <br/> |1 de julio de 2022  <br/> |
+|Alemania  <br/> |Plane  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 
