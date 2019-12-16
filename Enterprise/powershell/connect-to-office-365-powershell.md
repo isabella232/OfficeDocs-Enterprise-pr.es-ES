@@ -105,7 +105,7 @@ Después de conectarse, podrá usar los nuevos cmdlets del [módulo de PowerShel
 Los comandos del Módulo Microsoft Azure Active Directory para Windows PowerShell tienen **Msol** en el nombre de su cmdlet.
 
 >[!Note]
->PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell y los cmdlet que llevan **Msol** en su nombre. Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.
+>PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlet que llevan **Msol** en su nombre. Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.
 >
     
 ### <a name="step-1-install-required-software"></a>Paso 1: Instalar el software necesario
