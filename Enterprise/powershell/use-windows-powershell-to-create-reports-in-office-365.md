@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Resumen: Use el PowerShell de Office 365 para crear informes que no se pueden crear en el Centro de administración de Office 365.'
-ms.openlocfilehash: 4303f03c282c84972428ab8e5010aa316f40c90a
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 9b3ab8490eb3b4b89878eb8ea94ebc5a99ca9254
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746263"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072462"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Usar Windows PowerShell para crear informes en Office 365
 
@@ -63,5 +63,5 @@ Estos artículos que describen cómo usar PowerShell de Office 365 para obtener 
   
 [Administrar SharePoint Online con PowerShell de Office 365](manage-sharepoint-online-with-office-365-powershell.md)
   
-[Administrar licencias y cuentas de usuario con PowerShell de Office 365](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Administrar cuentas de usuario, licencias y grupos con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

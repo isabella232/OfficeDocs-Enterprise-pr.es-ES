@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo se administra la identidad del usuario en Office 365.
-ms.openlocfilehash: f6e871f03fb99feea05293c425406b6be7dfedd5
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 0cc40323d978fe9ab13e3326dac183143a014406
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745673"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40071882"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Modelos de identidad de Office 365 y Azure Active Directory
 
@@ -59,7 +59,7 @@ Una identidad de solo nube usa cuentas de usuario que solo existen en Azure AD. 
 
 Estos son los componentes básicos de la identidad solo de la nube.
  
-![](./media/about-office-365-identity/cloud-only-identity.png)
+![Componentes básicos de identidad solo en la nube](./media/about-office-365-identity/cloud-only-identity.png)
 
 Los usuarios locales y remotos (en línea) usan sus cuentas de usuario y contraseñas de Azure AD para acceder a los servicios en la nube de Office 365. Azure AD autentica las credenciales de usuario en función de sus cuentas de usuario y contraseñas almacenadas.
 
@@ -76,7 +76,7 @@ Al implementar la identidad híbrida, su AD DS local es el origen de autoridad p
 
 Estos son los componentes de la identidad híbrida.
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![Componentes de la identidad híbrida](./media/about-office-365-identity/hybrid-identity.png)
 
 El inquilino de Azure AD tiene una copia de las cuentas de AD DS. En esta configuración, los usuarios locales y remotos que tienen acceso a los servicios en la nube de Microsoft 365 se autentican con Azure AD.
 
@@ -90,7 +90,7 @@ Debido a que las cuentas de usuario originales y autorizadas se almacenan en AD 
 
 No usa el centro de administración de Microsoft 365 o Windows PowerShell para administrar cuentas de usuario sincronizadas en Azure AD.
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Si necesita el modelo de identidad solo de la nube, consulte [identidades solo de nube](cloud-only-identities.md).
 

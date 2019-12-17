@@ -3,7 +3,7 @@ title: Crear cuentas de usuario con PowerShell de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,17 +15,15 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Aprenda a usar PowerShell de Office 365 para crear cuentas de usuario en Office 365.
-ms.openlocfilehash: 618459cbf226a9a7cef0e03c7126d791f2ca8bc8
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: b69e0afa6177f29ed2abe18be39f5db08c9f5e75
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257419"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072232"
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Crear cuentas de usuario con PowerShell de Office 365
 
-**Resumen:** obtenga información sobre cómo usar PowerShell de Office 365 para crear cuentas de usuario en Office 365.
-  
 Puede usar PowerShell de Office 365 para crear de forma eficaz cuentas de usuario, especialmente varias cuentas de usuario. Al crear cuentas de usuario en PowerShell de Office 365, siempre se requieren determinadas propiedades de la cuenta. Otras propiedades no son necesarias para crear la cuenta, pero aun así son importantes. Estas propiedades se describen en la tabla siguiente:
   
 |**Nombre de propiedad**|**Obligatorio**|**Descripción**|
@@ -72,7 +70,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core no es compatible con el módulo Microsoft Azure Active Directory para el módulo y los cmdlets de Windows PowerShell con **msol** en su nombre. Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.
+>PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlet que llevan **Msol** en su nombre. Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.
 >
 
 Para obtener una lista de los nombres de planes de licencias disponibles, use este comando:
@@ -117,7 +115,7 @@ En este ejemplo se crean las cuentas de usuario a partir del archivo denominado 
     
 ## <a name="see-also"></a>Vea también
 
-[Administrar licencias y cuentas de usuario con PowerShell de Office 365](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Administrar cuentas de usuario, licencias y grupos con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
   

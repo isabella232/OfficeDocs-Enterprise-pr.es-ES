@@ -20,15 +20,15 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Obtenga información sobre qué hacer si tiene un dominio no routale asociado a los usuarios locales antes de sincronizar con Office 365.
-ms.openlocfilehash: cf7b901c3aaf6f49e4ecd92d27b9a6d9b8951d40
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 013d29acdd3761793a93dab1eb8583324ba08591
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203639"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072422"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparar un dominio no enrutable para la sincronización de directorios
-Al sincronizar el directorio local con Office 365, debe tener un dominio comprobado en Azure Active Directory. Solo se sincronizan los nombres principales de usuario (UPN) asociados con el dominio local. Sin embargo, cualquier UPN que contenga un dominio no enrutable, por ejemplo. local (como billa @ contoso. local), se sincronizará con un dominio. onmicrosoft.com (como billa@contoso.onmicrosoft.com). 
+Al sincronizar el directorio local con Office 365, debe tener un dominio comprobado en Azure Active Directory. Solo se sincronizan los nombres principales de usuario (UPN) asociados con el dominio local. Sin embargo, cualquier UPN que contenga un dominio no enrutable, por ejemplo,. local (como billa@contoso. local), se sincronizará con un dominio. onmicrosoft.com (como billa@contoso.onmicrosoft.com). 
 
 Si actualmente usa un dominio. local para sus cuentas de usuario en Active Directory, se recomienda que los cambie para usar un dominio comprobado (por ejemplo, billa@contoso.com) para poder sincronizar correctamente con su dominio de Office 365.
   
@@ -62,7 +62,7 @@ Una vez que haya actualizado los UPN para usar el dominio comprobado, estará pr
     
     ![Haga clic con el botón derecho en dominios y confianzas de ActiveDirectory y seleccione Propiedades.](media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
-3. En la ficha sufijos **UPN** , en el cuadro Sufijos **UPN alternativos** , escriba el sufijo o los sufijos UPN nuevos y, después, elija **Agregar** \> **aplicación**.
+3. En la ficha **sufijos UPN** , en el cuadro **sufijos UPN alternativos** , escriba el sufijo o los sufijos UPN nuevos y, después, elija **Agregar** \> **aplicación**.
     
     ![Agregar un nuevo sufijo UPN](media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
@@ -91,12 +91,10 @@ Si tiene muchos usuarios que actualizar, es más fácil usar Windows PowerShell.
 
 Ejecute los siguientes comandos de Windows PowerShell para actualizar todos los sufijos contoso. local a contoso.com:
     
-  ```
+  ```powershell
   $LocalUsers = Get-ADUser -Filter {UserPrincipalName -like '*contoso.local'} -Properties userPrincipalName -ResultSetSize $null
-  ```
-
-  ```
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("contoso.local","contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
+
 Consulte [Windows PowerShell Module de Active](https://go.microsoft.com/fwlink/p/?LinkId=624314) Directory para obtener más información sobre el uso de Windows PowerShell en Active Directory. 
 

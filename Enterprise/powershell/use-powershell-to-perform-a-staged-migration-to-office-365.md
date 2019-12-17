@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 'Resumen: aprenda a usar Windows PowerShell para realizar una migración preconfigurada a Office 365.'
-ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 598824933af54d79030465c825186f89b193666c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747536"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072312"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Usar PowerShell para realizar una migración preconfigurada a Office 365
 
@@ -57,7 +57,7 @@ Antes de migrar los buzones a Office 365 con una migración preconfigurada, debe
   
 - Use Outlook desde fuera de la red corporativa para conectarse a su buzón de correo de Exchange local.
     
-- Use el [Remote Connectivity Analyzer de Microsoft Exchange](https://www.testexchangeconnectivity.com/) para probar la configuración de su conexión. Use las pruebas de Detección automática de Outlook en cualquier lugar (RPC sobre HTTP) o Outlook.
+- Use el [analizador de conectividad remota de Microsoft](https://https://testconnectivity.microsoft.com/) para probar la configuración de conexión. Use las pruebas de Detección automática de Outlook en cualquier lugar (RPC sobre HTTP) o Outlook.
     
 - Ejecute los comandos siguientes en Exchange Online PowerShell:
     
@@ -199,12 +199,6 @@ Después de haber migrado correctamente un lote de buzones, se necesita alguna m
 Dado que no ha terminado con las migraciones, todavía no está listo para dirigir a todos los usuarios a Office 365 para consultar su correo electrónico. ¿Qué debe hacer en el caso de las personas que tienen ambos buzones? Lo que puede hacer es cambiar los correos locales que ya ha migrado a usuarios habilitados para correo. Al cambiar de un buzón a un usuario habilitado para correo, puede dirigir al usuario a Office 365 para consultar su correo electrónico en lugar de ir a su buzón local. 
   
 Otra razón importante para convertir los buzones locales en usuarios habilitados para correo es conservar las direcciones proxy de los buzones de Office 365 copiando las direcciones proxy en los usuarios habilitados para correo. Esto permite administrar los usuarios basados en la nube de la organización local mediante Active Directory. Además, si decide retirar la organización local de Exchange Server después de haber migrado todos los buzones a Office 365, las direcciones proxy que ha copiado en los usuarios habilitados para correo permanecerán en su Active Directory local.
-  
-Para obtener más información y descargar scripts que pueden ejecutarse para convertir buzones en usuarios habilitados para correo, consulte:
-  
-- [Historia sobre cómo convertir buzones de correo de Exchange 2007 en usuarios habilitados para correo](https://go.microsoft.com/fwlink/p/?LinkId=233648)
-    
-- [Historia sobre cómo convertir buzones de correo de Exchange 2003 en usuarios habilitados para correo](https://go.microsoft.com/fwlink/p/?LinkId=233647)
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>Paso 6: Eliminar un lote de migración preconfigurada
 <a name="BK_Endpoint"> </a>

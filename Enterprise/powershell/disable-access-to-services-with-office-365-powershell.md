@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Use Office 365 PowerShell para deshabilitar el acceso a los servicios de Office 365 para los usuarios.
-ms.openlocfilehash: 9668175010b2581bcdd40988f605f68eea30520d
-ms.sourcegitcommit: 572375d69c438bd1eae012e6e98039be0a126a6d
+ms.openlocfilehash: 83967e0b44099fb651edaa7f7cba9e811f9fdf81
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39872248"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072202"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Deshabilitar el acceso a servicios con PowerShell de Office 365
 
@@ -45,7 +45,7 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
 ```
 
 >[!Note]
->PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell y los cmdlet que llevan **Msol** en su nombre. Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.
+>PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlet que llevan **Msol** en su nombre. Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.
 >
 
 Para obtener más información, vea [ver licencias y servicios con Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
@@ -155,11 +155,6 @@ Si desea deshabilitar el acceso a los servicios para varios planes de licencias,
 Para deshabilitar los servicios de Office 365 para los usuarios mientras los está asignando a un plan de licencias, vea [deshabilitar el acceso a los servicios mientras se asignan licencias de usuario](disable-access-to-services-while-assigning-user-licenses.md).
 
 
-## <a name="new-to-office-365"></a>¿Es la primera vez que usa Office 365?
-<a name="LinkedIn"> </a>
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-   
 ## <a name="see-also"></a>Vea también
 <a name="SeeAlso"> </a>
 

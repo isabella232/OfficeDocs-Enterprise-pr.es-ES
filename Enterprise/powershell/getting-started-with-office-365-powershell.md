@@ -3,7 +3,7 @@ title: Introducción a PowerShell de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,17 +14,15 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 'Resumen: comprenda la importancia de PowerShell de Office 365, conéctese a su espacio empresarial de Office 365 y obtenga ayuda.'
-ms.openlocfilehash: aeabc0b4ab799f542a05e5279b8ff5cb7123abd8
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d1066d914708bd267b5de38099b6cf6175268f9c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068956"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072182"
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Introducción a PowerShell de Office 365
 
- **Resumen:** comprenda la importancia de PowerShell de Office 365, conéctese a su espacio empresarial de Office 365 y obtenga ayuda.
-  
 Con PowerShell de Office 365, puede administrar Office 365 con comandos y scripts para simplificar el trabajo diario. Sepa por qué son fundamentales los conocimientos de PowerShell de Office 365 para la administración de Office 365, cómo conectarse a su suscripción de Office 365, crear informes y obtener información adicional y ayuda de la comunidad de Office 365.
   
 Seleccione el artículo según sus necesidades:
@@ -53,9 +51,7 @@ Seleccione el artículo según sus necesidades:
     
     Empiece aquí para conectarse a ubicaciones de la comunidad de PowerShell y obtenga ayuda o información continua sobre el uso de PowerShell de Office 365.
     
-## <a name="see-also"></a>Consulte también
-
-#### 
+## <a name="see-also"></a>Vea también
 
 [Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
 

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 'Resumen: aprenda a usar Windows PowerShell para realizar una migración IMAP a Office 365.'
-ms.openlocfilehash: b6c68dc611d22579f81db838b2b5d08e99f7519a
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 411c60f78284c4d7405cd0a1b1d737f99155c1d3
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746273"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072472"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Usar PowerShell para realizar una migración de IMAP a Office 365
 
@@ -204,7 +204,7 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 
 Los sistemas de correo electrónico utilizan un registro DNS que se denomina registro MX para averiguar dónde deben entregar los mensajes de correo electrónico. Durante el proceso de migración del correo electrónico, el registro MX apuntaba al sistema de correo electrónico de origen. Ahora que la migración del correo electrónico a Office 365 ha finalizado, es el momento de que el registro MX apunte a Office 365. Eso ayuda a asegurarse de que el correo electrónico se entrega a los buzones de Office 365. Al mover el registro MX, también puede desactivar el sistema de correo electrónico antiguo cuando esté listo. 
   
-Para muchos proveedores de DNS, hay instrucciones específicas para [Cambiar el registro MX](https://go.microsoft.com/fwlink/p/?LinkId=279163). Si su proveedor de DNS no está incluido, o si desea obtener una idea de las instrucciones generales, se proporcionan también [Instrucciones generales del registro MX ](https://go.microsoft.com/fwlink/?LinkId=397449).
+Para muchos proveedores de DNS, hay instrucciones específicas para Cambiar el registro MX. Si su proveedor de DNS no está incluido, o si desea obtener una idea de las instrucciones generales, se proporcionan también [Instrucciones generales del registro MX ](https://go.microsoft.com/fwlink/?LinkId=397449).
   
 Los sistemas de correo electrónico de sus clientes y socios pueden tardar hasta 72 horas en reconocer el registro MX cambiado. Espere al menos 72 horas antes de continuar con la tarea siguiente: Paso 6: Eliminar el lote de migración IMAP. 
   
