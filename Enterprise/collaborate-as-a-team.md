@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Obtenga información sobre cómo colaborar con invitados en Microsoft Teams.
-ms.openlocfilehash: 9920bb57f31a36dcc4f903e2f26eccbf41a522db
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: 2743b1062aebf5e8fbc1db191fcf36f4091bc1f3
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886529"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085205"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -95,7 +95,7 @@ Si desea permitir el uso compartido de archivos y carpetas con personas sin aute
 Para establecer la configuración de uso compartido en el nivel de la organización de SharePoint
 
 1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración**, haga clic en **SharePoint**.
-2. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
+2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
 3. Asegúrese de que el uso compartido externo para SharePoint está establecido en **todos** o en **invitados nuevos o existentes**.
 4. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -108,7 +108,7 @@ Tenga en cuenta que esta configuración afecta a todos los equipos y sitios de S
 
 Elija el tipo de vínculo que está seleccionado de forma predeterminada cuando los usuarios comparten archivos y carpetas:
 
-- **Cualquiera que tenga el vínculo** : elija esta opción si prevé compartir una gran cantidad de archivos y carpetas con personas no autenticadas. Si desea permitir que *todos* los vínculos, pero le preocupa el uso compartido no autenticado accidentalmente, considere una de las otras opciones como predeterminada. Este tipo de vínculo solo está disponible si ha habilitado a **todos los usuarios** que comparten el mismo.
+- **Cualquiera que tenga el vínculo** : elija esta opción si tiene previsto compartir de forma considerable archivos y carpetas sin autenticar. Si desea permitir que *todos* los vínculos, pero le preocupa el uso compartido no autenticado accidentalmente, considere una de las otras opciones como predeterminada. Este tipo de vínculo solo está disponible si ha habilitado a **todos los usuarios** que comparten el mismo.
 - **Solo las personas de su organización** : elija esta opción si prevé que la mayoría del uso compartido de archivos y carpetas sea para personas dentro de la organización.
 - **Personas específicas** : considere esta opción si espera compartir muchos archivos y carpetas con los invitados. Este tipo de vínculo funciona con los invitados y requiere que se autentiquen.
  
@@ -167,10 +167,10 @@ Para invitar a invitados a un equipo
 
 ## <a name="see-also"></a>Vea también
 
-[Procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
+[Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 
 [Reducir la exposición accidental de archivos al compartirlos con invitados](sharing-limit-accidental-exposure.md)
 
 [Crear un entorno de uso compartido de invitado seguro](create-a-secure-guest-sharing-environment.md))
 
-
+[Crear una extranet B2B con invitados administrados](b2b-extranet.md)

@@ -3,7 +3,7 @@ title: Administrar grupos de sitio de SharePoint Online con PowerShell de Office
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2018
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: Use Office 365 PowerShell para administrar grupos de sitio de SharePoint Online.'
-ms.openlocfilehash: 7eb8a472cb021fb2b78468a9100282b72c1b88cb
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e8cde8e65b009c1ae677df6b63f416ed227f824c
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748540"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261393"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Administrar grupos de sitio de SharePoint Online con PowerShell de Office 365
 
@@ -34,15 +34,12 @@ Los procedimientos de este artículo requieren que se conecte a SharePoint Onlin
 
 El centro de administración de SharePoint Online tiene algunos métodos fáciles de usar para administrar grupos de sitio. Por ejemplo, supongamos que desea ver los grupos y los miembros del grupo para el `https://litwareinc.sharepoint.com/sites/finance` sitio. Haga lo siguiente:
 
-1. En el centro de administración de Microsoft 365, haga clic en**sitios**de **recursos** > y, a continuación, haga clic en la dirección URL del sitio.
-2. En el cuadro de diálogo Colección de sitios, haga clic en **Ir al sitio**.
-3. En la página del sitio, haga clic en el icono **Configuración** (situado en la esquina superior derecha de la página) y después en **Configuración del sitio**:<br/>
-![Configuración del sitio de SharePoint Online](media/spo-site-settings.png)<br/>
-4. En la página Configuración del sitio, haga clic en la opción **Permisos de los sitios** de **Usuarios y permisos**.
+1. En el centro de administración de SharePoint, haga clic en **sitios activos**y, a continuación, haga clic en la dirección URL del sitio.
+2. En la página sitio, haga clic en el icono **configuración** (situado en la esquina superior derecha de la página) y, a continuación, haga clic en **permisos del sitio**.
 
 Y, así, repita el proceso con el siguiente sitio que quiera ver.
 
-Para obtener una lista de los grupos con PowerShell de Office 365, use el siguiente conjunto de comandos:
+Para obtener una lista de los grupos con Office 365 PowerShell, puede usar los siguientes comandos:
 
 ```powershell
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
@@ -57,7 +54,7 @@ foreach ($y in $x)
 
 Hay dos formas de ejecutar este comando configurado en el símbolo del sistema del shell de administración de SharePoint Online:
 
-- Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteUrl** , seleccione los comandos y péguelos en el símbolo del sistema del shell de administración de SharePoint Online. Cuando lo haga, PowerShell se detendrá en **>>** un símbolo del sistema. Presione Entrar para ejecutar el comando **foreach**.<br/>
+- Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteUrl** , seleccione los comandos y péguelos en el símbolo del sistema del shell de administración de SharePoint Online. Cuando lo haga, PowerShell se detendrá en **>>** un símbolo del sistema. Presione Entrar para ejecutar el `foreach` comando.<br/>
 - Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteURL** y después guarde este archivo de texto con un nombre y la extensión. ps1 en la carpeta adecuada. A continuación, ejecute el script desde el símbolo del sistema del shell de administración de SharePoint Online especificando su ruta de acceso y nombre de archivo. A continuación se muestra un ejemplo:
 
 ```powershell

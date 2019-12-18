@@ -14,12 +14,12 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: La autenticación moderna híbrida (HMA) es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras, y está disponible para las implementaciones híbridas locales de Exchange Server.
-ms.openlocfilehash: 44061a8b75a07283c36d02812488441d40f9c9c3
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f5bbbffb3d21ab5eebfb7704318c08abe75f064b
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746223"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085175"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Exchange Server local para usar la autenticación moderna híbrida
 
@@ -154,10 +154,13 @@ Una vez habilitada la HMA, el próximo inicio de sesión de un cliente usará el
 También debe mantener presionada la tecla CTRL al mismo tiempo que se hace clic en el icono del cliente de Outlook (también en la bandeja de notificaciones de Windows) y en "estado de conexión". Busque la dirección SMTP del cliente en un "authn" tipo de "portador\*", que representa el token del portador usado en OAuth.
   
  **Nota:** ¿Necesita configurar Skype empresarial con HMA? Necesitará dos artículos: uno que muestre las [topologías admitidas](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)y otro que muestre [Cómo realizar la configuración](configure-skype-for-business-for-hybrid-modern-authentication.md).
+ 
+## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>Uso de híbridos modernos de autenticación con Outlook para iOS y Android
+
+Si es un cliente local que usa Exchange Server en TCP 443, debe tener en la lista blanca los siguientes intervalos de direcciones IP: <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> 
   
 
 ## <a name="related-topics"></a>Temas relacionados
 
 [Introducción a la autenticación moderna híbrida y requisitos previos para su uso con servidores locales de Skype empresarial y Exchange](hybrid-modern-auth-overview.md) 
   
-

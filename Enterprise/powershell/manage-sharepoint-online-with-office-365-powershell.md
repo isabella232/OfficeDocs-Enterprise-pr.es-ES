@@ -3,7 +3,7 @@ title: Administrar SharePoint Online con PowerShell de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2018
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,18 +15,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: use PowerShell de Office 365 para administrar usuarios, grupos y grupos de sitios de SharePoint Online.'
-ms.openlocfilehash: 26bfa4399ef3535098788cfa067272352532045a
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 6223c500d1fce4b0f20a35ca3e36295fd3e10454
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077979"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261413"
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Administrar SharePoint Online con PowerShell de Office 365
 
- **Resumen:** use PowerShell de Office 365 para administrar usuarios, grupos y grupos de sitios de SharePoint Online.
-  
-Una de las tareas principales de cualquier administrador de SharePoint Online es administrar sitios, grupos de sitios y usuarios. Aunque puede realizar algunas de estas tareas en el Centro de administración de Microsoft 365, otras tareas son mucho más rápidas y fáciles en PowerShell de Office 365. Para obtener más información, vea los siguientes temas:
+Una de las tareas principales de cualquier administrador de SharePoint Online es administrar sitios, grupos de sitios y usuarios. Aunque puede realizar algunas de estas tareas en el Centro de administración de Microsoft 365, otras tareas son mucho más rápidas y fáciles en PowerShell de Office 365. Para obtener más información, vea estos temas:
 
 - [Conectarse a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
@@ -41,4 +39,3 @@ Una de las tareas principales de cualquier administrador de SharePoint Online es
 - [Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
 
 - [Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
-

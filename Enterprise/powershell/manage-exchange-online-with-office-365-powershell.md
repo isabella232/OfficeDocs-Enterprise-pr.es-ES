@@ -3,7 +3,7 @@ title: Administrar Exchange Online con PowerShell de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,28 +14,22 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 'Resumen: use PowerShell de Office 365 para administrar Microsoft Exchange Online, incluida la configuración de buzón de correo que se muestra y los informes avanzados.'
-ms.openlocfilehash: 06524431ee98a0f5119544da9278d8c672155fd9
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1fdba6a34fdd3e8833f445f86a8cf025409adf77
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031015"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261333"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Administrar Exchange Online con PowerShell de Office 365
 
- **Resumen:** use PowerShell de Office 365 para administrar Microsoft Exchange Online, incluida la visualización de la configuración de buzones e informes avanzados.
+Una de las tareas principales de cualquier administrador de Microsoft Exchange Online es administrar los buzones de correo y obtener informes sobre ellos. Aunque puede realizar algunas de estas tareas en el centro de administración de Exchange, otras tareas son mucho más rápidas y sencillas en PowerShell de Office 365. Para obtener más información, vea los siguientes temas:
   
-Una de las tareas principales de cualquier administrador de Microsoft Exchange Online es administrar los buzones de correo y obtener informes sobre ellos. Aunque puede realizar algunas de estas tareas en el Centro de administración de Microsoft 365, otras tareas son mucho más rápidas y fáciles en PowerShell de Office 365. Para obtener más información, vea los siguientes temas:
-  
-- [Mostrar información del buzón de correo de Exchange Online con PowerShell de Office 365 PowerShell](https://technet.microsoft.com/library/mt771881%28v=exchg.160%29.aspx)
+- [Usar Exchange Online PowerShell para mostrar información del buzón de Office 365](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
     
-- [Mostrar informes de Exchange Online con Office 365 PowerShell](https://technet.microsoft.com/library/mt771882%28v=exchg.160%29.aspx)
+- [Buscar los permisos necesarios para ejecutar cualquier cmdlet de Exchange](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions)
     
-- [Determinar qué cmdlets están disponibles para los administradores de Exchange Online con Office 365 PowerShell](https://technet.microsoft.com/library/mt771883%28v=exchg.160%29.aspx)
-    
-## <a name="see-also"></a>Consulte también
-
-#### 
+## <a name="see-also"></a>Vea también
 
 [Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
   

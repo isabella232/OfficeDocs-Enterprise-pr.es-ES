@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Obtenga información sobre cómo colaborar con invitados en un sitio de SharePoint.
-ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919263"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261363"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -75,7 +75,7 @@ Si desea permitir el uso compartido de archivos y carpetas sin autenticar, elija
 Para establecer la configuración de uso compartido en el nivel de la organización de SharePoint
 
 1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración**, haga clic en **SharePoint**.
-2. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
+2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
 3. Asegúrese de que el uso compartido externo para SharePoint está establecido en **todos** o en **invitados nuevos o existentes**.
 4. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -121,7 +121,7 @@ Para invitar a usuarios internos a un grupo
 
 No se pueden agregar usuarios invitados desde el sitio. Debe agregarlos mediante Outlook en la Web.
 
-Para invitar a invitados a un sitio
+Para invitar a invitados a un grupo
 1. En Outlook en la web, en **grupos**, haga clic en el grupo al que desea agregar miembros.
 2. Abra la tarjeta de contacto del grupo y, a continuación, en **más opciones** (...), haga clic en **Agregar miembros**.
 3. Escriba las direcciones de correo electrónico de los invitados que desea invitar y, a continuación, haga clic en **Agregar**.
@@ -133,5 +133,7 @@ Para invitar a invitados a un sitio
 
 [Reducir la exposición accidental de archivos al compartirlos con invitados](sharing-limit-accidental-exposure.md)
 
-[Crear un entorno de uso compartido de invitado seguro](create-a-secure-guest-sharing-environment.md))
+[Crear un entorno seguro de uso compartido para invitados](create-a-secure-guest-sharing-environment.md)
+
+[Crear una extranet B2B con invitados administrados](b2b-extranet.md)
 
