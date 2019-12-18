@@ -10,20 +10,33 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Obtenga información sobre cómo crear un grupo de Office 365 con una ubicación de datos preferida especificada en un entorno multigeográfico.
-ms.openlocfilehash: fb512478d69502eafd633b552d1db2acbec43ef4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 96870923c00cebc247609b67378fd39011077d45
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070007"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072382"
 ---
 # <a name="create-an-office-365-group-with-a-specific-pdl"></a>Crear un grupo de Office 365 con un PDL específico
 
-Cuando los usuarios en un entorno multigeográfico crean un grupo de Office 365, la ubicación de datos preferida del grupo se establece automáticamente según la del usuario. Si necesita crear un grupo con un PDL específico, puede hacerlo mediante el cmdlet de Microsoft PowerShell New-UnifiedGroup de Exchange Online. Al hacerlo, tanto el buzón del grupo como el sitio de SharePoint asociado con el grupo se aprovisionarán en el PDL especificado.
+Cuando los usuarios en un entorno multigeográfico crean un grupo de Office 365, la ubicación de datos preferida del grupo se establece automáticamente según la del usuario. Los administradores globales, de SharePoint y de Exchange pueden crear grupos en cualquier región que seleccionen. 
 
-Debe ser un administrador global o un administrador de SharePoint Online o de Exchange Online para realizar estas acciones.
+Si necesita crear un grupo con un PDL específico, puede hacerlo desde el Centro de administración de SharePoint o a través del cmdlet New-UnifiedGroup de Exchange Online de Microsoft PowerShell. Al hacerlo, tanto el buzón del grupo como el sitio de SharePoint asociado con el grupo se aprovisionarán en el PDL especificado.
 
-Para crear un grupo de Office 365 con el PDL que especifique, conéctese al PowerShell de Exchange Online y pase el parámetro *-MailBoxRegion* con el código de ubicación geográfica.
+Para crear un grupo de Office 365 con la PDL que designe, vaya al Centro de administración de SharePoint en la ubicación geográfica donde desea crear el sitio del grupo.
+
+Por ejemplo:
+
+Si va a crear un sitio de grupo en su ubicación de Australia, puede ir a https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement
+
+1. Seleccione **+ Crear**.
+2. Siga el proceso para crear un sitio de grupo.
+
+El sitio de grupo se aprovisionará en la ubicación geográfica correspondiente al Centro de administración de SharePoint desde el que haya iniciado la solicitud de creación de sitios. 
+
+Usar Exchange PowerShell 
+
+Conéctese a Exchange Online PowerShell y pase el parámetro *-MailBoxRegion* con el código de ubicación geográfica.
 
 Por ejemplo: 
 
