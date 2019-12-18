@@ -12,12 +12,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Aprenda a mover un sitio de OneDrive a otra ubicación geográfica
-ms.openlocfilehash: ab5540926d5685b4d3055b9aed623048c764044b
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 9760d61a8a1db76e3abf061552e0a99d85b9092a
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626170"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072562"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover un sitio de OneDrive a otra ubicación geográfica 
 
@@ -47,7 +47,7 @@ Puede programar de antemano los movimientos del sitio de OneDrive (tal como se d
 
 - Puede programar un máximo de 4000 movimientos cada vez.
 - Al empezar el movimiento, puede programar más, con un máximo de 4000 movimientos pendientes en la cola y en cualquier momento.
-- Recomendamos no programar más de 4000 movimientos al mes.
+- El tamaño máximo de un OneDrive que se puede mover es 1 terabyte (1 TB).
 
 ## <a name="moving-a-onedrive-site"></a>Mover un sitio de OneDrive
 
