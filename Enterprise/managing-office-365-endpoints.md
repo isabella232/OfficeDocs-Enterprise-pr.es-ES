@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algunas redes empresariales restringen el acceso a ubicaciones de Internet genéricas o incluyen backhaul o procesamiento de tráfico de red substancial. Para garantizar que los equipos de redes como estos puedan tener acceso a Office 365, los administradores de red y de proxy deben administrar la lista de FQDN, direcciones URL y direcciones IP que componen la lista de puntos de conexión de Office 365. Estos deben agregarse a ruta directa, omisión de proxy o reglas de firewall y archivos PAC para garantizar que las solicitudes de red puedan alcanzar el alcance de Office 365.
-ms.openlocfilehash: 99445e6feac84a6091888422039e8ba655d246c9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072492"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744514"
 ---
 # <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365
 
@@ -133,14 +133,14 @@ Haga clic en el vínculo de la parte inferior para indicar si el artículo resul
   
 Con más de 2500 relaciones de emparejamiento de ISP globalmente y 70 puntos de presencia, obtener desde su red a los nuestros deben estar sin problemas. No puede resultar perjudicial dedicar unos minutos asegurándose de que la relación de emparejamiento del ISP es la más óptima, a [continuación le presentamos algunos ejemplos](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) de buenas y no tan buenas entregas de emparejamiento a nuestra red.
   
-### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Veo que las solicitudes de red a las direcciones IP no están en la lista publicada, ¿es necesario proporcionar acceso a las mismas?
 <a name="bkmk_MissingIP"> </a>
+### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Veo que las solicitudes de red a las direcciones IP no están en la lista publicada, ¿es necesario proporcionar acceso a las mismas?
 
 Solo se proporcionan direcciones IP para los servidores de Office 365 a los que se debe dirigir directamente. Esta no es una lista completa de todas las direcciones IP para las que verá solicitudes de red. Verá solicitudes de red a las direcciones IP de Microsoft y de terceros, no publicadas. Estas direcciones IP se generan de forma dinámica o se administran de una manera que evita la notificación oportuna cuando cambian. Si el Firewall no puede permitir el acceso en función de los FQDN de estas solicitudes de red, use un archivo PAC o WPAD para administrar las solicitudes.
   
 Vea una dirección IP asociada a Office 365 de la que desea obtener más información.
   
-1. Compruebe si la dirección IP se incluye en un intervalo publicado mayor con una [calculadora CIDR](https://www.ipaddressguide.com/cidr).
+1. Compruebe si la dirección IP se incluye en un intervalo publicado mayor con una calculadora CIDR, como la de [IPv4](https://www.ipaddressguide.com/cidr) o [IPv6]https://www.ipaddressguide.com/ipv6-cidr).
 2. Compruebe si un partner es propietario de la IP con una [consulta Whois](https://dnsquery.org/). Si es propietario de Microsoft, puede ser un asociado interno.
 3. Compruebe el certificado, en un explorador Conéctese a la dirección IP *mediante\<https://\> IP_ADDRESS* , compruebe los dominios que aparecen en el certificado para comprender qué dominios están asociados con la dirección IP. Si es una dirección IP de propiedad de Microsoft y no se encuentra en la lista de direcciones IP de Office 365, es probable que la dirección IP esté asociada a una CDN de Microsoft como *MSOCDN.net* u otro dominio de Microsoft sin información de IP publicada. Si encuentra el dominio en el certificado es aquel en el que le indicamos que indique la dirección IP, infórmenos.
 
@@ -159,8 +159,8 @@ Un servidor proxy valida la dirección URL inicial que en el ejemplo anterior es
 
 No se recomienda la configuración o la lista blanca codificada de forma rígida basada en FQDN indirectos de Office 365, que no es compatible con Microsoft, y se sabe que causa problemas de conectividad con los clientes. Las soluciones DNS que se bloquean en la redirección de CNAME o que, de lo contrario, resuelven incorrectamente las entradas DNS de Office 365, pueden resolverse mediante el reenvío condicional de DNS (en el ámbito de los FQDN de Office 365 de uso directo) con la recursión de DNS habilitada. Muchos productos perimetrales de red de terceros integran de forma nativa la lista blanca de puntos de conexión de Office 365 en su configuración mediante el [servicio Web de direcciones IP y URL de office 365](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
-### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>¿Por qué veo nombres como nsatc.net o akadns.net en los nombres de dominio de Microsoft?
 <a name="bkmk_akamai"> </a>
+### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>¿Por qué veo nombres como nsatc.net o akadns.net en los nombres de dominio de Microsoft?
 
 Office 365 y otros servicios de Microsoft usan varios servicios de terceros, como Akamai y MarkMonitor, para mejorar la experiencia de Office 365. Para seguir dándole la mejor experiencia posible, podemos cambiar estos servicios en el futuro. Los dominios de terceros pueden hospedar contenido, como una red CDN, o pueden hospedar un servicio, como un servicio de administración de tráfico geográfico. Algunos de los servicios actualmente en uso incluyen:
   
@@ -182,8 +182,8 @@ Office 365 y otros servicios de Microsoft usan varios servicios de terceros, com
 *.edgesuite.net
 ```
 
-### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Tengo que tener la conectividad mínima posible para Office 365
 <a name="bkmk_thirdparty"> </a>
+### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Tengo que tener la conectividad mínima posible para Office 365
 
 Como Office 365 es un conjunto de servicios creado para que funcione a través de Internet, las promesas de confiabilidad y disponibilidad se basan en muchos servicios estándar de Internet que están disponibles. Por ejemplo, los servicios estándar de Internet como DNS, CRL y CDN deben ser accesibles para usar Office 365 de la misma manera que deben ser accesibles para usar los servicios de Internet más modernos.
 
@@ -200,8 +200,8 @@ Además de los servicios básicos de Internet, hay servicios de terceros que sol
   
 Si está intentando usar Office 365 y no se puede encontrar servicios de terceros, querrá [asegurarse de que todos los FQDN marcados como obligatorios u opcionales en este artículo se permiten a través del proxy y el Firewall](urls-and-ip-address-ranges.md).
   
-### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>¿Cómo se bloquea el acceso a los servicios de consumidores de Microsoft?
 <a name="bkmk_consumer"> </a>
+### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>¿Cómo se bloquea el acceso a los servicios de consumidores de Microsoft?
 
 La restricción del acceso a nuestros servicios de consumidor debe realizarse bajo su responsabilidad. La única forma confiable de bloquear los servicios de consumidor es restringir el acceso al FQDN *login.Live.com* . Este FQDN se usa en un amplio conjunto de servicios, incluidos los servicios que no son de consumidor, como MSDN, TechNet y otros. Este FQDN también se usa en el programa de intercambio de archivos seguro del soporte técnico de Microsoft y es necesario para transferir archivos para facilitar la solución de problemas de los productos de Microsoft.  Restringir el acceso a este FQDN puede dar como resultado la necesidad de incluir también excepciones a la regla para las solicitudes de red asociadas con estos servicios.
   
