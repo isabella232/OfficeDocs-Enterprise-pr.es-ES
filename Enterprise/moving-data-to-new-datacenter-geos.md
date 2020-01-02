@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'El nuevo centro de GEOS agrega capacidad y calcula recursos para apoyar el crecimiento constante del uso y la demanda de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes. Los datos principales de los clientes son un término que hace referencia a un subconjunto de los datos de clientes definidos en los términos de Microsoft Online Services: contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico) y contenido del sitio de SharePoint Online y los archivos se almacenan en ese sitio y los archivos cargados en OneDrive para la empresa.'
-ms.openlocfilehash: 8dcbcd6bbbe1761c9d57c953ad176c87b5b3f221
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: dd8cb060980db16672225fa7543958441a5bebc9
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962457"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923872"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Mover datos básicos a un nuevo Office 365 Datacenter GEOS
 
@@ -26,7 +26,8 @@ Seguimos abrimos New Datacenter GEOS for Office 365 for Business Services. Estos
 Los datos principales de los clientes son un término que hace referencia a un subconjunto de datos de clientes, entre los que se incluyen: 
 - Contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico)
 - Contenido del sitio de SharePoint Online y los archivos almacenados en ese sitio
-- Archivos cargados en OneDrive para la empresa 
+- Archivos cargados en OneDrive para la empresa
+- Mensajes de chat de Microsoft Teams, incluidos mensajes privados, mensajes de canal e imágenes usados en chats
   
 Los clientes existentes que tienen sus datos de clientes principales almacenados en un centro de datos ya existente no se ven afectados por el inicio de una nueva geografía del centro de datos. No presentamos ninguna funcionalidad, características o certificaciones de cumplimiento únicos con el nuevo centro de recursos geográfico. Como cliente en cualquiera de estas dos GEOS, obtendrá los mismos controles de calidad de servicio, rendimiento y seguridad que antes. Ofrecemos a los clientes existentes que aparecen en la tabla que se muestra a continuación una opción para solicitar la migración temprana de los datos principales de clientes de la organización en el resto a su nuevo área geográfica del centro de datos.
   

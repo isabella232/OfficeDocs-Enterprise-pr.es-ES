@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: A continuación, se incluyen respuestas a preguntas generales sobre cómo mover datos principales a un nuevo centro de datos geográfico.
-ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: cea25e2e3a400c2bcf76c2dbe13c4f7ba1a7b884
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756589"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923852"
 ---
 # <a name="data-move-general-faq"></a>Preguntas más frecuentes sobre el movimiento de datos
 
@@ -50,6 +50,14 @@ Hay dos acciones que puede llevar a cabo como administrador de inquilinos.
 Los movimientos de datos son una operación del servicio back-end con un impacto mínimo en los usuarios finales. Las características que se pueden influir se muestran en [durante y después de que se muevan los datos](during-and-after-your-data-move.md). Adhiere al [contrato de nivel de servicio de Microsoft Online Services (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) por disponibilidad para que no haya nada que los clientes necesiten para preparar o para supervisar durante el movimiento. 
   
 Todos los servicios de Office 365 ejecutan las mismas versiones en los centros de recursos, por lo que puede garantizar la coherencia de la funcionalidad. El servicio es totalmente compatible durante todo el proceso.
+
+## <a name="what-is-in-scope-for-teams-migration"></a>¿Qué es el ámbito de la migración de Teams?
+
+Además de Exchange Online, SharePoint Online y OneDrive para la empresa; Microsoft migrará los datos de Teams al centro de datos local.  
+- Mensajes de chat de Microsoft Teams, incluidos los mensajes privados y los mensajes de canal. 
+- Las imágenes de Teams usadas en chats. 
+
+Los archivos de Microsoft Teams se almacenan en SharePoint Online y los archivos de chat de Teams se almacenan en OneDrive para la empresa.  El correo de voz, el calendario, el historial de chat y los contactos se almacenan en Exchange Online.  En muchos casos, el cliente ya usa Exchange Online, SharePoint Online y OneDrive para la empresa en el área geográfica de centros de recursos locales y también forma parte del programa de migración de Office 365 para los países cliente elegibles.
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>¿Cuál es el impacto de tener diferentes servicios ubicados en diferentes GEOS?
 
