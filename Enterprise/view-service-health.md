@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Ver el estado de mantenimiento de los servicios de Office 365 antes de llamar al soporte técnico para ver si hay una interrupción del servicio activo.
-ms.openlocfilehash: 5d9b4c65932f65b878518bd5e0f33a1c5336aaf9
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 20584f2cb0ecc32da9f5403c36c6af3f0287bea9
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37931766"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122589"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Cómo comprobar el estado del servicio de Office 365
 
@@ -55,7 +55,7 @@ Si no puede iniciar sesión en el portal de servicios, puede usar la [Página es
 
 La pestaña **todos los servicios** (la vista predeterminada) muestra todos los servicios y su estado de mantenimiento actual. Un icono y la columna **Estado** indican el estado de cada servicio. Para filtrar la vista a los servicios que actualmente están experimentando un incidente, seleccione la ficha **incidentes** en la parte superior de la página. Al seleccionar la pestaña **asesores** , solo se mostrarán los servicios que tienen publicado actualmente un aviso. La ficha **historial** muestra el historial de incidentes y avisos que se han resuelto.
 
-Si experimenta un problema que no aparece en la lista, seleccione informar de **un problema**, complete el formulario corto para informarnos del problema y, a continuación, seleccione **Enviar**.
+Si está experimentando un problema con un servicio de Office 365 y no lo ve en la página de **Estado del servicio** , comuníquese con nosotros seleccionando informar de **un problema**y completando el formulario corto. Analizaremos los datos y los informes relacionados de otras organizaciones para ver el alcance del problema y si se ha originado con nuestro servicio. Si lo hizo, lo agregaremos como un nuevo aviso o aviso en la página **Estado del servicio** , donde puede realizar el seguimiento de su resolución. Si no aparece en la lista en unos 30 minutos, considere la posibilidad de ponerse en contacto con el soporte técnico para resolver el problema.
 
 > [!TIP]
 > También puede usar la [aplicación de administración de Office 365](https://go.microsoft.com/fwlink/p/?linkid=627216) en su dispositivo móvil para ver el estado del servicio, que es una buena forma de mantenerse al día con las notificaciones de inserción. 
@@ -134,6 +134,6 @@ Para obtener más información sobre nuestro compromiso con el tiempo de activid
 
 Nuestro objetivo es asegurarnos de que la información que le proporcionamos sobre un problema en curso sea oportuna, precisa y útil. Para indicarnos su opinión sobre nuestra actuación, seleccione una clasificación por estrellas. Una vez que nos haya valorado con una puntuación de 1 a 5 estrellas, podrá enviar comentarios sobre detalles específicos. Usaremos sus comentarios para ajustar nuestro sistema de estado del servicio.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Informes de actividades en el centro de administración de Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
