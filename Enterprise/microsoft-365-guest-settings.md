@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: Obtenga más información sobre la configuración de uso compartido de invitados disponible en Microsoft 365.
-ms.openlocfilehash: 3181e1abc44ff62bf3973a87a626291b9e946c51
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 6fba4a8107962ef7ac7da5f83dd2d7f1d75dccb2
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919384"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627896"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -53,9 +53,9 @@ Esta configuración afecta al modo en que se invitan a los usuarios al directori
 
 El Centro de administración de Microsoft 365 tiene la configuración de nivel de organización para el uso compartido y para los Grupos de Office 365.
 
-### <a name="sharing"></a>Uso compartido
+### <a name="sharing"></a>Compartir
 
-**Navegación:** [Centro de administración de Microsoft 365](https://admin.microsoft.com) > Configuración > Seguridad y privacidad > Uso compartido
+**Navegación:** [Centro de administración de Microsoft 365](https://admin.microsoft.com) > Configuración > Configuración > pestaña Seguridad y privacidad > Uso compartido
 
 ![Captura de pantalla de la configuración de uso compartido de invitados de seguridad y privacidad en el Centro de administración de Microsoft 365](media/sharepoint-security-privacy-sharing-setting.png)
 
@@ -65,7 +65,7 @@ El Centro de administración de Microsoft 365 tiene la configuración de nivel d
 
 ### <a name="office-365-groups"></a>Grupos de Office 365
 
-**Navegación:** [Centro de administración de Microsoft 365](https://admin.microsoft.com) > Configuración > Servicios y complementos > Grupos de Office 365
+**Navegación:**[Centro de administración de Microsoft 365](https://admin.microsoft.com) > Configuración > Configuración > Grupos de Office 365
 
 ![Captura de pantalla de la configuración de invitados de Grupos de Office 365 en el Centro de administración de Microsoft 365](media/office-365-groups-guest-settings.png)
 
@@ -196,11 +196,13 @@ Ambas configuraciones se pueden usar al mismo tiempo. Si un usuario está en los
 
 **Rol de administrador**: Administrador del servicio SharePoint
 
+Como estas opciones están sujetas a la configuración de toda la organización de SharePoint, puede cambiar la configuración de uso compartido efectiva del sitio si cambia la configuración de nivel de la organización. Si elige una configuración aquí y el nivel de organización se establece posteriormente en un valor más restrictivo, este sitio funcionará con ese valor más restrictivo. Por ejemplo, si elige **Cualquiera** y la configuración de nivel de organización se establece posteriormente en **Invitados nuevos y existentes**, este sitio solo permitirá invitados nuevos y existentes. Si la configuración del nivel de organización se vuelve a establecer en **Cualquiera**, este sitio volverá a permitir el vínculo de *Cualquiera*.
+
 ### <a name="site-sharing"></a>Uso compartido de sitios
 
 Puede establecer permisos para el uso compartido de invitados para cada sitio de SharePoint. Esta configuración se aplica al uso compartido de sitios y al uso compartido de archivos y carpetas. (El uso compartido de *Cualquiera* no está disponible para compartir sitios. Si elige **Cualquiera**, los usuarios podrán compartir archivos y carpetas mediante vínculos de *Cualquiera*, y el mismo sitio con invitados nuevos y existentes).
 
-**Navegación:** Centro de administración de SharePoint > Sitios activos > Seleccionar el sitio > Uso compartido
+**Navegación:** Centro de administración de SharePoint > Sitios activos > seleccione el sitio > Editar uso compartido externo
 
 ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
@@ -208,7 +210,22 @@ Puede establecer permisos para el uso compartido de invitados para cada sitio de
 |:-----|:-----|:-----|
 |Puede compartir contenido con|Varía por tipo de sitio (consulte la tabla siguiente)|Indica el tipo de uso compartido externo permitido para este sitio. Las opciones disponibles en esta sección están sujetas a la configuración de uso compartido en el nivel de la organización de SharePoint.|
 
-Como estas opciones están sujetas a la configuración de toda la organización de SharePoint, puede cambiar la configuración de uso compartido efectiva del sitio si cambia la configuración de nivel de la organización. Si elige una configuración aquí y el nivel de organización se establece posteriormente en un valor más restrictivo, este sitio funcionará con ese valor más restrictivo. Por ejemplo, si elige **Cualquiera** y la configuración de nivel de organización se establece posteriormente en **Invitados nuevos y existentes**, este sitio solo permitirá invitados nuevos y existentes. Si la configuración del nivel de organización se vuelve a establecer en **Cualquiera**, este sitio volverá a permitir el vínculo de *Cualquiera*.
+### <a name="site-file-and-folder-link-settings"></a>Configuración de vínculos a archivos y carpetas del sitio
+
+Puede establecer valores predeterminados para los tipos de vínculos y permisos, y la configuración de expiración para *Cualquiera* para cada sitio. Cuando se establece en el nivel de sitio, esta configuración reemplaza la configuración de nivel de organización. Tenga en cuenta que, si se deshabilitan los vínculos *Cualquiera* en el nivel de la organización, *Cualquiera* no será un tipo de vínculo disponible en el nivel de sitio.
+
+**Navegación:** Centro de administración de SharePoint > Sitios activos > seleccione el sitio > Editar uso compartido externo
+
+![Captura de pantalla de la configuración de vínculos para compartir en el nivel de sitio de SharePoint](media/sharepoint-site-link-sharing-settings.png)
+
+|**Valor**|**Default**|**Descripción**|
+|:-----|:-----|:-----|
+|Limitar el uso compartido por dominio|Desactivado|Esta configuración le permite especificar una lista de dominios permitidos o bloqueados para el uso compartido. Si se especifican dominios permitidos, las invitaciones de uso compartido solo se pueden enviar a estos dominios. Si se especifican dominios denegados, las invitaciones de uso compartido no se pueden enviar a estos dominios.<br><br> Esta configuración no se puede usar para reemplazar las restricciones de dominio establecidas en el nivel de la organización o de Azure AD.|
+|Tipo de vínculo para compartir predeterminado|Igual que la configuración de nivel de organización|Esta configuración le permite especificar el vínculo para compartir predeterminado que se muestra a los usuarios en este sitio. La opción *Igual que la configuración de nivel de organización* se define mediante una combinación de la configuración de uso compartido de la organización y el sitio.|
+|Configuración avanzada de vínculos para "Cualquiera"|Igual que la configuración de nivel de organización|Especifica el número de días transcurridos desde que se ha creado un vínculo *Cualquiera* para un archivo de este sitio que expira. Los vínculos expirados no se pueden renovar. Si necesita seguir compartiendo después de la fecha de expiración, cree un nuevo vínculo.|
+|Permiso de vínculo predeterminado|Igual que la configuración de nivel de organización|Esta configuración le permite especificar el permiso predeterminado (Ver o Editar) para compartir vínculos creados para archivos en este sitio.|
+
+### <a name="default-site-sharing-settings"></a>Configuración de uso compartido de sitio predeterminada
 
 En la tabla siguiente se muestra la configuración de uso compartido predeterminada para cada tipo de sitio.
 

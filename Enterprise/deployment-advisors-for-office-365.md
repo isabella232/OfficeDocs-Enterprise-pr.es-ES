@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Acelere la planeación y la configuración de Office 365 o Microsoft 365 con asesores de implementación.
-ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ac892a7d0551ede4d7bb4df7081ee0ae8dd5d618
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072372"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627866"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Asesores de implementación para los servicios de Office 365 o Microsoft 365
 
@@ -168,7 +168,7 @@ Consulte esta guía para conocer los pasos para instalar Office en un equipo PC 
 | **Realizar** |  [Guía de inicio rápido de Office 365 ProPlus](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Office 365 ProPlus Deployment Advisor describe los pasos para ayudar a los usuarios a instalar Office 365 ProPlus directamente desde el portal de Office 365 online o para implementar Office 365 ProPlus para sus usuarios desde una ubicación local. Se incluyen instrucciones para usar System Center Configuration Manager, un script de inicio de directiva de grupo, una imagen de disco del sistema operativo o activación compartida de servicios de escritorio remoto (RDS).
+Office 365 ProPlus Deployment Advisor describe los pasos para ayudar a los usuarios a instalar Office 365 ProPlus directamente desde el portal de Office 365 online o para implementar Office 365 ProPlus para sus usuarios desde una ubicación local. Se incluyen instrucciones para usar el administrador de configuración de Microsoft Endpoint, un script de inicio de directiva de grupo, una imagen de disco del sistema operativo o la activación compartida de servicios de escritorio remoto (RDS).
 
 |||
 |:-------|:-----|
@@ -319,7 +319,7 @@ Microsoft StaffHub es una plataforma basada en la nube que funciona en todos los
   
 ## <a name="additional-videos"></a>Vídeos adicionales
 
-### <a name="microsoft-365-admin-center"></a>Centro de administración de 365 de Microsoft
+### <a name="microsoft-365-admin-center"></a>Centro de administración de Microsoft 365
 
 - [Orientación del centro de administración](https://www.microsoft.com/videoplayer/embed/RWfMut)
 

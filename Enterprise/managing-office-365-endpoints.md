@@ -3,7 +3,7 @@ title: Administración de puntos de conexión de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/21/2019
+ms.date: 1/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algunas redes empresariales restringen el acceso a ubicaciones de Internet genéricas o incluyen backhaul o procesamiento de tráfico de red substancial. Para garantizar que los equipos de redes como estos puedan tener acceso a Office 365, los administradores de red y de proxy deben administrar la lista de FQDN, direcciones URL y direcciones IP que componen la lista de puntos de conexión de Office 365. Estos deben agregarse a ruta directa, omisión de proxy o reglas de firewall y archivos PAC para garantizar que las solicitudes de red puedan alcanzar el alcance de Office 365.
-ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
-ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
+ms.openlocfilehash: 189a21c310b7fd2e62817504b8d6910a2b3e66ca
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40744514"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570887"
 ---
 # <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365
 
@@ -140,9 +140,10 @@ Solo se proporcionan direcciones IP para los servidores de Office 365 a los que 
   
 Vea una dirección IP asociada a Office 365 de la que desea obtener más información.
   
-1. Compruebe si la dirección IP se incluye en un intervalo publicado mayor con una calculadora CIDR, como la de [IPv4](https://www.ipaddressguide.com/cidr) o [IPv6]https://www.ipaddressguide.com/ipv6-cidr).
-2. Compruebe si un partner es propietario de la IP con una [consulta Whois](https://dnsquery.org/). Si es propietario de Microsoft, puede ser un asociado interno.
-3. Compruebe el certificado, en un explorador Conéctese a la dirección IP *mediante\<https://\> IP_ADDRESS* , compruebe los dominios que aparecen en el certificado para comprender qué dominios están asociados con la dirección IP. Si es una dirección IP de propiedad de Microsoft y no se encuentra en la lista de direcciones IP de Office 365, es probable que la dirección IP esté asociada a una CDN de Microsoft como *MSOCDN.net* u otro dominio de Microsoft sin información de IP publicada. Si encuentra el dominio en el certificado es aquel en el que le indicamos que indique la dirección IP, infórmenos.
+1. Compruebe si la dirección IP se incluye en un intervalo publicado mayor con una calculadora CIDR, como la de [IPv4](https://www.ipaddressguide.com/cidr) o [IPv6](https://www.ipaddressguide.com/ipv6-cidr). Por ejemplo, 40.96.0.0/13 incluye la dirección IP 40.103.0.1, aunque 40,96 no coincide con 40,103.
+2. Compruebe si un partner es propietario de la IP con una [consulta Whois](https://dnsquery.org/). Si es propietario de Microsoft, puede ser un asociado interno. Se enumeran muchos puntos de conexión de red de socios como pertenecientes a la categoría _predeterminada_ , para las que no se publican direcciones IP.
+3. La dirección IP puede que no forme parte de Office 365 o una dependencia. La publicación de puntos de conexión de red de Office 365 no incluye todos los puntos de conexión de red de Microsoft.
+4. Compruebe el certificado, en un explorador Conéctese a la dirección IP *mediante\<https://\> IP_ADDRESS* , compruebe los dominios que aparecen en el certificado para comprender qué dominios están asociados con la dirección IP. Si es una dirección IP de propiedad de Microsoft y no se encuentra en la lista de direcciones IP de Office 365, es probable que la dirección IP esté asociada a una CDN de Microsoft como *MSOCDN.net* u otro dominio de Microsoft sin información de IP publicada. Si encuentra el dominio en el certificado es aquel en el que le indicamos que indique la dirección IP, infórmenos.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Algunas direcciones URL de Office 365 señalan a registros CNAME en lugar de a registros en el DNS. ¿Qué tengo que hacer con los registros CNAME?
@@ -206,7 +207,12 @@ Si está intentando usar Office 365 y no se puede encontrar servicios de tercero
 La restricción del acceso a nuestros servicios de consumidor debe realizarse bajo su responsabilidad. La única forma confiable de bloquear los servicios de consumidor es restringir el acceso al FQDN *login.Live.com* . Este FQDN se usa en un amplio conjunto de servicios, incluidos los servicios que no son de consumidor, como MSDN, TechNet y otros. Este FQDN también se usa en el programa de intercambio de archivos seguro del soporte técnico de Microsoft y es necesario para transferir archivos para facilitar la solución de problemas de los productos de Microsoft.  Restringir el acceso a este FQDN puede dar como resultado la necesidad de incluir también excepciones a la regla para las solicitudes de red asociadas con estos servicios.
   
 Tenga en cuenta que bloquear el acceso a los servicios de atención al cliente de Microsoft por sí solo no impedirá que un usuario de la red pueda exfiltrar información con un espacio empresarial de Office 365 u otro servicio.
-  
+
+<a name="bkmk_IPOnlyFirewall"> </a>
+### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>Mi Firewall requiere direcciones IP y no puede procesar direcciones URL. ¿Cómo se configura para Office 365?
+
+Office 365 no proporciona direcciones IP de todos los puntos de conexión de red necesarios. Algunos solo se proporcionan como direcciones URL y están clasificados como predeterminados. Las direcciones URL de la categoría predeterminada necesarias deben permitirse a través de un servidor proxy. Si no tiene un servidor proxy, mire cómo ha configurado las solicitudes web para las direcciones URL que los usuarios escriben en la barra de direcciones de un explorador Web; el usuario no proporciona ninguna dirección IP. Las direcciones URL de categoría predeterminada de Office 365 que no proporcionan direcciones IP deben configurarse de la misma manera.
+
 ## <a name="related-topics"></a>Temas relacionados
 
 [Dirección IP de Office 365 y servicio web de URL](office-365-ip-web-service.md)
