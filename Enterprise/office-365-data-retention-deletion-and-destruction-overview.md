@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Información general sobre las directivas de Microsoft para Office 365 relativas a la retención, eliminación y destrucción de datos.
-ms.openlocfilehash: e4632a3025f1dc0f22338c0a463f054a7b993524
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 93093e3688d0f8ae399a4e021deaaf4b7ed5cecf
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37975835"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658337"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Retención, eliminación y destrucción de datos en Office 365
 
@@ -47,7 +47,7 @@ Para una prueba gratuita, la cuenta pasa a un estado de gracia durante 30 días 
 
 Para cualquier suscripción, un suscriptor puede ponerse en contacto con el soporte técnico de Microsoft y solicitar el aprovisionamiento de suscripciones urgentes. En este proceso, todos los datos de usuario se eliminan tres días después de que el administrador escriba el código de bloqueo proporcionado por Microsoft. Esto incluye datos en SharePoint Online y Exchange Online suspendidos o almacenados en buzones inactivos.
 
-Para obtener más información acerca de la deshabilitación de aprovisionamiento rápido, consulte [Cancelar Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
+Para obtener más información acerca de la deshabilitación de aprovisionamiento rápido, consulte [Cancelar Office 365](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/cancel-your-subscription).
 
 ## <a name="related-links"></a>Vínculos relacionados
 

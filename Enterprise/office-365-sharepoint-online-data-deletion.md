@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Una explicación de la eliminación de datos en SharePoint Online.
-ms.openlocfilehash: 94b70d34cb05f98dfa560761dec87a919720dca9
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 3f00e88c8d0e2bc10f6468b843385753ef864297
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078159"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658327"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Eliminación de datos de SharePoint Online en Office 365
 
@@ -36,6 +36,8 @@ Cuando se elimina una colección de sitios, también se elimina la jerarquía de
 - Información de roles y seguridad relacionada con el sitio o sus subsitios
 - Subsitios del sitio web de nivel superior, su contenido e información de usuario
 
-Si elimina por error una colección de sitios, puede restaurarla un administrador global o de SharePoint con el centro de administración de SharePoint. 
+Si elimina por error una colección de sitios, puede restaurarla un administrador global o de SharePoint con el centro de administración de SharePoint.
+
+Las colecciones de sitios eliminadas se conservan durante 93 días. Después de 93 días, los sitios y todo su contenido y configuración se eliminan de forma permanente, incluidas las listas, bibliotecas, páginas y subsitios.
 
 La eliminación de hardware se produce cuando un usuario depura elementos eliminados de la papelera de reciclaje de la colección de sitios, cuando expiran los períodos de retención y copia de seguridad, o cuando un administrador elimina permanentemente una colección de sitios con el [cmdlet Remove-SPODeletedSite](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps). Cuando un usuario elimina (elimina o purga permanentemente) contenido de SharePoint Online, también se eliminan todas las claves de cifrado de los fragmentos eliminados. Los bloques de los discos que anteriormente almacenaban los fragmentos eliminados se marcan como no usados y disponibles para volver a usarlos.
