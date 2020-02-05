@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: 'Una vez que haya implementado Office 365, puede mantener la conectividad de Office 365 mediante algunas de las siguientes herramientas y técnicas. Es conveniente que conozca las instrucciones oficiales de Continuidad y estado del servicio, así como los Procedimientos recomendados para usar Office 365 en una red lenta. También es conveniente que use la aplicación Administrador de Office 365 y que agregue a marcadores Office 365 para empresas: ayuda para administradores.'
-ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
-ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
+ms.openlocfilehash: 93fbc9448ce25ef3d5d3f1d577c6d1c23ae4472a
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931698"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721971"
 ---
 # <a name="monitor-office-365-connectivity"></a>Supervisar la conectividad de Office 365
 
@@ -37,7 +37,7 @@ Una vez que haya implementado Office 365, puede mantener la conectividad de Offi
 |**Usar Azure AD Connect Health con AD FS** <br/> |Si va a usar AD FS para el inicio de sesión único con Office 365, es conveniente que empiece a [usar Azure AD Connect Health para supervisar su infraestructura de AD FS](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/).  <br/> |
 |**Supervisar Office 365 mediante programación** <br/> |Consulte nuestra guía sobre la [API de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview).  <br/> |
 
-Este es un vínculo breve que se puede usar para volver: [hhttps://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
+Este es un vínculo breve que se puede usar para volver: [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
 ## <a name="see-also"></a>Vea también
 
