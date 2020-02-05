@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras. Está disponible para implementaciones híbridas de Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial. Este artículo contiene vínculos a documentos relacionados sobre requisitos previos, la configuración/deshabilitación de la autenticación moderna y para algunos de los clientes relacionados (por ejemplo, Outlook y clientes de Skype) información.
-ms.openlocfilehash: 87a2cc49594b0b71d1288e27ab1323f1850fd7eb
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 5124e42f5dff33d59083cc23f0c57349e6136fb9
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261403"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721921"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para su uso con servidores locales de Skype empresarial y Exchange
 
@@ -115,7 +115,7 @@ Compruebe y compruebe estos elementos de la lista antes de continuar:
 - C:\Archivos de Files\Skype para Business Server 2015 \ Web Components\Web ticket\ext\web.config
 
 ```xml
-<system.identityModel.services>
+<configuration>
   <system.net>
     <defaultProxy>
       <proxy
@@ -123,7 +123,7 @@ Compruebe y compruebe estos elementos de la lista antes de continuar:
         bypassonlocal="true" />
     </defaultProxy>
   </system.net>
-</system.identityModel.services>
+</configuration>
 ```
 
 > [!IMPORTANT]

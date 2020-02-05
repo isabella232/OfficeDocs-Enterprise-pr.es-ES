@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Ver el estado de mantenimiento de los servicios de Office 365 antes de llamar al soporte técnico para ver si hay una interrupción del servicio activo.
-ms.openlocfilehash: 20584f2cb0ecc32da9f5403c36c6af3f0287bea9
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 4dace633b4f68f3f9361096a4bd99296b8b807b2
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122589"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721981"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Cómo comprobar el estado del servicio de Office 365
 
@@ -107,13 +107,14 @@ La mayoría de las veces, los servicios aparecerán como correctos sin más info
 
 |**Estado**|**Definición**|
 |:-----|:-----|
-|**Investigando** | Somos conscientes de que existe un problema potencial y estamos recopilando más información sobre lo que sucede y el ámbito de impacto. |
+|**Investigating** | Somos conscientes de que existe un problema potencial y estamos recopilando más información sobre lo que sucede y el ámbito de impacto. |
 |**Degradación del servicio** | Hemos confirmado que existe un problema que puede afectar al uso de un servicio o una característica. Es posible que vea este estado si un servicio está funcionando más lento de lo normal, si hay interrupciones intermitentes o si una característica no funciona, por ejemplo. |
 |**Interrupción del servicio** | Verá este estado si se determina que un problema afecta a posibilidad de los usuarios de obtener acceso al servicio. En este caso, el problema es importante y se puede reproducir de forma coherente. |
 |**Restaurando el servicio** | Se ha identificado la causa del problema, sabemos qué acción correctiva debemos aplicar y estamos en proceso de restablecer el servicio a un estado correcto. |
 |**Recuperación extendida** | Este estado indica que se están llevando a cabo acciones correctivas para restablecer el servicio para la mayoría de los usuarios, pero que llevará algún tiempo llegar a todos los sistemas afectados. También es posible que vea este estado en caso de que hayamos aplicado una solución temporal para reducir el impacto a la espera de aplicar una permanente. |
 |**Investigación suspendida** | Si nuestra investigación detallada sobre un problema potencial resulta en una solicitud de información adicional por parte de los clientes para permitirnos investigar de forma más exhaustiva, verá este estado. Si necesitamos su ayuda, le haremos saber qué datos y registros necesitamos. |
 |**Servicio restaurado** | Hemos confirmado que una acción correctiva ha resuelto el problema subyacente y el servicio se ha restaurado al estado correcto. Para averiguar qué ha fallado, vea los detalles del problema. |
+|**Falso positivo** | Después de una investigación detallada, hemos confirmado que el servicio está en buen estado y funciona como se ha diseñado. No se ha observado ningún impacto en el servicio o la causa del incidente se originó fuera del servicio. |
 |**Informe posterior a la incidencia publicado** | Hemos publicado un informe de incidente posterior para un problema específico que incluye información de causa raíz y pasos siguientes para garantizar que no se reproduzca un problema similar. |
 
 ### <a name="history"></a>Historial
@@ -134,6 +135,6 @@ Para obtener más información sobre nuestro compromiso con el tiempo de activid
 
 Nuestro objetivo es asegurarnos de que la información que le proporcionamos sobre un problema en curso sea oportuna, precisa y útil. Para indicarnos su opinión sobre nuestra actuación, seleccione una clasificación por estrellas. Una vez que nos haya valorado con una puntuación de 1 a 5 estrellas, podrá enviar comentarios sobre detalles específicos. Usaremos sus comentarios para ajustar nuestro sistema de estado del servicio.
   
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Informes de actividades en el centro de administración de Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)

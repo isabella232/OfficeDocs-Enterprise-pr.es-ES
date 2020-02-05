@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contiene vínculos a información acerca de la planeación y las pruebas de red, y la migración a Office 365.
-ms.openlocfilehash: b40b940c99b7f0cf752dae069ca7eae7ac5516d0
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6091f5c222b523781c8af30200f96febb2baf7e4
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747790"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721961"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planeación de la migración y la red para Office 365
 
@@ -59,8 +59,6 @@ Para calcular el ancho de banda, siga estos pasos:
 <a name="calculators"> </a>
 
  **Herramientas de red.** Pruebe y valide el ancho de banda de Internet para determinar las restricciones de descarga, carga y latencia. Estas herramientas le ayudarán a determinar las capacidades de su red para la migración, así como una vez que se haya implementado por completo. 
-  
-- [Analizador de mensajes de Microsoft](https://technet.microsoft.com/library/jj649776.aspx): analizador de mensajes es una herramienta eficaz para la solución de problemas de red. El analizador de mensajes captura, muestra y analiza el tráfico de mensajería basado en protocolo y los mensajes del sistema. El analizador de mensajes también le permite importar, agregar y analizar datos de archivos de registro y de seguimiento.
     
 - [Analizador de conectividad remota de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=517243): comprueba la conectividad en su entorno de Exchange Online.
     
