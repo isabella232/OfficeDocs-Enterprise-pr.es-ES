@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,50 +20,50 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Obtenga acceso a los recursos para planear la implementación empresarial de Office 365.
-ms.openlocfilehash: 66b1944b9e98ef60b753c5122655f99870a86ffe
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 31c0eb1e6867856abe59f57cb78ec828431d03fd
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028814"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840327"
 ---
-# <a name="plan-for-office-365-enterprise"></a><span data-ttu-id="8a919-103">Planeación de Office 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="8a919-103">Plan for Office 365 Enterprise</span></span>
+# <a name="plan-for-office-365-enterprise"></a><span data-ttu-id="43a66-103">Planeación de Office 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="43a66-103">Plan for Office 365 Enterprise</span></span>
 
-<span data-ttu-id="8a919-104">Al mover una organización empresarial a Office 365, es importante planear con antelación y tomar las decisiones de diseño clave que optimizarán la implementación de ti y la adopción de usuarios.</span><span class="sxs-lookup"><span data-stu-id="8a919-104">When you move an enterprise organization to Office 365, it's important to plan ahead and make the key design decisions that will streamline IT deployment and user adoption.</span></span> 
+<span data-ttu-id="43a66-104">Al mover una organización empresarial a Office 365, es importante planear con antelación y tomar las decisiones de diseño clave que optimizarán la implementación de ti y la adopción de usuarios.</span><span class="sxs-lookup"><span data-stu-id="43a66-104">When you move an enterprise organization to Office 365, it's important to plan ahead and make the key design decisions that will streamline IT deployment and user adoption.</span></span> 
 
-## <a name="planning-with-office-365-fasttrack"></a><span data-ttu-id="8a919-105">Planeación con Office 365 FastTrack</span><span class="sxs-lookup"><span data-stu-id="8a919-105">Planning with Office 365 FastTrack</span></span>
+## <a name="planning-with-office-365-fasttrack"></a><span data-ttu-id="43a66-105">Planeación con Office 365 FastTrack</span><span class="sxs-lookup"><span data-stu-id="43a66-105">Planning with Office 365 FastTrack</span></span>
 
-<span data-ttu-id="8a919-106">[FastTrack para Office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365) es el mejor método para obtener ayuda de Microsoft para planear la implementación de Office 365.</span><span class="sxs-lookup"><span data-stu-id="8a919-106">[FastTrack for Office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365) is the best method for getting help from Microsoft for planning your Office 365 deployment.</span></span> <span data-ttu-id="8a919-107">FastTrack puede ayudarle a través de las consideraciones de diseño más comunes y puede responder a preguntas durante el proceso.</span><span class="sxs-lookup"><span data-stu-id="8a919-107">FastTrack can help you through the most common design considerations and can answer questions along the way.</span></span> 
-
->[!Note]
-><span data-ttu-id="8a919-108">También puede obtener ayuda de un [socio de Microsoft](https://www.microsoft.com/solution-providers/home).</span><span class="sxs-lookup"><span data-stu-id="8a919-108">You can also get help from a [Microsoft partner](https://www.microsoft.com/solution-providers/home).</span></span>
->
-
-## <a name="do-it-yourself-planning-for-office-365"></a><span data-ttu-id="8a919-109">Realice una planificación para Office 365</span><span class="sxs-lookup"><span data-stu-id="8a919-109">Do-it-yourself planning for Office 365</span></span>
-
-<span data-ttu-id="8a919-110">Para planificar Office 365 por su cuenta, recorra las decisiones de planeación y diseño de estas áreas:</span><span class="sxs-lookup"><span data-stu-id="8a919-110">To plan for Office 365 on your own, step through the planning and design decisions for these areas:</span></span>
-
-- <span data-ttu-id="8a919-111">Su espacio empresarial de Office 365</span><span class="sxs-lookup"><span data-stu-id="8a919-111">Your Office 365 tenant</span></span>
-
-  <span data-ttu-id="8a919-112">Incluye la planeación de las conexiones de red a Internet, las identidades de Office 365 y la integración con aplicaciones, local, Azure y otros elementos.</span><span class="sxs-lookup"><span data-stu-id="8a919-112">Includes planning for your network connections to the Internet, your Office 365 identities, and integration with apps, on-premises, Azure, and other elements.</span></span> <span data-ttu-id="8a919-113">Empiece [aquí](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span><span class="sxs-lookup"><span data-stu-id="8a919-113">Start [here](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span></span>
-
-- <span data-ttu-id="8a919-114">Compatibilidad con los clientes</span><span class="sxs-lookup"><span data-stu-id="8a919-114">Support for your clients</span></span>
-
-  <span data-ttu-id="8a919-115">Incluye la autenticación basada en certificados, la administración de dispositivos móviles, las opciones de autenticación y la colaboración entre espacios empresariales.</span><span class="sxs-lookup"><span data-stu-id="8a919-115">Includes certificate-based authentication, mobile device management, authentication options, and inter-tenant collaboration.</span></span> <span data-ttu-id="8a919-116">Empiece [aquí](office-365-client-support-certificate-based-authentication.md).</span><span class="sxs-lookup"><span data-stu-id="8a919-116">Start [here](office-365-client-support-certificate-based-authentication.md).</span></span>
-
-- <span data-ttu-id="8a919-117">Compatibilidad con la autenticación moderna híbrida</span><span class="sxs-lookup"><span data-stu-id="8a919-117">Support for hybrid modern authentication</span></span>
-
-  <span data-ttu-id="8a919-118">Incluye la planeación de la autenticación moderna cuando se usan configuraciones híbridas de las cargas de trabajo de la clave de Office 365.</span><span class="sxs-lookup"><span data-stu-id="8a919-118">Includes planning for modern authentication when using hybrid configurations of key Office 365 workloads.</span></span> <span data-ttu-id="8a919-119">Empiece [aquí](hybrid-modern-auth-overview.md).</span><span class="sxs-lookup"><span data-stu-id="8a919-119">Start [here](hybrid-modern-auth-overview.md).</span></span>
-
-- <span data-ttu-id="8a919-120">Clientes y servidores antiguos de Office</span><span class="sxs-lookup"><span data-stu-id="8a919-120">Older Office clients and servers</span></span>
-
-  <span data-ttu-id="8a919-121">Incluye información de migración para los productos de cliente y servidor de Office 2007 y Office 2010.</span><span class="sxs-lookup"><span data-stu-id="8a919-121">Includes migration information for Office 2007 and Office 2010 client and server products.</span></span> <span data-ttu-id="8a919-122">Empiece [aquí](plan-upgrade-previous-versions-office.md).</span><span class="sxs-lookup"><span data-stu-id="8a919-122">Start [here](plan-upgrade-previous-versions-office.md).</span></span>
+<span data-ttu-id="43a66-106">[FastTrack para Office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365) es el mejor método para obtener ayuda de Microsoft para planear la implementación de Office 365.</span><span class="sxs-lookup"><span data-stu-id="43a66-106">[FastTrack for Office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365) is the best method for getting help from Microsoft for planning your Office 365 deployment.</span></span> <span data-ttu-id="43a66-107">FastTrack puede ayudarle a través de las consideraciones de diseño más comunes y puede responder a preguntas durante el proceso.</span><span class="sxs-lookup"><span data-stu-id="43a66-107">FastTrack can help you through the most common design considerations and can answer questions along the way.</span></span> 
 
 >[!Note]
-><span data-ttu-id="8a919-123">También puede usar este proceso para su suscripción a [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) .</span><span class="sxs-lookup"><span data-stu-id="8a919-123">You can use this process for your [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) subscription as well.</span></span>
+><span data-ttu-id="43a66-108">También puede obtener ayuda de un [socio de Microsoft](https://www.microsoft.com/solution-providers/home).</span><span class="sxs-lookup"><span data-stu-id="43a66-108">You can also get help from a [Microsoft partner](https://www.microsoft.com/solution-providers/home).</span></span>
 >
 
-<span data-ttu-id="8a919-124">También puede iniciar sesión en su suscripción de Office 365 y usar los [asesores de implementación para los servicios de office 365](deployment-advisors-for-office-365.md).</span><span class="sxs-lookup"><span data-stu-id="8a919-124">You can also sign in to your Office 365 subscription and use the [Deployment advisors for Office 365 services](deployment-advisors-for-office-365.md).</span></span>
+## <a name="do-it-yourself-planning-for-office-365"></a><span data-ttu-id="43a66-109">Realice una planificación para Office 365</span><span class="sxs-lookup"><span data-stu-id="43a66-109">Do-it-yourself planning for Office 365</span></span>
+
+<span data-ttu-id="43a66-110">Para planificar Office 365 por su cuenta, recorra las decisiones de planeación y diseño de estas áreas:</span><span class="sxs-lookup"><span data-stu-id="43a66-110">To plan for Office 365 on your own, step through the planning and design decisions for these areas:</span></span>
+
+- <span data-ttu-id="43a66-111">Su espacio empresarial de Office 365</span><span class="sxs-lookup"><span data-stu-id="43a66-111">Your Office 365 tenant</span></span>
+
+  <span data-ttu-id="43a66-112">Incluye la planeación de las conexiones de red a Internet, las identidades de Office 365 y la integración con aplicaciones, local, Azure y otros elementos.</span><span class="sxs-lookup"><span data-stu-id="43a66-112">Includes planning for your network connections to the Internet, your Office 365 identities, and integration with apps, on-premises, Azure, and other elements.</span></span> <span data-ttu-id="43a66-113">Empiece [aquí](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span><span class="sxs-lookup"><span data-stu-id="43a66-113">Start [here](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span></span>
+
+- <span data-ttu-id="43a66-114">Compatibilidad con los clientes</span><span class="sxs-lookup"><span data-stu-id="43a66-114">Support for your clients</span></span>
+
+  <span data-ttu-id="43a66-115">Incluye la autenticación basada en certificados, la administración de dispositivos móviles, las opciones de autenticación y la colaboración entre espacios empresariales.</span><span class="sxs-lookup"><span data-stu-id="43a66-115">Includes certificate-based authentication, mobile device management, authentication options, and inter-tenant collaboration.</span></span> <span data-ttu-id="43a66-116">Empiece [aquí](office-365-client-support-certificate-based-authentication.md).</span><span class="sxs-lookup"><span data-stu-id="43a66-116">Start [here](office-365-client-support-certificate-based-authentication.md).</span></span>
+
+- <span data-ttu-id="43a66-117">Compatibilidad con la autenticación moderna híbrida</span><span class="sxs-lookup"><span data-stu-id="43a66-117">Support for hybrid modern authentication</span></span>
+
+  <span data-ttu-id="43a66-118">Incluye la planeación de la autenticación moderna cuando se usan configuraciones híbridas de las cargas de trabajo de la clave de Office 365.</span><span class="sxs-lookup"><span data-stu-id="43a66-118">Includes planning for modern authentication when using hybrid configurations of key Office 365 workloads.</span></span> <span data-ttu-id="43a66-119">Empiece [aquí](hybrid-modern-auth-overview.md).</span><span class="sxs-lookup"><span data-stu-id="43a66-119">Start [here](hybrid-modern-auth-overview.md).</span></span>
+
+- <span data-ttu-id="43a66-120">Clientes y servidores antiguos de Office</span><span class="sxs-lookup"><span data-stu-id="43a66-120">Older Office clients and servers</span></span>
+
+  <span data-ttu-id="43a66-121">Incluye información de migración para los productos de cliente y servidor de Office 2007 y Office 2010.</span><span class="sxs-lookup"><span data-stu-id="43a66-121">Includes migration information for Office 2007 and Office 2010 client and server products.</span></span> <span data-ttu-id="43a66-122">Empiece [aquí](plan-upgrade-previous-versions-office.md).</span><span class="sxs-lookup"><span data-stu-id="43a66-122">Start [here](plan-upgrade-previous-versions-office.md).</span></span>
+
+>[!Note]
+><span data-ttu-id="43a66-123">También puede usar este proceso para su suscripción a [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) .</span><span class="sxs-lookup"><span data-stu-id="43a66-123">You can use this process for your [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) subscription as well.</span></span>
+>
+
+<span data-ttu-id="43a66-124">También puede iniciar sesión en su suscripción de Office 365 y usar los [asesores de implementación para los servicios de office 365](deployment-advisors-for-office-365.md).</span><span class="sxs-lookup"><span data-stu-id="43a66-124">You can also sign in to your Office 365 subscription and use the [Deployment advisors for Office 365 services](deployment-advisors-for-office-365.md).</span></span>
 
 
 

@@ -6,14 +6,16 @@ manager: laurawi
 ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
-f1_keywords:
+ms.service: o365-administration
+localization_priority: Normal
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
 - O365p_AddUsersWithDirSync
 - O365M_AddUsersWithDirSync
 - O365E_HRCSetupAADConnectAboutLM617031
 - O365E_AddUsersWithDirSync
-ms.service: o365-administration
-localization_priority: Normal
-ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -24,37 +26,37 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo asignar licencias de Office 365 a cuentas de usuario, ya sea de forma individual o en función de la pertenencia a grupos.
-ms.openlocfilehash: 169f5a3c0bf75bf807c40338542e0ba15b79a1bc
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 3ffd51b6b3ab4add900746f14f013a307ca352ad
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813388"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843791"
 ---
-# <a name="assign-office-365-licenses-to-user-accounts"></a><span data-ttu-id="3bdcb-103">Asignar licencias de Office 365 a cuentas de usuario</span><span class="sxs-lookup"><span data-stu-id="3bdcb-103">Assign Office 365 licenses to user accounts</span></span>
+# <a name="assign-office-365-licenses-to-user-accounts"></a><span data-ttu-id="a0a87-103">Asignar licencias de Office 365 a cuentas de usuario</span><span class="sxs-lookup"><span data-stu-id="a0a87-103">Assign Office 365 licenses to user accounts</span></span>
 
-<span data-ttu-id="3bdcb-104">*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="3bdcb-104">*This article applies to both Office 365 Enterprise and Microsoft 365 Enterprise.*</span></span>
+<span data-ttu-id="a0a87-104">*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="a0a87-104">*This article applies to both Office 365 Enterprise and Microsoft 365 Enterprise.*</span></span>
 
-<span data-ttu-id="3bdcb-105">Para el modelo de identidad solo de nube, puede asignar licencias de Office 365 a las cuentas de usuario a medida que se crean, en función de cómo las cree.</span><span class="sxs-lookup"><span data-stu-id="3bdcb-105">For the cloud-only identity model, you can assign Office 365 licenses to user accounts as they are created, depending on how you create them.</span></span>
+<span data-ttu-id="a0a87-105">Para el modelo de identidad solo de nube, puede asignar licencias de Office 365 a las cuentas de usuario a medida que se crean, en función de cómo las cree.</span><span class="sxs-lookup"><span data-stu-id="a0a87-105">For the cloud-only identity model, you can assign Office 365 licenses to user accounts as they are created, depending on how you create them.</span></span>
 
-<span data-ttu-id="3bdcb-106">Para el modelo de identidad híbrida, cuando las cuentas de usuario de servicios de dominio de Active Directory (AD DS) se sincronizan por primera vez, no se les asigna automáticamente una licencia de Office 365.</span><span class="sxs-lookup"><span data-stu-id="3bdcb-106">For the hybrid identity model, when Active Directory Domain Services (AD DS) user accounts are synchronized for the first time, they are not automatically assigned an Office 365 license.</span></span>
+<span data-ttu-id="a0a87-106">Para el modelo de identidad híbrida, cuando las cuentas de usuario de servicios de dominio de Active Directory (AD DS) se sincronizan por primera vez, no se les asigna automáticamente una licencia de Office 365.</span><span class="sxs-lookup"><span data-stu-id="a0a87-106">For the hybrid identity model, when Active Directory Domain Services (AD DS) user accounts are synchronized for the first time, they are not automatically assigned an Office 365 license.</span></span>
 
-<span data-ttu-id="3bdcb-107">En cualquier caso, debe asignar una licencia a las cuentas de usuario para que los usuarios puedan acceder a los servicios de Office 365, como el correo electrónico y Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="3bdcb-107">In either case, you must assign a license to user accounts so your users can access Office 365 services, such as email and Microsoft Teams.</span></span>
+<span data-ttu-id="a0a87-107">En cualquier caso, debe asignar una licencia a las cuentas de usuario para que los usuarios puedan acceder a los servicios de Office 365, como el correo electrónico y Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="a0a87-107">In either case, you must assign a license to user accounts so your users can access Office 365 services, such as email and Microsoft Teams.</span></span>
 
-<span data-ttu-id="3bdcb-108">Puede asignar licencias a cuentas de usuario, ya sea de forma individual o automática, a través de la pertenencia a grupos.</span><span class="sxs-lookup"><span data-stu-id="3bdcb-108">You can assign licenses to user accounts either individually or automatically through group membership.</span></span>
+<span data-ttu-id="a0a87-108">Puede asignar licencias a cuentas de usuario, ya sea de forma individual o automática, a través de la pertenencia a grupos.</span><span class="sxs-lookup"><span data-stu-id="a0a87-108">You can assign licenses to user accounts either individually or automatically through group membership.</span></span>
 
-<span data-ttu-id="3bdcb-109">Para asignar licencias de Office 365 a cuentas de usuario individuales, puede usar:</span><span class="sxs-lookup"><span data-stu-id="3bdcb-109">To assign Office 365 licenses to individual user accounts, you can use:</span></span>
+<span data-ttu-id="a0a87-109">Para asignar licencias de Office 365 a cuentas de usuario individuales, puede usar:</span><span class="sxs-lookup"><span data-stu-id="a0a87-109">To assign Office 365 licenses to individual user accounts, you can use:</span></span>
 
-- [<span data-ttu-id="3bdcb-110">Centro de administración de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="3bdcb-110">The Microsoft 365 admin center</span></span>](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)
-- [<span data-ttu-id="3bdcb-111">PowerShell de Office 365</span><span class="sxs-lookup"><span data-stu-id="3bdcb-111">Office 365 PowerShell</span></span>](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
+- [<span data-ttu-id="a0a87-110">Centro de administración de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="a0a87-110">The Microsoft 365 admin center</span></span>](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)
+- [<span data-ttu-id="a0a87-111">PowerShell de Office 365</span><span class="sxs-lookup"><span data-stu-id="a0a87-111">Office 365 PowerShell</span></span>](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
 
-<span data-ttu-id="3bdcb-112">Para la asignación automática de licencias, consulte [licencias basadas en grupos en Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span><span class="sxs-lookup"><span data-stu-id="3bdcb-112">For automatic license assignment, see [group-based licensing in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span></span>
+<span data-ttu-id="a0a87-112">Para la asignación automática de licencias, consulte [licencias basadas en grupos en Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span><span class="sxs-lookup"><span data-stu-id="a0a87-112">For automatic license assignment, see [group-based licensing in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="3bdcb-113">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="3bdcb-113">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="a0a87-113">Siguientes pasos</span><span class="sxs-lookup"><span data-stu-id="a0a87-113">Next steps</span></span>
 
-<span data-ttu-id="3bdcb-114">Con el conjunto completo de cuentas de usuario a las que se han asignado licencias, ya está listo para:</span><span class="sxs-lookup"><span data-stu-id="3bdcb-114">With the full set of user accounts that have been assigned licenses, you are now ready to:</span></span>
+<span data-ttu-id="a0a87-114">Con el conjunto completo de cuentas de usuario a las que se han asignado licencias, ya está listo para:</span><span class="sxs-lookup"><span data-stu-id="a0a87-114">With the full set of user accounts that have been assigned licenses, you are now ready to:</span></span>
 
-- [<span data-ttu-id="3bdcb-115">Implementar seguridad</span><span class="sxs-lookup"><span data-stu-id="3bdcb-115">Implement security</span></span>](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
-- [<span data-ttu-id="3bdcb-116">Implementación de software de cliente, como Office 365 ProPlus</span><span class="sxs-lookup"><span data-stu-id="3bdcb-116">Deploy client software, such as Office 365 ProPlus</span></span>](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
-- [<span data-ttu-id="3bdcb-117">Configurar la administración de dispositivos móviles en Office 365</span><span class="sxs-lookup"><span data-stu-id="3bdcb-117">Set up Mobile Device Management in Office 365</span></span>](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
-- [<span data-ttu-id="3bdcb-118">Configuración de servicios y aplicaciones</span><span class="sxs-lookup"><span data-stu-id="3bdcb-118">Configure services and applications</span></span>](configure-services-and-applications.md)
+- [<span data-ttu-id="a0a87-115">Implementar seguridad</span><span class="sxs-lookup"><span data-stu-id="a0a87-115">Implement security</span></span>](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
+- [<span data-ttu-id="a0a87-116">Implementación de software de cliente, como Office 365 ProPlus</span><span class="sxs-lookup"><span data-stu-id="a0a87-116">Deploy client software, such as Office 365 ProPlus</span></span>](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+- [<span data-ttu-id="a0a87-117">Configurar la administración de dispositivos móviles en Office 365</span><span class="sxs-lookup"><span data-stu-id="a0a87-117">Set up Mobile Device Management in Office 365</span></span>](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [<span data-ttu-id="a0a87-118">Configuración de servicios y aplicaciones</span><span class="sxs-lookup"><span data-stu-id="a0a87-118">Configure services and applications</span></span>](configure-services-and-applications.md)
