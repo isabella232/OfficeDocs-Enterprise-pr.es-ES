@@ -13,16 +13,18 @@ search.appverid:
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: vea estos artículos para obtener información sobre los puntos de conexión de Internet de las diferentes nubes de Office 365.'
-ms.openlocfilehash: 372986a8ed6b8d7ced8912712d0546082b957b79
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 29fb2dab9873aad5f54c678de482941d25d6161f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069666"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843581"
 ---
 # <a name="office-365-endpoints"></a>Puntos de conexión de Office 365
 

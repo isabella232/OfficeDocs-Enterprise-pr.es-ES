@@ -11,6 +11,8 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.reviewer: pandrew
 search.appverid:
@@ -18,12 +20,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: El servicio web de URL y dirección IP de Office 365 le ayuda a identificar y a diferenciar mejor el tráfico de red de Office 365, lo que facilita la evaluación, la configuración y la actualización de los cambios.
-ms.openlocfilehash: 0a12b4dda9e4c931a34797aa2fc59803b97ddd36
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 7a1d882b6bc5e34e3d59cf4bade30a58a1c76d6f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721931"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843603"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>El servicio web de URL y dirección IP de Office 365
 
