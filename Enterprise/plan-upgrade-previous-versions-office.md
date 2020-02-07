@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Si usa Office 2007 u Office 2010, es el momento de planear la actualización. No se bloquee con aplicaciones y servidores obsoletos y no admitidos. Use estos recursos para empezar a trabajar con su plan.
-ms.openlocfilehash: 2eee3efccfce79bcab7f2d179e13f46fbfc7a501
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: b654dcd7b8f923f952a6e2fbefe37a5e523e1cd4
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747063"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841717"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planeación de la actualización de los servidores y clientes de Office 2007 u Office 2010
 
@@ -97,11 +99,11 @@ Microsoft 365 es la forma de transformar digitalmente su negocio con la mejora c
 |[Documentación de Microsoft 365 Education](https://docs.microsoft.com/microsoft-365/education/) <br/> |Obtenga información detallada sobre la versión de Microsoft 365 para organizaciones educativas.  <br/> |
 |[Documentación y recursos de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |Obtenga información detallada sobre la versión de Microsoft 365 para organizaciones empresariales.  <br/> |
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 [Actualizar los clientes y servidores de Office 2007](upgrade-from-office-2007-servers-and-products.md)
 
-o bien
+o
 
 [Actualizar los clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)
    

@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute para Office 365 proporciona una ruta de acceso de enrutamiento alternativa a muchos servicios de Office 365 de conexión a Internet. La arquitectura de ExpressRoute para Office 365 se basa en los prefijos IP públicos de publicidad de los servicios de Office 365 a los que ya se puede tener acceso a través de Internet en los circuitos de ExpressRoute aprovisionados para la redistribución posterior de dichos prefijos IP en la red. Con ExpressRoute, se habilitan de manera eficaz varias rutas de acceso de enrutamiento diferentes, a través de Internet y de ExpressRoute, para muchos servicios de Office 365. Este estado de enrutamiento en la red puede representar un cambio importante en la forma en que se diseña la topología de la red interna.
-ms.openlocfilehash: 0b200c3a7a54d28aee20b03c850c908bfd1c868d
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 63d7c887f9900250a81fe1428d8b5b5cd3df9b81
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813488"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840187"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
 
@@ -101,7 +103,7 @@ Las conexiones entrantes deben revisarse independientemente de si se conectan a 
   
 A continuación, se muestra un ejemplo del nivel de detalle necesario. En este caso, Exchange Hybrid se enrutaría al sistema local a través de ExpressRoute.
 
-|**Connection (propiedad)**|**Valor**|
+|**Connection (propiedad)**|**Value**|
 |:-----|:-----|
 |**Dirección del tráfico de red** <br/> |Entrada  <br/> |
 |**Servicio** <br/> |Exchange Hybrid  <br/> |
@@ -118,7 +120,7 @@ A continuación, se muestra un ejemplo del nivel de detalle necesario. En este c
 
 Este es un ejemplo de un servicio que solo es saliente:
 
-|**Connection (propiedad)**|**Valor**|
+|**Connection (propiedad)**|**Value**|
 |:-----|:-----|
 |**Dirección del tráfico de red** <br/> |Salida  <br/> |
 |**Servicio** <br/> |SharePoint Online  <br/> |
@@ -570,7 +572,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/impleme
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Evaluar la red de Office 365](assessing-network-connectivity.md)
+[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute para Office 365](azure-expressroute.md)
   

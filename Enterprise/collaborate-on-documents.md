@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: Obtenga información sobre cómo colaborar con invitados en un documento en SharePoint y OneDrive.
-ms.openlocfilehash: f2cecb086116e5ea3322a0fd87e5f07f5c30443c
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: d4c7a62fbf4ca94e0f6dd61018f723801a3966a7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919354"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845091"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar con invitados en un documento
 
@@ -61,7 +63,7 @@ Para SharePoint, elija la configuración más permisiva que necesitará cualquie
 Para establecer la configuración de uso compartido en el nivel de la organización de SharePoint
 
 1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración**, haga clic en **SharePoint**.
-2. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
+2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
 3. Asegúrese de que el uso compartido externo para SharePoint o OneDrive está establecido en **cualquiera** o **invitados nuevos o existentes**. (Tenga en cuenta que la configuración de OneDrive no puede ser más permisiva que la configuración de SharePoint).
 4. Si ha realizado cambios, haga clic en **Guardar**.
 

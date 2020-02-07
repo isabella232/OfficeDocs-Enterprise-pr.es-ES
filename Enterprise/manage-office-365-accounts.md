@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Obtenga información sobre qué herramientas usar para administrar los usuarios de Office 365 y cómo lo que puede usar depende de cómo administre las identidades de usuario. '
-ms.openlocfilehash: 3e29af9e3d01184f9edc386148de60897fb03e27
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 0cfb1496dd97eb932afc4e90a6d9469289332c2d
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490743"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843721"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Herramientas para administrar cuentas de Office 365
 
@@ -74,7 +76,7 @@ A la hora de decidir la forma en que su organización va a crear y administrar c
     > [!IMPORTANT]
     > La creación de cuentas en Office 365 sin asignar una licencia (en SharePoint Online, por ejemplo) significa que el propietario de la cuenta puede ver el portal de Office 365, pero no puede tener acceso a ninguno de los servicios de la suscripción de la compañía. Después de asignar una ubicación y la licencia, la cuenta se replica en el servicio o los servicios que asignó. El usuario puede iniciar sesión en su cuenta y usar los servicios que se le asignaron. 
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Integración de Office 365 con entornos locales](office-365-integration.md)
   

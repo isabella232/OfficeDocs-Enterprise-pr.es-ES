@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: Obtenga información sobre las recomendaciones de rendimiento para sitios modernos en SharePoint Online.
-ms.openlocfilehash: e868b765fe46d8f6ee26443d6e75d31a39bb3281
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 227eadd780acbe35456ca48204762411bed6c10f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078405"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844791"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>Límites de sitio del portal de SharePoint Online moderno
 
@@ -65,7 +67,7 @@ Muchas de las instrucciones de este artículo se centran en minimizar y optimiza
 
 [Ajustar el rendimiento de Office 365](tune-office-365-performance.md)
 
-[SharePoint Online limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (Límites de SharePoint Online)
+[Límites de SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
 [Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 

@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,12 +21,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Hay sencillas formas de comprobar el rendimiento de la conexión entre Office 365 y su empresa que le permitirá establecer una línea de base aproximada de su conectividad. Conocer el historial de rendimiento de las conexiones de los equipos cliente puede ayudarle a detectar los problemas emergentes con anticipación, la identificación y la predicción de los problemas.
-ms.openlocfilehash: 03aa4f9092154e00201ca0a58f335b70d26f3b11
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2eed0b20886552c207399ab4144b63364132f98c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078139"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844341"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento
 
@@ -239,7 +241,7 @@ Debe usar [PSPing](https://technet.microsoft.com/sysinternals/jj729731.aspx) u o
   
 1. Para ejecutar un símbolo del sistema con privilegios elevados, siga estos pasos:
     
-1. Haga clic en  **Iniciar **.
+1. Haga clic en **Iniciar**.
     
 2. En el cuadro **Iniciar búsqueda** , escriba cmd y, a continuación, presione Ctrl + Mayús + entrar.
     
@@ -267,7 +269,7 @@ Si no está familiarizado con la omisión de proxy y prefiere realizar todas las
   
 1. Para ejecutar un símbolo del sistema con privilegios elevados, siga estos pasos:
     
-1. Haga clic en  **Iniciar **.
+1. Haga clic en **Iniciar**.
     
 2. En el cuadro **Iniciar búsqueda** , escriba cmd y, a continuación, presione Ctrl + Mayús + entrar.
     

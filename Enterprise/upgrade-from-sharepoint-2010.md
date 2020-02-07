@@ -16,13 +16,15 @@ search.appverid:
 - WSU140
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
+f1.keywords:
+- NOCSH
 description: La compatibilidad finaliza para SharePoint 2010 y SharePoint Server 2010 finaliza el 13 de octubre de 2020. Use este artículo como guía para actualizar a SharePoint Online o a una versión más reciente de SharePoint Server local.
-ms.openlocfilehash: 95feda3f05f3ecfabb473b6331962de811690770
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 51c372bf2d96c245223a1ea3776f889e60bf4491
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747302"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841057"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 

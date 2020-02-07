@@ -10,13 +10,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
+f1.keywords:
+- NOCSH
 description: Este artículo es una versión de texto accesible del diagrama con el nombre Integración de red de los productos de servidor de Microsoft Office.
-ms.openlocfilehash: d63b3b581a03840676393657d6ed641e11046ef9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: def94a4523ad78676d6a9532a60dcba78032f23b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068566"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843871"
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>Diagrama accesible: Integración de redes de productos de servidores de Microsoft Office
 

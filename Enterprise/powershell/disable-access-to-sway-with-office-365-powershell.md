@@ -9,17 +9,19 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
 description: Obtenga información acerca de dónde descargar el script ManageSway.ps1 de PowerShell que le permite deshabilitar el acceso a Sway en la organización de Office 365.
-ms.openlocfilehash: c256a4c77bf6cf9967db2c497c1d942923d7d63e
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: c9cb31c2bdc2b4fd30f74ffa39bd288549f51f18
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747642"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841517"
 ---
 # <a name="disable-access-to-sway-with-office-365-powershell"></a>Deshabilitar el acceso a Sway con Office 365 PowerShell
 

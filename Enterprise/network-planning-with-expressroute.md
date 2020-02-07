@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute para Office 365 ofrece conectividad de nivel 3 entre la red y los centros de recursos de Microsoft. Los circuitos usan anuncios de ruta de protocolo de puerta de enlace de borde (BGP) de los servidores front-end de Office 365. Desde la perspectiva de los dispositivos locales, cuando es necesario seleccionar la ruta TCP/IP correcta a Office 365, Azure ExpressRoute se ve como una alternativa a Internet.
-ms.openlocfilehash: 8e8c1e1790e38b4e0e858a4a72266de9fcdc8157
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 2f38b88b5d940d1a8aa171c777e82a4a308be0cf
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814638"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844561"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planeamiento de redes con ExpressRoute para Office 365
 
@@ -192,7 +194,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/plannin
 ## <a name="related-topics"></a>Temas relacionados
 <a name="BKMK_high-availability"> </a>
 
-[Evaluar la red de Office 365](assessing-network-connectivity.md)
+[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute para Office 365](azure-expressroute.md)
   

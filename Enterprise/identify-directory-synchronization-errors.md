@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -19,12 +21,12 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Obtenga información sobre cómo ver los errores de sincronización de directorios en el centro de administración de Microsoft 365.
-ms.openlocfilehash: b1cda68590131967ea2fe91506c8e71769f4c32b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e270b7f1bc29d952cd07a7b3430a1a9a50b67783
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067526"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840177"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Ver errores de sincronización de directorios en Office 365
 
@@ -48,7 +50,7 @@ Para ver los errores en el centro de administración:
     
     En la parte inferior de la página puede ver si hay errores de sincronización de directorios.
     
-    ![En la página estado de sincronización de directorios puede ver si hay errores de objetos dirSync](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
+    ![En la página estado de sincronización de directorios puede ver si hay errores de objetos DirSync](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
   
     Elija **encontramos errores de objeto** de sincronización de directorios para ir a una vista detallada de los errores de sincronización de directorios. 
     

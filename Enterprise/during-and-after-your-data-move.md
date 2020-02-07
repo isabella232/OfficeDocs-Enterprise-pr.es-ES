@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
+f1.keywords:
+- NOCSH
 description: Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
-ms.openlocfilehash: f98d3a9aaef1197b1f424ce8cbd23b3d18b7ef2b
-ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
+ms.openlocfilehash: 58c4b407062c5472e9c5908d34b084a2d192227d
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "40923862"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840377"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -88,7 +90,7 @@ Una vez que haya terminado de mover los datos de SharePoint Online, es posible q
     
 - Estamos quitando las copias transcodificadas del centro de recursos anterior y transformarlas de nuevo en el nuevo centro de recursos.
     
-### <a name="search"></a>Buscar 
+### <a name="search"></a>Buscar
 
 En el transcurso del traslado de los datos de SharePoint Online, migramos el índice de búsqueda y la configuración de búsqueda a una nueva ubicación. Hasta que haya **completado** el traslado de los datos de SharePoint Online, seguiremos atendiendo a los usuarios del índice en la ubicación original. En la nueva ubicación, la búsqueda comienza automáticamente el rastreo del contenido después de haber terminado de mover los datos de SharePoint Online. A partir de este punto, traponemos a sus usuarios del índice migrado. Los cambios en el contenido que se produjeron después de la migración no se incluyen en el índice migrado hasta que el rastreo los seleccione. La mayoría de los clientes no aprecian que los resultados sean menos actualizados después de haber terminado de mover los datos de SharePoint Online, pero algunos clientes podrían experimentar una actualización reducida en las primeras 24-48 horas. 
   

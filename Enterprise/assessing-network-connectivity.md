@@ -1,5 +1,5 @@
 ---
-title: Evaluar la red de Office 365
+title: Evaluar la conectividad de red de Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 está diseñado para permitir que los clientes de todo el mundo se conecten al servicio con una conexión a Internet. A medida que el servicio evoluciona, la seguridad, el rendimiento y la confiabilidad de Office 365 se han mejorado en función de los clientes que usan Internet para establecer una conexión con el servicio.
-ms.openlocfilehash: 8b784da9dcb8b5e821197e72ccc5ab49b976ba74
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: c96cb8aa7341c0749d198e1fa5459433c40e1062
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745723"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844701"
 ---
-# <a name="assessing-office-365-network-connectivity"></a>Evaluar la red de Office 365
+# <a name="assessing-office-365-network-connectivity"></a>Evaluar la conectividad de red de Office 365
 
 *Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 

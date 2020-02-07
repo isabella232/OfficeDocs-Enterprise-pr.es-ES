@@ -9,16 +9,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
+f1.keywords:
+- NOCSH
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumen: información general sobre los controles de acceso administrativo de Office 365 y la categorización de datos.'
-ms.openlocfilehash: e8cc470c617deea7435841f276b772b0a8ef17a3
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: f902b123b26f2c71cb6597f66fc47142e2f2b44c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067859"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844541"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Controles de acceso administrativo en Office 365 
 
@@ -29,7 +31,7 @@ De forma predeterminada, los ingenieros de Microsoft tienen privilegios administ
 Microsoft proporciona servicios en línea con varios formularios de entrega de nube:
 
 - **Nubes públicas:** Incluye versiones de varios inquilinos de Office 365, Azure y otros servicios hospedados en Norteamérica, Sudamérica, Europa, Asia, Australia, etc.
-- **Nubes nacionales:** Incluye todas las nubes soberanos y de terceros operadas fuera de los Estados Unidos (excepto las que se han mencionado anteriormente), como Office 365 en China (operado por 21Vianet) y Office 365 en Alemania (operado por Microsoft, pero bajo un modelo en el que se confía en los datos en alemán; Deutsche Telekom, controla y supervisa el acceso de Microsoft a los datos de los clientes y los sistemas que contienen datos del cliente).
+- **Nubes nacionales:** Incluye todas las nubes soberanos y de terceros operadas fuera de los Estados Unidos (excepto las que se mencionan anteriormente), como Office 365 en China (ofrecido por 21Vianet) y Office 365 en Alemania (operado por Microsoft, pero bajo un modelo en el que un administrador de confianza de datos en alemán, Deutsche Telekom, controla y supervisa el acceso por parte
 - **Nubes gubernamentales:** Incluye los servicios de Office 365 y Azure que están disponibles para los clientes del gobierno de Estados Unidos.
 
 A efectos de este artículo, los servicios de Office 365 incluyen:
@@ -54,7 +56,7 @@ Los datos de los clientes son todos los datos proporcionados por o en nombre de 
 - Contenido de SharePoint Online
 - Mensajes instantáneos
 - Elementos de calendario
-- Documents
+- Documentos
 - Contactos
 - Información de identificación del usuario final (EUII) (datos que son únicos para un usuario o que son vinculables a un usuario individual pero que no incluyen contenido del cliente).
 

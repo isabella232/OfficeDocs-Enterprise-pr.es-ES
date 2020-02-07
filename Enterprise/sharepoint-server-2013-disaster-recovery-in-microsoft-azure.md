@@ -11,15 +11,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Resumen: con Azure, puede crear un entorno de recuperación ante desastres para la granja de servidores local de SharePoint. En este artículo se describe cómo diseñar e implementar esta solución.'
-ms.openlocfilehash: cd350cca38b3cf11764e34bf5f0744f8a3c50190
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: d9d17ca3357e3297a0cfba2a764cb0468fd1a0ed
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031525"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841187"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
 
@@ -110,7 +112,7 @@ Después de realizar una recuperación, esta solución proporciona los elementos
   
 **Tabla: Objetivos de recuperación de solución**
 
-|**Elemento**|**Descripción**|
+|**Item**|**Descripción**|
 |:-----|:-----|
 |Sitios y contenido  <br/> |Los sitios y el contenido están disponibles en el entorno de recuperación.  <br/> |
 |Una nueva instancia de búsqueda  <br/> |En esta solución de espera semiactiva, la búsqueda no se restaura a partir de las bases de datos de búsqueda. Los componentes de búsqueda de la granja de servidores de recuperación se configuran lo más parecido posible a la granja de servidores de producción. Después de restaurar los sitios y el contenido, se inicia un rastreo completo para recompilar el índice de búsqueda. No es necesario esperar a que se complete el rastreo para que los sitios y el contenido estén disponibles.  <br/> |
@@ -120,7 +122,7 @@ Puede trabajar con los Servicios de Consultoría de Microsoft (MCS) o un socio p
   
 **Tabla: Otros elementos que MCS o un socio pueden tratar**
 
-|**Elemento**|**Descripción**|
+|**Item**|**Descripción**|
 |:-----|:-----|
 |Sincronización de soluciones de granja personalizadas  <br/> |Lo ideal es que la configuración de la granja de servidores de recuperación sea idéntica a la granja de servidores de producción. Puede trabajar con un consultor o un socio para evaluar si se replicarán las soluciones de granja personalizadas y si hay un proceso para mantener los dos entornos sincronizados.  <br/> |
 |Conexiones a orígenes de datos de locales  <br/> |No sería práctico replicar las conexiones en sistemas de datos back-end, como conexiones de controlador de dominio de reserva (BDC) y orígenes de contenido de búsqueda.  <br/> |
@@ -321,7 +323,7 @@ En esta tabla se proporcionan vínculos a entradas de blog y artículos de refer
   
 **Tabla: Artículos de referencia de DFSR**
 
-|**Title**|**Descripción**|
+|**Título**|**Descripción**|
 |:-----|:-----|
 |[Replicación](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |Tema de TechNet sobre administración de DFS con vínculos para la replicación  <br/> |
 |[Replicación DFS: Guía de supervivencia](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Sitio wiki con vínculos a información sobre DFS  <br/> |

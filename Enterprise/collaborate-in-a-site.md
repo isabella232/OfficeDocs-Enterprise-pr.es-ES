@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: Obtenga información sobre cómo colaborar con invitados en un sitio de SharePoint.
-ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261363"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845071"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -84,7 +86,7 @@ Para establecer la configuración de uso compartido en el nivel de la organizaci
 El siguiente paso es crear el sitio que va a usar para colaborar con los invitados.
 
 Para crear un sitio
-1. En el centro de administración de SharePoint, en **sitios**, haga clic en **sitios activos**.
+1. En el Centro de administración de SharePoint, en **Sitios**, haga clic en **Sitios activos**.
 2. Haga clic en **Crear**.
 3. Haga clic en **sitio de grupo**.
 4. Escriba un nombre de sitio y escriba un nombre para el propietario del grupo (propietario del sitio).

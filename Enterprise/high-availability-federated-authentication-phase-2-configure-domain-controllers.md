@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Resumen: Configure los controladores de dominio y el servidor de sincronización de directorios para la autenticación federada de alta disponibilidad para Office 365 en Microsoft Azure.'
-ms.openlocfilehash: bf5ee3a63d12d369a6d318f5fc23fa4577730768
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: e43787817287779330e28236700f1a710c37dceb
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072392"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840317"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio
 
@@ -34,13 +36,13 @@ Primero, necesita rellenar la columna de **Nombre de la máquina virtual** de la
   
 |**Elemento**|**Nombre de máquina virtual**|**Imagen de la galería**|**Tipo de almacenamiento**|**Tamaño mínimo**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  (primer controlador de dominio, ejemplo DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  (segundo controlador de dominio, ejemplo DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![line](./media/Common-Images/TableLine.png) (servidor de sincronización de directorios, ejemplo DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![line](./media/Common-Images/TableLine.png) (primer servidor de AD FS, ejemplo ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![line](./media/Common-Images/TableLine.png) (segundo servidor de AD FS, ejemplo ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![line](./media/Common-Images/TableLine.png) (primer servidor proxy de aplicación Web, ejemplo WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![line](./media/Common-Images/TableLine.png) (segundo servidor de proxy de aplicación Web, de ejemplo, WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![línea](./media/Common-Images/TableLine.png)  (primer controlador de dominio, ejemplo DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![línea](./media/Common-Images/TableLine.png)  (segundo controlador de dominio, ejemplo DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![línea](./media/Common-Images/TableLine.png) (servidor de sincronización de directorios, ejemplo DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![línea](./media/Common-Images/TableLine.png) (primer servidor de AD FS, ejemplo ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![línea](./media/Common-Images/TableLine.png) (segundo servidor de AD FS, ejemplo ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![línea](./media/Common-Images/TableLine.png) (primer servidor proxy de aplicación Web, ejemplo WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![línea](./media/Common-Images/TableLine.png) (segundo servidor de proxy de aplicación Web, de ejemplo, WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **Tabla M: máquinas virtuales para la autenticación federada de alta disponibilidad para Office 365 en Azure**
   

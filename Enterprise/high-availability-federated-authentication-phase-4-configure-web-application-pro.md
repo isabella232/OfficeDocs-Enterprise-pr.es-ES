@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumen: Configure los servidores proxy de aplicación web para la autenticación federada de alta disponibilidad para Office 365 en Microsoft Azure.'
-ms.openlocfilehash: 0ab2526209bc9c59fdce839e0f50451b23d78b04
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 9dedf8197cc24f82d516b75ecf29caca6d1f09b4
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257499"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840167"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 de la autenticación federada de alta disponibilidad: Configurar los proxy de aplicación web
 
@@ -62,13 +64,13 @@ Debe determinar el nombre DNS para identificar el nombre del servicio de Federac
   
 Una vez que tenga el servicio de Federación FQDN, cree un registro de dominio DNS público a para el servicio de Federación FQDN que se resuelve en la dirección IP pública del equilibrador de carga de Azure accesible desde Internet.
   
-|**Name**|**Type**|**TTL**|**Valor**|
+|**Name**|**Type**|**TTL**|**Value**|
 |:-----|:-----|:-----|:-----|
 |servicio de Federación FQDN  <br/> |A  <br/> |3600  <br/> |Dirección IP pública del equilibrador de carga de Azure accesible desde Internet (mostrado por el comando **write-host** en la sección anterior) <br/> |
    
 Aquí le mostramos un ejemplo:
   
-|**Name**|**Type**|**TTL**|**Valor**|
+|**Name**|**Type**|**TTL**|**Value**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -156,7 +158,7 @@ Esta es la configuración completada después de la finalización correcta de es
 
 ![Fase 4 de la infraestructura de autenticación federada de Office 365 de alta disponibilidad en Azure con los servidores proxy de aplicación Web](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Use [Phase 5: configure Federated Authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) para seguir configurando esta carga de trabajo.
   

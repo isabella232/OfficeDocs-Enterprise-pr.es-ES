@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: ¿Necesita conocer los pasos que debe seguir para identificar y corregir los intervalos, los bloqueos y el rendimiento lento entre SharePoint Online, OneDrive para la empresa, Exchange online o Skype empresarial online, y el equipo cliente? Antes de llamar al soporte técnico, este artículo puede ayudarle a solucionar problemas de rendimiento de Office 365 e incluso a solucionar algunos de los problemas más comunes.
-ms.openlocfilehash: 1740e73c298578b4a13e254081ae62b795aed0ab
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 7bb8ce4884ad7419cfc7e9c895ea7e1783042b1b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814628"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841817"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plan de solución de problemas de rendimiento para Office 365
 
@@ -139,7 +141,7 @@ Grabación de acciones de usuario, o PSR. exe, permite registrar los problemas q
 
 3. Haga clic en **Detener grabación** cuando haya completado los pasos. Si el problema de rendimiento es representación de una página, espere a que la página se represente antes de detener la grabación.
 
-4. Haga clic en **Guardar **.
+4. Haga clic en **Guardar**.
 
 ![Captura de pantalla de los grabadores de acciones o PSR. exe.](media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
   

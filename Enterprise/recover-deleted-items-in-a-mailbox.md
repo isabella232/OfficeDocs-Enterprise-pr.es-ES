@@ -15,13 +15,15 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
-description: 'Este artículo está destinado a los administradores. ¿Un usuario elimina permanentemente los elementos de su buzón de Outlook? El usuario desea volver a hacerlo, pero no puede recuperarlos. Es posible que pueda recuperar los elementos purgados si no se han quitado permanentemente del buzón de correo del usuario. '
-ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+f1.keywords:
+- NOCSH
+description: 'Este artículo está dirigido a administradores. ¿Un usuario elimina permanentemente los elementos de su buzón de Outlook? El usuario desea volver a hacerlo, pero no puede recuperarlos. Es posible que pueda recuperar los elementos purgados si no se han quitado permanentemente del buzón de correo del usuario. '
+ms.openlocfilehash: 869bef4b801b92d0e48daaec266cb3a705cb577f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38308605"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845131"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Recuperar elementos eliminados en un buzón de usuario. Ayuda para administradores
 

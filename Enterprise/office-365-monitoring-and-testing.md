@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 'Resumen: una explicación de cómo Microsoft supervisa y comprueba los límites de inquilino para Office 365.'
-ms.openlocfilehash: 4a986795537f8871d3f3e60c9ff4112e6fe3f668
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 757e80296e63e5379474448c0d89763371472aa2
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035520"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842637"
 ---
 # <a name="monitoring-and-testing-tenant-boundaries"></a>Supervisar y probar los límites de inquilinos
 

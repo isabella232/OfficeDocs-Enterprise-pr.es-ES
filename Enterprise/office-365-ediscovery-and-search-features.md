@@ -13,13 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+f1.keywords:
+- NOCSH
 description: Información general sobre la característica de exhibición de documentos electrónicos y otras características de búsqueda en Office 365 para auditar el uso y la transparencia.
-ms.openlocfilehash: 9c0c9b7c054a59ed87ce65432c73df563594b2a2
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 16cb8ac4703142b73d4f56bce9390743495d3fc2
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076214"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843654"
 ---
 # <a name="ediscovery-and-search-features"></a>Características de búsqueda y eDiscovery 
 
@@ -46,7 +48,7 @@ En la tabla siguiente se detalla parte de la información que se muestra en los 
 | ClientIP | Dirección IPv4 o IPv6 del dispositivo que se usó cuando se registró la actividad. |
 | CreationTime | Fecha y hora en la hora universal coordinada (UTC) cuando el usuario llevó a cabo la actividad. |
 | EventSource | Identifica que se ha producido un evento. Los valores posibles son SharePoint y ObjectModel. |
-| Id. | IDENTIFICADOR de la entrada de informe. El identificador identifica de forma única la entrada del informe. |
+| ID | IDENTIFICADOR de la entrada de informe. El identificador identifica de forma única la entrada del informe. |
 | Operación | Nombre del usuario o actividad, que corresponde al valor seleccionado en la actividad mostrar resultados para este usuario. |
 | OrganizationId | GUID para el servicio Office 365 de la organización en el que se produjo el evento. |
 | UserAgent | Información sobre el explorador del usuario, proporcionada por el explorador. |

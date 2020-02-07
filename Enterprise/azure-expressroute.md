@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Obtenga información sobre cómo se usa Azure ExpressRoute con Office 365 y cómo planear el proyecto de implementación de red que será necesario si está implementando Azure ExpressRoute para usarlo con Office 365.
-ms.openlocfilehash: 63ac8c23a6b36ed6ed079a20f05ca5fdfdcfcb83
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 76d90e4c60e04302e8a14f3020ac0f968bf018ae
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745743"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844931"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute para Office 365
 
@@ -100,7 +102,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/express
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Evaluar la red de Office 365](assessing-network-connectivity.md)
+[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)
 
 [Administrar ExpressRoute para la conectividad de Office 365](managing-expressroute-for-connectivity.md)
 

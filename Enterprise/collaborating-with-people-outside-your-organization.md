@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: Obtenga información sobre cómo configurar Office 365 para la colaboración con personas de fuera de la organización.
-ms.openlocfilehash: d343594319f40a3fa3ab2bb619c91f9a3a03ca62
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 747f2d40ade4396979450c3e2d27f387c7bd8aca
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919324"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840777"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Colaborar con personas fuera de la organización
 
@@ -28,6 +30,6 @@ De forma predeterminada, en Microsoft 365, el uso compartido con personas de fue
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 
-[Limitar la exposición accidental a los archivos al compartirlos con personas de fuera de la organización](sharing-limit-accidental-exposure.md)
+[Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización](sharing-limit-accidental-exposure.md)
 
 [Crear un entorno de uso compartido de invitado seguro](create-a-secure-guest-sharing-environment.md))

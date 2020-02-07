@@ -13,13 +13,15 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
+f1.keywords:
+- NOCSH
 ms.author: robmazz
-ms.openlocfilehash: f655daf2887fd5bf8cc82065dc0cc53282b13146
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: f4dd985efa512de8300acc7a02c9c505acb47c38
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38030664"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845061"
 ---
 <h1>Office 365 Enterprise</h1>
 <p>Microsoft Office&nbsp;365 ofrece eficaces servicios en la nube en línea que permiten la colaboración, la seguridad y el cumplimiento, la movilidad y la inteligencia y análisis. Esta página proporciona vínculos a instrucciones para administradores y profesionales de ti que implementan, configuran y administran&nbsp;servicios de Office 365 en organizaciones empresariales.</p>
@@ -256,7 +258,7 @@ ms.locfileid: "38030664"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 Tech Community</h3>
+                        <h3>Comunidad técnica de Office 365</h3>
                         <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Obtenga información sobre los procedimientos recomendados, las noticias y las últimas tendencias y temas relacionados&nbsp;con Office 365.</a></p>
                     </div>
                 </div>

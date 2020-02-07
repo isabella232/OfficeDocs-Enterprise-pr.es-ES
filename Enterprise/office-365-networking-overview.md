@@ -13,13 +13,15 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- NOCSH
 description: Se explica por qué es importante la optimización de red para los servicios SaaS, el objetivo de la red de Office 365 y cómo SaaS requiere distintas redes de otras cargas de trabajo.
-ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747712"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844361"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Introducción a la conectividad de red de Office 365
 
@@ -102,7 +104,7 @@ La optimización del rendimiento de la red de Office 365 realmente se reduce a l
 
 [Dirección IP de Office 365 y servicio web de URL](office-365-ip-web-service.md)
 
-[Evaluar la red de Office 365](assessing-network-connectivity.md)
+[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)
 
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
 

@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -17,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Obtenga información sobre cómo desactivar la sincronización de directorios. También puede ver su estado.
-ms.openlocfilehash: 4204d72719e928982b2b6222fb971d62c0f1f8d6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 74e2eee0086e4f8098221f4aaa30d408091a6a0f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070416"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840987"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Ver el estado de sincronización de directorios en Office 365
 
@@ -31,7 +33,7 @@ Si ha integrado su Active Directory local con Azure AD mediante la sincronizaci�
 ## <a name="view-directory-synchronization-status"></a>Ver el estado de sincronización de directorios
 
 - Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) y elija **Estado de sincronización de directorios** en la Página principal.
-- **** \> Como alternativa, puede ir a usuarios **activos**y, en la página **usuarios activos** , elija **más** \> **sincronización de directorios**. En el panel **sincronización de directorios** , elija **ir a administración de sincronización**de directorios.
+- Como alternativa, puede **ir a** \> usuarios **activos**y, en la página **usuarios activos** , elija **más** \> **sincronización de directorios**. En el panel **sincronización de directorios** , elija **ir a administración de sincronización**de directorios.
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Información en la página administrar la sincronización de directorios
 

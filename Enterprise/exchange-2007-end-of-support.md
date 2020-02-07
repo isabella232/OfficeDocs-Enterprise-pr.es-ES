@@ -10,13 +10,15 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
+f1.keywords:
+- NOCSH
 description: El 11 de abril de 2017, el 2007 del servidor de Exchange alcanzó el final del soporte técnico. Si todavía no ha iniciado la migración de Exchange 2007 a Office 365 o Exchange 2016, ahora es el momento de empezar la planeación.
-ms.openlocfilehash: fbc2c4d0de03f27020cedf5458d7e94f880715dd
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 67e6a8f271fd8d553895ba086ed4b6ad11d9a877
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746233"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840357"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de Exchange 2007
 

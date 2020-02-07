@@ -10,19 +10,21 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: En este artículo se describe cómo planear el lanzamiento del portal en SharePoint Online y los pasos que se deben seguir para un inicio correcto
-ms.openlocfilehash: 8c7f427d0f8f89b11b144d045a03fa3138b8f019
-ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
+ms.openlocfilehash: fca8b4f116510589b83748435f64ccbb3790d7c2
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39959124"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843771"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planeación del lanzamiento del portal del plan de implementación en SharePoint Online
 
-Un portal es un sitio de SharePoint en la intranet que tiene un gran número de visores de sitio que consumen contenido en el sitio. En las organizaciones grandes puede haber varios de ellos; por ejemplo, un portal de empresa y un portal de recursos humanos. Por lo general, los portales tienen relativamente pocas personas que crean y crean el sitio y su contenido. La mayoría de los visitantes del portal solo leen y consumen el contenido.
+Un portal es un sitio de SharePoint en la intranet que tiene un gran número de visores de sitio que emplean el contenido en el sitio. En las organizaciones de gran tamaño podría haber varios de estos, por ejemplo, un portal de empresa y un portal de RRHH. Por lo general, los portales tienen relativamente pocas personas que aportan y crean el sitio y su contenido. La mayoría de los visitantes del portal únicamente leen y usan el contenido.
 
 En este artículo se describe cómo planear la implementación y el plan de implementación en SharePoint Online. También proporciona métodos para seguir, ya que las pruebas de carga tradicionales no están permitidas en SharePoint Online. SharePoint Online es un servicio en la nube y las capacidades de carga, el estado y el equilibrio general de carga en el servicio son administrados por Microsoft.
 

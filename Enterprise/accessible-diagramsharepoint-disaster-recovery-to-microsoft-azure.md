@@ -10,13 +10,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
+f1.keywords:
+- NOCSH
 description: Este artículo es una versión de texto accesible del diagrama con el nombre Recuperación ante desastres de SharePoint en Microsoft Azure.
-ms.openlocfilehash: e711452f6e019ceb280d43c2e0167507a0b0ef20
-ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
+ms.openlocfilehash: f9bbc62994c1ca36425fa35a4ce294e22596d793
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038239"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843851"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagrama accesible: Recuperación ante desastres de SharePoint para Microsoft Azure
 
@@ -46,7 +48,7 @@ En este nivel hay tres servidores. Cada servidor proporciona los siguientes serv
   
 - Servicios de back-end  
     
-- Admin 
+- Administrador 
     
 - Administrador de flujos de trabajo 
     

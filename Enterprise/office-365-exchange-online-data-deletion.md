@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Cómo se administran las eliminaciones de datos flexibles y nítidas en Exchange Online.
-ms.openlocfilehash: f25f2416778f19f8b2e464e31e6116a81eb872cc
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067863"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843641"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Eliminación de datos de Exchange online en Office 365
 En Exchange Online, hay dos tipos de eliminaciones: eliminaciones de software y eliminaciones de hardware. Esto se aplica tanto a los buzones de correo como a los elementos de un buzón.
@@ -31,7 +33,7 @@ Un buzón de usuario eliminado temporalmente es un buzón que se ha eliminado me
 
 Un buzón de usuario eliminado permanentemente es un buzón que se ha eliminado de una de las siguientes maneras:
 - El buzón de usuario se ha eliminado temporalmente durante más de 30 días y el usuario asociado de Azure Active Directory se ha eliminado permanentemente. Todo el contenido de los buzones de correo, como los correos electrónicos, los contactos y los archivos se eliminan permanentemente.
-- La cuenta de usuario asociada con el buzón de usuario se ha eliminado permanentemente de Azure Active Directory. El buzón de usuario se ha eliminado temporalmente en Exchange Online y permanece en un estado de eliminación temporal durante 30 días. Si en el período de 30 días un nuevo usuario de Azure Active Directory se sincroniza desde la cuenta de destinatario original con el mismo **ExchangeGuid** o **ArchiveGuid**, y esa nueva cuenta tiene una licencia para Exchange Online, esto hará que se elimine de forma permanente el el buzón de correo del usuario original. Todo el contenido de los buzones de correo, como los correos electrónicos, los contactos y los archivos se eliminan permanentemente.
+- La cuenta de usuario asociada con el buzón de usuario se ha eliminado permanentemente de Azure Active Directory. El buzón de usuario se ha eliminado temporalmente en Exchange Online y permanece en un estado de eliminación temporal durante 30 días. Si en el período de 30 días un nuevo usuario de Azure Active Directory se sincroniza desde la cuenta de destinatario original con el mismo **ExchangeGuid** o **ArchiveGuid**, y esa nueva cuenta tiene una licencia para Exchange Online, esto hará que se elimine el buzón de usuario original. Todo el contenido de los buzones de correo, como los correos electrónicos, los contactos y los archivos se eliminan permanentemente.
 - Un buzón eliminado temporalmente se elimina mediante **Remove-Mailbox-PermanentlyDelete**.
 
 En los escenarios de eliminación mencionados anteriormente se da por supuesto que el buzón de usuario no está en ninguno de los Estados de retención, como la retención por juicio o la retención de eDiscovery. Si hay algún tipo de retención en el buzón de correo, no se puede eliminar. Para todos los tipos de destinatarios de correo, se ignoran todas las opciones de configuración de [retención](https://support.office.com/article/manage-legal-investigations-in-office-365-2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e?ui=en-US&rs=en-US&ad=US) y no tienen efecto en las eliminaciones o eliminaciones de software.

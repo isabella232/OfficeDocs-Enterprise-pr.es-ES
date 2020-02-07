@@ -5,13 +5,15 @@ author: Sirkkuw
 manager: scotv
 audience: Admin
 ms.topic: article
-f1_keywords:
+ms.service: o365-administration
+localization_priority: Normal
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
 - O365P_AddUsersCSV
 - O365M_AddUsersCSV
 - O365E_AddUsersCSV
-ms.service: o365-administration
-localization_priority: Normal
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 - MOP150
@@ -23,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Obtenga información sobre cómo agregar varios usuarios a Office 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Office 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón de Office 365. '
-ms.openlocfilehash: 283a45750c6b5d51f96dae2cac12acf3f47b98fe
-ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
+ms.openlocfilehash: 713d54759b32d498a58b88766ffbba9df64da51c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39825202"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844651"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Agregar varios usuarios a Office 365 a la vez. Ayuda para administradores
 
@@ -69,7 +71,7 @@ Todos los usuarios de su grupo deben tener una cuenta de usuario para poder inic
     
 6. En el cuadro de diálogo **Ver el resultado**, puede elegir si desea enviar los resultados a su usuario o a otros usuarios (las contraseñas se mostrarán en texto sin formato). Además, puede ver cuántos usuarios se crearon y, si lo necesita, comprar más licencias para asignárselas a algunos de los nuevos usuarios. 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 <a name="bk_preview"> </a>
 
 - Ahora que estas personas tienen cuentas, necesitan [Descargar e instalar o reinstalar office 365 u office 2016 en un equipo PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Cada persona de su equipo puede usar Office 365 en un máximo de 5 equipos o Mac. 

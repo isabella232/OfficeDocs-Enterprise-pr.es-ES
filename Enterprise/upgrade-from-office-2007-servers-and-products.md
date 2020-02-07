@@ -20,13 +20,15 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: El soporte técnico finaliza pronto para las aplicaciones cliente y servidores de Office 2007, y los contratos de soporte personalizados no están disponibles. Use este artículo para empezar a planear la actualización ahora.
-ms.openlocfilehash: 2fd2e8a0bd2435dbec8c846111a628ffe56fa10c
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e9e135d9f3f91247f4b94f081c1c48662adb1e15
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748027"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841007"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2007
 

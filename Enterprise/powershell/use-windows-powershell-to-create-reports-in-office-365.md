@@ -9,15 +9,17 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Resumen: Use el PowerShell de Office 365 para crear informes que no se pueden crear en el Centro de administración de Office 365.'
-ms.openlocfilehash: 9b3ab8490eb3b4b89878eb8ea94ebc5a99ca9254
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 3a20c47e462bb522e1fb98ba28fb8c7cee89408c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072462"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841247"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Usar Windows PowerShell para crear informes en Office 365
 

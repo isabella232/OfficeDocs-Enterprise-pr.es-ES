@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Obtenga información sobre qué herramientas usar para administrar los usuarios de Office 365 y cómo lo que puede usar depende de cómo administre las identidades de usuario. '
-ms.openlocfilehash: 27c447e19e9664fe190497cefcd5af4c3be408eb
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 669d71aafe0efdff575615dab835dd67cb7aebdf
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490773"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843951"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Herramientas para administrar cuentas de Office 365
 
@@ -39,7 +41,7 @@ Dónde y cómo puede administrar las cuentas de usuario depende del modelo de id
 
 - [Office 365 Identity](about-office-365-identity.md) : cree y administre usuarios en el centro de administración, también puede usar Windows PowerShell o Azure Active Directory para administrar los usuarios.
 - [Sincronización de hash de contraseña con inicio de sesión único sin interrupciones](about-office-365-identity.md) : la forma más sencilla de habilitar la autenticación para los objetos de directorio local en Azure ad. Con la sincronización de hash de contraseña (PHS), se sincronizan los objetos de cuenta de usuario de Active Directory local con Office 365 y se administran los usuarios de forma local. 
-- [Autenticación de paso a través con el inicio de sesión único sin problemas](about-office-365-identity.md) : proporciona una validación de contraseña sencilla para los servicios de autenticación de Azure ad mediante un agente de software que se ejecuta en uno o varios servidores locales para validar a los usuarios directamente con su Active Directory local. 
+- [Autenticación de paso a través con el inicio de sesión único sin problemas](about-office-365-identity.md) : proporciona una validación de contraseña sencilla para los servicios de autenticación de Azure ad mediante un agente de software que se ejecuta en uno o varios servidores locales para validar a los usuarios directamente con Active Directory local. 
 
 ### <a name="federated-authentication"></a>Autenticación federada
 

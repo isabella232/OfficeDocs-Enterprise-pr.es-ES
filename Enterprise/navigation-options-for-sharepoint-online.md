@@ -10,16 +10,18 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: En este artículo se describen las opciones de navegación sitios con la publicación de SharePoint habilitada en SharePoint Online. La elección y configuración de la navegación afectan significativamente al rendimiento y la escalabilidad de los sitios de SharePoint Online. Este artículo no se aplica a los sitios de grupo clásicos.
-ms.openlocfilehash: ce6bde50d35cdddf28fed4ad6c74a9a2da8193af
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: e18d6cb3147ada9d8a0bb1127aa9dda395b097df
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814198"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844851"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 

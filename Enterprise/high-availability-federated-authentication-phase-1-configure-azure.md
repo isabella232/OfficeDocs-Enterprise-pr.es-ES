@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumen: Configure la infraestructura de Microsoft Azure para que hospede la autenticación federada de alta disponibilidad para Office 365.'
-ms.openlocfilehash: 262a7dcdb2dc48f7890b7ef188b1d8ce506f40dd
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: c669df7e719d8ff8516ad556817921e1440558d3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072142"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840347"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure
 
@@ -37,13 +39,13 @@ Azure debe estar aprovisionado con estos componentes básicos:
 
 Antes de empezar a configurar los componentes de Azure, rellene las tablas siguientes. Para ayudarle en los procedimientos de configuración de Azure, imprima esta sección y anote la información necesaria, o bien copie esta sección en un documento y rellénelo. Para la configuración de la red virtual, rellene la tabla V.
   
-|**Elemento**|**Opción de configuración**|**Descripción**|**Valor**|
+|**Item**|**Opción de configuración**|**Descripción**|**Valor**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Nombre de VNET  <br/> |Nombre que se asignará a la red virtual (por ejemplo, FedAuthNet).  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Ubicación de la VNET  <br/> |Centro de datos regional de Azure que contendrá la red virtual.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Dirección IP del dispositivo VPN  <br/> |Dirección IPv4 pública de la interfaz del dispositivo VPN en Internet.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Espacio de direcciones de la VNET  <br/> |El espacio de direcciones de la red virtual. Colabore con su departamento de TI para determinar este espacio de direcciones.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Clave compartida IPsec  <br/> |Cadena alfanumérica aleatoria de 32 caracteres que se usará para autenticar ambos lados de la conexión VPN de sitio a sitio. Colabore con su departamento de TI o de seguridad para determinar el valor de la clave y, después, guárdelo en una ubicación segura. También puede ver [Crear una cadena aleatoria para una clave precompartida IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Nombre de VNET  <br/> |Nombre que se asignará a la red virtual (por ejemplo, FedAuthNet).  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Ubicación de la VNET  <br/> |Centro de datos regional de Azure que contendrá la red virtual.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Dirección IP del dispositivo VPN  <br/> |Dirección IPv4 pública de la interfaz del dispositivo VPN en Internet.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Espacio de direcciones de la VNET  <br/> |El espacio de direcciones de la red virtual. Colabore con su departamento de TI para determinar este espacio de direcciones.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Clave compartida IPsec  <br/> |Cadena alfanumérica aleatoria de 32 caracteres que se usará para autenticar ambos lados de la conexión VPN de sitio a sitio. Colabore con su departamento de TI o de seguridad para determinar el valor de la clave y, después, guárdelo en una ubicación segura. También puede ver [Crear una cadena aleatoria para una clave precompartida IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabla V: Configuración de la red virtual entre locales**
   
@@ -61,34 +63,34 @@ Trabaje con su departamento de TI para determinar estos espacios de direcciones 
   
 |**Elemento**|**Nombre de la subred**|**Espacio de direcciones de la subred**|**Finalidad**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |La subred usada por el controlador de dominio de Active Directory Domain Services (AD DS) y las máquinas virtuales (VM) del servidor de sincronización de directorios.  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales de AD FS.  <br/> |
-|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales del proxy de aplicación web.  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales de la puerta de enlace de Azure.  <br/> |
+|1.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |La subred usada por el controlador de dominio de Active Directory Domain Services (AD DS) y las máquinas virtuales (VM) del servidor de sincronización de directorios.  <br/> |
+|2.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales de AD FS.  <br/> |
+|3.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales del proxy de aplicación web.  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales de la puerta de enlace de Azure.  <br/> |
    
  **Tabla S: Subredes de la red virtual**
   
 Ahora, rellene la Tabla I para las direcciones IP estáticas asignadas a las máquinas virtuales y a las instancias del equilibrador de carga.
   
-|**Elemento**|**Objetivo**|**Dirección IP en la subred**|**Valor**|
+|**Item**|**Objetivo**|**Dirección IP en la subred**|**Valor**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Dirección IP estática del primer controlador de dominio  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Dirección IP estática del segundo controlador de dominio  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Dirección IP estática del servidor de sincronización de directorios  <br/> |La sexta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Dirección IP estática del equilibrador de carga interno para los servidores de AD FS  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 2 de la Tabla S.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Dirección IP estática del primer servidor de AD FS  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 2 de la Tabla S.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|6.  <br/> |Dirección IP estática del segundo servidor de AD FS  <br/> |La sexta dirección IP posible del espacio de direcciones de la subred definida en el elemento 2 de la Tabla S.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|7.  <br/> |Dirección IP estática del primer servidor proxy de aplicación web  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 3 de la Tabla S.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|8.  <br/> |Dirección IP estática del segundo servidor proxy de aplicación web  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 3 de la Tabla S.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Dirección IP estática del primer controlador de dominio  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Dirección IP estática del segundo controlador de dominio  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Dirección IP estática del servidor de sincronización de directorios  <br/> |La sexta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Dirección IP estática del equilibrador de carga interno para los servidores de AD FS  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 2 de la Tabla S.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Dirección IP estática del primer servidor de AD FS  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 2 de la Tabla S.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |Dirección IP estática del segundo servidor de AD FS  <br/> |La sexta dirección IP posible del espacio de direcciones de la subred definida en el elemento 2 de la Tabla S.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |Dirección IP estática del primer servidor proxy de aplicación web  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 3 de la Tabla S.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |Dirección IP estática del segundo servidor proxy de aplicación web  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 3 de la Tabla S.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabla I: Direcciones IP estáticas en la red virtual**
   
 Para dos servidores de Sistema de nombres de dominio (DNS) en la red local que quiera usar al configurar de manera inicial los controladores de dominio en la red virtual, rellene la Tabla D. Colabore con su departamento de TI para determinar esta lista.
   
-|**Elemento**|**Nombre descriptivo del servidor DNS**|**Dirección IP del servidor DNS**|
+|**Item**|**Nombre descriptivo del servidor DNS**|**Dirección IP del servidor DNS**|
 |:-----|:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabla D: Servidores DNS locales**
   
@@ -98,9 +100,9 @@ Para el conjunto de espacios de direcciones de la red local, rellene la Tabla L.
   
 |**Elemento**|**Espacio de direcciones de la red local**|
 |:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabla L: Prefijos de direcciones para la red local**
   
@@ -147,10 +149,10 @@ Rellene la tabla siguiente para el conjunto de nombres de grupos de recursos ún
   
 |**Elemento**|**Nombre del grupo de recursos**|**Finalidad**|
 |:-----|:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Controladores de dominio  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Servidores de AD FS  <br/> |
-|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Servidores proxy de aplicación web  <br/> |
-|4.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Elementos de la infraestructura  <br/> |
+|1.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |Controladores de dominio  <br/> |
+|2.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |Servidores de AD FS  <br/> |
+|3.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |Servidores proxy de aplicación web  <br/> |
+|4.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |Elementos de la infraestructura  <br/> |
    
  **Tabla R: Grupos de recursos**
   
@@ -273,9 +275,9 @@ Después, defina los nombres de los tres conjuntos de disponibilidad. Rellene la
   
 |**Elemento**|**Objetivo**|**Nombre del conjunto de disponibilidad**|
 |:-----|:-----|:-----|
-|1.  <br/> |Controladores de dominio  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Servidores de AD FS  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Servidores proxy de aplicación web  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Controladores de dominio  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Servidores de AD FS  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Servidores proxy de aplicación web  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabla A: Conjuntos de disponibilidad**
   

@@ -6,7 +6,9 @@ manager: laurawi
 ms.date: 01/28/2019
 audience: ITPro
 ms.topic: conceptual
-f1_keywords:
+f1.keywords:
+- CSH
+ms.custom:
 - vsemail
 - MS_WSS_DirectoryManagement
 - MS_WSS_ConfigEmail
@@ -34,12 +36,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: El 10 de octubre de 2017, se finalizó el soporte para SharePoint Server 2007. Lea este artículo para obtener información sobre las opciones de actualización, solución de problemas, procedimientos recomendados, requisitos del sistema, pasos de actualización y cómo obtener asistencia de los socios de Microsoft.
-ms.openlocfilehash: 1b7b2ccf1bbda5210e563a4cd702ebd90b9f8f5d
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6f0bd60d1f1201750ae1f0e4cc1a001ab4ed2ef6
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747319"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844011"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de SharePoint Server 2007
 

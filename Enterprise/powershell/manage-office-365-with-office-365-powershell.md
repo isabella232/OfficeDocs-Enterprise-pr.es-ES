@@ -9,18 +9,20 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Resumen: Obtenga información sobre cómo usar PowerShell de Office 365 con usuarios y licencias de Office 365, Skype Empresarial Online, SharePoint Online, Exchange Online y el Centro de seguridad y cumplimiento de Office 365.'
-ms.openlocfilehash: a1d71dddd26122fe925762228e63fedd6a4ba702
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: 5608d955dc408a600b398c9f0fb061d436f0ba56
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962497"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841437"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Administrar Office 365 con PowerShell de Office 365
 

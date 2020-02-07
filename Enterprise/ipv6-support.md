@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Resumen: describe la compatibilidad de IPv6 en componentes de Microsoft Office 365 y en ofertas de administración pública de Office 365.'
-ms.openlocfilehash: 17938a6bd3544889c4afa38f27b11ea7f02e0f43
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 32e90f0dda9b06d06b6e289b26f640c4ddc79cf3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745733"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845121"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Compatibilidad con IPv6 en servicios de Office 365
 

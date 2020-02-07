@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use esta información para obtener información sobre cómo Office 365 usa redes de entrega de contenido (CDN) para mejorar el rendimiento.
-ms.openlocfilehash: be93be8af81714c6e166246a4e68f74b9b803f46
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: a9840cd325d30febdbef62e7cddf22640bffac42
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745843"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840637"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de entrega de contenido (CDN)
 
@@ -104,9 +106,9 @@ Independientemente de qué red CDN configure para el inquilino de Office 365, el
 
 2. Office 365 ambos devuelve los datos directamente en su cliente o, si los datos forman parte de un conjunto de contenido hospedado por la red CDN, redirige el cliente a la dirección URL de la red CDN.
 
-    A. Si los datos ya están almacenados en la memoria caché de un origen _público_ , el cliente descarga los datos directamente desde la ubicación de la red CDN más cercana a su cliente.
+    a. Si los datos ya están almacenados en la memoria caché de un origen _público_ , el cliente descarga los datos directamente desde la ubicación de la red CDN más cercana a su cliente.
 
-    B. Si los datos ya están almacenados en la memoria caché de un origen _privado_ , el servicio de CDN comprueba los permisos de la cuenta de usuario de Office 365 en el origen. Si tiene permisos, SharePoint Online genera dinámicamente una dirección URL personalizada compuesta por la ruta de acceso al activo en la red CDN y dos tokens de acceso y devuelve la dirección URL personalizada a su cliente. A continuación, el cliente descarga los datos directamente desde la ubicación de la red CDN más cercana a su cliente mediante la dirección URL personalizada.
+    b. Si los datos ya están almacenados en la memoria caché de un origen _privado_ , el servicio de CDN comprueba los permisos de la cuenta de usuario de Office 365 en el origen. Si tiene permisos, SharePoint Online genera dinámicamente una dirección URL personalizada compuesta por la ruta de acceso al activo en la red CDN y dos tokens de acceso y devuelve la dirección URL personalizada a su cliente. A continuación, el cliente descarga los datos directamente desde la ubicación de la red CDN más cercana a su cliente mediante la dirección URL personalizada.
 
 3. Si los datos no se almacenan en caché en la red CDN, el nodo de la red CDN solicita los datos de Office 365 y, a continuación, almacena los datos en la memoria caché durante un período de tiempo después de que el cliente descargue los datos.
 
@@ -191,7 +193,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/o365cdn
 
 [Principios de conectividad de red de Office 365](https://aka.ms/o365networkingprinciples)
 
-[Evaluar la red de Office 365](assessing-network-connectivity.md)
+[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)
 
 [Administrar puntos de conexión de Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
 

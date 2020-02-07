@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Describe cómo usar la red de entrega de contenido (CDN) de Office 365 para acelerar la entrega de los activos de SharePoint Online a todos los usuarios, independientemente de dónde se encuentren o de la forma en que tengan acceso al contenido.
-ms.openlocfilehash: 829903919d0a6222b213fe08a610ff6ebe9b985d
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 7194f5e73c2799a40b750032b736e2b7c7bd2c10
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721941"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841077"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -954,7 +956,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 Es importante tener en cuenta que SharePoint Online no admite permisos de nivel de elemento para activos en orígenes privados. Por ejemplo, para un archivo que se `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`encuentra en, los usuarios tienen acceso efectivo al archivo teniendo en cuenta las siguientes condiciones:
 
-|Usuario  |Permissions  |Acceso efectivo  |
+|Usuario  |Permisos  |Acceso efectivo  |
 |---------|---------|---------|
 |Usuario 1     |Tiene acceso a la carpeta1         |Puede tener acceso a image1. jpg desde la red CDN         |
 |Usuario 2     |No tiene acceso a la carpeta1         |No se puede tener acceso a image1. jpg desde la red CDN         |
@@ -993,10 +995,10 @@ Cuando se habilita la red CDN de Office 365 para orígenes públicos, el servici
 
 Si falta el origen */clientsideassets, se producirá un error en las soluciones de SharePoint Framework y no se generará ningún mensaje de advertencia ni de error. Este origen puede faltar porque la red CDN se habilitó con el parámetro _-NoDefaultOrigins_ establecido en **$true**o porque el origen se eliminó manualmente.
 
-Puede comprobar si el origen */CLIENTSIDEASSETS está presente con el siguiente comando de PowerShell:
+Puede comprobar qué orígenes están presentes con el siguiente comando de PowerShell:
 
 ``` powershell
-Get-SPOTenantCdnOrigin -CdnType Public -OriginUrl */CLIENTSIDEASSETS
+Get-SPOTenantCdnOrigins -CdnType Public
 ```
 
 O bien, puede consultar con la CLI de Office 365:

@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Las aplicaciones de Office para Mac proporcionan una experiencia de aplicación nativa en la plataforma de macOS. Cada aplicación está diseñada para trabajar en diversos escenarios, incluidos los Estados en los que no hay acceso a la red disponible. Cuando un equipo está conectado a una red, las aplicaciones se conectan automáticamente a una serie de servicios basados en web para proporcionar funciones mejoradas. En este documento se describen los puntos de conexión y las direcciones URL que las aplicaciones intentan alcanzar y los servicios que se proporcionan. Esta información es útil para solucionar problemas de configuración de red y establecer una directiva para los servidores proxy de red. Los detalles de este artículo tienen como objetivo complementar el artículo Office 365 URL y los intervalos de direcciones.
-ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781960"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844551"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Solicitudes de red en Office para Mac
 
@@ -322,5 +324,5 @@ Si el servidor proxy requiere autenticación, se devolverá una respuesta 407 al
   
 ## <a name="see-also"></a>Vea también
 
-[Intervalos de direcciones IP y URL de Office 365](urls-and-ip-address-ranges.md)
+[Direcciones URL e intervalos de direcciones IP de Office 365](urls-and-ip-address-ranges.md)
 

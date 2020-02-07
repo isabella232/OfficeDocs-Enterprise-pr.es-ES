@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Para comprender correctamente el tráfico de enrutamiento a Office 365 mediante Azure ExpressRoute, necesitará una sólida visión de los requisitos de enrutamiento de ExpressRoute principales y los circuitos y dominios de enrutamiento de ExpressRoute. Estos diseñan los conceptos básicos para usar ExpressRoute en los que se basarán los clientes de Office 365.
-ms.openlocfilehash: 2b3e3af68a538910d03586911674ec731a0a1960
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 0a83499c6724fd4e843a7bf6788ebf4df945f145
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813900"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844061"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Enrutamiento con ExpressRoute para Office 365
 
@@ -231,7 +233,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/erorout
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Evaluar la red de Office 365](assessing-network-connectivity.md)
+[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute para Office 365](azure-expressroute.md)
   

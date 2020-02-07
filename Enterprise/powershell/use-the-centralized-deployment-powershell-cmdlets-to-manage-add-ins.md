@@ -13,14 +13,16 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
+f1.keywords:
+- NOCSH
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Use los cmdlets de PowerShell de implementación centralizada como ayuda para implementar y administrar complementos de Office para su organización de Office 365.
-ms.openlocfilehash: 3d6495646c6ce0a1d15f2d911f1fa8af92e3c2c6
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 586b66ac3632a5d86a63014a50f3c605b1c005e7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782590"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844161"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos
 
@@ -81,7 +83,7 @@ Ejecute el cmdlet New-OrganizationAdd-in para cargar un manifiesto de complement
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-También puede ejecutar el cmdlet New-OrganizationAdd-in para cargar un complemento y asignarlo a usuarios o grupos directamente mediante el parámetro Members, __ como se muestra en el ejemplo siguiente. Separe las direcciones de correo electrónico de los miembros con una coma. 
+También puede ejecutar el cmdlet New-OrganizationAdd-in para cargar un complemento y asignarlo a usuarios o grupos directamente mediante el parámetro _Members_ , como se muestra en el ejemplo siguiente. Separe las direcciones de correo electrónico de los miembros con una coma. 
   
 ```
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
@@ -98,9 +100,9 @@ En el siguiente ejemplo, el cmdlet New-OrganizationAddIn especifica el AssetID p
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Para determinar el valor para el __ parámetro AssetID, puede copiarlo desde la dirección URL de la Página Web de la tienda Office para el complemento. AssetIds siempre comienza por "WA" seguido de un número. Por ejemplo, en el ejemplo anterior, el origen del valor de WA104099688 es la dirección URL de la Página Web de la tienda de Office para el complemento [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688):.
+Para determinar el valor para el parámetro _AssetID_ , puede copiarlo desde la dirección URL de la Página Web de la tienda Office para el complemento. AssetIds siempre comienza por "WA" seguido de un número. Por ejemplo, en el ejemplo anterior, el origen del valor de WA104099688 es la dirección URL de la Página Web de la tienda de Office para el complemento [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688):.
   
-Los valores para el __ parámetro locale y el parámetro _ContentMarket_ son idénticos e indican el país o región desde el que está intentando instalar el complemento. El formato es en-US, fr-FR. y así sucesivamente. 
+Los valores para el parámetro _locale_ y el parámetro _ContentMarket_ son idénticos e indican el país o región desde el que está intentando instalar el complemento. El formato es en-US, fr-FR. y así sucesivamente. 
   
 > [!NOTE]
 > Los complementos cargados desde la tienda Office se actualizarán de forma automática dentro de unos días a partir de la actualización más reciente disponible en la tienda Office. 
@@ -144,7 +146,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $
 ## <a name="add-or-remove-users-from-an-add-in"></a>Agregar o quitar usuarios de un complemento
 <a name="BKMK_AddRemove"> </a>
 
-Para agregar usuarios y grupos a un complemento específico, ejecute el cmdlet Set-OrganizationAddInAssignments con los parámetros _ProductID_, _Add_y Members __ . Separe las direcciones de correo electrónico de los miembros con una coma. 
+Para agregar usuarios y grupos a un complemento específico, ejecute el cmdlet Set-OrganizationAddInAssignments con los parámetros _ProductID_, _Add_y _Members_ . Separe las direcciones de correo electrónico de los miembros con una coma. 
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
@@ -171,7 +173,7 @@ Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ## <a name="update-an-add-in"></a>Actualizar un complemento
 <a name="BKMK_UpdateAddin"> </a>
 
-Para actualizar un complemento desde un manifiesto, ejecute el cmdlet Set-OrganizationAddIn con los parámetros _ProductID_, _ManifestPath_y locale __ , tal y como se muestra en el siguiente ejemplo. 
+Para actualizar un complemento desde un manifiesto, ejecute el cmdlet Set-OrganizationAddIn con los parámetros _ProductID_, _ManifestPath_y _locale_ , tal y como se muestra en el siguiente ejemplo. 
   
 ```
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'

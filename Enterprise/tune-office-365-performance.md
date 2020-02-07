@@ -9,18 +9,20 @@ ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
 description: Vínculos a cursos de formación, blogs, artículos y otros recursos que le indican cómo mejorar el rendimiento de Office 365.
-ms.openlocfilehash: fc4a173fb04e91d298d82a6d3d2b30a9b0add3ef
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: c3214eb9b40bb5f3670e5ecdf39ae8d0f89d5a38
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616833"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843941"
 ---
 # <a name="tune-office-365-performance"></a>Ajustar el rendimiento de Office 365
 

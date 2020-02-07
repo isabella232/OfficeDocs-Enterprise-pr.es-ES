@@ -10,13 +10,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
+f1.keywords:
+- NOCSH
 description: Este artículo es una versión de texto accesible del diagrama Flujo de exhibición de documentos electrónicos local.
-ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ec9ecf7d3663503f2da412364d919a6c70032e23
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068536"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843861"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Diagrama accesible: Flujo de exhibición de documentos electrónicos local
 
@@ -42,7 +44,7 @@ Los números de cada uno de los pasos descritos en esta lista corresponden a los
     
 3. Si la solicitud consiste en consultar un caso, la SSA consulta el índice de búsqueda. Después, el conjunto de resultados de consulta de exhibición de documentos electrónicos se devuelve al usuario a través del EDC.  
     
-4. Si la solicitud es una acción, como ejecutar una operación Hold o ReleaseHold, esa acción se escribe en la tabla Actions_Table en la base de datos administrativa de la SSA. En este ejemplo, se escribe una solicitud de retención para cualquier cosa de la granja de contenido de SharePoint con "CONTOSO" en Actions_Table. 
+4. Si la solicitud es una acción, como ejecutar una operación Hold o ReleaseHold, esa acción se escribe en la tabla Actions_Table en la base de datos administrativa de la SSA. En este ejemplo, se escribe una solicitud de retención para cualquier cosa de la granja de contenido de SharePoint con "CONTOSO" en el Actions_Table. 
     
 5. A intervalos regulares, se activa el trabajo del temporizador con la operación de conservación local de exhibición de documentos electrónicos en la granja de contenido, el cual genera una solicitud de acciones pendientes y envía actualizaciones de estado mediante el proxy de SSA a la SSA. 
     
