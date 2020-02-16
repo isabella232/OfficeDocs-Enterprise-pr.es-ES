@@ -1,5 +1,6 @@
 ---
 title: Eliminar una ubicación de satélite
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Aprenda a eliminar una ubicación de satélite en Office 365 Multi-Geo.
-ms.openlocfilehash: 8f6f52a42cef1aee88b590115bf54ba4e2179830
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 702f42eb9211d6c3c4f59812c6894855b169f587
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840557"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974869"
 ---
 # <a name="delete-a-satellite-location-in-office-365-multi-geo"></a>Eliminar una ubicación de satélite en Office 365 Multi-Geo.
 
