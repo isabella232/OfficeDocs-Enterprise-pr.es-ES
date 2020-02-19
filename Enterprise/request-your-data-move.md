@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Los clientes de Office 365 existentes deberán enviar una solicitud antes de la fecha límite de su país para que los datos del cliente de los servicios de Office 365 participantes se muevan a su nueva geografía.
-ms.openlocfilehash: 886b852608b29f42aaa6f8051fd60b467830842a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844111"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106231"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -35,9 +35,9 @@ Los clientes de Office 365 existentes pueden solicitar una migración temprana d
 |Japón  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Australia, Nueva Zelanda, Fiji  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |India  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
-|Canadá  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
+|Canada  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Reino Unido  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
-|Corea del sur  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
+|Corea del Sur  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Francia  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Emiratos Árabes Unidos  <br/> |15 de julio de 2019  <br/> |30 de junio de 2020  <br/> |
 |Sudáfrica  <br/> |25 de julio de 2019  <br/> |30 de junio de 2020  <br/> |
@@ -48,13 +48,8 @@ Los clientes de Office 365 existentes pueden solicitar una migración temprana d
 
 Los clientes elegibles verán una página en el [centro de administración de 365 de Microsoft](https://aka.ms/365admin), que les permitirá solicitar que sus datos principales de clientes se muevan a su nueva región de centro de datos.  
   
-Para obtener acceso a la página en el centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **configuración**y, a continuación, haga clic en Perfil de la **organización**.
-  
-![Menú de configuración con el perfil de organización resaltado](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
-  
-En la página Perfil de la **organización** , desplácese hacia abajo hasta la sección opción de **residencia de datos** . 
-  
-![Tarjeta de residencia de datos](media/dataresidencyae.jpg)
+Para obtener acceso a la página en el centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **configuración**y, a continuación, haga clic en **configuración**.
+Seleccione el **Perfil de organización**de la ficha y, a continuación, seleccione la **residencia de datos**de opción.
   
 **Es posible que no vea esta sección si se aplica una de las siguientes opciones**:
 - El inquilino no es apto para el programa de Office 365 Move.  La idoneidad la determina el país de suscripción del inquilino.

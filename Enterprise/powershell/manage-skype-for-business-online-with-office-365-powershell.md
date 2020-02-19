@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Resumen: use PowerShell de Office 365 para administrar directivas de Skype Empresarial Online, directivas por usuario y opciones de reunión.'
-ms.openlocfilehash: 699f799e823df6192a65147210130ae6493f52eb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4444483776141a3aa1f6e53b2f9bdcd7a5d28e1d
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844231"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106211"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Administrar Skype Empresarial Online con PowerShell de Office 365
 
@@ -44,7 +44,7 @@ Descargue e instale el [módulo de conector de Skype empresarial online](https:/
 2. En el cuadro de diálogo **solicitud de credenciales para Windows PowerShell** , escriba el nombre y la contraseña de la cuenta de administrador en Skype empresarial online y, a continuación, haga clic en **Aceptar**.
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication"></a>Conectarse con una cuenta de administrador de Skype empresarial online con la autenticación multifactor
+## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication"></a>Conectarse con una cuenta de administrador de Skype empresarial online con autenticación multifactor
 
 1. Abra un símbolo del sistema de Windows PowerShell y ejecute los siguientes comandos:
 
