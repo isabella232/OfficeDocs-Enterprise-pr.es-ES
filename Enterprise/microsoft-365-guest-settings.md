@@ -7,17 +7,16 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Obtenga más información sobre la configuración de uso compartido de invitados disponible en Microsoft 365.
-ms.openlocfilehash: 52f597357aed510e3bd3ff71e87e1056e19a3bad
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ed9165d4589dbdaa18c3b3a3c21aab7bce01ad8c
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844971"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316049"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -238,6 +237,9 @@ En la tabla siguiente se muestra la configuración de uso compartido predetermin
 |Sitios conectados a un grupo (incluyendo Teams)|**Invitados nuevos y existentes** si está en **Activado** la configuración de Grupos de Office 365 **Permitir que los propietarios de grupos agreguen a usuarios ajenos a la organización a grupos**; en caso contrario, **Solo invitados existentes**.|
 |Comunicación|**Solo personas de la organización**|
 |Sitios modernos sin grupo (sitio de grupo #STS3)|**Solo personas de la organización**|
+
+> [!NOTE]
+> El sitio de comunicación raíz (tenant-name.sharepoint.com) tiene de forma predeterminada la configuración de uso compartido **Cualquiera**.
 
 ## <a name="see-also"></a>Vea también
 
