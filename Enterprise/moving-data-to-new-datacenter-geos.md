@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: 'El nuevo centro de GEOS agrega capacidad y calcula recursos para apoyar el crecimiento constante del uso y la demanda de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes. Los datos principales de los clientes son un término que hace referencia a un subconjunto de los datos de clientes definidos en los términos de Microsoft Online Services: contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico) y contenido del sitio de SharePoint Online y los archivos se almacenan en ese sitio y los archivos cargados en OneDrive para la empresa.'
-ms.openlocfilehash: f2f6706d69d79681833ebca70cbe32964b7f3b77
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0efe43b61351d89452abb9a114b37f8df9d79ec2
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844771"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417055"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Mover datos básicos a un nuevo Office 365 Datacenter GEOS
 
@@ -33,19 +33,19 @@ Los datos principales de los clientes son un término que hace referencia a un s
   
 Los clientes existentes que tienen sus datos de clientes principales almacenados en un centro de datos ya existente no se ven afectados por el inicio de una nueva geografía del centro de datos. No presentamos ninguna funcionalidad, características o certificaciones de cumplimiento únicos con el nuevo centro de recursos geográfico. Como cliente en cualquiera de estas dos GEOS, obtendrá los mismos controles de calidad de servicio, rendimiento y seguridad que antes. Ofrecemos a los clientes existentes que aparecen en la tabla que se muestra a continuación una opción para solicitar la migración temprana de los datos principales de clientes de la organización en el resto a su nuevo área geográfica del centro de datos.
   
-|Clientes con país de suscripción de inquilinos en * * * *|Geo de centro de recursos anterior * * * *|Nueva geo del centro de recursos * * * *|Geográfico disponible desde * * * *|
+|**Clientes con país de suscripción de inquilinos en**|**Área geográfica del centro de recursos anterior**|**Nuevo área geográfica del centro de recursos**|**Geográfico disponible desde**|
 |:-----|:-----|:-----|:-----|
-|Japón * * * *| Asia/Pacífico | Japón | Diciembre de 2014 |
-|Australia, Nueva Zelanda, Fiji * * * *| Asia/Pacífico | Australia | Marzo de 2015 |
-|India * * * *| Asia/Pacífico | India | Octubre de 2015 |
-|Canadá * * * *| Norteamérica | Canadá | Mayo de 2016 |
-|Reino Unido * * * *| Europa | Reino Unido | Septiembre de 2016 |
-|Corea del sur * * * *| Asia/Pacífico | Corea del sur | Abril de 2017 |
-|Francia * * * *| Europa | Francia | Marzo de 2018 |
-|Emiratos Árabes Unidos * * * *| Europa | Emiratos Árabes Unidos | Junio de 2019 |
-|Sudáfrica * * * *| Europa | Sudáfrica | Julio de 2019 |
-|Suiza, Liechtenstein * * * *| Europa | Suiza | Diciembre de 2019 |
-|Alemania * * * *| Europa | Alemania | Diciembre de 2019 |
+|**Japón**| Asia/Pacífico | Japón | Diciembre de 2014 |
+|**Australia, Nueva Zelanda, Fiji**| Asia/Pacífico | Australia | Marzo de 2015 |
+|**India**| Asia/Pacífico | India | Octubre de 2015 |
+|**Canadá**| Norteamérica | Canadá | Mayo de 2016 |
+|**Reino Unido**| Europa | Reino Unido | Septiembre de 2016 |
+|**Corea del Sur**| Asia/Pacífico | Corea del Sur | Abril de 2017 |
+|**Francia**| Europa | Francia | Marzo de 2018 |
+|**Emiratos Árabes Unidos**| Europa | Emiratos Árabes Unidos | Junio de 2019 |
+|**Sudáfrica**| Europa | Sudáfrica | Julio de 2019 |
+|**Suiza, Liechtenstein**| Europa | Suiza | Diciembre de 2019 |
+|**Alemania**| Europa | Alemania | Diciembre de 2019 |
   
 Los clientes nuevos o los inquilinos de Office 365 creados después de la disponibilidad del nuevo área geográfica del centro de datos tendrán automáticamente almacenados sus datos de clientes principales en el nuevo centro de datos.
 
