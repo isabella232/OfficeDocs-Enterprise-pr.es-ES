@@ -13,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Expandir la presencia de Office 365 a varias regiones geográficas con Office 365 Multi-Geo.
-ms.openlocfilehash: 62aa890bb3bb8bfcabd13285814b72c7000047dc
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: ca0fac66549b91fe25cc5d86f9dd0be310fb38b5
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974066"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417005"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -34,7 +34,7 @@ En un entorno multigeográfico, su espacio empresarial de Office 365 cuenta con 
 
 ![Captura de pantalla del mapa multigeográfico desde el Centro de administración de SharePoint Online](media/multi-geo-world-map.png)
 
-Tenga en cuenta que Office 365 Multi-Geo no está diseñado principalmente para optimizar el rendimiento, sino que para cumplir con los requisitos de residencia de datos. Para obtener información sobre la optimización del rendimiento de Office 365, vea [Ajuste de rendimiento y planes de red para Office 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) o póngase en contacto con su grupo de soporte técnico.
+Tenga en cuenta que Office 365 Multi-Geo no está diseñado principalmente para optimizar el rendimiento, sino para cumplir con los requisitos de residencia de datos. Para obtener información sobre la optimización del rendimiento de Office 365, vea [Network planning and performance tuning for Office 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) (Planeamiento de red y ajuste de rendimiento para Office 365) o póngase en contacto con su grupo de soporte técnico.
 
 ## <a name="terminology"></a>Terminología
 
@@ -58,7 +58,7 @@ Actualmente, se ofrece Office 365 Multi-Geo en estos países y regiones:
 
 Siga estos pasos para empezar a usar Multi-Geo:
 
-1. Trabaje con el equipo de cuentas para agregar el plan de servicio _Funciones multigeográficas en Office 365_. Le guiará para agregar el número de licencias necesarias. La característica multigeográfica está disponible actualmente para los clientes con un mínimo de 500 suscripciones a Office 365.
+1. Trabaje con el equipo de cuentas para agregar el plan de servicio _Funciones multigeográficas en Office 365_. Le guiará para agregar el número de licencias necesarias. La característica multigeográfica está disponible actualmente para los clientes EA con un mínimo de 500 suscripciones a Office 365.
 
    Antes de empezar a usar Office 365 Multi-Geo, Microsoft necesita configurar el espacio empresarial de Exchange Online para la compatibilidad con Multi-Geo. Este proceso de configuración única se activa después de pedir el plan de servicio de las *Capacidades multigeográficas de Office 365* y después de que las licencias se muestren en el espacio empresarial. Recibirá notificaciones en el [centro de mensajes de Office 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) cuando se apliquen las licencias Multi-Geo y, después, puede empezar a configurar y usar las capacidades de Office 365 Multi-Geo.
 
