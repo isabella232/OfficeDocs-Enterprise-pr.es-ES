@@ -7,15 +7,14 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Obtenga información sobre cómo colaborar con invitados en Microsoft Teams.
-ms.openlocfilehash: 61d45829071bf19bfbda4bbb80fc7b0af7472d7f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 87635d6fd2196fd706d27fb68cbe24e51b723220
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845051"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549139"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -167,7 +166,7 @@ Para invitar a invitados a un equipo
 4. Escriba el nombre completo del invitado y haga clic en la marca de verificación.
 5. Haga clic en **Agregar** y, después, en **Cerrar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 
@@ -175,4 +174,4 @@ Para invitar a invitados a un equipo
 
 [Crear un entorno seguro de uso compartido para invitados](create-a-secure-guest-sharing-environment.md)
 
-[Crear una extranet B2B con invitados administrados](b2b-extranet.md)
+Para obtener más información, consulte [Crear una extranet de B2B con invitados administrados](b2b-extranet.md).

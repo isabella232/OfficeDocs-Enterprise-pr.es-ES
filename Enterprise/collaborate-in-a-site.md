@@ -7,15 +7,14 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Obtenga información sobre cómo colaborar con invitados en un sitio de SharePoint.
-ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8c1c34fded910701275a80aa0740a746a2458156
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845071"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549119"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -129,7 +128,7 @@ Para invitar a invitados a un grupo
 3. Escriba las direcciones de correo electrónico de los invitados que desea invitar y, a continuación, haga clic en **Agregar**.
 4. Haga clic en **Cerrar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 
@@ -137,5 +136,5 @@ Para invitar a invitados a un grupo
 
 [Crear un entorno seguro de uso compartido para invitados](create-a-secure-guest-sharing-environment.md)
 
-[Crear una extranet B2B con invitados administrados](b2b-extranet.md)
+Para obtener más información, consulte [Crear una extranet de B2B con invitados administrados](b2b-extranet.md).
 
