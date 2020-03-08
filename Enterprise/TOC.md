@@ -187,7 +187,7 @@
 ### [Recuperar elementos eliminados en un buzón de usuario](recover-deleted-items-in-a-mailbox.md)
 ### Colaborar con invitados
 #### [Referencia para uso compartido de invitados](microsoft-365-guest-settings.md)
-#### Soluciones para compartir invitado
+#### Escenarios para el uso compartido de invitados
 ##### [Vista general de colaboración para invitados](collaborating-with-people-outside-your-organization.md)
 ##### [Colaboración en documentos](collaborate-on-documents.md)
 ##### [Colaboración en un sitio](collaborate-in-a-site.md)
