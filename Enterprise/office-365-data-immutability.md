@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Define y explica la inmutabilidad de datos en Office 365.
-ms.openlocfilehash: 3decc070c480306354382f5d2f0c96d6192fa903
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: fe6b2cf3d3ba2e0bb69f4275c77de0a452b3140f
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42315999"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605635"
 ---
 # <a name="immutability-in-office-365"></a>Inmutabilidad en Office 365
 
@@ -58,4 +58,4 @@ En particular:
 - El archivado en Office 365 permite a los usuarios combinar distintas directivas de retención y mantener acciones para crear directivas de retención granulares. Estas directivas definen el tipo o la ubicación de los elementos que se conservan y la duración de conservación.
 - La característica de bloqueo de preservación permite que los usuarios elijan si la Directiva es una directiva restrictiva. Una directiva restrictiva prohíbe a cualquiera tener la capacidad de quitar, deshabilitar o realizar cambios en la Directiva de retención. Esto significa que una vez que el bloqueo de preservación está habilitado, no se puede deshabilitar y no existirá ningún mecanismo en el que los datos de custodios existentes que hayan sido recopilados por las directivas de retención en vigor puedan sobrescribirse, modificarse, borrarse o eliminarse durante el período de conservación. Además, el período de retención establecido por el bloqueo de conservación no puede reducirse ni disminuir. Sin embargo, se puede alargar en el caso de un requisito legal para continuar la retención de los datos almacenados, como se indicó anteriormente. El bloqueo de preservación garantiza que nadie, ni siquiera los administradores o los que tienen acceso a control, puedan cambiar la configuración o sobrescribir o borrar datos que se hayan almacenado, lo que aportará el archivado en Office 365 en línea con las instrucciones descritas en la versión 2003 de la SEC Rule 17a-4.
 
-Para comprender cómo Office 365 le ayuda a cumplir con las obligaciones reglamentarias, en concreto en relación con los requisitos de reglas 17a-4, consulte este [artículo técnico](https://go.microsoft.com/fwlink/?linkid=830440) que trata el archivado de Exchange Online, SharePoint Online, OneDrive para la empresa y Skype empresarial. El documento también ofrece un análisis exhaustivo de las características y funcionalidades de archivado de Office 365 para cada uno de los requisitos de la regla SEC 17a-4 y demuestra a los clientes regulados cómo Office 365 el archivado puede permitirles cumplir estos requisitos.
+Para comprender cómo Office 365 le ayuda a cumplir con las obligaciones reglamentarias, en concreto en relación con los requisitos de reglas 17a-4, consulte el [artículo técnico](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/2015/11/Microsoft-EOA-White-Paper.pdf) que trata el archivado de Exchange Online, SharePoint Online, OneDrive para la empresa y Skype empresarial. El documento también ofrece un análisis exhaustivo de las características y funcionalidades de archivado de Office 365 para cada uno de los requisitos de la regla SEC 17a-4 y demuestra a los clientes regulados cómo Office 365 el archivado puede permitirles cumplir estos requisitos.
