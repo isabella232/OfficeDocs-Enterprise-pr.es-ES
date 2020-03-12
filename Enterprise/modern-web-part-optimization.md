@@ -3,7 +3,7 @@ title: Optimizar el rendimiento de elementos web en páginas del sitio modernas 
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/6/2019
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo optimizar el rendimiento de elementos web en páginas de sitio modernas de SharePoint Online.
-ms.openlocfilehash: 8ee8e932913ad8b75d6e68cecbd5d5da08bce76b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 48eba5f638d75cb12b7b4dcf516a9c3833cf8f4d
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844840"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603749"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de elementos web en páginas del sitio modernas de SharePoint Online
 
@@ -35,14 +35,17 @@ Las páginas del sitio de SharePoint Online modernas contienen elementos web que
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Usar la herramienta de Diagnóstico de páginas para SharePoint para analizar los elementos web
 
-La **herramienta Diagnóstico de páginas para SharePoint** es una extensión de explorador para Chrome y la [versión 77 o posteriores de Microsoft Edge](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) que le permite analizar páginas de sitios de publicación modernas y clásicas en SharePoint. La herramienta le ofrece un informe para cada página analizada en el que se muestra el rendimiento de la página respecto a un conjunto definido de criterios de rendimiento. Para instalar e informarse sobre la herramienta Diagnóstico de páginas para SharePoint, visite [Usar la herramienta Diagnóstico de página para SharePoint Online](page-diagnostics-for-spo.md).
+La herramienta de Diagnóstico de páginas para SharePoint es una extensión de explorador para los nuevos exploradores de Microsoft Edge (https://www.microsoft.com/edge) y Chrome que analiza las páginas del sitio de publicación clásicas y las modernas del portal de SharePoint Online. La herramienta le ofrece un informe para cada página analizada en el que se muestra el rendimiento de la página respecto a un conjunto definido de criterios de rendimiento. Para instalar e informarse de la herramienta Diagnóstico de página de SharePoint, visite [Usar la herramienta Diagnóstico de página para SharePoint Online](page-diagnostics-for-spo.md).
+
+>[!NOTE]
+>La herramienta de Diagnóstico de páginas solo funciona para SharePoint Online y no se puede usar en una página del sistema de SharePoint. 
 
 Al analizar una página de un sitio de SharePoint con la herramienta Diagnóstico de páginas para SharePoint, puede ver información sobre los elementos web que superan la métrica de línea base en el resultado **Los elementos web afectan al tiempo de carga de la página** en el panel _Pruebas de diagnóstico_.
 
 Puede encontrarse con los siguientes resultados:
 
-- **Se necesita atención** (rojo): cualquier elemento web _personalizado_ que tarde más de **dos** segundos en cargarse. El tiempo de carga total que se muestra en los resultados de la prueba se desglosa por carga de módulos, carga diferida, inicialización y representación.
-- **Oportunidades de mejora** (amarillo): se deben revisar y supervisar los elementos que pueden afectar al tiempo de carga de la página que se muestran en esta sección. Esto puede incluir elementos web de Microsoft "de fábrica". Los resultados de los elementos web de Microsoft que se muestran en esta sección se comunican automáticamente a Microsoft, por lo que **no se requiere ninguna acción**. Solo debe registrar un vale de soporte técnico para investigar si la página tiene un rendimiento muy bajo y **todos los elementos web de Microsoft** en la misma aparecen en los resultados de la sección **Oportunidades de mejora**. Tenga en cuenta que, en una actualización posterior de la herramienta de Diagnóstico de páginas, los resultados se desglosarán en función de la configuración específica del elemento web de Microsoft.
+- **Atención necesaria** (en rojo): cualquier elemento web _personalizado_ que esté visible en la ventanilla (parte visible de la pantalla de la página que se carga en primer lugar) y que tarda más de **dos** segundos en cargarse. Cualquier elemento web _personalizado_ que se encuentre fuera de la ventanilla y que tarde más de **cuatro** segundos en cargarse. El tiempo de carga total que se muestra en los resultados de la prueba se desglosa por carga de módulos, carga diferida, inicialización y representación.
+- **Oportunidades de mejora** (amarillo): se deben revisar y supervisar los elementos que pueden afectar al tiempo de carga de la página que se muestran en esta sección. Esto puede incluir elementos web de Microsoft "de fábrica". Los resultados de los elementos web de Microsoft que se muestran en esta sección se comunican automáticamente a Microsoft, por lo que **no se requiere ninguna acción**. Solo debe registrar un vale de soporte técnico para investigar si la página tiene un rendimiento muy bajo y **todos los elementos web de Microsoft** en la misma aparecen en los resultados de la sección **Oportunidades de mejora**. Tenga en cuenta que, en una actualización posterior de la herramienta de Diagnóstico de páginas para SharePoint, los resultados se desglosarán en función de la configuración específica del elemento web de Microsoft.
 - **No se requiere ninguna acción** (verde): no hay ningún elemento web que tarde más de **dos** segundos en devolver datos.
 
 Si el resultado **Los elementos web afectan al tiempo de carga de la página** aparece en la sección de los resultados **Se necesita atención** u **Oportunidades de mejora**, haga clic en el resultado para ver los detalles de los elementos web que se cargan despacio. Las actualizaciones futuras de la herramienta Diagnóstico de páginas para SharePoint pueden incluir actualizaciones de las reglas de análisis, así que asegúrese de que siempre tiene la versión más reciente de la herramienta.
