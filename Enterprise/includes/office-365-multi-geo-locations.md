@@ -11,5 +11,6 @@
 |Corea                        |KOR     |Centros de datos de Asia oriental o Asia sudoriental|
 |Norteamérica                |NAM     |Centros de datos de Estados Unidos                    |
 |Sudáfrica                 |ZAF     |(Próximamente)                     |
+|Suiza                  |SWE     |(Próximamente)                     |
 |Emiratos Árabes Unidos         |ARE     |(Próximamente)                     |
 |Reino Unido               |GBR     |Centros de datos de Europa                |
