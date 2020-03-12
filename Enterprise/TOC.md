@@ -185,19 +185,20 @@
 ### [Herramientas para administrar cuentas de usuario](manage-office-365-accounts.md)
 ### [Agregar varios usuarios al mismo tiempo](add-several-users-at-the-same-time.md)
 ### [Recuperar elementos eliminados en un buzón de usuario](recover-deleted-items-in-a-mailbox.md)
+
 ### Colaborar con invitados
-#### [Referencia para uso compartido de invitados](microsoft-365-guest-settings.md)
+#### [Referencia para uso compartido de invitados](/microsoft-365/solutions/microsoft-365-guest-settings?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### Escenarios para el uso compartido de invitados
-##### [Vista general de colaboración para invitados](collaborating-with-people-outside-your-organization.md)
-##### [Colaboración en documentos](collaborate-on-documents.md)
-##### [Colaboración en un sitio](collaborate-in-a-site.md)
-##### [Colaborar en equipo](collaborate-as-a-team.md)
+##### [Vista general de colaboración para invitados](/microsoft-365/solutions/collaborate-with-people-outside-your-organization?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Colaboración en documentos](/microsoft-365/solutions/collaborate-on-documents?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Colaboración en un sitio](/microsoft-365/solutions/collaborate-in-site?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Colaborar en equipo](/microsoft-365/solutions/collaborate-as-team?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### Seguridad para uso compartido para invitados
-##### [Uso compartido no autenticado](best-practices-anonymous-sharing.md)
-##### [Limitar la exposición accidental](sharing-limit-accidental-exposure.md)
-##### [Crear un entorno seguro de uso compartido para invitados](create-a-secure-guest-sharing-environment.md)
-#### [Crear una extranet B2B](b2b-extranet.md)
-### [Limitar el uso compartido](microsoft-365-limit-sharing.md)
+##### [Uso compartido no autenticado](/microsoft-365/solutions/best-practices-anonymous-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Limitar la exposición accidental](/microsoft-365/solutions/share-limit-accidental-exposure?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Crear un entorno seguro de uso compartido para invitados](/microsoft-365/solutions/create-secure-guest-sharing-environment?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+#### [Crear una extranet B2B](/microsoft-365/solutions/b2b-extranet?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+### [Limitar el uso compartido](/microsoft-365/solutions/microsoft-365-limit-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 
 ## Dispositivos
 ### [Elegir entre MDM e Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
