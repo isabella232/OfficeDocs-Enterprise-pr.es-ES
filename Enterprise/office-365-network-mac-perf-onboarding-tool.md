@@ -3,7 +3,7 @@ title: Herramienta de incorporación de red de Office 365 en el centro de admini
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Herramienta de incorporación de red de Office 365 en el centro de administración de M365 (versión preliminar)
-ms.openlocfilehash: 7ead201d78c1a6ce971c6ff09d4be9c0d2c76be6
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106444"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890403"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Herramienta de incorporación de red de Office 365 en el centro de administración de M365 (versión preliminar)
 
@@ -30,7 +30,7 @@ La información de red del centro de administración de Microsoft 365 se basa en
 Le recomendamos que se usen conjuntamente donde el estado de calidad de la red pueda evaluarse para cada ubicación de la oficina en el centro de administración de Microsoft 365 y se puedan encontrar más detalles tras la implementación de las pruebas basadas en la herramienta de incorporación de la red de Office 365.
 
 >[!IMPORTANT]
->Las recomendaciones de rendimiento de red, información y evaluaciones en el centro de administración de Microsoft 365 se encuentra actualmente en estado de versión preliminar y solo está disponible para los inquilinos de Office 365 que se han inscrito en el programa de vista previa de características.
+>Información sobre la red, recomendaciones de rendimiento y evaluaciones en el centro de administración de Microsoft 365 se encuentra actualmente en estado de versión preliminar y solo está disponible para los inquilinos de Office 365 que se han inscrito en el programa de vista previa de características.
 
 ## <a name="the-advanced-tests-client-application"></a>Aplicación cliente de pruebas avanzadas
 
