@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Obtenga información sobre las capacidades multigeográficas en Exchange Online
-ms.openlocfilehash: 034631d10cc46fc24a7714dee13ddfc667272a49
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974842"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890552"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Capacidades multigeográficas en Exchange Online
 
@@ -53,8 +53,10 @@ Exchange Online sincroniza la propiedad **PreferredDataLocation** de Azure AD en
 
 - Los usuarios de Outlook para Mac pueden experimentar una pérdida temporal de acceso a su carpeta de archivo en línea mientras mueven su buzón de correo a una nueva ubicación geográfica. Esta condición se produce cuando los buzones de correo principal y de archivo del usuario se encuentran en diferentes ubicaciones geográficas, ya que los movimientos de buzones entre ubicaciones geográficas se pueden completar en diferentes momentos.
 
-- Los usuarios no pueden compartir *carpetas del buzón* entre distintas ubicaciones geográficas de Outlook en la Web (anteriormente conocida como Outlook Web App u OWA). Por ejemplo, un usuario de la Unión Europea no puede usar Outlook en la Web para abrir una carpeta compartida en un buzón que se encuentra en Estados Unidos. Sin embargo, los usuarios de Outlook en la Web pueden abrir *otros buzones* en diferentes ubicaciones geográficas utilizando una ventana de explorador separada, como se describe en [Abrir el buzón de otra persona en una ventana de navegador separada en Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
+- Los usuarios no pueden compartir *carpetas del buzón* entre distintas ubicaciones geográficas de Outlook en la Web (anteriormente conocida como Outlook Web App u OWA). Por ejemplo, un usuario de la Unión Europea no puede usar Outlook en la Web para abrir una carpeta compartida en un buzón que se encuentra en Estados Unidos. Pero los usuarios de Outlook en la Web pueden abrir *otros buzones* en diferentes ubicaciones geográficas utilizando una ventana de explorador separada, como se describe en [Abrir el buzón de otra persona en una ventana de navegador separada en Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
 
   **Nota**: el uso compartido de carpetas de buzones entre distintas ubicaciones geográficas es compatible con Outlook en Windows.
 
 - Las carpetas públicas se admiten en organizaciones multigeográficas. Sin embargo, las carpetas públicas deben permanecer en la ubicación geográfica central. No puede mover carpetas públicas a ubicaciones geográficas satélite.
+
+- En un entorno multigeográfico, la auditoría de buzón multigeográfico no es compatible. Por ejemplo, si se asignan permisos a un usuario para tener acceso a un buzón compartido en una ubicación geográfica diferente, las acciones de buzón que realiza el usuario no se registran en el registro de auditoría del buzón de correo compartido. Para más información, consulte [Administrar auditoría del buzón](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide)..
