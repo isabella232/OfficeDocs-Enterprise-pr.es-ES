@@ -13,12 +13,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 está llegando al final del soporte técnico. Use esta guía básica de planeación como guía para preparar la actualización a Exchange online o a una versión más reciente de Exchange Server local.
-ms.openlocfilehash: d5118d0abf02464b47bfb4a368d42b0921c19ec5
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: ddf2a099688e55e5e0650a030eb2a33293b21eb2
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605575"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979352"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Guía básica de soporte de Exchange 2010
 
@@ -218,11 +218,11 @@ Puede usar los siguientes recursos para ayudarle con la migración:
 
 Para obtener un resumen visual de las opciones de actualización, migración y movimiento a la nube para los clientes y servidores de Office 2010 y Windows 7, consulte el [póster de final de soporte técnico](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+[![Imagen para la finalización del soporte de los servidores y clientes de Office 2010 y póster de Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Este póster de una página es una forma rápida de comprender las diversas rutas que puede realizar para evitar que los productos de cliente y servidor de Office 2010 y Windows 7 lleguen al final del soporte técnico, con las rutas preferidas y la compatibilidad con la opción en Microsoft 365 Enterprise resaltado.
 
-También puede [Descargar](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) este póster e imprimirlo en formato carta, legal o tabloide (11 x 17).
+También puede [Descargar](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) este póster e imprimirlo en formato carta, legal o tabloide (11 x 17).
       
 ## <a name="what-if-i-need-help"></a>¿Qué debo hacer si necesito ayuda?
 

@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: El soporte técnico finaliza para Project Server 2010 finaliza el 13 de octubre de 2020. Use este artículo como guía para actualizar a Project online o a una versión más reciente de Project Server local.
-ms.openlocfilehash: 2b921426d066f97af65f7f89fa29958eb1c55dab
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 158cf7476a8d80d0024cf4093d0d20fc884811e0
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844121"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979522"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Guía básica de fin de soporte de Project Server 2010
 
@@ -206,11 +206,11 @@ Otros recursos:
 
 Para obtener un resumen visual de las opciones de actualización, migración y movimiento a la nube para los clientes y servidores de Office 2010 y Windows 7, consulte el [póster de final de soporte técnico](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+[![Imagen para la finalización del soporte de los servidores y clientes de Office 2010 y póster de Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Este póster de una página es una forma rápida de comprender las diversas rutas que puede realizar para evitar que los productos de cliente y servidor de Office 2010 y Windows 7 lleguen al final del soporte técnico, con las rutas preferidas y la compatibilidad con la opción en Microsoft 365 Enterprise resaltado.
 
-También puede [Descargar](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) este póster e imprimirlo en formato carta, legal o tabloide (11 x 17).
+También puede [Descargar](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) este póster e imprimirlo en formato carta, legal o tabloide (11 x 17).
    
 ## <a name="related-topics"></a>Temas relacionados
 

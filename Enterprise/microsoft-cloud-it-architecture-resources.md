@@ -18,12 +18,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Resumen: conozca los conceptos principales de arquitectura de la nube de identidad, seguridad, redes e híbrida de Microsoft. Revise las recomendaciones para proteger los archivos, las identidades y los dispositivos al usar la nube de Microsoft. Obtenga información sobre cómo implementar un escritorio moderno y seguro con Windows 10 y Office ProPlus.'
-ms.openlocfilehash: f2f466ff0f5f13e2b7e3bfb85f77a7e7961fcde2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 5cfed9ba3fd3dcc2c92d0226398cdf7658ee6cab
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844941"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979482"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitectura de TI de la nube de Microsoft
 
@@ -134,7 +134,7 @@ Obtenga una vista rápida de la [infraestructura básica](https://docs.microsoft
   
 |**Item**|**Descripción**|
 |:-----|:-----|
-|[![Imagen en miniatura del póster de la infraestructura básica Microsoft 365 Enterprise](media/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Ver en línea](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Este póster resume cada fase de la infraestructura básica en términos de objetivos, características y herramientas, decisiones de diseño, resultados de la configuración, incorporación y supervisión y actualizaciones constantes. <br/>| 
+|[![Imagen en miniatura del póster de la infraestructura básica Microsoft 365 Enterprise](media/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Ver en línea](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Este póster resume cada fase de la infraestructura básica en términos de objetivos, características y herramientas, decisiones de diseño, resultados de la configuración, incorporación y supervisión y actualizaciones constantes. <br/>| 
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Métodos de arquitectura para migraciones de inquilino a inquilino de la nube de Microsoft 
 En esta serie de temas se muestran varios métodos de arquitectura para las fusiones, las adquisiciones, las ventas y otros casos que podrían llevarle a migrar a un nuevo inquilino en la nube. En estos temas se proporciona una guía inicial para la planeación.

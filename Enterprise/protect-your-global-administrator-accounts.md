@@ -19,14 +19,17 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Proteger el acceso de administrador global a su suscripción a Office 365.
-ms.openlocfilehash: ee5acefbd5eab287a78b55f5d4ddfc525432b403
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fcd4d69df967ad592af52a36a55008463b6f30e2
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841197"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979372"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteger las cuentas de administrador global de Office 365
+
+> [!NOTE]
+> Se puede crear una cuenta de administrador global sin agregar ninguna licencia.
 
 *Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
@@ -150,7 +153,7 @@ Para obtener más información, consulte [Azure ad privileged Identity Managemen
 
 El software de SIEM se ejecuta en un servidor realiza un análisis en tiempo real de los eventos y las alertas de seguridad creados por las aplicaciones y el hardware de red. Para permitir que el servidor de SIEM incluya eventos y alertas de seguridad de Office 365 en sus funciones de análisis e informes, integre Azure AD en su SEIM. Consulte [Introduction to Azure log Integration](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Si está configurando una identidad para su suscripción de Office 365, consulte:
 
@@ -158,6 +161,6 @@ Si está configurando una identidad para su suscripción de Office 365, consulte
 - [Preparar la sincronización de directorios](prepare-for-directory-synchronization.md) si está usando una identidad híbrida
 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Guía básica de seguridad de Office 365](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).

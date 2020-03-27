@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: El soporte técnico finaliza pronto para las aplicaciones cliente y servidores de Office 2010, y los contratos de soporte personalizados no están disponibles. Use este artículo para empezar a planear la actualización ahora.
-ms.openlocfilehash: 29f1074a4ca0ab520ad29bc480178d2af535b72a
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: 8f5ba4ced815cddf3fbbb357b71157c3ad54347e
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605565"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979452"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2010
 
@@ -44,11 +44,11 @@ Mientras planea la actualización, este es un buen momento para considerar cambi
 
 Para obtener un resumen visual de las opciones de actualización, migración y movimiento a la nube para los clientes y servidores de Office 2010 y Windows 7, consulte el [póster de final de soporte técnico](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![Office 2010 clientes y servidores y póster de fin de soporte de Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+[![Imagen para la finalización del soporte de los servidores y clientes de Office 2010 y póster de Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Este póster de una página es una forma rápida de comprender las diversas rutas que puede realizar para evitar que los productos de cliente y servidor de Office 2010 y Windows 7 lleguen al final del soporte técnico, con las rutas preferidas y la compatibilidad con la opción en Microsoft 365 Enterprise resaltado.
 
-También puede [Descargar](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) este póster e imprimirlo en formato carta, legal o tabloide (11 x 17).
+También puede [Descargar](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) este póster e imprimirlo en formato carta, legal o tabloide (11 x 17).
       
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Planeación de la actualización de clientes y servidores de Office 2010
   

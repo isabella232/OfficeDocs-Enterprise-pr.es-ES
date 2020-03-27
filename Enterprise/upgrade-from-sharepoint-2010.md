@@ -19,12 +19,12 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: La compatibilidad finaliza para SharePoint 2010 y SharePoint Server 2010 finaliza el 13 de octubre de 2020. Use este artículo como guía para actualizar a SharePoint Online o a una versión más reciente de SharePoint Server local.
-ms.openlocfilehash: 51c372bf2d96c245223a1ea3776f889e60bf4491
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 81aeebc584f1ba9d6e0bd22a1a83362db4dc669a
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841057"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979492"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
@@ -57,7 +57,7 @@ Esta matriz ayuda a trazar un curso en lo referente a la migración de caracter�
   
 |**Fin del producto de soporte**|**Good**|**Procedimientos**|
 |:-----|:-----|:-----|
-|SharePoint Server 2010  <br/> |SharePoint Server 2013 (local)  <br/> |SharePoint Online  <br/> |
+|SharePoint Server 2010  <br/> |SharePoint Server 2013 (local)  <br/> |SharePoint en linea  <br/> |
 ||SharePoint Server 2013 híbrido con SharePoint Online  <br/> |SharePoint Server 2016 (local)  <br/> |
 |||Búsqueda híbrida en la nube de SharePoint  <br/> |
    
@@ -162,15 +162,15 @@ Comience por comparar los requisitos de hardware y software. Si no cumple los re
   
 - **Requisitos de hardware y software para**: 
     
-    [](https://go.microsoft.com/fwlink/?linkid=843204) | SharePoint Server 2010 SharePoint[Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | SharePoint Server 2010 SharePoint[Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - Límites **de software para**: 
     
-    [](https://go.microsoft.com/fwlink/?linkid=843247) | SharePoint Server 2010 SharePoint[Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | SharePoint Server 2010 SharePoint[Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **Información general sobre el proceso de actualización para**: 
     
-    [](https://go.microsoft.com/fwlink/?linkid=843251) | SharePoint Server 2010 SharePoint[Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | SharePoint Server 2010 SharePoint[Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Crear una solución híbrida de SharePoint entre SharePoint Online y SharePoint Server local
 
@@ -189,11 +189,11 @@ Una buena forma de ver cómo funciona una granja de servidores híbrida de Share
 
 Para obtener un resumen visual de las opciones de actualización, migración y movimiento a la nube para los clientes y servidores de Office 2010 y Windows 7, consulte el [póster de final de soporte técnico](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+[![Imagen para la finalización del soporte de los servidores y clientes de Office 2010 y póster de Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Este póster de una página es una forma rápida de comprender las diversas rutas que puede realizar para evitar que los productos de cliente y servidor de Office 2010 y Windows 7 lleguen al final del soporte técnico, con las rutas preferidas y la compatibilidad con la opción en Microsoft 365 Enterprise resaltado.
 
-También puede [Descargar](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) este póster e imprimirlo en formato carta, legal o tabloide (11 x 17).
+También puede [Descargar](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) este póster e imprimirlo en formato carta, legal o tabloide (11 x 17).
         
 ## <a name="related-topics"></a>Temas relacionados
 
