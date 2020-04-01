@@ -3,7 +3,7 @@ title: Evaluación de la red de Office 365 (versión preliminar)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/04/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,22 +14,22 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Evaluación de la red de Office 365 (versión preliminar)
-ms.openlocfilehash: 24ecea73d9ecb6ae73b26e42a25749c846e3a281
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 280046487b116172430df1d15d4bc671fa708e68
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890377"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081692"
 ---
 # <a name="office-365-network-assessment-preview"></a>Evaluación de la red de Office 365 (versión preliminar)
 
-En la página Microsoft 365 del centro de administración de Microsoft para Microsoft 365, **evaluación** de la red divide una amplia variedad de métricas de rendimiento de red en una instantánea del estado de la red de la empresa, representada por un valor Points de 1-100. Las evaluaciones de red están en el ámbito de todo el inquilino y en cada ubicación geográfica desde la que los usuarios se conectan a su inquilino, lo que proporciona a los administradores de Office 365 una manera fácil de captar de forma instantánea un Gestalt del estado de la red de la empresa y profundizar rápidamente hacia abajo en un informe detallado de cualquier ubicación global de la oficina.
+En la página Microsoft 365 del centro de administración de Microsoft para Microsoft 365, **evaluación** de la red divide una amplia variedad de métricas de rendimiento de red en una instantánea del estado de la red de la empresa, representada por un valor Points de 1-100. Las evaluaciones de red están en el ámbito de todo el inquilino y en cada ubicación geográfica desde la que los usuarios se conectan a su inquilino, lo que proporciona a los administradores de Office 365 una manera fácil de captar de forma instantánea un Gestalt del estado de la red de la empresa y profundizar rápidamente en un informe detallado de cualquier ubicación global de la oficina.
 
 El valor de puntos de evaluación de red es una medición promedio de las métricas de latencia, ancho de banda, velocidad de descarga y calidad de la conexión que se compila en directo en el momento en que se ven. Las métricas de rendimiento para las redes que son propiedad de Microsoft se excluyen de estas medidas para garantizar que los resultados de la evaluación sean inequívocos y específicos de la red corporativa.
 
 ![Valor de evaluación de la red](Media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-Un valor muy bajo de evaluación de la red sugiere que los clientes de Office 365 tendrán problemas importantes para conectarse al inquilino o mantener una experiencia de usuario con capacidad de respuesta, mientras que un valor alto indica una red configurada correctamente con pocos resultados continuados. aspectos. Un valor de 80% representa una línea de base sana en la que no debería esperar recibir quejas de los usuarios habituales sobre la conectividad de Office 365 o la capacidad de respuesta debido al rendimiento de la red. A medida que se realizan mejoras de conectividad de red reiterativas, este valor aumentará junto con la experiencia del usuario.
+Un valor muy bajo de evaluación de la red sugiere que los clientes de Office 365 tendrán problemas importantes para conectarse al inquilino o mantener una experiencia de usuario con capacidad de respuesta, mientras que un valor alto indica una red configurada correctamente con pocos problemas de rendimiento continuos. Un valor de 80% representa una línea de base sana en la que no debería esperar recibir quejas de los usuarios habituales sobre la conectividad de Office 365 o la capacidad de respuesta debido al rendimiento de la red. A medida que se realizan mejoras de conectividad de red reiterativas, este valor aumentará junto con la experiencia del usuario.
 
 >[!IMPORTANT]
 >Información sobre la red, recomendaciones de rendimiento y evaluaciones en el centro de administración de Microsoft 365 se encuentra actualmente en estado de versión preliminar y solo está disponible para los inquilinos de Office 365 que se han inscrito en el programa de vista previa de características.
@@ -54,7 +54,7 @@ Se muestra un valor de evaluación de red para todo el inquilino de Office 365 e
 
 Para Exchange Online se mide la latencia TCP desde el equipo cliente al servidor front-end de Exchange. Esto puede verse afectado por la distancia que la red viaja a través de la LAN y la WAN de los clientes. También puede verse afectado por servicios o dispositivos intermedios de red que retrasn la conectividad o provocan la reenvío de paquetes.
 
-## <a name="sharepoint-online"></a>SharePoint Online
+## <a name="sharepoint-online"></a>SharePoint Online
 
 Para SharePoint Online, se mide la velocidad de descarga disponible para que un usuario tenga acceso a un documento. Esto puede verse afectado por el ancho de banda disponible en los circuitos de red entre el equipo cliente y la red de Microsoft. También suele afectar a la congestión de la red que existe en los cuellos de botella en dispositivos de red complejos o en áreas de Wi-Fi de mala cobertura.
 
@@ -70,4 +70,4 @@ Para Microsoft Teams, la calidad de la red se mide como latencia UDP, vibración
 
 [Herramienta de incorporación de red de Office 365 en el centro de administración de M365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Office 365 Network Insights privacidad y condiciones de uso (versión preliminar)](office-365-network-mac-perf-privacy.md)
+[Servicios de ubicación de conectividad de red 365 de Office (versión preliminar)](office-365-network-mac-location-services.md)

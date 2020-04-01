@@ -3,7 +3,7 @@ title: Herramienta de incorporación de red de Office 365 en el centro de admini
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/04/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Herramienta de incorporación de red de Office 365 en el centro de administración de M365 (versión preliminar)
-ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 299bace51b768add9ace29ce2f0680a2d8dd0250
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890403"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081702"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Herramienta de incorporación de red de Office 365 en el centro de administración de M365 (versión preliminar)
 
@@ -127,3 +127,5 @@ En esta sección se muestran los resultados de ICMP traceroute en la puerta fron
 [Office 365 Network performance Insight (versión preliminar)](office-365-network-mac-perf-insights.md)
 
 [Evaluación de la red de Office 365 (versión preliminar)](office-365-network-mac-perf-score.md)
+
+[Servicios de ubicación de conectividad de red 365 de Office (versión preliminar)](office-365-network-mac-location-services.md)

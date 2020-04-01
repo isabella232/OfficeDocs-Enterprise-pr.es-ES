@@ -3,7 +3,7 @@ title: Información de red de Office 365 (versión preliminar)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/20/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Información de red de Office 365 (versión preliminar)
-ms.openlocfilehash: 9b9ef28fa22b68f7860864aa6ce706531c0d8e00
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890632"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081712"
 ---
 # <a name="office-365-network-insights-preview"></a>Información de red de Office 365 (versión preliminar)
 
@@ -40,7 +40,7 @@ Hay cinco información de red específica que se puede mostrar para cada ubicaci
 
 ## <a name="backhauled-network-egress"></a>Salida de red en recorrido
 
-Esta información se mostrará si el servicio Network Insights detecta que la distancia desde una ubicación de usuario determinada a la red de salida es superior a 500 millas (800 kilómetros), lo que indica que el tráfico de Office 365 se está representando a un perímetro común de Internet. dispositivo o proxy.
+Esta información se mostrará si el servicio de Network Insights detecta que la distancia desde una ubicación de usuario determinada a la red de salida es superior a 500 millas (800 kilómetros), lo que indica que el tráfico de Office 365 se está recargando en un dispositivo perimetral o proxy común de Internet.
 
 Esta información se abrevia como "salida" en algunas vistas de resumen.
 
@@ -50,7 +50,7 @@ Esta información se abrevia como "salida" en algunas vistas de resumen.
 
 Esto identifica que la distancia entre la ubicación de la oficina y la red de salida es de más de 500 millas (800 kilómetros). La ubicación de la oficina se identifica con una ubicación de equipo cliente confusa y la ubicación de salida de red se identifica con las bases de datos dirección IP inversa para la ubicación. La ubicación de la oficina puede no ser exacta si servicios de ubicación de Windows está deshabilitado en los equipos. La ubicación de salida de red puede ser inexacta si la información de la base de datos de direcciones IP inversas no es exacta.
 
-Los detalles de esta visión incluyen la ubicación de la oficina, el porcentaje estimado del usuario total del inquilino en la ubicación, la ubicación de salida actual de la red, la relevancia de la ubicación de salida, la distancia entre la ubicación y el punto de salida actual, la fecha en que el la condición se detectó por primera vez y la fecha en que se resolvió la condición.
+Los detalles de esta visión incluyen la ubicación de la oficina, el porcentaje estimado del usuario total del inquilino en la ubicación, la ubicación de salida actual de la red, la relevancia de la ubicación de salida, la distancia entre la ubicación y el punto de salida actual, la fecha en que se detectó la condición por primera vez y la fecha en que se resolvió la condición.
 
 ### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
 
@@ -148,3 +148,5 @@ Para obtener más información acerca de cómo mitigar problemas de rendimiento 
 [Evaluación de la red de Office 365 (versión preliminar)](office-365-network-mac-perf-score.md)
 
 [Herramienta de incorporación de red de Office 365 en el centro de administración de M365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
+
+[Servicios de ubicación de conectividad de red 365 de Office (versión preliminar)](office-365-network-mac-location-services.md)
