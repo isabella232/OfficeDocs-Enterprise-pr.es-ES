@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: Ubicaciones de datos de Office 365'
-ms.openlocfilehash: 004d055c08769524907651a56b1a885d44a111d0
-ms.sourcegitcommit: a59b35b0b2667738998333d25e2a61cd8d7a3e26
+ms.openlocfilehash: ae11127cfaa592ae4a3db0a342e6d68c85fe7774
+ms.sourcegitcommit: 9483bc02cf410e80b56fe898298bd26eef486e17
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42581609"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43076133"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -39,6 +39,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 Obtenga información acerca de los compromisos contractuales para la ubicación de almacenamiento de los datos de clientes en reposo en los [términos de servicios en línea de Microsoft (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 Para las ubicaciones de datos de Azure Active Directory, visite [Mapa de datos de AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
+
+
+Debido a las circunstancias sin precedentes en torno al COVID-19 y la necesidad de administrar la demanda de los servicios en línea en Europa, si su organización es una institución educativa, podríamos proveerle su inquilino de Office 365 en la Unión Europea (UE), la Asociación Europea de Libre Cambio (AELC), el Reino Unido (RU), los Estados Unidos (EUA) o Canadá (CA), o transferir sus datos a cualquier centro de datos en la EU, la AELC, el RU, los EUA o CA.Esto significa que los datos pueden almacenarse en reposo dentro de la UE, la AELC, el RU, los EUA o CA.Nuestro compromiso con el cumplimiento, la privacidad y la seguridad permanece sin cambios mientras implementamos las medidas necesarias y prudentes para mantener la disponibilidad del servicio.  Cumpliremos con todas las leyes aplicables en lo que respecta a las transferencias de datos.
+
+
+
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
