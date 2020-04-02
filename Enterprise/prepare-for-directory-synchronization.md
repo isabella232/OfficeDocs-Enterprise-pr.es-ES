@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo preparar el aprovisionamiento de usuarios a Office 365 mediante la sincronización de directorios y las ventajas a largo plazo del uso de este método.
-ms.openlocfilehash: 948db4d5dca8d5deb9844ff9a7ec652653a5ab6b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d2eab22e360ae26543db1774c3b174647f30bcd6
+ms.sourcegitcommit: fce45e7373e5722e1068696565975853126666e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841177"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43093444"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Preparación para la sincronización de directorios en Office 365
 
@@ -76,7 +76,7 @@ En AD DS, complete las siguientes tareas de limpieza para cada cuenta de usuario
   - Teléfono móvil
   - Número de fax
   - Dirección
-  - Población
+  - Ciudad
   - Provincia
   - Código postal
   - País o región
@@ -113,7 +113,7 @@ A continuación se enumeran los atributos que debe preparar:
   - El valor del atributo debe ser único dentro del directorio.
   
     > [!NOTE]
-    > El carácter de subrayado ("_") en el nombre sincronizado indica que el valor original de este atributo contiene caracteres no válidos. El valor original puede contener letras, números y los caracteres!, #, $,%, &, ', \*, +,-,/, =,?, ^, _, ', {, |,} y ~. Para obtener más información sobre este atributo, consulte [Exchange alias Attribute](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
+    > El carácter de subrayado ("_") en el nombre sincronizado indica que el valor original de este atributo contiene caracteres no válidos. Para obtener más información sobre este atributo, consulte [Exchange alias Attribute](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
     >
       
 - **proxyAddresses**
@@ -190,7 +190,7 @@ Si ya ha configurado la sincronización de directorios, es posible que el UPN de
 Consulte también [Cómo preparar un dominio no enrutable (como un dominio. local) para la sincronización de directorios](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Vea [preparar los atributos de directorio con la herramienta IdFix](prepare-directory-attributes-for-synch-with-idfix.md) para ayudarle a corregir errores en los atributos de AD DS antes de la sincronización de directorios.
 
