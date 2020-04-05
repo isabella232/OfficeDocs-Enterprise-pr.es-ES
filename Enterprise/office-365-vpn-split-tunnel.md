@@ -3,7 +3,7 @@ title: 'Información general: túnel dividido de VPN con Office 365'
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 3/27/2020
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Instrucciones para usar túneles divididos de VPN con Office 365 para optimizar la conectividad de Office 365 con usuarios remotos.
-ms.openlocfilehash: 3ba52ecdb6e22c234cc0f208ae3ca40b3cb06b6d
-ms.sourcegitcommit: c081928170e2a56bc0627e5ec8174c1152fcc151
+ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
+ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034888"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131439"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Optimizar la conectividad de Office 365 para usuarios remotos que usan túnel dividido con VPN
 <!---
@@ -106,6 +106,8 @@ En la mayoría de los casos, esta implementación puede alcanzarse en cuestión 
 [Optimización de rendimiento de Office 365 para usuarios de China](office-365-networking-china.md)
 
 [Formas alternativas para que los profesionales de seguridad y de TI logren controles de seguridad modernos en los escenarios de trabajo remoto específicos (blog del Equipo de Seguridad de Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Mejorando el rendimiento de la VPN en Microsoft: usando perfiles de VPN de Windows 10 para permitir conexiones automáticas ](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
 [Funcionando con VPN: cómo Microsoft mantiene conectado a su personal remoto](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
