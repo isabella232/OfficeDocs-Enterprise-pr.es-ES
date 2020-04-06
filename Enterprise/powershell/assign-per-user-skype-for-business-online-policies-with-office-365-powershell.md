@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Resumen: Use Office 365 PowerShell para asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.'
-ms.openlocfilehash: b9bb38b4b93d9b18e46fc1891f52d89fd1ba9c9e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
+ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844271"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "43146815"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Asignar cada usuario Skype para las políticas de negocios en línea con Office 365 PowerShell
 
@@ -107,6 +107,39 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 Este comando establece el nombre de la Directiva de acceso externo asignada a Alex en un valor nulo ($Null). Null significa "Nothing". Es decir, no se asigna ninguna directiva de acceso externo a Alex. Cuando no se asigna ninguna directiva de acceso externo a un usuario, dicho usuario se administra mediante la directiva global.
   
 Para deshabilitar una cuenta de usuario con Windows PowerShell, use los cmdlets de Azure Active Directory para quitar la licencia de Skype empresarial online de Alex. Para obtener más información, vea [deshabilitar el acceso a servicios con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
+
+## <a name="managing-large-numbers-of-users"></a>Administración de grandes cantidades de usuarios
+
+Para administrar un gran número de usuarios (1000 o más), debe procesar los comandos mediante un bloque de script mediante el cmdlet [Invoke-Command](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  En los ejemplos anteriores, cada vez que se ejecuta un cmdlet, debe configurar la llamada y, a continuación, esperar el resultado antes de volver a enviarlo.  Cuando se usa un bloque de script, esto permite que se ejecuten los cmdlets de forma remota y, una vez finalizado, se devuelven los datos. 
+
+```powershell
+Import-Module LyncOnlineConnector
+$sfbSession = New-CsOnlineSession
+$users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
+
+$batch = 50
+$filter = ''
+$total = $users.Count
+$count = 0
+    $users | ForEach-Object {
+    $upn = $_.UserPrincipalName
+    $filter += "(UserPrincipalName -eq '$upn')"
+    $batch--
+    $count++
+    if (($batch -eq 0) -or ($count -eq $total)) {
+        $filterSB=[ScriptBlock]::Create($filter)
+        Invoke-Command -Session $s -ScriptBlock {param($f) Get-CsOnlineUser -filter $f | Grant-CsClientPolicy -PolicyName "ClientPolicyNoIMURL" -Passthru | Grant-CsExternalAccessPolicy -PolicyName "FederationAndPICDefault"} -ArgumentList $filterSB
+
+        # Reset
+        $batch = 50
+        $filter = ''
+    } else {
+        $filter += " -or "
+    }
+}
+```
+
+Esto buscará 500 usuarios a la vez que no tienen una directiva de cliente. Se le concederá la Directiva de cliente "ClientPolicyNoIMURL" y la Directiva de acceso externo "FederationAndPicDefault". Los resultados se procesan por lotes en grupos de 50 y, a continuación, cada lote de 50 se envía al equipo remoto.
   
 ## <a name="see-also"></a>Vea también
 
@@ -115,4 +148,3 @@ Para deshabilitar una cuenta de usuario con Windows PowerShell, use los cmdlets 
 [Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
-
