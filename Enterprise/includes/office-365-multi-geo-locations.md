@@ -10,7 +10,7 @@
 |Japón                        |JPN     |Centros de datos de Asia oriental o Asia sudoriental|
 |Corea                        |KOR     |Centros de datos de Asia oriental o Asia sudoriental|
 |Norteamérica                |NAM     |Centros de datos de Estados Unidos                    |
-|Sudáfrica                 |ZAF     |(Próximamente)                     |
-|Suiza                  |SWE     |(Próximamente)                     |
-|Emiratos Árabes Unidos         |ARE     |(Próximamente)                     |
+|Sudáfrica                 |ZAF     |(Ubicación de datos de eDiscovery disponible próximamente)|
+|Suiza                  |CHE     |(Ubicación de datos de eDiscovery disponible próximamente)|
+|Emiratos Árabes Unidos         |ARE     |(Ubicación de datos de eDiscovery disponible próximamente)|
 |Reino Unido               |GBR     |Centros de datos de Europa                |
