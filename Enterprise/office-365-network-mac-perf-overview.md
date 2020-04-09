@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Información general sobre las recomendaciones de rendimiento de red en el centro de administración de Microsoft 365 (versión preliminar)
-ms.openlocfilehash: f2ff012d20c799925c571d8065e28859c4c81f71
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+ms.openlocfilehash: 9bd1470b80d0c65c11748bee3e8a6a73a218f55f
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081722"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185781"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Recomendaciones de rendimiento de red en el centro de administración de Microsoft 365 (versión preliminar)
 
-El centro de administración de Microsoft 365 ahora incluye métricas de rendimiento en vivo recopiladas de su inquilino de Office 365 y disponibles para que solo las vean los usuarios administrativos de su espacio empresarial. **información de red y recomendaciones de rendimiento** y **evaluaciones de red** se muestran en el centro de administración de 365 <https://portal.microsoft.com/adminportal/home#/networkperformance>de Microsoft en. Puede encontrar la página en el panel de navegación bajo **mantenimiento | Rendimiento**de la red.
+El centro de administración de Microsoft 365 ahora incluye métricas de rendimiento en vivo recopiladas de su inquilino de Microsoft 365 y disponibles para que las vean solo los usuarios administrativos de su espacio empresarial. **información de red y recomendaciones de rendimiento** y **evaluaciones de red** se muestran en el centro de administración de 365 <https://portal.microsoft.com/adminportal/home#/networkperformance>de Microsoft en. Puede encontrar la página en el panel de navegación bajo **mantenimiento | Rendimiento**de la red.
 
 ![Página de rendimiento de red](Media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
@@ -41,32 +41,32 @@ Las muestras de medidas y las ubicaciones de la oficina deberían empezar a pare
 
 ## <a name="how-do-i-use-this-information"></a>¿Cómo puedo usar esta información?
 
-**Network Insights**, las recomendaciones de rendimiento y las evaluaciones de red relacionadas con el mismo tienen como objetivo ayudarle a diseñar perímetros de red para sus ubicaciones de oficina. Cada conocimiento proporciona detalles sobre las características de rendimiento de un problema común específico para cada ubicación geográfica en la que los usuarios obtienen acceso a su inquilino. Las **recomendaciones de rendimiento** para cada visión de red ofrecen cambios de diseño de arquitectura de red específicos que puede realizar para mejorar la experiencia del usuario con la conectividad de red de Office 365. La evaluación de la red muestra cómo la conectividad de red afecta a la experiencia del usuario, lo que permite comparar distintas conexiones de red de ubicación de usuario.
+**Network Insights**, las recomendaciones de rendimiento y las evaluaciones de red relacionadas con el mismo tienen como objetivo ayudarle a diseñar perímetros de red para sus ubicaciones de oficina. Cada conocimiento proporciona detalles sobre las características de rendimiento de un problema común específico para cada ubicación geográfica en la que los usuarios obtienen acceso a su inquilino. Las **recomendaciones de rendimiento** para cada visión de red ofrecen cambios de diseño de arquitectura de red específicos que puede realizar para mejorar la experiencia del usuario con la conectividad de red de Microsoft 365. La evaluación de la red muestra cómo la conectividad de red afecta a la experiencia del usuario, lo que permite comparar distintas conexiones de red de ubicación de usuario.
 
-Las **evaluaciones de red** transforman una amplia variedad de métricas de rendimiento de red en una instantánea del estado de la red de la empresa, representada por un valor Points de 1-100. Las evaluaciones de red están en el ámbito de todo el inquilino y en cada ubicación geográfica desde la que los usuarios se conectan a su inquilino, lo que proporciona a los administradores de Office 365 una manera fácil de captar de forma instantánea un Gestalt del estado de la red de la empresa y profundizar rápidamente en un informe detallado de cualquier ubicación global de la oficina.
+Las **evaluaciones de red** transforman una amplia variedad de métricas de rendimiento de red en una instantánea del estado de la red de la empresa, representada por un valor Points de 1-100. Las evaluaciones de red están en el ámbito de todo el inquilino y en cada ubicación geográfica desde la que los usuarios se conectan a su espacio empresarial, lo que proporciona a los administradores de Microsoft 365 una manera fácil de captar de forma instantánea un Gestalt del estado de la red de la empresa y profundizar rápidamente en un informe detallado de cualquier ubicación global de la oficina.
 
-Las empresas complejas con varias ubicaciones de oficina y arquitecturas de perímetro de red no triviales pueden beneficiarse de esta información, ya sea durante la incorporación inicial a Office 365 o para corregir los problemas de rendimiento de red detectados con el crecimiento de uso. Por lo general, esto no es necesario en el caso de pequeñas empresas que usen Office 365 o cualquier empresa que ya tenga conectividad de red sencilla y directa. Se espera que las empresas con más de 500 usuarios y varias ubicaciones de oficina disfruten de lo máximo.
+Las empresas complejas con varias ubicaciones de oficina y arquitecturas de perímetro de red no triviales pueden beneficiarse de esta información, ya sea durante su incorporación inicial a Microsoft 365 o para corregir los problemas de rendimiento de red detectados con el crecimiento de uso. Esto no suele ser necesario para las empresas pequeñas con Microsoft 365 o para las empresas que ya tienen conectividad de red sencilla y directa. Se espera que las empresas con más de 500 usuarios y varias ubicaciones de oficina disfruten de lo máximo.
 
 >[!IMPORTANT]
->Información sobre la red, recomendaciones de rendimiento y evaluaciones en el centro de administración de Microsoft 365 se encuentra actualmente en estado de versión preliminar y solo está disponible para los inquilinos de Office 365 que se han inscrito en el programa de vista previa de características.
+>Información sobre la red, recomendaciones de rendimiento y evaluaciones en el centro de administración de Microsoft 365 se encuentra actualmente en estado de versión preliminar y solo está disponible para los inquilinos de Microsoft 365 que se han inscrito en el programa de vista previa de características.
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Desafíos de conectividad de red empresarial
 
 ![Red del cliente a la nube](Media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
-Muchas empresas tienen configuraciones de perímetro de red que han crecido con el tiempo y están diseñadas principalmente para acomodar el acceso al sitio web de Internet de los empleados, donde la mayoría de los sitios web no se conocen de antemano y no son de confianza. El enfoque predominante y necesario evita los ataques de malware y de pesca de estos sitios web desconocidos. Esta estrategia de configuración de red, a la vez que resulta útil por motivos de seguridad, puede llevar a una degradación del rendimiento del usuario y de la experiencia del usuario de Office 365.
+Muchas empresas tienen configuraciones de perímetro de red que han crecido con el tiempo y están diseñadas principalmente para acomodar el acceso al sitio web de Internet de los empleados, donde la mayoría de los sitios web no se conocen de antemano y no son de confianza. El enfoque predominante y necesario evita los ataques de malware y de pesca de estos sitios web desconocidos. Esta estrategia de configuración de red, a la vez que resulta útil por motivos de seguridad, puede llevar a una degradación del rendimiento del usuario y de la experiencia del usuario de Microsoft 365.
 
 ## <a name="how-we-can-solve-these-challenges"></a>Cómo podemos resolver estos desafíos
 
-Las empresas pueden mejorar la experiencia general del usuario y proteger su entorno siguiendo los [principios de conectividad de Office 365](https://aka.ms/pnc) y el uso de la característica de rendimiento de red del centro de administración de Microsoft 365. En la mayoría de los casos, los siguientes principios generales tendrán un impacto positivo significativo en la latencia del usuario final, la confiabilidad del servicio y el rendimiento general de Office 365.
+Las empresas pueden mejorar la experiencia general del usuario y proteger su entorno siguiendo los [principios de conectividad de Office 365](https://aka.ms/pnc) y el uso de la característica de rendimiento de red del centro de administración de Microsoft 365. En la mayoría de los casos, los siguientes principios generales tendrán un impacto positivo significativo en la latencia del usuario final, la confiabilidad del servicio y el rendimiento general de Microsoft 365.
 
-A veces, Microsoft se le pide que investigue los problemas de rendimiento de la red con Office 365 para grandes clientes empresariales, y estos suelen tener una causa raíz relacionada con la infraestructura de salida de red de los clientes. Cuando se encuentra una causa de raíz común de un problema con el perímetro de la red del cliente, buscamos la identificación de medidas de prueba simples que la identifiquen. Una prueba con un umbral de medida que identifica un problema específico es valiosa porque podemos probar la misma medida en cualquier ubicación, saber si esta causa es la que está presente allí y compartirla como un conocimiento de red con el administrador.
+A veces, Microsoft se le pide que investigue los problemas de rendimiento de la red con Microsoft 365 para grandes clientes empresariales, y estos suelen tener una causa raíz relacionada con la infraestructura de salida de red de los clientes. Cuando se encuentra una causa de raíz común de un problema con el perímetro de la red del cliente, buscamos la identificación de medidas de prueba simples que la identifiquen. Una prueba con un umbral de medida que identifica un problema específico es valiosa porque podemos probar la misma medida en cualquier ubicación, saber si esta causa es la que está presente allí y compartirla como un conocimiento de red con el administrador.
 
 En algunos detalles de red, simplemente se indica un problema que necesita una investigación más. Un conocimiento de la red donde se tienen suficientes pruebas para mostrar una acción de corrección específica para corregir la causa raíz aparece como una **Acción recomendada**. Estas recomendaciones, basadas en las métricas activas que revelan los valores que se encuentran fuera de un umbral predeterminado, son mucho más valiosas que los consejos de prácticas recomendadas generales, ya que son específicas de su entorno y muestran la mejora real una vez que se han realizado los cambios recomendados.
 
 ## <a name="network-performance-overview-in-the-microsoft-365-admin-center"></a>Introducción al rendimiento de red en el centro de administración de Microsoft 365
 
-Microsoft tiene medidas de red existentes desde varios clientes Web y de escritorio de Office que admiten el funcionamiento de Office 365. Estas mediciones ahora se usan para proporcionar información sobre el diseño de la arquitectura de red y una evaluación del rendimiento de la red que se muestran en la página **rendimiento de red** en el centro de administración de Microsoft 365.
+Microsoft tiene medidas de red existentes desde varios clientes Web y de escritorio de Office que admiten el funcionamiento de Microsoft 365. Estas mediciones ahora se usan para proporcionar información sobre el diseño de la arquitectura de red y una evaluación del rendimiento de la red que se muestran en la página **rendimiento de red** en el centro de administración de Microsoft 365.
 
 De forma predeterminada, la información de ubicación aproximada asociada con las medidas de red identifica la ciudad en la que se encuentran los dispositivos cliente. La evaluación de la red en cada ubicación se muestra con color y el número relativo de usuarios en cada ubicación se representa por el tamaño del círculo.
 
@@ -122,16 +122,16 @@ En el archivo CSV la ubicación de la ciudad descubierta se denomina **City**y u
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
-### <a name="what-is-an-office-365-service-front-door"></a>¿Qué es un servicio de Office 365 la puerta frontal?
+### <a name="what-is-a-microsoft-365-service-front-door"></a>¿Qué es una puerta de servicio de Microsoft 365?
 
-La puerta frontal del servicio de Office 365 es un punto de entrada en la red global de Microsoft donde los clientes y servicios de Office terminan su conexión de red. Para obtener una conexión de red óptima a Office 365, se recomienda que la conexión de red se termine en la puerta frontal de Office 365 más cercana en su ciudad o metro.
+La puerta de entrada del servicio 365 de Microsoft es un punto de entrada en la red global de Microsoft donde los clientes y servicios de Office terminan su conexión de red. Para obtener una conexión de red óptima a Microsoft 365, se recomienda que la conexión de red se termine en la puerta frontal de Microsoft 365 más cercana en su ciudad o metro.
 
 >[!NOTE]
->La puerta de servicio de Office 365 no tiene ninguna relación directa con el producto de servicio de puerta de Azure Front-Door disponible en Azure Marketplace.
+>La puerta de servicio de Microsoft 365 no tiene ninguna relación directa con el producto de servicio de puerta de Azure Front-Door disponible en Azure Marketplace.
 
-### <a name="what-is-an-optimal-office-365-service-front-door"></a>¿Qué es una puerta frontal de servicio de Office 365 óptima?
+### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>¿Qué es una puerta de servicio de Microsoft 365 óptima?
 
-Una puerta frontal del servicio Office 365 óptima es la que más se aproxime a la salida de la red, generalmente en su ciudad o área metropolitana. Use la [herramienta de incorporación de red de office 365](office-365-network-mac-perf-onboarding-tool.md) para determinar la ubicación del servicio de Office 365 en uso en la puerta frontal y la puerta de servicio óptima. Si la herramienta determina que la puerta frontal en uso es óptima, se está conectando de forma óptima a la red global de Microsoft.
+Una puerta frontal de servicio Microsoft 365 óptima es la que más se aproxime a la salida de la red, generalmente en su ciudad o área metropolitana. Use la [herramienta de incorporación de red de 365 de Microsoft](office-365-network-mac-perf-onboarding-tool.md) para determinar la ubicación de la puerta frontal del servicio Microsoft 365 y la puerta de servicio óptima. Si la herramienta determina que la puerta frontal en uso es óptima, se está conectando de forma óptima a la red global de Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>¿Qué es una ubicación de salida de Internet?
 
@@ -139,10 +139,10 @@ La ubicación de salida de Internet es la ubicación en la que el tráfico de re
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Información de red de Office 365 (versión preliminar)](office-365-network-mac-perf-insights.md)
+[Información de la red de 365 de Microsoft (versión preliminar)](office-365-network-mac-perf-insights.md)
 
-[Evaluación de la red de Office 365 (versión preliminar)](office-365-network-mac-perf-score.md)
+[Evaluación de red de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-score.md)
 
-[Herramienta de incorporación de red de Office 365 en el centro de administración de M365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
+[Herramienta de incorporación de red de 365 de Microsoft en el centro de administración de M365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Servicios de ubicación de conectividad de red 365 de Office (versión preliminar)](office-365-network-mac-location-services.md)
+[Servicios de ubicación de conectividad de red 365 de Microsoft (versión preliminar)](office-365-network-mac-location-services.md)
