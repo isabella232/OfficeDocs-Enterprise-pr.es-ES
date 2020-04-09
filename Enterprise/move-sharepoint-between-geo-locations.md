@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Aprenda a mover un sitio de OneDrive a otra ubicación geográfica
-ms.openlocfilehash: cf7d0bb73013c776b8cd67579aca334114820743
-ms.sourcegitcommit: 8578eb35b83a38fbf8ae7344e2128ddb6458fe16
+ms.openlocfilehash: 8a842f32091f84d64522526ad5407af8cfd780a9
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175048"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185721"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 
@@ -190,17 +190,6 @@ El cliente de win32 de OneNote y la aplicación UWP (Universal) detectarán auto
 ### <a name="teams-applicable-to-office-365-group-connected-sites"></a>Teams (se aplica a los sitios conectados al Grupo de Office 365)
 
 Cuando se complete el movimiento geográfico de sitios de SharePoint, los usuarios tendrán acceso a sus archivos de sitio de Grupo de Office 365 en la aplicación de Teams. Además, los archivos compartidos mediante chat de Teams desde el sitio, antes del movimiento geográfico, seguirán funcionando tras completar el mismo.
-
-Problemas conocidos:
-
-|Problema|Solución alternativa|
-|:----|:---------|
-|Los archivos presentes en la pestaña Archivos antes del desplazamiento geográfico no se pueden abrir desde Teams.|Abra el archivo desde SharePoint.|
-|Los archivos que se han compartido en conversaciones antes del desplazamiento geográfico no se abrirán en el escritorio de Teams.|Abra el archivo desde la pestaña Archivos.|
-|Es posible que la pestaña Archivos del canal no se abra en la primera visita después del desplazamiento geográfico.|Vuelva a ir a la pestaña Archivos.|
-|Es posible que la carga de archivos en la conversación del canal no funcione después de mover el sitio.|Cargue archivos a través de la pestaña Archivos.|
-|La búsqueda de archivos en Teams no mostrará resultados después del desplazamiento geográfico.|Busque archivos a través de la pestaña Archivos.|
-|Es posible que la vista Microsoft Teams de la aplicación de archivos (navegación izquierda) no muestre archivos hasta que se actualice la pestaña Archivos del sitio que se ha movido.|Vaya a la pestaña Archivos del sitio que se ha movido.|
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>Aplicación móvil de SharePoint para Android y iOS
 
