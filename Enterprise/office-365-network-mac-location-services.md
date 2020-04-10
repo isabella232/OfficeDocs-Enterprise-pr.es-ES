@@ -1,5 +1,5 @@
 ---
-title: Servicios de ubicación de conectividad de red 365 de Office (versión preliminar)
+title: Servicios de ubicación de conectividad de red 365 de Microsoft (versión preliminar)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Servicios de ubicación de conectividad de red 365 de Office (versión preliminar)
-ms.openlocfilehash: 6deb964955689416219c5b9350ea150ecd4f3b7a
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Servicios de ubicación de conectividad de red 365 de Microsoft (versión preliminar)
+ms.openlocfilehash: 13ca35afe4bd375482a9fc924801e240c361bb6b
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081819"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185731"
 ---
-# <a name="office-365-network-connectivity-location-services-preview"></a>Servicios de ubicación de conectividad de red 365 de Office (versión preliminar)
+# <a name="microsoft-365-network-connectivity-location-services-preview"></a>Servicios de ubicación de conectividad de red 365 de Microsoft (versión preliminar)
 
-El centro de administración de 365 de Microsoft muestra ahora la **información sobre la red y las recomendaciones de rendimiento**, que son métricas de rendimiento real recopiladas de su inquilino de Office 365 y que están disponibles para que las vean solo los usuarios administrativos de su espacio empresarial. La conectividad de red de la organización se diseña por ubicación de la oficina a través de una ubicación de salida de red a Internet. Office 365 Client Connectivity usa esa ruta y, a continuación, a través de Internet a los servidores de puerta de servicios de Microsoft. La identificación de las ubicaciones de oficina es la clave para poder mostrar esta información de red.
+El centro de administración de 365 de Microsoft muestra ahora la **información sobre la red y las recomendaciones de rendimiento**, que son métricas de rendimiento real recopiladas de su inquilino de Microsoft 365 y que están disponibles para que las vean solo los usuarios administrativos de su espacio empresarial. La conectividad de red de la organización se diseña por ubicación de la oficina a través de una ubicación de salida de red a Internet. La conectividad de cliente de Microsoft 365 usa esa ruta y, a continuación, en Internet para los servidores de puerta de servicios de Microsoft. La identificación de las ubicaciones de oficina es la clave para poder mostrar esta información de red.
 
 ## <a name="location-in-network-measurements"></a>Ubicación en las medidas de red
 

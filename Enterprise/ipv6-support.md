@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Resumen: describe la compatibilidad de IPv6 en componentes de Microsoft Office 365 y en ofertas de administración pública de Office 365.'
-ms.openlocfilehash: 32e90f0dda9b06d06b6e289b26f640c4ddc79cf3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 13fd1cfef26f5e69c87f650c46f71071b72f2d15
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845121"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206547"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Compatibilidad con IPv6 en servicios de Office 365
 
@@ -57,11 +57,11 @@ Exchange Online Protection (EOP) admite IPv6 si la transmisión se produce a tra
   
 ### <a name="ipv6-support-for-office-365-government-offerings"></a>Compatibilidad con IPv6 para las ofertas de Office 365 Government
 
-Office 365 IPv6 Support for Government offers se ajusta al Office of Management and Budget (OMB) memorándum para los responsables de información de los departamentos y agencias ejecutivos, así como la adopción del Protocolo de Internet versión 6 (IPv6 Memorándum. [Microsoft Office 365 para administración pública](https://go.microsoft.com/fwlink/p/?LinkId=325414) es un servicio multiempresa que almacena datos gubernamentales de Estados Unidos en una nube de la comunidad segregada. Como otras ofertas de Office 365, proporciona servicios de productividad y colaboración, como Exchange Online, Skype empresarial, SharePoint Online y Office Professional Plus. 
+Office 365 IPv6 Support for Government offers se ajusta al Office of Management and Budget (OMB) memorándum para los responsables de información de agencias y Departamentos ejecutivos, así como para el gobierno federal del memorándum de protocolo de Internet versión 6 (IPv6). [Microsoft Office 365 para administración pública](https://go.microsoft.com/fwlink/p/?LinkId=325414) es un servicio multiempresa que almacena datos gubernamentales de Estados Unidos en una nube de la comunidad segregada. Como otras ofertas de Office 365, proporciona servicios de productividad y colaboración, como Exchange Online, Skype empresarial, SharePoint Online y Office 365 ProPlus. 
 
 Las ofertas de Microsoft Office 365 Government solo se aplican a 2013 y versiones posteriores. Para obtener más información acerca de las ofertas de Office 365 Government, consulte el [anuncio de office 365 para la administración pública: una nube de la comunidad de administración pública de Estados Unidos](https://go.microsoft.com/fwlink/p/?LinkId=325414). El tráfico internacional en las regulaciones de brazos (ITAR) es un conjunto de regulaciones del gobierno de Estados Unidos que controlan la exportación y la importación de artículos y servicios relacionados con la defensa en la [lista de municiones de Estados Unidos (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415). 
 
-Microsoft Office 365 para empresas proporciona servicios de hospedaje dedicados para soluciones de productividad de Microsoft que admiten los requisitos de seguridad, privacidad y cumplimiento normativo para agencias federales de Estados Unidos que requieran la seguridad de la información federal Certificación de administración (FISMA) y entidades comerciales sujetas a ITAR.
+Microsoft Office 365 para empresas proporciona servicios de hospedaje dedicados para las soluciones de productividad de Microsoft que admiten los requisitos de seguridad, privacidad y cumplimiento normativo para agencias federales de Estados Unidos que requieran certificación de administración de seguridad de la información federal (FISMA) y entidades comerciales sujetas a ITAR.
   
 ## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>Aspectos que se deben tener en cuenta al usar IPv6 y Office 365
 
