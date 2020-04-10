@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Una explicación de las características de informes en Office 365.
-ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7816ed231a3e38f618fb3f63f77dc24c9eed37c3
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842037"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206557"
 ---
 # <a name="office-365-reporting-features"></a>Características de presentación de informes de Office 365 
 
@@ -30,7 +30,7 @@ La característica de informes de Office 365 proporciona varios informes de audi
 
 ## <a name="office-365-reports-dashboard"></a>Panel de informes de Office 365
 
-El panel informes de la vista previa del centro de administración de Microsoft 365 muestra la actividad de uso en Office 365. Los administradores globales de Office 365 o los administradores de Exchange Online, SharePoint Online o Skype empresarial pueden obtener información detallada sobre el uso de ese servicio. Por ejemplo, el número de usuarios de un servicio de Office 365 en particular, el número de usuarios que han activado Office Professional Plus y la cantidad de correo que fluye a través de la organización. Los informes están disponibles para los últimos 7, 30, 90 y 180 días.
+El panel informes de la vista previa del centro de administración de Microsoft 365 muestra la actividad de uso en Office 365. Los administradores globales de Office 365 o los administradores de Exchange Online, SharePoint Online o Skype empresarial pueden obtener información detallada sobre el uso de ese servicio. Por ejemplo, el número de usuarios de un servicio de Office 365 en particular, el número de usuarios que han activado Office 365 ProPlus y la cantidad de correo que fluye a través de la organización. Los informes están disponibles para los últimos 7, 30, 90 y 180 días.
 
 Están disponibles los siguientes informes:
 
