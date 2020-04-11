@@ -3,7 +3,7 @@ title: Implementación de túnel dividido de VPN en Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/8/2020
+ms.date: 4/9/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Cómo implementar un túnel dividido de VPN en Office 365
-ms.openlocfilehash: 72cdef3da872f7886963be80cf2b092a19e017eb
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 3ac4d1243e28e8081439c98baf181ba9fb5fb2b3
+ms.sourcegitcommit: f12f95866df3a7bbf866e1d21a839be7fbdf9470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185771"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43203854"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementación de túnel dividido de VPN en Office 365
 
@@ -272,6 +272,7 @@ En esta sección se proporcionan vínculos a guías detalladas para implementar 
 - **Cisco AnyConnect**: [Optimize Anyconnect Split Tunnel for Office 365 (Optimización del túnel dividido de AnyConnect para Office 365)](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect**: [optimiza el tráfico de Office 365 mediante un túnel dividido de VPN para excluir la ruta de acceso](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 Networks BIG-IP APM**: [optimiza el tráfico de Office 365 en el acceso remoto mediante redes VPN al usar BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
+- **Citrix Gateway**: [optimización del túnel dividido de VPN de Citrix Gateway para Office365](https://docs.citrix.com/es-ES/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
