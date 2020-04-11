@@ -3,7 +3,7 @@ title: Herramienta de incorporación de red de 365 de Microsoft en el centro de 
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/08/2020
+ms.date: 04/10/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Herramienta de incorporación de red de 365 de Microsoft en el centro de administración de M365 (versión preliminar)
-ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
+ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185741"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225703"
 ---
 # <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Herramienta de incorporación de red de 365 de Microsoft en el centro de administración de M365 (versión preliminar)
 
 La herramienta de incorporación de red de 365 de Microsoft se <https://connectivity.office.com>encuentra en. Se trata de una herramienta de Adjunct a la información sobre la puntuación de red y la puntuación de red disponible en el centro de administración de Microsoft 365 en el área **mantenimiento | **Menú de rendimiento de la red.
+
+>[!NOTE]
+>La herramienta de incorporación es compatible con los inquilinos de WW Commercial y GCC moderadamente pero no con GCC High, DoD, Germany o China.
 
 La información de red del centro de administración de Microsoft 365 se basa en las mediciones del producto de su inquilino de Microsoft 365. En comparación, la información de red de la herramienta de incorporación de red de Microsoft 365 se ejecuta de forma local en la herramienta. Las pruebas que se pueden llevar a cabo en el producto son limitadas y al ejecutar pruebas locales para el usuario se pueden recopilar más datos, lo que da lugar a una información más profunda. Considere que en la información de red del centro de administración de Microsoft 365 se muestra que hay un problema de red para usar Microsoft 365 en una ubicación específica de la oficina. La herramienta de incorporación de red de 365 de Microsoft puede ayudarle a identificar la causa raíz del problema, lo que provoca una acción recomendada para mejorar el rendimiento de la red.
 
