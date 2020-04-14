@@ -17,12 +17,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Obtenga información sobre cómo usar PowerShell de Office 365 para eliminar cuentas de usuario de Office 365.
-ms.openlocfilehash: 5c69d69a61b3d3299f34a46c32d5575eae7b908a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ea803d82bb54e5430ceb9a59e8c04a0f72b200fc
+ms.sourcegitcommit: 069f56455252d6f4001ec0ecee792b83b585e692
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841555"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237811"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Eliminar cuentas de usuario con PowerShell de Office 365
 
@@ -45,7 +45,7 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> El parámetro **ObjectID** en el cmdlet **Remove-AzureAD** acepta tanto el nombre de inicio de sesión en la cuenta, también conocido como nombre principal de usuario, o la ID de objeto de la cuenta.
+> El parámetro **-objectId** en el cmdlet **Remove-AzureADUser** acepta tanto el nombre de inicio de sesión de la cuenta, también conocido como el nombre principal de usuario, o el identificador de objeto de la cuenta.
   
 Para mostrar el nombre de cuenta según el nombre de usuario, use los comandos siguientes:
   
