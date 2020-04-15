@@ -3,7 +3,7 @@ title: Planeación de la actualización desde servidores y clientes de Office 20
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Si usa Office 2007 u Office 2010, es el momento de planear la actualización. No se bloquee con aplicaciones y servidores obsoletos y no admitidos. Use estos recursos para empezar a trabajar con su plan.
-ms.openlocfilehash: e970546790f290cd2d075adba7628188d60ef19a
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: 1b32af6e09b3a8a5830fa59dc6ec6de1060297e0
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605625"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503808"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planeación de la actualización de los servidores y clientes de Office 2007 u Office 2010
 
 *Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
-Si su organización usa versiones anteriores de productos y servidores de Office, este es un buen momento para empezar a planear la actualización. Los productos y servicios de Office 2007 han llegado al [final del soporte técnico](upgrade-from-office-2007-servers-and-products.md). Los productos y servicios de Office 2010 (incluidos Office 2010, Exchange 2010, SharePoint 2010 y Project Server 2010) llegarán a su fin de soporte el **13 de octubre de 2020**. Use los recursos de esta sección para empezar.
+Si su organización usa versiones anteriores de productos y servidores de Office, este es un buen momento para empezar a planear la actualización. Los productos y servicios de Office 2007 han llegado al [final del soporte técnico](upgrade-from-office-2007-servers-and-products.md). Office 2010 y Exchange 2010 llegarán a su fin de soporte el **13 de octubre de 2020**. SharePoint 2010 y Project Server 2010 llegarán a su fin de soporte el **13 de abril de 2021**. Use los recursos de esta sección para empezar.
 
 Para obtener más información [, consulte Actualización de clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md) .
 
@@ -88,7 +88,7 @@ También puede elegir no actualizar en este momento. Las aplicaciones de Office 
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) es la combinación de Office 365, Windows 10 y Enterprise Mobility + Security (EMS) que proporciona una solución completa e inteligente para permitir que todo el mundo sea creativo y de colaboración, de forma segura. 
   
-Aunque puede migrar los servidores y los clientes de Office 2007 u Office 2010 a Office 365, Microsoft 365 incluye las licencias y capacidades para ayudar a garantizar que su organización está trabajando con el último sistema operativo Windows y que los dispositivos, incluidos Windows, iOS y Android: se inscriben y mantienen protegidos con directivas que requieren autenticación y protección de datos. Además, Windows 10 y el software de cliente de Office 365 ProPlus se actualizan de manera continua para incluir las últimas características y actualizaciones de seguridad.
+Aunque puede migrar los servidores y los clientes de Office 2007 u Office 2010 a Office 365, Microsoft 365 incluye las licencias y capacidades para ayudar a garantizar que su organización está trabajando en el sistema operativo Windows más reciente y que los dispositivos (como Windows, iOS y Android) se inscriben y mantienen protegidos con directivas que requieren autenticación y protección de datos. Además, Windows 10 y el software de cliente de Office 365 ProPlus se actualizan de manera continua para incluir las últimas características y actualizaciones de seguridad.
   
 Microsoft 365 es la forma de transformar digitalmente su negocio con la mejora constante de los dispositivos y las experiencias de productividad, habilitada y protegida por la nube de Microsoft.
   

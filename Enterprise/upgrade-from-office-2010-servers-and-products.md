@@ -3,7 +3,7 @@ title: Recursos que le ayudarán a actualizar desde los servidores y clientes de
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -23,18 +23,20 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: El soporte técnico finaliza pronto para las aplicaciones cliente y servidores de Office 2010, y los contratos de soporte personalizados no están disponibles. Use este artículo para empezar a planear la actualización ahora.
-ms.openlocfilehash: 8f5ba4ced815cddf3fbbb357b71157c3ad54347e
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 3504f7d7042616f94cc359ef849ca3afd86ebc04
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979452"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503826"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2010
 
 *Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
-Office 2010, Exchange Server 2010, SharePoint 2010 y Project Server 2010 alcanzarán el final del soporte técnico el **13 de octubre de 2020**. 
+Office 2010 y Exchange 2010 llegarán a su fin de soporte el **13 de octubre de 2020**. 
+
+SharePoint 2010 y Project Server 2010 llegarán a su fin de soporte el **13 de abril de 2021**.
 
 Mientras planea la actualización, este es un buen momento para considerar cambiar a Office 365 o Microsoft 365. 
 
@@ -44,7 +46,7 @@ Mientras planea la actualización, este es un buen momento para considerar cambi
 
 Para obtener un resumen visual de las opciones de actualización, migración y movimiento a la nube para los clientes y servidores de Office 2010 y Windows 7, consulte el [póster de final de soporte técnico](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-[![Imagen para la finalización del soporte de los servidores y clientes de Office 2010 y póster de Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Imagen para el final del soporte técnico para los servidores y clientes de Office 2010 y póster de Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Este póster de una página es una forma rápida de comprender las diversas rutas que puede realizar para evitar que los productos de cliente y servidor de Office 2010 y Windows 7 lleguen al final del soporte técnico, con las rutas preferidas y la compatibilidad con la opción en Microsoft 365 Enterprise resaltado.
 
@@ -56,8 +58,8 @@ También puede [Descargar](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 |:-----|:-----|:-----|
 |Office 2010 (incluidos Word 2010, Excel 2010, PowerPoint 2010 y Outlook 2010)  <br/> | 13 de octubre de 2020 |[Plan de desarrollo de Office 2010 fin de soporte](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> | 13 de octubre de 2020  |[Guía básica de soporte de Exchange 2010](exchange-2010-end-of-support.md) <br/> |
-|SharePoint 2010 o SharePoint Server 2010  <br/> | 13 de octubre de 2020 |[Actualización desde SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 <br/> | 13 de octubre de 2020 | [Guía básica de fin de soporte de Project Server 2010](project-server-2010-end-of-support.md) <br/> |
+|SharePoint 2010 o SharePoint Server 2010  <br/> | 13 de abril de 2021 |[Actualización desde SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
+|Project Server 2010 <br/> | 13 de abril de 2021 | [Guía básica de fin de soporte de Project Server 2010](project-server-2010-end-of-support.md) <br/> |
 |Lync Server 2010 <br/> | 13 de abril de 2021 | [Planeación de la actualización a Skype empresarial Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
 ## <a name="im-a-home-user-what-do-i-do"></a>Soy un usuario doméstico. What do I do?
