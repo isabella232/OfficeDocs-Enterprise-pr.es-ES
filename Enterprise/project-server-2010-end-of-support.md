@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: El soporte técnico finaliza para Project Server 2010 finaliza el 13 de abril de 2021. Use este artículo como guía para actualizar a Project online o a una versión más reciente de Project Server local.
-ms.openlocfilehash: 3c60763576d75e62c39fe202523d22550acd2f3c
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 069675eef7190cf815147bc74dcced2943d2c956
+ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503838"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43532283"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Guía básica de fin de soporte de Project Server 2010
 
@@ -41,7 +41,7 @@ Para obtener más información acerca de los servidores de Office 2010 que alcan
   
 ## <a name="what-does-end-of-support-mean"></a>¿Qué significa el fin de soporte?
 
-Project Server, al igual que casi todos los productos de Microsoft, tiene un ciclo de vida de soporte técnico durante el cual ofrecemos nuevas características, correcciones de errores y actualizaciones de seguridad. Este ciclo de vida suele durar 10 años a partir de la fecha de lanzamiento inicial del producto y el final de este ciclo de vida se conoce como el final del soporte técnico del producto. Cuando Project Server 2010 llegue a su fin de soporte el 13 de octubre de 2020, Microsoft dejará de proporcionar:
+Project Server, al igual que casi todos los productos de Microsoft, tiene un ciclo de vida de soporte técnico durante el cual ofrecemos nuevas características, correcciones de errores y actualizaciones de seguridad. Este ciclo de vida suele durar 10 años a partir de la fecha de lanzamiento inicial del producto y el final de este ciclo de vida se conoce como el final del soporte técnico del producto. Cuando Project Server 2010 llegue a su fin de soporte el 13 de abril de 2021, Microsoft dejará de proporcionar:
   
 - Soporte técnico para los problemas que pueden surgir.
     
