@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: Ubicaciones de datos de Office 365'
-ms.openlocfilehash: 5db3c97914f9c5bdcf4389637494a421ad57de64
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: 4503d624fb9b7b0cea8715352518bfe678ea0bfa
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206607"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516541"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -120,6 +120,7 @@ Para los centros de datos específicos de su país o región, a continuación se
 | India | Chennai, Mumbai, Pune |
 | Japón | Osaka, Tokio y Saitama |
 | Corea | Busan, Seúl |
+| Noruega | Oslo, Stavanger |
 | Sudáfrica | Ciudad del Cabo, Johannesburgo |
 | Suiza | Ginebra, Zúrich |
 | Emiratos Árabes Unidos | Dubái, Abu Dabi |
@@ -3928,18 +3929,18 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange Online | Geografía global 1: EMEA |
-| OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| Exchange Online | Noruega |
+| OneDrive para la Empresa | Noruega |
+| SharePoint Online | Noruega |
 | Skype Empresarial | Geografía global 1: EMEA |
-| Microsoft Teams | Geografía global 1: EMEA |
-| Office Online y Office Mobile | Geografía global 1: EMEA |
-| EOP | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
+| Microsoft Teams | Noruega |
+| Office Online y Office Mobile | Noruega |
+| EOP | Noruega |
+| MyAnalytics | Noruega |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
-| Servicios de OneNote | Geografía global 1: EMEA |
+| Servicios de OneNote | Noruega |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
