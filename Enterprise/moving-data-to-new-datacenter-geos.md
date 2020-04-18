@@ -1,7 +1,7 @@
 ---
 title: Movimiento de datos básicos a un nuevo centro de datos de Microsoft 365 GEOS
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: 'El nuevo centro de GEOS agrega capacidad y calcula recursos para apoyar el crecimiento constante del uso y la demanda de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes. Los principales datos de clientes son un término que hace referencia a un subconjunto de los datos de clientes definidos en los términos de los servicios en línea de Microsoft: contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico) y contenido del sitio de SharePoint Online, así como los archivos almacenados en el sitio'
-ms.openlocfilehash: 3559fb78310667243160b000d4b4098eba6fdbcc
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516551"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547728"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Movimiento de datos básicos a un nuevo centro de datos de Microsoft 365 GEOS
 
@@ -37,7 +37,7 @@ Los clientes existentes que tienen sus datos de clientes principales almacenados
 |:-----|:-----|:-----|:-----|
 |**Japón**| Asia/Pacífico | Japón | Diciembre de 2014 |
 |**Australia, Nueva Zelanda, Fiji**| Asia/Pacífico | Australia | Marzo de 2015 |
-|**India**| Asia/Pacífico | India | octubre de 2015 |
+|**India**| Asia/Pacífico | India | Octubre de 2015 |
 |**Canadá**| Norteamérica | Canadá | Mayo de 2016 |
 |**Reino Unido**| Europa | Reino Unido | Septiembre de 2016 |
 |**Corea del Sur**| Asia/Pacífico | Corea del Sur | Abril de 2017 |
