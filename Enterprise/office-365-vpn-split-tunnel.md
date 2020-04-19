@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Instrucciones para usar túneles divididos de VPN con Office 365 para optimizar la conectividad de Office 365 con usuarios remotos.
-ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: d8f8d4364804395cd10eceb1aa55422f01cbe079
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131439"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547658"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Optimizar la conectividad de Office 365 para usuarios remotos que usan túnel dividido con VPN
 <!---
@@ -32,7 +32,7 @@ ms.locfileid: "43131439"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
-A los clientes que usan una VPN para conectar sus dispositivos de trabajo remotos a la red corporativa o a la infraestructura de la nube, Microsoft recomienda que los escenarios clave de Office 365 **Microsoft Teams**, **SharePoint Online** y **Exchange Online** se enruten a través de una _configuración de túnel dividido de VPN_. Esto es especialmente importante como estrategia de primera línea para facilitar la productividad de los empleados durante largos periodos de trabajo remoto, como el causado por la pandemia del COVID-19.
+A los clientes que usan una VPN para conectar sus dispositivos de trabajo remotos a la red corporativa o a la infraestructura de la nube, Microsoft recomienda que los escenarios clave de Office 365 **Microsoft Teams**, **SharePoint Online** y **Exchange Online** se enruten a través de una _configuración de túnel dividido de VPN_. Esto es especialmente importante como estrategia de primera línea para facilitar la productividad de los empleados durante largos periodos de trabajo remoto, como el causado por la crisis de la COVID-19.
 
 ![Configuración del túnel dividido de VPN](media/vpn-split-tunnelling/vpn-model-2.png)
 

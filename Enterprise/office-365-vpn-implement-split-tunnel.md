@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Cómo implementar un túnel dividido de VPN en Office 365
-ms.openlocfilehash: 81412e5f64f143949ef1cbca7b030f643cbace03
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 84b59351e07ca151000aa58727ce779e8f522722
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516491"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547668"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementación de túnel dividido de VPN en Office 365
 
@@ -41,7 +41,7 @@ El uso de túneles forzados de VPN para conectarse a aplicaciones en la nube de 
 
 Este problema ha estado creciendo durante varios años, en los que muchos clientes han estado informando de un cambio considerable en los patrones de tráfico de red. El tráfico, que solía mantenerse en entornos locales, ahora se conecta a los puntos de conexión de la nube externa. Muchos clientes de Microsoft han informado de que, en el pasado, alrededor del 80 % del tráfico de red se dirigía a un origen interno (representado por la línea de puntos en el diagrama anterior). En 2020 esa cifra ha caído aproximadamente a un 20 % o menos, debido a los desplazamientos de amplios volúmenes de cargas de trabajo a la nube. Estas tendencias no son infrecuentes para otras empresas. Con el tiempo, a medida que la nube avanza, el modelo anterior se convierte en algo cada vez más engorroso y menos sostenible, lo que limita la agilidad de la organización para adaptarse a un mundo que da prioridad a la nube.
 
-La pandemia mundial de la COVID-19 ha escalado este problema, de forma que necesita una solución inmediata. La necesidad de garantizar la seguridad de los empleados ha generado demandas sin precedentes en TI empresarial para dar soporte a la productividad del trabajo desde el hogar a una escala masiva. Microsoft Office 365 está bien posicionado para cumplir esta demanda, pero la elevada concurrencia de usuarios que trabajan desde casa genera un gran volumen de tráfico en Office 365 que, si se enruta mediante túneles forzados de VPN y perímetros de red local, provocará rápidamente una saturación y la infraestructura de VPN se quedará sin capacidad. En esta nueva realidad, el uso de VPN para tener acceso a Office 365 ya no es solamente un obstáculo de rendimiento, sino un muro que no solo afecta a Office 365, sino también a operaciones críticas de empresas cuyo funcionamiento todavía depende de la VPN.
+La crisis mundial de la COVID-19 ha escalado este problema, de forma que necesita una solución inmediata. La necesidad de garantizar la seguridad de los empleados ha generado demandas sin precedentes en TI empresarial para dar soporte a la productividad del trabajo desde el hogar a una escala masiva. Microsoft Office 365 está bien posicionado para cumplir esta demanda, pero la elevada concurrencia de usuarios que trabajan desde casa genera un gran volumen de tráfico en Office 365 que, si se enruta mediante túneles forzados de VPN y perímetros de red local, provocará rápidamente una saturación y la infraestructura de VPN se quedará sin capacidad. En esta nueva realidad, el uso de VPN para tener acceso a Office 365 ya no es solamente un obstáculo de rendimiento, sino un muro que no solo afecta a Office 365, sino también a operaciones críticas de empresas cuyo funcionamiento todavía depende de la VPN.
 
 Microsoft ha trabajado codo con codo con los clientes y las grandes empresas durante muchos años para ofrecer soluciones eficaces y modernas para estos problemas desde dentro de sus propios servicios, así como para adoptar las prácticas recomendadas del sector. Los [Principios de conectividad](https://aka.ms/pnc) para el servicio de Office 365 se diseñaron para que funcione de manera eficiente para los usuarios remotos y para que la organización mantenga la seguridad y el control sobre su conectividad. Estas soluciones también se pueden implementar rápidamente y con poco esfuerzo, de forma que tienen un impacto muy positivo en los problemas descritos anteriormente.
 
