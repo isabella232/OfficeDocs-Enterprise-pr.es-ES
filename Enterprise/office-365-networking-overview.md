@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Se explica por qué es importante la optimización de red para los servicios SaaS, el objetivo de la red de Office 365 y cómo SaaS requiere distintas redes de otras cargas de trabajo.
-ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88072e8c85f9ca1e53201b58f0333d84ef543184
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844361"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612890"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Introducción a la conectividad de red de Office 365
 
@@ -33,9 +33,9 @@ En este artículo, obtendrá información sobre los objetivos de la red de Offic
 
 ## <a name="office-365-networking-goals"></a>Objetivos de red de Office 365
 
-El objetivo último de la red de Office 365 es optimizar la experiencia del usuario final al habilitar el acceso menos restrictivo entre los clientes y los puntos de conexión de Office 365 más cercanos. La calidad de la experiencia del usuario final está directamente relacionada con el rendimiento y la capacidad de respuesta de la aplicación que está usando el usuario. Por ejemplo, Microsoft Teams depende de baja latencia para que las llamadas telefónicas de los usuarios, las conferencias y las colaboraciones de pantalla compartida se encuentren sin problemas y que Outlook se base en una buena conectividad de red para las características de búsqueda instantánea que aprovechan la indización del lado servidor y los AI sus.
+El objetivo último de la red de Office 365 es optimizar la experiencia del usuario final al habilitar el acceso menos restrictivo entre los clientes y los puntos de conexión de Office 365 más cercanos. La calidad de la experiencia del usuario final está directamente relacionada con el rendimiento y la capacidad de respuesta de la aplicación que está usando el usuario. Por ejemplo, Microsoft Teams depende de baja latencia para que las llamadas telefónicas de los usuarios, las conferencias y las colaboraciones de pantalla compartida no se puedan usar sin problemas, y Outlook se basa en una buena conectividad de red para las características de búsqueda instantánea que aprovechan las capacidades de indización y de AI del servidor.
 
-El objetivo principal del diseño de red debe ser minimizar la latencia reduciendo el tiempo de ida y vuelta (RTT) de los equipos cliente a la red global de Microsoft, la red troncal de la red pública de Microsoft que conecta todos los centros de recursos de Microsoft con baja latencia , los puntos de entrada de la aplicación en la nube de alta disponibilidad se propagan por todo el mundo. Puede obtener más información sobre Microsoft Global Network en la [forma en que Microsoft crea su red global de confianza y rápida](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+El objetivo principal del diseño de red debería ser minimizar la latencia reduciendo el tiempo de ida y vuelta (RTT) de los equipos cliente a Microsoft Global Network, la red troncal de red pública de Microsoft que interconectan todos los centros de recursos de Microsoft con baja latencia, los puntos de entrada de la aplicación en la nube de alta disponibilidad se propagan por todo el mundo. Puede obtener más información sobre Microsoft Global Network en la [forma en que Microsoft crea su red global de confianza y rápida](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 La optimización del rendimiento de la red de Office 365 no necesita ser complicada. Puede obtener el mejor rendimiento posible si sigue unos cuantos principios clave:
 
@@ -49,7 +49,7 @@ Para obtener más información sobre los principios de conectividad de red de Of
 
 Los principios de arquitectura de red tradicional para las cargas de trabajo cliente-servidor se diseñan en torno al supuesto de que el tráfico entre los clientes y los extremos no se extienda fuera del perímetro de la red corporativa. Además, en muchas redes empresariales, todas las conexiones de Internet salientes atraviesan la red corporativa y se salida de una ubicación central.
 
-En las arquitecturas de red tradicionales, la mayor latencia para el tráfico de Internet genérico es un equilibrio necesario para mantener la seguridad del perímetro de la red, y la optimización del rendimiento para el tráfico de Internet suele implicar la actualización o el escalado horizontal del equipo en los puntos de salida de red. Sin embargo, este enfoque no se redirecciona a los requisitos para un rendimiento óptimo de la red de los servicios SaaS como Office 365.
+En las arquitecturas de red tradicionales, la mayor latencia para el tráfico de Internet genérico es un equilibrio necesario para mantener la seguridad del perímetro de la red, y la optimización del rendimiento para el tráfico de Internet suele implicar la actualización o la ampliación del equipo en puntos de salida de red. Sin embargo, este enfoque no se redirecciona a los requisitos para un rendimiento óptimo de la red de los servicios SaaS como Office 365.
 
 ## <a name="identifying-office-365-network-traffic"></a>Identificación del tráfico de red de Office 365
 
@@ -104,7 +104,7 @@ La optimización del rendimiento de la red de Office 365 realmente se reduce a l
 
 [Dirección IP de Office 365 y servicio web de URL](office-365-ip-web-service.md)
 
-[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)
+[Evaluar la red de Office 365](assessing-network-connectivity.md)
 
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
 
@@ -116,7 +116,7 @@ La optimización del rendimiento de la red de Office 365 realmente se reduce a l
 
 [Redes de entrega de contenido](content-delivery-networks.md)
 
-[Herramienta de incorporación de red de Office 365](https://aka.ms/netonboard)
+[Prueba de conectividad de Microsoft 365](https://aka.ms/netonboard)
 
 [Cómo Microsoft crea su red global rápida y fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

@@ -3,7 +3,7 @@ title: Eliminar licencias de cuentas de usuario con PowerShell de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 04/20/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Explica cómo usar Office 365 PowerShell para quitar licencias de Office 365 que se han asignado anteriormente a los usuarios.
-ms.openlocfilehash: ce529221c18e5f094b9d45037e95b859eeaea5a0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ea762e992056ac3265336055eabb860f67482093
+ms.sourcegitcommit: f2e640ffdbef95c6d98845f85fd9bea21a7388aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844191"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43580927"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Eliminar licencias de cuentas de usuario con PowerShell de Office 365
 
@@ -126,18 +126,16 @@ En este ejemplo se quita la licencia **litwareinc: ENTERPRISEPACK** (Office 365 
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "litwareinc:ENTERPRISEPACK" }
   ```
 
-Para quitar las licencias de todas las cuentas de usuario, utilice la sintaxis siguiente:
+Para quitar todas las licencias de todas las cuentas de usuario existentes, use la siguiente sintaxis:
   
 ```powershell
-$x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
-$x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
-```
-
-En este ejemplo se quita la licencia **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) de todas las cuentas de usuario con licencia existentes.
-  
-```powershell
-$x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
-$x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
+$users = Get-MsolUser -All | where {$_.isLicensed -eq $true}
+ForEach($user in $users)
+{
+$licenses = $user.Licenses.AccountSkuId
+ForEach ($lic in $licenses)
+{ Set-MsolUserLicense -UserPrincipalName $user.UserPrincipalName -RemoveLicenses $lic }
+}
 ```
 
 Otra forma de liberar una licencia consiste en eliminar la cuenta de usuario. Para obtener más información, vea [eliminar y restaurar cuentas de usuario con Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).

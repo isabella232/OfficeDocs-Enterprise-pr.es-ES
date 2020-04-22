@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 04/20/2010
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Describe la sincronización de directorios con Office 365, la limpieza de los servicios de dominio de Active Directory y la herramienta Azure Active Directory Connect.
-ms.openlocfilehash: 5368fc00aafe66ed51af80c50aaf72ee5f939041
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44894cdbc65c243ce0c4a66ceba1d123ece49c62
+ms.sourcegitcommit: f2e640ffdbef95c6d98845f85fd9bea21a7388aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841767"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43580937"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Identidad híbrida y sincronización de directorios para Office 365
 
@@ -69,7 +69,7 @@ Con la sincronización de hash de contraseña (PHS), se sincronizan las cuentas 
 
 Cuando se cambian o se restablecen las contraseñas locales, los nuevos hash de contraseña se sincronizan con Azure AD para que los usuarios siempre puedan usar la misma contraseña para los recursos de la nube y los recursos locales. Las contraseñas de usuario nunca se envían a Azure AD o se almacenan en Azure AD en texto no cifrado. Algunas características Premium de Azure AD, como la protección de identidad, requieren PHS independientemente del método de autenticación que se seleccione.
   
-Vea [elegir PHS](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) para obtener más información.
+Vea [elegir PHS](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) para obtener más información.
   
 #### <a name="pass-through-authentication"></a>Autenticación de paso a través
 
@@ -81,15 +81,15 @@ PTA permite que los usuarios inicien sesión en recursos y aplicaciones locales 
 
 PTA también es para las organizaciones con requisitos de seguridad para aplicar inmediatamente Estados de cuentas de usuario locales, directivas de contraseñas y horas de inicio de sesión. 
   
-Vea [elegir PTA](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) para obtener más información.
+Vea [elegir PTA](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) para obtener más información.
   
 ### <a name="federated-authentication"></a>Autenticación federada
 
 La autenticación federada es principalmente para grandes empresas con requisitos de autenticación más complejos. Las identidades de AD DS se sincronizan con Office 365 y las cuentas de usuario se administran de forma local. Con la autenticación federada, los usuarios tienen la misma contraseña local y en la nube, y no tienen que iniciar sesión de nuevo para usar Office 365. 
 
-La autenticación federada puede admitir requisitos de autenticación adicionales, como la autenticación basada en tarjeta inteligente o una autenticación multifactor de terceros y suele ser necesario cuando las organizaciones tienen un requisito de autenticación que no compatible de forma nativa con Azure AD.
+La autenticación federada puede admitir requisitos de autenticación adicionales, como la autenticación basada en tarjeta inteligente o una autenticación multifactor de terceros y suele ser necesario cuando las organizaciones tienen un requisito de autenticación que Azure AD no admite de forma nativa.
  
-Consulte [elegir la autenticación federada](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) para obtener más información.
+Consulte [elegir la autenticación federada](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) para obtener más información.
   
 #### <a name="third-party-authentication-and-identity-providers"></a>Proveedores de autenticación e identidad de terceros
 
@@ -143,7 +143,7 @@ La sincronización de directorios es necesaria para las siguientes característi
   - Tiene una solución de autenticación multifactor o de tarjeta inteligente local integrada.
 - Sincronización de fotos, miniaturas, salas de conferencias y grupos de seguridad
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Cuando esté listo para implementar la identidad híbrida, vea [preparar el aprovisionamiento de usuarios](prepare-for-directory-synchronization.md).
   

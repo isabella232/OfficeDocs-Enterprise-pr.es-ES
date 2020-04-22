@@ -16,12 +16,12 @@ ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 f1.keywords:
 - NOCSH
 description: Antes de empezar a planear la red para la conectividad de red de Office 365, es importante comprender los principios de conectividad para administrar de forma segura el tráfico de Office 365 y obtener el mejor rendimiento posible. Este artículo le ayudará a comprender las instrucciones más recientes para optimizar de manera segura la conectividad de red de Office 365.
-ms.openlocfilehash: 63ae147174cd40ae86a060832468097e5533b837
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7abfc401531799cb9ff890261c89c6104a0c356a
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842647"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612920"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Principios de conectividad de red de Office 365
 
@@ -41,7 +41,7 @@ En este artículo, obtendrá información sobre:
 - [Nuevas categorías de extremos de Office 365](office-365-network-connectivity-principles.md#BKMK_Categories) y guía de optimización
 - [Comparación de la seguridad del perímetro de la red con la seguridad de extremos](office-365-network-connectivity-principles.md#BKMK_SecurityComparison)
 - Opciones de [optimización incremental](office-365-network-connectivity-principles.md#BKMK_IncOpt) para el tráfico de Office 365
-- La [herramienta de incorporación de red de office 365](https://aka.ms/netonboard), una nueva herramienta para probar la conectividad básica con Office 365
+- La [prueba de conectividad de Microsoft 365](https://aka.ms/netonboard), una nueva herramienta para probar la conectividad básica con Office 365
 
 ## <a name="office-365-architecture"></a>Arquitectura de Office 365
 <a name="BKMK_Architecture"> </a>
@@ -50,14 +50,14 @@ Office 365 es una nube de software como servicio (SaaS) distribuida que proporci
   
 Una de las características arquitectónicas más importantes de Office 365 (que a menudo se pierde o es mal interpretado por los planificadores de la red) es que es un servicio distribuido verdaderamente global, en el contexto de cómo se conectan los usuarios a él. La ubicación del inquilino de Office 365 de destino es importante para comprender la localidad de dónde se almacenan los datos de clientes en la nube, pero la experiencia del usuario con Office 365 no implica la conexión directa a los discos que contienen los datos. La experiencia del usuario con Office 365 (incluido el rendimiento, la confiabilidad y otras características de calidad importantes) implica la conectividad a través de las puertas frontales de un servicio altamente distribuido que se amplían en cientos de ubicaciones de Microsoft en todo el mundo. En la mayoría de los casos, la mejor experiencia del usuario se consigue al permitir a la red del cliente enrutar las solicitudes de usuario al punto de entrada del servicio Office 365 más cercano, en lugar de conectarse a Office 365 a través de un punto de salida en una ubicación central o región.
   
-Para la mayoría de los clientes, los usuarios de Office 365 se distribuyen en varias ubicaciones. Para obtener los mejores resultados, los principios descritos en este documento deben considerarse desde el punto de vista de escalado horizontal (no escalado), centrándose en la optimización de la conectividad con el punto de presencia más cercano en Microsoft Global Network, no en el geográfico Ubicación del inquilino de Office 365. Básicamente, esto significa que, aunque los datos del espacio empresarial de Office 365 se pueden almacenar en una ubicación geográfica específica, la experiencia de Office 365 para ese inquilino permanece distribuida y puede estar presente en proximidad (de red) en cada ubicación de usuario final que el inquilino tiene. .
+Para la mayoría de los clientes, los usuarios de Office 365 se distribuyen en varias ubicaciones. Para obtener los mejores resultados, debe tener en cuenta los principios descritos en este documento desde el punto de vista de escalado horizontal (no se amplía), centrándose en la optimización de la conectividad con el punto de presencia más cercano de la red global de Microsoft, y no en la ubicación geográfica del inquilino de Office 365. Básicamente, esto significa que, aunque los datos del espacio empresarial de Office 365 se pueden almacenar en una ubicación geográfica específica, la experiencia de Office 365 para ese inquilino permanece distribuida y puede estar presente en proximidad (de red) a cada ubicación de usuario final que tenga el inquilino.
   
 ## <a name="office-365-connectivity-principles"></a>Principios de conectividad de Office 365
 <a name="BKMK_Principles"> </a>
 
 Microsoft recomienda los siguientes principios para lograr una conectividad y un rendimiento óptimos de Office 365. Use estos principios de conectividad de Office 365 para administrar el tráfico y obtener el mejor rendimiento al conectar con Office 365.
   
-El objetivo principal del diseño de red debe ser minimizar la latencia reduciendo el tiempo de ida y vuelta (RTT) de la red a Microsoft Global Network, la red troncal de red pública de Microsoft que conecta todos los centros de recursos de Microsoft con baja latencia. y los puntos de entrada de aplicación en la nube se propagan por todo el mundo. Puede obtener más información sobre Microsoft Global Network en la [forma en que Microsoft crea su red global de confianza y rápida](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+El objetivo principal del diseño de red debería ser minimizar la latencia reduciendo el tiempo de ida y vuelta (RTT) de la red a Microsoft Global Network, la red troncal de red pública de Microsoft que interconectan todos los centros de recursos de Microsoft con baja latencia y puntos de entrada de aplicación en la nube que se propagan por todo el mundo. Puede obtener más información sobre Microsoft Global Network en la [forma en que Microsoft crea su red global de confianza y rápida](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
   
 <a name="BKMK_P1"> </a>
 ### <a name="identify-and-differentiate-office-365-traffic"></a>Identificación y diferencia del tráfico de Office 365
@@ -91,15 +91,15 @@ Como Office 365 se ejecuta en Microsoft Global Network, que incluye servidores f
   
 ![Modelo de red WAN con puntos de salida regionales](media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
   
-La reducción de la ruta de acceso de red a los puntos de entrada de Office 365 puede mejorar el rendimiento de conectividad y la experiencia del usuario final en Office 365, y también puede ayudar a reducir el impacto de los cambios futuros a la arquitectura de red en el rendimiento de Office 365 y solidez.
+Acortar la ruta de red a los puntos de entrada de Office 365 de esta manera, puede mejorar el rendimiento de conectividad y la experiencia del usuario final en Office 365, y también puede ayudar a reducir el impacto de los cambios futuros en la arquitectura de red en el rendimiento y la confiabilidad de Office 365.
   
 Además, las solicitudes DNS pueden introducir latencia si el servidor DNS de respuesta está lejos o ocupado. Puede minimizar la latencia de la resolución de nombres al aprovisionar servidores DNS locales en ubicaciones de sucursal y asegurarse de que están configurados para almacenar en caché los registros DNS de forma adecuada.
   
-Aunque las salidas regionales pueden funcionar correctamente para Office 365, el modelo de conectividad óptimo sería proporcionar siempre la salida de red en la ubicación del usuario, independientemente de si se encuentra en la red corporativa o en ubicaciones remotas, como la casa, los hoteles, las cafeterías y aéreo. Este modelo de salida directo local se representa en el siguiente diagrama.
+Aunque las salidas regionales pueden funcionar correctamente para Office 365, el modelo de conectividad óptimo sería proporcionar siempre la salida de red en la ubicación del usuario, independientemente de si se encuentra en la red corporativa o en ubicaciones remotas, como la casa, los hoteles, las cafeterías y los aeropuertos. Este modelo de salida directo local se representa en el siguiente diagrama.
   
 ![Arquitectura de red de salida local](media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
   
-Las empresas que han adoptado Office 365 pueden aprovechar la arquitectura de puertas de servicio distribuida de la red global de Microsoft a fin de garantizar que las conexiones de usuario a Office 365 tomen la ruta más corta posible a la entrada de red global de Microsoft más cercana. indique. Para ello, la arquitectura de red de salida local permite enrutar el tráfico de Office 365 a través de las salidas más cercanas, independientemente de la ubicación del usuario.
+Las empresas que han adoptado Office 365 pueden aprovechar la arquitectura de puertas de servicio distribuida de la red global de Microsoft a fin de garantizar que las conexiones de usuario a Office 365 tomen la ruta más corta posible al punto de entrada de la red global de Microsoft más cercano. Para ello, la arquitectura de red de salida local permite enrutar el tráfico de Office 365 a través de las salidas más cercanas, independientemente de la ubicación del usuario.
   
 La arquitectura de salida local tiene las siguientes ventajas sobre el modelo tradicional:
   
@@ -112,20 +112,20 @@ La arquitectura de salida local tiene las siguientes ventajas sobre el modelo tr
 
 ![Evitar las redirecciones](media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
-Como regla general, la ruta más corta, más directa entre el usuario y el extremo de Office 365 más cercano, ofrecerá el mejor rendimiento. Un horquilla de red se produce cuando el tráfico WAN o VPN enlazado para un destino concreto se dirige primero a otra ubicación intermedia (como pila de seguridad, agente de acceso en la nube, de puerta de enlace Web basada en la nube), lo que introduce latencia y posible redirección a un extremo alejado geográficamente. Los las redirecciones de red también pueden deberse a ineficiencias de enrutamiento/emparejamiento o a búsquedas de DNS (remotas) no óptimas.
+Como regla general, la ruta más corta, más directa entre el usuario y el extremo de Office 365 más cercano, ofrecerá el mejor rendimiento. Un horquilla de red ocurre cuando el tráfico WAN o VPN enlazado para un determinado destino se dirige primero a otra ubicación intermedia (como pila de seguridad, agente de acceso en la nube, agente de acceso a la nube de puerta de enlace Web basada en la nube), lo que introduce la latencia y el posible redireccionamiento a un extremo alejado geográficamente. Los las redirecciones de red también pueden deberse a ineficiencias de enrutamiento/emparejamiento o a búsquedas de DNS (remotas) no óptimas.
   
-Para asegurarse de que la conectividad de Office 365 no está sujeta a la las redirecciones de red incluso en el caso de salida local, compruebe si el ISP que se usa para proporcionar la salida a Internet de la ubicación del usuario tiene una relación de emparejamiento directo con Microsoft Global Network en Close proximidad a esa ubicación. Es posible que también desee configurar el enrutamiento de salida para enviar el tráfico de Office 365 de confianza directamente, en lugar de proxy o tunelización a través de una nube de terceros o proveedor de seguridad de red basada en la nube que procese el tráfico enlazado a Internet. La resolución de nombres DNS local de los puntos de conexión de Office 365 ayuda a garantizar que, además del enrutamiento directo, se usan los puntos de entrada de Office 365 más cercanos para las conexiones de usuario.
+Para asegurarse de que la conectividad de Office 365 no está sujeta a la las redirecciones de red incluso en el caso de salida local, compruebe si el ISP que se usa para proporcionar la salida a Internet de la ubicación del usuario tiene una relación de emparejamiento directo con la red global de Microsoft en una proximidad cercana a esa ubicación. Es posible que también desee configurar el enrutamiento de salida para enviar el tráfico de Office 365 de confianza directamente, en lugar de proxy o tunelización a través de una nube de terceros o proveedor de seguridad de red basada en la nube que procese el tráfico enlazado a Internet. La resolución de nombres DNS local de los puntos de conexión de Office 365 ayuda a garantizar que, además del enrutamiento directo, se usan los puntos de entrada de Office 365 más cercanos para las conexiones de usuario.
   
-Si usa servicios de seguridad o red basada en la nube para el tráfico de Office 365, asegúrese de que el efecto vinculaciones se evalúa y se entiende su impacto en el rendimiento de Office 365. Para ello, puede examinar el número y las ubicaciones de las ubicaciones del proveedor de servicios a través de las cuales se reenvía el tráfico en relación con el número de sus sucursales y los puntos de emparejamiento de la red global de Microsoft, la calidad de la relación de emparejamiento de red de el proveedor de servicios con su ISP y Microsoft, y el impacto en el rendimiento de la reintroducción en la infraestructura del proveedor de servicios.
+Si usa servicios de seguridad o red basada en la nube para el tráfico de Office 365, asegúrese de que el efecto vinculaciones se evalúa y se entiende su impacto en el rendimiento de Office 365. Para ello, puede examinar el número y las ubicaciones de las ubicaciones del proveedor de servicios a través de las cuales se reenvía el tráfico en relación con el número de sucursales y los puntos de emparejamiento de la red global de Microsoft, la calidad de la relación de emparejamiento de la red del proveedor de servicios con el ISP y Microsoft, y el impacto en el rendimiento de la infraestructura del proveedor de servicios
   
-Debido al gran número de ubicaciones distribuidas con puntos de entrada de Office 365 y su proximidad a los usuarios finales, el enrutamiento del tráfico de Office 365 a cualquier red o proveedor de seguridad de terceros puede tener un impacto negativo en las conexiones de Office 365 si la red del proveedor no configurado para emparejamiento óptimo de Office 365.
+Debido al gran número de ubicaciones distribuidas con puntos de entrada de Office 365 y su proximidad a los usuarios finales, el enrutamiento del tráfico de Office 365 a cualquier red o proveedor de seguridad de terceros puede tener un impacto negativo en las conexiones de Office 365 si la red del proveedor no está configurada para un emparejamiento de Office 365 óptimo.
   
 <a name="BKMK_P4"> </a>
 ### <a name="assess-bypassing-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Evaluar los servidores proxy de omisión, los dispositivos de inspección de tráfico y las tecnologías de seguridad duplicadas
 
 ![Servidores proxy de derivación, dispositivos de inspección de tráfico y tecnologías de seguridad duplicadas](media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
-Los clientes empresariales deben revisar los métodos de seguridad y reducción de riesgos de la red específicamente para el tráfico enlazado de Office 365 y usar las características de seguridad de Office 365 para reducir su dependencia de intrusos, el impacto en el rendimiento y una seguridad de red costosa. tecnologías para el tráfico de red de Office 365.
+Los clientes empresariales deben revisar los métodos de seguridad y reducción de riesgos de la red específicamente para el tráfico enlazado de Office 365 y usar las características de seguridad de Office 365 para reducir su dependencia de la intrusión, el impacto en el rendimiento y una costosa tecnología de seguridad de red para el tráfico de red de Office 365.
   
 La mayoría de las redes empresariales exigen la seguridad de red para el tráfico de Internet mediante tecnologías como servidores proxy, inspección de SSL, inspección de paquetes y prevención de pérdida de datos. Estas tecnologías proporcionan una importante mitigación de riesgos para las solicitudes de Internet genéricas, pero pueden reducir drásticamente el rendimiento, la escalabilidad y la calidad de la experiencia del usuario final cuando se aplican a los puntos de conexión 365 de Office.
   
@@ -142,7 +142,7 @@ Office 365 los administradores pueden crear scripts PAC (configuración automát
 #### <a name="office-365-security-features"></a>Características de seguridad de Office 365
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft es transparente sobre la seguridad del centro de información, la seguridad operativa y la reducción de riesgos en torno a los servidores de Office 365 y los puntos de conexión de red que representan. Office 365 las características de seguridad integradas están disponibles para reducir los riesgos de seguridad de la red, como prevención de pérdida de datos, anti-virus, autenticación multifactor, casilla de bloqueo de cliente, protección contra amenazas avanzada, inteligencia sobre amenazas de Office 365, Office 365 Secure Puntuación, Exchange Online Protection y seguridad DDOS para red.
+Microsoft es transparente sobre la seguridad del centro de información, la seguridad operativa y la reducción de riesgos en torno a los servidores de Office 365 y los puntos de conexión de red que representan. Office 365 las características de seguridad integradas están disponibles para reducir los riesgos de seguridad de la red, como prevención de pérdida de datos, anti-virus, autenticación multifactor, casilla de bloqueo de cliente, protección contra amenazas avanzada, inteligencia sobre amenazas de Office 365, Office 365 la calificación segura, protección en línea de la red y seguridad DDOS para redes.
   
 Para obtener más información sobre el centro de datos de Microsoft y la seguridad global de la red, consulte el [centro de confianza de Microsoft](https://www.microsoft.com/trustcenter/security).
   
@@ -256,7 +256,7 @@ Puede enfocar la optimización como proceso incremental, aplicando cada método 
 
 [Dirección IP de Office 365 y servicio web de URL](office-365-ip-web-service.md)
 
-[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)
+[Evaluar la red de Office 365](assessing-network-connectivity.md)
 
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
 
@@ -268,7 +268,7 @@ Puede enfocar la optimización como proceso incremental, aplicando cada método 
 
 [Redes de entrega de contenido](content-delivery-networks.md)
 
-[Herramienta de incorporación de red de Office 365](https://aka.ms/netonboard)
+[Prueba de conectividad de Microsoft 365](https://aka.ms/netonboard)
 
 [Cómo Microsoft crea su red global rápida y fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

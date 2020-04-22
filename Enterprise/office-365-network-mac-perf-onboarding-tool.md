@@ -1,9 +1,9 @@
 ---
-title: Herramienta de incorporación de red de 365 de Microsoft en el centro de administración de M365 (versión preliminar)
+title: Prueba de conectividad de Microsoft 365 en el centro de administración de M365 (versión preliminar)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/10/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,31 +13,31 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Herramienta de incorporación de red de 365 de Microsoft en el centro de administración de M365 (versión preliminar)
-ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
-ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
+description: Prueba de conectividad de Microsoft 365 en el centro de administración de M365 (versión preliminar)
+ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225703"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612880"
 ---
-# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Herramienta de incorporación de red de 365 de Microsoft en el centro de administración de M365 (versión preliminar)
+# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>Prueba de conectividad de Microsoft 365 en el centro de administración de M365 (versión preliminar)
 
-La herramienta de incorporación de red de 365 de Microsoft se <https://connectivity.office.com>encuentra en. Se trata de una herramienta de Adjunct a la información sobre la puntuación de red y la puntuación de red disponible en el centro de administración de Microsoft 365 en el área **mantenimiento | **Menú de rendimiento de la red.
+La prueba de conectividad de Microsoft 365 se <https://connectivity.office.com>encuentra en. Se trata de una herramienta de Adjunct a la información sobre la puntuación de red y la puntuación de red disponible en el centro de administración de Microsoft 365 en el área **mantenimiento | **Menú de rendimiento de la red.
 
 >[!NOTE]
 >La herramienta de incorporación es compatible con los inquilinos de WW Commercial y GCC moderadamente pero no con GCC High, DoD, Germany o China.
 
-La información de red del centro de administración de Microsoft 365 se basa en las mediciones del producto de su inquilino de Microsoft 365. En comparación, la información de red de la herramienta de incorporación de red de Microsoft 365 se ejecuta de forma local en la herramienta. Las pruebas que se pueden llevar a cabo en el producto son limitadas y al ejecutar pruebas locales para el usuario se pueden recopilar más datos, lo que da lugar a una información más profunda. Considere que en la información de red del centro de administración de Microsoft 365 se muestra que hay un problema de red para usar Microsoft 365 en una ubicación específica de la oficina. La herramienta de incorporación de red de 365 de Microsoft puede ayudarle a identificar la causa raíz del problema, lo que provoca una acción recomendada para mejorar el rendimiento de la red.
+La información de red del centro de administración de Microsoft 365 se basa en las mediciones del producto de su inquilino de Microsoft 365. En comparación, la información de red de la prueba de conectividad de Microsoft 365 se ejecuta de forma local en la herramienta. Las pruebas que se pueden llevar a cabo en el producto son limitadas y al ejecutar pruebas locales para el usuario se pueden recopilar más datos, lo que da lugar a una información más profunda. Considere que en la información de red del centro de administración de Microsoft 365 se muestra que hay un problema de red para usar Microsoft 365 en una ubicación específica de la oficina. La prueba de conectividad de Microsoft 365 puede ayudarle a identificar la causa raíz de ese problema, lo que provoca una acción recomendada para mejorar el rendimiento de la red.
 
-Le recomendamos que se usen conjuntamente donde el estado de calidad de la red pueda evaluarse para cada ubicación de la oficina en el centro de administración de Microsoft 365 y se puedan encontrar más detalles tras la implementación de las pruebas basadas en la herramienta de incorporación de red de Microsoft 365.
+Le recomendamos que se usen conjuntamente donde el estado de calidad de la red se pueda evaluar para cada ubicación de la oficina en el centro de administración de Microsoft 365 y se puedan encontrar más detalles tras la implementación de las pruebas basadas en la prueba de conectividad de Microsoft 365.
 
 >[!IMPORTANT]
 >Información sobre la red, recomendaciones de rendimiento y evaluaciones en el centro de administración de Microsoft 365 se encuentra actualmente en estado de versión preliminar y solo está disponible para los inquilinos de Microsoft 365 que se han inscrito en el programa de vista previa de características.
 
 ## <a name="the-advanced-tests-client-application"></a>Aplicación cliente de pruebas avanzadas
 
-La herramienta de incorporación de red de 365 de Microsoft consta de dos partes. Hay un sitio <https://connectivity.office.com> web y hay una aplicación cliente de Windows descargable. El cliente descargable ejecuta pruebas avanzadas de conectividad de red y la mayoría de las pruebas requieren que esto se ejecute.
+La prueba de conectividad de Microsoft 365 es de dos partes. Hay un sitio <https://connectivity.office.com> web y hay una aplicación cliente de Windows descargable. El cliente descargable ejecuta pruebas avanzadas de conectividad de red y la mayoría de las pruebas requieren que esto se ejecute.
 
 Puede ejecutar la prueba del cliente avanzado desde el sitio web y rellenará los resultados de nuevo en la página web mientras se ejecuta.
 

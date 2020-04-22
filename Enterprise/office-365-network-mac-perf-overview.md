@@ -3,7 +3,7 @@ title: Recomendaciones de rendimiento de red en el centro de administración de 
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Información general sobre las recomendaciones de rendimiento de red en el centro de administración de Microsoft 365 (versión preliminar)
-ms.openlocfilehash: 9bd1470b80d0c65c11748bee3e8a6a73a218f55f
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 077202f5ba1ffa95324131e6c283f2c3845aa07f
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185781"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612940"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Recomendaciones de rendimiento de red en el centro de administración de Microsoft 365 (versión preliminar)
 
@@ -131,7 +131,7 @@ La puerta de entrada del servicio 365 de Microsoft es un punto de entrada en la 
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>¿Qué es una puerta de servicio de Microsoft 365 óptima?
 
-Una puerta frontal de servicio Microsoft 365 óptima es la que más se aproxime a la salida de la red, generalmente en su ciudad o área metropolitana. Use la [herramienta de incorporación de red de 365 de Microsoft](office-365-network-mac-perf-onboarding-tool.md) para determinar la ubicación de la puerta frontal del servicio Microsoft 365 y la puerta de servicio óptima. Si la herramienta determina que la puerta frontal en uso es óptima, se está conectando de forma óptima a la red global de Microsoft.
+Una puerta frontal de servicio Microsoft 365 óptima es la que más se aproxime a la salida de la red, generalmente en su ciudad o área metropolitana. Use la [prueba de conectividad de microsoft 365](office-365-network-mac-perf-onboarding-tool.md) para determinar la ubicación de la puerta frontal del servicio de Microsoft 365 y la puerta de servicio óptima. Si la herramienta determina que la puerta frontal en uso es óptima, se está conectando de forma óptima a la red global de Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>¿Qué es una ubicación de salida de Internet?
 
@@ -143,6 +143,6 @@ La ubicación de salida de Internet es la ubicación en la que el tráfico de re
 
 [Evaluación de red de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-score.md)
 
-[Herramienta de incorporación de red de 365 de Microsoft en el centro de administración de M365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
+[Prueba de conectividad de Microsoft 365 en el centro de administración de M365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Servicios de ubicación de conectividad de red 365 de Microsoft (versión preliminar)](office-365-network-mac-location-services.md)
