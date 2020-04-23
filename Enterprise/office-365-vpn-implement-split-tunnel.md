@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Cómo implementar un túnel dividido de VPN en Office 365
-ms.openlocfilehash: 84b59351e07ca151000aa58727ce779e8f522722
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: edc19af175aaa3d0366a8ec1c3af55a0aeb041fd
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547668"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612930"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementación de túnel dividido de VPN en Office 365
 
@@ -248,7 +248,7 @@ También podrá obtener más información acerca de los controles de seguridad m
 
 Una vez que la directiva se haya implementado, debe asegurarse de que funciona de la forma esperada. Hay varias formas de probar si la ruta de acceso se ha configurado correctamente para usar la conexión a Internet local:
 
-- Ejecute la [herramienta de integración de red de Office 365](https://aka.ms/netonboard), que ejecutará pruebas de conectividad automáticas, que incluyen las rutas de seguimiento, como se indicó anteriormente. También se agregarán pruebas de VPN a esta herramienta, que ofrecerán información adicional.
+- Ejecute la [prueba de conectividad de Microsoft 365](https://aka.ms/netonboard), que ejecutará pruebas de conectividad automáticas, que incluyen las rutas de seguimiento, como se indicó anteriormente. También se agregarán pruebas de VPN a esta herramienta, que ofrecerán información adicional.
 
 - Un sencillo tracert para un punto de conexión dentro del alcance del túnel dividido debe mostrar la ruta de acceso que se ha tomado, por ejemplo:
 
