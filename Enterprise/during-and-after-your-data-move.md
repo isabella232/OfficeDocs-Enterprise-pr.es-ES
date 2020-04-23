@@ -1,7 +1,7 @@
 ---
 title: Durante y después del movimiento de datos
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
-ms.openlocfilehash: a53d2253889cbbdb344c457c135086a1115de436
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: ee2a63ed11e83a16ec6c894a3eaf34cf36ebbc4f
+ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516451"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43772111"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -88,7 +88,7 @@ Una vez que haya terminado de mover los datos de SharePoint Online, es posible q
     
 - Estamos quitando las copias transcodificadas del centro de recursos anterior y transformarlas de nuevo en el nuevo centro de recursos.
     
-### <a name="search"></a>Búsqueda
+### <a name="search"></a>Buscar 
 
 En el transcurso del traslado de los datos de SharePoint Online, migramos el índice de búsqueda y la configuración de búsqueda a una nueva ubicación. Hasta que haya **completado** el traslado de los datos de SharePoint Online, seguiremos atendiendo a los usuarios del índice en la ubicación original. En la nueva ubicación, la búsqueda comienza automáticamente el rastreo del contenido después de haber terminado de mover los datos de SharePoint Online. A partir de este punto, traponemos a sus usuarios del índice migrado. Los cambios en el contenido que se produjeron después de la migración no se incluyen en el índice migrado hasta que el rastreo los seleccione. La mayoría de los clientes no aprecian que los resultados sean menos actualizados después de haber terminado de mover los datos de SharePoint Online, pero algunos clientes podrían experimentar una actualización reducida en las primeras 24-48 horas. 
   
