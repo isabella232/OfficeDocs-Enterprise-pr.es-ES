@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: ExpressRoute para Office 365 ofrece una ruta de acceso alternativa para llegar a varios servicios de Office 365 sin necesidad de que todo el tráfico llegue a Internet. Aunque la conexión a Internet con Office 365 todavía es necesaria, las rutas específicas que Microsoft anuncia a través de BGP a la red hacen que se prefiera el circuito de ExpressRoute directo a menos que haya otras configuraciones en la red. Las tres áreas comunes que puede configurar para administrar este enrutamiento incluyen el filtrado de prefijos, la seguridad y el cumplimiento.
-ms.openlocfilehash: 54edc348e3c91e1b34555d5d4743ccdc7748191f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4793cd5c70407e7dc58a5a8f6f0eda30b3f23474
+ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844991"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43798801"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Administración de la conectividad de ExpressRoute para Office 365
 
@@ -47,10 +47,9 @@ Hay varios motivos para evitar el uso de las [direcciones URL de Office 365 e in
 
 |**Opción**|**Complejidad**|**Control de cambios**|
 |:-----|:-----|:-----|
-|Aceptar todas las rutas de Microsoft  <br/> |**Bajo:** El cliente se basa en los controles de Microsoft para asegurarse de que todas las rutas son propiedad de forma adecuada.  <br/> |Ninguno  <br/> |
+|Aceptar todas las rutas de Microsoft  <br/> |**Bajo:** El cliente se basa en los controles de Microsoft para asegurarse de que todas las rutas son propiedad de forma adecuada.  <br/> |None  <br/> |
 |Filtrar superredes de Microsoft propiedad  <br/> |**Medio:** El cliente implementa listas resumidas de filtros de prefijo para permitir solo las rutas de propiedad de Microsoft.  <br/> |Los clientes deben asegurarse de que las actualizaciones poco frecuentes se reflejan en los filtros de ruta.  <br/> |
-|Filtrar intervalos IP de Office 365  <br/> [!CAUTION] No recomendado
-|**Alto:** El cliente filtra las rutas basándose en prefijos IP 365 de Office definidos.  <br/> |Los clientes deben implementar un proceso de administración de cambios sólido para las actualizaciones mensuales.  <br/> [!CAUTION] Esta solución requiere cambios significativos en el curso. Es probable que los cambios no implementados en tiempo se produzcan en una interrupción del servicio.   |
+|Filtrar intervalos IP de Office 365  <br/> [!CAUTION] No recomendado |**Alto:** El cliente filtra las rutas basándose en prefijos IP 365 de Office definidos.  <br/> |Los clientes deben implementar un proceso de administración de cambios sólido para las actualizaciones mensuales.  <br/> [!CAUTION] Esta solución requiere cambios significativos en el curso. Es probable que los cambios no implementados en tiempo se produzcan en una interrupción del servicio.   |
 
 La conexión a Office 365 mediante Azure ExpressRoute se basa en anuncios BGP de subredes IP específicas que representan redes en las que se implementan los puntos de conexión de 365 de Office. Debido a la naturaleza global de Office 365 y al número de servicios que componen Office 365, los clientes suelen tener la necesidad de administrar los anuncios que aceptan en su red. Si le preocupa el número de prefijos anunciados en el entorno, la característica de [comunidad BGP](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) le permitirá filtrar los anuncios a un conjunto específico de servicios de Office 365. Esta característica ahora está en versión preliminar.
   
@@ -71,7 +70,7 @@ Para los controles agregados, puede usar el filtrado de nivel de FQDN dentro de 
 
 |**Opción**|**Complejidad**|**Control de cambios**|
 |:-----|:-----|:-----|
-|Sin restricciones  <br/> |**Bajo:** El cliente permite el acceso saliente sin restricciones a Microsoft.  <br/> |Ninguno  <br/> |
+|Sin restricciones  <br/> |**Bajo:** El cliente permite el acceso saliente sin restricciones a Microsoft.  <br/> |None  <br/> |
 |Restricciones de puertos  <br/> |**Bajo:** El cliente restringe el acceso saliente a Microsoft por los puertos esperados.  <br/> |Poco frecuentes.  <br/> |
 |Restricciones de FQDN  <br/> |**Alto:** El cliente restringe el acceso saliente a Office 365 en función de los FQDN publicados.  <br/> |Cambios mensuales.  <br/> |
 

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumen: Configure los servidores proxy de aplicación web para la autenticación federada de alta disponibilidad para Office 365 en Microsoft Azure.'
-ms.openlocfilehash: 9dedf8197cc24f82d516b75ecf29caca6d1f09b4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ac7b43daea832d4283404605fbb8ccb46e6cc76c
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840167"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793813"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 de la autenticación federada de alta disponibilidad: Configurar los proxy de aplicación web
 
@@ -64,13 +64,13 @@ Debe determinar el nombre DNS para identificar el nombre del servicio de Federac
   
 Una vez que tenga el servicio de Federación FQDN, cree un registro de dominio DNS público a para el servicio de Federación FQDN que se resuelve en la dirección IP pública del equilibrador de carga de Azure accesible desde Internet.
   
-|**Name**|**Type**|**TTL**|**Value**|
+|**Name**|**Type**|**TTL**|**Valor**|
 |:-----|:-----|:-----|:-----|
 |servicio de Federación FQDN  <br/> |A  <br/> |3600  <br/> |Dirección IP pública del equilibrador de carga de Azure accesible desde Internet (mostrado por el comando **write-host** en la sección anterior) <br/> |
    
 Aquí le mostramos un ejemplo:
   
-|**Name**|**Type**|**TTL**|**Value**|
+|**Name**|**Type**|**TTL**|**Valor**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -168,5 +168,5 @@ Use [Phase 5: configure Federated Authentication for Office 365](high-availabili
   
 [Identidad federada para el entorno de desarrollo y pruebas de Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.yml)
 
