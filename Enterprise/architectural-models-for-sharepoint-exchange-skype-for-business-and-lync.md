@@ -20,12 +20,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 'Resumen: Obtenga los pósteres de TI que describen los modelos de arquitectura, la implementación y las opciones de plataforma de SharePoint, Exchange, Skype Empresarial y Lync.'
-ms.openlocfilehash: eb5aefb46fa46eda1be71db76b533743a4b73669
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 3b0eb977754b86d626153d38d0d79e718dedfcdc
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844731"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793703"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Lync
 
@@ -196,7 +196,7 @@ En estos pósteres de TI se muestran soluciones basadas en Azure con SharePoint 
 <a name="Lync2013_Options"> </a>
 ## <a name="see-also"></a>Vea también
 
-[Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.yml)
   
 [Recursos de arquitectura de TI de la nube de Microsoft](microsoft-cloud-it-architecture-resources.md)
   
