@@ -1,9 +1,9 @@
 ---
-title: Implementación de túnel dividido de VPN en Office 365
+title: Implementación del túnel dividido de VPN para Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/14/2020
+ms.date: 4/24/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,28 +16,28 @@ ms.collection:
 - remotework
 f1.keywords:
 - NOCSH
-description: Cómo implementar un túnel dividido de VPN en Office 365
-ms.openlocfilehash: edc19af175aaa3d0366a8ec1c3af55a0aeb041fd
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+description: Cómo implementar el túnel dividido VPN para Office 365
+ms.openlocfilehash: 0594be194bda222fafa0d00a93e0ee43814cd334
+ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612930"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804074"
 ---
-# <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementación de túnel dividido de VPN en Office 365
+# <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementación del túnel dividido de VPN para Office 365
 
 >[!NOTE]
 >Este tema forma parte de un conjunto de temas que tratan la optimización de Office 365 para usuarios remotos.
->- Para obtener información general sobre el uso de túneles divididos de VPN para optimizar la conectividad de Office 365 para los usuarios remotos, consulte [Información general: túnel dividido de VPN para Office 365](office-365-vpn-split-tunnel.md).
+>- Para obtener información general sobre el uso del túnel dividido de VPN para optimizar la conectividad de Office 365 para los usuarios remotos, consulte [Información general: túnel dividido VPN para Office 365](office-365-vpn-split-tunnel.md).
 >- Para obtener más información sobre cómo optimizar el rendimiento de los inquilinos de Office 365 en todo el mundo para los usuarios de China, consulte [Optimización del rendimiento de Office 365 para usuarios de China](office-365-networking-china.md).
 
 Durante muchos años, las empresas han estado usando VPN para dar soporte a experiencias remotas para sus usuarios. Mientras las cargas de trabajo básicas permanecían en entornos locales, una VPN del cliente remoto enrutada a través de un centro de datos de la red corporativa era el método principal para que los usuarios remotos accediesen a los recursos corporativos. Para salvaguardar estas conexiones, las empresas crean capas de soluciones de seguridad de red a lo largo de las rutas VPN. Esto se hizo para proteger la infraestructura interna, así como para salvaguardar la navegación móvil en sitios web externos al redirigir el tráfico a la VPN y, después, al perímetro de Internet local. Por lo general, las VPN, los perímetros de red y la infraestructura de seguridad asociada se creaban y escalaban para un volumen definido de tráfico, y normalmente la mayoría de las conexiones se iniciaban desde la red corporativa y casi toda dentro de los límites de la red interna.
 
-Durante mucho tiempo, los modelos de VPN en los que todas las conexiones del dispositivo del usuario remoto se redirigen a la red local (lo que se conoce como **túneles forzados**) fueron altamente sostenibles, siempre y cuando la escala concurrente de usuarios remotos fuese limitada y los volúmenes de tráfico que atravesasen la VPN fuesen bajos.  Algunos clientes siguieron utilizando los túneles forzados de VPN como método principal incluso después de que sus aplicaciones se moviesen de dentro del perímetro corporativo a nubes públicas de SaaS. Office 365 es un buen ejemplo de ello.
+Durante bastante tiempo, los modelos de VPN en los que todas las conexiones del dispositivo del usuario remoto se enrutan de nuevo a la red local (conocido como **forzar el uso del túnel**) eran en gran medida sostenibles siempre que la escala concurrente de usuarios remotos fuera modesta y los volúmenes de tráfico que atravesaban la VPN fueran bajos.  Algunos clientes siguieron utilizando el túnel de fuerza VPN como el status quo incluso después de que sus aplicaciones se movieran desde el interior del perímetro corporativo a las nubes públicas de SaaS, siendo Office 365 un ejemplo destacado.
 
 El uso de túneles forzados de VPN para conectarse a aplicaciones en la nube de distribución y rendimiento confidenciales es extremadamente deficiente, pero es posible que algunas empresas aceptasen el impacto negativo de esta práctica para mantener su método principal desde el punto de vista de la seguridad. A continuación se muestra un diagrama de ejemplo de este escenario:
 
-![Configuración del túnel dividido de VPN](media/vpn-split-tunnelling/vpn-ent-challenge.png)
+![Configuración del túnel dividido de VPN](media/vpn-split-tunneling/vpn-ent-challenge.png)
 
 Este problema ha estado creciendo durante varios años, en los que muchos clientes han estado informando de un cambio considerable en los patrones de tráfico de red. El tráfico, que solía mantenerse en entornos locales, ahora se conecta a los puntos de conexión de la nube externa. Muchos clientes de Microsoft han informado de que, en el pasado, alrededor del 80 % del tráfico de red se dirigía a un origen interno (representado por la línea de puntos en el diagrama anterior). En 2020 esa cifra ha caído aproximadamente a un 20 % o menos, debido a los desplazamientos de amplios volúmenes de cargas de trabajo a la nube. Estas tendencias no son infrecuentes para otras empresas. Con el tiempo, a medida que la nube avanza, el modelo anterior se convierte en algo cada vez más engorroso y menos sostenible, lo que limita la agilidad de la organización para adaptarse a un mundo que da prioridad a la nube.
 
@@ -63,39 +63,39 @@ En la lista que aparece a continuación se muestran los escenarios de VPN más c
 
 Este es el escenario de inicio más habitual de la mayoría de los clientes empresariales. Se usa una VPN forzada, lo que significa que el 100 % del tráfico se dirige a la red corporativa, independientemente de si el punto de conexión reside o no dentro de la red corporativa. Cualquier tráfico externo (Internet), como el de Office 365 o la exploración de Internet, se redirige fuera del equipamiento local de seguridad, como los servidores proxy. En el clima actual en el que 100 % de los usuarios trabajan de forma remota, este modelo pone una carga muy elevada en la infraestructura de VPN y es probable que obstaculice significativamente el rendimiento de todo el tráfico corporativo y que, por lo tanto, la empresa opere de forma eficaz en un momento de crisis.
 
-![Modelo 1 de túnel forzado de VPN](media/vpn-split-tunnelling/vpn-model-1.png)
+![Modelo 1 de túnel forzado de VPN](media/vpn-split-tunneling/vpn-model-1.png)
 
 ### <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. Túnel forzado de VPN con unas pocas excepciones de confianza
 
 Este modelo es mucho más eficaz para que la empresa opere, puesto que permite que un pequeño número de puntos de conexión controlados y definidos con una alta sensibilidad a la carga y latencia eluda el túnel de VPN y se dirija directamente al servicio de Office 365 en este ejemplo. Esto mejora significativamente el rendimiento de los servicios descargados y también reduce la carga en la infraestructura de VPN, lo que permite a los elementos que aún lo requieren funcionar con una contención inferior de recursos. Este es el modelo en el que este artículo se centra para ayudar con la transición, ya que permite realizar muy rápidamente acciones sencillas y definidas con numerosos resultados positivos.
 
-![Modelo 2 de túnel dividido de VPN](media/vpn-split-tunnelling/vpn-model-2.png)
+![Modelo 2 de túnel dividido de VPN](media/vpn-split-tunneling/vpn-model-2.png)
 
 ### <a name="3-vpn-forced-tunnel-with-broad-exceptions"></a>3. Túnel forzado de VPN con muchas excepciones
 
 El tercer modelo amplía el ámbito el segundo, puesto que, en lugar de enviar solo un pequeño grupo de puntos de conexión de forma directa, envía todo el tráfico directamente a servicios de confianza como Office 365, SalesForce, etc. Esto reduce aún más la carga en la infraestructura VPN corporativa y mejora el rendimiento de los servicios definidos. Ya que es probable que lleve más tiempo evaluar la viabilidad y la implementación de este modelo, es un paso que probablemente pueda realizarse de forma iterativa en un momento posterior, una vez que el modelo dos se haya implementado correctamente.
 
-![Modelo 3 de túnel dividido de VPN](media/vpn-split-tunnelling/vpn-model-3.png)
+![Modelo 3 de túnel dividido de VPN](media/vpn-split-tunneling/vpn-model-3.png)
 
 ### <a name="4-vpn-selective-tunnel"></a>4. Túnel de VPN selectivo
 
-Este modelo invierte el tercer modelo, puesto que únicamente el tráfico con una dirección IP corporativa identificada se envía por el túnel VPN y, por lo tanto, la ruta de Internet es la predeterminada para todo lo demás. Este modelo requiere que la organización se encuentre en una fase avanzada de implementación de [Confianza cero](https://www.microsoft.com/security/zero-trust?rtc=1) para poder implementar el modelo de forma segura. Se debe tener en cuenta que es probable que este modelo o alguna variación de él se acabe convirtiendo en el predeterminado con el tiempo, a medida que se vayan trasladando más servicios de la red corporativa a la nube. Microsoft usa este modelo de forma interna. Puede obtener más información sobre la implementación de Microsoft del túnel dividido de VPN en [Funcionando en la VPN: cómo Microsoft conecta a su personal remoto](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
+Este modelo invierte el tercer modelo, puesto que únicamente el tráfico con una dirección IP corporativa identificada se envía por el túnel VPN y, por lo tanto, la ruta de Internet es la predeterminada para todo lo demás. Este modelo requiere que la organización se encuentre en una fase avanzada de implementación de [Confianza cero](https://www.microsoft.com/security/zero-trust?rtc=1) para poder implementar el modelo de forma segura. Se debe tener en cuenta que es probable que este modelo o alguna variación de él se acabe convirtiendo en el predeterminado con el tiempo, a medida que se vayan trasladando más servicios de la red corporativa a la nube. Microsoft utiliza este modelo internamente; puede encontrar más información sobre la implementación de Microsoft del túnel dividido VPN en [Ejecutando en VPN: como Microsoft mantiene su fuerza de trabajo remota conectada](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
 
-![Modelo 4 de túnel dividido de VPN](media/vpn-split-tunnelling/vpn-model-4.png)
+![Modelo 4 de túnel dividido de VPN](media/vpn-split-tunneling/vpn-model-4.png)
 
 ### <a name="5-no-vpn"></a>5. No VPN
 
 Una versión más avanzada del modelo número dos, en la que los servicios internos se publican con un enfoque de seguridad moderno o una solución SDWAN, como Azure AD proxy, MCAS, Zscaler ZPA, etc.
 
-![Modelo 5 de túnel dividido de VPN](media/vpn-split-tunnelling/vpn-model-5.png)
+![Modelo 5 de túnel dividido de VPN](media/vpn-split-tunneling/vpn-model-5.png)
 
-## <a name="implement-vpn-split-tunnelling"></a>Implementación de un túnel dividido de VPN
+## <a name="implement-vpn-split-tunneling"></a>Implementación de túnel dividido de VPN
 
 En esta sección se describen los pasos sencillos que se deben seguir para migrar la arquitectura de cliente de VPN de un _túnel forzado de VPN_ a un _túnel forzado de VPN con un número reducido de excepciones de confianza,_ [el modelo n.º 2 de túnel dividido de VPN](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) en la sección [Escenarios de VPN comunes](#common-vpn-scenarios).
 
 En el siguiente diagrama se muestra cómo funciona la solución recomendada de túnel dividido de VPN:
 
-![Detalle de solución de túnel dividido de VPN](media/vpn-split-tunnelling/vpn-split-detail.png)
+![Detalle de solución de túnel dividido de VPN](media/vpn-split-tunneling/vpn-split-detail.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Identificar los puntos de conexión que se deben optimizar
 
@@ -176,7 +176,7 @@ En el script anterior, _$intIndex_ es el índice de la interfaz conectada a Inte
 
 Una vez que haya agregado las rutas, puede confirmar que la tabla de rutas es la correcta, para ello, ejecute **route print** en un símbolo del sistema o PowerShell. El resultado debe contener las rutas que agregó y mostrar el índice de la interfaz (_22_ en este ejemplo) y la puerta de enlace para dicha interfaz (_192.168.1.1_ en este ejemplo):
 
-![Resultado de route print](media/vpn-split-tunnelling/vpn-route-print.png)
+![Resultado de route print](media/vpn-split-tunneling/vpn-route-print.png)
 
 Para agregar rutas para **todos** los intervalos de direcciones IP actuales en la categoría Optimizar, puede usar la siguiente variación de script para consultar el [servicio web de direcciones IP y URL de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service) para el conjunto actual de subredes IP de la categoría Optimizar, y para agregarlo a la tabla de rutas.
 
@@ -216,7 +216,7 @@ El cliente VPN debe configurarse para que el tráfico a las direcciones IP de la
 
 ## <a name="configuring-and-securing-teams-media-traffic"></a>Configuración y protección del tráfico multimedia de Teams
 
-Algunos administradores pueden necesitar información más detallada sobre cómo funcionan los flujos de llamadas en Teams con un modelo de túnel dividido y cómo se protegen las conexiones.
+Algunos administradores pueden requerir información más detallada sobre la forma en que funcionan los flujos de llamadas en Teams que utilizan un modelo de túnel dividido y cómo se aseguran las conexiones.
 
 ### <a name="configuration"></a>Configuración
 
@@ -226,7 +226,8 @@ Algunos programas de cliente de VPN permiten la manipulación del enrutamiento e
 
 En determinadas situaciones, a menudo no relacionadas con la configuración del cliente de Teams, el tráfico multimedia atraviesa igualmente el túnel de VPN aunque se hayan dispuesto las rutas correctas. Si este es el caso, debería bastar con usar una regla de firewall para evitar que las subredes IP o puertos de Teams usen la VPN.
 
-Un requisito actual para que esto funcione en el 100 % de los escenarios es que también se agregue el intervalo de dirección IP **13.107.60.1/32**. Pronto no será necesario gracias a una actualización en el cliente más reciente de Teams, que se publicará a comienzos de **abril de 2020**. Actualizaremos este artículo con los detalles de la compilación tan pronto como esté disponible la información.
+>[!IMPORTANT]
+>Para asegurar que el tráfico de medios de Teams se enruta a través del método deseado en todos los escenarios de VPN, por favor asegúrese de que está ejecutando por lo menos el siguiente número de versión del cliente o mayor, ya que estas versiones tienen mejoras en la forma en que el cliente detecta las rutas de red disponibles.<br>Número de versión de Windows:  **1.3.00.9267**<br>Número de versión de Mac: **1.3.00.9221**
 
 El tráfico de señalización se lleva a cabo en HTTPS y no es tan sensible a la latencia como el tráfico multimedia, y está marcado como **Permitir** en los datos de URL/IP, por lo que puede enrutarse de forma segura a través del cliente VPN si se desea.
 
@@ -256,7 +257,7 @@ Una vez que la directiva se haya implementado, debe asegurarse de que funciona d
   tracert worldaz.tr.teams.microsoft.com
   ```
 
-  Debería ver una ruta de acceso a través del ISP local hacia este punto de conexión, que debe resolverse en una dirección IP en los intervalos de Teams que se han configurado para túnel dividido.
+  Entonces debería ver un camino a través del ISP local a este punto final que debería resolver a una IP en los rangos de Teams que hemos configurado para el túnel dividido.
 
 - Realice una captura de red con una herramienta como Wireshark. Filtre por UDP durante una llamada y debería ver el tráfico que fluye a una dirección IP en el intervalo **Optimizar** de Teams. Si el túnel VPN se usa para este tráfico, el tráfico multimedia no estará visible en el seguimiento.
 
@@ -266,7 +267,7 @@ Si necesita más datos para solucionar problemas o bien asistencia del soporte t
 
 ## <a name="howto-guides-for-common-vpn-platforms"></a>Guías paso a paso para plataformas VPN comunes
 
-En esta sección se proporcionan vínculos a guías detalladas para implementar túneles divididos para el tráfico de Office 365 de los partners más comunes de este espacio. Se agregarán guías adicionales a medida que estén disponibles.
+En esta sección se ofrecen enlaces a guías detalladas para la realización de túneles divididos para el tráfico de Office 365 de los socios más comunes en este espacio. Se agregarán guías adicionales a medida que estén disponibles.
 
 - **Cliente VPN de Windows 10**: [optimizar el tráfico de Office 365 para trabajadores remotos con el cliente VPN nativo de Windows 10](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
 - **Cisco AnyConnect**: [Optimize Anyconnect Split Tunnel for Office 365 (Optimización del túnel dividido de AnyConnect para Office 365)](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
@@ -329,7 +330,7 @@ El puerto 80 solo se usa para cosas como redirigirse a una sesión de puerto 443
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Información general: túnel dividido de VPN para Office 365](office-365-vpn-split-tunnel.md)
+[Resumen: túnel de división VPN para Office 365 ](office-365-vpn-split-tunnel.md)
 
 [Optimización de rendimiento de Office 365 para usuarios de China](office-365-networking-china.md)
 
