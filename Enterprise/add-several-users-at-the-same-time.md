@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Obtenga información sobre cómo agregar varios usuarios a Office 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Office 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón de Office 365. '
-ms.openlocfilehash: 0d0416662bf4934d3373f1ab7ac23c8055ad3098
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: 9c24c52e280fcb316d9e77ea613a1812a235c2d2
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42316019"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901213"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Agregar varios usuarios a Office 365 a la vez. Ayuda para administradores
 
@@ -71,7 +71,7 @@ Todos los usuarios de su grupo deben tener una cuenta de usuario para poder inic
     
 6. En el cuadro de diálogo **Ver el resultado**, puede elegir si desea enviar los resultados a su usuario o a otros usuarios (las contraseñas se mostrarán en texto sin formato). Además, puede ver cuántos usuarios se crearon y, si lo necesita, comprar más licencias para asignárselas a algunos de los nuevos usuarios. 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 <a name="bk_preview"> </a>
 
 - Ahora que estas personas tienen cuentas, necesitan [Descargar e instalar o reinstalar office 365 u office 2016 en un equipo PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Cada persona de su equipo puede usar Office 365 en un máximo de 5 equipos o Mac. 
@@ -105,9 +105,9 @@ Cuando guarde el archivo, probablemente recibirá un mensaje que le informará d
     
 - **¿Qué ocurre si no tengo toda la información requerida para cada usuario?** El nombre de usuario y el nombre para mostrar son obligatorios, y no puede agregar un nuevo usuario sin esta información. Si le falta parte de la información, como el fax, puede usar un espacio más una coma para indicar que el campo debe dejarse en blanco. 
     
-- ** How small or large can the spreadsheet be? ** The spreadsheet must have at least two rows. One is for the column headings (the user data column label) and one for the user. You cannot have more than 251 rows. If you need to import more than 250 users, you can create more than one spreadsheet. 
+- **¿Qué tamaño puede tener la hoja de cálculo?** La hoja de cálculo debe tener al menos dos filas. One is for the column headings (the user data column label) and one for the user. You cannot have more than 251 rows. If you need to import more than 250 users, you can create more than one spreadsheet. 
     
-- ** What languages can I use? ** When you create your spreadsheet, you can enter user data column labels in any language or characters, but you must not change the order of the labels, as shown in the sample. You can then make entries into the fields, using any language or characters, and save your file in a Unicode or UTF-8 format. 
+- **¿Qué idiomas se pueden usar?** Al crear la hoja de cálculo, puede escribir etiquetas de columna de datos de usuario en cualquier idioma o caracteres, pero no debe cambiar el orden de las etiquetas, como se muestra en el ejemplo. You can then make entries into the fields, using any language or characters, and save your file in a Unicode or UTF-8 format. 
     
 - **¿Qué ocurre si voy a agregar usuarios de diferentes países o regiones?** Cree una hoja de cálculo para cada área. Deberá seguir los pases del asistente para agregar usuarios en bloque para cada una de las hojas de cálculo y dar una única ubicación a todos los usuarios incluidos en el archivo con los que trabaja. 
     
