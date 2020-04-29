@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Guía para usar el túnel dividido VPN con Office 365 para optimizar la conectividad de Office 365 para usuarios remotos.
-ms.openlocfilehash: 38eda4fb34ddd907e43a3a82976ffe64aa1f8c34
-ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
+ms.openlocfilehash: d40a5c3f81baae24253bc8a24d5916c6729e393b
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804004"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901223"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimizar la conectividad de Office 365 para usuarios remotos usando el túnel dividido de VPN
 <!---
@@ -78,8 +78,9 @@ Para el servicio de Office 365, Microsoft ha diseñado los requisitos de conecti
 Office 365 clasifica los puntos de conexión necesarios para Office 365 en tres categorías: **Optimizar**, **Permitir** y **Predeterminado**. **Optimizar** los puntos de conexión es nuestra meta aquí y presenta las siguientes características:
 
 - Son los puntos de conexión que pertenecen a Microsoft, que también se encarga de administrarlos y alojarlos en su infraestructura.
+- Están dedicados a las cargas de trabajo principales de Office 365, como Exchange Online, SharePoint Online, Skype empresarial online y Microsoft Teams
 - Se les ofrece IP.
-- Tienen una baja tasa de cambio y un número esperado reducido (actualmente, 20 subredes IP).
+- Tienen una baja tasa de cambio y un número esperado reducido (actualmente, 20 subredes IP)
 - Tienen un alto volumen o son sensibles a la latencia.
 - Se les puede proporcionar elementos de seguridad necesarios directamente en el servicio en lugar de en línea en la red.
 - Suponen alrededor de un 70-80 % del volumen de tráfico en el servicio de Office 365.
