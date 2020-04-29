@@ -3,7 +3,7 @@ title: Los puntos de conexión adicionales no incluidos en el servicio web de UR
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 2/27/2020
+ms.date: 04/28/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumen: los nuevos servicios web de puntos de conexión no incluyen un número reducido de puntos de conexión para escenarios específicos.'
 hideEdit: true
-ms.openlocfilehash: 5e763b00f8b43b652809df994e933228dd7e1dfb
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: 303b3bb57ab3b29a9ad825a525793af6f476e784
+ms.sourcegitcommit: eca49563fd99f08b7ee0bba01d122b0b96de07cb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42315969"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930221"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Los puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365
 
@@ -65,9 +65,10 @@ Aparte de DNS, estos son opcionales para la mayor parte de los clientes, salvo q
 | 17  | **Yammer**  <br> Yammer solo está disponible en el explorador y requiere que el usuario autenticado pase por un proxy. Para que funcionen, todos los FQDN de Yammer deben estar en el Internet Explorer del cliente o en su zona de sitios de confianza de Microsoft Edge.
  |  | Sitios de confianza |
 | 18  | Use [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) para sincronizar las cuentas de usuarios locales con Azure AD. | Vea [Puertos y protocolos necesarios para la identidad híbrida,](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) [Solución de problemas de conectividad de Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) e [Instalación del Agente de Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Solo tráfico de servidor saliente |
-| 19  | Microsoft Stream (necesita el token de usuario de Azure AD). <BR> Office 365 mundial (incluido GCC) | *.cloudapp.net <BR> *.api.microsoftstream.com <BR> *.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> Puerto TCP 443  | Tráfico de servidor entrante |
-| 20  | Use el servidor MFA para las solicitudes de autenticación multifactor, tanto las nuevas instalaciones del servidor como su configuración con Servicios de dominio de Active Directory (AD DS). | Consulte [Introducción al Servidor Autenticación multifactor de Azure](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)  | Solo tráfico de servidor saliente |
-| 21  | Notificaciones de cambios en Microsoft Graph | Los desarrolladores pueden aprovechar las [notificaciones de cambios para suscribirse a eventos en Microsoft Graph. | *.cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228. Nube pública: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183 <BR> Microsoft Cloud for US Government: 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108 <BR> Microsoft Cloud Germany: 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215 <BR> Microsoft Cloud China operado por 21Vianet: 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77<BR> Puerto TCP 443 <BR> Nota: los desarrolladores pueden especificar puertos diferentes al crear las suscripciones.  | Tráfico de servidor entrante |
+| 19  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) con 21 ViaNet en China para sincronizar cuentas de usuario locales con Azure AD. | \*.digicert.com:80 <BR> \*.verisign.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*.partner.microsoftonline.cn:443 <BR> <BR>Consulte también [Solución de problemas de entrada con problemas de conectividad de Azure AD](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity). | Solo tráfico de servidor saliente |
+| 20  | Microsoft Stream (necesita el token de usuario de Azure AD). <BR> Office 365 mundial (incluido GCC) | \*.cloudapp.net <BR> \*.api.microsoftstream.com <BR> \*.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> Puerto TCP 443  | Tráfico de servidor entrante |
+| 21  | Use el servidor MFA para las solicitudes de autenticación multifactor, tanto las nuevas instalaciones del servidor como su configuración con Servicios de dominio de Active Directory (AD DS). | Consulte [Introducción al Servidor Autenticación multifactor de Azure](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)  | Solo tráfico de servidor saliente |
+| 22  | Notificaciones de cambios en Microsoft Graph | Los desarrolladores pueden aprovechar las [notificaciones de cambios](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) para suscribirse a eventos en Microsoft Graph. | *.cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228. Nube pública: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183 <BR> Microsoft Cloud for US Government: 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108 <BR> Microsoft Cloud Germany: 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215 <BR> Microsoft Cloud China operado por 21Vianet: 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77<BR> Puerto TCP 443 <BR> Nota: los desarrolladores pueden especificar puertos diferentes al crear las suscripciones.  | Tráfico de servidor entrante |
 |||||
 
 ## <a name="related-topics"></a>Temas relacionados
