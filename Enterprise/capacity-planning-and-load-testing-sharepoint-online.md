@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: En este artículo se describe cómo se puede implementar en SharePoint Online sin realizar pruebas de carga tradicionales, ya que no está permitido.
-ms.openlocfilehash: ca0ae008778cfd5d347d8b4f78b7db927b4e8f82
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d082dbd93f9724080118f5e387713dc374e50643
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844711"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004613"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Planeamiento de capacidad y pruebas de carga en SharePoint Online
 En este artículo se describe cómo implementar en SharePoint Online sin pruebas de carga tradicionales, ya que las pruebas de carga no se permiten en SharePoint Online. SharePoint Online es un servicio en la nube y las capacidades de carga, el estado y el equilibrio general de carga en el servicio son administrados por Microsoft.
@@ -41,6 +43,6 @@ La capacidad es más que simplemente agregar hardware de forma continua, pero ta
 ## <a name="why-you-cannot-load-test-sharepoint-online"></a>Por qué no se puede cargar SharePoint Online de prueba
 Con los entornos locales, las pruebas de carga se usan para validar la hipótesis de escala y, en última instancia, buscar el punto de ruptura de una granja de servidores; mediante saturarla con la carga. 
 
-Con SharePoint Online, debemos hacer cosas de forma diferente porque la escala es relativamente fluida y se ajusta, limita y controla la carga, según ciertas heurísticas. Como un entorno multiempresa escalable de gran tamaño, debemos proteger todos los inquilinos de la misma granja de servidores, por lo que se limitarán automáticamente las pruebas de carga. Si, por el contrario, intenta la prueba de carga, además de limitarse, recibirá los resultados disimulables y potencialmente engañosos, ya que es probable que la granja de servidores que probó en la actualidad haya tenido cambios de escala durante la ventana de pruebas o en el horario de las pruebas, como la escala y las acciones de equilibrio de la granja de servidores se realizan de manera continua.
+Con SharePoint Online, debemos hacer cosas de forma diferente porque la escala es relativamente fluida y se ajusta, limita y controla la carga, según ciertas heurísticas. Como un entorno multiempresa escalable de gran tamaño, debemos proteger todos los inquilinos de la misma granja de servidores, por lo que se limitarán automáticamente las pruebas de carga. Si, por el contrario, intenta la prueba de carga, además de limitarse, recibirá los resultados disimulables y potencialmente engañosos, ya que la granja de servidores que probó en la actualidad habrá tenido cambios de escala durante la ventana de pruebas o en horas después de las pruebas, mientras que la escala y las acciones de equilibrio de la granja se realizan de forma continua.
 
 En lugar de intentar cargar SharePoint de prueba como un servicio, céntrese en seguir los procedimientos recomendados y siga las instrucciones para [crear, iniciar y mantener una guía del portal saludable](https://go.microsoft.com/fwlink/?linkid=2105838) .

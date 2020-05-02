@@ -13,14 +13,16 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 description: En este artículo se describe cómo planear el lanzamiento del portal en SharePoint Online y los pasos que se deben seguir para un inicio correcto
-ms.openlocfilehash: fca8b4f116510589b83748435f64ccbb3790d7c2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c6f1ef0817534fe2e643492e882fe8f61c3a01dc
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843771"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004113"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planeación del lanzamiento del portal del plan de implementación en SharePoint Online
 

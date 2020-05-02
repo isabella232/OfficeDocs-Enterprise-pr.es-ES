@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Resumen: Obtenga información sobre cómo usar PowerShell de Office 365 con usuarios y licencias de Office 365, Skype Empresarial Online, SharePoint Online, Exchange Online y el Centro de seguridad y cumplimiento de Office 365.'
-ms.openlocfilehash: 5608d955dc408a600b398c9f0fb061d436f0ba56
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fbc10833d3ee1e7377e6ed68adb7d2299fce72fa
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841437"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004573"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Administrar Office 365 con PowerShell de Office 365
 
@@ -52,7 +54,7 @@ Seleccione el tema según sus necesidades:
 
     Empiece aquí si instaló los módulos de PowerShell de Office 365 y quiere migrar el correo electrónico de los sistemas existentes.
 
-- [Centro de seguridad & cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
 
     Empiece aquí si desea usar comandos de automatización para administrar el Centro de seguridad y cumplimiento.
 
