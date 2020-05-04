@@ -111,7 +111,7 @@
 ## [3. implementar seguridad](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. Implementar el software de cliente
-### [Implementación de Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+### [Implementación de Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 ### [Implementación del cliente de Skype Empresarial](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [Implementación y administración de aplicaciones móviles](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
