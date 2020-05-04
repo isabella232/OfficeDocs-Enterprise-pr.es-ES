@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Obtenga información sobre cómo asignar licencias a cuentas de usuario y deshabilitar planes de servicio específicos al mismo tiempo mediante Office 365 PowerShell.
-ms.openlocfilehash: a00a1af02aeb69f7d69f9f9fc998202ac7c53291
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: b1fcd8afd9f9fee5b249752821385cd888519a37
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004673"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009475"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Deshabilitar el acceso a los servicios al asignar licencias de usuario
 
@@ -107,7 +107,7 @@ En la tabla siguiente, se muestran los planes de servicio de Office 365, junto c
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office 365 ProPlus  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 apps for Enterprise *(anteriormente denominado Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype Empresarial Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
@@ -182,7 +182,7 @@ Este bloque de comandos de PowerShell:
     
 - Crea un archivo CSV con todos los usuarios que se procesaron y muestra su estado de licencia.
     
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Deshabilitar el acceso a servicios con PowerShell de Office 365](disable-access-to-services-with-office-365-powershell.md)
   

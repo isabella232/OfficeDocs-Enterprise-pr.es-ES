@@ -15,12 +15,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Si usa Office 2007 u Office 2010, es el momento de planear la actualización. No se bloquee con aplicaciones y servidores obsoletos y no admitidos. Use estos recursos para empezar a trabajar con su plan.
-ms.openlocfilehash: 1b32af6e09b3a8a5830fa59dc6ec6de1060297e0
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 407f3d9570916ab4373dbb4e34f4cb6e57ebc7f7
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503808"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009485"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planeación de la actualización de los servidores y clientes de Office 2007 u Office 2010
 
@@ -88,7 +88,7 @@ También puede elegir no actualizar en este momento. Las aplicaciones de Office 
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) es la combinación de Office 365, Windows 10 y Enterprise Mobility + Security (EMS) que proporciona una solución completa e inteligente para permitir que todo el mundo sea creativo y de colaboración, de forma segura. 
   
-Aunque puede migrar los servidores y los clientes de Office 2007 u Office 2010 a Office 365, Microsoft 365 incluye las licencias y capacidades para ayudar a garantizar que su organización está trabajando en el sistema operativo Windows más reciente y que los dispositivos (como Windows, iOS y Android) se inscriben y mantienen protegidos con directivas que requieren autenticación y protección de datos. Además, Windows 10 y el software de cliente de Office 365 ProPlus se actualizan de manera continua para incluir las últimas características y actualizaciones de seguridad.
+Aunque puede migrar los servidores y los clientes de Office 2007 u Office 2010 a Office 365, Microsoft 365 incluye las licencias y capacidades para ayudar a garantizar que su organización está trabajando en el sistema operativo Windows más reciente y que los dispositivos (como Windows, iOS y Android) se inscriben y mantienen protegidos con directivas que requieren autenticación y protección de datos. Además, Windows 10 y el software de cliente de Microsoft 365 apps for Enterprise (anteriormente denominado Office 365 ProPlus) se actualizan continuamente para incluir las últimas características y actualizaciones de seguridad.
   
 Microsoft 365 es la forma de transformar digitalmente su negocio con la mejora constante de los dispositivos y las experiencias de productividad, habilitada y protegida por la nube de Microsoft.
   
@@ -99,11 +99,11 @@ Microsoft 365 es la forma de transformar digitalmente su negocio con la mejora c
 |[Documentación de Microsoft 365 Education](https://docs.microsoft.com/microsoft-365/education/) <br/> |Obtenga información detallada sobre la versión de Microsoft 365 para organizaciones educativas.  <br/> |
 |[Documentación y recursos de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |Obtenga información detallada sobre la versión de Microsoft 365 para organizaciones empresariales.  <br/> |
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 [Actualizar los clientes y servidores de Office 2007](upgrade-from-office-2007-servers-and-products.md)
 
-o
+o bien
 
 [Actualizar los clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)
    

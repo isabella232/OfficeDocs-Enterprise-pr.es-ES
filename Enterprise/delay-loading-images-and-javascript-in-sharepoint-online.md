@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: En este artículo se describe cómo reducir el tiempo de carga de las páginas de SharePoint Online con JavaScript para retrasar la carga de imágenes y también al esperar a cargar JavaScript no esencial hasta que se cargue la página.
-ms.openlocfilehash: 14220839c196ea3dd987be5dc924c2f41965fc0a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004603"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009355"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Retrasar la carga de imágenes y JavaScript en SharePoint Online
 
 En este artículo se describe cómo reducir el tiempo de carga de las páginas de SharePoint Online con JavaScript para retrasar la carga de imágenes y también al esperar a cargar JavaScript no esencial hasta que se cargue la página.
   
-Las imágenes pueden afectar negativamente a la velocidad de carga de página en SharePoint Online. De forma predeterminada, la mayoría de los exploradores de Internet modernos capturan imágenes antes de cargar una página HTML. Esto puede hacer que la página sea innecesariamente lenta para cargarse si las imágenes no se ven en la pantalla hasta que el usuario se desplaza hacia abajo. Las imágenes pueden impedir que el explorador cargue la parte visible de la página. Para solucionar este problema, puede usar JavaScript para omitir primero la carga de las imágenes. Además, la carga de JavaScript que no es esencial puede ralentizar la carga de los tiempos de las páginas de SharePoint. En este tema se describen algunos métodos que puede usar para mejorar los tiempos de carga de página con JavaScript en SharePoint Online.
+Las imágenes pueden afectar negativamente a la velocidad de carga de página en SharePoint Online. De forma predeterminada, la mayoría de los exploradores de Internet modernos capturan imágenes antes de cargar una página HTML. Esto puede hacer que la página sea innecesariamente lenta para cargarse si las imágenes no se ven en la pantalla hasta que el usuario se desplaza hacia abajo. Las imágenes pueden impedir que el explorador cargue la parte visible de la página. Para solucionar este problema, puede usar JavaScript para omitir primero la carga de las imágenes. Además, la carga de JavaScript no esencial puede ralentizar el tiempo de descarga en las páginas de SharePoint. En este tema se describen algunos métodos que puede usar para mejorar los tiempos de carga de página con JavaScript en SharePoint Online.
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Mejorar los tiempos de carga de página retrasando la carga de imágenes en las páginas de SharePoint Online con JavaScript
 
@@ -109,7 +109,7 @@ Para que esto funcione, también tiene que hacer referencia a jQuery en la pági
   
 ![Captura de pantalla que muestra una imagen cargada en la página](media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
-En la siguiente captura de pantalla se muestra el resto de las imágenes que se descargan cuando se desplazan a la vista.
+En la siguiente captura de pantalla se muestra el resto de las imágenes que se descargan después de desplazarse por la vista.
   
 ![Captura de pantalla que muestra varias imágenes cargadas en la página](media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
@@ -119,9 +119,9 @@ Retrasar la carga de imágenes mediante JavaScript puede ser una técnica eficaz
 
 No pierdas el artículo y el ejemplo de código de la [inyección de JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) que se proporciona en github.
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-[Exploradores compatibles en Office 2013 y Office 365 ProPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Exploradores compatibles en Office 2013 y Microsoft 365 aplicaciones para empresas](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [Aplicar una página maestra a un sitio de SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   

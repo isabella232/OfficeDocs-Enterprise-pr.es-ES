@@ -18,13 +18,13 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: Estos pasos de introducción están diseñados para ayudarle a configurar su red, crear sus identidades, implementar Office 365 ProPlus, migrar los datos y ayudar a las personas de su organización a empezar a usar Office 365.
-ms.openlocfilehash: 979b7f1153451b072c5ab25ad8aced50ae69576a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Estos pasos de información general están diseñados para ayudarle a configurar su red, a crear sus identidades, a implementar Microsoft 365 apps for Enterprise, a migrar los datos y ayudar a las personas de su organización a empezar a usar Office 365.
+ms.openlocfilehash: 456b080d166578a50b345a047e5a37c839b69e20
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844021"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009285"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Implementar Office 365 Enterprise para la organización
 
@@ -34,7 +34,7 @@ En este artículo se describen dos opciones de implementación, si quiere ayuda 
 
 ## <a name="guided-office-365-enterprise-setup-process-with-fasttrack"></a>Proceso de instalación de Office 365 Enterprise guiado con FastTrack
 
-**[FastTrack para office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** es el mejor método para implementar Office 365. FastTrack le guía a través de las configuraciones de implementación más comunes y puede responder a las preguntas a lo largo del proceso. 
+**[FastTrack para office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** es el mejor método para implementar Office 365. FastTrack le guiará por las configuraciones de implementación más comunes e irá respondiendo sus preguntas sobre la marcha. 
 
 Para tener acceso a una serie de guías de configuración, inicie sesión en su suscripción de Office 365 y, después, vaya a [configuración de Office 365](https://aka.ms/o365fasttrack).
 
@@ -60,9 +60,9 @@ Para implementar Office 365 Enterprise por su cuenta después de completar la pl
 
    Incluye la configuración y la implementación de seguridad básica y mejorada, protección contra amenazas e información para su espacio empresarial e identidades en los primeros 30 días, 90 días y más allá.
  
-4. [Implementación de software cliente](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+4. [Implementación de software cliente](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   Incluye la implementación de Office 365 ProPlus, la versión actualizada en la nube y siempre actualizada del conjunto de aplicaciones de Office (Word, Excel, PowerPoint y otros) en los dispositivos. Todas las licencias de cliente de Office 365 incluyen una licencia para Office 365 ProPlus.
+   Incluye la implementación de Microsoft 365 apps for Enterprise (anteriormente denominada Office 365 ProPlus), la versión actualizada en la nube y siempre actualizada del conjunto de aplicaciones de Office (Word, Excel, PowerPoint y otras) en los dispositivos. Todas las licencias de cliente de Office 365 incluyen una licencia para las aplicaciones de Microsoft 365 para la empresa.
  
 5. [Configurar la administración de dispositivos móviles](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 

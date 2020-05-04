@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Obtenga información sobre cómo se usa Azure ExpressRoute con Office 365 y cómo planear el proyecto de implementación de red que será necesario si está implementando Azure ExpressRoute para usarlo con Office 365.
-ms.openlocfilehash: 76d90e4c60e04302e8a14f3020ac0f968bf018ae
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cf280ff386893f98844e5653ceed180339f701a6
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844931"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009365"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute para Office 365
 
@@ -68,7 +68,7 @@ En la siguiente tabla se enumeran los servicios de Office 365 que son compatible
 
 <sup>1</sup> Cada una de estas aplicaciones no es compatible con los requisitos de conectividad de Internet a través de ExpressRoute, consulte el artículo de puntos de conexión de [Office 365](https://aka.ms/o365endpoints) para obtener más información.
 
-Los servicios que no se incluyen en ExpressRoute para Office 365 son las descargas de cliente de Office 365 ProPlus, el inicio de sesión de proveedor de identidades local y el servicio Office 365 (operado por 21 ViaNet) en China.
+Los servicios que no se incluyen en ExpressRoute para Office 365 son Microsoft 365 apps for Enterprise Client downloads, el inicio de sesión de proveedor de identidades local y el servicio Office 365 (operado por 21 ViaNet) en China.
 
 ## <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
 
@@ -102,7 +102,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/express
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)
+[Evaluar la red de Office 365](assessing-network-connectivity.md)
 
 [Administrar ExpressRoute para la conectividad de Office 365](managing-expressroute-for-connectivity.md)
 

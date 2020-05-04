@@ -9,12 +9,12 @@ metadata:
   author: wingtofree
   ms.author: v-qingao
   ms.date: 03/12/2020
-  ms.openlocfilehash: 432c124f39db7168a93b4c061c00b10a07cc20d9
-  ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+  ms.openlocfilehash: 8397c93d6632710a036b2de7ef604451c5c42e70
+  ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "42891512"
+  ms.lasthandoff: 05/03/2020
+  ms.locfileid: "44009295"
 landingContent:
 - title: Acerca de Office 365 Enterprise
   linkLists:
@@ -25,8 +25,8 @@ landingContent:
     - text: >
         Migrar los datos de su organización a Office 365 Enterprise
       url: migrate-data-to-office-365.md
-    - text: Guía de implementación de Office 365 ProPlus
-      url: https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus
+    - text: Guía de implementación de Microsoft 365 apps for Enterprise
+      url: https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps
     - text: Implementar Office 365 Enterprise para su organización
       url: setup-overview-for-enterprises.md
     - text: Implementaciones híbridas
@@ -41,7 +41,7 @@ landingContent:
     links:
     - text: Exchange Online
       url: https://docs.microsoft.com/Exchange/exchange-online
-    - text: SharePoint Online
+    - text: SharePoint Online
       url: https://support.office.com/article/sharepoint-online-%E2%80%93-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a
     - text: Skype Empresarial Online
       url: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online

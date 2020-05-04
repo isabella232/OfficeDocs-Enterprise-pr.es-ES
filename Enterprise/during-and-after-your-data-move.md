@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
-ms.openlocfilehash: ee2a63ed11e83a16ec6c894a3eaf34cf36ebbc4f
-ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
+ms.openlocfilehash: 24239f4e6cb8207fe53043dce80ae77035d8e834
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772111"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009305"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -55,7 +55,7 @@ Dado que el tiempo de traslado de cada usuario a la nueva geo de centro de recur
 
 Algunos usuarios abren una carpeta de correo compartido desde otro buzón (que el usuario tiene permisos de lectura o escritura) en Outlook Web Access mediante la característica "carpeta compartida". En la tabla siguiente se describe cómo funciona el acceso a las carpetas compartidas durante el movimiento de un buzón. Tenga en cuenta que los usuarios con permisos completos para un buzón de correo compartido pueden abrir el buzón de correo mediante Outlook Web Access durante el traslado. 
   
-|**Configuración**|**Descripción**|
+|**Configuración**|**Description**|
 |:-----|:-----|
 |El usuario tiene permiso de carpeta de buzón de correo en otro buzón  <br/> |Posiblemente limitado.  <br/> Si el usuario A y el buzón B no se encuentran en el mismo área geográfica durante el movimiento de inquilino, el usuario A no puede abrir la carpeta del buzón B en Outlook Web Access si el usuario A solo tiene permiso para una carpeta específica del buzón B.  <br/> Para agregar una carpeta compartida, haga clic con el botón derecho en el nombre de usuario en el panel de navegación izquierdo y seleccione **Agregar carpeta compartida**.  <br/> |
 |Usuario con permiso de buzón de correo completo a otro buzón  <br/> |Totalmente compatible.  <br/> Si el usuario A tiene permiso de "acceso total" en el buzón B, el usuario A puede hacer clic en la carpeta compartida en el panel de navegación izquierdo de Outlook Web Access para abrir una ventana que muestre el buzón B.  Un usuario puede abrir un buzón compartido mediante Outlook Web Access durante la transferencia sin ningún impacto negativo. La limitación solo se aplica al uso compartido en el nivel de carpeta en un buzón.           |
@@ -74,7 +74,7 @@ Cuando se mueve SharePoint Online, también se mueven los datos de los siguiente
     
 - Explorador de Office en s
     
-- Office 365 ProPlus
+- Aplicaciones de Microsoft 365 para empresas
     
 - Visio Pro para Office 365
     
@@ -88,7 +88,7 @@ Una vez que haya terminado de mover los datos de SharePoint Online, es posible q
     
 - Estamos quitando las copias transcodificadas del centro de recursos anterior y transformarlas de nuevo en el nuevo centro de recursos.
     
-### <a name="search"></a>Buscar 
+### <a name="search"></a>Search
 
 En el transcurso del traslado de los datos de SharePoint Online, migramos el índice de búsqueda y la configuración de búsqueda a una nueva ubicación. Hasta que haya **completado** el traslado de los datos de SharePoint Online, seguiremos atendiendo a los usuarios del índice en la ubicación original. En la nueva ubicación, la búsqueda comienza automáticamente el rastreo del contenido después de haber terminado de mover los datos de SharePoint Online. A partir de este punto, traponemos a sus usuarios del índice migrado. Los cambios en el contenido que se produjeron después de la migración no se incluyen en el índice migrado hasta que el rastreo los seleccione. La mayoría de los clientes no aprecian que los resultados sean menos actualizados después de haber terminado de mover los datos de SharePoint Online, pero algunos clientes podrían experimentar una actualización reducida en las primeras 24-48 horas. 
   

@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Acelere la planeación y la configuración de Office 365 o Microsoft 365 con asesores de implementación.
-ms.openlocfilehash: cb721b2bc115a9419feb4becaef4bcbb9c5c436e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 535bf1a0bcc47f3e311eeb714f957c36dde67fdd
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840537"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009397"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Asesores de implementación para los servicios de Office 365 o Microsoft 365
 
@@ -159,23 +159,23 @@ Si tiene gmail, tendrá que migrar los contactos de gmail y los elementos de cal
 
 ## <a name="file-creation-storage-and-sharing"></a>Creación, almacenamiento y uso compartido de archivos
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas
 
-Office 365 ProPlus pone a los usuarios en funcionamiento en las últimas versiones de Office y los mantiene actualizados.
+Microsoft 365 apps for Enterprise (anteriormente denominado Office 365 ProPlus) pone a los usuarios en funcionamiento en las últimas versiones de Office y los mantiene actualizados.
 
 Consulte esta guía para conocer los pasos para instalar Office en un equipo PC o Mac para su empresa, así como sugerencias para obtener información para todos los usuarios que comenzaron con Office.
 
 |||
 |:-------|:-----|
-| **Realizar** |  [Guía de inicio rápido de Office 365 ProPlus](https://aka.ms/OPPquickstartguide) <BR> |
+| **Realizar** |  [Guía de inicio rápido de aplicaciones de Microsoft 365 para arquitectos](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Office 365 ProPlus Deployment Advisor describe los pasos para ayudar a los usuarios a instalar Office 365 ProPlus directamente desde el portal de Office 365 online o para implementar Office 365 ProPlus para sus usuarios desde una ubicación local. Se incluyen instrucciones para usar el administrador de configuración de Microsoft Endpoint, un script de inicio de directiva de grupo, una imagen de disco del sistema operativo o la activación compartida de servicios de escritorio remoto (RDS).
+El asesor de implementación de Office le guiará por los pasos para ayudar a los usuarios a instalar las aplicaciones de Microsoft 365 para empresas directamente desde el portal de Office 365 en línea o para implementar Microsoft 365 apps for Enterprise para los usuarios desde una ubicación local. Se incluyen instrucciones para usar el administrador de configuración de Microsoft Endpoint, un script de inicio de directiva de grupo, una imagen de disco del sistema operativo o la activación compartida de servicios de escritorio remoto (RDS).
 
 |||
 |:-------|:-----|
-| **Realizar** | [Asesor de implementación de Office 365 ProPlus](https://aka.ms/o365proplusdeploy) | 
-| **Vea** | [Experiencia de Office como servicio de suscripción](https://aka.ms/qo45jf) <BR> [Introducción a Office 365 ProPlus](https://aka.ms/r359zr) | 
+| **Realizar** | [Asesor de implementación de Office](https://aka.ms/o365proplusdeploy) | 
+| **Vea** | [Experiencia de Office como servicio de suscripción](https://aka.ms/qo45jf) <BR> [Información general sobre las aplicaciones de Microsoft 365 para empresas](https://aka.ms/r359zr) | 
 |||
 
 
@@ -187,7 +187,7 @@ Para empezar rápidamente con OneDrive para la empresa para almacenamiento, uso 
 
 |||
 |:-------|:-----|
-| **Realizar** | [Asesor de implementación de Office 365 ProPlus](https://aka.ms/o365proplusdeploy) | 
+| **Realizar** | [Asesor de implementación de Office](https://aka.ms/o365proplusdeploy) | 
 | **Vea** | [Ventajas de OneDrive para la empresa integrada](https://aka.ms/f66hqa) <BR> [Bienvenido a OneDrive: procedente de otro proveedor de almacenamiento en la nube](https://videoplayercdn.osi.office.net/embed/6b11f30b-725a-4145-8b72-45a41793a432) | 
 |||
 
@@ -236,7 +236,7 @@ Para configurar características, como la administración de acceso basado en gr
 | **Realizar** |  [Guía de instalación de Azure AD Basic](https://aka.ms/azureadbasic) |
 |||
 
-Para habilitar las numerosas características de Azure AD Premium, que proporcionan capacidades de administración de identidades, como la autenticación multifactor, el inicio de sesión único (SSO), el registro de dispositivos, la administración de contraseñas y la administración de grupos de autoservicio y la supervisión de seguridad, use esta guía. .
+Para habilitar las numerosas características de Azure AD Premium, que proporcionan capacidades de administración de identidades, como la autenticación multifactor, el inicio de sesión único (SSO), el registro de dispositivos, la administración de contraseñas y la administración de grupos de autoservicio y la supervisión de seguridad, use esta guía.
   
 |||
 |:-------|:-----|

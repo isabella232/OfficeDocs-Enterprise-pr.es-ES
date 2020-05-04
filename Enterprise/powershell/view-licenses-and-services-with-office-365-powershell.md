@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explica cómo usar PowerShell de Office 365 para ver información sobre los planes de licencias, los servicios y las licencias disponibles en su organización de Office 365.
-ms.openlocfilehash: a130faef640e875bde864ff26e46863e82f6df7a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: e76a11d0ac174ef2de05c7e670537304dad9462f
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004143"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009535"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Ver licencias y servicios con PowerShell de Office 365
 
@@ -33,7 +33,7 @@ Todas las suscripciones de Office 365 se componen de estos elementos:
 
 - **Planes de licencias** También se conocen como planes de licencia o planes de Office 365. Los planes de licencias determinan los servicios de Office 365 que están disponibles para los usuarios. Su suscripción a Office 365 puede contener varios planes de licencias. Un plan de licencias de ejemplo sería Office 365 Enterprise E3.
     
-- **Servicios** de También se conocen como planes de servicio. Los servicios son los productos, las características y las capacidades de Office 365 que están disponibles en cada plan de licencias, por ejemplo, Exchange Online y Office 365 ProPlus. Los usuarios pueden tener varias licencias asignadas que provengan de diferentes planes de licencias, y les permitan obtener acceso a diferentes servicios.
+- **Servicios** de También se conocen como planes de servicio. Los servicios son los productos, las características y las capacidades de Office 365 que están disponibles en cada plan de licencias, por ejemplo, Exchange Online y Microsoft 365 apps for Enterprise (anteriormente denominado Office 365 ProPlus). Los usuarios pueden tener varias licencias asignadas que provengan de diferentes planes de licencias, y les permitan obtener acceso a diferentes servicios.
     
 - **Licencias** Los planes de licencias contienen el número de licencias que haya adquirido. Puede asignar licencias a los usuarios para que estos puedan usar los servicios de Office 365 definidos por el plan de licencias. Cada cuenta de usuario necesita como mínimo una licencia del plan de licencias para que el usuario correspondiente pueda iniciar sesión en Office 365 y usar los servicios.
     
@@ -141,7 +141,7 @@ En la tabla siguiente, se muestran los planes de servicio de Office 365, junto c
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office 365 ProPlus  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 apps for Enterprise *(anteriormente denominado Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype Empresarial Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
@@ -161,7 +161,7 @@ En este ejemplo se muestran los servicios de Office 365 que están disponibles e
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar cuentas de usuario, licencias y grupos con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
