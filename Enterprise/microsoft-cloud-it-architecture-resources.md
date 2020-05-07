@@ -17,17 +17,17 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: 'Resumen: conozca los conceptos principales de arquitectura de la nube de identidad, seguridad, redes e híbrida de Microsoft. Revise las recomendaciones para proteger los archivos, las identidades y los dispositivos al usar la nube de Microsoft. Obtenga información sobre cómo implementar un escritorio moderno y seguro con Windows 10 y Office ProPlus.'
-ms.openlocfilehash: ebbf2f2eb15523b455c7fab1c306eea6e0d192b1
-ms.sourcegitcommit: 9416fbf8f136baeaf7d45eb243921c70ae67438d
+description: 'Resumen: conozca los conceptos principales de arquitectura de la nube de identidad, seguridad, redes e híbrida de Microsoft. Revise las recomendaciones para proteger los archivos, las identidades y los dispositivos al usar la nube de Microsoft. Obtenga información sobre cómo implementar un escritorio moderno y seguro con Windows 10 y Aplicaciones de Microsoft 365 para empresas.'
+ms.openlocfilehash: 065776de182ab960f6f9ccf5cfbc58449954e220
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43037807"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009375"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitectura de TI de la nube de Microsoft
 
- **Resumen:** conozca los conceptos principales de arquitectura de la nube de identidad, seguridad, redes e híbrida de Microsoft. Revise las recomendaciones para proteger los archivos, las identidades y los dispositivos al usar la nube de Microsoft. Obtenga información sobre cómo implementar un escritorio moderno y seguro con Windows 10 y Office ProPlus.
+ **Resumen:** conozca los conceptos principales de arquitectura de la nube de identidad, seguridad, redes e híbrida de Microsoft. Revise las recomendaciones para proteger los archivos, las identidades y los dispositivos al usar la nube de Microsoft. Obtenga información sobre cómo implementar un escritorio moderno y seguro con Windows 10 y Aplicaciones de Microsoft 365 para empresas.
   
 Estos pósteres y herramientas de arquitectura ofrecen información acerca de los servicios en la nube de Microsoft, como Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365 y las soluciones híbridas locales y en la nube. Los arquitectos y los responsables de la toma de decisiones de TI pueden usar estos recursos para determinar las soluciones ideales para sus cargas de trabajo y para tomar decisiones acerca de los componentes de la infraestructura básica, como la identidad y la seguridad. 
   
@@ -224,11 +224,11 @@ Para obtener más información, consulte el artículo de este póster: [Solucion
 <a name="msd"></a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Implementación de un escritorio seguro y moderno con Microsoft
 
-Todo lo que los arquitectos de TI necesitan saber para implementar y administrar las actualizaciones de Office 365 ProPlus en Windows 10.
+Todo lo que los arquitectos de TI necesitan saber para implementar y administrar las actualizaciones de Aplicaciones de Microsoft 365 para empresas (antes Office 365 ProPlus) en Windows 10.
   
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![Miniatura del modelo Implementación de un escritorio seguro y moderno con Microsoft](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Este modelo contiene lo siguiente: <ul><li>  Implementación de Windows 10 y Office ProPlus desde Microsoft Cloud </li><li>  Implementación de Windows 10 y Office ProPlus con Microsoft Endpoint Configuration Manager </li><li>  Administración de las actualizaciones de Windows 10 y Office ProPlus desde Microsoft Cloud </li><li>  Administración de las actualizaciones de Windows 10 y Office ProPlus con Microsoft Endpoint Configuration Manager </li><li>  Funciones de protección prediseñadas y adicionales para Windows 10 </li></ul><br/> |
+|[![Miniatura del modelo Implementación de un escritorio seguro y moderno con Microsoft](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Este modelo contiene lo siguiente: <ul><li>  Implementación de Windows 10 y Aplicaciones de Microsoft 365 para empresas desde la nube de Microsoft </li><li>  Implementación de Windows 10 y Aplicaciones de Microsoft 365 para empresas con Microsoft Endpoint Configuration Manager </li><li>  Administración de las actualizaciones de Windows 10 y Aplicaciones de Microsoft 365 para empresas desde la nube de Microsoft </li><li>  Administración de las actualizaciones de Windows 10 y Aplicaciones de Microsoft 365 para empresas con Microsoft Endpoint Configuration Manager </li><li>  Funciones de protección prediseñadas y adicionales para Windows 10 </li></ul><br/> |
    
 ## <a name="see-also"></a>Vea también
 
