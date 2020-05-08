@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Obtenga información sobre las capacidades multigeográficas en Exchange Online
-ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: e6273c49e185c59cad6b56cf7d8399cdd6f25d22
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890552"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057980"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Capacidades multigeográficas en Exchange Online
 
@@ -45,11 +45,11 @@ Exchange Online sincroniza la propiedad **PreferredDataLocation** de Azure AD en
 
 - Si el código**PreferredDataLocation** no es correcto (por ejemplo, un tipo de NAN en lugar de NAM), el buzón se aprovisionará en la ubicación geográfica central.
 
-**Nota**: las funciones de Multi-geo y las reuniones hospedadas regionalmente por Skype Empresarial Online utilizan la propiedad **PreferredDataLocation** en los objetos de usuario para buscar servicios. Si configura los valores de **PreferredDataLocation** en los objetos de usuario para reuniones hospedadas regionalmente, el buzón de correo de esos usuarios se moverá automáticamente a la ubicación geográfica especificada después de que se habilite en el espacio empresarial de Office 365.
+**Nota**: las funciones de Multi-geo y las reuniones hospedadas regionalmente por Skype Empresarial Online utilizan la propiedad **PreferredDataLocation** en los objetos de usuario para buscar servicios. Si configura los valores de **PreferredDataLocation** en los objetos de usuario para reuniones hospedadas regionalmente, el buzón de correo de esos usuarios se moverá automáticamente a la ubicación geográfica especificada después de que se habilite en el espacio empresarial de Microsoft 365.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitación de funciones para empresas multigeográficas en Exchange Online
 
-- Características de seguridad y cumplimiento (por ejemplo, auditoría y eDiscovery) que están disponibles en el centro de administración de Exchange (EAC) no están disponibles en las organizaciones multigeográficas. En su lugar, debe utilizar el [Centro de seguridad y cumplimiento de Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar las características de seguridad y cumplimiento.
+- Características de seguridad y cumplimiento (por ejemplo, auditoría y eDiscovery) que están disponibles en el centro de administración de Exchange (EAC) no están disponibles en las organizaciones multigeográficas. En su lugar, debe utilizar el [Centro de seguridad y cumplimiento de Microsoft 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar las características de seguridad y cumplimiento.
 
 - Los usuarios de Outlook para Mac pueden experimentar una pérdida temporal de acceso a su carpeta de archivo en línea mientras mueven su buzón de correo a una nueva ubicación geográfica. Esta condición se produce cuando los buzones de correo principal y de archivo del usuario se encuentran en diferentes ubicaciones geográficas, ya que los movimientos de buzones entre ubicaciones geográficas se pueden completar en diferentes momentos.
 

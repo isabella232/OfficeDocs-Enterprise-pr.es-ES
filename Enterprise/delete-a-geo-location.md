@@ -12,7 +12,7 @@ f1.keywords:
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Aprenda a eliminar una ubicación de satélite en Microsoft 365 Multi-Geo.
+description: Obtenga más información sobre cómo eliminar una ubicación de satélite en Microsoft 365 Multi-Geo.
 ms.openlocfilehash: 840c1bf494ddcd7e6558b134655b5cb708bf6e7b
 ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT

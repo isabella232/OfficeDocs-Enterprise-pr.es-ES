@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: Ubicaciones de datos de Office 365'
-ms.openlocfilehash: 6b7647456415df6a2ac8d1f22bb697164e756207
-ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
+ms.openlocfilehash: 8fd863034439f22c1c030ff8af6dba97f678f537
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43798821"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44058020"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -84,7 +84,7 @@ Office 365 usa tecnologías del lado de servicio que encriptan datos de clientes
 
 Consulte la página [productos disponibles por región](https://go.microsoft.com/fwlink/p/?linkid=2093451) para buscar información sobre la residencia de datos de Microsoft Azure.
 
-### <a name="what-are-multi-geo-capabilities-in-office-365"></a>¿Qué son las capacidades multigeográficas en Office 365?
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>¿Qué son las Capacidades multigeográficas en Microsoft 365?
 
 [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) permite que un solo espacio empresarial de Office 365 abarque distintas regiones de centros de datos de Office 365 y proporciona a los clientes la capacidad de almacenar sus datos básicos de clientes de Office 365, en función de cada usuario, en las regiones seleccionadas.
 
@@ -113,7 +113,7 @@ Para los centros de datos específicos de su país o región, a continuación se
 | País | Ciudad |
 | --- | --- |
 | Australia | Nueva Gales del Sur, Victoria |
-| Canadá | Québec City, Toronto |
+| Canadá | Quebec City, Toronto |
 | Unión Europea | Austria, Finlandia, Francia, Irlanda, Países Bajos |
 | Francia | Paris, Marsella |
 | Alemania | Frankfurt, Berlín |
@@ -727,7 +727,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Workplace Analytics | Estados Unidos |
 </p></details>
 
-## <a name="boliva"></a>Boliva
+## <a name="bolivia"></a>Bolivia
 <details><summary>Haga clic para expandir</summary><p>
 
 | Servicio | Ubicación |
@@ -4039,7 +4039,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Workplace Analytics | Estados Unidos |
 </p></details>
 
-## <a name="papaua-new-guinea"></a>Papúa Nueva Guinea
+## <a name="papua-new-guinea"></a>Papúa-Nueva Guinea
 <details><summary>Haga clic para expandir</summary><p>
 
 | Servicio | Ubicación |

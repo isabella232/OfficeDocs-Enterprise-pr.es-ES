@@ -36,7 +36,7 @@ Los servicios BCS, Secure Store y Apps tienen todos instancias independientes en
 
 ## <a name="ediscovery"></a>eDiscovery 
 
-De forma predeterminada, un administrador de eDiscovery o de un espacio empresarial multigeográfico podrá usar eDiscovery solo en la ubicación central de ese espacio empresarial. El administrador global de Microsoft 365 debe asignar permisos de supervisor de eDiscovery para que otros usuarios puedan ejecutar eDiscovery y asignar un parámetro "Región" en el filtro de seguridad de cumplimiento correspondiente para especificar la región donde se ejecutará eDiscovery como ubicación por satélite; en caso contrario, no se ejecutará eDiscovery en la ubicación por satélite. Para configurar el filtro de seguridad de cumplimiento de una región, vea [Configurar eDiscovery de Microsoft 365 Multi-Geo](multi-geo-ediscovery-configuration.md).
+De forma predeterminada, un administrador de eDiscovery o de un espacio empresarial multigeográfico podrá usar eDiscovery solo en la ubicación central de ese espacio empresarial. El administrador global de Microsoft 365 debe asignar permisos de supervisor de eDiscovery para que otros usuarios puedan aplicar eDiscovery y asignar un parámetro "Región" en el filtro de seguridad de cumplimiento correspondiente para especificar la región donde se aplicará eDiscovery como ubicación por satélite; en caso contrario, no se aplicará eDiscovery en la ubicación por satélite. Para configurar el filtro de seguridad de cumplimiento de una región, vea [Configurar eDiscovery de Microsoft 365 Multi-Geo](multi-geo-ediscovery-configuration.md).
 
 ## <a name="exchange-mailboxes"></a>Buzones de Exchange
 
@@ -98,7 +98,7 @@ Stream está disponible actualmente en las regiones siguientes:
 - Europa
 - Asia Pacífico
 
-Pero Stream no aún está disponible en las siguientes regiones que actualmente son compatibles con Microsoft 365 Video, por lo tanto, para estas instancias locales, usaremos RMS en la región admitida más cercana.
+Sin embargo, Stream no aún está disponible en las siguientes regiones que actualmente son compatibles con Microsoft 365 Video; por lo tanto, para estas instancias locales, usaremos RMS en la región admitida más cercana.
 
 - Australia
 - Canada
