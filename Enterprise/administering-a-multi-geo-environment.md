@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Obtenga información sobre cómo administrar los servicios de SharePoint y OneDrive en un entorno multigeográfico.
-ms.openlocfilehash: 483250f8956ba1220c29bb769abef187ac9ec53d
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 979ca202ac4d21dc3eff5a933538eee5af050167
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974032"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057666"
 ---
-# <a name="administering-a-multi-geo-environment"></a>Administración de un entorno multigeográfico
+# <a name="administering-a-multi-geo-environment"></a>Administración de un entorno de Multi-Geo
 
-A continuación, se muestra cómo funcionan los servicios de Office 365 en un entorno multigeográfico.
+A continuación, se muestra cómo funcionan los servicios de Microsoft 365 en un entorno multigeográfico.
 
 ## <a name="audit-log-search"></a>Búsqueda de registros de auditoría
 
-En la página de búsqueda de registros de auditoría de Office 365 podrá encontrar un [registro de auditoría](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unificado de todas las ubicaciones satélite. Puede ver todas las entradas de registro de auditoría entre ubicaciones geográficas, por ejemplo, las actividades de los usuarios de NAM y EUR se mostrarán en una vista de la organización y, después, puede aplicar filtros existentes para ver las actividades de un usuario específico.
+En la página de búsqueda de registros de auditoría de Microsoft 365 podrá encontrar un [registro de auditoría](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unificado de todas las ubicaciones satélite. Puede ver todas las entradas de registro de auditoría entre ubicaciones geográficas, por ejemplo, las actividades de los usuarios de NAM y EUR se mostrarán en una vista de la organización y, después, puede aplicar filtros existentes para ver las actividades de un usuario específico.
 
 ## <a name="bcs-secure-store-apps"></a>BCS, Secure Store, Apps
 
@@ -36,7 +36,7 @@ Los servicios BCS, Secure Store y Apps tienen todos instancias independientes en
 
 ## <a name="ediscovery"></a>eDiscovery 
 
-De forma predeterminada, un administrador de eDiscovery o de un espacio empresarial multigeográfico podrá usar eDiscovery solo en la ubicación central de ese espacio empresarial. El administrador global de Office 365 debe asignar permisos de supervisor de eDiscovery para que otros usuarios puedan ejecutar eDiscovery y asignar un parámetro "Región" en el filtro de seguridad de cumplimiento correspondiente para especificar la región donde se ejecutará eDiscovery como ubicación por satélite; en caso contrario, no se ejecutará eDiscovery en la ubicación por satélite. Para configurar el filtro de seguridad de cumplimiento de una región, vea [Configurar eDiscovery de Office 365 Multi-Geo](multi-geo-ediscovery-configuration.md).
+De forma predeterminada, un administrador de eDiscovery o de un espacio empresarial multigeográfico podrá usar eDiscovery solo en la ubicación central de ese espacio empresarial. El administrador global de Microsoft 365 debe asignar permisos de supervisor de eDiscovery para que otros usuarios puedan ejecutar eDiscovery y asignar un parámetro "Región" en el filtro de seguridad de cumplimiento correspondiente para especificar la región donde se ejecutará eDiscovery como ubicación por satélite; en caso contrario, no se ejecutará eDiscovery en la ubicación por satélite. Para configurar el filtro de seguridad de cumplimiento de una región, vea [Configurar eDiscovery de Microsoft 365 Multi-Geo](multi-geo-ediscovery-configuration.md).
 
 ## <a name="exchange-mailboxes"></a>Buzones de Exchange
 
@@ -64,7 +64,7 @@ El [Centro de administración de OneDrive](https://admin.onedrive.com) tiene una
 
 ## <a name="security-and-compliance-admin-center"></a>Centro de seguridad y cumplimiento
 
-Existe un centro de cumplimiento centralizado para un espacio empresarial multigeográfico: [Centro de seguridad y cumplimiento de Office 365](https://protection.office.com/?rfr=AdminCenter\#/homepage).
+Existe un centro de cumplimiento centralizado para un espacio empresarial multigeográfico: [Centro de seguridad y cumplimiento de Microsoft 365](https://protection.office.com/?rfr=AdminCenter\#/homepage).
 
 ## <a name="sharepoint-storage-quota"></a>Cuota de almacenamiento de SharePoint
 
@@ -98,7 +98,7 @@ Stream está disponible actualmente en las regiones siguientes:
 - Europa
 - Asia Pacífico
 
-Pero Stream no aún está disponible en las siguientes regiones que actualmente son compatibles con Office 365 Video, por lo tanto, para estas instancias locales, usaremos RMS en la región admitida más cercana.
+Pero Stream no aún está disponible en las siguientes regiones que actualmente son compatibles con Microsoft 365 Video, por lo tanto, para estas instancias locales, usaremos RMS en la región admitida más cercana.
 
 - Australia
 - Canada

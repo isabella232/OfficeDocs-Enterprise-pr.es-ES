@@ -1,5 +1,5 @@
 ---
-title: Configurar la búsqueda para Office 365 Multi-Geo
+title: Configurar la búsqueda para Microsoft 365 Multi-Geo
 ms.reviewer: adwood
 ms.author: tlarsen
 author: tklarsen
@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico.
-ms.openlocfilehash: 9f4861a2a093ac8497a86022f44c168a1c5982ab
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974012"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057676"
 ---
-# <a name="configure-search-for-office-365-multi-geo"></a>Configurar la búsqueda para Office 365 Multi-Geo
+# <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurar la búsqueda para Microsoft 365 Multi-Geo
 
 En un entorno multigeográfico, cada ubicación geográfica tiene su propio índice de búsqueda y centro de búsqueda. Cuando un usuario realiza una búsqueda, se efectúa una distribución ramificada de la consulta a todos los índices y los resultados devueltos se combinan.
 
@@ -102,7 +102,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 </tr>
 <tr class="even">
 <td align="left">Búsqueda híbrida</td>
-<td align="left">En un entorno de SharePoint híbrido con <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">búsqueda de nube híbrida</a>, el contenido local se agrega al índice de Office 365 de la ubicación central.</td>
+<td align="left">En un entorno de SharePoint híbrido con <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">búsqueda de nube híbrida</a>, el contenido local se agrega al índice de Microsoft 365 de la ubicación central.</td>
 <td align="left"></td>
 </tr>
 </tbody>

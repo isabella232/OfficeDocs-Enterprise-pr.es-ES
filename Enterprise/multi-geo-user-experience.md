@@ -13,12 +13,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Obtenga información sobre la experiencia del usuario de SharePoint, OneDrive y Exchange en un entorno multigeográfico.
-ms.openlocfilehash: 75d24ac7a89ff2dfe66af713fdae7ece21ebda3c
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 21858989f853b2a8c87808e38763068631173f7f
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974222"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057756"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Experiencia del usuario en un entorno multigeográfico
 
@@ -32,7 +32,7 @@ El buzón de Exchange de un usuario se aprovisiona en su ubicación de datos pre
 
 Los sitios centrales de SharePoint mejoran la detección y la participación con contenido para los empleados, al crear una representación completa y coherente de proyectos, departamentos o regiones. En un entorno multigeográfico, los sitios de ubicaciones satélite pueden asociarse fácilmente con un sitio central independientemente de su ubicación geográfica. Los usuarios pueden buscar y obtener resultados en la central mediante una experiencia de búsqueda única, independientemente de la ubicación geográfica de los sitios.
 
-## <a name="office-365-app-launcher"></a>Iniciador de aplicaciones de Office 365
+## <a name="microsoft-365-app-launcher"></a>Iniciador de aplicaciones de Microsoft 365
 
 El iniciador de aplicaciones es compatible con múltiples ubicaciones geográficas y dirigirá cada icono a la ubicación geográfica correspondiente de la carga de trabajo. Los iconos de SharePoint y OneDrive apuntarán al usuario a la ubicación correspondiente a la ubicación geográfica aprovisionada del usuario. Esto significa que si el usuario tiene un OneDrive en la ubicación central, el icono de SharePoint apuntarán a la página principal de SharePoint en la ubicación central, pero se aprovisionará su sitio de grupo en la ubicación correspondiente a su ubicación de datos preferida. 
 
