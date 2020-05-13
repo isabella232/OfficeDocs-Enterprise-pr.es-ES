@@ -1,5 +1,5 @@
 ---
-title: Prueba de conectividad de Microsoft 365 en el centro de administración de M365 (versión preliminar)
+title: Prueba de conectividad de Microsoft 365 (versión preliminar) en el centro de administración de Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Prueba de conectividad de Microsoft 365 en el centro de administración de M365 (versión preliminar)
-ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 0c6f16c39c5a2db99ed636cb3a1b52818383ea5a
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612880"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208801"
 ---
-# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>Prueba de conectividad de Microsoft 365 en el centro de administración de M365 (versión preliminar)
+# <a name="microsoft-365-connectivity-test-in-the-microsoft-365-admin-center-preview"></a>Prueba de conectividad de Microsoft 365 en el centro de administración de Microsoft 365 (versión preliminar)
 
-La prueba de conectividad de Microsoft 365 se <https://connectivity.office.com>encuentra en. Se trata de una herramienta de Adjunct a la información sobre la puntuación de red y la puntuación de red disponible en el centro de administración de Microsoft 365 en el área **mantenimiento | **Menú de rendimiento de la red.
+La prueba de conectividad de Microsoft 365 se encuentra en <https://connectivity.office.com> . Se trata de una herramienta de Adjunct a la información sobre la puntuación de red y la puntuación de red disponible en el centro de administración de Microsoft 365 en el área **mantenimiento | **Menú de rendimiento de la red.
 
 >[!NOTE]
 >La herramienta de incorporación es compatible con los inquilinos de WW Commercial y GCC moderadamente pero no con GCC High, DoD, Germany o China.
@@ -37,7 +37,7 @@ Le recomendamos que se usen conjuntamente donde el estado de calidad de la red s
 
 ## <a name="the-advanced-tests-client-application"></a>Aplicación cliente de pruebas avanzadas
 
-La prueba de conectividad de Microsoft 365 es de dos partes. Hay un sitio <https://connectivity.office.com> web y hay una aplicación cliente de Windows descargable. El cliente descargable ejecuta pruebas avanzadas de conectividad de red y la mayoría de las pruebas requieren que esto se ejecute.
+La prueba de conectividad de Microsoft 365 es de dos partes. Hay un sitio Web <https://connectivity.office.com> y hay una aplicación cliente de Windows descargable. El cliente descargable ejecuta pruebas avanzadas de conectividad de red y la mayoría de las pruebas requieren que esto se ejecute.
 
 Puede ejecutar la prueba del cliente avanzado desde el sitio web y rellenará los resultados de nuevo en la página web mientras se ejecuta.
 
@@ -103,19 +103,19 @@ Se identifican los servidores proxy configurados en el equipo local. Se identifi
 
 ## <a name="media-quality-checks"></a>Comprobaciones de calidad de medios
 
-Esta prueba instala y ejecuta la herramienta de evaluación de la red de Skype empresarial e interpreta los resultados. La herramienta se puede encontrar en [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885).
+Esta prueba instala y ejecuta la herramienta de evaluación de la red de Skype empresarial e interpreta los resultados. La herramienta se puede encontrar en [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885) .
 
 Se trata de pruebas de protocolo UDP que se usan en la funcionalidad de conferencia y audio y vídeo de Microsoft Teams. Se prueba la pérdida de paquetes UDP, la latencia de red UDP, la vibración UDP y la reordenación de paquetes UDP. Se muestra un conocimiento de la red si alguno de ellos se encuentra a lo largo del intervalo permitido.
 
 ## <a name="tcp-connectivity-tests"></a>Pruebas de conectividad TCP
 
-Se prueba la conectividad HTTP desde la ubicación de la oficina del usuario hasta todos los puntos de conexión de red de Microsoft 365 necesarios. Se publican en [https://aka.ms/o365ip](https://aka.ms/o365ip). Se muestra un conocimiento de red para cualquier punto de conexión de red necesario al que no se pueda conectar.
+Se prueba la conectividad HTTP desde la ubicación de la oficina del usuario hasta todos los puntos de conexión de red de Microsoft 365 necesarios. Se publican en [https://aka.ms/o365ip](https://aka.ms/o365ip) . Se muestra un conocimiento de red para cualquier punto de conexión de red necesario al que no se pueda conectar.
 
 La conectividad de Ay será bloqueada por un servidor proxy, un firewall u otro dispositivo de seguridad de red en el perímetro de red de la empresa o en uso como proxy en la nube.
 
 ## <a name="ssl-interception-tests"></a>Pruebas de interceptación de SSL
 
-Probamos el certificado SSL en cada punto de conexión de red de Microsoft 365 necesario que se encuentra en la categoría optimizar [https://aka.ms/o365ip](https://aka.ms/o365ip)o permitir como se define en. Si alguna de las pruebas no encuentra un certificado SSL de Microsoft, la red cifrada conectada debe haber sido interceptada por un dispositivo de red intermediario. Se muestra un conocimiento de red en cualquier punto de conexión de red cifrado interceptado.
+Probamos el certificado SSL en cada punto de conexión de red de Microsoft 365 necesario que se encuentra en la categoría optimizar o permitir como se define en [https://aka.ms/o365ip](https://aka.ms/o365ip) . Si alguna de las pruebas no encuentra un certificado SSL de Microsoft, la red cifrada conectada debe haber sido interceptada por un dispositivo de red intermediario. Se muestra un conocimiento de red en cualquier punto de conexión de red cifrado interceptado.
 
 Donde se encuentra un certificado SSL que Microsoft no proporciona, se muestra el FQDN de la prueba y el propietario del certificado SSL en uso. Este propietario de certificado SSL puede ser un proveedor de servidor proxy o un certificado autofirmado de empresa.
 
