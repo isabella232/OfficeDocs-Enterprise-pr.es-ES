@@ -3,7 +3,7 @@ title: Implementación del túnel dividido de VPN para Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/24/2020
+ms.date: 5/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Cómo implementar el túnel dividido VPN para Office 365
-ms.openlocfilehash: 0594be194bda222fafa0d00a93e0ee43814cd334
-ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
+ms.openlocfilehash: 87d7e86f59a97bf11c053a57aa9acc6d33c03e63
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804074"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208781"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementación del túnel dividido de VPN para Office 365
 
@@ -226,8 +226,13 @@ Algunos programas de cliente de VPN permiten la manipulación del enrutamiento e
 
 En determinadas situaciones, a menudo no relacionadas con la configuración del cliente de Teams, el tráfico multimedia atraviesa igualmente el túnel de VPN aunque se hayan dispuesto las rutas correctas. Si este es el caso, debería bastar con usar una regla de firewall para evitar que las subredes IP o puertos de Teams usen la VPN.
 
+>[!NOTE]
+>Un requisito actual para que esto funcione en el 100 % de los escenarios es que también se agregue el intervalo de dirección IP **13.107.60.1/32**. Esto no debería ser necesario muy pronto gracias a una actualización en el cliente de Teams, que se publicará en **junio de 2020**. Actualizaremos este artículo con los detalles de la compilación tan pronto como esté disponible la información.
+
+<!--
 >[!IMPORTANT]
->Para asegurar que el tráfico de medios de Teams se enruta a través del método deseado en todos los escenarios de VPN, por favor asegúrese de que está ejecutando por lo menos el siguiente número de versión del cliente o mayor, ya que estas versiones tienen mejoras en la forma en que el cliente detecta las rutas de red disponibles.<br>Número de versión de Windows:  **1.3.00.9267**<br>Número de versión de Mac: **1.3.00.9221**
+>To ensure Teams media traffic is routed via the desired method in all VPN scenarios please ensure you are running at least the following client version number or greater, as these versions have improvements in how the client detects available network paths.<br>Windows version number:  **1.3.00.9267**<br>Mac version number: **1.3.00.9221**
+-->
 
 El tráfico de señalización se lleva a cabo en HTTPS y no es tan sensible a la latencia como el tráfico multimedia, y está marcado como **Permitir** en los datos de URL/IP, por lo que puede enrutarse de forma segura a través del cliente VPN si se desea.
 
