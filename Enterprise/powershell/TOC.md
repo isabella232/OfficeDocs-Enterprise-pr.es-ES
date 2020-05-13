@@ -46,7 +46,7 @@
 ### [Agregar un dominio a un arrendamiento de cliente con Windows PowerShell para asociados con acceso delegado](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 ### [Conectarse a Exchange Online a través del modo remoto de Windows PowerShell para asociados con acceso delegado](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [Recuperar datos de informes de clientes con Windows PowerShell para partners con acceso delegado](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
+## [Administrar Microsoft Teams](manage-microsoft-teams-with-office-365-powershell.md)
 ## [Administrar Skype Empresarial Online](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [Administrar directivas de Skype Empresarial Online](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [Asignar directivas por usuario de Skype Empresarial Online](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
-
