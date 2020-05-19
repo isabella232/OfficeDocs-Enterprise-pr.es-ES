@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Modo en que Microsoft usa los principios principales de absorción, detección y mitigación en su defensa contra ataques por denegación de servicio (DoS).
-ms.openlocfilehash: 82957dd1b863e14c13e86b63888e2b1374beb73b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 78d1392adb35bead5d41f9655bea3c2680975561
+ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844531"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278083"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Principios básicos de la defensa contra ataques por denegación de servicio
 
@@ -36,7 +36,7 @@ Para defenderse correctamente contra un ataque DoS, la detección temprana es es
 
 La siguiente fórmula ayuda a aproximar el tiempo de impacto de un ataque DoS:
 
-   **Capacidad máxima (en bytes/s)/velocidad de crecimiento (en bytes/s) = tiempo de impacto (en bytes/s)**
+   **Capacidad máxima (en bytes/seg.)/velocidad de crecimiento (en bytes/seg.) = tiempo de impacto (en segundos)**
 
 Si el tiempo de detección se produce después del tiempo de impacto, es probable que el ataque de DoS se realice correctamente. Si el tiempo de detección se produce antes del tiempo de impacto, los servicios atacados deben permanecer en línea y ser accesibles si se usan estrategias de mitigación. Por lo tanto, solo se pueden hacer dos cosas para defenderse contra ataques DoS:
 

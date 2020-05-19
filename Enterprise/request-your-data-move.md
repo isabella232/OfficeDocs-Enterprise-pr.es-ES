@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Los clientes de Office 365 existentes deberán enviar una solicitud antes de la fecha límite de su país para que los datos del cliente de los servicios de Microsoft 365 que participan se muevan a su nueva geografía.
-ms.openlocfilehash: 9c78492584f49cf263916726b2272d3b9405446e
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: dae2c7e4f2fc529a32af6127b4f054f9c3d01344
+ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547748"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278073"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -49,18 +49,18 @@ Los clientes de Microsoft 365 existentes pueden solicitar la migración de los d
 
 Los clientes elegibles verán una página en el [centro de administración de 365 de Microsoft](https://aka.ms/365admin), que les permitirá solicitar que sus datos principales de clientes se muevan a su nueva región de centro de datos.  
   
-Para obtener acceso a la página en el centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **configuración**y, a continuación, haga clic en **configuración**.
-Seleccione el **Perfil de organización**de la ficha y, a continuación, seleccione la **residencia de datos**de opción.
+Para obtener acceso a la página en el centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **configuración**y, a continuación, haga clic en configuración de la **organización**.
+Seleccione el perfil de la **organización**de la ficha y, a continuación, seleccione la **residencia de datos**de opción.
   
 **Es posible que no vea esta sección si se aplica una de las siguientes opciones**:
 - El inquilino no es apto para el programa de Office 365 Move.  La idoneidad la determina el país de suscripción del inquilino.
 - Todos los datos principales de clientes en reposo ya se encuentran en la nueva área geográfica (consulte la sección Ubicación de datos de la página). 
   
-Si su organización tiene requisitos de residencia de datos y necesita solicitar la migración, haga clic en **participar** en la parte superior derecha de la sección. En el lado derecho de la pantalla aparecerá una nueva sección en la que se explican los detalles del programa Microsoft 365 Move. Seleccione el botón de alternancia junto al texto en el que **se indica que es necesario migrar los datos principales de clientes de la organización en reposo**. A continuación, haga clic en **Guardar**.
+Si su organización tiene requisitos de residencia de datos y necesita solicitar la migración, marque la casilla y, a continuación, **Guardar**.
   
 ![Pantalla de opción de suscripción de Datacenter](media/dataresidencyflyoutae.jpg)
   
-Debe ver el texto en la sección **residencia de datos** para indicar que **su organización ha solicitado mover sus datos principales de clientes.** También tendrá un mensaje de confirmación en el centro de mensajes. Esto confirma que ha solicitado un movimiento correctamente. 
+Debe ver el texto en la sección **residencia de datos** cambiar para indicar que **su organización ha solicitado mover sus datos** al país y a la fecha apropiados. También tendrá un mensaje de confirmación en el centro de mensajes. Esto confirma que ha solicitado un movimiento correctamente. 
 
 
   
