@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Obtenga información sobre cómo realizar tareas de administración comunes para los grupos de Office 365 en Microsoft PowerShell.
-ms.openlocfilehash: bab98ac641b03bd30ea8acbc8d4dacd55073f62f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a9b481d7448c65a8860ef44d6d7f8980c3dd91d8
+ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841447"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352960"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Administrar grupos de Office 365 con PowerShell
 
@@ -46,11 +46,11 @@ Use Azure Active Directory PowerShell para apuntar a los usuarios a las directri
 ## <a name="allow-users-to-send-as-the-office-365-group"></a>Permitir que los usuarios envíen como el grupo de Office 365
 <a name="BK_LinkToGuideLines"> </a>
   
-Si desea habilitar los grupos de Office 365 en "enviar como", use los cmdlets [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) y [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) para configurarlos. Una vez habilitada esta opción, los usuarios de grupo de Office 365 pueden usar Outlook o Outlook en la web para enviar y responder correo electrónico como el grupo de Office 365. Los usuarios pueden ir al grupo, crear un nuevo correo electrónico y cambiar el campo "enviar como" por la dirección de correo electrónico del grupo. 
+Si desea habilitar los grupos de Office 365 en "enviar como", use los cmdlets [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Add-RecipientPermission) y [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Get-Recipient) para configurarlos. Una vez habilitada esta opción, los usuarios de grupo de Office 365 pueden usar Outlook o Outlook en la web para enviar y responder correo electrónico como el grupo de Office 365. Los usuarios pueden ir al grupo, crear un nuevo correo electrónico y cambiar el campo "enviar como" por la dirección de correo electrónico del grupo. 
 
 ([También puede hacerlo en el centro de administración de Exchange](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)).
   
-Use el siguiente script, reemplazando * \<GroupAlias\> * por el alias del grupo que desea actualizar y * \<UserAlias\> * con el alias del usuario al que desea conceder permssions. [Conéctese a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) para ejecutar este script.
+Use el siguiente script, reemplazando * \< GroupAlias \> * por el alias del grupo que desea actualizar y * \< UserAlias \> * con el alias del usuario al que desea conceder permssions. [Conéctese a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) para ejecutar este script.
 
 ```PowerShell
 $groupAlias = "<GroupAlias>"
@@ -89,7 +89,7 @@ Ejemplo:
 $setting["ClassificationDescriptions"] = "Low Impact: General communication, Medium Impact: Company internal data , High Impact: Data that has regulatory requirements"
 ```
 
-Después de ejecutar el cmdlet de Azure Active Directory anterior para establecer la clasificación, ejecute el cmdlet [set-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-UnifiedGroup) si desea establecer la clasificación para un grupo específico. 
+Después de ejecutar el cmdlet de Azure Active Directory anterior para establecer la clasificación, ejecute el cmdlet [set-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/Set-UnifiedGroup) si desea establecer la clasificación para un grupo específico. 
   
 ```
 Set-UnifiedGroup <LowImpactGroup@constoso.com> -Classification <LowImpact> 
@@ -167,7 +167,7 @@ Para comprobar la configuración:
   
  `Get-OrganizationConfig | ft DefaultGroupAccessType`
   
-Para obtener más información, consulte [set-organizationconfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) y [Get-organizationconfig](https://docs.microsoft.com/powershell/module/exchange/organization/Get-OrganizationConfig).
+Para obtener más información, consulte [set-organizationconfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) y [Get-organizationconfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig).
   
 ## <a name="office-365-groups-cmdlets"></a>Cmdlets de grupos de Office 365
 
