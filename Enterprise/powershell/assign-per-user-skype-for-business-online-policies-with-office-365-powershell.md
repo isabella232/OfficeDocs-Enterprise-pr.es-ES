@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Resumen: Use Office 365 PowerShell para asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.'
-ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
-ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
+ms.openlocfilehash: 89b3ab5ce571c9812e2b4f3d3aef7066a7babb08
+ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "43146815"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374449"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Asignar cada usuario Skype para las políticas de negocios en línea con Office 365 PowerShell
 
@@ -110,7 +110,7 @@ Para deshabilitar una cuenta de usuario con Windows PowerShell, use los cmdlets 
 
 ## <a name="managing-large-numbers-of-users"></a>Administración de grandes cantidades de usuarios
 
-Para administrar un gran número de usuarios (1000 o más), debe procesar los comandos mediante un bloque de script mediante el cmdlet [Invoke-Command](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  En los ejemplos anteriores, cada vez que se ejecuta un cmdlet, debe configurar la llamada y, a continuación, esperar el resultado antes de volver a enviarlo.  Cuando se usa un bloque de script, esto permite que se ejecuten los cmdlets de forma remota y, una vez finalizado, se devuelven los datos. 
+Para administrar un gran número de usuarios (1000 o más), debe procesar los comandos mediante un bloque de script mediante el cmdlet [Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  En los ejemplos anteriores, cada vez que se ejecuta un cmdlet, debe configurar la llamada y, a continuación, esperar el resultado antes de volver a enviarlo.  Cuando se usa un bloque de script, esto permite que se ejecuten los cmdlets de forma remota y, una vez finalizado, se devuelven los datos. 
 
 ```powershell
 Import-Module LyncOnlineConnector
@@ -141,7 +141,7 @@ $count = 0
 
 Esto buscará 500 usuarios a la vez que no tienen una directiva de cliente. Se le concederá la Directiva de cliente "ClientPolicyNoIMURL" y la Directiva de acceso externo "FederationAndPicDefault". Los resultados se procesan por lotes en grupos de 50 y, a continuación, cada lote de 50 se envía al equipo remoto.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar Skype Empresarial Online con PowerShell de Office 365](manage-skype-for-business-online-with-office-365-powershell.md)
   
