@@ -30,7 +30,6 @@
 ## Compatibilidad de clientes con Office 365
 ### [Autenticación basada en certificados](office-365-client-support-certificate-based-authentication.md)
 ### [Acceso condicional](office-365-client-support-conditional-access.md)
-### [Elegir entre MDM e Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Administración de aplicaciones móviles](office-365-client-support-mobile-application-management.md)
 ### [Autenticación moderna](office-365-client-support-modern-authentication.md)
 ### [Inicio de sesión único](office-365-client-support-single-sign-on.md)
@@ -198,7 +197,6 @@
 ### [Recuperar elementos eliminados en un buzón de usuario ](recover-deleted-items-in-a-mailbox.md)
 
 ## Dispositivos
-### [Elegir entre MDM e Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
 ### [Administrar la configuración de acceso de dispositivo](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
 
 ## Cargas de trabajo
