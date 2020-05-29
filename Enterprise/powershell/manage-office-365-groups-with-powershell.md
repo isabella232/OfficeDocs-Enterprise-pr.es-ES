@@ -7,8 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,17 +18,15 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Obtenga información sobre cómo realizar tareas de administración comunes para los grupos de Office 365 en Microsoft PowerShell.
-ms.openlocfilehash: a9b481d7448c65a8860ef44d6d7f8980c3dd91d8
-ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
+ms.openlocfilehash: 7ebb3cfdfc6375cbc340c1fc3be37d59bcd9d4c8
+ms.sourcegitcommit: c758588cf2b68de9291a362fd73ec9dc721d04d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352960"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411067"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Administrar grupos de Office 365 con PowerShell
-
- *Última actualización el 18 de abril de 2018* 
-  
+ 
 En este artículo se describen los pasos para realizar tareas de administración comunes para los grupos de Microsoft PowerShell. También muestra los cmdlets de PowerShell para grupos. Para obtener información sobre la administración de sitios de SharePoint, vea [administrar sitios de SharePoint Online con PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
 
 ## <a name="link-to-your-office-365-groups-usage-guidelines"></a>Vínculo a las instrucciones de uso de los grupos de Office 365
@@ -50,7 +47,7 @@ Si desea habilitar los grupos de Office 365 en "enviar como", use los cmdlets [A
 
 ([También puede hacerlo en el centro de administración de Exchange](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)).
   
-Use el siguiente script, reemplazando * \< GroupAlias \> * por el alias del grupo que desea actualizar y * \< UserAlias \> * con el alias del usuario al que desea conceder permssions. [Conéctese a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) para ejecutar este script.
+Use el siguiente script, reemplazando *\<GroupAlias\>* por el alias del grupo que desea actualizar y *\<UserAlias\>* con el alias del usuario al que desea conceder permisos. [Conéctese a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) para ejecutar este script.
 
 ```PowerShell
 $groupAlias = "<GroupAlias>"
@@ -67,7 +64,12 @@ Una vez que se ejecuta el cmdlet, los usuarios pueden ir a Outlook o Outlook en 
 
 ## <a name="create-classifications-for-office-groups-in-your-organization"></a>Crear clasificaciones para los grupos de Office en su organización
 
-Puede crear clasificaciones que los usuarios de la organización pueden establecer al crear un grupo de Office 365. Por ejemplo, puede permitir que los usuarios establezcan "Standard", "Secret" y "Top Secret" en los grupos que crean. Las clasificaciones de grupo no se establecen de forma predeterminada y es necesario crearlas para que los usuarios las configuren. Use Azure Active Directory PowerShell para dirigir a los usuarios a las instrucciones de uso de la organización para los grupos de Office 365.
+Puede crear etiquetas de confidencialidad que los usuarios de su organización puedan establecer al crear un grupo de Microsoft 365. Si desea clasificar grupos, se recomienda usar etiquetas de confidencialidad en lugar de la característica de clasificación de grupos anterior. Para obtener información sobre el uso de las etiquetas de confidencialidad, consulte [usar las etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de microsoft 365 y sitios de SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+
+> [!IMPORTANT]
+> Si actualmente usa etiquetas de clasificación, ya no estarán disponibles para los usuarios que crean grupos cuando las etiquetas de confidencialidad están habilitadas.
+
+Todavía puede usar la característica clasificación de grupos anterior. Puede crear clasificaciones que los usuarios de la organización pueden establecer al crear un grupo de Office 365. Por ejemplo, puede permitir que los usuarios establezcan "Standard", "Secret" y "Top Secret" en los grupos que crean. Las clasificaciones de grupo no se establecen de forma predeterminada y es necesario crearlas para que los usuarios las configuren. Use Azure Active Directory PowerShell para dirigir a los usuarios a las instrucciones de uso de la organización para los grupos de Office 365.
   
 Consulte los [cmdlets de Azure Active Directory para configurar las opciones de grupo](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets) y siga los pasos descritos en la **opción crear configuración a nivel de directorio** para definir la clasificación de los grupos de Office 365. 
   
