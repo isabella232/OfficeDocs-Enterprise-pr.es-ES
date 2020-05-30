@@ -20,19 +20,19 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Esta lista de comprobación ayudará a su organización cuando Planee y prepare una migración a Office 365.
-ms.openlocfilehash: dbd996a21cb98fcf7831ef22b855cc8fcb1af39f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fdbc56b3d3a907ef5ca66f9d184525f8aae13246
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840517"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419370"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Lista de comprobación para planificar la implementación de Office 365
 
 Al mover una organización empresarial a Office 365, es importante planear exactamente los pasos que desea realizar, Cuándo realizarlos y quién los ejecutará. Esta lista de comprobación ayudará a su organización cuando Planee y prepare una migración a Office 365. Las fases y los pasos de la lista de comprobación se alinean con las instrucciones proporcionadas por el [centro de incorporación](https://go.microsoft.com/fwlink/?LinkId=517115). No dude en adaptar esta lista de comprobación a las necesidades de su organización.
 
 ## <a name="need-help-with-your-deployment"></a>¿Necesita ayuda con la implementación?
-¿Desea obtener ayuda para configurar Office 365? Considere la posibilidad de usar [FastTrack](https://fasttrack.microsoft.com/office) o los [asesores de implementación para los servicios de Office 365](deployment-advisors-for-office-365.md).
+¿Desea obtener ayuda para configurar Office 365? Considere la posibilidad de usar [FastTrack](https://fasttrack.microsoft.com/office) o las [guías de instalación de los servicios de Office 365](setup-guides-for-office-365.md).
 
 ## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Lista de comprobación de ejemplo para una implementación empresarial de Office 365
 
@@ -40,7 +40,7 @@ Al mover una organización empresarial a Office 365, es importante planear exact
 |:-----|:-----|:-----|:-----|:-----|
 |**Tareas de implementación de/Events** <br/> |**Fecha de inicio** <br/> |**Fecha de finalización** <br/> |**Recursos** <br/> |**Dependencias** <br/> |
 |**Determinación de los objetivos de la implementación** <br/> |||||
-| Con las partes interesadas internas y externas:<br>  -Acordar el ámbito y la escala de tiempo <br>  -Acuerde el mecanismo de seguimiento del proyecto  <br>  -Desarrollar criterios de éxito y una [comunicación](https://fasttrack.microsoft.com/office) / [Introducción a Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
+| Con las partes interesadas internas y externas:<br>  -Acordar el ámbito y la escala de tiempo <br>  -Acuerde el mecanismo de seguimiento del proyecto  <br>  -Desarrollar criterios de éxito y una [comunicación](https://fasttrack.microsoft.com/office)  /  [Introducción a Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Realizar un inventario de su entorno actual y tomar decisiones clave de implementación** |||||
 |Inventario del entorno actual |||||
 | Recopilar el número de cuentas de usuario (nombres de inicio de sesión, direcciones de correo electrónico) |||||
@@ -70,7 +70,7 @@ Al mover una organización empresarial a Office 365, es importante planear exact
 | Configurar las opciones de la [aplicación](https://go.microsoft.com/fwlink/?LinkId=534829) (correo electrónico, mensajería instantánea, reuniones en línea, colaboración web, almacenamiento de archivos, Yammer) |||||
 | Preparación opcional [para la sincronización de directorios](https://go.microsoft.com/fwlink/?LinkId=534830) |||||
 | Preparar opcionalmente [el inicio de sesión único](https://go.microsoft.com/fwlink/?LinkId=534831) |||||
-|Preparar la organización |||||
+|Preparación de la organización |||||
 |[Preparar el servicio de asistencia](https://fasttrack.microsoft.com/office) para la migración próxima |||||
 | Probar la implementación y el proceso de migración opcional |||||
 | Informar a los usuarios sobre los [próximos cambios y cómo los afectará](https://fasttrack.microsoft.com/office) |||||

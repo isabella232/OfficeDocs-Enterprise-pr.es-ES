@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contiene vínculos a información acerca de la planeación y las pruebas de red, y la migración a Office 365.
-ms.openlocfilehash: 0601775beb3f7e42d3e18de7b85406c02df2f4e8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88dd3e4fca66855e8204b452aea6cfb4c659d201
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844581"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419388"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planeación de la migración y la red para Office 365
 
@@ -77,7 +77,7 @@ Profundizar un poco más en estos procedimientos recomendados para obtener más 
     
 3. Mejorar el rendimiento de la migración de correo mediante la administración minuciosa de la programación de actualizaciones de Windows. Puede actualizar los equipos cliente en lotes y asegurarse de que se actualizan todos los equipos cliente antes de migrar a Office 365 para regular el uso del ancho de banda de red. Para obtener más información, vea [actualizar manualmente y configurar escritorios para Office 365 para obtener las actualizaciones más recientes](https://support.microsoft.com/gp/office-2013-365-update).
     
-4. El tráfico de red de Office 365 funciona mejor cuando se trata como un servicio de Internet de confianza y permite omitir la mayor parte del filtrado y el análisis tradicionales que algunas organizaciones colocan en el tráfico de red a los servicios de Internet que no son de confianza. Esto suele incluir la eliminación del procesamiento de salida, como la autenticación de usuario de proxy y la inspección de paquetes, además de garantizar la salida local a Internet con la traducción de direcciones de red (NAT) adecuada y la capacidad de ancho de banda suficiente para controlar el mayor solicitudes de red. Consulte [Administración de puntos de conexión de office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)para obtener más información sobre cómo configurar la red para administrar Office 365 como un servicio de Internet de confianza en la red.
+4. El tráfico de red de Office 365 funciona mejor cuando se trata como un servicio de Internet de confianza y permite omitir la mayor parte del filtrado y el análisis tradicionales que algunas organizaciones colocan en el tráfico de red a los servicios de Internet que no son de confianza. Esto suele incluir la eliminación del procesamiento de salida, como la autenticación de usuario de proxy y la inspección de paquetes, además de garantizar la salida local a Internet con la traducción de direcciones de red (NAT) adecuada y la capacidad de ancho de banda suficiente para controlar el aumento de solicitudes de red. Consulte [Administración de puntos de conexión de office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)para obtener más información sobre cómo configurar la red para administrar Office 365 como un servicio de Internet de confianza en la red.
     
 1. Garantizar la [Administración de puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a). El tráfico adicional dirigido a Office 365 da como resultado un aumento de las conexiones de proxy salientes, así como un aumento en el tráfico seguro a través de TLS/SSL.
     
@@ -98,8 +98,6 @@ Estos temas contienen información detallada de referencia de la red de Office 3
   
 - [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
     
-- [Conectividad de clientes](client-connectivity.md)
-    
 - [Redes de entrega de contenido](content-delivery-networks.md)
     
 - [Registros externos del Sistema de nombres de dominio para Office 365](external-domain-name-system-records.md)
@@ -112,7 +110,7 @@ Estos temas contienen información detallada de referencia de la red de Office 3
     
 - [Planificación de dispositivos de red que se conecten a servicios de Office 365](plan-for-network-devices.md)
     
-- [Asesores de implementación para servicios de Office 365](deployment-advisors-for-office-365.md)
+- [Guías de configuración de servicios de Office 365](setup-guides-for-office-365.md)
  
 ## <a name="see-also"></a>Vea también
 

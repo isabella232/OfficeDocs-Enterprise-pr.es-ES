@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: Recursos para planear y administrar Office 365 para la organización de la empresa.
-ms.openlocfilehash: 714308f597b3338abb167f765cc4d1f9b08b582b
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 51687e07abfafa7959166cfcd1a59b3a1af7bc20
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979552"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419398"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>Organizaciones empresariales y Office 365
 
@@ -44,11 +44,11 @@ Planear, configurar y migrar datos a Office 365 con ayuda de FastTrack.
   
 ![Símbolos de seguridad y cumplimiento](media/f96c2cdf-d151-4f44-bb11-20bb7f366a21.png)
   
- **Cumplimiento &amp; de seguridad**
+ **Cumplimiento de seguridad &amp;**
   
 Proteja sus datos y cumpla con los estándares legales o normativos.
   
-[Información general sobre &amp; el cumplimiento de seguridad en Office 365](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
+[Información general sobre el cumplimiento de seguridad &amp; en Office 365](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
   
 ![Símbolos de nube y arquitectura](media/2850ac8d-4c99-4825-869e-83724c4ef54e.png)
   
@@ -102,7 +102,7 @@ Experiencia de aprendizaje en línea de autoaprendizaje para los profesionales d
   
 ## <a name="featured-articles"></a>Artículos destacados
 
-[Contactar con soporte técnico para productos empresariales: ayuda para administradores](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+[Contactar al soporte técnico para productos empresariales: ayuda para administradores](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
   
 [Implementar el nuevo cliente de sincronización de OneDrive para Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668)
   
@@ -110,7 +110,7 @@ Experiencia de aprendizaje en línea de autoaprendizaje para los profesionales d
   
 [Actualizar los clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)
   
-[Asesores de implementación para servicios de Office 365](deployment-advisors-for-office-365.md)
+[Guías de configuración de servicios de Office 365](setup-guides-for-office-365.md)
   
  **Entrenamiento para usuarios finales**
   
