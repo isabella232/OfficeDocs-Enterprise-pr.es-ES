@@ -3,7 +3,7 @@ title: Usar la herramienta de diagnóstico de página para SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/11/2020
+ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,26 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Use la herramienta diagnósticos de página para SharePoint para analizar el portal moderno de SharePoint Online y las páginas de publicación clásicas con un conjunto predefinido de criterios de rendimiento.
-ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
+ms.openlocfilehash: 08bfa6abf0aab4abafaf5fad3a0e43afb9000370
+ms.sourcegitcommit: ea2f92f147dbf8183124476302ca33c4cf4265a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603739"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44561809"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Usar la herramienta diagnósticos de página para SharePoint
 
-En este artículo se describe cómo usar la **herramienta diagnósticos de página para SharePoint** para analizar páginas de sitio modernas y clásicas de SharePoint Online con un conjunto predefinido de criterios de rendimiento.  
+En este artículo se describe cómo usar la **herramienta diagnósticos de página para SharePoint** para analizar páginas de sitio modernas y clásicas de SharePoint Online con un conjunto predefinido de criterios de rendimiento.
+
+La herramienta diagnósticos de página para SharePoint se puede instalar para:
+
+- **Microsoft Edge** [(extensión perimetral)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
+- **Chrome** [(extensión Chrome)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
 >La versión **2.0.0** y las versiones posteriores son compatibles con las páginas modernas además de las páginas de sitio clásicas. Si no está seguro de qué versión de la herramienta está usando, puede seleccionar el vínculo **acerca** de o los puntos suspensivos (...) para comprobar la versión. **Actualice siempre a la versión más reciente** cuando use la herramienta.
 
-La herramienta diagnósticos de página para SharePoint es una extensión de explorador para los nuevoshttps://www.microsoft.com/edge) exploradores de Microsoft Edge (y Chrome que analizan las páginas del portal moderno de SharePoint Online y del sitio de publicación clásico. Esta herramienta solo funciona para SharePoint Online y no se puede usar en una página del sistema de SharePoint.
+La herramienta de Diagnóstico de páginas para SharePoint es una extensión de explorador para los nuevos exploradores de Microsoft Edge (https://www.microsoft.com/edge) y Chrome que analiza las páginas del sitio de publicación clásicas y las modernas del portal de SharePoint Online. Esta herramienta solo funciona para SharePoint Online y no se puede usar en una página del sistema de SharePoint.
 
 La herramienta genera un informe para cada página analizada que muestra cómo se ejecuta la página en un conjunto predefinido de reglas y muestra información detallada cuando los resultados de una prueba se encuentran fuera del valor de línea base. Los diseñadores y administradores de SharePoint Online pueden usar la herramienta para solucionar problemas de rendimiento y garantizar que las nuevas páginas se optimizan antes de la publicación.
 
@@ -89,7 +94,7 @@ Seleccione **Inicio** para empezar a recopilar datos para el análisis.
 
 1. La pestaña [**pruebas de diagnóstico**](#how-to-use-the-diagnostic-tests-tab) muestra los resultados del análisis en tres categorías; **No es necesario realizar ninguna acción**, las **oportunidades de mejora** y la **atención**. Cada resultado de la prueba está representado por un elemento en una de estas categorías, tal como se describe en la tabla siguiente:
 
-    |Categoría  |Color  |Descripción  |
+    |Categoría  |Color  |Description  |
     |---------|---------|---------|
     |**Atención necesaria** |Rojo |El resultado de la prueba está fuera del valor de línea base y afecta al rendimiento de la página. Siga las instrucciones de corrección.|
     |**Oportunidades de mejora** |Amarillo |El resultado de la prueba está fuera del valor de línea base y podría contribuir a problemas de rendimiento. Se pueden aplicar criterios específicos de la prueba.|
@@ -126,7 +131,7 @@ La pestaña **seguimiento de red** proporciona información detallada sobre amba
 
     ![Seguimiento de red](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
-    En la imagen mostrada anteriormente, el elemento rojo pertenece a la página predeterminada. Siempre mostrará el color rojo a menos que la página \< se cargue en los 1000MD (menos de 1 segundo).
+    En la imagen mostrada anteriormente, el elemento rojo pertenece a la página predeterminada. Siempre mostrará el color rojo a menos que la página se cargue en los \< 1000MD (menos de 1 segundo).
 
 2. **Probar los tiempos de carga de elementos**. En algunos casos, no habrá ningún indicador de hora ni de color, ya que el explorador ya ha almacenado en caché los elementos. Para probar esto correctamente, abra la página, borre la memoria caché del explorador y, a continuación, haga clic en **iniciar** puesto que forzará una carga de página "fría" y será un reflejo real de la carga de página inicial. Esto se debe comparar con la carga de la página "cálida", ya que también ayudará a determinar qué elementos se almacenan en la página.
 
