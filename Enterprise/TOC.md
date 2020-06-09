@@ -30,7 +30,6 @@
 ## Compatibilidad de clientes con Office 365
 ### [Autenticación basada en certificados](office-365-client-support-certificate-based-authentication.md)
 ### [Acceso condicional](office-365-client-support-conditional-access.md)
-### [Administración de aplicaciones móviles](office-365-client-support-mobile-application-management.md)
 ### [Autenticación moderna](office-365-client-support-modern-authentication.md)
 ### [Inicio de sesión único](office-365-client-support-single-sign-on.md)
 
