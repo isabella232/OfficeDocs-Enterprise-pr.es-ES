@@ -3,7 +3,7 @@ title: Asignar roles a cuentas de usuario con Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 06/09/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,16 +19,20 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Resumen: Use Office 365 PowerShell para asignar roles a cuentas de usuario.'
-ms.openlocfilehash: 8cd3bd27f95c9d4191c24c7febc85c8fb2fb0118
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 9a28ff27138b689ed0325580af956a90d7eb7982
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004743"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44698917"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Asignar roles a cuentas de usuario con Office 365 PowerShell
 
 Puede asignar roles a cuentas de usuario de forma rápida y sencilla mediante Office 365 PowerShell.
+
+>[!Note]
+>Para asignar roles a cuentas de usuario con el centro de administración de Microsoft 365, consulte [estas instrucciones](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
@@ -125,7 +129,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Copie los comandos y péguelos en el Bloc de notas. Para las variables **$dispName** y **$roleName** , reemplace el texto de la descripción con sus valores, \< Quite los caracteres y > y deje las comillas. Copie las líneas modificadas y péguelas en su módulo de Windows Azure Active Directory para la ventana de Windows PowerShell para ejecutarlas. Como alternativa, puede usar el entorno de script integrado (ISE) de Windows PowerShell.
+Copie los comandos y péguelos en el Bloc de notas. Para las variables **$dispName** y **$roleName** , reemplace el texto de la descripción con sus valores, quite los \< and > caracteres y deje las comillas. Copie las líneas modificadas y péguelas en su módulo de Windows Azure Active Directory para la ventana de Windows PowerShell para ejecutarlas. Como alternativa, puede usar el entorno de script integrado (ISE) de Windows PowerShell.
   
 A continuación, se muestra un ejemplo de un conjunto de comandos completado:
   
@@ -171,7 +175,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-Copie los comandos y péguelos en el Bloc de notas. Para las variables **$upnName** y **$roleName** , reemplace el texto de la descripción con sus valores, \< Quite los caracteres y > y deje las comillas. Copie las líneas modificadas y péguelas en su módulo de Windows Azure Active Directory para la ventana de Windows PowerShell para ejecutarlas. Como alternativa, puede usar Windows PowerShell ISE.
+Copie los comandos y péguelos en el Bloc de notas. Para las variables **$upnName** y **$roleName** , reemplace el texto de la descripción con sus valores, quite los \< and > caracteres y deje las comillas. Copie las líneas modificadas y péguelas en su módulo de Windows Azure Active Directory para la ventana de Windows PowerShell para ejecutarlas. Como alternativa, puede usar Windows PowerShell ISE.
   
 A continuación, se muestra un ejemplo de un conjunto de comandos completado:
   
@@ -229,7 +233,7 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Administrar cuentas de usuario, licencias y grupos con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)

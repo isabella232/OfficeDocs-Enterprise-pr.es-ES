@@ -1,5 +1,5 @@
 ---
-title: Agregar varios usuarios a Office 365 a la vez - Ayuda de administración
+title: Agregar varios usuarios al mismo tiempo a Microsoft 365-ayuda para administradores
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -24,26 +24,26 @@ search.appverid:
 - GEA150
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
-description: 'Obtenga información sobre cómo agregar varios usuarios a Office 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Office 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón de Office 365. '
-ms.openlocfilehash: 9c24c52e280fcb316d9e77ea613a1812a235c2d2
-ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
+description: 'Obtenga información sobre cómo agregar varios usuarios a Microsoft 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Microsoft 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón de correo de Microsoft 365. '
+ms.openlocfilehash: 88c83b7163bfa6d389995704595d80458ddc8198
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901213"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44699247"
 ---
-# <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Agregar varios usuarios a Office 365 a la vez. Ayuda para administradores
+# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Agregar varios usuarios al mismo tiempo a Microsoft 365-ayuda para administradores
 
-Todos los usuarios de su grupo deben tener una cuenta de usuario para poder iniciar sesión y acceder a servicios de Office 365, como el correo electrónico y Office. Si son muchas personas, puede agregar sus cuentas de una vez desde una hoja de cálculo de Excel u otro archivo guardado en formato CSV. [¿No tiene claro qué es un archivo CSV?](add-several-users-at-the-same-time.md#__toc316652088)
+Cada persona de su equipo necesita una cuenta de usuario para poder iniciar sesión y tener acceso a los servicios de Microsoft 365, como el correo electrónico y la oficina. Si son muchas personas, puede agregar sus cuentas de una vez desde una hoja de cálculo de Excel u otro archivo guardado en formato CSV. [¿No tiene claro qué es un archivo CSV?](add-several-users-at-the-same-time.md#__toc316652088)
   
 > [!NOTE] 
 > Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
-## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Agregar varios usuarios a Office 365 en el centro de administración de Microsoft 365
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Agregar varios usuarios en el centro de administración de 365 de Microsoft
 
-1. Inicie sesión en Office 365 con su cuenta profesional o educativa. 
+1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa. 
     
-2. En el centro de administración, **Elija** \> usuarios **activos**.
+2. En el centro de administración, **Elija usuarios** \> **activos**.
 
 3. Seleccione **agregar varios usuarios**.
 
@@ -71,16 +71,16 @@ Todos los usuarios de su grupo deben tener una cuenta de usuario para poder inic
     
 6. En el cuadro de diálogo **Ver el resultado**, puede elegir si desea enviar los resultados a su usuario o a otros usuarios (las contraseñas se mostrarán en texto sin formato). Además, puede ver cuántos usuarios se crearon y, si lo necesita, comprar más licencias para asignárselas a algunos de los nuevos usuarios. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 <a name="bk_preview"> </a>
 
-- Ahora que estas personas tienen cuentas, necesitan [Descargar e instalar o reinstalar office 365 u office 2016 en un equipo PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Cada persona de su equipo puede usar Office 365 en un máximo de 5 equipos o Mac. 
+- Ahora que estas personas tienen cuentas, necesitan [Descargar e instalar o volver a instalar Microsoft 365 u Office 2016 en un equipo PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Cada persona de su equipo puede instalar Microsoft 365 en un máximo de 5 equipos PC o Mac. 
     
 - Cada persona también puede [configurar el correo electrónico y las aplicaciones de Office en un dispositivo móvil en un](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) máximo de 5 tabletas y 5 teléfonos, como iPhone, iPad, y teléfonos y tabletas Android. De esta forma, puede editar archivos de Office desde cualquier lugar. 
     
-    Vea [set up Office 365 for Business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) para obtener una lista completa de los pasos de configuración. 
+    Vea [set up Microsoft 365 for Business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) para obtener una lista completa de los pasos de configuración. 
     
-## <a name="more-information-about-how-to-add-users-to-office-365"></a>Más información sobre cómo agregar usuarios a Office 365
+## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Más información sobre cómo agregar usuarios a Microsoft 365
 <a name="bk_preview"> </a>
 
 ### <a name="not-sure-what-csv-format-is"></a>¿No tiene claro qué es un archivo CSV?
@@ -88,7 +88,7 @@ Todos los usuarios de su grupo deben tener una cuenta de usuario para poder inic
 
 Un archivo CSV es un archivo con valores separados por comas. Puede crear o editar un archivo como este con cualquier editor de textos o programa de hojas de cálculo, como Excel.
   
-Puede descargar [esta hoja de cálculo de muestra](https://www.microsoft.com/download/details.aspx?id=45485) como punto de partida. Recuerde que Office 365 requiere encabezados de columna en la primera fila, así que no los sustituya con ningún otro elemento. 
+Puede descargar [esta hoja de cálculo de muestra](https://www.microsoft.com/download/details.aspx?id=45485) como punto de partida. Recuerde que Microsoft 365 requiere encabezados de columna en la primera fila, por lo que no debe reemplazarlos por nada. 
   
 Guarde el archivo con un nuevo nombre y especifique el formato CSV.
   
@@ -101,7 +101,7 @@ Cuando guarde el archivo, probablemente recibirá un mensaje que le informará d
 ### <a name="tips-for-formatting-your-spreadsheet"></a>Consejos para aplicar formato a la hoja de cálculo
 <a name="__toc314595848"> </a>
 
-- **¿Debo mantener los mismos encabezados de columna que en la hoja de cálculo de muestra?** Sí. La hoja de cálculo de muestra contiene los encabezados de columna en la primera fila. Estos encabezados son necesarios. Para cada usuario que desee agregar a Office 365, cree una fila bajo el encabezado. Si agrega, cambia o elimina cualquiera de los encabezados de columna, Office 365 podría no crear usuarios a partir de la información del archivo. 
+- **¿Debo mantener los mismos encabezados de columna que en la hoja de cálculo de muestra?** Sí. La hoja de cálculo de muestra contiene los encabezados de columna en la primera fila. Estos encabezados son necesarios. Para cada usuario que desee agregar a Microsoft 365, cree una fila debajo del encabezado. Si agrega, cambia o elimina cualquiera de los encabezados de columna, es posible que Microsoft 365 no pueda crear usuarios a partir de la información del archivo. 
     
 - **¿Qué ocurre si no tengo toda la información requerida para cada usuario?** El nombre de usuario y el nombre para mostrar son obligatorios, y no puede agregar un nuevo usuario sin esta información. Si le falta parte de la información, como el fax, puede usar un espacio más una coma para indicar que el campo debe dejarse en blanco. 
     
@@ -115,7 +115,7 @@ Cuando guarde el archivo, probablemente recibirá un mensaje que le informará d
     
 |**Etiquetas columnas datos usuarios**|**Longitud máxima (en caracteres)**|
 |:-----|:-----|
-|Nombre de usuario (obligatorio)  <br/> |79 incluida la arroba (@), en el formato nombre@dominio.\<extensión\>. El alias del usuario no puede superar los 50 caracteres y el nombre de dominio no puede superar los 48 caracteres.  <br/> |
+|Nombre de usuario (obligatorio)  <br/> |79, incluido el signo de arroba (@), en el formato name@domain. \<extension\> . El alias del usuario no puede superar los 50 caracteres y el nombre de dominio no puede superar los 48 caracteres.  <br/> |
 |Nombre  <br/> |64  <br/> |
 |Apellido  <br/> |64  <br/> |
 |Nombre para mostrar (obligatorio)  <br/> |256  <br/> |
@@ -131,15 +131,15 @@ Cuando guarde el archivo, probablemente recibirá un mensaje que le informará d
 |Código postal  <br/> |40  <br/> |
 |País o región  <br/> |128  <br/> |
    
-### <a name="still-having-problems-when-adding-users-to-office-365"></a>¿Aún tiene problemas al agregar usuarios a Office 365?
+### <a name="still-having-problems-when-adding-users-to-microsoft-365"></a>¿Sigue teniendo problemas al agregar usuarios a Microsoft 365?
 
 - **Asegúrese una vez más de que el archivo tenga un formato correcto.** Compruebe que los encabezados de las columnas coincidan con los encabezados del archivo de muestra. Asegúrese de haber respetado los límites de longitud y de que los campos estén separados por comas. 
     
-- **Si no ve los nuevos usuarios en Office 365 inmediatamente, espere unos minutos.** Los cambios pueden tardar un poco en llegar a todos los servicios de Office 365. 
+- **Si no ve los nuevos usuarios en Microsoft 365 inmediatamente, espere unos minutos.** Los cambios pueden tardar un poco en llegar a todos los servicios de Microsoft 365. 
     
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Agregar usuarios individualmente o de forma masiva a Office 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+[Agregar usuarios individualmente o de forma masiva a Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
 
 
 
