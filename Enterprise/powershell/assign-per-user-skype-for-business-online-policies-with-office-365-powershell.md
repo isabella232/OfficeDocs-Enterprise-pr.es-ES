@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Resumen: Use Office 365 PowerShell para asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.'
-ms.openlocfilehash: 89b3ab5ce571c9812e2b4f3d3aef7066a7babb08
-ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
+ms.openlocfilehash: 0b95c993c3795bdbe9a68e23e107ea745c15f71b
+ms.sourcegitcommit: 88ede20888e2db0bb904133c0bd97726d6d65ee2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374449"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44719971"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Asignar cada usuario Skype para las políticas de negocios en línea con Office 365 PowerShell
 
@@ -50,16 +50,13 @@ Supongamos que desea cambiar la configuración de comunicación externa en una c
     
 2. Asignar esa directiva de acceso externo a Alex.
     
-> [!NOTE]
->  No se puede crear una directiva personalizada todo lo mismo. Esto se debe a que Skype empresarial online no permite crear directivas personalizadas. En su lugar, debe asignar una de las directivas creadas específicamente para Office 365. Estas directivas predefinidas incluyen: 4 directivas de cliente diferentes, 224 distintas directivas de conferencia, 5 planes de marcado diferentes, 5 directivas de acceso externo diferentes, una directiva de correo de voz hospedado y 4 directivas de voz distintas.
-  
-¿Cómo se determina qué directiva de acceso externo asignara Alex? El siguiente comando devuelve todas las directivas de acceso externo donde EnableFederationAccess se establece en True y EnablePublicCloudAccess se establece en False:
+¿Cómo se determina qué directiva de acceso externo se asigna a Alex? El siguiente comando devuelve todas las directivas de acceso externo donde EnableFederationAccess se establece en True y EnablePublicCloudAccess se establece en False:
   
 ```powershell
-Get-CsExternalAccessPolicy | Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
+Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Lo que hace el comando devuelve todas las directivas que cumplen dos criterios: la propiedad EnableFederationAccess se establece en true y la Directiva EnablePublicCloudAccess se establece en false. A su vez, el comando devuelve una directiva que cumple nuestros criterios (FederationOnly). Aquí le mostramos un ejemplo:
+A menos que haya creado instancias personalizadas de ExternalAccessPolicy, el comando devolverá una directiva que cumpla nuestros criterios (FederationOnly). Aquí le mostramos un ejemplo:
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -71,9 +68,6 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-> [!NOTE]
-> La identidad de la Directiva dice etiqueta: FederationOnly. Como resultado, el prefijo de etiqueta es un remanente del trabajo anterior de la versión preliminar que se hizo en Microsoft Lync 2013. Cuando se trata de asignar directivas a los usuarios, debe eliminar el prefijo de etiqueta y usar únicamente el nombre de directiva: FederationOnly. 
-  
 Ahora que ya sabe qué directiva asignar a Alex, podemos asignar esa Directiva mediante el cmdlet [Grant-CsExternalAccessPolicy](https://go.microsoft.com/fwlink/?LinkId=523974) . Aquí le mostramos un ejemplo:
   
 ```powershell
@@ -98,7 +92,7 @@ Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 
 Este comando usa Get-CsOnlineUser para devolver una colección de todos los usuarios que se han habilitado para Lync y, a continuación, envía toda la información a Grant-CsExternalAccessPolicy, que asigna la Directiva FederationAndPICDefault a todos y cada uno de los usuarios de la colección.
   
-Por ejemplo, supongamos que anteriormente ha asignado a Alex la Directiva FederationAndPICDefault y que ahora ha cambiado de opinión y desea que se administre mediante la directiva global de acceso externo. No se puede asignar explícitamente la directiva global a nadie. Solo se usa si no se ha asignado ninguna otra directiva por usuario. Por lo tanto, si queremos que Alex administre la directiva global, debe *anular la asignación* de la Directiva por usuario que se le haya asignado anteriormente. A continuación se muestra un ejemplo:
+Por ejemplo, supongamos que anteriormente ha asignado a Alex la Directiva FederationAndPICDefault y que ahora ha cambiado de opinión y desea que se administre mediante la directiva global de acceso externo. No se puede asignar explícitamente la directiva global a nadie. En su lugar, se usa la directiva global para un usuario determinado si no hay una directiva por usuario asignada al usuario. Por lo tanto, si queremos que Alex administre la directiva global, debe *anular la asignación* de la Directiva por usuario que se le haya asignado anteriormente. A continuación se muestra un ejemplo:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
@@ -106,7 +100,6 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 Este comando establece el nombre de la Directiva de acceso externo asignada a Alex en un valor nulo ($Null). Null significa "Nothing". Es decir, no se asigna ninguna directiva de acceso externo a Alex. Cuando no se asigna ninguna directiva de acceso externo a un usuario, dicho usuario se administra mediante la directiva global.
   
-Para deshabilitar una cuenta de usuario con Windows PowerShell, use los cmdlets de Azure Active Directory para quitar la licencia de Skype empresarial online de Alex. Para obtener más información, vea [deshabilitar el acceso a servicios con Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
 
 ## <a name="managing-large-numbers-of-users"></a>Administración de grandes cantidades de usuarios
 
@@ -141,7 +134,7 @@ $count = 0
 
 Esto buscará 500 usuarios a la vez que no tienen una directiva de cliente. Se le concederá la Directiva de cliente "ClientPolicyNoIMURL" y la Directiva de acceso externo "FederationAndPicDefault". Los resultados se procesan por lotes en grupos de 50 y, a continuación, cada lote de 50 se envía al equipo remoto.
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar Skype Empresarial Online con PowerShell de Office 365](manage-skype-for-business-online-with-office-365-powershell.md)
   

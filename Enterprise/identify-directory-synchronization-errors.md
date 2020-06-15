@@ -1,5 +1,5 @@
 ---
-title: Ver errores de sincronización de directorios en Office 365
+title: Ver los errores de sincronización de directorios en Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,24 +21,24 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Obtenga información sobre cómo ver los errores de sincronización de directorios en el centro de administración de Microsoft 365.
-ms.openlocfilehash: e270b7f1bc29d952cd07a7b3430a1a9a50b67783
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d10abc29a08da4352d4c0779698e2062175008b4
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840177"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711650"
 ---
-# <a name="view-directory-synchronization-errors-in-office-365"></a>Ver errores de sincronización de directorios en Office 365
+# <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Ver los errores de sincronización de directorios en Microsoft 365
 
 Puede ver los errores de sincronización de directorios en el [centro de administración de Microsoft 365](https://admin.microsoft.com). Solo se muestran los errores del objeto de usuario. Para ver los errores con PowerShell, consulte [identificar objetos con DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
-Después de ver, vea [solucionar problemas con la sincronización de directorios para Office 365](fix-problems-with-directory-synchronization.md) para corregir los problemas identificados.
+Después de ver, vea [solucionar problemas con la sincronización de directorios para Microsoft 365](fix-problems-with-directory-synchronization.md) para corregir los problemas identificados.
   
 ## <a name="view-directory-synchronization-errors-in-the-admin-center"></a>Ver los errores de sincronización de directorios en el centro de administración
 
 Para ver los errores en el centro de administración:
   
-1. Inicie sesión en Office 365 con su cuenta profesional o educativa. 
+1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa. 
     
 2. Vaya a la [información acerca del centro de administración](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
     

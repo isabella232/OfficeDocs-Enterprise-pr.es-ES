@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo asignar licencias de 365 de Microsoft a cuentas de usuario, ya sea de forma individual o en función de la pertenencia a grupos.
-ms.openlocfilehash: bd9587f81d2267e1d6fd28f60e8ac2e85171457b
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: 105bc2772867e244b5012789593498a672abf807
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44699227"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711803"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Asignar licencias de 365 de Microsoft a cuentas de usuario
 
@@ -39,7 +39,7 @@ ms.locfileid: "44699227"
 
 Para el modelo de identidad solo de nube, puede asignar licencias de Microsoft 365 a las cuentas de usuario a medida que se crean, en función de cómo las cree.
 
-Para el modelo de identidad híbrida, cuando las cuentas de usuario de servicios de dominio de Active Directory (AD DS) se sincronizan por primera vez, no se les asigna automáticamente una licencia de 365 de Microsoft. Primero debe configurar cada cuenta de usuario con una ubicación de usuario.
+Para el modelo de identidad híbrida, cuando las cuentas de usuario de servicios de dominio de Active Directory (AD DS) se sincronizan por primera vez, no se les asigna una licencia de Microsoft 365 automáticamente. Primero debe configurar cada cuenta de usuario con una ubicación de usuario.
 
 En cualquier caso, debe asignar una licencia a las cuentas de usuario para que los usuarios puedan acceder a los servicios de Microsoft 365, como el correo electrónico y Microsoft Teams.
 
@@ -52,7 +52,7 @@ Para asignar licencias de 365 de Microsoft a cuentas de usuario individuales, pu
 
 Para la asignación automática de licencias, consulte [licencias basadas en grupos en Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Con el conjunto completo de cuentas de usuario a las que se han asignado licencias, ya está listo para:
 

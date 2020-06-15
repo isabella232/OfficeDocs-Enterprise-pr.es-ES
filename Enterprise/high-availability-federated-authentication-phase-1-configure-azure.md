@@ -13,17 +13,17 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 'Resumen: Configure la infraestructura de Microsoft Azure para que hospede la autenticación federada de alta disponibilidad para Office 365.'
-ms.openlocfilehash: 9f2991ef495093f2aed01e57f47dab3371b97de3
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: 'Resumen: configure la infraestructura de Microsoft Azure para hospedar la autenticación federada de alta disponibilidad para Microsoft 365.'
+ms.openlocfilehash: 10bf8165b36571b5cd68107fa32e26db970d1d58
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793833"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711953"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure
 
-En esta fase, se crean los grupos de recursos, la red virtual (VNet) y los conjuntos de disponibilidad en Azure que hospedarán las máquinas virtuales en las fases 2, 3 y 4. Debe completar esta fase para poder pasar a la [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Consulte todas las fases en [Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+En esta fase, se crean los grupos de recursos, la red virtual (VNet) y los conjuntos de disponibilidad en Azure que hospedarán las máquinas virtuales en las fases 2, 3 y 4. Debe completar esta fase para poder pasar a la [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Consulte [implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure en](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) todas las fases.
   
 Azure debe estar aprovisionado con estos componentes básicos:
   
@@ -106,7 +106,7 @@ Para el conjunto de espacios de direcciones de la red local, rellene la Tabla L.
    
  **Tabla L: Prefijos de direcciones para la red local**
   
-Ahora, empecemos a crear la infraestructura de Azure para hospedar la autenticación federada para Office 365.
+Ahora, empecemos a crear la infraestructura de Azure para hospedar la autenticación federada para Microsoft 365.
   
 > [!NOTE]
 > Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Consulte Introducción [a Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
@@ -132,7 +132,7 @@ Para las versiones anteriores de Azure PowerShell, use este comando en su lugar.
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Configure su suscripción de Azure. Reemplace todo lo que haya entre las comillas, incluidos los \< caracteres y >, por el nombre correcto.
+Configure su suscripción de Azure. Reemplace todo lo que haya entre las comillas, incluidos los \< and > caracteres, por el nombre correcto.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -300,9 +300,9 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 Esta es la configuración que se muestra después de la finalización correcta de esta fase.
   
-**Fase 1: Infraestructura de Azure para la autenticación federada de alta disponibilidad para Office 365**
+**Fase 1: la infraestructura de Azure para la autenticación federada de alta disponibilidad para Microsoft 365**
 
-![Fase 1 de la autenticación federada de Office 365 de alta disponibilidad en Azure con la infraestructura de Azure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Fase 1 de la autenticación federada de alta disponibilidad Microsoft 365 en Azure con la infraestructura de Azure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Paso siguiente
 
@@ -310,12 +310,12 @@ Use [Phase 2: configure Domain Controllers](high-availability-federated-authenti
   
 ## <a name="see-also"></a>Vea también
 
-[Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Identidad federada para el entorno de desarrollo y pruebas de Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[Identidad federada para el entorno de prueba y desarrollo de Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.yml)
 
-[Descripción de la identidad de Office 365 y Azure Active Directory](about-office-365-identity.md)
+[Descripción de la identidad de Microsoft 365 y Azure Active Directory](about-office-365-identity.md)
 
 

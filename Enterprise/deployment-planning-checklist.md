@@ -1,5 +1,5 @@
 ---
-title: Lista de comprobación para planificar la implementación de Office 365
+title: Lista de comprobación para la planeación de la implementación de Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,28 +19,28 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
-description: Esta lista de comprobación ayudará a su organización cuando Planee y prepare una migración a Office 365.
-ms.openlocfilehash: fdbc56b3d3a907ef5ca66f9d184525f8aae13246
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+description: Esta lista de comprobación ayudará a su organización cuando Planee y prepare una migración a Microsoft 365.
+ms.openlocfilehash: f958a48b01c3e027804c75bf469276bcfeed1d83
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419370"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711909"
 ---
-# <a name="deployment-planning-checklist-for-office-365"></a>Lista de comprobación para planificar la implementación de Office 365
+# <a name="deployment-planning-checklist-for-microsoft-365"></a>Lista de comprobación para la planeación de la implementación de Microsoft 365
 
-Al mover una organización empresarial a Office 365, es importante planear exactamente los pasos que desea realizar, Cuándo realizarlos y quién los ejecutará. Esta lista de comprobación ayudará a su organización cuando Planee y prepare una migración a Office 365. Las fases y los pasos de la lista de comprobación se alinean con las instrucciones proporcionadas por el [centro de incorporación](https://go.microsoft.com/fwlink/?LinkId=517115). No dude en adaptar esta lista de comprobación a las necesidades de su organización.
+Al mover una organización empresarial a Microsoft 365, es importante planear exactamente los pasos que desea realizar, Cuándo realizarlos y quién los ejecutará. Esta lista de comprobación ayudará a su organización cuando Planee y prepare una migración a Microsoft 365. No dude en adaptar esta lista de comprobación a las necesidades de su organización.
 
 ## <a name="need-help-with-your-deployment"></a>¿Necesita ayuda con la implementación?
-¿Desea obtener ayuda para configurar Office 365? Considere la posibilidad de usar [FastTrack](https://fasttrack.microsoft.com/office) o las [guías de instalación de los servicios de Office 365](setup-guides-for-office-365.md).
+¿Quiere ayuda para configurar Microsoft 365? Considere la posibilidad de usar [FastTrack](https://fasttrack.microsoft.com/microsoft-365) o las [guías de configuración de los servicios de Microsoft 365](setup-guides-for-office-365.md).
 
-## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Lista de comprobación de ejemplo para una implementación empresarial de Office 365
+## <a name="sample-checklist-for-a-microsoft-365-enterprise-deployment"></a>Lista de comprobación de ejemplo para una implementación de Microsoft 365 Enterprise
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Tareas de implementación de/Events** <br/> |**Fecha de inicio** <br/> |**Fecha de finalización** <br/> |**Recursos** <br/> |**Dependencias** <br/> |
 |**Determinación de los objetivos de la implementación** <br/> |||||
-| Con las partes interesadas internas y externas:<br>  -Acordar el ámbito y la escala de tiempo <br>  -Acuerde el mecanismo de seguimiento del proyecto  <br>  -Desarrollar criterios de éxito y una [comunicación](https://fasttrack.microsoft.com/office)  /  [Introducción a Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
+| Con las partes interesadas internas y externas:<br>  -Acordar el ámbito y la escala de tiempo <br>  -Acuerde el mecanismo de seguimiento del proyecto  <br>  -Desarrollar criterios de éxito y una [comunicación](https://fasttrack.microsoft.com/microsoft-365)  /  [Introducción a Microsoft 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Realizar un inventario de su entorno actual y tomar decisiones clave de implementación** |||||
 |Inventario del entorno actual |||||
 | Recopilar el número de cuentas de usuario (nombres de inicio de sesión, direcciones de correo electrónico) |||||
@@ -64,8 +64,8 @@ Al mover una organización empresarial a Office 365, es importante planear exact
 | Preparar la red ( [instrucciones y herramientas](https://aka.ms/tune)) |||||
 | Actualización de las versiones de software de cliente ( [Guía](https://go.microsoft.com/fwlink/?LinkId=534827)) |||||
 | Si tiene Active Directory Rights Management Services: preparar el entorno ( [Guía](https://go.microsoft.com/fwlink/?linkid=844967))  <br/> |||||
-|**Configurar los servicios de Office 365 para que funcionen en su organización** |||||
-|Configurar la suscripción de Office 365 |||||
+|**Configurar los servicios de Microsoft 365 para que funcionen en su organización** |||||
+|Configurar la suscripción a Microsoft 365 |||||
 |[Compruebe los dominios que desea usar con la suscripción](https://go.microsoft.com/fwlink/?LinkId=534828) |||||
 | Configurar las opciones de la [aplicación](https://go.microsoft.com/fwlink/?LinkId=534829) (correo electrónico, mensajería instantánea, reuniones en línea, colaboración web, almacenamiento de archivos, Yammer) |||||
 | Preparación opcional [para la sincronización de directorios](https://go.microsoft.com/fwlink/?LinkId=534830) |||||
@@ -76,9 +76,9 @@ Al mover una organización empresarial a Office 365, es importante planear exact
 | Informar a los usuarios sobre los [próximos cambios y cómo los afectará](https://fasttrack.microsoft.com/office) |||||
 |**Distribuir a los usuarios** |||||
 |Configurar cuentas y buzones de correo |||||
-| Agregar usuarios y [asignar licencias a usuarios en Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
+| Agregar usuarios y [asignar licencias a usuarios en Microsoft 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
 | Migrar datos opcionalmente ( [correo electrónico](https://go.microsoft.com/fwlink/?LinkId=534823), [archivos](https://go.microsoft.com/fwlink/?LinkId=534824), etc.) |||||
 |Validar la funcionalidad y completar los pasos finales |||||
-| Migrar la [configuración de DNS para que apunte a Office 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| Informar a los usuarios de que pueden [empezar a usar Office 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
-| Reconfigurar sistemas cliente para conectarse a Office 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook para Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [dispositivos móviles](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||
+| Migrar la [configuración de DNS para que apunte a Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
+| Informar a los usuarios de que pueden [empezar a usar Microsoft 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
+| Volver a configurar los sistemas cliente para conectarse a Microsoft 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook para Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [dispositivos móviles](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||
