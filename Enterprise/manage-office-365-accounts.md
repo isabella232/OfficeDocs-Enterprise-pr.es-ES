@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Obtenga información sobre qué herramientas usar para administrar los usuarios de Office 365 y cómo lo que puede usar depende de cómo administre las identidades de usuario. '
-ms.openlocfilehash: 0cfb1496dd97eb932afc4e90a6d9469289332c2d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 90e79eaf9cd90a539cf1c454509bff7d659b8b35
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843721"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735788"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Herramientas para administrar cuentas de Office 365
 
-Puede administrar usuarios de Office 365 de varias maneras diferentes, según su configuración. Puede administrar los usuarios en el [centro de administración de Microsoft 365](https://admin.microsoft.com), en Windows PowerShell, en el directorio local o en el portal de administración de Azure Active Directory. En cuanto compre Office 365, podrá usar el centro de administración y Windows PowerShell para administrar cuentas. Al administrar las identidades de nube, todas las personas de la organización tienen un identificador de usuario y una contraseña independientes para Office 365. Si desea integrar con la infraestructura local y tener cuentas de usuario sincronizadas con Office 365, puede usar Azure Active Directory Connect para proporcionar sincronización de identidades y, opcionalmente, proporcionar sincronización de contraseña o completa funcionalidad de inicio de sesión único.
+Puede administrar usuarios de Office 365 de varias maneras diferentes, según su configuración. Puede administrar los usuarios en el [centro de administración de Microsoft 365](https://admin.microsoft.com), en Windows PowerShell, en el directorio local o en el portal de administración de Azure Active Directory. En cuanto compre Office 365, podrá usar el centro de administración y Windows PowerShell para administrar cuentas. Al administrar las identidades de nube, todas las personas de la organización tienen un identificador de usuario y una contraseña independientes para Office 365. Si desea integrar con la infraestructura local y tener cuentas de usuario sincronizadas con Office 365, puede usar Azure Active Directory Connect para proporcionar sincronización de identidades y, opcionalmente, proporcionar sincronización de contraseña o funcionalidad de inicio de sesión único completa.
   
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>Planeación de dónde y cómo se va a administrar las cuentas de usuario
 
@@ -41,7 +41,7 @@ Dónde y cómo puede administrar las cuentas de usuario depende del modelo de id
     
 - Sincronización de hash de contraseña con inicio de sesión único sin interrupciones: la forma más sencilla de habilitar la autenticación para los objetos de directorio local en Azure AD. Con la sincronización de hash de contraseña (PHS), se sincronizan los objetos de cuenta de usuario de Active Directory local con Office 365 y se administran los usuarios de forma local. 
     
-- Autenticación de paso a través con el inicio de sesión único sin interrupciones: proporciona una validación de contraseña sencilla para los servicios de autenticación de Azure AD mediante un agente de software que se ejecuta en uno o varios servidores locales para validar a los usuarios directamente con la implementación local activa Active. 
+- Autenticación de paso a través con el inicio de sesión único sin problemas: proporciona una validación de contraseña sencilla para los servicios de autenticación de Azure AD mediante un agente de software que se ejecuta en uno o varios servidores locales para validar a los usuarios directamente con Active Directory local. 
     
 ### <a name="federated-authentication"></a>Autenticación federada
 
@@ -74,7 +74,7 @@ A la hora de decidir la forma en que su organización va a crear y administrar c
     Si opta por agregar y administrar a todos los usuarios a través del centro de administración, deberá especificar la ubicación y asignar licencias al mismo tiempo que se crea la cuenta de Office 365. Como resultado, no es necesario realizar mucha planeación.
     
     > [!IMPORTANT]
-    > La creación de cuentas en Office 365 sin asignar una licencia (en SharePoint Online, por ejemplo) significa que el propietario de la cuenta puede ver el portal de Office 365, pero no puede tener acceso a ninguno de los servicios de la suscripción de la compañía. Después de asignar una ubicación y la licencia, la cuenta se replica en el servicio o los servicios que asignó. El usuario puede iniciar sesión en su cuenta y usar los servicios que se le asignaron. 
+    > La creación de cuentas en Office 365 sin asignar una licencia (en SharePoint Online, por ejemplo) significa que el propietario de la cuenta puede ver el centro de administración de Microsoft 365, pero no puede tener acceso a ninguno de los servicios de la suscripción de la compañía. Después de asignar una ubicación y la licencia, la cuenta se replica en el servicio o los servicios que asignó. El usuario puede iniciar sesión en su cuenta y usar los servicios que se le asignaron. 
   
 ## <a name="next-steps"></a>Siguientes pasos
 

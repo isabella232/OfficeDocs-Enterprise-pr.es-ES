@@ -1,5 +1,5 @@
 ---
-title: Planificación de los certificados SSL de terceros para Office 365
+title: Planificación de los certificados SSL de terceros para Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,24 +20,24 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Resumen: describe los certificados SSL necesarios para Exchange local e híbrido, SSO con AD FS, servicios de Exchange Online y servicios web Exchange.'
-ms.openlocfilehash: a28acae142f97a52f7c6db8e5a7d93049b2876cc
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4ab300cba8678e8732c110caee2fe4562c785f65
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841737"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735678"
 ---
-# <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planificación de los certificados SSL de terceros para Office 365
+# <a name="plan-for-third-party-ssl-certificates-for-microsoft-365"></a>Planificación de los certificados SSL de terceros para Microsoft 365
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
-Para cifrar las comunicaciones entre los clientes y el entorno de Office 365, los certificados de capa de sockets seguros (SSL) de terceros deben estar instalados en los servidores de la infraestructura.
+Para cifrar las comunicaciones entre los clientes y el entorno de Microsoft 365, los certificados de capa de sockets seguros (SSL) de terceros deben estar instalados en los servidores de la infraestructura.
 
 ||
 |:-----|
-| Este artículo forma parte de la [planeación de red y el ajuste del rendimiento de Office 365](https://aka.ms/tune).|
+| Este artículo forma parte de la [planeación de red y el ajuste del rendimiento para Microsoft 365](https://aka.ms/tune).|
    
-Los certificados son necesarios para los siguientes componentes de Office 365:
+Los certificados son necesarios para los siguientes componentes de Microsoft 365:
   
 - Implementación local de Exchange
     
@@ -58,8 +58,8 @@ Para proporcionar a los usuarios una experiencia de inicio de sesión único sim
 ||||
 |:-----|:-----|:-----|
 |**Tipo de certificado** <br/> |**Descripción** <br/> |**Lo que debe saber antes de implementar** <br/> |
-|**Certificado SSL (también denominado certificado de autenticación de servidor)** <br/> |Se trata de un certificado SSL estándar que se usa para proteger las comunicaciones entre servidores de Federación, clientes y equipos proxy de servidor de Federación.  <br/> |AD FS requiere un certificado SSL. De forma predeterminada, AD FS usa el certificado SSL configurado para el sitio web predeterminado en Internet Information Services (IIS).  <br/> El nombre de sujeto de este certificado SSL se usa para determinar el nombre del servicio de Federación (FS) para cada instancia de AD FS que implemente. Considere la posibilidad de elegir un nombre de sujeto para los certificados emitidos por una nueva entidad de certificación (CA) que mejor represente el nombre de su compañía u organización a Office 365. Este nombre debe ser enrutable a Internet.  <br/>**PRECAUCIÓN:** AD FS requiere que este certificado SSL no tenga un nombre de sujeto (nombre corto) sin puntos.          <br/> **Recomendación:** Como este certificado debe ser de confianza para los clientes de AD FS, se recomienda usar un certificado SSL emitido por una entidad de certificación pública (de terceros) o por una CA subordinada a una raíz de confianza pública; por ejemplo, VeriSign o Thawte.  <br/> |
-|**Certificado de firma de tokens** <br/> |Se trata de un certificado X. 509 estándar que se usa para firmar de forma segura todos los tokens que emite el servidor de Federación y que Office 365 acepta y valida.  <br/> |El certificado de firma de tokens debe contener una clave privada que encadena a una raíz de confianza en el FS. De forma predeterminada, AD FS crea un certificado autofirmado. Sin embargo, en función de las necesidades de su organización, puede cambiar este certificado por un certificado emitido por una entidad de certificación mediante el complemento Administración de AD FS.  <br/>**PRECAUCIÓN:** El certificado de firma de tokens es crítico para la estabilidad del FS. Si se cambia el certificado, se debe notificar el cambio a Office 365. Si no se proporciona una notificación, los usuarios no pueden iniciar sesión en sus ofertas de servicio de Office 365.<br/>**Recomendación:** Le recomendamos que use el certificado autofirmado de firma de tokens que genera AD FS. Al hacerlo, se administra el certificado de forma predeterminada. Por ejemplo, cuando está a punto de caducar este certificado, AD FS generará un nuevo certificado autofirmado.  <br/> |
+|**Certificado SSL (también denominado certificado de autenticación de servidor)** <br/> |Se trata de un certificado SSL estándar que se usa para proteger las comunicaciones entre servidores de Federación, clientes y equipos proxy de servidor de Federación.  <br/> |AD FS requiere un certificado SSL. De forma predeterminada, AD FS usa el certificado SSL configurado para el sitio web predeterminado en Internet Information Services (IIS).  <br/> El nombre de sujeto de este certificado SSL se usa para determinar el nombre del servicio de Federación (FS) para cada instancia de AD FS que implemente. Considere la posibilidad de elegir un nombre de sujeto para los certificados emitidos por una nueva entidad de certificación (CA) que mejor represente el nombre de su compañía u organización a Microsoft 365. Este nombre debe ser enrutable a Internet.  <br/>**PRECAUCIÓN:** AD FS requiere que este certificado SSL no tenga un nombre de sujeto (nombre corto) sin puntos.          <br/> **Recomendación:** Como este certificado debe ser de confianza para los clientes de AD FS, se recomienda usar un certificado SSL emitido por una entidad de certificación pública (de terceros) o por una CA subordinada a una raíz de confianza pública; por ejemplo, VeriSign o Thawte.  <br/> |
+|**Certificado de firma de tokens** <br/> |Se trata de un certificado X. 509 estándar que se usa para firmar de forma segura todos los tokens que emite el servidor de Federación y que Microsoft 365 acepta y valida.  <br/> |El certificado de firma de tokens debe contener una clave privada que encadena a una raíz de confianza en el FS. De forma predeterminada, AD FS crea un certificado autofirmado. Sin embargo, en función de las necesidades de su organización, puede cambiar este certificado por un certificado emitido por una entidad de certificación mediante el complemento Administración de AD FS.  <br/>**PRECAUCIÓN:** El certificado de firma de tokens es crítico para la estabilidad del FS. Si se cambia el certificado, se debe notificar el cambio a Microsoft 365. Si no se proporciona una notificación, los usuarios no pueden iniciar sesión en las ofertas de servicio de Microsoft 365.<br/>**Recomendación:** Le recomendamos que use el certificado autofirmado de firma de tokens que genera AD FS. Al hacerlo, se administra el certificado de forma predeterminada. Por ejemplo, cuando está a punto de caducar este certificado, AD FS generará un nuevo certificado autofirmado.  <br/> |
    
 Los servidores proxy de Federación requieren el certificado que se describe en la tabla siguiente.
   
@@ -76,9 +76,9 @@ Los servidores de acceso de cliente de Exchange 2013, Exchange 2010, Exchange 20
 
 Los servidores o servidores híbridos de Exchange con conexión externa requieren un certificado SSL de terceros para la conectividad segura con el servicio de Exchange Online. Debe obtener este certificado de su proveedor de SSL de terceros.
   
-## <a name="office-365-certificate-chains"></a>Cadenas de certificados de Office 365
+## <a name="microsoft-365-certificate-chains"></a>Cadenas de certificados de 365 de Microsoft
 
-En este artículo se describen los certificados que puede que necesite instalar en su infraestructura. Para obtener más información sobre los certificados instalados en nuestros servidores de Office 365, consulte [office 365 Certificate Chains](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
+En este artículo se describen los certificados que puede que necesite instalar en su infraestructura. Para obtener más información sobre los certificados instalados en nuestros servidores de Microsoft 365, consulte [Microsoft 365 certificados Chains](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
   
 ## <a name="see-also"></a>Vea también
 

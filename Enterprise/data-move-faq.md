@@ -14,12 +14,12 @@ ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
 description: A continuación, se incluyen respuestas a preguntas generales sobre cómo mover datos principales a un nuevo centro de datos geográfico.
-ms.openlocfilehash: 09c2e9acd482f10c6883ce0134793a9656675631
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 291f5068cc66ae761571992b462995fb6437b872
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516561"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735848"
 ---
 # <a name="data-move-general-faq"></a>Preguntas más frecuentes sobre el movimiento de datos
 
@@ -64,7 +64,7 @@ Sí. Una vez que haya una nueva geografía de centro de datos disponible, los nu
   
  ## <a name="where-is-my-core-customer-data-located"></a>¿Dónde se encuentran los datos principales de los clientes?
 
-Los administradores de espacios empresariales pueden ver la tarjeta de ubicación de datos en el centro de administración en cualquier momento para confirmar los datos principales del cliente en la ubicación de REST para cada servicio, específicamente para su inquilino.También publicamos la ubicación del centro de datos GEOS, los centros de datos y la ubicación de los datos de cliente de Office 365 en el centro de datos [ interactivo de office 365](https://office.com/datamaps) como referencia para los datos de cliente principales predeterminados en las ubicaciones de REST para los nuevos inquilinos.  Puede comprobar la ubicación de los datos de cliente en reposo mediante la sección Ubicación de datos del perfil de la organización en el centro de administración de Microsoft 365.  
+Los administradores de espacios empresariales pueden ver la tarjeta de ubicación de datos en el centro de administración en cualquier momento para confirmar los datos principales del cliente en la ubicación de REST para cada servicio, específicamente para su inquilino.También publicamos la ubicación del centro de datos GEOS, los centros de datos y la ubicación de los datos de cliente de Office 365 en el centro de datos [interactivo de office 365](https://office.com/datamaps) como referencia para los datos de cliente principales predeterminados en las ubicaciones de REST para los nuevos inquilinos.  Puede comprobar la ubicación de los datos de cliente en reposo mediante la sección Ubicación de datos del perfil de la organización en el centro de administración de Microsoft 365.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>¿Cuándo podré solicitar un movimiento?
   
@@ -72,7 +72,7 @@ Consulte la página [Cómo solicitar el movimiento de datos](request-your-data-m
   
 ## <a name="how-can-i-request-to-be-moved"></a>¿Cómo puedo solicitar que se mueva?
   
-Los clientes elegibles verán una página en el [portal de administración de Office 365](https://portal.office.com/). Consulte [Cómo solicitar](request-your-data-move.md) un movimiento de datos para obtener instrucciones sobre cómo solicitar un movimiento. 
+Los clientes elegibles verán una página en el [centro de administración de Microsoft 365](https://admin.microsoft.com/). Consulte [Cómo solicitar](request-your-data-move.md) un movimiento de datos para obtener instrucciones sobre cómo solicitar un movimiento. 
   
 ## <a name="can-i-change-my-selection-after-requesting-a-move"></a>¿Puedo cambiar mi selección después de solicitar un movimiento?
   
@@ -80,7 +80,7 @@ No es posible quitarlo del proceso después de enviar la solicitud.
   
 ## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a>¿Qué sucede si no solicito un movimiento antes de la fecha límite?
   
-Es posible que podamos aceptar solicitudes en función de una excepción para conceder a su inquilino una fecha límite asignada para completar el traslado.   Póngase en contacto con el [soporte técnico de Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) para realizar la solicitud.
+Es posible que podamos aceptar solicitudes en función de una excepción para conceder a su inquilino una fecha límite asignada para completar el traslado.  Póngase en contacto con el [soporte técnico de Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) para realizar la solicitud.
 
 ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a>¿Qué hago si quiero mover mis datos para obtener un mejor rendimiento de la red?
   
@@ -126,7 +126,7 @@ Si crea un nuevo inquilino después de que el nuevo área geográfica disponible
   
 ## <a name="my-customer-data-has-already-been-moved-to-a-new-datacenter-geo-can-i-move-back"></a>Los datos de mis clientes ya se han movido a un nuevo centro de datos geográficamente. ¿Puedo desplazarse hacia atrás?
  
-No, no es posible. Los clientes que se movieron a nuevos centros de usuarios geográficamente no se pueden volver a mover. Como cliente en cualquier geográfico, tendrá la misma calidad de los controles de servicio, rendimiento y seguridad que antes.  [Office 365 multigeográfico](https://aka.ms/multi-geo) está disponible para algunos clientes como un complemento y permite que un solo inquilino cree varios GEOS de satélite y mueva los datos de usuario a esos GEOS con compromisos de residencia de datos.
+No, esto no es posible. Los clientes que se movieron a nuevos centros de usuarios geográficamente no se pueden volver a mover. Como cliente en cualquier geográfico, tendrá la misma calidad de los controles de servicio, rendimiento y seguridad que antes.  [Office 365 multigeográfico](https://aka.ms/multi-geo) está disponible para algunos clientes como un complemento y permite que un solo inquilino cree varios GEOS de satélite y mueva los datos de usuario a esos GEOS con compromisos de residencia de datos.
   
 ## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>¿Los inquilinos de Microsoft 365 hospedados en los nuevos centros de recursos estarán disponibles para los usuarios fuera del país?
   
