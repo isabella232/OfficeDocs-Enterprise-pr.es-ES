@@ -30,7 +30,7 @@
 ## Soporte técnico para el cliente de Microsoft 365
 ### [Autenticación basada en certificados](office-365-client-support-certificate-based-authentication.md)
 ### [Acceso condicional](office-365-client-support-conditional-access.md)
-### [Administración de aplicaciones móviles](https://support.microsoft.com/en-us/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a?ui=en-US&rs=en-US&ad=US)
+### [Administración de aplicaciones móviles](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)
 ### [Autenticación moderna](office-365-client-support-modern-authentication.md)
 ### [Inicio de sesión único](office-365-client-support-single-sign-on.md)
 
