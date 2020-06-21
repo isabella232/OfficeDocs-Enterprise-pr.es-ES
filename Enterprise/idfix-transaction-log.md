@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: Proporciona un ejemplo y describe la Convención de nomenclatura y el nivel de registro predeterminado del registro de transacciones de Microsoft 365 IdFix.
-ms.openlocfilehash: a2b887907dd1ad622a9d237cf7200aa6db8a2a8e
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 199d765d640a30fa163f74e6b6029b228b41a63d
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711560"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774515"
 ---
 # <a name="microsoft-365-idfix-transaction-log"></a>Registro de transacciones de IdFix de Microsoft 365
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Proporciona un ejemplo y describe la Convención de nomenclatura y el nivel de registro predeterminado del registro de transacciones de Microsoft 365 IdFix.
   

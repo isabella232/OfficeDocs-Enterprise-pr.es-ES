@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Su suscripción a Microsoft 365 incluye una suscripción a Azure AD. Integre Microsoft 365 con Azure AD si desea la sincronización de contraseña o el inicio de sesión único con el entorno local.
-ms.openlocfilehash: ca38a7a8d5878c6efad228595cf2929650a5c869
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: 40426c20f12cf17955457c38d809926550efa188
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698897"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774845"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Integración de Azure con Microsoft 365
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Microsoft 365 usa Azure Active Directory (Azure AD) para administrar las identidades de usuario en segundo plano. Su suscripción a Microsoft 365 incluye una suscripción gratuita a Azure AD para que pueda integrar Microsoft 365 con Azure AD si desea sincronizar contraseñas o configurar el inicio de sesión único con su entorno local. También puede comprar características avanzadas para administrar mejor sus cuentas.
   

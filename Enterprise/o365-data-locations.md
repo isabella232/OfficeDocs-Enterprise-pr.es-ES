@@ -1,9 +1,9 @@
 ---
-title: Ubicaciones de datos de Office 365
+title: Ubicaciones de datos de Microsoft 365
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 03/09/2020
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,32 +16,32 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Resumen: Ubicaciones de datos de Office 365'
-ms.openlocfilehash: 7d66669ddab78a6f84703fb350d0a5cd2707b8af
-ms.sourcegitcommit: 4643a0eb2c65f5e9aba0477e948120ea91bf74d6
+description: 'Resumen: ubicaciones de datos de Microsoft 365'
+ms.openlocfilehash: a0f62fa7955224c07c8e5af35fb53229e3aeb6c4
+ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44507248"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44781065"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
-# <a name="where-your-office-365-customer-data-is-stored"></a>Dónde se almacenan los datos de cliente de Office 365
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Dónde se almacenan los datos de clientes de Microsoft 365
 
-En las tablas siguientes se muestra dónde se almacenan los datos de los clientes en el resto de los servicios de Office 365 en todas las ubicaciones de nube globales de Microsoft. Expanda la ubicación de su país de facturación para averiguar dónde se guardarán los datos de los clientes de cada servicio.
+En las tablas siguientes se muestra dónde se almacenan los datos de clientes en reposo para los servicios de Microsoft 365 en todas las ubicaciones de nube global de Microsoft. Expanda la ubicación de su país de facturación para averiguar dónde se guardarán los datos de los clientes de cada servicio.
 
 Los clientes deberían ver la información de ubicación de los datos específica del espacio empresarial en el centro de administración de Office 365 en **Configuración | Perfil de la organización | Tarjeta de ubicación de datos**.
 
-Los nuevos espacios empresariales de Office 365 se asocian de forma predeterminada en función del país de la transacción asociada a la primera suscripción de ese espacio empresarial.
+Los nuevos inquilinos de Microsoft 365 se predeterminan en geográficamente en función del país de la transacción asociado a la primera suscripción del espacio empresarial.
 
 Obtenga información acerca de los compromisos contractuales para la ubicación de almacenamiento de los datos de clientes en reposo en los [términos de servicios en línea de Microsoft (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 Para las ubicaciones de datos de Azure Active Directory, visite [Mapa de datos de AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-Debido a las circunstancias sin precedentes en torno a la crisis de la COVID-19 y la necesidad de administrar la demanda de los servicios en línea en Europa, si su organización es una institución educativa, puede que aprovisionemos su espacio empresarial de Office 365 en la Unión Europea (UE), la Asociación Europea de Libre Cambio (AELC), el Reino Unido (RU), los Estados Unidos (EE. UU.) o Canadá (CA), o transferir sus datos a cualquier centro de datos en la UE, la AELC, el RU, los EE. UU. o CA.Esto significa que los datos pueden almacenarse en reposo dentro de la UE, la AELC, el RU, los EUA o CA.Nuestro compromiso con el cumplimiento, la privacidad y la seguridad permanece sin cambios mientras implementamos las medidas necesarias y prudentes para mantener la disponibilidad del servicio.  Cumpliremos con todas las leyes aplicables en lo que respecta a las transferencias de datos.
+Debido a las circunstancias sin precedentes en torno a la crisis de COVID-19 y la necesidad de administrar la demanda de servicios en línea en Europa, si su organización es una institución educativa, podemos aprovisionar su inquilino de 365 de Microsoft en la Unión Europea (UE), la Asociación Europea de libre comercio (AELC), el Reino Unido (RU), Estados Unidos (EE. UU.) o Canadá (CA), o transferir sus datos a cualquier centro de datos de la UE. , AELC, Reino Unido, EE. UU. o CA.Esto significa que los datos pueden almacenarse en reposo dentro de la UE, la AELC, el RU, los EUA o CA.Nuestro compromiso con el cumplimiento, la privacidad y la seguridad permanece sin cambios mientras implementamos las medidas necesarias y prudentes para mantener la disponibilidad del servicio.  Cumpliremos con todas las leyes aplicables en lo que respecta a las transferencias de datos.
 
 
 
@@ -58,11 +58,11 @@ Microsoft no revela las direcciones exactas de los centros de datos. Establecimo
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>¿Afecta la ubicación de los datos de los clientes a la experiencia de los usuarios finales?
 
-El rendimiento de Office 365 no es solo proporcional a la distancia de un usuario a las ubicaciones de los centros de datos. Las inversiones continuadas de Microsoft en su red en la nube global, la infraestructura de nube global y la arquitectura de servicios de Office 365 proporcionan a los usuarios una experiencia coherente y singular, independientemente de dónde se almacenan los datos de los clientes en reposo. Si los usuarios están experimentando problemas de rendimiento, debe analizarlos en profundidad. Microsoft ha publicado instrucciones para los clientes de Office 365 para planear y optimizar el rendimiento de los usuarios finales en el [sitio web de soporte técnico de Office](https://go.microsoft.com/fwlink/p/?linkid=862645).
+El rendimiento de Microsoft 365 no es simplemente proporcional a la distancia de un usuario a las ubicaciones de los centros de datos. Las inversiones continuas de Microsoft en su red en la nube global, una infraestructura de nube global y la arquitectura de servicios de Microsoft 365 proporcionan a los usuarios una experiencia singular y coherente, independientemente de dónde se almacenan los datos de clientes en reposo. Si los usuarios están experimentando problemas de rendimiento, debe analizarlos en profundidad. Microsoft ha publicado instrucciones para los clientes de Microsoft 365 para planear y optimizar el rendimiento del usuario final en el [sitio web de soporte técnico de Office](https://go.microsoft.com/fwlink/p/?linkid=862645).
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>¿Cómo me ayuda Microsoft a cumplir los reglamentos nacionales, regionales y específicos del sector?
 
-Con el fin de ayudarle a cumplir los requisitos nacionales, regionales y del sector que rigen la recopilación y el uso de datos de personas, Office 365 ofrece el conjunto más completo de ofertas de cumplimiento de cualquier proveedor de productividad global en la nube. Consulte [nuestras ofertas de cumplimiento](https://go.microsoft.com/fwlink/p/?linkid=864391) y más detalles en la sección [Cumplimiento de Office 365](https://go.microsoft.com/fwlink/p/?linkid=862317) en el centro de confianza de Microsoft. Asimismo, algunos planes de Office 365 ofrecen soluciones de cumplimiento adicionales para ayudarle a administrar los datos, cumplir los requisitos legales y regulatorios, y supervisar las acciones realizadas en los datos.
+Para ayudarle a cumplir con los requisitos nacionales, regionales y de la industria que rigen la recopilación y el uso de datos de personas, Microsoft 365 ofrece el conjunto más completo de ofertas de cumplimiento de cualquier proveedor global de productividad en la nube. Consulte [nuestras ofertas de cumplimiento](https://go.microsoft.com/fwlink/p/?linkid=864391) y más detalles en la sección [cumplimiento de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=862317) en el centro de confianza de Microsoft. Además, algunos planes de Microsoft 365 ofrecen soluciones de cumplimiento adicionales para ayudarle a administrar sus datos, cumplir con los requisitos legales y normativos, y supervisar las acciones que se llevan a cabo en sus datos.
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>¿Quién puede obtener acceso a los datos y en función de qué reglas?
 
@@ -70,15 +70,15 @@ Con el fin de ayudarle a cumplir los requisitos nacionales, regionales y del sec
 
 ### <a name="does-microsoft-access-your-data"></a>¿Microsoft accede a sus datos?
 
-Microsoft automatiza la mayoría de las operaciones de Office 365 mientras limita de forma intencionada su propio acceso a los datos de los clientes. Esto nos ayuda a administrar Office 365 a escala y a abordar los riesgos de las amenazas internas a los datos de los clientes. De forma predeterminada, los ingenieros de Microsoft no tienen derechos administrativos y no tienen acceso permanente a los datos de los clientes en Office 365. Un ingeniero de Microsoft puede tener un acceso limitado y registrado a los datos de los clientes durante un período de tiempo limitado, pero solo cuando sea necesario para las operaciones de servicio normal y solo cuando lo apruebe un miembro de la administración ejecutiva de Microsoft (y, en el caso de los clientes que tengan una licencia para la característica de Caja de seguridad del cliente, el cliente).
+Microsoft automatiza la mayoría de las operaciones de Microsoft 365 mientras se limita intencionadamente su propio acceso a los datos de los clientes. Esto nos ayuda a administrar Microsoft 365 a escala y a enfrentar los riesgos de las amenazas internas a los datos de clientes. De forma predeterminada, los ingenieros de Microsoft no tienen privilegios administrativos y no tienen acceso permanente a los datos de clientes en Microsoft 365. Un ingeniero de Microsoft puede tener un acceso limitado y registrado a los datos de los clientes durante un período de tiempo limitado, pero solo cuando sea necesario para las operaciones de servicio normal y solo cuando lo apruebe un miembro de la administración ejecutiva de Microsoft (y, en el caso de los clientes que tengan una licencia para la característica de Caja de seguridad del cliente, el cliente).
 
 ### <a name="how-does-microsoft-secure-your-data"></a>¿Cómo protege Microsoft los datos?
 
-Microsoft tiene directivas, controles y sistemas robustos integrados en Office 365 para ayudar a mantener la seguridad de la información. Para obtener más información, consulte la [sección Seguridad de Office 365](https://go.microsoft.com/fwlink/p/?linkid=864393) en el centro de confianza de Microsoft.
+Microsoft tiene directivas, controles y sistemas seguros integrados en Microsoft 365 para ayudarle a mantener la seguridad de la información. Revise la [sección seguridad de 365 de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=864393) en el centro de confianza de Microsoft para obtener más información.
 
-### <a name="does-office-365-encrypt-your-data"></a>¿Office 365 cifra los datos?
+### <a name="does-microsoft-365-encrypt-your-data"></a>¿Microsoft 365 cifra sus datos?
 
-Office 365 usa tecnologías del lado de servicio que encriptan datos de clientes en reposo y en tránsito. En el caso de los datos de los clientes en reposo, Office 365 usa cifrado de nivel de volumen y nivel de archivo. En el caso de los datos de clientes en tránsito, Office 365 usa varias tecnologías de cifrado para las comunicaciones entre centros de datos y entre clientes y servidores, como la seguridad de la capa de transporte (TLS) y la seguridad de protocolo de Internet (IPsec). Office 365 también incluye características de cifrado administradas por el cliente.
+Microsoft 365 usa tecnologías de servicio que cifran datos de clientes en reposo y en tránsito. Para los datos de clientes en reposo, Microsoft 365 usa cifrado de nivel de volumen y de nivel de archivo. Para los datos de clientes en tránsito, Microsoft 365 usa varias tecnologías de cifrado para las comunicaciones entre los centros de datos y entre clientes y servidores, como seguridad de la capa de transporte (TLS) y seguridad de protocolo de Internet (IPsec). Microsoft 365 también incluye características de cifrado administradas por el cliente.
 
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>¿Dónde puedo encontrar información de residencia de datos para Microsoft Azure?
 
@@ -86,11 +86,26 @@ Consulte la página [productos disponibles por región](https://go.microsoft.com
 
 ### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>¿Qué son las Capacidades multigeográficas en Microsoft 365?
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) permite que un solo espacio empresarial de Office 365 abarque distintas regiones de centros de datos de Office 365 y proporciona a los clientes la capacidad de almacenar sus datos básicos de clientes de Office 365, en función de cada usuario, en las regiones seleccionadas.
+[Multigeográfico](https://go.microsoft.com/fwlink/p/?linkid=872033) ofrece a los clientes la capacidad de asignar datos de clientes principales en reposo a nuestras ubicaciones disponibles en la nube de Microsoft 365.   
 
 ### <a name="what-services-support-multi-geo"></a>¿Qué servicios son compatibles con Multi-Geo?
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) está disponible para Exchange Online, OneDrive y SharePoint Online. Microsoft está investigando Multi-Geo para otros servicios de Office 365.
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) está disponible para Exchange Online, OneDrive y SharePoint Online. Microsoft está investigando la plataforma multigeográfica para otros servicios de Microsoft 365.
+
+### <a name="what-are-the-exceptions-for-intune-data-locations"></a>¿Cuáles son las excepciones de las ubicaciones de datos de Intune?
+
+Microsoft no almacenará datos de clientes de Intune en REST fuera del área geográfica indicada. excepto si:
+
+- Es necesario que Microsoft ofrezca soporte al cliente, solucione el servicio o cumpla con los requisitos legales.
+- El cliente configura una cuenta para habilitar dicho almacenamiento de datos de clientes, incluido el uso de lo siguiente:
+
+  - Características diseñadas para funcionar de forma global, como la red de entrega de contenido (CDN), que proporciona un servicio de almacenamiento en caché global y almacena datos de clientes en ubicaciones perimetrales de todo el mundo.
+
+  - Azure Active Directory (Azure AD), que puede almacenar datos de directorio globalmente. Esto no se aplica a las implementaciones de Azure AD en los Estados Unidos (donde los datos de Azure AD se almacenan exclusivamente en Estados Unidos) o en Europa (donde los datos de Azure AD se almacenan en Europa o Estados Unidos).
+   
+  - Versión preliminar, beta u otros servicios de versión preliminar, que normalmente almacenan datos de clientes en Estados Unidos, pero pueden almacenarlos de forma global.
+
+En cualquier caso, Microsoft no controla ni limita la geografía desde la que los clientes o los usuarios finales pueden acceder a los datos de los clientes. 
 
 ## <a name="data-center-locations"></a>Ubicaciones de los centros de datos
 
@@ -112,14 +127,14 @@ Para los centros de datos específicos de su país o región, a continuación se
 
 | País | Ciudad |
 | --- | --- |
-| Australia | Nueva Gales del Sur, Victoria |
+| Australia | Sydney, Melbourne |
 | Canadá | Quebec City, Toronto |
-| Unión Europea | Austria, Finlandia, Francia, Irlanda, Países Bajos |
+| Unión Europea | Austria (Viena), Finlandia (Helsinki), Francia (París, Marseille), Irlanda (Dublín), Países Bajos (Amsterdam) |
 | Francia | Paris, Marsella |
 | Alemania | Frankfurt, Berlín |
 | India | Chennai, Mumbai, Pune |
 | Japón | Osaka, Tokio y Saitama |
-| Corea | Busan, Seúl |
+| Corea del Sur | Busan, Seúl |
 | Noruega | Oslo, Stavanger |
 | Sudáfrica | Ciudad del Cabo, Johannesburgo |
 | Suiza | Ginebra, Zúrich |
@@ -127,7 +142,7 @@ Para los centros de datos específicos de su país o región, a continuación se
 | Reino Unido | Durham, Londres, Cardiff |
 | Estados Unidos |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San Jose |
 
-Los nuevos espacios empresariales de Office 365 se asocian de forma predeterminada en función del país de la dirección de facturación asociada a la primera suscripción de ese espacio empresarial. Para confirmar dónde se almacenan los datos de los clientes para los servicios de Office 365 existentes, vea la información de la ubicación de los datos específica del espacio empresarial en el Centro de administración de Office 365, en Configuración | Perfil de la organización | Tarjeta de ubicación de datos. Como alternativa, expanda el país en el que se basa su empresa, en la siguiente lista, para averiguar dónde se almacenarían los datos de los clientes en caso de empezar a usar un servicio de Office 365 en la actualidad.
+Los nuevos inquilinos de Microsoft 365 se predeterminan en geográfico en función del país de la dirección de facturación asociada con la primera suscripción del inquilino. Para confirmar dónde se almacenan los datos de los clientes para los servicios de Office 365 existentes, vea la información de la ubicación de los datos específica del espacio empresarial en el Centro de administración de Office 365, en Configuración | Perfil de la organización | Tarjeta de ubicación de datos. Como alternativa, expanda el país en el que se basa su empresa, en la lista siguiente, para averiguar dónde se almacenarían los datos de los clientes si debía empezar a usar un servicio de Microsoft 365 en la actualidad.
 
 ## <a name="afghanistan"></a>Afganistán
 <details><summary>Haga clic para expandir</summary><p>
@@ -141,6 +156,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -164,6 +180,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -187,6 +204,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -210,6 +228,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -228,11 +247,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -256,6 +276,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -274,11 +295,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -302,6 +324,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -325,6 +348,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -343,11 +367,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -371,6 +396,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -389,11 +415,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -412,11 +439,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -440,6 +468,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Australia |
 | Office Online y Office Mobile | Australia |
 | EOP | Australia |
+| Intune | Australia |
 | MyAnalytics | Australia |
 | Planner | Australia |
 | Sway | Estados Unidos |
@@ -463,6 +492,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -481,11 +511,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner |  Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -504,11 +535,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -532,6 +564,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -550,11 +583,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -573,11 +607,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -596,11 +631,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -624,6 +660,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -647,6 +684,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -665,11 +703,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -688,11 +727,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -711,11 +751,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -739,6 +780,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -762,6 +804,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -780,11 +823,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner |  Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -803,11 +847,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -826,11 +871,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -854,6 +900,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -872,11 +919,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -900,6 +948,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -918,11 +967,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -946,6 +996,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -964,11 +1015,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -987,11 +1039,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1010,11 +1063,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -1038,6 +1092,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1061,6 +1116,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Canadá |
 | Office Online y Office Mobile | Canadá |
 | EOP | Canadá |
+| Intune | Estados Unidos |
 | MyAnalytics | Canadá |
 | Planner | Canadá |
 | Sway | Estados Unidos |
@@ -1079,11 +1135,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1102,11 +1159,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1130,6 +1188,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1153,6 +1212,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1176,6 +1236,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1194,11 +1255,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -1217,11 +1279,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -1240,11 +1303,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -1268,6 +1332,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1286,11 +1351,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1314,6 +1380,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1337,6 +1404,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1355,11 +1423,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -1383,6 +1452,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1401,11 +1471,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1429,6 +1500,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -1447,11 +1519,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
-| SharePoint Online | Geografía global 3: América |
+| SharePoint en linea | Geografía global 3: América |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1475,6 +1548,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -1498,6 +1572,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -1521,6 +1596,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -1539,11 +1615,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1567,6 +1644,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1590,6 +1668,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1613,6 +1692,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1631,11 +1711,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1654,11 +1735,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1682,6 +1764,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1705,6 +1788,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1728,6 +1812,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -1746,11 +1831,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner |  Estados Unidos |
 | Sway | Estados Unidos |
@@ -1769,11 +1855,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
-| SharePoint Online | Geografía global 3: América |
+| SharePoint en linea | Geografía global 3: América |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1797,6 +1884,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -1815,11 +1903,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -1838,11 +1927,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Australia |
 | OneDrive para la Empresa | Australia |
-| SharePoint Online | Australia |
+| SharePoint en linea | Australia |
 | Skype Empresarial | Australia |
 | Microsoft Teams | Australia |
 | Office Online y Office Mobile | Australia |
 | EOP | Australia |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Australia |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -1861,11 +1951,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
-| SharePoint Online | Unión Europea |
+| SharePoint en linea | Unión Europea |
 | Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -1889,6 +1980,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Francia |
 | Office Online y Office Mobile | Francia |
 | EOP | Francia |
+| Intune | Unión Europea |
 | MyAnalytics | Francia |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -1912,6 +2004,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1930,11 +2023,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -1953,11 +2047,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -1981,6 +2076,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2004,6 +2100,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2022,11 +2119,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2050,6 +2148,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Alemania |
 | Office Online y Office Mobile | Alemania |
 | EOP | Alemania |
+| Intune | Unión Europea |
 | MyAnalytics | Alemania |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -2068,11 +2167,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2091,11 +2191,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2119,6 +2220,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -2137,11 +2239,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2165,6 +2268,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2188,6 +2292,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2206,11 +2311,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -2234,6 +2340,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2252,11 +2359,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2280,6 +2388,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2303,6 +2412,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2326,6 +2436,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2344,11 +2455,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2367,11 +2479,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2390,11 +2503,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2413,11 +2527,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2441,6 +2556,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2459,11 +2575,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -2487,6 +2604,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -2505,11 +2623,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2533,6 +2652,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | India |
 | Office Online y Office Mobile | India |
 | EOP | India |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | India |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -2551,11 +2671,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -2574,11 +2695,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2602,6 +2724,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -2620,11 +2743,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2643,11 +2767,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2671,6 +2796,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -2689,11 +2815,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2717,6 +2844,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Japón |
 | Office Online y Office Mobile | Japón |
 | EOP | Japón |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Japón |
 | Planner | Japón |
 | Sway | Estados Unidos |
@@ -2735,11 +2863,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2763,6 +2892,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2786,6 +2916,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2809,6 +2940,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -2832,6 +2964,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -2843,23 +2976,24 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Workplace Analytics | Estados Unidos |
 </p></details>
 
-## <a name="korea"></a>Corea
+## <a name="south-korea"></a>Corea del Sur
 <details><summary>Haga clic para expandir</summary><p>
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange Online | Corea |
-| OneDrive para la Empresa | Corea |
-| SharePoint Online | Corea |
-| Skype Empresarial | Corea |
-| Microsoft Teams | Corea |
-| Office Online y Office Mobile | Corea |
-| EOP | Corea |
-| MyAnalytics | Corea |
+| Exchange Online | Corea del Sur |
+| OneDrive para la Empresa | Corea del Sur |
+| SharePoint en linea | Corea del Sur |
+| Skype Empresarial | Corea del Sur |
+| Microsoft Teams | Corea del Sur |
+| Office Online y Office Mobile | Corea del Sur |
+| EOP | Corea del Sur |
+| Intune | Geografía global 2: Asia Pacífico |
+| MyAnalytics | Corea del Sur |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
-| Servicios de OneNote | Corea |
+| Servicios de OneNote | Corea del Sur |
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
@@ -2878,6 +3012,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2901,6 +3036,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2924,6 +3060,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -2942,11 +3079,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -2970,6 +3108,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -2993,6 +3132,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -3016,6 +3156,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3039,6 +3180,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3057,11 +3199,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3085,6 +3228,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Suiza |
 | Office Online y Office Mobile | Suiza |
 | EOP | Suiza |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Suiza |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -3103,11 +3247,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
-| SharePoint Online | Unión Europea |
+| SharePoint en linea | Unión Europea |
 | Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -3131,6 +3276,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -3149,11 +3295,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3177,6 +3324,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3195,11 +3343,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -3218,11 +3367,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -3241,11 +3391,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3269,6 +3420,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -3287,11 +3439,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -3315,6 +3468,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3333,11 +3487,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3356,11 +3511,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3379,11 +3535,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3407,6 +3564,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3430,6 +3588,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -3453,6 +3612,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -3471,11 +3631,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -3494,11 +3655,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -3522,6 +3684,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3545,6 +3708,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3568,6 +3732,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3586,11 +3751,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -3614,6 +3780,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3632,11 +3799,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -3655,11 +3823,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -3683,6 +3852,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -3701,11 +3871,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3724,11 +3895,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -3752,6 +3924,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Australia |
 | Office Online y Office Mobile | Australia |
 | EOP | Australia |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Australia |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -3770,11 +3943,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3798,6 +3972,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3821,6 +3996,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -3844,6 +4020,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -3867,6 +4044,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -3890,6 +4068,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -3913,6 +4092,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Noruega |
 | Office Online y Office Mobile | Noruega |
 | EOP | Noruega |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Noruega |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -3931,11 +4111,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -3954,11 +4135,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -3982,6 +4164,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -4005,6 +4188,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -4023,11 +4207,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4046,11 +4231,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -4074,6 +4260,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4097,6 +4284,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4115,11 +4303,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -4138,11 +4327,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -4166,6 +4356,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -4189,6 +4380,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -4212,6 +4404,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4230,11 +4423,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -4253,11 +4447,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -4276,11 +4471,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4304,6 +4500,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -4327,6 +4524,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -4350,6 +4548,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4373,6 +4572,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4396,6 +4596,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4419,6 +4620,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4442,6 +4644,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4465,6 +4668,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4488,6 +4692,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4511,6 +4716,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4529,11 +4735,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -4552,11 +4759,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -4580,6 +4788,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4603,6 +4812,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -4626,6 +4836,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4649,6 +4860,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -4672,6 +4884,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4690,11 +4903,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4713,11 +4927,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -4741,6 +4956,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4764,6 +4980,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -4787,6 +5004,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -4805,11 +5023,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -4828,11 +5047,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4856,6 +5076,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Sudáfrica |
 | Office Online y Office Mobile | Sudáfrica |
 | EOP | Sudáfrica |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Sudáfrica |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4874,11 +5095,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4902,6 +5124,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -4920,11 +5143,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -4948,6 +5172,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -4966,11 +5191,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -4989,11 +5215,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5012,11 +5239,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
-| SharePoint Online | Unión Europea |
+| SharePoint en linea | Unión Europea |
 | Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
+| Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -5040,6 +5268,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Suiza |
 | Office Online y Office Mobile | Suiza |
 | EOP | Suiza |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Suiza |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -5058,11 +5287,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -5086,6 +5316,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -5109,6 +5340,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5132,6 +5364,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -5155,6 +5388,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -5178,6 +5412,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5196,11 +5431,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -5219,11 +5455,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -5247,6 +5484,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5265,11 +5503,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5288,11 +5527,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -5311,11 +5551,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -5339,6 +5580,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5357,11 +5599,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -5385,6 +5628,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5403,11 +5647,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5426,11 +5671,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint en linea | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -5454,6 +5700,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Emiratos Árabes Unidos |
 | Office Online y Office Mobile | Emiratos Árabes Unidos |
 | EOP | Emiratos Árabes Unidos |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Emiratos Árabes Unidos |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -5477,6 +5724,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Reino Unido |
 | Office Online y Office Mobile | Reino Unido |
 | EOP | Reino Unido |
+| Intune | Unión Europea |
 | MyAnalytics | Reino Unido |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
@@ -5495,11 +5743,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
-| SharePoint Online | Estados Unidos |
+| SharePoint en linea | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5518,11 +5767,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
-| SharePoint Online | Geografía global 3: América |
+| SharePoint en linea | Geografía global 3: América |
 | Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
+| Intune | Estados Unidos |
 | MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5541,11 +5791,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -5569,6 +5820,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -5587,11 +5839,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -5615,6 +5868,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
+| Intune | Estados Unidos |
 | MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5633,11 +5887,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -5656,11 +5911,12 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | --- | --- |
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
-| SharePoint Online | Geografía global 2: Asia Pacífico |
+| SharePoint en linea | Geografía global 2: Asia Pacífico |
 | Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
+| Intune | Geografía global 2: Asia Pacífico |
 | MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
@@ -5684,6 +5940,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5707,6 +5964,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
@@ -5730,6 +5988,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
@@ -5753,6 +6012,7 @@ Los nuevos espacios empresariales de Office 365 se asocian de forma predetermina
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
+| Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |

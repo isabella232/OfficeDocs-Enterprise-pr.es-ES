@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumen: comprenda las relaciones de las organizaciones, las suscripciones, las licencias, las cuentas de usuario y los espacios empresariales en las ofertas de la nube de Microsoft.'
-ms.openlocfilehash: 65922f3ab8a88056ebc63d12cc0dcad37d6c49c8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: ad4307b2725fa37f6b28540b92895fc78f097c6c
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843981"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735968"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, cuentas y espacios empresariales para las ofertas de la nube de Microsoft
 
@@ -45,7 +45,7 @@ Estos son los elementos de la jerarquía:
   
 ### <a name="organization"></a>Organización
 
-Una organización representa una entidad empresarial que usa ofertas de la nube de Microsoft, normalmente identificadas por uno o más sistemas de nombres de dominio (DNS) público, como contoso.com. La organización es un contenedor para las suscripciones.
+An organization represents a business entity that is using Microsoft cloud offerings, typically identified by one or more public Domain Name System (DNS) domain names, such as contoso.com. The organization is a container for subscriptions.
   
 ### <a name="subscriptions"></a>Suscripciones
 
@@ -54,7 +54,7 @@ Una suscripción es un contrato con Microsoft para utilizar uno o más servicios
 - Las ofertas de la nube basadas en el software como servicio (SaaS) de Microsoft (Office 365, Intune/EMS y Dynamics 365) se cobran por precios de licencia por usuario. 
 - Las ofertas de la nube de plataforma como servicio (PaaS) y de infraestructura como servicio (IaaS) de Microsoft (Azure) se cobran en función del consumo de recursos de la nube.
  
-También puede usar una suscripción de prueba, pero la suscripción expira después de un periodo de tiempo o cargos por consumo determinados. Puede convertir una suscripción de prueba en una suscripción de pago.
+You can also use a trial subscription, but the subscription expires after a specific amount of time or consumption charges. You can convert a trial subscription to a paid subscription.
   
 Las organizaciones pueden tener varias suscripciones para las ofertas de la nube de Microsoft. En la ilustración 1, se muestra una sola organización con varias suscripciones de Office 365, una suscripción de Intune, una suscripción de Dynamics 365 y varias suscripciones de Azure.
 
@@ -73,9 +73,9 @@ Para las ofertas de la nube de SaaS de Microsoft, una licencia permite a una cue
   
 Para los servicios en la nube basados en PaaS de Azure, las licencias de software están integradas en los precios del servicio.
   
-Para las máquinas virtuales basadas en IaaS de Azure, podrían necesitarse licencias adicionales para utilizar el software o la aplicación instalada en una imagen de la máquina virtual. Algunas imágenes de máquina virtual tienen versiones con licencia de software instalado y el costo está incluido en la tarifa por minuto para el servidor. Algunos ejemplos son las imágenes de la máquina virtual para SQL Server 2014 y SQL Server 2016. 
+For Azure IaaS-based virtual machines, additional licenses to use the software or application installed on a virtual machine image might be required. Some virtual machine images have licensed versions of software installed and the cost is included in the per-minute rate for the server. Examples are the virtual machine images for SQL Server 2014 and SQL Server 2016. 
   
-Algunas imágenes de máquina virtual tienen versiones de prueba de aplicaciones instaladas y necesitan licencias adicionales de aplicación de software para su uso más allá del período de prueba. Por ejemplo, la imagen de la máquina virtual de prueba de SharePoint Server 2016 incluye una versión de prueba de SharePoint Server 2016 instalada previamente. Para seguir utilizando SharePoint Server 2016 después de la fecha de expiración de la versión de prueba, debe adquirir una licencia de SharePoint Server 2016 y licencias de cliente de Microsoft. Estos cargos son independientes de la suscripción de Azure y la tarifa por minuto para ejecutar la máquina virtual sigue vigente.
+Some virtual machine images have trial versions of applications installed and need additional software application licenses for use beyond the trial period. For example, the SharePoint Server 2016 Trial virtual machine image includes a trial version of SharePoint Server 2016 pre-installed. To continue using SharePoint Server 2016 after the trial expiration date, you must purchase a SharePoint Server 2016 license and client licenses from Microsoft. These charges are separate from the Azure subscription and the per-minute rate to run the virtual machine still applies.
   
 ### <a name="user-accounts"></a>Cuentas de usuario
 
@@ -89,11 +89,11 @@ En la ilustración 3, se muestra un ejemplo de varias suscripciones de una organ
   
 ### <a name="tenants"></a>Espacios empresariales
 
-Para las ofertas de la nube de SaaS, el inquilino es la ubicación regional que hospeda a los servidores que proporcionan servicios en la nube. Por ejemplo, Contoso Corporation eligió la región europea para hospedar a sus inquilinos de Office 365, EMS y Dynamics 365 para los 15.000 trabajadores en su sede de París.
+For SaaS cloud offerings, the tenant is the regional location that houses the servers providing cloud services. For example, the Contoso Corporation chose the European region to host its Office 365, EMS, and Dynamics 365 tenants for the 15,000 workers in their Paris headquarters.
   
-Los servicios de PaaS de Azure y las cargas de trabajo basadas en máquina virtual hospedadas en IaaS de Azure pueden tener un arrendamiento en cualquier centro de datos de Azure en todo el mundo. Especifique el centro de datos de Azure, conocido como la ubicación, al crear la aplicación o el servicio de PaaS de Azure, o el elemento de una carga de trabajo de IaaS.
+Azure PaaS services and virtual machine-based workloads hosted in Azure IaaS can have tenancy in any Azure datacenter across the world. You specify the Azure datacenter, known as the location, when you create the Azure PaaS app or service or element of an IaaS workload.
   
-Un inquilino de Azure AD es una instancia específica de Azure AD que contiene cuentas y grupos. Las suscripciones de prueba o de pago de Office 365, Dynamics 365 o Intune/EMS incluyen un inquilino gratuito de Azure AD. Este inquilino de Azure AD no incluye otros servicios de Azure y no es lo mismo que una suscripción de prueba o de pago de Azure.
+An Azure AD tenant is a specific instance of Azure AD containing accounts and groups. Paid or trial subscriptions of Office 365, Dynamics 365, or Intune/EMS include a free Azure AD tenant. This Azure AD tenant does not include other Azure services and is not the same as an Azure trial or paid subscription.
   
 ### <a name="summary-of-the-hierarchy"></a>Resumen de la jerarquía
 
@@ -129,7 +129,7 @@ Varias suscripciones de la oferta de la nube de Microsoft pueden usar el mismo i
 
 ![IDaaS de identidad como servicio (IaaS) para su organización.](media/Subscriptions/Subscriptions-Fig4.png)
   
-En la figura 4, se muestra cómo las ofertas de la nube de SaaS de Microsoft, las aplicaciones de PaaS de Azure y las máquinas virtuales de IaaS de Azure que usan Azure AD Domain Services usan un inquilino común de Azure AD. Azure AD Connect sincroniza el bosque de AD DS local con el inquilino de Azure AD.
+Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud offerings, Azure PaaS apps, and virtual machines in Azure IaaS that use Azure AD Domain Services. Azure AD Connect synchronizes the on-premises AD DS forest with the Azure AD tenant.
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>Combinación de suscripciones para varias ofertas de la nube de Microsoft
 

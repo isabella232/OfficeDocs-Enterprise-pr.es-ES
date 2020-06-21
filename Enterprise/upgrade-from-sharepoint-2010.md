@@ -19,16 +19,16 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: El soporte finaliza para SharePoint 2010 y SharePoint Server 2010 el 13 de abril de 2021. Use este artículo como guía para actualizar a SharePoint Online o a una versión más reciente de SharePoint Server local.
-ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
-ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
+ms.openlocfilehash: 906fd4a5189bba29e90f342c1c9199c927210bb2
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43532303"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774455"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Microsoft SharePoint 2010 y SharePoint Server 2010 alcanzarán el final del soporte técnico el **13 de abril de 2021**. En este artículo se detallan los recursos que le ayudarán a migrar los datos existentes de SharePoint Server 2010 a SharePoint Online en Office 365 o a actualizar el entorno local de SharePoint Server 2010.
   
@@ -57,7 +57,7 @@ Esta matriz ayuda a trazar un curso en lo referente a la migración de caracter�
   
 |**Fin del producto de soporte**|**Good**|**Procedimientos**|
 |:-----|:-----|:-----|
-|SharePoint Server 2010  <br/> |SharePoint Server 2013 (local)  <br/> |SharePoint Online  <br/> |
+|SharePoint Server 2010  <br/> |SharePoint Server 2013 (local)  <br/> |SharePoint en linea  <br/> |
 ||SharePoint Server 2013 híbrido con SharePoint Online  <br/> |SharePoint Server 2016 (local)  <br/> |
 |||Búsqueda híbrida en la nube de SharePoint  <br/> |
    
@@ -128,7 +128,7 @@ A partir de la última versión del producto local de SharePoint (SharePoint Ser
   
 |||
 |:-----|:-----|
-||Ruta de actualización en serie * * * *: SharePoint **\>** Server 2010 sharepoint **\>** server 2013 SharePoint Server 2016 |
+||Ruta de actualización en serie * * * *: SharePoint Server 2010 **\>** SharePoint server 2013 SharePoint server **\>** 2016 |
    
 Si elige seguir la ruta de acceso completa de SharePoint 2010 a SharePoint Server 2016, el tiempo y la planeación serán prolongados. Las actualizaciones implican un costo en términos de hardware actualizado (tenga en cuenta que también deben actualizarse los servidores SQL), el software y la administración. Además, puede ser necesario actualizar las personalizaciones o incluso abandonarlas. Asegúrese de recopilar notas en todas las personalizaciones críticas antes de actualizar la granja de servidores de SharePoint Server.
   
@@ -162,15 +162,15 @@ Comience por comparar los requisitos de hardware y software. Si no cumple los re
   
 - **Requisitos de hardware y software para**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | SharePoint Server 2010 SharePoint[Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - Límites **de software para**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | SharePoint Server 2010 SharePoint[Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **Información general sobre el proceso de actualización para**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | SharePoint Server 2010 SharePoint[Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Crear una solución híbrida de SharePoint entre SharePoint Online y SharePoint Server local
 

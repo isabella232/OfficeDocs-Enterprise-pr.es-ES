@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Obtenga acceso a los recursos para planear la implementación de Microsoft 365 Enterprise.
-ms.openlocfilehash: 106ee743f6f1ddd49d2d81d653f97bfa40566649
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 4b779365fc1dbad05e1eacbba1e346530952d372
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735798"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774475"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Planeación de Microsoft 365 Enterprise
 
@@ -33,7 +33,7 @@ Al mover una organización empresarial a Microsoft 365, es importante planear co
 
 ## <a name="planning-with-microsoft-365-fasttrack"></a>Planeación con Microsoft 365 FastTrack
 
-[FastTrack para microsoft 365](https://www.microsoft.com/en-us/fasttrack/microsoft-365) es el mejor método para obtener ayuda de Microsoft para planear la implementación de Microsoft 365. FastTrack puede ayudarle a través de las consideraciones de diseño más comunes y puede responder a preguntas durante el proceso. 
+[FastTrack para microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) es el mejor método para obtener ayuda de Microsoft para planear la implementación de Microsoft 365. FastTrack puede ayudarle a través de las consideraciones de diseño más comunes y puede responder a preguntas durante el proceso. 
 
 >[!Note]
 >También puede obtener ayuda de un [socio de Microsoft](https://www.microsoft.com/solution-providers/home).

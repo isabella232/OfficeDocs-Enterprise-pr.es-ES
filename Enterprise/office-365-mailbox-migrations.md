@@ -1,7 +1,7 @@
 ---
-title: Migraciones de buzones de Office 365
-ms.author: robmazz
-author: robmazz
+title: Migraciones de buzones de Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Un breve resumen de los cmdlets que se usan para las migraciones de buzones de Office 365.
-ms.openlocfilehash: b3af6d4b392e45a5200917bf5cebf22c601620a2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Un breve resumen de los cmdlets que se usan para las migraciones de buzones de correo de Microsoft 365.
+ms.openlocfilehash: 4c53737f4047df0751c4216b57d772bd6fe8acad
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843611"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774905"
 ---
-# <a name="office-365-mailbox-migrations"></a>Migraciones de buzones de Office 365
+# <a name="microsoft-365-mailbox-migrations"></a>Migraciones de buzones de Microsoft 365
 
 Con una implementación híbrida basada en Exchange, los clientes pueden elegir entre mover buzones de Exchange locales a una organización de [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) o mover buzones de correo de Exchange Online a una organización [local de Exchange](https://docs.microsoft.com/Exchange/exchange-server) . Los lotes de migración se usan cuando se mueven buzones de correo entre organizaciones locales y de Exchange Online.
 

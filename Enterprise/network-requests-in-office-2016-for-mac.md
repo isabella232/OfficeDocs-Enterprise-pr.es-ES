@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Las aplicaciones de Office para Mac proporcionan una experiencia de aplicación nativa en la plataforma de macOS. Cada aplicación está diseñada para trabajar en diversos escenarios, incluidos los Estados en los que no hay acceso a la red disponible. Cuando un equipo está conectado a una red, las aplicaciones se conectan automáticamente a una serie de servicios basados en web para proporcionar funciones mejoradas. En este documento se describen los puntos de conexión y las direcciones URL que las aplicaciones intentan alcanzar y los servicios que se proporcionan. Esta información es útil para solucionar problemas de configuración de red y establecer una directiva para los servidores proxy de red. Los detalles de este artículo tienen como objetivo complementar el artículo Office 365 URL y los intervalos de direcciones.
-ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844551"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774955"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Solicitudes de red en Office para Mac
 
@@ -52,7 +52,7 @@ Los siguientes puntos de conexión de red se usan para descargar el programa de 
   
 |**URL**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|
-|```https://go.microsoft.com/fwlink/```  <br/> |Provincia  <br/> |Portal de instalación de Office 365 reenviar el servicio de vínculos hacia delante a los paquetes de instalación más recientes.  <br/> |
+|```https://go.microsoft.com/fwlink/```  <br/> |Provincia  <br/> |Portal de instalación de Microsoft 365 reenviar el servicio de vínculo hacia delante a los paquetes de instalación más recientes.  <br/> |
 |```https://officecdn-microsoft-com.akamaized.net/```  <br/> |SS  <br/> |Ubicación de los paquetes de instalación en la red de entrega de contenido.  <br/> |
 |```https://officecdn.microsoft.com/```  <br/> |SS  <br/> |Ubicación de los paquetes de instalación en la red de entrega de contenido.  <br/> |
 |```https://officeci-mauservice.azurewebsites.net/```  <br/> |Provincia  <br/> |Punto de conexión de control de administración para Microsoft AutoUpdate  <br/> |
@@ -86,7 +86,7 @@ Los siguientes puntos de conexión de red se contactan en el primer inicio de un
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |Provincia  <br/> |Servicio de soporte técnico desde la aplicación.  <br/> |
 |```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |Provincia  <br/> |Servicio de detección de cuentas de correo electrónico.  <br/> |
 |```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |Provincia  <br/> |Detección automática de Outlook  <br/> |
-|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |Provincia  <br/> |Extremo de Outlook para el servicio de Office 365.  <br/> |
+|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |Provincia  <br/> |Extremo de Outlook para el servicio de Microsoft 365.  <br/> |
 |```https://r1.res.office365.com/```  <br/> |O  <br/> |Provincia  <br/> |Iconos para complementos de Outlook.  <br/> |
    
 > [!NOTE]
@@ -103,10 +103,10 @@ Los siguientes puntos de conexión de red se contactan al iniciar sesión en el 
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |Provincia  <br/> |Servicio de autorización de Windows  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |Provincia  <br/> |Servicio de inicio de sesión de Office 365 (OrgID)  <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |Provincia  <br/> |Servicio de inicio de sesión 365 de Microsoft (OrgID)  <br/> |
 |```https://login.live.com/```  <br/> |WXPON  <br/> |Provincia  <br/> |Servicio de inicio de sesión de la cuenta de Microsoft (MSA)  <br/> |
 |```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |COMPLEJO  <br/> |Ayudante del servicio de inicio de sesión de la cuenta de Microsoft (MSA)  <br/> |
-|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Office 365 de marca de inicio de sesión (OrgID)  <br/> |
+|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Microsoft 365 marcación de inicio de sesión (OrgID)  <br/> |
 |```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |COMPLEJO  <br/> |Documento y lugar donde se ubica el localizador de almacenamiento  <br/> |
 |```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |COMPLEJO  <br/> |Servicio de documentos usados recientemente (MRU)  <br/> |
    
@@ -115,7 +115,7 @@ Los siguientes puntos de conexión de red se contactan al iniciar sesión en el 
   
  **Activación del producto**
   
-Los siguientes puntos de conexión de red se aplican a las activaciones de suscripción de Office 365 y de licencia comercial. En concreto, esto no se aplica a las instalaciones de licencias por volumen.
+Los siguientes puntos de conexión de red se aplican a las activaciones de suscripción de Microsoft 365 y de licencia comercial. En concreto, esto no se aplica a las instalaciones de licencias por volumen.
   
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
@@ -123,7 +123,7 @@ Los siguientes puntos de conexión de red se aplican a las activaciones de suscr
    
  **Contenido nuevo**
   
-Los siguientes puntos de conexión de red se aplican solo a la suscripción de Office 365.
+Los siguientes puntos de conexión de red solo se aplican a la suscripción a Microsoft 365.
   
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
@@ -131,7 +131,7 @@ Los siguientes puntos de conexión de red se aplican solo a la suscripción de O
    
  **Investigador**
   
-Los siguientes puntos de conexión de red se aplican solo a la suscripción de Office 365.
+Los siguientes puntos de conexión de red solo se aplican a la suscripción a Microsoft 365.
   
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
@@ -141,7 +141,7 @@ Los siguientes puntos de conexión de red se aplican solo a la suscripción de O
    
  **Búsqueda inteligente**
   
-Los siguientes puntos de conexión de red se aplican tanto a la suscripción de Office 365 como a las activaciones de licencias por volumen o minorista.
+Los siguientes puntos de conexión de red se aplican a la suscripción de Microsoft 365 y a las activaciones de licencias por volumen o minorista.
   
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
@@ -153,7 +153,7 @@ Los siguientes puntos de conexión de red se aplican tanto a la suscripción de 
    
  **Diseñador de PowerPoint**
   
-Los siguientes puntos de conexión de red se aplican solo a la suscripción de Office 365.
+Los siguientes puntos de conexión de red solo se aplican a la suscripción a Microsoft 365.
   
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
@@ -161,7 +161,7 @@ Los siguientes puntos de conexión de red se aplican solo a la suscripción de O
    
  **Inicio rápido de PowerPoint**
   
-Los siguientes puntos de conexión de red se aplican solo a la suscripción de Office 365.
+Los siguientes puntos de conexión de red solo se aplican a la suscripción a Microsoft 365.
   
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
@@ -169,7 +169,7 @@ Los siguientes puntos de conexión de red se aplican solo a la suscripción de O
    
  **Enviar una sonrisa o una enfadada**
   
-Los siguientes puntos de conexión de red se aplican tanto a la suscripción de Office 365 como a las activaciones de licencias por volumen o minorista.
+Los siguientes puntos de conexión de red se aplican a la suscripción de Microsoft 365 y a las activaciones de licencias por volumen o minorista.
   
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
@@ -177,7 +177,7 @@ Los siguientes puntos de conexión de red se aplican tanto a la suscripción de 
    
  **Póngase en contacto con soporte técnico**
   
-Los siguientes puntos de conexión de red se aplican tanto a la suscripción de Office 365 como a las activaciones de licencias por volumen o minorista.
+Los siguientes puntos de conexión de red se aplican a la suscripción de Microsoft 365 y a las activaciones de licencias por volumen o minorista.
   
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
@@ -186,7 +186,7 @@ Los siguientes puntos de conexión de red se aplican tanto a la suscripción de 
    
  **Guardar como PDF**
   
-Los siguientes puntos de conexión de red se aplican tanto a la suscripción de Office 365 como a las activaciones de licencias por volumen o minorista.
+Los siguientes puntos de conexión de red se aplican a la suscripción de Microsoft 365 y a las activaciones de licencias por volumen o minorista.
   
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
@@ -194,7 +194,7 @@ Los siguientes puntos de conexión de red se aplican tanto a la suscripción de 
    
  **Aplicaciones de Office (también conocidas como complementos)**
   
-Los siguientes puntos de conexión de red se aplican a la suscripción de Office 365 y a las activaciones de licencias por volumen o minoristas cuando los complementos de aplicaciones de Office son de confianza.
+Los siguientes puntos de conexión de red se aplican a la suscripción de Microsoft 365 y a las activaciones de licencias por volumen o minoristas cuando los complementos de aplicaciones de Office son de confianza.
   
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
@@ -224,7 +224,7 @@ Los siguientes puntos de conexión de red se aplican a la suscripción de Office
    
  **Vínculos seguros**
   
-El siguiente punto de conexión de red se aplica a todas las aplicaciones de Office para Office 365 solo suscripción.
+El siguiente punto de conexión de red se aplica solo a todas las aplicaciones de Office para la suscripción a Microsoft 365.
   
 |**URL**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|
@@ -232,7 +232,7 @@ El siguiente punto de conexión de red se aplica a todas las aplicaciones de Off
    
  **Informes de bloqueo**
   
-El siguiente punto de conexión de red se aplica a todas las aplicaciones de Office para la suscripción de Office 365 y las activaciones de licencias por volumen o minorista. Cuando un proceso se bloquea inesperadamente, se genera un informe y se envía al servicio Watson.
+El siguiente punto de conexión de red se aplica a todas las aplicaciones de Office para la suscripción de Microsoft 365 y las activaciones de licencias por volumen o de venta. Cuando un proceso se bloquea inesperadamente, se genera un informe y se envía al servicio Watson.
   
 |**URL**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|
@@ -280,7 +280,7 @@ Office para Mac devuelve información de telemetría a Microsoft a intervalos re
     
 - **Uso** contiene información sobre cómo se usan las aplicaciones y los errores que no son irrecuperables. Estos datos se envían cada 60 minutos. 
     
-Microsoft se toma muy en serio su privacidad. Puede obtener información sobre la Directiva de recopilación de datos [https://privacy.microsoft.com](https://privacy.microsoft.com)de Microsoft en. Para evitar que las aplicaciones envíen una telemetría de "uso", se puede ajustar la preferencia **SendAllTelemetryEnabled** . La preferencia es por aplicación y se puede establecer a través de perfiles de configuración de macOS o manualmente desde terminal: 
+Microsoft se toma muy en serio su privacidad. Puede obtener información sobre la Directiva de recopilación de datos de Microsoft en [https://privacy.microsoft.com](https://privacy.microsoft.com) . Para evitar que las aplicaciones envíen una telemetría de "uso", se puede ajustar la preferencia **SendAllTelemetryEnabled** . La preferencia es por aplicación y se puede establecer a través de perfiles de configuración de macOS o manualmente desde terminal: 
   
 ```defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE```
 
