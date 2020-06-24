@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Su suscripción a Microsoft 365 incluye una suscripción a Azure AD. Integre Microsoft 365 con Azure AD si desea la sincronización de contraseña o el inicio de sesión único con el entorno local.
-ms.openlocfilehash: 40426c20f12cf17955457c38d809926550efa188
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
+ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774845"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842062"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Integración de Azure con Microsoft 365
 
@@ -40,7 +40,7 @@ Puede usar los asesores de implementación de Azure AD para una instalación gui
 
  - [Azure AD Connect Advisor](https://aka.ms/aadconnectpwsync)
  - [Asesor de implementación de AD FS](https://aka.ms/adfsguidance)
- - [Guía de instalación de Azure AD Premium](https://aka.ms/aadpguidance)
+ - [Guía de configuración de Azure AD](https://aka.ms/aadpguidance)
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Azure AD Editions y Microsoft 365 Identity Management
 
@@ -63,6 +63,6 @@ Para obtener más información acerca de Microsoft 365 y Azure AD, consulte [Und
    
 Obtenga más información en [aplicaciones integradas y Azure ad para los administradores de Microsoft 365](integrated-apps-and-azure-ads.md) y [la galería de aplicaciones de Azure ad y el inicio de sesión único](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
