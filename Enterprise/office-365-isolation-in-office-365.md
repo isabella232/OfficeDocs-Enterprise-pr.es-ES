@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Resumen: una explicación del aislamiento y el control de acceso dentro de las distintas aplicaciones de Office 365.'
-ms.openlocfilehash: 2cf98480a2a3f5d202198c9056ecb46d281e1a3e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
+ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844411"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44892129"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Aislamiento y Control de acceso en Office 365
 
@@ -41,7 +41,7 @@ El contenido de los buzones de usuario incluye:
 
 - Mensajes de correo electrónico y datos adjuntos
 - Información de disponibilidad y calendario
-- Contactos
+- Contacts
 - Tareas
 - Notas
 - Grupos
@@ -57,7 +57,7 @@ Skype empresarial almacena datos en varios lugares:
 - El contenido de la reunión y los datos cargados se almacenan en recursos compartidos del sistema de archivos distribuido (DFS). Este contenido también se puede archivar en Exchange Online si está habilitado. Los recursos compartidos DFS no tienen particiones por espacio empresarial. el contenido está protegido con ACL y la función de multiinquilino se aplica a través de RBAC.
 - Los registros de detalles de llamadas, que son el historial de actividades, como el historial de llamadas, las sesiones de mensajería instantánea, el uso compartido de aplicaciones, el historial de mi, etc., también se pueden almacenar en Exchange Online, pero la mayoría de los registros de detalles de llamadas se almacenan temporalmente en los servidores de registro de detalles de llamadas (CDR). El contenido no se divide en particiones por inquilino, pero la función de multiinquilino se aplica a través de RBAC.
 
-## <a name="sharepoint-online"></a>SharePoint Online
+## <a name="sharepoint-online"></a>SharePoint en linea
 
 SharePoint Online tiene varios mecanismos independientes que proporcionan aislamiento de datos. Almacena los objetos como código abstracto dentro de las bases de datos de la aplicación. Por ejemplo, cuando un usuario carga un archivo en SharePoint Online, el archivo se desensambla, traduce a código de aplicación y se almacena en varias tablas en varias bases de datos.
 
@@ -70,3 +70,33 @@ Se usa un *SubscriptionId* único para cada inquilino. Todos los sitios de clien
 SharePoint Online usa SQL Server y Azure Storage para el almacenamiento de metadatos de contenido. La clave de partición del almacén de contenido es *SiteId* en SQL. Cuando se ejecuta una consulta SQL, SharePoint Online usa un *SiteId* verificado como parte de una comprobación de *SubscriptionId* a nivel de inquilino.
 
 SharePoint Online almacena el contenido de los archivos cifrados en blobs de Microsoft Azure. Cada granja de servidores de SharePoint Online tiene su propia cuenta de Microsoft Azure y todos los blobs guardados en Azure se cifran individualmente con una clave almacenada en el almacén de contenido de SQL. La clave de cifrado protegida en el código por la capa de autorización y no expuesta directamente al usuario final. SharePoint Online tiene supervisión en tiempo real para detectar cuándo una solicitud HTTP lee o escribe datos para más de un espacio empresarial. Se realiza un seguimiento de la *suscripción* de identidad de solicitud en el *subscriptionId* del recurso al que se tiene acceso. Los usuarios finales nunca deben realizar solicitudes para obtener acceso a recursos de más de un espacio empresarial. Las solicitudes de servicio en un entorno de varios inquilinos son la única excepción. Por ejemplo, el rastreador de búsqueda extrae los cambios de contenido de toda la base de datos a la vez. Normalmente esto implica consultar sitios de más de un espacio empresarial en una sola solicitud de servicio, que se realiza por motivos de eficiencia.
+
+## <a name="teams"></a>Teams
+
+Los datos de los equipos se almacenan de forma diferente, en función del tipo de contenido. 
+
+Consulte la sesión de sesiones de encendido contra encendido [en la arquitectura de Microsoft Teams](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) para obtener una explicación detallada.
+
+### <a name="core-teams-customer-data"></a>Principales datos de clientes de Teams
+
+Si el espacio empresarial está aprovisionado en Australia, Canadá, la Unión Europea, Francia, Alemania, India, Japón, Sudáfrica, Corea del sur, Suiza (que incluye Liechtenstein), los Emiratos Árabes Unidos, el Reino Unido o los Estados Unidos, Microsoft almacena los siguientes datos de clientes en reposo solo dentro de esta ubicación:
+
+- Chats de Microsoft Teams, conversaciones de equipos y canales, imágenes, mensajes de correo de voz y contactos.
+- Contenido del sitio de SharePoint Online y archivos almacenados en el sitio.
+- Archivos cargados en OneDrive para el trabajo o la escuela.
+
+#### <a name="chat-channel-messages-team-structure"></a>Chat, mensajes de canal, estructura de equipo
+
+Cada equipo de Microsoft Teams está respaldado por un grupo de 365 de Microsoft y su sitio de SharePoint y buzón de correo de Exchange. Chats privados (incluidos los chats en grupo), los mensajes enviados como parte de una conversación en un canal y la estructura de los equipos y canales se almacenan en un servicio de chat que se ejecuta en Azure. Los datos también se almacenan en una carpeta oculta en los buzones de usuario y grupo para habilitar las características de protección de la información.
+
+#### <a name="voicemail-and-contacts"></a>Correo de voz y contactos
+
+Los correos de voz se almacenan en Exchange. Los contactos se almacenan en el almacén de datos en la nube basado en Exchange. Exchange y la tienda en la nube basada en Exchange ya proporcionan residencia de datos en cada uno de los GEOS del centro de datos en todo el mundo. Para todos los equipos, el correo de voz y los contactos se almacenan en país para Australia, Canadá, Francia, Alemania, India, Japón, los Emiratos Árabes Unidos, el Reino Unido, Sudáfrica, Corea del sur, Suiza (que incluye Liechtenstein) y los Estados Unidos. Para todos los demás países, los archivos se almacenan en la ubicación de EEUU, Europa o Asia-Pacífico según la afinidad de los inquilinos.
+
+#### <a name="images-and-media"></a>Imágenes y medios
+
+Los medios usados en los chats (excepto para los archivos GIF de Giphy que no se almacenan pero que son un vínculo de referencia a la dirección URL del servicio de Giphy original, el Giphy es un servicio que no es de Microsoft) se almacena en un servicio multimedia basado en Azure que se implementa en las mismas ubicaciones que el servicio de chat.
+
+#### <a name="files"></a>Archivos
+
+Archivos (incluidos OneNote y wiki) que alguien comparte en un canal se almacena en el sitio de SharePoint del equipo. Los archivos compartidos en un chat privado o un chat durante una reunión o llamada se cargan y almacenan en la cuenta de OneDrive para el trabajo o la escuela del usuario que comparte el archivo. Exchange, SharePoint y OneDrive ya proporcionan residencia de datos en cada uno de los GEOS del centro de datos en todo el mundo. Por lo tanto, para los clientes existentes, todos los archivos, blocs de notas de OneNote, contenido de wiki de equipos y buzones de correo que forman parte de la experiencia de Microsoft Teams ya están almacenados en la ubicación basada en la afinidad de espacio empresarial. Los archivos se almacenan en país para Australia, Canadá, Francia, Alemania, India, Japón, los Emiratos Árabes Unidos, el Reino Unido, Sudáfrica, Corea del sur y Suiza (que incluye Liechtenstein). Para todos los demás países, los archivos se almacenan en la ubicación de Estados Unidos, Europa o Asia Pacífico según la afinidad de los inquilinos.
