@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Información general sobre la característica de exhibición de documentos electrónicos y otras características de búsqueda de Microsoft 365 para auditar el uso y la transparencia.
-ms.openlocfilehash: d628bc9aa3964ffed671035a1f78f61d9632b87e
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: f4c401bf81767eb9111e6e8ca508cc3ee87152db
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774945"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906193"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Introducción a las características de exhibición de documentos electrónicos y búsqueda 365 de Microsoft 
 
@@ -35,7 +35,7 @@ La [búsqueda de contenido](https://support.office.com/article/Run-a-Content-Sea
 
 ## <a name="audit-log-search"></a>Búsqueda de registros de auditoría
 
-Además de realizar un seguimiento de los cambios en la organización de Microsoft 365, puede ver los informes de auditoría y exportar los registros de auditoría. Una vez que la auditoría está habilitada para un espacio empresarial de Microsoft 365, las actividades administrativas y de usuario se registran en los registros de eventos y pueden realizar búsquedas. Por ejemplo, puede usar el registro de auditoría de buzones de correo para realizar un seguimiento de las acciones realizadas en un buzón por otros usuarios que no sean el propietario del buzón. Los responsables de cumplimiento normativo pueden usar las capacidades de búsqueda y filtro para actividades de usuario específicas. Por ejemplo, para identificar a los usuarios que han visto o descargado un documento específico, si los administradores han realizado actividades de administración de usuarios o para ver los cambios en la configuración de inquilinos en los últimos 90 días. Los resultados de la búsqueda contienen información forense valiosa sobre actividades específicas realizadas por un usuario o un administrador. Consulte [Buscar en el registro de auditoría](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) para obtener una descripción de las actividades administrativas y de usuario registradas en Microsoft 365.
+Además de realizar un seguimiento de los cambios en la organización de Microsoft 365, puede ver los informes de auditoría y exportar los registros de auditoría. Una vez habilitada la auditoría como espacio empresarial de Microsoft 365, las actividades administrativas y de usuario se registran en los registros de eventos y pueden realizar búsquedas. Por ejemplo, puede usar el registro de auditoría de buzones de correo para realizar un seguimiento de las acciones realizadas en un buzón por otros usuarios que no sean el propietario del buzón. Los responsables de cumplimiento normativo pueden usar las capacidades de búsqueda y filtro para actividades de usuario específicas. Por ejemplo, para identificar a los usuarios que han visto o descargado un documento específico, si los administradores han realizado actividades de administración de usuarios o para ver los cambios en la configuración de inquilinos en los últimos 90 días. Los resultados de la búsqueda contienen información forense valiosa sobre actividades específicas realizadas por un usuario o un administrador. Consulte [Buscar en el registro de auditoría](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) para obtener una descripción de las actividades administrativas y de usuario registradas en Microsoft 365.
 
 Los eventos de SharePoint Online y OneDrive para la empresa se muestran en el registro en un plazo de 30 minutos de repeticiones. Los eventos de Exchange Online aparecen en los registros de auditoría en un plazo de 24 horas de repeticiones. Los eventos de inicio de sesión de Azure AD están disponibles en minutos de su ocurrencia y otros eventos de directorio de Azure AD están disponibles en un plazo de 24 horas de repeticiones. Puede exportar los purgadores en los resultados de búsqueda de registros de auditoría para un análisis más detallada. Se exporta un máximo de 50.000 entradas de una sola búsqueda de registro de auditoría. Para exportar más entradas que este límite, reduzca el intervalo de fechas o ejecute varias búsquedas en el registro de auditoría.
 
@@ -44,7 +44,7 @@ En la tabla siguiente se detalla parte de la información que se muestra en los 
 | Propiedad | Descripción |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | Fecha | Fecha y hora del evento |
-| User | Usuario que realizó la acción |
+| Usuario | Usuario que realizó la acción |
 | ClientIP | Dirección IPv4 o IPv6 del dispositivo que se usó cuando se registró la actividad. |
 | CreationTime | Fecha y hora en la hora universal coordinada (UTC) cuando el usuario llevó a cabo la actividad. |
 | EventSource | Identifica que se ha producido un evento. Los valores posibles son SharePoint y ObjectModel. |
