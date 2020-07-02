@@ -3,7 +3,7 @@ title: Extremos DoD del gobierno de Estados Unidos de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/16/2020
+ms.date: 06/29/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,18 +21,18 @@ f1.keywords:
 - NOCSH
 description: 'Resumen: Office 365 requiere conectividad a Internet. Los puntos de conexión a continuación deben ser accesibles para los clientes que usen solo planes de Office 365 U.S. Government DoD.'
 hideEdit: true
-ms.openlocfilehash: 7fc3f0919022903cc2b024b11e9ec17e84431bf0
-ms.sourcegitcommit: f2a4b77c8c3932beb1a78bf2f5bf793fefb3fa49
+ms.openlocfilehash: 15f6a39c5a17c9899ff6db24bc7c8d11565f0b37
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44747406"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997602"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Extremos DoD del gobierno de Estados Unidos de Office 365
 
 *Se aplica a: Office 365 administrador*
 
- **Resumen:** Office 365 requiere conectividad a Internet. Los puntos de conexión a continuación deben ser accesibles para los clientes que usen solo planes de Office 365 U.S. Government DoD.
+ Office 365 requiere conectividad a Internet. Los puntos de conexión a continuación deben ser accesibles para los clientes que usen solo planes de Office 365 U.S. Government DoD.
   
 > [!NOTE]
 > Microsoft has released a REST-based web service for the IP address and FQDN entries on this page. This new service will help you configure and update network perimeter devices such as firewalls and proxy servers. You can download the list of endpoints, the current version of the list, or specific changes. This service replaces the XML document linked from this page, which was deprecated on October 2, 2018. To try out this new service, go to [Web service](office-365-ip-web-service.md).
@@ -41,7 +41,7 @@ ms.locfileid: "44747406"
   
 |||
 |:-----|:-----|
-|**Última actualización:** 06/16/2020- ![ ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [suscripción de registro de cambios](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) de RSS <br/> |**Descargar:** lista completa en [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Última actualización:** 06/29/2020- ![ ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [suscripción de registro de cambios](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) de RSS <br/> |**Descargar:** lista completa en [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
  Comience con la administración de los puntos de conexión de [Office 365](managing-office-365-endpoints.md) para comprender nuestras recomendaciones para administrar la conectividad de red con estos datos. Los datos de puntos de conexión se actualizan al principio de cada mes con nuevas direcciones IP y direcciones URL publicadas 30 días antes de estar activo. Esto permite a los clientes que aún no tienen actualizaciones automatizadas para completar sus procesos antes de que sea necesaria una nueva conectividad. Los puntos de conexión también se pueden actualizar durante el mes si es necesario para resolver las escalaciones de soporte, los incidentes de seguridad u otros requisitos operativos inmediatos. Los datos que se muestran en esta página se generan a partir de los servicios web basados en REST. Si usa un script o un dispositivo de red para tener acceso a estos datos, debe ir directamente al [servicio Web](office-365-ip-web-service.md) .
 

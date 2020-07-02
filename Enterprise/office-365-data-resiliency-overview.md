@@ -1,7 +1,7 @@
 ---
-title: Resistencia de datos en Office 365
-ms.author: robmazz
-author: robmazz
+title: Resistencia de datos en Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Comprenda la resistencia de los datos en Microsoft Office 365.
-ms.openlocfilehash: 43eae5db254a0b352f44d60c81767dfa4caa33f3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Comprenda la resistencia de los datos en Microsoft 365.
+ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843681"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998474"
 ---
-# <a name="data-resiliency-in-office-365"></a>Resistencia de datos en Office 365
+# <a name="data-resiliency-in-microsoft-365"></a>Resistencia de datos en Microsoft 365
 
 ## <a name="introduction"></a>Introducción
 
@@ -39,9 +39,9 @@ La creación de la resistencia y la recuperación comienza con la suposición de
 
 Hoy en día, los clientes esperan una innovación continua de Microsoft sin poner en riesgo la calidad, y esto es uno de los motivos por los que los servicios y el software de Microsoft se construyen teniendo en cuenta la resistencia y la capacidad de recuperación. 
 
-## <a name="office-365-data-resiliency-principles"></a>Principios de resistencia de datos de Office 365
+## <a name="microsoft-365-data-resiliency-principles"></a>Principios de resistencia de datos de Microsoft 365
 
-La resistencia se refiere a la capacidad de un servicio basado en la nube para resistir determinados tipos de errores y seguir funcionando completamente desde el punto de vista de los clientes. La resistencia de los datos significa que, independientemente de los errores que se produzcan en Office 365, los datos críticos del cliente permanecen intactos y no se ven afectados. Para ello, los servicios de Office 365 se han diseñado en torno a cinco principios de resistencia específicos:
+La resistencia se refiere a la capacidad de un servicio basado en la nube para resistir determinados tipos de errores y seguir funcionando completamente desde el punto de vista de los clientes. La resistencia de los datos significa que, independientemente de los errores que se produzcan en Microsoft 365, los datos críticos de los clientes permanecen intactos y no se ven afectados. Para ello, los servicios de Microsoft 365 se han diseñado en torno a cinco principios de resistencia específicos:
 
 - Hay datos críticos y no críticos. Los datos no críticos (por ejemplo, si se ha leído un mensaje) se pueden interrumpir en escenarios de errores poco comunes. Los datos críticos (por ejemplo, datos de clientes como los mensajes de correo electrónico) deben protegerse con un costo muy bajo. Como objetivo de diseño, los mensajes de correo entregados son siempre críticos y los elementos como si se ha leído un mensaje no son críticos. 
 - Las copias de los datos de los clientes se deben separar en distintas zonas de errores o en tantos dominios de error como sea posible (por ejemplo, centros de datos, accesibles mediante credenciales únicas (proceso, servidor u operador) para proporcionar aislamiento de errores. 
@@ -49,7 +49,7 @@ La resistencia se refiere a la capacidad de un servicio basado en la nube para r
 - Los datos de los clientes deben protegerse de daños. Debe analizarse o supervisarse de forma activa, repararse y recuperarse. 
 - La mayoría de los resultados de pérdida de datos de acciones del cliente permiten que los clientes se recuperen por su cuenta mediante una interfaz gráfica de usuario que les permite restaurar los elementos eliminados accidentalmente. 
  
-Mediante la creación de nuestros servicios en la nube para estos principios, junto con una sólida prueba y validación, Office 365 es capaz de cumplir y superar los requisitos de los clientes, al tiempo que garantiza una plataforma para una innovación y mejora continuas. 
+Mediante la creación de nuestros servicios en la nube para estos principios, junto con una sólida prueba y validación, Microsoft 365 puede cumplir y superar los requisitos de los clientes, al tiempo que garantiza una plataforma para una innovación y mejora continuas. 
 
 ## <a name="related-links"></a>Vínculos relacionados
 

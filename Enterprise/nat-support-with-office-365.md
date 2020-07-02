@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: 'Resumen: proporciona detalles sobre cómo aproximar el número correcto de clientes que se pueden usar por dirección IP dentro de la organización mediante la traducción de direcciones de red (NAT).'
-ms.openlocfilehash: 6140cf664a08701e9491c241d5754d51196e3922
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 04aec45b7d6c68b3e32d4ee384c9927896849bab
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844571"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998545"
 ---
 # <a name="nat-support-with-office-365"></a>Compatibilidad de NAT con Office 365
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Anteriormente, las instrucciones sugieren que el número máximo de clientes de Exchange que debe usar por dirección IP para conectarse a Office 365 era aproximadamente de 2.000 clientes por puerto de red.
   
@@ -40,7 +40,7 @@ Para proporcionar acceso a Internet a los dispositivos en un espacio de direccio
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>¿Por qué necesita tener tantas conexiones abiertas a Office 365 al mismo tiempo?
 
-Outlook puede abrir ocho o más conexiones (en situaciones en las que hay complementos, calendarios compartidos, buzones de correo, etc.). Como hay un máximo de 64.000 puertos disponibles en un dispositivo NAT basado en Windows, puede haber un máximo de 8.000 usuarios detrás de una dirección IP antes de que se agoten los puertos. Tenga en cuenta que si los clientes usan dispositivos que no están basados en el sistema operativo Windows para NAT, los puertos totales disponibles dependen de qué dispositivo o software NAT se esté usando. En este escenario, el número máximo de puertos podría ser inferior a 64.000. La disponibilidad de los puertos también se ve afectada por otros factores, como Windows, restringiendo 4.000 puertos para su propio uso, lo que reduce el número total de puertos disponibles a 60, 000. puede haber otras aplicaciones, como Internet Explorer, que puedan conectarse al mismo tiempo. , requiriendo puertos adicionales.
+Outlook puede abrir ocho o más conexiones (en situaciones en las que hay complementos, calendarios compartidos, buzones de correo, etc.). Como hay un máximo de 64.000 puertos disponibles en un dispositivo NAT basado en Windows, puede haber un máximo de 8.000 usuarios detrás de una dirección IP antes de que se agoten los puertos. Tenga en cuenta que si los clientes usan dispositivos que no están basados en el sistema operativo Windows para NAT, los puertos totales disponibles dependen de qué dispositivo o software NAT se esté usando. En este escenario, el número máximo de puertos podría ser inferior a 64.000. La disponibilidad de los puertos también se ve afectada por otros factores, como Windows, restringiendo 4.000 puertos para su propio uso, lo que reduce el número total de puertos disponibles a 60, 000. puede haber otras aplicaciones, como Internet Explorer, que se puedan conectar al mismo tiempo y que requieran puertos adicionales.
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Calcular el número máximo de dispositivos admitidos detrás de una sola dirección IP pública con Office 365
 
@@ -60,7 +60,7 @@ Dispositivos máximos admitidos detrás de una sola dirección IP pública = (64
 
 A continuación, el máximo de dispositivos admitidos detrás de una sola dirección IP pública = (64.000-4000)/(6 + 4) = 6.000
   
-Con el lanzamiento del paquete de hospedaje de Office 365, incluido en las actualizaciones de septiembre de 2011 para Microsoft Office Outlook 2007 o de noviembre de 2011 para Microsoft Outlook 2010, o una actualización posterior, el número de conexiones de Outlook (Office Outlook 2007 con Service El paquete 2 y Outlook 2010) a Exchange pueden tener un mínimo de 2. Necesitará tener en cuentan los diferentes sistemas operativos, comportamientos de usuario, etc., para determinar el número mínimo y máximo de puertos que la red necesitará como pico.
+Con el lanzamiento del paquete de hospedaje de Office 365, incluido en las actualizaciones de septiembre de 2011 para Microsoft Office Outlook 2007 o de noviembre de 2011 para Microsoft Outlook 2010, o una actualización posterior, el número de conexiones de Outlook (Office Outlook 2007 con Service Pack 2 y Outlook 2010) a Exchange puede ser tan solo 2. Necesitará tener en cuentan los diferentes sistemas operativos, comportamientos de usuario, etc., para determinar el número mínimo y máximo de puertos que la red necesitará como pico.
   
 Si desea admitir más dispositivos detrás de una sola dirección IP pública, siga los pasos descritos para evaluar el número máximo de dispositivos que se pueden admitir:
   
@@ -76,7 +76,7 @@ Use la fórmula anterior para calcular el número máximo de usuarios por direcc
   
 Hay varios métodos para distribuir la carga de clientes a través de direcciones IP públicas adicionales. Las estrategias disponibles dependen de las capacidades de la solución de puerta de enlace corporativa. La solución más sencilla es segmentar el espacio de direcciones de usuario y "asignar" estáticamente una cantidad de direcciones IP a cada puerta de enlace. Otra alternativa que muchos dispositivos de puerta de enlace ofrece es la capacidad de usar un grupo de direcciones IP. La ventaja del grupo de direcciones es que es mucho más dinámica y menos probable que sea necesario ajustarse a medida que crece la base de usuarios.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

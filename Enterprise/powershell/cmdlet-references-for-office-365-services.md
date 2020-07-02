@@ -14,17 +14,15 @@ f1.keywords:
 ms.custom: Ent_Office_Other
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: 'Resumen: Busque los temas de referencia de los cmdlets de PowerShell de Office 365 para Azure Active Directory, Exchange Online, SharePoint Online, Skype empresarial online y el cumplimiento de & de seguridad.'
-ms.openlocfilehash: 0fe0f87bdb2110630706e276092012af86ff5044
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a3e24025149adef61120e245115a1b0f9877e3da
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841647"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997396"
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Referencias de cmdlets para los servicios de Office 365
 
- **Resumen:** Busque los temas de referencia de los cmdlets de PowerShell de Office 365 para Azure Active Directory, Exchange Online, SharePoint Online, Skype empresarial online y el cumplimiento de & de seguridad.
-  
 Los temas de referencia de cmdlet para los distintos servicios de Office 365 proporcionan información detallada e instrucciones sobre cómo usar cada cmdlet. Además, cada servicio de Office 365 que tiene compatibilidad con PowerShell requiere distintas instrucciones de conexión.
   
 > [!NOTE]
@@ -45,7 +43,7 @@ Los temas de referencia de los cmdlets de Exchange Online se encuentran en la se
 Para obtener instrucciones de conexión para Exchange Online PowerShell, haga clic en [conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
   
 > [!NOTE]
-> Los cmdlets de informes para otros servicios, como la actividad del usuario de SharePoint Online, Skype Empresarial Online y Office 365, están disponibles en Exchange Online PowerShell. Para obtener más información, consulte [Cmdlets de informes en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691595). 
+> Reporting cmdlets for other services, for example, SharePoint Online, Skype for Business Online, and Office 365 user activity are available in Exchange Online PowerShell. For more information, see [Reporting cmdlets in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691595). 
   
 ## <a name="sharepoint-online-powershell-cmdlets"></a>Cmdlets de PowerShell de SharePoint Online
 
@@ -61,9 +59,9 @@ Para obtener instrucciones de conexión para PowerShell de Skype empresarial onl
 
 ## <a name="security-amp-compliance-center-powershell-cmdlets"></a>Cmdlets de PowerShell del Centro de seguridad y cumplimiento
 
-Los temas de &amp; referencia de los cmdlets del centro de seguridad y cumplimiento de Office 365 se encuentran en la sección **referencia** de la [documentación de PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+&amp;Los temas de referencia de los cmdlets del centro de seguridad y cumplimiento de Office 365 se encuentran en la sección **referencia** de la [documentación de PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
   
-Para obtener instrucciones de conexión &amp; para PowerShell del centro de seguridad y cumplimiento, haga clic en [conectar con PowerShell del centro de seguridad &amp; y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Para obtener instrucciones de conexión para &amp; PowerShell del centro de seguridad y cumplimiento, haga clic en [conectar con &amp; PowerShell del centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 
   

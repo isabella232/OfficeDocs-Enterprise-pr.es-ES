@@ -1,7 +1,7 @@
 ---
-title: Office 365 destrucción de datos
-ms.author: robmazz
-author: robmazz
+title: Destrucción de datos de 365 de Microsoft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Información general sobre las directivas de Microsoft sobre reciclado, eliminación o destrucción de los servidores y las unidades de disco del centro de datos de Office 365.
-ms.openlocfilehash: 2ad73206309751729f776081d66d6c6d5daf1308
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Información general sobre las directivas de Microsoft sobre reciclado, eliminación o destrucción de los servidores y las unidades de disco del centro de datos de Microsoft 365.
+ms.openlocfilehash: 8e0725f449dd999c0f892543883a775695969dc9
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843691"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998444"
 ---
-# <a name="office-365-data-destruction"></a>Office 365 destrucción de datos
+# <a name="microsoft-365-data-destruction"></a>Destrucción de datos de 365 de Microsoft
 
 ## <a name="physical-data-destruction"></a>Destrucción de datos físicos
 
-Microsoft tiene datos que controlan las directivas estándar que abordan el reciclaje y la eliminación de las unidades de disco y los servidores con o sin errores. Antes de reutilizar cualquiera de las unidades de disco de Office 365, Microsoft realiza un proceso de limpieza física coherente con las directrices de la publicación especial National Institute of Standards and Technology 800-88 ([NIST SP 800-88 para la limpieza de medios](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)). Como todas las unidades de disco en Office 365 se cifran con cifrado de nivel de volumen de BitLocker, el borrado compatible con el SP 800-88 no es técnicamente necesario. Sin embargo, Microsoft realiza este proceso.
+Microsoft tiene datos que controlan las directivas estándar que abordan el reciclaje y la eliminación de las unidades de disco y los servidores con o sin errores. Antes de reutilizar cualquiera de las unidades de disco de Microsoft 365, Microsoft realiza un proceso de limpieza física coherente con las directrices de la publicación especial National Institute of Standards and Technology 800-88 ([NIST SP 800-88 para la limpieza de medios](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)). Como todas las unidades de disco en Microsoft 365 se cifran con cifrado de nivel de volumen de BitLocker, el borrado compatible con NIST SP 800-88 no es técnicamente necesario. Sin embargo, Microsoft realiza este proceso.
 
-Los discos con errores que se usan en los centros de TI de Office 365 se destruyen y auditan físicamente a través del proceso ISO. Tipo de activo determina los medios adecuados de eliminación. En el caso de las unidades de disco duro que no se pueden eliminar, Microsoft usa un proceso de destrucción para destruir los medios y representar la recuperación de la información que no se pueda. Por ejemplo, los discos están físicamente destruidos, Pulverized o incinerados. Microsoft conserva todos los registros de la destrucción y realiza un proceso de saneamiento similar en los servidores reutilizados en Office 365. Estas instrucciones abarcan la limpieza electrónica y física.
+Los discos con errores que se usan en los centros de recursos de Microsoft 365 se destruyen y auditan físicamente a través del proceso ISO. Tipo de activo determina los medios adecuados de eliminación. En el caso de las unidades de disco duro que no se pueden eliminar, Microsoft usa un proceso de destrucción para destruir los medios y representar la recuperación de la información que no se pueda. Por ejemplo, los discos están físicamente destruidos, Pulverized o incinerados. Microsoft conserva todos los registros de la destrucción y realiza un proceso de saneamiento similar en los servidores que se reutilizan en Microsoft 365. Estas instrucciones abarcan la limpieza electrónica y física.
 
 Cada centro de información usa un proceso de destrucción física en el sitio para eliminar sus discos. Las ubicaciones seguras para medios de almacenamiento designados para la eliminación de discos se encuentran en cada área del centro de información. Cada estación de ubicación segura tiene una vigilancia de monitorado de vídeo. Una vez que una ubicación de cancelación alcanza aproximadamente el 50% de capacidad, el equipo de servicios de sitio se pone en contacto con el equipo de seguridad físico para coordinar la eliminación. El personal de servicios del sitio y una oficina de seguridad quitan la bandeja de eliminación segura y la colocan en un área de almacenamiento seguro designada. Las directivas y los procedimientos que rigen el tratamiento de los dispositivos de cojinete de datos durante la eliminación se prueban rutinariamente, incluidos los procedimientos para garantizar la condición de maquinaria aprobada para la destrucción.
 

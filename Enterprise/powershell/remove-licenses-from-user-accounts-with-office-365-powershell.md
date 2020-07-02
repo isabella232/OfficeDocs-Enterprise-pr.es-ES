@@ -3,7 +3,7 @@ title: Eliminar licencias de cuentas de usuario con PowerShell de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/26/2020
+ms.date: 06/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Explica cómo usar Office 365 PowerShell para quitar licencias de Office 365 que se han asignado anteriormente a los usuarios.
-ms.openlocfilehash: f5b1dc18dfd53548d1e49a3193315acc0343f816
-ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
+ms.openlocfilehash: 0b21415b5acbd2c332d9bc171a5ab80cb7954b95
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374459"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997416"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Eliminar licencias de cuentas de usuario con PowerShell de Office 365
 
@@ -46,14 +46,9 @@ Por último, especifique los nombres de inicio de sesión y de plan de licencias
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
 $planName="<license plan name from the list of license plans>"
-$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
-$licenses.AddLicenses = $license
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
-$Licenses.AddLicenses = @()
-$Licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$License.RemoveLicenses = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $license
 ```
 
 Para quitar todas las licencias de una cuenta de usuario específica, especifique el nombre de inicio de sesión de usuario, quite los caracteres "<" y ">" y ejecute estos comandos.
@@ -161,7 +156,7 @@ kakers@contoso.com
   Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "<AccountSkuId1>","<AccountSkuId2>"...
   }
   ```
-En este ejemplo se quita la licencia **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) de las cuentas de usuario definidas en el archivo de texto c:\Mis documentos\cuentas.txt.
+En este ejemplo se quita la licencia **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) de las cuentas de usuario definidas en el archivo de texto c:\Mis Documents\Accounts.txt.
     
   ```powershell
   $x=Get-Content "C:\My Documents\Accounts.txt"
@@ -183,7 +178,7 @@ Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveL
 
 Otra forma de liberar una licencia consiste en eliminar la cuenta de usuario. Para obtener más información, vea [eliminar y restaurar cuentas de usuario con Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Administrar cuentas de usuario, licencias y grupos con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

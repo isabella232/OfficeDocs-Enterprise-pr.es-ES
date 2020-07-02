@@ -1,7 +1,7 @@
 ---
-title: Aislamiento y control de acceso de Office 365 en Office 365
-ms.author: robmazz
-author: robmazz
+title: Aislamiento y control de acceso en Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,23 +15,23 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: 'Resumen: una explicación del aislamiento y el control de acceso dentro de las distintas aplicaciones de Office 365.'
-ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
-ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
+description: 'Resumen: una explicación del aislamiento y el control de acceso dentro de las distintas aplicaciones de Microsoft 365.'
+ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44892129"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998794"
 ---
-# <a name="isolation-and-access-control-in-office-365"></a>Aislamiento y Control de acceso en Office 365
+# <a name="isolation-and-access-control-in-microsoft-365"></a>Aislamiento y control de acceso en Microsoft 365
 
-Azure Active Directory y Office 365 usan un modelo de datos muy complejo que incluye decenas de servicios, cientos de entidades, miles de relaciones y decenas de miles de atributos. En un nivel alto, Azure Active Directory y los directorios de servicio son los contenedores de los inquilinos y los destinatarios que se mantienen sincronizados mediante protocolos de replicación basados en el estado. Además de la información de directorio contenida en Azure Active Directory, cada una de las cargas de trabajo de servicio tiene su propia infraestructura de servicios de directorio.
+Azure Active Directory Ry (Azure AD) y Microsoft 365 usan un modelo de datos muy complejo que incluye decenas de servicios, cientos de entidades, miles de relaciones y decenas de miles de atributos. En un nivel alto, Azure AD y los directorios de servicio son los contenedores de los inquilinos y los destinatarios que se mantienen sincronizados mediante protocolos de replicación basados en el estado. Además de la información de directorio contenida en Azure AD, cada una de las cargas de trabajo de servicio tiene su propia infraestructura de servicios de directorio.
  
-![Sincronización de datos del espacio empresarial de Office 365](media/office-365-isolation-tenant-data-sync.png)
+![Sincronización de datos del espacio empresarial de 365 de Microsoft](media/office-365-isolation-tenant-data-sync.png)
 
-Dentro de este modelo, no hay un único origen de datos de directorio. Sistemas específicos que poseen partes individuales de datos, pero ningún sistema único contiene todos los datos. Los servicios de Office 365 cooperan con Azure Active Directory en este modelo de datos. Azure Active Directory es el "sistema de verdad" para datos compartidos, que normalmente son datos pequeños y estáticos que usan todos los servicios. El modelo federado usado en Office 365 y Azure Active Directory proporciona la vista compartida de los datos.
+Dentro de este modelo, no hay un único origen de datos de directorio. Sistemas específicos que poseen partes individuales de datos, pero ningún sistema único contiene todos los datos. Los servicios de Microsoft 365 cooperan con Azure AD en este modelo de datos. Azure AD es el "sistema de verdad" para datos compartidos, que normalmente son datos pequeños y estáticos que usan todos los servicios. El modelo federado usado en Microsoft 365 y Azure AD proporciona la vista compartida de los datos.
 
-Office 365 usa el almacenamiento físico y el almacenamiento en la nube de Azure. Exchange Online (incluida la protección en línea de Exchange) y Skype empresarial usan su propio almacenamiento para los datos de clientes. SharePoint Online usa el almacenamiento de SQL Server y Azure Storage, de ahí la necesidad de un aislamiento adicional de los datos de cliente en el nivel de almacenamiento.
+Microsoft 365 usa el almacenamiento físico y el almacenamiento en la nube de Azure. Exchange Online (incluida la protección en línea de Exchange) y Skype empresarial usan su propio almacenamiento para los datos de clientes. SharePoint Online usa el almacenamiento de SQL Server y Azure Storage, de ahí la necesidad de un aislamiento adicional de los datos de cliente en el nivel de almacenamiento.
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -47,7 +47,7 @@ El contenido de los buzones de usuario incluye:
 - Grupos
 - Datos de inferencia
 
-Cada base de datos de buzones de correo de Exchange Online contiene buzones de varios inquilinos. Un código de autorización protege cada buzón de correo, incluido en un arrendamiento. De forma predeterminada, solo el usuario asignado tiene acceso a un buzón. La lista de control de acceso (ACL) que protege a un buzón de correo contiene una identidad autenticada por Azure Active Directory en el nivel de espacio empresarial. Los buzones de cada inquilino están limitados a identidades autenticadas en el proveedor de autenticación del inquilino, que solo incluye a los usuarios de ese inquilino. El contenido del espacio empresarial A no puede ser obtenido de ninguna manera por los usuarios del inquilino B, a menos que lo apruebe explícitamente el inquilino A.
+Cada base de datos de buzones de correo de Exchange Online contiene buzones de varios inquilinos. Un código de autorización protege cada buzón de correo, incluido en un arrendamiento. De forma predeterminada, solo el usuario asignado tiene acceso a un buzón. La lista de control de acceso (ACL) que protege un buzón de correo contiene una identidad autenticada por Azure AD en el nivel de espacio empresarial. Los buzones de cada inquilino están limitados a identidades autenticadas en el proveedor de autenticación del inquilino, que solo incluye a los usuarios de ese inquilino. El contenido del espacio empresarial A no puede ser obtenido de ninguna manera por los usuarios del inquilino B, a menos que lo apruebe explícitamente el inquilino A.
 
 ## <a name="skype-for-business"></a>Skype Empresarial
 
@@ -57,13 +57,13 @@ Skype empresarial almacena datos en varios lugares:
 - El contenido de la reunión y los datos cargados se almacenan en recursos compartidos del sistema de archivos distribuido (DFS). Este contenido también se puede archivar en Exchange Online si está habilitado. Los recursos compartidos DFS no tienen particiones por espacio empresarial. el contenido está protegido con ACL y la función de multiinquilino se aplica a través de RBAC.
 - Los registros de detalles de llamadas, que son el historial de actividades, como el historial de llamadas, las sesiones de mensajería instantánea, el uso compartido de aplicaciones, el historial de mi, etc., también se pueden almacenar en Exchange Online, pero la mayoría de los registros de detalles de llamadas se almacenan temporalmente en los servidores de registro de detalles de llamadas (CDR). El contenido no se divide en particiones por inquilino, pero la función de multiinquilino se aplica a través de RBAC.
 
-## <a name="sharepoint-online"></a>SharePoint en linea
+## <a name="sharepoint-online"></a>SharePoint Online
 
 SharePoint Online tiene varios mecanismos independientes que proporcionan aislamiento de datos. Almacena los objetos como código abstracto dentro de las bases de datos de la aplicación. Por ejemplo, cuando un usuario carga un archivo en SharePoint Online, el archivo se desensambla, traduce a código de aplicación y se almacena en varias tablas en varias bases de datos.
 
 Si un usuario puede obtener acceso directo al almacenamiento que contiene los datos, el contenido no se puede interpretar como un usuario ni un sistema que no sea SharePoint Online. Estos mecanismos incluyen las propiedades y el control de acceso de seguridad. Todos los recursos de SharePoint Online están protegidos por el código de autorización y la Directiva RBAC, incluso dentro de un arrendamiento. La lista de control de acceso (ACL) que protege un recurso contiene una identidad autenticada en el nivel de espacio empresarial. Los datos de SharePoint Online para un espacio empresarial se limitan a las identidades autenticadas por el proveedor de autenticación para el inquilino.
 
-Además de las ACL, una propiedad de nivel de inquilino que especifica el proveedor de autenticación (que es el Azure Active Directory específico del inquilino), se escribe una vez y no se puede cambiar una vez establecido. Una vez que se ha establecido la propiedad de inquilino de proveedor de autenticación para un espacio empresarial, no se puede cambiar mediante ninguna API expuesta a un inquilino.
+Además de las ACL, una propiedad de nivel de inquilino que especifica el proveedor de autenticación (que es el Azure AD específico del inquilino), se escribe una vez y no se puede cambiar una vez establecido. Una vez que se ha establecido la propiedad de inquilino de proveedor de autenticación para un espacio empresarial, no se puede cambiar mediante ninguna API expuesta a un inquilino.
 
 Se usa un *SubscriptionId* único para cada inquilino. Todos los sitios de clientes pertenecen a un inquilino y se les asigna un *SubscriptionId* único para el inquilino. La propiedad *SubscriptionId* de un sitio se escribe una vez y es permanente. Una vez que se ha asignado a un inquilino, no se puede mover un sitio a un inquilino diferente. El *SubscriptionId* es la clave que se usa para crear el ámbito de seguridad para el proveedor de autenticación y está ligado al espacio empresarial.
 

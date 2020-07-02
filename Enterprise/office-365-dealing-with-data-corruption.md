@@ -1,7 +1,7 @@
 ---
-title: Office 365 tratar con daños en los datos
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 tratar los daños en los datos
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Una explicación de los datos dañados en Office 365 y los esfuerzos de prevención y recuperación de Microsoft.
-ms.openlocfilehash: 1477ab4dca0f9126eb04b76b9f8f65ff0b5eefc8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Una explicación de los datos dañados en Microsoft 365 y los esfuerzos de prevención y recuperación de Microsoft.
+ms.openlocfilehash: 674f2a3a026c5706f5c3a23db6e2d968ed815656
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844491"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998454"
 ---
-# <a name="dealing-with-data-corruption-in-office-365"></a>Tratar los daños en los datos en Office 365
+# <a name="dealing-with-data-corruption-in-microsoft-365"></a>Información relacionada con los datos dañados en Microsoft 365
 
 Uno de los aspectos desafiantes de la ejecución de un servicio en la nube a gran escala es cómo controlar los daños en los datos, dado el gran volumen de datos y sistemas independientes. Los daños en los datos pueden deberse a:
 
@@ -32,7 +32,7 @@ Uno de los aspectos desafiantes de la ejecución de un servicio en la nube a gra
 - Hackers malintencionados y empleados descontentos
 - Incidentes en servicios externos que resultan en alguna pérdida de datos
 
-Debido a que una mayor resistencia en la integridad de los datos significa menos incidentes de corrupción de datos, Microsoft ha integrado en los mecanismos de protección de Office 365 para evitar que se produzcan daños, así como sistemas y procesos que nos permiten recuperar datos si es así. Las comprobaciones y procesos existen en las distintas fases del proceso de lanzamiento de ingeniería para aumentar la resistencia contra daños en los datos, entre los que se incluyen:
+Debido a que una mayor resistencia en la integridad de los datos significa menos incidentes de daños en los datos, Microsoft ha integrado los mecanismos de protección 365 de Microsoft para evitar que se produzcan daños, así como sistemas y procesos que nos permiten recuperar datos si es así. Las comprobaciones y procesos existen en las distintas fases del proceso de lanzamiento de ingeniería para aumentar la resistencia contra daños en los datos, entre los que se incluyen:
 
 - Diseño del sistema
 - Estructura y organización del código
@@ -40,4 +40,4 @@ Debido a que una mayor resistencia en la integridad de los datos significa menos
 - Pruebas unitarias, pruebas de integración y pruebas del sistema
 - Pruebas/puertas de cables de viaje
 
-Dentro de los entornos de producción de Office 365, la replicación del mismo nivel entre centros de datos garantiza que siempre habrá varias copias activas de todos los datos. Las imágenes y los scripts estándar se usan para recuperar los servidores perdidos y los datos replicados se usan para restaurar los datos del cliente. Debido a las comprobaciones y procesos integrados de resistencia de datos, Microsoft solo mantiene copias de seguridad de la documentación del sistema de información de Office 365 (incluida la documentación relacionada con la seguridad) mediante la replicación integrada en SharePoint Online y nuestro código interno Repository Tool, Source Depot. La documentación del sistema se almacena en SharePoint Online y Source Depot contiene imágenes del sistema y de la aplicación. SharePoint Online y Source Depot usan el control de versiones y se replican casi en tiempo real.
+Dentro de los entornos de producción de Microsoft 365, la replicación del mismo nivel entre centros de datos garantiza que siempre habrá varias copias activas de todos los datos. Las imágenes y los scripts estándar se usan para recuperar los servidores perdidos y los datos replicados se usan para restaurar los datos del cliente. Debido a las comprobaciones y procesos integrados de resistencia de datos, Microsoft solo mantiene copias de seguridad de la documentación del sistema de información de Microsoft 365 (incluida la documentación relacionada con la seguridad), mediante la replicación integrada en SharePoint Online y nuestra herramienta de repositorio de código interno, Source Depot. La documentación del sistema se almacena en SharePoint Online y Source Depot contiene imágenes del sistema y de la aplicación. SharePoint Online y Source Depot usan el control de versiones y se replican casi en tiempo real.

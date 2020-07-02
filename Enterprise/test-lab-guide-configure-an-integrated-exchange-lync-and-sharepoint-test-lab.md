@@ -15,16 +15,16 @@ ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 f1.keywords:
 - NOCSH
 description: 'Resumen: obtenga información sobre cómo crear un entorno de pruebas que contenga un servidor con Exchange Server 2013, un servidor con Lync Server 2013 y un servidor con SharePoint Server 2013.'
-ms.openlocfilehash: 6041f47520f7a02efe08d05835ca0f15dfd6633a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bfb2e1be3b9bb401514e736d38a6f1a2944940f0
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841107"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996524"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guía del laboratorio de pruebas: Configurar un laboratorio de pruebas integrado de Exchange, Lync y SharePoint
 
- **Resumen:** obtenga información sobre cómo crear un entorno de pruebas integrado que contenga un servidor con Exchange Server 2013, un servidor con Lync Server 2013 y un servidor con SharePoint Server 2013.
+ Aprenda a crear un entorno de pruebas integrado que contenga un servidor que ejecute Exchange Server 2013, un servidor que ejecute Lync Server 2013 y un servidor que ejecute SharePoint Server 2013.
  
 **Ver el vídeo informativo de la guía del entorno de pruebas de Exchange, Lync y SharePoint**
 

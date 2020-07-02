@@ -18,19 +18,17 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Resumen: describe las consideraciones sobre la capacidad de red, los aceleradores WAN y los dispositivos de equilibrio de carga que se usan para conectarse a Office 365.'
-ms.openlocfilehash: 9776611aa64f8783a22252a2c4182e63bda1093a
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+ms.openlocfilehash: 5015a146f92a32bd0200088517b6673ae00f8f64
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419378"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998639"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planificación de dispositivos de red que se conecten a servicios de Office 365
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
   
-**Resumen**: describe las consideraciones sobre la capacidad de red, los aceleradores WAN y los dispositivos de equilibrio de carga que se usan para conectarse a Office 365.
-
 Es posible que el hardware de red tenga limitaciones en el número de sesiones simultáneas que se admiten. Para las organizaciones que tienen más de 2.000 usuarios, recomendamos que supervisen sus dispositivos de red para garantizar que puedan controlar el tráfico adicional del servicio Office 365. El software de supervisión del Protocolo simple de administración de redes (SNMP) puede ayudarle a hacerlo.
 
 ||
@@ -72,7 +70,7 @@ Proporcionamos una solución NLB basada en software integrada en Windows Server.
 
 Para obtener más información sobre cómo configurar firewalls y servidores proxy para conectarse a Office 365, consulte Administración de puntos de conexión de [office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), evaluación de la [conectividad de red](assessing-network-connectivity.md)de Office 365 y preguntas más frecuentes de los puntos de conexión de [Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) para obtener más información acerca de los dispositivos y la selección de circuitos.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Guías de configuración de servicios de Office 365](setup-guides-for-office-365.md)
 

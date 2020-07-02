@@ -1,7 +1,7 @@
 ---
-title: Office 365 supervisión y pruebas de los límites de inquilino
-ms.author: robmazz
-author: robmazz
+title: Límites de inquilinos de supervisión y prueba de Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,43 +14,43 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumen: una explicación de cómo Microsoft supervisa y comprueba los límites de inquilino para Office 365.'
-ms.openlocfilehash: 757e80296e63e5379474448c0d89763371472aa2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Resumen: una explicación de cómo Microsoft supervisa y comprueba los límites de inquilino para Microsoft 365.'
+ms.openlocfilehash: 4511b7cce47cdad76cdcce89dcd6f9d14a7f0a4b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842637"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998659"
 ---
 # <a name="monitoring-and-testing-tenant-boundaries"></a>Supervisar y probar los límites de inquilinos
 
 Microsoft supervisa y comprueba explícitamente los puntos débiles y las vulnerabilidades en los límites de los inquilinos, incluida la supervisión de intrusiones, intentos de infracción de permisos y inanición de recursos. También usamos varios sistemas internos para supervisar continuamente la utilización de recursos inadecuados, que, si se detectan, desencadena una limitación integrada.
 
-Office 365 tiene sistemas de supervisión internos que supervisan continuamente los errores y la recuperación automática cuando se detecta un error. Office 365 sistemas analizan las desviaciones en el comportamiento del servicio e inician procesos de recuperación automática integrados en el sistema. Office 365 también usa una supervisión externa en la que la supervisión se realiza desde varias ubicaciones, desde servicios de terceros de confianza (para la comprobación de SLA independiente) y nuestros propios centros de recursos para generar alertas. Para los diagnósticos, tenemos un registro, una auditoría y un seguimiento extensivos. El seguimiento y la supervisión granular nos ayudan a aislar los problemas y realizar un análisis rápido y eficaz de la causa de origen.
+Microsoft 365 tiene sistemas de supervisión internos que supervisan continuamente los errores y la recuperación automática cuando se detecta un error. Los sistemas Microsoft 365 analizan las desviaciones en el comportamiento del servicio e inician los procesos de recuperación automática integrados en el sistema. Microsoft 365 también usa una supervisión externa en la que la supervisión se realiza desde varias ubicaciones, desde servicios de terceros de confianza (para la comprobación de SLA independiente) y nuestros propios centros de recursos para generar alertas. Para los diagnósticos, tenemos un registro, una auditoría y un seguimiento extensivos. El seguimiento y la supervisión granular nos ayudan a aislar los problemas y realizar un análisis rápido y eficaz de la causa de origen.
 
-Aunque Office 365 tiene acciones de recuperación automatizadas siempre que sea posible, los ingenieros de llamadas de Microsoft están disponibles 24 horas al día, para investigar todas las escalaciones de seguridad de gravedad 1, y las revisiones post mortem de cada incidente de servicio contribuye a un aprendizaje continuo y desarrollo. Este equipo incluye ingenieros de soporte técnico, desarrolladores de productos, administradores de programas, jefes de producto y liderazgo Senior. Nuestros profesionales de la llamada proporcionan una copia de seguridad oportuna y a menudo pueden automatizar las acciones de recuperación, de modo que la próxima vez que se produzca un evento, se puede solucionar por sí misma.
+Aunque Microsoft 365 tiene acciones de recuperación automatizadas siempre que es posible, los ingenieros de llamadas de Microsoft están disponibles 24 horas al día, para investigar todas las escalaciones de seguridad de gravedad 1, y las revisiones post mortem de cada incidente de servicio contribuye a la mejora y el aprendizaje continuos. Este equipo incluye ingenieros de soporte técnico, desarrolladores de productos, administradores de programas, jefes de producto y liderazgo Senior. Nuestros profesionales de la llamada proporcionan una copia de seguridad oportuna y a menudo pueden automatizar las acciones de recuperación, de modo que la próxima vez que se produzca un evento, se puede solucionar por sí misma.
 
-Microsoft realiza una revisión exhaustiva posterior al incidente cada vez que se produce un incidente de seguridad de Office 365 independientemente de la magnitud del impacto. Una revisión posterior al incidente consiste en un análisis de lo ocurrido, cómo respondemos y cómo evitaría incidentes similares en el futuro. En aras de la transparencia y la responsabilidad, compartimos la revisión posterior al incidente por cualquier incidente importante del servicio con los clientes afectados. Para obtener detalles específicos, consulte [Office 365 Security Incident Management](https://aka.ms/Office365SIM).
+Microsoft realiza una revisión exhaustiva posterior al incidente cada vez que se produce un incidente de seguridad de Microsoft 365, independientemente de la magnitud del impacto. Una revisión posterior al incidente consiste en un análisis de lo ocurrido, cómo respondemos y cómo evitaría incidentes similares en el futuro. En aras de la transparencia y la responsabilidad, compartimos la revisión posterior al incidente por cualquier incidente importante del servicio con los clientes afectados. Para obtener detalles específicos, consulte [Office 365 Security Incident Management](https://aka.ms/Office365SIM).
 
 ## <a name="assume-breach-methodology"></a>Asumir una metodología de infracciones
 
-Basándose en análisis detallados de tendencias de seguridad, Microsoft defiende y destaca la necesidad de inversiones adicionales en procesos y tecnologías de seguridad reactivos que se centran en la detección y la respuesta a amenazas emergentes, en lugar de en la única prevención de esas amenazas. Debido a los cambios en el panorama de las amenazas y el análisis exhaustivo, Microsoft ha refinado su estrategia de seguridad más allá de sólo evitar infracciones de seguridad a un mejor equipado para enfrentarse a las brechas en caso de que se produzcan (una estrategia que considere eventos de seguridad principales) que no como una cuestión de IF, pero cuando.
+Basándose en análisis detallados de las tendencias de seguridad, Microsoft aboga y destaca la necesidad de inversiones adicionales en procesos y tecnologías de seguridad reactivos que se centran en la detección y la respuesta a amenazas emergentes, en lugar de evitar únicamente esas amenazas. Debido a los cambios en el panorama de las amenazas y el análisis exhaustivo, Microsoft ha refinado su estrategia de seguridad más allá de sólo evitar infracciones de seguridad a un mejor equipado para enfrentarse a las brechas que se produzcan (una estrategia que considere eventos de seguridad principales no tan importante si, pero cuándo).
 
 Mientras que Microsoft [asume](https://www.microsoft.com/TrustCenter/Security/default.aspx) que se han implementado prácticas de violación durante muchos años, muchos clientes no conocen el trabajo que se realiza en segundo plano para reforzar la nube de Microsoft. Asuma un incumplimiento es una mentalidad que guía las inversiones en seguridad, las decisiones de diseño y las prácticas de seguridad operacional. Supongamos que la infracción de seguridad se aplica a las aplicaciones, servicios, identidades y redes al tratarlas todos (internos y externos) como no seguras y ya en peligro. Aunque la estrategia de infracciones no proviene de una infracción real de cualquier servicio de Microsoft Enterprise o de la nube, fue un reconocimiento que muchas organizaciones, en la industria, se violaban a pesar de todos los intentos de evitarlo. Aunque la prevención de las infracciones es una parte fundamental de las operaciones de la organización, estas prácticas deben probarse y aumentarse continuamente para enfrentarse de manera eficaz a las amenazas modernas adversarios y avanzadas. Para que cualquier organización pueda prepararse para una infracción, primero debe crear y mantener procedimientos de respuesta de seguridad sólidos, repetibles y probados minuciosamente.
 
 Aunque evitar los procesos de seguridad de incumplimiento, como la modelación de amenazas, las revisiones de código y las pruebas de seguridad son muy útiles como parte del [ciclo de vida de desarrollo de seguridad](https://www.microsoft.com/securityengineering/sdl/), suponer un incumplimiento ofrece numerosas ventajas que ayudan a tener en cuenta la seguridad general al ejercitar y medir las funcionalidades reactivas en caso de una infracción.
 
-En Microsoft, nos hemos pensado en lograrlo a través de ejercicios de guerra en curso y pruebas de penetración en el sitio en directo de nuestros planes de respuesta de seguridad con el objetivo de mejorar nuestra capacidad de detección y respuesta. Microsoft simula periódicamente las infracciones en el mundo real, dirige la supervisión de seguridad continua y practica la administración de incidentes de seguridad para validar y mejorar la seguridad de Office 365, Azure y otros servicios en la nube de Microsoft.
+En Microsoft, nos hemos pensado en lograrlo a través de ejercicios de guerra en curso y pruebas de penetración en el sitio en directo de nuestros planes de respuesta de seguridad con el objetivo de mejorar nuestra capacidad de detección y respuesta. Microsoft simula periódicamente infracciones en el mundo real, dirige la supervisión de seguridad continua y practica la administración de incidentes de seguridad para validar y mejorar la seguridad de Microsoft 365, Azure y otros servicios en la nube de Microsoft.
 
 Microsoft ejecuta su estrategia de seguridad de infracciones con dos grupos principales:
 - Equipos de color rojo (atacantes)
 - Equipos azules (defensores)
 
-El personal de Microsoft Azure y Office 365 es equipo de equipos rojos y azules independientes a tiempo completo.
+El personal de Microsoft Azure y Microsoft 365, independiente de los equipos de color rojo y azul independientes a tiempo completo.
 
-Conocido como "[equipo rojo](https://go.microsoft.com/fwlink/?linkid=518599)", el enfoque es probar sistemas y operaciones de Azure y Office 365 con las mismas tácticas, técnicas y procedimientos que los adversarios reales, con la infraestructura de producción activa, sin la foreknowledge de los equipos de ingeniería u operación. Esto prueba las capacidades de detección y respuesta de seguridad de Microsoft y ayuda a identificar las vulnerabilidades de producción, los errores de configuración, los supuestos no válidos y otros problemas de seguridad de manera controlada. Cada infracción de equipo en rojo va seguida de una divulgación completa entre los dos equipos para identificar brechas, conclusiones de la dirección y mejora de la respuesta a las infracciones.
+Conocido como "[equipo en rojo](https://go.microsoft.com/fwlink/?linkid=518599)", el enfoque es probar sistemas y operaciones de Azure y Microsoft 365 con las mismas tácticas, técnicas y procedimientos que con la adversarios real, con la infraestructura de producción activa, sin la foreknowledge de los equipos de ingeniería u operación. Esto prueba las capacidades de detección y respuesta de seguridad de Microsoft y ayuda a identificar las vulnerabilidades de producción, los errores de configuración, los supuestos no válidos y otros problemas de seguridad de manera controlada. Cada infracción de equipo en rojo va seguida de una divulgación completa entre los dos equipos para identificar brechas, conclusiones de la dirección y mejora de la respuesta a las infracciones.
 
-**Nota**: los datos de los clientes no se destinan deliberadamente durante la formación de equipos rojos o las pruebas de penetración en sitios activos. Las pruebas están relacionadas con las plataformas y la infraestructura de Office 365 y Azure, así como con los propios espacios empresariales, aplicaciones y datos de Microsoft. Los inquilinos de cliente, las aplicaciones y el contenido hospedados en Office 365 o Azure nunca se dirigen.
+**Nota**: los datos de los clientes no se destinan deliberadamente durante la formación de equipos rojos o las pruebas de penetración en sitios activos. Las pruebas se comparan con las plataformas y las infraestructuras de Microsoft 365 y Azure, así como con los propios espacios empresariales, aplicaciones y datos de Microsoft. Los inquilinos de cliente, las aplicaciones y el contenido hospedados en Microsoft 365 o Azure nunca se dirigen.
 
 ## <a name="red-teams"></a>Equipos rojos
 

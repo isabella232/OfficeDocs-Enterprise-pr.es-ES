@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use esta información para obtener información sobre cómo Office 365 usa redes de entrega de contenido (CDN) para mejorar el rendimiento.
-ms.openlocfilehash: a9840cd325d30febdbef62e7cddf22640bffac42
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 21dc32da619a8f5f7521d07213156f2ab86fc876
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840637"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997476"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de entrega de contenido (CDN)
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Las redes CDN ayudan a mantener Office 365 rápido y fiable para los usuarios finales. Servicios en la nube como Office 365 usar CDN para almacenar en caché activos estáticos más cerca de los exploradores que les soliciten acelerar las descargas y reducir la latencia de usuario final. La información de este tema le ayudará a obtener información sobre las redes de entrega de contenido (CDN) y cómo se usan en Office 365.
 
@@ -37,7 +37,7 @@ Las redes CDN ayudan a mantener Office 365 rápido y fiable para los usuarios fi
 
 Una red CDN es una red distribuida geográficamente que consta de servidores proxy y de archivos en centros de recursos conectados por redes troncales de alta velocidad. Los CDN se usan para reducir los tiempos de latencia y carga de un conjunto especificado de archivos y objetos en un servicio o sitio Web. Una red CDN puede tener varios miles de puntos de conexión para un mantenimiento óptimo de las solicitudes entrantes desde cualquier ubicación.
 
-Las CDN se suelen usar para proporcionar descargas más rápidas de contenido genérico para un sitio web o servicio como archivos JavaScript, iconos e imágenes, y también pueden proporcionar acceso privado al contenido del usuario, como archivos en bibliotecas de documentos de SharePoint Online, archivos multimedia de transmisión por secuencias y código personalizado.
+Las CDN se suelen usar para proporcionar descargas más rápidas de contenido genérico para un sitio web o servicio, como archivos JavaScript, iconos e imágenes, y también pueden proporcionar acceso privado al contenido del usuario, como los archivos de las bibliotecas de documentos de SharePoint Online, archivos multimedia de transmisión por secuencias y código personalizado.
 
 La mayoría de los servicios de nube de empresa usan las CDN. Los servicios en la nube como Office 365 tienen millones de clientes que descargan una combinación de contenido propietario (como correos electrónicos) y contenido genérico (como iconos) a la vez. Es más eficaz poner las imágenes que usan todos los usuarios, como iconos, lo más cerca posible del equipo del usuario. No es práctico para todos los servicios en la nube la creación de centros de datos de CDN que almacenen este contenido genérico en todas las áreas metropolitanas, o incluso en todos los principales concentradores de Internet en todo el mundo, de modo que se compartan algunas de estas redes CDN.
 
@@ -53,7 +53,7 @@ Las CDN ayudan a mejorar el rendimiento del servicio de nube de varias maneras:
 
 ## <a name="the-office-365-cdn"></a>La red CDN de Office 365
 
-La red de entrega de contenido (CDN) integrada de Office 365 permite a los administradores de Office 365 proporcionar un mejor rendimiento para las páginas de SharePoint Online de su organización al almacenar en caché activos estáticos más cerca de los exploradores que les solicitan, lo que ayuda a acelerar descarga y reduce la latencia. La red CDN de Office 365 usa el [protocolo http/2](https://en.wikipedia.org/wiki/HTTP/2) para mejorar la compresión y la velocidad de descarga.
+La red de entrega de contenido (CDN) integrada de Office 365 permite a los administradores de Office 365 proporcionar un mejor rendimiento para las páginas de SharePoint Online de su organización al almacenar en caché activos estáticos más cerca de los exploradores que les solicitan, lo que ayuda a acelerar las descargas y a reducir la latencia. La red CDN de Office 365 usa el [protocolo http/2](https://en.wikipedia.org/wiki/HTTP/2) para mejorar la compresión y la velocidad de descarga.
 
 > [!NOTE]
 > La red CDN de Office 365 solo está disponible para los inquilinos en la nube de **producción** (en todo el mundo). Actualmente, los inquilinos de las nubes del gobierno de Estados Unidos, China y Alemania no admiten la red CDN de Office 365.
@@ -88,7 +88,7 @@ Para obtener información sobre el módulo de PowerShell de la red CDN de Azure,
 
 ### <a name="microsoft-ajax-cdn"></a>RED CDN de Microsoft Ajax
 
-La **red CDN de Ajax** de Microsoft es una red CDN de solo lectura que ofrece muchas bibliotecas de desarrollo populares, como jQuery (y todas sus otras bibliotecas), ASP.NET AJAX, Bootstrap, Knockout. js y otras.
+La **red CDN de Ajax** de Microsoft es una red CDN de solo lectura que ofrece muchas bibliotecas de desarrollo populares, como jQuery (y todas sus otras bibliotecas), ASP.NET AJAX, Bootstrap, Knockout.js y otras.
   
 Para incluir estos scripts en su proyecto, simplemente reemplace todas las referencias a estas bibliotecas disponibles públicamente por referencias a la dirección de la red CDN en lugar de incluirla en el propio proyecto. Por ejemplo, use el siguiente código para vincular a jQuery:
 
@@ -106,9 +106,9 @@ Independientemente de qué red CDN configure para el inquilino de Office 365, el
 
 2. Office 365 ambos devuelve los datos directamente en su cliente o, si los datos forman parte de un conjunto de contenido hospedado por la red CDN, redirige el cliente a la dirección URL de la red CDN.
 
-    a. Si los datos ya están almacenados en la memoria caché de un origen _público_ , el cliente descarga los datos directamente desde la ubicación de la red CDN más cercana a su cliente.
+    A. Si los datos ya están almacenados en la memoria caché de un origen _público_ , el cliente descarga los datos directamente desde la ubicación de la red CDN más cercana a su cliente.
 
-    b. Si los datos ya están almacenados en la memoria caché de un origen _privado_ , el servicio de CDN comprueba los permisos de la cuenta de usuario de Office 365 en el origen. Si tiene permisos, SharePoint Online genera dinámicamente una dirección URL personalizada compuesta por la ruta de acceso al activo en la red CDN y dos tokens de acceso y devuelve la dirección URL personalizada a su cliente. A continuación, el cliente descarga los datos directamente desde la ubicación de la red CDN más cercana a su cliente mediante la dirección URL personalizada.
+    B. Si los datos ya están almacenados en la memoria caché de un origen _privado_ , el servicio de CDN comprueba los permisos de la cuenta de usuario de Office 365 en el origen. Si tiene permisos, SharePoint Online genera dinámicamente una dirección URL personalizada compuesta por la ruta de acceso al activo en la red CDN y dos tokens de acceso y devuelve la dirección URL personalizada a su cliente. A continuación, el cliente descarga los datos directamente desde la ubicación de la red CDN más cercana a su cliente mediante la dirección URL personalizada.
 
 3. Si los datos no se almacenan en caché en la red CDN, el nodo de la red CDN solicita los datos de Office 365 y, a continuación, almacena los datos en la memoria caché durante un período de tiempo después de que el cliente descargue los datos.
 
@@ -128,11 +128,11 @@ Las redes CDN que usa Office 365 siempre están sujetas a cambios y, en muchos c
 |---------|---------|---------|---------|
 |RED CDN de Office 365     |Download         |Recursos genéricos en orígenes públicos, contenido de usuario de SharePoint en orígenes privados         |[Uso de la red de entrega de contenido de Office 365 con SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)         |
 |RED CDN de Azure     |Microsoft         |Código personalizado, soluciones de SharePoint Framework         |[CDN de Microsoft Azure](https://azure.microsoft.com/documentation/services/cdn/)         |
-|RED CDN de Microsoft Ajax (solo lectura)     |Microsoft         |Bibliotecas comunes para Ajax, jQuery, ASP.NET, Bootstrap, Knockout. js, etc.         |[RED CDN de Microsoft Ajax](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
+|RED CDN de Microsoft Ajax (solo lectura)     |Microsoft         |Bibliotecas comunes para Ajax, jQuery, ASP.NET, Bootstrap, Knockout.js etc.         |[RED CDN de Microsoft Ajax](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>¿Qué beneficios de rendimiento proporciona una red CDN?
 
-Hay muchos factores implicados en la medición de diferencias específicas de rendimiento entre los datos descargados directamente desde Office 365 y los datos descargados desde una CDN específica, como la ubicación relativa al espacio empresarial y el extremo de red CDN más cercano, el número de activos en una página que atiende la red CDN y cambios transitorios en la latencia y el ancho de banda de la red. Sin embargo, una prueba A/B sencilla puede ayudar a mostrar la diferencia en el tiempo de descarga de un archivo específico.
+Hay muchos factores implicados en la medición de diferencias específicas de rendimiento entre los datos descargados directamente desde Office 365 y los datos descargados desde una CDN específica, como la ubicación relativa a su espacio empresarial y el punto de conexión de red CDN más cercano, el número de activos de una página que atiende la red CDN y cambios transitorios en la latencia de red y el ancho de banda. Sin embargo, una prueba A/B sencilla puede ayudar a mostrar la diferencia en el tiempo de descarga de un archivo específico.
 
 En las siguientes capturas de pantalla se muestra la diferencia en la velocidad de descarga entre la ubicación nativa de archivos en Office 365 y el mismo archivo hospedado en la [red de entrega de contenido de Microsoft Ajax](https://docs.microsoft.com/aspnet/ajax/cdn/overview). Estas capturas de pantalla se encuentran en la pestaña **red** de las herramientas de desarrollo de Internet Explorer 11. En estas capturas de pantalla se muestra la latencia de la biblioteca de jQuery de la popular. Para que aparezca esta pantalla, en Internet Explorer, presione **F12** y seleccione la pestaña **red** , que se simbólica con un icono de Wi-Fi.
   
@@ -193,7 +193,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/o365cdn
 
 [Principios de conectividad de red de Office 365](https://aka.ms/o365networkingprinciples)
 
-[Evaluar la conectividad de red de Office 365](assessing-network-connectivity.md)
+[Evaluar la red de Office 365](assessing-network-connectivity.md)
 
 [Administrar puntos de conexión de Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
 

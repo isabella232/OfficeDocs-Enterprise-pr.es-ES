@@ -1,7 +1,7 @@
 ---
-title: Office 365 defender servicios en la nube contra ataques por denegación de servicio
-ms.author: robmazz
-author: robmazz
+title: Defensa de los servicios en la nube de Microsoft 365 contra ataques por denegación de servicio
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,21 +15,21 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Modo en que Microsoft defiende sus servicios en la nube contra ataques por denegación de servicio (DoS).
-ms.openlocfilehash: 042748927ddfa4d81fa3c62b98ab8f1114a8ada0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843621"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998334"
 ---
-# <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>Defensa de los servicios en la nube de Microsoft contra ataques por denegación de servicio
+# <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>Defensa de los servicios en la nube de Microsoft 365 contra ataques por denegación de servicio
 
 ## <a name="introduction"></a>Introducción
 Los centros de recursos de Microsoft están protegidos por seguridad de defensa en profundidad que incluye entradas de perímetro, cámaras de vídeo, personal de seguridad y entradas seguras que usan la biometría, la tarjeta inteligente y la autenticación multifactor. La seguridad de defensa en profundidad sigue en todas las áreas de la instalación y en cada unidad física del servidor. La [infraestructura de nube de Microsoft y el grupo de operaciones](https://www.microsoft.com/cloud-platform/global-datacenters) proporcionan la infraestructura básica y las tecnologías de base para nuestros servicios en la nube. Nuestros centros de recursos cumplen con los estándares de la industria para la seguridad y la confiabilidad física y son administrados, supervisados y administrados por el personal de operaciones de Microsoft.
 
 Para proteger aún más nuestros servicios en la nube, Microsoft proporciona un sistema de defensa DDoS que forma parte de los procesos de supervisión continua de Microsoft Azure y pruebas de penetración. El sistema de defensa DDoS de Azure está diseñado no solo para resistir ataques desde el exterior, sino también desde otros inquilinos de Azure. Azure usa técnicas de detección y mitigación estándar como cookies SYN, limitación de velocidad y límites de conexión para proteger contra ataques DDoS.
 
-Los servicios en la nube de Microsoft están sujetos a la amenaza de ataque de varios orígenes. Para mitigar y proteger contra las distintas amenazas de DoS, se ha desarrollado e implementado un sistema de detección y mitigación de amenazas basado en Azure de alta escalabilidad y dinámica con el objetivo principal de proteger la infraestructura subyacente de DoS ataques y ayudar a evitar interrupciones del servicio para los clientes de servicios en la nube. El sistema de mitigación de DoS de Azure protege el tráfico entrante, saliente y de región a región.
+Los servicios en la nube de Microsoft están sujetos a la amenaza de ataque de varios orígenes. Para mitigar y proteger contra las distintas amenazas de DoS, se ha desarrollado e implementado un sistema de detección y mitigación de amenazas dinámico y escalable de Azure con el objetivo principal de proteger la infraestructura subyacente frente a ataques DoS y ayudar a evitar interrupciones del servicio para los clientes de servicios en la nube. El sistema de mitigación de DoS de Azure protege el tráfico entrante, saliente y de región a región.
 
 La mayoría de los ataques de DoS se inician con destinos en las capas de red (L3) y transporte (L4) del modelo de [interconexión de sistemas abiertos](https://docs.microsoft.com/windows-hardware/drivers/network/windows-network-architecture-and-the-osi-model) (OSI). Los ataques dirigidos a las capas L3 y L4 están diseñados para inundar una interfaz o servicio de red con tráfico de ataque para saturar los recursos y denegar la capacidad de responder al tráfico legítimo. En concreto, los ataques L3 y L4 intentan saturar la capacidad de los vínculos de red, dispositivos o servicios o saturar las CPU de los servidores o las máquinas virtuales que admiten una aplicación.
 

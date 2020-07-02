@@ -16,17 +16,15 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 'Resumen: Use estos artículos para implementar cargas de trabajo de Office Server en Microsoft Azure.'
-ms.openlocfilehash: 558b3eb612d67b3135a762326382218ae4f286c1
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711570"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998018"
 ---
 # <a name="hybrid-solutions"></a>Soluciones híbridas
 
- **Resumen:**  Use estos artículos para implementar cargas de trabajo de Office Server en Microsoft Azure.
-  
 Con Microsoft Azure, ahora puede implementar algunas cargas de trabajo de Office Server que, normalmente, se implementaban de forma local en servicios de infraestructura de Azure.
   
 Para la infraestructura de identidades de Microsoft 365 en Azure:
@@ -48,7 +46,7 @@ Para cargas de trabajo de SharePoint Server 2013 en Azure:
 - [Sitios de Internet en Microsoft Azure con SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.yml)
   

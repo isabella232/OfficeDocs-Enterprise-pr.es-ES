@@ -3,7 +3,7 @@ title: Office 365 puntos de conexión altos de GCC U.S. Government
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/16/2020
+ms.date: 06/29/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,18 +18,18 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Si su organización usa Office 365 y restringe la conexión de los equipos de la red a Internet, a continuación encontrará los extremos (FQDN, puertos, direcciones URL, IPv4 e intervalos de direcciones IPv6) que debe incluir en las listas de permitidos de salida para asegurarse de que los equipos puedan usar correctamente Office 365.
 hideEdit: true
-ms.openlocfilehash: 288e7140701b698979fa7e054d367d36fddb887d
-ms.sourcegitcommit: f2a4b77c8c3932beb1a78bf2f5bf793fefb3fa49
+ms.openlocfilehash: 995fb0265b3e2854b85291a8152469c3034e75a2
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44747396"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997558"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 puntos de conexión altos de GCC U.S. Government
 
  *Se aplica a: Office 365 administrador*
 
-**Resumen:** Office 365 requiere conectividad a Internet. Los puntos de conexión a continuación deben ser accesibles para los clientes que usen únicamente los planes altos de Office 365 Estados Unidos GCC.
+Office 365 requiere conectividad a Internet. Los puntos de conexión a continuación deben ser accesibles para los clientes que usen únicamente los planes altos de Office 365 Estados Unidos GCC.
   
 > [!NOTE]
 > Microsoft has released a REST-based web service for the IP address and FQDN entries on this page. This new service will help you configure and update network perimeter devices such as firewalls and proxy servers. You can download the list of endpoints, the current version of the list, or specific changes. This service replaces the XML document linked from this page, which was deprecated on October 2, 2018. To try out this new service, go to [Web service](office-365-ip-web-service.md).
@@ -38,7 +38,7 @@ ms.locfileid: "44747396"
   
 |||
 |:-----|:-----|
-|**Última actualización:** 06/16/2020- ![ ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [suscripción de registro de cambios](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) de RSS <br/> |**Descargar:** lista completa en [formato JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Última actualización:** 06/29/2020- ![ ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [suscripción de registro de cambios](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) de RSS <br/> |**Descargar:** lista completa en [formato JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
  Comience con la administración de los puntos de conexión de [Office 365](managing-office-365-endpoints.md) para comprender nuestras recomendaciones para administrar la conectividad de red con estos datos. Los datos de puntos de conexión se actualizan al principio de cada mes con nuevas direcciones IP y direcciones URL publicadas 30 días antes de estar activo. Esto permite a los clientes que aún no tienen actualizaciones automatizadas para completar sus procesos antes de que sea necesaria una nueva conectividad. Los puntos de conexión también se pueden actualizar durante el mes si es necesario para resolver las escalaciones de soporte, los incidentes de seguridad u otros requisitos operativos inmediatos. Los datos que se muestran en esta página se generan a partir de los servicios web basados en REST. Si usa un script o un dispositivo de red para tener acceso a estos datos, debe ir directamente al [servicio Web](office-365-ip-web-service.md) .
 

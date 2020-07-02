@@ -1,7 +1,7 @@
 ---
-title: Aislamiento de inquilino de Office 365 en vídeo de Office 365
-ms.author: robmazz
-author: robmazz
+title: Aislamiento del inquilino en Office 365 Video
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,17 +15,17 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Resumen: explicación del aislamiento de inquilinos en Office 365 video.'
-ms.openlocfilehash: c7fb97180fbe6c96d2849be7725958a788309558
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d3d7f71260d74d598a8cc72962c2ab1ea1f2e6c3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843661"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998703"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Aislamiento del inquilino en Office 365 Video
 
 > [!NOTE]
-> El vídeo de Office 365 se reemplazará por Microsoft Stream. Para obtener más información sobre el nuevo servicio de vídeo empresarial que aporta inteligencia a la colaboración de vídeos y sobre los planes de transición para los clientes actuales de vídeo de Office 365, vea [Migrate to stream from office 365 video](https://docs.microsoft.com/stream/).
+> El vídeo de Office 365 se reemplazará por Microsoft Stream. Para obtener más información sobre el nuevo servicio de vídeo empresarial que aporta inteligencia a la colaboración de vídeo y conocer los planes de transición para los clientes actuales de vídeo de Microsoft 365, vea [transición de vídeo de Office 365 a Microsoft Stream Overview](https://docs.microsoft.com/stream/migrate-from-office-365).
 
 ## <a name="introduction"></a>Introducción
 

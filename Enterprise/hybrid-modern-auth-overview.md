@@ -15,16 +15,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras. Está disponible para implementaciones híbridas de Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial. Este artículo contiene vínculos a documentos relacionados sobre requisitos previos, la configuración/deshabilitación de la autenticación moderna y para algunos de los clientes relacionados (por ejemplo, Outlook y clientes de Skype) información.
-ms.openlocfilehash: 325c34ec636ce9661b25f7b8be83ce8cbf61a291
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 6b535133af7a1a6666a6a06e2c86aa675f95e042
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516461"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998028"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para su uso con servidores locales de Skype empresarial y Exchange
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 La _autenticación moderna_ es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras. Está disponible para implementaciones híbridas de Office 365 de Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de Skype empresarial de dominio dividido. Este artículo contiene vínculos a documentos relacionados sobre requisitos previos, la configuración/deshabilitación de la autenticación moderna y para algunos de los clientes relacionados (por ejemplo, Outlook y clientes de Skype) información.
   
@@ -41,7 +41,7 @@ La autenticación moderna es un término genérico para una combinación de mét
   
 - **Métodos de autenticación**: multi-factor Authentication (MFA); autenticación de tarjetas inteligentes; autenticación basada en certificados de cliente
 - **Métodos de autorización**: implementación de Microsoft de Open Authorization (OAuth)
-- **Directivas de acceso condicional**: administración de aplicaciones móviles (MAM) y acceso condicional de Azure Active Directory
+- **Directivas de acceso condicional**: administración de aplicaciones móviles (MAM) y Azure Active Directory (Azure ad) acceso condicional
 
 La administración de identidades de usuario con autenticación moderna proporciona a los administradores muchas herramientas distintas para proteger los recursos y ofrece métodos más seguros de administración de identidades para escenarios locales (Exchange y Skype empresarial), Exchange híbrido y Skype for Business híbridos o de dominios divididos.
   
@@ -59,9 +59,9 @@ Al usar la autenticación moderna con Skype empresarial local o Exchange Server,
   
 El cambio a evoSTS permite a los servidores locales aprovechar OAuth (emisión de token) para autorizar a los clientes y también permite que los métodos de seguridad de uso local sean comunes en la nube (como la autenticación multifactor). Además, evoSTS emite tokens que permiten a los usuarios solicitar acceso a los recursos sin proporcionar su contraseña como parte de la solicitud. Independientemente de la ubicación de los usuarios (de conexión o local), y independientemente de la ubicación que hospede el recurso necesario, EvoSTS se convertirá en la base de autorizaciones de usuarios y clientes una vez configurada la autenticación moderna.
   
-Por ejemplo, si un cliente de Skype empresarial necesita acceder a Exchange Server para obtener información del calendario en nombre de un usuario, usa la biblioteca de autenticación de Active Directory (ADAL) para hacerlo. ADAL es una biblioteca de código diseñada para que los recursos protegidos en el directorio estén disponibles para las aplicaciones cliente mediante tokens de seguridad de OAuth. ADAL funciona con OAuth para comprobar notificaciones e intercambiar tokens (en lugar de contraseñas), para conceder a un usuario acceso a un recurso. En el pasado, la autoridad de una transacción como esta, el servidor que sabe cómo validar las notificaciones de usuario y emitir los tokens necesarios, puede haber sido un servicio de token de seguridad local o incluso servicios de Federación de Active Directory. Sin embargo, la autenticación moderna centraliza esa autoridad mediante Azure Active Directory (AAD).
+Por ejemplo, si un cliente de Skype empresarial necesita acceder a Exchange Server para obtener información del calendario en nombre de un usuario, usa la biblioteca de autenticación de Active Directory (ADAL) para hacerlo. ADAL es una biblioteca de código diseñada para que los recursos protegidos en el directorio estén disponibles para las aplicaciones cliente mediante tokens de seguridad de OAuth. ADAL funciona con OAuth para comprobar notificaciones e intercambiar tokens (en lugar de contraseñas), para conceder a un usuario acceso a un recurso. En el pasado, la autoridad de una transacción como esta, el servidor que sabe cómo validar las notificaciones de usuario y emitir los tokens necesarios, puede haber sido un servicio de token de seguridad local o incluso servicios de Federación de Active Directory. Sin embargo, la autenticación moderna centraliza esa autoridad mediante Azure AD.
   
-Esto también significa que aunque sus entornos de Exchange Server y Skype empresarial puedan estar completamente locales, el servidor de autorización estará en línea y su entorno local debe tener la capacidad de crear y mantener una conexión a su suscripción de Office 365 en la nube (y la instancia de Azure Active Directory que su suscripción usa como su directorio).
+Esto también significa que aunque los entornos de Exchange Server y Skype empresarial puedan estar completamente locales, el servidor de autorización estará en línea y el entorno local debe tener la capacidad de crear y mantener una conexión a su suscripción de Office 365 en la nube (y la instancia de Azure AD que su suscripción usa como directorio).
   
 ¿Qué no cambia? Tanto si está en un híbrido de dominio dividido como si usa Skype empresarial y Exchange Server local, todos los usuarios deben autenticarse primero *en el entorno local*. En una implementación híbrida de la autenticación moderna, _Lyncdiscovery_ y _AutoDiscovery_ apuntan a su servidor local.
   
@@ -106,12 +106,12 @@ Compruebe y compruebe estos elementos de la lista antes de continuar:
   - Una implementación de Skype empresarial Server 2015 con todos los servidores que ejecutan Skype empresarial Server 2015.
   - Una implementación con un máximo de dos versiones de servidor distintas, como se muestra a continuación:
     - Skype Empresarial Server 2015
-    - Skype empresarial Server 2019
+    - Skype Empresarial Server 2019
   - Todos los servidores de Skype empresarial deben tener instaladas las últimas actualizaciones acumulativas, consulte [actualizaciones de Skype empresarial Server](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates) para buscar y administrar todas las actualizaciones disponibles.
   - No hay Lync Server 2010 o 2013 en el entorno híbrido.
 
 >[!NOTE]
->Si los servidores front-end de Skype empresarial usan un servidor proxy para el acceso a Internet, se debe especificar el número de puerto y la IP del servidor proxy que se usan en la sección de configuración del archivo Web. config para cada front-end.
+>Si los servidores front-end de Skype empresarial usan un servidor proxy para el acceso a Internet, se debe especificar el número de puerto y la IP del servidor proxy que se usan en la sección de configuración del archivo de web.config para cada front-end.
   
 - C:\Archivos de Files\Skype para Business Server 2015 \ Web Components\Web ticket\int\web.config
 - C:\Archivos de Files\Skype para Business Server 2015 \ Web Components\Web ticket\ext\web.config
@@ -168,7 +168,7 @@ Compruebe y compruebe estos elementos de la lista antes de continuar:
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>¿Qué más necesito saber antes de empezar?
 <a name="BKMK_Whatelse"> </a>
 
-- Todos los escenarios de servidores locales implican la configuración de la autenticación moderna local (en realidad, para Skype empresarial hay una lista de topologías compatibles), de modo que el servidor responsable de la autenticación y la autorización se encuentra en la nube de Microsoft (servicio de token de seguridad de AAD, denominado "evoSTS") y actualizando Azure Active Directory (AAD) sobre las direcciones URL o los espacios de nombres usados por la instalación local de Skype empresarial o Exchange. Por lo tanto, los servidores locales toman una dependencia de la nube de Microsoft. Realizar esta acción puede considerarse la configuración de la "autenticación híbrida".
+- Todos los escenarios de servidores locales implican la configuración de la autenticación moderna local (en realidad, para Skype empresarial hay una lista de topologías compatibles), de modo que el servidor responsable de la autenticación y la autorización se encuentra en la nube de Microsoft (servicio de token de seguridad de AAD, denominado "evoSTS"), y actualizando Azure AD acerca de las direcciones URL o los espacios de nombres usados por la instalación local de Skype empresarial o Exchange. Por lo tanto, los servidores locales toman una dependencia de la nube de Microsoft. Realizar esta acción puede considerarse la configuración de la "autenticación híbrida".
 - En este artículo se establecen vínculos a otros usuarios que le ayudarán a elegir las topologías de autenticación moderna admitidas (solo necesarias para Skype empresarial) y los artículos de procedimientos que describen los pasos de configuración, o los pasos para deshabilitar la autenticación moderna para Exchange local y Skype empresarial local. Si va a necesitar una base de datos de inicio para usar la autenticación moderna en su entorno de servidor, es preferible esta página en el explorador.
 
 ## <a name="related-topics"></a>Temas relacionados

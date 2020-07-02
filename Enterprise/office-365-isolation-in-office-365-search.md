@@ -1,7 +1,7 @@
 ---
-title: Aislamiento de inquilino de Office 365 en la búsqueda de Office 365
-ms.author: robmazz
-author: robmazz
+title: Aislamiento de inquilino en Búsqueda de Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumen: una explicación del aislamiento de inquilinos en Office 365 Search.'
-ms.openlocfilehash: 9583b923abdb87140863fad8cfc7ad606df6e979
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Resumen: explicación del aislamiento de inquilinos en Microsoft 365 Search.'
+ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844421"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998260"
 ---
-# <a name="tenant-isolation-in-office-365-search"></a>Aislamiento de inquilino en búsqueda de Office 365
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Aislamiento de inquilino en Búsqueda de Microsoft 365
 
 La búsqueda de SharePoint Online usa un modelo de separación de inquilinos que equilibra la eficiencia de las estructuras de datos compartidos con protección frente a la pérdida de información entre los inquilinos. Con este modelo, se evita que las características de búsqueda de:
 
@@ -56,7 +56,7 @@ La prefijo del período del identificador de espacio empresarial solo se produce
 
 La búsqueda controla el acceso a los documentos a través de las ACL que se guardan en el índice de búsqueda. Cada elemento se indiza con un conjunto de términos en un campo de ACL especial. El campo ACL contiene un término por grupo o usuario que puede ver el documento. Cada consulta se aumenta con una lista de términos de entrada de control de acceso (ACE), una para cada grupo al que pertenece el usuario autenticado.
 
-Por ejemplo, una consulta como "<*guid*>. *foo y tenantID*: <*GUID*> "se convierte en:" <*GUID*>. *foo y tenantID*: <*GUID*> *y* (*docACL:*<*ACE1*> *o docACL*: <*ace2*> *o docACL*: <*Ace3*> *...*) "
+Por ejemplo, una consulta como "<*guid*>. *foo y tenantID*: <*GUID*> "se convierte en:" <*GUID*>. *foo y tenantID*: <*GUID* >  *y* (*docACL:* < *ACE1* >  *o docACL*: <*ace2* >  *o docACL*: <*Ace3* >  *...*) "
 
 Como los identificadores de usuario y de grupo y por tanto las ACE son únicos, esto proporciona un nivel adicional de seguridad entre los inquilinos para los documentos que solo son visibles para algunos usuarios. Lo mismo sucede con la ACE especial "todos excepto usuarios externos" que concede acceso a los usuarios habituales del espacio empresarial. Pero, puesto que las ACE para "everyone" son las mismas para todos los inquilinos, la separación de inquilinos para documentos públicos depende del filtrado de ID de inquilino. También se admiten las ACE de denegación. El aumento de la consulta agrega una cláusula que quita un documento del resultado cuando hay una coincidencia con una ACE de denegación.
 

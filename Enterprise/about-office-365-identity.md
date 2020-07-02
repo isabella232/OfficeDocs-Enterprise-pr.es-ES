@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo se administra la identidad del usuario en Microsoft 365.
-ms.openlocfilehash: 44777f206b61b01dc8a66817f549120af827bbc3
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: ba4638fa4d02900e3e85ef1c4cb7719baf12d1f6
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698957"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998078"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Modelos de identidad de Microsoft 365 y Azure Active Directory
 
@@ -49,7 +49,7 @@ Estos son los dos tipos de identidad y sus mejores ventajas y ventajas.
 |||
 |:-------|:-----|:-----|
 |  | **Identidad solo de nube** | **Identidad híbrida** |
-| **Definición** | La cuenta de usuario solo existe en el inquilino de Azure Active Directory (Azure AD) para su suscripción a Microsoft 365. | La cuenta de usuario existe en AD DS y una copia también se encuentra en el inquilino de Azure AD para su suscripción a Microsoft 365. La cuenta de usuario de Azure AD también puede incluir una versión de hash de la contraseña de la cuenta de usuario de AD DS ya con hash. |
+| **Definición** | La cuenta de usuario solo existe en el inquilino de Azure AD para su suscripción a Microsoft 365. | La cuenta de usuario existe en AD DS y una copia también se encuentra en el inquilino de Azure AD para su suscripción a Microsoft 365. La cuenta de usuario de Azure AD también puede incluir una versión de hash de la contraseña de la cuenta de usuario de AD DS ya con hash. |
 | **Cómo autentica Microsoft 365 las credenciales de usuario** | El inquilino de Azure AD para su suscripción a Microsoft 365 realiza la autenticación con la cuenta de identidad de nube. | El inquilino de Azure AD para su suscripción de Microsoft 365 administra el proceso de autenticación o redirige al usuario a otro proveedor de identidades. |
 | **Ideal para** | Organizaciones que no tienen ni necesitan un AD DS local. | Organizaciones que usan AD DS u otro proveedor de identidades. |
 | **Mayor beneficio** | Fácil de usar. No se necesitan servidores o herramientas de directorio adicionales. | Los usuarios pueden usar las mismas credenciales al obtener acceso a los recursos locales o basados en la nube. |
@@ -99,6 +99,6 @@ Si necesita el modelo de identidad solo de la nube, consulte [identidad solo de 
 Si necesita el modelo de identidad híbrida, consulte [Hybrid Identity](plan-for-directory-synchronization.md).
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

@@ -1,7 +1,7 @@
 ---
-title: Eliminación de datos de SharePoint Online de Office 365
-ms.author: robmazz
-author: robmazz
+title: Eliminación de datos de SharePoint Online de Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Una explicación de la eliminación de datos en SharePoint Online.
-ms.openlocfilehash: fbb81d4f2440dc34ec261e943436c656f8266e8f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842047"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997820"
 ---
-# <a name="sharepoint-online-data-deletion-in-office-365"></a>Eliminación de datos de SharePoint Online en Office 365
+# <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Eliminación de datos de SharePoint Online en Microsoft 365
 
 SharePoint Online almacena objetos como código abstracto dentro de las bases de datos de la aplicación. Cuando un usuario carga un archivo en SharePoint Online, ese archivo se desensambla y se traduce a código de aplicación y se almacena en varias tablas en varias bases de datos. En SharePoint Online, todo el contenido que carga un cliente se divide en fragmentos, cifrados (potencialmente con varias claves AES 256-bit), y distribuidos en el centro de datos. Para obtener información específica sobre el proceso de fragmentación y cifrado, vea [cifrado en la nube de Microsoft](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview). 
 
@@ -40,6 +40,6 @@ Cuando se elimina una colección de sitios, también se elimina la jerarquía de
 
 Si elimina por error una colección de sitios, puede restaurarla un administrador global o de SharePoint con el centro de administración de SharePoint.
 
-Las colecciones de sitios eliminadas se conservan durante 93 días. Después de 93 días, los sitios y todo su contenido y configuración se eliminan de forma permanente, incluidas las listas, bibliotecas, páginas y subsitios.
+Las colecciones de sitios eliminadas se conservan durante 93 días. Después de 93 días, los sitios y todo su contenido y configuración se eliminan de forma permanente, incluidas las listas, las bibliotecas, las páginas y los subsitios.
 
 La eliminación de hardware se produce cuando un usuario depura elementos eliminados de la papelera de reciclaje de la colección de sitios, cuando expiran los períodos de retención y copia de seguridad, o cuando un administrador elimina permanentemente una colección de sitios con el [cmdlet Remove-SPODeletedSite](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps). Cuando un usuario elimina (elimina o purga permanentemente) contenido de SharePoint Online, también se eliminan todas las claves de cifrado de los fragmentos eliminados. Los bloques de los discos que anteriormente almacenaban los fragmentos eliminados se marcan como no usados y disponibles para volver a usarlos.

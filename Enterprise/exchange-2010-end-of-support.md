@@ -13,16 +13,16 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 está llegando al final del soporte técnico. Use esta guía básica de planeación como guía para preparar la actualización a Exchange online o a una versión más reciente de Exchange Server local.
-ms.openlocfilehash: ddf2a099688e55e5e0650a030eb2a33293b21eb2
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 84adfa0216f3e4e8157dfe0717c178a0ece3cc4f
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979352"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998048"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Guía básica de soporte de Exchange 2010
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 El **13 de octubre de 2020**, el servidor de Exchange Server 2010 alcanzará el final del soporte técnico. Si todavía no ha iniciado la migración de Exchange 2010 a Office 365 o Exchange 2016, ahora es el momento de empezar la planeación.
 
@@ -146,8 +146,8 @@ Las migraciones híbridas completas son las más adecuadas para las organizacion
 Si está pensando en realizar una migración híbrida completa, estas son algunas de las cosas que debe tener en cuenta:
 
 - Las migraciones híbridas completas no son adecuadas para todos los tipos de organizaciones. Debido a la complejidad de las migraciones híbridas completas, las organizaciones con menos de unos pocos cientos de buzones de correo no suelen ver las ventajas que justifican el esfuerzo y el costo necesario para configurarlos. Si esto suena como su organización, se recomienda que considere la posibilidad de realizar migraciones híbridas de transferencia o mínimas.
-- Deberá configurar la sincronización de directorios mediante Azure Active Directory Connect (out) entre los servidores locales de Active Directory y Office 365;
-- Los usuarios podrán iniciar sesión en su buzón de correo de Office 365 usando el mismo nombre de usuario y contraseña que usan cuando inician sesión en la red local (requiere Azure Active Directory Connect con la sincronización de contraseña y/o los servicios de Federación de Active Directory);
+- Deberá configurar la sincronización de directorios con Azure Active Directory (Azure AD) conectado entre los servidores locales de Active Directory y Office 365;
+- Los usuarios podrán iniciar sesión en su buzón de correo de Office 365 usando el mismo nombre de usuario y contraseña que usan cuando inician sesión en la red local (requiere Azure AD Connect con la sincronización de contraseña y/o los servicios de Federación de Active Directory);
 - Necesitará una licencia de Office 365 que incluya Exchange Online para cada buzón de usuario que migre;
 - Los usuarios no necesitan configurar un nuevo perfil de Outlook en la mayoría de sus dispositivos (algunos teléfonos Android más antiguos podrían necesitar un nuevo perfil) y no tendrán que volver a descargar el correo electrónico.
 
@@ -164,7 +164,7 @@ Si le suena una migración híbrida completa, eche un vistazo a los siguientes r
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>Actualizar a una versión más reciente de Exchange Server local
 
-Aunque creemos que puede lograr el mejor valor y la experiencia del usuario mediante la migración completa a Office 365, también sabemos que algunas organizaciones necesitan mantener algunos servidores de Exchange locales. Esto puede deberse a los requisitos normativos, para garantizar que los datos no se almacenan en un centro de datos ubicado en otro país, o puede deberse a que tenga una configuración o requisitos únicos que no se puedan cumplir en la nube, o bien que simplemente sea necesario que Exchange administre los buzones de la nube porque todavía usa Active Directory local. En cualquier caso en el que elija o necesite mantener Exchange local, debe asegurarse de que el entorno de Exchange 2010 se actualiza al menos Exchange 2013 o Exchange 2016 y que Exchange 2010 se ha quitado antes de la fecha de finalización del soporte técnico.
+Aunque creemos que puede lograr el mejor valor y la experiencia del usuario mediante la migración completa a Office 365, también sabemos que algunas organizaciones necesitan mantener algunos servidores de Exchange locales. Esto puede deberse a los requisitos normativos, para garantizar que los datos no se almacenan en un centro de datos ubicado en otro país, o puede deberse a que tenga una configuración o requisitos únicos que no se puedan cumplir en la nube, o bien que sea simplemente necesario que Exchange administre los buzones en la nube porque todavía usa Active Directory local. En cualquier caso en el que elija o necesite mantener Exchange local, debe asegurarse de que el entorno de Exchange 2010 se actualiza al menos Exchange 2013 o Exchange 2016 y que Exchange 2010 se ha quitado antes de la fecha de finalización del soporte técnico.
 
 Para que la experiencia sea óptima, le recomendamos que actualice el entorno local restante a Exchange 2016. No es necesario instalar Exchange Server 2013 si desea ir directamente de Exchange Server 2010 a Exchange Server 2016.
 
@@ -218,7 +218,7 @@ Puede usar los siguientes recursos para ayudarle con la migración:
 
 Para obtener un resumen visual de las opciones de actualización, migración y movimiento a la nube para los clientes y servidores de Office 2010 y Windows 7, consulte el [póster de final de soporte técnico](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-[![Imagen para la finalización del soporte de los servidores y clientes de Office 2010 y póster de Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Imagen para el final del soporte técnico para los servidores y clientes de Office 2010 y póster de Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Este póster de una página es una forma rápida de comprender las diversas rutas que puede realizar para evitar que los productos de cliente y servidor de Office 2010 y Windows 7 lleguen al final del soporte técnico, con las rutas preferidas y la compatibilidad con la opción en Microsoft 365 Enterprise resaltado.
 

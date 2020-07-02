@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contiene vínculos a información acerca de la planeación y las pruebas de red, y la migración a Office 365.
-ms.openlocfilehash: 88dd3e4fca66855e8204b452aea6cfb4c659d201
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+ms.openlocfilehash: fbf8046fb5f386dfceb3a59dbc384e578fe3a519
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419388"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998555"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planeación de la migración y la red para Office 365
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Este artículo contiene vínculos a información acerca de la planeación y las pruebas de red, y la migración a Office 365.
   
@@ -112,6 +112,6 @@ Estos temas contienen información detallada de referencia de la red de Office 3
     
 - [Guías de configuración de servicios de Office 365](setup-guides-for-office-365.md)
  
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

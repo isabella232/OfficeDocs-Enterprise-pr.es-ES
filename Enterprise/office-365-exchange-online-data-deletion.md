@@ -1,7 +1,7 @@
 ---
-title: Eliminación de datos de Exchange online de Office 365
-ms.author: robmazz
-author: robmazz
+title: Eliminación de datos de Microsoft 365 Exchange Online
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Cómo se administran las eliminaciones de datos flexibles y nítidas en Exchange Online.
-ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 96d8676ad35bf3cc7ec2b21bdd24650ef90bb1a0
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843641"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998324"
 ---
-# <a name="exchange-online-data-deletion-in-office-365"></a>Eliminación de datos de Exchange online en Office 365
+# <a name="exchange-online-data-deletion-in-microsoft-365"></a>Eliminación de datos de Exchange online en Microsoft 365
+
 En Exchange Online, hay dos tipos de eliminaciones: eliminaciones de software y eliminaciones de hardware. Esto se aplica tanto a los buzones de correo como a los elementos de un buzón.
 
 ## <a name="soft-deleted-and-hard-deleted-mailboxes"></a>Buzones eliminados temporalmente y eliminados permanentemente

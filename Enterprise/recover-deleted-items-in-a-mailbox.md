@@ -1,7 +1,7 @@
 ---
 title: Recuperar elementos eliminados en un buzón de usuario. Ayuda para administradores
-ms.author: markjjo
-author: markjjo
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 f1.keywords:
 - NOCSH
 description: 'Este artículo está dirigido a administradores. ¿Un usuario elimina permanentemente los elementos de su buzón de Outlook? El usuario desea volver a hacerlo, pero no puede recuperarlos. Es posible que pueda recuperar los elementos purgados si no se han quitado permanentemente del buzón de correo del usuario. '
-ms.openlocfilehash: 869bef4b801b92d0e48daaec266cb3a705cb577f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d5911167289d448a68fbe65fa6ba3c5cb9c9609b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845131"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998314"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Recuperar elementos eliminados en un buzón de usuario. Ayuda para administradores
 
@@ -38,16 +38,16 @@ ms.locfileid: "41845131"
 Estos son los pasos para recuperar los elementos eliminados en el buzón de un usuario. ¿Cuánto tiempo se tardará? La primera vez puede tardar 20 o 30 minutos en completar todos los pasos, en función de cuántos elementos esté intentando recuperar.
   
 > [!NOTE]
-> Debe ser **Administrador de Exchange** o **Administrador Global** de Office 365 o ser miembro del grupo de roles de administración de la organización en Exchange Online para realizar los pasos descritos en este artículo. Para obtener más información, vea [Información sobre los roles de administrador de Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+> Debe ser **Administrador de Exchange** o **Administrador Global** en Microsoft 365 o ser miembro del grupo de roles de administración de la organización en Exchange Online para realizar los pasos descritos en este artículo. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
   
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>Paso 1: asignar permisos de exhibición de documentos electrónicos
 <a name="step1"> </a>
 
 El primer paso es asignarse a sí mismo los permisos necesarios en Exchange Online para poder usar la herramienta de exhibición de documentos electrónicos local para buscar en el buzón de correo de un usuario. Solo tiene que hacer esto una vez. Si tiene que buscar en otro buzón de correo en el futuro, puede omitir este paso.
   
-1. [Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) con su cuenta profesional o educativa. 
+1. [Dónde iniciar sesión en Microsoft 365 para la empresa](https://support.microsoft.com/office/where-to-sign-into-microsoft-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4) con su cuenta profesional o educativa. 
     
-2. Seleccione el icono ![del iniciador de aplicaciones el icono del iniciador de aplicaciones de Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) en la esquina superior izquierda y haga clic en **Administrador**.
+2. Seleccione el icono del iniciador de aplicaciones ![ icono del iniciador de aplicaciones de Microsoft 365 ](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) en la esquina superior izquierda y haga clic en **Administrador**.
     
 3. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, expanda **centros de administración**y, a continuación, haga clic en **Exchange**.
     
@@ -55,11 +55,11 @@ El primer paso es asignarse a sí mismo los permisos necesarios en Exchange Onli
   
 4. En el centro de administración de Exchange, haga clic en **permisos**y, a continuación, en **roles de administrador**.
     
-5. En la vista de lista, **Seleccione Administración de detección**y, a continuación, haga clic en **Editar**![icono](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)de edición.
+5. En la vista de lista, seleccione **Administración de detección**y, a continuación, haga clic en **Editar** ![ icono de edición ](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
     
     ![Agregarse al grupo de roles de administración de detección en el EAC](media/e5c98e93-d6a0-40c5-a143-bac956eedaa7.png)
   
-6. En **grupo de roles**, **en miembros**, haga clic en](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Agregar**![icono de agregar.
+6. En **grupo de roles**, en **miembros**, haga clic en **Agregar** ![ icono de agregar ](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) .
     
 7. En **seleccionar miembros**, seleccione usted en la lista de nombres, haga clic en **Agregar**y, a continuación, haga clic en **Aceptar**.
     
@@ -68,7 +68,7 @@ El primer paso es asignarse a sí mismo los permisos necesarios en Exchange Onli
   
 8. En **grupo de roles**, haga clic en **Guardar**.
     
-9. Cierre la sesión de Office 365.
+9. Cierre la sesión de Microsoft 365.
     
     Tiene que cerrar sesión antes de iniciar el siguiente paso para que se apliquen los nuevos permisos.
     
@@ -82,19 +82,19 @@ El primer paso es asignarse a sí mismo los permisos necesarios en Exchange Onli
 
 Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos local, la carpeta elementos recuperables del buzón en el que se realiza la búsqueda se incluye automáticamente en la búsqueda. La carpeta elementos recuperables es donde se almacenan los elementos eliminados permanentemente hasta que se purgan (se quitan permanentemente) del buzón. Por lo tanto, si no se ha purgado un elemento, debería poder encontrarlo mediante la herramienta de exhibición de documentos electrónicos local.
   
-1. [Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) con su cuenta profesional o educativa. 
+1. [Dónde iniciar sesión en Microsoft 365 para la empresa](https://support.microsoft.com/office/where-to-sign-into-microsoft-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4) con su cuenta profesional o educativa. 
     
-2. Seleccione el icono ![del iniciador de aplicaciones el icono del iniciador de aplicaciones de Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) en la esquina superior izquierda y haga clic en **Administrador**.
+2. Seleccione el icono del iniciador de aplicaciones ![ icono del iniciador de aplicaciones de Microsoft 365 ](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) en la esquina superior izquierda y haga clic en **Administrador**.
     
 3. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, expanda **Administración**y, a continuación, haga clic en **Exchange**.
     
-4. En el centro de administración de Exchange, haga clic en **Administración de cumplimiento**, haga clic en **conservación de &amp; exhibición de**documentos electrónicos local y, a continuación, haga clic en **nuevo**![icono](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)agregar.
+4. En el centro de administración de Exchange, haga clic en **Administración de cumplimiento**, haga clic en ** &amp; conservación de exhibición de**documentos electrónicos local y, a continuación, haga clic en **nuevo** ![ icono Agregar ](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) .
     
     ![En la página Administración de cumplimiento de la EAC, haga clic en exhibición de documentos electrónicos local y retención.](media/9d9ff0f5-b9be-45b8-8b5e-6037a856b0a8.png)
   
 5. En la página **nombre y descripción** , escriba un nombre para la búsqueda (por ejemplo, el nombre del usuario del que está recuperando el correo electrónico), una descripción opcional y, a continuación, haga clic en **siguiente**.
     
-6. En la página **buzones** , haga clic en **especificar buzones para buscar**y, a continuación,](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)haga clic en **Agregar**![icono de agregar.
+6. En la página **buzones** , haga clic en **especificar buzones para buscar**y, a continuación, haga clic en **Agregar** ![ icono de agregar ](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) .
     
     ![Haga clic en especificar buzones para buscar en un buzón de manifiestan](media/83879a40-5e5c-49a8-be3b-c0023d197588.png)
   
@@ -129,26 +129,26 @@ Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos local
     
     Una vez iniciada la búsqueda, Exchange mostrará una estimación del tamaño y la cantidad totales de elementos que devolverá la búsqueda en función de los criterios especificados.
     
-11. Seleccione la búsqueda que acaba de crear y ****![haga clic](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) en actualizar actualización para actualizar la información que se muestra en el panel de detalles. El estado de **Estimated Succeeded** indica que la búsqueda ha finalizado. Exchange también muestra una estimación del número total de elementos (y su tamaño) encontrados por la búsqueda en función de los criterios de búsqueda especificados en el paso 9. 
+11. Seleccione la búsqueda que acaba de crear y haga clic en **Actualizar** ![ actualización ](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) para actualizar la información que se muestra en el panel de detalles. El estado de **Estimated Succeeded** indica que la búsqueda ha finalizado. Exchange también muestra una estimación del número total de elementos (y su tamaño) encontrados por la búsqueda en función de los criterios de búsqueda especificados en el paso 9. 
     
 12. En el panel de detalles, haga clic en **vista previa de resultados** de la búsqueda para ver los elementos que se encontraron. Esto puede ayudarle a identificar los elementos que está buscando. Si encuentra los elementos que está intentando recuperar, vaya al paso 4 para exportar los resultados de la búsqueda a un archivo PST. 
     
     ![Haga clic en vista previa de resultados de búsqueda para ver el elemento que está intentando recuperar](media/a2cea921-dafa-45d6-97d4-ae45a226b8d3.png)
   
-13. Si no encuentra lo que está buscando, puede revisar los criterios de búsqueda seleccionando la búsqueda, haciendo clic en **Editar**![icono](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)editar y, a continuación, haciendo clic en **consulta de búsqueda**. Cambie los criterios de búsqueda y vuelva a ejecutar la búsqueda.
+13. Si no encuentra lo que está buscando, puede revisar los criterios de búsqueda seleccionando la búsqueda, haciendo clic en **Editar** ![ icono Editar ](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) y, a continuación, haciendo clic en **consulta de búsqueda**. Cambie los criterios de búsqueda y vuelva a ejecutar la búsqueda.
     
 [Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="optional-step-3-copy-the-search-results-to-a-discovery-mailbox"></a>Opcional Paso 3: copiar los resultados de la búsqueda en un buzón de correo de detección
 <a name="step3"> </a>
 
-Si no puede encontrar un elemento al obtener una vista previa de los resultados de la búsqueda o si desea ver qué elementos se encuentran en la carpeta elementos recuperables del usuario, puede copiar los resultados de la búsqueda en un buzón especial (denominado buzón de correo de detección) y, a continuación, abrir el buzón en Outlook en la web t o ver los elementos reales. La mejor razón para copiar los resultados de la búsqueda es que pueda ver los elementos de la carpeta elementos recuperables del usuario. Es muy probable que el elemento que está intentando recuperar se encuentre en la subcarpeta depuraciones. 
+Si no puede encontrar un elemento al obtener una vista previa de los resultados de la búsqueda o si desea ver qué elementos se encuentran en la carpeta elementos recuperables del usuario, puede copiar los resultados de la búsqueda en un buzón especial (denominado buzón de correo de detección) y, a continuación, abrir el buzón en Outlook en la web para ver los elementos reales. La mejor razón para copiar los resultados de la búsqueda es que pueda ver los elementos de la carpeta elementos recuperables del usuario. Es muy probable que el elemento que está intentando recuperar se encuentre en la subcarpeta depuraciones. 
   
-1. En el centro de administración de Exchange, vaya a **conservación de exhibición &amp; de documentos electrónicos local de** **Administración** \> de cumplimiento.
+1. En el centro de administración de Exchange, **Compliance management** vaya a \> ** &amp; conservación de exhibición de documentos electrónicos local de administración de**cumplimiento.
     
 2. En la lista de búsquedas, seleccione la búsqueda que ha creado en el paso 2.
     
-3. Haga clic **en buscar búsqueda**y, a continuación, haga clic en **copiar resultados de búsqueda** en la lista desplegable.![](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png) 
+3. Haga **clic en buscar búsqueda** ![ ](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png) y, a continuación, haga clic en **copiar resultados de búsqueda** en la lista desplegable. 
     
     ![Haga clic en buscar y, a continuación, en copiar resultados de búsqueda](media/7888df82-94b4-4e44-8a53-f66854dc7c86.png)
   
@@ -161,13 +161,13 @@ Si no puede encontrar un elemento al obtener una vista previa de los resultados 
     ![Copiar los resultados de la búsqueda en el buzón de búsqueda de detección predeterminado](media/36e8ef47-0035-4982-9ed6-426719c5f9ec.png)
   
     > [!NOTE]
-    > El buzón de búsqueda de detección es un buzón de correo de detección predeterminado que se crea automáticamente en su organización de Office 365. 
+    > El buzón de búsqueda de detección es un buzón de correo de detección predeterminado que se crea automáticamente en la organización de Microsoft 365. 
   
 6. De nuevo en la página **copiar resultados de búsqueda** , haga clic en **copiar** para iniciar el proceso de copia de los resultados de la búsqueda en el buzón de búsqueda de detección. 
     
     ![Haga clic en copiar para copiar los resultados de la búsqueda en el buzón de búsqueda de detección](media/71307a9d-f7a1-4e01-ae37-1d49040cc3fd.png)
   
-7. Haga ****![clic en](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) actualizar actualización para actualizar la información sobre el estado de copia que se muestra en el panel de detalles. 
+7. Haga clic en **Actualizar** ![ actualización ](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) para actualizar la información sobre el estado de copia que se muestra en el panel de detalles. 
     
 8. Una vez completada la copia, haga clic en **abrir** para abrir el buzón de búsqueda de detección para ver los resultados de la búsqueda. 
     
@@ -189,7 +189,7 @@ Si no puede encontrar un elemento al obtener una vista previa de los resultados 
 
 Una vez que encuentre el elemento que está intentando recuperar para un usuario, el siguiente paso consiste en exportar los resultados de la búsqueda que ejecutó en el paso 2 a un archivo PST. El usuario usará este archivo PST en el siguiente paso para restaurar el elemento eliminado en su buzón de correo.
   
-1. En el centro de administración de Exchange, vaya a **conservación de exhibición &amp; de documentos electrónicos local de** **Administración** \> de cumplimiento.
+1. En el centro de administración de Exchange, **Compliance management** vaya a \> ** &amp; conservación de exhibición de documentos electrónicos local de administración de**cumplimiento.
     
 2. En la lista de búsquedas, seleccione la búsqueda que ha creado en el paso 2.
     
@@ -239,7 +239,7 @@ Tiene que usar la aplicación de escritorio de Outlook para restaurar un element
   
 1. En Outlook 2013 o en Outlook 2016, haga clic en la pestaña **archivo** . 
     
-2. Haga clic en ** &amp; abrir exportar**y, a continuación, en **Abrir archivo de datos de Outlook**.
+2. Haga clic en **abrir &amp; exportar**y, a continuación, en **Abrir archivo de datos de Outlook**.
     
 3. Vaya a la ubicación donde guardó el archivo PST que envió el administrador.
     
@@ -264,7 +264,7 @@ Tiene que usar la aplicación de escritorio de Outlook para restaurar un element
     
     **Sugerencia:** Para recuperar otros tipos de elementos, realice una de las siguientes acciones: 
     
-  - Para recuperar un elemento de calendario, haga clic con el botón secundario en él y, a continuación, haga clic en **mover** \> **calendario**de **otras carpetas** \> .
+  - Para recuperar un elemento de calendario, haga clic con el botón secundario en él y, a continuación, haga clic en **mover** \> calendario de **otras carpetas** \> **Calendar**.
     
   - Para recuperar un contacto, haga clic en él con el botón derecho y, a continuación, haga clic en **mover** \> **otros** \> **contactos**de carpeta.
     

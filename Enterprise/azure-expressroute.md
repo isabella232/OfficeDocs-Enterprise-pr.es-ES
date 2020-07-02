@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Obtenga información sobre cómo se usa Azure ExpressRoute con Office 365 y cómo planear el proyecto de implementación de red que será necesario si está implementando Azure ExpressRoute para usarlo con Office 365.
-ms.openlocfilehash: cf280ff386893f98844e5653ceed180339f701a6
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: 80b42fc43f395d9dd94384d456d40eb536541746
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009365"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997954"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute para Office 365
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Obtenga información sobre cómo se usa Azure ExpressRoute con Office 365 y cómo planear el proyecto de implementación de red que será necesario si está implementando Azure ExpressRoute para usarlo con Office 365. La infraestructura y los servicios de la plataforma que se ejecutan en Azure se beneficiarán con frecuencia al abordar la arquitectura de red y las consideraciones de rendimiento. En estos casos, se recomienda ExpressRoute para Azure. Las ofertas de software como servicio como Office 365 y Dynamics 365 se han creado para que se pueda acceder a ellos de forma segura y fiable a través de Internet. Puede obtener información sobre el rendimiento y la seguridad de Internet y cuándo puede considerar Azure ExpressRoute para Office 365 en el artículo [Evaluating Office 365 Network Connectivity](assessing-network-connectivity.md).
 
@@ -124,6 +124,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/express
 
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

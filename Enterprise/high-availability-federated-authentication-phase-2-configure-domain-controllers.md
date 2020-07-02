@@ -14,19 +14,19 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Resumen: Configure los controladores de dominio y el servidor de sincronización de directorios para la autenticación federada de alta disponibilidad para Microsoft 365 en Microsoft Azure.'
-ms.openlocfilehash: 6e75b8787fb5d077cf082d5beb47827c5132706e
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: c10fb2d32ea572280b43d32da56b9e4d6affa22a
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711943"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998058"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio
 
 En esta fase de implementación de alta disponibilidad para la autenticación federada de Microsoft 365 en los servicios de infraestructura de Azure, se configuran dos controladores de dominio y el servidor de sincronización de directorios en la red virtual de Azure. Después, las solicitudes web de los clientes para la autenticación se pueden autenticar en la red virtual de Azure, en lugar de enviar ese tráfico de autenticación por la conexión VPN de sitio a sitio a la red local.
   
 > [!NOTE]
-> Los servicios de Federación de Active Directory (AD FS) no pueden usar los servicios de dominio de Active Directory de Azure como sustituto de los controladores de dominio de servicios de dominio de Active Directory. 
+> Los servicios de Federación de Active Directory (AD FS) no pueden usar Azure Active Directory (Azure AD) como sustituto de los controladores de dominio de Active Directory Domain Services (AD DS). 
   
 Debe completar esta fase antes de continuar con la [fase 3: configurar servidores de AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Consulte [implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure en](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) todas las fases.
   
@@ -144,11 +144,11 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Como estas máquinas virtuales son para una aplicación de intranet, no se les asigna una dirección IP pública ni una etiqueta de nombre de dominio DNS, ni se exponen a Internet. Pero esto también quiere decir que no podrá conectarse a estas desde Azure Portal. La opción **Conectar** no estará disponible al ver las propiedades de la máquina virtual. Use la herramienta Conexión a Escritorio remoto u otra herramienta de Escritorio remoto para conectarse a la máquina virtual con su dirección IP privada o con el nombre DNS de la intranet.
+> Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet. However, this also means that you cannot connect to them from the Azure portal. The **Connect** option is unavailable when you view the properties of the virtual machine. Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name.
   
 ## <a name="configure-the-first-domain-controller"></a>Configurar el primer controlador de dominio
 
-Use el cliente de Escritorio remoto que prefiera y cree una conexión a Escritorio remoto a la máquina virtual del primer controlador de dominio. Use el nombre DNS de la intranet o el nombre de equipo y las credenciales de la cuenta de administrador local.
+Use the remote desktop client of your choice and create a remote desktop connection to the first domain controller virtual machine. Use its intranet DNS or computer name and the credentials of the local administrator account.
   
 A continuación, agregue el disco de datos adicional al primer controlador de dominio con este comando desde un símbolo del sistema de Windows PowerShell **en la máquina virtual del primer controlador de dominio**:
   
@@ -158,7 +158,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
 
 El paso siguiente es probar la conectividad del primer controlador de dominio a las ubicaciones en la red de la organización con el comando **ping** para hacer ping a los nombres y direcciones IP de los recursos en la red de la organización.
   
-Este procedimiento garantiza que la resolución de nombres DNS funciona correctamente (que la máquina virtual está configurada correctamente con los servidores DNS locales) y que se pueden enviar y recibir paquetes de la red virtual entre locales. Si esta prueba básica produce errores, póngase en contacto con el departamento de TI para solucionar los problemas de resolución de nombres DNS y de entrega de paquetes.
+This procedure ensures that DNS name resolution is working correctly (that the virtual machine is correctly configured with on-premises DNS servers) and that packets can be sent to and from the cross-premises virtual network. If this basic test fails, contact your IT department to troubleshoot the DNS name resolution and packet delivery issues.
   
 Después, desde el símbolo del sistema de Windows PowerShell en el primer controlador de dominio, ejecute los comandos siguientes:
   
@@ -169,11 +169,11 @@ Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs" -Credential $cred
 ```
 
-Se le pedirá que especifique las credenciales de una cuenta de administrador de dominio. Se reiniciará el equipo.
+You will be prompted to supply the credentials of a domain administrator account. The computer will restart.
   
 ## <a name="configure-the-second-domain-controller"></a>Configurar el segundo controlador de dominio
 
-Use el cliente de Escritorio remoto que prefiera y cree una conexión a Escritorio remoto a la máquina virtual del segundo controlador de dominio. Use el nombre DNS de la intranet o el nombre de equipo y las credenciales de la cuenta de administrador local.
+Use the remote desktop client of your choice and create a remote desktop connection to the second domain controller virtual machine. Use its intranet DNS or computer name and the credentials of the local administrator account.
   
 A continuación, necesita agregar el disco de datos adicional al segundo controlador de dominio con este comando desde un símbolo del sistema de Windows PowerShell **en la máquina virtual del segundo controlador de dominio**:
   
@@ -191,7 +191,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 ```
 
-Se le pedirá que especifique las credenciales de una cuenta de administrador de dominio. Se reiniciará el equipo.
+You will be prompted to supply the credentials of a domain administrator account. The computer will restart.
   
 Después, tendrá que actualizar los servidores DNS de la red virtual para que Azure asigne a las máquinas virtuales las direcciones IP de los dos nuevos controladores de dominio para que las usen como sus servidores DNS. Rellene las variables y, a continuación, ejecute estos comandos desde un símbolo del sistema de Windows PowerShell en el equipo local:
   
@@ -217,9 +217,9 @@ Restart-AzVM -ResourceGroupName $adrgName -Name $firstDCName
 Restart-AzVM -ResourceGroupName $adrgName -Name $secondDCName
 ```
 
-Tenga en cuenta que reiniciamos los dos controladores de dominio para que no estén configurados con los servidores DNS locales como los servidores DNS. Como ambos son servidores DNS, se configuraron automáticamente con los servidores DNS locales como reenviadores DNS cuando se promovieron a controladores de dominio.
+Note that we restart the two domain controllers so that they are not configured with the on-premises DNS servers as DNS servers. Because they are both DNS servers themselves, they were automatically configured with the on-premises DNS servers as DNS forwarders when they were promoted to domain controllers.
   
-Después, es necesario crear un sitio de replicación de Active Directory para garantizar que los servidores de la red virtual de Azure usen los controladores de dominio locales. Conéctese al controlador de dominio con una cuenta de administrador de dominio y ejecute los comandos siguientes desde un símbolo del sistema de Windows PowerShell con permisos de administrador:
+Next, we need to create an Active Directory replication site to ensure that servers in the Azure virtual network use the local domain controllers. Connect to either domain controller with a domain administrator account and run the following commands from an administrator-level Windows PowerShell prompt:
   
 ```powershell
 $vnet="<Table V - Item 1 - Value column>"
@@ -251,7 +251,7 @@ Esta es la configuración completada después de la finalización correcta de es
 
 Use [Phase 3: Configure los servidores de AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) para seguir configurando esta carga de trabajo.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

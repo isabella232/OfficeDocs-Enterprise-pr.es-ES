@@ -1,7 +1,7 @@
 ---
-title: Aislamiento de inquilinos en Office 365
-ms.author: robmazz
-author: robmazz
+title: Aislamiento de inquilinos en Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Un resumen de cómo Microsoft aplica el aislamiento de inquilino para Office 365.
-ms.openlocfilehash: 5b9db878fce46e02815a06b16271289d199105a0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Un resumen de cómo Microsoft aplica el aislamiento de inquilino para Microsoft 365.
+ms.openlocfilehash: 891fdb9bebb500c40a9658d170942ca396facfd1
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844301"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998649"
 ---
-# <a name="tenant-isolation-in-office-365"></a>Aislamiento de inquilinos en Office 365
+# <a name="tenant-isolation-in-microsoft-365"></a>Aislamiento de inquilinos en Microsoft 365
 
 Una de las principales ventajas de la informática en la nube es el concepto de una infraestructura compartida común en numerosos clientes a la vez, lo que lleva a economías de escala. Este concepto se denomina *multiempresa*. Microsoft funciona continuamente para garantizar que las arquitecturas multiinquilinos de nuestros servicios en la nube admitan la seguridad de ámbito empresarial, la confidencialidad, la privacidad, la integridad y los estándares de disponibilidad.
 
@@ -33,12 +33,12 @@ Los dos objetivos principales de mantener el aislamiento de inquilino en un ento
 1.  Evitar la fuga o el acceso no autorizado a contenido de clientes entre inquilinos; y
 2.  Evitar que las acciones de un inquilino afecten negativamente al servicio para otro espacio empresarial
 
-Se han implementado varias formas de protección a través de Office 365 para evitar que los clientes pongan en peligro los servicios o las aplicaciones de Office 365 o que obtengan acceso no autorizado a la información de otros inquilinos o del sistema Office 365, incluidos:
+Se han implementado varias formas de protección en Microsoft 365 para evitar que los clientes pongan en peligro los servicios o las aplicaciones de Microsoft 365 o que obtengan acceso no autorizado a la información de otros inquilinos o del propio sistema de Microsoft 365, incluidos:
 
-- El aislamiento lógico del contenido del cliente dentro de cada inquilino para los servicios de Office 365 se logra a través de la autorización de Azure Active Directory y el control de acceso basado en roles.
+- El aislamiento lógico del contenido del cliente dentro de cada inquilino para los servicios de Microsoft 365 se consigue a través de la autorización y el control de acceso basado en roles de Azure Active Directory.
 - SharePoint Online proporciona mecanismos de aislamiento de datos en el nivel de almacenamiento.
-- Microsoft usa una rigurosa seguridad física, detección en segundo plano y una estrategia de cifrado de varias capas para proteger la confidencialidad y la integridad del contenido del cliente. Todos los centros de recursos de Office 365 tienen controles de acceso biométricos, con la mayoría de los que requieren impresiones de Palm para obtener acceso físico. Además, todos los empleados de Microsoft en Estados Unidos deben realizar correctamente una comprobación de antecedentes estándar como parte del proceso de contratación. Para obtener más información acerca de los controles usados para el acceso administrativo en Office 365, consulte [office 365 Administrative Access Controls](office-365-administrative-access-controls-overview.md).
-- Office 365 usa tecnologías de servicio que cifran el contenido del cliente en reposo y en tránsito, incluidos BitLocker, el cifrado por archivo, la seguridad de la capa de transporte (TLS) y el protocolo de seguridad de Internet (IPsec). Para obtener información específica sobre el cifrado en Office 365, consulte [tecnologías de cifrado de datos en office 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview).
+- Microsoft usa una rigurosa seguridad física, detección en segundo plano y una estrategia de cifrado de varias capas para proteger la confidencialidad y la integridad del contenido del cliente. Todos los centros de recursos de Microsoft 365 tienen controles de acceso biométricos, con la mayoría de los que requieren impresiones de Palm para obtener acceso físico. Además, todos los empleados de Microsoft en Estados Unidos deben realizar correctamente una comprobación de antecedentes estándar como parte del proceso de contratación. Para obtener más información acerca de los controles usados para el acceso administrativo en Microsoft 365, consulte [microsoft 365 Administrative Access Controls](office-365-administrative-access-controls-overview.md).
+- Microsoft 365 usa tecnologías de servicio que cifran el contenido del cliente en reposo y en tránsito, incluidos BitLocker, el cifrado por archivo, la seguridad de la capa de transporte (TLS) y el protocolo de seguridad de Internet (IPsec). Para obtener información específica sobre el cifrado en Microsoft 365, consulte [tecnologías de cifrado de datos en microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview).
 
 Juntas, las protecciones de la lista anterior proporcionan controles sólidos de aislamiento lógico que proporcionan protección contra amenazas y mitigación equivalente a la que proporciona el aislamiento físico por sí solo.
 
@@ -46,8 +46,8 @@ Juntas, las protecciones de la lista anterior proporcionan controles sólidos de
 
 - [Aislamiento y Control de acceso en Azure Active Directory](office-365-isolation-in-azure-active-directory.md)
 - [Aislamiento del inquilino en Office Graph y Delve](office-365-isolation-in-graph-and-delve.md)
-- [Aislamiento de inquilino en búsqueda de Office 365](office-365-isolation-in-office-365-search.md)
+- [Aislamiento de inquilino en Búsqueda de Microsoft 365](office-365-isolation-in-office-365-search.md)
 - [Aislamiento del inquilino en Office 365 Video](office-365-isolation-in-office-365-video.md)
 - [Límites de recursos](office-365-resource-limits.md)
 - [Supervisar y probar los límites de inquilinos](office-365-monitoring-and-testing.md)
-- [Aislamiento y Control de acceso en Office 365](office-365-isolation-in-office-365.md)
+- [Aislamiento y control de acceso en Microsoft 365](office-365-isolation-in-office-365.md)

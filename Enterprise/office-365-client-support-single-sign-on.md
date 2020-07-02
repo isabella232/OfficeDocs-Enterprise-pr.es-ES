@@ -1,7 +1,7 @@
 ---
-title: 'Soporte de aplicaciones cliente de Office 365: Inicio de sesión único'
-ms.author: robmazz
-author: robmazz
+title: 'Soporte técnico de la aplicación cliente de Microsoft 365: Inicio de sesión único'
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Compatibilidad con aplicaciones cliente de Office 365 para inicio de sesión único (Single Sign-on).
-ms.openlocfilehash: 8d6ba1701d9981bb5833bd6cf6ace641d5a27181
-ms.sourcegitcommit: 576c3dbdef535f952a861197dea5348908da9504
+description: Compatibilidad con aplicaciones cliente de Microsoft 365 para inicio de sesión único (Single Sign-on).
+ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44619336"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998518"
 ---
-# <a name="office-365-client-app-support--single-sign-on"></a>Soporte de aplicaciones cliente de Office 365: Inicio de sesión único
+# <a name="microsoft-365-client-app-support--single-sign-on"></a>Soporte técnico de la aplicación cliente de Microsoft 365: Inicio de sesión único
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 El inicio de sesión único (SSO) agrega seguridad y comodidad cuando los usuarios inician sesión en aplicaciones de Azure Active Directory (Azure AD). Con el inicio de sesión único, los usuarios inician sesión una vez con una cuenta para tener acceso a dispositivos Unidos a un dominio, recursos de la compañía, software como aplicaciones de servicio (SaaS) y aplicaciones Web.
 
@@ -39,7 +39,7 @@ Obtenga más información sobre [el inicio de sesión único](https://docs.micro
  - iOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-Para obtener más información acerca de la compatibilidad de plataformas en Office 365, vea [System Requirements for office 365](https://products.office.com/office-system-requirements).
+Para obtener más información acerca de la compatibilidad de plataformas de Microsoft 365, vea [requisitos del sistema para microsoft 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Clientes compatibles
 
@@ -66,6 +66,6 @@ Las versiones más recientes de los siguientes clientes admiten el inicio de ses
 > <sup>3</sup> pronto estará disponible la compatibilidad con pizarra en Android. <br>
 > <sup>4</sup> pronto estarán disponibles las ayudas para Outlook, Microsoft Teams y el portal de la empresa en MacOS. <br>
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
