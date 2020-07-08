@@ -15,37 +15,37 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras, está disponible para Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial.
-ms.openlocfilehash: bd287bc768aa43c95bc073892b79b7f5aed969df
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: La autenticación moderna es un método de administración de identidades que ofrece una autenticación y autorización de usuario más seguras, está disponible para Skype empresarial Server local y Exchange Server local, y para entornos híbridos de Skype empresarial de dominio dividido.
+ms.openlocfilehash: 6415fe374f63093b44ebacc125dc40c9ea70e898
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997436"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052513"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Skype Empresarial local para usar la autenticación moderna híbrida
 
 *Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
-La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras, está disponible para Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial.
+La autenticación moderna es un método de administración de identidades que ofrece una autenticación y autorización de usuario más seguras, está disponible para Skype empresarial Server local y Exchange Server local, y para entornos híbridos de Skype empresarial de dominio dividido.
   
  **Importante** ¿Le gustaría saber más sobre la autenticación moderna (MA) y por qué prefiere usarla en su empresa u organización? Consulte [este documento](hybrid-modern-auth-overview.md) para obtener información general. Si necesita saber qué topologías de Skype empresarial son compatibles con MA, esto se documenta aquí.
   
- **Antes de empezar**, debo llamar a:
+ **Antes de empezar**, utilizo estos términos:
   
-- MA de autenticación moderna \>
+- Autenticación moderna (MA)
 
-- HMA de autenticación moderna híbrida \>
+- Autenticación moderna híbrida (HMA)
 
-- T local de Exchange \>
+- Exchange local (EXCH)
 
-- Exo de Exchange Online \>
+- Exchange Online (EXO)
 
-- Skype empresarial local \> SFB
+- Skype empresarial local (SFB)
 
-- y Skype empresarial online \> SFBO
+- Skype empresarial online (SFBO)
 
-Además, si un gráfico de este artículo tiene un objeto que está atenuado o está atenuado, significa que el elemento que se muestra en gris **no se** incluye en la configuración específica de ma.
+Además, si un gráfico de este artículo tiene un objeto atenuado o atenuado, significa que el elemento que se muestra en gris **no se** incluye en la configuración específica de ma.
   
 ## <a name="read-the-summary"></a>Leer el Resumen
 
@@ -69,7 +69,7 @@ Estos pasos activan el MA para SFB, SFBO, EXCH y EXO-es decir, todos los product
   
 ![Una topología de HMA de Skype empresarial de 6 mixtas tiene MA activada en las cuatro ubicaciones posibles.](media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
   
-Como puede ver, hay cuatro lugares distintos para activar MA. Para obtener la mejor experiencia de usuario, se recomienda activar MA en cuatro de estas ubicaciones. Si no puede activar MA en todas estas ubicaciones, ajuste los pasos para que Active MA solo en las ubicaciones necesarias para su entorno.
+Como puede ver, hay cuatro lugares distintos para activar MA. Para obtener la mejor experiencia del usuario, le recomendamos que Active MA en las cuatro ubicaciones. Si no puede activar MA en todas estas ubicaciones, ajuste los pasos para que Active MA solo en las ubicaciones necesarias para su entorno.
   
 Vea el [tema sobre compatibilidad de Skype empresarial con Ma](https://technet.microsoft.com/library/mt803262.aspx) para topologías compatibles.
   
@@ -89,7 +89,7 @@ Una vez que haya comprobado que cumple los [requisitos previos](hybrid-modern-au
 
 - **Direcciones URL del servicio Web SFB 2015 CU5**
 
-Necesitará direcciones URL de servicios Web internos y externos para todos los grupos de SfB 2015 que se implementen. Para obtenerlos, ejecute lo siguiente desde Shell de administración de Skype empresarial:
+necesitará direcciones URL de servicios Web internos y externos para todos los grupos de SfB 2015 implementados. Para obtenerlos, ejecute lo siguiente desde Shell de administración de Skype empresarial:
   
 ```powershell
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
@@ -99,7 +99,7 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
 
 - Precio. Exteriorhttps://lyncwebext01.contoso.com
 
-Si usa un servidor Standard Edition, la dirección URL interna estará en blanco. En este caso, use el FQDN del grupo de servidores para la dirección URL interna.
+Si está usando un servidor Standard Edition, la dirección URL interna estará en blanco. En este caso, use el FQDN del grupo de servidores para la dirección URL interna.
   
 ## <a name="turn-on-modern-authentication-for-exo"></a>Activar la autenticación moderna para EXO
 
@@ -115,13 +115,13 @@ Siga las instrucciones que se indican a continuación: [Cómo configurar Exchang
   
 ## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>Activar la autenticación moderna híbrida para Skype empresarial local
 
-### <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Agregar direcciones URL de servicios web locales como SPN en Azure AD
+### <a name="add-on-premises-web-service-urls-as-spns-in-azure-active-directory"></a>Agregar direcciones URL de servicios web locales como SPN en Azure Active Directory
 
 Ahora deberá ejecutar comandos para agregar las direcciones URL (recopiladas anteriormente) como entidades de servicio en SFBO.
   
  **Nota:** Los nombres de entidad de seguridad de servicio (SPN) identifican los servicios web y los asocian a una entidad de seguridad (como un grupo o nombre de cuenta) para que el servicio pueda actuar en nombre de un usuario autorizado. Los clientes que se autentican en un servidor usan la información contenida en los SPN.
   
-1. En primer lugar, conéctese a AAD con [estas instrucciones](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
+1. En primer lugar, conéctese a Azure Active Directory (Azure AD) con [estas instrucciones](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
 
 2. Ejecute este comando, local, para obtener una lista de las direcciones URL del servicio Web de SFB.
 
@@ -135,7 +135,7 @@ Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | 
 
 3. Si faltan las URL de SFB internas **o** externas de local (por ejemplo, https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com) se deben agregar esos registros específicos a esta lista.
 
-    Asegúrese de reemplazar *las direcciones URL de ejemplo* , a continuación, con las direcciones URL reales en el comando Agregar comandos!
+    Asegúrese de reemplazar *las direcciones URL de ejemplo* a continuación por las direcciones URL reales en el comando Agregar comandos!
   
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
@@ -144,7 +144,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. Compruebe que los nuevos registros se han agregado ejecutando el comando **Get-MsolServicePrincipal** del paso 2 de nuevo y observando los resultados. Compare la lista o la captura de pantalla de antes con la nueva lista de SPN (también puede mostrar una captura de pantalla de la nueva lista de sus registros). Si ha tenido éxito, verá las dos nuevas direcciones URL en la lista. Siguiendo nuestro ejemplo, la lista de SPN ahora incluirá las direcciones URL específicas https://lyncwebint01.contoso.com y https://lyncwebext01.contoso.com/ .
+4. Compruebe que los nuevos registros se han agregado ejecutando el comando **Get-MsolServicePrincipal** del paso 2 de nuevo y observando los resultados. Compare la lista o la captura de pantalla de antes con la nueva lista de SPN. También puede mostrar una captura de pantalla de la nueva lista de sus registros. Si ha tenido éxito, verá las dos nuevas direcciones URL en la lista. Siguiendo nuestro ejemplo, la lista de SPN ahora incluirá las direcciones URL específicas https://lyncwebint01.contoso.com y https://lyncwebext01.contoso.com/ .
 
 ### <a name="create-the-evosts-auth-server-object"></a>Crear el objeto de servidor de autenticación de EvoSTS
 
@@ -156,7 +156,7 @@ New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common
 
 ### <a name="enable-hybrid-modern-authentication"></a>Habilitar la autenticación moderna híbrida
 
-Este es el paso que realmente activa MA. Todos los pasos anteriores se pueden ejecutar con antelación sin cambiar el flujo de autenticación del cliente. Cuando esté listo para cambiar el flujo de autenticación, ejecute este comando en el shell de administración de Skype empresarial.
+Este es el paso que activa realmente MA. Todos los pasos anteriores se pueden ejecutar con antelación sin cambiar el flujo de autenticación del cliente. Cuando esté listo para cambiar el flujo de autenticación, ejecute este comando en el shell de administración de Skype empresarial.
 
 ```powershell
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
@@ -164,7 +164,7 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 
 ## <a name="verify"></a>Comprueba
 
-Una vez habilitada la HMA, el próximo inicio de sesión de un cliente usará el nuevo flujo de autenticación. Tenga en cuenta que, al activar la HMA no se activará una nueva autenticación para ningún cliente. Los clientes se vuelven a autenticar en función de la duración de los tokens de autenticación o de los certificados que tienen.
+Una vez habilitada la HMA, el próximo inicio de sesión de un cliente usará el nuevo flujo de autenticación. Tenga en cuenta que, al activar la HMA no se activará una nueva autenticación para ningún cliente. Los clientes se reautentican en función de la duración de los tokens de autenticación o de los certificados que tienen.
   
 Para probar que la HMA funciona después de habilitarla, cierre la sesión del cliente de Windows SFB y haga clic en "eliminar mis credenciales". Vuelva a iniciar sesión. Ahora, el cliente debe usar el flujo de autenticación moderna y el inicio de sesión incluirá un mensaje de **Office 365** para una cuenta de trabajo o escuela, visto justo antes de que el cliente se pone en contacto con el servidor e inicie sesión.
   
@@ -172,7 +172,7 @@ También debe comprobar la "información de configuración" para los clientes de
   
 ![La información de configuración de un cliente de Skype empresarial mediante autenticación moderna muestra una dirección URL de la entidad de OAUTH de Lync y EWS de https://login.windows.net/common/oauth2/authorize .](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
-También debe mantener presionada la tecla CTRL al mismo tiempo que se hace clic en el icono del cliente de Outlook (también en la bandeja de notificaciones de Windows) y en "estado de conexión". Busque la dirección SMTP del cliente en un tipo de "portador" de authn \* , que representa el token del portador usado en OAuth.
+También debe mantener presionada la tecla CTRL al mismo tiempo que hace clic con el botón secundario en el icono del cliente de Outlook (también en la bandeja de notificaciones de Windows) y haga clic en "estado de conexión". Busque la dirección SMTP del cliente en un tipo de "portador" de authn \* , que representa el token del portador usado en OAuth.
   
 ## <a name="related-articles"></a>Artículos relacionados
 

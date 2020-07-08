@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Obtenga información sobre cómo realizar tareas de administración comunes para los grupos de Office 365 en Microsoft PowerShell.
-ms.openlocfilehash: 71d48b133ce716995ec6059a60a0fed487fde208
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: c946b570b0d434886dbd76ba61f53771aa6bca80
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736028"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052483"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Administrar grupos de Office 365 con PowerShell
  
@@ -34,7 +34,7 @@ En este artículo se describen los pasos para realizar tareas de administración
 
 Cuando los usuarios [creen o editen un grupo en Outlook](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), podrá mostrarles un vínculo a las instrucciones de uso de su organización. Por ejemplo, si necesita agregar un prefijo o un sufijo específico a un nombre de grupo.
   
-Use Azure Active Directory PowerShell para apuntar a los usuarios a las directrices de uso de su organización para los grupos de Office 365. Consulte [Azure Active Directory cmdlets para configurar las opciones de grupo](https://go.microsoft.com/fwlink/?LinkID=827484) y siga los pasos que se indican en el vínculo **crear configuración a nivel de directorio** para definir el hipervínculo de la instrucción de uso. Una vez que se haya ejecutado el cmdlet de AAD, el usuario verá el vínculo a las directrices al crear o editar un grupo en Outlook. 
+Use Azure Active Directory (Azure AD) PowerShell para apuntar a los usuarios a las directrices de uso de su organización para los grupos de Office 365. Consulte [Azure Active Directory cmdlets para configurar las opciones de grupo](https://go.microsoft.com/fwlink/?LinkID=827484) y siga los pasos que se indican en el vínculo **crear configuración a nivel de directorio** para definir el hipervínculo de la instrucción de uso. Una vez que ejecute el cmdlet de Azure AD, los usuarios verán el vínculo a las directrices al crear o editar un grupo en Outlook. 
   
 ![Crear un nuevo grupo con el vínculo de instrucciones de uso](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
   

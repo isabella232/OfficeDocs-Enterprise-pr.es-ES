@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras. Está disponible para implementaciones híbridas de Skype empresarial Server local y Exchange Server local, así como para entornos híbridos de dominio dividido de Skype empresarial. Este artículo contiene vínculos a documentos relacionados sobre requisitos previos, la configuración/deshabilitación de la autenticación moderna y para algunos de los clientes relacionados (por ejemplo, Outlook y clientes de Skype) información.
-ms.openlocfilehash: 6b535133af7a1a6666a6a06e2c86aa675f95e042
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 056262ade67b8ffd452f68cc0c5e3882326b2e44
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998028"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052423"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para su uso con servidores locales de Skype empresarial y Exchange
 
@@ -157,8 +157,8 @@ Compruebe y compruebe estos elementos de la lista antes de continuar:
 
 - **Requisitos previos generales**
   - Si usa ADFS, debe tener Windows 2012 R2 ADFS 3,0 y posterior para la Federación.
-  - Las configuraciones de identidad son cualquiera de los tipos compatibles con AAD Connect (como la sincronización de hash de contraseña, la autenticación de paso a través, el STS local admitido por Office 365, et cetera).
-  - Tiene la conexión de AAD configurada y en funcionamiento para la replicación y sincronización de usuarios.
+  - Las configuraciones de identidad son cualquiera de los tipos compatibles con Azure AD Connect (como la sincronización de hash de contraseña, la autenticación de paso a través, el STS local admitido por Office 365, et cetera).
+  - Tiene Azure AD Connect configurado y en funcionamiento para la replicación y sincronización de usuarios.
   - Ha comprobado que la configuración híbrida se ha configurado con el modo de topología híbrida híbrida de Exchange entre el entorno local y el de Office 365. Declaración oficial de soporte para Exchange Hybrid indica que debe tener CU actual o CU actual-1.
     > [!NOTE]
     > La autenticación moderna híbrida no es compatible con el [agente híbrido](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent).
@@ -168,7 +168,7 @@ Compruebe y compruebe estos elementos de la lista antes de continuar:
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>¿Qué más necesito saber antes de empezar?
 <a name="BKMK_Whatelse"> </a>
 
-- Todos los escenarios de servidores locales implican la configuración de la autenticación moderna local (en realidad, para Skype empresarial hay una lista de topologías compatibles), de modo que el servidor responsable de la autenticación y la autorización se encuentra en la nube de Microsoft (servicio de token de seguridad de AAD, denominado "evoSTS"), y actualizando Azure AD acerca de las direcciones URL o los espacios de nombres usados por la instalación local de Skype empresarial o Exchange. Por lo tanto, los servidores locales toman una dependencia de la nube de Microsoft. Realizar esta acción puede considerarse la configuración de la "autenticación híbrida".
+- Todos los escenarios de servidores locales implican la configuración de la autenticación moderna local (en realidad, para Skype empresarial hay una lista de topologías compatibles), de modo que el servidor responsable de la autenticación y la autorización se encuentra en la nube de Microsoft (servicio de token de seguridad de Azure AD, denominado "evoSTS") y actualizando Azure AD acerca de las direcciones URL o los espacios de nombres usados por la instalación local de Skype empresarial o Exchange. Por lo tanto, los servidores locales toman una dependencia de la nube de Microsoft. Realizar esta acción puede considerarse la configuración de la "autenticación híbrida".
 - En este artículo se establecen vínculos a otros usuarios que le ayudarán a elegir las topologías de autenticación moderna admitidas (solo necesarias para Skype empresarial) y los artículos de procedimientos que describen los pasos de configuración, o los pasos para deshabilitar la autenticación moderna para Exchange local y Skype empresarial local. Si va a necesitar una base de datos de inicio para usar la autenticación moderna en su entorno de servidor, es preferible esta página en el explorador.
 
 ## <a name="related-topics"></a>Temas relacionados

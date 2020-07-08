@@ -13,18 +13,18 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 está llegando al final del soporte técnico. Use esta guía básica de planeación como guía para preparar la actualización a Exchange online o a una versión más reciente de Exchange Server local.
-ms.openlocfilehash: 84adfa0216f3e4e8157dfe0717c178a0ece3cc4f
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 2d7ab96d065ffd2d85427f320ce01e3b9023891f
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998048"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052473"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Guía básica de soporte de Exchange 2010
 
 *Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
-El **13 de octubre de 2020**, el servidor de Exchange Server 2010 alcanzará el final del soporte técnico. Si todavía no ha iniciado la migración de Exchange 2010 a Office 365 o Exchange 2016, ahora es el momento de empezar la planeación.
+El **13 de octubre de 2020**, el servidor de Exchange Server 2010 alcanzará el final del soporte técnico. Si todavía no ha iniciado la migración de Exchange 2010 a Microsoft 365, Office 365 o Exchange 2016, ahora es el momento de empezar la planeación.
 
 ## <a name="what-does-end-of-support-mean"></a>¿Qué significa el fin de soporte?
 
@@ -44,17 +44,17 @@ Para obtener más información acerca de los servidores de Office 2010 cerca de 
 
 Una vez que Exchange 2010 alcanza su fin de soporte técnico, este es un buen momento para explorar las opciones y preparar un plan de migración. Puede:
 
-- Migre completamente a Office 365. Migre los buzones usando la migración total, mínima híbrida o híbrida completa y, a continuación, quite los servidores de Exchange locales y Active Directory.
+- Migre completamente a Microsoft 365. Migre los buzones usando la migración total, mínima híbrida o híbrida completa y, a continuación, quite los servidores de Exchange locales y Active Directory.
 - Migre los servidores de Exchange 2010 a Exchange 2016 en los servidores locales.
 
 > [!IMPORTANT]
-> Si su organización decide migrar buzones a Office 365 pero pretende mantener la sincronización de directorios o Azure AD Connect en su lugar para seguir administrando las cuentas de usuario desde Active Directory local, debe tener al menos un servidor de Exchange local. Si se quita el último servidor de Exchange, no podrá realizar cambios en los destinatarios de Exchange en Exchange Online. Esto se debe a que el origen de la autoridad permanece en su Active Directory local y los cambios deben realizarse allí. En este escenario, tiene las siguientes opciones:
+> Si su organización decide migrar buzones a Microsoft 365 pero pretende mantener la sincronización de directorios o Azure AD Connect en su lugar para seguir administrando las cuentas de usuario desde Active Directory local, debe tener al menos un servidor de Exchange local. Si se quita el último servidor de Exchange, no podrá realizar cambios en los destinatarios de Exchange en Exchange Online. Esto se debe a que el origen de la autoridad permanece en su Active Directory local y los cambios deben realizarse allí. En este escenario, tiene las siguientes opciones:
 
-- (**Recomendado**) Si puede migrar sus buzones a Office 365 y actualizar los servidores antes del 13 de octubre de 2020, use Exchange 2010 para conectarse a Office 365 y migrar buzones de correo. A continuación, migre Exchange 2010 a Exchange 2016 y retire los servidores de Exchange 2010 restantes.
-- Si no puede completar la migración de buzones y la actualización del servidor local antes del 13 de octubre de 2020, actualice los servidores locales de Exchange 2010 a Exchange 2016 primero y, a continuación, use Exchange 2016 para conectarse a Office 365 y migrar los buzones de correo.
+- (**Recomendado**) Si puede migrar los buzones a Microsoft 365 y actualizar los servidores antes del 13 de octubre de 2020, use Exchange 2010 para conectarse a Microsoft 365 y migrar los buzones de correo. A continuación, migre Exchange 2010 a Exchange 2016 y retire los servidores de Exchange 2010 restantes.
+- Si no puede completar la migración de buzones y la actualización del servidor local antes del 13 de octubre de 2020, actualice los servidores locales de Exchange 2010 a Exchange 2016 primero y, a continuación, use Exchange 2016 para conectarse a Microsoft 365 y migrar los buzones de correo.
 
 > [!NOTE]
-> Aunque un poco más complicado, también puede migrar buzones a Office 365 y migrar los servidores locales de Exchange 2010 a Exchange 2016.
+> Aunque un poco más complicado, también puede migrar buzones a Microsoft 365 mientras se migran los servidores locales de Exchange 2010 a Exchange 2016.
 
 Estas son las tres rutas que puede realizar para evitar el fin de soporte para Exchange Server 2010.
 
@@ -62,27 +62,27 @@ Estas son las tres rutas que puede realizar para evitar el fin de soporte para E
 
 En las siguientes secciones se examina cada opción con más detalle.
 
-## <a name="migrate-to-office-365"></a>Migrar a Office 365
+## <a name="migrate-to-microsoft-365"></a>Migrar a Microsoft 365
 
-Migrar el correo electrónico a Office 365 es la mejor y más sencilla opción para ayudarle a retirar la implementación de Exchange 2010. Con una migración a Office 365, puede realizar un solo salto de tecnología antigua a características de vanguardia, como:
+Migrar el correo electrónico a Microsoft 365 es la mejor y sencilla opción para ayudarle a retirar la implementación de Exchange 2010. Con una migración a Microsoft 365, puede realizar un solo salto de tecnología antigua a características de vanguardia, como:
 
 - Capacidades de cumplimiento, como directivas de retención, conservación local y retención por juicio, exhibición de documentos electrónicos local y más;
 - Microsoft Teams;
 - Power BI;
 - Bandeja de entrada prioritarios;
-- Análisis de Delve;
+- MyAnalytics
 
-Office 365 también recibe nuevas características y experiencias en primer lugar, y usted y sus usuarios normalmente pueden empezar a usarlas de inmediato. Además de las nuevas características, no tendrá que preocuparse por:
+Microsoft 365 también recibe nuevas características y experiencias en primer lugar, y usted y sus usuarios normalmente pueden empezar a usarlas de inmediato. Además de las nuevas características, no tendrá que preocuparse por:
 
 - Comprar y mantener hardware;
 - Pagar la calefacción y el enfriamiento de los servidores;
 - Mantenerse al día de las correcciones de seguridad, producto y zona horaria;
 - Mantener el almacenamiento y el software para admitir los requisitos de cumplimiento;
-- Actualización a una nueva versión de Exchange: siempre está en la última versión de Exchange en Office 365.
+- Actualización a una nueva versión de Exchange: siempre tiene la última versión de Exchange en Microsoft 365.
 
-### <a name="how-should-i-migrate-to-office-365"></a>¿Cómo debo migrar a Office 365?
+### <a name="how-should-i-migrate-to-microsoft-365"></a>¿Cómo debo migrar a Microsoft 365?
 
-En función de su organización, tiene algunas opciones que le ayudarán a tener acceso a Office 365. Al elegir una opción de migración, debe tener en cuenta algunas cosas como el número de puestos o buzones que necesita mover, el tiempo que desea que dure la migración y si necesita una integración sin problemas entre la instalación local y Office 365 durante la migración. En esta tabla se muestran las opciones de migración y los factores más importantes que determinarán el método que se va a usar.
+En función de su organización, tiene algunas opciones que le ayudarán a obtener acceso a Microsoft 365. Al elegir una opción de migración, debe tener en cuenta algunas cosas como el número de puestos o buzones que necesita mover, el tiempo que desea que dure la migración y si necesita una integración sin problemas entre la instalación local y Microsoft 365 durante la migración. En esta tabla se muestran las opciones de migración y los factores más importantes que determinarán el método que se va a usar.
 
 | **Opción de migración**     | **Tamaño de la organización** | **Duración**        |
 |--------------------------|-----------------------|---------------------|
@@ -94,19 +94,19 @@ En las siguientes secciones se proporciona información general sobre estos mét
 
 ### <a name="cutover-migration"></a>Migración total
 
-Una migración total es una ubicación en la que, en una fecha y hora preseleccionadas, migrará todos los buzones de correo, grupos de distribución, contactos, etc. a Office 365; Cuando haya terminado, cerrará los servidores de Exchange locales y empezará a usar Office 365 exclusivamente.
+Una migración total es una ubicación en la que, en una fecha y hora preseleccionadas, migrará todos los buzones de correo, grupos de distribución, contactos, etc. a Office 365; Cuando haya terminado, cerrará los servidores de Exchange locales y empezará a usar exclusivamente Microsoft 365.
 
-El método de migración total es ideal para las organizaciones pequeñas que no tienen muchos buzones de correo, por lo que quieren ir rápidamente a Office 365 y no desean tratar con algunas de las complejidades de los otros métodos. Pero también es un poco limitado porque debe completarse en una semana o menos y porque requiere que los usuarios vuelvan a configurar sus perfiles de Outlook. Aunque la migración total puede administrar hasta 2.000 buzones de correo, se recomienda encarecidamente migrar un máximo de 150 buzones de correo con este método. Si intenta migrar más de 150 buzones de correo, podría quedarse sin tiempo para transferir todos los buzones antes de la fecha límite y el personal de soporte técnico de ti podría sobrecargarse para ayudar a los usuarios a volver a configurar Outlook.
+El método de migración total es ideal para las organizaciones pequeñas que no tienen muchos buzones de correo, por lo que quieren llegar a Microsoft 365 rápidamente y no quieren tratar con algunas de las complejidades de los otros métodos. Pero también es un poco limitado porque debe completarse en una semana o menos y porque requiere que los usuarios vuelvan a configurar sus perfiles de Outlook. Aunque la migración total puede administrar hasta 2.000 buzones de correo, se recomienda encarecidamente migrar un máximo de 150 buzones de correo con este método. Si intenta migrar más de 150 buzones de correo, podría quedarse sin tiempo para transferir todos los buzones antes de la fecha límite y el personal de soporte técnico de ti podría sobrecargarse para ayudar a los usuarios a volver a configurar Outlook.
 
-Si está pensando en realizar una migración total, estas son algunas de las cosas que debe considerar:
+Si está pensando en realizar una migración total, estas son algunas de las cosas que debe tener en cuenta:
 
-- Office 365 tendrá que conectarse a los servidores de Exchange 2010 mediante Outlook Anywhere a través del puerto TCP 443;
-- Todos los buzones locales se moverán a Office 365;
+- Microsoft 365 tendrá que conectarse a los servidores de Exchange 2010 mediante Outlook Anywhere a través del puerto TCP 443;
+- Todos los buzones locales se moverán a Microsoft 365;
 - Necesitará una cuenta de administrador local que tenga acceso para leer el contenido de los buzones de los usuarios;
-- Los dominios aceptados de Exchange 2010 que desea usar en Office 365 deben agregarse como dominios comprobados en el servicio;
-- Entre el momento en que inicie la migración y cuando comience la fase de finalización, Office 365 sincronizará periódicamente los buzones de Office 365 y locales. Esto le permite completar la migración sin preocuparse por el correo electrónico que queda en sus buzones locales;
-- Los usuarios recibirán nuevas contraseñas temporales en su cuenta de Office 365 que necesitarán cambiar cuando inicien sesión en sus buzones por primera vez;
-- Necesitará una licencia de Office 365 que incluya Exchange Online para cada buzón de usuario que migre;
+- Los dominios aceptados de Exchange 2010 que desea usar en Microsoft 365 deben agregarse como dominios comprobados en el servicio;
+- Entre el momento en que inicia la migración y la fase de finalización, Microsoft 365 sincronizará periódicamente los buzones de correo de Microsoft 365 y locales. Esto le permite completar la migración sin preocuparse por el correo electrónico que queda en sus buzones locales;
+- Los usuarios recibirán nuevas contraseñas temporales para su cuenta de Microsoft 365 que necesitarán cambiar cuando inicien sesión en sus buzones por primera vez;
+- Necesitará una licencia de 365 de Microsoft que incluya Exchange Online para cada buzón de usuario que migre;
 - Los usuarios tendrán que configurar un nuevo perfil de Outlook en cada uno de sus dispositivos y descargar de nuevo el correo electrónico. La cantidad de correo electrónico que Outlook va a descargar puede variar. Para obtener más información, eche un vistazo a [cambiar la cantidad de correo que se va a mantener sin conexión](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&rs=en-US&ad=US&fromAR=1).
 
 Para obtener más información sobre la migración total, eche un vistazo a:
@@ -116,43 +116,43 @@ Para obtener más información sobre la migración total, eche un vistazo a:
 
 ### <a name="minimal-hybrid-migration"></a>Migración híbrida mínima
 
-Una migración híbrida o exprés mínima es la que tiene unos cientos de buzones de correo que desea migrar a Office 365, puede completar la migración en unas pocas semanas y no necesita ninguna de las características de migración híbrida avanzada, como la información de calendario de disponibilidad compartida.
+Una migración híbrida o exprés mínima es la que tiene unos cientos de buzones de correo que desea migrar a Microsoft 365, puede completar la migración en unas pocas semanas y no necesita ninguna de las características de migración híbrida avanzada, como la información de calendario de disponibilidad compartida.
 
-La migración híbrida mínima es ideal para las organizaciones que necesitan más tiempo para migrar sus buzones de correo a Office 365, pero que aún planean completar la migración en unas pocas semanas. Se obtienen algunas ventajas de la migración híbrida completa más avanzada sin muchas de las complejidades. Puede controlar cuántos y qué buzones se migran en un momento dado; Los buzones de Office 365 se crearán con el nombre de usuario y las contraseñas de sus cuentas locales; y, a diferencia de las migraciones de traslado, los usuarios no tendrán que volver a crear sus perfiles de Outlook.
+La migración híbrida mínima es ideal para las organizaciones que necesitan más tiempo para migrar sus buzones de correo a Microsoft 365, pero que aún planean completar la migración en unas pocas semanas. Se obtienen algunas ventajas de la migración híbrida completa más avanzada sin muchas de las complejidades. Puede controlar cuántos y qué buzones se migran en un momento dado; Los buzones de correo de Microsoft 365 se crearán con el nombre de usuario y las contraseñas de sus cuentas locales; y, a diferencia de las migraciones de traslado, los usuarios no tendrán que volver a crear sus perfiles de Outlook.
 
 Si está pensando en realizar una migración híbrida mínima, estas son algunas de las cosas que debe tener en cuenta:
 
-- Deberá realizar una sincronización de directorios de una sola vez entre los servidores locales de Active Directory y Office 365;
-- Los usuarios podrán iniciar sesión en su buzón de correo de Office 365 con el mismo nombre de usuario y la misma contraseña que usaban cuando se migró el buzón de correo;
-- Necesitará una licencia de Office 365 que incluya Exchange Online para cada buzón de usuario que migre;
+- Deberá realizar una sincronización de directorios de una sola vez entre los servidores locales de Active Directory y Microsoft 365;
+- Los usuarios podrán iniciar sesión en el buzón de correo de Microsoft 365 usando el mismo nombre de usuario y la misma contraseña que usaban cuando se migró el buzón de correo;
+- Necesitará una licencia de 365 de Microsoft que incluya Exchange Online para cada buzón de usuario que migre;
 - Los usuarios no necesitan configurar un nuevo perfil de Outlook en la mayoría de sus dispositivos (algunos teléfonos Android más antiguos podrían necesitar un nuevo perfil) y no tendrán que volver a descargar el correo electrónico.
 
 Para obtener más información acerca de la migración híbrida mínima, eche un vistazo al uso de la [mínima implementación híbrida para migrar rápidamente buzones de Exchange a Office 365](https://support.office.com/article/Use-Minimal-Hybrid-to-quickly-migrate-Exchange-mailboxes-to-Office-365-fdecceed-0702-4af3-85be-f2a0013937ef)
 
 ### <a name="full-hybrid"></a>Híbrida completa
 
-Una migración híbrida completa es aquel en el que la organización tiene muchos cientos, hasta decenas de miles de buzones de correo y desea mover algunos o todos ellos a Office 365. Debido a que estas migraciones suelen ser más duraderas, las migraciones híbridas hacen que sea posible:
+Una migración híbrida completa es aquel en el que la organización tiene muchos cientos, hasta decenas de miles de buzones de correo y desea mover algunos o todos ellos a Microsoft 365. Debido a que estas migraciones suelen ser más duraderas, las migraciones híbridas hacen que sea posible:
 
-- Mostrar a los usuarios locales la información del calendario de disponibilidad para los usuarios de Office 365 y viceversa;
-- Consulte una lista global de direcciones unificada que contenga destinatarios tanto en local como en Office 365;
-- Ver las tarjetas de destinatarios de Outlook completas para todos los usuarios, independientemente de si son locales o en Office 365;
+- Mostrar a los usuarios locales la información del calendario de disponibilidad para los usuarios de Microsoft 365 y viceversa;
+- Vea una lista global de direcciones unificada que contiene destinatarios en el sistema local y en Microsoft 365;
+- Ver las propiedades completas de los destinatarios de destinatario de Outlook para todos los usuarios, independientemente de si son locales o en Microsoft 365;
 - Proteger la comunicación del correo electrónico entre los servidores de Exchange locales y Office 365 mediante TLS y certificados;
-- Tratar los mensajes enviados entre servidores de Exchange locales y Office 365 como internos, lo que les permite:
+- Tratar los mensajes enviados entre servidores de Exchange locales y Microsoft 365 como internos, lo que les permite:
 - Ser evaluados y procesados correctamente por agentes de transporte y cumplimiento dirigidos a mensajes internos;
 - Omitir los filtros contra correo no deseado.
 
-Las migraciones híbridas completas son las más adecuadas para las organizaciones que esperan permanecer en una configuración híbrida durante muchos meses o más. Obtendrá las características enumeradas anteriormente en esta sección, además de la sincronización de directorios, mejores características de cumplimiento integradas y la capacidad de mover buzones de correo a y desde Office 365 mediante movimientos de buzón en línea. Office 365 se convierte en una extensión de su organización local.
+Las migraciones híbridas completas son las más adecuadas para las organizaciones que esperan permanecer en una configuración híbrida durante muchos meses o más. Obtendrá las características enumeradas anteriormente en esta sección, además de la sincronización de directorios, mejores características de cumplimiento integradas y la capacidad de mover buzones de correo a y desde Microsoft 365 mediante movimientos de buzón en línea. Microsoft 365 se convierte en una extensión de la organización local.
 
 Si está pensando en realizar una migración híbrida completa, estas son algunas de las cosas que debe tener en cuenta:
 
 - Las migraciones híbridas completas no son adecuadas para todos los tipos de organizaciones. Debido a la complejidad de las migraciones híbridas completas, las organizaciones con menos de unos pocos cientos de buzones de correo no suelen ver las ventajas que justifican el esfuerzo y el costo necesario para configurarlos. Si esto suena como su organización, se recomienda que considere la posibilidad de realizar migraciones híbridas de transferencia o mínimas.
-- Deberá configurar la sincronización de directorios con Azure Active Directory (Azure AD) conectado entre los servidores locales de Active Directory y Office 365;
-- Los usuarios podrán iniciar sesión en su buzón de correo de Office 365 usando el mismo nombre de usuario y contraseña que usan cuando inician sesión en la red local (requiere Azure AD Connect con la sincronización de contraseña y/o los servicios de Federación de Active Directory);
-- Necesitará una licencia de Office 365 que incluya Exchange Online para cada buzón de usuario que migre;
+- Deberá configurar la sincronización de directorios con Azure Active Directory (Azure AD) conectado entre los servidores locales de Active Directory y Microsoft 365;
+- Los usuarios podrán iniciar sesión en el buzón de correo de Microsoft 365 usando el mismo nombre de usuario y contraseña que usan cuando inician sesión en la red local (requiere Azure AD Connect con la sincronización de contraseñas y/o los servicios de Federación de Active Directory);
+- Necesitará una licencia de 365 de Microsoft que incluya Exchange Online para cada buzón de usuario que migre;
 - Los usuarios no necesitan configurar un nuevo perfil de Outlook en la mayoría de sus dispositivos (algunos teléfonos Android más antiguos podrían necesitar un nuevo perfil) y no tendrán que volver a descargar el correo electrónico.
 
 > [!IMPORTANT]
-> Si su organización decide migrar buzones a Office 365 pero pretende mantener la sincronización de directorios o Azure AD Connect en su lugar para seguir administrando las cuentas de usuario desde Active Directory local, debe tener al menos un servidor de Exchange local. Si se quita el último servidor de Exchange, no podrá realizar cambios en los destinatarios de Exchange en Exchange Online. Esto se debe a que el origen de la autoridad permanece en su Active Directory local y los cambios deben realizarse allí.
+> Si su organización decide migrar buzones a Microsoft 365 pero pretende mantener la sincronización de directorios o Azure AD Connect en su lugar para seguir administrando las cuentas de usuario desde Active Directory local, debe tener al menos un servidor de Exchange local. Si se quita el último servidor de Exchange, no podrá realizar cambios en los destinatarios de Exchange en Exchange Online. Esto se debe a que el origen de la autoridad permanece en su Active Directory local y los cambios deben realizarse allí.
 
 Si le suena una migración híbrida completa, eche un vistazo a los siguientes recursos para ayudarle con la migración:
 
@@ -164,11 +164,11 @@ Si le suena una migración híbrida completa, eche un vistazo a los siguientes r
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>Actualizar a una versión más reciente de Exchange Server local
 
-Aunque creemos que puede lograr el mejor valor y la experiencia del usuario mediante la migración completa a Office 365, también sabemos que algunas organizaciones necesitan mantener algunos servidores de Exchange locales. Esto puede deberse a los requisitos normativos, para garantizar que los datos no se almacenan en un centro de datos ubicado en otro país, o puede deberse a que tenga una configuración o requisitos únicos que no se puedan cumplir en la nube, o bien que sea simplemente necesario que Exchange administre los buzones en la nube porque todavía usa Active Directory local. En cualquier caso en el que elija o necesite mantener Exchange local, debe asegurarse de que el entorno de Exchange 2010 se actualiza al menos Exchange 2013 o Exchange 2016 y que Exchange 2010 se ha quitado antes de la fecha de finalización del soporte técnico.
+Aunque creemos que puede lograr el mejor valor y la experiencia del usuario mediante la migración completa a Microsoft 365, también sabemos que algunas organizaciones necesitan mantener algunos servidores de Exchange locales. Esto puede deberse a los requisitos normativos, para garantizar que los datos no se almacenan en un centro de datos ubicado en otro país, o puede deberse a que tenga una configuración o requisitos únicos que no se puedan cumplir en la nube, o bien que sea simplemente necesario que Exchange administre los buzones en la nube porque todavía usa Active Directory local. En cualquier caso en el que elija o necesite mantener Exchange local, debe asegurarse de que el entorno de Exchange 2010 se actualiza al menos Exchange 2013 o Exchange 2016 y que Exchange 2010 se ha quitado antes de la fecha de finalización del soporte técnico.
 
 Para que la experiencia sea óptima, le recomendamos que actualice el entorno local restante a Exchange 2016. No es necesario instalar Exchange Server 2013 si desea ir directamente de Exchange Server 2010 a Exchange Server 2016.
 
-Exchange 2016 incluye todas las características y los avances incluidos en versiones anteriores de Exchange, y es la más cercana a la experiencia disponible con Office 365 (aunque algunas características solo están disponibles en Office 365). Consulte sólo algunas de las cosas en las que falta:
+Exchange 2016 incluye todas las características y los avances incluidos en versiones anteriores de Exchange, y se ajusta mejor a la experiencia disponible con Microsoft 365 (aunque algunas características solo están disponibles en Microsoft 365). Consulte sólo algunas de las cosas que ha estado perdiendo:
 
 | **Versión de Exchange**                     | **Funciones**                                                                                                                                                                                                                                         |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -226,9 +226,9 @@ También puede [Descargar](https://github.com/MicrosoftDocs/microsoft-365-docs/r
       
 ## <a name="what-if-i-need-help"></a>¿Qué debo hacer si necesito ayuda?
 
-Si va a migrar a Office 365, puede ser elegible para usar nuestro servicio Microsoft FastTrack. FastTrack proporciona los procedimientos recomendados, las herramientas y los recursos para que la migración a Office 365 sea lo más fluida posible. Lo mejor de todo es que tendrá un ingeniero de soporte real que le guiará a través de la migración, desde la planeación y el diseño hasta la migración del último buzón. Si desea saber más sobre FastTrack, eche un vistazo a [Microsoft FastTrack](https://fasttrack.microsoft.com/).
+Si va a migrar a Microsoft 365, puede ser elegible para usar nuestro servicio Microsoft FastTrack. FastTrack proporciona los procedimientos recomendados, las herramientas y los recursos para que la migración a Microsoft 365 sea lo más fluida posible. Lo mejor de todo es que tendrá un ingeniero de soporte real que le guiará a través de la migración, desde la planeación y el diseño hasta la migración del último buzón. Si desea saber más sobre FastTrack, eche un vistazo a [Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
-Si surgen problemas durante la migración a Office 365 y no usa FastTrack o migrar a una versión más reciente de Exchange Server, estamos aquí para ayudarle. Estos son algunos de los recursos que puede usar:
+Si surgen problemas durante la migración a Microsoft 365 y no usa FastTrack o migrar a una versión más reciente de Exchange Server, estamos aquí para ayudarle. Estos son algunos de los recursos que puede usar:
 
 - [Comunidad de soporte técnico](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
 - [Soporte al cliente](https://support.microsoft.com/gp/support-options-for-business)

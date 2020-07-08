@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Resumen: una explicación del aislamiento y el control de acceso dentro de las distintas aplicaciones de Microsoft 365.'
-ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: fc0aa37025936a1a60cfbb8914b079eba5ba2e7f
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998794"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052593"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Aislamiento y control de acceso en Microsoft 365
 
-Azure Active Directory Ry (Azure AD) y Microsoft 365 usan un modelo de datos muy complejo que incluye decenas de servicios, cientos de entidades, miles de relaciones y decenas de miles de atributos. En un nivel alto, Azure AD y los directorios de servicio son los contenedores de los inquilinos y los destinatarios que se mantienen sincronizados mediante protocolos de replicación basados en el estado. Además de la información de directorio contenida en Azure AD, cada una de las cargas de trabajo de servicio tiene su propia infraestructura de servicios de directorio.
+Azure Active Directory (Azure AD) y Microsoft 365 usan un modelo de datos muy complejo que incluye decenas de servicios, cientos de entidades, miles de relaciones y decenas de miles de atributos. En un nivel alto, Azure AD y los directorios de servicio son los contenedores de los inquilinos y los destinatarios que se mantienen sincronizados mediante protocolos de replicación basados en el estado. Además de la información de directorio contenida en Azure AD, cada una de las cargas de trabajo de servicio tiene su propia infraestructura de servicios de directorio.
  
 ![Sincronización de datos del espacio empresarial de 365 de Microsoft](media/office-365-isolation-tenant-data-sync.png)
 
@@ -33,7 +33,7 @@ Dentro de este modelo, no hay un único origen de datos de directorio. Sistemas 
 
 Microsoft 365 usa el almacenamiento físico y el almacenamiento en la nube de Azure. Exchange Online (incluida la protección en línea de Exchange) y Skype empresarial usan su propio almacenamiento para los datos de clientes. SharePoint Online usa el almacenamiento de SQL Server y Azure Storage, de ahí la necesidad de un aislamiento adicional de los datos de cliente en el nivel de almacenamiento.
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange en línea
 
 Exchange Online almacena los datos de clientes dentro de los buzones. Los buzones de correo se hospedan en bases de datos del motor de almacenamiento extensible (ESE) denominadas bases de datos de buzones. Esto incluye los buzones de usuario, los buzones vinculados, los buzones compartidos y los buzones de carpetas públicas. Los buzones de usuario incluyen contenido guardado de Skype empresarial, como historiales de conversaciones.
 
