@@ -13,12 +13,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 está llegando al final del soporte técnico. Use esta guía básica de planeación como guía para preparar la actualización a Exchange online o a una versión más reciente de Exchange Server local.
-ms.openlocfilehash: 2d7ab96d065ffd2d85427f320ce01e3b9023891f
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: 61f10ef84274f1b4022937bb0edc19695822aef9
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052473"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102538"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Guía básica de soporte de Exchange 2010
 
@@ -216,9 +216,9 @@ Puede usar los siguientes recursos para ayudarle con la migración:
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Resumen de opciones para el cliente y los servidores de Office 2010 y Windows 7
 
-Para obtener un resumen visual de las opciones de actualización, migración y movimiento a la nube para los clientes y servidores de Office 2010 y Windows 7, consulte el [póster de final de soporte técnico](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
+Para obtener un resumen visual de las opciones de actualización, migración y movimiento a la nube para los clientes y servidores de Office 2010 y Windows 7, consulte el [póster de final de soporte técnico](./downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![Imagen para el final del soporte técnico para los servidores y clientes de Office 2010 y póster de Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Imagen para el final del soporte técnico para los servidores y clientes de Office 2010 y póster de Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
 
 Este póster de una página es una forma rápida de comprender las diversas rutas que puede realizar para evitar que los productos de cliente y servidor de Office 2010 y Windows 7 lleguen al final del soporte técnico, con las rutas preferidas y la compatibilidad con la opción en Microsoft 365 Enterprise resaltado.
 

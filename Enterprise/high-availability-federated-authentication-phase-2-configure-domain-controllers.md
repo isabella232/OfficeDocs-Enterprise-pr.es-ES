@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Resumen: Configure los controladores de dominio y el servidor de sincronización de directorios para la autenticación federada de alta disponibilidad para Microsoft 365 en Microsoft Azure.'
-ms.openlocfilehash: c10fb2d32ea572280b43d32da56b9e4d6affa22a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 14939691e8dc114a6234bfee1ade7212762eae04
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998058"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102528"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio
 
@@ -70,7 +70,7 @@ Recuerde que definió las tablas R, V, S, I y A en la [fase 1: configure Azure](
 Después de especificar todos los valores correctos, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en el Entorno de scripting integrado (ISE) de PowerShell en el equipo local.
   
 > [!TIP]
-> Para generar bloques de comandos de PowerShell listos para ejecutar en función de la configuración personalizada, use este [libro de configuración de Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx). 
+> Para generar bloques de comandos de PowerShell listos para ejecutar en función de la configuración personalizada, use este [libro de configuración de Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 ```powershell
 # Set up variables common to both virtual machines
@@ -251,7 +251,7 @@ Esta es la configuración completada después de la finalización correcta de es
 
 Use [Phase 3: Configure los servidores de AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) para seguir configurando esta carga de trabajo.
   
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

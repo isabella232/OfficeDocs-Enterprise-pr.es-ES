@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumen: Configure los servidores proxy de aplicación web para la autenticación federada de alta disponibilidad para Microsoft 365 en Microsoft Azure.'
-ms.openlocfilehash: 4d6e2991c3293952c38e994728e6eca7ea5f5b35
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 005497f9da7986fb4538b4d4c9699e55fe26fa65
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711893"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102498"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 de la autenticación federada de alta disponibilidad: Configurar los proxy de aplicación web
 
@@ -37,7 +37,7 @@ Debe crear un equilibrador de carga accesible desde Internet para que Azure dist
 Cuando haya proporcionado los valores de ubicación y grupo de recursos, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en PowerShell ISE.
   
 > [!TIP]
-> Para generar bloques de comandos de PowerShell listos para ejecutar en función de la configuración personalizada, use este [libro de configuración de Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx). 
+> Para generar bloques de comandos de PowerShell listos para ejecutar en función de la configuración personalizada, use este [libro de configuración de Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 ```powershell
 # Set up key variables

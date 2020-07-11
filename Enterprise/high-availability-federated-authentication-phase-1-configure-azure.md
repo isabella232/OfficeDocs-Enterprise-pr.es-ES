@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumen: configure la infraestructura de Microsoft Azure para hospedar la autenticación federada de alta disponibilidad para Microsoft 365.'
-ms.openlocfilehash: 10bf8165b36571b5cd68107fa32e26db970d1d58
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 5b0eed42076a79af52566868c8e6134c48fd847f
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711953"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102548"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure
 
@@ -44,14 +44,14 @@ Antes de empezar a configurar los componentes de Azure, rellene las tablas sigui
 |1.  <br/> |Nombre de VNET  <br/> |Nombre que se asignará a la red virtual (por ejemplo, FedAuthNet).  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Ubicación de la VNET  <br/> |Centro de datos regional de Azure que contendrá la red virtual.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |Dirección IP del dispositivo VPN  <br/> |Dirección IPv4 pública de la interfaz del dispositivo VPN en Internet.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Espacio de direcciones de la VNET  <br/> |El espacio de direcciones de la red virtual. Colabore con su departamento de TI para determinar este espacio de direcciones.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Clave compartida IPsec  <br/> |Cadena alfanumérica aleatoria de 32 caracteres que se usará para autenticar ambos lados de la conexión VPN de sitio a sitio. Colabore con su departamento de TI o de seguridad para determinar el valor de la clave y, después, guárdelo en una ubicación segura. También puede ver [Crear una cadena aleatoria para una clave precompartida IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Espacio de direcciones de la VNET  <br/> |The address space for the virtual network. Work with your IT department to determine this address space.  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Clave compartida IPsec  <br/> |A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value. Alternately, see [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![línea](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabla V: Configuración de la red virtual entre locales**
   
-Después, rellene la Tabla S de las subredes de esta solución. Todos los espacios de direcciones tienen que estar en formato de Enrutamiento de interdominios sin clases (CIDR), también conocido como formato de prefijo de red (por ejemplo, 10.24.64.0/20).
+Next, fill in Table S for the subnets of this solution. All address spaces should be in Classless Interdomain Routing (CIDR) format, also known as network prefix format. An example is 10.24.64.0/20.
   
-Para las primeras tres subredes, especifique un nombre y un espacio de direcciones IP único basándose en el espacio de direcciones de la red virtual. Para la subred de la puerta de enlace, determine el espacio de direcciones de 27 bits (con una longitud de prefijo de /27) para la subred de puerta de enlace de Azure con lo siguiente:
+For the first three subnets, specify a name and a single IP address space based on the virtual network address space. For the gateway subnet, determine the 27-bit address space (with a /27 prefix length) for the Azure gateway subnet with the following:
   
 1. Establezca los bits variables en el espacio de direcciones de la VNET en 1, hasta los bits usados por la subred de la puerta de enlace y, después, establezca el resto de los bits en 0.
     
@@ -96,7 +96,7 @@ Para dos servidores de Sistema de nombres de dominio (DNS) en la red local que q
   
 Para enrutar paquetes desde la red entre locales a la red de la organización a través de la conexión VPN de sitio a sitio, debe configurar la red virtual con una red local que tenga una lista de espacios de direcciones (en notación CIDR) para todas las ubicaciones de acceso en la red local de su organización. La lista de espacios de direcciones que definen la red local tiene que ser única y no puede superponerse con el espacio de direcciones usado para otras redes virtuales ni otras redes locales.
   
-Para el conjunto de espacios de direcciones de la red local, rellene la Tabla L. Fíjese en que aparecen tres entradas en blanco, pero lo normal es que necesite más. Colabore con su departamento de TI para determinar esta lista de espacios de direcciones.
+For the set of local network address spaces, fill in Table L. Note that three blank entries are listed but you will typically need more. Work with your IT department to determine this list of address spaces.
   
 |**Elemento**|**Espacio de direcciones de la red local**|
 |:-----|:-----|
@@ -118,7 +118,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> Para generar bloques de comandos de PowerShell listos para ejecutar en función de la configuración personalizada, use este [libro de configuración de Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx). 
+> Para generar bloques de comandos de PowerShell listos para ejecutar en función de la configuración personalizada, use este [libro de configuración de Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 Obtenga su nombre de suscripción mediante el comando siguiente.
   
@@ -139,7 +139,7 @@ $subscrName="<subscription name>"
 Select-AzSubscription -SubscriptionName $subscrName
 ```
 
-Después, cree los grupos de recursos. Para determinar un conjunto único de nombres de grupos de recursos, use este comando para mostrar una lista de los grupos de recursos existentes.
+Next, create the new resource groups. To determine a unique set of resource group names, use this command to list your existing resource groups.
   
 ```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
@@ -261,7 +261,7 @@ El paso siguiente es anotar la dirección IPv4 pública de Azure VPN Gateway par
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-Después, configure el dispositivo VPN local para que se conecte a Azure VPN Gateway. Para obtener más información, vea [Configurar un dispositivo VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [Configure your VPN device](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 Para configurar el dispositivo VPN local necesita lo siguiente:
   
@@ -269,9 +269,9 @@ Para configurar el dispositivo VPN local necesita lo siguiente:
     
 - La clave precompartida IPsec para la conexión VPN de sitio a sitio (Tabla V, elemento 5, columna Valor).
     
-Después, asegúrese de que el espacio de direcciones de la red virtual sea accesible desde la red local. Para hacerlo, normalmente se agrega una ruta que se corresponde con el espacio de direcciones de la red virtual al dispositivo VPN y, después, se publica esa ruta para el resto de la infraestructura de enrutamiento de la red de la organización. Colabore con su departamento de TI para conocer cómo completar este procedimiento.
+Next, ensure that the address space of the virtual network is reachable from your on-premises network. This is usually done by adding a route corresponding to the virtual network address space to your VPN device and then advertising that route to the rest of the routing infrastructure of your organization network. Work with your IT department to determine how to do this.
   
-Después, defina los nombres de los tres conjuntos de disponibilidad. Rellene la Tabla A.  
+Next, define the names of three availability sets. Fill out Table A. 
   
 |**Elemento**|**Objetivo**|**Nombre del conjunto de disponibilidad**|
 |:-----|:-----|:-----|
