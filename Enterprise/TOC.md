@@ -69,7 +69,7 @@
 ### [Principios de conectividad de red de Microsoft 365](office-365-network-connectivity-principles.md)
 ### [Planeamiento de red y ajuste del rendimiento para Microsoft 365](network-planning-and-performance.md)
 ### [Evaluar la conectividad de red de Microsoft 365](assessing-network-connectivity.md)
-### [Programa para partners de redes de Microsoft 365](office-365-networking-partner-program.md)
+### [Programa para partners de redes de Office 365](office-365-networking-partner-program.md)
 ### Direcciones URL y direcciones IP de Office 365
 #### [Puntos de conexión de Office 365](office-365-endpoints.md)
 #### [Administrar puntos de conexión de Office 365](managing-office-365-endpoints.md)
@@ -97,13 +97,13 @@
 #### [Puntos de conexión de DoD de Estados Unidos](office-365-u-s-government-dod-endpoints.md)
 #### [Puntos de conexión de GCC High de Estados Unidos](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Cadenas de cifrado de Office 365: DOD y GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [Compatibilidad con IPv6 en servicios de Office 365](ipv6-support.md)
-### [Compatibilidad de NAT con Office 365](nat-support-with-office-365.md)
+### [Compatibilidad con IPv6 en los servicios de Microsoft 365](ipv6-support.md)
+### [Compatibilidad con NAT en Microsoft 365](nat-support-with-office-365.md)
 ### Trabajar con ExpressRoute para Microsoft 365
-#### [ExpressRoute para Office 365](azure-expressroute.md)
-#### [Implementación de ExpressRoute para Office 365](implementing-expressroute.md)
-#### [Planeamiento de red con ExpressRoute para Office 365](network-planning-with-expressroute.md)
-#### [Enrutamiento con ExpressRoute para Office 365](routing-with-expressroute.md)
+#### [ExpressRoute para Microsoft 365](azure-expressroute.md)
+#### [Implementación de ExpressRoute para Microsoft 365](implementing-expressroute.md)
+#### [Planeamiento de red con ExpressRoute para Microsoft 365](network-planning-with-expressroute.md)
+#### [Enrutamiento con ExpressRoute para Microsoft 365](routing-with-expressroute.md)
 
 ## 2. Configurar las identidades
 ### [Proteger las cuentas de administrador global](protect-your-global-administrator-accounts.md)
@@ -274,4 +274,4 @@
 # [Cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security/)
 # [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/business)
-# [Centro de ayuda de Microsoft 365](https://docs.microsoft.com/microsoft-365)
+# [Microsoft 365](https://docs.microsoft.com/microsoft-365)
