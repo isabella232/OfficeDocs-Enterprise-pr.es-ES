@@ -3,7 +3,7 @@ title: Redes de entrega de contenido
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/22/2019
+ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use esta información para obtener información sobre cómo Office 365 usa redes de entrega de contenido (CDN) para mejorar el rendimiento.
-ms.openlocfilehash: 21dc32da619a8f5f7521d07213156f2ab86fc876
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: d63d784804640b1dda3394d129f905b01fa4b972
+ms.sourcegitcommit: f12be5137553cc41d8bd43e9e6cfbce84215a763
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997476"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146518"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de entrega de contenido (CDN)
 
@@ -77,6 +77,9 @@ Para ver una serie de vídeos breves que proporcionan información conceptual y 
 Aunque no forma parte de la red CDN de Office 365, puede usar estas CDN en el inquilino de Office 365 para obtener acceso a bibliotecas de desarrollo de SharePoint, a código personalizado y a otros fines que no se encuentren fuera del ámbito de la red CDN de Office 365.
 
 ### <a name="azure-cdn"></a>RED CDN de Azure
+
+>[!NOTE]
+>A partir del tercer trimestre de 2020, SharePoint Online empezará a almacenar en caché vídeos en la red CDN de Azure para admitir una reproducción de vídeo mejorada y la confiabilidad. Los vídeos populares se transmitirán desde el punto de conexión de red CDN más cercano al usuario. Estos datos se conservarán dentro del límite de cumplimiento de Microsoft 365. Este es un servicio gratuito para todos los inquilinos y no requiere que se configure ninguna acción del cliente.
 
 Puede usar la **red CDN de Azure** para implementar su propia instancia de CDN para hospedar elementos Web personalizados, bibliotecas y otros activos de recursos, lo que le permite aplicar claves de acceso a su almacenamiento de red CDN y ejercer un mayor control sobre la configuración de la red CDN. El uso de la red CDN de Azure no es gratuito y requiere una suscripción a Azure.
 
