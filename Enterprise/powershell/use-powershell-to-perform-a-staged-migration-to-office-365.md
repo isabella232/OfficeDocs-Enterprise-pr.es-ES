@@ -27,18 +27,18 @@ ms.locfileid: "45052563"
 
 Puede migrar el contenido de los buzones de los usuarios desde un sistema de correo electrónico de origen a Office 365 con el tiempo mediante una migración preconfigurada.
   
-This article walks you through the tasks involved with for a staged email migration using Exchange Online PowerShell. The topic, [What you need to know about a staged email migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536487), gives you an overview of the migration process. When you're comfortable with the contents of that article, use this one to begin migrating mailboxes from one email system to another.
+Este artículo le guiará a través de las tareas necesarias para realizar una migración preconfigurada del correo electrónico con Exchange Online PowerShell. En el tema [Lo que debe saber sobre la migración preconfigurada de correo electrónico a Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536487), se ofrece información general sobre el proceso de migración. Cuando se sienta cómodo con el contenido de ese artículo, úselo para empezar a migrar los buzones de un sistema de correo electrónico a otro.
   
 > [!NOTE]
-> You can also use the Exchange admin center to perform staged migration. See [Perform a staged migration of email to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536687). 
+> También puede usar el centro de administración de Exchange para realizar una migración preconfigurada. Consulte [Realizar una migración preconfigurada de correo electrónico a Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536687). 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-Estimated time to complete this task: 2-5 minutes to create a migration batch. After the migration batch is started, the duration of the migration will vary based on the number of mailboxes in the batch, the size of each mailbox, and your available network capacity. For information about other factors that affect how long it takes to migrate mailboxes to Office 365, see [Migration Performance](https://go.microsoft.com/fwlink/p/?LinkId=275079).
+Tiempo estimado para finalizar esta tarea: entre 2 y 5 minutos para crear un lote de migración. Después de que haya iniciado el lote de migración, la duración de la migración variará según la cantidad de buzones del lote, el tamaño de cada buzón y la capacidad de red disponible. Para obtener información acerca de otros factores que afectan a la duración de la migración de buzones a Office 365, consulte [Rendimiento de la migración de Exchange Online y procedimientos recomendados](https://go.microsoft.com/fwlink/p/?LinkId=275079).
   
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Migration" entry in the [Recipients Permissions](https://go.microsoft.com/fwlink/p/?LinkId=534105) topic.
+Deberá tener permisos asignados para poder llevar a cabo estos procedimientos. Para ver qué permisos necesita, consulte la sección "Movimiento de buzón y permisos de migración" en el tema [Permisos de destinatarios](https://go.microsoft.com/fwlink/p/?LinkId=534105).
   
-To use the Exchange Online PowerShell cmdlets, you need to sign in and import the cmdlets into your local Windows PowerShell session. See [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=534121) for instructions.
+Para usar los cmdlets de Exchange Online PowerShell, deberá iniciar sesión e importar los cmdlets en la sesión local de Windows PowerShell. Consulte [Conectarse a Exchange Online mediante PowerShell remoto](https://go.microsoft.com/fwlink/p/?LinkId=534121) para obtener instrucciones.
   
 Para obtener una lista completa de los comandos de migración, consulte [Cmdlets de movimiento y migración](https://go.microsoft.com/fwlink/p/?LinkId=534750).
   
@@ -48,14 +48,14 @@ Para obtener una lista completa de los comandos de migración, consulte [Cmdlets
 
 Antes de migrar los buzones a Office 365 con una migración preconfigurada, debe realizar algunos cambios en su entorno de Exchange.
   
- **Configure Outlook Anywhere on your on-premises Exchange Server** The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. For information about how to set up Outlook Anywhere for Exchange Server 2007, and Exchange 2003, see the following:
+ **Configure Outlook en cualquier lugar en su Exchange Server** local El servicio de migración de correo electrónico utiliza Outlook en cualquier lugar (también conocido como RPC sobre HTTP) para conectarse a su Exchange Server local. Para obtener información acerca de cómo configurar Outlook en cualquier lugar para Exchange Server 2007 y Exchange 2003, consulte los temas siguientes:
   
 - [Exchange 2007: Cómo habilitar Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=167210)
     
 - [Cómo configurar Outlook Anywhere con Exchange 2003](https://go.microsoft.com/fwlink/?LinkID=167209)
     
 > [!IMPORTANT]
-> You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration. Outlook Anywhere can't be configured with a self-signed certificate. For more information, see [How to configure SSL for Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=80875). 
+> Debe usar un certificado emitido por una entidad de certificación (CA) de confianza con su configuración de Outlook en cualquier lugar. Outlook en cualquier lugar no se puede configurar con un certificado autofirmado. Para obtener más información, consulte [Cómo configurar SSL para Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=80875). 
   
  **Opcional: compruebe que puede conectarse a su organización Exchange con Outlook en cualquier lugar** Pruebe con uno de los métodos siguientes para probar la configuración de su conexión.
   
@@ -73,7 +73,7 @@ Antes de migrar los buzones a Office 365 con una migración preconfigurada, debe
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
- **Set permissions** The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Office 365. This user account is used when you connect to your email system by creating a migration endpoint later in this procedure ([Step 3: Create a migration endpoint](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Endpoint) ).
+ **Establecer permisos** La cuenta de usuario local que utiliza para conectarse a su organización Exchange local (también llamada administrador de migración) debe tener los permisos necesarios para tener acceso a los buzones locales que desea migrar a Office 365. Esta cuenta de usuario se utiliza cuando se conecta a su sistema de correo electrónico creando un extremo de migración más adelante en este procedimiento ([Paso 3: Crear un extremo de migración](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Endpoint) ).
   
 Para migrar los buzones de correo, el administrador debe tener uno de los siguientes conjuntos de permisos:
   
@@ -89,36 +89,36 @@ Para migrar los buzones de correo, el administrador debe tener uno de los siguie
     
 Para obtener instrucciones sobre cómo establecer estos permisos, consulte [Asignar permisos para migrar buzones a Exchange Online](https://go.microsoft.com/fwlink/?LinkId=521656).
   
- **Disable Unified Messaging (UM)** If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM for the mailboxes after migration is complete. For how-to steps, see[disable unified messaging](https://go.microsoft.com/fwlink/?LinkId=521891).
+ **Deshabilitar mensajería unificada (UM)** Si la mensajería unificada está activada para los buzones locales que se van a migrar, desactive la mensajería unificada antes de la migración. Active la mensajería unificada para los buzones una vez completada la migración. Para obtener información sobre procedimientos, consulte[Cómo deshabilitar la mensajería unificada para un usuario](https://go.microsoft.com/fwlink/?LinkId=521891).
   
- **Use directory synchronization to create new users in Office 365.** You use directory synchronization to create all the on-premises users in your Office 365 organization.
+ **Use la sincronización de directorios para crear nuevos usuarios en Office 365.** Use la sincronización de directorios para crear todos los usuarios locales de su organización de Office 365.
   
-You need to license the users after they're created. You have 30 days to add licenses after the users are created. For steps to add licenses, see [Step 8: Complete post-migration tasks](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Postmigration).
+Debe autorizar a los usuarios después de crearlos. Dispone de 30 días para agregar licencias después de haber creado los usuarios. Para conocer los pasos para agregar licencias, consulte [Paso 8: Finalizar las tareas posteriores a la migración](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Postmigration).
   
  Puede usar la herramienta de sincronización de Microsoft Azure Active Directory (Azure AD) o los servicios de sincronización de Microsoft Azure AD para sincronizar y crear los usuarios locales en Office 365. Después de migrar los buzones a Office 365, las cuentas de usuario se administran en la organización local y se sincronizan con su organización Office 365. Para más información, consulte [Integración de Directory](https://go.microsoft.com/fwlink/?LinkId=521788).
   
 ### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>Paso 2: Crear un archivo CSV para un lote de migración preconfigurada
 
-After you identify the users whose on-premises mailboxes you want to migrate to Office 365, you use a comma separated value (CSV ) file to create a migration batch. Each row in the CSV file—used by Office 365 to run the migration—contains information about an on-premises mailbox. 
+Después de identificar los usuarios cuyos buzones locales desea migrar a Office 365, use un archivo de valores separados por comas (CSV) para crear un lote de migración. Cada fila del archivo CSV, que Office 365 usa para ejecutar la migración, contiene información sobre un buzón local. 
   
 > [!NOTE]
-> There isn't a limit for the number of mailboxes that you can migrate to Office 365 using a staged migration. The CSV file for a migration batch can contain a maximum of 2,000 rows. To migrate more than 2,000 mailboxes, create additional CSV files and use each file to create a new migration batch. 
+> No hay límites para la cantidad de buzones que pueden migrarse a Office 365 mediante una migración preconfigurada. El archivo CSV para un lote de migración puede contener un máximo de 2.000 filas. Para migrar más de 2.000 buzones, debe crear archivos CSV adicionales y usar cada archivo para crear un nuevo lote de migración. 
   
  **Atributos admitidos**
   
-The CSV file for a staged migration supports the following three attributes. Each row in the CSV file corresponds to a mailbox and must contain a value for each of these attributes.
+El archivo CSV para una migración preconfigurada es compatible con los tres atributos siguientes. Cada fila del archivo CSV corresponde a un buzón y debe contener un valor para cada uno de estos atributos.
   
 |**Atributo**|**Descripción**|**Obligatorio**|
 |:-----|:-----|:-----|
-|EmailAddress  <br/> |Especifica la dirección de correo electrónico SMTP principal (por ejemplo, pilarp@contoso.com) para los buzones locales.  <br/> Use the primary SMTP address for on-premises mailboxes and not user IDs from the Office 365. For example, if the on-premises domain is named contoso.com but the Office 365 email domain is named service.contoso.com, you would use the contoso.com domain name for email addresses in the CSV file.  <br/> |Necesario  <br/> |
-|Contraseña  <br/> |The password to be set for the new Office 365 mailbox. Any password restrictions that are applied to your Office 365 organization also apply to the passwords included in the CSV file.  <br/> |Opcional  <br/> |
-|ForceChangePassword  <br/> |Specifies whether a user must change the password the first time they sign in to their new Office 365 mailbox. Use **True** or **False** for the value of this parameter. <br/> > [!NOTE]> Si ha implementado una solución de inicio de sesión único (SSO) implantando los servicios de federación de Active Directory (AD FS) o superior en la organización local, debe usar **False** como valor del atributo **ForceChangePassword**.          |Opcional  <br/> |
+|EmailAddress  <br/> |Especifica la dirección de correo electrónico SMTP principal (por ejemplo, pilarp@contoso.com) para los buzones locales.  <br/> Use la dirección SMTP principal para los buzones locales, en lugar de los identificadores de usuario de Office 365. Por ejemplo, si el dominio local se denomina contoso.com pero el dominio de correo electrónico de Office 365 se denomina service.contoso.com, debería usar el nombre de dominio contoso.com para las direcciones de correo electrónico del archivo CSV.  <br/> |Necesario  <br/> |
+|Contraseña  <br/> |La contraseña que se establecerá para el nuevo buzón de Office 365. Las restricciones de contraseña que se apliquen a la organización de Office 365 son también aplicables a las contraseñas incluidas en el archivo CSV.  <br/> |Opcional  <br/> |
+|ForceChangePassword  <br/> |Especifica si un usuario debe cambiar la contraseña la primera vez que inicie sesión en el nuevo buzón de Office 365. Use **True** o **False** como valor de este parámetro. <br/> > [!NOTE]> Si ha implementado una solución de inicio de sesión único (SSO) implantando los servicios de federación de Active Directory (AD FS) o superior en la organización local, debe usar **False** como valor del atributo **ForceChangePassword**.          |Opcional  <br/> |
    
  **Formato del archivo CSV**
   
-Here's an example of the format for the CSV file. In this example, three on-premises mailboxes are migrated to Office 365.
+A continuación, se muestra un ejemplo del formato del archivo CSV. En este ejemplo, se migran a Office 365 tres buzones locales.
   
-The first row, or header row, of the CSV file lists the names of the attributes, or fields, specified in the rows that follow. Each attribute name is separated by a comma.
+En la primera fila, o fila de encabezado, del archivo CSV se enumeran los nombres de los atributos, o campos, especificados en las filas que le siguen. Los nombres de atributo se separan con una coma.
   
 ```powershell
 EmailAddress,Password,ForceChangePassword 
@@ -127,17 +127,17 @@ tobyn@contoso.com,Pa$$w0rd,False
 briant@contoso.com,Pa$$w0rd,False 
 ```
 
-Each row under the header row represents one user and supplies the information that will be used to migrate the user's mailbox. The attribute values in each row must be in the same order as the attribute names in the header row. 
+Cada fila que hay bajo la fila de encabezado representa a un usuario y proporciona la información que se usará para migrar el buzón del usuario. Los valores de atributo de cada fila deben seguir el mismo orden que los nombres de atributo de la fila de encabezado. 
   
-Use any text editor, or an application like Excel , to create the CSV file. Save the file as a .csv or .txt file.
+Use cualquier editor de texto, o bien una aplicación como Excel para crear el archivo CSV. Guarde el archivo como .csv o .txt.
   
 > [!NOTE]
-> If the CSV file contains non-ASCII or special characters, save the CSV file with UTF-8 or other Unicode encoding. Depending on the application, saving the CSV file with UTF-8 or other Unicode encoding can be easier when the system locale of the computer matches the language used in the CSV file. 
+> Si el archivo CSV contiene caracteres especiales o que no son ASCII, guárdelo con codificación UTF-8 o con otra codificación Unicode. Según la aplicación, puede resultar más fácil guardar el archivo CSV con codificación UTF-8 u otra codificación Unicode si la configuración regional del equipo coincide con el idioma utilizado en el archivo CSV. 
   
 ### <a name="step-3-create-a-migration-endpoint"></a>Paso 3: Crear un extremo de migración
 <a name="BK_Endpoint"> </a>
 
-To migrate email successfully, Office 365 needs to connect and communicate with the source email system. To do this, Office 365 uses a migration endpoint. To create an Outlook Anywhere migration endpoint by using PowerShell, for staged migration, first [connect to Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
+Para migrar el correo electrónico correctamente, Office 365 debe conectarse y comunicarse con el sistema de correo electrónico de origen. Para ello, Office 365 usa un extremo de migración. Para crear un extremo de migración de Outlook en cualquier lugar con PowerShell, para la migración preconfigurada, primero debe [Conectarse a Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
   
 Para obtener una lista completa de los comandos de migración, consulte [Cmdlets de movimiento y migración](https://go.microsoft.com/fwlink/p/?LinkId=534750).
   
@@ -154,7 +154,7 @@ New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscove
 Para obtener más información acerca del cmdlet **New-MigrationEndpoint**, consulte[New-MigrationEndpoint](https://go.microsoft.com/fwlink/p/?LinkId=536437)
   
 > [!NOTE]
-> The **New-MigrationEndpoint** cmdlet can be used to specify a database for the service to use by using the **-TargetDatabase** option. Otherwise a database is randomly assigned from the Active Directory Federation Services (AD FS) 2.0 site where the management mailbox is located.
+> El cmdlet **New-MigrationEndpoint** puede usarse para especificar la base de datos que debe usar el servicio con la opción **-TargetDatabase**. Si no se hace, se asigna aleatoriamente una base de datos desde el sitio de Servicios de federación de Active Directory (AD FS) 2.0 donde se encuentra el buzón de administración.
   
 #### <a name="verify-it-worked"></a>Compruebe que ha funcionado
 
@@ -167,13 +167,13 @@ Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,U
 ### <a name="step-4-create-and-start-a-stage-migration-batch"></a>Paso 4: Crear e iniciar un lote de migración preconfigurada
 <a name="BK_Endpoint"> </a>
 
-You can use the **New-MigrationBatch** cmdlet in Exchange Online PowerShell to create a migration batch for a cutover migration. You can create a migration batch and start it automatically by including the _AutoStart_ parameter. Alternatively, you can create the migration batch and then manually start it afterwards by using the **Start-MigrationBatch** cmdlet. This example creates a migration batch called "StagedBatch1" and uses the migration endpoint that was created in the previous step.
+Puede utilizar el cmdlet **New-MigrationBatch** en Exchange Online PowerShell para crear un lote de migración para una migración de traslado. Puede crear un lote de migración e iniciarlo automáticamente mediante la inclusión del parámetro _AutoStart_. O bien puede crear el lote de migración y, luego, iniciarlo posteriormente de forma manual mediante el uso del cmdlet **Start-MigrationBatch**. En este ejemplo se crea un lote de migración denominado "StagedBatch1" y se utiliza el extremo de migración que se creó en el paso anterior.
   
 ```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint -AutoStart
 ```
 
-This example also creates a migration batch called "StagedBatch1" and uses the migration endpoint that was created in the previous step. Because the  _AutoStart_ parameter isn't included, the migration batch has to be manually started on the migration dashboard or by using **Start-MigrationBatch** cmdlet. As previously stated, only one cutover migration batch can exist at a time.
+En este ejemplo se crea también un lote de migración denominado "StagedBatch1" y se utiliza el extremo de migración que se creó en el paso anterior. Dado que no se incluye el parámetro  _AutoStart_, el lote de migración debe iniciarse manualmente en el panel Migración o con el cmdlet **Start-MigrationBatch**. Como se especificó anteriormente, solo puede existir un lote de migración total cada vez.
   
 ```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
@@ -198,16 +198,16 @@ Para obtener más información sobre el cmdlet **Get-MigrationBatch**, consulte[
 ### <a name="step-5-convert-on-premises-mailboxes-to-mail-enabled-users"></a>Paso 5: Convertir los buzones locales en usuarios habilitados para correo electrónico
 <a name="BK_Endpoint"> </a>
 
-After you have successfully migrated a batch of mailboxes, you need some way to let users get to their mail. A user whose mailbox has been migrated now has both a mailbox on-premises and one in Office 365. Users who have a mailbox in Office 365 will stop receiving new mail in their on-premises mailbox. 
+Después de haber migrado correctamente un lote de buzones, se necesita alguna manera para que los usuarios puedan obtener acceso a su correo. Un usuario cuyo buzón se haya migrado ahora tiene un buzón local y otro en Office 365. Los usuarios que tengan un buzón en Office 365 dejarán de recibir nuevo correo en su buzón local. 
   
-Because you are not done with your migrations, you are not yet ready to direct all users to Office 365 for their email. So what do you do for those people who have both? What you can do is change the on-premises mailboxes that you've already migrated to mail-enabled users. When you change from a mailbox to a mail-enabled user, you can direct the user to Office 365 for their email instead of going to their on-premises mailbox. 
+Dado que no ha terminado con las migraciones, todavía no está listo para dirigir a todos los usuarios a Office 365 para consultar su correo electrónico. ¿Qué debe hacer en el caso de las personas que tienen ambos buzones? Lo que puede hacer es cambiar los correos locales que ya ha migrado a usuarios habilitados para correo. Al cambiar de un buzón a un usuario habilitado para correo, puede dirigir al usuario a Office 365 para consultar su correo electrónico en lugar de ir a su buzón local. 
   
-Another important reason to convert on-premises mailboxes to mail-enabled users is to retain proxy addresses from the Office 365 mailboxes by copying proxy addresses to the mail-enabled users. This lets you manage cloud-based users from your on-premises organization by using Active Directory. Also, if you decide to decommission your on-premises Exchange Server organization after all mailboxes are migrated to Office 365, the proxy addresses you've copied to the mail-enabled users will remain in your on-premises Active Directory.
+Otra razón importante para convertir los buzones locales en usuarios habilitados para correo es conservar las direcciones proxy de los buzones de Office 365 copiando las direcciones proxy en los usuarios habilitados para correo. Esto permite administrar los usuarios basados en la nube de la organización local mediante Active Directory. Además, si decide retirar la organización local de Exchange Server después de haber migrado todos los buzones a Office 365, las direcciones proxy que ha copiado en los usuarios habilitados para correo permanecerán en su Active Directory local.
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>Paso 6: Eliminar un lote de migración preconfigurada
 <a name="BK_Endpoint"> </a>
 
- After all mailboxes in a migration batch have been successfully migrated, and you've converted the on-premises mailboxes in the batch to mail-enabled users, you're ready to delete a staged migration batch. Be sure to verify that mail is being forwarded to the Office 365 mailboxes in the migration batch. When you delete a staged migration batch, the migration service cleans up any records related to the migration batch and deletes the migration batch.
+ Cuando haya migrado correctamente todos los buzones de un lote de migración y haya convertido los buzones locales del lote en usuarios habilitados para correo, ya estará listo para eliminar un lote de migración preconfigurada. Asegúrese de comprobar que el correo se reenvía a los buzones de Office 365 del lote de migración. Cuando elimina un lote de migración preconfigurada, el servicio de migración limpia todos los registros relacionados con el lote de migración y elimina dicho lote.
   
 Para eliminar el lote de migración "StagedBatch1" en Exchange Online PowerShell, ejecute el comando siguiente.
   
@@ -237,9 +237,9 @@ Active las cuentas de usuario de Office 365 para las cuentas migradas mediante l
 ### <a name="step-8-complete-post-migration-tasks"></a>Paso 8: Finalizar las tareas posteriores a la migración
 <a name="BK_Postmigration"> </a>
 
-- **Create an Autodiscover DNS record so users can easily get to their mailboxes.** After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
+- **Cree un registro DNS de Detección automática para que los usuarios puedan acceder fácilmente a sus buzones.** Después de haber migrado todos los correos locales a Office 365, puede configurar un registro DNS de Detección automática para su organización Office 365 con el fin de permitir a los usuarios conectarse fácilmente a sus nuevos buzones de Office 365 con Outlook y los clientes móviles. Este nuevo registro DNS de Detección automática debe utilizar el mismo espacio de nombres que se utiliza para la organización de Office 365. Por ejemplo, si el espacio de nombres basado en la nube es cloud.contoso.com, el registro DNS de Detección automática que se debe crear es autodiscover.cloud.contoso.com.
     
-    Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
+    Office 365 utiliza un registro CNAME para implementar el servicio de Detección automática para Outlook y los clientes móviles. El registro CNAME de Detección automática debe contener la información siguiente:
     
   - **Alias:** autodiscover
     
@@ -247,7 +247,7 @@ Active las cuentas de usuario de Office 365 para las cuentas migradas mediante l
     
     Para obtener más información, consulte [Crear registros DNS para Office 365 al administrar los registros DNS](https://go.microsoft.com/fwlink/p/?LinkId=535028).
     
-- **Decommission on-premises Exchange servers.** After you've verified that all email is being routed directly to the Office 365 mailboxes, and you no longer need to maintain your on-premises email organization or don't plan on implementing an SSO solution, you can uninstall Exchange from your servers and remove your on-premises Exchange organization.
+- **Retire los servidores de Exchange locales.** Después de haber comprobado que todo el correo electrónico se enruta directamente a los buzones de Office 365 y cuando ya no necesite mantener la organización de correo electrónico local o no tenga pensado implementar una solución SSO, puede desinstalar Exchange desde los servidores y quitar la organización local de Exchange.
     
     Para obtener más información, vea los artículos siguientes:
     

@@ -56,7 +56,7 @@ Para los servicios de Microsoft 365, el estado predeterminado de la autenticaci�
 
 Las aplicaciones cliente de Office 2013 admiten la autenticación heredada de forma predeterminada. Heredado significa que admiten el Asistente para inicio de sesión de Microsoft online o la autenticación básica. Para que estos clientes usen las características de autenticación moderna, el cliente de Windows debe tener establecidas claves del registro. Para obtener instrucciones, consulte [Habilitar la autenticación moderna para Office 2013 en dispositivos Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
 
-To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
+Para habilitar la autenticación moderna para cualquier dispositivo con Windows (por ejemplo, en portátiles y tabletas), que tienen Microsoft Office 2013 instalado, debe configurar las siguientes claves del registro. Las claves se tienen que establecer en cada dispositivo en el que quiera habilitar la autenticación moderna:
   
 |**Clave del registro**|**Tipo**|**Valor** |
 |:-------|:------:|--------:|

@@ -37,7 +37,7 @@ Los procedimientos de este tema requieren que se conecte a SharePoint Online. Pa
 
 Cree varios sitios con Office 365 PowerShell y un archivo. csv que cree con el código de ejemplo proporcionado y el Bloc de notas. Para este procedimiento, reemplazará la información de marcador de posición que se muestra entre corchetes con su propia información de sitio y espacio empresarial específica. Este proceso le permite crear un único archivo y ejecutar un único comando de PowerShell de Office 365 que usa ese archivo. Esto hace que las acciones se tomen repetibles y se puedan reportar y elimina muchos errores, si no todos, que pueden venir de escribir comandos largos en el shell de administración de SharePoint Online. Este procedimiento consta de dos partes. En primer lugar, creará un archivo. csv y, a continuación, hará referencia a ese archivo. csv con Office 365 PowerShell, que usará su contenido para crear los sitios.
 
-The Office 365 PowerShell cmdlet imports the .csv file and pipes it to a loop inside the curly brackets that reads the first line of the file as column headers. The Office 365 PowerShell cmdlet then iterates through the remaining records, creates a new site collection for each record, and assigns properties of the site collection according to the column headers.
+El cmdlet de Office 365 PowerShell importa el archivo .csv y lo canaliza en un bucle entre llaves que lee la primera línea del archivo como encabezados de columna. Luego, el cmdlet de Office 365 PowerShell itera en el resto de los registros, crea una colección de sitios para cada uno de ellos y asigna propiedades a la colección de sitios en función de los encabezados de columna.
 
 ### <a name="create-a-csv-file"></a>Crear un archivo .csv
 
@@ -65,7 +65,7 @@ Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SP
 ```
 <br/>Donde *alias* es igual al alias del usuario.<br/>
 
-2. Wait for the Windows PowerShell prompt to reappear. It might take a minute or two.<br/>
+2. Espere a que el símbolo del sistema de Windows PowerShell aparezca de nuevo. Esto puede tardar un par de minutos.<br/>
 
 3. En el símbolo del sistema de Windows PowerShell, escriba o copie y pegue el siguiente cmdlet y presione ENTRAR:<br/>
 
@@ -80,7 +80,7 @@ Eso es todo. Ha creado varias colecciones de sitios con el archivo. csv que ha c
 
 ## <a name="step-2-add-users-and-groups"></a>Paso 2: agregar usuarios y grupos
 
-Now you’re going to create users and add them to a site collection group. You will then use a .csv file to bulk upload new groups and users.
+Ahora vamos a crear usuarios y a agregarlos a un grupo de colecciones de sitios. Luego, usaremos un archivo .csv para cargar los nuevos usuarios y grupos de forma masiva.
 
 Los siguientes procedimientos continúan usando los sitios de ejemplo TeamSite01, Blog01, Project01 y Community01.
 
@@ -150,7 +150,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
 <br/>Donde *alias* es igual al nombre de usuario.<br/>
 
-5. Wait for the prompt to return before moving on. You will first see the groups appear as they are created. Then you will see the group list repeated as users are added.
+5. Antes de continuar, espere a que el símbolo del sistema vuelva. Primero verá que los grupos aparecen según se han creado y, luego, verá la lista de grupos repetida a medida que se vayan agregando usuarios.
 
 ## <a name="see-also"></a>Vea también
 

@@ -47,7 +47,7 @@ Puede usar las siguientes versiones de Windows:
     > Para el Módulo Azure Active Directory PowerShell para Graph, debe usar la versión 5.1 o posterior de PowerShell. Para el Módulo Microsoft Azure Active Directory para Windows PowerShell, debe usar la versión 5.1 o posterior de PowerShell hasta la versión 6. No puede usar la versión 7 de PowerShell. Para Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012 y Windows Server 2008 R2 SP1, descargue e instale [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616). 
     
     > [!NOTE]
-    > Use a 64-bit version of Windows. Support for the 32-bit version the Microsoft Azure Active Directory Module for Windows PowerShell was discontinued in October of 2014.
+    > Use una versión de 64 bits de Windows. La compatibilidad con la versión de 32 bits de Módulo de Microsoft Azure Active Directory para Windows PowerShell se descontinuó en octubre de 2014.
     
 Estos procedimientos están diseñados para los usuarios que sean miembros de un rol de administrador de Office 365. Para obtener más información, vea [Información sobre los roles de administrador de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
 
@@ -64,7 +64,7 @@ Para los procedimientos que necesitan los nuevos cmdlets del módulo de PowerShe
 
 ### <a name="step-1-install-required-software"></a>Paso 1: Instalar el software necesario
 
-These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
+Estos pasos son necesarios una sola vez en el equipo, no cada vez que se conecta. Sin embargo, probablemente necesitará instalar las versiones más recientes de software periódicamente.
   
 1. Abra un símbolo del sistema de Windows PowerShell con privilegios elevados (ejecute Windows PowerShell como administrador).
     
@@ -106,7 +106,7 @@ PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory
     
 ### <a name="step-1-install-required-software"></a>Paso 1: Instalar el software necesario
 
-These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
+Estos pasos son necesarios una sola vez en el equipo, no cada vez que se conecta. Sin embargo, probablemente necesitará instalar las versiones más recientes de software periódicamente.
   
 1.  Si no está ejecutando Windows 10, instale la versión de 64 bits del ayudante para el inicio de sesión de Microsoft Online Services: [ayudante para el inicio de sesión de Microsoft Online Services para profesionales de ti (RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)).
     
@@ -136,13 +136,13 @@ Si usa MFA, siga las instrucciones en los cuadros de diálogo adicionales para p
 
 ### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
-If you don't receive any errors, you connected successfully. A quick test is to run an Office 365 cmdlet—for example, **Get-MsolUser** —and see the results.
+Si no se muestra ningún error, la conexión se habrá establecido correctamente. Para hacer una prueba rápida, ejecute un cmdlet de Office 365, como **Get-MsolUser**, y vea los resultados.
   
 Si surgen errores, compruebe los siguientes requisitos:
   
 - **Un problema habitual es una contraseña incorrecta**. Vuelva a realizar el paso 2. y preste especial atención al nombre de usuario y la contraseña que escriba.
     
-- **The Microsoft Azure Active Directory Module for Windows PowerShell requires that the Microsoft .NET Framework 3.5.* x* feature is enabled on your computer**. It's likely that your computer has a newer version installed (for example, 4 or 4.5.* x*), but backwards compatibility with older versions of the .NET Framework can be enabled or disabled. For more information, see the following topics:
+- **El Módulo de Microsoft Azure Active Directory para Windows PowerShell requiere que la característica Microsoft .NET Framework 3.5.* x* esté habilitada en el equipo**. Es probable que el equipo tenga instalada una versión más reciente (por ejemplo, 4 o 4.5. *x*), pero sea posible habilitar o deshabilitar la compatibilidad con versiones anteriores de .NET Framework. Para obtener más información al respecto, consulte los temas siguientes:
     
   - Para Windows Server 2012 o Windows Server 2012 R2, vea [Habilitar .NET Framework 3.5 con el Asistente para agregar roles y características](https://go.microsoft.com/fwlink/p/?LinkId=532368).
     
@@ -151,7 +151,7 @@ Si surgen errores, compruebe los siguientes requisitos:
   - Para Windows 10, Windows 8.1 y Windows 8, vea [Instalar .NET Framework 3.5 en Windows 10, Windows 8.1 y Windows 8](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)
 
   
-- **Your version of the Microsoft Azure Active Directory Module for Windows PowerShell might be out of date.** To check, run the following command in Office 365 PowerShell or the Microsoft Azure Active Directory Module for Windows PowerShell:
+- **Puede que su versión de Módulo de Microsoft Azure Active Directory para Windows PowerShell esté obsoleta.** Para comprobarlo, ejecute el siguiente comando en PowerShell de Office 365 o Módulo de Microsoft Azure Active Directory para Windows PowerShell:
     
   ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion

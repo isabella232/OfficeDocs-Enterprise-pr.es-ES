@@ -49,7 +49,7 @@ Los usuarios y sus cuentas de usuario en las organizaciones se pueden clasificar
 
 Tomar en existencias los tipos de usuarios de la organización. ¿Cuáles son las agrupaciones? Por ejemplo, puede agrupar a los usuarios por una función o un propósito de alto nivel para su organización.
 
-Additionally, some cloud services can be shared with users outside your organization without any user accounts. You'll need to identify these groups of users as well.
+Además, algunos servicios en la nube se pueden compartir con usuarios externos a la organización sin cuentas de usuario. También necesitará identificar estos grupos de usuarios.
 
 Puede usar grupos en Azure AD para varios fines que simplifican la administración del entorno de la nube. Por ejemplo, con los grupos de Azure AD, puede:
 

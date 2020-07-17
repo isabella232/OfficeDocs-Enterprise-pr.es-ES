@@ -31,7 +31,7 @@ Puede crear y asociar nuevos dominios con el arrendamiento de su cliente con Win
 Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Con frecuencia son los proveedores de red o de telecomunicaciones para otras compañías. Incluyen las suscripciones de Microsoft 365 en sus ofertas de servicio para sus clientes. Cuando venden una suscripción de 365 de Microsoft, se les conceden automáticamente permisos de administración en nombre de (AOBO) a los arrendamientos de clientes para que puedan administrar y informar sobre los arrendamientos de clientes.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-The procedures in this topic require you to connect to Windows PowerShell for Office 365. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).
+Los procedimientos de este tema requieren conectarse a Windows PowerShell para Office 365. Para obtener instrucciones, vea [Conectarse a PowerShell de Office 365](connect-to-office-365-powershell.md).
   
 Necesita también las credenciales del administrador de inquilinos del asociado.
   
@@ -41,13 +41,13 @@ También necesitará la siguiente información:
     
 - Necesita el **TenantId** del cliente.
     
-- The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy. For more information on how to publically register a domain name, see [How to buy a domain name](https://go.microsoft.com/fwlink/p/?LinkId=532541).
+- El FQDN debe estar registrado con un registrador del servicio de nombres de dominio (DNS), como GoDaddy. Para obtener más información sobre cómo registrar públicamente un nombre de dominio, vea [Cómo comprar un nombre de dominio](https://go.microsoft.com/fwlink/p/?LinkId=532541).
     
 - Necesita saber cómo agregar un registro TXT a la zona DNS registrada para su registrador DNS. Para obtener más información acerca de cómo agregar un registro TXT, consulte [agregar registros DNS para conectar su dominio](https://go.microsoft.com/fwlink/p/?LinkId=532542). Si esos procedimientos no funcionan, necesitará encontrar los procedimientos de su registrador DNS.
     
 ## <a name="create-domains"></a>Crear dominios
 
- Your customers will likely ask you to create additional domains to associate with their tenancy because they don't want the default <domain>.onmicrosoft.com domain to be the primary one that represents their corporate identities to the world. This procedure walks you through creating a new domain associated with your customer's tenancy.
+ Sus clientes probablemente le pedirán crear dominios adicionales para asociar con su arrendamiento, ya que no desean que el dominio predeterminado <domain>.onmicrosoft.com sea el dominio principal que represente su identidad corporativa en el mundo. En este procedimiento se explica cómo crear un nuevo dominio asociado con el arrendamiento de su cliente.
   
 > [!NOTE]
 > Para realizar algunas de estas operaciones, la cuenta de administrador de asociados con la que inicia sesión debe estar establecida en **administración completa** para la opción **asignar acceso administrativo a compañías que admite, que** se encuentra en los detalles de la cuenta de administrador en el centro de administración de Microsoft 365. Para obtener más información acerca de la administración de roles de administrador de asociados, consulte [Partners: offer Delegated Administration](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
@@ -87,7 +87,7 @@ Se obtendrá el siguiente resultado:
 
 Antes de que Microsoft 365 empiece a aceptar tráfico dirigido al nombre de dominio registrado públicamente, debe demostrar que es propietario y tiene permisos de administrador en el dominio. Demuestre que el dominio le pertenece mediante la creación de un registro TXT en el dominio. Un registro TXT no hace nada en su dominio y puede eliminarse una vez que se establezca su propiedad del dominio. Para crear los registros TXT, siga los procedimientos de [agregar registros DNS para conectar su dominio](https://go.microsoft.com/fwlink/p/?LinkId=532542). Si esos procedimientos no funcionan, necesitará encontrar los procedimientos de su registrador DNS.
   
-Confirm the successful creation of the TXT record via nslookup. Follow this syntax.
+Confirme la creación correcta del registro TXT mediante nslookup. Siga esta sintaxis.
   
 ```
 nslookup -type=TXT <FQDN of registered domain>
