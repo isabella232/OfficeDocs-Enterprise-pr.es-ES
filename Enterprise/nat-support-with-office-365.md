@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: 'Resumen: proporciona detalles sobre cómo aproximar el número correcto de clientes que se pueden usar por dirección IP dentro de la organización mediante la traducción de direcciones de red (NAT).'
-ms.openlocfilehash: 04aec45b7d6c68b3e32d4ee384c9927896849bab
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: d1f6762fcb21e6c310c790f6b235e5a51db4b1f2
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998545"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201614"
 ---
 # <a name="nat-support-with-office-365"></a>Compatibilidad de NAT con Office 365
 
@@ -40,7 +40,7 @@ Para proporcionar acceso a Internet a los dispositivos en un espacio de direccio
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>¿Por qué necesita tener tantas conexiones abiertas a Office 365 al mismo tiempo?
 
-Outlook puede abrir ocho o más conexiones (en situaciones en las que hay complementos, calendarios compartidos, buzones de correo, etc.). Como hay un máximo de 64.000 puertos disponibles en un dispositivo NAT basado en Windows, puede haber un máximo de 8.000 usuarios detrás de una dirección IP antes de que se agoten los puertos. Tenga en cuenta que si los clientes usan dispositivos que no están basados en el sistema operativo Windows para NAT, los puertos totales disponibles dependen de qué dispositivo o software NAT se esté usando. En este escenario, el número máximo de puertos podría ser inferior a 64.000. La disponibilidad de los puertos también se ve afectada por otros factores, como Windows, restringiendo 4.000 puertos para su propio uso, lo que reduce el número total de puertos disponibles a 60, 000. puede haber otras aplicaciones, como Internet Explorer, que se puedan conectar al mismo tiempo y que requieran puertos adicionales.
+Outlook puede abrir ocho o más conexiones (en situaciones en las que hay complementos, calendarios compartidos, buzones de correo, etc.). Como hay un máximo de 64.000 puertos disponibles en un dispositivo NAT basado en Windows, puede haber un máximo de 8.000 usuarios detrás de una dirección IP antes de que se agoten los puertos. Tenga en cuenta que si los clientes usan dispositivos que no están basados en el sistema operativo Windows para NAT, los puertos totales disponibles dependen de qué dispositivo o software NAT se esté usando. En este escenario, el número máximo de puertos podría ser inferior a 64.000. La disponibilidad de los puertos también se ve afectada por otros factores, como Windows, restringiendo 4.000 puertos para uso propio, lo que reduce el número total de puertos disponibles para 60.000. Puede haber otras aplicaciones, como Internet Explorer, que puedan conectarse al mismo tiempo y que requieran puertos adicionales.
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Calcular el número máximo de dispositivos admitidos detrás de una sola dirección IP pública con Office 365
 
@@ -76,7 +76,7 @@ Use la fórmula anterior para calcular el número máximo de usuarios por direcc
   
 Hay varios métodos para distribuir la carga de clientes a través de direcciones IP públicas adicionales. Las estrategias disponibles dependen de las capacidades de la solución de puerta de enlace corporativa. La solución más sencilla es segmentar el espacio de direcciones de usuario y "asignar" estáticamente una cantidad de direcciones IP a cada puerta de enlace. Otra alternativa que muchos dispositivos de puerta de enlace ofrece es la capacidad de usar un grupo de direcciones IP. La ventaja del grupo de direcciones es que es mucho más dinámica y menos probable que sea necesario ajustarse a medida que crece la base de usuarios.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

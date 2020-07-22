@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Acelere la planeación y la configuración de Microsoft 365 u Office 365 con las guías de instalación.
-ms.openlocfilehash: 92c792b3d82a6a0f1405059ae50db581823704dc
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: a3523b78c33b51d00da24bd9b43d39e5e5fb67e7
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735978"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201634"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
@@ -103,6 +103,15 @@ La **Guía de configuración del trabajo remoto** proporciona a las organizacion
 | **Realizar** | [Guía de configuración del trabajo remoto](https://aka.ms/remoteworksetup) |
 |||
 
+### <a name="windows-virtual-desktop-setup-guide"></a>Guía de instalación de escritorio virtual de Windows
+
+El escritorio virtual de Windows es un servicio de escritorio completo y de virtualización de aplicaciones que se ejecuta en la nube. Es la única infraestructura de escritorio virtual (VDI) que ofrece administración simplificada, optimizaciones de Windows 10 para sesiones múltiples para las aplicaciones de Microsoft 365 y compatibilidad con entornos de servicios de escritorio remoto (RDS). Implemente y escale sus aplicaciones y escritorios de Windows a Azure en minutos y obtenga características de cumplimiento y seguridad integradas. La **Guía de instalación de escritorio virtual de Windows** proporciona a los administradores recursos de planeación y los requisitos previos para la implementación, la guía de instalación y recursos adicionales. 
+
+|||
+|:-------|:-----|
+| **Realizar** | [Guía de instalación de escritorio virtual de Windows](https://aka.ms/wvdsetupguide) |
+|||
+
 ## <a name="guides-for-security"></a>Guías de seguridad
 
 ### <a name="azure-ad-setup-guide"></a>Guía de configuración de Azure AD
@@ -112,6 +121,15 @@ La **Guía de configuración de Azure ad** proporciona información para garanti
 |||
 |:-------|:-----|
 | **Realizar** | [Guía de configuración de Azure AD](https://aka.ms/aadpguidance) |
+|||
+
+### <a name="plan-your-passwordless-deployment"></a>Planeación de la implementación no con contraseña
+
+Actualícese a un método alternativo de inicio de sesión que permite a los usuarios acceder a sus dispositivos de forma segura con uno de los siguientes métodos de autenticación sin contraseñas: Windows Hello para empresas, aplicación Microsoft Authenticator o claves de seguridad. Use este asistente para descubrir los métodos de autenticación que mejor se usan con contraseñas para usar y recibir instrucciones sobre cómo implementarlos.
+
+|||
+|:-------|:-----|
+| **Realizar** | [Planeación de la implementación no con contraseña](https://aka.ms/passwordlesssetup) |
 |||
 
 ### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Asesor de protección contra amenazas avanzada (ATP) de Microsoft defender
