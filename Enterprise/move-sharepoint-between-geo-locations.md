@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Aprenda a mover un sitio de OneDrive a otra ubicación geográfica
-ms.openlocfilehash: ab6651802c4add7569978c42f6920b0d21a61faa
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 3b8028f1dc4b33201a19a8da1cad6c9a559cf4c0
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44058000"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201624"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 
@@ -112,9 +112,9 @@ Para iniciar el movimiento del sitio, ejecute:
 
 ![Captura de pantalla de la ventana de PowerShell que muestra el cmdlet Start-SPOSiteContentMove](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-an-microsoft-365-group-connected-site"></a>Iniciar el movimiento geográfico de sitios de SharePoint con sitios conectados a Grupos de Microsoft 365
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Iniciar el movimiento geográfico de sitios de SharePoint para un sitio conectado a Grupos de Microsoft 365
 
-Para mover un sitio conectado a grupos de Microsoft 365, primero el administrador global debe cambiar el atributo de ubicación de datos preferida (PDL) del Grupo de Microsoft 365.
+Para mover un sitio conectado a Grupos de Office 365, primero el administrador global o administrador de SharePoint debe cambiar el atributo de ubicación de datos preferida (PDL) del Grupo de Office 365.
 
 Para establecer la PDL de un Grupo de Microsoft 365:
 
