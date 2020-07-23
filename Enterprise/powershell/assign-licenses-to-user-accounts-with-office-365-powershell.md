@@ -1,9 +1,9 @@
 ---
-title: Asignar licencias a cuentas de usuario con PowerShell de Office 365
+title: Asignar licencias de 365 de Microsoft a cuentas de usuario con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,17 +19,19 @@ ms.custom:
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: Cómo usar Office 365 PowerShell para asignar una licencia de Office 365 a los usuarios sin licencia.
-ms.openlocfilehash: 9fbf81db3b942dab90ef214169f197a8fea3f7ed
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Cómo usar PowerShell para asignar una licencia de Microsoft 365 a los usuarios sin licencia.
+ms.openlocfilehash: 25a57158be82f985885a7ceaf89f526f9d522b4d
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841687"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229836"
 ---
-# <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Asignar licencias a cuentas de usuario con PowerShell de Office 365
+# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Asignar licencias de 365 de Microsoft a cuentas de usuario con PowerShell
 
-Los usuarios no pueden usar ningún servicio de Office 365 hasta que su cuenta tenga asignada una licencia de un plan de licencias. Puede usar Office 365 PowerShell para asignar licencias rápidamente a cuentas sin licencia. 
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+
+Los usuarios no pueden usar ninguno de los servicios de Microsoft 365 hasta que su cuenta tenga asignada una licencia de un plan de licencias. Puede usar PowerShell para asignar licencias rápidamente a cuentas sin licencia. 
 
 >[!Note]
 >Las cuentas de usuario deben tener asignada una ubicación. Puede hacerlo desde las propiedades de una cuenta de usuario en el centro de administración de Microsoft 365 o desde PowerShell.
@@ -37,7 +39,7 @@ Los usuarios no pueden usar ningún servicio de Office 365 hasta que su cuenta t
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 
 A continuación, enumere los planes de licencia para el inquilino con este comando.
@@ -76,9 +78,9 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-Ejecute el `Get-MsolAccountSku` comando para ver los planes de licencias disponibles y el número de licencias disponibles en cada plan de la organización. El número de licencias disponibles en cada plan es **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Para obtener más información acerca de los planes de licencias, las licencias y los servicios, consulte [ver licencias y servicios con Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
+Ejecute el `Get-MsolAccountSku` comando para ver los planes de licencias disponibles y el número de licencias disponibles en cada plan de la organización. El número de licencias disponibles en cada plan es **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Para obtener más información acerca de los planes de licencias, las licencias y los servicios, consulte [ver licencias y servicios con PowerShell](view-licenses-and-services-with-office-365-powershell.md).
 
 >[!Note]
 >PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlet que llevan **Msol** en su nombre. Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.
@@ -90,7 +92,7 @@ Para buscar las cuentas sin licencia de la organización, ejecute este comando.
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-Solo se pueden asignar licencias a cuentas de usuario que tengan la propiedad **UsageLocation** establecida en un código de país ISO 3166-1 alpha-2 válido. Por ejemplo, US para Estados Unidos y FR para Francia. Algunos servicios de Office 365 no están disponibles en determinados países. Para obtener más información, consulte [Sobre las restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730).
+Solo se pueden asignar licencias a cuentas de usuario que tengan la propiedad **UsageLocation** establecida en un código de país ISO 3166-1 alpha-2 válido. Por ejemplo, US para Estados Unidos y FR para Francia. Algunos servicios de Microsoft 365 no están disponibles en determinados países. Para obtener más información, consulte [Sobre las restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730).
     
 Para buscar las cuentas que no tienen un valor **UsageLocation** , ejecute este comando.
 
@@ -114,13 +116,13 @@ Si usa el cmdlet **Get-MsolUser** sin usar el parámetro **All**, solo se devuel
 
 ### <a name="assigning-licenses-to-user-accounts"></a>Asignar licencias a cuentas de usuario
     
-Para asignar una licencia a un usuario, use el siguiente comando en Office 365 PowerShell.
+Para asignar una licencia a un usuario, use el siguiente comando en PowerShell.
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-En este ejemplo se asigna una licencia desde el plan de licencias **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) al usuario sin licencia **\@litwareinc.com**:
+En este ejemplo se asigna una licencia desde el plan de licencias **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) al usuario sin licencia ** \@ litwareinc.com**:
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -150,7 +152,7 @@ Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly |
   
 ## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>Mover un usuario a una suscripción diferente (plan de licencia) con el módulo Azure Active Directory PowerShell para Graph
 
-Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 A continuación, obtenga el nombre de inicio de sesión de la cuenta de usuario para la que desea cambiar las suscripciones, también conocido como nombre principal de usuario (UPN).
 
@@ -200,10 +202,10 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Administrar cuentas de usuario, licencias y grupos con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Administrar cuentas de usuario, licencias y grupos con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
+[Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
+[Introducción a PowerShell para Microsoft 365](getting-started-with-office-365-powershell.md)

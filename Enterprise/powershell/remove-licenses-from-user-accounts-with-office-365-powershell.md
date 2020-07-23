@@ -1,9 +1,9 @@
 ---
-title: Eliminar licencias de cuentas de usuario con PowerShell de Office 365
+title: Quitar licencias de 365 de Microsoft de cuentas de usuario con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/30/2020
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,19 +19,21 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: Explica cómo usar Office 365 PowerShell para quitar licencias de Office 365 que se han asignado anteriormente a los usuarios.
-ms.openlocfilehash: 0b21415b5acbd2c332d9bc171a5ab80cb7954b95
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Explica cómo usar PowerShell para quitar licencias de 365 de Microsoft que se han asignado anteriormente a los usuarios.
+ms.openlocfilehash: 5f46cfeb075d83504e3562e60e3dfd70a53dd136
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997416"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230396"
 ---
-# <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Eliminar licencias de cuentas de usuario con PowerShell de Office 365
+# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Quitar licencias de 365 de Microsoft de cuentas de usuario con PowerShell
+
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 A continuación, enumere los planes de licencia para el inquilino con este comando.
 
@@ -83,13 +85,13 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
    
 Para ver la información del plan de licencias (**AccountSkuID**) de su organización, vea los temas siguientes:
     
-  - [Ver las licencias y los servicios con PowerShell de Office 365](view-licenses-and-services-with-office-365-powershell.md)
+  - [Ver licencias y servicios con PowerShell](view-licenses-and-services-with-office-365-powershell.md)
     
-  - [Ver los detalles del servicio y la licencia de la cuenta con PowerShell de Office 365](view-account-license-and-service-details-with-office-365-powershell.md)
+  - [Ver los detalles de licencia y servicio de la cuenta con PowerShell](view-account-license-and-service-details-with-office-365-powershell.md)
     
 Si usa el cmdlet **Get-MsolUser** sin usar el parámetro _All_, solo se devuelven las 500 primeras cuentas.
     
@@ -176,13 +178,13 @@ Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveL
 }
 ```
 
-Otra forma de liberar una licencia consiste en eliminar la cuenta de usuario. Para obtener más información, vea [eliminar y restaurar cuentas de usuario con Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).
+Otra forma de liberar una licencia consiste en eliminar la cuenta de usuario. Para obtener más información, vea [eliminar y restaurar cuentas de usuario con PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
-[Administrar cuentas de usuario, licencias y grupos con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Administración de cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
+[Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
+[Introducción a PowerShell para Microsoft 365](getting-started-with-office-365-powershell.md)
 

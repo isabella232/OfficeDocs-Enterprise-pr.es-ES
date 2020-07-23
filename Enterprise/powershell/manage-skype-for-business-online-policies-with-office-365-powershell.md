@@ -1,9 +1,9 @@
 ---
-title: Administrar Skype para políticas de negocios en línea con Office 365 PowerShell
+title: Administrar directivas de Skype empresarial online con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/26/2019
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: 'Resumen: Use Office 365 PowerShell para administrar las propiedades de la cuenta de usuario de Skype empresarial online con directivas.'
-ms.openlocfilehash: aed7e3929a41dec69803a5b73bdf29fb23b4ba05
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Resumen: Use PowerShell para administrar las propiedades de la cuenta de usuario de Skype empresarial online con directivas.'
+ms.openlocfilehash: 4310de23d47025468ea78a597f6379b51deaaa96
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841337"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230436"
 ---
-# <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Administrar Skype para políticas de negocios en línea con Office 365 PowerShell
+# <a name="manage-skype-for-business-online-policies-with-powershell"></a>Administrar directivas de Skype empresarial online con PowerShell
 
-Para administrar muchas propiedades de la cuenta de usuario de Skype empresarial online, debe especificarlas como propiedades de directivas con Office 365 PowerShell.
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+
+Para administrar muchas propiedades de la cuenta de usuario de Skype empresarial online, debe especificarlas como propiedades de directivas con PowerShell para Microsoft 365.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -112,7 +114,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 El parámetro ApplicableTo limita los datos devueltos a las directivas que se pueden asignar al usuario especificado (por ejemplo, Alex Darrow). Según las licencias y las restricciones de ubicación de uso, eso puede representar un subconjunto de todas las directivas disponibles. 
   
-En algunos casos, las propiedades de las directivas no se usan con Office 365, mientras que otras solo pueden ser administradas por el personal de soporte técnico de Microsoft. 
+En algunos casos, las propiedades de las directivas no se usan con Microsoft 365, mientras que otras solo pueden ser administradas por el personal de soporte técnico de Microsoft. 
   
 Con Skype empresarial online, los usuarios deben ser administrados por una directiva de algún tipo. Si una propiedad relacionada con directivas válida está en blanco, significa que el usuario en cuestión se administra mediante una directiva global, que es una directiva que se aplica automáticamente a un usuario a menos que se le asigne específicamente una directiva por usuario. Como no vemos una directiva de cliente listada para una cuenta de usuario, ésta se administra mediante la directiva global. Puede determinar la Directiva de cliente global con este comando:
   
@@ -120,11 +122,11 @@ Con Skype empresarial online, los usuarios deben ser administrados por una direc
 Get-CsClientPolicy -Identity "Global"
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Administrar Skype Empresarial Online con PowerShell de Office 365](manage-skype-for-business-online-with-office-365-powershell.md)
+[Administrar Skype empresarial online con PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
+[Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
+[Introducción a PowerShell para Microsoft 365](getting-started-with-office-365-powershell.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure
+title: Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150s
 ms.collection:
@@ -18,17 +18,17 @@ f1.keywords:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
-description: 'Resumen: Configure la autenticación federada de alta disponibilidad para su suscripción de Office 365 en Microsoft Azure.'
-ms.openlocfilehash: af73f75b7ac1e3151ddb5c55acdf49a48f784e95
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+description: 'Resumen: configure la autenticación federada de alta disponibilidad para su suscripción a Microsoft 365 en Microsoft Azure.'
+ms.openlocfilehash: 98b8bdff708d02f866a3e2f2d2521bec5b011bb7
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840527"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230056"
 ---
-# <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure
+# <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure
 
-Este artículo contiene vínculos a las instrucciones detalladas para implementar la autenticación federada de alta disponibilidad para Microsoft Office 365 en los servicios de infraestructura de Azure con estas máquinas virtuales:
+Este artículo contiene vínculos a las instrucciones paso a paso para implementar la autenticación federada de alta disponibilidad para Microsoft 365 en los servicios de infraestructura de Azure con estas máquinas virtuales:
   
 - Dos servidores proxy de aplicación web
     
@@ -40,9 +40,9 @@ Este artículo contiene vínculos a las instrucciones detalladas para implementa
     
 Esta es la configuración, con nombres de marcador de posición para cada servidor.
   
-**Una autenticación federada de alta disponibilidad para Office 365 en Azure**
+**Una autenticación federada de alta disponibilidad para la infraestructura 365 de Microsoft en Azure**
 
-![La configuración final de la infraestructura de la autenticación federada de Office 365 con alta disponibilidad en Azure](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![La configuración final de la infraestructura de autenticación federada de Microsoft 365 de alta disponibilidad en Azure](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Todas las máquinas virtuales forman parte de una única red virtual entre locales de Azure (VNet). 
   
@@ -54,7 +54,7 @@ Cada par de máquinas virtuales asignado a un rol específico forma parte de su 
 > [!NOTE]
 > Debido a que esta red virtual está conectada a la red local, la configuración no incluye máquinas virtuales intermedias ni de supervisión en una subred de administración. Para obtener más información, consulte [Running Windows VMs for an N-tier architecture](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm). 
   
-El resultado de esta configuración es que tendrá una autenticación federada para todos los usuarios de Office 365, en la que se pueden utilizar las credenciales de AD DS para iniciar sesión en lugar de la cuenta de Office 365. La infraestructura de autenticación federada utiliza un conjunto redundante de servidores que se implementan más fácilmente en servicios de la infraestructura de Azure en lugar de en la red perimetral en local.
+El resultado de esta configuración es que tendrá autenticación federada para todos los usuarios de Microsoft 365, en los que pueden usar sus credenciales de AD DS para iniciar sesión en lugar de la cuenta de Microsoft 365. La infraestructura de autenticación federada utiliza un conjunto redundante de servidores que se implementan más fácilmente en servicios de la infraestructura de Azure en lugar de en la red perimetral en local.
   
 ## <a name="bill-of-materials"></a>Lista de materiales
 
@@ -96,15 +96,15 @@ Implementará esta carga de trabajo en las fases siguientes:
     
 - [Fase 4: Configurar los servidores proxy de aplicación web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Creación y configuración de los dos servidores proxy de aplicación web.
     
-- [Fase 5: Configurar la autenticación federada para Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Configuración de la autenticación federada para su suscripción de Office 365.
+- [Fase 5: configurar la autenticación federada para Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Configure la autenticación federada para su suscripción a Microsoft 365.
     
-En estos artículos, se proporciona una guía preceptiva dividida en fases para una arquitectura predefinida. Su objetivo es crear una autenticación federada de alta disponibilidad funcional para Office 365 en servicios de infraestructura de Azure. Tenga en cuenta lo siguiente:
+En estos artículos se proporciona una guía preceptiva para cada fase de una arquitectura predefinida para crear una autenticación federada funcional y de alta disponibilidad para Microsoft 365 en los servicios de infraestructura de Azure. Tenga en cuenta lo siguiente:
   
 - Si es un experimentado implementador de AD FS, no dude en adaptar las instrucciones que se detallan en las fases 3 y 4, así como en crear el conjunto de servidores que mejor se adapte a sus necesidades. 
     
 - Si ya tiene una implementación existente de nube híbrida de Azure con una red virtual entre locales existente, no dude en adaptar u omitir las instrucciones que aparecen en las fases 1 y 2 y colocar los servidores proxy de aplicación web y AD FS en las subredes adecuadas.
     
-Para crear un entorno de prueba o desarrollo o bien una prueba de concepto de esta configuración, consulte [Identidad federada para el entorno de desarrollo y pruebas de Office 365](federated-identity-for-your-office-365-dev-test-environment.md).
+Para crear un entorno de desarrollo y pruebas o una prueba de concepto de esta configuración, consulte [Federated Identity for your Microsoft 365 dev/test Environment](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment).
   
 ## <a name="next-step"></a>Siguiente paso
 

@@ -1,9 +1,9 @@
 ---
-title: Crear cuentas de usuario con PowerShell de Office 365
+title: Crear cuentas de usuario 365 de Microsoft con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,32 +18,34 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Aprenda a usar PowerShell de Office 365 para crear cuentas de usuario en Office 365.
-ms.openlocfilehash: 95cbefc2caeb61376ed77fe5023cb1c050a8fa07
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Obtenga información sobre cómo usar PowerShell para Microsoft 365 para crear cuentas de usuario.
+ms.openlocfilehash: 4057f4e1b29e8177bee32306c49f25f607ac5a0f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004693"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230796"
 ---
-# <a name="create-user-accounts-with-office-365-powershell"></a>Crear cuentas de usuario con PowerShell de Office 365
+# <a name="create-microsoft-365-user-accounts-with-powershell"></a>Crear cuentas de usuario 365 de Microsoft con PowerShell
 
-Puede usar PowerShell de Office 365 para crear de forma eficaz cuentas de usuario, especialmente varias cuentas de usuario. Al crear cuentas de usuario en PowerShell de Office 365, siempre se requieren determinadas propiedades de la cuenta. Otras propiedades no son necesarias para crear la cuenta, pero aun así son importantes. Estas propiedades se describen en la tabla siguiente:
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+
+Puede usar PowerShell para Microsoft 365 para crear de forma eficaz cuentas de usuario, especialmente varias cuentas de usuario. Al crear cuentas de usuario en PowerShell, siempre son necesarias determinadas propiedades de la cuenta. Otras propiedades no son necesarias para crear la cuenta, pero aun así son importantes. Estas propiedades se describen en la tabla siguiente:
   
 |**Nombre de propiedad**|**Obligatorio**|**Descripción**|
 |:-----|:-----|:-----|
-|**DisplayName** <br/> |Sí  <br/> |Este es el nombre para mostrar que se usa en servicios de Office 365. Por ejemplo, Caleb Sills.  <br/> |
-|**UserPrincipalName** <br/> |Sí  <br/> |Este es el nombre de cuenta que se usa para iniciar sesión en servicios de Office 365. Por ejemplo, CalebS@contoso.onmicrosoft.com.  <br/> |
+|**DisplayName** <br/> |Sí  <br/> |Este es el nombre para mostrar que se usa en los servicios de Microsoft 365. Por ejemplo, Caleb Sills.  <br/> |
+|**UserPrincipalName** <br/> |Sí  <br/> |Este es el nombre de cuenta que se usa para iniciar sesión en los servicios de Microsoft 365. Por ejemplo, CalebS@contoso.onmicrosoft.com.  <br/> |
 |**FirstName** <br/> |No  <br/> ||
 |**Apellidos** <br/> |No  <br/> ||
-|**LicenseAssignment** <br/> |No  <br/> |Este es el plan de licencias (también conocido como plan de Office 365 o SKU) desde el que se asigna una licencia disponible a la cuenta de usuario. La licencia define los servicios de Office 365 que están disponibles para la cuenta. No tiene que asignar una licencia a un usuario al crear la cuenta, pero la cuenta requiere una licencia para tener acceso a los servicios de Office 365. Dispone de 30 días para conceder una licencia a la cuenta de usuario después de crearla. |
+|**LicenseAssignment** <br/> |No  <br/> |Se trata del plan de licencias (también conocido como el plan de licencia o SKU) desde el que se asigna una licencia disponible a la cuenta de usuario. La licencia define los servicios de Microsoft 365 que están disponibles para la cuenta. No es necesario asignar una licencia a un usuario cuando se crea la cuenta, pero la cuenta requiere una licencia para obtener acceso a los servicios de Microsoft 365. Dispone de 30 días para conceder una licencia a la cuenta de usuario después de crearla. |
 |**Password** <br/> |No  <br/> | Si no especifica una contraseña, se asignará una aleatoria a la cuenta de usuario y esta será visible en los resultados del comando. Si especifica una contraseña, debe tener entre 8 y 16 caracteres ASCII de cualquiera de los siguientes tipos: letras minúsculas, letras mayúsculas, números y símbolos. <br/> |
-|**UsageLocation** <br/> |No  <br/> |Se trata de un código de país válido ISO 3166-1 alpha-2. Por ejemplo, US para Estados Unidos y FR para Francia. Es importante proporcionar este valor, ya que algunos servicios de Office 365 no están disponibles en determinados países, por lo que no se puede asignar una licencia a una cuenta de usuario a menos que la cuenta tenga este valor configurado. Para obtener más información, consulte [Sobre las restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
+|**UsageLocation** <br/> |No  <br/> |Se trata de un código de país válido ISO 3166-1 alpha-2. Por ejemplo, US para Estados Unidos y FR para Francia. Es importante proporcionar este valor, ya que algunos servicios de Microsoft 365 no están disponibles en determinados países, por lo que no puede asignar una licencia a una cuenta de usuario a menos que la cuenta tenga este valor configurado. Para obtener más información, consulte [Sobre las restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730).  <br/> |
    
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 Después de haberse conectado, use la sintaxis siguiente para crear una cuenta individual:
   
@@ -63,7 +65,7 @@ New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 ### <a name="create-an-individual-user-account"></a>Cree una cuenta de usuario individual
 
@@ -101,7 +103,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
   ```
 
  > [!NOTE]
->Los nombres de columna y su orden en la primera fila del archivo CSV son arbitrarios, pero asegúrese de que los datos del resto del archivo coincidan con el orden de los nombres de columna y use los nombres de columna para los valores de parámetro en el comando de PowerShell de Office 365.
+>Los nombres de columna y su orden en la primera fila del archivo CSV son arbitrarios, pero asegúrese de que los datos del resto del archivo coinciden con el orden de los nombres de columna y use los nombres de columna para los valores de parámetro en el comando PowerShell para Microsoft 365.
     
 2. Utilice la sintaxis siguiente:
     
@@ -115,12 +117,12 @@ En este ejemplo se crean las cuentas de usuario a partir del archivo denominado 
   Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
   ```
 
-3. Revise el archivo de salida para ver los resultados. No se han especificado las contraseñas, por lo que las contraseñas aleatorias generadas por Office 365 son visibles en el archivo de salida.
+3. Revise el archivo de salida para ver los resultados. No se especificaron contraseñas, por lo que las contraseñas aleatorias generadas por Microsoft 365 son visibles en el archivo de salida.
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Administrar cuentas de usuario, licencias y grupos con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Administración de cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
+[Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
+[Introducción a PowerShell para Microsoft 365](getting-started-with-office-365-powershell.md)

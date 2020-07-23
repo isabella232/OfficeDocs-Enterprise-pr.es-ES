@@ -7,7 +7,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Resumen: obtenga información sobre cómo configurar una red virtual de Azure entre locales para las cargas de trabajo de servidores de Office con una conexión VPN de sitio a sitio.'
-ms.openlocfilehash: 4ff34795c4141c686523a9ae79b2052d8eb27140
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840657"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230076"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Conectar una red local con una red virtual de Microsoft Azure
 
 Una red virtual de Azure entre locales se conecta a la red local, extendiendo la red para incluir subredes y máquinas virtuales hospedadas en servicios de infraestructura de Azure. Esta conexión permite a los equipos de la red local obtener acceso directamente a máquinas virtuales en Azure, y viceversa. 
 
-Por ejemplo, un servidor de sincronización de directorios que se ejecute en una máquina virtual de Azure necesita consultar los controladores de dominio locales para identificar cambios en cuentas y sincronizar esos cambios con la suscripción de Office 365. En este artículo, se muestra cómo configurar una red virtual de Azure entre locales con una conexión de red privada virtual (VPN) de sitio a sitio que esté preparada para hospedar Azure Virtual Machines.
+Por ejemplo, un servidor de sincronización de directorios que se ejecuta en una máquina virtual de Azure necesita consultar los controladores de dominio locales para obtener cambios en las cuentas y sincronizar dichos cambios con la suscripción a Microsoft 365. En este artículo se muestra cómo configurar una red virtual de Azure entre locales usando una conexión de red privada virtual (VPN) de sitio a sitio que está preparada para hospedar máquinas virtuales de Azure.
 
 ## <a name="overview"></a>Información general
 
@@ -335,4 +335,4 @@ Esta es la configuración resultante.
   
 ## <a name="next-step"></a>Paso siguiente
   
-[Implementar la sincronización de directorios de Office 365 en Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Implementar la sincronización de directorios de Microsoft 365 en Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)

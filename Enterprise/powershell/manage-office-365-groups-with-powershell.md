@@ -18,15 +18,17 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Obtenga información sobre cómo realizar tareas de administración comunes para los grupos de Microsoft 365 en Microsoft PowerShell.
-ms.openlocfilehash: e0758ca928a30c06da33f0b213ada51f69bf65e1
-ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
+ms.openlocfilehash: 25a0a3c90082c016c37820f12caddd1dc1f09704
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45117262"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230606"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Administración de grupos de Microsoft 365 con PowerShell
  
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+
 En este artículo se describen los pasos para realizar tareas de administración comunes para los grupos de Microsoft PowerShell. También muestra los cmdlets de PowerShell para grupos. Para obtener información sobre la administración de sitios de SharePoint, vea [administrar sitios de SharePoint Online con PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
 
 ## <a name="link-to-your-microsoft-365-groups-usage-guidelines"></a>Vínculo a las instrucciones de uso de Microsoft 365 Groups

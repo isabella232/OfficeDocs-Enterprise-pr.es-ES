@@ -1,5 +1,5 @@
 ---
-title: Administrar grupos de sitio de SharePoint Online con PowerShell de Office 365
+title: Administrar grupos de sitio de SharePoint Online con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,23 +18,25 @@ ms.custom:
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Resumen: Use Office 365 PowerShell para administrar grupos de sitio de SharePoint Online.'
-ms.openlocfilehash: 3a1b999470746cbe02ec52fe888ea26b59cd423b
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 'Resumen: Use PowerShell para administrar grupos de sitio de SharePoint Online.'
+ms.openlocfilehash: bee1f01ae78ec35d34a6aba0119bba3fbf7eeada
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004203"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230496"
 ---
-# <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Administrar grupos de sitio de SharePoint Online con PowerShell de Office 365
+# <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Administrar grupos de sitio de SharePoint Online con PowerShell
 
-Aunque puede usar el centro de administración de Microsoft 365, también puede usar Office 365 PowerShell para administrar los grupos de sitio de SharePoint Online.
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+
+Aunque puede usar el centro de administración de Microsoft 365, también puede usar PowerShell para Microsoft 365 para administrar los grupos de sitio de SharePoint Online.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Los procedimientos de este artículo requieren que se conecte a SharePoint Online. Para obtener instrucciones, consulte [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
-## <a name="view-sharepoint-online-with-office-365-powershell"></a>Ver SharePoint Online con Office 365 PowerShell
+## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Ver SharePoint Online con PowerShell para Microsoft 365
 
 El centro de administración de SharePoint Online tiene algunos métodos fáciles de usar para administrar grupos de sitio. Por ejemplo, supongamos que desea ver los grupos y los miembros del grupo para el `https://litwareinc.sharepoint.com/sites/finance` sitio. Haga lo siguiente:
 
@@ -43,7 +45,7 @@ El centro de administración de SharePoint Online tiene algunos métodos fácile
 
 Y, así, repita el proceso con el siguiente sitio que quiera ver.
 
-Para obtener una lista de los grupos con Office 365 PowerShell, puede usar los siguientes comandos:
+Para obtener una lista de los grupos con PowerShell para Microsoft 365, puede usar los siguientes comandos:
 
 ```powershell
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
@@ -58,7 +60,7 @@ foreach ($y in $x)
 
 Hay dos formas de ejecutar este comando configurado en el símbolo del sistema del shell de administración de SharePoint Online:
 
-- Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteUrl** , seleccione los comandos y péguelos en el símbolo del sistema del shell de administración de SharePoint Online. Cuando lo haga, PowerShell se detendrá en **>>** un símbolo del sistema. Presione Entrar para ejecutar el `foreach` comando.<br/>
+- Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteUrl** , seleccione los comandos y péguelos en el símbolo del sistema del shell de administración de SharePoint Online. Cuando lo haga, PowerShell se detendrá en un **>>** símbolo del sistema. Presione Entrar para ejecutar el `foreach` comando.<br/>
 - Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteURL** y después guarde este archivo de texto con un nombre y la extensión. ps1 en la carpeta adecuada. A continuación, ejecute el script desde el símbolo del sistema del shell de administración de SharePoint Online especificando su ruta de acceso y nombre de archivo. A continuación se muestra un ejemplo:
 
 ```powershell
@@ -69,7 +71,7 @@ En ambos casos, el resultado será parecido a lo siguiente:
 
 ![Grupos de sitio de SharePoint Online](media/SPO-site-groups.png)
 
-Se trata de todos los grupos que se han creado para el `https://litwareinc.sharepoint.com/sites/finance`sitio y de todos los usuarios asignados a dichos grupos. Los nombres de grupo están en amarillo para ayudarle a separar los nombres de los grupos de sus miembros.
+Se trata de todos los grupos que se han creado para el sitio `https://litwareinc.sharepoint.com/sites/finance` y de todos los usuarios asignados a dichos grupos. Los nombres de grupo están en amarillo para ayudarle a separar los nombres de los grupos de sus miembros.
 
 Otro ejemplo: a continuación se muestra un conjunto de comandos que enumera los grupos y todas las pertenencias a grupos de todos los sitios de SharePoint Online.
 
@@ -93,11 +95,11 @@ foreach ($y in $x)
 
 [Conectarse a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Crear sitios de SharePoint Online y agregar usuarios con PowerShell de Office 365](create-sharepoint-sites-and-add-users-with-powershell.md)
+[Crear sitios de SharePoint Online y agregar usuarios con PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Administrar usuarios y grupos de SharePoint Online con PowerShell de Office 365](manage-sharepoint-users-and-groups-with-powershell.md)
+[Administrar usuarios y grupos de SharePoint Online con PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
 
-[Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
+[Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
+[Introducción a PowerShell para Microsoft 365](getting-started-with-office-365-powershell.md)
 

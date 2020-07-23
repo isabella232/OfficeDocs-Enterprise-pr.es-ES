@@ -1,5 +1,5 @@
 ---
-title: Programa de asociados de red de Microsoft 365
+title: Programa para partners de redes de Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: El programa de socios de red de Microsoft 365 permite que el dispositivo se certifique como si trabajara con Microsoft 365.
 hideEdit: true
-ms.openlocfilehash: 64e04bb1f9e4ebb5d39c34c128b544f65ef5147e
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: c43f110883cfb5ca150a702253a41e84f9e1ab0f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052503"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230196"
 ---
-# <a name="microsoft-365-networking-partner-program"></a>Programa de asociados de red de Microsoft 365
+# <a name="microsoft-365-networking-partner-program"></a>Programa para partners de redes de Microsoft 365
 
 La conectividad de red tiene un impacto directo en la capacidad de los usuarios para trabajar rápidamente, colaborar de forma eficaz y simplificar los procesos de negocio con Microsoft 365. Para los clientes en cualquier fase de su transformación digital, el diseño de red es un aspecto crítico que debe abordarse de forma proactiva antes de que los problemas afecten negativamente a la experiencia del usuario.
 

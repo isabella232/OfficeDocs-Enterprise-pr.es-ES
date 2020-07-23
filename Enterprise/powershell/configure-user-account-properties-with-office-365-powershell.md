@@ -1,9 +1,9 @@
 ---
-title: Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell
+title: Configurar las propiedades de la cuenta de usuario 365 de Microsoft con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,57 +18,59 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: 'Resumen: Use Office 365 PowerShell para configurar las propiedades de una o varias cuentas de usuario en el inquilino de Office 365.'
-ms.openlocfilehash: 5748bd382357168e4184754fb49fb7304e2d2474
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 'Resumen: Use PowerShell para Microsoft 365 para configurar las propiedades de una o varias cuentas de usuario en su inquilino de Microsoft 365.'
+ms.openlocfilehash: ccf9bf9930551ab1ee26ef7a1f69427cdc4871f5
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004723"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230856"
 ---
-# <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell
+# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Configurar las propiedades de la cuenta de usuario 365 de Microsoft con PowerShell
 
-Aunque puede usar el centro de administración de Microsoft 365 para configurar las propiedades de las cuentas de usuario de su inquilino de Office 365, también puede usar PowerShell de Office 365 y realizar algunas acciones que el centro de administración no puede.
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+
+Aunque puede usar el centro de administración de Microsoft 365 para configurar las propiedades de las cuentas de usuario de su inquilino de Microsoft 365, también puede usar PowerShell y hacer algunas cosas que el centro de administración de Microsoft 365 no puede.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
 Para configurar las propiedades de las cuentas de usuario con el módulo Azure Active Directory PowerShell para Graph, use el cmdlet [set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) y especifique las propiedades que se deben establecer o cambiar. 
 
-Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
    
 ### <a name="change-properties-for-a-specific-user-account"></a>Cambiar las propiedades de una cuenta de usuario específica
 
 La cuenta se identifica con el parámetro **-objectId** y se establecen o cambian las propiedades específicas con parámetros adicionales. A continuación se muestra una lista de los parámetros más comunes.
   
-- -Department "\<nombre del Departamento>"
+- -Departamento " \<department name> "
     
-- -DisplayName "\<nombre de usuario completo>"
+- -DisplayName " \<full user name> "
     
-- -FacsimilieTelephoneNumber "\<número de fax>"
+- -FacsimilieTelephoneNumber " \<fax number> "
     
-- -GivenName "\<nombre de usuario>"
+- -GivenName " \<user first name> "
     
-- -Apellidos\<"apellidos del usuario>"
+- -2º apellido " \<user last name> "
     
-- -Mobile "\<número de teléfono móvil>"
+- -Mobile " \<mobile phone number> "
     
-- -Cargo "\<nombre de trabajo>"
+- -JobTitle " \<job title> "
     
-- -PreferredLanguage "\<> de idioma"
+- -PreferredLanguage " \<language> "
     
-- -Dirección "\<calle>"
+- -StreetAddress " \<street address> "
     
-- -City "\<nombre de la ciudad>"
+- -City " \<city name> "
     
-- -Estado "\<nombre de estado>"
+- -State " \<state name> "
     
-- -CódigoPostal "\<> de código postal"
+- -CódigoPostal " \<postal code> "
     
-- -Country "\<nombre de país>"
+- -Country " \<country name> "
     
-- -TelephoneNumber "\<número de teléfono de la oficina>"
+- -TelephoneNumber " \<office phone number> "
     
-- -UsageLocation "\<código de país o región de 2 caracteres>"
+- -UsageLocation " \<2-character country or region code> "
     
     Este es el código de país o región de dos letras ISO 3166-1 (a2).
     
@@ -81,17 +83,17 @@ Para mostrar el nombre principal de usuario de las cuentas de usuario, ejecute e
 Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName | More
 ```
 
-Este comando indica a Office 365 PowerShell que:
+Este comando indica a PowerShell que:
   
-- Obtener toda la información de las cuentas de usuario ( **Get-AzureADUser** ) y enviarla al comando siguiente ( **|** ).
+- Obtener toda la información de las cuentas de usuario (**Get-AzureADUser**) y enviarla al comando siguiente ( **|** ).
     
-- Ordenar la lista de nombres principales de usuario alfabéticamente ( **ordenar UserPrincipalName** ) y enviarlo al siguiente comando ( **|** ).
+- Ordenar la lista de nombres principales de usuario alfabéticamente (**ordenar UserPrincipalName**) y enviarlo al siguiente comando ( **|** ).
     
-- Mostrar solo la propiedad de nombre principal de usuario para cada cuenta ( **Seleccione UserPrincipalName** ).
+- Mostrar solo la propiedad de nombre principal de usuario para cada cuenta (**Seleccione UserPrincipalName**).
 
-- Mostrar una pantalla a la vez ( **más** ).
+- Mostrar una pantalla a la vez (**más**).
     
-En este comando se enumeran todas las cuentas. Si desea mostrar el nombre principal de usuario de una cuenta en función de su nombre para mostrar (nombre y apellido), rellene la variable **$username** a continuación (quite \< los caracteres y >) y, a continuación, ejecute los siguientes comandos:
+En este comando se enumeran todas las cuentas. Si desea mostrar el nombre principal de usuario de una cuenta en función de su nombre para mostrar (nombre y apellido), rellene la variable **$username** a continuación (quitando los \< and > caracteres) y, a continuación, ejecute los siguientes comandos:
   
 ```powershell
 $userName="<Display name>"
@@ -121,11 +123,11 @@ Para cambiar las propiedades de todos los usuarios, puede usar la combinación d
 Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
 ```
 
-Este comando indica a Office 365 PowerShell que:
+Este comando indica a PowerShell que:
   
-- Obtener toda la información de las cuentas de usuario ( **Get-AzureADUser** ) y enviarla al comando siguiente ( **|** ).
+- Obtener toda la información de las cuentas de usuario (**Get-AzureADUser**) y enviarla al comando siguiente ( **|** ).
     
-- Establezca la ubicación del usuario en Francia ( **set-AzureADUser-UsageLocation "fr"** ).
+- Establezca la ubicación del usuario en Francia (**set-AzureADUser-UsageLocation "fr"**).
     
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>Cambiar las propiedades de un conjunto específico de cuentas de usuario
 
@@ -135,19 +137,19 @@ Para cambiar las propiedades de un conjunto específico de cuentas de usuario, p
 Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
 ```
 
-Este comando indica a Office 365 PowerShell que:
+Este comando indica a PowerShell que:
   
-- Obtener toda la información de las cuentas de usuario ( **Get-AzureADUser** ) y enviarla al comando siguiente ( **|** ).
+- Obtener toda la información de las cuentas de usuario (**Get-AzureADUser**) y enviarla al comando siguiente ( **|** ).
     
-- Busque todas las cuentas de usuario que tengan su propiedad Department establecida en "Accounting" ( **donde {$ _. Department-EQ "Accounting"}** ) y enviar la información resultante al siguiente comando ( **|** ).
+- Busque todas las cuentas de usuario que tengan su propiedad Department establecida en "Accounting" (**donde {$ _. Department-EQ "Accounting"}**) y enviar la información resultante al siguiente comando ( **|** ).
     
-- Establezca la ubicación del usuario en Francia ( **set-AzureADUser-UsageLocation "fr"** ).
+- Establezca la ubicación del usuario en Francia (**set-AzureADUser-UsageLocation "fr"**).
     
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
 Para configurar las propiedades de las cuentas de usuario con el módulo Microsoft Azure Active Directory para Windows PowerShell, use el cmdlet **set-MsolUser** y especifique las propiedades que se van a establecer o cambiar. 
 
-Primero, [conéctese a su inquilino de Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
   
 >[!Note]
 >PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlet que llevan **Msol** en su nombre. Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.
@@ -159,37 +161,37 @@ Para configurar las propiedades de una cuenta de usuario específica, use el cmd
 
 La cuenta se identifica con el parámetro **-UserPrincipalName** y se establecen o cambian las propiedades específicas con parámetros adicionales. A continuación se muestra una lista con los parámetros más comunes.
   
-- -City "\<nombre de la ciudad>"
+- -City " \<city name> "
     
-- -Country "\<nombre de país>"
+- -Country " \<country name> "
     
-- -Department "\<nombre del Departamento>"
+- -Departamento " \<department name> "
     
-- -DisplayName "\<nombre de usuario completo>"
+- -DisplayName " \<full user name> "
     
-- -Fax "\<número de fax>"
+- -Fax " \<fax number> "
     
-- -FirstName "\<nombre de usuario>"
+- -FirstName " \<user first name> "
     
-- -LastName "\<apellidos del usuario>"
+- -LastName " \<user last name> "
     
-- -MobilePhone "\<número de teléfono móvil>"
+- -MobilePhone " \<mobile phone number> "
     
-- -Office "\<ubicación de oficina>"
+- -Office " \<office location> "
     
-- -PhoneNumber "\<número de teléfono de la oficina>"
+- -PhoneNumber " \<office phone number> "
     
-- -CódigoPostal "\<> de código postal"
+- -CódigoPostal " \<postal code> "
     
-- -PreferredLanguage "\<> de idioma"
+- -PreferredLanguage " \<language> "
     
-- -Estado "\<nombre de estado>"
+- -State " \<state name> "
     
-- -Dirección "\<calle>"
+- -StreetAddress " \<street address> "
     
-- -Title "\<nombre del título>"
+- -Title " \<title name> "
     
-- -UsageLocation "\<código de país o región de 2 caracteres>"
+- -UsageLocation " \<2-character country or region code> "
     
     Este es el código de país o región de dos letras ISO 3166-1 (a2).
     
@@ -201,17 +203,17 @@ Para ver los nombres principales de usuario de todos los usuarios, ejecute el si
 Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName | More
 ```
 
-Este comando indica a Office 365 PowerShell que:
+Este comando indica a PowerShell que:
   
-- Obtener toda la información de las cuentas de usuario ( **Get-MsolUser** ) y enviarla al comando siguiente ( **|** ).
+- Obtener toda la información de las cuentas de usuario (**Get-MsolUser**) y enviarla al comando siguiente ( **|** ).
     
-- Ordenar la lista de nombres principales de usuario alfabéticamente ( **ordenar UserPrincipalName** ) y enviarlo al siguiente comando ( **|** ).
+- Ordenar la lista de nombres principales de usuario alfabéticamente (**ordenar UserPrincipalName**) y enviarlo al siguiente comando ( **|** ).
     
-- Mostrar solo la propiedad de nombre principal de usuario para cada cuenta ( **Seleccione UserPrincipalName** ).
+- Mostrar solo la propiedad de nombre principal de usuario para cada cuenta (**Seleccione UserPrincipalName**).
     
-- Mostrar una pantalla a la vez ( **más** ).
+- Mostrar una pantalla a la vez (**más**).
     
-En este comando se enumeran todas las cuentas. Si desea mostrar el nombre principal de usuario de una cuenta en función de su nombre para mostrar (nombre y apellido), rellene la variable **$username** a continuación (quite \< los caracteres y >) y, a continuación, ejecute los siguientes comandos:
+En este comando se enumeran todas las cuentas. Si desea mostrar el nombre principal de usuario de una cuenta en función de su nombre para mostrar (nombre y apellido), rellene la variable **$username** a continuación (quitando los \< and > caracteres) y, a continuación, ejecute los siguientes comandos:
   
 ```powershell
 $userName="<Display name>"
@@ -241,11 +243,11 @@ Para cambiar las propiedades de todos los usuarios, puede combinar los cmdlets *
 Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 ```
 
-Este comando indica a Office 365 PowerShell que:
+Este comando indica a PowerShell que:
   
-- Obtener toda la información de las cuentas de usuario ( **Get-MsolUser** ) y enviarla al comando siguiente ( **|** ).
+- Obtener toda la información de las cuentas de usuario (**Get-MsolUser**) y enviarla al comando siguiente ( **|** ).
     
-- Establezca la ubicación del usuario en Francia ( **set-MsolUser-UsageLocation "fr"** ).
+- Establezca la ubicación del usuario en Francia (**set-MsolUser-UsageLocation "fr"**).
     
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>Cambiar las propiedades de un conjunto específico de cuentas de usuario
 
@@ -255,19 +257,19 @@ Para cambiar las propiedades de un conjunto específico de cuentas de usuario, p
 Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
 ```
 
-Este comando indica a Office 365 PowerShell que:
+Este comando indica a PowerShell que:
   
-- Obtener toda la información de las cuentas de usuario ( **Get-MsolUser** ) y enviarla al comando siguiente ( **|** ).
+- Obtener toda la información de las cuentas de usuario (**Get-MsolUser**) y enviarla al comando siguiente ( **|** ).
     
-- Busque todas las cuentas de usuario que tengan su propiedad Department establecida en "Accounting" ( **donde {$ _. Department-EQ "Accounting"}** ) y enviar la información resultante al siguiente comando ( **|** ).
+- Busque todas las cuentas de usuario que tengan su propiedad Department establecida en "Accounting" (**donde {$ _. Department-EQ "Accounting"}**) y enviar la información resultante al siguiente comando ( **|** ).
     
-- Establezca la ubicación del usuario en Francia ( **set-MsolUser-UsageLocation "fr"** ).
+- Establezca la ubicación del usuario en Francia (**set-MsolUser-UsageLocation "fr"**).
     
 
 ## <a name="see-also"></a>Consulte también
 
-[Administrar cuentas de usuario, licencias y grupos con Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Administración de cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
+[Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
+[Introducción a PowerShell para Microsoft 365](getting-started-with-office-365-powershell.md)

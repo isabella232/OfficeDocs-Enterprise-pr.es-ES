@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo planear el lanzamiento del portal en SharePoint Online y los pasos que se deben seguir para un inicio correcto
-ms.openlocfilehash: c6f1ef0817534fe2e643492e882fe8f61c3a01dc
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 4edd1bc9c2001912a8ebb77e467f9663474ecb66
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004113"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230176"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planeación del lanzamiento del portal del plan de implementación en SharePoint Online
 
@@ -35,14 +35,14 @@ Para ayudar a crear un portal exitoso, siga los principios básicos, prácticas 
 A continuación se resalta el método de implementación.
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>Información general sobre la planeación de la capacidad en SharePoint Online
-Para usar la capacidad de manera eficaz y tratar con un crecimiento inesperado, en cualquier granja de servidores, tenemos automatización que realiza un seguimiento de determinados escenarios de uso. Aunque el crecimiento exacto es impredecible para cualquier inquilino de una granja de servidores, la suma de solicitudes agregada es predecible a lo largo del tiempo. Al identificar las tendencias de crecimiento en SharePoint Online, podemos planear la expansión futura. Para obtener más información sobre la [planeación de capacidad y la prueba de carga de SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online).
+Para usar la capacidad de manera eficaz y tratar con un crecimiento inesperado, en cualquier granja de servidores, tenemos automatización que realiza un seguimiento de determinados escenarios de uso. Aunque el crecimiento exacto es impredecible para cualquier inquilino de una granja de servidores, la suma de solicitudes agregada es predecible a lo largo del tiempo. Al identificar las tendencias de crecimiento en SharePoint Online, podemos planear la expansión futura. Para obtener más información sobre la [planeación de capacidad y la prueba de carga de SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md).
 
 Una parte clave de un lanzamiento correcto es el enfoque "Wave" o "lanzamiento en fases" que se detalla a continuación. 
 
 ## <a name="can-i-load-test-sharepoint-online"></a>¿Puedo cargar SharePoint Online de prueba?
 SharePoint Online es un entorno multiinquilino compartido que se equilibra entre las granjas de servidores y la escala se ajusta de manera continua. Pruebas de carga de un entorno, como SharePoint Online, cuyo cambio de escala de forma continua no solo le dará resultados inesperados, pero no está permitido. 
 
-Más información: [planeación de la capacidad y pruebas de carga SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)
+Más información: [planeación de la capacidad y pruebas de carga SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>Optimizar las páginas siguiendo las recomendaciones recomendadas
 Las páginas de una implementación local no se deben mover simplemente como están en SharePoint Online sin tener que revisarlas con las instrucciones recomendadas para SharePoint Online. El mejor enfoque es optimizar siempre cualquier página de inicio para cualquier sitio o portal de SharePoint, ya que es donde la mayoría de los usuarios de la organización tendrán acceso como punto de partida para los sitios.

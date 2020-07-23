@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Obtenga información sobre cómo se usa Azure ExpressRoute con Office 365 y cómo planear el proyecto de implementación de red que será necesario si está implementando Azure ExpressRoute para usarlo con Office 365.
-ms.openlocfilehash: 80b42fc43f395d9dd94384d456d40eb536541746
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997954"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230036"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute para Office 365
 
@@ -64,9 +64,9 @@ En la siguiente tabla se enumeran los servicios de Office 365 que son compatible
 |Exchange Online<sup>1</sup> <br/> Protección de Exchange Online<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype empresarial online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive para la empresa<sup>1</sup> <br/> Project online<sup>1</sup> <br/> |
-|Portal y<sup>1</sup> compartido <br/> Azure Active Directory<sup>1</sup> <br/> Connect<sup>1</sup> de AAD <br/> Office<sup>1</sup> <br/> |
+|Portal y<sup>1</sup> compartido <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
-<sup>1</sup> Cada una de estas aplicaciones no es compatible con los requisitos de conectividad de Internet a través de ExpressRoute, consulte el artículo de puntos de conexión de [Office 365](https://aka.ms/o365endpoints) para obtener más información.
+<sup>1</sup> cada una de estas aplicaciones tiene requisitos de conectividad con Internet que no se admiten sobre ExpressRoute; consulte el artículo de puntos de conexión de [Office 365](https://aka.ms/o365endpoints) para obtener más información.
 
 Los servicios que no se incluyen en ExpressRoute para Office 365 son Microsoft 365 apps for Enterprise Client downloads, el inicio de sesión de proveedor de identidades local y el servicio Office 365 (operado por 21 ViaNet) en China.
 
@@ -90,7 +90,7 @@ La implementación de ExpressRoute requiere la participación de los propietario
 
 8. Opcionalmente, [implemente QoS](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d) y evalúe la expansión regional.
 
-<sup>1</sup> Consideraciones de rendimiento importantes. Las decisiones aquí pueden afectar drásticamente a la latencia, que es fundamental para las aplicaciones como Skype empresarial.
+<sup>1</sup> consideraciones de rendimiento importantes. Las decisiones aquí pueden afectar drásticamente a la latencia, que es fundamental para las aplicaciones como Skype empresarial.
 
 Para obtener referencias adicionales, use nuestra [Guía de enrutamiento](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) además de la documentación de [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/).
 
@@ -112,7 +112,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/express
 
 [Implementación de ExpressRoute para Office 365](implementing-expressroute.md)
 
-[Uso de las comunidades BGP en ExpressRoute para los escenarios de Office 365 (versión preliminar)](bgp-communities-in-expressroute.md)
+[Uso de comunidades BGP en ExpressRoute para Office 365 escenarios](bgp-communities-in-expressroute.md)
 
 [Calidad de medios y rendimiento de conectividad de red en Skype Empresarial Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 
@@ -124,6 +124,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/express
 
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

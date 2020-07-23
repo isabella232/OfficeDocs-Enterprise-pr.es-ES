@@ -1,9 +1,9 @@
 ---
-title: Usar PowerShell para la migración de correo electrónico a Office 365
+title: Usar PowerShell para la migración de correo electrónico a Microsoft 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.date: 12/15/2017
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,44 +15,38 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: 'Resumen: obtenga información sobre cómo migrar el correo electrónico Office 365 con Windows PowerShell.'
-ms.openlocfilehash: 340a8fd9ae40b64445a1b6dc25b16cf302ac377b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 'Resumen: Obtenga información sobre cómo migrar el correo electrónico a Microsoft 365 mediante Windows PowerShell.'
+ms.openlocfilehash: e3b16f43161d87d46306e3f9420c84037be24ba8
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998612"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230226"
 ---
-# <a name="use-powershell-for-email-migration-to-office-365"></a>Usar PowerShell para la migración de correo electrónico a Office 365
+# <a name="use-powershell-for-email-migration-to-microsoft-365"></a>Usar PowerShell para la migración de correo electrónico a Microsoft 365
 
-Cuando los administradores configuran Office 365 por primera vez, muchos de ellos migran el correo electrónico de los sistemas existentes. También se puede hacer con la interfaz de usuario de administración de Office 365. También se puede usar Windows PowerShell para migrar el correo electrónico.
-  
-## <a name="office-365-licensing-and-windows-powershell"></a>Licencias de Office 365 y Windows PowerShell
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
-Use Windows PowerShell para migrar el correo electrónico a Office 365. 
+Una vez que los administradores configuren Microsoft 365, muchos de ellos migrarán el correo electrónico desde sistemas existentes. También puede hacerlo con el centro de administración de Microsoft 365. También puede usar Windows PowerShell para migrar el correo electrónico.
   
-- [Usar PowerShell para realizar una migración total a Office 365](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
+Use Windows PowerShell para migrar el correo electrónico a Microsoft 365. 
+  
+- [Usar PowerShell para realizar una migración total a Microsoft 365](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
     
-- [Usar PowerShell para realizar una migración de IMAP a Office 365](use-powershell-to-perform-an-imap-migration-to-office-365.md)
+- [Usar PowerShell para realizar una migración IMAP a Microsoft 365](use-powershell-to-perform-an-imap-migration-to-office-365.md)
     
-- [Usar PowerShell para realizar una migración preconfigurada a Office 365](use-powershell-to-perform-a-staged-migration-to-office-365.md)
+- [Usar PowerShell para realizar una migración preconfigurada a Microsoft 365](use-powershell-to-perform-a-staged-migration-to-office-365.md)
     
 ## <a name="see-also"></a>Consulte también
 
-#### 
-
-[Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
+[Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
+[Introducción a PowerShell para Microsoft 365](getting-started-with-office-365-powershell.md)
   
-[Administrar SharePoint Online con PowerShell de Office 365](manage-sharepoint-online-with-office-365-powershell.md)
+[Administrar SharePoint Online con PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
   
-[Usar Windows PowerShell para crear informes en Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
-#### 
-
-[Ventajas del uso de Windows Powershell para administrar Office 365](https://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)
+[Usar Windows PowerShell para crear informes en Microsoft 365](use-windows-powershell-to-create-reports-in-office-365.md) 
+ [Por qué necesita usar Microsoft 365 PowerShell](why-you-need-to-use-office-365-powershell.md)
   
-[Referencia técnica de Windows PowerShell en Office 365](https://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)
-  
-[Licencias de Office 365 y Windows PowerShell](https://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)
+[Administración de cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 

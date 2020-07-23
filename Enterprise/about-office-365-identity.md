@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo se administra la identidad del usuario en Microsoft 365.
-ms.openlocfilehash: ba4638fa4d02900e3e85ef1c4cb7719baf12d1f6
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: e473a6397cb0b2fc7a2b81ab7a959a4ccdda400b
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998078"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230066"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Modelos de identidad de Microsoft 365 y Azure Active Directory
 
@@ -90,7 +90,7 @@ El inquilino de Azure AD tiene una copia de las cuentas de AD DS. En esta config
 
 Debido a que las cuentas de usuario originales y autorizadas se almacenan en AD DS local, administra las identidades con las mismas herramientas que AD DS, como la herramienta usuarios y equipos de Active Directory. 
 
-No usa el centro de administración de Microsoft 365 o PowerShell de Office 365 para administrar cuentas de usuario sincronizadas en Azure AD.
+No usa el centro de administración de Microsoft 365 o PowerShell para Microsoft 365 para administrar cuentas de usuario sincronizadas en Azure AD.
 
 ## <a name="next-step"></a>Paso siguiente
 
@@ -99,6 +99,6 @@ Si necesita el modelo de identidad solo de la nube, consulte [identidad solo de 
 Si necesita el modelo de identidad híbrida, consulte [Hybrid Identity](plan-for-directory-synchronization.md).
 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

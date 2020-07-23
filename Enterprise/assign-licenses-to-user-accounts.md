@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo asignar licencias de 365 de Microsoft a cuentas de usuario, ya sea de forma individual o en función de la pertenencia a grupos.
-ms.openlocfilehash: f28b9a6367cec2f67b664db2d43ba55b9cf19638
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 3a51f4966cdcfede57ad8a69546face160ae1750
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735938"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230006"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Asignar licencias de 365 de Microsoft a cuentas de usuario
 
@@ -48,11 +48,11 @@ Puede asignar licencias a cuentas de usuario, ya sea de forma individual o autom
 Para asignar licencias de 365 de Microsoft a cuentas de usuario individuales, puede usar:
 
 - [Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
-- [PowerShell de Office 365](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
+- [PowerShell para Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
 
 Para la asignación automática de licencias, consulte [licencias basadas en grupos en Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Con el conjunto completo de cuentas de usuario a las que se han asignado licencias, ya está listo para:
 

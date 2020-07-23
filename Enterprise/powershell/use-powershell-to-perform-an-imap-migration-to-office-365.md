@@ -1,9 +1,9 @@
 ---
-title: Usar PowerShell para realizar una migración de IMAP a Office 365
+title: Usar PowerShell para realizar una migración IMAP a Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,24 +15,26 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
-description: 'Resumen: aprenda a usar Windows PowerShell para realizar una migración IMAP a Office 365.'
-ms.openlocfilehash: 051b290a93fbdf7636595d31e6087fccaaf73761
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 'Resumen: Obtenga información sobre cómo usar Windows PowerShell para realizar una migración IMAP a Microsoft 365.'
+ms.openlocfilehash: fa53fd1829121bb697277805e4f07d25ec2179b9
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004513"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229776"
 ---
-# <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Usar PowerShell para realizar una migración de IMAP a Office 365
+# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Usar PowerShell para realizar una migración IMAP a Microsoft 365
 
-Como parte del proceso de implementación de Office 365, puede elegir migrar el contenido de los buzones de usuario de un servicio de correo electrónico de Internet Mail Access Protocol (IMAP) a Office 365. Este artículo le guiará a través de las tareas para migrar el correo electrónico IMAP con Exchange Online PowerShell. 
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+
+Como parte del proceso de implementación de Microsoft 365, puede optar por migrar el contenido de los buzones de usuario de un servicio de correo electrónico de protocolo de acceso a correo de Internet (IMAP) a Microsoft 365. Este artículo le guiará a través de las tareas de una migración de IMAP por correo electrónico mediante Exchange Online PowerShell. 
   
 > [!NOTE]
-> También puede usar el centro de administración de Exchange para realizar una migración IMAP. Consulte [Migrar los buzones IMAP a Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536685). 
+> También puede usar el centro de administración de Exchange para realizar una migración IMAP. Consulte [migrar los buzones de correo IMAP](https://go.microsoft.com/fwlink/p/?LinkId=536685). 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-Tiempo estimado para finalizar esta tarea: entre 2 y 5 minutos para crear un lote de migración. Después de que haya iniciado el lote de migración, la duración de la migración variará según la cantidad de buzones del lote, el tamaño de cada buzón y la capacidad de red disponible. Para obtener información acerca de otros factores que afectan a la duración de la migración de buzones a Office 365, consulte [Rendimiento de la migración de Exchange Online y procedimientos recomendados](https://go.microsoft.com/fwlink/p/?LinkId=275079).
+Tiempo estimado para finalizar esta tarea: 2-5 minutos para crear un lote de migración. Una vez iniciado el lote de migración, la duración de la migración variará en función del número de buzones de correo del lote, el tamaño de cada buzón y la capacidad de red disponible. Para obtener información acerca de otros factores que influyen en el tiempo necesario para migrar buzones a Microsoft 365, consulte [Migration performance](https://go.microsoft.com/fwlink/p/?LinkId=275079).
   
 Deberá tener permisos asignados para poder llevar a cabo estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Movimiento de buzón y permisos de migración" en una tabla del tema [Permisos de destinatarios](https://go.microsoft.com/fwlink/p/?LinkId=534105).
   
@@ -53,9 +55,9 @@ En las migraciones IMAP existen las restricciones siguientes:
 ### <a name="step-1-prepare-for-an-imap-migration"></a>Paso 1: Preparar una migración IMAP
 <a name="BK_Step1"> </a>
 
-- **Si tiene un dominio para la organización IMAP, debe agregarlo como un dominio aceptado de la organización de Office 365.** Si desea utilizar el mismo dominio que ya posee para sus buzones de Office 365, primero debe agregarlo como un dominio aceptado para Office 365. Una vez que lo haya agregado, puede crear los usuarios en Office 365. Para obtener más información, consulte[Comprobar el dominio en Office 365](https://go.microsoft.com/fwlink/p/?LinkId=534110).
+- **Si tiene un dominio para la organización de IMAP, agréguelo como un dominio aceptado de su organización de Microsoft 365.** Si quiere usar el mismo dominio que ya posee para sus buzones de correo de Microsoft 365, primero tiene que agregarlo como un dominio aceptado a Microsoft 365. Una vez que la haya agregado, puede crear los usuarios en Microsoft 365. Para obtener más información, consulte[comprobar el dominio](https://go.microsoft.com/fwlink/p/?LinkId=534110).
     
-- **Agregue a cada usuario a Office 365 para que estos tengan un buzón de Office 365.** Para obtener instrucciones, consulte[Agregar usuarios a Office 365 para empresas](https://go.microsoft.com/fwlink/p/?LinkId=535065).
+- **Agregue cada usuario a Microsoft 365 para que tenga un buzón de correo.** Para obtener instrucciones, consulte[Agregar usuarios a Microsoft 365 para empresas](https://go.microsoft.com/fwlink/p/?LinkId=535065).
     
 - **Obtenga el FQDN del servidor IMAP**. Debe indicar el nombre de dominio completo (FQDN) (también denominado nombre de equipo completo) del servidor IMAP desde el que migrará los datos de buzones al crear un extremo de migración IMAP. Use un cliente IMAP o el comando PING para comprobar si puede usar el FQDN para comunicarse a través de Internet con el servidor IMAP.
     
@@ -82,7 +84,7 @@ Identifique el grupo de usuarios cuyos buzones de correo quiere migrar en un lot
   
 Los siguientes son los atributos necesarios para cada usuario: 
   
-- **EmailAddress** especifica el identificador de usuario del buzón de Office 365 del usuario.
+- **EmailAddress** especifica el identificador de usuario del buzón de correo de Microsoft 365 del usuario.
     
 - **UserName** especifica el nombre de inicio de sesión que usará la cuenta para tener acceso al buzón en el servidor IMAP.
     
@@ -134,7 +136,7 @@ paulc@contoso.edu,#paul.cannon@contoso-students.edu#mailadmin#,P@ssw0rd
 
  **Courier IMAP:**
   
-Algunos sistemas de correo electrónico de origen, como Courier IMAP, no admiten el uso de credenciales de administrador de buzones para migrar buzones a Office 365. En su lugar, puede configurar el sistema de correo electrónico de origen para usar carpetas compartidas virtuales. Si usa carpetas compartidas virtuales, puede usar las credenciales de administrador de buzón para tener acceso a los buzones de usuario en el sistema de correo electrónico de origen. Para obtener más información acerca de cómo configurar las carpetas compartidas virtuales para Courier IMAP, consulte [Carpetas compartidas](https://go.microsoft.com/fwlink/p/?LinkId=398870).
+Algunos sistemas de correo electrónico de origen, como Courier IMAP, no admiten el uso de credenciales de administrador de buzones para migrar buzones a Microsoft 365. En su lugar, puede configurar su sistema de correo electrónico de origen para que use carpetas compartidas virtuales. Mediante el uso de carpetas compartidas virtuales, puede usar las credenciales de administrador del buzón para obtener acceso a los buzones de usuario en el sistema de correo electrónico de origen. Para obtener más información acerca de cómo configurar carpetas compartidas virtuales para Courier IMAP, consulte [carpetas compartidas](https://go.microsoft.com/fwlink/p/?LinkId=398870).
   
 Para migrar buzones después de configurar las carpetas compartidas virtuales en el sistema de correo electrónico de origen, debe incluir el atributo opcional **UserRoot** en el archivo de migración. Este atributo especifica la ubicación del buzón de cada usuario en la estructura de carpetas compartidas virtuales del sistema de correo electrónico de origen. Por ejemplo, la ruta de acceso al buzón de Terry es /users/terry.adams.
   
@@ -150,7 +152,7 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ### <a name="step-3-create-an-imap-migration-endpoint"></a>Paso 3: Crear un extremo de migración IMAP
 <a name="BK_Step3"> </a>
 
-Para migrar el correo electrónico correctamente, Office 365 debe conectarse y comunicarse con el sistema de correo electrónico de origen. Para ello, Office 365 utiliza un extremo de migración. El extremo de migración también define el número de buzones que se migrará simultáneamente y el número de buzones que se sincronizará simultáneamente durante la sincronización incremental, que se hace una vez cada 24 horas. Para crear un extremo de migración para la migración IMAP, primero debe [Conectarse a Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
+Para migrar el correo electrónico correctamente, Microsoft 365 debe conectarse y comunicarse con el sistema de correo electrónico de origen. Para ello, Microsoft 365 usa un extremo de migración. El extremo de migración también define el número de buzones que se van a migrar simultáneamente y el número de buzones que se van a sincronizar simultáneamente durante la sincronización incremental, lo que ocurre una vez cada 24 horas. Para crear un punto final de migración para la migración de IMAP, primero [Conéctese a Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
   
 Para obtener una lista completa de los comandos de migración, consulte [Cmdlets de movimiento y migración](https://go.microsoft.com/fwlink/p/?LinkId=534750).
   
@@ -203,23 +205,23 @@ También puede comprobar que el lote se ha iniciado ejecutando el comando siguie
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-office-365"></a>Paso 5: Enrutar el correo electrónico a Office 365
+### <a name="step-5-route-your-email-to-microsoft-365"></a>Paso 5: enrutar el correo electrónico a Microsoft 365
 <a name="BK_Step5"> </a>
 
-Los sistemas de correo electrónico utilizan un registro DNS que se denomina registro MX para averiguar dónde deben entregar los mensajes de correo electrónico. Durante el proceso de migración del correo electrónico, el registro MX apuntaba al sistema de correo electrónico de origen. Ahora que la migración del correo electrónico a Office 365 ha finalizado, es el momento de que el registro MX apunte a Office 365. Eso ayuda a asegurarse de que el correo electrónico se entrega a los buzones de Office 365. Al mover el registro MX, también puede desactivar el sistema de correo electrónico antiguo cuando esté listo. 
+Los sistemas de correo electrónico usan un registro DNS denominado registro MX para averiguar dónde entregar los correos electrónicos. Durante el proceso de migración de correo electrónico, el registro MX señalaba a su sistema de correo electrónico de origen. Ahora que se ha completado la migración de correo electrónico a Microsoft 365, es el momento de apuntar el registro MX en Microsoft 365. Esto le ayudará a asegurarse de que el correo electrónico se entregue a sus buzones de correo de Microsoft 365. Al mover el registro MX, también puede desactivar su antiguo sistema de correo electrónico cuando esté listo. 
   
-Para muchos proveedores de DNS, hay instrucciones específicas para Cambiar el registro MX. Si su proveedor de DNS no está incluido, o si desea obtener una idea de las instrucciones generales, se proporcionan también [Instrucciones generales del registro MX ](https://go.microsoft.com/fwlink/?LinkId=397449).
+Para muchos proveedores de DNS, hay instrucciones específicas para cambiar el registro MX. Si su proveedor de DNS no está incluido o si desea obtener una idea de las directrices generales, también se proporcionan [instrucciones de registro MX generales](https://go.microsoft.com/fwlink/?LinkId=397449) .
   
 Los sistemas de correo electrónico de sus clientes y socios pueden tardar hasta 72 horas en reconocer el registro MX cambiado. Espere al menos 72 horas antes de continuar con la tarea siguiente: Paso 6: Eliminar el lote de migración IMAP. 
   
 ### <a name="step-6-delete-imap-migration-batch"></a>Paso 6: Eliminar el lote de migración IMAP
 <a name="BK_Step6"> </a>
 
-Después de cambiar el registro MX y comprobar que todo el correo electrónico se enruta a los buzones de Office 365, notifique a los usuarios que el correo se va a Office 365. Después, puede eliminar el lote de migración IMAP. Compruebe lo siguiente antes de eliminar el lote de migración.
+Después de cambiar el registro MX y comprobar que todo el correo se enruta a los buzones de Microsoft 365, notifique a los usuarios que su correo va a Microsoft 365. Después de esto, puede eliminar el lote de migración de IMAP. Compruebe lo siguiente antes de eliminar el lote de migración.
   
-- Todos los usuarios utilizan buzones de Office 365. Después de haber eliminado el lote, el correo enviado a los buzones en el servidor Exchange local no se copiará a los buzones de Office 365 correspondientes.
+- Todos los usuarios usan buzones de correo de Microsoft 365. Una vez eliminado el lote, el correo enviado a los buzones en el servidor de Exchange local no se copia a los buzones de correo de Microsoft 365 correspondientes.
     
-- Los buzones de Office 365 se han sincronizado al menos una vez después de que se les haya empezado a enviar el correo directamente. Para hacerlo, asegúrese de que el valor en el cuadro Hora de última sincronización para el lote de migración es más reciente que el momento en que el correo se ha empezado a enrutar directamente a los buzones de Office 365.
+- Los buzones de correo de Microsoft 365 se sincronizaron al menos una vez cuando comenzó el envío directo a ellos. Para ello, asegúrese de que el valor en el último cuadro de tiempo sincronizado del lote de migración es más reciente que cuando el correo empezó a enrutarse directamente a los buzones de Microsoft 365.
     
 Para eliminar el lote de migración "IMAPBatch1" de Exchange Online PowerShell, ejecute el comando siguiente:
   

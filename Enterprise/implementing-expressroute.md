@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute para Office 365 proporciona una ruta de acceso de enrutamiento alternativa a muchos servicios de Office 365 de conexión a Internet. La arquitectura de ExpressRoute para Office 365 se basa en los prefijos IP públicos de publicidad de los servicios de Office 365 a los que ya se puede tener acceso a través de Internet en los circuitos de ExpressRoute aprovisionados para la redistribución posterior de dichos prefijos IP en la red. Con ExpressRoute, se habilitan de manera eficaz varias rutas de acceso de enrutamiento diferentes, a través de Internet y de ExpressRoute, para muchos servicios de Office 365. Este estado de enrutamiento en la red puede representar un cambio importante en la forma en que se diseña la topología de la red interna.
-ms.openlocfilehash: ab40a346ca1b19fcd100f17b934b766b21741010
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 925aeb2db9350eab9abb70bf3e3d6957608f618b
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998132"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230306"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
 
@@ -189,7 +189,7 @@ A menudo, hay varias ubicaciones Meet-me que se pueden seleccionar en una regió
 
 |**Ubicaciones planeadas para reunirse con conmigo de ExpressRoute en California y Nueva York**||
 |:-----|:-----|
-|Location  <br/> |Número de personas  <br/> |Latencia esperada para la red de Microsoft en la salida de Internet  <br/> |Latencia esperada para Microsoft Network sobre ExpressRoute  <br/> |
+|Ubicación  <br/> |Número de personas  <br/> |Latencia esperada para la red de Microsoft en la salida de Internet  <br/> |Latencia esperada para Microsoft Network sobre ExpressRoute  <br/> |
 |Los Ángeles  <br/> |10 000  <br/> |~ 15ms  <br/> |~ 10 ms (a través de Silicon Valley)  <br/> |
 |DC de Washington  <br/> |15.000  <br/> |~ 20 MS  <br/> |~ 10 ms (a través de Nueva York)  <br/> |
 |Dallas  <br/> |5.000  <br/> |~ 15ms  <br/> |~ 40ms (a través de Nueva York)  <br/> |
@@ -582,7 +582,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/impleme
   
 [Planeamiento de red con ExpressRoute para Office 365](network-planning-with-expressroute.md)
   
-[Uso de las comunidades BGP en ExpressRoute para los escenarios de Office 365 (versión preliminar)](bgp-communities-in-expressroute.md)
+[Uso de comunidades BGP en ExpressRoute para Office 365 escenarios](bgp-communities-in-expressroute.md)
   
 [Calidad de medios y rendimiento de conectividad de red en Skype Empresarial Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   

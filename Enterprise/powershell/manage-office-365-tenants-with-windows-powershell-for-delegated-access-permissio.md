@@ -16,22 +16,24 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: 'Resumen: use Windows PowerShell para Microsoft 365 para administrar los arrendamientos de clientes.'
-ms.openlocfilehash: a57f66ec02f5ba69006c17a9cf734e622017b8fb
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 'Resumen: Use PowerShell para Microsoft 365 para administrar los arrendamientos de clientes.'
+ms.openlocfilehash: 31ce5b9a7bdfa50234c76be65eaeb99d6d199136
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998236"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230596"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Administrar inquilinos de Microsoft 365 con Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 
-Windows PowerShell permite la sindicación y los partners del proveedor de soluciones en la nube (CSP) para administrar fácilmente e informar sobre la configuración de la arrendamiento de clientes que no está disponible en el centro de administración de Microsoft 365. Tenga en cuenta que los permisos Administrar en nombre de (AOBO) son necesarios para que la cuenta de administrador del asociado se conecte a los inquilinos del cliente.
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+
+Windows PowerShell permite la sindicación y los partners del proveedor de soluciones en la nube (CSP) para administrar fácilmente e informar sobre la configuración de la arrendamiento de clientes que no está disponible en el centro de administración de Microsoft 365. Tenga en cuenta que los permisos de administración en nombre de (AOBO) son necesarios para que la cuenta de administrador de asociados se conecte a sus arrendamientos de clientes.
   
 Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Con frecuencia son los proveedores de red o de telecomunicaciones para otras compañías. Incluyen las suscripciones de Microsoft 365 en sus ofertas de servicio para sus clientes. Cuando venden una suscripción de 365 de Microsoft, se les conceden automáticamente permisos de administración en nombre de (AOBO) a los arrendamientos de clientes para que puedan administrar y informar sobre los arrendamientos de clientes.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-Los procedimientos de este tema requieren conectarse a Windows PowerShell para Office 365. Para obtener instrucciones, vea [Conectarse a PowerShell de Office 365](connect-to-office-365-powershell.md).
+Los procedimientos de este tema requieren la conexión para [conectarse a Microsoft 365 con PowerShell](connect-to-office-365-powershell.md).
   
 Necesita también las credenciales del administrador de inquilinos del asociado.
   
@@ -74,7 +76,7 @@ Si registró dominios adicionales, se devolverán todos los dominios asociados a
   
 ### <a name="get-a-mapping-of-all-tenants-and-registered-domains"></a>Obtener una asignación de todos los inquilinos y los dominios registrados
 
-Los comandos de Windows PowerShell para Office 365 presentados anteriormente le mostraron cómo recuperar identificadores de inquilinos o dominios, pero no ambos al mismo tiempo y sin ninguna asignación clara entre todos ellos. Este comando genera una lista de todos los identificadores de inquilinos de clientes y sus dominios.
+Los comandos anteriores de PowerShell para Microsoft 365 muestran cómo recuperar los identificadores de inquilino o los dominios, pero no ambos al mismo tiempo, y sin una asignación clara entre todos ellos. Este comando genera una lista de todos los identificadores de inquilinos de clientes y sus dominios.
   
 ```
 $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.TenantId; Get-MsolDomain -TenantId $Domains | fl @{Label="TenantId";Expression={$Domains}},name}
@@ -98,7 +100,7 @@ Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user princi
 
 ### <a name="add-users-set-options-and-assign-licenses"></a>Agregar usuarios, establecer opciones y asignar licencias
 
-La creación, la configuración y la concesión de licencias en masa de los usuarios de Microsoft 365 es particularmente eficiente mediante el uso de Windows PowerShell para Office 365. En este proceso de dos pasos, primero se crean entradas para todos los usuarios que desea agregar a un archivo de valores separados por comas (CSV) y, a continuación, se importa dicho archivo con Windows PowerShell para Office 365. 
+La creación, configuración y concesión de licencias en masa de los usuarios de Microsoft 365 es especialmente eficaz con PowerShell para Microsoft 365. En este proceso de dos pasos, primero creará entradas para todos los usuarios que desee agregar en un archivo de valores separados por comas (CSV) y, a continuación, importará el archivo con PowerShell para Microsoft 365. 
   
 #### <a name="create-a-csv-file"></a>Crear un archivo CSV
 

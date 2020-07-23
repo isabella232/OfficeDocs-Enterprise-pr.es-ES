@@ -1,9 +1,9 @@
 ---
-title: Administrar Skype Empresarial Online con PowerShell de Office 365
+title: Administrar Skype empresarial online con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/28/2018
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: 'Resumen: use PowerShell de Office 365 para administrar directivas de Skype Empresarial Online, directivas por usuario y opciones de reunión.'
-ms.openlocfilehash: f1a5df3802d43755e81465743b81c5fbb9fff7e0
-ms.sourcegitcommit: 6c7cc6aca8713e280ae6ff51226dde9db4497401
+description: 'Resumen: Use PowerShell para Microsoft 365 para administrar directivas de Skype empresarial online, directivas por usuario y opciones de reunión.'
+ms.openlocfilehash: f66b3186a5b29bbf0756a629b85c626caf2c1e36
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44415942"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230446"
 ---
-# <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Administrar Skype Empresarial Online con PowerShell de Office 365
+# <a name="manage-skype-for-business-online-with-powershell"></a>Administrar Skype empresarial online con PowerShell
 
-Una de las tareas principales de cualquier administrador de Skype Empresarial Online es administrar las directivas. Aunque puede realizar algunas de estas tareas en el Centro de administración de Microsoft 365, otras tareas son mucho más rápidas y fáciles en PowerShell de Office 365. 
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+
+Una de las tareas principales de cualquier administrador de Skype Empresarial Online es administrar las directivas. Aunque puede llevar a cabo algunas de estas tareas en el centro de administración de 365 de Microsoft, otras tareas son mucho más rápidas y fáciles en PowerShell. 
 
 ## <a name="before-you-start"></a>Antes de comenzar
 
@@ -60,17 +62,17 @@ Descargue e instale el [módulo de conector de Skype empresarial online](https:/
 
 4. Siga las instrucciones del cuadro de diálogo **iniciar sesión en su cuenta** para proporcionar información de autenticación adicional, como un código de comprobación, y haga clic en **comprobar**.
 
-Para obtener más información, consulte los temas siguientes:
+Para obtener más información, vea los siguientes temas:
   
-- [Administrar Skype para políticas de negocios en línea con Office 365 PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
+- [Administrar directivas de Skype empresarial online con PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
-- [Asignar cada usuario Skype para las políticas de negocios en línea con Office 365 PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
+- [Asignar directivas de Skype empresarial online por usuario con PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
+[Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
+[Introducción a PowerShell para Microsoft 365](getting-started-with-office-365-powershell.md)
 
 [Referencias de cmdlets de PowerShell de Skype empresarial](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 

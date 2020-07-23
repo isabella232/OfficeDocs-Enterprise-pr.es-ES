@@ -1,9 +1,9 @@
 ---
-title: Asignar cada usuario Skype para las políticas de negocios en línea con Office 365 PowerShell
+title: Asignar directivas de Skype empresarial online por usuario con PowerShell para Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Resumen: Use Office 365 PowerShell para asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.'
-ms.openlocfilehash: 0b95c993c3795bdbe9a68e23e107ea745c15f71b
-ms.sourcegitcommit: 88ede20888e2db0bb904133c0bd97726d6d65ee2
+description: 'Resumen: Use PowerShell para Microsoft 365 para asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.'
+ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44719971"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229849"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Asignar cada usuario Skype para las políticas de negocios en línea con Office 365 PowerShell
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Asignar directivas de Skype empresarial online por usuario con PowerShell para Microsoft 365
 
-El uso de Office 365 PowerShell es una forma eficaz de asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+
+El uso de PowerShell para Microsoft 365 es una forma eficaz de asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -134,10 +136,10 @@ $count = 0
 
 Esto buscará 500 usuarios a la vez que no tienen una directiva de cliente. Se le concederá la Directiva de cliente "ClientPolicyNoIMURL" y la Directiva de acceso externo "FederationAndPicDefault". Los resultados se procesan por lotes en grupos de 50 y, a continuación, cada lote de 50 se envía al equipo remoto.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Administrar Skype Empresarial Online con PowerShell de Office 365](manage-skype-for-business-online-with-office-365-powershell.md)
+[Administrar Skype empresarial online con PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Administrar Office 365 con PowerShell de Office 365](manage-office-365-with-office-365-powershell.md)
+[Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introducción a PowerShell de Office 365](getting-started-with-office-365-powershell.md)
+[Introducción a PowerShell para Microsoft 365](getting-started-with-office-365-powershell.md)

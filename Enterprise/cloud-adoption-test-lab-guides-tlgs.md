@@ -1,5 +1,5 @@
 ---
-title: Probar Office 365 con Guías de laboratorio de pruebas (TLG)
+title: Pruebe Microsoft 365 con las guías del laboratorio de pruebas (TLG)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -18,15 +18,15 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Resumen: Con estas Guías del laboratorio de pruebas (TLG), podrá configurar entornos de demostración, prueba de concepto y desarrollo y pruebas para Office 365.'
-ms.openlocfilehash: 6a4b6087a66607906e2de7407fd23e4d2f7aba3d
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
-ms.translationtype: HT
+description: 'Resumen: Use estas guías del laboratorio de pruebas (TLG) para configurar la demostración, la prueba de concepto o los entornos de desarrollo y pruebas para Microsoft 365.'
+ms.openlocfilehash: 32204f3b3ca2cc51d3d0eea9a3d1ef6dfa65228d
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793693"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230016"
 ---
-# <a name="test-office-365-with-test-lab-guides-tlgs"></a>Probar Office 365 con Guías de laboratorio de pruebas (TLG)
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Pruebe Microsoft 365 con las guías del laboratorio de pruebas (TLG)
 
 Las TLG le permiten conocer los productos Microsoft de manera rápida. Son ideales para situaciones en las que necesita evaluar una tecnología o configuración antes de decidir si es adecuada y comenzar el diseño, planeación y lanzamiento para los usuarios. Esta experiencia práctica, que consiste en desarrollar la herramienta por sus propios medios y lograr que funcione, le permitirá entender los requisitos de implementación de un nuevo producto o solución, de modo que pueda planear mejor el hospedaje en la producción.
   
@@ -34,17 +34,17 @@ Las guías del laboratorio de pruebas también crean entornos representativos pa
   
 ![Guías del laboratorio de pruebas de Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-## <a name="office-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Office 365
+## <a name="microsoft-365-devtest-environment"></a>Entorno de prueba y desarrollo de Microsoft 365
 
-Use estos artículos para crear su entorno de desarrollo y pruebas de Office 365:
+Use estos artículos para crear el entorno de pruebas y desarrollo de Microsoft 365:
   
 - [Configuración básica ligera](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
     
-    Crear suscripción de prueba de Office 365 Enterprise E5.
+    Cree una suscripción de prueba de Microsoft 365 Enterprise E5.
 
 - [Configuración básica empresarial simulada](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
     
-    Cree una intranet simplificada que se ejecute en los servicios de infraestructura de Microsoft Azure y una suscripción de prueba de Office 365 Enterprise E5. 
+    Cree una intranet simplificada que se ejecute en los servicios de infraestructura de Microsoft Azure y una suscripción de prueba de Microsoft 365 Enterprise E5. 
 
     Este es un paso opcional y necesario si desea crear una configuración de la empresa simulada para una identidad híbrida.
     
