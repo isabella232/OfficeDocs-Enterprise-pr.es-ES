@@ -15,6 +15,7 @@
 ### Plan para sus identidades
 #### [Modelos de identidad](about-office-365-identity.md)
 #### [Identidad híbrida](plan-for-directory-synchronization.md)
+#### [Herramientas para administrar cuentas de Microsoft 365](tools-to-manage-office-365-accounts.md)
 
 ### [Planificación de los certificados SSL de terceros para Microsoft 365](plan-for-third-party-ssl-certificates.md)
 ### [Guías de configuración para los servicios de Office 365 y Microsoft 365](setup-guides-for-office-365.md)
@@ -110,6 +111,7 @@
 ### [Identidad solo de nube](cloud-only-identities.md)
 ### Identidades híbridas
 #### [Preparar la sincronización de directorios](prepare-for-directory-synchronization.md)
+#### [Preparar un dominio no enrutable para la sincronización de directorios](prepare-a-non-routable-domain-for-directory-synchronization.md)
 #### Usar la herramienta IdFix
 ##### [Preparar los atributos del directorio con la herramienta IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
 ##### [Descargar y ejecutar la herramienta IdFix](install-and-run-idfix.md)
@@ -172,6 +174,7 @@
 #### [Datos de clientes en centros de datos de Office 365](o365-data-locations.md)
 
 ### Soluciones híbridas
+#### [Información general](hybrid-solutions.md)
 #### [Usar Azure Active Directory para la autenticación de SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [Conectar una red local con una red virtual de Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Implementar un servidor de sincronización de directorio en Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
@@ -270,7 +273,7 @@
 ### [Aislamiento de inquilino en Microsoft 365 Video](office-365-isolation-in-office-365-video.md)
 ### [Aislamiento del inquilino en Microsoft Graph y Delve](office-365-isolation-in-graph-and-delve.md)
 
-# [PowerShell de Office 365](powershell/manage-office-365-with-office-365-powershell.md)
+# [PowerShell para Microsoft 365](powershell/manage-office-365-with-office-365-powershell.md)
 # [Cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security/)
 # [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/business)
