@@ -24,25 +24,19 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Resumen: Office 365 necesita conectividad a Internet. Los siguientes puntos de conexión deben resultar accesibles para los clientes que usan planes de Office 365, incluida la nube de la comunidad de administración pública (GCC).'
 hideEdit: true
-ms.openlocfilehash: 175359f998c4dd695c301540f94e7d7527377ffc
-ms.sourcegitcommit: 338e3bcf0a62842fbbb17145b67a4a93f3b90aac
+ms.openlocfilehash: 1df2420812cd6ba0fbec619a4a280874c3d9fc9b
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091214"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387703"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Intervalos de direcciones IP y direcciones URL de Office 365
 
 Office 365 requiere conectividad a Internet. Los siguientes puntos de conexión deberían ser accesibles para los clientes que usan planes de Office 365, incluyendo los planes Government Community Cloud (GCC).
   
-> [!NOTE]
-> Como parte de la respuesta de Microsoft a la crisis de COVID-19, Microsoft ha declarado una moratoria temporal en algunos cambios de direcciones IP y URL planeados. Esta moratoria está diseñada para proporcionar a los clientes la confianza y la simplicidad en la implementación de optimizaciones de red recomendadas para escenarios de trabajo desde casa de Office 365. Desde el 24 de marzo de 2020 hasta el 30 de junio de 2020 esta moratoria detendrá los cambios de los servicios clave de Office 365 (Exchange Online, SharePoint Online y Microsoft Teams) en intervalos de IP y URL incluidos en la categoría Optimizar. Los cambios en otras categorías de puntos de conexión se producirán de la forma habitual. Durante este período, los clientes pueden usar las definiciones de puntos de conexión de servicio de categoría Optimizar de Office 365 de forma estática para realizar optimizaciones de red dirigidas (como reservas de ancho de banda o configuración de túnel VPN dividido) con un riesgo mínimo para la conectividad de Office 365 gracias a los cambios en la red de la nube. Para garantizar que no se produzcan interrupciones de servicio al final del período de moratoria, Microsoft recomienda que los clientes implementen procesos de administración de cambios y/o de automatización para los puntos de conexión de servicio de Office 365 con las instrucciones proporcionadas en [Administrar puntos de conexión de Office 365](managing-office-365-endpoints.md).
-
-> [!NOTE]
-> Microsoft ha publicado un servicio web basado en REST para las direcciones IP y las entradas FQDN de esta página. Este servicio le ayudará a configurar y actualizar dispositivos de perímetro de red, como firewalls y servidores proxy. Puede descargar la lista de puntos de conexión, la versión actual de la lista o cambios específicos. Este servicio reemplaza al documento XML que se vincula desde esta página, que ha pasado a estar en desusos el 2 de octubre de 2018. Para probar este nuevo servicio, vaya a [Servicio web](office-365-ip-web-service.md).
-  
 *Office 365 mundial (incluido GCC)* | [Office 365 operado por 21Vianet ](urls-and-ip-address-ranges-21vianet.md) | [Office 365 Germany](office-365-germany-endpoints.md) | [Office 365 U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)  | [Office 365 U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) |
-  
+
 ||||
 |:-----|:-----|:-----|
 |**Última actualización:** 09/07/2020 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Suscripción del registro de cambios](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Descargue:** todos los destinos obligatorios y opcionales en una lista de [formato JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> | **Use:** nuestros [archivos PAC](managing-office-365-endpoints.md#pacfiles) de proxy <br/> |

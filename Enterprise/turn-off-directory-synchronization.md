@@ -19,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: Obtenga información sobre cómo usar PowerShell para desactivar la sincronización de directorios para Microsoft 365
-ms.openlocfilehash: 935d7e26c7b99aba876500e6b9d428557aed5b9c
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+ms.openlocfilehash: 1e3e26a262c112c05fe22cda2dbe3f14efb61f87
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906222"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387713"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Desactivar la sincronización de directorios para Microsoft 365
 Puede usar PowerShell para desactivar la sincronización de directorios. Sin embargo, no se recomienda desactivar la sincronización de directorios como un paso de solución de problemas. Si necesita ayuda para solucionar problemas de la sincronización de directorios, consulte el artículo [solución de problemas con la sincronización de directorios para Microsoft 365](fix-problems-with-directory-synchronization.md) . 
@@ -41,3 +41,8 @@ Para desactivar la sincronización de directorios:
   ```powershell
   Set-MsolDirSyncEnabled -EnableDirSync $false
   ```
+
+>[!Note]
+>Si usa este comando, debe esperar 72 horas para poder volver a activar la sincronización de directorios.
+>
+ 
