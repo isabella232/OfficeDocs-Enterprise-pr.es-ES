@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 description: Obtenga información acerca de Microsoft 365 Multi-Geo, cómo funcionan las capacidades multigeográficas y qué ubicaciones geográficas están disponibles para el almacenamiento de datos.
-ms.openlocfilehash: 8f06c43b9a622e06959ab12fa0e055c8653ca61c
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
-ms.translationtype: HT
+ms.openlocfilehash: 696a3c7f304a60229dc23ea6b69012c9ad5fbb78
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052463"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433791"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Plan para Microsoft 365 Multi-Geo
 

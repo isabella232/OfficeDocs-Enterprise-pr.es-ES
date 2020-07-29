@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
+localization_priority: Normal
 description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico.
-ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 06dcfd179b37ae98a4e28b05f55b9f684fb1bc89
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057676"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433571"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurar la búsqueda para Microsoft 365 Multi-Geo
 
@@ -258,11 +258,11 @@ Con una solicitud GET, especifica los parámetros de consulta en la dirección U
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>Ejemplo de distribución ramificada de una solicitud GET a **todas** las ubicaciones geográficas
 
-https:// \<espacio empresarial\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+https:// \<tenant\> / \_ API/Search/Query? QueryText = ' SharePoint ' &Properties = ' EnableMultiGeoSearch: true ' &tipocliente = ' My \_ Client \_ ID '
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Ejemplo de solicitud GET para efectuar una distribución ramificada en **algunas** ubicaciones geográficas
 
-https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\> / \_ API/Search/Query? QueryText = "site" &tipocliente = ' my_client_id ' &Properties = ' EnableMultiGeoSearch: true, MultiGeoSearchConfiguration: [{Location \\ : "Nam" \\ , Endpoint \\ : "https \\ ://contosoNAM.SharePoint.com" \\ , SourceId: " \\ B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ , {Location: " \\ Can" \\ , Endpoint \\ : "https \\ ://contosoCAN.SharePoint-DF.com"}] "
 
 > [!NOTE]
 > Las comas y los dos puntos de la lista de ubicaciones geográficas de la propiedad MultiGeoSearchConfiguration van precedidas por el carácter **barra diagonal inversa**. Esto se debe a que las solicitudes GET usan dos puntos para separar las propiedades y comas para separar los argumentos de las propiedades. Sin la barra diagonal inversa como carácter de escape, la propiedad MultiGeoSearchConfiguration se interpreta de forma errónea.

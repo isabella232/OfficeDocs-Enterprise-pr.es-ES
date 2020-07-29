@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo se administra la identidad del usuario en Microsoft 365.
-ms.openlocfilehash: e473a6397cb0b2fc7a2b81ab7a959a4ccdda400b
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 418d5841a55e6a0da2ccb098c6b41e5a247c9552
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230066"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433621"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Modelos de identidad de Microsoft 365 y Azure Active Directory
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Microsoft 365 usa Azure Active Directory (Azure AD), una identidad de usuario basada en la nube y un servicio de autenticación que se incluye con la suscripción a Microsoft 365, para administrar las identidades y la autenticación de Microsoft 365. La obtención de una infraestructura de identidad configurada correctamente es vital para administrar el acceso y los permisos de usuario de Microsoft 365 para la organización.
 
@@ -46,9 +46,8 @@ Para planear las cuentas de usuario, primero debe conocer los dos modelos de ide
 
 Estos son los dos tipos de identidad y sus mejores ventajas y ventajas.
 
-|||
+| | Identidad solo de nube | Identidad híbrida |
 |:-------|:-----|:-----|
-|  | **Identidad solo de nube** | **Identidad híbrida** |
 | **Definición** | La cuenta de usuario solo existe en el inquilino de Azure AD para su suscripción a Microsoft 365. | La cuenta de usuario existe en AD DS y una copia también se encuentra en el inquilino de Azure AD para su suscripción a Microsoft 365. La cuenta de usuario de Azure AD también puede incluir una versión de hash de la contraseña de la cuenta de usuario de AD DS ya con hash. |
 | **Cómo autentica Microsoft 365 las credenciales de usuario** | El inquilino de Azure AD para su suscripción a Microsoft 365 realiza la autenticación con la cuenta de identidad de nube. | El inquilino de Azure AD para su suscripción de Microsoft 365 administra el proceso de autenticación o redirige al usuario a otro proveedor de identidades. |
 | **Ideal para** | Organizaciones que no tienen ni necesitan un AD DS local. | Organizaciones que usan AD DS u otro proveedor de identidades. |
@@ -99,6 +98,6 @@ Si necesita el modelo de identidad solo de la nube, consulte [identidad solo de 
 Si necesita el modelo de identidad híbrida, consulte [Hybrid Identity](plan-for-directory-synchronization.md).
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

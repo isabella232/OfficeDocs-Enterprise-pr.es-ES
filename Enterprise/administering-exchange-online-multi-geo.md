@@ -10,14 +10,14 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: ''
-localization_priority: Priority
+localization_priority: Normal
 description: Obtenga información sobre cómo administrar el ajuste multigeográfico de Exchange Online con Microsoft PowerShell.
-ms.openlocfilehash: d2498178193f71c1ffaea6141a09cc76e826e99e
-ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
-ms.translationtype: HT
+ms.openlocfilehash: 7c05699b411a3f36fc1bb8b47e643283d1ec2d65
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352950"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433511"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administración de buzones de correo de Exchange Online en un entorno multigeográfico
 
@@ -103,7 +103,8 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
-> **Nota:** Si el código de ubicación geográfica en el nombre de la base de datos no coincide con el valor de **MailboxRegion**, el buzón se pondrá automáticamente en una cola de reubicación y se moverá a la ubicación geográfica especificada por el valor ** MailboxRegion** (Exchange Online busca un error de coincidencia entre estos valores de propiedad).
+> [!NOTE]
+> Si el código de ubicación geográfica del nombre de la base de datos no coincide con el valor **MailboxRegion** , el buzón se colocará automáticamente en una cola de reubicación y se moverá a la ubicación geográfica especificada por el valor **MailboxRegion** (Exchange Online busca una discordancia entre estos valores de propiedad).
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>Mover un buzón existente basado únicamente en la nube a una ubicación geográfica específica
 
@@ -133,17 +134,16 @@ Por ejemplo, para definir el valor de **PreferredDataLocation** en la ubicación
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
 ```
 
-**Notas**:
-
-- Como se mencionó anteriormente, no puede usar este procedimiento para objetos sincronizados del usuario desde el entorno local de Active Directory. Tiene que cambiar el valor de **PreferredDataLocation** en Active Directory y sincronizarlo con AAD Connect. Para obtener más información, consulte [Sincronización de Azure Active Directory Connect: configurar la ubicación de datos preferida para recursos de Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
-
-- El tiempo que se tarda en reubicar un buzón a una nueva ubicación geográfica depende de varios factores:
-
-  - El tamaño y tipo de buzón.
-
-  - La cantidad de buzones que se migrarán.
-
-  - La disponibilidad de recursos de migración.
+> [!NOTE]
+> - Como se mencionó anteriormente, no puede usar este procedimiento para los objetos de usuario sincronizados desde Active Directory local. Tiene que cambiar el valor de **PreferredDataLocation** en Active Directory y sincronizarlo con AAD Connect. Para obtener más información, consulte [Sincronización de Azure Active Directory Connect: configurar la ubicación de datos preferida para recursos de Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+> 
+> - El tiempo que se tarda en reubicar un buzón a una nueva ubicación geográfica depende de varios factores:
+> 
+>   - El tamaño y tipo de buzón.
+> 
+>   - La cantidad de buzones que se migrarán.
+> 
+>   - La disponibilidad de recursos de migración.
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Mover buzones deshabilitados que se encuentran en Retención por juicio
 

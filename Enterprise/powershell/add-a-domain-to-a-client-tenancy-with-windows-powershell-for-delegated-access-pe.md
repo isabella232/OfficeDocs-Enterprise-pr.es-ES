@@ -17,16 +17,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Resumen: Use PowerShell para Microsoft 365 para agregar un nombre de dominio alternativo a un inquilino de cliente existente.'
-ms.openlocfilehash: d5a6c7326684c74d3b05e7b4a1e88c2a37e99ca0
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: eabfa9dfcbb36cb54a2d51321dfe60f197290b10
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229786"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433771"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Agregar un dominio a un arrendamiento de cliente con Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Puede crear y asociar nuevos dominios con el arrendamiento del cliente con PowerShell para Microsoft 365 con mayor rapidez que con el centro de administración de Microsoft 365.
   
@@ -58,7 +58,7 @@ También necesitará la siguiente información:
 
 Este comando crea el dominio en Azure Active Directory, pero no lo asocia al dominio registrado públicamente. Eso viene cuando se demuestra que el usuario es el propietario del dominio registrado públicamente a Microsoft 365 para empresas.
   
-```
+```powershell
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
 
@@ -70,7 +70,7 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 
  Microsoft 365 generará los datos específicos que debe incluir en el registro de comprobación TXT de DNS. Para obtener los datos, ejecute este comando.
   
-```
+```powershell
 Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
 ```
 
@@ -91,7 +91,7 @@ Antes de que Microsoft 365 empiece a aceptar tráfico dirigido al nombre de domi
   
 Confirme la creación correcta del registro TXT mediante nslookup. Siga esta sintaxis.
   
-```
+```console
 nslookup -type=TXT <FQDN of registered domain>
 ```
 
@@ -107,22 +107,24 @@ Se obtendrá el siguiente resultado:
 
 En este último paso, se valida a Microsoft 365 que es el propietario del dominio registrado públicamente. Después de este paso, Microsoft 365 empezará a aceptar el tráfico enrutado al nuevo nombre de dominio. Para completar la creación del dominio y el proceso de registro, ejecute este comando. 
   
-```
+```powershell
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
 Este comando no devolverá ningún resultado, por lo tanto, para confirmar que funcionó, ejecute este comando.
   
-```
+```powershell
 Get-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
 Se mostrará un resultado semejante a
-  
-||||
-|:-----|:-----|:-----|
-| `Name` <br/> | `Status` <br/> | `Authentication` <br/> |
-| `FQDN of new domain` <br/> | `Verified` <br/> | `Managed` <br/> |
+
+```console
+Name                   Status      Authentication
+--------------------   ---------   --------------
+FQDN of new domain     Verified    Managed
+```
+
    
 ## <a name="see-also"></a>Consulte también
 
