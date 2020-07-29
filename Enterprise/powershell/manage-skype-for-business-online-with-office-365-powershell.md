@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
@@ -14,16 +14,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Resumen: Use PowerShell para Microsoft 365 para administrar directivas de Skype empresarial online, directivas por usuario y opciones de reunión.'
-ms.openlocfilehash: f66b3186a5b29bbf0756a629b85c626caf2c1e36
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 0701fdb8a0a1f588e1c113ad7050ed516638aebc
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230446"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502615"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Administrar Skype empresarial online con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Una de las tareas principales de cualquier administrador de Skype Empresarial Online es administrar las directivas. Aunque puede llevar a cabo algunas de estas tareas en el centro de administración de 365 de Microsoft, otras tareas son mucho más rápidas y fáciles en PowerShell. 
 
@@ -36,12 +36,12 @@ Descargue e instale el [módulo de conector de Skype empresarial online](https:/
 
 1. Abra un símbolo del sistema de Windows PowerShell y ejecute los siguientes comandos: 
     
-  ```powershell
-  Import-Module SkypeOnlineConnector
-  $userCredential = Get-Credential
-  $sfbSession = New-CsOnlineSession -Credential $userCredential
-  Import-PSSession $sfbSession
-  ```
+   ```powershell
+   Import-Module SkypeOnlineConnector
+   $userCredential = Get-Credential
+   $sfbSession = New-CsOnlineSession -Credential $userCredential
+   Import-PSSession $sfbSession
+   ```
 
 2. En el cuadro de diálogo **solicitud de credenciales para Windows PowerShell** , escriba el nombre y la contraseña de la cuenta de administrador en Skype empresarial online y, a continuación, haga clic en **Aceptar**.
 
@@ -50,11 +50,11 @@ Descargue e instale el [módulo de conector de Skype empresarial online](https:/
 
 1. Abra un símbolo del sistema de Windows PowerShell y ejecute los siguientes comandos:
 
-  ```powershell
-  Import-Module SkypeOnlineConnector
-  $sfbSession = New-CsOnlineSession
-  Import-PSSession $sfbSession
-  ```
+   ```powershell
+   Import-Module SkypeOnlineConnector
+   $sfbSession = New-CsOnlineSession
+   Import-PSSession $sfbSession
+   ```
 
 2. Cuando se lo solicite el comando **New-CsOnlineSession** , escriba el nombre de la cuenta de administrador en Skype empresarial online.
 

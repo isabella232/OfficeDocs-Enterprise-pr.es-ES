@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: La autenticación moderna híbrida (HMA) es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras, y está disponible para las implementaciones híbridas locales de Exchange Server.
-ms.openlocfilehash: 74c7ba7f050c4ac6f6c9b0e6eee7a399a15b196a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 4348de3fbec5917c2b13af3f93bf79ad898af017
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997386"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502595"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Exchange Server local para usar la autenticación moderna híbrida
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 La autenticación moderna híbrida (HMA) es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras, y está disponible para las implementaciones híbridas locales de Exchange Server.
   
@@ -74,6 +74,8 @@ Get-MapiVirtualDirectory | FL server,*url*
 Get-WebServicesVirtualDirectory | FL server,*url*
 Get-ActiveSyncVirtualDirectory | FL server,*url*
 Get-OABVirtualDirectory | FL server,*url*
+Get-AutodiscoverVirtualDirectory | FL server,*url*
+Get-OutlookAnywhere | FL server,*url*
 ```
     
 Asegúrese de que las direcciones URL a las que se pueden conectar los clientes aparecen como nombres de entidad de servicio HTTPS en AAD.
