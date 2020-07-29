@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumen: los nuevos servicios web de puntos de conexión no incluyen un número reducido de puntos de conexión para escenarios específicos.'
 hideEdit: true
-ms.openlocfilehash: 4d67d67c3f1c0eb6aa8079dbbdc0d964274af48b
-ms.sourcegitcommit: 93d0cc401c9d910e115072c0229232765fbad75e
+ms.openlocfilehash: 9c57feb143b52bc84bd1d636f639712cf3c04cd3
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939605"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433551"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Los puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365
 
@@ -43,9 +43,8 @@ Algunos puntos de conexión de red se han publicado anteriormente y no se han in
 
 Aparte de DNS, estos son opcionales para la mayor parte de los clientes, salvo que necesite el escenario específico que se describe.
 
-|||||
+| Fila | Objetivo | Destino | Tipo |
 |:-----|:-----|:-----|:-----|
-| **Fila** | **Finalidad** | **Destino** | **Tipo** |
 | 1  | [Servicio de importación](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) para la ingesta de PST y de archivos | Consulte el [Servicio de importación](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) para ver los requisitos adicionales. | Escenario de salida poco común |
 | 2  | [Asistente para soporte y recuperación de Office 365 de Microsoft](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | Tráfico de servidor saliente |
 | 3  | Azure AD Connect (con SSO opcional): WinRM y PowerShell remoto | Entorno de STS de cliente (servidor AD FS y Proxy AD FS) \| Puertos TCP 80 y 443 | Tráfico de servidor entrante |
@@ -61,7 +60,7 @@ Aparte de DNS, estos son opcionales para la mayor parte de los clientes, salvo q
 | 13  | RTC en la nube con conectividad híbrida local requiere la conectividad de red abierta para los host locales Para más información acerca de las configuraciones híbridas de Skype Empresarial Online,  | Consulte [Planear la conectividad híbrida entre Skype Empresarial Server y Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity) | Skype Empresarial híbrido local entrante |
 | 14  | **FQDN de autenticación e identidad** <br> Para que funcione, el FQDN ```secure.aadcdn.microsoftonline-p.com``` debe estar en el Internet Explorer (IE) del cliente o en su zona de sitios de confianza de Microsoft Edge. |  | Sitios de confianza |
 | 15  |  **FQDN de Microsoft Teams** <br> Si usa Internet Explorer o Microsoft Edge, debe habilitar las cookies propias y de terceros y agregar los FQDN para Teams a los sitios de confianza. Esto es complementario a los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados en la fila 14. Para obtener más información, vea [Problemas conocidos de Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Sitios de confianza |
-| 16  |  **FQDN de SharePoint Online y OneDrive para la Empresa** <br> Todos los FQDN ". sharepoint.com" con "\<inquilino >" en el FQDN deben estar en la zona de sitios de confianza de Internet Explorer o Microsoft Edge del cliente para que funcionen. Además de los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados en la fila 14, necesitará agregar también estos puntos de conexión. |  | Sitios de confianza |
+| 16  |  **FQDN de SharePoint Online y OneDrive para la Empresa** <br> Todos los FQDN '.sharepoint.com' con "\<tenant>" en el FQDN deben estar en la zona de sitios de confianza de Internet Explorer o Microsoft Edge del cliente para que funcionen. Además de los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados en la fila 14, necesitará agregar también estos puntos de conexión. |  | Sitios de confianza |
 | 17  | **Yammer**  <br> Yammer solo está disponible en el explorador y requiere que el usuario autenticado pase por un proxy. Para que funcionen, todos los FQDN de Yammer deben estar en el Internet Explorer del cliente o en su zona de sitios de confianza de Microsoft Edge.
  |  | Sitios de confianza |
 | 18  | Use [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) para sincronizar las cuentas de usuarios locales con Azure AD. | Vea [Puertos y protocolos necesarios para la identidad híbrida,](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) [Solución de problemas de conectividad de Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) e [Instalación del Agente de Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Solo tráfico de servidor saliente |
