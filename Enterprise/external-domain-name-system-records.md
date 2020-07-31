@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Resumen: Lista de referencia de los registros DNS para usar cuando se planee una implementación de Office 365.'
-ms.openlocfilehash: d0804cec4ce2c15345a9c4ddc83525d1961f8db4
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
-ms.translationtype: MT
+ms.openlocfilehash: ef324adf098d72dca589d60587fd3d5e5c461555
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996544"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502675"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Registros externos del Sistema de nombres de dominio para Office 365
 
@@ -45,7 +45,7 @@ Todos los clientes de Office 365 deben agregar dos registros a su DNS externo. E
 ||||
 |:-----|:-----|:-----|
 |**Registro DNS** <br/> |**Finalidad** <br/> |**Valor para usar** <br/> |
-|**CNAME** <br/> **(Conjunto de aplicaciones)** <br/> |Utilizado por Office 365 para dirigir la autenticación hacia la plataforma de identidad correcta. [Más información](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Nota:** Este CNAME solo se aplica a Office 365 operado por 21Vianet.   |**Alias:** msoid  <br/> **Objetivo: ** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
+|**CNAME** <br/> **(Conjunto de aplicaciones)** <br/> |Utilizado por Office 365 para dirigir la autenticación hacia la plataforma de identidad correcta. [Más información](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Nota:** Este CNAME solo se aplica a Office 365 operado por 21Vianet. [Más información](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**Alias:** msoid  <br/> **Objetivo: ** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(Verificación de dominio)** <br/> |Utilizado por Office 365 para verificar que el usuario es el propietario del dominio. No afecta a nada más.  <br/> |**Host:** @ (o, para algunos proveedores de hospedaje DNS, su nombre de dominio)  <br/> **Valor de TXT:** _Una cadena de texto proporcionada por _ Office 365  <br/> El asistente de configuración de dominio de **Office 365** proporciona los valores que utiliza para crear este registro.  <br/> |
 
 
@@ -67,7 +67,7 @@ Los clientes de correo electrónico que utilizan federación de Exchange tambié
 |:-----|:-----|:-----|
 |**Registro DNS** <br/> |**Finalidad** <br/> |**Valor para usar** <br/> |
 |**CNAME** <br/> **(Exchange Online)** <br/> |Ayuda a los clientes de Outlook a conectarse fácilmente al servicio Exchange Online con el servicio de detección automática. La detección automática encuentra automáticamente el host de Exchange Server correcto y configura Outlook para los usuarios.  <br/> |**Alias:** Autodiscover  <br/> **Destino:** autodiscover.outlook.com  <br/> |
-|**MX** <br/> **(Exchange Online)** <br/> |Envía el correo entrante para su dominio al servicio de Exchange Online de Office 365.  <br/> [!NOTE] Una vez que el correo fluye a Exchange Online, debe quitar los registros MX que hacen referencia a su antiguo sistema.   |**Dominio:** por ejemplo, contoso.com  <br/> **Servidor de correo electrónico de destino:** \<MX token\> . mail.protection.outlook.com  <br/> **Preferencia/Prioridad:** Inferior a todos los registros MX (garantiza el envío de correo a Exchange Online) - por ejemplo, 1 o “baja”  <br/>  Para buscar el \<MX token\> , siga estos pasos:  <br/>  Inicie sesión en Office 365, vaya a la Administración de Office 365 \> Dominios.  <br/>  En la columna Acción para su dominio, elija Corregir problemas.  <br/>  En la sección de registros MX, elija ¿Qué puedo corregir?  <br/>  Siga las instrucciones de esta página para actualizar el registro MX.  <br/> [¿Qué es una prioridad de MX?](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
+|**MX** <br/> **(Exchange Online)** <br/> |Envía el correo entrante para su dominio al servicio de Exchange Online de Office 365.  <br/> [!NOTE] Una vez que el correo fluye a Exchange Online, debe quitar los registros MX que hacen referencia a su antiguo sistema.   |**Dominio:** por ejemplo, contoso.com  <br/> **Servidor de correo electrónico de destino:**\<MX token\>.mail.protection.outlook.com  <br/> **Preferencia/Prioridad:** Inferior a todos los registros MX (garantiza el envío de correo a Exchange Online) - por ejemplo, 1 o “baja”  <br/>  Siga estos pasos para buscar el \<MX token\>:  <br/>  Inicie sesión en Office 365, vaya a la Administración de Office 365 \> Dominios.  <br/>  En la columna Acción para su dominio, elija Corregir problemas.  <br/>  En la sección de registros MX, elija ¿Qué puedo corregir?  <br/>  Siga las instrucciones de esta página para actualizar el registro MX.  <br/> [¿Qué es una prioridad de MX?](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |Ayuda a evitar que otros usen su dominio para enviar correo no deseado u otros correos electrónicos malintencionados. Los registros de la estructura de directivas de remitente (SPF) trabajan para identificar los servidores que estén autorizados para enviar correo electrónico desde su dominio.  <br/> |[Registros DNS externos necesarios para SPF](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **(Federación de Exchange)** <br/> |Utilizado para la federación de Exchange para la implementación híbrida.  <br/> |**Registro 1 TXT:** por ejemplo, contoso.com y texto hash asociado, generado de forma personalizada y de prueba de dominio (por ejemplo, Y96nu89138789315669824)  <br/> **Registro 2 TXT:** por ejemplo, exchangedelegation.contoso.com y texto hash asociado, generado de forma personalizada y de prueba del dominio (por ejemplo Y3259071352452626169)  <br/> |
 |**CNAME** <br/> **(Federación de Exchange)** <br/> |Ayuda a los clientes de Outlook a conectarse fácilmente al servicio de Exchange Online con el servicio de detección automática cuando su empresa utilice la federación de Exchange. La detección automática encuentra automáticamente el host de Exchange Server correcto y configura para los usuarios.  <br/> |**Alias:** por ejemplo, Autodiscover.service.contoso.com  <br/> **Destino:** autodiscover.outlook.com  <br/> |
@@ -79,7 +79,7 @@ Los clientes de correo electrónico que utilizan federación de Exchange tambié
 Existen pasos específicos que realizar cuando se usan [direcciones URL y direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO) para asegurarse de que la red esté correctamente configurada.
 
 > [!NOTE]
-> Estos registros DNS también se aplican a Teams, especialmente en un escenario híbrido de Teams y en Skype Empresarial Online, donde pueden producirse ciertos problemas de federación.
+> Estos registros DNS también se aplican a Teams, especialmente en un escenario híbrido de Teams y Skype Empresarial, donde pueden producirse ciertos problemas de federación.
   
 ||||
 |:-----|:-----|:-----|
@@ -128,11 +128,11 @@ Para los escenarios donde no solo utiliza el correo electrónico de Exchange Onl
 |||||
 |:-----|:-----|:-----|:-----|
 ||Si usa...  <br/> |Finalidad  <br/> |Agregar estos includes  <br/> |
-|1   <br/> |Todos los sistemas de correo electrónico (obligatorio)  <br/> |Todos los registros SPF comienzan con este valor  <br/> |v=spf1  <br/> |
-|2   <br/> |Exchange Online (común)  <br/> |Usar solo con Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
-|3   <br/> |Sistema de correo electrónico de terceros (menos común)  <br/> ||Incluye:\<email system like mail.contoso.com\>  <br/> |
-|4   <br/> |Sistema de correo local (menos común)  <br/> |Usar si usa Exchange Online Protection o Exchange Online además de otro sistema de correo  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> Incluye:\<mail.contoso.com\>  <br/> El valor entre corchetes (\<\>) debe corresponder a otros sistemas de correo que enviarán correo electrónico por su dominio.  <br/> |
-|5   <br/> |Todos los sistemas de correo electrónico (obligatorio)  <br/> ||-all  <br/> |
+|1  <br/> |Todos los sistemas de correo electrónico (obligatorio)  <br/> |Todos los registros SPF comienzan con este valor  <br/> |v=spf1  <br/> |
+|2  <br/> |Exchange Online (común)  <br/> |Usar solo con Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
+|3  <br/> |Sistema de correo electrónico de terceros (menos común)  <br/> ||incluye:\<email system like mail.contoso.com\>  <br/> |
+|4  <br/> |Sistema de correo local (menos común)  <br/> |Usar si usa Exchange Online Protection o Exchange Online además de otro sistema de correo  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> incluye:\<mail.contoso.com\>  <br/> El valor entre corchetes (\<\>) debe corresponder a otros sistemas de correo que enviarán correo electrónico por su dominio.  <br/> |
+|5  <br/> |Todos los sistemas de correo electrónico (obligatorio)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Ejemplo: Agregar a un registro SPF existente
 <a name="bkmk_addtospf"> </a>
@@ -144,7 +144,7 @@ TXT Name @
 Values: v=spf1 ip4:60.200.100.30 include:smtp.adatum.com -all
 ```
 
-Ahora está actualizando su registro de SPF para Office 365. Editará su registro actual para tener un registro de SPF que incluya los valores que necesita. Para Office 365, "spf.protection.outlook.com".
+Ahora está actualizando el registro SPF para Office 365. Editará el registro actual de forma que tenga un registro SPF que incluya los valores que necesita. Para Office 365, "spf.protection.outlook.com".
   
 Correcto:
   
@@ -166,7 +166,7 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 ### <a name="more-examples-of-common-spf-values"></a>Más ejemplos de valores SPF comunes
 <a name="bkmk_addtospf"> </a>
 
-Si usa el conjunto completo de Office 365 y usa MailChimp para enviar correos electrónicos de marketing en su nombre, el registro de SPF en contoso.com puede tener un aspecto similar al siguiente, que usa las filas 1, 3 y 5 de la tabla anterior. Recuerde que se requieren las filas 1 y 5.
+Si está usando el conjunto de aplicaciones completo de Office 365 y está usando MailChimp para enviar correos electrónicos de marketing en su nombre, su registro SPF en contoso.com puede tener el aspecto siguiente, que usa las filas 1, 3 y 5 de la tabla anterior. Recuerde, las filas 1 y 5 son obligatorias.
   
 ``` dns
 TXT Name @
