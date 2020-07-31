@@ -15,16 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Modo en que Microsoft defiende sus servicios en la nube contra ataques por denegación de servicio (DoS).
-ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: a8374e46c9b561afce77545293b9bae3dd42ed64
+ms.sourcegitcommit: 72217e86b0da7ba13407aefe270200449c352548
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998334"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529093"
 ---
 # <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>Defensa de los servicios en la nube de Microsoft 365 contra ataques por denegación de servicio
 
-## <a name="introduction"></a>Introducción
 Los centros de recursos de Microsoft están protegidos por seguridad de defensa en profundidad que incluye entradas de perímetro, cámaras de vídeo, personal de seguridad y entradas seguras que usan la biometría, la tarjeta inteligente y la autenticación multifactor. La seguridad de defensa en profundidad sigue en todas las áreas de la instalación y en cada unidad física del servidor. La [infraestructura de nube de Microsoft y el grupo de operaciones](https://www.microsoft.com/cloud-platform/global-datacenters) proporcionan la infraestructura básica y las tecnologías de base para nuestros servicios en la nube. Nuestros centros de recursos cumplen con los estándares de la industria para la seguridad y la confiabilidad física y son administrados, supervisados y administrados por el personal de operaciones de Microsoft.
 
 Para proteger aún más nuestros servicios en la nube, Microsoft proporciona un sistema de defensa DDoS que forma parte de los procesos de supervisión continua de Microsoft Azure y pruebas de penetración. El sistema de defensa DDoS de Azure está diseñado no solo para resistir ataques desde el exterior, sino también desde otros inquilinos de Azure. Azure usa técnicas de detección y mitigación estándar como cookies SYN, limitación de velocidad y límites de conexión para proteger contra ataques DDoS.
