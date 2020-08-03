@@ -19,16 +19,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: Use PowerShell para Microsoft 365 para administrar usuarios, grupos y sitios de SharePoint Online.'
-ms.openlocfilehash: ffdaa2d4810e2e89878ea3eacde99babb046fce2
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ae232766031dade061e79a574efa14e8432ae08c
+ms.sourcegitcommit: 7bf52d4277b97d6f1c585da2c83979fbcf061c1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230477"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "46542821"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Administrar usuarios y grupos de SharePoint Online con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
 Si es un administrador de SharePoint Online que trabaja con grandes listas de grupos o cuentas de usuario y quiere un método más fácil para administrarlos, puede usar PowerShell para Microsoft 365. 
 
@@ -69,7 +69,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 Para usar estos comandos, reemplace todo lo que haya entre las comillas, incluidos los caracteres < y >, con los nombres correctos.
 
-Por ejemplo, este conjunto de comandos agrega Opal Castillo (User Name opalc) la lista de administradores de colecciones de sitios en la colección de sitios ContosoTest de la empresa de Contoso:
+Por ejemplo, este conjunto de comandos agrega Opal Castillo (User Name opalc) a la lista de administradores de colecciones de sitios de la ContosoTest colección de sitios en la empresa de Contoso:
 
 ```powershell
 $tenant = "contoso"
@@ -284,4 +284,3 @@ Este informe es bastante sencillo y podemos agregar más código para crear info
 [Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Introducción a PowerShell para Microsoft 365](getting-started-with-office-365-powershell.md)
-
