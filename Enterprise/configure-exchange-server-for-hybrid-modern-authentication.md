@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: La autenticación moderna híbrida (HMA) es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras, y está disponible para las implementaciones híbridas locales de Exchange Server.
-ms.openlocfilehash: 4348de3fbec5917c2b13af3f93bf79ad898af017
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.openlocfilehash: afc3b2926f02a64a9f2f27ba85e5264258b49c3b
+ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502595"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46548883"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Exchange Server local para usar la autenticación moderna híbrida
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
 La autenticación moderna híbrida (HMA) es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras, y está disponible para las implementaciones híbridas locales de Exchange Server.
   
@@ -72,7 +72,7 @@ En primer lugar, reúna todas las direcciones URL que necesite agregar en AAD. E
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*
 Get-WebServicesVirtualDirectory | FL server,*url*
-Get-ActiveSyncVirtualDirectory | FL server,*url*
+Get-ClientAccessServer | fl Name, AutodiscoverServiceInternalUri
 Get-OABVirtualDirectory | FL server,*url*
 Get-AutodiscoverVirtualDirectory | FL server,*url*
 Get-OutlookAnywhere | FL server,*url*
