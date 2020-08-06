@@ -8,19 +8,19 @@ ms.date: 04/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
 description: La autenticación moderna es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras. Está disponible para implementaciones híbridas de servidores de Skype Empresarial y Exchange, así como para entornos híbridos de dominio dividido de Skype Empresarial. Este artículo contiene vínculos a los documentos relacionados sobre los requisitos previos, la configuración o desactivación de la autenticación moderna e información para algunos de los clientes relacionados (como  los clientes de Skype y Outlook).
-ms.openlocfilehash: 8b5fcbd20ed0a4f630cda7a05eb068008296d694
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
-ms.translationtype: HT
+ms.openlocfilehash: df755c8af161609c1c18dbe066662aaf1d410429
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502605"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571053"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para el uso en Skype Empresarial y los servidores de Exchange locales
 

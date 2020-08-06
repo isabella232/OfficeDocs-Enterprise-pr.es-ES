@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo optimizar el rendimiento de extensiones personalizadas en páginas de sitio modernas de SharePoint Online.
-ms.openlocfilehash: dbf0c3cba009a102bf37dd65f14e8cb882303cfe
-ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
+ms.openlocfilehash: d4e5e492e0573c54f40b1f9e040859037a97965c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46548862"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571173"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de extensiones personalizadas en páginas del sitio modernas de SharePoint Online
 
@@ -37,15 +37,15 @@ La herramienta de Diagnóstico de páginas para SharePoint es una extensión de 
 >[!NOTE]
 >La herramienta de Diagnóstico de páginas solo funciona para SharePoint Online y no se puede usar en una página del sistema de SharePoint. 
 
-Al analizar una página del sitio de SharePoint con la herramienta de Diagnóstico de páginas para SharePoint, puede ver información sobre las extensiones personalizadas que superan la métrica de la base de referencia en el resultado **Las extensiones afectan al tiempo de carga de la página** o **Demasiadas extensiones utilizadas** en el panel _Pruebas de diagnóstico_. 
+Al analizar una página de sitio de SharePoint con la herramienta diagnósticos de página para SharePoint, puede ver información sobre extensiones personalizadas que superen la métrica de línea base en las **extensiones que afectan al tiempo de carga** o que se **usan demasiadas extensiones** como resultado en el panel _pruebas de diagnóstico_ 
 
-Puede encontrarse con los siguientes resultados:
+Los posibles resultados incluyen:
 
-- **Atención necesaria** (en rojo): cualquier extensión _personalizada_ que tarde más de **un** segundo en cargarse. El tiempo de carga total que se muestra en los resultados de la prueba se desglosa por carga de módulos e inicialización. Además, si hay demasiadas extensiones en una página, podrán afectar el tiempo de carga de la página, y esto será más evidente si se usan **siete** o más extensiones en la página.
-- **Posibilidades de mejora** (amarillo) Si se usan **cinco** o más extensiones, se mostrarán en esta sección como una advertencia hasta que se utilicen siete o más, lo que se mostrará como Atención necesaria.
-- **No es necesario realizar ninguna acción** (en verde): No hay ninguna extensión que tarde más de un segundo en cargarse.
+- **Atención necesaria** (en rojo): cualquier extensión _personalizada_ que tarde más de **un** segundo en cargarse. El tiempo de carga total que se muestra en los resultados de la prueba se desglosa por carga de módulos e inicialización. Además, si hay demasiadas extensiones en una página, pueden influir en el tiempo de carga de la página y se resaltará si se usan **siete** o más extensiones en la página.
+- **Oportunidades de mejora** (amarillo) si se usan **cinco** o más extensiones, éstas se resaltarán en esta sección como una advertencia hasta que se usen siete o más, que se resaltarán como una atención requerida.
+- **No es necesario realizar ninguna acción** (en verde): no hay ninguna extensión que tarde más de un segundo en cargarse.
 
-Si una extensión afecta al tiempo de carga de la página o hay demasiadas extensiones en la página, el resultado aparece en la sección **Atención necesaria** de los resultados. Haga clic en el resultado para ver los detalles sobre la extensión que está demorando en cargar o la advertencia sobre la existencia de demasiadas extensiones. Las actualizaciones futuras de la herramienta Diagnóstico de páginas para SharePoint pueden incluir actualizaciones de las reglas de análisis, así que asegúrese de que siempre tiene la versión más reciente de la herramienta.
+Si una extensión afecta al tiempo de carga de página o hay demasiadas extsnions en la página, el resultado aparece en la sección **atención necesaria** de los resultados. Haga clic en el resultado para ver los detalles de la extensión que se está cargando lentamente o demasiadas extensiones resaltadas. Las actualizaciones futuras de la herramienta Diagnóstico de páginas para SharePoint pueden incluir actualizaciones de las reglas de análisis, así que asegúrese de que siempre tiene la versión más reciente de la herramienta.
 
 ![Resultados de tiempo de carga de la página](media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 

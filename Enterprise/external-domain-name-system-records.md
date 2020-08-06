@@ -7,7 +7,7 @@ ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Resumen: Lista de referencia de los registros DNS para usar cuando se planee una implementación de Office 365.'
-ms.openlocfilehash: ef324adf098d72dca589d60587fd3d5e5c461555
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
-ms.translationtype: HT
+ms.openlocfilehash: b17d97102498cbaabc87b89bb7cd1f32134cfbcd
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502675"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570983"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Registros externos del Sistema de nombres de dominio para Office 365
 
@@ -125,14 +125,13 @@ Para los escenarios donde no solo utiliza el correo electrónico de Exchange Onl
 > [!NOTE]
 > Si tiene un escenario complejo que incluye, por ejemplo, servidores de correo electrónico perimetral para administrar el tráfico de correo electrónico en el firewall, tendrá que configurar un registro SPF más detallado. Obtenga información sobre cómo: [Configurar registros SPF en Office 365 para ayudar a evitar la suplantación de identidad](https://go.microsoft.com/fwlink/?LinkId=787656). Si desea obtener más información sobre cómo funciona SPF con Office 365, consulte [Cómo Office 365 usa el marco de directivas de remitente (SPF) para ayudar a evitar la suplantación de identidad](https://go.microsoft.com/fwlink/?LinkId=787065).
   
-|||||
+| Número|Si usa...  <br/> |Finalidad  <br/> |Agregar estos includes  <br/> |
 |:-----|:-----|:-----|:-----|
-||Si usa...  <br/> |Finalidad  <br/> |Agregar estos includes  <br/> |
 |1  <br/> |Todos los sistemas de correo electrónico (obligatorio)  <br/> |Todos los registros SPF comienzan con este valor  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (común)  <br/> |Usar solo con Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
 |3  <br/> |Sistema de correo electrónico de terceros (menos común)  <br/> ||incluye:\<email system like mail.contoso.com\>  <br/> |
-|4  <br/> |Sistema de correo local (menos común)  <br/> |Usar si usa Exchange Online Protection o Exchange Online además de otro sistema de correo  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> incluye:\<mail.contoso.com\>  <br/> El valor entre corchetes (\<\>) debe corresponder a otros sistemas de correo que enviarán correo electrónico por su dominio.  <br/> |
-|5  <br/> |Todos los sistemas de correo electrónico (obligatorio)  <br/> ||-all  <br/> |
+|4   <br/> |Sistema de correo local (menos común)  <br/> |Usar si usa Exchange Online Protection o Exchange Online además de otro sistema de correo  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> incluye:\<mail.contoso.com\>  <br/> El valor entre corchetes (\<\>) debe corresponder a otros sistemas de correo que enviarán correo electrónico por su dominio.  <br/> |
+|5   <br/> |Todos los sistemas de correo electrónico (obligatorio)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Ejemplo: Agregar a un registro SPF existente
 <a name="bkmk_addtospf"> </a>

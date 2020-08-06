@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Describe la sincronización de directorios con Microsoft 365, la limpieza de los servicios de dominio de Active Directory y la herramienta Azure Active Directory Connect.
-ms.openlocfilehash: b22533e66d18541b8eb72900514543367633e462
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 8bfb9a7d65bf76fdadafe1bb49da91115ee9d07c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711873"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571163"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Identidad híbrida y sincronización de directorios para Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
 
 En función de las necesidades de negocio y los requisitos técnicos, el modelo de identidad híbrida y la sincronización de directorios son las opciones más comunes para los clientes empresariales que están adoptando Microsoft 365. La sincronización de directorios permite administrar las identidades de los servicios de dominio de Active Directory (AD DS) y todas las actualizaciones de las cuentas de usuario, los grupos y los contactos se sincronizan con el inquilino de Azure Active Directory (Azure AD) de la suscripción a Microsoft 365.
 
@@ -97,13 +97,11 @@ Los objetos de directorio local se pueden sincronizar con Microsoft 365 y el acc
   
 Consulte la [lista de compatibilidad de Federación de Azure ad](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) para obtener más información.
   
-## <a name="ad-ds-cleanup"></a>Limpieza de AD DS
+## <a name="ad-ds-preparation"></a>Preparación de AD DS
 
 Para ayudar a garantizar una transición sin problemas a Microsoft 365 mediante la sincronización, debe preparar el bosque de AD DS antes de comenzar con la implementación de sincronización de directorios de Microsoft 365.
   
-Al [configurar la sincronización de directorios](set-up-directory-synchronization.md), uno de los pasos es [Descargar y ejecutar la herramienta IdFix](install-and-run-idfix.md). Puede usar la herramienta IdFix para ayudar con la [limpieza de directorios](prepare-directory-attributes-for-synch-with-idfix.md).
-  
-La limpieza de directorios debe centrarse en las siguientes tareas:
+La preparación del directorio debe centrarse en las siguientes tareas:
 
 - Quitar los atributos **proxyAddress** y **userPrincipalName** duplicados.
 - Actualice los atributos **userPrincipalName** no válidos o en blanco con atributos **userPrincipalName** válidos.
@@ -147,7 +145,7 @@ La sincronización de directorios es necesaria para las siguientes característi
 
 Cuando esté listo para implementar la identidad híbrida, vea [preparar el aprovisionamiento de usuarios](prepare-for-directory-synchronization.md).
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
 

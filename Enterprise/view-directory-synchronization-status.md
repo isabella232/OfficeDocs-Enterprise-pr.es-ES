@@ -19,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Obtenga información sobre cómo desactivar la sincronización de directorios. También puede ver su estado.
-ms.openlocfilehash: d6f3a9f1f4e069716501f58e188daedacbf7e597
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+ms.openlocfilehash: 4c2f0baf6d3657e3eb9974ff7d4f8109e52e603b
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906203"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571043"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Ver el estado de sincronización de directorios en Microsoft 365
 
@@ -50,5 +50,4 @@ Si hay un problema con la sincronización de directorios, los errores también s
 |**Sincronización de contraseñas habilitada** | True o false. Especifica si la sincronización de hash de contraseña entre nuestro entorno local y su inquilino de Microsoft 365. |
 |**Última sincronización de contraseñas** | Última vez que se ejecutó la sincronización hash de contraseña. Se mostrará una advertencia y un vínculo a una herramienta de solución de problemas si la última sincronización fue de hace más de tres días. |
 |**Versión del cliente de sincronización de directorios** | Contiene un vínculo de descarga si se ha lanzado una nueva versión de Azure AD Connect. |
-|**Herramienta IDFix** | Vínculo de descarga a [IDFix](install-and-run-idfix.md), una herramienta que puede usar para comprobar Active Directory local. |
 |**Cuenta del servicio de sincronización de directorios** | Muestra el nombre de la cuenta del servicio de sincronización de directorios de Microsoft 365. |
