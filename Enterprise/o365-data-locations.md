@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: Ubicaciones de datos de Microsoft 365'
-ms.openlocfilehash: 4fdac5fca89eebd8d1c44ffdf571cee2630b6e8c
-ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
+ms.openlocfilehash: 9d69b51a257978c557944951eabb099f76b9011e
+ms.sourcegitcommit: c779ded7647cb84f8daafc25565d3edac2917e83
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45263699"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588002"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Obtenga información acerca de los compromisos contractuales para la ubicación 
 Para las ubicaciones de datos de Azure Active Directory, visite [Mapa de datos de AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-Debido a las circunstancias sin precedentes en torno a la crisis de la COVID-19 y la necesidad de administrar la demanda de los servicios en línea en Europa, si su organización es una institución educativa, puede que aprovisionemos su espacio empresarial de Microsoft 365 en la Unión Europea (UE), la Asociación Europea de Libre Comercio (AELC), el Reino Unido (RU), los Estados Unidos (EE. UU.) o Canadá (CA); o que transfiramos sus datos a cualquier centro de datos en la UE, la AELC, el RU, los EE. UU. o CA.Esto significa que los datos pueden almacenarse en reposo dentro de la UE, la AELC, el RU, los EUA o CA.Nuestro compromiso con el cumplimiento, la privacidad y la seguridad permanece sin cambios mientras implementamos las medidas necesarias y prudentes para mantener la disponibilidad del servicio.  Cumpliremos con todas las leyes aplicables en lo que respecta a las transferencias de datos.
+Debido a las circunstancias sin precedentes en torno a la COVID-19 y la necesidad de administrar la demanda de servicios en línea, si su organización es una institución educativa localizada en Europa, podemos aprovisionar su espacio empresarial de Office 365, transferir los datos, y almacenar los datos en reposo dentro de la Unión Europea.  Si su organización es una institución educativa localizada en India, podemos aprovisionar su espacio empresarial de Office 365, transferir los datos, y almacenar los datos en reposo dentro de India, Europa o Estados Unidos.  Si su organización es una institución educativa localizada en Sudáfrica, podemos aprovisionar su espacio empresarial de Office 365, transferir los datos, y almacenar los datos en reposo dentro de Sudáfrica o Europa. Nuestro compromiso con el cumplimiento, la privacidad y la seguridad sigue intacto mientras seguimos implementando las medidas necesarias y prudentes para mantener la disponibilidad del servicio. Cumpliremos con todas las leyes aplicables en lo que respecta a las transferencias de datos.
 
 
 
@@ -2602,7 +2602,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
-| Office Online y Office Mobile | Unión Europea |
+| Office Online &amp; Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
 | MyAnalytics | Unión Europea |
@@ -3869,7 +3869,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange Online | Estados Unidos |
+| Exchange en línea | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
