@@ -3,7 +3,7 @@ title: Intervalos de direcciones IP y URL de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/09/2020
+ms.date: 08/06/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Resumen: Office 365 necesita conectividad a Internet. Los siguientes puntos de conexión deben resultar accesibles para los clientes que usan planes de Office 365, incluida la nube de la comunidad de administración pública (GCC).'
 hideEdit: true
-ms.openlocfilehash: 1df2420812cd6ba0fbec619a4a280874c3d9fc9b
-ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
+ms.openlocfilehash: 4ca6009acad273f165655f8f9200c0215484aa14
+ms.sourcegitcommit: b2767740251b257bb5e66d056731c6c9e7f2677d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387703"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46596939"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Intervalos de direcciones IP y direcciones URL de Office 365
 
@@ -39,7 +39,7 @@ Office 365 requiere conectividad a Internet. Los siguientes puntos de conexión 
 
 ||||
 |:-----|:-----|:-----|
-|**Última actualización:** 09/07/2020 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Suscripción del registro de cambios](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Descargue:** todos los destinos obligatorios y opcionales en una lista de [formato JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> | **Use:** nuestros [archivos PAC](managing-office-365-endpoints.md#pacfiles) de proxy <br/> |
+|**Última actualización:** 06/08/2020 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Cambiar la suscripción del registro](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Descargue:** todos los destinos obligatorios y opcionales en una lista de [formato JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> | **Use:** nuestros [archivos PAC](managing-office-365-endpoints.md#pacfiles) de proxy <br/> |
 
  Comience con [Administrar los puntos de conexión de Office 365](managing-office-365-endpoints.md) si desea entender nuestras recomendaciones para administrar la conectividad de red con estos datos. Los datos de puntos de conexión se actualizan al principio de cada mes con las nuevas direcciones IP y URL publicadas 30 días antes de su activación. Esto permite que los clientes que todavía no han automatizado las actualizaciones completen los procesos antes de que se requiera una nueva conectividad. Los puntos de conexión también pueden actualizarse durante el mes si fuera necesario para gestionar escalaciones de soporte técnico, incidentes de seguridad u otros requisitos operativos inmediatos. Los datos que aparecen en la página siguiente se generan desde los servicios web basados en REST. Si usa un dispositivo de red o un script para obtener acceso a estos datos, vaya directamente al [Servicio web](office-365-ip-web-service.md).
 
