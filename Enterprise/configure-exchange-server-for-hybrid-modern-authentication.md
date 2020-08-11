@@ -15,17 +15,18 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: La autenticación moderna híbrida (HMA) es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras, y está disponible para las implementaciones híbridas locales de Exchange Server.
-ms.openlocfilehash: afc3b2926f02a64a9f2f27ba85e5264258b49c3b
-ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
+description: Obtenga información sobre cómo configurar un servidor de Exchange local para usar la autenticación moderna híbrida (HMA), lo que le ofrece una autenticación y autorización de usuario más seguras.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8cffd30b07cf3f99be67cdc52f14534e639552ae
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46548883"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606076"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Exchange Server local para usar la autenticación moderna híbrida
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 La autenticación moderna híbrida (HMA) es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras, y está disponible para las implementaciones híbridas locales de Exchange Server.
   

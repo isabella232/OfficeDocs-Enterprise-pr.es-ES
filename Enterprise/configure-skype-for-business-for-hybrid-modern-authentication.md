@@ -15,13 +15,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: La autenticación moderna es un método de administración de identidades que ofrece una autenticación y autorización de usuario más seguras, está disponible para Skype empresarial Server local y Exchange Server local, y para entornos híbridos de Skype empresarial de dominio dividido.
-ms.openlocfilehash: 6415fe374f63093b44ebacc125dc40c9ea70e898
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+description: Obtenga información sobre cómo configurar Skype empresarial local para usar la autenticación moderna híbrida (HMA), lo que le ofrece una autenticación y autorización de usuario más seguras.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e82325281341d35454161f03873acc30898ad536
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052513"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605766"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Skype Empresarial local para usar la autenticación moderna híbrida
 
@@ -73,7 +74,7 @@ Como puede ver, hay cuatro lugares distintos para activar MA. Para obtener la me
   
 Vea el [tema sobre compatibilidad de Skype empresarial con Ma](https://technet.microsoft.com/library/mt803262.aspx) para topologías compatibles.
   
- **Importante** Compruebe que ha cumplido todos los requisitos previos antes de comenzar. Encontrará esta información [aquí](hybrid-modern-auth-overview.md).
+ **Importante** Compruebe que ha cumplido todos los requisitos previos antes de comenzar. Encontrará información [sobre los requisitos previos y la introducción a la autenticación moderna híbrida](hybrid-modern-auth-overview.md).
   
 ## <a name="collect-all-hma-specific-info-youll-need"></a>Recopilar toda la información específica de la HMA que tendrás
 

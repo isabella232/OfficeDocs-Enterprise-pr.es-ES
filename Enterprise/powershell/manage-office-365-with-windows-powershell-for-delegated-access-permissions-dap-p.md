@@ -1,5 +1,5 @@
 ---
-title: Administración de Microsoft 365 con Windows PowerShell para asociados con permiso de acceso delegado (DAP)
+title: Administración de Microsoft 365 con Windows PowerShell para asociados de DAP
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,15 +14,15 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: 'Resumen: los partners de sindicación y proveedor de soluciones en la nube (CSP) pueden usar Windows PowerShell para administrar los inquilinos de cliente de Microsoft 365.'
-ms.openlocfilehash: 22fd26fb89d15cc036d52ed49ec61319c7e13a52
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: a2b05a5f24984d4113c856920d217f47d55f606b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230486"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605926"
 ---
 # <a name="manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Administración de Microsoft 365 con Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 

@@ -1,5 +1,5 @@
 ---
-title: Extremos DoD del gobierno de Estados Unidos de Office 365
+title: Extremos DOD del gobierno de Estados Unidos de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,14 +19,15 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 f1.keywords:
 - NOCSH
-description: 'Resumen: Office 365 requiere conectividad a Internet. Los puntos de conexión a continuación deben ser accesibles para los clientes que usen solo planes de Office 365 U.S. Government DoD.'
+description: Office 365 requiere conectividad a Internet. Los puntos de conexión a continuación deben ser accesibles para los clientes que usen solo planes de Office 365 U.S. Government DoD.
 hideEdit: true
-ms.openlocfilehash: d4c719711bf09f22c0d7adcd87b98bb0a97f579a
-ms.sourcegitcommit: b2767740251b257bb5e66d056731c6c9e7f2677d
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 1097baeca9bb3b1ba7c732f23cea4005d6b3529e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46596899"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606515"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Extremos DoD del gobierno de Estados Unidos de Office 365
 
@@ -50,7 +51,7 @@ Estas son columnas de datos que se muestran:
 
 - **ID**: el número de identificación de la fila, también conocido como un conjunto de puntos de conexión. Este identificador es el mismo que devuelve el servicio web para el conjunto de puntos de conexión.
 
-- **Categoría**: muestra si el conjunto de puntos de conexión se clasifica como "Optimizar", "Permitir" o "Predeterminado". Puede leer acerca de estas categorías y encontrar indicaciones para su administración en [https://aka.ms/pnc](https://aka.ms/pnc). Esta columna también muestra los conjuntos de puntos de conexión que deben tener conectividad de red. Para los conjuntos de puntos de conexión que no necesitan conectividad de red, le proporcionamos notas en este campo para indicar qué funcionalidad faltaría si se bloqueara el conjunto de puntos de conexión. Si va a excluir un área de servicio completa, los conjuntos de puntos de conexión enumerados como necesarios no necesitan conectividad.
+- **Categoría**: muestra si el conjunto de puntos de conexión se clasifica como "Optimizar", "Permitir" o "Predeterminado". Puede leer sobre estas categorías y encontrar indicaciones para su administración en [https://aka.ms/pnc](https://aka.ms/pnc). Esta columna también muestra los conjuntos de puntos de conexión que deben tener conectividad de red. Para los conjuntos de puntos de conexión que no necesitan conectividad de red, le proporcionamos notas en este campo para indicar qué funcionalidad faltaría si se bloqueara el conjunto de puntos de conexión. Si va a excluir un área de servicio completa, los conjuntos de puntos de conexión enumerados como necesarios no necesitan conectividad.
 
 - **Er**: esto es **sí** si el conjunto de puntos de conexión es compatible con Azure ExpressRoute con los prefijos de ruta de Office 365. La comunidad de BGP que incluye los prefijos de ruta que se muestran se alinea con el área de servicio enumerada. Cuando ER es **no**, significa que ExpressRoute no es compatible con este conjunto de puntos de conexión. Sin embargo, no debe suponerse que ninguna ruta se anuncie para un punto de conexión en el que ER es **no**. Si tiene previsto usar Azure AD Connect, lea la [sección consideraciones especiales](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) para asegurarse de que tiene la configuración adecuada de Azure ad Connect.
 

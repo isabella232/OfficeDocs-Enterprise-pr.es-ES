@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +22,13 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 - SPO_Content
-description: Hay sencillas formas de comprobar el rendimiento de la conexión entre Office 365 y su empresa que le permitirá establecer una línea de base aproximada de su conectividad. Conocer el historial de rendimiento de las conexiones de los equipos cliente puede ayudarle a detectar los problemas emergentes con anticipación, la identificación y la predicción de los problemas.
-ms.openlocfilehash: ffccd9f5763d7d47dbb3aa02d3063582d1fa83cc
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Obtenga información acerca de cómo comprobar el historial de las conexiones de los equipos cliente para ayudarle a detectar los problemas emergentes con antelación.
+ms.openlocfilehash: 31849e14b5dec7cba3878a85219ef2b8994f0fb9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774555"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605472"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento
 
@@ -325,7 +327,7 @@ Si está en medio de un problema de rendimiento, muchos de los pasos son los mis
   
 Para solucionar un problema de rendimiento, *ahora* tiene que realizar un seguimiento en el momento en que experimenta el problema de rendimiento. Debe disponer de las herramientas adecuadas para recopilar los registros y necesitará un plan de acción, es decir, una lista de acciones de solución de problemas para recopilar la mejor información que puede. Lo primero que debe hacer es registrar la fecha y la hora de la prueba para que los archivos se puedan guardar en una carpeta que refleje el intervalo. A continuación, Refine los pasos del problema. Estos son los pasos exactos que usará para las pruebas. No olvide los conceptos básicos: Si el problema solo está relacionado con Outlook, asegúrese de grabar que el comportamiento del problema ocurre en un solo servicio de Office 365. Restringir el alcance de este problema le ayudará a centrarse en algo que pueda resolver. 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
 

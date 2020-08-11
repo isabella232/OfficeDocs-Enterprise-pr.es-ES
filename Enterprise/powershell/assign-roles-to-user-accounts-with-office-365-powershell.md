@@ -17,14 +17,15 @@ ms.custom:
 - O365ITProTrain
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 'Resumen: Use PowerShell para Microsoft 365 para asignar roles a cuentas de usuario.'
-ms.openlocfilehash: 2be491692c23b1f528612cc5c56e041553f80c48
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: En este artículo, obtenga información sobre cómo usar PowerShell para Microsoft 365 de forma rápida y sencilla para asignar roles a las cuentas de usuario.
+ms.openlocfilehash: a3e1936dfa685c78f88e4f4333192f9a07de3cec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230876"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606446"
 ---
 # <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>Asignar roles a cuentas de usuario de Microsoft 365 con PowerShell
 
@@ -235,8 +236,8 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
-- [Administración de cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
 - [Introducción a PowerShell para Microsoft 365](getting-started-with-office-365-powershell.md)

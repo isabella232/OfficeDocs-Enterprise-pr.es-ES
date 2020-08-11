@@ -1,5 +1,5 @@
 ---
-title: Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
+title: Usar la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
-description: Describe cómo usar la red de entrega de contenido (CDN) de Office 365 para acelerar la entrega de los activos de SharePoint Online a todos los usuarios, independientemente de dónde se encuentren o de la forma en que tengan acceso al contenido.
-ms.openlocfilehash: 25e7e6aae0d4dc6dd72278763c8fc5cc3bc454ce
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+description: Obtenga información sobre cómo usar la red de entrega de contenido (CDN) de Office 365 para acelerar la entrega de los activos de SharePoint Online.
+ms.openlocfilehash: 2f0cc396de6d950c9487024145e346007b18d3b9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42316029"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606126"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -304,7 +306,7 @@ El valor de _path_ es la ruta de acceso relativa a la biblioteca o carpeta que c
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ El modificador de comodín**/** * solo se puede usar al principio de la ruta de acceso y coincidirá con todos los segmentos de dirección URL en la dirección URL especificada.
++ El modificador de comodín * **/** solo se puede usar al principio de la ruta de acceso y coincidirá con todos los segmentos de dirección URL en la dirección URL especificada.
 + La ruta de acceso puede apuntar a una biblioteca de documentos, carpeta o sitio. Por ejemplo, la ruta de acceso _*/site1_ coincidirá con todas las bibliotecas de documentos del sitio.
 
 Puede Agregar un origen con una ruta de acceso relativa específica. No se puede Agregar un origen mediante la ruta de acceso completa.
@@ -587,7 +589,7 @@ El valor de _path_ es la ruta de acceso relativa a la biblioteca o carpeta que c
 Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ El modificador de comodín**/** * solo se puede usar al principio de la ruta de acceso y coincidirá con todos los segmentos de dirección URL en la dirección URL especificada.
++ El modificador de comodín * **/** solo se puede usar al principio de la ruta de acceso y coincidirá con todos los segmentos de dirección URL en la dirección URL especificada.
 + La ruta de acceso puede apuntar a una biblioteca de documentos, carpeta o sitio. Por ejemplo, la ruta de acceso _*/site1_ coincidirá con todas las bibliotecas de documentos del sitio.
 
 Puede Agregar un origen con una ruta de acceso relativa específica. No se puede Agregar un origen mediante la ruta de acceso completa.
@@ -879,7 +881,7 @@ Para usar activos que ha agregado a un origen, solo tiene que actualizar los ví
 + Para cada vínculo a un activo en un origen, reemplace la ruta de acceso por la ruta de acceso al archivo en el origen de la red CDN. Puede usar rutas relativas.
 + Guarde la página o el contenido.
 
-Por ejemplo, considere la imagen _/site/SiteAssets/images/Image.png_, que ha copiado a la carpeta de la biblioteca de documentos _/site/CDN_origins/Public/_. Para usar el recurso de red CDN, reemplace la ruta de acceso original a la ubicación del archivo de imagen por la ruta de acceso al origen para que la nueva dirección URL _/site/CDN_origins/Public/Image.png_.
+Por ejemplo, considere la imagen _/site/SiteAssets/images/image.png_, que ha copiado a la carpeta de la biblioteca de documentos _/site/CDN_origins/Public/_. Para usar el recurso de red CDN, reemplace la ruta de acceso original a la ubicación del archivo de imagen por la ruta de acceso al origen para que la nueva dirección URL _/site/CDN_origins/public/image.png_.
 
 Si desea usar la dirección URL completa para el activo en lugar de una ruta de acceso relativa, construya el siguiente vínculo:
 
@@ -894,7 +896,7 @@ Para obtener información sobre cómo comprobar que los activos se atienden desd
 
 La **característica de publicación** de SharePoint Online reescribe automáticamente direcciones URL de activos almacenados en orígenes públicos en sus equivalentes de CDN para que los activos se puedan atender desde el servicio de la red CDN en lugar de SharePoint.
 
-Si su origen está en un sitio con la característica de publicación habilitada, y los activos que desea descargar en la red CDN están en una de las siguientes categorías, SharePoint rescribirá automáticamente las direcciones URL de los activos en el origen, siempre que el activo no se haya excluido por una CDN.  normativa.
+Si su origen está en un sitio con la característica de publicación habilitada, y los activos que desea descargar en la red CDN están en una de las siguientes categorías, SharePoint rescribirá automáticamente las direcciones URL de los activos en el origen, siempre que el activo no se haya excluido por una directiva de la red CDN.
 
 A continuación, se muestra información general sobre los vínculos que la característica de publicación de SharePoint reescribe automáticamente:
 
@@ -957,14 +959,14 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 #### <a name="item-level-permissions-are-not-supported-for-assets-in-private-origins"></a>No se admiten permisos de nivel de elemento para activos en orígenes privados
 
-Es importante tener en cuenta que SharePoint Online no admite permisos de nivel de elemento para activos en orígenes privados. Por ejemplo, para un archivo que se `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`encuentra en, los usuarios tienen acceso efectivo al archivo teniendo en cuenta las siguientes condiciones:
+Es importante tener en cuenta que SharePoint Online no admite permisos de nivel de elemento para activos en orígenes privados. Por ejemplo, para un archivo que se encuentra en `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` , los usuarios tienen acceso efectivo al archivo teniendo en cuenta las siguientes condiciones:
 
-|Usuario  |Permisos  |Acceso efectivo  |
+|Usuario  |Permissions  |Acceso efectivo  |
 |---------|---------|---------|
-|Usuario 1     |Tiene acceso a la carpeta1         |Puede tener acceso a image1. jpg desde la red CDN         |
-|Usuario 2     |No tiene acceso a la carpeta1         |No se puede tener acceso a image1. jpg desde la red CDN         |
-|Usuario 3     |No tiene acceso a la carpeta1, pero se le ha concedido el permiso explícito para obtener acceso a image1. jpg en SharePoint Online         |Puede tener acceso al elemento image1. jpg directamente desde SharePoint Online, pero no desde la red CDN.         |
-|Usuario 4     |Tiene acceso a la carpeta1, pero se ha denegado explícitamente el acceso a image1. jpg en SharePoint Online         |No se puede obtener acceso al activo desde SharePoint Online, pero puede tener acceso al recurso desde la red CDN a pesar de que se le deniegue el acceso al archivo en SharePoint Online.         |
+|Usuario 1     |Tiene acceso a la carpeta1         |Puede tener acceso a image1.jpg desde la red CDN         |
+|Usuario 2     |No tiene acceso a la carpeta1         |No se puede tener acceso a image1.jpg desde la red CDN         |
+|Usuario 3     |No tiene acceso a la carpeta1, pero se le ha concedido permiso explícito para acceder image1.jpg en SharePoint Online         |Puede tener acceso al image1.jpg de activos directamente desde SharePoint Online, pero no desde la red CDN         |
+|Usuario 4     |Tiene acceso a la carpeta1, pero se ha denegado explícitamente el acceso a image1.jpg en SharePoint Online         |No se puede obtener acceso al activo desde SharePoint Online, pero puede tener acceso al recurso desde la red CDN a pesar de que se le deniegue el acceso al archivo en SharePoint Online.         |
 
 <a name="CDNTroubleshooting"> </a>
 ## <a name="troubleshooting-the-office-365-cdn"></a>Solución de problemas de la red CDN de Office 365
@@ -977,7 +979,7 @@ Una vez que haya agregado los vínculos a los activos de la red CDN a una págin
 También puede usar las herramientas de desarrollo del explorador para ver la dirección URL de cada activo en una página o usar una herramienta de seguimiento de red de terceros.
 
 > [!NOTE]
-> Si usa una herramienta de red como Fiddler para probar los activos fuera de la representación del activo desde una página de SharePoint, debe agregar manualmente el encabezado referer "Referer: `https://yourdomain.sharepoint.com`" a la solicitud GET, donde la dirección URL es la dirección URL raíz del inquilino de SharePoint Online.
+> Si usa una herramienta de red como Fiddler para probar los activos fuera de la representación del activo desde una página de SharePoint, debe agregar manualmente el encabezado referer "Referer: `https://yourdomain.sharepoint.com` " a la solicitud GET, donde la dirección URL es la dirección URL raíz del inquilino de SharePoint Online.
 
 No se pueden probar direcciones URL de CDN directamente en un explorador web porque debe haber una referencia desde SharePoint Online. Sin embargo, si agrega la dirección URL de los activos de la red CDN a una página de SharePoint y, a continuación, abre la página en un explorador, verá el activo de la red CDN representado en la página.
 
@@ -1029,7 +1031,7 @@ Puede elegir trabajar con la red CDN de Office 365 usando el módulo de PowerShe
 + [Introducción al Shell de administración de SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 + [Instalar Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Redes de entrega de contenido](https://aka.ms/o365cdns)
 

@@ -24,13 +24,15 @@ search.appverid:
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 f1.keywords:
 - NOCSH
-description: SharePoint Server 2007 ha alcanzado el final del soporte técnico y es el momento de actualizar. Use este artículo para ayudarle a crear su plan.
-ms.openlocfilehash: e319438e2d760c391414f699de5967738d8c6b81
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom:
+- seo-marvel-apr2020
+description: Este artículo contiene información para los usuarios que usan SharePoint Server 2007 para ayudarles a planear la actualización.
+ms.openlocfilehash: 9dd659936bd15e0052ce9f6ba6830238aa2c5180
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774995"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603692"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>Opciones de migración de SharePoint 2007 para tener en cuenta
 

@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Un resumen de cómo Microsoft aplica el aislamiento de inquilino para Microsoft 365.
-ms.openlocfilehash: 891fdb9bebb500c40a9658d170942ca396facfd1
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Este artículo contiene un resumen de cómo Microsoft aplica el aislamiento de inquilino en servicios en la nube, como Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 531b5023af49c776cccfef06dee5bff4b303beff
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998649"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606546"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Aislamiento de inquilinos en Microsoft 365
 
@@ -30,8 +31,8 @@ De acuerdo con las importantes inversiones y la experiencia obtenida de la [info
 
 Los dos objetivos principales de mantener el aislamiento de inquilino en un entorno multiempresa son:
 
-1.  Evitar la fuga o el acceso no autorizado a contenido de clientes entre inquilinos; y
-2.  Evitar que las acciones de un inquilino afecten negativamente al servicio para otro espacio empresarial
+1.    Evitar la fuga o el acceso no autorizado a contenido de clientes entre inquilinos; y
+2.    Evitar que las acciones de un inquilino afecten negativamente al servicio para otro espacio empresarial
 
 Se han implementado varias formas de protección en Microsoft 365 para evitar que los clientes pongan en peligro los servicios o las aplicaciones de Microsoft 365 o que obtengan acceso no autorizado a la información de otros inquilinos o del propio sistema de Microsoft 365, incluidos:
 

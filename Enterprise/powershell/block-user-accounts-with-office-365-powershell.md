@@ -16,14 +16,15 @@ f1.keywords:
 ms.custom:
 - Ent_Office_Other
 - PowerShell
+- seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: Explica cómo usar PowerShell para bloquear y desbloquear el acceso a cuentas de Microsoft 365.
-ms.openlocfilehash: c18c0248c51096ab089b16b2e9e31eb0929de443
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: En este artículo se explica cómo usar PowerShell para bloquear y desbloquear el acceso a cuentas de Microsoft 365.
+ms.openlocfilehash: 1d32554642f29b4548e2525135d20967ba6b0f16
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230896"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606436"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloquear cuentas de usuario 365 de Microsoft con PowerShell
 
@@ -170,7 +171,7 @@ Para desbloquear las cuentas enumeradas en el archivo de texto, ejecute el sigui
 
 ## <a name="see-also"></a>Consulte también
 
-[Administración de cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   

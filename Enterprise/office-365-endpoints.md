@@ -17,18 +17,19 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: ''
-description: 'Resumen: Consulte estos artículos para los puntos de conexión de Internet de las diferentes nubes de Microsoft 365.'
-ms.openlocfilehash: 8fe95915f687b38a86fd13fb823a0db39637c47d
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: Para las direcciones IP de destino y las direcciones URL para el tráfico de Microsoft 365, use esta lista de artículos para los extremos de Internet de las diferentes nubes de Microsoft 365.
+ms.openlocfilehash: 1ef9d3a97beb14a1d51827d145f6fdc644c49f3c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592204"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606626"
 ---
 # <a name="microsoft-365-endpoints"></a>Puntos de conexión de 365 de Microsoft
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Los puntos de conexión son el conjunto de direcciones IP de destino, nombres de dominio DNS y direcciones URL para el tráfico de Microsoft 365 en Internet. 
 

@@ -17,18 +17,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Resumen: Use PowerShell para Microsoft 365 para administrar usuarios, grupos y sitios de SharePoint Online.'
-ms.openlocfilehash: ae232766031dade061e79a574efa14e8432ae08c
-ms.sourcegitcommit: 7bf52d4277b97d6f1c585da2c83979fbcf061c1e
+description: En este artículo, obtenga información sobre cómo usar PowerShell para Microsoft 365 para administrar usuarios, grupos y sitios de SharePoint Online.
+ms.openlocfilehash: 96e9040542ac9a3351cf8b8f3ab314910dc66a3b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "46542821"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605896"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Administrar usuarios y grupos de SharePoint Online con PowerShell
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Si es un administrador de SharePoint Online que trabaja con grandes listas de grupos o cuentas de usuario y quiere un método más fácil para administrarlos, puede usar PowerShell para Microsoft 365. 
 
@@ -235,7 +236,7 @@ Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –Logi
 
 El script importa el contenido del archivo CSV y usa los valores de las columnas para rellenar los parámetros de los comandos **New-SPOSiteGroup** y **Add-cónyugeer** . En nuestro ejemplo, lo estamos guardando en la carpeta theO365Admin de la unidad C, pero puede guardarla dondequiera que quiera.
 
-Ahora, vamos a quitar unas cuantas personas de varios grupos en distintos sitios usando el mismo archivo CSV. A continuación se muestra un ejemplo:
+Ahora, vamos a quitar un grupo de personas para varios grupos de sitios diferentes usando el mismo archivo CSV. A continuación se muestra un ejemplo:
 
 ```powershell
 Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginName -Site $_.Site -Group $_.Group}
@@ -275,7 +276,7 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 
 Este informe es bastante sencillo y podemos agregar más código para crear informes más específicos o que incluyan información más detallada. Pero esto debería dar una idea de cómo usar el shell de administración de SharePoint Online para administrar usuarios en el entorno de SharePoint Online.
    
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Conectarse a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 

@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: 'Resumen: Las soluciones de SharePoint 2013 pueden hospedarse en máquinas virtuales de Microsoft Azure. Obtenga información acerca de qué tipo de soluciones son una buena opción y cómo configurar Microsoft Azure para hospedar una.'
-ms.openlocfilehash: fee388f56faf2b30534d9a56926d9d62a176df19
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Obtenga información sobre los tipos de soluciones de SharePoint 2013 que se pueden hospedar en máquinas virtuales de Microsoft Azure y cómo configurar Azure para hospedar uno.
+ms.openlocfilehash: f76d5020ab4695f48edca956d6593040c42dcc70
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997902"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605692"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquitecturas de Microsoft Azure para SharePoint 2013
 
@@ -215,7 +217,7 @@ Cuando agregamos conjuntos de disponibilidad a los niveles de la granja de servi
   
 Este diagrama muestra el conjunto de servidores de SharePoint implementado en los servicios de infraestructura de Azure, con conjuntos de disponibilidad para proporcionar dominios de error para los servidores de cada nivel.
   
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.yml)
   

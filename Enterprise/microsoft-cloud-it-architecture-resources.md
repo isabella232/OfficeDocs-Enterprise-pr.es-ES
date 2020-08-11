@@ -14,16 +14,17 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: 'Resumen: Obtenga más información sobre los conceptos básicos de la arquitectura de nube para identidades, seguridad, redes e híbridos de Microsoft. Revise las recomendaciones preceptivas para proteger archivos, identidades y dispositivos cuando se usa la nube de Microsoft.'
-ms.openlocfilehash: f19a84297de0ff809979bc5735eb8c19cfbb7f57
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: En este artículo, encontrará recursos para obtener información sobre la arquitectura de ti principal de Microsoft Cloud, recomendaciones relacionadas con la protección & los procedimientos de implementación.
+ms.openlocfilehash: 644dc437fe1d0c3dc60c3e191a98ee52e761e03a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592184"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605682"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitectura de TI de la nube de Microsoft
 

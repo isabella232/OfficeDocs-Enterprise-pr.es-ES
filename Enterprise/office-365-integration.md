@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 search.appverid:
@@ -20,17 +22,17 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
-description: Obtenga información sobre cómo integrar Microsoft 365 con los servicios de directorio existentes.
-ms.openlocfilehash: 1207c7549a0c81a45211581be2b068ca8067a35b
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: En este artículo, aprenderá a integrar Microsoft 365 con los servicios de directorio y los entornos locales existentes.
+ms.openlocfilehash: 9eadad2f7dd4c0843b522658c361a0950f61509b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571063"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606576"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Integración de Microsoft 365 con entornos locales
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Puede integrar Microsoft 365 con los servicios de directorio existentes y con una instalación local de Exchange Server, Skype empresarial Server 2015 o SharePoint Server.
   
@@ -82,6 +84,6 @@ Azure AD Connect reemplaza versiones antiguas de herramientas de integración de
 
 Consulte también [implementar la sincronización de directorios de microsoft 365 en Microsoft Azure](https://go.microsoft.com/fwlink/?LinkId=517887).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

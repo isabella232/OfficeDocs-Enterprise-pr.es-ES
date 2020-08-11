@@ -1,5 +1,5 @@
 ---
-title: Conectarse a los inquilinos de Exchange Online con el modo remoto de Windows PowerShell para asociados con permiso de acceso delegado (DAP)
+title: Conectarse a los inquilinos de Exchange Online con Windows PowerShell remoto para asociados de DAP
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: 'Resumen: use el modo remoto de Windows PowerShell para conectarse a Exchange Online con el valor DelegatedOrg.'
-ms.openlocfilehash: f04632f9e7b5e8dec476a5381550020e5d8a1521
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: bfb041a9ab91cda54e643e8410704662c11ef175
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230836"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606016"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Conectarse a los inquilinos de Exchange Online con el modo remoto de Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 

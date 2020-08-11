@@ -17,14 +17,15 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Resumen: Use PowerShell para administrar grupos de sitio de SharePoint Online.'
-ms.openlocfilehash: bee1f01ae78ec35d34a6aba0119bba3fbf7eeada
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: En este artículo, encontrará procedimientos para usar PowerShell para Microsoft 365 para administrar grupos de sitio de SharePoint Online.
+ms.openlocfilehash: 5df2b57db4ac57aaf7905346d090ccde2d96a11c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230496"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605906"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Administrar grupos de sitio de SharePoint Online con PowerShell
 
@@ -38,7 +39,7 @@ Los procedimientos de este artículo requieren que se conecte a SharePoint Onlin
 
 ## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Ver SharePoint Online con PowerShell para Microsoft 365
 
-El centro de administración de SharePoint Online tiene algunos métodos fáciles de usar para administrar grupos de sitio. Por ejemplo, supongamos que desea ver los grupos y los miembros del grupo para el `https://litwareinc.sharepoint.com/sites/finance` sitio. Haga lo siguiente:
+El centro de administración de SharePoint Online tiene algunos métodos fáciles de usar para administrar grupos de sitio. Por ejemplo, supongamos que desea ver los grupos y los miembros del grupo para el `https://litwareinc.sharepoint.com/sites/finance` sitio. Esto es lo que tiene que hacer para:
 
 1. En el centro de administración de SharePoint, haga clic en **sitios activos**y, a continuación, haga clic en la dirección URL del sitio.
 2. En la página sitio, haga clic en el icono **configuración** (situado en la esquina superior derecha de la página) y, a continuación, haga clic en **permisos del sitio**.
@@ -91,7 +92,7 @@ foreach ($y in $x)
     }
 ```
     
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Conectarse a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 

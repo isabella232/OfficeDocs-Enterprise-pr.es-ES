@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: Obtenga información sobre cómo crear un grupo de Microsoft 365 con una ubicación de datos preferida especificada en un entorno multigeográfico.
-ms.openlocfilehash: bcababe39035550be445f2eee4d8121a2983132f
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1648a9c974e7d25d989156c5a8e2d6818727a3b6
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433861"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606836"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>Crear un grupo de 365 de Microsoft con un PDL específico
 
@@ -55,6 +55,6 @@ Tenga en cuenta que el aprovisionamiento de sitios de grupo de SharePoint se rea
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
-## <a name="see-also"></a>Vea también
+## <a name="related-topics"></a>Temas relacionados
 
 [Conectarse a Exchange Online mediante PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)

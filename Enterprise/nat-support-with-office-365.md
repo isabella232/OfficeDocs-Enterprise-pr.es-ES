@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
-description: 'Resumen: proporciona detalles sobre cómo aproximar el número correcto de clientes que se pueden usar por dirección IP dentro de la organización mediante la traducción de direcciones de red (NAT).'
-ms.openlocfilehash: d1f6762fcb21e6c310c790f6b235e5a51db4b1f2
-ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
+description: En este artículo se proporciona información detallada sobre cómo aproximar el número de clientes que se pueden usar por dirección IP en la organización mediante NAT.
+ms.openlocfilehash: f5914efb8042076e3ae7cad0d5fcb1f7eb97c12a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201614"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606776"
 ---
 # <a name="nat-support-with-office-365"></a>Compatibilidad de NAT con Office 365
 
@@ -76,7 +78,7 @@ Use la fórmula anterior para calcular el número máximo de usuarios por direcc
   
 Hay varios métodos para distribuir la carga de clientes a través de direcciones IP públicas adicionales. Las estrategias disponibles dependen de las capacidades de la solución de puerta de enlace corporativa. La solución más sencilla es segmentar el espacio de direcciones de usuario y "asignar" estáticamente una cantidad de direcciones IP a cada puerta de enlace. Otra alternativa que muchos dispositivos de puerta de enlace ofrece es la capacidad de usar un grupo de direcciones IP. La ventaja del grupo de direcciones es que es mucho más dinámica y menos probable que sea necesario ajustarse a medida que crece la base de usuarios.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

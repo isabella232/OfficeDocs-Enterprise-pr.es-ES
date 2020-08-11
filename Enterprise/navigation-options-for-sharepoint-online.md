@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: En este artículo se describen las opciones de navegación sitios con la publicación de SharePoint habilitada en SharePoint Online. La elección y configuración de la navegación afectan significativamente al rendimiento y la escalabilidad de los sitios de SharePoint Online. Este artículo no se aplica a los sitios de grupo clásicos.
-ms.openlocfilehash: c651530284889d2808c8fa415b72836eb6d14aea
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: En este artículo se describen las opciones de navegación sitios con la publicación de SharePoint habilitada en SharePoint Online.
+ms.openlocfilehash: dd11775c35f9eb7d2b6bccc38023b6f8bce8efc4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004765"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606766"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 
@@ -33,7 +35,7 @@ En este artículo se describen las opciones de navegación sitios con la publica
 >[!NOTE]
 >Si está usando las opciones modernas de navegación de SharePoint, como el menú mega, la navegación en cascada o la navegación de concentradores, este artículo no se aplica a su sitio. Las arquitecturas de sitio modernas de SharePoint aprovechan una jerarquía de sitios más acoplada y un modelo de concentrador y radio. Esto permite lograr muchos escenarios que no requieran el uso de la característica de publicación de SharePoint.
 
-## <a name="overview"></a>Información general
+## <a name="overview-of-navigation-options"></a>Información general sobre las opciones de navegación
 
 La configuración del proveedor de navegación puede afectar significativamente al rendimiento de todo el sitio, y se debe tener en cuenta para elegir un proveedor de navegación y una configuración que se escale con eficacia para los requisitos de un sitio de SharePoint. Hay dos proveedores de navegación preparados, así como implementaciones de navegación personalizadas.
 
@@ -71,15 +73,15 @@ Esta es la navegación predefinida que se usa de forma predeterminada y es la so
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>Cómo implementar el almacenamiento en caché de navegación estructural
 
-En la apariencia de la **configuración** > del sitio**y** > la**navegación**, puede validar si la navegación estructural está seleccionada para la navegación global o la navegación actual. La selección de **Mostrar páginas** tendrá un impacto negativo en el rendimiento.
+En la apariencia de la **configuración del sitio**  >  **y**la  >  **navegación**, puede validar si la navegación estructural está seleccionada para la navegación global o la navegación actual. La selección de **Mostrar páginas** tendrá un impacto negativo en el rendimiento.
 
 ![Navegación estructural con la muestra de subsitios seleccionada](media/SPONavOptionsStructuredShowSubsites.png)
 
-El almacenamiento en caché se puede habilitar o deshabilitar en el nivel de la colección de sitios y en el nivel del sitio, y se habilita de forma predeterminada para ambos. Para habilitar en el nivel de la colección de sitios, en **configuración** > del sitio navegación de la**colección**de sitios de**Administración** > de sitios, active la casilla **Habilitar almacenamiento en caché**.
+El almacenamiento en caché se puede habilitar o deshabilitar en el nivel de la colección de sitios y en el nivel del sitio, y se habilita de forma predeterminada para ambos. Para habilitar en el nivel de la colección de sitios, en **configuración del sitio**navegación de la colección de sitios de administración de sitios  >  **Site Collection Administration**  >  **Site Collection Navigation**, active la casilla **Habilitar almacenamiento en caché**.
 
 ![Habilitar el almacenamiento en caché en el nivel de sitio](media/structural-nav/structural-nav-caching-site-coll.png)
 
-Para habilitar en el nivel de sitio, en**navegación**por la **configuración** > del sitio, active la casilla **Habilitar almacenamiento en caché**.
+Para habilitar en el nivel de sitio, **Site Settings**en  >  **navegación**por la configuración del sitio, active la casilla **Habilitar almacenamiento en caché**.
 
 ![Habilitar el almacenamiento en caché en el nivel de sitio](media/structural-nav/structural-nav-caching-site.png)
 
@@ -119,15 +121,15 @@ Hay otras opciones populares para crear **proveedores de navegación personaliza
 
 Mediante la búsqueda, puede aprovechar los índices que se han integrado en el fondo con el rastreo continuo. Los resultados de la búsqueda se extraen del índice de búsqueda y los resultados se reducen por seguridad. Esto suele ser más rápido que los proveedores de navegación preparados cuando se requiere el recorte de seguridad. Usar la búsqueda para la navegación estructural, sobre todo si tiene una estructura de sitio compleja, reducirá considerablemente el tiempo de carga de la página. La principal ventaja de esto sobre la navegación administrada es que se beneficia de la reducción de seguridad.
 
-Este enfoque implica la creación de una página maestra personalizada y la sustitución del código de navegación precreado con HTML personalizado. Siga este procedimiento descrito en el siguiente ejemplo para reemplazar el código de navegación en el archivo `seattle.html`. En este ejemplo, se abrirá el `seattle.html` archivo y se reemplazará todo el `id="DeltaTopNavigation"` elemento con código HTML personalizado.
+Este enfoque implica la creación de una página maestra personalizada y la sustitución del código de navegación precreado con HTML personalizado. Siga este procedimiento descrito en el siguiente ejemplo para reemplazar el código de navegación en el archivo `seattle.html` . En este ejemplo, se abrirá el `seattle.html` archivo y se reemplazará todo el elemento `id="DeltaTopNavigation"` con código HTML personalizado.
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Ejemplo: reemplazar el código de navegación de precodificación en una página maestra
 
 1. Navegue a la página Configuración del sitio.
 2. Abra la galería de páginas maestras; para ello, haga clic en **páginas maestras**.
-3. Desde aquí puede navegar por la biblioteca y descargar el archivo `seattle.master`.
+3. Desde aquí puede navegar por la biblioteca y descargar el archivo `seattle.master` .
 4. Edite el código con un editor de texto y elimine el bloque de código en la siguiente captura de pantalla.<br/>![Eliminar el bloque de código que se muestra](media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. Quite el código entre las `<SharePoint:AjaxDelta id="DeltaTopNavigation">` etiquetas `<\SharePoint:AjaxDelta>` y y reemplácela por el siguiente fragmento de código:<br/>
+5. Quite el código entre las `<SharePoint:AjaxDelta id="DeltaTopNavigation">` `<\SharePoint:AjaxDelta>` etiquetas y y reemplácela por el siguiente fragmento de código:<br/>
 
 ```javascript
 <div id="loading">
@@ -206,13 +208,13 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ```
 
 <br/>
-8. Los resultados se asignan a self. Nodes y una jerarquía se crea a partir de los objetos mediante Linq. js, que asigna el resultado a una matriz self. hierarchy. Esta matriz es el objeto que está enlazado al HTML. Esto se realiza en la función toggleView () pasando el objeto Self a la función ko. applyBinding ().<br/>Esto hace que la matriz de jerarquías se enlace al siguiente HTML:<br/>
+8. Los resultados se asignan a self. Nodes y una jerarquía se crea a partir de los objetos mediante la linq.js asignar el resultado a una matriz self. hierarchy. Esta matriz es el objeto que está enlazado al HTML. Esto se realiza en la función toggleView () pasando el objeto Self a la función ko. applyBinding ().<br/>Esto hace que la matriz de jerarquías se enlace al siguiente HTML:<br/>
 
 ```javascript
 <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
 ```
 
-Los controladores de eventos para `mouseenter` y `mouseexit` se agregan a la navegación de nivel superior para controlar los menús desplegables de subsitio que se realizan `addEventsToElements()` en la función.
+Los controladores de eventos para `mouseenter` y `mouseexit` se agregan a la navegación de nivel superior para controlar los menús desplegables de subsitio que se realizan en la `addEventsToElements()` función.
 
 En nuestro ejemplo de navegación compleja, una carga de página nueva sin el almacenamiento en caché local muestra el tiempo empleado en el servidor se ha reducido de la navegación estructural de Benchmark para obtener un resultado similar al del enfoque de navegación administrada.
 
@@ -456,11 +458,11 @@ function addEventsToElements() {
 
 ```
 
-Para resumir el código que se ha mostrado `jQuery $(document).ready` anteriormente en la función `viewModel object` , se ha creado `loadNavigationNodes()` una y, a continuación, se llama a la función en ese objeto. Esta función carga la jerarquía de navegación previamente creada almacenada en el almacenamiento local de HTML5 del explorador del cliente o llama a `queryRemoteInterface()`la función.
+Para resumir el código que se ha mostrado anteriormente en la `jQuery $(document).ready` función `viewModel object` , se ha creado una y, a continuación, `loadNavigationNodes()` se llama a la función en ese objeto. Esta función carga la jerarquía de navegación previamente creada almacenada en el almacenamiento local de HTML5 del explorador del cliente o llama a la función `queryRemoteInterface()` .
 
 `QueryRemoteInterface()`compila una solicitud mediante la `getRequest()` función con el parámetro de consulta definido anteriormente en el script y, a continuación, devuelve datos del servidor. Estos datos son esencialmente una matriz de todos los sitios de la colección de sitios que se representan como objetos de transferencia de datos con diversas propiedades.
 
-A continuación, estos datos se analizan en los `SPO.Models.NavigationNode` objetos definidos anteriormente `Knockout.js` que usan para crear propiedades observables para su uso mediante el enlace de datos de los valores en el código HTML que se ha definido anteriormente.
+A continuación, estos datos se analizan en los `SPO.Models.NavigationNode` objetos definidos anteriormente que usan `Knockout.js` para crear propiedades observables para su uso mediante el enlace de datos de los valores en el código HTML que se ha definido anteriormente.
 
 A continuación, los objetos se colocan en una matriz de resultados. Esta matriz se analiza en JSON usando knockout y se almacena en el almacenamiento local del explorador para mejorar el rendimiento en futuras cargas de páginas.
 
@@ -474,9 +476,9 @@ El [código anterior](#about-the-javascript-file) tiene las siguientes dependenc
 
 - jQueryhttps://jquery.com/
 - KnockoutJS -https://knockoutjs.com/
-- Linq. js- https://linqjs.codeplex.com/o github.com/neuecc/Linq.js
+- Linq.js https://linqjs.codeplex.com/ o github.com/neuecc/linq.js
 
-La versión actual de LinqJS no contiene el método ByHierarchy que se usó en el código anterior y romperá el código de navegación. Para solucionarlo, agregue el método siguiente al archivo Linq. js antes de la línea `Flatten: function ()`.
+La versión actual de LinqJS no contiene el método ByHierarchy que se usó en el código anterior y romperá el código de navegación. Para solucionarlo, agregue el método siguiente al archivo de Linq.js antes de la línea `Flatten: function ()` .
 
 ```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {

@@ -14,13 +14,14 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Compatibilidad con la aplicación cliente de Microsoft 365 para la autenticación moderna.
-ms.openlocfilehash: ed573cdf0cbd8f685f2807127335f5abc940cace
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: En este artículo, obtenga información sobre las plataformas, los clientes y los módulos de PowerShell compatibles con la autenticación moderna para Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 29a579111d04cef444d1f8ad306b940a93517fe6
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998498"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606666"
 ---
 # <a name="microsoft-365-client-app-support---modern-authentication"></a>Soporte técnico de Microsoft 365 Client App-autenticación moderna
 

@@ -14,13 +14,14 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Compatibilidad con aplicaciones cliente de Microsoft 365 para la autenticación basada en certificados.
-ms.openlocfilehash: a174e24c31e9ad2688ead557c29c3fecdac82a56
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: En este artículo, encontrará detalles sobre la compatibilidad de la aplicación cliente de Microsoft 365 para la autenticación basada en certificados.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 759979ac7236ff4a6cf4c77ab52fff9b472b84ec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998602"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606676"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Soporte técnico de Microsoft 365 Client App: autenticación basada en certificados
 

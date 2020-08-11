@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
-description: 'Resumen: los sitios de Internet que usan SharePoint Server 2013 tienen la ventaja de que se hospedan en Servicios de infraestructura de Azure. En este artículo se ofrecen recursos para diseñar e implementar esta solución.'
-ms.openlocfilehash: fa01df6903a9cbc2ec6163514f27a6bd2fd603aa
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: En este artículo se proporcionan recursos para diseñar e implementar sitios de Internet de SharePoint Server 2013 hospedados en los servicios de infraestructura de Azure.
+ms.openlocfilehash: d663ca0c663d5fd3e8e13670bdec4bcb80613e51
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998122"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606356"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Sitios de Internet en Microsoft Azure con SharePoint Server 2013
 
@@ -49,7 +51,7 @@ Los artículos e ilustraciones técnicas que detallamos a continuación ofrecen 
 |**Ejemplo de diseño: sitios de Internet en Azure para SharePoint Server 2013** <br/> [![Imagen de la muestra de diseño: sitios de Internet en Microsoft Azure para SharePoint 2013](media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) <br/> |Use este ejemplo de diseño como punto de partida para su propia arquitectura.  <br/> |
 |**[Arquitecturas de Microsoft Azure para SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |En este artículo se describe cómo diseñar arquitecturas de Azure para hospedar soluciones de SharePoint.  <br/> |
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.yml)
 

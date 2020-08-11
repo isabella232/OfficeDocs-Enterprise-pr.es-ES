@@ -12,15 +12,15 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: 'Resumen: Obtenga información sobre cómo usar Windows PowerShell para realizar una migración total a Microsoft 365.'
-ms.openlocfilehash: 203c041e0bd5fe58d697d074e94b749726bb22bf
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Obtenga información sobre cómo usar PowerShell para mover el contenido de un sistema de correo electrónico de origen a la vez realizando una migración total a Microsoft 365.
+ms.openlocfilehash: fde0795b767f908fb0d1dcc5ce17a0bb50235d8e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229856"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606226"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Usar PowerShell para realizar una migración total a Microsoft 365
 
@@ -85,7 +85,7 @@ Para obtener una lista completa de los comandos de migración, consulte [Cmdlets
     
   - El administrador de la migración debe ser miembro del grupo **Administradores del dominio** en Active Directory en la organización local.
     
-    O bien:
+    O bien
     
   - El administrador de la migración debe contar con permiso de **acceso completo** para cada buzón local.
     

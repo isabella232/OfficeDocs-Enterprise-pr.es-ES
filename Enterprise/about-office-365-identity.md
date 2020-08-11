@@ -14,23 +14,25 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-mar2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
-description: Obtenga información sobre cómo se administra la identidad del usuario en Microsoft 365.
-ms.openlocfilehash: 418d5841a55e6a0da2ccb098c6b41e5a247c9552
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Aprenda a administrar el servicio de identidad de usuario de Azure AD en Microsoft 365 usando modelos de identidad híbrido o solo de nube.
+ms.openlocfilehash: fee2f0e9c8a2ee1216fb2a37e6d517348111b064
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433621"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605836"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Modelos de identidad de Microsoft 365 y Azure Active Directory
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Microsoft 365 usa Azure Active Directory (Azure AD), una identidad de usuario basada en la nube y un servicio de autenticación que se incluye con la suscripción a Microsoft 365, para administrar las identidades y la autenticación de Microsoft 365. La obtención de una infraestructura de identidad configurada correctamente es vital para administrar el acceso y los permisos de usuario de Microsoft 365 para la organización.
 
@@ -98,6 +100,6 @@ Si necesita el modelo de identidad solo de la nube, consulte [identidad solo de 
 Si necesita el modelo de identidad híbrida, consulte [Hybrid Identity](plan-for-directory-synchronization.md).
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Ver también
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

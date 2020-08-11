@@ -1,5 +1,5 @@
 ---
-title: Usar PowerShell para crear informes para Microsoft 365
+title: Usar PowerShell para crear informes de Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,17 +11,19 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Resumen: Use PowerShell para Microsoft 365 para crear informes que no puede producir en el centro de administración de Microsoft 365.'
-ms.openlocfilehash: 855f6529445b95dd949fb672f978a82f1afd6149
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: d2d03d6ac170fef95352a2aabf6cd27176202a1e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229806"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605322"
 ---
-# <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Usar PowerShell para crear informes para Microsoft 365
+# <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Usar PowerShell para crear informes de Microsoft 365
 
 *Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
@@ -59,7 +61,7 @@ En estos artículos se describe cómo usar PowerShell para Microsoft 365 para ob
     
   - [Mostrar informes de Exchange Online con PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
-## <a name="see-also"></a>Consulte también
+## <a name="related-topics"></a>Temas relacionados
 
 [Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   
@@ -67,5 +69,5 @@ En estos artículos se describe cómo usar PowerShell para Microsoft 365 para ob
   
 [Administrar SharePoint Online con PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
   
-[Administración de cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

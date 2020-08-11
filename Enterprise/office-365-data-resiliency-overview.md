@@ -14,17 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Comprenda la resistencia de los datos en Microsoft 365.
-ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: En este artículo, se proporciona información sobre el diseño y los principios de resistencia de datos y recuperación en Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7f70b464cf6fe9bd6cb9a236320878fd6adb9db4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998474"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606656"
 ---
 # <a name="data-resiliency-in-microsoft-365"></a>Resistencia de datos en Microsoft 365
-
-## <a name="introduction"></a>Introducción
 
 Teniendo en cuenta la naturaleza compleja de la informática en la nube, Microsoft es conscientes de que no se trata de un caso en el que las cosas vayan mal, sino cuando. Diseñamos nuestros servicios en la nube para maximizar la confiabilidad y minimizar los efectos negativos en los clientes cuando las cosas salen mal. Hemos superado la estrategia tradicional de confiar en una infraestructura física compleja y hemos construido la redundancia directamente en nuestros servicios en la nube. Usamos una combinación de una infraestructura física menos compleja y un software más inteligente que construye la resistencia de los datos en nuestros servicios y ofrece alta disponibilidad a nuestros clientes. 
 

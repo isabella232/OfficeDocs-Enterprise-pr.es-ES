@@ -16,13 +16,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: Información general sobre las características de auditoría e informes dentro de Microsoft 365 y la garantía del servicio.
-ms.openlocfilehash: 10bbf660ee0e0868abdb6b41c1cc318f6d64bb61
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Información general sobre las características de auditoría e informes de Office 365, Microsoft 365 y Service Assurance.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 40e68954cb0128ad323305bf8347a8e13afda9d5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774965"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606686"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Auditoría y creación de informes en los servicios en la nube de Microsoft
 
@@ -56,8 +57,8 @@ Las características clave incluyen un área de cumplimiento que proporciona a l
 
 ## <a name="related-links"></a>Vínculos relacionados
 
-- [Características de búsqueda y eDiscovery](office-365-ediscovery-and-search-features.md)
+- [Características de eDiscovery y búsqueda](office-365-ediscovery-and-search-features.md)
 - [Características de informes de Microsoft 365](office-365-reporting-features.md)
-- [API de actividad de administración de 365 de Microsoft](office-365-management-activity-api.md)
-- [Migraciones de buzones de Microsoft 365](office-365-mailbox-migrations.md)
-- [Registro interno para Microsoft 365 Engineering](office-365-internal-logging.md)
+- [API de actividad de administración de Microsoft 365](office-365-management-activity-api.md)
+- [Migraciones de buzón de Microsoft 365](office-365-mailbox-migrations.md)
+- [Registro interno para la ingeniería de Microsoft 365](office-365-internal-logging.md)

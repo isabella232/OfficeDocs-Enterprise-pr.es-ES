@@ -13,19 +13,21 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
-description: 'La conexión a Office 365 mediante Azure ExpressRoute se basa en anuncios BGP de subredes IP específicas que representan redes en las que se implementan los puntos de conexión de 365 de Office. Debido a la naturaleza global de Office 365 y al número de servicios que constituyen Office 365, los clientes suelen tener la necesidad de administrar los anuncios que aceptan en su red. Reducir el número de subredes IP; conocido como prefijos IP en el resto de este artículo, para alinearse con la terminología de administración de red BGP, atiende los siguientes objetivos finales para los clientes:'
-ms.openlocfilehash: 13d2404182eb18b7c72a9aaefdb96464fd665a03
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Obtenga información sobre cómo usar comunidades BGP en Azure ExpressRoute para administrar el número de prefijos IP y el ancho de banda necesario para escenarios de Office 365.
+ms.openlocfilehash: ce83b95de0b1032ebd23f0262f814aeac4ed2d0a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997877"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606096"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Uso de comunidades BGP en ExpressRoute para Office 365 escenarios
 
@@ -61,7 +63,7 @@ Contoso Corporation es una compañía 50.000 persona que actualmente usa Office 
 |SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; OneDrive para la empresa  <br/> | Solicitudes de DNS, CRL o &amp; CDN  <br/>  Todos los demás servicios de Office 365 no son compatibles específicamente con Azure ExpressRoute  <br/>  Todos los demás servicios en la nube de Microsoft  <br/>  Office 365 portal, Office 365 Authentication, &amp; Office en un explorador  <br/>  Exchange Online, Exchange Online Protection y Skype empresarial online  <br/> |
 
 > [!NOTE]
-> Para obtener recuentos de prefijos inferiores para cada servicio, se mantendrá una cantidad mínima de superposición entre los servicios. Este es el comportamiento previsto.
+> Para obtener recuentos de prefijos inferiores para cada servicio, se mantendrá una cantidad mínima de superposición entre los servicios. Este es el comportamiento esperado.
   
 ### <a name="scenario-2-scoping-expressroute-and-internal-bandwidth-use-to-some-office-365-services"></a>Escenario 2: ámbito de ExpressRoute y uso de ancho de banda interno para algunos servicios de Office 365
 

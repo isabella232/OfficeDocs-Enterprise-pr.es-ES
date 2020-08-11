@@ -13,15 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Deployment
+ms.custom:
+- Ent_Deployment
+- seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: 'Resumen: con Azure, puede crear un entorno de recuperación ante desastres para la granja de servidores local de SharePoint. En este artículo se describe cómo diseñar e implementar esta solución.'
-ms.openlocfilehash: 101d87b1a25d2b3ac8a7ae29832e52c805ecdc4c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: En este artículo se describe cómo usar Azure para crear un entorno de recuperación ante desastres para su granja de SharePoint local.
+ms.openlocfilehash: b4ba92136139d723b26fe89b13f4e43c67f5c2fe
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998172"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606136"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
 
@@ -323,7 +325,7 @@ En esta tabla se proporcionan vínculos a entradas de blog y artículos de refer
   
 **Tabla: Artículos de referencia de DFSR**
 
-|**Title**|**Descripción**|
+|**Título**|**Descripción**|
 |:-----|:-----|
 |[Replicación](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |Tema de TechNet sobre administración de DFS con vínculos para la replicación  <br/> |
 |[Replicación DFS: Guía de supervivencia](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Sitio wiki con vínculos a información sobre DFS  <br/> |
@@ -644,7 +646,7 @@ Ipconfig /flushdns
   
 [Configuración de grupos de disponibilidad AlwaysOn de SQL Server 2012 para SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.yml)
 

@@ -16,14 +16,15 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: Use PowerShell para crear sitios de SharePoint Online y luego agregar usuarios y grupos a esos sitios.'
-ms.openlocfilehash: 2791b4de9388e3ff828a665aeeef5ada19627107
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 85694799c32d0a075a158df47dc021bbbbe0c844
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230806"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606006"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Crear sitios de SharePoint Online y agregar usuarios con PowerShell
 
@@ -31,7 +32,7 @@ ms.locfileid: "45230806"
 
 Cuando usa PowerShell para Microsoft 365 para crear sitios de SharePoint Online y agregar usuarios, puede realizar las tareas de forma rápida y repetida con mucha más rapidez que en el centro de administración de Microsoft 365. También puede realizar tareas que no es posible realizar en el centro de administración de Microsoft 365. 
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="connect-to-sharepoint-online"></a>Conexión a SharePoint Online
 
 Los procedimientos de este tema requieren que se conecte a SharePoint Online. Para obtener instrucciones, vea [conectarse a PowerShell de SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
@@ -154,7 +155,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 5. Antes de continuar, espere a que el símbolo del sistema vuelva. Primero verá que los grupos aparecen según se han creado y, luego, verá la lista de grupos repetida a medida que se vayan agregando usuarios.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Conectarse a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 

@@ -1,5 +1,5 @@
 ---
-title: Usar PowerShell para realizar una migración IMAP a Microsoft 365
+title: Usar PowerShell para realizar una migración de IMAP a Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
-description: 'Resumen: Obtenga información sobre cómo usar Windows PowerShell para realizar una migración IMAP a Microsoft 365.'
-ms.openlocfilehash: fa53fd1829121bb697277805e4f07d25ec2179b9
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Obtenga información sobre cómo usar PowerShell para realizar una migración de protocolo de acceso a correo de Internet (IMAP) a Microsoft 365.
+ms.openlocfilehash: 0254f35791ac83aed1afff293c98fcd654a27480
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229776"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606206"
 ---
-# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Usar PowerShell para realizar una migración IMAP a Microsoft 365
+# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Usar PowerShell para realizar una migración de IMAP a Microsoft 365
 
 *Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 

@@ -14,14 +14,15 @@ f1.keywords:
 ms.custom:
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 'Resumen: comprenda la importancia de PowerShell para Microsoft 365, conéctese a su inquilino de Microsoft 365 y obtenga ayuda.'
-ms.openlocfilehash: 6ef7217d24dc865b3053fb7f7bf66acc79384200
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ca3d1b337583aa00075f67aa359e3293838b2cbc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230677"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605966"
 ---
 # <a name="getting-started-with-powershell-for-microsoft-365"></a>Introducción a PowerShell para Microsoft 365
 
@@ -31,7 +32,7 @@ Con PowerShell para Microsoft 365, puede administrar Microsoft 365 con comandos 
   
 Seleccione el artículo según sus necesidades:
   
-- [Por qué necesita usar PowerShell para Microsoft 365](why-you-need-to-use-office-365-powershell.md)
+- [¿Por qué necesita usar PowerShell para Microsoft 365?](why-you-need-to-use-office-365-powershell.md)
     
     Empiece aquí si no está familiarizado con PowerShell para Microsoft 365 y conozca seis motivos por los cuales necesita usar PowerShell para Microsoft 365. 
     
@@ -55,7 +56,7 @@ Seleccione el artículo según sus necesidades:
     
     Empiece aquí para conectarse a los lugares de la comunidad de PowerShell y obtenga ayuda o información continua sobre el uso de PowerShell para Microsoft 365.
     
-## <a name="see-also"></a>Consulte también
+## <a name="related-topics"></a>Temas relacionados
 
 [Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
 

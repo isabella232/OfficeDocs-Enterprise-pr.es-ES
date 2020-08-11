@@ -17,18 +17,19 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: ''
-description: 'Resumen: vea estos artículos para comprender las funciones de red para Microsoft 365.'
-ms.openlocfilehash: b1497c214777e34ce4a85701ce6596f50e59910d
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: Encuentre vínculos a artículos con información que le ayudará a configurar la red para Microsoft 365, incluida una descripción general de la conectividad de red y una lista de puntos de conexión.
+ms.openlocfilehash: 2c5966dc169a189a4f5040d4b5673859a38e6640
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592154"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605212"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurar la red para Microsoft 365
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Una parte importante de la incorporación de Microsoft 365 es asegurarse de que la red y las conexiones de Internet están configuradas para un acceso optimizado. La configuración de la red local para tener acceso a una nube de software como servicio (SaaS) distribuida globalmente es diferente de una red tradicional optimizada para el tráfico a los centros de recursos locales y una conexión a Internet central. 
 

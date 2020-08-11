@@ -13,19 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
-description: Para comprender correctamente el tráfico de enrutamiento a Office 365 mediante Azure ExpressRoute, necesitará una sólida visión de los requisitos de enrutamiento de ExpressRoute principales y los circuitos y dominios de enrutamiento de ExpressRoute. Estos diseñan los conceptos básicos para usar ExpressRoute en los que se basarán los clientes de Office 365.
-ms.openlocfilehash: c9d81e0823b63750a456f559855bb130a2e87b07
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: En este artículo, obtenga información sobre los requisitos de enrutamiento, los circuitos y los dominios de enrutamiento de Azure ExpressRoute para su uso con Office 365.
+ms.openlocfilehash: c8063d570744b3a5fd42328ed3940fe7477c25c9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998199"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605232"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Enrutamiento con ExpressRoute para Office 365
 
@@ -257,6 +259,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/erorout
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)

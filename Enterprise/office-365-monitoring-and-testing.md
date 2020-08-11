@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumen: una explicación de cómo Microsoft supervisa y comprueba los límites de inquilino para Microsoft 365.'
-ms.openlocfilehash: 4511b7cce47cdad76cdcce89dcd6f9d14a7f0a4b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: En este artículo, obtenga información sobre cómo Microsoft supervisa y prueba continuamente los límites de inquilino para Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d289310ed4d6d1bf142a8a4bb8fc6c2b83c167d5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998659"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605522"
 ---
 # <a name="monitoring-and-testing-tenant-boundaries"></a>Supervisar y probar los límites de inquilinos
 

@@ -22,13 +22,14 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Se ha terminado la compatibilidad con los servidores de Office 2007 y las aplicaciones cliente y los contratos de soporte personalizado no están disponibles. Use este artículo para empezar a planear la actualización ahora.
-ms.openlocfilehash: 79d017c92461b6c53e8d014ba9071957d70157fd
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+description: En este artículo se proporcionan recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2007, ya que la compatibilidad con Office 2007 ha finalizado.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 21147ccd027ba0492ced6078f91932acc3bb958c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906233"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605876"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2007
 
@@ -51,16 +52,16 @@ Se ha finalizado el soporte de productos y servicios de Office 2007. Las guías 
    
 Cuando finaliza el soporte técnico de un producto de Microsoft, no hay nuevas actualizaciones de seguridad, actualizaciones no relacionadas con la seguridad, opciones de soporte técnico asistido o gratuito (incluidos los contratos de soporte técnico personalizados) ni actualizaciones de contenido técnico en línea. Tanto si es una organización empresarial como si es un usuario particular individual, tiene varias opciones que debe tener en cuenta:
 
-## <a name="im-a-home-user-what-do-i-do"></a>Soy un usuario doméstico. What do I do?
+## <a name="im-a-home-user-what-do-i-do"></a>Soy un usuario doméstico. ¿Qué hago?
 
 Si está usando productos y aplicaciones de Office 2007 en casa, vea [esta información](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
      
 ## <a name="related-topics"></a>Temas relacionados
 
-[Vídeo: ¿Qué es Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Vídeo: ¿Qué es Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Directiva de ciclo de vida de Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Planeación de la actualización de los servidores y clientes de Office 2007 u Office 2010](plan-upgrade-previous-versions-office.md)
+[Planear la actualización desde servidores y clientes de Office 2007 o 2010](plan-upgrade-previous-versions-office.md)
   
 

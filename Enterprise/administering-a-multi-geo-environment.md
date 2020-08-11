@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Obtenga información sobre cómo administrar los servicios de SharePoint y OneDrive en un entorno multigeográfico.
-ms.openlocfilehash: d66f33152d4960b4a837a1dd401199f3bb56e5b3
-ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
+description: Los administradores pueden obtener información sobre cómo administrar los servicios de SharePoint y OneDrive en un entorno multigeográfico.
+ms.openlocfilehash: 166aa61b6ef3158c8ff479fd1a93252ef1bc50d7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46548902"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606116"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administración de un entorno de Multi-Geo
 
@@ -36,7 +36,7 @@ Los servicios BCS, Secure Store y Apps tienen todos instancias independientes en
 
 ## <a name="ediscovery"></a>eDiscovery 
 
-De forma predeterminada, un administrador de eDiscovery o de un espacio empresarial multigeográfico podrá usar eDiscovery solo en la ubicación central de ese espacio empresarial. El administrador global de Microsoft 365 debe asignar permisos de supervisor de eDiscovery para que otros usuarios puedan aplicar eDiscovery y asignar un parámetro "Región" en el filtro de seguridad de cumplimiento correspondiente para especificar la región donde se aplicará eDiscovery como ubicación por satélite; en caso contrario, no se aplicará eDiscovery en la ubicación por satélite. Para configurar el filtro de seguridad de cumplimiento de una región, vea [Configurar eDiscovery de Microsoft 365 Multi-Geo](multi-geo-ediscovery-configuration.md).
+De forma predeterminada, un administrador de eDiscovery o de un espacio empresarial multigeográfico podrá usar eDiscovery solo en la ubicación central de ese espacio empresarial. El administrador global de Office 365 debe asignar permisos de supervisor de eDiscovery para que otros usuarios puedan ejecutar eDiscovery y asignar un parámetro "Región" en el filtro de seguridad de cumplimiento correspondiente para especificar la región donde se ejecutará eDiscovery como ubicación por satélite; en caso contrario, no se ejecutará eDiscovery en la ubicación por satélite. Para configurar el filtro de seguridad de cumplimiento de una región, vea [Configurar eDiscovery de Office 365 Multi-Geo](multi-geo-ediscovery-configuration.md).
 
 ## <a name="exchange-mailboxes"></a>Buzones de Exchange
 

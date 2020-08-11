@@ -14,15 +14,16 @@ ms.collection:
 - M365-analytics
 f1.keywords:
 - NOCSH
-description: Una explicación de las características de informes en Microsoft 365.
-ms.openlocfilehash: 3e92427aaeec0a8472d6efd7a977bb4f74434555
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Obtenga información sobre diversas características de informes en Microsoft 365, incluidos Azure Active Directory y Exchange Online.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1e0039f354516f85362a8936d10d9fca2a7e3f6f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997790"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606316"
 ---
-# <a name="microsoft-365-reporting-features"></a>Características de informes de Microsoft 365 
+# <a name="microsoft-365-reporting-features"></a>Características de informes de Microsoft 365
 
 Características de informes de Microsoft 365 proporciona varios informes de auditoría para Azure Active Directory (Azure AD), Exchange Online, la administración de dispositivos, la revisión de supervisión y la prevención de pérdida de datos (DLP). Estos informes son distintos y son independientes de los informes de actividad de Microsoft 365.
 

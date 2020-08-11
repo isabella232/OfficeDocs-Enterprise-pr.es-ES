@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 f1.keywords:
 - NOCSH
-description: Este artículo contiene información para mejorar el rendimiento de la descarga de mensajes en Outlook en la Web.
-ms.openlocfilehash: 49b570da9092ce4fc857757a7da72b2a81fd0090
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Este artículo contiene información para usar lean ventanas emergentes para mejorar el rendimiento de la descarga de mensajes en Outlook en la Web.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e9ca2f90c8798c144f2763106c4c9ca9f57e9df1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843911"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603612"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Usar lean ventanas emergentes para reducir la memoria usada al leer mensajes de correo
 

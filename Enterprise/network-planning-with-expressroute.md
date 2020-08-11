@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
-description: ExpressRoute para Office 365 proporciona conectividad de nivel 3 entre la red y los centros de recursos de Microsoft. Los circuitos usan anuncios de ruta de protocolo de puerta de enlace de borde (BGP) de los servidores front-end de Office 365. Desde la perspectiva de los dispositivos locales, cuando es necesario seleccionar la ruta TCP/IP correcta a Office 365, Azure ExpressRoute se ve como una alternativa a Internet.
-ms.openlocfilehash: f147003491b2186a05edbaf73acc86e60dbe3110
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: En este artículo, obtendrá información sobre Azure ExpressRoute para Office 365 y cómo usarlo para la planeación de red.
+ms.openlocfilehash: 72fe3dc05a50a4a237a7493498ba792316d98b68
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230886"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606736"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planeamiento de redes con ExpressRoute para Office 365
 
@@ -218,7 +220,7 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/plannin
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
   

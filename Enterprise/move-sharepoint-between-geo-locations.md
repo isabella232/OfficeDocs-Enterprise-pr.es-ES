@@ -11,14 +11,16 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-f1.keywords: NOCSH
-description: Aprenda a mover un sitio de OneDrive a otra ubicación geográfica
-ms.openlocfilehash: 88c739e69f27df72cba3757f224ccd1a916d3148
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: Obtenga información sobre cómo mover un sitio de SharePoint a una ubicación geográfica distinta dentro de su entorno multigeográfico y comunicar las expectativas de los cambios a los usuarios.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8fdf6e3ec181ac5c4303579871c6f83112df1e3c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433871"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606846"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 
@@ -82,8 +84,8 @@ Por ejemplo, si la URL del sitio es https://contosohealthcare.sharepoint.com/sit
 Se recomienda realizar una comprobación para asegurarse de que se puede mover el sitio, antes de programar su movimiento.
 
 No se admite mover sitios con:
--   Servicios de conectividad empresarial
--   Formularios de InfoPath 
+-    Servicios de conectividad empresarial
+-    Formularios de InfoPath 
 - Se aplicaron las plantillas de Information Rights Management (IRM)
 
 Para asegurarse de que todas las ubicaciones geográficas son compatibles, ejecute `Get-SPOGeoMoveCrossCompatibilityStatus`. Esto mostrará todas las ubicaciones geográficas y si el entorno es compatible con la ubicación geográfica de destino.

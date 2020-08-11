@@ -15,6 +15,7 @@ ms.custom:
 - O365M_ServiceHealthModern
 - O365E_ViewStatusServices
 - O365E_ServiceHealthModern
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -25,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Ver el estado de mantenimiento de los servicios 365 de Microsoft antes de llamar al soporte técnico para ver si hay una interrupción del servicio activo.
-ms.openlocfilehash: 17d0df388d3632f0b27b3ca59c57a995ce7dfb8e
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: c6995d96df46b4f83014a7ccf6d549dea421a97a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433891"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605846"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Cómo comprobar el estado del servicio de Microsoft 365
 
@@ -146,7 +147,7 @@ Expanda cualquier fila para ver más detalles sobre el problema.
   
 Para obtener más información sobre nuestro compromiso con el tiempo de actividad, consulte [transparent Operations From Microsoft 365](https://go.microsoft.com/fwlink/?linkid=848695).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="related-topics"></a>Temas relacionados
 
 [Informes de actividades en el centro de administración de Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
  [Preferencias del centro de mensajes](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)

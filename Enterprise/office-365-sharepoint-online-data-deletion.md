@@ -15,13 +15,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: Una explicación de la eliminación de datos en SharePoint Online.
-ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Obtenga información sobre cómo funciona la eliminación de datos en SharePoint Online, como el lugar donde se almacena el contenido eliminado y durante cuánto tiempo.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 424cfcc1bcad53ff3e12278367614d048043e4bb
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997820"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606296"
 ---
 # <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Eliminación de datos de SharePoint Online en Microsoft 365
 

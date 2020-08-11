@@ -7,18 +7,18 @@ manager: arnek
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-f1.keywords:
-- NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico.
-ms.openlocfilehash: 06dcfd179b37ae98a4e28b05f55b9f684fb1bc89
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico. Solo algunos clientes, como OneDrive para la empresa, pueden devolver resultados en un entorno multigeográfico.
+ms.openlocfilehash: 94d8b9de0fc7eeb6b7fda20275686de62eaa9346
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433571"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605776"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurar la búsqueda para Microsoft 365 Multi-Geo
 
@@ -88,7 +88,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La búsqueda multigeográfica no admite la creación dinámica de cubos para refinadores numéricos.</td>
-<td align="left">Use el parámetro <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize”</a> para refinadores numéricos.</td>
+<td align="left">Use el <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">parámetro "discreta"</a> para refinadores numéricos.</td>
 </tr>
 <tr class="even">
 <td align="left">Identificadores de documento</td>

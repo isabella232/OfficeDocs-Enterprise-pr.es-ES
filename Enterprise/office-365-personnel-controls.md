@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumen: información general sobre los procedimientos de filtrado de personal de Microsoft para Microsoft 365.'
-ms.openlocfilehash: 337e9c1d92310d430c273683570a622a9fc3c9a5
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: En este artículo, puede encontrar información general sobre los procedimientos de filtrado de personal de Microsoft para Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 52b872d9b8b49b0ed72cdfb0d879712a6e129a33
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775099"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605492"
 ---
 # <a name="microsoft-365-personnel-controls"></a>Controles de personal de 365 de Microsoft
 

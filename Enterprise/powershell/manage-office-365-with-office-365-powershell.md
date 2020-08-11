@@ -17,14 +17,15 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: 'Resumen: Obtenga información sobre cómo usar PowerShell para administrar usuarios y licencias de Microsoft 365, Skype empresarial online, SharePoint Online, Exchange Online y el centro de seguridad & cumplimiento.'
-ms.openlocfilehash: 741ec15a78db9393e11ba6d06720457e20741581
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Obtenga información sobre cómo administrar usuarios y licencias de Microsoft 365 y aplicaciones de Microsoft 365 con PowerShell.
+ms.openlocfilehash: ed20ec5bbe05ab0be382b87c04ba2dbc9428b4cc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230516"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605936"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Administrar Microsoft 365 con PowerShell
 

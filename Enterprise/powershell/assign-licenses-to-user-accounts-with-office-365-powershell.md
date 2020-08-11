@@ -16,16 +16,17 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 - O365ITProTrain
+- seo-marvel-apr2020
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: Cómo usar PowerShell para asignar una licencia de Microsoft 365 a los usuarios sin licencia.
-ms.openlocfilehash: 25a57158be82f985885a7ceaf89f526f9d522b4d
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: En este artículo, obtenga información sobre cómo usar PowerShell para asignar una licencia de Microsoft 365 a los usuarios sin licencia.
+ms.openlocfilehash: 824d6b786c3334ae36929e50298e6be0aafd9cb2
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229836"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606476"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Asignar licencias de 365 de Microsoft a cuentas de usuario con PowerShell
 
@@ -202,7 +203,7 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Administrar cuentas de usuario, licencias y grupos con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

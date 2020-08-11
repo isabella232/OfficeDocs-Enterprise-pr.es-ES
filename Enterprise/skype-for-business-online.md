@@ -13,6 +13,7 @@ f1.keywords:
 ms.custom:
 - Adm_O365
 - ms.lync.lac.ProviderManagedFeature
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +21,13 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: 'Obtenga ayuda de administración para Skype empresarial: configure Skype empresarial, la red, las reuniones y la mensajería instantánea y el acceso externo para los usuarios. configurar opciones, solucionar problemas y ver informes de uso.'
-ms.openlocfilehash: f30073310c9b24e9b8242261e97e04c23f413967
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Como administrador, busque ayuda para configurar partes de Skype empresarial online, incluidas la red, las reuniones y la mensajería instantánea, y el acceso externo para los usuarios.
+ms.openlocfilehash: 2e0a3b47c89f1573b50681445e150755e0a78985
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841117"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603662"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype Empresarial Online en Office 365 ayuda de administración
 
@@ -40,7 +41,7 @@ Puede permitir que los usuarios que usen Skype Empresarial se pongan en contacto
   
 - [Permitir a los usuarios contactar con usuarios externos de Skype Empresarial](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
     
-- [Permitir que los usuarios de Skype empresarial agreguen contactos de Skype](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
+- [Permitir que los usuarios de Skype Empresarial agreguen contactos de Skype](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
     
 ## <a name="improve-call-and-video-quality"></a>Mejorar la calidad de llamadas y vídeos
 

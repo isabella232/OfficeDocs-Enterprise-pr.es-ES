@@ -14,22 +14,24 @@ ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Si usa Office 2007 u Office 2010, es el momento de planear la actualización. No se bloquee con aplicaciones y servidores obsoletos y no admitidos. Use estos recursos para empezar a trabajar con su plan.
-ms.openlocfilehash: 83881977bdd3e42be47f7a9f08fdaff84742cf55
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.custom:
+- seo-marvel-apr2020
+description: Este artículo contiene recursos para usuarios que usan Office 2007 u Office 2010 para ayudarles a planear la actualización.
+ms.openlocfilehash: 8ea43c708c84ae81f61bb2acedd8bf60027070d4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735738"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606256"
 ---
-# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planeación de la actualización de los servidores y clientes de Office 2007 u Office 2010
+# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planear la actualización desde servidores y clientes de Office 2007 o 2010
 
 *Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Si su organización usa versiones anteriores de productos y servidores de Office, este es un buen momento para empezar a planear la actualización. Los productos y servicios de Office 2007 han llegado al [final del soporte técnico](upgrade-from-office-2007-servers-and-products.md). 
 
-- Office 2010 y Exchange 2010 llegarán a su fin de soporte el **13 de octubre de 2020**. 
-- SharePoint 2010 y Project Server 2010 llegarán a su fin de soporte el **13 de abril de 2021**. 
+- Se llegará al final del soporte técnico para Office 2010 y Exchange 2010 el **13 de octubre de 2020**. 
+- Se llegará al final del soporte técnico para SharePoint 2010 y Project Server 2010 el **13 de abril de 2021**. 
 
 Use los recursos de este artículo para empezar.
 
@@ -84,7 +86,7 @@ Si desea ayuda para planear la actualización, tenga en cuenta una o varias de l
 
 - Si forma parte de una organización más pequeña o si prefiere controlar personalmente la actualización de Office de su organización, consulte [actualizar los usuarios de Microsoft 365 para empresas al último cliente de Office](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client). 
   
-## <a name="im-a-home-user-what-do-i-do"></a>Soy un usuario doméstico. What do I do?
+## <a name="im-a-home-user-what-do-i-do"></a>Soy un usuario doméstico. ¿Qué hago?
 
 Si está usando Office 2007 u Office 2010 en el hogar, tenga en cuenta las siguientes opciones de actualización:
 

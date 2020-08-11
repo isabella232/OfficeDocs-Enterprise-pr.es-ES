@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: En este artículo se describe cómo usar minificación y las técnicas de agrupación con Web Essentials para reducir el número de solicitudes HTTP y reducir el tiempo que se tarda en cargar páginas en SharePoint Online.
-ms.openlocfilehash: 44f9e6151c22c3715b56a164bd0c9cacedcf2580
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Obtenga información sobre cómo usar minificación y las técnicas de agrupación con Web Essentials para reducir las solicitudes HTTP y el tiempo que se tarda en cargar páginas en SharePoint Online.
+ms.openlocfilehash: 3b840b7da953103448515c51f79ba15cb356ae38
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004775"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605662"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minificación y agrupación en SharePoint Online
 
@@ -39,7 +41,7 @@ Para los archivos JavaScript y CSS, también puede usar un enfoque denominado mi
 Puede usar software de terceros, como Web Essentials, para agrupar archivos CSS y JavaScript.
   
 > [!IMPORTANT]
-> Web Essentials es un proyecto de terceros, basado en la comunidad de código abierto. El software es una extensión de Visual Studio 2012 y Visual Studio 2013 y no es compatible con Microsoft. Para descargar Web Essentials, visite el sitio web en [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629). 
+> Web Essentials es un proyecto de terceros, basado en la comunidad de código abierto. El software es una extensión de Visual Studio 2012 y Visual Studio 2013 y no es compatible con Microsoft. Para descargar Web Essentials, visite el sitio web en [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) . 
   
 Web Essentials ofrece dos formas de agrupación:
   

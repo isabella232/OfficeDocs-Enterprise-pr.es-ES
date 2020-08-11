@@ -14,13 +14,14 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
-description: Los movimientos de datos son una operación back-end con un impacto mínimo en los usuarios finales. No es necesario realizar ninguna acción mientras Microsoft mueve todos los servicios y datos asociados del inquilino a un nuevo centro de datos geográfico. La transferencia y validación de datos se producen en segundo plano de antemano con un impacto mínimo para los usuarios.
-ms.openlocfilehash: d07c9c62a778ce23d2e088ddeb8b34346911a19a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Los movimientos de datos son operaciones back-end que se producen cuando Microsoft mueve servicios y datos asociados para el inquilino a un nuevo centro de datos geográfico.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6dbfbd9f33aba84086b257ce5a93f01bb707a54c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774495"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606416"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -60,7 +61,7 @@ Algunos usuarios abren una carpeta de correo compartido desde otro buzón (que e
 |El usuario tiene permiso de carpeta de buzón de correo en otro buzón  <br/> |Posiblemente limitado.  <br/> Si el usuario A y el buzón B no se encuentran en el mismo área geográfica durante el movimiento de inquilino, el usuario A no puede abrir la carpeta del buzón B en Outlook Web Access si el usuario A solo tiene permiso para una carpeta específica del buzón B.  <br/> Para agregar una carpeta compartida, haga clic con el botón derecho en el nombre de usuario en el panel de navegación izquierdo y seleccione **Agregar carpeta compartida**.  <br/> |
 |Usuario con permiso de buzón de correo completo a otro buzón  <br/> |Totalmente compatible.  <br/> Si el usuario A tiene permiso de "acceso total" en el buzón B, el usuario A puede hacer clic en la carpeta compartida en el panel de navegación izquierdo de Outlook Web Access para abrir una ventana que muestre el buzón B.  Un usuario puede abrir un buzón compartido mediante Outlook Web Access durante la transferencia sin ningún impacto negativo. La limitación solo se aplica al uso compartido en el nivel de carpeta en un buzón.           |
   
-## <a name="sharepoint-online"></a>SharePoint en linea
+## <a name="sharepoint-online"></a>SharePoint Online
 
 Cuando se mueve SharePoint Online, también se mueven los datos de los siguientes servicios:
   
@@ -88,7 +89,7 @@ Una vez que haya terminado de mover los datos de SharePoint Online, es posible q
     
 - Estamos quitando las copias transcodificadas del centro de recursos anterior y transformarlas de nuevo en el nuevo centro de recursos.
     
-### <a name="search"></a>Search
+### <a name="search"></a>Búsqueda
 
 En el transcurso del traslado de los datos de SharePoint Online, migramos el índice de búsqueda y la configuración de búsqueda a una nueva ubicación. Hasta que haya **completado** el traslado de los datos de SharePoint Online, seguiremos atendiendo a los usuarios del índice en la ubicación original. En la nueva ubicación, la búsqueda comienza automáticamente el rastreo del contenido después de haber terminado de mover los datos de SharePoint Online. A partir de este punto, traponemos a sus usuarios del índice migrado. Los cambios en el contenido que se produjeron después de la migración no se incluyen en el índice migrado hasta que el rastreo los seleccione. La mayoría de los clientes no aprecian que los resultados sean menos actualizados después de haber terminado de mover los datos de SharePoint Online, pero algunos clientes podrían experimentar una actualización reducida en las primeras 24-48 horas. 
   

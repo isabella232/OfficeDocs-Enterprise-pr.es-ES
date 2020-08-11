@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Una explicación de los diversos aspectos de la resistencia de datos en Exchange Online y Microsoft 365.
-ms.openlocfilehash: 1af8acc10f9d45055d6575e2dfcc45451b6eaf6a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: En este artículo, encontrará una explicación de los diversos aspectos de la resistencia de datos en Exchange Online y Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 18d8179f37cb97316b71a43cccfc631a5cc550da
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998741"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606616"
 ---
 # <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Resistencia de datos de Exchange online en Microsoft 365
 
-## <a name="introduction"></a>Introducción
 Hay dos tipos de daños que pueden afectar a una base de datos de Exchange: los daños físicos, que suelen deberse a problemas de hardware (en particular, del hardware de almacenamiento) y a los daños lógicos, que se producen debido a otros factores. Por lo general, hay dos tipos de daños lógicos que pueden producirse dentro de una base de datos de Exchange: 
 - **Daño lógico de base** de datos: la suma de comprobación de la página de la base de datos coincide, pero los datos de la página son incorrectos lógicamente. Esto puede ocurrir cuando el motor de base de datos (el motor de almacenamiento extensible (ESE)) intenta escribir una página de base de datos y, aunque el sistema operativo devuelve un mensaje de operación correcta, los datos nunca se escriben en el disco o se escriben en el lugar equivocado. Esto se conoce como un *vaciado perdido*. ESE incluye numerosas características y protecciones diseñadas para evitar daños físicos en una base de datos y otros escenarios de pérdida de datos. Para evitar que los vaciados perdidos pierdan datos, ESE incluye un mecanismo de detección de vaciado perdido en la base de datos junto con una característica (restauración de una sola página) para corregirlo. 
 - **Almacenar los daños lógicos** : los datos se agregan, eliminan o manipulan de una manera que el usuario no espera. Normalmente, estos casos son causados por aplicaciones de otros fabricantes. Solo se considera un daño, por lo general, porque el usuario lo ve como un daño. El almacén de Exchange considera que la transacción que produce los daños de lógica es una serie de operaciones MAPI válidas. Las características de [conservación local](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) de Exchange Online proporcionan protección para almacenar los daños lógicos (porque impide que un usuario o una aplicación eliminen el contenido de forma permanente). 

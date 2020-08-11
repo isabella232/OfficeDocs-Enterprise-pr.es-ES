@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Define y explica la inmutabilidad de datos en Microsoft 365.
-ms.openlocfilehash: 8648060f3036d2f3c81704cf53a817910607263a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Obtenga información sobre cómo Microsoft 365 preserva los datos en un formulario reconocible para enfrentar el cumplimiento normativo, los requisitos de control interno y los riesgos de litigios.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dcc997cf157df08441bf1f6e825d0a5a468edbd1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998464"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605642"
 ---
 # <a name="immutability-in-microsoft-365"></a>Inmutabilidad en Microsoft 365
 
@@ -28,7 +29,7 @@ El cumplimiento normativo, los requisitos de control interno o los riesgos de li
 
 Los métodos tradicionales para la inmutabilidad suelen trabajar mediante el movimiento de mensajes de correo electrónico a una ubicación de almacenamiento separada y de solo lectura. Aunque estos sistemas sirven para conservar los elementos de buzón para la detección, suelen afectar a la experiencia del usuario al quitar los elementos conservados del flujo de trabajo diario habitual. Para los profesionales de ti, este enfoque de inmutabilidad requiere la implementación y el mantenimiento continuo de una infraestructura de almacenamiento y servidor independiente. La detección se realiza con herramientas externas al sistema de correo e incluye los costos de implementación y mantenimiento asociados.
 
-Mediante la conservación local y las características de la Directiva de conservación de archivado en Microsoft 365 y sus servicios, puede preservar y conservar muchas clases de datos entrantes, internos y salientes. Incluye lo siguiente:
+Mediante la conservación local y las características de la Directiva de conservación de archivado en Microsoft 365 y sus servicios, puede preservar y conservar muchas clases de datos entrantes, internos y salientes. Esto incluye:
 
 - Comunicaciones de correo electrónico entrante y saliente
 - Libros y registros contenidos en un formulario de correo electrónico o en documentos compartidos en línea

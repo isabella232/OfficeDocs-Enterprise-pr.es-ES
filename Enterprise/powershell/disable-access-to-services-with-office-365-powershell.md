@@ -17,18 +17,19 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 - LIL_Placement
+- seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: Use PowerShell para deshabilitar el acceso a los servicios de Microsoft 365 para los usuarios.
-ms.openlocfilehash: 7820bc44837af07975b2eeaeddf2cf20a9230fae
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+description: En este artículo, aprenderá a usar PowerShell para deshabilitar el acceso a los servicios de Microsoft 365 para los usuarios.
+ms.openlocfilehash: f546014b83e0910e38817e0b7ef84d67f1b88614
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502645"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605976"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Deshabilitar el acceso a los servicios de Microsoft 365 con PowerShell
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Cuando a una cuenta de Microsoft 365 se le asigna una licencia de un plan de licencias, los servicios de Microsoft 365 se ponen a disposición del usuario a partir de dicha licencia. Sin embargo, puede controlar los servicios de Microsoft 365 a los que el usuario puede tener acceso. Por ejemplo, aunque la licencia permita el acceso al servicio de SharePoint Online, puede deshabilitar el acceso a ella. Puede usar PowerShell para deshabilitar el acceso a cualquier número de servicios para un plan de licencias específico para:
 
@@ -171,9 +172,9 @@ $LO = New-MsolLicenseOptions -AccountSkuId $acctSKU
 Set-MsolUserLicense -UserPrincipalName $userUPN -LicenseOptions $LO
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="related-topic"></a>Tema relacionado
 
-[Administración de cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Administrar Microsoft 365 con PowerShell](manage-office-365-with-office-365-powershell.md)
   

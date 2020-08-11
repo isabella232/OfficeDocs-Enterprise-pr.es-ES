@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Resumen: obtenga información sobre cómo configurar una red virtual de Azure entre locales para las cargas de trabajo de servidores de Office con una conexión VPN de sitio a sitio.'
-ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 939ba28b1fc2b21a93e22ce019879fef73d58c1c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230076"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606056"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Conectar una red local con una red virtual de Microsoft Azure
 
@@ -32,7 +33,7 @@ Una red virtual de Azure entre locales se conecta a la red local, extendiendo la
 
 Por ejemplo, un servidor de sincronización de directorios que se ejecuta en una máquina virtual de Azure necesita consultar los controladores de dominio locales para obtener cambios en las cuentas y sincronizar dichos cambios con la suscripción a Microsoft 365. En este artículo se muestra cómo configurar una red virtual de Azure entre locales usando una conexión de red privada virtual (VPN) de sitio a sitio que está preparada para hospedar máquinas virtuales de Azure.
 
-## <a name="overview"></a>Información general
+## <a name="configure-a-cross-premises-azure-virtual-network"></a>Configurar una red virtual de Azure entre locales
 
 Las máquinas virtuales en Azure no tienen que estar aisladas de su entorno local. Para conectar máquinas virtuales de Azure en sus recursos de red locales, debe configurar una red virtual de Azure entre locales. En el siguiente diagrama se muestran los componentes requeridos para implementar una red virtual de Azure entre locales con una máquina virtual en Azure.
   

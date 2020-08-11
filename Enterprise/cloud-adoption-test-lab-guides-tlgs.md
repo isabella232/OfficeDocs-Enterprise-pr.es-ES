@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: Use estas guías del laboratorio de pruebas (TLG) para configurar la demostración, la prueba de concepto o los entornos de desarrollo y pruebas para Microsoft 365.'
-ms.openlocfilehash: 32204f3b3ca2cc51d3d0eea9a3d1ef6dfa65228d
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 198185f75ef2f0a9347508e17717811feb3a0cd9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230016"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606086"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Pruebe Microsoft 365 con las guías del laboratorio de pruebas (TLG)
 
@@ -48,9 +49,9 @@ Use estos artículos para crear el entorno de pruebas y desarrollo de Microsoft 
 
     Este es un paso opcional y necesario si desea crear una configuración de la empresa simulada para una identidad híbrida.
     
-Para obtener las guías de laboratorio de soluciones adicionales que se aplican tanto en Office 365 como en Microsoft 365, haga clic [aquí](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).  
+Para las TLG adicionales que se aplican tanto a Office 365 como a Microsoft 365, vaya a [guías de entorno de pruebas](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).  
     
-## <a name="see-also"></a>Vea también
+## <a name="related-topics"></a>Temas relacionados
 
 [Adopción de la nube y soluciones híbridas](cloud-adoption-and-hybrid-solutions.yml)
   

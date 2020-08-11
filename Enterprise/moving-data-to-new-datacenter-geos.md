@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: 'El nuevo centro de GEOS agrega capacidad y calcula recursos para apoyar el crecimiento constante del uso y la demanda de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes. Los principales datos de clientes son un término que hace referencia a un subconjunto de los datos de clientes definidos en los términos de los servicios en línea de Microsoft: contenido del buzón de correo de Exchange Online (cuerpo del correo electrónico, entradas del calendario y contenido de los datos adjuntos del correo electrónico) y contenido del sitio de SharePoint Online, así como los archivos almacenados en el sitio'
-ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+description: Obtenga información sobre el nuevo Office 365 Datacenter GEOS y cómo usar la opción de residencia de datos para solicitar un movimiento de los datos principales a un nuevo geográfico.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d612c77eec4cb14e9522f3003c557e7e5bffd900
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547728"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606826"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Movimiento de datos básicos a un nuevo centro de datos de Microsoft 365 GEOS
 

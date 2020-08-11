@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: 'Resumen: implemente Azure AD Connect en una máquina virtual en Azure para sincronizar las cuentas entre el directorio local y el inquilino de Azure AD de su suscripción a Microsoft 365.'
-ms.openlocfilehash: bd1b973c60576002f110a909c0022b27f4595b81
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Obtenga información sobre cómo implementar Azure AD Connect en una máquina virtual en Azure para sincronizar las cuentas entre el directorio local y el inquilino de Azure AD.
+ms.openlocfilehash: 2872e3d5d233d04885fadd3e422ec1d15284ac26
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229976"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605746"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Implementar la sincronización de directorios de Microsoft 365 en Microsoft Azure
 

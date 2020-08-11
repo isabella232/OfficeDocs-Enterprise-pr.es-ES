@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: 'Resumen: encuentre los temas de referencia de los cmdlets de Microsoft 365 para PowerShell para Azure Active Directory, Exchange Online, SharePoint Online, Skype empresarial online y el cumplimiento de & de seguridad.'
-ms.openlocfilehash: 71259e49fd70c4f3f7d7ebb7332fe75955797335
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Encuentre los temas de referencia de los cmdlets de PowerShell de Microsoft 365 para Azure AD, Exchange Online, SharePoint Online, Skype empresarial online y el cumplimiento de & de seguridad.
+ms.openlocfilehash: 92423c9bd1f6a977c41d9077ab30122589ae374f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230866"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606026"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Referencias de cmdlets para los servicios de Microsoft 365
 

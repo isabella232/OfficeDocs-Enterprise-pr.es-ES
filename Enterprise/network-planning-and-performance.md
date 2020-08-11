@@ -11,17 +11,19 @@ localization_priority: Normal
 ms.collection: Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
-description: Ayuda a planear los requisitos de ancho de banda de red para Microsoft 365. Una vez que se haya implementado, vuelva aquí para ajustar y solucionar los problemas de rendimiento de Microsoft 365.
-ms.openlocfilehash: 2754bdfe427a87f0cbed538703877b089c3fcc38
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+- Adm_O365
+description: Este artículo le ayudará a planear los requisitos de ancho de banda de red para Microsoft 365 y a ajustar y solucionar problemas de rendimiento.
+ms.openlocfilehash: 4942d2d9d36123465dd15aecf6e72988c9952037
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998585"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606746"
 ---
 # <a name="network-planning-and-performance-tuning-for-microsoft-365"></a>Planeamiento de red y ajuste del rendimiento para Microsoft 365
 Antes de implementar por primera vez o migrar a Microsoft 365, puede usar la información de estos temas para calcular el ancho de banda que necesita y, después, para probar y comprobar que tiene suficiente ancho de banda para implementar o migrar a Microsoft 365. Para obtener información general, consulte: [Network and Migration Planning for Microsoft 365](network-and-migration-planning.md).

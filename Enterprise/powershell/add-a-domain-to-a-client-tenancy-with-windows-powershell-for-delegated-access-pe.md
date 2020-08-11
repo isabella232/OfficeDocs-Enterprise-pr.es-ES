@@ -1,5 +1,5 @@
 ---
-title: Agregar un dominio a un arrendamiento de cliente con Windows PowerShell para asociados con permiso de acceso delegado (DAP)
+title: Adición de un dominio a un arrendamiento de cliente con Windows PowerShell para asociados de DAP
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Resumen: Use PowerShell para Microsoft 365 para agregar un nombre de dominio alternativo a un inquilino de cliente existente.'
-ms.openlocfilehash: eabfa9dfcbb36cb54a2d51321dfe60f197290b10
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: 8b38caf72db57d5e80f0483062adb3bd2529672b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433771"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606486"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Agregar un dominio a un arrendamiento de cliente con Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Puede crear y asociar nuevos dominios con el arrendamiento del cliente con PowerShell para Microsoft 365 con mayor rapidez que con el centro de administración de Microsoft 365.
   

@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
-description: A continuación, se incluyen respuestas a preguntas generales sobre cómo mover datos principales a un nuevo centro de datos geográfico.
-ms.openlocfilehash: 2954d85b0094a8d0f74980fa4e0ee9cac504abbe
-ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
+description: Encuentre respuestas a las preguntas más frecuentes (FAQ) sobre cómo mover los datos principales a un nuevo área geográfica de Office 365 Datacenter.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: bd26296831ddb5aa0932d4106893e5a9adfb1d50
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44781045"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606046"
 ---
 # <a name="data-move-general-faq"></a>Preguntas más frecuentes sobre el movimiento de datos
 

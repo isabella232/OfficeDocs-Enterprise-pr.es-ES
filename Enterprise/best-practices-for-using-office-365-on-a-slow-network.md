@@ -18,13 +18,14 @@ search.appverid:
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 f1.keywords:
 - NOCSH
-description: ¿No sería bueno si la conexión a Internet siempre era rápida y nunca inactiva? Quizá ese día venga. Pero, mientras tanto, hay cosas prácticas que puede hacer para trabajar en una red de balky y seguir haciendo su trabajo cotidiano.
-ms.openlocfilehash: 3e9a3e91c5e1cc775d28742b39ea9c0ed507d2c9
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom: seo-marvel-apr2020
+description: Este artículo le guiará a través de los procedimientos recomendados que puede adoptar para usar Office 365 en una red lenta.
+ms.openlocfilehash: b4b81826dfca4c5962cc6aef026c3878e3b52304
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844961"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605786"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Procedimientos recomendados para usar Office 365 en una red lenta
 
@@ -180,7 +181,7 @@ Para obtener más información, consulte [ajustar el rendimiento de Project onli
 
 Microsoft mejora continuamente el rendimiento general de Office 365 al supervisar la red, medir el ancho de banda y la latencia, mejorar el tiempo de carga de la página, reducir la e/s de disco, volver a diseñar las páginas para usar una estrategia de descarga mínima, agregar hardware a los centros de datos y agregar más centros de datos. Para obtener más información acerca de cómo comprobar el estado actual e informar de los problemas, consulte [How to check Office 365 Service Health](https://docs.microsoft.com/office365/enterprise/view-service-health).
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Planeamiento de red y ajuste del rendimiento para Office 365](network-planning-and-performance.md)
   

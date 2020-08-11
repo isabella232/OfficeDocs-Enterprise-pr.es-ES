@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
-description: El 11 de abril de 2017, el 2007 del servidor de Exchange alcanzó el final del soporte técnico. Si todavía no ha iniciado la migración de Exchange 2007 a Microsoft 365, Office 365 o Exchange 2016, ahora es el momento de empezar la planeación.
-ms.openlocfilehash: 7228d123a8f4fe21c3d92753fe3f60a7d2e4f67b
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.custom: seo-marvel-apr2020
+description: Obtenga información sobre las opciones una vez que Exchange Server 2007 haya finalizado, y comience la migración de planeación a Microsoft 365, Office 365 o Exchange 2016.
+ms.openlocfilehash: c77d3de47ea917730874253c286565971d80ea48
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052443"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606406"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de Exchange 2007
 
@@ -52,7 +53,7 @@ Ahora que Exchange 2007 ha llegado al final del soporte técnico, le recomendamo
     
 En las siguientes secciones se examina cada opción con más detalle.
   
-### <a name="migrate-to-microsoft-365"></a>Migrar a Microsoft 365
+### <a name="migrate-to-microsoft-365"></a>Migrar a Microsoft 365
 
 Migrar el correo electrónico a Microsoft 365 es la mejor y sencilla opción para ayudarle a retirar la implementación de Exchange 2007. Con una migración a Microsoft 365, puede realizar un solo salto de la tecnología de 10 años a las características de vanguardia, como:
   

@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Las aplicaciones de Office para Mac proporcionan una experiencia de aplicación nativa en la plataforma de macOS. Cada aplicación está diseñada para trabajar en diversos escenarios, incluidos los Estados en los que no hay acceso a la red disponible. Cuando un equipo está conectado a una red, las aplicaciones se conectan automáticamente a una serie de servicios basados en web para proporcionar funciones mejoradas. En este documento se describen los puntos de conexión y las direcciones URL que las aplicaciones intentan alcanzar y los servicios que se proporcionan. Esta información es útil para solucionar problemas de configuración de red y establecer una directiva para los servidores proxy de red. Los detalles de este artículo tienen como objetivo complementar el artículo Office 365 URL y los intervalos de direcciones.
-ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: En este artículo se describen los puntos de conexión y las direcciones URL para las aplicaciones de Office para Mac que intentan llegar y los servicios que se proporcionan.
+ms.openlocfilehash: 70b2da671b590dbe0c7572eebd6d96e0970532e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774955"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606726"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Solicitudes de red en Office para Mac
 
@@ -322,7 +324,7 @@ Si su organización bloquea solicitudes a direcciones URL a través de un firewa
 Si el servidor proxy requiere autenticación, se devolverá una respuesta 407 al cliente. Para obtener la mejor experiencia, asegúrese de que está usando las compilaciones de Office para Mac 15,27 o versiones posteriores, ya que incluyen revisiones específicas para trabajar con servidores NTLM y Kerberos.
   
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Direcciones URL e intervalos de direcciones IP de Office 365](urls-and-ip-address-ranges.md)
 

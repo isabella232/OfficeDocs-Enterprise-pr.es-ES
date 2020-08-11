@@ -11,20 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - MSO150
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
-description: En este artículo se proporcionan vínculos para administradores de sistemas que quieren planear los requisitos de ancho de banda de red o que necesitan mejorar el rendimiento de Skype empresarial online.
-ms.openlocfilehash: 4ca25d8a38ffce5b694b9ca31c330f6488720fcb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: En este artículo se proporcionan vínculos para los administradores de sistemas que planean los requisitos de ancho de banda de red o para mejorar el rendimiento de Skype empresarial online.
+ms.openlocfilehash: 1ca9d969f4552cf260d44099becd41f5868286d7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843921"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606426"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Optimización del rendimiento de Skype Empresarial Online
 
@@ -52,13 +54,13 @@ En este artículo se proporcionan vínculos para administradores de sistemas que
     
 - [Esto es lo que obtiene con sistema telefónico en Office 365](https://docs.microsoft.com/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Planeamiento de red y ajuste del rendimiento para Office 365](network-planning-and-performance.md)
   
 [Optimización de la red para Skype Empresarial Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/optimizing-your-network)
   
-[ExpressRoute y QoS en Skype empresarial online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
+[ExpressRoute y calidad del servicio en Skype Empresarial Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
   
 [Flujo de llamadas con ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
 

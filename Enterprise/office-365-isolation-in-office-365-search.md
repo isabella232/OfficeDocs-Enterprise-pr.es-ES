@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumen: explicación del aislamiento de inquilinos en Microsoft 365 Search.'
-ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: En este artículo, encontrará una explicación de cómo funciona el aislamiento de inquilino para separar los datos del espacio empresarial en la búsqueda de Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b887088799c83422a6bc5797a76dde73a58e2f29
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998260"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605592"
 ---
 # <a name="tenant-isolation-in-microsoft-365-search"></a>Aislamiento de inquilino en Búsqueda de Microsoft 365
 

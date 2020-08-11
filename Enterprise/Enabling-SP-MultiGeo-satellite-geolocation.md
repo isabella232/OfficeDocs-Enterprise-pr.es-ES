@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Habilitar SharePoint Multi-Geo en su ubicación geográfica de satélite.
-ms.openlocfilehash: 2bf914c6df06f6e1cdfc8c95743f45a53823073c
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: En este artículo se proporciona información para los administradores globales o de SharePoint sobre la habilitación de SharePoint multigeográfico en ubicaciones geográficas de satélite.
+ms.openlocfilehash: dc2cd3eeb4c7e74d8dbfee1070338e0e243b0519
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433491"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605856"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Habilitar SharePoint Multi-Geo en su ubicación geográfica de satélite
 
@@ -38,11 +38,11 @@ Estas instrucciones le permitirán habilitar SharePoint en la ubicación de sat�
 
 Para establecer una ubicación geográfica en modo SPO, conéctese a la ubicación geográfica que desea establecer en modo de SPO:
 
-1.  Abra el Shell de administración de SharePoint Online 
-2.  Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
-3.  Set-SPOMultiGeoExperience</br></br>
+1.    Abra el Shell de administración de SharePoint Online 
+2.    Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
+3.    Set-SPOMultiGeoExperience</br></br>
 ![Set-SPOMultiGeoExperience](media/Set-SPO-MultiGeo.jpg)
-4.  Esta operación suele tardar aproximadamente una hora mientras se realizan varias acciones en el servicio y se vuelve a marcar el inquilino. Después de al menos una hora, lleve a cabo un Get-SPOMultiGeoExperience.  Esto le mostrará si esta ubicación geográfica está en modo SPO.</br></br>
+4.    Esta operación suele tardar aproximadamente una hora mientras se realizan varias acciones en el servicio y se vuelve a marcar el inquilino. Después de al menos una hora, lleve a cabo un Get-SPOMultiGeoExperience.  Esto le mostrará si esta ubicación geográfica está en modo SPO.</br></br>
 ![Set-SPOMultiGeoExperience](media/Get-SPO-MultiGeo.jpg)
 
  

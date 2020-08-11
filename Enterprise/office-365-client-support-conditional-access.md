@@ -14,13 +14,14 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-description: Descripción de la compatibilidad con aplicaciones cliente de Microsoft 365 para el acceso condicional
-ms.openlocfilehash: 6081af2ad3bca69978a10baabeae0a13d783f0ae
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: En este artículo, obtenga información acerca de las plataformas, los clientes y los módulos de PowerShell que admiten el acceso condicional para Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 77fe8411109bf77287674d8c6fa1607a0689f46f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998508"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606706"
 ---
 # <a name="microsoft-365-client-app-support--conditional-access"></a>Soporte técnico de Microsoft 365 Client App-acceso condicional
 

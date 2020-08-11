@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
-description: ExpressRoute para Office 365 proporciona una ruta de acceso de enrutamiento alternativa a muchos servicios de Office 365 de conexión a Internet. La arquitectura de ExpressRoute para Office 365 se basa en los prefijos IP públicos de publicidad de los servicios de Office 365 a los que ya se puede tener acceso a través de Internet en los circuitos de ExpressRoute aprovisionados para la redistribución posterior de dichos prefijos IP en la red. Con ExpressRoute, se habilitan de manera eficaz varias rutas de acceso de enrutamiento diferentes, a través de Internet y de ExpressRoute, para muchos servicios de Office 365. Este estado de enrutamiento en la red puede representar un cambio importante en la forma en que se diseña la topología de la red interna.
-ms.openlocfilehash: 925aeb2db9350eab9abb70bf3e3d6957608f618b
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Obtenga información sobre cómo implementar ExpressRoute para Office 365, que proporciona una ruta de acceso de enrutamiento alternativa a muchos servicios de Office 365 con conexión a Internet.
+ms.openlocfilehash: 3495b66556a8bd8d9aa16aaa4a3283e6017e883c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230306"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605702"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
 
@@ -596,6 +598,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/impleme
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)

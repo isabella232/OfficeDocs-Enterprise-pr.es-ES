@@ -13,20 +13,22 @@ ms.collection:
 - M365-identity-device-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
-description: Su suscripción a Microsoft 365 incluye una suscripción a Azure AD. Integre Microsoft 365 con Azure AD si desea la sincronización de contraseña o el inicio de sesión único con el entorno local.
-ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
-ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
+description: Integre Microsoft 365 con Azure AD si desea la sincronización de contraseña o el inicio de sesión único con el entorno local.
+ms.openlocfilehash: 64fcf25c75e636bebf78e9367f4cc68b367548f7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44842062"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606106"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Integración de Azure con Microsoft 365
 
@@ -63,6 +65,6 @@ Para obtener más información acerca de Microsoft 365 y Azure AD, consulte [Und
    
 Obtenga más información en [aplicaciones integradas y Azure ad para los administradores de Microsoft 365](integrated-apps-and-azure-ads.md) y [la galería de aplicaciones de Azure ad y el inicio de sesión único](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

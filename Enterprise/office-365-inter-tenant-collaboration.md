@@ -18,13 +18,14 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 f1.keywords:
 - NOCSH
-description: Obtenga información sobre cómo funciona la colaboración de Microsoft 365 en espacios empresariales y organizaciones.
-ms.openlocfilehash: 197f12f7c102da30582eb2c4f4447d895ca2768d
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Obtenga información sobre cómo funciona la colaboración de Microsoft 365 en los inquilinos y las organizaciones, lo que permite a distintas organizaciones trabajar conjuntamente de manera segura.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e68df7c7b4d3574951957f576ffe7c896c0d13da
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998730"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606566"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Colaboración entre inquilinos de Microsoft 365
 
@@ -80,7 +81,7 @@ Las opciones de colaboración entre espacios empresariales de Microsoft 365 incl
 |:-----|:-----|:-----|
 |Colaborar en Teams con usuarios externos a la organización  <br/> |Un administrador global para el inquilino invitando a Microsoft 365 debe habilitar la colaboración externa en Teams. Ahora, los administradores globales y los propietarios de los equipos podrán invitar a cualquier persona con una dirección de correo electrónico para que colabore en Microsoft Teams.  <br/> Los administradores también pueden administrar y editar invitados que ya están presentes en su espacio empresarial.  <br/> |[Autorizar el acceso de invitado](https://docs.microsoft.com/microsoftteams/teams-dependencies) <br/> [Activar o desactivar el acceso de invitado en Microsoft Teams](https://docs.microsoft.com/microsoftteams/set-up-guests) <br/> [Usar PowerShell para controlar el acceso de invitado](https://docs.microsoft.com/microsoftteams/guest-access-powershell) <br/> [Lista de comprobación de acceso de invitado](https://docs.microsoft.com/microsoftteams/guest-access-checklist) <br/> [Ver usuarios invitados](https://docs.microsoft.com/microsoftteams/view-guests) <br/> [Editar información del usuario invitado](https://docs.microsoft.com/microsoftteams/edit-guests-information) <br/> |
 |Los propietarios de equipo pueden invitar y administrar la forma en que los invitados colaboran en sus equipos.  <br/> |Los propietarios de equipo tienen controles adicionales sobre lo que los invitados pueden hacer en sus equipos.  <br/> |[Agregar invitados](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) <br/> [Agregar un invitado a un equipo](https://docs.microsoft.com/microsoftteams/add-guests) <br/> [Administrar el acceso de invitado en Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-guests) <br/> [Ver quién está en un equipo o en un canal](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> |
-|Los invitados de otros inquilinos pueden ver el contenido de Microsoft Teams y colaborar con otros miembros  <br/> |Ninguna.  <br/> |[La experiencia de acceso de invitado](https://docs.microsoft.com/microsoftteams/guest-experience) <br/> |
+|Los invitados de otros inquilinos pueden ver el contenido de Microsoft Teams y colaborar con otros miembros  <br/> |Ninguno.  <br/> |[La experiencia de acceso de invitado](https://docs.microsoft.com/microsoftteams/guest-experience) <br/> |
 
 ## <a name="power-bi-collaboration-options"></a>Opciones de colaboración de Power BI
 
