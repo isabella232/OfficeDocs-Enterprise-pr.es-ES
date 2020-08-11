@@ -17,41 +17,42 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: Use estas guías del laboratorio de pruebas (TLG) para configurar la demostración, la prueba de concepto o los entornos de desarrollo y pruebas para Microsoft 365.'
-ms.openlocfilehash: 32204f3b3ca2cc51d3d0eea9a3d1ef6dfa65228d
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 198185f75ef2f0a9347508e17717811feb3a0cd9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230016"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606086"
 ---
-# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a><span data-ttu-id="967e3-103">Pruebe Microsoft 365 con las guías del laboratorio de pruebas (TLG)</span><span class="sxs-lookup"><span data-stu-id="967e3-103">Test Microsoft 365 with Test Lab Guides (TLGs)</span></span>
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a><span data-ttu-id="4976a-103">Pruebe Microsoft 365 con las guías del laboratorio de pruebas (TLG)</span><span class="sxs-lookup"><span data-stu-id="4976a-103">Test Microsoft 365 with Test Lab Guides (TLGs)</span></span>
 
-<span data-ttu-id="967e3-p101">Las TLG le permiten conocer los productos Microsoft de manera rápida. Son ideales para situaciones en las que necesita evaluar una tecnología o configuración antes de decidir si es adecuada y comenzar el diseño, planeación y lanzamiento para los usuarios. Esta experiencia práctica, que consiste en desarrollar la herramienta por sus propios medios y lograr que funcione, le permitirá entender los requisitos de implementación de un nuevo producto o solución, de modo que pueda planear mejor el hospedaje en la producción.</span><span class="sxs-lookup"><span data-stu-id="967e3-p101">TLGs help you quickly learn about Microsoft products. They're great for situations where you need to evaluate a technology or configuration before you decide whether it's right for you and before you begin the design, planning, and rollout to users. The "I built it out myself and it works" hands-on experience helps you understand the deployment requirements of a new product or solution so you can better plan for hosting it in production.</span></span>
+<span data-ttu-id="4976a-p101">Las TLG le permiten conocer los productos Microsoft de manera rápida. Son ideales para situaciones en las que necesita evaluar una tecnología o configuración antes de decidir si es adecuada y comenzar el diseño, planeación y lanzamiento para los usuarios. Esta experiencia práctica, que consiste en desarrollar la herramienta por sus propios medios y lograr que funcione, le permitirá entender los requisitos de implementación de un nuevo producto o solución, de modo que pueda planear mejor el hospedaje en la producción.</span><span class="sxs-lookup"><span data-stu-id="4976a-p101">TLGs help you quickly learn about Microsoft products. They're great for situations where you need to evaluate a technology or configuration before you decide whether it's right for you and before you begin the design, planning, and rollout to users. The "I built it out myself and it works" hands-on experience helps you understand the deployment requirements of a new product or solution so you can better plan for hosting it in production.</span></span>
   
-<span data-ttu-id="967e3-107">Las guías del laboratorio de pruebas también crean entornos representativos para desarrollo y pruebas de aplicaciones, también conocidos como entornos de desarrollo y pruebas.</span><span class="sxs-lookup"><span data-stu-id="967e3-107">TLGs also create representative environments for development and testing of applications, also known as dev/test environments.</span></span>
+<span data-ttu-id="4976a-107">Las guías del laboratorio de pruebas también crean entornos representativos para desarrollo y pruebas de aplicaciones, también conocidos como entornos de desarrollo y pruebas.</span><span class="sxs-lookup"><span data-stu-id="4976a-107">TLGs also create representative environments for development and testing of applications, also known as dev/test environments.</span></span>
   
 ![Guías del laboratorio de pruebas de Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-## <a name="microsoft-365-devtest-environment"></a><span data-ttu-id="967e3-109">Entorno de prueba y desarrollo de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="967e3-109">Microsoft 365 dev/test environment</span></span>
+## <a name="microsoft-365-devtest-environment"></a><span data-ttu-id="4976a-109">Entorno de prueba y desarrollo de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="4976a-109">Microsoft 365 dev/test environment</span></span>
 
-<span data-ttu-id="967e3-110">Use estos artículos para crear el entorno de pruebas y desarrollo de Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="967e3-110">Use these articles to build your Microsoft 365 dev/test environment:</span></span>
+<span data-ttu-id="4976a-110">Use estos artículos para crear el entorno de pruebas y desarrollo de Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="4976a-110">Use these articles to build your Microsoft 365 dev/test environment:</span></span>
   
-- [<span data-ttu-id="967e3-111">Configuración básica ligera</span><span class="sxs-lookup"><span data-stu-id="967e3-111">The lightweight base configuration</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
+- [<span data-ttu-id="4976a-111">Configuración básica ligera</span><span class="sxs-lookup"><span data-stu-id="4976a-111">The lightweight base configuration</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
     
-    <span data-ttu-id="967e3-112">Cree una suscripción de prueba de Microsoft 365 Enterprise E5.</span><span class="sxs-lookup"><span data-stu-id="967e3-112">Create a Microsoft 365 Enterprise E5 trial subscription.</span></span>
+    <span data-ttu-id="4976a-112">Cree una suscripción de prueba de Microsoft 365 Enterprise E5.</span><span class="sxs-lookup"><span data-stu-id="4976a-112">Create a Microsoft 365 Enterprise E5 trial subscription.</span></span>
 
-- [<span data-ttu-id="967e3-113">Configuración básica empresarial simulada</span><span class="sxs-lookup"><span data-stu-id="967e3-113">The simulated enterprise base configuration</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
+- [<span data-ttu-id="4976a-113">Configuración básica empresarial simulada</span><span class="sxs-lookup"><span data-stu-id="4976a-113">The simulated enterprise base configuration</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
     
-    <span data-ttu-id="967e3-114">Cree una intranet simplificada que se ejecute en los servicios de infraestructura de Microsoft Azure y una suscripción de prueba de Microsoft 365 Enterprise E5.</span><span class="sxs-lookup"><span data-stu-id="967e3-114">Create a simplified intranet running in Microsoft Azure infrastructure services and a Microsoft 365 Enterprise E5 trial subscription.</span></span> 
+    <span data-ttu-id="4976a-114">Cree una intranet simplificada que se ejecute en los servicios de infraestructura de Microsoft Azure y una suscripción de prueba de Microsoft 365 Enterprise E5.</span><span class="sxs-lookup"><span data-stu-id="4976a-114">Create a simplified intranet running in Microsoft Azure infrastructure services and a Microsoft 365 Enterprise E5 trial subscription.</span></span> 
 
-    <span data-ttu-id="967e3-115">Este es un paso opcional y necesario si desea crear una configuración de la empresa simulada para una identidad híbrida.</span><span class="sxs-lookup"><span data-stu-id="967e3-115">This is optional and needed if you want to build a simulated enterprise configuration for hybrid identity.</span></span>
+    <span data-ttu-id="4976a-115">Este es un paso opcional y necesario si desea crear una configuración de la empresa simulada para una identidad híbrida.</span><span class="sxs-lookup"><span data-stu-id="4976a-115">This is optional and needed if you want to build a simulated enterprise configuration for hybrid identity.</span></span>
     
-<span data-ttu-id="967e3-116">Para obtener las guías de laboratorio de soluciones adicionales que se aplican tanto en Office 365 como en Microsoft 365, haga clic [aquí](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).</span><span class="sxs-lookup"><span data-stu-id="967e3-116">For additional TLGs that apply to both Office 365 and Microsoft 365, click [here](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).</span></span>  
+<span data-ttu-id="4976a-116">Para las TLG adicionales que se aplican tanto a Office 365 como a Microsoft 365, vaya a [guías de entorno de pruebas](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).</span><span class="sxs-lookup"><span data-stu-id="4976a-116">For additional TLGs that apply to both Office 365 and Microsoft 365, go to [Test Lab Guides](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).</span></span>  
     
-## <a name="see-also"></a><span data-ttu-id="967e3-117">Vea también</span><span class="sxs-lookup"><span data-stu-id="967e3-117">See also</span></span>
+## <a name="related-topics"></a><span data-ttu-id="4976a-117">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="4976a-117">Related topics</span></span>
 
-[<span data-ttu-id="967e3-118">Adopción de la nube y soluciones híbridas</span><span class="sxs-lookup"><span data-stu-id="967e3-118">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.yml)
+[<span data-ttu-id="4976a-118">Adopción de la nube y soluciones híbridas</span><span class="sxs-lookup"><span data-stu-id="4976a-118">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.yml)
   
-[<span data-ttu-id="967e3-119">Soluciones híbridas</span><span class="sxs-lookup"><span data-stu-id="967e3-119">Hybrid solutions</span></span>](hybrid-solutions.md)
+[<span data-ttu-id="4976a-119">Soluciones híbridas</span><span class="sxs-lookup"><span data-stu-id="4976a-119">Hybrid solutions</span></span>](hybrid-solutions.md)
