@@ -13,19 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: pandrew
 search.appverid:
 - MET150
 - MOE150
 - BCS160
-description: El servicio web de URL y dirección IP de Office 365 le ayuda a identificar y a diferenciar mejor el tráfico de red de Office 365, lo que facilita la evaluación, la configuración y la actualización de los cambios.
-ms.openlocfilehash: 7a1d882b6bc5e34e3d59cf4bade30a58a1c76d6f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Aprenda a usar la dirección IP de Office 365 y el servicio web URL para identificar y diferenciar mejor el tráfico de red de Office 365.
+ms.openlocfilehash: a51ee69c5d1364e92b2f8a1f4c06059023084ef5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843603"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605632"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>El servicio web de URL y dirección IP de Office 365
 
@@ -247,7 +249,7 @@ Los cambios a datos de los puntos de conexión más críticos son las direccione
 
 El parámetro obligatorio del método web de cambios es:
 
-- **Version=\<YYYYMMDDNN>**: parámetro obligatorio de ruta de URL. Este valor es la versión que ha implementado actualmente. El servicio web devolverá los cambios desde esa versión. El formato es _AAAAMMDDNN_, donde _NN_ es un número natural incrementado si hay varias versiones que deben publicarse en un solo día, con _00_ representando la primera actualización para un día determinado. El servicio web requiere que el parámetro _versión_ contenga exactamente 10 dígitos.
+- **Version=\<YYYYMMDDNN>**: parámetro requerido de ruta de URL. Este valor es la versión que ha implementado actualmente. El servicio web devolverá los cambios desde esa versión. El formato es _AAAAMMDDNN_, donde _NN_ es un número natural incrementado si hay varias versiones que deben publicarse en un solo día, con _00_ representando la primera actualización para un día determinado. El servicio web requiere que el parámetro _versión_ contenga exactamente 10 dígitos.
 
 El método de web de cambios tiene una tasa limitada al igual que el método web de puntos de conexión.  Si recibe un código de respuesta HTTP 429, espere 1 hora antes de repetir la solicitud o genere un nuevo GUID.
 

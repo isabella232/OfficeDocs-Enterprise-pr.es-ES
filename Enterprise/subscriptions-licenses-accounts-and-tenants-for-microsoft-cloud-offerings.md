@@ -15,16 +15,17 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom:
-- Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: 'Resumen: comprenda las relaciones de las organizaciones, las suscripciones, las licencias, las cuentas de usuario y los espacios empresariales en las ofertas de la nube de Microsoft.'
-ms.openlocfilehash: 52857196f53a44196c96f60bd70564f5e3221b80
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
-ms.translationtype: MT
+ms.custom:
+- seo-marvel-apr2020
+- Ent_Architecture
+description: Información sobre las relaciones de las organizaciones, las suscripciones, las licencias, las cuentas de usuario y los espacios empresariales en las ofertas de la nube de Microsoft.
+ms.openlocfilehash: 7546d4b24c66946e287aa51deb2d1f1896045322
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906293"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603672"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, cuentas y espacios empresariales para las ofertas de la nube de Microsoft
 
@@ -46,12 +47,12 @@ Una organización representa una entidad empresarial que usa ofertas de la nube 
 
 Una suscripción es un contrato con Microsoft para utilizar uno o más servicios o plataformas de la nube de Microsoft, para los que se acumulan los cargos en función de un precio de licencia por usuario o en el consumo de recursos basados en la nube. 
 
-- Las ofertas de la nube basadas en software de Microsoft como servicio (SaaS) (Microsoft 365 y Dynamics 365) cobran los cargos por usuario de licencia. 
+- Las ofertas de la nube basadas en el software como servicio (SaaS) de Microsoft 365 y Dynamics 365 cobran precios de licencia por usuario. 
 - Las ofertas de la nube de plataforma como servicio (PaaS) y de infraestructura como servicio (IaaS) de Microsoft (Azure) se cobran en función del consumo de recursos de la nube.
  
 También puede usar una suscripción de prueba, pero la suscripción expira después de un periodo de tiempo o cargos por consumo determinados. Puede convertir una suscripción de prueba en una suscripción de pago.
   
-Las organizaciones pueden tener varias suscripciones para las ofertas de la nube de Microsoft. La figura 1 muestra una sola organización que tiene varias suscripciones de Microsoft 365, una suscripción de Dynamics 365 y varias suscripciones de Azure.
+Las organizaciones pueden tener varias suscripciones para las ofertas de la nube de Microsoft. En la ilustración 1, se muestra una sola organización con varias suscripciones de Microsoft 365, una suscripción de Dynamics 365 y varias suscripciones de Azure.
 
 **Ilustración 1: Ejemplo de varias suscripciones para una organización**
 
@@ -59,7 +60,7 @@ Las organizaciones pueden tener varias suscripciones para las ofertas de la nube
   
 ### <a name="licenses"></a>Licencias
 
-Para las ofertas de la nube de SaaS de Microsoft, una licencia permite a una cuenta de usuario específica utilizar los servicios de la oferta de la nube. Se le cobrará un precio mensual fijo como parte de su suscripción. Los administradores asignan licencias a cuentas de usuario individuales en la suscripción. Para el ejemplo de la figura 2, contoso Corporation tiene una suscripción a Microsoft 365 E5 con licencias de 100, lo que permite que hasta 100 cuentas de usuario individuales usen los servicios y las características de Microsoft 365 E5.
+Para las ofertas de la nube de SaaS de Microsoft, una licencia permite a una cuenta de usuario específica utilizar los servicios de la oferta de la nube. Se le cobrará un precio mensual fijo como parte de su suscripción. Los administradores asignan licencias a cuentas de usuario individuales en la suscripción. Para el ejemplo en la figura 2, Contoso Corporation tiene una suscripción a Microsoft 365 E5 con 100 licencias, que permite a hasta 100 cuentas de usuario individuales utilizar las características y los servicios de Microsoft 365 E5.
   
 **Ilustración 2: Licencias en las suscripciones basadas en SaaS para una organización**
 
@@ -83,11 +84,11 @@ En la ilustración 3, se muestra un ejemplo de varias suscripciones de una organ
   
 ### <a name="tenants"></a>Espacios empresariales
 
-Para las ofertas de la nube de SaaS, el inquilino es la ubicación regional que hospeda a los servidores que proporcionan servicios en la nube. Por ejemplo, contoso Corporation eligió la región europea para hospedar sus inquilinos de Microsoft 365, EMS y Dynamics 365 para los trabajadores de la sucursal de 15.000 en su sede central de París.
+Para las ofertas de la nube de SaaS, el inquilino es la ubicación regional que hospeda a los servidores que proporcionan servicios en la nube. Por ejemplo, Contoso Corporation eligió la región europea para hospedar sus espacios empresariales de Microsoft 365, EMS y Dynamics 365 para los 15 000 trabajadores en su sede de París.
   
 Los servicios de PaaS de Azure y las cargas de trabajo basadas en máquina virtual hospedadas en IaaS de Azure pueden tener un arrendamiento en cualquier centro de datos de Azure en todo el mundo. Especifique el centro de datos de Azure, conocido como la ubicación, al crear la aplicación o el servicio de PaaS de Azure, o el elemento de una carga de trabajo de IaaS.
   
-Un inquilino de Azure AD es una instancia específica de Azure AD que contiene cuentas y grupos. Las suscripciones de pago o de prueba de Microsoft 365 o Dynamics 365 incluyen un espacio empresarial de Azure AD gratuito. Este inquilino de Azure AD no incluye otros servicios de Azure y no es lo mismo que una suscripción de prueba o de pago de Azure.
+Un espacio empresarial de Azure AD es una instancia específica de Azure AD que contiene cuentas y grupos. Las suscripciones de pago o de prueba de Microsoft 365 o Dynamics 365 incluyen un espacio empresarial de Azure AD gratuito. Este inquilino de Azure AD no incluye otros servicios de Azure y no es lo mismo que una suscripción de prueba o de pago de Azure.
   
 ### <a name="summary-of-the-hierarchy"></a>Resumen de la jerarquía
 
@@ -107,7 +108,7 @@ Aquí tiene un ejemplo de la relación de las organizaciones, suscripciones, lic
     
   - Una suscripción a Microsoft 365 E3 con licencias de usuario.
     
-    Una suscripción de Microsoft 365 E5 con licencias de usuario.
+    Una suscripción a Microsoft 365 E5 con licencias de usuario.
     
     Una suscripción de Dynamics 365 con licencias de usuario.
     
@@ -129,8 +130,8 @@ En la siguiente tabla se describe cómo combinar varias ofertas de la nube de Mi
   
 ||**Microsoft 365**|**Azure**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Microsoft 365** <br/> |ND  <br/> |Agregue una suscripción de Azure a la organización desde el portal de Azure.  <br/> |Agregue una suscripción de Dynamics 365 a la organización desde el Centro de administración de Microsoft 365.  <br/> |
-|**Azure** <br/> |Agregue una suscripción de Microsoft 365 a su organización.  <br/> |ND  <br/> |Agregue una suscripción de Dynamics 365 a su organización.  <br/> |
+|**Microsoft 365** <br/> |N/D  <br/> |Agregue una suscripción de Azure a la organización desde el portal de Azure.  <br/> |Agregue una suscripción de Dynamics 365 a la organización desde el Centro de administración de Microsoft 365.  <br/> |
+|**Azure** <br/> |Agregue una suscripción de Microsoft 365 a su organización.  <br/> |N/D  <br/> |Agregue una suscripción de Dynamics 365 a su organización.  <br/> |
 |**Dynamics 365** <br/> |Agregue una suscripción de Microsoft 365 a su organización.  <br/> |Agregue una suscripción de Azure a la organización desde el portal de Azure.  <br/> |N/D  <br/> |
    
 Una forma sencilla de agregar suscripciones a su organización para los servicios basados en SaaS para Microsoft es a través del Centro de administración:
@@ -141,17 +142,17 @@ Una forma sencilla de agregar suscripciones a su organización para los servicio
     
 3. En la página **Servicios de compra**, compre las nuevas suscripciones.
     
-El centro de administración asigna la organización y el inquilino de Azure AD de su suscripción a Microsoft 365 a las nuevas suscripciones para las ofertas de la nube basadas en SaaS.
+El Centro de administración asigna la organización y el espacio empresarial de Azure AD de su suscripción de Microsoft 365 a las nuevas suscripciones para las ofertas en la nube basadas en SaaS.
   
-Para agregar una suscripción de Azure con la misma organización y el inquilino de Azure AD que la suscripción a Microsoft 365:
+Para agregar una suscripción de Azure con la misma organización y espacio empresarial de Azure AD que su suscripción de Microsoft 365:
   
-1. Inicie sesión en Azure portal ( [https://portal.azure.com](https://portal.azure.com) ) con su cuenta de administrador global de Microsoft 365.
+1. Inicie sesión en Azure Portal ([https://portal.azure.com](https://portal.azure.com)) con su cuenta de administrador global de Microsoft 365.
     
 2. En el panel de navegación izquierdo, haga clic en **Suscripciones** y después en **Agregar**.
     
 3. En la página **Agregar suscripción**, seleccione una oferta y complete la información de pago y el contrato.
     
-Si ha comprado las suscripciones de Azure y Microsoft 365 por separado y desea acceder al inquilino de Azure AD de Microsoft 365 desde su suscripción a Azure, vea las instrucciones en [Agregar una suscripción de Azure existente a su inquilino de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+Si compró suscripciones de Microsoft 365 y Azure por separado y quiere acceder al espacio empresarial de Azure AD de Microsoft 365 desde su suscripción de Azure, vea las instrucciones en [Añadir una suscripción existente de Azure a su espacio empresarial de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
 ## <a name="see-also"></a>Vea también
 
@@ -161,7 +162,7 @@ Si ha comprado las suscripciones de Azure y Microsoft 365 por separado y desea a
   
 [Soluciones híbridas](hybrid-solutions.md)
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 [Evaluar la conectividad de red de Microsoft 365](assessing-network-connectivity.md)
   
