@@ -28,7 +28,7 @@ ms.locfileid: "46571163"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Identidad híbrida y sincronización de directorios para Microsoft 365
 
-*Este artículo se aplica tanto a Office 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 En función de las necesidades de negocio y los requisitos técnicos, el modelo de identidad híbrida y la sincronización de directorios son las opciones más comunes para los clientes empresariales que están adoptando Microsoft 365. La sincronización de directorios permite administrar las identidades de los servicios de dominio de Active Directory (AD DS) y todas las actualizaciones de las cuentas de usuario, los grupos y los contactos se sincronizan con el inquilino de Azure Active Directory (Azure AD) de la suscripción a Microsoft 365.
 
@@ -145,7 +145,7 @@ La sincronización de directorios es necesaria para las siguientes característi
 
 Cuando esté listo para implementar la identidad híbrida, vea [preparar el aprovisionamiento de usuarios](prepare-for-directory-synchronization.md).
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Información general de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
 
